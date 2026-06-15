@@ -1,0 +1,45 @@
+{"event": "error", "file": "WhatsApp Audio 2026-05-01 at 16.36.25.ogg", "error": "[WinError 2] The system cannot find the file specified", "timestamp": "2026-05-12T09:07:14"}
+{"event": "error", "file": "WhatsApp Audio 2026-05-01 at 16.36.46.ogg", "error": "[WinError 2] The system cannot find the file specified", "timestamp": "2026-05-12T09:07:14"}
+{"event": "error", "file": "WhatsApp Audio 2026-05-01 at 16.37.07.ogg", "error": "[WinError 2] The system cannot find the file specified", "timestamp": "2026-05-12T09:07:14"}
+{"event": "error", "file": "WhatsApp Audio 2026-05-01 at 16.37.49.ogg", "error": "[WinError 2] The system cannot find the file specified", "timestamp": "2026-05-12T09:07:14"}
+{"event": "error", "file": "WhatsApp Audio 2026-05-01 at 16.37.50.ogg", "error": "[WinError 2] The system cannot find the file specified", "timestamp": "2026-05-12T09:07:14"}
+{"event": "error", "file": "WhatsApp Audio 2026-05-01 at 16.37.53.ogg", "error": "[WinError 2] The system cannot find the file specified", "timestamp": "2026-05-12T09:07:14"}
+{"event": "error", "file": "WhatsApp Audio 2026-05-01 at 16.37.56.ogg", "error": "[WinError 2] The system cannot find the file specified", "timestamp": "2026-05-12T09:07:14"}
+{"event": "start_file", "file": "WhatsApp Audio 2026-05-01 at 16.36.25.ogg", "duration_minutes": 2.03, "hash": "f584168b0da030633f3e2ec4ed896407", "timestamp": "2026-05-12T09:28:08"}
+{"event": "completed_full_transcription", "file": "WhatsApp Audio 2026-05-01 at 16.36.25.ogg", "timestamp": "2026-05-12T09:35:14"}
+{"event": "completed_file", "file": "WhatsApp Audio 2026-05-01 at 16.36.25.ogg", "output": "WhatsApp_Audio_2026-05-01_at_16_36_25.txt", "archived_as": "WhatsApp Audio 2026-05-01 at 16.36.25.ogg", "timestamp": "2026-05-12T09:35:14"}
+{"event": "start_file", "file": "WhatsApp Audio 2026-05-01 at 16.36.46.ogg", "duration_minutes": 23.37, "hash": "7f3156d2e82d4f96e0a6725caf1727e0", "timestamp": "2026-05-12T09:35:14"}
+{"event": "completed_full_transcription", "file": "WhatsApp Audio 2026-05-01 at 16.36.46.ogg", "timestamp": "2026-05-12T10:40:56"}
+{"event": "completed_file", "file": "WhatsApp Audio 2026-05-01 at 16.36.46.ogg", "output": "WhatsApp_Audio_2026-05-01_at_16_36_46.txt", "archived_as": "WhatsApp Audio 2026-05-01 at 16.36.46.ogg", "timestamp": "2026-05-12T10:40:56"}
+{"event": "start_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.07.ogg", "duration_minutes": 0.02, "hash": "b09cb228a168eb1d8113083c7e1cef21", "timestamp": "2026-05-12T10:40:56"}
+{"event": "completed_full_transcription", "file": "WhatsApp Audio 2026-05-01 at 16.37.07.ogg", "timestamp": "2026-05-12T10:41:47"}
+{"event": "completed_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.07.ogg", "output": "WhatsApp_Audio_2026-05-01_at_16_37_07.txt", "archived_as": "WhatsApp Audio 2026-05-01 at 16.37.07.ogg", "timestamp": "2026-05-12T10:41:47"}
+{"event": "start_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.49.ogg", "duration_minutes": 34.95, "hash": "b1c92293367e0ebc06bcee38ba036e98", "timestamp": "2026-05-12T10:41:47"}
+{"event": "start_file", "file": "WhatsApp Audio 2026-05-01 at 16.36.46.ogg", "duration_minutes": 23.37, "hash": "7f3156d2e82d4f96e0a6725caf1727e0", "timestamp": "2026-05-12T11:06:57"}
+{"event": "completed_file", "file": "WhatsApp Audio 2026-05-01 at 16.36.46.ogg", "output": "WhatsApp_Audio_2026-05-01_at_16_36_46.txt", "archived_as": "WhatsApp Audio 2026-05-01 at 16.36.46_2.ogg", "timestamp": "2026-05-12T11:06:57"}
+{"event": "start_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.07.ogg", "duration_minutes": 0.02, "hash": "b09cb228a168eb1d8113083c7e1cef21", "timestamp": "2026-05-12T11:06:58"}
+{"event": "completed_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.07.ogg", "output": "WhatsApp_Audio_2026-05-01_at_16_37_07.txt", "archived_as": "WhatsApp Audio 2026-05-01 at 16.37.07_2.ogg", "timestamp": "2026-05-12T11:06:58"}
+{"event": "start_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.49.ogg", "duration_minutes": 34.95, "hash": "b1c92293367e0ebc06bcee38ba036e98", "timestamp": "2026-05-12T11:06:58"}
+{"event": "completed_full_transcription", "file": "WhatsApp Audio 2026-05-01 at 16.37.49.ogg", "timestamp": "2026-05-12T13:17:57"}
+{"event": "completed_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.49.ogg", "output": "WhatsApp_Audio_2026-05-01_at_16_37_49.txt", "archived_as": "WhatsApp Audio 2026-05-01 at 16.37.49.ogg", "timestamp": "2026-05-12T13:17:57"}
+{"event": "start_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.50.ogg", "duration_minutes": 0.01, "hash": "216ac620da44119a59a1acb2fab504f2", "timestamp": "2026-05-12T13:17:58"}
+{"event": "completed_full_transcription", "file": "WhatsApp Audio 2026-05-01 at 16.37.50.ogg", "timestamp": "2026-05-12T13:19:14"}
+{"event": "completed_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.50.ogg", "output": "WhatsApp_Audio_2026-05-01_at_16_37_50.txt", "archived_as": "WhatsApp Audio 2026-05-01 at 16.37.50.ogg", "timestamp": "2026-05-12T13:19:14"}
+{"event": "start_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.53.ogg", "duration_minutes": 3.85, "hash": "84b91242c274c8bc169585dd21370dad", "timestamp": "2026-05-12T13:19:14"}
+{"event": "completed_full_transcription", "file": "WhatsApp Audio 2026-05-01 at 16.37.53.ogg", "timestamp": "2026-05-12T13:36:15"}
+{"event": "completed_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.53.ogg", "output": "WhatsApp_Audio_2026-05-01_at_16_37_53.txt", "archived_as": "WhatsApp Audio 2026-05-01 at 16.37.53.ogg", "timestamp": "2026-05-12T13:36:15"}
+{"event": "start_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.56.ogg", "duration_minutes": 2.22, "hash": "22a4ddf26a053ee9f03003034bddec34", "timestamp": "2026-05-12T13:36:16"}
+{"event": "completed_full_transcription", "file": "WhatsApp Audio 2026-05-01 at 16.37.56.ogg", "timestamp": "2026-05-12T13:48:44"}
+{"event": "completed_file", "file": "WhatsApp Audio 2026-05-01 at 16.37.56.ogg", "output": "WhatsApp_Audio_2026-05-01_at_16_37_56.txt", "archived_as": "WhatsApp Audio 2026-05-01 at 16.37.56.ogg", "timestamp": "2026-05-12T13:48:44"}
+{"event": "start_file", "file": "Nouvel enregistrement.m4a", "duration_minutes": 0.2, "hash": "5b3d472b55e0ecfc9c9cce5b28d63ead", "timestamp": "2026-06-14T09:33:32"}
+{"event": "completed_full_transcription", "file": "Nouvel enregistrement.m4a", "timestamp": "2026-06-14T09:34:25"}
+{"event": "completed_file", "file": "Nouvel enregistrement.m4a", "output": "Nouvel_enregistrement.txt", "archived_as": "Nouvel enregistrement.m4a", "timestamp": "2026-06-14T09:34:25"}
+{"event": "start_file", "file": "Nouvel enregistrement.m4a", "duration_minutes": 0.2, "hash": "5b3d472b55e0ecfc9c9cce5b28d63ead", "timestamp": "2026-06-14T09:37:41"}
+{"event": "completed_full_transcription", "file": "Nouvel enregistrement.m4a", "timestamp": "2026-06-14T09:38:24"}
+{"event": "completed_file", "file": "Nouvel enregistrement.m4a", "output": "Nouvel_enregistrement.txt", "archived_as": "Nouvel enregistrement.m4a", "timestamp": "2026-06-14T09:38:24"}
+{"event": "start_file", "file": "Nouvel enregistrement.m4a", "duration_minutes": 0.2, "hash": "5b3d472b55e0ecfc9c9cce5b28d63ead", "timestamp": "2026-06-14T10:05:47"}
+{"event": "completed_full_transcription", "file": "Nouvel enregistrement.m4a", "timestamp": "2026-06-14T10:06:32"}
+{"event": "completed_file", "file": "Nouvel enregistrement.m4a", "output": "Nouvel_enregistrement.txt", "archived_as": "Nouvel enregistrement.m4a", "timestamp": "2026-06-14T10:06:32"}
+{"event": "start_file", "file": "Nouvel enregistrement (1).m4a", "duration_minutes": 0.93, "hash": "b3441f2cd1cdf8e257099abfa8d2dae2", "timestamp": "2026-06-14T11:10:04"}
+{"event": "completed_full_transcription", "file": "Nouvel enregistrement (1).m4a", "timestamp": "2026-06-14T11:11:48"}
+{"event": "completed_file", "file": "Nouvel enregistrement (1).m4a", "output": "Nouvel_enregistrement_1.txt", "archived_as": "Nouvel enregistrement (1).m4a", "timestamp": "2026-06-14T11:11:48"}

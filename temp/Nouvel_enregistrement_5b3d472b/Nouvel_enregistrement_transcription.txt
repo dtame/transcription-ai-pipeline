@@ -1,0 +1,1 @@
+[00:00 -> 00:11] Ceci est un test d'enregistrement qui nous permet de valider que notre application de transcript est fonctionnelle et qu'il n'y a pas de régression.

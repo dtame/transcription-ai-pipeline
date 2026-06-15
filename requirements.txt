@@ -3,3 +3,4 @@ ctranslate2
 av
 tokenizers
 huggingface-hub
+requests

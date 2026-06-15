@@ -1,0 +1,6 @@
+SUPPORTED_EXTENSIONS = {".ogg", ".mp3", ".wav", ".m4a"}
+ALLOWED_LANGUAGES = {"en", "fr"}
+MODEL_NAME = "large-v3"
+DEVICE = "cpu"
+CHUNK_THRESHOLD_MINUTES = 60
+CHUNK_DURATION_MINUTES = 10
