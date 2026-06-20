@@ -43,3 +43,52 @@
 {"event": "start_file", "file": "Nouvel enregistrement (1).m4a", "duration_minutes": 0.93, "hash": "b3441f2cd1cdf8e257099abfa8d2dae2", "timestamp": "2026-06-14T11:10:04"}
 {"event": "completed_full_transcription", "file": "Nouvel enregistrement (1).m4a", "timestamp": "2026-06-14T11:11:48"}
 {"event": "completed_file", "file": "Nouvel enregistrement (1).m4a", "output": "Nouvel_enregistrement_1.txt", "archived_as": "Nouvel enregistrement (1).m4a", "timestamp": "2026-06-14T11:11:48"}
+{"event": "start_file", "file": "01-Nouvel enregistrement.m4a", "duration_minutes": 0.2, "hash": "5b3d472b55e0ecfc9c9cce5b28d63ead", "timestamp": "2026-06-17T16:24:46"}
+{"event": "completed_full_transcription", "file": "01-Nouvel enregistrement.m4a", "timestamp": "2026-06-17T16:25:31"}
+{"event": "completed_file", "file": "01-Nouvel enregistrement.m4a", "output": "01-Nouvel_enregistrement.txt", "archived_as": "01-Nouvel enregistrement.m4a", "timestamp": "2026-06-17T16:25:31"}
+{"event": "start_file", "file": "02-Nouvel enregistrement.m4a", "duration_minutes": 0.93, "hash": "b3441f2cd1cdf8e257099abfa8d2dae2", "timestamp": "2026-06-17T16:25:31"}
+{"event": "completed_full_transcription", "file": "02-Nouvel enregistrement.m4a", "timestamp": "2026-06-17T16:27:43"}
+{"event": "completed_file", "file": "02-Nouvel enregistrement.m4a", "output": "02-Nouvel_enregistrement.txt", "archived_as": "02-Nouvel enregistrement.m4a", "timestamp": "2026-06-17T16:27:43"}
+{"event": "start_file", "file": "01-Nouvel enregistrement.m4a", "duration_minutes": 0.2, "hash": "5b3d472b55e0ecfc9c9cce5b28d63ead", "timestamp": "2026-06-17T16:38:45"}
+{"event": "completed_file", "file": "01-Nouvel enregistrement.m4a", "output": "01-Nouvel_enregistrement.txt", "archived_as": "01-Nouvel enregistrement_2.m4a", "timestamp": "2026-06-17T16:38:45"}
+{"event": "start_file", "file": "02-Nouvel enregistrement.m4a", "duration_minutes": 0.93, "hash": "b3441f2cd1cdf8e257099abfa8d2dae2", "timestamp": "2026-06-17T16:38:45"}
+{"event": "completed_file", "file": "02-Nouvel enregistrement.m4a", "output": "02-Nouvel_enregistrement.txt", "archived_as": "02-Nouvel enregistrement_2.m4a", "timestamp": "2026-06-17T16:38:45"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T17:33:24"}
+{"message": "ERREUR transcription 01-Nouvel enregistrement.m4a : transcribe_audio_to_txt() missing 1 required positional argument: 'total_duration_seconds'", "timestamp": "2026-06-17T17:33:24"}
+{"message": "ERREUR transcription 02-Nouvel enregistrement (1).m4a : transcribe_audio_to_txt() missing 1 required positional argument: 'total_duration_seconds'", "timestamp": "2026-06-17T17:33:24"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T17:45:46"}
+{"message": "ERREUR transcription 01-Nouvel enregistrement.m4a : transcribe_audio_to_txt() missing 1 required positional argument: 'total_duration_seconds'", "timestamp": "2026-06-17T17:45:46"}
+{"message": "ERREUR transcription 02-Nouvel enregistrement (1).m4a : transcribe_audio_to_txt() missing 1 required positional argument: 'total_duration_seconds'", "timestamp": "2026-06-17T17:45:46"}
+{"type": "merge", "project": "demo_conference", "status": "skipped", "reason": "no_transcript_found", "timestamp": "2026-06-17T17:45:46"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T18:03:59"}
+{"type": "merge", "project": "demo_conference", "status": "completed", "output_file": "C:\\TranscriptionAI\\sortie\\demo_conference\\merged\\transcript_complet.txt", "files_merged": 2, "timestamp": "2026-06-17T18:06:16"}
+{"message": "Chunks IA générés pour demo_conference : 1", "timestamp": "2026-06-17T18:06:16"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T18:27:45"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T18:34:17"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T18:39:36"}
+{"message": "SKIP déjà transcrit : 01-Nouvel enregistrement.m4a", "timestamp": "2026-06-17T18:39:36"}
+{"message": "SKIP déjà transcrit : 02-Nouvel enregistrement (1).m4a", "timestamp": "2026-06-17T18:39:36"}
+{"type": "merge", "project": "demo_conference", "status": "completed", "output_file": "C:\\TranscriptionAI\\sortie\\demo_conference\\merged\\transcript_complet.txt", "files_merged": 2, "timestamp": "2026-06-17T18:39:36"}
+{"message": "Chunks IA générés pour demo_conference : 1", "timestamp": "2026-06-17T18:39:36"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T18:51:15"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T19:35:43"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T19:47:45"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T20:14:05"}
+{"type": "merge", "project": "demo_conference", "status": "completed", "output_file": "C:\\TranscriptionAI\\sortie\\demo_conference\\merged\\transcript_complet.txt", "files_merged": 2, "timestamp": "2026-06-17T20:16:58"}
+{"message": "Chunks IA générés pour demo_conference : 1", "timestamp": "2026-06-17T20:16:58"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T20:25:21"}
+{"type": "merge", "project": "demo_conference", "status": "completed", "output_file": "C:\\TranscriptionAI\\sortie\\demo_conference\\merged\\transcript_complet.txt", "files_merged": 2, "timestamp": "2026-06-17T20:27:49"}
+{"message": "Chunks IA générés pour demo_conference : 1", "timestamp": "2026-06-17T20:27:49"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T21:02:48"}
+{"message": "SKIP déjà transcrit : 01-Nouvel enregistrement.m4a", "timestamp": "2026-06-17T21:02:48"}
+{"message": "SKIP déjà transcrit : 02-Nouvel enregistrement (1).m4a", "timestamp": "2026-06-17T21:02:48"}
+{"type": "merge", "project": "demo_conference", "status": "completed", "output_file": "C:\\TranscriptionAI\\sortie\\demo_conference\\merged\\transcript_complet.txt", "files_merged": 2, "timestamp": "2026-06-17T21:02:48"}
+{"message": "Chunks IA générés pour demo_conference : 1", "timestamp": "2026-06-17T21:02:48"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T21:03:53"}
+{"message": "SKIP déjà transcrit : 01-Nouvel enregistrement.m4a", "timestamp": "2026-06-17T21:03:53"}
+{"message": "SKIP déjà transcrit : 02-Nouvel enregistrement (1).m4a", "timestamp": "2026-06-17T21:03:53"}
+{"type": "merge", "project": "demo_conference", "status": "completed", "output_file": "C:\\TranscriptionAI\\sortie\\demo_conference\\merged\\transcript_complet.txt", "files_merged": 2, "timestamp": "2026-06-17T21:03:53"}
+{"message": "Chunks IA générés pour demo_conference : 1", "timestamp": "2026-06-17T21:03:53"}
+{"message": "Projet détecté : demo_conference", "timestamp": "2026-06-17T21:49:49"}
+{"type": "merge", "project": "demo_conference", "status": "completed", "output_file": "C:\\TranscriptionAI\\sortie\\demo_conference\\merged\\transcript_complet.txt", "files_merged": 2, "timestamp": "2026-06-17T21:52:18"}
+{"message": "Chunks IA générés pour demo_conference : 1", "timestamp": "2026-06-17T21:52:18"}

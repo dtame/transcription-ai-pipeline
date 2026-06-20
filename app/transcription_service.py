@@ -2,6 +2,17 @@
 from faster_whisper import WhisperModel
 from pathlib import Path
 from datetime import datetime
+from app.project_manager import AudioProject, discover_projects
+from app.transcript_merger import merge_project_transcripts
+from app.chunk_service import create_project_chunks
+from app.ai_processor import process_project_chunks
+from app.correction_review_service import generate_review_files
+from app.correction_apply_service import apply_corrections
+from app.final_document_builder import build_final_document
+from app.docx_export_service import export_docx, export_publication_docx
+from app.pdf_export_service import export_pdf, export_publication_pdf
+from app.publication_template_service import build_publication_markdown
+from app.report_service import build_project_report
 import shutil
 import time
 import sys
@@ -40,6 +51,16 @@ from app.logger import log_event
 from app.sleep_guard import (
     prevent_sleep,
     allow_sleep_again
+)
+
+from app.project_state import (
+    load_project_state,
+    register_chunk,
+    save_project_state,
+    is_audio_already_transcribed,
+    mark_audio_processing,
+    mark_audio_transcribed,
+    mark_audio_failed
 )
 
 def transcribe_audio_to_txt(
@@ -96,13 +117,13 @@ def transcribe_audio_to_txt(
 
     return detected_language
 
-def transcribe_file(model: WhisperModel, original_file: Path) -> None:
+def transcribe_file(model: WhisperModel, original_file: Path, project: AudioProject) -> None:
     original_hash = file_hash(original_file)
-    safe_stem = sanitize_name(original_file.stem)
-    work_dir = TEMP_DIR / f"{safe_stem}_{original_hash[:8]}"
+    safe_stem = sanitize_name(original_file.stem)    
+    work_dir = project.temp_dir / f"{safe_stem}_{original_hash[:8]}"
     work_dir.mkdir(parents=True, exist_ok=True)
 
-    final_output = unique_path(SORTIE_DIR, safe_stem, ".txt")
+    final_output = project.transcripts_dir / f"{safe_stem}.txt"    
 
     try:
         print("\n" + "=" * 70)
@@ -112,7 +133,7 @@ def transcribe_file(model: WhisperModel, original_file: Path) -> None:
         print("=" * 70)
 
         if original_file.stat().st_size == 0:
-            reject_path = unique_path(REJETS_DIR, original_file.stem, original_file.suffix)
+            reject_path = unique_path(project.rejets_dir, original_file.stem, original_file.suffix)
             shutil.move(str(original_file), str(reject_path))
 
             log_event({
@@ -201,7 +222,7 @@ def transcribe_file(model: WhisperModel, original_file: Path) -> None:
                         final.write(partial.read_text(encoding="utf-8"))
                         final.write("\n")
 
-        archive_path = unique_path(ARCHIVES_DIR, original_file.stem, original_file.suffix)
+        archive_path = unique_path(project.archives_dir, original_file.stem, original_file.suffix)
         shutil.move(str(original_file), str(archive_path))
 
         log_event({
@@ -222,42 +243,104 @@ def transcribe_file(model: WhisperModel, original_file: Path) -> None:
 
         print(f"ERREUR : {original_file.name} : {e}")
 
-def run_transcription_pipeline() -> None:
-    if not DEPOT_DIR.exists():
-        print(f"ERREUR : le répertoire depot n'existe pas : {DEPOT_DIR}")
-        sys.exit(1)
 
-    SORTIE_DIR.mkdir(exist_ok=True)
-    TEMP_DIR.mkdir(exist_ok=True)
-    ARCHIVES_DIR.mkdir(exist_ok=True)
-    LOGS_DIR.mkdir(exist_ok=True)
-    REJETS_DIR.mkdir(exist_ok=True)
-
-    audio_files = [
-        file for file in DEPOT_DIR.iterdir()
-        if file.is_file() and file.suffix.lower() in SUPPORTED_EXTENSIONS
-    ]
-
-    if not audio_files:
-        print("Aucun fichier .ogg, .mp3 ou .wav trouvé dans depot.")
-        return
-
+def run_transcription_pipeline():
     prevent_sleep()
 
     try:
-        model = WhisperModel(MODEL_NAME, device=DEVICE)
+        model = WhisperModel(
+            MODEL_NAME,
+            device=DEVICE
+        )
 
-        for audio_file in audio_files:
-            transcribe_file(model, audio_file)
-    
-    except KeyboardInterrupt:
-        print("\nArrêt demandé par l'utilisateur avec CTRL+C.")
+        projects = discover_projects()
 
-        log_event({
-            "event": "manual_stop",
-            "message": "Traitement interrompu par l'utilisateur avec CTRL+C"
-        })
+        for project in projects:
+            log_event(f"Projet détecté : {project.name}")
 
+            state = load_project_state(project)
+
+            for audio_path in project.audio_files:
+                transcript_path = (
+                    project.transcripts_dir /
+                    f"{audio_path.stem}.txt"
+                )
+
+                audio_hash = file_hash(audio_path)
+
+                if is_audio_already_transcribed(
+                    state,
+                    audio_path,
+                    audio_hash,
+                    transcript_path
+                ):
+                    log_event(f"SKIP déjà transcrit : {audio_path.name}")
+                    continue
+
+                try:
+                    mark_audio_processing(
+                        state,
+                        audio_path,
+                        audio_hash
+                    )
+                    save_project_state(project, state)
+
+                    total_duration_seconds = get_audio_duration_seconds(audio_path)
+                    transcribe_audio_to_txt(
+                        model=model,
+                        audio_path=audio_path,
+                        output_path=transcript_path,
+                        total_duration_seconds=total_duration_seconds
+                    )
+
+                    mark_audio_transcribed(
+                        state,
+                        audio_path,
+                        audio_hash,
+                        transcript_path
+                    )
+                    save_project_state(project, state)
+
+                except Exception as e:
+                    mark_audio_failed(
+                        state,
+                        audio_path,
+                        audio_hash,
+                        e
+                    )
+                    save_project_state(project, state)
+
+                    log_event(
+                        f"ERREUR transcription {audio_path.name} : {e}"
+                    )
+
+            merge_project_transcripts(project)
+            chunk_paths = create_project_chunks(project)
+            
+
+            for chunk_path in chunk_paths:
+                register_chunk(
+                    state,
+                    chunk_path.name
+            )
+
+            save_project_state(
+                project,
+                state
+            )
+
+            process_project_chunks(project)
+            generate_review_files(project)
+            apply_corrections(project.name)
+            build_final_document(project.name)
+            export_docx(project.name)
+            export_pdf(project.name)
+            build_publication_markdown(project.name)
+            export_publication_docx(project.name)
+            export_publication_pdf(project.name)
+            build_project_report(project.name)
+            log_event(
+                f"Chunks IA générés pour {project.name} : {len(chunk_paths)}"
+            )
     finally:
         allow_sleep_again()
-

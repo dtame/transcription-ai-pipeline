@@ -27,7 +27,9 @@ def merge_segments(segments: list[dict]) -> list[dict]:
             continue
 
         text = clean_text(segment["text"])
-
+        from book.semantic_cleaner import clean_semantically
+        text = clean_semantically(text)
+        
         if not text:
             continue
 

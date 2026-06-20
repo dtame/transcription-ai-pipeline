@@ -4,3 +4,6 @@ av
 tokenizers
 huggingface-hub
 requests
+pyyaml
+python-docx
+reportlab
