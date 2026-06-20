@@ -29,11 +29,13 @@ STEP_NAMES = [
     "correction_apply",
     "final_document",
     "harmonization",
+    "cover_generation",
     "publication_markdown",
     "export_docx",
     "export_pdf",
     "publication_docx",
     "publication_pdf",
+    "client_export",
     "report",
 ]
 
@@ -188,9 +190,11 @@ def run_project_pipeline(project: AudioProject, model=None) -> dict:
     from app.correction_apply_service import apply_corrections
     from app.final_document_builder import build_final_document
     from app.global_editor_service import harmonize_document
+    from app.cover_generation_service import generate_cover
     from app.publication_template_service import build_publication_markdown
     from app.docx_export_service import export_docx, export_publication_docx
     from app.pdf_export_service import export_pdf, export_publication_pdf
+    from app.client_export_service import export_client_zip
     from app.report_service import build_project_report
 
     def step_merge():
@@ -218,6 +222,9 @@ def run_project_pipeline(project: AudioProject, model=None) -> dict:
     def step_harmonize():
         harmonize_document(project.name)
 
+    def step_cover():
+        generate_cover(project.name)
+
     def step_pub_md():
         build_publication_markdown(project.name)
 
@@ -233,6 +240,9 @@ def run_project_pipeline(project: AudioProject, model=None) -> dict:
     def step_pub_pdf():
         export_publication_pdf(project.name)
 
+    def step_client_export():
+        export_client_zip(project.name)
+
     def step_report():
         _build_report_with_execution(project.name, started_at, time.time() - t0)
 
@@ -244,11 +254,13 @@ def run_project_pipeline(project: AudioProject, model=None) -> dict:
         ("correction_apply",     step_apply),
         ("final_document",       step_final),
         ("harmonization",        step_harmonize),
+        ("cover_generation",     step_cover),
         ("publication_markdown", step_pub_md),
         ("export_docx",          step_export_docx),
         ("export_pdf",           step_export_pdf),
         ("publication_docx",     step_pub_docx),
         ("publication_pdf",      step_pub_pdf),
+        ("client_export",        step_client_export),
         ("report",               step_report),
     ]
 
@@ -301,15 +313,19 @@ def run_exports_only(project: AudioProject) -> dict:
     print(f"  Exports : {project.name}")
     print(f"{'=' * 50}")
 
+    from app.cover_generation_service import generate_cover
     from app.publication_template_service import build_publication_markdown
     from app.docx_export_service import export_publication_docx
     from app.pdf_export_service import export_publication_pdf
+    from app.client_export_service import export_client_zip
     from app.report_service import build_project_report
 
     export_steps = [
+        ("cover_generation",     lambda: generate_cover(project.name)),
         ("publication_markdown", lambda: build_publication_markdown(project.name)),
         ("publication_docx",     lambda: export_publication_docx(project.name)),
         ("publication_pdf",      lambda: export_publication_pdf(project.name)),
+        ("client_export",        lambda: export_client_zip(project.name)),
         ("report",               lambda: build_project_report(project.name)),
     ]
 

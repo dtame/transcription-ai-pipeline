@@ -594,6 +594,24 @@ def _settings_signature(settings: dict) -> str:
     ).hexdigest()
 
 
+def _add_image_cover_docx(
+    doc: Document, cover_path: Path, settings: dict
+) -> None:
+    """Insère une image comme page de couverture dans le document Word."""
+    page_size_key = settings.get("page_size", "letter")
+    page_width, _ = _PAGE_SIZES_DOCX.get(page_size_key, _PAGE_SIZES_DOCX["letter"])
+    page_margin = Inches(_PAGE_MARGINS_DOCX.get(page_size_key, 1.0))
+
+    img_width = page_width - 2 * page_margin
+
+    para = doc.add_paragraph()
+    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    para.paragraph_format.space_before = Pt(0)
+    para.paragraph_format.space_after = Pt(0)
+    run = para.add_run()
+    run.add_picture(str(cover_path), width=img_width)
+
+
 def export_publication_docx(project_name: str) -> Path | None:
     """
     Génère final/document_publication.docx.
@@ -632,8 +650,13 @@ def export_publication_docx(project_name: str) -> Path | None:
     )
     settings = resolve_publication_settings(project_name, final_content)
 
+    from app.cover_generation_service import get_cover_path
+
+    cover_path = get_cover_path(project_name)
+    cover_sig = _file_hash(cover_path) if cover_path else "none"
+
     pub_md_sig = _file_hash(pub_md_path)
-    combined_sig = f"{pub_md_sig}:{_settings_signature(settings)}"
+    combined_sig = f"{pub_md_sig}:{_settings_signature(settings)}:{cover_sig}"
 
     state = load_project_state(project_name)
     pub_docx_state = state.get("publication", {}).get("docx", {})
@@ -671,7 +694,10 @@ def export_publication_docx(project_name: str) -> Path | None:
 
     # Couverture
     if settings.get("include_cover", True):
-        _add_cover_page_docx(doc, settings, font_cfg)
+        if cover_path:
+            _add_image_cover_docx(doc, cover_path, settings)
+        else:
+            _add_cover_page_docx(doc, settings, font_cfg)
         doc.add_page_break()
 
     # Table des matières

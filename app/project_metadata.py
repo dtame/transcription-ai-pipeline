@@ -45,6 +45,17 @@ VALID_FONT_STYLES = {"auto", "classic", "modern", "elegant", "readable"}
 
 VALID_COVER_IMAGE_SOURCES = {"user", "generated", "free_stock", "none"}
 
+VALID_COVER_GENERATION_MODES = {"auto", "image", "typography", "none"}
+
+VALID_COVER_STYLES = {
+    "auto",
+    "editorial_realistic",
+    "spiritual",
+    "professional",
+    "modern",
+    "natural",
+}
+
 DEFAULTS: dict = {
     # Identité du document
     "title": "",
@@ -62,6 +73,8 @@ DEFAULTS: dict = {
     "page_size": "auto",
     "cover_image": "auto",
     "cover_image_source": "none",
+    "cover_generation_mode": "auto",
+    "cover_style": "auto",
     "print_ready": True,
     "theme": "auto",
     "font_style": "auto",
@@ -237,6 +250,19 @@ def load_project_metadata(project_name: str) -> dict:
     meta["cover_image_source"] = _validate_enum(
         raw, "cover_image_source", VALID_COVER_IMAGE_SOURCES, "none"
     )
+    meta["cover_generation_mode"] = _validate_enum(
+        raw, "cover_generation_mode", VALID_COVER_GENERATION_MODES, "auto"
+    )
+    meta["cover_style"] = _validate_enum(
+        raw, "cover_style", VALID_COVER_STYLES, "auto"
+    )
+    # Résoudre cover_style "auto" → valeur par défaut de config
+    if meta["cover_style"] == "auto":
+        try:
+            from app import config as _cfg
+            meta["cover_style"] = getattr(_cfg, "COVER_STYLE", "editorial_realistic")
+        except ImportError:
+            meta["cover_style"] = "editorial_realistic"
 
     # cover_image : chemin relatif ou auto/none
     cover_raw = raw.get("cover_image", "auto")

@@ -43,6 +43,12 @@ def ensure_state_structure(state: dict) -> None:
     if "harmonization" not in state:
         state["harmonization"] = {}
 
+    if "cover" not in state:
+        state["cover"] = {}
+
+    if "metadata" not in state:
+        state["metadata"] = {}
+
 def save_project_state(project_name: str, state: dict) -> None:
     state_path = get_project_state_path(project_name)
     state_path.parent.mkdir(parents=True, exist_ok=True)
@@ -161,3 +167,23 @@ def is_chunk_done(
         .get("status")
         == "done"
     )
+
+
+def update_metadata_state(project_name: str, yaml_path: Path) -> None:
+    """
+    Met à jour la section 'metadata' dans project_state.json après
+    une modification de project.yaml depuis l'interface.
+
+    Pose les indicateurs de reconstruction pour la publication,
+    la couverture et le ZIP client.
+    """
+    state = load_project_state(project_name)
+    state["metadata"] = {
+        "path": str(yaml_path),
+        "updated_at": datetime.now().isoformat(timespec="seconds"),
+        "last_editor": "streamlit",
+        "needs_publication_rebuild": True,
+        "needs_cover_rebuild": True,
+        "needs_client_zip_rebuild": True,
+    }
+    save_project_state(project_name, state)

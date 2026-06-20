@@ -4,6 +4,7 @@ import json
 
 from app.paths import SORTIE_DIR
 from app.project_state import load_project_state
+from app.project_metadata import load_project_metadata
 
 
 def _build_publication_report(publication_state: dict) -> dict:
@@ -55,6 +56,19 @@ def _build_publication_report(publication_state: dict) -> dict:
     }
 
 
+def _build_cover_report(cover_state: dict) -> dict:
+    """Construit la section cover du rapport."""
+    return {
+        "generated": cover_state.get("generated", False),
+        "provider":  cover_state.get("provider", ""),
+        "style":     cover_state.get("style", ""),
+        "type":      cover_state.get("type", ""),
+        "source":    cover_state.get("source", ""),
+        "path":      cover_state.get("path"),
+        "updated_at": cover_state.get("updated_at"),
+    }
+
+
 def build_project_report(project_name: str) -> Path:
     state = load_project_state(project_name)
 
@@ -67,6 +81,14 @@ def build_project_report(project_name: str) -> Path:
     exports_state = state.get("exports", {})
     publication_state = state.get("publication", {})
     harmonization_state = state.get("harmonization", {})
+    cover_state = state.get("cover", {})
+    client_export_state = state.get("client_export", {})
+
+    # Métadonnées actuelles depuis project.yaml (source de vérité)
+    try:
+        _current_meta = load_project_metadata(project_name)
+    except Exception:
+        _current_meta = {}
 
     audio_total = len(files_state)
 
@@ -105,6 +127,19 @@ def build_project_report(project_name: str) -> Path:
         "project": project_name,
         "generated_at": datetime.now().isoformat(timespec="seconds"),
 
+        "metadata": {
+            "title":         _current_meta.get("title", ""),
+            "subtitle":      _current_meta.get("subtitle", ""),
+            "author":        _current_meta.get("author", ""),
+            "organization":  _current_meta.get("organization", ""),
+            "language":      _current_meta.get("language", ""),
+            "date":          _current_meta.get("date", ""),
+            "version":       _current_meta.get("version", ""),
+            "document_type": _current_meta.get("document_type", ""),
+            "template":      _current_meta.get("template", ""),
+            "theme":         _current_meta.get("theme", ""),
+        },
+
         "audio": {
             "total": audio_total,
             "transcribed": audio_transcribed,
@@ -141,12 +176,20 @@ def build_project_report(project_name: str) -> Path:
 
         "publication": _build_publication_report(publication_state),
 
+        "cover": _build_cover_report(cover_state),
+
         "harmonization": {
             "enabled": harmonization_state.get("enabled", False),
             "mode": harmonization_state.get("mode", ""),
             "generated": harmonization_state.get("generated", False),
             "path": harmonization_state.get("path"),
             "updated_at": harmonization_state.get("updated_at"),
+        },
+
+        "client_export": {
+            "generated": client_export_state.get("generated", False),
+            "path":      client_export_state.get("path"),
+            "updated_at": client_export_state.get("updated_at"),
         },
     }
 

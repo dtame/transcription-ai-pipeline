@@ -502,6 +502,461 @@ if st.session_state.selected_project:
             )
             st.rerun()
 
+    st.divider()
+
+    # ── Métadonnées du projet ─────────────────────────────────────────────────
+
+    st.subheader("Métadonnées du projet")
+
+    from app.metadata_editor_service import (
+        ensure_project_yaml,
+        load_editable_metadata,
+        save_editable_metadata,
+        validate_metadata,
+        keywords_to_string,
+        string_to_keywords,
+        option_index,
+        get_yaml_path,
+        DOCTYPE_OPTIONS,
+        TEMPLATE_OPTIONS,
+        THEME_OPTIONS,
+        PAGESIZE_OPTIONS,
+        PUBFORMAT_OPTIONS,
+        COVERMODE_OPTIONS,
+        COVERSTYLE_OPTIONS,
+        LANGUAGE_OPTIONS,
+    )
+
+    # Boutons hors formulaire
+    col_meta_ext1, col_meta_ext2, col_meta_ext3, col_meta_ext4 = st.columns(4)
+
+    with col_meta_ext1:
+        if st.button(
+            "🔄 Recharger les métadonnées",
+            key=f"meta_reload_{pname}",
+            use_container_width=True,
+            help="Recharge les valeurs depuis project.yaml (les modifications non enregistrées seront perdues).",
+        ):
+            # Purge les valeurs de session pour ce projet afin de forcer
+            # le rechargement depuis le fichier YAML
+            _meta_keys_to_clear = [
+                k for k in st.session_state
+                if k.startswith(f"meta_{pname}_")
+            ]
+            for _mk in _meta_keys_to_clear:
+                del st.session_state[_mk]
+            st.cache_data.clear()
+            st.rerun()
+
+    with col_meta_ext2:
+        _yaml_file = get_yaml_path(pname)
+        if st.button(
+            "📄 Ouvrir project.yaml",
+            key=f"meta_open_yaml_{pname}",
+            disabled=not _yaml_file.exists(),
+            use_container_width=True,
+            help="Ouvre project.yaml dans l'éditeur par défaut.",
+        ):
+            open_path(_yaml_file)
+
+    with col_meta_ext3:
+        if st.button(
+            "📦 Régénérer publication",
+            key=f"meta_regen_pub_{pname}",
+            disabled=busy,
+            use_container_width=True,
+            help="Régénère la publication (MD, DOCX, PDF) avec les métadonnées actuelles.",
+        ):
+            from app.production_service import process_exports_only_project
+            _run_action(
+                f"Régénération publication {pname}",
+                lambda name=pname: process_exports_only_project(name),
+            )
+            st.rerun()
+
+    with col_meta_ext4:
+        if st.button(
+            "📦 Régénérer ZIP Client",
+            key=f"meta_regen_zip_{pname}",
+            disabled=busy,
+            use_container_width=True,
+            help="Régénère le ZIP Client avec les métadonnées actuelles.",
+        ):
+            from app.client_export_service import export_client_zip
+            _run_action(
+                f"Régénération ZIP Client {pname}",
+                lambda name=pname: export_client_zip(name, force=True),
+            )
+            st.rerun()
+
+    # Indiquer si une reconstruction est recommandée
+    from app.project_state import load_project_state as _lps
+    _ps_meta = _lps(pname).get("metadata", {})
+    if _ps_meta.get("needs_publication_rebuild") or _ps_meta.get("needs_cover_rebuild"):
+        st.info(
+            "ℹ️ Les métadonnées ont été modifiées. "
+            "Pensez à régénérer la publication, la couverture et le ZIP Client."
+        )
+
+    # Charger les métadonnées éditables
+    _meta = load_editable_metadata(pname)
+    _kw_str = keywords_to_string(_meta.get("keywords", []))
+
+    # ── Formulaire ────────────────────────────────────────────────────────────
+    with st.form(f"metadata_form_{pname}"):
+
+        # A. Identification
+        st.markdown("##### A. Identification")
+        _col_a1, _col_a2 = st.columns(2)
+        with _col_a1:
+            _f_title = st.text_input(
+                "Titre *",
+                value=_meta.get("title", ""),
+                key=f"meta_{pname}_title",
+                help="Titre principal du document.",
+            )
+            _f_subtitle = st.text_input(
+                "Sous-titre",
+                value=_meta.get("subtitle", ""),
+                key=f"meta_{pname}_subtitle",
+            )
+        with _col_a2:
+            _f_author = st.text_input(
+                "Auteur",
+                value=_meta.get("author", ""),
+                key=f"meta_{pname}_author",
+                help=(
+                    "L'auteur est le nom de la personne, organisation ou client "
+                    "propriétaire du contenu.  \n"
+                    "Exemples : Pasteur Jean Dupont, Église Espérance, "
+                    "ABC Formation, Marie Tremblay, Service Communication."
+                ),
+            )
+            _f_organization = st.text_input(
+                "Organisation",
+                value=_meta.get("organization", ""),
+                key=f"meta_{pname}_organization",
+            )
+
+        _col_a3, _col_a4, _col_a5 = st.columns(3)
+        with _col_a3:
+            _f_date = st.text_input(
+                "Date",
+                value=_meta.get("date", ""),
+                key=f"meta_{pname}_date",
+                help="Format libre ou YYYY-MM-DD.",
+            )
+        with _col_a4:
+            _f_version = st.text_input(
+                "Version",
+                value=_meta.get("version", "1.0"),
+                key=f"meta_{pname}_version",
+            )
+        with _col_a5:
+            _f_language = st.selectbox(
+                "Langue",
+                options=LANGUAGE_OPTIONS,
+                index=option_index(LANGUAGE_OPTIONS, _meta.get("language", "fr")),
+                key=f"meta_{pname}_language",
+            )
+
+        st.divider()
+
+        # B. Publication
+        st.markdown("##### B. Publication")
+        _col_b1, _col_b2, _col_b3, _col_b4, _col_b5 = st.columns(5)
+        with _col_b1:
+            _f_doctype = st.selectbox(
+                "Type de document",
+                options=DOCTYPE_OPTIONS,
+                index=option_index(DOCTYPE_OPTIONS, _meta.get("document_type", "auto")),
+                key=f"meta_{pname}_document_type",
+            )
+        with _col_b2:
+            _f_template = st.selectbox(
+                "Gabarit",
+                options=TEMPLATE_OPTIONS,
+                index=option_index(TEMPLATE_OPTIONS, _meta.get("template", "auto")),
+                key=f"meta_{pname}_template",
+            )
+        with _col_b3:
+            _f_theme = st.selectbox(
+                "Thème",
+                options=THEME_OPTIONS,
+                index=option_index(THEME_OPTIONS, _meta.get("theme", "auto")),
+                key=f"meta_{pname}_theme",
+            )
+        with _col_b4:
+            _f_pagesize = st.selectbox(
+                "Format de page",
+                options=PAGESIZE_OPTIONS,
+                index=option_index(PAGESIZE_OPTIONS, _meta.get("page_size", "auto")),
+                key=f"meta_{pname}_page_size",
+            )
+        with _col_b5:
+            _f_pubformat = st.selectbox(
+                "Format de publication",
+                options=PUBFORMAT_OPTIONS,
+                index=option_index(PUBFORMAT_OPTIONS, _meta.get("publication_format", "auto")),
+                key=f"meta_{pname}_publication_format",
+            )
+
+        st.divider()
+
+        # C. Couverture
+        st.markdown("##### C. Couverture")
+        _col_c1, _col_c2, _col_c3 = st.columns(3)
+        with _col_c1:
+            _f_covermode = st.selectbox(
+                "Mode de génération",
+                options=COVERMODE_OPTIONS,
+                index=option_index(COVERMODE_OPTIONS, _meta.get("cover_generation_mode", "auto")),
+                key=f"meta_{pname}_cover_generation_mode",
+            )
+        with _col_c2:
+            _f_coverstyle = st.selectbox(
+                "Style de couverture",
+                options=COVERSTYLE_OPTIONS,
+                index=option_index(COVERSTYLE_OPTIONS, _meta.get("cover_style", "editorial_realistic")),
+                key=f"meta_{pname}_cover_style",
+            )
+        with _col_c3:
+            _f_coverimage = st.text_input(
+                "Image de couverture",
+                value=_meta.get("cover_image", "auto"),
+                key=f"meta_{pname}_cover_image",
+                help="Chemin relatif vers une image personnalisée, ou « auto ».",
+            )
+
+        st.divider()
+
+        # D. Options de publication
+        st.markdown("##### D. Options de publication")
+        _col_d1, _col_d2, _col_d3, _col_d4 = st.columns(4)
+        with _col_d1:
+            _f_incl_cover   = st.checkbox("Couverture",        value=_meta.get("include_cover", True),        key=f"meta_{pname}_include_cover")
+            _f_incl_toc     = st.checkbox("Table des matières", value=_meta.get("include_toc", True),          key=f"meta_{pname}_include_toc")
+        with _col_d2:
+            _f_incl_pages   = st.checkbox("Numéros de page",   value=_meta.get("include_page_numbers", True), key=f"meta_{pname}_include_page_numbers")
+            _f_incl_headers = st.checkbox("En-têtes",          value=_meta.get("include_headers", True),      key=f"meta_{pname}_include_headers")
+        with _col_d3:
+            _f_incl_footers = st.checkbox("Pieds de page",     value=_meta.get("include_footers", True),      key=f"meta_{pname}_include_footers")
+            _f_incl_date    = st.checkbox("Date",              value=_meta.get("include_date", True),         key=f"meta_{pname}_include_date")
+        with _col_d4:
+            _f_incl_author  = st.checkbox("Auteur",            value=_meta.get("include_author", True),       key=f"meta_{pname}_include_author")
+            _f_incl_org     = st.checkbox("Organisation",      value=_meta.get("include_organization", True), key=f"meta_{pname}_include_organization")
+
+        st.divider()
+
+        # E. Informations avancées
+        with st.expander("E. Informations avancées", expanded=False):
+            _f_description = st.text_area(
+                "Description",
+                value=_meta.get("description", ""),
+                key=f"meta_{pname}_description",
+                height=80,
+            )
+            _f_keywords = st.text_input(
+                "Mots-clés (séparés par des virgules)",
+                value=_kw_str,
+                key=f"meta_{pname}_keywords",
+                help="Exemple : foi, enseignement, leadership",
+            )
+            _col_e1, _col_e2 = st.columns(2)
+            with _col_e1:
+                _f_audience  = st.text_input("Public cible",   value=_meta.get("audience", ""),   key=f"meta_{pname}_audience")
+                _f_category  = st.text_input("Catégorie",      value=_meta.get("category", ""),   key=f"meta_{pname}_category")
+                _f_copyright = st.text_input("Copyright",      value=_meta.get("copyright", ""),  key=f"meta_{pname}_copyright")
+                _f_license   = st.text_input("Licence",        value=_meta.get("license", ""),    key=f"meta_{pname}_license")
+            with _col_e2:
+                _f_publisher = st.text_input("Éditeur",        value=_meta.get("publisher", ""),  key=f"meta_{pname}_publisher")
+                _f_location  = st.text_input("Lieu",           value=_meta.get("location", ""),   key=f"meta_{pname}_location")
+                _f_isbn      = st.text_input("ISBN",           value=_meta.get("isbn", ""),       key=f"meta_{pname}_isbn")
+
+        # ── Bouton de sauvegarde ──────────────────────────────────────────────
+        _meta_submitted = st.form_submit_button(
+            "💾 Enregistrer les métadonnées",
+            disabled=busy,
+            use_container_width=True,
+        )
+
+    # ── Traitement du formulaire ──────────────────────────────────────────────
+    if _meta_submitted:
+        _new_meta = {
+            "title":                _f_title.strip(),
+            "subtitle":             _f_subtitle.strip(),
+            "author":               _f_author.strip(),
+            "organization":         _f_organization.strip(),
+            "language":             _f_language,
+            "date":                 _f_date.strip(),
+            "version":              _f_version.strip(),
+            "document_type":        _f_doctype,
+            "template":             _f_template,
+            "theme":                _f_theme,
+            "page_size":            _f_pagesize,
+            "publication_format":   _f_pubformat,
+            "cover_generation_mode": _f_covermode,
+            "cover_style":          _f_coverstyle,
+            "cover_image":          _f_coverimage.strip(),
+            "include_cover":         _f_incl_cover,
+            "include_toc":           _f_incl_toc,
+            "include_page_numbers":  _f_incl_pages,
+            "include_headers":       _f_incl_headers,
+            "include_footers":       _f_incl_footers,
+            "include_date":          _f_incl_date,
+            "include_author":        _f_incl_author,
+            "include_organization":  _f_incl_org,
+            "description":           _f_description.strip(),
+            "keywords":              string_to_keywords(_f_keywords),
+            "audience":              _f_audience.strip(),
+            "category":              _f_category.strip(),
+            "copyright":             _f_copyright.strip(),
+            "license":               _f_license.strip(),
+            "publisher":             _f_publisher.strip(),
+            "location":              _f_location.strip(),
+            "isbn":                  _f_isbn.strip(),
+        }
+
+        _meta_ok, _meta_errors = validate_metadata(_new_meta)
+        if not _meta_ok:
+            for _me in _meta_errors:
+                st.error(f"❌ {_me}")
+        else:
+            try:
+                _saved_path = save_editable_metadata(pname, _new_meta)
+                from app.project_state import update_metadata_state
+                update_metadata_state(pname, _saved_path)
+                st.success(
+                    f"✅ Métadonnées enregistrées.  \n"
+                    f"📄 Fichier : `{_saved_path}`"
+                )
+                st.cache_data.clear()
+                st.rerun()
+            except Exception as _me:
+                st.error(f"❌ Erreur lors de la sauvegarde : {_me}")
+
+    st.divider()
+
+    # ── Couverture ───────────────────────────────────────────────────────────
+
+    st.subheader("Couverture")
+
+    _cover_dir = SORTIE_DIR / pname / "cover"
+    _cover_jpg = _cover_dir / "cover.jpg"
+    _cover_meta_path = _cover_dir / "cover_metadata.json"
+
+    _cover_meta: dict = {}
+    if _cover_meta_path.exists():
+        try:
+            import json as _json
+            _cover_meta = _json.loads(_cover_meta_path.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+
+    col_cov1, col_cov2 = st.columns([1, 2])
+
+    with col_cov1:
+        if _cover_jpg.exists() and _cover_jpg.stat().st_size > 100:
+            st.image(str(_cover_jpg), caption="Couverture", use_container_width=True)
+        else:
+            st.info("Aucune couverture générée.")
+
+    with col_cov2:
+        if _cover_meta:
+            st.markdown(f"**Type** : {_cover_meta.get('type', '—')}")
+            st.markdown(f"**Style** : {_cover_meta.get('style', '—')}")
+            st.markdown(f"**Source** : {_cover_meta.get('source', '—')}")
+            st.markdown(f"**Moteur** : {_cover_meta.get('provider', '—')}")
+            st.markdown(f"**Générée le** : {_cover_meta.get('generated_at', '—')}")
+        else:
+            st.caption("Aucune métadonnée de couverture disponible.")
+
+        # Actions sur la couverture
+        col_ca1, col_ca2, col_ca3, col_ca4 = st.columns(4)
+
+        with col_ca1:
+            if st.button(
+                "🖼 Générer couverture",
+                key=f"cover_gen_{pname}",
+                disabled=busy,
+                use_container_width=True,
+                help="Génère automatiquement une couverture pour ce projet.",
+            ):
+                from app.cover_generation_service import generate_cover
+                _run_action(
+                    f"Génération couverture {pname}",
+                    lambda name=pname: generate_cover(name),
+                )
+                st.rerun()
+
+        with col_ca2:
+            if st.button(
+                "🔄 Régénérer couverture",
+                key=f"cover_regen_{pname}",
+                disabled=busy,
+                use_container_width=True,
+                help="Force la régénération même si la couverture est à jour.",
+            ):
+                from app.cover_generation_service import generate_cover
+                _run_action(
+                    f"Régénération couverture {pname}",
+                    lambda name=pname: generate_cover(name, force=True),
+                )
+                st.rerun()
+
+        with col_ca3:
+            if st.button(
+                "📂 Ouvrir couverture",
+                key=f"cover_open_{pname}",
+                disabled=not _cover_jpg.exists(),
+                use_container_width=True,
+                help="Ouvre cover.jpg avec l'application par défaut.",
+            ):
+                open_path(_cover_jpg)
+
+        with col_ca4:
+            if st.button(
+                "🗑 Supprimer couverture",
+                key=f"cover_del_{pname}",
+                disabled=not _cover_jpg.exists(),
+                use_container_width=True,
+                help="Supprime la couverture générée.",
+            ):
+                from app.cover_generation_service import delete_cover
+                delete_cover(pname)
+                st.cache_data.clear()
+                st.rerun()
+
+    # Upload utilisateur
+    st.markdown("**Importer une image personnalisée**")
+    _uploaded = st.file_uploader(
+        "Choisir une image (jpg, jpeg, png)",
+        type=["jpg", "jpeg", "png"],
+        key=f"cover_upload_{pname}",
+        help=(
+            "L'image sera copiée dans depot/<projet>/assets/ "
+            "et utilisée comme couverture."
+        ),
+    )
+    if _uploaded is not None:
+        import tempfile as _tempfile
+        _suffix = Path(_uploaded.name).suffix.lower()
+        with _tempfile.NamedTemporaryFile(delete=False, suffix=_suffix) as _tmp:
+            _tmp.write(_uploaded.read())
+            _tmp_path = Path(_tmp.name)
+        try:
+            from app.cover_generation_service import import_user_cover
+            _dest = import_user_cover(pname, _tmp_path)
+            st.success(f"Image importée : {_dest.name}")
+            st.cache_data.clear()
+            st.rerun()
+        except Exception as _exc:
+            st.error(f"Erreur import : {_exc}")
+        finally:
+            _tmp_path.unlink(missing_ok=True)
+
+    st.divider()
+
     # ── Fichiers générés ─────────────────────────────────────────────────────
 
     st.subheader("Fichiers générés")
@@ -536,6 +991,93 @@ if st.session_state.selected_project:
                     disabled=True,
                     use_container_width=True,
                 )
+
+    st.divider()
+
+    # ── Livraison Client ──────────────────────────────────────────────────────
+
+    st.subheader("Livraison Client")
+
+    from app.client_export_service import export_client_zip, get_client_export_info
+
+    _ce_info = get_client_export_info(pname)
+
+    if _ce_info["exists"]:
+        st.success(f"ZIP Client disponible : `{_ce_info['zip_name']}`")
+
+        col_ce_m1, col_ce_m2, col_ce_m3, col_ce_m4 = st.columns(4)
+        col_ce_m1.metric("Nom",               _ce_info["zip_name"])
+        col_ce_m2.metric("Date de génération", _ce_info["generated_at"] or "—")
+        col_ce_m3.metric("Taille",             _ce_info["size_human"])
+        col_ce_m4.metric("Fichiers",           str(_ce_info["files_count"]))
+    else:
+        st.info("Le ZIP Client n'a pas encore été généré pour ce projet.")
+
+    col_ce1, col_ce2, col_ce3, col_ce4 = st.columns(4)
+
+    with col_ce1:
+        if st.button(
+            "📦 Exporter ZIP Client",
+            key=f"ce_export_{pname}",
+            disabled=busy,
+            use_container_width=True,
+            help="Génère le ZIP Client (document_publication.pdf + .docx + report.json + README_CLIENT.txt).",
+        ):
+            _run_action(
+                f"Export ZIP Client {pname}",
+                lambda name=pname: export_client_zip(name),
+            )
+            st.rerun()
+
+    with col_ce2:
+        if st.button(
+            "🔄 Régénérer ZIP Client",
+            key=f"ce_regen_{pname}",
+            disabled=busy,
+            use_container_width=True,
+            help="Force la reconstruction du ZIP même si les fichiers sont inchangés.",
+        ):
+            _run_action(
+                f"Régénération ZIP Client {pname}",
+                lambda name=pname: export_client_zip(name, force=True),
+            )
+            st.rerun()
+
+    with col_ce3:
+        if st.button(
+            "📂 Ouvrir ZIP Client",
+            key=f"ce_open_zip_{pname}",
+            disabled=not _ce_info["exists"],
+            use_container_width=True,
+            help="Ouvre le fichier ZIP avec l'application par défaut.",
+        ):
+            if _ce_info["zip_path"]:
+                open_path(_ce_info["zip_path"])
+
+    with col_ce4:
+        _ce_folder = SORTIE_DIR / pname / "client"
+        if st.button(
+            "📁 Ouvrir dossier client",
+            key=f"ce_open_dir_{pname}",
+            disabled=not _ce_folder.exists(),
+            use_container_width=True,
+            help="Ouvre le dossier sortie/<projet>/client/ dans l'explorateur.",
+        ):
+            open_path(_ce_folder)
+
+    if _ce_info["exists"] and _ce_info["files"]:
+        with st.expander("Afficher contenu ZIP", expanded=False):
+            for _fname in _ce_info["files"]:
+                st.write(f"- {_fname}")
+
+    _pdf_ok  = (SORTIE_DIR / pname / "final" / "document_publication.pdf").exists()
+    _docx_ok = (SORTIE_DIR / pname / "final" / "document_publication.docx").exists()
+    if not _pdf_ok:
+        st.warning("Export publication PDF manquant.")
+    if not _docx_ok:
+        st.warning("Export publication DOCX manquant.")
+
+    st.divider()
 
     # ── Erreurs du projet ────────────────────────────────────────────────────
 

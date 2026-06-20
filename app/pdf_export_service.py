@@ -5,7 +5,7 @@ import json
 import re
 
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, PageBreak, HRFlowable,
+    SimpleDocTemplate, Paragraph, Spacer, PageBreak, HRFlowable, Image as RLImage,
 )
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.pagesizes import A4, letter
@@ -674,6 +674,28 @@ def _add_cover_story(
     story.append(PageBreak())
 
 
+def _add_image_cover_story(
+    story: list,
+    cover_path: Path,
+    pagesize: tuple,
+) -> None:
+    """Insère une image pleine page comme couverture dans la story ReportLab."""
+    page_width, page_height = pagesize
+    try:
+        img = RLImage(
+            str(cover_path),
+            width=page_width,
+            height=page_height,
+            kind="proportional",
+        )
+        img.hAlign = "CENTER"
+        story.append(img)
+    except Exception:
+        # Image illisible → on ignore silencieusement la couverture image
+        pass
+    story.append(PageBreak())
+
+
 def _add_toc_story(
     story: list,
     headings: list[dict],
@@ -828,8 +850,13 @@ def export_publication_pdf(project_name: str) -> Path | None:
     )
     settings = resolve_publication_settings(project_name, final_content)
 
+    from app.cover_generation_service import get_cover_path
+
+    cover_path = get_cover_path(project_name)
+    cover_sig = _file_hash(cover_path) if cover_path else "none"
+
     pub_md_sig = _file_hash(pub_md_path)
-    combined_sig = f"{pub_md_sig}:{_pub_settings_signature(settings)}"
+    combined_sig = f"{pub_md_sig}:{_pub_settings_signature(settings)}:{cover_sig}"
 
     state = load_project_state(project_name)
     pub_pdf_state = state.get("publication", {}).get("pdf", {})
@@ -878,7 +905,10 @@ def export_publication_pdf(project_name: str) -> Path | None:
 
     # Couverture
     if settings.get("include_cover", True):
-        _add_cover_story(story, settings, pub_styles, pagesize)
+        if cover_path:
+            _add_image_cover_story(story, cover_path, pagesize)
+        else:
+            _add_cover_story(story, settings, pub_styles, pagesize)
 
     # Table des matières
     if settings.get("include_toc", True) and final_content:

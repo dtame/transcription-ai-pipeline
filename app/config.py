@@ -84,3 +84,43 @@ GLOBAL_EDITOR_MODE = "light"
 #   "light"      -> harmonisation légère : titres, structure, ponctuation, transitions
 #   "medium"     -> fusion légère de répétitions, amélioration de la fluidité
 #   "aggressive" -> réécriture globale, réservé aux livres longs
+
+# =====================================================
+# COVER GENERATION — Génération automatique des couvertures
+# =====================================================
+
+COVER_PROVIDER = "fake"
+# Moteur de génération d'images :
+#   "fake"   -> simulation locale pour les tests (aucune dépendance)
+#   "openai" -> DALL-E 3 via API OpenAI (nécessite OPENAI_API_KEY)
+
+COVER_STYLE = "editorial_realistic"
+# Style par défaut des couvertures générées.
+# Valeurs supportées (voir SUPPORTED_COVER_STYLES) :
+#   "editorial_realistic" -> photographie réaliste et professionnelle (défaut)
+#   "spiritual"           -> atmosphère paisible, lumière douce
+#   "professional"        -> épuré corporate, fond neutre
+#   "modern"              -> contemporain, lignes nettes, minimaliste
+#   "natural"             -> photographie nature, lumière naturelle
+
+COVER_REALISM_PRIORITY = True
+# Si True, les prompts insistent sur le réalisme photographique
+# et évitent les rendus numériques ou la fantasy.
+
+COVER_AVOID_AI_LOOK = True
+# Si True, ajoute au prompt des instructions pour éviter l'aspect "image IA".
+
+COVER_EDITORIAL_MODE = True
+# Si True, les prompts privilégient l'esthétique éditoriale de livre publié.
+
+REGENERATE_IF_TOO_ARTIFICIAL = True
+# Réservé à une implémentation future : détecter et régénérer
+# les couvertures à l'aspect trop artificiel.
+
+SUPPORTED_COVER_STYLES = [
+    "editorial_realistic",
+    "spiritual",
+    "professional",
+    "modern",
+    "natural",
+]
