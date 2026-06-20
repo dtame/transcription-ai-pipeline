@@ -5,11 +5,14 @@ Chaque tâche IA possède son propre template de prompt.
 La tâche active est définie par AI_TASK dans app/config.py.
 
 Tâches disponibles :
-    clean_transcript  -> correction et structuration Markdown d'une transcription brute
-    summary           -> résumé clair et structuré
-    book_chapter      -> transformation en chapitre de livre
-    key_points        -> extraction des idées principales
-    classification    -> classification documentaire
+    clean_transcript             -> correction et structuration Markdown d'une transcription brute
+    summary                      -> résumé clair et structuré
+    book_chapter                 -> transformation en chapitre de livre
+    key_points                   -> extraction des idées principales
+    classification               -> classification documentaire
+    global_harmonization_light   -> harmonisation légère du document complet (étape 18)
+    global_harmonization_medium  -> harmonisation moyenne du document complet (étape 18)
+    global_harmonization_aggressive -> harmonisation agressive du document complet (étape 18)
 
 Prompts personnalisés par projet :
     Placer un fichier depot/<nom_projet>/prompt.md pour surcharger AI_TASK.
@@ -152,6 +155,83 @@ Faible / moyen / élevé
 ## Résumé en une phrase
 
 Contenu à classifier :
+
+{text}
+""",
+
+    "global_harmonization_light": """
+Tu es un éditeur professionnel chargé d'harmoniser la cohérence éditoriale d'un document complet.
+
+Ta mission est UNIQUEMENT d'améliorer la cohérence formelle du document, sans en modifier le contenu.
+
+Ce que tu peux faire :
+- Harmoniser le style des titres et sous-titres (capitalisation, ponctuation finale, cohérence de niveau)
+- Uniformiser la structure des listes (tirets, puces, numérotation)
+- Uniformiser le style des citations et des mises en évidence (gras, italique)
+- Améliorer les transitions entre chapitres et sections pour assurer la fluidité
+- Uniformiser la ponctuation (guillemets, tirets, points de suspension)
+- Corriger les incohérences d'espacement et de formatage Markdown
+
+Ce qui est STRICTEMENT INTERDIT :
+- Supprimer des idées, des arguments ou des informations
+- Résumer ou raccourcir des passages
+- Reformuler fortement des phrases ou des paragraphes
+- Ajouter du contenu absent du document original
+- Modifier le sens ou l'intention de l'auteur
+
+Retourne le document complet harmonisé en Markdown, sans commentaires ni explications.
+
+Document à harmoniser :
+
+{text}
+""",
+
+    "global_harmonization_medium": """
+Tu es un éditeur professionnel chargé d'améliorer la cohérence et la fluidité d'un document complet.
+
+Ta mission est d'améliorer la lisibilité du document tout en préservant fidèlement son contenu et son sens.
+
+Ce que tu peux faire :
+- Tout ce qui est permis en mode light (harmonisation formelle)
+- Fusionner légèrement des répétitions proches lorsqu'elles nuisent à la lecture
+- Améliorer la fluidité des transitions entre paragraphes
+- Restructurer légèrement des passages maladroits sans en changer le sens
+- Réécrire superficiellement des phrases trop longues ou confuses
+
+Ce qui est STRICTEMENT INTERDIT :
+- Supprimer des sections entières ou des idées importantes
+- Créer du nouveau contenu absent du document original
+- Modifier substantiellement le ton ou le style de l'auteur
+- Réduire significativement la longueur du document
+
+Retourne le document complet amélioré en Markdown, sans commentaires ni explications.
+
+Document à améliorer :
+
+{text}
+""",
+
+    "global_harmonization_aggressive": """
+Tu es un éditeur professionnel senior chargé de la révision complète d'un livre ou d'un long document.
+
+Ta mission est de produire une version éditoriale de haute qualité, fidèle au contenu original mais
+significativement améliorée sur le plan de la structure, de la fluidité et de la cohérence.
+
+Ce que tu peux faire :
+- Réécrire globalement le document pour améliorer la qualité littéraire
+- Restructurer l'organisation des sections et des chapitres
+- Réduire les redondances et les répétitions importantes
+- Améliorer substantiellement la fluidité et le style
+- Consolider des passages dispersés traitant du même sujet
+
+Contrainte absolue :
+- Le document final doit rester fidèle au contenu et aux idées du document original
+- Aucune idée, argument ou information de l'original ne doit être perdu
+- Ne pas inventer d'informations ou de contenus absents de l'original
+
+Retourne le document complet révisé en Markdown, sans commentaires ni explications.
+
+Document à réviser :
 
 {text}
 """,

@@ -430,6 +430,16 @@ def _build_pub_styles(font_cfg: dict, theme_colors: dict) -> dict:
             textColor=colors.HexColor(accent),
             spaceAfter=4,
         ),
+        "cover_version": ParagraphStyle(
+            "PubCoverVersion",
+            parent=base["Normal"],
+            fontName=font_cfg["body_font"],
+            fontSize=9,
+            leading=13,
+            alignment=TA_CENTER,
+            textColor=colors.HexColor("#aaaaaa"),
+            spaceAfter=4,
+        ),
         "toc_title": ParagraphStyle(
             "PubTOCTitle",
             parent=base["Normal"],
@@ -555,13 +565,13 @@ def _build_pub_styles(font_cfg: dict, theme_colors: dict) -> dict:
     }
 
 
-def _make_page_number_callback(settings: dict) -> callable:
-    """Retourne un callback onPage qui ajoute numéros et en-têtes/pieds de page."""
+def _make_page_callback(settings: dict, margin: float) -> callable:
+    """Retourne un callback onPage qui ajoute en-têtes, pieds de page et numéros."""
     include_page_numbers = settings.get("include_page_numbers", True)
     include_headers = settings.get("include_headers", True)
     include_footers = settings.get("include_footers", True)
     title = settings.get("title", "")
-    accent = settings.get("theme_colors", {}).get("accent", "#888888")
+    org = settings.get("organization", "")
 
     def _on_page(canvas, doc):
         canvas.saveState()
@@ -569,16 +579,28 @@ def _make_page_number_callback(settings: dict) -> callable:
         canvas.setFillColor(colors.HexColor("#888888"))
 
         page_width = doc.pagesize[0]
-        margin = _PAGE_MARGINS_PDF.get(settings.get("page_size", "letter"), 2.0 * cm)
+        page_height = doc.pagesize[1]
 
+        # Sauter la page de couverture (page 1)
         if doc.page > 1:
             if include_headers and title:
-                canvas.drawCentredString(page_width / 2, doc.pagesize[1] - margin * 0.7, title)
+                canvas.drawCentredString(
+                    page_width / 2,
+                    page_height - margin * 0.7,
+                    title,
+                )
 
             if include_footers:
+                footer_parts: list[str] = []
+                if org:
+                    footer_parts.append(org)
                 if include_page_numbers:
+                    footer_parts.append(f"— {doc.page} —")
+                if footer_parts:
                     canvas.drawCentredString(
-                        page_width / 2, margin * 0.6, f"— {doc.page} —"
+                        page_width / 2,
+                        margin * 0.6,
+                        "  ".join(footer_parts),
                     )
 
         canvas.restoreState()
@@ -586,7 +608,12 @@ def _make_page_number_callback(settings: dict) -> callable:
     return _on_page
 
 
-def _add_cover_story(story: list, settings: dict, styles: dict, pagesize: tuple) -> None:
+def _add_cover_story(
+    story: list,
+    settings: dict,
+    styles: dict,
+    pagesize: tuple,
+) -> None:
     """Ajoute les éléments de couverture à la story ReportLab."""
     colors_theme = settings.get("theme_colors", {})
     accent = colors_theme.get("accent", "#666666")
@@ -618,39 +645,53 @@ def _add_cover_story(story: list, settings: dict, styles: dict, pagesize: tuple)
     story.append(Spacer(1, page_height * 0.15))
 
     # Auteur
-    author = settings.get("author", "")
-    if author:
-        story.append(Paragraph(_escape_xml(author), styles["cover_author"]))
+    if settings.get("include_author", True):
+        author = settings.get("author", "")
+        if author:
+            story.append(Paragraph(_escape_xml(author), styles["cover_author"]))
 
     # Organisation
-    org = settings.get("organization", "")
-    if org:
-        story.append(Paragraph(_escape_xml(org), styles["cover_meta"]))
+    if settings.get("include_organization", True):
+        org = settings.get("organization", "")
+        if org:
+            story.append(Paragraph(_escape_xml(org), styles["cover_meta"]))
 
     # Date
-    story.append(
-        Paragraph(_escape_xml(settings.get("_generated_date", "")), styles["cover_meta"])
-    )
+    if settings.get("include_date", True):
+        date_display = settings.get("date") or settings.get("_generated_date", "")
+        if date_display:
+            story.append(
+                Paragraph(_escape_xml(date_display), styles["cover_meta"])
+            )
+
+    # Version
+    version = settings.get("version", "")
+    if version:
+        story.append(
+            Paragraph(_escape_xml(f"Version {version}"), styles["cover_version"])
+        )
 
     story.append(PageBreak())
 
 
-def _add_toc_story(story: list, markdown: str, styles: dict) -> None:
-    """Ajoute une table des matières visuelle à la story."""
+def _add_toc_story(
+    story: list,
+    headings: list[dict],
+    styles: dict,
+) -> None:
+    """Ajoute une table des matières statique à la story."""
     story.append(Paragraph("Table des matières", styles["toc_title"]))
     story.append(Spacer(1, 0.15 * inch))
 
-    for line in markdown.splitlines():
-        stripped = line.strip()
-        if stripped.startswith("### "):
-            text = stripped[4:].strip()
-            story.append(Paragraph(_escape_xml(f"    {text}"), styles["toc_h3"]))
-        elif stripped.startswith("## "):
-            text = stripped[3:].strip()
-            story.append(Paragraph(_escape_xml(f"  {text}"), styles["toc_h2"]))
-        elif stripped.startswith("# "):
-            text = stripped[2:].strip()
-            story.append(Paragraph(_escape_xml(text), styles["toc_h1"]))
+    for h in headings:
+        level = h["level"]
+        text = _escape_xml(h["title"])
+        if level == 3:
+            story.append(Paragraph(f"    {text}", styles["toc_h3"]))
+        elif level == 2:
+            story.append(Paragraph(f"  {text}", styles["toc_h2"]))
+        else:
+            story.append(Paragraph(text, styles["toc_h1"]))
 
     story.append(PageBreak())
 
@@ -755,14 +796,18 @@ def export_publication_pdf(project_name: str) -> Path | None:
 
     Applique :
     - Couverture typographique pleine page
-    - Table des matières visuelle
+    - Table des matières statique
     - Styles selon template/theme/font_style
     - Format de page selon page_size
-    - Numéros de page et en-têtes/pieds de page
+    - Métadonnées PDF (titre, auteur, sujet)
+    - En-têtes (titre), pieds de page (organisation + numéro)
 
     Ne reconstruit pas si les sources n'ont pas changé.
     """
-    from app.publication_template_service import resolve_publication_settings
+    from app.publication_template_service import (
+        resolve_publication_settings,
+        extract_headings,
+    )
 
     final_dir = SORTIE_DIR / project_name / "final"
     pub_md_path = final_dir / "document_publication.md"
@@ -807,6 +852,12 @@ def export_publication_pdf(project_name: str) -> Path | None:
 
     pub_pdf_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # Sujet enrichi avec mots-clés si disponibles
+    subject = settings.get("subtitle", "Document de publication")
+    keywords = settings.get("keywords", "")
+    if keywords:
+        subject = f"{subject} — {keywords}" if subject else keywords
+
     doc = SimpleDocTemplate(
         str(pub_pdf_path),
         pagesize=pagesize,
@@ -816,11 +867,12 @@ def export_publication_pdf(project_name: str) -> Path | None:
         bottomMargin=margin * 1.2,
         title=settings.get("title", project_name),
         author=settings.get("author", "TranscriptionAI"),
-        subject=settings.get("subtitle", "Document de publication"),
+        subject=subject,
+        creator="TranscriptionAI",
     )
 
     pub_styles = _build_pub_styles(font_cfg, theme_colors)
-    on_page = _make_page_number_callback(settings)
+    on_page = _make_page_callback(settings, margin)
 
     story: list = []
 
@@ -830,7 +882,9 @@ def export_publication_pdf(project_name: str) -> Path | None:
 
     # Table des matières
     if settings.get("include_toc", True) and final_content:
-        _add_toc_story(story, final_content, pub_styles)
+        headings = extract_headings(final_content)
+        if headings:
+            _add_toc_story(story, headings, pub_styles)
 
     # Contenu principal
     story.extend(_convert_markdown_to_story_pub(final_content, pub_styles))

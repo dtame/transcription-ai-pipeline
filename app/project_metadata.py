@@ -7,6 +7,7 @@ Si le fichier n'existe pas, toutes les valeurs sont auto ou par défaut.
 from pathlib import Path
 from datetime import datetime
 import hashlib
+import json
 
 from app.paths import DEPOT_DIR
 
@@ -45,11 +46,16 @@ VALID_FONT_STYLES = {"auto", "classic", "modern", "elegant", "readable"}
 VALID_COVER_IMAGE_SOURCES = {"user", "generated", "free_stock", "none"}
 
 DEFAULTS: dict = {
+    # Identité du document
     "title": "",
     "subtitle": "",
     "author": "",
     "organization": "TranscriptionAI",
     "language": "fr",
+    "date": "",           # date utilisateur ou date du jour
+    "version": "1.0",
+
+    # Type et format
     "document_type": "auto",
     "publication_format": "auto",
     "template": "auto",
@@ -59,12 +65,62 @@ DEFAULTS: dict = {
     "print_ready": True,
     "theme": "auto",
     "font_style": "auto",
+
+    # Métadonnées éditoriales
+    "description": "",
+    "keywords": "",
+    "category": "",
+    "audience": "",
+    "copyright": "",
+    "license": "",
+    "isbn": "",
+    "publisher": "",
+    "location": "",
+
+    # Éléments de publication
     "include_cover": True,
     "include_toc": True,
     "include_page_numbers": True,
     "include_headers": True,
     "include_footers": True,
+    "include_date": True,
+    "include_author": True,
+    "include_organization": True,
 }
+
+# Champs texte libres de base
+_TEXT_FIELDS_BASE = (
+    "title", "subtitle", "author", "organization", "language", "version",
+)
+
+# Champs texte libres éditoriaux
+_TEXT_FIELDS_EDITORIAL = (
+    "description", "keywords", "category", "audience",
+    "copyright", "license", "isbn", "publisher", "location",
+)
+
+# Champs booléens
+_BOOL_FIELDS = (
+    "print_ready",
+    "include_cover",
+    "include_toc",
+    "include_page_numbers",
+    "include_headers",
+    "include_footers",
+    "include_date",
+    "include_author",
+    "include_organization",
+)
+
+# Champs inclus dans la signature de métadonnées
+_SIGNATURE_FIELDS = (
+    "title", "subtitle", "author", "organization", "language",
+    "date", "version", "description", "keywords", "category",
+    "audience", "copyright", "license", "isbn", "publisher", "location",
+    "include_cover", "include_toc", "include_page_numbers",
+    "include_headers", "include_footers", "include_date",
+    "include_author", "include_organization",
+)
 
 
 def get_yaml_path(project_name: str) -> Path:
@@ -81,6 +137,14 @@ def yaml_file_hash(project_name: str) -> str:
         for block in iter(lambda: f.read(8192), b""):
             hasher.update(block)
     return hasher.hexdigest()
+
+
+def metadata_signature(meta: dict) -> str:
+    """MD5 des champs de métadonnées clés (titre, auteur, etc.)."""
+    fields = {k: meta.get(k, "") for k in _SIGNATURE_FIELDS}
+    return hashlib.md5(
+        json.dumps(fields, sort_keys=True, default=str).encode()
+    ).hexdigest()
 
 
 def _parse_yaml_file(yaml_path: Path) -> dict:
@@ -110,12 +174,21 @@ def _validate_enum(raw: dict, key: str, valid_set: set, default: str) -> str:
     return value if value in valid_set else default
 
 
+def _parse_bool(val) -> bool:
+    if isinstance(val, bool):
+        return val
+    if isinstance(val, str):
+        return val.lower() in ("true", "yes", "oui", "1")
+    return bool(val)
+
+
 def load_project_metadata(project_name: str) -> dict:
     """
     Charge les métadonnées depuis depot/<project>/project.yaml.
 
     Retourne un dictionnaire complet avec valeurs par défaut pour
-    tous les champs manquants ou invalides.
+    tous les champs manquants ou invalides. Ne plante jamais même
+    si project.yaml est absent ou malformé.
     """
     yaml_path = get_yaml_path(project_name)
     raw: dict = {}
@@ -128,14 +201,25 @@ def load_project_metadata(project_name: str) -> dict:
 
     meta = dict(DEFAULTS)
 
-    # Champs texte libres
-    for key in ("title", "subtitle", "author", "organization", "language"):
-        if key in raw and raw[key]:
+    # Champs texte de base
+    for key in _TEXT_FIELDS_BASE:
+        if key in raw and raw[key] is not None:
             meta[key] = str(raw[key]).strip()
 
     # Titre par défaut = nom du projet humanisé
     if not meta["title"]:
         meta["title"] = project_name.replace("_", " ").title()
+
+    # Date : valeur yaml ou date du jour
+    if "date" in raw and raw["date"]:
+        meta["date"] = str(raw["date"]).strip()
+    else:
+        meta["date"] = datetime.now().strftime("%Y-%m-%d")
+
+    # Champs texte éditoriaux
+    for key in _TEXT_FIELDS_EDITORIAL:
+        if key in raw and raw[key] is not None:
+            meta[key] = str(raw[key]).strip()
 
     # Champs enum validés
     meta["document_type"] = _validate_enum(
@@ -159,20 +243,9 @@ def load_project_metadata(project_name: str) -> dict:
     meta["cover_image"] = str(cover_raw).strip() if isinstance(cover_raw, str) else "auto"
 
     # Champs booléens
-    for key in (
-        "print_ready",
-        "include_cover",
-        "include_toc",
-        "include_page_numbers",
-        "include_headers",
-        "include_footers",
-    ):
+    for key in _BOOL_FIELDS:
         if key in raw:
-            val = raw[key]
-            if isinstance(val, bool):
-                meta[key] = val
-            elif isinstance(val, str):
-                meta[key] = val.lower() in ("true", "yes", "oui", "1")
+            meta[key] = _parse_bool(raw[key])
 
     # Métadonnées internes
     meta["_yaml_exists"] = yaml_path.exists()

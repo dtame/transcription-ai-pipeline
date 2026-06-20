@@ -38,8 +38,14 @@ class BaseAIEngine(ABC):
     """Interface commune pour tous les moteurs IA."""
 
     @abstractmethod
-    def process(self, text: str, project_name: str | None = None) -> str:
-        """Traite un texte brut et retourne un contenu Markdown structuré."""
+    def send_prompt(self, prompt: str) -> str:
+        """
+        Envoie un prompt pré-construit au moteur IA et retourne la réponse brute.
+
+        Méthode de transport : ne construit pas le prompt, ne le modifie pas.
+        Utilisée à la fois par process() et par les services nécessitant
+        un prompt dédié (ex. global_editor_service).
+        """
         ...
 
     def build_prompt(self, text: str, project_name: str | None = None) -> str:
@@ -52,6 +58,11 @@ class BaseAIEngine(ABC):
         """
         return _build_prompt(AI_TASK, text, project_name=project_name)
 
+    def process(self, text: str, project_name: str | None = None) -> str:
+        """Traite un texte brut et retourne un contenu Markdown structuré."""
+        prompt = self.build_prompt(text, project_name=project_name)
+        return self.send_prompt(prompt)
+
 
 class FakeAIEngine(BaseAIEngine):
     """
@@ -59,6 +70,14 @@ class FakeAIEngine(BaseAIEngine):
     Ne nécessite aucune API ni modèle local.
     Activer avec : AI_PROVIDER = "fake"
     """
+
+    def send_prompt(self, prompt: str) -> str:
+        return (
+            "# Document traité (simulation)\n\n"
+            "> Ce document a été traité par le moteur IA simulé (FakeAIEngine).\n"
+            "> Aucune transformation réelle n'a été appliquée.\n\n"
+            + prompt[-1000:]
+        )
 
     def process(self, text: str, project_name: str | None = None) -> str:
         return f"""# Traitement IA simulé
@@ -85,9 +104,7 @@ class OllamaEngine(BaseAIEngine):
         - Modèle téléchargé : ollama pull qwen3:8b
     """
 
-    def process(self, text: str, project_name: str | None = None) -> str:
-        prompt = self.build_prompt(text, project_name=project_name)
-
+    def send_prompt(self, prompt: str) -> str:
         payload = {
             "model": OLLAMA_MODEL,
             "prompt": prompt,
@@ -137,9 +154,7 @@ class LMStudioEngine(BaseAIEngine):
         - Un modèle chargé dans LM Studio
     """
 
-    def process(self, text: str, project_name: str | None = None) -> str:
-        prompt = self.build_prompt(text, project_name=project_name)
-
+    def send_prompt(self, prompt: str) -> str:
         payload = {
             "model": LMSTUDIO_MODEL,
             "messages": [
@@ -185,11 +200,11 @@ class OpenAIEngine(BaseAIEngine):
     Nécessite : OPENAI_API_KEY configurée dans config.py
     Modèle par défaut : gpt-4o-mini
 
-    Note : le package `openai` est importé uniquement à l'appel de process()
+    Note : le package `openai` est importé uniquement à l'appel de send_prompt()
     pour ne pas rendre la dépendance obligatoire.
     """
 
-    def process(self, text: str, project_name: str | None = None) -> str:
+    def send_prompt(self, prompt: str) -> str:
         try:
             from openai import OpenAI
         except ImportError:
@@ -203,7 +218,6 @@ class OpenAIEngine(BaseAIEngine):
                 "OPENAI_API_KEY n'est pas configurée dans app/config.py."
             )
 
-        prompt = self.build_prompt(text, project_name=project_name)
         client = OpenAI(api_key=OPENAI_API_KEY)
 
         response = client.chat.completions.create(

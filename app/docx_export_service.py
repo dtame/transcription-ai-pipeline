@@ -297,42 +297,41 @@ def _add_headers_footers_docx(
 ) -> None:
     """Ajoute en-tête et pied de page si activés dans les paramètres."""
     section = doc.sections[0]
+    gray = "#888888"
 
     if settings.get("include_headers", True):
         header = section.header
         header.is_linked_to_previous = False
-        if header.paragraphs:
-            hp = header.paragraphs[0]
-        else:
-            hp = header.add_paragraph()
+        hp = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
         hp.clear()
         hp.alignment = WD_ALIGN_PARAGRAPH.CENTER
         run = hp.add_run(settings.get("title", ""))
         run.font.name = font_cfg["heading"]
         run.font.size = Pt(9)
-        run.font.color.rgb = RGBColor(*_hex_to_rgb("#888888"))
+        run.font.color.rgb = RGBColor(*_hex_to_rgb(gray))
 
     if settings.get("include_footers", True):
         footer = section.footer
         footer.is_linked_to_previous = False
-        if footer.paragraphs:
-            fp = footer.paragraphs[0]
-        else:
-            fp = footer.add_paragraph()
+        fp = footer.paragraphs[0] if footer.paragraphs else footer.add_paragraph()
         fp.clear()
         fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
+        org = settings.get("organization", "")
+
         if settings.get("include_page_numbers", True):
-            run_pre = fp.add_run("Page ")
+            # Organisation — Page N
+            prefix = f"{org}  —  Page " if org else "Page "
+            run_pre = fp.add_run(prefix)
             run_pre.font.name = font_cfg["body"]
             run_pre.font.size = Pt(9)
-            run_pre.font.color.rgb = RGBColor(*_hex_to_rgb("#888888"))
+            run_pre.font.color.rgb = RGBColor(*_hex_to_rgb(gray))
             _add_page_number_field(fp)
         else:
-            run = fp.add_run(settings.get("organization", ""))
+            run = fp.add_run(org)
             run.font.name = font_cfg["body"]
             run.font.size = Pt(9)
-            run.font.color.rgb = RGBColor(*_hex_to_rgb("#888888"))
+            run.font.color.rgb = RGBColor(*_hex_to_rgb(gray))
 
 
 def _add_cover_page_docx(doc: Document, settings: dict, font_cfg: dict) -> None:
@@ -340,6 +339,7 @@ def _add_cover_page_docx(doc: Document, settings: dict, font_cfg: dict) -> None:
     colors_theme = settings.get("theme_colors", {})
     primary = colors_theme.get("primary", "#1a1a1a")
     accent = colors_theme.get("accent", "#666666")
+    gray = "#aaaaaa"
 
     # Espace vertical supérieur (~30% de page)
     for _ in range(8):
@@ -380,42 +380,57 @@ def _add_cover_page_docx(doc: Document, settings: dict, font_cfg: dict) -> None:
         doc.add_paragraph()
 
     # Auteur
-    author = settings.get("author", "")
-    if author:
-        author_para = doc.add_paragraph()
-        author_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        author_run = author_para.add_run(author)
-        author_run.font.name = font_cfg["body"]
-        author_run.font.size = Pt(13)
-        author_run.bold = True
-        author_run.font.color.rgb = RGBColor(*_hex_to_rgb(primary))
+    if settings.get("include_author", True):
+        author = settings.get("author", "")
+        if author:
+            author_para = doc.add_paragraph()
+            author_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            author_run = author_para.add_run(author)
+            author_run.font.name = font_cfg["body"]
+            author_run.font.size = Pt(13)
+            author_run.bold = True
+            author_run.font.color.rgb = RGBColor(*_hex_to_rgb(primary))
 
     # Organisation
-    org = settings.get("organization", "")
-    if org:
-        org_para = doc.add_paragraph()
-        org_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        org_run = org_para.add_run(org)
-        org_run.font.name = font_cfg["body"]
-        org_run.font.size = Pt(11)
-        org_run.font.color.rgb = RGBColor(*_hex_to_rgb(accent))
+    if settings.get("include_organization", True):
+        org = settings.get("organization", "")
+        if org:
+            org_para = doc.add_paragraph()
+            org_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            org_run = org_para.add_run(org)
+            org_run.font.name = font_cfg["body"]
+            org_run.font.size = Pt(11)
+            org_run.font.color.rgb = RGBColor(*_hex_to_rgb(accent))
 
     # Date
-    date_para = doc.add_paragraph()
-    date_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    date_run = date_para.add_run(settings.get("_generated_date", ""))
-    date_run.font.name = font_cfg["body"]
-    date_run.font.size = Pt(10)
-    date_run.font.color.rgb = RGBColor(*_hex_to_rgb("#aaaaaa"))
+    if settings.get("include_date", True):
+        date_display = settings.get("date") or settings.get("_generated_date", "")
+        if date_display:
+            date_para = doc.add_paragraph()
+            date_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            date_run = date_para.add_run(date_display)
+            date_run.font.name = font_cfg["body"]
+            date_run.font.size = Pt(10)
+            date_run.font.color.rgb = RGBColor(*_hex_to_rgb(gray))
+
+    # Version
+    version = settings.get("version", "")
+    if version:
+        ver_para = doc.add_paragraph()
+        ver_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        ver_run = ver_para.add_run(f"Version {version}")
+        ver_run.font.name = font_cfg["body"]
+        ver_run.font.size = Pt(9)
+        ver_run.font.color.rgb = RGBColor(*_hex_to_rgb(gray))
 
 
 def _add_toc_docx(
     doc: Document,
-    markdown: str,
+    headings: list[dict],
     settings: dict,
     font_cfg: dict,
 ) -> None:
-    """Génère une table des matières visuelle (texte formaté)."""
+    """Génère une table des matières statique à partir des titres extraits."""
     colors_theme = settings.get("theme_colors", {})
     primary = colors_theme.get("primary", "#1a1a1a")
     accent = colors_theme.get("accent", "#666666")
@@ -431,27 +446,24 @@ def _add_toc_docx(
 
     doc.add_paragraph()
 
-    # Entrées
-    for line in markdown.splitlines():
-        stripped = line.strip()
-        if stripped.startswith("### "):
-            text = stripped[4:].strip()
+    # Entrées par niveau
+    for h in headings:
+        level = h["level"]
+        text = h["title"]
+
+        if level == 3:
             indent = Inches(0.4)
             size = Pt(10)
-        elif stripped.startswith("## "):
-            text = stripped[3:].strip()
+        elif level == 2:
             indent = Inches(0.2)
             size = Pt(11)
-        elif stripped.startswith("# "):
-            text = stripped[2:].strip()
+        else:  # level 1
             indent = Inches(0.0)
             size = Pt(12)
-        else:
-            continue
 
         entry = doc.add_paragraph()
         entry.paragraph_format.left_indent = indent
-        run = entry.add_run(f"  {text}")
+        run = entry.add_run(text)
         run.font.name = font_cfg["body"]
         run.font.size = size
         run.font.color.rgb = RGBColor(*_hex_to_rgb(accent))
@@ -588,14 +600,18 @@ def export_publication_docx(project_name: str) -> Path | None:
 
     Applique :
     - Page de couverture typographique
-    - Table des matières visuelle
+    - Table des matières statique
     - Styles selon template/theme/font_style
     - Marges selon page_size
     - En-têtes, pieds de page et numéros de page
+    - Métadonnées DOCX complètes (titre, auteur, sujet, mots-clés, catégorie)
 
     Ne reconstruit pas si les sources n'ont pas changé.
     """
-    from app.publication_template_service import resolve_publication_settings
+    from app.publication_template_service import (
+        resolve_publication_settings,
+        extract_headings,
+    )
 
     final_dir = SORTIE_DIR / project_name / "final"
     pub_md_path = final_dir / "document_publication.md"
@@ -638,11 +654,14 @@ def export_publication_docx(project_name: str) -> Path | None:
 
     doc = Document()
 
-    # Métadonnées
+    # Métadonnées DOCX enrichies
     core = doc.core_properties
     core.title = settings.get("title", project_name)
     core.author = settings.get("author", "TranscriptionAI")
     core.subject = settings.get("subtitle", "Document de publication")
+    core.keywords = settings.get("keywords", "")
+    core.comments = settings.get("description", "")
+    core.category = settings.get("category", "")
 
     # Format de page
     _apply_page_size_docx(doc, settings["page_size"])
@@ -657,8 +676,10 @@ def export_publication_docx(project_name: str) -> Path | None:
 
     # Table des matières
     if settings.get("include_toc", True) and final_content:
-        _add_toc_docx(doc, final_content, settings, font_cfg)
-        doc.add_page_break()
+        headings = extract_headings(final_content)
+        if headings:
+            _add_toc_docx(doc, headings, settings, font_cfg)
+            doc.add_page_break()
 
     # Contenu principal (document_final.md)
     _convert_markdown_to_docx_pub(final_content, doc, font_cfg, theme_colors)

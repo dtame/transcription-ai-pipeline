@@ -12,6 +12,7 @@ from app.final_document_builder import build_final_document
 from app.docx_export_service import export_docx, export_publication_docx
 from app.pdf_export_service import export_pdf, export_publication_pdf
 from app.publication_template_service import build_publication_markdown
+from app.global_editor_service import harmonize_document
 from app.report_service import build_project_report
 import shutil
 import time
@@ -333,6 +334,7 @@ def run_transcription_pipeline():
             generate_review_files(project)
             apply_corrections(project.name)
             build_final_document(project.name)
+            harmonize_document(project.name)
             export_docx(project.name)
             export_pdf(project.name)
             build_publication_markdown(project.name)

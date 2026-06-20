@@ -15,7 +15,11 @@ import re
 
 from app.paths import SORTIE_DIR
 from app.project_state import load_project_state, save_project_state
-from app.project_metadata import load_project_metadata, yaml_file_hash
+from app.project_metadata import (
+    load_project_metadata,
+    yaml_file_hash,
+    metadata_signature as compute_metadata_signature,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -172,31 +176,51 @@ def resolve_publication_settings(project_name: str, markdown: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Construction du document_publication.md
+# Extraction de titres et table des matières
 # ---------------------------------------------------------------------------
 
-def _extract_toc(markdown: str) -> list[tuple[int, str]]:
-    """Extrait les titres pour la table des matières."""
-    toc: list[tuple[int, str]] = []
+def extract_headings(markdown: str) -> list[dict]:
+    """
+    Extrait les titres H1/H2/H3 d'un document Markdown.
+
+    Retourne une liste de dicts avec les clés :
+      - level (int) : 1, 2 ou 3
+      - title (str) : texte du titre sans le préfixe #
+    """
+    headings: list[dict] = []
     for line in markdown.splitlines():
         stripped = line.strip()
         if stripped.startswith("### "):
-            toc.append((3, stripped[4:].strip()))
+            headings.append({"level": 3, "title": stripped[4:].strip()})
         elif stripped.startswith("## "):
-            toc.append((2, stripped[3:].strip()))
+            headings.append({"level": 2, "title": stripped[3:].strip()})
         elif stripped.startswith("# "):
-            toc.append((1, stripped[2:].strip()))
-    return toc
+            headings.append({"level": 1, "title": stripped[2:].strip()})
+    return headings
 
 
-def _build_toc_markdown(toc: list[tuple[int, str]]) -> str:
+def build_table_of_contents(headings: list[dict]) -> str:
+    """
+    Construit une table des matières Markdown à partir d'une liste de titres.
+
+    Format :
+      # Table des matières
+
+      - Titre niveau 1
+        - Titre niveau 2
+          - Titre niveau 3
+    """
     lines = ["# Table des matières", ""]
-    for level, title in toc:
-        indent = "  " * (level - 1)
-        lines.append(f"{indent}- {title}")
+    for h in headings:
+        indent = "  " * (h["level"] - 1)
+        lines.append(f"{indent}- {h['title']}")
     lines.append("")
     return "\n".join(lines)
 
+
+# ---------------------------------------------------------------------------
+# Construction du document_publication.md
+# ---------------------------------------------------------------------------
 
 def _file_hash(path: Path) -> str:
     hasher = hashlib.md5()
@@ -226,14 +250,65 @@ def _should_rebuild_publication_md(
     return pub_state.get("source_signature") != current_sig
 
 
+def _build_cover_markdown(settings: dict) -> list[str]:
+    """Construit les lignes Markdown de la page de couverture."""
+    parts: list[str] = []
+
+    parts.append(f"# {settings['title']}")
+    parts.append("")
+
+    if settings.get("subtitle"):
+        parts.append(f"## {settings['subtitle']}")
+        parts.append("")
+
+    if settings.get("include_author", True) and settings.get("author"):
+        parts.append(f"Auteur : {settings['author']}  ")
+
+    if settings.get("include_organization", True) and settings.get("organization"):
+        parts.append(f"Organisation : {settings['organization']}  ")
+
+    if settings.get("include_date", True):
+        date_display = settings.get("date") or settings.get("_generated_date", "")
+        if date_display:
+            parts.append(f"Date : {date_display}  ")
+
+    if settings.get("version"):
+        parts.append(f"Version : {settings['version']}  ")
+
+    parts.append("")
+    parts.append("---")
+    parts.append("")
+
+    return parts
+
+
+def _get_content_source(project_name: str) -> tuple[Path, str]:
+    """
+    Retourne (chemin_source, label) en privilégiant document_harmonized.md
+    si disponible, sinon document_final.md.
+
+    Labels : "harmonized" | "final"
+    """
+    harmonized_md = SORTIE_DIR / project_name / "harmonized" / "document_harmonized.md"
+    final_md = SORTIE_DIR / project_name / "final" / "document_final.md"
+
+    if harmonized_md.exists():
+        return harmonized_md, "harmonized"
+    return final_md, "final"
+
+
 def build_publication_markdown(project_name: str) -> Path | None:
     """
     Construit final/document_publication.md.
 
-    Structure :
+    Source de contenu (par ordre de priorité) :
+      1. sortie/<projet>/harmonized/document_harmonized.md (si disponible)
+      2. sortie/<projet>/final/document_final.md
+
+    Structure du document :
       - Page de titre (si include_cover)
       - Table des matières (si include_toc)
-      - Contenu de document_final.md
+      - Contenu de la source choisie
 
     Ne reconstruit pas si les sources n'ont pas changé.
     """
@@ -247,41 +322,35 @@ def build_publication_markdown(project_name: str) -> Path | None:
         )
         return None
 
+    source_md, source_label = _get_content_source(project_name)
+
+    if source_label == "harmonized":
+        print(f"[publication] Source : document_harmonized.md")
+    else:
+        print(f"[publication] Source : document_final.md")
+
     state = load_project_state(project_name)
-    current_sig = _compute_source_signature(project_name, final_md)
+    current_sig = _compute_source_signature(project_name, source_md)
 
     if not _should_rebuild_publication_md(state, pub_md, current_sig):
         print(f"[publication] document_publication.md déjà à jour : {pub_md}")
         return pub_md
 
-    final_content = final_md.read_text(encoding="utf-8")
+    final_content = source_md.read_text(encoding="utf-8")
     settings = resolve_publication_settings(project_name, final_content)
 
     parts: list[str] = []
 
     # ---- Page de titre ----
     if settings.get("include_cover", True):
-        parts.append(f"# {settings['title']}")
-        parts.append("")
-
-        if settings.get("subtitle"):
-            parts.append(f"## {settings['subtitle']}")
-            parts.append("")
-
-        if settings.get("author"):
-            parts.append(f"Auteur : {settings['author']}  ")
-        if settings.get("organization"):
-            parts.append(f"Organisation : {settings['organization']}  ")
-        parts.append(f"Date : {settings['_generated_date']}  ")
-        parts.append("")
-        parts.append("---")
-        parts.append("")
+        parts.extend(_build_cover_markdown(settings))
 
     # ---- Table des matières ----
+    headings: list[dict] = []
     if settings.get("include_toc", True):
-        toc = _extract_toc(final_content)
-        if toc:
-            parts.append(_build_toc_markdown(toc))
+        headings = extract_headings(final_content)
+        if headings:
+            parts.append(build_table_of_contents(headings))
             parts.append("---")
             parts.append("")
 
@@ -307,6 +376,15 @@ def build_publication_markdown(project_name: str) -> Path | None:
         "path": str(pub_md),
         "settings": settings_summary,
         "source_signature": current_sig,
+        "content_source": source_label,
+        "updated_at": generated_at,
+    }
+
+    state["publication"]["metadata_signature"] = compute_metadata_signature(settings)
+
+    state["publication"]["toc"] = {
+        "generated": settings.get("include_toc", True) and len(headings) > 0,
+        "headings_count": len(headings),
         "updated_at": generated_at,
     }
 

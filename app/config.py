@@ -68,3 +68,19 @@ LMSTUDIO_MODEL = "local-model"
 
 OPENAI_API_KEY = ""
 OPENAI_MODEL = "gpt-4o-mini"
+
+# =========================
+# Harmonisation éditoriale globale (étape 18)
+# =========================
+
+GLOBAL_EDITOR_ENABLED = False
+# Activer pour harmoniser document_final.md après la fusion des chunks.
+# Génère sortie/<projet>/harmonized/document_harmonized.md.
+# Ne modifie jamais document_final.md.
+
+GLOBAL_EDITOR_MODE = "light"
+# Valeurs possibles :
+#   "off"        -> désactivé explicitement (même si GLOBAL_EDITOR_ENABLED = True)
+#   "light"      -> harmonisation légère : titres, structure, ponctuation, transitions
+#   "medium"     -> fusion légère de répétitions, amélioration de la fluidité
+#   "aggressive" -> réécriture globale, réservé aux livres longs

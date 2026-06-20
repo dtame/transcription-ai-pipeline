@@ -40,6 +40,9 @@ def ensure_state_structure(state: dict) -> None:
     if "publication" not in state:
         state["publication"] = {}
 
+    if "harmonization" not in state:
+        state["harmonization"] = {}
+
 def save_project_state(project_name: str, state: dict) -> None:
     state_path = get_project_state_path(project_name)
     state_path.parent.mkdir(parents=True, exist_ok=True)

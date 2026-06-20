@@ -11,6 +11,7 @@ def _build_publication_report(publication_state: dict) -> dict:
     md_state = publication_state.get("markdown", {})
     docx_state = publication_state.get("docx", {})
     pdf_state = publication_state.get("pdf", {})
+    toc_state = publication_state.get("toc", {})
 
     settings = md_state.get("settings", {})
 
@@ -20,6 +21,22 @@ def _build_publication_report(publication_state: dict) -> dict:
         "theme": settings.get("theme", ""),
         "page_size": settings.get("page_size", ""),
         "font_style": settings.get("font_style", ""),
+
+        "metadata": {
+            "title": settings.get("title", ""),
+            "subtitle": settings.get("subtitle", ""),
+            "author": settings.get("author", ""),
+            "organization": settings.get("organization", ""),
+            "language": settings.get("language", ""),
+            "date": settings.get("date", ""),
+            "version": settings.get("version", ""),
+        },
+
+        "toc": {
+            "enabled": settings.get("include_toc", True),
+            "headings_count": toc_state.get("headings_count", 0),
+        },
+
         "markdown": {
             "generated": md_state.get("generated", False),
             "path": md_state.get("path"),
@@ -49,6 +66,7 @@ def build_project_report(project_name: str) -> Path:
     final_state = state.get("final_document", {})
     exports_state = state.get("exports", {})
     publication_state = state.get("publication", {})
+    harmonization_state = state.get("harmonization", {})
 
     audio_total = len(files_state)
 
@@ -122,6 +140,14 @@ def build_project_report(project_name: str) -> Path:
         },
 
         "publication": _build_publication_report(publication_state),
+
+        "harmonization": {
+            "enabled": harmonization_state.get("enabled", False),
+            "mode": harmonization_state.get("mode", ""),
+            "generated": harmonization_state.get("generated", False),
+            "path": harmonization_state.get("path"),
+            "updated_at": harmonization_state.get("updated_at"),
+        },
     }
 
     report_path.write_text(
