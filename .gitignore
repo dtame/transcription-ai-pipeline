@@ -1,0 +1,50 @@
+# Environnement virtuel
+.venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs d'exécution
+logs/
+
+# Fichiers temporaires
+temp/
+
+# Résultats générés (ne pas versionner les sorties)
+sortie/
+
+# Fichiers rejetés
+rejets/
+
+# Archives
+archives/
+
+# Variables d'environnement
+.env
+.env.*
+
+# Clés et secrets
+*.key
+*.pem
+
+# Fichiers audio dans depot (optionnel — décommenter si souhaité)
+depot/**/*.mp3
+depot/**/*.m4a
+depot/**/*.wav
+depot/**/*.mp4
+depot/**/*.ogg
+depot/**/*.webm
+
+# IDE et éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini

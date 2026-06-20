@@ -256,6 +256,142 @@ def process_reports_only() -> dict:
     return summary
 
 
+def resume_project(project_name: str) -> dict:
+    """
+    Reprend un projet incomplet (même logique que process_project,
+    mais ignore les projets déjà en 'success').
+    """
+    from app.ui_status_service import get_project_status, STATUS_SUCCESS
+
+    status = get_project_status(project_name)
+    if status["status"] == STATUS_SUCCESS:
+        return {
+            "project": project_name,
+            "status": "skipped",
+            "message": "Projet déjà terminé avec succès.",
+            "projects_total": 1,
+            "projects_success": 1,
+            "projects_error": 0,
+            "duration_seconds": 0,
+            "projects": [],
+        }
+
+    return process_project(project_name)
+
+
+def resume_incomplete_projects() -> dict:
+    """
+    Traite uniquement les projets dont le statut n'est pas 'success'.
+    Utile pour reprendre après une interruption sans relancer les projets terminés.
+    """
+    from app.ui_status_service import get_all_projects_status, STATUS_SUCCESS
+
+    prevent_sleep()
+    started_at = datetime.now()
+    results: list[dict] = []
+
+    try:
+        statuses = get_all_projects_status()
+        incomplete_names = {s["name"] for s in statuses if s["status"] != STATUS_SUCCESS}
+
+        if not incomplete_names:
+            print("Tous les projets sont déjà terminés avec succès.")
+            summary = _build_summary(started_at, [])
+            log_path = _save_run_log(summary)
+            _print_summary(summary, log_path)
+            return summary
+
+        projects = discover_projects()
+        to_run = [p for p in projects if p.name in incomplete_names]
+
+        print(f"\n{len(to_run)} projet(s) incomplet(s) à reprendre :")
+        for p in to_run:
+            print(f"  - {p.name}")
+
+        model = _load_whisper_model()
+
+        for project in to_run:
+            try:
+                result = run_project_pipeline(project, model=model)
+            except Exception as exc:
+                result = {
+                    "project": project.name,
+                    "status": "error",
+                    "started_at": datetime.now().isoformat(timespec="seconds"),
+                    "finished_at": datetime.now().isoformat(timespec="seconds"),
+                    "duration_seconds": 0,
+                    "steps": {},
+                    "fatal_error": str(exc),
+                }
+                log_event(f"ERREUR fatale projet {project.name} : {exc}")
+                print(f"\nERREUR fatale — {project.name} : {exc}")
+            results.append(result)
+
+    finally:
+        allow_sleep_again()
+
+    summary = _build_summary(started_at, results)
+    log_path = _save_run_log(summary)
+    _print_summary(summary, log_path)
+    return summary
+
+
+def process_exports_only_project(project_name: str) -> dict:
+    """
+    Génère uniquement publication + DOCX + PDF pour un projet spécifique.
+    N'exécute pas la transcription ni l'IA.
+    """
+    prevent_sleep()
+    started_at = datetime.now()
+
+    try:
+        projects = discover_projects()
+        project = next((p for p in projects if p.name == project_name), None)
+
+        if project is None:
+            result = {
+                "project": project_name,
+                "status": "error",
+                "started_at": started_at.isoformat(timespec="seconds"),
+                "finished_at": datetime.now().isoformat(timespec="seconds"),
+                "duration_seconds": 0,
+                "steps": {},
+                "fatal_error": f"Projet '{project_name}' introuvable dans depot/",
+            }
+        else:
+            result = run_exports_only(project)
+
+    except Exception as exc:
+        result = {
+            "project": project_name,
+            "status": "error",
+            "started_at": started_at.isoformat(timespec="seconds"),
+            "finished_at": datetime.now().isoformat(timespec="seconds"),
+            "duration_seconds": 0,
+            "steps": {},
+            "fatal_error": str(exc),
+        }
+        log_event(f"ERREUR export {project_name} : {exc}")
+
+    finally:
+        allow_sleep_again()
+
+    summary = _build_summary(started_at, [result])
+    log_path = _save_run_log(summary)
+    _print_summary(summary, log_path)
+    return summary
+
+
+def process_reports_only_project(project_name: str) -> dict:
+    """Régénère uniquement le rapport JSON d'un projet spécifique."""
+    started_at = datetime.now()
+    result = run_report_only(project_name)
+    summary = _build_summary(started_at, [result])
+    log_path = _save_run_log(summary)
+    _print_summary(summary, log_path)
+    return summary
+
+
 def get_projects_status() -> list[dict]:
     """
     Retourne l'état de chaque projet (audio, chunks, corrections, publication, exports).

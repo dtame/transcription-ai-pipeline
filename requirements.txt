@@ -1,9 +1,24 @@
+# TranscriptionAI — dépendances Python
+# Installer avec : pip install -r requirements.txt
+
+# --- Transcription audio ---
 faster-whisper
 ctranslate2
 av
 tokenizers
 huggingface-hub
+
+# --- Appels HTTP (Ollama, LM Studio) ---
 requests
+
+# --- Formats de fichiers ---
 pyyaml
 python-docx
 reportlab
+
+# --- Interface Streamlit ---
+streamlit
+pandas
+
+# --- IA cloud (optionnel, uniquement si AI_PROVIDER = "openai") ---
+openai

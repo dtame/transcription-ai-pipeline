@@ -93,6 +93,29 @@ def _run_transcription(model, project: AudioProject) -> dict:
     return _step_result(True)
 
 
+def _write_execution_status(
+    project: AudioProject,
+    status: str,
+    started_at: datetime,
+    error: str | None = None,
+    finished_at: datetime | None = None,
+) -> None:
+    """Met à jour la section 'execution' dans project_state.json."""
+    try:
+        state = load_project_state(project)
+        now = datetime.now()
+        state["execution"] = {
+            "status":         status,
+            "started_at":     started_at.isoformat(timespec="seconds"),
+            "last_heartbeat": now.isoformat(timespec="seconds"),
+            "finished_at":    finished_at.isoformat(timespec="seconds") if finished_at else None,
+            "error":          error,
+        }
+        save_project_state(project, state)
+    except Exception:
+        pass  # Ne jamais faire échouer le pipeline à cause du tracking
+
+
 def run_project_pipeline(project: AudioProject, model=None) -> dict:
     """
     Exécute le pipeline complet pour un projet.
@@ -115,6 +138,9 @@ def run_project_pipeline(project: AudioProject, model=None) -> dict:
     print(f"  Projet : {project.name}")
     print(f"  Début  : {started_at.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'=' * 50}")
+
+    # Marquer le début d'exécution dans project_state.json
+    _write_execution_status(project, "running", started_at)
 
     def run_step(name: str, fn):
         nonlocal project_status
@@ -238,6 +264,19 @@ def run_project_pipeline(project: AudioProject, model=None) -> dict:
     print(f"{'-' * 50}")
 
     log_event(f"Projet {project.name} terminé : {project_status} en {_fmt_duration(duration)}")
+
+    # Mettre à jour le statut d'exécution final dans project_state.json
+    first_error = next(
+        (s.get("error") for s in steps.values() if s.get("status") == "error" and s.get("error")),
+        None,
+    )
+    _write_execution_status(
+        project,
+        status=project_status,
+        started_at=started_at,
+        error=first_error,
+        finished_at=finished_at,
+    )
 
     return {
         "project": project.name,
