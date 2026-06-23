@@ -20,6 +20,7 @@ from app.project_metadata import (
     yaml_file_hash,
     metadata_signature as compute_metadata_signature,
 )
+from app.publication_cleaner import is_publishable_heading, clean_publication_markdown
 
 
 # ---------------------------------------------------------------------------
@@ -179,9 +180,14 @@ def resolve_publication_settings(project_name: str, markdown: str) -> dict:
 # Extraction de titres et table des matières
 # ---------------------------------------------------------------------------
 
-def extract_headings(markdown: str) -> list[dict]:
+def extract_headings(markdown: str, publishable_only: bool = True) -> list[dict]:
     """
     Extrait les titres H1/H2/H3 d'un document Markdown.
+
+    Args:
+        markdown:         Contenu Markdown à analyser.
+        publishable_only: Si True (défaut), filtre les titres techniques
+                          non publiables (chunk_XXX, Projet :, Généré le :, etc.)
 
     Retourne une liste de dicts avec les clés :
       - level (int) : 1, 2 ou 3
@@ -191,11 +197,21 @@ def extract_headings(markdown: str) -> list[dict]:
     for line in markdown.splitlines():
         stripped = line.strip()
         if stripped.startswith("### "):
-            headings.append({"level": 3, "title": stripped[4:].strip()})
+            title = stripped[4:].strip()
+            level = 3
         elif stripped.startswith("## "):
-            headings.append({"level": 2, "title": stripped[3:].strip()})
+            title = stripped[3:].strip()
+            level = 2
         elif stripped.startswith("# "):
-            headings.append({"level": 1, "title": stripped[2:].strip()})
+            title = stripped[2:].strip()
+            level = 1
+        else:
+            continue
+
+        if publishable_only and not is_publishable_heading(title):
+            continue
+
+        headings.append({"level": level, "title": title})
     return headings
 
 
@@ -284,16 +300,21 @@ def _build_cover_markdown(settings: dict) -> list[str]:
 
 def _get_content_source(project_name: str) -> tuple[Path, str]:
     """
-    Retourne (chemin_source, label) en privilégiant document_harmonized.md
-    si disponible, sinon document_final.md.
+    Retourne (chemin_source, label) en privilégiant par ordre :
+      1. document_harmonized.md (si disponible)
+      2. document_clean.md     (version nettoyée du final)
+      3. document_final.md     (fallback)
 
-    Labels : "harmonized" | "final"
+    Labels : "harmonized" | "clean" | "final"
     """
     harmonized_md = SORTIE_DIR / project_name / "harmonized" / "document_harmonized.md"
-    final_md = SORTIE_DIR / project_name / "final" / "document_final.md"
+    clean_md      = SORTIE_DIR / project_name / "final" / "document_clean.md"
+    final_md      = SORTIE_DIR / project_name / "final" / "document_final.md"
 
     if harmonized_md.exists():
         return harmonized_md, "harmonized"
+    if clean_md.exists():
+        return clean_md, "clean"
     return final_md, "final"
 
 
@@ -317,17 +338,19 @@ def build_publication_markdown(project_name: str) -> Path | None:
     pub_md = final_dir / "document_publication.md"
 
     if not final_md.exists():
-        print(
-            f"[publication] document_final.md introuvable pour : {project_name}"
+        raise RuntimeError(
+            f"[publication] document_final.md introuvable pour le projet '{project_name}'. "
+            "Assurez-vous que l'étape final_document a réussi avant de relancer."
         )
-        return None
 
     source_md, source_label = _get_content_source(project_name)
 
-    if source_label == "harmonized":
-        print(f"[publication] Source : document_harmonized.md")
-    else:
-        print(f"[publication] Source : document_final.md")
+    source_labels = {
+        "harmonized": "document_harmonized.md",
+        "clean": "document_clean.md",
+        "final": "document_final.md (fallback)",
+    }
+    print(f"[publication] Source : {source_labels.get(source_label, source_label)}")
 
     state = load_project_state(project_name)
     current_sig = _compute_source_signature(project_name, source_md)
@@ -336,8 +359,15 @@ def build_publication_markdown(project_name: str) -> Path | None:
         print(f"[publication] document_publication.md déjà à jour : {pub_md}")
         return pub_md
 
-    final_content = source_md.read_text(encoding="utf-8")
-    settings = resolve_publication_settings(project_name, final_content)
+    raw_content = source_md.read_text(encoding="utf-8")
+
+    # Appliquer le nettoyage si la source est le document_final.md brut
+    if source_label == "final":
+        publication_content = clean_publication_markdown(raw_content)
+    else:
+        publication_content = raw_content
+
+    settings = resolve_publication_settings(project_name, publication_content)
 
     parts: list[str] = []
 
@@ -345,17 +375,17 @@ def build_publication_markdown(project_name: str) -> Path | None:
     if settings.get("include_cover", True):
         parts.extend(_build_cover_markdown(settings))
 
-    # ---- Table des matières ----
+    # ---- Table des matières (titres publiables uniquement) ----
     headings: list[dict] = []
     if settings.get("include_toc", True):
-        headings = extract_headings(final_content)
+        headings = extract_headings(publication_content, publishable_only=True)
         if headings:
             parts.append(build_table_of_contents(headings))
             parts.append("---")
             parts.append("")
 
-    # ---- Contenu principal ----
-    parts.append(final_content)
+    # ---- Contenu principal nettoyé ----
+    parts.append(publication_content)
 
     pub_md.parent.mkdir(parents=True, exist_ok=True)
     pub_md.write_text("\n".join(parts), encoding="utf-8")
@@ -377,6 +407,7 @@ def build_publication_markdown(project_name: str) -> Path | None:
         "settings": settings_summary,
         "source_signature": current_sig,
         "content_source": source_label,
+        "content_cleaned": source_label in ("clean", "harmonized"),
         "updated_at": generated_at,
     }
 

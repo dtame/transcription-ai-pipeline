@@ -1,0 +1,43 @@
+# Identité du document
+title: Pastoral Retreat
+subtitle: ""
+author: Archbishop Christian Raymond NGWU
+organization: ""
+language: en
+date: 2026-06-20
+version: 1.0
+
+# Type et format de publication
+document_type: auto
+template: auto
+theme: auto
+page_size: auto
+publication_format: auto
+
+# Métadonnées éditoriales
+description: ""
+keywords: []
+category: ""
+audience: ""
+copyright: ""
+license: ""
+isbn: ""
+publisher: ""
+location: ""
+
+# Génération automatique
+
+# Éléments inclus dans la publication
+include_cover: true
+include_toc: true
+include_page_numbers: true
+include_headers: true
+include_footers: true
+include_date: true
+include_author: true
+include_organization: true
+
+# Couverture
+cover_image: auto
+cover_generation_mode: auto
+cover_style: editorial_realistic

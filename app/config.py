@@ -25,6 +25,30 @@ CHUNK_THRESHOLD_MINUTES = 60
 CHUNK_DURATION_MINUTES = 10
 
 # =========================
+# Segmentation audio longue durée
+# =========================
+
+LONG_AUDIO_SEGMENTATION_ENABLED = True
+# Si True, les fichiers dont la durée dépasse LONG_AUDIO_THRESHOLD_MINUTES
+# sont découpés en segments avant transcription.
+# Permet la reprise après interruption (veille, crash) au dernier segment non transcrit.
+
+LONG_AUDIO_THRESHOLD_MINUTES = 30
+# Durée minimale (en minutes) à partir de laquelle un fichier est traité en mode segmenté.
+
+AUDIO_SEGMENT_MINUTES = 15
+# Durée cible (en minutes) de chaque segment audio.
+
+AUDIO_SEGMENT_OVERLAP_SECONDS = 10
+# Chevauchement (en secondes) entre deux segments consécutifs.
+# Évite les pertes de mots aux frontières de segment.
+# Exemple : segment 2 commence 10 secondes avant la fin du segment 1.
+
+SEGMENT_TRANSCRIPTS_ENABLED = True
+# Si True, les transcripts individuels de chaque segment sont conservés
+# dans sortie/<projet>/segment_transcripts/<stem>/ pour l'audit et la reprise.
+
+# =========================
 # Configuration IA
 # =========================
 
@@ -49,10 +73,10 @@ AI_TASK = "clean_transcript"
 
 OLLAMA_BASE_URL = "http://localhost:11434"
 OLLAMA_MODEL = "qwen3:8b"
-
+OLLAMA_TIMEOUT_SECONDS = 1200
 OLLAMA_OPTIONS = {
     "temperature": 0.2,
-    "num_ctx": 8192,
+    "num_ctx": 4096,
 }
 
 # =========================
@@ -124,3 +148,25 @@ SUPPORTED_COVER_STYLES = [
     "modern",
     "natural",
 ]
+
+# =====================================================
+# COVER LAYOUT — Dimensions standards pour l'impression
+# =====================================================
+
+DEFAULT_COVER_DPI = 300
+# Résolution cible pour les couvertures générées (points par pouce).
+# Utilisée pour calculer les dimensions en pixels.
+
+
+def get_standard_cover_pixels(page_size_name: str) -> tuple[int, int]:
+    """
+    Retourne les dimensions standard de la couverture en pixels à DEFAULT_COVER_DPI.
+
+    Exemples :
+        letter      → (2550, 3300)   — 8.5 × 11 po à 300 DPI
+        a4          → (2480, 3508)   — 210 × 297 mm à 300 DPI
+        digest      → (1650, 2550)   — 5.5 × 8.5 po à 300 DPI
+        six_by_nine → (1800, 2700)   — 6 × 9 po à 300 DPI
+    """
+    from app.cover_layout_service import get_standard_cover_pixels as _gsp
+    return _gsp(page_size_name)

@@ -26,6 +26,7 @@ from app.paths import SORTIE_DIR
 from app.project_state import load_project_state, save_project_state
 from app.ai_engine import get_ai_engine
 from app.prompt_manager import PROMPT_TEMPLATES
+from app.prompt_utils import render_prompt
 
 
 _VALID_MODES = ("light", "medium", "aggressive")
@@ -85,7 +86,7 @@ def _process_full_document(text: str, mode: str) -> str:
             f"Modes disponibles : {_VALID_MODES}"
         )
 
-    prompt = template.format(text=text)
+    prompt = render_prompt(template, {"TEXT": text})
     engine = get_ai_engine()
     print(f"[harmonisation] Moteur IA actif : {engine.__class__.__name__}")
     return engine.send_prompt(prompt)

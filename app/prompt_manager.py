@@ -16,42 +16,60 @@ Tâches disponibles :
 
 Prompts personnalisés par projet :
     Placer un fichier depot/<nom_projet>/prompt.md pour surcharger AI_TASK.
-    Le fichier doit contenir le placeholder {text}.
+    Le fichier doit contenir le placeholder {{TEXT}} (nouveau format)
+    ou {text} (format legacy, supporté pour compatibilité).
 
 Priorité des prompts :
     1. depot/<nom_projet>/prompt.md  (prioritaire si présent)
     2. AI_TASK dans config.py
     3. fallback : clean_transcript
+
+IMPORTANT — Placeholders :
+    Les templates utilisent {{TEXT}} (double accolades) comme placeholder.
+    render_prompt() remplace uniquement {{TEXT}} et laisse toutes les autres
+    accolades intactes (JSON, LaTeX \\boxed{}, etc.).
+    N'utiliser JAMAIS .format() directement sur ces templates.
 """
 
 from pathlib import Path
 
 from app.paths import DEPOT_DIR
+from app.prompt_utils import render_prompt
 
 PROMPT_TEMPLATES: dict[str, str] = {
     "clean_transcript": """
-Tu es un assistant spécialisé dans la transformation de transcriptions audio brutes en documents clairs, structurés et lisibles.
+Tu es un éditeur professionnel chargé de transformer une transcription audio brute en contenu éditorial propre et publiable.
 
-Ta mission :
-- corriger les erreurs évidentes de transcription
-- améliorer la ponctuation
-- conserver fidèlement le sens original
-- ne pas inventer d'informations
-- structurer le contenu en Markdown
-- créer des titres et sous-titres pertinents
-- rendre le texte fluide
-- préserver le ton de l'orateur
-- supprimer les répétitions inutiles seulement si elles nuisent à la lecture
+RÈGLES ABSOLUES — SORTIE UNIQUEMENT :
+- Retourne UNIQUEMENT le contenu final destiné à la publication.
+- N'écris AUCUN commentaire sur ta tâche.
+- N'écris AUCUNE analyse du texte.
+- N'écris PAS "The provided text...", "Here is a structured summary", "Here's a summary", "This text appears to be", "This is a transcript".
+- N'écris PAS "Final Answer", "In conclusion", "Note:", "Remarque:".
+- N'écris PAS "If you need anything...", "Let me know...", "Feel free to ask".
+- N'utilise JAMAIS de balises /think, <think>, </think>.
+- N'utilise JAMAIS \\boxed{...} ni aucun format mathématique.
+- Ne mentionne PAS que le texte est une transcription.
+- Ne reproduis PAS les métadonnées techniques (Projet :, Chunk :, Généré le :).
+- Si le contenu est vide ou uniquement des métadonnées, retourne une chaîne vide.
 
-Important :
-- Ne résume pas trop.
-- Ne transforme pas le message en autre chose.
-- Ne change pas les idées de l'orateur.
-- Ne crée pas de contenu absent de la transcription.
+MISSION ÉDITORIALE :
+- Corriger les erreurs évidentes de transcription.
+- Améliorer la ponctuation et la fluidité.
+- Structurer en Markdown avec des titres et sous-titres pertinents.
+- Préserver fidèlement le sens et le ton de l'orateur.
+- Ne pas inventer de contenu absent de la transcription.
+- Supprimer les hésitations et répétitions inutiles.
 
-Transcription brute à traiter :
+FORMAT DE SORTIE :
+- Markdown éditorial uniquement.
+- Titres H1/H2/H3 si pertinents.
+- Paragraphes bien formés.
+- Aucune ligne de séparateur technique.
 
-{text}
+Transcription à transformer :
+
+{{TEXT}}
 """,
 
     "summary": """
@@ -76,22 +94,27 @@ Format attendu :
 
 Transcription à résumer :
 
-{text}
+{{TEXT}}
 """,
 
     "book_chapter": """
-Tu es un assistant éditorial spécialisé dans la transformation de transcriptions audio en chapitre de livre.
+Tu es un éditeur professionnel chargé de transformer une transcription audio en chapitre de livre publiable.
 
-Ta mission :
-- transformer le texte oral en chapitre écrit fluide
-- conserver les idées de l'orateur
-- améliorer la structure
-- créer des titres et sous-titres
-- supprimer les hésitations inutiles
-- garder un style naturel et lisible
-- ne pas inventer de contenu absent de la transcription
+RÈGLES ABSOLUES — SORTIE UNIQUEMENT :
+- Retourne UNIQUEMENT le contenu du chapitre, sans aucun commentaire.
+- N'écris PAS "Here is the chapter", "Final Answer", "Note:", "This text...".
+- N'utilise JAMAIS de balises /think, <think>, \\boxed{...}.
+- Ne mentionne PAS que c'est une transcription.
+- Si le contenu est vide, retourne une chaîne vide.
 
-Format attendu :
+MISSION :
+- Transformer le texte oral en chapitre écrit fluide.
+- Conserver les idées de l'orateur sans inventer de contenu.
+- Créer des titres et sous-titres pertinents.
+- Supprimer les hésitations et répétitions.
+- Garder un style naturel et lisible.
+
+Format de sortie :
 # Titre du chapitre
 
 ## Introduction
@@ -102,7 +125,7 @@ Format attendu :
 
 Transcription à transformer :
 
-{text}
+{{TEXT}}
 """,
 
     "key_points": """
@@ -128,7 +151,7 @@ Format attendu :
 
 Contenu à analyser :
 
-{text}
+{{TEXT}}
 """,
 
     "classification": """
@@ -156,11 +179,16 @@ Faible / moyen / élevé
 
 Contenu à classifier :
 
-{text}
+{{TEXT}}
 """,
 
     "global_harmonization_light": """
 Tu es un éditeur professionnel chargé d'harmoniser la cohérence éditoriale d'un document complet.
+
+RÈGLES ABSOLUES :
+- Retourne UNIQUEMENT le document harmonisé en Markdown.
+- Aucun commentaire, aucune explication, aucune introduction.
+- N'écris PAS "Here is the document", "Final Answer", "Note:", /think, \\boxed{...}.
 
 Ta mission est UNIQUEMENT d'améliorer la cohérence formelle du document, sans en modifier le contenu.
 
@@ -179,15 +207,18 @@ Ce qui est STRICTEMENT INTERDIT :
 - Ajouter du contenu absent du document original
 - Modifier le sens ou l'intention de l'auteur
 
-Retourne le document complet harmonisé en Markdown, sans commentaires ni explications.
-
 Document à harmoniser :
 
-{text}
+{{TEXT}}
 """,
 
     "global_harmonization_medium": """
 Tu es un éditeur professionnel chargé d'améliorer la cohérence et la fluidité d'un document complet.
+
+RÈGLES ABSOLUES :
+- Retourne UNIQUEMENT le document amélioré en Markdown.
+- Aucun commentaire, aucune explication, aucune introduction.
+- N'écris PAS "Here is the document", "Final Answer", "Note:", /think, \\boxed{...}.
 
 Ta mission est d'améliorer la lisibilité du document tout en préservant fidèlement son contenu et son sens.
 
@@ -204,15 +235,18 @@ Ce qui est STRICTEMENT INTERDIT :
 - Modifier substantiellement le ton ou le style de l'auteur
 - Réduire significativement la longueur du document
 
-Retourne le document complet amélioré en Markdown, sans commentaires ni explications.
-
 Document à améliorer :
 
-{text}
+{{TEXT}}
 """,
 
     "global_harmonization_aggressive": """
 Tu es un éditeur professionnel senior chargé de la révision complète d'un livre ou d'un long document.
+
+RÈGLES ABSOLUES :
+- Retourne UNIQUEMENT le document révisé en Markdown.
+- Aucun commentaire, aucune explication, aucune introduction.
+- N'écris PAS "Here is the document", "Final Answer", "Note:", /think, \\boxed{...}.
 
 Ta mission est de produire une version éditoriale de haute qualité, fidèle au contenu original mais
 significativement améliorée sur le plan de la structure, de la fluidité et de la cohérence.
@@ -229,11 +263,9 @@ Contrainte absolue :
 - Aucune idée, argument ou information de l'original ne doit être perdu
 - Ne pas inventer d'informations ou de contenus absents de l'original
 
-Retourne le document complet révisé en Markdown, sans commentaires ni explications.
-
 Document à réviser :
 
-{text}
+{{TEXT}}
 """,
 }
 
@@ -244,6 +276,10 @@ def get_project_prompt(project_name: str) -> str | None:
 
     Lit le fichier depot/<project_name>/prompt.md s'il existe.
 
+    Supporte deux formats de placeholder :
+        - {{TEXT}}  (nouveau format recommandé)
+        - {text}    (format legacy, supporté pour compatibilité)
+
     Args:
         project_name: nom du projet (sous-dossier de depot/)
 
@@ -251,7 +287,7 @@ def get_project_prompt(project_name: str) -> str | None:
         Contenu du fichier prompt.md, ou None si le fichier n'existe pas.
 
     Raises:
-        ValueError: si le fichier existe mais est vide ou ne contient pas {text}
+        ValueError: si le fichier existe mais est vide ou ne contient pas de placeholder valide
     """
     prompt_path: Path = DEPOT_DIR / project_name / "prompt.md"
 
@@ -263,13 +299,13 @@ def get_project_prompt(project_name: str) -> str | None:
     if not content:
         raise ValueError(
             f"Le fichier de prompt projet est vide : {prompt_path}\n"
-            "Ajoutez un prompt valide contenant le placeholder {text}."
+            "Ajoutez un prompt valide contenant le placeholder {{TEXT}}."
         )
 
-    if "{text}" not in content:
+    if "{{TEXT}}" not in content and "{text}" not in content:
         raise ValueError(
-            f"Le prompt projet ne contient pas le placeholder {{text}} : {prompt_path}\n"
-            "Ajoutez {{text}} à l'endroit où le texte brut doit être inséré."
+            f"Le prompt projet ne contient pas de placeholder valide : {prompt_path}\n"
+            "Ajoutez {{TEXT}} à l'endroit où le texte brut doit être inséré."
         )
 
     return content
@@ -283,7 +319,7 @@ def get_prompt_template(task_name: str) -> str:
         task_name: identifiant de la tâche (ex. "clean_transcript")
 
     Returns:
-        Le template de prompt (chaîne avec placeholder {text})
+        Le template de prompt (chaîne avec placeholder {{TEXT}})
 
     Raises:
         ValueError: si task_name ne correspond à aucune tâche connue
@@ -303,26 +339,34 @@ def build_prompt(task_name: str, text: str, project_name: str | None = None) -> 
     """
     Construit le prompt final en injectant le texte dans le template.
 
+    Utilise render_prompt() pour une substitution sécurisée qui n'interprète pas
+    les accolades JSON, LaTeX ou autres présentes dans le prompt.
+
     Priorité :
         1. depot/<project_name>/prompt.md si project_name fourni et fichier présent
         2. template associé à task_name
         3. fallback clean_transcript si task_name inconnu
 
     Args:
-        task_name: identifiant de la tâche (ex. "clean_transcript")
-        text: contenu brut à traiter
+        task_name:    identifiant de la tâche (ex. "clean_transcript")
+        text:         contenu brut à traiter
         project_name: nom du projet (optionnel) pour chercher un prompt personnalisé
 
     Returns:
         Le prompt complet prêt à envoyer au moteur IA
 
     Raises:
-        ValueError: si prompt.md existe mais est invalide (vide ou sans {text})
+        ValueError: si prompt.md existe mais est invalide (vide ou sans placeholder)
     """
     if project_name is not None:
         project_prompt = get_project_prompt(project_name)
         if project_prompt is not None:
-            return project_prompt.format(text=text)
+            # Supporte {{TEXT}} (nouveau) et {text} (legacy)
+            if "{{TEXT}}" in project_prompt:
+                return render_prompt(project_prompt, {"TEXT": text})
+            else:
+                # Format legacy {text} : remplacement direct sans .format()
+                return project_prompt.replace("{text}", text)
 
     if task_name not in PROMPT_TEMPLATES:
         fallback = "clean_transcript"
@@ -333,4 +377,4 @@ def build_prompt(task_name: str, text: str, project_name: str | None = None) -> 
         task_name = fallback
 
     template = get_prompt_template(task_name)
-    return template.format(text=text)
+    return render_prompt(template, {"TEXT": text})

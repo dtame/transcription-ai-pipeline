@@ -164,16 +164,18 @@ def export_docx(project_name: str) -> Path | None:
       - le MD est plus récent (signature changée)
       - la signature enregistrée ne correspond plus
 
-    Retourne le chemin du DOCX, ou None si le MD source est absent.
+    Raises:
+        RuntimeError: si le fichier source Markdown est absent.
     """
     md_path = _get_md_path(project_name)
     docx_path = _get_docx_path(project_name)
 
     if not md_path.exists():
-        print(
-            f"[docx_export] document_final.md introuvable pour le projet : {project_name}"
+        raise RuntimeError(
+            f"[docx_export] Fichier source absent pour le projet '{project_name}' : "
+            f"{md_path.name}. "
+            "Assurez-vous que l'étape final_document a réussi."
         )
-        return None
 
     current_signature = _file_hash(md_path)
     state = load_project_state(project_name)
@@ -637,11 +639,11 @@ def export_publication_docx(project_name: str) -> Path | None:
     pub_docx_path = final_dir / "document_publication.docx"
 
     if not pub_md_path.exists():
-        print(
+        raise RuntimeError(
             f"[docx_export] document_publication.md introuvable "
-            f"pour le projet : {project_name}"
+            f"pour le projet '{project_name}'. "
+            "Assurez-vous que l'étape publication_markdown a réussi."
         )
-        return None
 
     final_content = (
         final_md_path.read_text(encoding="utf-8")
@@ -724,6 +726,13 @@ def export_publication_docx(project_name: str) -> Path | None:
         "source_signature": combined_sig,
         "updated_at": updated_at,
     }
+
+    # Mise à jour de la section cover dans project_state
+    if "cover" not in state:
+        state["cover"] = {}
+
+    state["cover"]["docx_ready"] = True
+    state["cover"]["inserted_into_docx"] = bool(cover_path)
 
     save_project_state(project_name, state)
 

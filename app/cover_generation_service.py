@@ -508,14 +508,24 @@ def generate_cover(project_name: str, force: bool = False) -> dict:
             print(f"[cover] Couverture typographique générée : {cover_jpg}")
 
         else:
-            # Génération par IA
+            # Génération par IA (ou fallback typographie si provider=fake)
             from app.cover_engine import get_cover_engine
-            context = build_cover_context(project_name)
-            prompt  = build_cover_prompt(context)
-            engine  = get_cover_engine()
-            engine.generate(prompt, cover_jpg)
-            provider = engine.provider_name
-            print(f"[cover] Couverture générée ({provider}) : {cover_jpg}")
+            from app import config as _cfg
+
+            _provider = getattr(_cfg, "COVER_PROVIDER", "fake").lower()
+
+            if _provider == "fake":
+                # Pas de vrai moteur d'image → couverture typographique propre
+                generate_typography_cover(cover_jpg, settings)
+                provider = "typography"
+                print(f"[cover] Couverture typographique (fake provider) : {cover_jpg}")
+            else:
+                context = build_cover_context(project_name)
+                prompt  = build_cover_prompt(context)
+                engine  = get_cover_engine()
+                engine.generate(prompt, cover_jpg)
+                provider = engine.provider_name
+                print(f"[cover] Couverture générée ({provider}) : {cover_jpg}")
 
     except Exception as exc:
         print(f"[cover] ERREUR génération : {exc}")
@@ -575,11 +585,14 @@ def _update_cover_state(state: dict, cover_info: dict) -> None:
 
 def get_cover_path(project_name: str) -> Path | None:
     """
-    Retourne le chemin cover.jpg si la couverture existe, sinon None.
-    Vérifie que le fichier est réel (non vide).
+    Retourne le chemin cover.jpg si la couverture existe et est substantielle.
+
+    Retourne None si :
+    - le fichier n'existe pas
+    - le fichier est vide ou trop petit (< 2 Ko → probablement un JPEG 1×1 px)
     """
     cover_jpg = SORTIE_DIR / project_name / "cover" / "cover.jpg"
-    if cover_jpg.exists() and cover_jpg.stat().st_size > 100:
+    if cover_jpg.exists() and cover_jpg.stat().st_size > 2_000:
         return cover_jpg
     return None
 

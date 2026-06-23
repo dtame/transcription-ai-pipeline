@@ -58,14 +58,20 @@ def _build_publication_report(publication_state: dict) -> dict:
 
 def _build_cover_report(cover_state: dict) -> dict:
     """Construit la section cover du rapport."""
+    cover_path = cover_state.get("path")
     return {
-        "generated": cover_state.get("generated", False),
-        "provider":  cover_state.get("provider", ""),
-        "style":     cover_state.get("style", ""),
-        "type":      cover_state.get("type", ""),
-        "source":    cover_state.get("source", ""),
-        "path":      cover_state.get("path"),
-        "updated_at": cover_state.get("updated_at"),
+        "present":           bool(cover_path),
+        "generated":         cover_state.get("generated", False),
+        "provider":          cover_state.get("provider", ""),
+        "style":             cover_state.get("style", ""),
+        "type":              cover_state.get("type", ""),
+        "source":            cover_state.get("source", ""),
+        "path":              cover_path,
+        "inserted_into_pdf": cover_state.get("inserted_into_pdf", False),
+        "inserted_into_docx": cover_state.get("inserted_into_docx", False),
+        "pdf_ready":         cover_state.get("pdf_ready", False),
+        "docx_ready":        cover_state.get("docx_ready", False),
+        "updated_at":        cover_state.get("updated_at"),
     }
 
 
@@ -83,6 +89,7 @@ def build_project_report(project_name: str) -> Path:
     harmonization_state = state.get("harmonization", {})
     cover_state = state.get("cover", {})
     client_export_state = state.get("client_export", {})
+    quality_state = publication_state.get("quality", {})
 
     # Métadonnées actuelles depuis project.yaml (source de vérité)
     try:
@@ -190,6 +197,12 @@ def build_project_report(project_name: str) -> Path:
             "generated": client_export_state.get("generated", False),
             "path":      client_export_state.get("path"),
             "updated_at": client_export_state.get("updated_at"),
+        },
+
+        "publication_quality": {
+            "status":   quality_state.get("status", "not_validated"),
+            "errors":   quality_state.get("errors", []),
+            "warnings": quality_state.get("warnings", []),
         },
     }
 

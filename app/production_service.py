@@ -10,6 +10,7 @@ from app.pipeline_runner import (
     run_project_pipeline,
     run_exports_only,
     run_report_only,
+    run_full_rebuild_pipeline,
     _fmt_duration,
 )
 from app.paths import LOGS_DIR
@@ -331,6 +332,62 @@ def resume_incomplete_projects() -> dict:
         allow_sleep_again()
 
     summary = _build_summary(started_at, results)
+    log_path = _save_run_log(summary)
+    _print_summary(summary, log_path)
+    return summary
+
+
+def rebuild_project_from_chunks(project_name: str) -> dict:
+    """
+    Reconstruction complète d'un projet depuis les chunks.
+
+    - Conserve les transcriptions et le transcript fusionné.
+    - Régénère les chunks depuis transcript_complet.txt.
+    - Remet tous les chunks à "pending" et supprime les fichiers processed/.
+    - Retraite les chunks avec l'IA.
+    - Reconstruit document_final, document_publication, DOCX, PDF, ZIP.
+
+    Utilisation :
+        Corriger les problèmes de rendu après amélioration des prompts
+        ou du pipeline, sans relancer la transcription (opération longue).
+    """
+    prevent_sleep()
+    started_at = datetime.now()
+
+    try:
+        projects = discover_projects()
+        project = next((p for p in projects if p.name == project_name), None)
+
+        if project is None:
+            result = {
+                "project": project_name,
+                "status": "error",
+                "started_at": started_at.isoformat(timespec="seconds"),
+                "finished_at": datetime.now().isoformat(timespec="seconds"),
+                "duration_seconds": 0,
+                "steps": {},
+                "fatal_error": f"Projet '{project_name}' introuvable dans depot/",
+            }
+        else:
+            # No Whisper model needed: transcription is skipped in full rebuild
+            result = run_full_rebuild_pipeline(project)
+
+    except Exception as exc:
+        result = {
+            "project": project_name,
+            "status": "error",
+            "started_at": started_at.isoformat(timespec="seconds"),
+            "finished_at": datetime.now().isoformat(timespec="seconds"),
+            "duration_seconds": 0,
+            "steps": {},
+            "fatal_error": str(exc),
+        }
+        log_event(f"ERREUR rebuild {project_name} : {exc}")
+
+    finally:
+        allow_sleep_again()
+
+    summary = _build_summary(started_at, [result])
     log_path = _save_run_log(summary)
     _print_summary(summary, log_path)
     return summary

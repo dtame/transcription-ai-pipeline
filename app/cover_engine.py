@@ -77,10 +77,17 @@ class BaseCoverEngine(ABC):
 
 class FakeCoverEngine(BaseCoverEngine):
     """
-    Moteur de simulation pour les tests.
-    Génère une image JPEG minimaliste de placeholder.
-    Utilise Pillow si disponible, sinon un JPEG minimal raw.
+    Moteur de simulation / fallback.
+
+    Génère une vraie couverture typographique propre (si les métadonnées
+    du projet sont disponibles via settings), ou une couverture de test
+    minimaliste si aucun contexte n'est fourni.
+
+    Ne produit JAMAIS un simple placeholder "COUVERTURE" en production.
     """
+
+    def __init__(self, settings: dict | None = None):
+        self._settings = settings or {}
 
     @property
     def provider_name(self) -> str:
@@ -88,29 +95,118 @@ class FakeCoverEngine(BaseCoverEngine):
 
     def generate(self, prompt: str, output_path: Path) -> Path:
         output_path.parent.mkdir(parents=True, exist_ok=True)
-        _write_placeholder_jpeg(output_path)
+
+        if self._settings:
+            # Couverture typographique propre avec les métadonnées du projet
+            try:
+                from app.cover_generation_service import _generate_typography_pillow
+                from app.publication_template_service import THEME_COLORS
+
+                settings = dict(self._settings)
+                if "theme_colors" not in settings:
+                    theme = settings.get("theme", "spirituel_inspirant")
+                    settings["theme_colors"] = THEME_COLORS.get(
+                        theme, THEME_COLORS["moderne_epure"]
+                    )
+                _generate_typography_pillow(output_path, settings)
+                return output_path
+            except Exception:
+                pass
+
+        # Fallback : couverture typographique minimale mais propre
+        _write_typographic_fallback_jpeg(output_path, self._settings)
         return output_path
 
 
 def _write_placeholder_jpeg(path: Path) -> None:
     """
-    Génère un JPEG de placeholder 600×900 px.
-    Pillow → image lisible avec texte.
-    Fallback → 1×1 px JPEG valide (aucune dépendance).
+    Alias interne conservé pour compatibilité.
+    Délègue vers _write_typographic_fallback_jpeg.
     """
+    _write_typographic_fallback_jpeg(path, {})
+
+
+def _write_typographic_fallback_jpeg(path: Path, settings: dict) -> None:
+    """
+    Génère une couverture de test/fallback typographique 600×900 px.
+
+    Utilise Pillow si disponible pour une couverture propre avec titre.
+    Fallback → 1×1 px JPEG valide (aucune dépendance).
+
+    Ne produit JAMAIS "COUVERTURE placeholder".
+    """
+    title    = settings.get("title", "")
+    subtitle = settings.get("subtitle", "")
+    author   = settings.get("author", "")
+    org      = settings.get("organization", "")
+
     try:
         from PIL import Image, ImageDraw
-        img = Image.new("RGB", (600, 900), color=(245, 245, 245))
+
+        W, H = 600, 900
+        # Fond blanc cassé élégant
+        bg     = (250, 248, 243)
+        dark   = (26, 26, 26)
+        accent = (100, 100, 100)
+
+        img  = Image.new("RGB", (W, H), color=bg)
         draw = ImageDraw.Draw(img)
-        draw.rectangle([20, 20, 579, 879], outline=(200, 200, 200), width=2)
-        draw.rectangle([40, 40, 559, 860], outline=(220, 220, 220), width=1)
-        cx = 300
-        draw.line([(cx - 60, 400), (cx + 60, 400)], fill=(180, 180, 180), width=1)
-        _draw_centered_text(draw, "COUVERTURE", cx, 430, (140, 140, 140))
-        _draw_centered_text(draw, "placeholder", cx, 460, (180, 180, 180))
-        img.save(str(path), "JPEG", quality=85)
+
+        # Bande haute
+        draw.rectangle([0, 0, W, int(H * 0.12)], fill=dark)
+        # Bande basse
+        draw.rectangle([0, H - int(H * 0.08), W, H], fill=dark)
+        # Ligne décorative
+        draw.rectangle([0, int(H * 0.12), W, int(H * 0.12) + 2], fill=accent)
+
+        # Titre
+        cy = int(H * 0.38)
+        if title:
+            _draw_wrapped_text(draw, title, W, cy, dark, max_chars=26, line_h=42)
+        else:
+            _draw_centered_text(draw, "Document", W // 2, cy, dark)
+
+        # Sous-titre
+        if subtitle:
+            _draw_wrapped_text(draw, subtitle, W, cy + 100, accent, max_chars=36, line_h=28)
+
+        # Séparateur
+        sep_y = int(H * 0.63)
+        draw.line([(W // 2 - 50, sep_y), (W // 2 + 50, sep_y)], fill=accent, width=1)
+
+        # Auteur
+        if author:
+            _draw_centered_text(draw, author, W // 2, sep_y + 30, dark)
+        if org:
+            _draw_centered_text(draw, org, W // 2, sep_y + 58, accent)
+
+        img.save(str(path), "JPEG", quality=92)
+
     except ImportError:
         path.write_bytes(_MINIMAL_JPEG_GREY)
+
+
+def _draw_wrapped_text(
+    draw, text: str, page_w: int, y: int, fill: tuple,
+    max_chars: int = 26, line_h: int = 40,
+) -> None:
+    """Dessine du texte centré sur plusieurs lignes."""
+    words = text.split()
+    lines: list[str] = []
+    current = ""
+    for w in words:
+        candidate = f"{current} {w}".strip()
+        if len(candidate) <= max_chars:
+            current = candidate
+        else:
+            if current:
+                lines.append(current)
+            current = w
+    if current:
+        lines.append(current)
+
+    for i, line in enumerate(lines[:4]):
+        _draw_centered_text(draw, line, page_w // 2, y + i * line_h, fill)
 
 
 def _draw_centered_text(
@@ -237,6 +333,11 @@ def get_cover_engine(provider: str | None = None) -> BaseCoverEngine:
     """
     Retourne le moteur correspondant au provider.
     Si provider est None, utilise COVER_PROVIDER depuis app/config.py.
+
+    Providers supportés :
+      "fake"        → couverture typographique (aucune dépendance)
+      "openai"      → DALL-E 3 (nécessite OPENAI_API_KEY)
+      "sdxl_local"  → Stable Diffusion XL local (nécessite diffusers + torch)
     """
     from app import config
 
@@ -246,7 +347,41 @@ def get_cover_engine(provider: str | None = None) -> BaseCoverEngine:
         return FakeCoverEngine()
     if _provider in ImageGenerationCoverEngine.SUPPORTED_PROVIDERS:
         return ImageGenerationCoverEngine(provider=_provider)
+    if _provider == "sdxl_local":
+        return _SdxlCoverEngineAdapter()
 
     # Fallback sécurisé
     print(f"[cover_engine] Provider inconnu '{_provider}', utilisation de 'fake'.")
     return FakeCoverEngine()
+
+
+class _SdxlCoverEngineAdapter(BaseCoverEngine):
+    """
+    Adaptateur qui connecte BaseCoverEngine à SdxlLocalProvider
+    (app.image_engine.sdxl_provider).
+
+    Permet d'utiliser COVER_PROVIDER = "sdxl_local" dans app/config.py
+    pour générer les couvertures avec SDXL sans modifier le pipeline existant.
+    """
+
+    @property
+    def provider_name(self) -> str:
+        return "sdxl_local"
+
+    def generate(self, prompt: str, output_path: Path) -> Path:
+        try:
+            from app.image_engine.sdxl_provider import SdxlLocalProvider
+        except ImportError as exc:
+            raise RuntimeError(
+                "Le moteur SDXL local n'est pas installé ou n'est pas disponible.\n"
+                "Commande : pip install diffusers transformers accelerate safetensors torch"
+            ) from exc
+
+        from app.image_engine.image_config import IMAGE_NEGATIVE_PROMPT_DEFAULT
+
+        provider = SdxlLocalProvider()
+        return provider.generate_image(
+            prompt=prompt,
+            output_path=output_path,
+            negative_prompt=IMAGE_NEGATIVE_PROMPT_DEFAULT,
+        )

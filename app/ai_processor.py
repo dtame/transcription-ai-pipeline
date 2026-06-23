@@ -14,13 +14,91 @@ Pipeline :
        d. Mettre à jour project_state.json (status, chemin, timestamp)
     3. Les chunks déjà "done" sont ignorés (reprise après interruption)
     4. Les erreurs sont enregistrées sans interrompre les autres chunks
+       Un fichier d'erreur détaillé est écrit dans sortie/<projet>/errors/
 """
 
+import re
+import traceback
 from datetime import datetime
 
 from app.paths import SORTIE_DIR
 from app.project_state import load_project_state, save_project_state
 from app.ai_engine import get_ai_engine
+
+
+_METADATA_HEADER_PATTERNS = re.compile(
+    r"^#\s*(Projet|Chunk|Généré le)\s*:",
+    re.IGNORECASE | re.MULTILINE,
+)
+
+
+def _strip_chunk_metadata_header(text: str) -> str:
+    """
+    Supprime les lignes d'en-tête de métadonnées d'un chunk avant traitement IA.
+
+    Retire les lignes du type :
+        # Projet : nom_du_projet
+        # Chunk : 001/008
+        # Généré le : 2024-...
+
+    ainsi que les lignes vides initiales après suppression.
+    """
+    lines = text.splitlines()
+    cleaned: list[str] = []
+    header_done = False
+
+    for line in lines:
+        stripped = line.strip()
+        if not header_done:
+            if _METADATA_HEADER_PATTERNS.match(stripped):
+                continue
+            if not stripped:
+                continue
+            header_done = True
+        cleaned.append(line)
+
+    return "\n".join(cleaned).strip()
+
+
+def _write_chunk_error(
+    errors_dir,
+    chunk_name: str,
+    exc: Exception,
+    tb: str,
+    prompt_excerpt: str | None = None,
+) -> None:
+    """
+    Écrit un fichier d'erreur détaillé dans sortie/<projet>/errors/.
+
+    Args:
+        errors_dir:    Path vers le dossier errors/ du projet.
+        chunk_name:    Nom du chunk concerné (ex. chunk_045.txt).
+        exc:           Exception levée pendant le traitement.
+        tb:            Traceback complet en chaîne.
+        prompt_excerpt: Extrait du prompt si disponible.
+    """
+    errors_dir.mkdir(parents=True, exist_ok=True)
+    error_filename = chunk_name.replace(".txt", ".error.txt")
+    error_path = errors_dir / error_filename
+
+    lines = [
+        f"Chunk      : {chunk_name}",
+        f"Date       : {datetime.now().isoformat(timespec='seconds')}",
+        f"Erreur     : {type(exc).__name__}: {exc}",
+        "",
+        "=== Traceback ===",
+        tb,
+    ]
+
+    if prompt_excerpt:
+        lines += [
+            "",
+            "=== Extrait du prompt (500 premiers caractères) ===",
+            prompt_excerpt[:500],
+        ]
+
+    error_path.write_text("\n".join(lines), encoding="utf-8")
+    print(f"[ai_processor] Fichier d'erreur écrit : {error_path}")
 
 
 def process_project_chunks(project) -> None:
@@ -30,12 +108,18 @@ def process_project_chunks(project) -> None:
     Génère des fichiers Markdown dans sortie/<projet>/processed/
     et met à jour project_state.json à chaque chunk traité.
 
+    En cas d'erreur sur un chunk :
+    - le chunk est marqué "failed" dans project_state.json
+    - un fichier d'erreur est écrit dans sortie/<projet>/errors/
+    - les autres chunks continuent d'être traités
+
     Args:
         project: objet projet avec attribut .name (str ou Path)
     """
     project_output_dir = SORTIE_DIR / project.name
     chunks_dir = project_output_dir / "chunks"
     processed_dir = project_output_dir / "processed"
+    errors_dir = project_output_dir / "errors"
 
     processed_dir.mkdir(parents=True, exist_ok=True)
 
@@ -69,23 +153,132 @@ def process_project_chunks(project) -> None:
 
         print(f"Traitement IA du chunk : {chunk_name}")
 
+        prompt_excerpt: str | None = None
+
         try:
             text = chunk_path.read_text(encoding="utf-8")
-            result = engine.process(text, project_name=project.name)
+            text = _strip_chunk_metadata_header(text)
+
+            prompt = engine.build_prompt(text, project_name=project.name)
+            prompt_excerpt = prompt[:500]
+
+            result = engine.send_prompt(prompt)
 
             output_path.write_text(result, encoding="utf-8")
 
             chunk["status"] = "done"
             chunk["processed_file"] = str(output_path)
             chunk["processed_at"] = datetime.now().isoformat(timespec="seconds")
+            chunk.pop("error", None)
 
             save_project_state(project.name, state)
 
             print(f"Chunk traité : {output_path}")
 
         except Exception as e:
+            tb = traceback.format_exc()
+
             chunk["status"] = "failed"
             chunk["error"] = str(e)
             save_project_state(project.name, state)
 
+            _write_chunk_error(errors_dir, chunk_name, e, tb, prompt_excerpt)
             print(f"Erreur traitement chunk {chunk_name} : {e}")
+
+
+def process_single_chunk(project_name: str, chunk_name: str) -> bool:
+    """
+    Retraite un seul chunk d'un projet, quel que soit son statut actuel.
+
+    Utile pour rejouer un chunk spécifique sans relancer tout le pipeline.
+
+    Args:
+        project_name: nom du projet (sous-dossier de sortie/)
+        chunk_name:   nom du fichier chunk (ex. "chunk_045.txt")
+
+    Returns:
+        True si le traitement a réussi, False sinon.
+    """
+    project_output_dir = SORTIE_DIR / project_name
+    chunks_dir = project_output_dir / "chunks"
+    processed_dir = project_output_dir / "processed"
+    errors_dir = project_output_dir / "errors"
+
+    processed_dir.mkdir(parents=True, exist_ok=True)
+
+    state = load_project_state(project_name)
+    chunks_state = state.get("chunks", {})
+
+    if chunk_name not in chunks_state:
+        print(
+            f"[reprocess] Chunk '{chunk_name}' absent de project_state.json "
+            f"pour le projet '{project_name}'.\n"
+            f"Chunks disponibles : {list(chunks_state.keys())}"
+        )
+        return False
+
+    chunk_path = chunks_dir / chunk_name
+    if not chunk_path.exists():
+        print(f"[reprocess] Fichier chunk introuvable : {chunk_path}")
+        return False
+
+    output_name = chunk_name.replace(".txt", ".md")
+    output_path = processed_dir / output_name
+
+    engine = get_ai_engine()
+    print(f"[reprocess] Moteur IA actif : {engine.__class__.__name__}")
+    print(f"[reprocess] Retraitement du chunk : {chunk_name}")
+
+    prompt_excerpt: str | None = None
+
+    try:
+        text = chunk_path.read_text(encoding="utf-8")
+        text = _strip_chunk_metadata_header(text)
+
+        prompt = engine.build_prompt(text, project_name=project_name)
+        prompt_excerpt = prompt[:500]
+
+        result = engine.send_prompt(prompt)
+
+        output_path.write_text(result, encoding="utf-8")
+
+        chunk = chunks_state[chunk_name]
+        chunk["status"] = "done"
+        chunk["processed_file"] = str(output_path)
+        chunk["processed_at"] = datetime.now().isoformat(timespec="seconds")
+        chunk.pop("error", None)
+
+        save_project_state(project_name, state)
+
+        print(f"[reprocess] Chunk retraité avec succès : {output_path}")
+        return True
+
+    except Exception as e:
+        tb = traceback.format_exc()
+
+        chunk = chunks_state[chunk_name]
+        chunk["status"] = "failed"
+        chunk["error"] = str(e)
+        save_project_state(project_name, state)
+
+        _write_chunk_error(errors_dir, chunk_name, e, tb, prompt_excerpt)
+        print(f"[reprocess] Erreur lors du retraitement de {chunk_name} : {e}")
+        return False
+
+
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="Retraite un chunk spécifique d'un projet TranscriptionAI."
+    )
+    parser.add_argument("project_name", help="Nom du projet (ex: pastoral_retreat)")
+    parser.add_argument(
+        "--chunk",
+        required=True,
+        help="Nom du fichier chunk à retraiter (ex: chunk_045.txt)",
+    )
+
+    args = parser.parse_args()
+    success = process_single_chunk(args.project_name, args.chunk)
+    raise SystemExit(0 if success else 1)

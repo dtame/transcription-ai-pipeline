@@ -5,6 +5,7 @@ import json
 import re
 
 from reportlab.platypus import (
+    BaseDocTemplate, PageTemplate, Frame, NextPageTemplate,
     SimpleDocTemplate, Paragraph, Spacer, PageBreak, HRFlowable, Image as RLImage,
 )
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -30,11 +31,26 @@ def _get_final_dir(project_name: str) -> Path:
 
 
 def _get_md_path(project_name: str) -> Path:
-    return _get_final_dir(project_name) / "document_final.md"
+    """
+    Returns the best available Markdown source for the basic PDF export.
+
+    Priority:
+      1. document_clean.md  (clean version without technical metadata)
+      2. document_final.md  (fallback — internal debug version)
+    """
+    final_dir = _get_final_dir(project_name)
+    clean_md = final_dir / "document_clean.md"
+    if clean_md.exists() and clean_md.stat().st_size > 100:
+        return clean_md
+    return final_dir / "document_final.md"
 
 
 def _get_pdf_path(project_name: str) -> Path:
     return _get_final_dir(project_name) / "document_final.pdf"
+
+
+def _get_clean_pdf_path(project_name: str) -> Path:
+    return _get_final_dir(project_name) / "document_clean.pdf"
 
 
 def _should_regenerate(
@@ -204,9 +220,18 @@ def _convert_markdown_to_story(md_text: str, styles: dict) -> list:
             i += 1
             continue
 
-        # Horizontal rule
+        # Horizontal rule → ligne fine centrée
         if re.match(r"^-{3,}$", stripped) or re.match(r"^\*{3,}$", stripped):
-            story.append(Paragraph("─" * 60, styles["hr"]))
+            story.append(
+                HRFlowable(
+                    width="60%",
+                    thickness=0.5,
+                    color=colors.HexColor("#cccccc"),
+                    hAlign="CENTER",
+                    spaceAfter=8,
+                    spaceBefore=8,
+                )
+            )
             i += 1
             continue
 
@@ -268,16 +293,18 @@ def export_pdf(project_name: str) -> Path | None:
       - le MD source a changé (signature différente)
       - la signature enregistrée ne correspond plus
 
-    Retourne le chemin du PDF, ou None si le MD source est absent.
+    Raises:
+        RuntimeError: si le fichier source Markdown est absent.
     """
     md_path = _get_md_path(project_name)
     pdf_path = _get_pdf_path(project_name)
 
     if not md_path.exists():
-        print(
-            f"[pdf_export] document_final.md introuvable pour le projet : {project_name}"
+        raise RuntimeError(
+            f"[pdf_export] Fichier source absent pour le projet '{project_name}' : "
+            f"{md_path.name}. "
+            "Assurez-vous que l'étape final_document a réussi."
         )
-        return None
 
     current_signature = _file_hash(md_path)
     state = load_project_state(project_name)
@@ -674,26 +701,32 @@ def _add_cover_story(
     story.append(PageBreak())
 
 
-def _add_image_cover_story(
-    story: list,
+def _draw_cover_image_on_canvas(
+    canvas,
     cover_path: Path,
-    pagesize: tuple,
+    page_w: float,
+    page_h: float,
 ) -> None:
-    """Insère une image pleine page comme couverture dans la story ReportLab."""
-    page_width, page_height = pagesize
-    try:
-        img = RLImage(
-            str(cover_path),
-            width=page_width,
-            height=page_height,
-            kind="proportional",
-        )
-        img.hAlign = "CENTER"
-        story.append(img)
-    except Exception:
-        # Image illisible → on ignore silencieusement la couverture image
-        pass
-    story.append(PageBreak())
+    """
+    Dessine la couverture directement sur le canvas ReportLab.
+
+    L'image remplit toute la page en conservant son ratio (preserveAspectRatio=True,
+    centré). Pour les couvertures générées aux dimensions standard du format de page,
+    le remplissage est exact. Pour les images importées d'un autre ratio, un léger
+    letterboxing peut apparaître.
+
+    Ne lève jamais d'exception : les erreurs sont loguées et la page reste blanche.
+    """
+    canvas.drawImage(
+        str(cover_path),
+        0,
+        0,
+        width=page_w,
+        height=page_h,
+        preserveAspectRatio=True,
+        anchor="c",
+        mask="auto",
+    )
 
 
 def _add_toc_story(
@@ -741,9 +774,18 @@ def _convert_markdown_to_story_pub(md_text: str, styles: dict) -> list:
             i += 1
             continue
 
-        # Séparateur
+        # Séparateur → ligne fine centrée
         if re.match(r"^-{3,}$", stripped) or re.match(r"^\*{3,}$", stripped):
-            story.append(Paragraph("─" * 60, styles["hr"]))
+            story.append(
+                HRFlowable(
+                    width="55%",
+                    thickness=0.5,
+                    color=colors.HexColor("#cccccc"),
+                    hAlign="CENTER",
+                    spaceAfter=8,
+                    spaceBefore=8,
+                )
+            )
             i += 1
             continue
 
@@ -817,12 +859,19 @@ def export_publication_pdf(project_name: str) -> Path | None:
     Génère final/document_publication.pdf.
 
     Applique :
-    - Couverture typographique pleine page
+    - Couverture pleine page (image dessinée directement sur canvas, sans frame)
+      ou couverture typographique si aucune image n'est disponible
     - Table des matières statique
     - Styles selon template/theme/font_style
     - Format de page selon page_size
     - Métadonnées PDF (titre, auteur, sujet)
     - En-têtes (titre), pieds de page (organisation + numéro)
+
+    Architecture PDF :
+    - Avec image cover : BaseDocTemplate avec 2 PageTemplate
+        • 'cover'   : frame pleine page, image dessinée par onPage via canvas.drawImage
+        • 'content' : frame avec marges normales, en-têtes/pieds de page
+    - Sans image cover : BaseDocTemplate avec 1 PageTemplate 'content'
 
     Ne reconstruit pas si les sources n'ont pas changé.
     """
@@ -837,22 +886,38 @@ def export_publication_pdf(project_name: str) -> Path | None:
     pub_pdf_path = final_dir / "document_publication.pdf"
 
     if not pub_md_path.exists():
-        print(
+        raise RuntimeError(
             f"[pdf_export] document_publication.md introuvable "
-            f"pour le projet : {project_name}"
+            f"pour le projet '{project_name}'. "
+            "Assurez-vous que l'étape publication_markdown a réussi."
         )
-        return None
 
-    final_content = (
-        final_md_path.read_text(encoding="utf-8")
-        if final_md_path.exists()
-        else ""
-    )
+    # Utiliser document_publication.md (déjà nettoyé) pour le contenu du PDF
+    # Fallback sur document_clean.md, puis document_final.md
+    clean_md_path = final_dir / "document_clean.md"
+
+    if pub_md_path.exists():
+        publication_content = pub_md_path.read_text(encoding="utf-8")
+    elif clean_md_path.exists():
+        publication_content = clean_md_path.read_text(encoding="utf-8")
+    elif final_md_path.exists():
+        from app.publication_cleaner import clean_publication_markdown
+        publication_content = clean_publication_markdown(
+            final_md_path.read_text(encoding="utf-8")
+        )
+    else:
+        publication_content = ""
+
+    final_content = publication_content
     settings = resolve_publication_settings(project_name, final_content)
 
     from app.cover_generation_service import get_cover_path
 
     cover_path = get_cover_path(project_name)
+
+    if not cover_path:
+        print("[cover] aucune couverture disponible")
+
     cover_sig = _file_hash(cover_path) if cover_path else "none"
 
     pub_md_sig = _file_hash(pub_md_path)
@@ -885,41 +950,92 @@ def export_publication_pdf(project_name: str) -> Path | None:
     if keywords:
         subject = f"{subject} — {keywords}" if subject else keywords
 
-    doc = SimpleDocTemplate(
+    pub_styles = _build_pub_styles(font_cfg, theme_colors)
+    on_page_cb = _make_page_callback(settings, margin)
+
+    page_w, page_h = pagesize
+    use_image_cover = bool(cover_path) and settings.get("include_cover", True)
+
+    # ------------------------------------------------------------------
+    # Frames et page templates
+    # ------------------------------------------------------------------
+
+    # Frame de contenu (avec marges) — identique au SimpleDocTemplate précédent
+    content_frame = Frame(
+        margin,                     # x = leftMargin
+        margin * 1.2,               # y = bottomMargin
+        page_w - 2 * margin,        # width
+        page_h - 2.4 * margin,      # height = page_h - topMargin - bottomMargin
+        id="content",
+    )
+
+    content_tpl = PageTemplate(
+        id="content",
+        frames=[content_frame],
+        onPage=on_page_cb,
+    )
+
+    if use_image_cover:
+        # Frame pleine page pour la couverture image (aucune marge)
+        cover_frame = Frame(
+            0, 0, page_w, page_h,
+            leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0,
+            id="cover",
+        )
+
+        def on_cover_page(canvas, doc):
+            canvas.saveState()
+            try:
+                _draw_cover_image_on_canvas(canvas, cover_path, page_w, page_h)
+            except Exception as exc:
+                print(f"[cover] erreur dessin couverture PDF : {exc}")
+            canvas.restoreState()
+
+        cover_tpl = PageTemplate(
+            id="cover",
+            frames=[cover_frame],
+            onPage=on_cover_page,
+        )
+        page_templates = [cover_tpl, content_tpl]
+    else:
+        page_templates = [content_tpl]
+
+    doc = BaseDocTemplate(
         str(pub_pdf_path),
         pagesize=pagesize,
-        leftMargin=margin,
-        rightMargin=margin,
-        topMargin=margin * 1.2,
-        bottomMargin=margin * 1.2,
+        pageTemplates=page_templates,
         title=settings.get("title", project_name),
         author=settings.get("author", "TranscriptionAI"),
         subject=subject,
         creator="TranscriptionAI",
     )
 
-    pub_styles = _build_pub_styles(font_cfg, theme_colors)
-    on_page = _make_page_callback(settings, margin)
+    # ------------------------------------------------------------------
+    # Story
+    # ------------------------------------------------------------------
 
     story: list = []
 
-    # Couverture
     if settings.get("include_cover", True):
-        if cover_path:
-            _add_image_cover_story(story, cover_path, pagesize)
+        if use_image_cover:
+            # La couverture est dessinée par on_cover_page → on avance
+            # simplement vers la page suivante (template 'content')
+            story.append(NextPageTemplate("content"))
+            story.append(PageBreak())
         else:
+            # Couverture typographique dans la story
             _add_cover_story(story, settings, pub_styles, pagesize)
 
-    # Table des matières
+    # Table des matières (titres publiables uniquement)
     if settings.get("include_toc", True) and final_content:
-        headings = extract_headings(final_content)
+        headings = extract_headings(final_content, publishable_only=True)
         if headings:
             _add_toc_story(story, headings, pub_styles)
 
-    # Contenu principal
-    story.extend(_convert_markdown_to_story_pub(final_content, pub_styles))
+    # Contenu principal (version nettoyée de publication)
+    story.extend(_convert_markdown_to_story_pub(publication_content, pub_styles))
 
-    doc.build(story, onFirstPage=on_page, onLaterPages=on_page)
+    doc.build(story)
 
     updated_at = datetime.now().isoformat(timespec="seconds")
 
@@ -932,6 +1048,13 @@ def export_publication_pdf(project_name: str) -> Path | None:
         "source_signature": combined_sig,
         "updated_at": updated_at,
     }
+
+    # Mise à jour de la section cover dans project_state
+    if "cover" not in state:
+        state["cover"] = {}
+
+    state["cover"]["pdf_ready"] = True
+    state["cover"]["inserted_into_pdf"] = use_image_cover
 
     save_project_state(project_name, state)
 

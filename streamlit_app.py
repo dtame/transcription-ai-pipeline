@@ -502,6 +502,29 @@ if st.session_state.selected_project:
             )
             st.rerun()
 
+    # ── Reconstruction complète (2e ligne) ───────────────────────────────────
+    col_rb1, col_rb2, _col_rb3, _col_rb4 = st.columns(4)
+
+    with col_rb1:
+        st.markdown("")  # petit espacement
+        if st.button(
+            "🔁 Reconstruire depuis chunks",
+            key=f"rebuild_chunks_{pname}",
+            disabled=busy,
+            use_container_width=True,
+            help=(
+                "Reconstruit TOUT depuis les chunks existants sans refaire la "
+                "transcription. Utile après correction des prompts IA ou du "
+                "pipeline pour obtenir un PDF propre."
+            ),
+        ):
+            from app.production_service import rebuild_project_from_chunks
+            _run_action(
+                f"Reconstruction de {pname}",
+                lambda name=pname: rebuild_project_from_chunks(name),
+            )
+            st.rerun()
+
     st.divider()
 
     # ── Métadonnées du projet ─────────────────────────────────────────────────
@@ -822,18 +845,25 @@ if st.session_state.selected_project:
             for _me in _meta_errors:
                 st.error(f"❌ {_me}")
         else:
-            try:
-                _saved_path = save_editable_metadata(pname, _new_meta)
-                from app.project_state import update_metadata_state
-                update_metadata_state(pname, _saved_path)
-                st.success(
-                    f"✅ Métadonnées enregistrées.  \n"
-                    f"📄 Fichier : `{_saved_path}`"
+            _expected_yaml = get_yaml_path(pname)
+            if not _expected_yaml.parent.exists():
+                st.error(
+                    f"❌ Le dossier projet `{pname}` n'existe pas dans depot/. "
+                    f"Sauvegarde annulée — aucun dossier ne sera créé automatiquement."
                 )
-                st.cache_data.clear()
-                st.rerun()
-            except Exception as _me:
-                st.error(f"❌ Erreur lors de la sauvegarde : {_me}")
+            else:
+                try:
+                    _saved_path = save_editable_metadata(pname, _new_meta)
+                    from app.project_state import update_metadata_state
+                    update_metadata_state(pname, _saved_path)
+                    st.success(
+                        f"✅ Métadonnées sauvegardées dans :  \n"
+                        f"`depot/{pname}/project.yaml`"
+                    )
+                    st.cache_data.clear()
+                    st.rerun()
+                except Exception as _me:
+                    st.error(f"❌ Erreur lors de la sauvegarde : {_me}")
 
     st.divider()
 
@@ -871,8 +901,20 @@ if st.session_state.selected_project:
         else:
             st.caption("Aucune métadonnée de couverture disponible.")
 
+        # Dimensions et taille du fichier
+        if _cover_jpg.exists() and _cover_jpg.stat().st_size > 100:
+            _size_kb = _cover_jpg.stat().st_size / 1024
+            st.caption(f"Taille fichier : {_size_kb:.0f} Ko")
+            try:
+                from PIL import Image as _PILImage
+                with _PILImage.open(_cover_jpg) as _pil_img:
+                    _cw, _ch = _pil_img.size
+                st.caption(f"Dimensions : {_cw} × {_ch} px")
+            except Exception:
+                pass
+
         # Actions sur la couverture
-        col_ca1, col_ca2, col_ca3, col_ca4 = st.columns(4)
+        col_ca1, col_ca2, col_ca3, col_ca4, col_ca5 = st.columns(5)
 
         with col_ca1:
             if st.button(
@@ -916,6 +958,16 @@ if st.session_state.selected_project:
 
         with col_ca4:
             if st.button(
+                "📁 Dossier couverture",
+                key=f"cover_dir_{pname}",
+                disabled=not _cover_dir.exists(),
+                use_container_width=True,
+                help="Ouvre le dossier contenant la couverture.",
+            ):
+                open_path(_cover_dir)
+
+        with col_ca5:
+            if st.button(
                 "🗑 Supprimer couverture",
                 key=f"cover_del_{pname}",
                 disabled=not _cover_jpg.exists(),
@@ -926,6 +978,87 @@ if st.session_state.selected_project:
                 delete_cover(pname)
                 st.cache_data.clear()
                 st.rerun()
+
+    # ── Génération SDXL locale (optionnel) ──────────────────────────────────
+    with st.expander("Générer image de couverture (SDXL local)", expanded=False):
+        st.caption(
+            "Génère une image PNG haute résolution avec Stable Diffusion XL (local). "
+            "Le modèle est téléchargé automatiquement lors du premier usage (~6 Go). "
+            "Requiert : diffusers, transformers, accelerate, safetensors, torch."
+        )
+
+        from app.project_metadata import load_project_metadata as _load_meta
+        _sdxl_meta = _load_meta(pname)
+        _sdxl_title   = st.text_input(
+            "Titre", value=_sdxl_meta.get("title", ""),
+            key=f"sdxl_title_{pname}",
+        )
+        _sdxl_subtitle = st.text_input(
+            "Sous-titre (optionnel)", value=_sdxl_meta.get("subtitle", ""),
+            key=f"sdxl_subtitle_{pname}",
+        )
+        _sdxl_theme = st.text_input(
+            "Résumé thématique visuel (quelques mots)",
+            value="",
+            key=f"sdxl_theme_{pname}",
+            placeholder="ex: peaceful nature retreat, community, light and warmth",
+        )
+        _sdxl_seed_raw = st.text_input(
+            "Seed (optionnel, entier)", value="42",
+            key=f"sdxl_seed_{pname}",
+        )
+        _sdxl_seed: int | None = None
+        try:
+            _sdxl_seed = int(_sdxl_seed_raw) if _sdxl_seed_raw.strip() else None
+        except ValueError:
+            st.warning("Seed invalide, génération non déterministe.")
+
+        if st.button(
+            "Générer image SDXL",
+            key=f"sdxl_gen_{pname}",
+            disabled=busy or not _sdxl_title.strip(),
+            use_container_width=True,
+            help=(
+                "Lance la génération SDXL. "
+                "Le modèle doit être installé (pip install diffusers torch …)."
+            ),
+        ):
+            def _run_sdxl(
+                name: str = pname,
+                title: str = _sdxl_title,
+                subtitle: str = _sdxl_subtitle,
+                theme: str = _sdxl_theme,
+                seed: "int | None" = _sdxl_seed,
+            ) -> str:
+                from app.image_engine.image_service import generate_project_cover_image
+                out = generate_project_cover_image(
+                    project_name=name,
+                    title=title,
+                    subtitle=subtitle or None,
+                    theme_summary=theme or None,
+                    seed=seed,
+                )
+                return str(out)
+
+            _run_action(f"Génération SDXL couverture {pname}", _run_sdxl)
+            st.rerun()
+
+        # Aperçu de l'image SDXL si elle existe
+        _sdxl_png = SORTIE_DIR / pname / "images" / "cover_front" / "cover_front.png"
+        if _sdxl_png.exists():
+            st.image(str(_sdxl_png), caption="Couverture SDXL (cover_front.png)", use_container_width=True)
+            _sdxl_meta_path = _sdxl_png.parent / "cover_front.metadata.json"
+            if _sdxl_meta_path.exists():
+                try:
+                    import json as _sdxl_json
+                    _smeta = _sdxl_json.loads(_sdxl_meta_path.read_text(encoding="utf-8"))
+                    st.caption(
+                        f"Provider : {_smeta.get('provider', '—')} | "
+                        f"Modèle : {_smeta.get('model_id', '—')} | "
+                        f"Généré le : {_smeta.get('generated_at', '—')[:19]}"
+                    )
+                except Exception:
+                    pass
 
     # Upload utilisateur
     st.markdown("**Importer une image personnalisée**")

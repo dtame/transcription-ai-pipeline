@@ -28,6 +28,7 @@ from app.config import (
     OLLAMA_BASE_URL,
     OLLAMA_MODEL,
     OLLAMA_OPTIONS,
+    OLLAMA_TIMEOUT_SECONDS,
     LMSTUDIO_BASE_URL,
     LMSTUDIO_MODEL,
 )
@@ -116,7 +117,7 @@ class OllamaEngine(BaseAIEngine):
             response = requests.post(
                 f"{OLLAMA_BASE_URL}/api/generate",
                 json=payload,
-                timeout=300,
+                timeout=OLLAMA_TIMEOUT_SECONDS,
             )
             response.raise_for_status()
             data = response.json()

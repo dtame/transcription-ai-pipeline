@@ -70,10 +70,16 @@ def _get_overall_status(state: dict, report: dict) -> str:
         return STATUS_PENDING
 
     has_audio_errors = any(
-        v.get("status") == "failed" for v in files_state.values()
+        v.get("status") in ("failed", "partial_error") for v in files_state.values()
     )
     if has_audio_errors:
         return STATUS_ERROR
+
+    has_segmenting = any(
+        v.get("status") == "processing_segments" for v in files_state.values()
+    )
+    if has_segmenting:
+        return STATUS_INTERRUPTED
 
     pub_pdf = publication.get("pdf", {}).get("generated", False)
     if pub_pdf:
@@ -125,7 +131,29 @@ def get_project_status(project_name: str) -> dict:
 
     audio_total       = len(files_state)
     audio_transcribed = sum(1 for v in files_state.values() if v.get("status") == "transcribed")
-    audio_errors      = sum(1 for v in files_state.values() if v.get("status") == "failed")
+    audio_errors      = sum(
+        1 for v in files_state.values()
+        if v.get("status") in ("failed", "partial_error")
+    )
+    audio_segmenting  = sum(
+        1 for v in files_state.values()
+        if v.get("status") == "processing_segments"
+    )
+
+    # Progression des segments pour les fichiers en cours / partiellement terminés
+    segments_progress: list[dict] = []
+    for path, info in files_state.items():
+        segs = info.get("segments")
+        if not segs:
+            continue
+        total_segs = len(segs)
+        done_segs = sum(1 for s in segs.values() if s.get("status") == "transcribed")
+        segments_progress.append({
+            "file": info.get("path", path),
+            "status": info.get("status"),
+            "segments_done": done_segs,
+            "segments_total": total_segs,
+        })
 
     chunks_total = len(chunks_state)
     chunks_done  = sum(1 for v in chunks_state.values() if v.get("status") == "done")
@@ -156,7 +184,7 @@ def get_project_status(project_name: str) -> dict:
     errors: list[dict] = []
 
     for path, info in files_state.items():
-        if info.get("status") == "failed" and info.get("error"):
+        if info.get("status") in ("failed", "partial_error") and info.get("error"):
             errors.append({
                 "source": "project_state.json",
                 "step": "transcription",
@@ -197,9 +225,11 @@ def get_project_status(project_name: str) -> dict:
         "status":     overall,
         "execution":  execution,
         "audio": {
-            "total":       audio_total,
-            "transcribed": audio_transcribed,
-            "errors":      audio_errors,
+            "total":             audio_total,
+            "transcribed":       audio_transcribed,
+            "errors":            audio_errors,
+            "segmenting":        audio_segmenting,
+            "segments_progress": segments_progress,
         },
         "chunks": {
             "total": chunks_total,
@@ -245,7 +275,7 @@ def get_project_errors(project_name: str) -> list[dict]:
 
     state = load_project_state(project_name)
     for path, info in state.get("files", {}).items():
-        if info.get("status") == "failed" and info.get("error"):
+        if info.get("status") in ("failed", "partial_error") and info.get("error"):
             errors.append({
                 "source": "project_state.json",
                 "step":   "transcription",

@@ -247,7 +247,11 @@ def export_client_zip(project_name: str, force: bool = False) -> Path | None:
     if missing:
         for m in missing:
             print(f"[client_export] MANQUANT : {m}")
-        return None
+        raise RuntimeError(
+            f"[client_export] Fichiers manquants pour le projet '{project_name}' : "
+            f"{', '.join(missing)}. "
+            "Assurez-vous que les étapes publication_docx et publication_pdf ont réussi."
+        )
 
     # ── Couverture ────────────────────────────────────────────────────────────
     state       = load_project_state(project_name)

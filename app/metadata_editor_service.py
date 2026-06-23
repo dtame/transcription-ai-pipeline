@@ -164,16 +164,89 @@ _KNOWN_FIELDS: set[str] = {
 # API publique
 # ─────────────────────────────────────────────────────────────────────────────
 
+def _find_project_source_dir(project_name: str) -> Path | None:
+    """
+    Résout le vrai dossier source d'un projet dans depot/.
+
+    Essaie d'abord le chemin direct (depot/<project_name>/), puis cherche
+    un sous-dossier de depot/ dont le nom *sanitisé* correspond à project_name.
+    Cela gère les cas où le dossier contient des espaces ou des caractères
+    spéciaux (ex. "pastoral retreat" → project_name "pastoral_retreat").
+
+    Retourne le chemin absolu du dossier source, ou None si introuvable.
+    """
+    from app.file_utils import sanitize_name
+
+    direct = DEPOT_DIR / project_name
+    if direct.is_dir():
+        return direct
+
+    if DEPOT_DIR.exists():
+        for d in DEPOT_DIR.iterdir():
+            if d.is_dir() and sanitize_name(d.name) == project_name:
+                return d
+    return None
+
+
 def get_yaml_path(project_name: str) -> Path:
+    """
+    Retourne le chemin vers project.yaml en résolvant le vrai dossier source.
+
+    Si le dossier source est trouvé (même avec un nom contenant des espaces),
+    retourne <source_dir>/project.yaml. Sinon, retourne le chemin canonique
+    depot/<project_name>/project.yaml (dossier peut-être inexistant).
+    """
+    source_dir = _find_project_source_dir(project_name)
+    if source_dir is not None:
+        return source_dir / "project.yaml"
     return DEPOT_DIR / project_name / "project.yaml"
+
+
+def _validate_project_name(project_name: str) -> None:
+    """
+    Vérifie que project_name est un identifiant technique simple et sûr.
+
+    Lève ValueError si le nom contient des caractères interdits susceptibles
+    de créer des chemins non désirés (traversée de répertoire, chemin absolu…).
+    """
+    if not project_name or not project_name.strip():
+        raise ValueError("Le nom du projet ne peut pas être vide.")
+    name = project_name.strip()
+    _FORBIDDEN_TOKENS = ("/", "\\", ":", "..")
+    for token in _FORBIDDEN_TOKENS:
+        if token in name:
+            raise ValueError(
+                f"Nom de projet invalide : '{name}'. "
+                f"Le jeton '{token}' est interdit dans un identifiant de projet."
+            )
+    if Path(name).is_absolute():
+        raise ValueError(
+            f"Nom de projet invalide : '{name}'. "
+            f"Les chemins absolus sont interdits comme identifiant de projet."
+        )
 
 
 def ensure_project_yaml(project_name: str) -> Path:
     """
     Crée project.yaml avec les valeurs par défaut s'il n'existe pas.
-    Retourne le chemin vers le fichier (existant ou créé).
+
+    Le dossier source depot/<project_name> doit déjà exister (il peut avoir
+    un nom contenant des espaces ou caractères spéciaux — la résolution est
+    faite par _find_project_source_dir).
+    Lève FileNotFoundError si aucun dossier source n'est trouvé.
+
+    Retourne le chemin vers le fichier (existant ou nouvellement créé).
     """
-    yaml_path = get_yaml_path(project_name)
+    _validate_project_name(project_name)
+    project_dir = _find_project_source_dir(project_name)
+
+    if project_dir is None:
+        raise FileNotFoundError(
+            f"Le dossier projet '{project_name}' n'existe pas dans depot/. "
+            f"Créez d'abord le dossier avec les fichiers audio avant d'initialiser project.yaml."
+        )
+
+    yaml_path = project_dir / "project.yaml"
     if yaml_path.exists():
         return yaml_path
 
@@ -181,7 +254,6 @@ def ensure_project_yaml(project_name: str) -> Path:
     defaults["title"] = project_name.replace("_", " ").title()
     defaults["date"] = datetime.now().strftime("%Y-%m-%d")
 
-    yaml_path.parent.mkdir(parents=True, exist_ok=True)
     _write_yaml(yaml_path, defaults)
     return yaml_path
 
@@ -224,13 +296,27 @@ def load_editable_metadata(project_name: str) -> dict:
 
 def save_editable_metadata(project_name: str, metadata: dict) -> Path:
     """
-    Sauvegarde les métadonnées dans project.yaml.
+    Sauvegarde les métadonnées dans <source_dir>/project.yaml.
+
+    Le dossier source est résolu via _find_project_source_dir : il peut avoir
+    un nom différent du project_name sanitisé (ex. "pastoral retreat" pour
+    le project_name "pastoral_retreat").
+    Lève FileNotFoundError si aucun dossier source n'est trouvé, afin d'éviter
+    toute création de dossier non désirée.
 
     Préserve les champs inconnus déjà présents dans le fichier.
     Retourne le chemin du fichier sauvegardé.
     """
-    yaml_path = get_yaml_path(project_name)
-    yaml_path.parent.mkdir(parents=True, exist_ok=True)
+    _validate_project_name(project_name)
+
+    project_dir = _find_project_source_dir(project_name)
+    if project_dir is None:
+        raise FileNotFoundError(
+            f"Le dossier projet '{project_name}' n'existe pas dans depot/. "
+            f"Sauvegarde annulée — aucun dossier ne sera créé automatiquement."
+        )
+
+    yaml_path = project_dir / "project.yaml"
 
     # Charger l'existant pour préserver les champs inconnus
     existing: dict = {}

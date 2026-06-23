@@ -137,6 +137,24 @@ _SIGNATURE_FIELDS = (
 
 
 def get_yaml_path(project_name: str) -> Path:
+    """
+    Retourne le chemin vers project.yaml en résolvant le vrai dossier source.
+
+    Cherche d'abord le dossier direct depot/<project_name>/, puis un dossier
+    dont le nom sanitisé correspond (ex. "pastoral retreat" → "pastoral_retreat").
+    Si aucun dossier n'est trouvé, retourne le chemin canonique (peut être inexistant).
+    """
+    try:
+        from app.file_utils import sanitize_name
+        direct = DEPOT_DIR / project_name
+        if direct.is_dir():
+            return direct / "project.yaml"
+        if DEPOT_DIR.exists():
+            for d in DEPOT_DIR.iterdir():
+                if d.is_dir() and sanitize_name(d.name) == project_name:
+                    return d / "project.yaml"
+    except Exception:
+        pass
     return DEPOT_DIR / project_name / "project.yaml"
 
 
