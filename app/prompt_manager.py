@@ -51,6 +51,7 @@ RÈGLES ABSOLUES — SORTIE UNIQUEMENT :
 - N'utilise JAMAIS \\boxed{...} ni aucun format mathématique.
 - Ne mentionne PAS que le texte est une transcription.
 - Ne reproduis PAS les métadonnées techniques (Projet :, Chunk :, Généré le :).
+- Si le chunk ne contient pas de contenu transcrit réel (seulement des séparateurs, des en-têtes ou des timestamps vides), ne complète pas, n'invente pas, retourne exactement : [CHUNK_VIDE_OU_NON_TRAITABLE]
 - Si le contenu est vide ou uniquement des métadonnées, retourne une chaîne vide.
 
 MISSION ÉDITORIALE :
@@ -105,6 +106,7 @@ RÈGLES ABSOLUES — SORTIE UNIQUEMENT :
 - N'écris PAS "Here is the chapter", "Final Answer", "Note:", "This text...".
 - N'utilise JAMAIS de balises /think, <think>, \\boxed{...}.
 - Ne mentionne PAS que c'est une transcription.
+- Si le chunk ne contient pas de contenu transcrit réel (seulement des séparateurs, des en-têtes ou des timestamps vides), ne complète pas, n'invente pas, retourne exactement : [CHUNK_VIDE_OU_NON_TRAITABLE]
 - Si le contenu est vide, retourne une chaîne vide.
 
 MISSION :

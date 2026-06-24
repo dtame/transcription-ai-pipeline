@@ -1,14 +1,19 @@
-from pathlib import Path
+import re
 from datetime import datetime
+from pathlib import Path
+
+from app.file_utils import content_hash, write_text_if_changed
 
 
 CHUNKS_DIR_NAME = "chunks"
 
 _METADATA_PATTERNS = [
     "# Projet :",
+    "# Partie source :",
     "# Chunk :",
     "# Généré le :",
     "Projet :",
+    "Partie source :",
     "Chunk :",
     "Généré le :",
 ]
@@ -19,6 +24,25 @@ _OLD_CODE_HEADER_PATTERNS = [
     "# Chunk :",
     "# Généré le :",
 ]
+
+# ── Regex compilées pour la détection de contenu réel ─────────────────────────
+_RE_SEPARATOR      = re.compile(r"^[=\-]{3,}$")
+_RE_PARTIE_HEADER  = re.compile(r"^PARTIE\s+\d+", re.IGNORECASE)
+_RE_CHUNK_METADATA = re.compile(
+    r"^#\s*(Projet|Partie source|Chunk|Généré le)\s*:", re.IGNORECASE
+)
+_RE_TIMESTAMP_FULL = re.compile(
+    r"^\[?\d{1,2}:\d{2}(?::\d{2})?(?:\s*->\s*\d{1,2}:\d{2}(?::\d{2})?)?\]?\s*$"
+)
+_RE_TIMESTAMP_PREFIX = re.compile(
+    r"^\[?\d{1,2}:\d{2}(?::\d{2})?(?:\s*->\s*\d{1,2}:\d{2}(?::\d{2})?)?\]?\s*"
+)
+
+# Détecte les en-têtes PARTIE entourés de lignes ====
+_RE_PARTIE_BLOCK = re.compile(
+    r"={5,}[^\S\n]*\n(PARTIE\s+\d+[^\n]*)\n={5,}",
+    re.IGNORECASE,
+)
 
 
 def is_chunk_stale(chunk_path: Path) -> bool:
@@ -49,9 +73,10 @@ def reset_stale_processed_files(
     output_dir: Path,
 ) -> list[str]:
     """
-    Deletes processed/ and reviewed/ files for chunks that need reprocessing.
+    Supprime les fichiers processed/ et reviewed/ pour les chunks à retraiter.
 
-    Returns the list of chunk names that were reset.
+    Conservé pour compatibilité ascendante.
+    Retourne la liste des noms de chunks réinitialisés.
     """
     processed_dir = output_dir / "processed"
     reviewed_dir = output_dir / "reviewed"
@@ -66,16 +91,111 @@ def reset_stale_processed_files(
                 try:
                     target.unlink()
                     print(
-                        f"[chunk_service] Fichier obsolète supprimé : {target}"
+                        f"[chunking] Fichier périmé supprimé : {target.name}"
                     )
                 except Exception as exc:
                     print(
-                        f"[chunk_service] Impossible de supprimer {target} : {exc}"
+                        f"[chunking] Impossible de supprimer {target.name} : {exc}"
                     )
 
         reset.append(chunk_name)
 
     return reset
+
+
+def _move_to_obsolete(src: Path, obsolete_dir: Path) -> None:
+    """Déplace un fichier vers le dossier obsolete/, sans supprimer."""
+    obsolete_dir.mkdir(parents=True, exist_ok=True)
+    dest = obsolete_dir / src.name
+    try:
+        src.rename(dest)
+    except Exception as exc:
+        print(f"[chunking] Impossible de déplacer {src.name} : {exc}")
+
+
+def is_real_transcript_content(text: str) -> bool:
+    """
+    Retourne True uniquement si le texte contient du contenu transcrit réel.
+
+    Retourne False si le texte ne contient que :
+    - lignes de séparateurs (=== ou ---)
+    - lignes vides ou espaces seuls
+    - titres PARTIE X — ...
+    - lignes de métadonnées de chunk (# Projet :, # Partie source :, etc.)
+    - timestamps sans texte ([00:01:12] ou [00:01:12 -> 00:01:18] seuls)
+    - ponctuation seule (moins de 2 lettres alphabétiques)
+    """
+    if not text or not text.strip():
+        return False
+
+    for line in text.splitlines():
+        stripped = line.strip()
+
+        if not stripped:
+            continue
+
+        if _RE_SEPARATOR.fullmatch(stripped):
+            continue
+
+        if _RE_PARTIE_HEADER.match(stripped):
+            continue
+
+        if _RE_CHUNK_METADATA.match(stripped):
+            continue
+
+        if _RE_TIMESTAMP_FULL.fullmatch(stripped):
+            continue
+
+        # Retire le préfixe timestamp s'il y en a un
+        content_after_ts = _RE_TIMESTAMP_PREFIX.sub("", stripped)
+
+        if not content_after_ts:
+            continue
+
+        # Vérifie qu'il y a au moins 2 lettres alphabétiques
+        if len(re.findall(r"[a-zA-ZÀ-ÿ]", content_after_ts)) >= 2:
+            return True
+
+    return False
+
+
+def parse_transcript_into_partie_blocks(text: str) -> list[dict]:
+    """
+    Découpe transcript_complet.txt en blocs logiques selon les en-têtes PARTIE.
+
+    Chaque bloc est un dict :
+        {"partie": str | None, "content": str}
+
+    - "partie" : titre de la partie (ex. "PARTIE 1 — Pastoral Retreat 1") ou None
+    - "content": texte brut du bloc (tout ce qui suit l'en-tête jusqu'au suivant)
+
+    Un en-tête PARTIE est détecté par le motif :
+        ={5,}
+        PARTIE X — ...
+        ={5,}
+
+    Les en-têtes PARTIE sont des métadonnées de structure, pas du contenu éditorial.
+    """
+    parts = _RE_PARTIE_BLOCK.split(text)
+    # Avec le groupe capturant : [pre, titre1, contenu1, titre2, contenu2, ...]
+
+    blocks: list[dict] = []
+
+    # Contenu avant le premier en-tête PARTIE (s'il existe)
+    if parts[0].strip():
+        blocks.append({"partie": None, "content": parts[0].strip()})
+
+    # Blocs PARTIE
+    for i in range(1, len(parts), 2):
+        partie_title = parts[i].strip()
+        content = parts[i + 1].strip() if (i + 1) < len(parts) else ""
+        blocks.append({"partie": partie_title, "content": content})
+
+    return blocks
+
+
+# Alias privé conservé pour la compatibilité ascendante
+_parse_transcript_into_partie_blocks = parse_transcript_into_partie_blocks
 
 
 def split_text_into_chunks(
@@ -93,8 +213,6 @@ def split_text_into_chunks(
 
     Ne produit pas de chunks vides.
     """
-    import re
-
     # Découpe prioritaire sur les séparateurs forts
     sections = re.split(r"\n(?:={3,}|-{3,})\n", text)
 
@@ -153,8 +271,6 @@ def validate_chunk_content(chunk_text: str) -> dict:
       "warnings": list[str]
     }
     """
-    import re
-
     lines = chunk_text.splitlines()
     char_count = len(chunk_text)
     word_count = len(chunk_text.split())
@@ -210,12 +326,30 @@ def validate_chunk_content(chunk_text: str) -> dict:
 
 def create_project_chunks(
     project,
-    max_chars: int = 8000
-) -> list[Path]:
-    merged_transcript_path = (
-        project.merged_dir /
-        "transcript_complet.txt"
-    )
+    max_chars: int = 8000,
+    force_regenerate_chunks: bool = False,
+) -> list[dict]:
+    """
+    Génère ou met à jour les fichiers chunk_XXX.txt depuis transcript_complet.txt.
+
+    Chaque chunk n'est (ré)écrit que si son contenu a changé, sauf si
+    force_regenerate_chunks=True.
+
+    Retourne une liste de dicts :
+        {
+            "path":               Path,
+            "name":               str,          # ex. "chunk_001.txt"
+            "hash":               str,          # SHA256 du contenu
+            "generation_status":  str,          # "created" | "updated" | "unchanged"
+            "needs_ai_processing": bool,
+        }
+
+    Les chunks devenus obsolètes (numéro > nombre actuel) sont déplacés dans
+        sortie/<projet>/chunks/obsolete/
+    et leurs processed/ dans
+        sortie/<projet>/processed/obsolete/
+    """
+    merged_transcript_path = project.merged_dir / "transcript_complet.txt"
 
     if not merged_transcript_path.exists():
         raise FileNotFoundError(
@@ -225,61 +359,229 @@ def create_project_chunks(
     chunks_dir = project.output_dir / CHUNKS_DIR_NAME
     chunks_dir.mkdir(parents=True, exist_ok=True)
 
+    obsolete_chunks_dir    = chunks_dir / "obsolete"
+    processed_dir          = project.output_dir / "processed"
+    obsolete_processed_dir = processed_dir / "obsolete"
+
     text = merged_transcript_path.read_text(encoding="utf-8")
 
     print(
-        f"[chunk_service] transcript_complet.txt : "
+        f"[chunking] transcript_complet.txt : "
         f"{len(text)} caractères, {len(text.split())} mots"
     )
 
-    import re
     timestamp_count = len(re.findall(r"\[?\d{1,2}:\d{2}(:\d{2})?\]?", text))
-    print(f"[chunk_service] Segments timestampés détectés : {timestamp_count}")
+    print(f"[chunking] Segments timestampés détectés : {timestamp_count}")
 
-    chunks = split_text_into_chunks(
-        text=text,
-        max_chars=max_chars
-    )
+    # ── Parsing PARTIE-aware ───────────────────────────────────────────────
+    partie_blocks = parse_transcript_into_partie_blocks(text)
+    skipped_empty_count = 0
+    # Chaque entrée : {"text": str, "partie_source": str | None}
+    raw_chunks: list[dict] = []
 
-    print(f"[chunk_service] Nombre de chunks créés : {len(chunks)}")
+    for block in partie_blocks:
+        partie  = block["partie"]
+        content = block["content"]
 
-    chunk_paths = []
+        if partie:
+            print(f"[chunking] {partie} : en-tête détecté")
+
+        if not is_real_transcript_content(content):
+            label = partie if partie else "contenu pré-PARTIE"
+            print(f"[chunking] {label} : bloc vide ignoré")
+            skipped_empty_count += 1
+            continue
+
+        sub_chunks = split_text_into_chunks(text=content, max_chars=max_chars)
+
+        for sub_chunk in sub_chunks:
+            if not is_real_transcript_content(sub_chunk):
+                print("[chunking] sous-bloc vide ignoré")
+                skipped_empty_count += 1
+                continue
+
+            if partie:
+                raw_chunks.append({
+                    "text":          f"# Partie source : {partie}\n\n{sub_chunk}",
+                    "partie_source": partie,
+                })
+            else:
+                raw_chunks.append({
+                    "text":          sub_chunk,
+                    "partie_source": None,
+                })
+
+    print(f"[chunking] Nombre de chunks attendus : {len(raw_chunks)}")
+
+    results: list[dict] = []
+    counters = {"created": 0, "updated": 0, "unchanged": 0, "obsolete": 0}
     invalid_count = 0
 
-    for index, chunk in enumerate(chunks, start=1):
-        chunk_path = chunks_dir / f"chunk_{index:03}.txt"
+    for index, chunk_info in enumerate(raw_chunks, start=1):
+        chunk_text    = chunk_info["text"]
+        partie_source = chunk_info["partie_source"]
 
-        validation = validate_chunk_content(chunk)
-        char_preview = chunk[:200].replace("\n", " ")
+        chunk_name = f"chunk_{index:03}.txt"
+        chunk_path = chunks_dir / chunk_name
 
-        print(
-            f"[chunk_service] chunk_{index:03} : "
-            f"{validation['char_count']} chars, "
-            f"{validation['word_count']} mots, "
-            f"ratio_meta={validation['metadata_ratio']:.2f}"
-        )
-        print(f"  Aperçu : {char_preview[:200]}")
+        validation = validate_chunk_content(chunk_text)
 
         if not validation["is_valid"]:
             invalid_count += 1
             for w in validation["warnings"]:
-                print(f"  [AVERTISSEMENT] {w}")
+                print(f"  [AVERTISSEMENT] {chunk_name} : {w}")
 
         if validation["metadata_ratio"] > 0.5:
             print(
-                f"  [AVERTISSEMENT] chunk_{index:03} contient principalement "
+                f"  [AVERTISSEMENT] {chunk_name} contient principalement "
                 "des métadonnées ou séparateurs — contenu réel insuffisant."
             )
 
-        # Écriture du chunk SANS header de métadonnées
-        # Les métadonnées (projet, numéro, date) sont dans project_state.json
-        chunk_path.write_text(chunk, encoding="utf-8")
-        chunk_paths.append(chunk_path)
+        # ── Écriture conditionnelle ────────────────────────────────────────
+        if force_regenerate_chunks:
+            existed = chunk_path.exists()
+            chunk_path.write_text(chunk_text, encoding="utf-8")
+            gen_status = "updated" if existed else "created"
+        else:
+            gen_status = write_text_if_changed(chunk_path, chunk_text)
+
+        chunk_hash = content_hash(chunk_text)
+
+        # ── Chemin du processed correspondant ─────────────────────────────
+        processed_md = processed_dir / chunk_name.replace(".txt", ".md")
+
+        # ── needs_ai_processing : logique à 3 cas ─────────────────────────
+        # created / updated → toujours True
+        # unchanged + processed absent → True  (le fichier a disparu)
+        # unchanged + processed présent → False (rien à faire)
+        if gen_status in ("created", "updated"):
+            needs_ai = True
+        else:  # "unchanged"
+            needs_ai = not processed_md.exists()
+
+        label = {
+            "created":   "créé → IA requise",
+            "updated":   "modifié → IA requise",
+            "unchanged": "inchangé → IA requise" if needs_ai else "inchangé",
+        }[gen_status]
+        print(f"[chunking] {chunk_name} {label}")
+
+        counters[gen_status] += 1
+
+        # ── Si le chunk est modifié, invalider son processed/ ──────────────
+        # (ne jamais supprimer tout le dossier processed)
+        if gen_status == "updated" and processed_md.exists():
+            try:
+                processed_md.unlink()
+                print(
+                    f"[chunking] {processed_md.name} supprimé "
+                    "(chunk modifié — sera retraité par l'IA)"
+                )
+            except Exception as exc:
+                print(
+                    f"[chunking] Impossible de supprimer "
+                    f"{processed_md.name} : {exc}"
+                )
+
+        results.append(
+            {
+                "path":                chunk_path,
+                "name":                chunk_name,
+                "hash":                chunk_hash,
+                "generation_status":   gen_status,
+                "needs_ai_processing": needs_ai,
+                "partie_source":       partie_source,
+                "char_count":          len(chunk_text),
+                "word_count":          len(chunk_text.split()),
+                "updated_at":          datetime.now().isoformat(timespec="seconds"),
+                "processed_path":      str(processed_md) if processed_md.exists() else None,
+            }
+        )
+
+    # ── Chunks obsolètes : fichiers sur disque au-delà du nouveau total ───
+    new_names = {r["name"] for r in results}
+    for existing_file in sorted(chunks_dir.glob("chunk_*.txt")):
+        if existing_file.name in new_names:
+            continue
+
+        # Déplacer le chunk obsolète
+        _move_to_obsolete(existing_file, obsolete_chunks_dir)
+        print(
+            f"[chunking] {existing_file.name} obsolète → "
+            "déplacé vers chunks/obsolete/"
+        )
+        counters["obsolete"] += 1
+
+        # Déplacer son processed/ s'il existe
+        processed_md = processed_dir / existing_file.name.replace(".txt", ".md")
+        if processed_md.exists():
+            _move_to_obsolete(processed_md, obsolete_processed_dir)
+            print(
+                f"[chunking] {processed_md.name} obsolète → "
+                "déplacé vers processed/obsolete/"
+            )
 
     if invalid_count:
         print(
-            f"[chunk_service] {invalid_count}/{len(chunks)} chunk(s) "
-            "invalides ou quasi-vides."
+            f"[chunking] {invalid_count}/{len(raw_chunks)} chunk(s) "
+            "invalide(s) ou quasi-vide(s)."
         )
 
-    return chunk_paths
+    # ── Résumé ────────────────────────────────────────────────────────────
+    ai_count = sum(1 for r in results if r["needs_ai_processing"])
+    print(f"\n[chunking] ── Résumé ──────────────────────────────────────")
+    print(f"[chunking]   Chunks total        : {len(results)}")
+    print(f"[chunking]   Créés               : {counters['created']}")
+    print(f"[chunking]   Modifiés            : {counters['updated']}")
+    print(f"[chunking]   Inchangés           : {counters['unchanged']}")
+    print(f"[chunking]   Obsolètes           : {counters['obsolete']}")
+    print(f"[chunking]   Blocs vides ignorés : {skipped_empty_count}")
+    print(f"[chunking]   À traiter IA        : {ai_count}")
+    print(f"[chunking] ────────────────────────────────────────────────\n")
+
+    return results
+
+
+# ── Commande de test manuel ────────────────────────────────────────────────────
+# Usage : python -m app.chunk_service <nom_du_projet> [--force]
+# Exemple: python -m app.chunk_service pastoral_retreat
+# Exemple: python -m app.chunk_service pastoral_retreat --force
+
+if __name__ == "__main__":
+    import sys
+    from types import SimpleNamespace
+
+    from app.paths import SORTIE_DIR
+
+    def _cli_usage() -> None:
+        print("Usage  : python -m app.chunk_service <nom_du_projet> [--force]")
+        print("Exemple: python -m app.chunk_service pastoral_retreat")
+        print("Options: --force  Force la réécriture de tous les chunks")
+
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+        _cli_usage()
+        sys.exit(0)
+
+    _project_name   = sys.argv[1]
+    _force          = "--force" in sys.argv
+    _output_dir     = SORTIE_DIR / _project_name
+    _merged_dir     = _output_dir / "merged"
+    _transcript     = _merged_dir / "transcript_complet.txt"
+
+    if not _transcript.exists():
+        print(f"[ERREUR] Transcript introuvable : {_transcript}")
+        print(f"         Vérifiez que le projet '{_project_name}' existe")
+        print(f"         et que la fusion a déjà été effectuée.")
+        sys.exit(1)
+
+    _project = SimpleNamespace(
+        name=_project_name,
+        output_dir=_output_dir,
+        merged_dir=_merged_dir,
+    )
+
+    if _force:
+        print(f"[chunking] Mode force activé — tous les chunks seront réécrits.")
+
+    _results = create_project_chunks(_project, force_regenerate_chunks=_force)
+    sys.exit(0)

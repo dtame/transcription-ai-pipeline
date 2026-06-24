@@ -46,8 +46,14 @@ def ensure_state_structure(state: dict) -> None:
     if "cover" not in state:
         state["cover"] = {}
 
+    if "cover_image" not in state:
+        state["cover_image"] = {}
+
     if "metadata" not in state:
         state["metadata"] = {}
+
+    if "editorial" not in state:
+        state["editorial"] = {}
 
 def save_project_state(project_name: str, state: dict) -> None:
     state_path = get_project_state_path(project_name)
@@ -289,35 +295,99 @@ def get_audio_segments_state(state: dict, audio_path: Path) -> dict:
 def ensure_chunks_section(state: dict) -> None:
     if "chunks" not in state:
         state["chunks"] = {}
-    
+
+
 def register_chunk(
     state: dict,
-    chunk_name: str
+    chunk_name: str,
 ) -> None:
-
+    """Enregistre un chunk en "pending" s'il n'existe pas encore dans l'état."""
     ensure_chunks_section(state)
 
     if chunk_name not in state["chunks"]:
-        state["chunks"][chunk_name] = {
-            "status": "pending"
-        }
+        state["chunks"][chunk_name] = {"status": "pending"}
+
+
+def update_chunk_state(
+    state: dict,
+    chunk_name: str,
+    chunk_hash: str,
+    generation_status: str,
+    needs_ai_processing: bool,
+    partie_source: str | None = None,
+    char_count: int = 0,
+    word_count: int = 0,
+    path: str | None = None,
+    processed_path: str | None = None,
+) -> None:
+    """
+    Met à jour l'entrée d'un chunk après la phase de génération.
+
+    Règles de status :
+    - needs_ai_processing=True  → status = "pending_ai"
+      (couvre : created, updated, unchanged sans processed)
+    - needs_ai_processing=False → status = "done"
+      (couvre : unchanged avec processed existant)
+
+    Le status "done" ne devient "pending_ai" que si le chunk change (via
+    needs_ai_processing calculé dans chunk_service).
+
+    Champs mis à jour : status, hash, generation_status, needs_ai_processing,
+    path, partie_source, char_count, word_count, processed_path, updated_at.
+    """
+    ensure_chunks_section(state)
+    existing = state["chunks"].get(chunk_name, {})
+
+    # Règle centrale : needs_ai_processing pilote le status
+    if needs_ai_processing:
+        ai_status = "pending_ai"
+    else:
+        # unchanged + processed présent → conserver "done" si déjà "done",
+        # sinon forcer "done" (le fichier processed existe, l'IA a déjà travaillé)
+        prev = existing.get("status", "done")
+        ai_status = "done" if prev in ("done", "pending", "pending_ai") else prev
+
+    updated: dict = {
+        **existing,
+        "status":               ai_status,
+        "hash":                 chunk_hash,
+        "generation_status":    generation_status,
+        "needs_ai_processing":  needs_ai_processing,
+        "updated_at":           datetime.now().isoformat(timespec="seconds"),
+    }
+
+    if path is not None:
+        updated["path"] = path
+    if partie_source is not None:
+        updated["partie_source"] = partie_source
+    if char_count:
+        updated["char_count"] = char_count
+    if word_count:
+        updated["word_count"] = word_count
+    if processed_path is not None:
+        updated["processed_path"] = processed_path
+    elif processed_path is None and not needs_ai_processing:
+        # Conserver processed_path ou processed_file s'il existait déjà
+        updated.setdefault(
+            "processed_path",
+            existing.get("processed_path") or existing.get("processed_file"),
+        )
+
+    state["chunks"][chunk_name] = updated
+
 
 def mark_chunk_done(
     state: dict,
-    chunk_name: str
+    chunk_name: str,
 ) -> None:
-
     ensure_chunks_section(state)
+    state["chunks"][chunk_name] = {"status": "done"}
 
-    state["chunks"][chunk_name] = {
-        "status": "done"
-    }
 
 def is_chunk_done(
     state: dict,
-    chunk_name: str
+    chunk_name: str,
 ) -> bool:
-
     ensure_chunks_section(state)
 
     return (

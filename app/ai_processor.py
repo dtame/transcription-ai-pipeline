@@ -7,14 +7,21 @@ le moteur configuré dans app/config.py (AI_PROVIDER).
 
 Pipeline :
     1. Charger project_state.json
-    2. Pour chaque chunk à l'état "pending" :
+    2. Pour chaque chunk à l'état "pending_ai" (ou "pending" pour compat) :
        a. Lire le texte brut depuis sortie/<projet>/chunks/
        b. Appeler engine.process(text)
        c. Écrire le Markdown dans sortie/<projet>/processed/
-       d. Mettre à jour project_state.json (status, chemin, timestamp)
+       d. Mettre à jour project_state.json (status → "done", chemin, timestamp)
     3. Les chunks déjà "done" sont ignorés (reprise après interruption)
-    4. Les erreurs sont enregistrées sans interrompre les autres chunks
+    4. Les chunks "skipped_empty" sont ignorés (pas de contenu réel)
+    5. Les erreurs sont enregistrées sans interrompre les autres chunks
        Un fichier d'erreur détaillé est écrit dans sortie/<projet>/errors/
+
+Règle d'envoi à l'IA :
+    Un chunk est traité si et seulement si :
+    - needs_ai_processing = True  (chunk créé, modifié, ou processed absent)
+    - OU le fichier processed/chunk_XXX.md est absent
+    - OU force_ai_processing = True (retraitement manuel)
 """
 
 import re
@@ -24,6 +31,7 @@ from datetime import datetime
 from app.paths import SORTIE_DIR
 from app.project_state import load_project_state, save_project_state
 from app.ai_engine import get_ai_engine
+from app.chunk_service import is_real_transcript_content
 
 
 _METADATA_HEADER_PATTERNS = re.compile(
@@ -134,30 +142,68 @@ def process_project_chunks(project) -> None:
     print(f"Moteur IA actif : {engine.__class__.__name__}")
 
     for chunk_name, chunk in chunks_state.items():
-        status = chunk.get("status", "pending")
+        status   = chunk.get("status", "pending_ai")
+        needs_ai = chunk.get("needs_ai_processing", True)
 
-        if status == "done":
-            print(f"Chunk déjà traité, ignoré : {chunk_name}")
-            continue
-
-        chunk_path = chunks_dir / chunk_name
+        chunk_path  = chunks_dir / chunk_name
         output_name = chunk_name.replace(".txt", ".md")
         output_path = processed_dir / output_name
 
+        # ── Cas 0 : chunk sans contenu réel (en-tête seul) ───────────────
+        if status == "skipped_empty":
+            print(
+                f"[ai_processing] {chunk_name} ignoré : "
+                "aucun contenu réel (skipped_empty)"
+            )
+            continue
+
+        # ── Cas 1 : chunk déjà traité et non modifié ──────────────────────
+        # "done" + processed présent + pas de retraitement requis → ignorer
+        if status == "done":
+            if not needs_ai and output_path.exists():
+                print(f"[ai_processor] {chunk_name} inchangé → ignoré")
+                continue
+            if output_path.exists():
+                print(f"[ai_processor] {chunk_name} déjà traité → ignoré")
+                continue
+            # processed/ absent même si status=="done" → retraiter
+
+        # ── Cas 2 : chunk inchangé avec processed/ existant ───────────────
+        # Couvre aussi les anciens states avec status="pending" ou "pending_ai"
+        # mais où le fichier processed existe déjà
+        if not needs_ai and output_path.exists():
+            if status not in ("done",):
+                chunk["status"] = "done"
+                chunk.pop("needs_ai_processing", None)
+                save_project_state(project.name, state)
+            print(f"[ai_processor] {chunk_name} inchangé, processed existant → ignoré")
+            continue
+
         if not chunk_path.exists():
-            print(f"Chunk introuvable : {chunk_path}")
+            print(f"[ai_processor] {chunk_name} introuvable sur disque")
             chunk["status"] = "failed"
             chunk["error"] = "chunk file not found"
             save_project_state(project.name, state)
             continue
 
-        print(f"Traitement IA du chunk : {chunk_name}")
+        print(f"[ai_processor] Traitement IA : {chunk_name}")
 
         prompt_excerpt: str | None = None
 
         try:
             text = chunk_path.read_text(encoding="utf-8")
             text = _strip_chunk_metadata_header(text)
+
+            # ── Garde : ne pas envoyer un chunk vide à l'IA ───────────────
+            if not is_real_transcript_content(text):
+                print(
+                    f"[ai_processing] {chunk_name} ignoré : "
+                    "aucun contenu réel détecté — chunk marqué skipped_empty"
+                )
+                chunk["status"] = "skipped_empty"
+                chunk.pop("error", None)
+                save_project_state(project.name, state)
+                continue
 
             prompt = engine.build_prompt(text, project_name=project.name)
             prompt_excerpt = prompt[:500]
@@ -173,7 +219,7 @@ def process_project_chunks(project) -> None:
 
             save_project_state(project.name, state)
 
-            print(f"Chunk traité : {output_path}")
+            print(f"[ai_processing] {chunk_name} traité")
 
         except Exception as e:
             tb = traceback.format_exc()
@@ -234,6 +280,18 @@ def process_single_chunk(project_name: str, chunk_name: str) -> bool:
     try:
         text = chunk_path.read_text(encoding="utf-8")
         text = _strip_chunk_metadata_header(text)
+
+        # ── Garde : ne pas envoyer un chunk vide à l'IA ───────────────────
+        if not is_real_transcript_content(text):
+            print(
+                f"[ai_processing] {chunk_name} ignoré : "
+                "aucun contenu réel détecté — chunk marqué skipped_empty"
+            )
+            chunk = chunks_state[chunk_name]
+            chunk["status"] = "skipped_empty"
+            chunk.pop("error", None)
+            save_project_state(project_name, state)
+            return False
 
         prompt = engine.build_prompt(text, project_name=project_name)
         prompt_excerpt = prompt[:500]

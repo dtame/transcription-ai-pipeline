@@ -25,3 +25,29 @@ def unique_path(directory: Path, stem: str, suffix: str) -> Path:
         counter += 1
 
     return path
+
+
+def content_hash(text: str, encoding: str = "utf-8") -> str:
+    """Calcule le hash SHA256 d'un contenu texte."""
+    return hashlib.sha256(text.encode(encoding)).hexdigest()
+
+
+def write_text_if_changed(path: Path, content: str, encoding: str = "utf-8") -> str:
+    """
+    Écrit le fichier seulement si le contenu est différent du fichier existant.
+
+    Retourne :
+        "created"   – le fichier n'existait pas
+        "updated"   – le fichier existait mais le contenu diffère
+        "unchanged" – le fichier existait et le contenu est identique
+    """
+    if not path.exists():
+        path.write_text(content, encoding=encoding)
+        return "created"
+
+    existing = path.read_text(encoding=encoding)
+    if existing == content:
+        return "unchanged"
+
+    path.write_text(content, encoding=encoding)
+    return "updated"

@@ -316,14 +316,10 @@ def run_transcription_pipeline():
                     )
 
             merge_project_transcripts(project)
-            chunk_paths = create_project_chunks(project)
-            
+            chunk_results = create_project_chunks(project)
 
-            for chunk_path in chunk_paths:
-                register_chunk(
-                    state,
-                    chunk_path.name
-            )
+            for result in chunk_results:
+                register_chunk(state, result["name"])
 
             save_project_state(
                 project,
