@@ -4,7 +4,11 @@ import hashlib
 
 from app.paths import SORTIE_DIR
 from app.project_state import load_project_state, save_project_state
-from app.publication_cleaner import clean_publication_markdown
+from app.publication_cleaner import (
+    clean_publication_markdown,
+    clean_ai_artifacts,
+    clean_ai_section_headings,
+)
 
 
 def file_hash(path: Path) -> str:
@@ -227,7 +231,9 @@ def build_final_document(project_name: str) -> Path | None:
 
     for index, (chunk_path, source) in enumerate(effective_chunks, start=1):
         raw_content = chunk_path.read_text(encoding="utf-8").strip()
-        cleaned_content = clean_publication_markdown(raw_content)
+        # Retirer les artefacts IA (sections parasites + patterns inline) avant publication
+        sanitized_content = clean_ai_artifacts(raw_content)
+        cleaned_content = clean_publication_markdown(sanitized_content)
 
         source_label = " *(révisé)*" if source == "reviewed" else ""
 
@@ -286,3 +292,84 @@ def build_final_document(project_name: str) -> Path | None:
         )
 
     return final_path
+
+
+# ---------------------------------------------------------------------------
+# Harmonisation structurelle finale (étape post-fusion, sans IA)
+# ---------------------------------------------------------------------------
+
+def harmonize_final_structure(project_name: str) -> Path | None:
+    """
+    Harmonise la structure éditoriale du document fusionné après le traitement IA.
+
+    Cette étape est déterministe (sans appel IA) :
+    - Relit document_clean.md
+    - Supprime les titres parasites restants
+    - Dédoublonne les titres consécutifs identiques
+    - Supprime les blocs vides résiduels
+    - Sauvegarde la version harmonisée dans :
+        sortie/<projet>/final/document_final_harmonized.md
+
+    Ne modifie pas document_final.md ni document_clean.md.
+
+    Returns:
+        Chemin vers document_final_harmonized.md, ou None si document_clean.md
+        est absent.
+    """
+    import re as _re
+
+    clean_path = get_clean_document_path(project_name)
+    if not clean_path.exists():
+        print(
+            f"[structure] document_clean.md introuvable pour '{project_name}'. "
+            "Exécutez d'abord build_final_document()."
+        )
+        return None
+
+    print(f"[structure] Nettoyage des artefacts IA")
+
+    text = clean_path.read_text(encoding="utf-8")
+
+    # Passe 1 : supprimer les sections à titres parasites résiduelles
+    text = clean_ai_section_headings(text)
+
+    # Passe 2 : dédoublonner les titres consécutifs identiques
+    lines = text.splitlines()
+    heading_re = _re.compile(r"^(#{1,3})\s+(.+)$")
+    deduped: list[str] = []
+    prev_heading_key: str | None = None
+
+    for line in lines:
+        m = heading_re.match(line.strip())
+        if m:
+            key = f"{m.group(1)}|{m.group(2).strip().lower()}"
+            if key == prev_heading_key:
+                # Doublon consécutif — ignorer
+                continue
+            prev_heading_key = key
+        else:
+            prev_heading_key = None
+        deduped.append(line)
+
+    text = "\n".join(deduped)
+
+    # Passe 3 : supprimer les blocs de lignes vides excessifs
+    text = _re.sub(r"\n{3,}", "\n\n", text)
+    text = text.strip()
+
+    # Écriture du document harmonisé
+    final_dir = get_final_dir(project_name)
+    final_dir.mkdir(parents=True, exist_ok=True)
+    harmonized_path = final_dir / "document_final_harmonized.md"
+    harmonized_path.write_text(text, encoding="utf-8")
+
+    # Mettre à jour project_state.json
+    state = load_project_state(project_name)
+    state.setdefault("final_document", {})["harmonized_path"] = str(harmonized_path)
+    state["final_document"]["harmonized_at"] = (
+        datetime.now().isoformat(timespec="seconds")
+    )
+    save_project_state(project_name, state)
+
+    print(f"[structure] Document final harmonisé : {harmonized_path}")
+    return harmonized_path

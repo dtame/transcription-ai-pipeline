@@ -55,6 +55,10 @@ def ensure_state_structure(state: dict) -> None:
     if "editorial" not in state:
         state["editorial"] = {}
 
+    # Phase 2 : comptabilité des appels IA (voir app/ai/usage_store.py).
+    if "ai_usage" not in state:
+        state["ai_usage"] = {"records": []}
+
 def save_project_state(project_name: str, state: dict) -> None:
     state_path = get_project_state_path(project_name)
     state_path.parent.mkdir(parents=True, exist_ok=True)

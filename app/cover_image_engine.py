@@ -7,7 +7,8 @@ dépendance obligatoire. Le système fonctionne entièrement sans ce module.
 Modes supportés :
     NONE                      Aucune image (couverture textuelle de secours)
     LOCAL_FILE                Image déposée manuellement par l'utilisateur
-    STABLE_DIFFUSION_WEBUI    Génération via SD WebUI / Forge / Fooocus (placeholder)
+    SDXL_LOCAL                Génération via SD WebUI / Forge (API locale active)
+    STABLE_DIFFUSION_WEBUI    Alias vers SDXL_LOCAL (délégation)
     COMFYUI                   Génération via ComfyUI (placeholder)
 
 Chemins :
@@ -36,6 +37,7 @@ from app.publication_metadata import get_publication_metadata
 COVER_IMAGE_MODES: tuple[str, ...] = (
     "NONE",
     "LOCAL_FILE",
+    "SDXL_LOCAL",
     "STABLE_DIFFUSION_WEBUI",
     "COMFYUI",
 )
@@ -231,35 +233,125 @@ def _generate_local_file(project_name: str) -> Path | None:
     return None
 
 
+def _generate_sdxl_local(project_name: str) -> Path | None:
+    """
+    MODE SDXL_LOCAL — génération via Stable Diffusion WebUI (API locale).
+
+    Étapes :
+        1. Génère cover_prompt.txt
+        2. Appelle l'API REST du WebUI (COVER_SD_WEBUI_URL/sdapi/v1/txt2img)
+        3. Décode la réponse base64 et sauvegarde cover_image.png
+        4. Met à jour project_state.json["cover_image"]
+        5. Retourne le chemin
+
+    En cas d'indisponibilité du serveur, retourne None (pas d'exception propagée).
+    """
+    import base64
+    import json
+    import urllib.request
+    import urllib.error
+    from app import config
+
+    _ensure_dirs(project_name)
+
+    # ── 1. Prompt ─────────────────────────────────────────────────────────
+    try:
+        prompt = build_cover_prompt(project_name)
+    except Exception as exc:
+        print(f"[cover_image_engine] Impossible de générer le prompt : {exc}")
+        prompt = "Professional book cover. Editorial photography. Clean design."
+
+    # ── 2. Appel API ──────────────────────────────────────────────────────
+    url_base = getattr(config, "COVER_SD_WEBUI_URL", "http://127.0.0.1:7860").rstrip("/")
+    url      = f"{url_base}/sdapi/v1/txt2img"
+    width    = int(getattr(config, "COVER_WIDTH",     768))
+    height   = int(getattr(config, "COVER_HEIGHT",   1152))
+    steps    = int(getattr(config, "COVER_STEPS",      25))
+    cfg      = float(getattr(config, "COVER_CFG_SCALE", 7))
+    sampler  = getattr(config, "COVER_SAMPLER", "DPM++ 2M Karras")
+
+    negative = (
+        "text, watermark, logo, signature, title, author name, words, letters, "
+        "blurry, low quality, worst quality, deformed, ugly, oversaturated, "
+        "artificial, CGI, 3D render, cartoon, anime"
+    )
+
+    payload = {
+        "prompt":          prompt,
+        "negative_prompt": negative,
+        "steps":           steps,
+        "cfg_scale":       cfg,
+        "sampler_name":    sampler,
+        "width":           width,
+        "height":          height,
+    }
+
+    print(f"[cover] Provider demandé : sdxl_local")
+    print(f"[cover] Génération SDXL locale via {url}")
+    log_event({
+        "step":    "cover_image_engine",
+        "project": project_name,
+        "action":  "sdxl_local_start",
+        "url":     url,
+    })
+
+    data = json.dumps(payload).encode("utf-8")
+    req  = urllib.request.Request(
+        url,
+        data=data,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=300) as resp:
+            body = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.URLError as exc:
+        print(f"[cover] Provider sdxl_local indisponible : {exc}")
+        log_event({
+            "step":    "cover_image_engine",
+            "project": project_name,
+            "action":  "sdxl_local_unavailable",
+            "error":   str(exc),
+        })
+        return None
+
+    images = body.get("images", [])
+    if not images:
+        print(f"[cover] Provider sdxl_local — aucune image retournée par {url}")
+        return None
+
+    # ── 3. Sauvegarde ─────────────────────────────────────────────────────
+    target = cover_image_path(project_name)
+    target.write_bytes(base64.b64decode(images[0]))
+
+    print(f"[cover] Couverture générée : {target}")
+    log_event({
+        "step":    "cover_image_engine",
+        "project": project_name,
+        "action":  "sdxl_local_done",
+        "path":    str(target),
+    })
+    return target
+
+
 def _generate_stable_diffusion_webui(project_name: str) -> Path | None:
     """
-    MODE STABLE_DIFFUSION_WEBUI — placeholder.
+    MODE STABLE_DIFFUSION_WEBUI — placeholder conservé pour compatibilité.
 
-    Prêt pour une future intégration avec :
-        - AUTOMATIC1111 Stable Diffusion WebUI
-        - Forge
-        - Fooocus
-        - SDXL
-        - Flux Schnell
-
-    Pour implémenter :
-        1. Lire cover_prompt.txt
-        2. Appeler l'API REST du WebUI (http://127.0.0.1:7860/sdapi/v1/txt2img)
-        3. Sauvegarder la réponse base64 vers cover_image.png
-        4. Retourner le chemin
+    Délègue vers _generate_sdxl_local qui implémente le même protocole
+    (AUTOMATIC1111 / Forge / Fooocus via /sdapi/v1/txt2img).
     """
     print(
-        "[cover_image_engine] STABLE_DIFFUSION_WEBUI : "
-        "génération non encore implémentée. "
-        "Connectez votre instance Stable Diffusion WebUI / Forge / Fooocus."
+        "[cover_image_engine] STABLE_DIFFUSION_WEBUI → délégation vers SDXL_LOCAL."
     )
     log_event({
         "step":    "cover_image_engine",
         "project": project_name,
-        "action":  "placeholder",
+        "action":  "stable_diffusion_webui_delegate",
         "mode":    "STABLE_DIFFUSION_WEBUI",
     })
-    return None
+    return _generate_sdxl_local(project_name)
 
 
 def _generate_comfyui(project_name: str) -> Path | None:
@@ -300,7 +392,8 @@ def generate_cover_image(project_name: str) -> Path | None:
     Modes :
         NONE                    → Retourne None, aucune image.
         LOCAL_FILE              → Copie depuis source/ vers cover_image.png.
-        STABLE_DIFFUSION_WEBUI  → Placeholder (retourne None).
+        SDXL_LOCAL              → Génère via Stable Diffusion WebUI (API locale).
+        STABLE_DIFFUSION_WEBUI  → Alias vers SDXL_LOCAL (délégation).
         COMFYUI                 → Placeholder (retourne None).
 
     Dans tous les cas :
@@ -343,6 +436,8 @@ def generate_cover_image(project_name: str) -> Path | None:
             result = None
         elif mode == "LOCAL_FILE":
             result = _generate_local_file(project_name)
+        elif mode == "SDXL_LOCAL":
+            result = _generate_sdxl_local(project_name)
         elif mode == "STABLE_DIFFUSION_WEBUI":
             result = _generate_stable_diffusion_webui(project_name)
         elif mode == "COMFYUI":

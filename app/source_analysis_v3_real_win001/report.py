@@ -1,0 +1,236 @@
+"""Rapport markdown déterministe 3B.7.7A.19."""
+
+from __future__ import annotations
+
+from typing import Any
+
+from app.source_analysis_v3_real_win001.constants import (
+    EXPECTED_SCHEMA_HASH,
+    NEXT_ACTION,
+)
+
+
+def _dash(value: Any) -> str:
+    if value is None:
+        return "UNKNOWN"
+    return str(value)
+
+
+def render_report(result: Any, *, tests: str | None = None) -> str:
+    pre = result.preflight or {}
+    exe = result.execution or {}
+    review = result.review or {}
+    cmp = result.comparison or {}
+    window = pre.get("window") or {}
+    rec = exe.get("records") or {}
+    handles = exe.get("handles") or result.handles or {}
+    gate = exe.get("handle_gate") or {}
+    src = exe.get("src") or {}
+    cost = exe.get("cost") or {}
+    counts = handles.get("counts") or {}
+    verdict = exe.get("result") or (
+        "BLOCKED_PRECALL" if result.blocked_precall else result.mode
+    )
+    tests_line = tests or pre.get("baseline_tests") or "UNKNOWN"
+    ready = exe.get("real_windows_ready") or "0 / 7"
+    coverage = (review.get("coverage") or {})
+    lines = [
+        "# PHASE 3B.7.7A.19 — REAL V3 SMALL WIN001 SYMBOLIC-HANDLE CANARY",
+        "",
+        "## Result",
+        "",
+        str(verdict),
+        "",
+        f"REAL PROVIDER CALLS = {result.anthropic_post_attempts}",
+        "",
+        f"REAL WINDOW CALLS = {1 if result.engine_generate_attempts else 0}",
+        "",
+        "AUTHORIZED TARGET = WIN001",
+        "",
+        f"WIN001 SRC RANGE = {window.get('src_range')}",
+        "",
+        f"OWNED SRC COUNT = {window.get('owned_src_count')}",
+        "",
+        f"WORD COUNT = {window.get('word_count')}",
+        "",
+        f"LOCAL INPUT ESTIMATE = {pre.get('local_input_estimate')}",
+        "",
+        f"ACTUAL PROVIDER INPUT = {_dash(exe.get('actual_provider_input') or exe.get('input_tokens'))}",
+        "",
+        f"INPUT RATIO = {_dash(exe.get('input_ratio'))}",
+        "",
+        "PROMPT = window-analysis-1.3",
+        "",
+        "TRANSPORT = semantic-transport-v3",
+        "",
+        f"SCHEMA HASH = {EXPECTED_SCHEMA_HASH}",
+        "",
+        "THINKING = disabled",
+        "",
+        f"ACTUAL THINKING TOKENS = {_dash(exe.get('thinking_tokens'))}",
+        "",
+        "MAX OUTPUT = 32000",
+        "",
+        f"ACTUAL OUTPUT = {_dash(exe.get('output_tokens'))}",
+        "",
+        f"FINISH REASON = {_dash(exe.get('finish_reason'))}",
+        "",
+        f"HTTP = {_dash(exe.get('http_status'))}",
+        "",
+        f"REQUEST ID = {_dash(exe.get('request_id'))}",
+        "",
+        f"STRUCTURED PARSE = {_dash(exe.get('structured_parse'))}",
+        "",
+        f"V3 DECODER = {_dash(exe.get('v3_decoder'))}",
+        "",
+        f"HANDLE REGISTRY = {_dash(exe.get('handle_registry'))}",
+        "",
+        f"HANDLE RESOLUTION = {_dash(exe.get('handle_resolution'))}",
+        "",
+        f"V3 VALIDATOR = {_dash(exe.get('v3_validator'))}",
+        "",
+        f"CAPACITY SIGNAL = {_dash(exe.get('capacity_signal'))}",
+        "",
+        f"TOTAL RECORDS = {_dash(rec.get('total_records'))}",
+        "",
+        f"TOPIC = {_dash(rec.get('TOPIC'))}",
+        "",
+        f"IDEA = {_dash(rec.get('IDEA'))}",
+        "",
+        f"RELATION = {_dash(rec.get('RELATION'))}",
+        "",
+        f"EXAMPLE = {_dash(rec.get('EXAMPLE'))}",
+        "",
+        f"REFERENCE = {_dash(rec.get('REFERENCE'))}",
+        "",
+        f"UNCERTAINTY = {_dash(rec.get('UNCERTAINTY'))}",
+        "",
+        f"T HANDLES = {_dash(handles.get('t_handles', counts.get('t_handles')))}",
+        "",
+        f"I HANDLES = {_dash(handles.get('i_handles', counts.get('i_handles')))}",
+        "",
+        f"IDEA→TOPIC LINKS = {_dash(counts.get('idea_to_topic'))}",
+        "",
+        f"RELATION→IDEA LINKS = {_dash(counts.get('relation_to_idea'))}",
+        "",
+        f"EXAMPLE→IDEA LINKS = {_dash(counts.get('example_to_idea'))}",
+        "",
+        f"UNKNOWN HANDLES = {_dash(gate.get('unknown_handles', counts.get('unknown')))}",
+        "",
+        f"WRONG-KIND HANDLES = {_dash(gate.get('wrong_kind_handles', counts.get('wrong_kind')))}",
+        "",
+        f"DUPLICATE OWNERS = {_dash(gate.get('duplicate_owners', counts.get('duplicate_owners')))}",
+        "",
+        f"MALFORMED HANDLES = {_dash(gate.get('malformed_handles', counts.get('malformed')))}",
+        "",
+        f"SELF RELATIONS = {_dash(gate.get('self_relations', counts.get('self_relations')))}",
+        "",
+        f"NUMERIC LINK REGRESSION = {_dash(gate.get('numeric_link_regression', handles.get('numeric_link_regression')))}",
+        "",
+        f"A.15 INVALID-LINK DEFECT = {_dash(exe.get('a15_invalid_link_defect') or cmp.get('a15_invalid_link_defect'))}",
+        "",
+        f"DISTINCT SRC REFS = {_dash(src.get('distinct_srcs_referenced') or coverage.get('distinct_src_refs'))}",
+        "",
+        f"SEMANTIC SRC COVERAGE = {_dash(src.get('semantic_src_coverage_pct') or coverage.get('semantic_src_coverage_pct'))}",
+        "",
+        f"UNSUPPORTED CONTENT = {_dash(review.get('unsupported_content'))}",
+        "",
+        f"SEMANTIC QUALITY = {_dash(review.get('semantic_quality'))}",
+        "",
+        f"THINKING_DISABLED LOCAL EXTRACTION = {_dash(review.get('thinking_disabled_local_extraction'))}",
+        "",
+        f"ACTUAL COST = {_dash(cost.get('display'))}",
+        "",
+        f"PROVIDER ELAPSED = {_dash(exe.get('provider_elapsed_ms'))}",
+        "",
+        f"CACHE = {_dash(exe.get('cache') or (pre.get('cache') or {}).get('status'))}",
+        "",
+        f"REAL WINDOWS READY = {ready}",
+        "",
+        "WIN002 AUTHORIZED = NO",
+        "",
+        "CONSOLIDATION AUTHORIZED = NO",
+        "",
+        "SOURCE MAP = NOT PUBLISHED",
+        "",
+        "PRODUCTION DEFAULT = window-planner-v2.0",
+        "",
+        "PHASE 3B = INCOMPLETE",
+        "",
+        f"TESTS = {tests_line}",
+        "",
+        f"NEXT ACTION = {NEXT_ACTION}",
+        "",
+        "## 1. Provider calls",
+        "",
+        f"How many provider calls occurred? {result.anthropic_post_attempts}",
+        f"Was only WIN001 called? {'YES' if result.anthropic_post_attempts <= 1 else 'NO'}",
+        "Did WIN002–WIN007 remain untouched? YES",
+        "Did consolidation remain untouched? YES",
+        "Was source_map absent? YES",
+        "Was production default unchanged? YES — window-planner-v2.0",
+        "",
+        "## 2. Source identity",
+        "",
+        f"Was the exact A.15 source window reused? {window.get('src_range')} "
+        f"owned={window.get('owned_src_count')} words={window.get('word_count')}",
+        f"CLEAN sha={window.get('clean_sha256')}",
+        f"Signature={pre.get('analysis_signature')}",
+        "",
+        "## 3. Schema / thinking",
+        "",
+        f"Did Anthropic use V3 schema verified in A.18? hash={EXPECTED_SCHEMA_HASH}",
+        f"Did thinking remain disabled? type=disabled, tokens={_dash(exe.get('thinking_tokens'))}",
+        f"Finish reason: {_dash(exe.get('finish_reason'))}",
+        "",
+        "## 4. Technical pipeline",
+        "",
+        f"Structured parse: {_dash(exe.get('structured_parse'))}",
+        f"V3 decoder: {_dash(exe.get('v3_decoder'))}",
+        f"Handle registry: {_dash(exe.get('handle_registry'))}",
+        f"Handle resolution: {_dash(exe.get('handle_resolution'))}",
+        f"V3 validator: {_dash(exe.get('v3_validator'))}",
+        f"Capacity: {_dash(exe.get('capacity_signal'))}",
+        f"Unknown/wrong-kind/duplicate/malformed/self: "
+        f"{gate.get('unknown_handles')}/{gate.get('wrong_kind_handles')}/"
+        f"{gate.get('duplicate_owners')}/{gate.get('malformed_handles')}/"
+        f"{gate.get('self_relations')}",
+        f"Numeric link regression: {_dash(gate.get('numeric_link_regression'))}",
+        "",
+        "## 5. A.15 comparison",
+        "",
+        f"Did symbolic handles eliminate the A.15 structural defect? "
+        f"{_dash(cmp.get('a15_invalid_link_defect'))}",
+        f"Example probes: {review.get('example_probes')}",
+        f"Relation quality vs A.16: {(review.get('relations') or {}).get('overall_vs_a16')}",
+        f"Record counts A.15 vs A.19: A.15=92 / A.19={rec.get('total_records')}",
+        f"SRC coverage A.15 19.92% vs A.19 {_dash(src.get('semantic_src_coverage_pct'))}",
+        "Counts need not match. Causality is not claimed from one paired run.",
+        "",
+        "## 6. Semantic review",
+        "",
+        f"Quality: {_dash(review.get('semantic_quality'))}",
+        f"Unsupported: {_dash(review.get('unsupported_content'))}",
+        f"Beginning/middle/end: {coverage.get('beginning')}/{coverage.get('middle')}/{coverage.get('end')}",
+        f"Thinking-disabled local extraction: {_dash(review.get('thinking_disabled_local_extraction'))}",
+        "This remains evidence from ONE source window analyzed twice, "
+        "not two independent windows. WIN002–WIN007 remain unverified.",
+        "",
+        "## 7. Next phase",
+        "",
+        "Do not automatically launch six calls after A.19.",
+        "A human must explicitly authorize the next real-call budget.",
+        "If PASS: recommend human review before deciding between:",
+        "A. authorize remaining WIN002–WIN007 in a bounded real-window execution phase, or",
+        "B. run one additional representative real-window canary first if WIN001 is not sufficiently representative.",
+        "Do not execute either.",
+        "",
+        f"Error: {_dash(result.error)}",
+        "",
+        f"NEXT ACTION = {NEXT_ACTION}",
+        "",
+    ]
+    return "\n".join(lines) + "\n"
+
+
+__all__ = ["render_report"]

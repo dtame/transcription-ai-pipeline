@@ -2,7 +2,9 @@ from pathlib import Path
 from datetime import datetime
 import json
 
+from app.ai.usage_store import build_ai_usage_report
 from app.paths import SORTIE_DIR
+from app.source_analysis.state import build_source_analysis_report
 from app.project_state import load_project_state
 from app.project_metadata import load_project_metadata
 
@@ -204,6 +206,18 @@ def build_project_report(project_name: str) -> Path:
             "errors":   quality_state.get("errors", []),
             "warnings": quality_state.get("warnings", []),
         },
+
+        # Ajout additif (Phase 2) : consommation et coût des appels IA.
+        # Toujours présent, même sans aucun appel — un projet purement
+        # transcrit affiche calls=0 et cost_status="no_calls".
+        # Aucun champ V1 n'est déplacé ni renommé.
+        "ai_usage": build_ai_usage_report(state),
+
+        # Ajout additif (Phase 3) : état de l'analyse de source.
+        # Toujours présent — un projet qui n'a pas été analysé affiche
+        # status="pending". Descriptif uniquement : tokens et coûts restent
+        # dans "ai_usage", pour ne pas tenir deux comptabilités divergentes.
+        "source_analysis": build_source_analysis_report(state),
     }
 
     report_path.write_text(

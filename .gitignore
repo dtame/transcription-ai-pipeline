@@ -7,6 +7,9 @@ __pycache__/
 *.pyo
 *.pyd
 
+# Cache des tests
+.pytest_cache/
+
 # Logs d'exécution
 logs/
 
@@ -25,6 +28,9 @@ archives/
 # Variables d'environnement
 .env
 .env.*
+
+# Exception : le modèle sans valeurs doit être versionné
+!.env.example
 
 # Clés et secrets
 *.key

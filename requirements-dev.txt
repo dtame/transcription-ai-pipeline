@@ -1,0 +1,10 @@
+# TranscriptionAI — dépendances de développement (tests)
+# Installer dans l'environnement virtuel du projet :
+#   .venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+#
+# Lancer la suite de tests :
+#   .venv\Scripts\python.exe -m pytest
+
+-r requirements.txt
+
+pytest

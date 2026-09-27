@@ -23,6 +23,7 @@ from app.logger import log_event
 
 STEP_NAMES = [
     "transcription",
+    "transcript_v2",
     "merge_transcripts",
     "chunk_generation",
     "ai_processing",
@@ -70,6 +71,7 @@ def _run_transcription(model, project: AudioProject) -> dict:
         should_segment_audio,
         transcribe_long_audio_with_segments,
     )
+    from app.transcript_capture import audio_capture_path
 
     state = load_project_state(project)
     errors = []
@@ -84,6 +86,7 @@ def _run_transcription(model, project: AudioProject) -> dict:
 
         try:
             if should_segment_audio(audio_path):
+                # Capture V2 consolidée par le service segmenté lui-même.
                 # --- Transcription segmentée (long fichier) ---
                 # Le service gère lui-même les appels à project_state.json
                 # (mark_audio_processing_segments, update_segment_in_state,
@@ -108,6 +111,9 @@ def _run_transcription(model, project: AudioProject) -> dict:
                     audio_path=audio_path,
                     output_path=transcript_path,
                     total_duration_seconds=total_duration,
+                    capture_path=audio_capture_path(
+                        project.output_dir, audio_path.stem
+                    ),
                 )
 
                 mark_audio_transcribed(state, audio_path, audio_hash, transcript_path)
@@ -134,6 +140,87 @@ def _run_transcription(model, project: AudioProject) -> dict:
     if errors:
         return _step_result(False, "; ".join(errors))
     return _step_result(True)
+
+
+def _run_transcript_v2(project: AudioProject) -> dict[str, Path] | None:
+    """
+    Construit et publie le contrat Transcript V2 du projet.
+
+        transcript_capture/<stem>.json  (une par fichier audio)
+                    ↓
+            TranscriptDocument
+                    ↓
+        transcripts/transcript.txt  +  transcripts/transcript_data.json
+
+    Politique d'échec (la transcription V1 n'est jamais détruite par la couche V2) :
+
+    - aucune capture disponible (projet transcrit avant la Phase 1) :
+      étape ignorée, rien n'est publié, aucune erreur — la transcription V1 reste
+      intacte et le contrat V2 sera produit lors d'une transcription ultérieure ;
+    - captures partielles (au moins un fichier audio sans capture exploitable) :
+      échec explicite, aucun transcript_data.json publié, artefact antérieur
+      invalidé ;
+    - contrat invalide : échec explicite, même traitement.
+
+    Retourne les chemins publiés, ou None si l'étape a été ignorée.
+    """
+    from app.transcript_builder import build_project_transcript
+    from app.transcript_capture import captured_stems
+    from app.transcript_writer import (
+        invalidate_published_transcript,
+        publish_transcript_artifacts,
+    )
+
+    available = captured_stems(project.output_dir)
+    expected = {audio_path.stem for audio_path in project.audio_files}
+
+    if not available:
+        log_event({
+            "event": "transcript_v2_build_skipped",
+            "project": project.name,
+            "reason": "no_capture_available",
+        })
+        print(
+            "[transcript_v2] IGNORÉE : aucune capture de transcription "
+            "disponible (projet antérieur au contrat V2)."
+        )
+        return None
+
+    missing = sorted(expected - available)
+
+    if missing:
+        invalidate_published_transcript(project.transcripts_dir)
+        log_event({
+            "event": "transcript_v2_build_failed",
+            "project": project.name,
+            "reason": "incomplete_capture",
+            "missing": missing,
+        })
+        raise RuntimeError(
+            f"Capture de transcription incomplète pour «{project.name}» : "
+            f"{len(missing)} fichier(s) audio sans capture exploitable "
+            f"({', '.join(missing)}). Aucun contrat V2 n'a été publié."
+        )
+
+    log_event({
+        "event": "transcript_v2_build_started",
+        "project": project.name,
+        "sources": len(available),
+    })
+
+    document = build_project_transcript(project.name, project.output_dir)
+    published = publish_transcript_artifacts(document, project.transcripts_dir)
+
+    log_event({
+        "event": "transcript_v2_build_completed",
+        "project": project.name,
+        "transcript_id": document.transcript_id,
+        "source_count": document.stats.source_count,
+        "segment_count": document.stats.segment_count,
+        "primary_language": document.primary_language,
+    })
+
+    return published
 
 
 def _write_execution_status(
@@ -242,6 +329,9 @@ def run_project_pipeline(
     from app.client_export_service import export_client_zip
     from app.report_service import build_project_report
 
+    def step_transcript_v2():
+        _run_transcript_v2(project)
+
     def step_merge():
         merge_project_transcripts(project)
 
@@ -319,6 +409,7 @@ def run_project_pipeline(
         _build_report_with_execution(project.name, started_at, time.time() - t0)
 
     remaining_steps = [
+        ("transcript_v2",        step_transcript_v2),
         ("merge_transcripts",    step_merge),
         ("chunk_generation",     step_chunks),
         ("ai_processing",        step_ai),
@@ -591,6 +682,186 @@ def _build_report_with_execution(
         json.dumps(report, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
+
+
+def run_rebuild_publication_pipeline(project_name: str) -> dict:
+    """
+    Reconstruit uniquement les artefacts de publication à partir de
+    document_final.md existant (ou processed/*.md en fallback).
+
+    Ne refait jamais :
+        - transcription
+        - fusion des transcriptions
+        - génération des chunks
+        - traitement IA des chunks
+
+    Étapes exécutées :
+        1. harmonize_final_structure   (nettoyage structurel déterministe)
+        2. build_publication_markdown  (génération TOC + publication.md)
+        3. generate_cover              (couverture)
+        4. export_docx / export_publication_docx
+        5. export_pdf  / export_publication_pdf
+        6. export_client_zip           (ZIP client)
+        7. build_project_report        (rapport JSON)
+    """
+    from app.paths import SORTIE_DIR
+
+    started_at = datetime.now()
+    t0 = time.time()
+    steps: dict[str, dict] = {}
+    project_status = "success"
+
+    output_dir   = SORTIE_DIR / project_name
+    final_dir    = output_dir / "final"
+    processed_dir = output_dir / "processed"
+    final_md     = final_dir / "document_final.md"
+
+    print(f"\n{'=' * 50}")
+    print(f"  REBUILD PUBLICATION : {project_name}")
+    print(f"  Début  : {started_at.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"{'=' * 50}")
+    print("\n[publication] Rebuild publication started")
+
+    # ── Vérification de la source disponible ────────────────────────────────
+    has_final     = final_md.exists()
+    has_processed = (
+        processed_dir.exists()
+        and any(processed_dir.glob("chunk_*.md"))
+    )
+
+    if not has_final and not has_processed:
+        msg = (
+            f"[publication] ERREUR : aucune source disponible pour '{project_name}'.\n"
+            f"  document_final.md attendu : {final_md}\n"
+            f"  Chunks traités attendus   : {processed_dir / 'chunk_*.md'}\n"
+            "Exécutez d'abord le pipeline complet (ou au moins le traitement IA)."
+        )
+        print(msg)
+        log_event(msg)
+        return {
+            "project":                   project_name,
+            "status":                    "error",
+            "started_at":               started_at.isoformat(timespec="seconds"),
+            "finished_at":              datetime.now().isoformat(timespec="seconds"),
+            "duration_seconds":         0,
+            "steps":                    {},
+            "fatal_error":              msg,
+            "rebuild_publication_mode": True,
+        }
+
+    def run_step(name: str, fn):
+        nonlocal project_status
+        print(f"\n[{name}] ...", end=" ", flush=True)
+        t = time.time()
+        try:
+            fn()
+            elapsed = time.time() - t
+            steps[name] = _step_result(True)
+            print(f"OK ({elapsed:.1f}s)")
+        except Exception as exc:
+            elapsed = time.time() - t
+            err = traceback.format_exc()
+            steps[name] = _step_result(False, str(exc))
+            project_status = "error"
+            print(f"ERREUR ({elapsed:.1f}s)")
+            print(f"  → {exc}")
+            log_event(
+                f"ERREUR rebuild publication {name} / {project_name} : "
+                f"{exc}\n{err}"
+            )
+
+    from app.final_document_builder import (
+        build_final_document,
+        harmonize_final_structure,
+    )
+    from app.cover_generation_service import generate_cover
+    from app.publication_template_service import build_publication_markdown
+    from app.docx_export_service import export_docx, export_publication_docx
+    from app.pdf_export_service import export_pdf, export_publication_pdf
+    from app.client_export_service import export_client_zip
+
+    # ── Fallback : reconstruire document_final.md depuis processed/ ─────────
+    if not has_final:
+        print(
+            "\n[publication] document_final.md absent — "
+            "reconstruction depuis processed/*.md"
+        )
+        run_step("final_document", lambda: build_final_document(project_name))
+        if project_status == "error":
+            duration = time.time() - t0
+            return {
+                "project":                   project_name,
+                "status":                    project_status,
+                "started_at":               started_at.isoformat(timespec="seconds"),
+                "finished_at":              datetime.now().isoformat(timespec="seconds"),
+                "duration_seconds":         round(duration, 1),
+                "steps":                    steps,
+                "rebuild_publication_mode": True,
+            }
+    else:
+        print("\n[publication] Reusing existing document_final.md")
+
+    # ── Étapes de publication ────────────────────────────────────────────────
+    print("\n[publication] Regenerating TOC")
+    run_step("publication_markdown", lambda: build_publication_markdown(project_name))
+
+    print("\n[publication] Regenerating cover")
+    run_step("cover_generation", lambda: generate_cover(project_name))
+
+    print("\n[publication] Regenerating DOCX")
+    run_step("export_docx",      lambda: export_docx(project_name))
+    run_step("publication_docx", lambda: export_publication_docx(project_name))
+
+    print("\n[publication] Regenerating PDF")
+    run_step("export_pdf",       lambda: export_pdf(project_name))
+    run_step("publication_pdf",  lambda: export_publication_pdf(project_name))
+
+    print("\n[publication] Regenerating ZIP")
+    run_step("client_export", lambda: export_client_zip(project_name))
+
+    run_step(
+        "harmonize_structure",
+        lambda: harmonize_final_structure(project_name),
+    )
+
+    run_step(
+        "report",
+        lambda: _build_report_with_execution(
+            project_name, started_at, time.time() - t0
+        ),
+    )
+
+    # ── Validation post-pipeline ─────────────────────────────────────────────
+    _check_publication_quality(project_name, steps)
+    if project_status == "success":
+        project_status = _verify_deliverables(project_name, steps)
+
+    duration = time.time() - t0
+    finished_at = datetime.now()
+
+    print(f"\n{'-' * 50}")
+    symbol = "OK" if project_status == "success" else "ERREUR"
+    print(
+        f"  [{symbol}] Rebuild publication {project_name} terminé en "
+        f"{_fmt_duration(duration)}"
+    )
+    print(f"{'-' * 50}")
+    print("\n[publication] Rebuild completed")
+
+    log_event(
+        f"Rebuild publication {project_name} : {project_status} "
+        f"en {_fmt_duration(duration)}"
+    )
+
+    return {
+        "project":                   project_name,
+        "status":                    project_status,
+        "started_at":               started_at.isoformat(timespec="seconds"),
+        "finished_at":              finished_at.isoformat(timespec="seconds"),
+        "duration_seconds":         round(duration, 1),
+        "steps":                    steps,
+        "rebuild_publication_mode": True,
+    }
 
 
 def run_full_rebuild_pipeline(project: AudioProject) -> dict:

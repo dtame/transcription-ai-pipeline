@@ -20,7 +20,6 @@ import sys
 from app.config import ( 
     CHUNK_THRESHOLD_MINUTES,
     CHUNK_DURATION_MINUTES,
-    ALLOWED_LANGUAGES, 
     MODEL_NAME,
     SUPPORTED_EXTENSIONS,
     DEVICE
@@ -28,7 +27,15 @@ from app.config import (
 from app.file_utils import (
     sanitize_name,
     file_hash,
-    unique_path
+    unique_path,
+    write_json_atomic
+)
+
+from app.transcript_models import (
+    CAPTURE_MODE_DIRECT,
+    AudioCapture,
+    CapturedPart,
+    CapturedSegment
 )
 
 from app.audio_utils import (
@@ -70,43 +77,83 @@ def transcribe_audio_to_txt(
     output_path: Path,
     total_duration_seconds: float,
     timestamp_offset: float = 0,
-    progress_prefix: str = "Progression"
+    progress_prefix: str = "Progression",
+    capture_path: Path | None = None
 ) -> str:
+    """
+    Transcrit un fichier audio et écrit le transcript texte V1.
+
+    Langue (contrat V2, Phase 1) :
+        La langue réellement détectée par Whisper est conservée, ainsi que le
+        texte transcrit dans cette langue. Aucune retranscription forcée en
+        anglais — le comportement V1 traduisait involontairement le contenu des
+        projets non francophones/anglophones.
+
+    Capture structurée (contrat V2, Phase 1) :
+        Si `capture_path` est fourni, les segments Whisper (timestamps numériques
+        précis, texte, langue détectée) sont enregistrés à cet emplacement avant
+        la publication du transcript texte. Un transcript publié possède donc
+        toujours sa capture, ce qui rend transcript_data.json indépendant de tout
+        reparsing des timestamps textuels.
+    """
     start_time = time.time()
 
     segments, info = model.transcribe(str(audio_path))
 
     detected_language = info.language
-    
-    if detected_language not in ALLOWED_LANGUAGES:
-        print(
-            f"Langue détectée inattendue : {detected_language}. "
-            "Forçage vers anglais."
-        )
-
-        detected_language = "en"
-
-        segments, info = model.transcribe(
-            str(audio_path),
-            language="en"
-        )
 
     print(f"Detected language : {detected_language}")
     print("Transcription en cours...")
 
-    with open(output_path, "w", encoding="utf-8") as f:
-        for segment in segments:
-            start = format_timestamp(segment.start + timestamp_offset)
-            end = format_timestamp(segment.end + timestamp_offset)
-            f.write(f"[{start} -> {end}] {segment.text.strip()}\n")
+    # Écriture atomique : tant que la transcription n'est pas complète, rien n'est
+    # publié dans output_path. Un transcript final valide déjà présent n'est donc
+    # jamais remplacé par une version tronquée.
+    output_path = Path(output_path)
+    temp_path = output_path.with_name(output_path.name + ".partial")
 
-            current_position = segment.end + timestamp_offset
-            print_progress(
-                current_seconds=current_position,
-                total_seconds=total_duration_seconds,
-                start_time=start_time,
-                prefix=progress_prefix
+    captured: list[CapturedSegment] = []
+
+    try:
+        with open(temp_path, "w", encoding="utf-8") as f:
+            for segment in segments:
+                absolute_start = segment.start + timestamp_offset
+                absolute_end = segment.end + timestamp_offset
+
+                start = format_timestamp(absolute_start)
+                end = format_timestamp(absolute_end)
+                text = segment.text.strip()
+
+                f.write(f"[{start} -> {end}] {text}\n")
+
+                captured.append(
+                    CapturedSegment(
+                        start=absolute_start,
+                        end=absolute_end,
+                        text=text,
+                    )
+                )
+
+                print_progress(
+                    current_seconds=absolute_end,
+                    total_seconds=total_duration_seconds,
+                    start_time=start_time,
+                    prefix=progress_prefix
+                )
+
+        if capture_path is not None:
+            _write_direct_capture(
+                capture_path=capture_path,
+                audio_path=audio_path,
+                total_duration_seconds=total_duration_seconds,
+                detected_language=detected_language,
+                captured=captured,
             )
+    except BaseException:
+        temp_path.unlink(missing_ok=True)
+        raise
+
+    # Path.replace() remplace la cible de façon atomique, y compris sur Windows.
+    temp_path.replace(output_path)
 
     print_progress(
         current_seconds=total_duration_seconds,
@@ -117,6 +164,39 @@ def transcribe_audio_to_txt(
     print()
 
     return detected_language
+
+
+def _write_direct_capture(
+    capture_path: Path,
+    audio_path: Path,
+    total_duration_seconds: float,
+    detected_language: str,
+    captured: list[CapturedSegment],
+) -> None:
+    """
+    Enregistre la capture structurée d'un fichier audio transcrit d'une traite.
+
+    Un fichier court ne comporte qu'une seule partie technique, de décalage 0 :
+    les timestamps capturés sont déjà relatifs au fichier audio source.
+    """
+    capture = AudioCapture(
+        filename=Path(audio_path).name,
+        duration_seconds=total_duration_seconds,
+        mode=CAPTURE_MODE_DIRECT,
+        parts=[
+            CapturedPart(
+                id="part_001",
+                start_seconds=0.0,
+                end_seconds=total_duration_seconds,
+                effective_start_local=0.0,
+                detected_language=detected_language,
+                segments=list(captured),
+            )
+        ],
+    )
+
+    write_json_atomic(Path(capture_path), capture.to_dict())
+
 
 def transcribe_file(model: WhisperModel, original_file: Path, project: AudioProject) -> None:
     original_hash = file_hash(original_file)

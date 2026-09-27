@@ -2,12 +2,14 @@
 TranscriptionAI — Point d'entrée principal.
 
 Usage :
-    python main.py                      → menu interactif
-    python main.py --all                → traiter tous les projets
-    python main.py --project <nom>      → traiter un projet spécifique
-    python main.py --exports            → exports uniquement (publication/docx/pdf)
-    python main.py --reports            → rapports uniquement
-    python main.py --status             → afficher l'état des projets
+    python main.py                                          → menu interactif
+    python main.py --all                                    → traiter tous les projets
+    python main.py --project <nom>                          → traiter un projet spécifique
+    python main.py --exports                                → exports uniquement (publication/docx/pdf)
+    python main.py --reports                                → rapports uniquement
+    python main.py --status                                 → afficher l'état des projets
+    python main.py --rebuild-publication                    → rebuild publication pour tous les projets
+    python main.py --project <nom> --rebuild-publication    → rebuild publication pour un projet
 """
 
 from __future__ import annotations
@@ -161,12 +163,34 @@ def build_parser() -> argparse.ArgumentParser:
         help="Afficher l'état de tous les projets.",
     )
 
+    parser.add_argument(
+        "--rebuild-publication",
+        action="store_true",
+        dest="rebuild_publication",
+        help=(
+            "Régénérer uniquement les artefacts de publication "
+            "(TOC, couverture, DOCX, PDF, ZIP, rapport) sans refaire "
+            "la transcription, la fusion, le chunking ou le traitement IA. "
+            "Peut être combiné avec --project <nom> pour cibler un seul projet."
+        ),
+    )
+
     return parser
 
 
 def main() -> None:
     parser = build_parser()
     args = parser.parse_args()
+
+    # --rebuild-publication peut être combiné avec --project
+    if args.rebuild_publication:
+        if args.project:
+            from app.production_service import rebuild_publication
+            rebuild_publication(args.project)
+        else:
+            from app.production_service import rebuild_publication_all
+            rebuild_publication_all()
+        return
 
     if args.all:
         from app.production_service import process_all_projects

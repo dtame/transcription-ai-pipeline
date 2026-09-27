@@ -508,24 +508,44 @@ def generate_cover(project_name: str, force: bool = False) -> dict:
             print(f"[cover] Couverture typographique générée : {cover_jpg}")
 
         else:
-            # Génération par IA (ou fallback typographie si provider=fake)
-            from app.cover_engine import get_cover_engine
+            # ── Génération IA avec fallback progressif ────────────────────
+            # Ordre : sdxl_local → autres providers réels → fake (dernier recours)
+            from app.cover_engine import get_cover_engine, FakeCoverEngine
             from app import config as _cfg
 
-            _provider = getattr(_cfg, "COVER_PROVIDER", "fake").lower()
+            _configured = getattr(_cfg, "COVER_PROVIDER", "sdxl_local").lower()
+            print(f"[cover] Provider demandé : {_configured}")
 
-            if _provider == "fake":
-                # Pas de vrai moteur d'image → couverture typographique propre
+            context = build_cover_context(project_name)
+            prompt  = build_cover_prompt(context)
+
+            # Construire la liste ordonnée des providers réels à essayer
+            _real_providers: list[str] = []
+            if _configured != "fake":
+                _real_providers.append(_configured)
+            for _p in ("sdxl_local", "openai"):
+                if _p != _configured:
+                    _real_providers.append(_p)
+
+            _generated = False
+            for _attempt in _real_providers:
+                try:
+                    _engine = get_cover_engine(_attempt)
+                    _engine.generate(prompt, cover_jpg)
+                    provider = _engine.provider_name
+                    print(f"[cover] Couverture générée ({provider}) : {cover_jpg}")
+                    _generated = True
+                    break
+                except Exception as _exc:
+                    print(f"[cover] Provider {_attempt} indisponible : {_exc}")
+                    print("[cover] Fallback vers provider suivant")
+
+            if not _generated:
+                # Fallback final : couverture typographique
+                print("[cover] Fallback final : fake / typographie")
                 generate_typography_cover(cover_jpg, settings)
                 provider = "typography"
-                print(f"[cover] Couverture typographique (fake provider) : {cover_jpg}")
-            else:
-                context = build_cover_context(project_name)
-                prompt  = build_cover_prompt(context)
-                engine  = get_cover_engine()
-                engine.generate(prompt, cover_jpg)
-                provider = engine.provider_name
-                print(f"[cover] Couverture générée ({provider}) : {cover_jpg}")
+                print(f"[cover] Couverture typographique (fallback final) : {cover_jpg}")
 
     except Exception as exc:
         print(f"[cover] ERREUR génération : {exc}")
@@ -533,14 +553,21 @@ def generate_cover(project_name: str, force: bool = False) -> dict:
 
     # ── PNG optionnel ─────────────────────────────────────────────────────
     cover_png = cover_dir / "cover.png"
+    _png_generated = False
     try:
         from PIL import Image as PilImage
         with PilImage.open(str(cover_jpg)) as img:
             img.save(str(cover_png), "PNG")
+        _png_generated = True
     except ImportError:
         pass  # Pillow non disponible
     except Exception:
         pass  # Conversion PNG non critique
+
+    print(f"[cover] Provider réellement utilisé : {provider}")
+    print(f"[cover] Couverture finale : {cover_jpg}")
+    if _png_generated:
+        print(f"[cover] PNG généré : {cover_png}")
 
     # ── Métadonnées ───────────────────────────────────────────────────────
     cover_style = settings.get("cover_style", getattr(cfg, "COVER_STYLE", "editorial_realistic"))

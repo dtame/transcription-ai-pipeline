@@ -11,6 +11,7 @@ from app.pipeline_runner import (
     run_exports_only,
     run_report_only,
     run_full_rebuild_pipeline,
+    run_rebuild_publication_pipeline,
     _fmt_duration,
 )
 from app.paths import LOGS_DIR
@@ -434,6 +435,104 @@ def process_exports_only_project(project_name: str) -> dict:
         allow_sleep_again()
 
     summary = _build_summary(started_at, [result])
+    log_path = _save_run_log(summary)
+    _print_summary(summary, log_path)
+    return summary
+
+
+def rebuild_publication(project_name: str) -> dict:
+    """
+    Régénère uniquement les artefacts de publication d'un projet spécifique
+    à partir de document_final.md (ou processed/*.md en fallback).
+
+    Ne refait jamais : transcription, fusion, chunking, traitement IA.
+
+    Usage CLI :
+        python main.py --project <nom> --rebuild-publication
+    """
+    prevent_sleep()
+    started_at = datetime.now()
+
+    try:
+        result = run_rebuild_publication_pipeline(project_name)
+    except Exception as exc:
+        result = {
+            "project":                   project_name,
+            "status":                    "error",
+            "started_at":               started_at.isoformat(timespec="seconds"),
+            "finished_at":              datetime.now().isoformat(timespec="seconds"),
+            "duration_seconds":         0,
+            "steps":                    {},
+            "fatal_error":              str(exc),
+            "rebuild_publication_mode": True,
+        }
+        log_event(f"ERREUR rebuild publication {project_name} : {exc}")
+
+    finally:
+        allow_sleep_again()
+
+    summary = _build_summary(started_at, [result])
+    log_path = _save_run_log(summary)
+    _print_summary(summary, log_path)
+    return summary
+
+
+def rebuild_publication_all() -> dict:
+    """
+    Régénère uniquement les artefacts de publication pour tous les projets
+    existants dans sortie/.
+
+    Ne refait jamais : transcription, fusion, chunking, traitement IA.
+
+    Usage CLI :
+        python main.py --rebuild-publication
+    """
+    from app.paths import SORTIE_DIR
+
+    started_at = datetime.now()
+    results: list[dict] = []
+
+    project_dirs = sorted(
+        d for d in SORTIE_DIR.iterdir()
+        if d.is_dir() and (
+            (d / "final" / "document_final.md").exists()
+            or any((d / "processed").glob("chunk_*.md"))
+        )
+    )
+
+    if not project_dirs:
+        print(
+            "Aucun projet avec document_final.md ou chunks traités "
+            "trouvé dans sortie/."
+        )
+        summary = _build_summary(started_at, [])
+        log_path = _save_run_log(summary)
+        _print_summary(summary, log_path)
+        return summary
+
+    print(f"\n{len(project_dirs)} projet(s) éligible(s) au rebuild publication :")
+    for d in project_dirs:
+        print(f"  - {d.name}")
+
+    for project_dir in project_dirs:
+        try:
+            result = run_rebuild_publication_pipeline(project_dir.name)
+        except Exception as exc:
+            result = {
+                "project":                   project_dir.name,
+                "status":                    "error",
+                "started_at":               datetime.now().isoformat(timespec="seconds"),
+                "finished_at":              datetime.now().isoformat(timespec="seconds"),
+                "duration_seconds":         0,
+                "steps":                    {},
+                "fatal_error":              str(exc),
+                "rebuild_publication_mode": True,
+            }
+            log_event(f"ERREUR rebuild publication {project_dir.name} : {exc}")
+
+        results.append(result)
+
+    summary = _build_summary(started_at, results)
     log_path = _save_run_log(summary)
     _print_summary(summary, log_path)
     return summary

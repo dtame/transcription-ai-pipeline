@@ -1,0 +1,186 @@
+"""Constantes 3B.7.7A.14 — durcissement liens V2. Offline only."""
+
+from __future__ import annotations
+
+from app.source_analysis_hybrid.constants import PLANNER_VERSION
+from app.source_analysis_local_v2.constants import (
+    CANDIDATE_PLANNER_VERSION,
+    CANDIDATE_WINDOW_ANALYSIS_PROMPT_VERSION,
+    MAX_OUTPUT_TOKENS_FROZEN,
+    PROJECT_NAME,
+    SEMANTIC_TRANSPORT_VERSION_V2,
+    TARGET_JSON_LOCAL_TOKENS,
+    WINDOW_ANALYSIS_PROMPT_VERSION_V12,
+    WINDOW_ANALYSIS_PROMPT_VERSION_V121,
+)
+from app.source_analysis_output_ceiling_review.constants import (
+    CALL1_SIGNATURE,
+    CALL2_SIGNATURE,
+    SMALL_SIGNATURE,
+)
+from app.source_analysis_small_window_hierarchy.constants import (
+    CANDIDATE_HARD_MAX_INPUT_TOKENS,
+)
+from app.source_analysis_thinking_contract.constants import (
+    SELECTED_CONTRACT,
+    SELECTED_EFFORT,
+    SELECTED_THINKING_MODE,
+)
+from app.source_analysis_v2_grammar_canary.constants import (
+    CANARY_VERSION,
+    EXPECTED_ADAPTED_SCHEMA_BYTES,
+    EXPECTED_RAW_SCHEMA_BYTES,
+)
+
+SCHEMA_VERSION = "1.0"
+PHASE = "3B.7.7A.14"
+MODE = "OFFLINE_V2_LINK_SEMANTICS_HARDENING_AND_READINESS"
+
+REAL_PROVIDER_CALLS_THIS_PHASE = 0
+REAL_WINDOW_CALLS = 0
+SEMANTIC_WIN001_AUTHORIZED = False
+
+A13_REQUEST_IDENTITY = (
+    "989ba2dfaeb554cad621b40fbb87da725ad74af97eee13ce7e7be7ff7f47fe44"
+)
+A13_RAW_SHA256 = (
+    "aac00c10fcffdcc42a2c18b7835626611096f978de376c3261138ac4286fb05d"
+)
+A13_RAW_SIZE = 1108
+A13_HTTP_STATUS = 200
+A13_INPUT_TOKENS = 2732
+A13_OUTPUT_TOKENS = 236
+A13_THINKING_TOKENS = 0
+A13_FINISH_REASON = "end_turn"
+A13_COST_DISPLAY = "0.0078240 USD"
+A13_CLASSIFICATION = "LOCAL_SEMANTIC_LINK_CONTRACT_VIOLATION"
+A13_STRUCTURED_PARSE = "PASS"
+A13_DECODER = "FAIL"
+A13_VALIDATOR = "FAIL"
+A13_PROMPT_VERSION = WINDOW_ANALYSIS_PROMPT_VERSION_V12
+A13_TRANSPORT = SEMANTIC_TRANSPORT_VERSION_V2
+A13_RECORDED_ERROR = (
+    "records[1] : IDEA ne peut lier que TOPIC, pas IDEA | "
+    "records[2] : EXAMPLE ne peut lier que IDEA, pas EXAMPLE"
+)
+
+A13_FORENSIC_RELATIVE = (
+    "audit/canary/provider_forensics/WIN998/"
+    + A13_REQUEST_IDENTITY
+)
+A13_EXECUTION_ARTIFACT = "source_analysis_v2_grammar_thinking_canary_execution.json"
+A13_PAYLOAD_ARTIFACT = "source_analysis_v2_grammar_thinking_canary_payload.json"
+A13_REPORT_NAME = "PHASE_3B77A13_V2_TINY_GRAMMAR_THINKING_CONFIG_CANARY_REPORT.md"
+
+REPLAY_ARTIFACT = "source_analysis_v2_a13_link_failure_replay.json"
+CONTRACT_ARTIFACT = "source_analysis_v2_link_semantics_contract.json"
+PROMPT_ARTIFACT = "source_analysis_v2_link_prompt_hardening.json"
+READINESS_ARTIFACT = "source_analysis_v2_semantic_win001_readiness.json"
+IDENTITY_ARTIFACT = "source_analysis_v2_future_win001_identity.json"
+REPORT_NAME = (
+    "PHASE_3B77A14_V2_LINK_SEMANTICS_HARDENING_SEMANTIC_WIN001_READINESS_REPORT.md"
+)
+
+PROTECTED_A13 = (
+    f"audit/{A13_REPORT_NAME}",
+    f"audit/{A13_EXECUTION_ARTIFACT}",
+    f"audit/{A13_PAYLOAD_ARTIFACT}",
+    f"{A13_FORENSIC_RELATIVE}/provider_raw_response.bin",
+    f"{A13_FORENSIC_RELATIVE}/provider_http_envelope.json",
+)
+
+NEXT_PHASE = "3B.7.7A.15_REAL_V2_SMALL_WIN001_SEMANTIC_CANARY"
+NEXT_ACTION = "HUMAN REVIEW"
+PHASE_3B_STATUS = "INCOMPLETE"
+PRODUCTION_PLANNER_VERSION = PLANNER_VERSION
+
+THINKING_CONTRACT = SELECTED_CONTRACT
+THINKING_MODE = SELECTED_THINKING_MODE
+EFFORT = SELECTED_EFFORT
+
+PROVIDER = "anthropic"
+MODEL = "claude-sonnet-5"
+
+ROOT_CAUSE = (
+    "PROMPT_LINK_SEMANTICS_AMBIGUOUS",
+    "INDEX_BASE_AMBIGUITY",
+    "CANARY_WRAPPER_AMBIGUOUS",
+)
+
+FUTURE_REVIEW_DIMENSIONS = (
+    "source grounding",
+    "idea completeness",
+    "idea grouping",
+    "topic quality",
+    "relation correctness",
+    "examples",
+    "references",
+    "uncertainties",
+    "unsupported content",
+    "language handling",
+    "capacity signal",
+    "output size",
+    "finish reason",
+)
+
+__all__ = [
+    "A13_CLASSIFICATION",
+    "A13_COST_DISPLAY",
+    "A13_DECODER",
+    "A13_EXECUTION_ARTIFACT",
+    "A13_FINISH_REASON",
+    "A13_FORENSIC_RELATIVE",
+    "A13_HTTP_STATUS",
+    "A13_INPUT_TOKENS",
+    "A13_OUTPUT_TOKENS",
+    "A13_PAYLOAD_ARTIFACT",
+    "A13_PROMPT_VERSION",
+    "A13_RAW_SHA256",
+    "A13_RAW_SIZE",
+    "A13_RECORDED_ERROR",
+    "A13_REPORT_NAME",
+    "A13_REQUEST_IDENTITY",
+    "A13_STRUCTURED_PARSE",
+    "A13_THINKING_TOKENS",
+    "A13_TRANSPORT",
+    "A13_VALIDATOR",
+    "CANDIDATE_HARD_MAX_INPUT_TOKENS",
+    "CANDIDATE_PLANNER_VERSION",
+    "CANDIDATE_WINDOW_ANALYSIS_PROMPT_VERSION",
+    "CALL1_SIGNATURE",
+    "CALL2_SIGNATURE",
+    "CANARY_VERSION",
+    "CONTRACT_ARTIFACT",
+    "EFFORT",
+    "EXPECTED_ADAPTED_SCHEMA_BYTES",
+    "EXPECTED_RAW_SCHEMA_BYTES",
+    "FUTURE_REVIEW_DIMENSIONS",
+    "IDENTITY_ARTIFACT",
+    "MAX_OUTPUT_TOKENS_FROZEN",
+    "MODE",
+    "MODEL",
+    "NEXT_ACTION",
+    "NEXT_PHASE",
+    "PHASE",
+    "PHASE_3B_STATUS",
+    "PRODUCTION_PLANNER_VERSION",
+    "PROJECT_NAME",
+    "PROMPT_ARTIFACT",
+    "PROTECTED_A13",
+    "PROVIDER",
+    "READINESS_ARTIFACT",
+    "REAL_PROVIDER_CALLS_THIS_PHASE",
+    "REAL_WINDOW_CALLS",
+    "REPLAY_ARTIFACT",
+    "REPORT_NAME",
+    "ROOT_CAUSE",
+    "SCHEMA_VERSION",
+    "SEMANTIC_TRANSPORT_VERSION_V2",
+    "SEMANTIC_WIN001_AUTHORIZED",
+    "SMALL_SIGNATURE",
+    "TARGET_JSON_LOCAL_TOKENS",
+    "THINKING_CONTRACT",
+    "THINKING_MODE",
+    "WINDOW_ANALYSIS_PROMPT_VERSION_V12",
+    "WINDOW_ANALYSIS_PROMPT_VERSION_V121",
+]

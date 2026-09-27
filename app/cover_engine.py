@@ -3,11 +3,15 @@ Moteurs de génération de couverture — TranscriptionAI.
 
 Architecture extensible :
   BaseCoverEngine               → interface commune
-  FakeCoverEngine               → simulation pour tests (aucune dépendance)
+  FakeCoverEngine               → fallback de dernier recours (couverture typographique)
+  SDXLLocalCoverEngine          → Stable Diffusion XL via API WebUI locale (défaut)
   ImageGenerationCoverEngine    → délègue à un provider externe
     providers actuels :
-      "openai"  → OpenAI Images (DALL-E 3)
-      "fake"    → alias FakeCoverEngine
+      "openai"     → OpenAI Images (DALL-E 3)
+      "fake"       → alias FakeCoverEngine (fallback uniquement)
+
+Ordre de priorité :
+  image utilisateur → sdxl_local → openai → fake (dernier recours)
 
 Règle fondamentale :
   Toute couverture générée doit ressembler à une couverture de livre
@@ -255,6 +259,100 @@ _MINIMAL_JPEG_GREY = bytes([
 
 
 # ---------------------------------------------------------------------------
+# SDXLLocalCoverEngine — Stable Diffusion WebUI (API locale)
+# ---------------------------------------------------------------------------
+
+class SDXLLocalCoverEngine(BaseCoverEngine):
+    """
+    Moteur de génération d'images via l'API REST de Stable Diffusion WebUI.
+
+    Compatible :
+      - AUTOMATIC1111 Stable Diffusion WebUI
+      - Forge / Fooocus
+      - Tout serveur exposant /sdapi/v1/txt2img
+
+    Configuration (app/config.py) :
+      COVER_SD_WEBUI_URL  → URL de base (défaut : http://127.0.0.1:7860)
+      COVER_WIDTH         → largeur en pixels (défaut : 768)
+      COVER_HEIGHT        → hauteur en pixels (défaut : 1152)
+      COVER_STEPS         → nombre de steps (défaut : 25)
+      COVER_CFG_SCALE     → CFG scale (défaut : 7)
+      COVER_SAMPLER       → sampler (défaut : "DPM++ 2M Karras")
+
+    Aucune dépendance Python externe requise (stdlib uniquement).
+    """
+
+    NEGATIVE_PROMPT = (
+        "text, watermark, logo, signature, title, author name, words, letters, "
+        "blurry, low quality, worst quality, deformed, ugly, oversaturated, "
+        "artificial, CGI, 3D render, cartoon, anime, illustration"
+    )
+
+    @property
+    def provider_name(self) -> str:
+        return "sdxl_local"
+
+    def generate(self, prompt: str, output_path: Path) -> Path:
+        import base64
+        import json
+        import urllib.request
+        import urllib.error
+        from app import config
+
+        url_base = getattr(config, "COVER_SD_WEBUI_URL", "http://127.0.0.1:7860").rstrip("/")
+        url      = f"{url_base}/sdapi/v1/txt2img"
+        width    = int(getattr(config, "COVER_WIDTH",     768))
+        height   = int(getattr(config, "COVER_HEIGHT",   1152))
+        steps    = int(getattr(config, "COVER_STEPS",      25))
+        cfg      = float(getattr(config, "COVER_CFG_SCALE", 7))
+        sampler  = getattr(config, "COVER_SAMPLER", "DPM++ 2M Karras")
+
+        full_prompt = f"{COVER_SYSTEM_PROMPT} {prompt}".strip()
+
+        payload = {
+            "prompt":          full_prompt,
+            "negative_prompt": self.NEGATIVE_PROMPT,
+            "steps":           steps,
+            "cfg_scale":       cfg,
+            "sampler_name":    sampler,
+            "width":           width,
+            "height":          height,
+        }
+
+        print(f"[cover] Provider demandé : sdxl_local")
+        print(f"[cover] Génération SDXL locale via {url}")
+
+        data = json.dumps(payload).encode("utf-8")
+        req  = urllib.request.Request(
+            url,
+            data=data,
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=300) as resp:
+                body = json.loads(resp.read().decode("utf-8"))
+        except urllib.error.URLError as exc:
+            raise RuntimeError(
+                f"[cover] Provider sdxl_local indisponible — impossible de joindre {url} : {exc}"
+            ) from exc
+
+        images = body.get("images", [])
+        if not images:
+            raise RuntimeError(
+                f"[cover] Provider sdxl_local — aucune image retournée par {url}."
+            )
+
+        image_data = base64.b64decode(images[0])
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_bytes(image_data)
+
+        print(f"[cover] Couverture générée : {output_path}")
+        return output_path
+
+
+# ---------------------------------------------------------------------------
 # ImageGenerationCoverEngine — génération par API externe
 # ---------------------------------------------------------------------------
 
@@ -335,53 +433,30 @@ def get_cover_engine(provider: str | None = None) -> BaseCoverEngine:
     Si provider est None, utilise COVER_PROVIDER depuis app/config.py.
 
     Providers supportés :
-      "fake"        → couverture typographique (aucune dépendance)
+      "sdxl_local"  → SDXLLocalCoverEngine — API WebUI locale (défaut recommandé)
       "openai"      → DALL-E 3 (nécessite OPENAI_API_KEY)
-      "sdxl_local"  → Stable Diffusion XL local (nécessite diffusers + torch)
+      "fake"        → FakeCoverEngine — couverture typographique (fallback uniquement)
+
+    Ne jamais appeler directement avec "fake" sauf en dernier recours.
     """
     from app import config
 
-    _provider = (provider or getattr(config, "COVER_PROVIDER", "fake")).lower()
+    _provider = (provider or getattr(config, "COVER_PROVIDER", "sdxl_local")).lower()
 
+    if _provider == "sdxl_local":
+        return SDXLLocalCoverEngine()
     if _provider == "fake":
         return FakeCoverEngine()
     if _provider in ImageGenerationCoverEngine.SUPPORTED_PROVIDERS:
         return ImageGenerationCoverEngine(provider=_provider)
-    if _provider == "sdxl_local":
-        return _SdxlCoverEngineAdapter()
 
-    # Fallback sécurisé
+    # Provider inconnu → FakeCoverEngine en dernier recours
     print(f"[cover_engine] Provider inconnu '{_provider}', utilisation de 'fake'.")
     return FakeCoverEngine()
 
 
-class _SdxlCoverEngineAdapter(BaseCoverEngine):
+class _SdxlCoverEngineAdapter(SDXLLocalCoverEngine):
     """
-    Adaptateur qui connecte BaseCoverEngine à SdxlLocalProvider
-    (app.image_engine.sdxl_provider).
-
-    Permet d'utiliser COVER_PROVIDER = "sdxl_local" dans app/config.py
-    pour générer les couvertures avec SDXL sans modifier le pipeline existant.
+    Alias rétrocompatible vers SDXLLocalCoverEngine.
+    Conservé pour ne pas casser d'éventuels imports existants.
     """
-
-    @property
-    def provider_name(self) -> str:
-        return "sdxl_local"
-
-    def generate(self, prompt: str, output_path: Path) -> Path:
-        try:
-            from app.image_engine.sdxl_provider import SdxlLocalProvider
-        except ImportError as exc:
-            raise RuntimeError(
-                "Le moteur SDXL local n'est pas installé ou n'est pas disponible.\n"
-                "Commande : pip install diffusers transformers accelerate safetensors torch"
-            ) from exc
-
-        from app.image_engine.image_config import IMAGE_NEGATIVE_PROMPT_DEFAULT
-
-        provider = SdxlLocalProvider()
-        return provider.generate_image(
-            prompt=prompt,
-            output_path=output_path,
-            negative_prompt=IMAGE_NEGATIVE_PROMPT_DEFAULT,
-        )

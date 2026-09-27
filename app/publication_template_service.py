@@ -20,7 +20,11 @@ from app.project_metadata import (
     yaml_file_hash,
     metadata_signature as compute_metadata_signature,
 )
-from app.publication_cleaner import is_publishable_heading, clean_publication_markdown
+from app.publication_cleaner import (
+    is_publishable_heading,
+    is_toc_eligible_heading,
+    clean_publication_markdown,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -180,20 +184,29 @@ def resolve_publication_settings(project_name: str, markdown: str) -> dict:
 # Extraction de titres et table des matières
 # ---------------------------------------------------------------------------
 
-def extract_headings(markdown: str, publishable_only: bool = True) -> list[dict]:
+def extract_headings(
+    markdown: str,
+    publishable_only: bool = True,
+    toc_eligible_only: bool = False,
+) -> list[dict]:
     """
     Extrait les titres H1/H2/H3 d'un document Markdown.
 
     Args:
-        markdown:         Contenu Markdown à analyser.
-        publishable_only: Si True (défaut), filtre les titres techniques
-                          non publiables (chunk_XXX, Projet :, Généré le :, etc.)
+        markdown:          Contenu Markdown à analyser.
+        publishable_only:  Si True (défaut), filtre les titres techniques
+                           non publiables (chunk_XXX, Projet :, Généré le :, etc.)
+                           et les titres parasites d'analyse IA.
+        toc_eligible_only: Si True, applique les règles strictes de la table des
+                           matières (H1/H2 uniquement, pas de parasites, pas de doublons).
 
     Retourne une liste de dicts avec les clés :
       - level (int) : 1, 2 ou 3
       - title (str) : texte du titre sans le préfixe #
     """
     headings: list[dict] = []
+    seen_titles: set[str] = set()
+
     for line in markdown.splitlines():
         stripped = line.strip()
         if stripped.startswith("### "):
@@ -208,10 +221,22 @@ def extract_headings(markdown: str, publishable_only: bool = True) -> list[dict]
         else:
             continue
 
-        if publishable_only and not is_publishable_heading(title):
-            continue
+        if toc_eligible_only:
+            if not is_toc_eligible_heading(title, level):
+                continue
+        elif publishable_only:
+            if not is_publishable_heading(title):
+                continue
+
+        # Dédoublonnage pour la table des matières
+        if toc_eligible_only:
+            title_key = title.lower().strip()
+            if title_key in seen_titles:
+                continue
+            seen_titles.add(title_key)
 
         headings.append({"level": level, "title": title})
+
     return headings
 
 
@@ -219,18 +244,31 @@ def build_table_of_contents(headings: list[dict]) -> str:
     """
     Construit une table des matières Markdown à partir d'une liste de titres.
 
+    Utilise uniquement les titres H1 et H2 éligibles (is_toc_eligible_heading).
+
     Format :
       # Table des matières
 
       - Titre niveau 1
         - Titre niveau 2
-          - Titre niveau 3
     """
+    toc_headings = [
+        h for h in headings
+        if is_toc_eligible_heading(h["title"], h["level"])
+    ]
+
+    if not toc_headings:
+        return ""
+
     lines = ["# Table des matières", ""]
-    for h in headings:
+    for h in toc_headings:
         indent = "  " * (h["level"] - 1)
         lines.append(f"{indent}- {h['title']}")
     lines.append("")
+
+    count = len(toc_headings)
+    print(f"[structure] Table des matières reconstruite ({count} entrée(s))")
+
     return "\n".join(lines)
 
 
@@ -375,14 +413,17 @@ def build_publication_markdown(project_name: str) -> Path | None:
     if settings.get("include_cover", True):
         parts.extend(_build_cover_markdown(settings))
 
-    # ---- Table des matières (titres publiables uniquement) ----
+    # ---- Table des matières (titres éditoriaux H1/H2 uniquement) ----
     headings: list[dict] = []
     if settings.get("include_toc", True):
-        headings = extract_headings(publication_content, publishable_only=True)
+        print("[structure] Nettoyage des artefacts IA")
+        headings = extract_headings(publication_content, toc_eligible_only=True)
         if headings:
-            parts.append(build_table_of_contents(headings))
-            parts.append("---")
-            parts.append("")
+            toc_md = build_table_of_contents(headings)
+            if toc_md:
+                parts.append(toc_md)
+                parts.append("---")
+                parts.append("")
 
     # ---- Contenu principal nettoyé ----
     parts.append(publication_content)

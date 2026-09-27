@@ -2,6 +2,7 @@ from pathlib import Path
 
 from app.project_manager import AudioProject
 from app.logger import log_event
+from app.transcript_writer import TRANSCRIPT_TXT_NAME
 
 
 def merge_project_transcripts(project: AudioProject) -> Path | None:
@@ -13,9 +14,16 @@ def merge_project_transcripts(project: AudioProject) -> Path | None:
 
     Sortie :
         sortie/nom_du_projet/merged/transcript_complet.txt
+
+    transcript.txt (représentation humaine unifiée V2, publiée dans le même
+    répertoire) est exclu : il contient déjà l'intégralité du projet et serait
+    sinon fusionné une seconde fois avec lui-même.
     """
 
-    transcript_files = sorted(project.transcripts_dir.glob("*.txt"))
+    transcript_files = sorted(
+        path for path in project.transcripts_dir.glob("*.txt")
+        if path.name != TRANSCRIPT_TXT_NAME
+    )
 
     if not transcript_files:
         log_event({

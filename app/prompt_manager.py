@@ -54,19 +54,39 @@ RÈGLES ABSOLUES — SORTIE UNIQUEMENT :
 - Si le chunk ne contient pas de contenu transcrit réel (seulement des séparateurs, des en-têtes ou des timestamps vides), ne complète pas, n'invente pas, retourne exactement : [CHUNK_VIDE_OU_NON_TRAITABLE]
 - Si le contenu est vide ou uniquement des métadonnées, retourne une chaîne vide.
 
+TITRES INTERDITS — NE JAMAIS CRÉER CES SECTIONS :
+- Summary / Résumé / Synthèse
+- Key Themes / Key Theme / Thèmes principaux / Thèmes clés
+- Key Takeaways / Points clés / Éléments clés / À retenir
+- Key Points / Key Concepts / Concepts clés
+- Final Notes / Final Insight / Notes finales
+- Questions for Clarification / Questions for Further Exploration / Questions de clarification
+- Possible Interpretations / Interpretations / Interprétations possibles
+- Unresolved Questions / Questions non résolues
+- Language Notes / Translation Notes / Notes linguistiques / Traduction
+- French to English Translation / Translation and Summary
+- Cultural Context / Contexte culturel
+- Biblical References / Religious References / Références bibliques / Références religieuses
+- Core Themes / Structure and Flow / Notable Style and Tone / Possible Context
+- Conclusion provisoire / Interim Conclusion
+Ces titres appartiennent à un rapport d'analyse IA, pas à un document éditorial.
+Ne crée AUCUNE section portant ces noms, même partiellement ou en variante.
+
 MISSION ÉDITORIALE :
 - Corriger les erreurs évidentes de transcription.
 - Améliorer la ponctuation et la fluidité.
-- Structurer en Markdown avec des titres et sous-titres pertinents.
+- Structurer en Markdown avec des titres et sous-titres ÉDITORIAUX pertinents.
 - Préserver fidèlement le sens et le ton de l'orateur.
 - Ne pas inventer de contenu absent de la transcription.
 - Supprimer les hésitations et répétitions inutiles.
+- Les titres de section doivent refléter le CONTENU réel du passage, pas une catégorie d'analyse.
 
 FORMAT DE SORTIE :
 - Markdown éditorial uniquement.
-- Titres H1/H2/H3 si pertinents.
+- Titres H1/H2/H3 uniquement si le contenu le justifie.
 - Paragraphes bien formés.
 - Aucune ligne de séparateur technique.
+- Aucun méta-commentaire sur le texte.
 
 Transcription à transformer :
 
@@ -109,21 +129,31 @@ RÈGLES ABSOLUES — SORTIE UNIQUEMENT :
 - Si le chunk ne contient pas de contenu transcrit réel (seulement des séparateurs, des en-têtes ou des timestamps vides), ne complète pas, n'invente pas, retourne exactement : [CHUNK_VIDE_OU_NON_TRAITABLE]
 - Si le contenu est vide, retourne une chaîne vide.
 
+TITRES INTERDITS — NE JAMAIS CRÉER CES SECTIONS :
+- Summary / Key Themes / Key Takeaways / Key Points / Final Notes / Final Insight
+- Questions for Clarification / Questions for Further Exploration
+- Possible Interpretations / Unresolved Questions
+- Language Notes / Translation Notes / Cultural Context
+- Biblical References / Religious References / Core Themes
+- Résumé / Synthèse / Thèmes principaux / Points clés / Éléments clés
+- Notes finales / Questions de clarification / Interprétations possibles
+- Notes linguistiques / Contexte culturel / Références bibliques
+Ces titres appartiennent à un rapport d'analyse, pas à un chapitre de livre.
+
 MISSION :
 - Transformer le texte oral en chapitre écrit fluide.
 - Conserver les idées de l'orateur sans inventer de contenu.
-- Créer des titres et sous-titres pertinents.
+- Créer des titres et sous-titres ÉDITORIAUX qui reflètent le contenu réel.
 - Supprimer les hésitations et répétitions.
 - Garder un style naturel et lisible.
+- Les titres de section doivent nommer le sujet traité, pas une catégorie d'analyse.
 
 Format de sortie :
 # Titre du chapitre
 
-## Introduction
+## [Titre éditorial reflétant le contenu]
 
-## Développement
-
-## Conclusion
+## [Titre éditorial reflétant le contenu]
 
 Transcription à transformer :
 

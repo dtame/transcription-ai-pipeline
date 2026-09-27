@@ -13,13 +13,19 @@ Principe :
 
 Structure de sortie :
   sortie/<projet>/audio_segments/<stem>/part_001.mp3  ...
-  sortie/<projet>/segment_transcripts/<stem>/part_001.txt  ...
+  sortie/<projet>/segment_transcripts/<stem>/part_001.txt   (transcript texte V1)
+  sortie/<projet>/segment_transcripts/<stem>/part_001.json  (capture brute V2)
+  sortie/<projet>/transcript_capture/<stem>.json            (capture consolidée V2)
   sortie/<projet>/transcripts/<stem>.txt   (fichier final fusionné)
 
 Overlap :
   Chaque segment inclut AUDIO_SEGMENT_OVERLAP_SECONDS secondes du segment suivant.
-  Lors de la fusion, les phrases dont le timestamp local de fin est ≤ overlap sont
-  ignorées pour le segment concerné (elles ont déjà été écrites par le segment précédent).
+  Transcript texte V1 : les phrases dont le timestamp local de fin est ≤ overlap
+  sont ignorées pour le segment concerné (elles ont déjà été écrites par le
+  segment précédent).
+  Contrat V2 : la capture conserve les segments Whisper bruts et la règle
+  d'ownership est appliquée dans app.transcript_builder, qui dispose du contexte
+  des segments techniques voisins (voir resolve_owned_segments).
 """
 
 from __future__ import annotations
@@ -36,15 +42,26 @@ from app.audio_utils import (
     print_progress,
 )
 from app.config import (
-    ALLOWED_LANGUAGES,
     AUDIO_SEGMENT_MINUTES,
     AUDIO_SEGMENT_OVERLAP_SECONDS,
     LONG_AUDIO_SEGMENTATION_ENABLED,
     LONG_AUDIO_THRESHOLD_MINUTES,
 )
-from app.file_utils import file_hash
+from app.file_utils import file_hash, write_text_atomic
 from app.logger import log_event
 from app.paths import SORTIE_DIR
+from app.transcript_capture import (
+    part_capture_path,
+    read_part_capture,
+    write_audio_capture,
+    write_part_capture,
+)
+from app.transcript_models import (
+    CAPTURE_MODE_SEGMENTED,
+    AudioCapture,
+    CapturedPart,
+    CapturedSegment,
+)
 from app.project_state import (
     load_project_state,
     mark_audio_partial_error,
@@ -91,7 +108,8 @@ def transcribe_long_audio_with_segments(
     - Fusionne les transcripts en output_path.
     - Retourne output_path.
 
-    Lève RuntimeError si au moins un segment est en erreur.
+    Lève RuntimeError si au moins un segment est en erreur, ou si un transcript
+    de segment attendu manque au moment de la fusion.
     Dans ce cas, les segments déjà transcrits sont préservés dans project_state.json
     pour permettre la reprise lors du prochain lancement.
     """
@@ -200,7 +218,23 @@ def transcribe_long_audio_with_segments(
         )
 
     # Fusion des transcripts de segments
-    _merge_segment_transcripts(segments, output_path)
+    try:
+        _merge_segment_transcripts(segments, output_path)
+    except RuntimeError as exc:
+        # Un transcript attendu manque : on ne produit pas de transcript final
+        # prétendument complet. Les segments déjà transcrits sont conservés dans
+        # project_state.json pour permettre la reprise au prochain lancement.
+        mark_audio_partial_error(state, audio_path, audio_hash, str(exc), segments)
+        save_project_state(project_name, state)
+        raise
+
+    # Consolider la capture structurée du fichier audio (contrat V2)
+    _write_consolidated_capture(
+        project_name=project_name,
+        audio_path=audio_path,
+        total_duration=total_duration,
+        segments=segments,
+    )
 
     # Marquer le fichier original comme transcribed
     mark_audio_segmented_transcribed(state, audio_path, audio_hash, output_path, segments)
@@ -232,6 +266,16 @@ def _get_segment_boundaries(total_seconds: float) -> list[tuple[float, float]]:
         end = min(start + segment_duration + overlap, total_seconds)
         boundaries.append((start, end))
         start += segment_duration
+
+    # Phase 1 — segment résiduel dégénéré.
+    # Une durée à peine supérieure à un multiple de la durée de segment produisait
+    # un dernier segment entièrement contenu dans le précédent (901 s → segment
+    # principal 0-901 puis segment résiduel 900-901) : un appel Whisper inutile
+    # dont tout le contenu était de toute façon absorbé par l'overlap entrant.
+    # La couverture audio est préservée puisque le segment précédent atteint déjà
+    # la fin du fichier.
+    if len(boundaries) > 1 and boundaries[-1][1] <= boundaries[-2][1]:
+        boundaries.pop()
 
     return boundaries
 
@@ -400,15 +444,28 @@ def _transcribe_one_segment(
     project_name: str,
 ) -> None:
     """
-    Transcrit un segment audio et écrit le transcript avec timestamps globaux.
+    Transcrit un segment audio, capture ses données structurées, puis écrit le
+    transcript texte avec timestamps globaux.
 
     Timestamps :
     - Whisper retourne des timestamps locaux (depuis 0).
     - On ajoute start_seconds pour obtenir le timestamp global.
 
-    Overlap :
+    Overlap (transcript texte V1) :
     - Les phrases dont le timestamp local de fin ≤ effective_start_local
       sont ignorées (elles appartiennent au segment précédent).
+
+    Capture structurée (contrat V2) :
+    - La capture conserve les segments Whisper BRUTS, sans filtrage d'overlap :
+      la règle d'ownership est appliquée une seule fois, dans
+      app.transcript_builder, là où le contexte des segments techniques voisins
+      est disponible.
+    - La capture est publiée avant le transcript texte : un transcript de segment
+      présent implique toujours une capture exploitable, y compris après reprise.
+
+    Langue (contrat V2) :
+    - La langue réellement détectée est conservée. Plus de retranscription
+      forcée en anglais pour les langues hors fr/en.
     """
     audio_path = Path(segment["audio_path"])
     transcript_path = Path(segment["transcript_path"])
@@ -431,39 +488,110 @@ def _transcribe_one_segment(
     transcription_iter, info = model.transcribe(str(audio_path))
 
     detected_language = info.language
-    if detected_language not in ALLOWED_LANGUAGES:
-        print(
-            f"  Langue inattendue ({detected_language}), forçage vers anglais."
+
+    captured: list[CapturedSegment] = []
+    lines: list[str] = []
+
+    for seg in transcription_iter:
+        text = seg.text.strip()
+
+        captured.append(
+            CapturedSegment(start=float(seg.start), end=float(seg.end), text=text)
         )
-        detected_language = "en"
-        transcription_iter, info = model.transcribe(
-            str(audio_path), language="en"
+
+        # Ignorer l'overlap entrant : phrases qui terminent avant effective_start_local
+        if seg.end <= effective_start_local:
+            continue
+
+        global_seg_start = seg.start + start_offset
+        global_seg_end = seg.end + start_offset
+
+        ts_start = format_timestamp(global_seg_start)
+        ts_end = format_timestamp(global_seg_end)
+
+        lines.append(f"[{ts_start} -> {ts_end}] {text}\n")
+
+        print_progress(
+            current_seconds=global_seg_end,
+            total_seconds=total_duration_seconds,
+            start_time=start_time,
+            prefix=f"  Segment {segment_index}/{total_segments}",
         )
 
-    transcript_path.parent.mkdir(parents=True, exist_ok=True)
+    write_part_capture(
+        transcript_path,
+        CapturedPart(
+            id=segment["id"],
+            start_seconds=float(start_offset),
+            end_seconds=float(segment["end_seconds"]),
+            effective_start_local=float(effective_start_local),
+            detected_language=detected_language,
+            segments=captured,
+        ),
+    )
 
-    with open(transcript_path, "w", encoding="utf-8") as f:
-        for seg in transcription_iter:
-            # Ignorer l'overlap entrant : phrases qui terminent avant effective_start_local
-            if seg.end <= effective_start_local:
-                continue
-
-            global_seg_start = seg.start + start_offset
-            global_seg_end = seg.end + start_offset
-
-            ts_start = format_timestamp(global_seg_start)
-            ts_end = format_timestamp(global_seg_end)
-
-            f.write(f"[{ts_start} -> {ts_end}] {seg.text.strip()}\n")
-
-            print_progress(
-                current_seconds=global_seg_end,
-                total_seconds=total_duration_seconds,
-                start_time=start_time,
-                prefix=f"  Segment {segment_index}/{total_segments}",
-            )
+    write_text_atomic(transcript_path, "".join(lines))
 
     print()  # Saut de ligne après la barre de progression
+
+
+# ---------------------------------------------------------------------------
+# Capture structurée consolidée (contrat V2)
+# ---------------------------------------------------------------------------
+
+def _write_consolidated_capture(
+    project_name: str,
+    audio_path: Path,
+    total_duration: float,
+    segments: list[dict],
+) -> Path | None:
+    """
+    Assemble les captures brutes des segments techniques en une capture unique
+    pour le fichier audio source.
+
+    Les segments techniques n'apparaissent jamais comme sources éditoriales : ce
+    fichier audio donnera UN seul AUDIOxxx, quel que soit le nombre de découpes.
+
+    Les captures de parties étant écrites par segment et conservées d'un
+    lancement à l'autre, la capture consolidée est identique qu'elle provienne
+    d'un run unique ou d'un run interrompu puis repris.
+
+    Si une capture de partie manque (transcription antérieure à la Phase 1, ou
+    nettoyage externe), la capture consolidée n'est PAS écrite : la transcription
+    V1 reste valide et c'est la couche V2 qui échouera explicitement, sans jamais
+    publier un contrat incomplet.
+    """
+    missing = [
+        segment["id"] for segment in segments
+        if not part_capture_path(Path(segment["transcript_path"])).exists()
+    ]
+
+    if missing:
+        log_event({
+            "event": "transcript_v2_capture_incomplete",
+            "file": audio_path.name,
+            "missing_segments": missing,
+        })
+        return None
+
+    parts: list[CapturedPart] = []
+
+    for segment in segments:
+        part = read_part_capture(Path(segment["transcript_path"]))
+        parts.append(part)
+
+    capture = AudioCapture(
+        filename=audio_path.name,
+        duration_seconds=total_duration,
+        mode=CAPTURE_MODE_SEGMENTED,
+        parts=parts,
+    )
+
+    return write_audio_capture(
+        SORTIE_DIR / project_name,
+        audio_path.stem,
+        capture,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -479,22 +607,42 @@ def _merge_segment_transcripts(
 
     Chaque segment a déjà ses timestamps convertis en timestamps globaux.
     Aucun traitement supplémentaire n'est nécessaire — simple concaténation.
+
+    Lève RuntimeError si un transcript de segment attendu est absent : une
+    transcription finale ne doit jamais être produite avec un trou silencieux.
+    La vérification a lieu avant toute écriture, afin de ne pas détruire un
+    transcript final valide déjà présent.
     """
+    missing = [
+        segment for segment in segments
+        if not Path(segment["transcript_path"]).exists()
+    ]
+
+    if missing:
+        for segment in missing:
+            log_event({
+                "event": "segment_transcript_missing_at_merge",
+                "segment": segment["id"],
+                "path": segment["transcript_path"],
+            })
+
+        missing_ids = ", ".join(segment["id"] for segment in missing)
+        log_event({
+            "event": "segment_merge_aborted",
+            "output": str(output_path),
+            "missing_segments": [segment["id"] for segment in missing],
+        })
+        raise RuntimeError(
+            f"Fusion impossible : {len(missing)}/{len(segments)} transcript(s) "
+            f"de segment manquant(s) ({missing_ids}). "
+            "Le transcript final n'a pas été produit ; relancez pour reprendre."
+        )
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     with open(output_path, "w", encoding="utf-8") as out:
         for segment in segments:
-            transcript_path = Path(segment["transcript_path"])
-
-            if not transcript_path.exists():
-                log_event({
-                    "event": "segment_transcript_missing_at_merge",
-                    "segment": segment["id"],
-                    "path": str(transcript_path),
-                })
-                continue
-
-            content = transcript_path.read_text(encoding="utf-8")
+            content = Path(segment["transcript_path"]).read_text(encoding="utf-8")
             out.write(content)
 
             if content and not content.endswith("\n"):
