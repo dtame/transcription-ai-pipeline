@@ -1,0 +1,70 @@
+{
+  "target_chapter_id": "CH016",
+  "prompt_version": "book-generator-1.0.1",
+  "historical_prompt_version": "book-generator-1.0",
+  "transport_version": "book-generation-transport-1.0",
+  "model": "claude-sonnet-5",
+  "max_tokens": 16384,
+  "thinking": {
+    "type": "disabled"
+  },
+  "thinking_mode": "disabled",
+  "language": "en",
+  "request_sha256": "3fade89f3bda5a4e008242c28be9babf29c00dec5666a2bcde1900a99d46d071",
+  "request_sha256_repeat": "3fade89f3bda5a4e008242c28be9babf29c00dec5666a2bcde1900a99d46d071",
+  "determinism": true,
+  "chars": 17230,
+  "bytes": 17252,
+  "historical_request_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+  "expected_historical_request_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+  "historical_request_identity": true,
+  "future_differs_from_historical": true,
+  "http_sent": false,
+  "secrets_included": false,
+  "content_audit": {
+    "chapter_id_match": true,
+    "all_planned_sections": true,
+    "all_assigned_ideas": true,
+    "canonical_language": true,
+    "voice_present": true,
+    "allowed_handles_present": true,
+    "traceability_src_present": true,
+    "unrelated_chapter_excluded": true,
+    "blocked_listed": true,
+    "whole_transcript_sent": false,
+    "full_source_map_sent": false
+  },
+  "idea_set_exact": true,
+  "section_set_exact": true,
+  "src_handles_hydrated": true,
+  "expected_chapter_ideas": [
+    "IDEA224",
+    "IDEA225",
+    "IDEA226",
+    "IDEA250",
+    "IDEA251",
+    "IDEA252"
+  ],
+  "expected_chapter_sections": [
+    "SEC063"
+  ],
+  "evidence_sha256": "bc15f06b05b1160aed413720f52c104cbb63cf4c98f07ce3fb8e8d2d732a0e93",
+  "expected_evidence_sha256": "bc15f06b05b1160aed413720f52c104cbb63cf4c98f07ce3fb8e8d2d732a0e93",
+  "evidence_unchanged": true,
+  "cache_signature_v10": "d5b4bcb8f5335d474c5fb237e75f1ba5c8ef5f9e5350a993b59edf8352a31039",
+  "cache_signature_v101": "23588669ee551e402a030b0987ef3f94a76c5f6c64bdcdbc7f14a91f3f4c4578",
+  "cache_signature_changed": true,
+  "context_safe": true,
+  "recommended_max_output": 16384,
+  "fallback_triggered": false,
+  "system_prompt_chars": 4453,
+  "user_prompt_chars": 10401,
+  "local_input_token_estimate": {
+    "tokens": 3714,
+    "method": "heuristic_chars_per_token",
+    "model": "claude-sonnet-5",
+    "estimated": true
+  },
+  "canary_specific_content_hacks": false,
+  "production_request_builder": true
+}

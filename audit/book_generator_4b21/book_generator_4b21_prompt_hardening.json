@@ -1,0 +1,29 @@
+{
+  "historical_prompt": "book-generator-1.0",
+  "historical_mutated": false,
+  "historical_system_sha256": "fc5a9721ed5f72641e5d782d7a7f24f380ae3b4a38180aa1e7f6373e0e1aec87",
+  "historical_instructions_sha256": "95c95d825f615443715513c19b0ca60b724bff4c2478958d0cfee55c0b7fb0b8",
+  "historical_prompt_sha256": "af5eafa92cb4335a1c67cccecd3f105b3f1cb4234ab4adcb0de8e30675aba46d",
+  "frozen_system_sha256": "fc5a9721ed5f72641e5d782d7a7f24f380ae3b4a38180aa1e7f6373e0e1aec87",
+  "frozen_instructions_sha256": "95c95d825f615443715513c19b0ca60b724bff4c2478958d0cfee55c0b7fb0b8",
+  "frozen_prompt_sha256": "af5eafa92cb4335a1c67cccecd3f105b3f1cb4234ab4adcb0de8e30675aba46d",
+  "historical_identity_match": true,
+  "successor_prompt": "book-generator-1.0.1",
+  "successor_system_sha256": "7dd9e38c39b6988472e7f5f97101a91cc95f21218d1504e3398329df0a22e532",
+  "successor_instructions_sha256": "1ac3ebf03dce1b489ffcc0a76d5ffe5efe657a819c9e6ab06f098c46be2efbcc",
+  "successor_prompt_sha256": "ba1981e2c54e50b13f769b58db482ce60df247c24582d2dc56287243d327b947",
+  "successor_differs": true,
+  "scope": "narrow hardening release",
+  "hardening_areas": [
+    "non-empty paragraphs",
+    "no unsupported connective claims",
+    "no invented examples/illustrations/hypotheticals/anecdotes",
+    "evidence-bounded substantive prose",
+    "pre-return completeness/fidelity self-check"
+  ],
+  "ch016_specific_hacks": false,
+  "mentions_p9b": false,
+  "mentions_funeral": false,
+  "chain_of_thought_requested": false,
+  "selected_hardening": "book-generator-1.0.1 + existing hard local validator + hybrid semantic validation strategy"
+}

@@ -1,0 +1,49 @@
+{
+  "reviewer": "human_exhaustive",
+  "example_like_elements": [
+    {
+      "handle": "p5",
+      "path": "SEC063.p5",
+      "section": "SEC063",
+      "kind": "substantive",
+      "class": "source_supported_pastoral_observation",
+      "text": "deaths of supposed children of God who did not embrace death as gain; last-hour speech 'I don't want to die now'",
+      "cues": ["pastoral observation of recent deaths"],
+      "exact_support": ["IDEA250", "SRC007115", "SRC007116", "SRC007117", "SRC007118"],
+      "source_supported": true,
+      "classification": "SUPPORTED_EXAMPLE",
+      "invented": false
+    },
+    {
+      "handle": "p7",
+      "path": "SEC063.p7",
+      "section": "SEC063",
+      "kind": "substantive",
+      "class": "source_supported_testimony",
+      "text": "at least two men who foreknew exact hour and date of death; 'so you better come, I'll go to heaven'",
+      "cues": ["I know at least two men", "exact hour", "exact date"],
+      "exact_support": ["IDEA252", "SRC007193", "SRC007197", "SRC007199", "SRC007201", "SRC007204"],
+      "source_supported": true,
+      "classification": "SUPPORTED_EXAMPLE",
+      "invented": false
+    },
+    {
+      "handle": "p7",
+      "path": "SEC063.p7",
+      "section": "SEC063",
+      "kind": "substantive",
+      "class": "stylistic_simile",
+      "text": "as calmly as a man announcing a journey already planned and welcomed",
+      "cues": ["as calmly as a man"],
+      "exact_support": ["stylistic dressing of SRC007201/SRC007204; not a new scene"],
+      "source_supported": true,
+      "classification": "STYLISTIC_NOT_NEW_ANECDOTE",
+      "invented": false
+    }
+  ],
+  "count": 3,
+  "invented_examples": 0,
+  "historical_funeral_p8_recurrence": false,
+  "pass": true,
+  "note": "No funeral illustration. No invented hypothetical. Source-supported testimony and pastoral observation only."
+}

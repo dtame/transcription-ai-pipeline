@@ -1,0 +1,27 @@
+{
+  "historical": {
+    "expected": {
+      "version": "editorial-planner-1.0",
+      "system_sha256": "7faeacaa81d123510c321d4756f3cd975d6b58460fdd9f216146d6a15efeeb55",
+      "instructions_sha256": "e9193763e49859c03c1d30c9ef259163a05b371354cdca1979bf9b1db807294c",
+      "prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a"
+    },
+    "live": {
+      "version": "editorial-planner-1.0",
+      "system_sha256": "7faeacaa81d123510c321d4756f3cd975d6b58460fdd9f216146d6a15efeeb55",
+      "instructions_sha256": "e9193763e49859c03c1d30c9ef259163a05b371354cdca1979bf9b1db807294c",
+      "prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a"
+    },
+    "mismatches": [],
+    "identity": "MATCH",
+    "historical_prompt_mutated": "NO"
+  },
+  "successor": {
+    "version": "editorial-planner-1.0.1",
+    "system_sha256": "fe2a9c0a029eb8807c5f8910367d6372bb0190526512e63ff9c0f48039191603",
+    "instructions_sha256": "02604b1df39560f46294af6d8a62a2dfdaf0006a617b7bfd5c2487e2d3dc3620",
+    "prompt_sha256": "870937af8c4400f87cf4b141f2b7634c5cbe451017d6d653b8a354b49b976019",
+    "contains_canonical_language_rule": true,
+    "historical_prompt_mutated": false
+  }
+}

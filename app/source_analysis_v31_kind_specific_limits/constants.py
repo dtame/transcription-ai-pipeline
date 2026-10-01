@@ -1,0 +1,282 @@
+"""Constantes 3B.7.7A.30 — politique kind-specific + revalidation WIN003. 0 provider."""
+
+from __future__ import annotations
+
+from app.source_analysis.writer import source_map_path
+from app.source_analysis.window_signature import WindowSignatureInputs
+from app.source_analysis_hybrid.constants import PLANNER_VERSION
+from app.source_analysis_local_v2.constants import (
+    CANDIDATE_PLANNER_VERSION,
+    GRANULARITY_POLICY_VERSION,
+    GRANULARITY_POLICY_VERSION_12_KIND_SPECIFIC,
+    PROJECT_NAME,
+)
+from app.source_analysis_local_v2.granularity import (
+    AUD_TEXT_HARD_LIMIT,
+    EXAMPLE_V_TEXT_HARD_LIMIT,
+    IDEA_V_TEXT_HARD_LIMIT,
+    INTENT_TEXT_HARD_LIMIT,
+    REFERENCE_V_TEXT_HARD_LIMIT,
+    RELATION_V_TEXT_HARD_LIMIT,
+    TEXT_HARD_LIMITS,
+    THEME_TEXT_HARD_LIMIT,
+    TOPIC_V_TEXT_HARD_LIMIT,
+    UNCERTAINTY_V_TEXT_HARD_LIMIT,
+    V11_MINIMAL_EXAMPLE_V_TEXT_HARD_LIMIT,
+    V11_MINIMAL_TEXT_HARD_LIMITS,
+    V11_MINIMAL_THEME_TEXT_HARD_LIMIT,
+)
+from app.source_analysis_local_v3.constants import (
+    SEMANTIC_TRANSPORT_VERSION_V31_LOCAL_LITE,
+    WINDOW_ANALYSIS_PROMPT_VERSION_V140,
+)
+from app.source_analysis_local_v3.schema import (
+    semantic_transport_v3_fingerprint,
+    semantic_transport_v31_local_lite_fingerprint,
+)
+from app.source_analysis.window_granularity import (
+    POLICY_VERSION as V10_POLICY_VERSION,
+    TEXT_HARD_LIMITS as V10_TEXT_HARD_LIMITS,
+)
+from app.source_analysis_v3_second_window.constants import EXPECTED_SCHEMA_HASH
+from app.source_analysis_v3_symbolic_grammar_canary.constants import (
+    EXPECTED_ADAPTED_SCHEMA_BYTES,
+    EXPECTED_RAW_SCHEMA_BYTES,
+)
+from app.source_analysis_v31_length_ceiling.constants import (
+    A18_PROOF_STILL_APPLIES,
+    A27_STATUS_UNCHANGED,
+    A28_STATUS_UNCHANGED,
+    A28_VALIDATOR_ERROR,
+    EXAMPLE_CHARS,
+    EXAMPLE_INDEX,
+    IDEA_CHARS,
+    IDEA_INDEX,
+    PROTECTED_HISTORICAL as A29_PROTECTED_HISTORICAL,
+    REPORT_NAME as A29_REPORT_NAME,
+    SELECTED_POLICY,
+    THEME_CHARS,
+    WIN003_FORENSIC_RELATIVE,
+    WIN003_RAW_SHA256,
+    WIN003_RAW_SIZE,
+    WIN003_REQUEST_ID,
+    WIN003_SIGNATURE,
+    WINDOW_ID,
+)
+from app.source_analysis_v31_remaining_windows.constants import (
+    A27_RESULT,
+    MAX_OUTPUT_TOKENS,
+    REPORT_NAME as A28_REPORT_NAME,
+    THINKING_MODE,
+    WINDOW_SPECS,
+)
+
+SCHEMA_VERSION = "1.0"
+PHASE = "3B.7.7A.30"
+MODE = "KIND_SPECIFIC_LENGTH_POLICY_WIN003_REVALIDATION_OFFLINE"
+
+REAL_PROVIDER_CALLS_THIS_PHASE = 0
+REAL_WINDOW_CALLS = 0
+WIN003_NEW_PROVIDER_CALL = False
+WIN005_AUTHORIZED = False
+WIN006_AUTHORIZED = False
+WIN007_AUTHORIZED = False
+CONSOLIDATION_AUTHORIZED = False
+
+A27_STATUS = A27_RESULT
+A28_HISTORICAL_STATUS = A28_STATUS_UNCHANGED
+A29_STATUS = "PASS"
+PHASE_3B_STATUS = "INCOMPLETE"
+SOURCE_MAP_STATUS = "NOT PUBLISHED"
+
+READY_BEFORE = "3 / 7"
+READY_BEFORE_COUNT = 3
+TOTAL_WINDOWS = 7
+READY_AFTER_IF_PROMOTED = "4 / 7"
+READY_AFTER_COUNT_IF_PROMOTED = 4
+
+OLD_THEME_LIMIT = V11_MINIMAL_THEME_TEXT_HARD_LIMIT
+NEW_THEME_LIMIT = THEME_TEXT_HARD_LIMIT
+OLD_EXAMPLE_LIMIT = V11_MINIMAL_EXAMPLE_V_TEXT_HARD_LIMIT
+NEW_EXAMPLE_LIMIT = EXAMPLE_V_TEXT_HARD_LIMIT
+IDEA_LIMIT = IDEA_V_TEXT_HARD_LIMIT
+
+assert OLD_THEME_LIMIT == 200
+assert NEW_THEME_LIMIT == 225
+assert OLD_EXAMPLE_LIMIT == 200
+assert NEW_EXAMPLE_LIMIT == 225
+assert IDEA_LIMIT == 280
+assert TOPIC_V_TEXT_HARD_LIMIT == 80
+assert RELATION_V_TEXT_HARD_LIMIT == 40
+assert REFERENCE_V_TEXT_HARD_LIMIT == 220
+assert UNCERTAINTY_V_TEXT_HARD_LIMIT == 280
+assert INTENT_TEXT_HARD_LIMIT == 280
+assert AUD_TEXT_HARD_LIMIT == 280
+assert TEXT_HARD_LIMITS["theme"] == 225
+assert TEXT_HARD_LIMITS["EXAMPLE.v"] == 225
+assert TEXT_HARD_LIMITS["IDEA.v"] == 280
+assert V11_MINIMAL_TEXT_HARD_LIMITS["theme"] == 200
+assert V11_MINIMAL_TEXT_HARD_LIMITS["EXAMPLE.v"] == 200
+assert V10_TEXT_HARD_LIMITS["theme"] == 200
+assert V10_POLICY_VERSION == "window-granularity-1.0"
+assert GRANULARITY_POLICY_VERSION == "window-granularity-1.1-minimal"
+assert (
+    GRANULARITY_POLICY_VERSION_12_KIND_SPECIFIC
+    == "window-granularity-1.2-kind-specific"
+)
+assert SELECTED_POLICY == "USE_KIND_SPECIFIC_LIMITS"
+assert A28_HISTORICAL_STATUS == "FAIL"
+assert A29_STATUS == "PASS"
+assert A18_PROOF_STILL_APPLIES is True
+
+PROMPT_VERSION = WINDOW_ANALYSIS_PROMPT_VERSION_V140
+TRANSPORT_VERSION = SEMANTIC_TRANSPORT_VERSION_V31_LOCAL_LITE
+PRODUCTION_PLANNER_VERSION = PLANNER_VERSION
+CANDIDATE_PLANNER = CANDIDATE_PLANNER_VERSION
+CURRENT_GRANULARITY_POLICY = GRANULARITY_POLICY_VERSION_12_KIND_SPECIFIC
+HISTORICAL_GRANULARITY_POLICY = GRANULARITY_POLICY_VERSION
+
+SIGNATURE_INCLUDES_GRANULARITY_POLICY = (
+    "granularity" in WindowSignatureInputs.__dataclass_fields__
+    or "policy_version" in WindowSignatureInputs.__dataclass_fields__
+)
+SIGNATURE_DECISION = (
+    "REUSE_EXISTING_SIGNATURE"
+    if not SIGNATURE_INCLUDES_GRANULARITY_POLICY
+    else "NEW_SIGNATURE_REQUIRED"
+)
+assert SIGNATURE_DECISION == "REUSE_EXISTING_SIGNATURE"
+
+WIN003_PROMOTION_LABEL = "WIN003_REVALIDATED_FROM_SAVED_A28_RESPONSE"
+WIN003_SRC_RANGE = "SRC002417 → SRC003606"
+WIN003_OWNED_SRC_COUNT = WINDOW_SPECS["WIN003"]["owned_src_count"]
+WIN003_WORD_COUNT = WINDOW_SPECS["WIN003"]["word_count"]
+
+POLICY_ARTIFACT = "source_analysis_kind_specific_length_policy.json"
+SCHEMA_ARTIFACT = "source_analysis_a30_schema_identity.json"
+REVALIDATION_ARTIFACT = "source_analysis_win003_saved_response_revalidation.json"
+PROVENANCE_ARTIFACT = "source_analysis_win003_revalidation_provenance.json"
+READY_ARTIFACT = "source_analysis_ready_windows_after_a30.json"
+PREFLIGHT_ARTIFACT = "source_analysis_win005_007_post_policy_preflight.json"
+REPORT_NAME = (
+    "PHASE_3B77A30_KIND_SPECIFIC_LENGTH_POLICY_WIN003_REVALIDATION_REPORT.md"
+)
+
+PROTECTED_A29 = (
+    f"audit/{A29_REPORT_NAME}",
+    "audit/source_analysis_value_length_boundary_map.json",
+    "audit/source_analysis_real_value_length_distribution.json",
+    "audit/source_analysis_win003_overlength_forensics.json",
+    "audit/source_analysis_length_policy_options.json",
+    "audit/source_analysis_win003_counterfactual_validation.json",
+    "audit/source_analysis_length_policy_decision.json",
+    f"audit/{A28_REPORT_NAME}",
+)
+PROTECTED_HISTORICAL = tuple(A29_PROTECTED_HISTORICAL) + PROTECTED_A29
+
+NEXT_ACTION = "HUMAN REVIEW"
+NEXT_PHASE = "3B.7.7A.31_HUMAN_REVIEW_REMAINING_THREE_WINDOWS"
+NEXT_PHASE_LABEL = (
+    "3B.7.7A.31 — HUMAN REVIEW TO AUTHORIZE WIN005/WIN006/WIN007 "
+    "(do not execute remaining windows here)"
+)
+
+assert EXPECTED_RAW_SCHEMA_BYTES == 588
+assert EXPECTED_ADAPTED_SCHEMA_BYTES == 650
+assert semantic_transport_v31_local_lite_fingerprint() == EXPECTED_SCHEMA_HASH
+assert semantic_transport_v3_fingerprint() == EXPECTED_SCHEMA_HASH
+assert PROMPT_VERSION == "window-analysis-1.4.0"
+assert TRANSPORT_VERSION == "semantic-transport-v3.1-local-lite"
+assert MAX_OUTPUT_TOKENS == 32000
+assert THINKING_MODE == "disabled"
+assert WIN003_REQUEST_ID == "req_011CfUkAxvFJzkfSNhdHiMmb"
+assert THEME_CHARS == 212
+assert EXAMPLE_CHARS == 213
+assert IDEA_CHARS == 209
+assert not source_map_path(PROJECT_NAME).is_file() or SOURCE_MAP_STATUS == "NOT PUBLISHED"
+
+__all__ = [
+    "A18_PROOF_STILL_APPLIES",
+    "A27_STATUS",
+    "A28_HISTORICAL_STATUS",
+    "A28_VALIDATOR_ERROR",
+    "A29_REPORT_NAME",
+    "A29_STATUS",
+    "AUD_TEXT_HARD_LIMIT",
+    "CANDIDATE_PLANNER",
+    "CONSOLIDATION_AUTHORIZED",
+    "CURRENT_GRANULARITY_POLICY",
+    "EXAMPLE_CHARS",
+    "EXAMPLE_INDEX",
+    "EXAMPLE_V_TEXT_HARD_LIMIT",
+    "EXPECTED_ADAPTED_SCHEMA_BYTES",
+    "EXPECTED_RAW_SCHEMA_BYTES",
+    "EXPECTED_SCHEMA_HASH",
+    "HISTORICAL_GRANULARITY_POLICY",
+    "IDEA_CHARS",
+    "IDEA_INDEX",
+    "IDEA_LIMIT",
+    "IDEA_V_TEXT_HARD_LIMIT",
+    "INTENT_TEXT_HARD_LIMIT",
+    "MAX_OUTPUT_TOKENS",
+    "MODE",
+    "NEW_EXAMPLE_LIMIT",
+    "NEW_THEME_LIMIT",
+    "NEXT_ACTION",
+    "NEXT_PHASE",
+    "NEXT_PHASE_LABEL",
+    "OLD_EXAMPLE_LIMIT",
+    "OLD_THEME_LIMIT",
+    "PHASE",
+    "PHASE_3B_STATUS",
+    "POLICY_ARTIFACT",
+    "PREFLIGHT_ARTIFACT",
+    "PRODUCTION_PLANNER_VERSION",
+    "PROJECT_NAME",
+    "PROMPT_VERSION",
+    "PROTECTED_HISTORICAL",
+    "PROVENANCE_ARTIFACT",
+    "READY_AFTER_COUNT_IF_PROMOTED",
+    "READY_AFTER_IF_PROMOTED",
+    "READY_ARTIFACT",
+    "READY_BEFORE",
+    "READY_BEFORE_COUNT",
+    "REAL_PROVIDER_CALLS_THIS_PHASE",
+    "REAL_WINDOW_CALLS",
+    "REFERENCE_V_TEXT_HARD_LIMIT",
+    "RELATION_V_TEXT_HARD_LIMIT",
+    "REPORT_NAME",
+    "REVALIDATION_ARTIFACT",
+    "SCHEMA_ARTIFACT",
+    "SCHEMA_VERSION",
+    "SELECTED_POLICY",
+    "SIGNATURE_DECISION",
+    "SIGNATURE_INCLUDES_GRANULARITY_POLICY",
+    "SOURCE_MAP_STATUS",
+    "TEXT_HARD_LIMITS",
+    "THEME_CHARS",
+    "THEME_TEXT_HARD_LIMIT",
+    "THINKING_MODE",
+    "TOPIC_V_TEXT_HARD_LIMIT",
+    "TOTAL_WINDOWS",
+    "TRANSPORT_VERSION",
+    "UNCERTAINTY_V_TEXT_HARD_LIMIT",
+    "V10_POLICY_VERSION",
+    "V10_TEXT_HARD_LIMITS",
+    "V11_MINIMAL_TEXT_HARD_LIMITS",
+    "WIN003_FORENSIC_RELATIVE",
+    "WIN003_NEW_PROVIDER_CALL",
+    "WIN003_OWNED_SRC_COUNT",
+    "WIN003_PROMOTION_LABEL",
+    "WIN003_RAW_SHA256",
+    "WIN003_RAW_SIZE",
+    "WIN003_REQUEST_ID",
+    "WIN003_SIGNATURE",
+    "WIN003_SRC_RANGE",
+    "WIN003_WORD_COUNT",
+    "WIN005_AUTHORIZED",
+    "WIN006_AUTHORIZED",
+    "WIN007_AUTHORIZED",
+    "WINDOW_ID",
+    "WINDOW_SPECS",
+]

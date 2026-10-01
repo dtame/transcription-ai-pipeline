@@ -887,11 +887,87 @@ FORBIDDEN_EDITORIAL_FIELDS = (
 )
 
 
+# Singular / nested structural aliases inspected in addition to the canonical
+# top-level names. These are KEY names, never substrings of semantic text.
+EXTRA_STRUCTURAL_EDITORIAL_KEYS = (
+    "book_part",
+    "book_parts",
+    "chapter",
+    "chapter_title",
+    "editorial_structure",
+    "section",
+)
+
+
+def editorial_structure_key_set() -> frozenset[str]:
+    return frozenset(FORBIDDEN_EDITORIAL_FIELDS + EXTRA_STRUCTURAL_EDITORIAL_KEYS)
+
+
+def _walk_editorial_keys(payload: object) -> set[str]:
+    found: set[str] = set()
+    keys = editorial_structure_key_set()
+
+    def _walk(node: object) -> None:
+        if isinstance(node, Mapping):
+            for key, value in node.items():
+                name = str(key)
+                if name in keys or name in FORBIDDEN_EDITORIAL_FIELDS:
+                    found.add(name)
+                _walk(value)
+        elif isinstance(node, (list, tuple)):
+            for item in node:
+                _walk(item)
+
+    _walk(payload)
+    return found
+
+
 def forbidden_editorial_fields(payload: Mapping) -> tuple[str, ...]:
-    """Champs éditoriaux interdits présents dans un mapping, en ordre stable."""
+    """Champs éditoriaux interdits, y compris imbriqués, en ordre stable.
+
+    Inspecte les *clés* d'objets/tableaux, jamais le texte sémantique.
+    Un IDEA dont le résumé contient « chapter 17 » n'est pas une structure
+    de livre.
+    """
     if not isinstance(payload, Mapping):
         return ()
 
+    found = _walk_editorial_keys(payload)
     return tuple(
-        name for name in FORBIDDEN_EDITORIAL_FIELDS if name in payload
+        name
+        for name in FORBIDDEN_EDITORIAL_FIELDS + EXTRA_STRUCTURAL_EDITORIAL_KEYS
+        if name in found
     )
+
+
+def scan_editorial_structure(payload: object) -> dict:
+    """Scanner structurel : objets, clés, hiérarchie. Pas de ban lexical."""
+    hits: list[dict[str, str]] = []
+    keys = editorial_structure_key_set()
+
+    def _walk(node: object, path: str) -> None:
+        if isinstance(node, Mapping):
+            for key, value in node.items():
+                name = str(key)
+                loc = f"{path}.{name}" if path else name
+                if name in keys:
+                    hits.append({"path": loc, "key": name, "kind": "structural_key"})
+                _walk(value, loc)
+        elif isinstance(node, (list, tuple)):
+            for index, item in enumerate(node):
+                _walk(item, f"{path}[{index}]")
+
+    _walk(payload, "$")
+    ordered = tuple(
+        name
+        for name in FORBIDDEN_EDITORIAL_FIELDS + EXTRA_STRUCTURAL_EDITORIAL_KEYS
+        if name in {hit["key"] for hit in hits}
+    )
+    return {
+        "ok": not hits,
+        "status": "PASS" if not hits else "FAIL",
+        "hits": hits,
+        "keys": ordered,
+        "mode": "STRUCTURAL",
+        "scans_text_values": False,
+    }

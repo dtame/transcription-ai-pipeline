@@ -1,0 +1,253 @@
+"""
+Phase 4A.3.4 — silent-omission forensics + exhaustive IDEA-accountability
+contract hardening. Offline only. 0 provider calls.
+"""
+
+from __future__ import annotations
+
+from app.editorial_planner_canary_4a1.constants import (
+    PHASE_4A_ADAPTED_SCHEMA_BYTES,
+    PHASE_4A_ADAPTED_SCHEMA_SHA256,
+    PHASE_4A_INSTRUCTIONS_SHA256,
+    PHASE_4A_PROMPT_SHA256,
+    PHASE_4A_RAW_SCHEMA_BYTES,
+    PHASE_4A_RAW_SCHEMA_SHA256,
+    PHASE_4A_SYSTEM_SHA256,
+)
+from app.editorial_planner_canary_4a3.constants import (
+    A2_CONSERVATIVE_OUTPUT_TOKENS,
+    A2_EXPECTED_OUTPUT_TOKENS,
+    A2_HARD_OUTPUT_TOKENS,
+    EXPECTED_EXAMPLE_COUNT,
+    EXPECTED_IDEA_COUNT,
+    EXPECTED_REFERENCE_COUNT,
+    EXPECTED_SOURCE_MAP_BYTES,
+    EXPECTED_SOURCE_MAP_SHA256,
+    EXPECTED_TOPIC_COUNT,
+    EXPECTED_UNCERTAINTY_COUNT,
+    PRODUCTION_MAX_OUTPUT_TOKENS,
+    PROJECT_NAME,
+)
+from app.editorial_planner_canary_4a33.constants import (
+    A3_ACTUAL_COST_USD,
+    A3_CANDIDATE_SHA256,
+    EXPECTED_REQUEST_SHA256 as A33_REQUEST_SHA256,
+    HISTORICAL_A3_REQUEST_SHA256,
+)
+from app.editorial_planner_language_policy_4a32.constants import (
+    A3_COST_USD,
+    A3_INPUT_TOKENS,
+    A3_OUTPUT_TOKENS,
+    A3_THINKING_TOKENS,
+)
+from app.editorial_planning.constants import (
+    EDITORIAL_PLAN_TRANSPORT_VERSION,
+    EDITORIAL_PLANNER_PROMPT_VERSION,
+    MODEL,
+    PROVIDER,
+)
+from app.editorial_planning.language_policy import (
+    DOCUMENT_LANGUAGE_POLICY,
+    SUCCESSOR_PROMPT_VERSION,
+)
+from app.editorial_planning.prompt_v102 import EDITORIAL_PLANNER_PROMPT_VERSION_V102
+
+PHASE = "4A.3.4"
+PHASE_NAME = "EDITORIAL_PLANNER_SILENT_OMISSION_FORENSICS"
+PHASE_VERSION = "editorial-planner-omission-forensics-4a34-1.0"
+
+AUTHORIZATION_SCOPE = (
+    "EDITORIAL_PLANNER_4A34_OFFLINE_SILENT_OMISSION_FORENSICS_ONLY"
+)
+
+REAL_PROVIDER_CALLS = 0
+MAX_ENGINE_GENERATE = 0
+MAX_ANTHROPIC_POST = 0
+FUTURE_REAL_CALL_COUNT = 1
+FUTURE_RETRIES = 0
+A34_COST_USD = 0.0
+
+A33_HISTORICAL_STATUS = "FAIL"
+A33_AUTHORIZED_CALLS = 1
+A33_ACTUAL_CALLS = 1
+A33_RETRIES = 0
+A33_PROVIDER = "Anthropic"
+A33_MODEL = "claude-opus-5"
+A33_REQUEST_ID = "req_011Cfago2aZz9ktWqT1HQDh4"
+A33_HTTP_FINISH = "200 / end_turn"
+A33_INPUT_TOKENS = 41945
+A33_OUTPUT_TOKENS = 10800
+A33_THINKING_TOKENS = 0
+A33_ELAPSED_MS = 176984
+A33_COST_USD = 0.4797250
+A33_COVERAGE = "284 / 286"
+A33_MISSING_IDEAS = ("IDEA007", "IDEA008")
+A33_WORKING_TITLE = "Already Given"
+A33_CHAPTERS = 9
+A33_SECTIONS = 63
+A33_LANGUAGE_CONFIDENCE = 0.97
+
+A33_CANDIDATE_SHA256 = (
+    "b4cdf2cfab53018830bc7c23f038147526ee7b605531cc4aabeb04850086838a"
+)
+A33_REQUEST_SHA256 = A33_REQUEST_SHA256
+assert A33_REQUEST_SHA256 == (
+    "8ae3170b79a148979a6480a06c922116fc4b2982bd4965cc2bc6ce74d51b3b69"
+)
+
+A3_CANDIDATE_SHA256 = A3_CANDIDATE_SHA256
+assert A3_CANDIDATE_SHA256 == (
+    "abc87e082878e0281689ecc022ed8b40ca318510fc90d960c31795d6186bd95e"
+)
+A3_REQUEST_SHA256 = HISTORICAL_A3_REQUEST_SHA256
+assert A3_REQUEST_SHA256 == (
+    "99ee7e8f4f9a732b52fceab667d9d1fe8b9ce9acedc1e7b1e7c08c1f62b7b734"
+)
+A3_COVERAGE = "286 / 286"
+A3_CHAPTERS = 13
+A3_SECTIONS = 67
+A3_COST_USD = A3_COST_USD
+assert A3_COST_USD == 0.6519
+A3_INPUT_TOKENS = A3_INPUT_TOKENS
+A3_OUTPUT_TOKENS = A3_OUTPUT_TOKENS
+A3_THINKING_TOKENS = A3_THINKING_TOKENS
+A3_ACTUAL_COST_USD = A3_ACTUAL_COST_USD
+
+assert EXPECTED_SOURCE_MAP_SHA256 == (
+    "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855"
+)
+assert EXPECTED_SOURCE_MAP_BYTES == 202398
+assert EXPECTED_IDEA_COUNT == 286
+assert EXPECTED_TOPIC_COUNT == 67
+assert EXPECTED_EXAMPLE_COUNT == 49
+assert EXPECTED_REFERENCE_COUNT == 59
+assert EXPECTED_UNCERTAINTY_COUNT == 35
+
+HISTORICAL_PROMPT = EDITORIAL_PLANNER_PROMPT_VERSION
+A33_PROMPT = SUCCESSOR_PROMPT_VERSION
+SUCCESSOR_PROMPT = EDITORIAL_PLANNER_PROMPT_VERSION_V102
+TRANSPORT_VERSION = EDITORIAL_PLAN_TRANSPORT_VERSION
+assert HISTORICAL_PROMPT == "editorial-planner-1.0"
+assert A33_PROMPT == "editorial-planner-1.0.1"
+assert SUCCESSOR_PROMPT == "editorial-planner-1.0.2"
+assert TRANSPORT_VERSION == "editorial-plan-transport-1.0"
+assert DOCUMENT_LANGUAGE_POLICY == "TRANSCRIPTION_DERIVED_PRIMARY_LANGUAGE"
+
+RAW_SCHEMA_BYTES = PHASE_4A_RAW_SCHEMA_BYTES
+ADAPTED_SCHEMA_BYTES = PHASE_4A_ADAPTED_SCHEMA_BYTES
+ADAPTED_SCHEMA_SHA256 = PHASE_4A_ADAPTED_SCHEMA_SHA256
+RAW_SCHEMA_SHA256 = PHASE_4A_RAW_SCHEMA_SHA256
+SYSTEM_SHA256 = PHASE_4A_SYSTEM_SHA256
+INSTRUCTIONS_SHA256 = PHASE_4A_INSTRUCTIONS_SHA256
+PROMPT_SHA256 = PHASE_4A_PROMPT_SHA256
+assert RAW_SCHEMA_BYTES == 3661
+assert ADAPTED_SCHEMA_BYTES == 3909
+assert ADAPTED_SCHEMA_SHA256 == (
+    "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e"
+)
+
+assert PROVIDER == "anthropic"
+assert MODEL == "claude-opus-5"
+THINKING_MODE = "provider_default"
+EFFORT = None
+BUDGET_TOKENS = None
+MAX_OUTPUT_TOKENS = PRODUCTION_MAX_OUTPUT_TOKENS
+assert MAX_OUTPUT_TOKENS == 65536
+
+CONNECT_TIMEOUT_SECONDS = 30.0
+READ_TIMEOUT_SECONDS = 1800.0
+
+A2_EXPECTED_OUTPUT_TOKENS = A2_EXPECTED_OUTPUT_TOKENS
+A2_CONSERVATIVE_OUTPUT_TOKENS = A2_CONSERVATIVE_OUTPUT_TOKENS
+A2_HARD_OUTPUT_TOKENS = A2_HARD_OUTPUT_TOKENS
+assert A2_EXPECTED_OUTPUT_TOKENS == 8670
+assert A2_CONSERVATIVE_OUTPUT_TOKENS == 19666
+assert A2_HARD_OUTPUT_TOKENS == 34555
+
+PROJECT_NAME = PROJECT_NAME
+assert PROJECT_NAME == "pastoral_retreat_v2_validation"
+EXPECTED_IDEA_COUNT = EXPECTED_IDEA_COUNT
+EXPECTED_SOURCE_MAP_SHA256 = EXPECTED_SOURCE_MAP_SHA256
+EXPECTED_SOURCE_MAP_BYTES = EXPECTED_SOURCE_MAP_BYTES
+
+A33_OUTPUT_UTILIZATION = round(A33_OUTPUT_TOKENS / MAX_OUTPUT_TOKENS, 4)
+assert A33_OUTPUT_UTILIZATION == 0.1648
+
+NEW_GRAMMAR_CANARY_REQUIRED = "NO"
+NEW_SYNTHETIC_CONTRACT_CANARY_REQUIRED = "NO"
+CANARY_DECISION = "DIRECT_REAL_RETRY_JUSTIFIED_AFTER_OFFLINE_PREFLIGHT"
+
+PUBLICATION_AUTHORIZED = False
+BOOK_GENERATOR = "NOT STARTED"
+NEXT_ACTION = "HUMAN REVIEW"
+
+AUDIT_DIRNAME = "editorial_planner_omission_forensics_4a34"
+AUDIT_OMISSION = "editorial_planner_4a34_omission_forensics.json"
+AUDIT_IDEA007 = "editorial_planner_4a34_IDEA007_forensics.json"
+AUDIT_IDEA008 = "editorial_planner_4a34_IDEA008_forensics.json"
+AUDIT_PROMPT = "editorial_planner_4a34_prompt_coverage_analysis.json"
+AUDIT_TRANSPORT = "editorial_planner_4a34_transport_schema_responsibility.json"
+AUDIT_ROOT_CAUSE = "editorial_planner_4a34_root_cause.json"
+AUDIT_HARDENING = "editorial_planner_4a34_contract_hardening_decision.json"
+AUDIT_FUTURE_REQUEST = "editorial_planner_4a34_future_request_identity.json"
+AUDIT_BUDGET = "editorial_planner_4a34_future_budget.json"
+AUDIT_READINESS = "editorial_planner_post_4a34_readiness.json"
+REPORT_NAME = "PHASE_4A34_EDITORIAL_PLANNER_SILENT_OMISSION_FORENSICS_REPORT.md"
+
+A33_AUDIT_RELATIVE = "audit/real/editorial_planner_4a33"
+A3_AUDIT_RELATIVE = "audit/real/editorial_planner_4a3"
+CANDIDATE_NAME = "editorial_plan_candidate.json"
+A33_RAW_NAME = "editorial_planner_4a33_raw_structured_response.json"
+A3_CANDIDATE_NAME = "editorial_plan_candidate.json"
+
+FROZEN_A33_PASSES = (
+    "canonical language resolution",
+    "English language enforcement",
+    "schema",
+    "structured parse",
+    "transport decoder",
+    "handle validation",
+    "canonical reconstruction",
+    "hierarchy",
+    "unknown refs = 0",
+    "traceability",
+    "invention boundary",
+    "uncertainty preservation",
+    "deterministic replay",
+)
+
+FORBIDDEN_TECHNICAL_TOKENS = (
+    "analysis_window",
+    "chunk_id",
+    "chunk_index",
+    "technical_window",
+    "window_id",
+    "win_id",
+    "processed/chunk",
+    "chunk_*.md",
+)
+FORBIDDEN_WINDOW_IDS = (
+    "WIN001",
+    "WIN002",
+    "WIN003",
+    "WIN004",
+    "WIN005",
+    "WIN006",
+    "WIN007",
+)
+
+FORBIDDEN_PROMPT_TOKENS = (
+    "IDEA007",
+    "IDEA008",
+    "long life",
+    "sinners",
+    "believers",
+    "Hebrews",
+    "planted",
+)
+
+assert REAL_PROVIDER_CALLS == 0
+assert PUBLICATION_AUTHORIZED is False
+assert FUTURE_RETRIES == 0
+assert A34_COST_USD == 0.0
+assert NEW_GRAMMAR_CANARY_REQUIRED == "NO"

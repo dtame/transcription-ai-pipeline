@@ -1,0 +1,128 @@
+"""Machine-readable semantic-gate reason codes."""
+
+from __future__ import annotations
+
+from typing import Any
+
+REASON_CODES = (
+    "NEW_FACT",
+    "NEW_CAUSAL_LINK",
+    "NEW_ARGUMENT",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM",
+    "NEW_IMPLICATION",
+    "INVENTED_EXAMPLE",
+    "INVENTED_ANECDOTE",
+    "INVENTED_HYPOTHETICAL",
+    "REFERENCE_COMPLETION",
+    "REFERENCE_EXPANSION",
+    "QUOTE_EXPANSION",
+    "UNCERTAINTY_STRENGTHENED",
+    "SOURCE_MEANING_DISTORTED",
+    "EVIDENCE_MISMATCH",
+    "OTHER",
+)
+
+REASON_DEFINITIONS = {
+    "NEW_FACT": "A factual assertion absent from supplied canonical evidence.",
+    "NEW_CAUSAL_LINK": (
+        "A because/therefore/as-a-result relation that the evidence does not "
+        "support, even if the related facts separately exist."
+    ),
+    "NEW_ARGUMENT": "An argumentative step not present in the supplied evidence.",
+    "NEW_CONCLUSION": "A conclusion stronger than, or absent from, the evidence.",
+    "NEW_DOCTRINAL_CLAIM": (
+        "A doctrinal assertion not entailed by supplied evidence."
+    ),
+    "NEW_IMPLICATION": (
+        "An implication, meaning, or 'which means' extension not supported "
+        "by the supplied evidence."
+    ),
+    "INVENTED_EXAMPLE": (
+        "An illustrative scene, case, or example not present in EX/SRC/IDEA."
+    ),
+    "INVENTED_ANECDOTE": "A personal or narrative anecdote not in the evidence.",
+    "INVENTED_HYPOTHETICAL": "A hypothetical scenario added from model knowledge.",
+    "REFERENCE_COMPLETION": (
+        "Completion of a partial REF/citation using omitted remainder from "
+        "model knowledge. Applies to scripture, books, law, science, history, "
+        "quotations, and named authorities — not Bible-specific."
+    ),
+    "REFERENCE_EXPANSION": (
+        "Expansion of a supplied reference beyond what the REF/SRC actually "
+        "contains."
+    ),
+    "QUOTE_EXPANSION": (
+        "A quotation or quoted wording not supported by supplied canonical "
+        "wording, even if the reference identity is correct."
+    ),
+    "UNCERTAINTY_STRENGTHENED": (
+        "Canonical uncertainty, possibility, or partiality raised to certainty, "
+        "universality, or completeness."
+    ),
+    "SOURCE_MEANING_DISTORTED": (
+        "Paraphrase or synthesis that changes the meaning of supplied evidence."
+    ),
+    "EVIDENCE_MISMATCH": (
+        "Declared or used evidence does not actually support the claim."
+    ),
+    "OTHER": "Unsupported semantic extension not covered by a more specific code.",
+}
+
+HISTORICAL_REASON_EXPECTATIONS = {
+    "4b22_p3": {
+        "classification": "QUESTIONABLE",
+        "accepted_classifications": ("QUESTIONABLE", "UNSUPPORTED"),
+        "reason_codes": ("NEW_CAUSAL_LINK", "NEW_IMPLICATION"),
+        "clause": "because it still works wherever it is not resisted by truth",
+    },
+    "4b22_p8": {
+        "classification": "QUESTIONABLE",
+        "accepted_classifications": ("QUESTIONABLE", "UNSUPPORTED"),
+        "reason_codes": ("REFERENCE_COMPLETION", "REFERENCE_EXPANSION"),
+        "clause": "the sting long since removed from death",
+    },
+    "4b2_p8_funeral": {
+        "classification": "UNSUPPORTED",
+        "accepted_classifications": ("UNSUPPORTED",),
+        "reason_codes": ("INVENTED_EXAMPLE",),
+        "clause": "not a verse quoted at funerals",
+    },
+    "4b2_p13_connective": {
+        "classification": "UNSUPPORTED",
+        "accepted_classifications": ("UNSUPPORTED",),
+        "reason_codes": ("NEW_ARGUMENT", "NEW_CONCLUSION", "NEW_IMPLICATION"),
+        "clause": (
+            "The difference was not the amount of doctrine known, "
+            "but the amount of Christ practiced."
+        ),
+    },
+}
+
+
+def reason_codes_payload() -> dict[str, Any]:
+    return {
+        "codes": list(REASON_CODES),
+        "definitions": dict(REASON_DEFINITIONS),
+        "historical_expectations": HISTORICAL_REASON_EXPECTATIONS,
+        "keyword_matching_is_final_judgment": False,
+        "bible_specific": False,
+        "applies_to_all_reference_kinds": [
+            "book references",
+            "legal references",
+            "scientific references",
+            "historical quotations",
+            "scripture",
+            "citations",
+            "named authorities",
+        ],
+        "empty_paragraph": "deterministic_validator_territory",
+    }
+
+
+__all__ = [
+    "HISTORICAL_REASON_EXPECTATIONS",
+    "REASON_CODES",
+    "REASON_DEFINITIONS",
+    "reason_codes_payload",
+]

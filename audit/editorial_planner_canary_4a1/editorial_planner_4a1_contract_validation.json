@@ -1,0 +1,795 @@
+{
+  "structured_parse": "PASS",
+  "transport_decoder": "PASS",
+  "decoder_errors": [],
+  "handle_validation": "PASS",
+  "handle_errors": [],
+  "canonical_reconstruction": "PASS",
+  "canonical_ids": "PASS",
+  "hierarchy": "PASS",
+  "chapters": 3,
+  "sections": 7,
+  "forbidden_structure": [],
+  "idea_coverage": {
+    "synthetic_ideas": 7,
+    "coverage_rows": 7,
+    "assigned": 7,
+    "deferred": 0,
+    "excluded": 0,
+    "reused": 0,
+    "silent_omissions": 0,
+    "idea_coverage": "7 / 7",
+    "coverage_complete": true,
+    "dispositions": [
+      {
+        "idea_id": "IDEA001",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC001",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA002",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC002",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA003",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC003",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA004",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC004",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA005",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC005",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA006",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC006",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA007",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC007",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      }
+    ]
+  },
+  "unknown_refs": {
+    "unknown_idea_refs": 0,
+    "unknown_topic_refs": 0,
+    "unknown_example_refs": 0,
+    "unknown_reference_refs": 0,
+    "unknown_uncertainty_refs": 0
+  },
+  "grouping": {
+    "grouped_sections": [],
+    "grouping_observed": false,
+    "refs_remain_distinct": true,
+    "status": "PASS"
+  },
+  "traceability": "PASS",
+  "invention_boundary": "PASS",
+  "uncertainty_preservation": "PASS",
+  "editorial_plan_validator": "PASS",
+  "validator": {
+    "status": "PASS",
+    "errors": [],
+    "warnings": []
+  },
+  "expected_tiny_fixture_warnings": [],
+  "validator_hard_fail": false,
+  "deterministic_replay": "PASS",
+  "plan_sha256": "3f398c5bc9fdba835e413ae9e503474f2d465bcad306a0a95d618b6eb0650fdf",
+  "plan_sha256_replay": "3f398c5bc9fdba835e413ae9e503474f2d465bcad306a0a95d618b6eb0650fdf",
+  "raw_text_sha256": "180e7480c11e71389e935c2314f471c59e0f42eca79800d30a502a2c0681ff4d",
+  "plan": {
+    "schema_version": "1.0",
+    "project": {
+      "name": "community_garden_workshop_canary_4a1"
+    },
+    "source_map": {
+      "sha256": "b1a3615f07e1048f9a3a9ae2f598f6ccbaa681ce75e75cae5de7f08254aec1e8",
+      "bytes": 4696,
+      "schema_version": "1.0",
+      "project": "community_garden_workshop_canary_4a1",
+      "inventory": {
+        "topic_count": 3,
+        "idea_count": 7,
+        "example_count": 2,
+        "reference_count": 2,
+        "uncertainty_count": 1,
+        "repetition_count": 0
+      }
+    },
+    "book_concept": {
+      "purpose": "A practical, ordered method for a shared garden plot: prepare the soil, plant in sequence, water with care, and share what grows.",
+      "core_subject": "A community garden workshop covering soil and bed preparation, planting and watering practice, and the sharing of surplus harvest with volunteer support.",
+      "reader_journey": "The reader moves from reading the site and its soil, to sequencing planting and watering, to organizing what the plot produces with neighbors.",
+      "editorial_progression": "From ground conditions, to seasonal practice, to shared stewardship of the harvest."
+    },
+    "title_candidates": [
+      {
+        "title": "The Shared Plot",
+        "rationale": "Short, names the collective subject without over-promising.",
+        "is_editorial_construct": true
+      },
+      {
+        "title": "Soil First, Then Seasons",
+        "rationale": "Mirrors the actual order of the workshop material.",
+        "is_editorial_construct": true
+      },
+      {
+        "title": "A First Year in the Community Garden",
+        "rationale": "Matches the first-year workshop audience directly.",
+        "is_editorial_construct": true
+      },
+      {
+        "title": "Prepare, Plant, Share",
+        "rationale": "Names the three topic clusters as a reader path.",
+        "is_editorial_construct": true
+      }
+    ],
+    "selected_title": "Prepare, Plant, Share",
+    "subtitle": "A workshop method for soil, planting, and shared harvest",
+    "editorial_angle": "Treat the workshop as a sequence of decisions made before, during, and after the growing season, so each instruction sits where a gardener would actually need it.",
+    "target_reader": "Adult neighbors joining a first-year community garden workshop, with no assumed prior gardening experience.",
+    "editorial_strategy": "Group the material by the three source topics, but order chapters along the working calendar of the plot. Place cautionary anecdotes next to the instruction they support, keep the single compost-schedule uncertainty flagged where compost is discussed, and give the minor volunteer observation its own short section rather than diluting the harvest-sharing claim.",
+    "chapters": [
+      {
+        "chapter_id": "CH001",
+        "working_title": "Reading the Ground Before You Plant",
+        "purpose": "Establish the preparation decisions that constrain everything later: soil condition, compost handling, and light across the plot.",
+        "summary": "Soil testing, layered compost with an open question on drop-off hours, and sun/shade mapping of beds.",
+        "idea_refs": [
+          "IDEA001",
+          "IDEA002",
+          "IDEA003"
+        ],
+        "source_refs": [
+          "SRC999101",
+          "SRC999103",
+          "SRC999102",
+          "SRC999108",
+          "SRC999104"
+        ],
+        "topic_refs": [
+          "TOP001"
+        ],
+        "uncertainty_refs": [
+          "UNC001"
+        ],
+        "sections": [
+          {
+            "section_id": "SEC001",
+            "working_title": "Test First, Commit Later",
+            "purpose": "Set out the soil-test step as the gate before any bed is assigned a crop, using the past-season anecdote as the cautionary case.",
+            "idea_refs": [
+              "IDEA001"
+            ],
+            "source_refs": [
+              "SRC999101",
+              "SRC999103"
+            ],
+            "example_refs": [
+              "EX001"
+            ],
+            "reference_refs": [
+              "REF001"
+            ],
+            "uncertainty_refs": [],
+            "repetition_refs": [],
+            "topic_refs": [
+              "TOP001"
+            ],
+            "editorial_actions": [
+              {
+                "kind": "CONNECT",
+                "note": "Tie the anecdote directly to the instruction it supports.",
+                "target_refs": []
+              }
+            ]
+          },
+          {
+            "section_id": "SEC002",
+            "working_title": "Compost in Thin Layers",
+            "purpose": "Explain the layering approach to amending topsoil and keep the unresolved compost drop-off schedule visible as an open point.",
+            "idea_refs": [
+              "IDEA002"
+            ],
+            "source_refs": [
+              "SRC999102",
+              "SRC999108"
+            ],
+            "example_refs": [],
+            "reference_refs": [],
+            "uncertainty_refs": [
+              "UNC001"
+            ],
+            "repetition_refs": [],
+            "topic_refs": [
+              "TOP001"
+            ],
+            "editorial_actions": [
+              {
+                "kind": "CONNECT",
+                "note": "Keep UNC001 adjacent to the compost instruction without resolving it.",
+                "target_refs": []
+              }
+            ]
+          },
+          {
+            "section_id": "SEC003",
+            "working_title": "Mapping Sun and Shade",
+            "purpose": "Cover the light survey of the plot as the basis for matching beds to plants.",
+            "idea_refs": [
+              "IDEA003"
+            ],
+            "source_refs": [
+              "SRC999102",
+              "SRC999104"
+            ],
+            "example_refs": [],
+            "reference_refs": [
+              "REF002"
+            ],
+            "uncertainty_refs": [],
+            "repetition_refs": [],
+            "topic_refs": [
+              "TOP001"
+            ],
+            "editorial_actions": []
+          }
+        ],
+        "editorial_actions": [
+          {
+            "kind": "GROUP",
+            "note": "Cluster all TOP001 preparation instructions into one opening chapter.",
+            "target_refs": []
+          },
+          {
+            "kind": "REORDER",
+            "note": "Lead with the soil test because the supporting anecdote frames the cost of skipping it.",
+            "target_refs": []
+          }
+        ]
+      },
+      {
+        "chapter_id": "CH002",
+        "working_title": "Planting and Watering Through the Season",
+        "purpose": "Move from site preparation to recurring seasonal practice: how planting is spaced in time and how water is applied.",
+        "summary": "Staggered planting weeks for continuous harvest, and morning base watering with the blight example.",
+        "idea_refs": [
+          "IDEA004",
+          "IDEA005"
+        ],
+        "source_refs": [
+          "SRC999103",
+          "SRC999104",
+          "SRC999105"
+        ],
+        "topic_refs": [
+          "TOP002"
+        ],
+        "uncertainty_refs": [],
+        "sections": [
+          {
+            "section_id": "SEC004",
+            "working_title": "Stagger the Weeks",
+            "purpose": "Present staggered planting as the principle that spreads harvest across time rather than concentrating it.",
+            "idea_refs": [
+              "IDEA004"
+            ],
+            "source_refs": [
+              "SRC999103",
+              "SRC999104"
+            ],
+            "example_refs": [],
+            "reference_refs": [
+              "REF002"
+            ],
+            "uncertainty_refs": [],
+            "repetition_refs": [],
+            "topic_refs": [
+              "TOP002"
+            ],
+            "editorial_actions": [
+              {
+                "kind": "CONNECT",
+                "note": "Forward-link continuous harvest to the sharing chapter.",
+                "target_refs": []
+              }
+            ]
+          },
+          {
+            "section_id": "SEC005",
+            "working_title": "Water Low, Water Early",
+            "purpose": "Give the watering instruction and the neighbor's blight case as the consequence of the opposite habit.",
+            "idea_refs": [
+              "IDEA005"
+            ],
+            "source_refs": [
+              "SRC999104",
+              "SRC999105"
+            ],
+            "example_refs": [
+              "EX002"
+            ],
+            "reference_refs": [],
+            "uncertainty_refs": [],
+            "repetition_refs": [],
+            "topic_refs": [
+              "TOP002"
+            ],
+            "editorial_actions": []
+          }
+        ],
+        "editorial_actions": [
+          {
+            "kind": "GROUP",
+            "note": "Hold the two central TOP002 practices together as the season chapter.",
+            "target_refs": []
+          }
+        ]
+      },
+      {
+        "chapter_id": "CH003",
+        "working_title": "What the Plot Gives Back",
+        "purpose": "Close on the shared outcome: distributing surplus and the practical volunteer arrangement around it.",
+        "summary": "The weekly harvest table for surplus, plus the sign-in clipboard observation.",
+        "idea_refs": [
+          "IDEA006",
+          "IDEA007"
+        ],
+        "source_refs": [
+          "SRC999106",
+          "SRC999103",
+          "SRC999107"
+        ],
+        "topic_refs": [
+          "TOP003"
+        ],
+        "uncertainty_refs": [],
+        "sections": [
+          {
+            "section_id": "SEC006",
+            "working_title": "The Weekly Harvest Table",
+            "purpose": "Describe surplus sharing as the simple standing arrangement neighbors draw from.",
+            "idea_refs": [
+              "IDEA006"
+            ],
+            "source_refs": [
+              "SRC999106",
+              "SRC999103"
+            ],
+            "example_refs": [],
+            "reference_refs": [
+              "REF001"
+            ],
+            "uncertainty_refs": [],
+            "repetition_refs": [],
+            "topic_refs": [
+              "TOP003"
+            ],
+            "editorial_actions": [
+              {
+                "kind": "CONNECT",
+                "note": "Link back to staggered planting as the reason surplus is continuous.",
+                "target_refs": []
+              }
+            ]
+          },
+          {
+            "section_id": "SEC007",
+            "working_title": "Signing In, Staying Connected",
+            "purpose": "Note the volunteer clipboard and newsletter collection as the light logistical layer beside the table.",
+            "idea_refs": [
+              "IDEA007"
+            ],
+            "source_refs": [
+              "SRC999107"
+            ],
+            "example_refs": [],
+            "reference_refs": [],
+            "uncertainty_refs": [],
+            "repetition_refs": [],
+            "topic_refs": [
+              "TOP003"
+            ],
+            "editorial_actions": []
+          }
+        ],
+        "editorial_actions": [
+          {
+            "kind": "SPLIT_TOPIC",
+            "note": "Separate the surplus-sharing claim from the minor volunteer sign-in observation.",
+            "target_refs": []
+          }
+        ]
+      }
+    ],
+    "idea_coverage": [
+      {
+        "idea_id": "IDEA001",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC001",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA002",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC002",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA003",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC003",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA004",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC004",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA005",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC005",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA006",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC006",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      },
+      {
+        "idea_id": "IDEA007",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC007",
+        "additional_section_ids": [],
+        "reason": "",
+        "note": ""
+      }
+    ],
+    "source_coverage": {
+      "referenced_source_count": 8,
+      "referenced_source_refs": [
+        "SRC999101",
+        "SRC999103",
+        "SRC999102",
+        "SRC999108",
+        "SRC999104",
+        "SRC999105",
+        "SRC999106",
+        "SRC999107"
+      ]
+    },
+    "uncertainty_handling": {
+      "policy": "UNC refs remain visible. The planner must not convert uncertainty into certainty. Unassigned UNC refs are listed, never erased.",
+      "assigned_uncertainty_refs": [
+        "UNC001"
+      ],
+      "unassigned_uncertainty_refs": []
+    },
+    "editorial_actions": [
+      {
+        "kind": "CONNECT",
+        "note": "Tie the anecdote directly to the instruction it supports.",
+        "target_refs": []
+      },
+      {
+        "kind": "CONNECT",
+        "note": "Keep UNC001 adjacent to the compost instruction without resolving it.",
+        "target_refs": []
+      },
+      {
+        "kind": "GROUP",
+        "note": "Cluster all TOP001 preparation instructions into one opening chapter.",
+        "target_refs": []
+      },
+      {
+        "kind": "REORDER",
+        "note": "Lead with the soil test because the supporting anecdote frames the cost of skipping it.",
+        "target_refs": []
+      },
+      {
+        "kind": "CONNECT",
+        "note": "Forward-link continuous harvest to the sharing chapter.",
+        "target_refs": []
+      },
+      {
+        "kind": "GROUP",
+        "note": "Hold the two central TOP002 practices together as the season chapter.",
+        "target_refs": []
+      },
+      {
+        "kind": "CONNECT",
+        "note": "Link back to staggered planting as the reason surplus is continuous.",
+        "target_refs": []
+      },
+      {
+        "kind": "SPLIT_TOPIC",
+        "note": "Separate the surplus-sharing claim from the minor volunteer sign-in observation.",
+        "target_refs": []
+      }
+    ],
+    "stats": {
+      "chapter_count": 3,
+      "section_count": 7,
+      "assigned_idea_count": 7,
+      "deferred_idea_count": 0,
+      "excluded_idea_count": 0,
+      "reused_idea_count": 0,
+      "example_assigned_count": 2,
+      "reference_assigned_count": 2,
+      "uncertainty_assigned_count": 1,
+      "repetition_assigned_count": 0,
+      "title_candidate_count": 4
+    },
+    "planner": {
+      "prompt_version": "editorial-planner-1.0",
+      "transport_version": "editorial-plan-transport-1.0",
+      "schema_version": "1.0",
+      "coverage_policy_version": "idea-coverage-1.0",
+      "validator_version": "editorial-plan-validator-1.0",
+      "provider": "anthropic",
+      "model": "claude-opus-5",
+      "strategy": "global",
+      "thinking_mode": "provider_default",
+      "effort": "",
+      "signature": "5aa03c394cec7614664b25cf7c46182456c69aba53a1b60f8b5d3d686598fa00",
+      "source_map_path": "synthetic://community_garden_workshop_canary_4a1"
+    }
+  },
+  "transport": {
+    "concept": {
+      "promise": "A practical, ordered method for a shared garden plot: prepare the soil, plant in sequence, water with care, and share what grows.",
+      "subject": "A community garden workshop covering soil and bed preparation, planting and watering practice, and the sharing of surplus harvest with volunteer support.",
+      "journey": "The reader moves from reading the site and its soil, to sequencing planting and watering, to organizing what the plot produces with neighbors.",
+      "progression": "From ground conditions, to seasonal practice, to shared stewardship of the harvest."
+    },
+    "titles": [
+      {
+        "t": "The Shared Plot",
+        "why": "Short, names the collective subject without over-promising."
+      },
+      {
+        "t": "Soil First, Then Seasons",
+        "why": "Mirrors the actual order of the workshop material."
+      },
+      {
+        "t": "A First Year in the Community Garden",
+        "why": "Matches the first-year workshop audience directly."
+      },
+      {
+        "t": "Prepare, Plant, Share",
+        "why": "Names the three topic clusters as a reader path."
+      }
+    ],
+    "pick": 3,
+    "subtitle": "A workshop method for soil, planting, and shared harvest",
+    "angle": "Treat the workshop as a sequence of decisions made before, during, and after the growing season, so each instruction sits where a gardener would actually need it.",
+    "reader": "Adult neighbors joining a first-year community garden workshop, with no assumed prior gardening experience.",
+    "strategy": "Group the material by the three source topics, but order chapters along the working calendar of the plot. Place cautionary anecdotes next to the instruction they support, keep the single compost-schedule uncertainty flagged where compost is discussed, and give the minor volunteer observation its own short section rather than diluting the harvest-sharing claim.",
+    "chapters": [
+      {
+        "h": "c1",
+        "t": "Reading the Ground Before You Plant",
+        "p": "Establish the preparation decisions that constrain everything later: soil condition, compost handling, and light across the plot.",
+        "sum": "Soil testing, layered compost with an open question on drop-off hours, and sun/shade mapping of beds.",
+        "top": [
+          "TOP001"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Cluster all TOP001 preparation instructions into one opening chapter."
+          },
+          {
+            "k": "REORDER",
+            "n": "Lead with the soil test because the supporting anecdote frames the cost of skipping it."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c1s1",
+            "t": "Test First, Commit Later",
+            "p": "Set out the soil-test step as the gate before any bed is assigned a crop, using the past-season anecdote as the cautionary case.",
+            "i": [
+              "IDEA001"
+            ],
+            "x": [
+              "EX001"
+            ],
+            "ref": [
+              "REF001"
+            ],
+            "top": [
+              "TOP001"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Tie the anecdote directly to the instruction it supports."
+              }
+            ]
+          },
+          {
+            "h": "c1s2",
+            "t": "Compost in Thin Layers",
+            "p": "Explain the layering approach to amending topsoil and keep the unresolved compost drop-off schedule visible as an open point.",
+            "i": [
+              "IDEA002"
+            ],
+            "u": [
+              "UNC001"
+            ],
+            "top": [
+              "TOP001"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Keep UNC001 adjacent to the compost instruction without resolving it."
+              }
+            ]
+          },
+          {
+            "h": "c1s3",
+            "t": "Mapping Sun and Shade",
+            "p": "Cover the light survey of the plot as the basis for matching beds to plants.",
+            "i": [
+              "IDEA003"
+            ],
+            "ref": [
+              "REF002"
+            ],
+            "top": [
+              "TOP001"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c2",
+        "t": "Planting and Watering Through the Season",
+        "p": "Move from site preparation to recurring seasonal practice: how planting is spaced in time and how water is applied.",
+        "sum": "Staggered planting weeks for continuous harvest, and morning base watering with the blight example.",
+        "top": [
+          "TOP002"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Hold the two central TOP002 practices together as the season chapter."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c2s1",
+            "t": "Stagger the Weeks",
+            "p": "Present staggered planting as the principle that spreads harvest across time rather than concentrating it.",
+            "i": [
+              "IDEA004"
+            ],
+            "ref": [
+              "REF002"
+            ],
+            "top": [
+              "TOP002"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Forward-link continuous harvest to the sharing chapter."
+              }
+            ]
+          },
+          {
+            "h": "c2s2",
+            "t": "Water Low, Water Early",
+            "p": "Give the watering instruction and the neighbor's blight case as the consequence of the opposite habit.",
+            "i": [
+              "IDEA005"
+            ],
+            "x": [
+              "EX002"
+            ],
+            "top": [
+              "TOP002"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c3",
+        "t": "What the Plot Gives Back",
+        "p": "Close on the shared outcome: distributing surplus and the practical volunteer arrangement around it.",
+        "sum": "The weekly harvest table for surplus, plus the sign-in clipboard observation.",
+        "top": [
+          "TOP003"
+        ],
+        "act": [
+          {
+            "k": "SPLIT_TOPIC",
+            "n": "Separate the surplus-sharing claim from the minor volunteer sign-in observation."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c3s1",
+            "t": "The Weekly Harvest Table",
+            "p": "Describe surplus sharing as the simple standing arrangement neighbors draw from.",
+            "i": [
+              "IDEA006"
+            ],
+            "ref": [
+              "REF001"
+            ],
+            "top": [
+              "TOP003"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Link back to staggered planting as the reason surplus is continuous."
+              }
+            ]
+          },
+          {
+            "h": "c3s2",
+            "t": "Signing In, Staying Connected",
+            "p": "Note the volunteer clipboard and newsletter collection as the light logistical layer beside the table.",
+            "i": [
+              "IDEA007"
+            ],
+            "top": [
+              "TOP003"
+            ]
+          }
+        ]
+      }
+    ],
+    "deferred": [],
+    "excluded": []
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "primary_question": "REVIEW_REQUIRED",
+  "primary_question_text": "Does this plan provide a faithful and coherent organization of the validated SourceMap into a potential book WITHOUT inventing the book's substantive content?",
+  "coverage": "PASS",
+  "coverage_note": "286/286 technical coverage does not by itself prove good editorial organization. Chapters=13; assigned=286; deferred=0; excluded=0.",
+  "order": "PASS",
+  "boundaries": "PASS",
+  "repetition": "PASS",
+  "exclusions": "PASS",
+  "deferred": "PASS",
+  "uncertainty": "PASS",
+  "author_intent": "PASS",
+  "audience": "PASS",
+  "voice": "PASS",
+  "title_review": [
+    {
+      "title": "Déjà héritiers",
+      "rationale": "Condense la thèse centrale des IDEA sur la vie, la grâce et la puissance déjà données.",
+      "source_support": "PASS",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "PASS",
+      "human_note": "Editorial construct of SourceMap inherited identity / already-possessed resurrection life, love, and authority. Not a final human-approved title. French wording vs English SourceMap header is a language choice, not an unsupported promise."
+    },
+    {
+      "title": "Chair et os",
+      "rationale": "Renvoie à l'exposition de la résurrection physique et au refus d'une foi seulement positionnelle.",
+      "source_support": "PASS",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "PASS",
+      "human_note": "Supported by SourceMap physical resurrection / flesh-and-bone identity topics."
+    },
+    {
+      "title": "La prière qui unit",
+      "rationale": "Centre le livre sur Jean 17, colonne vertébrale du corpus.",
+      "source_support": "PASS",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "PASS",
+      "human_note": "John 17 is named in SourceMap author_intent and occupies CH006."
+    },
+    {
+      "title": "Pratiquer ce que l'on prêche",
+      "rationale": "Reprend l'insistance du corpus sur la vérité prouvée par l'usage.",
+      "source_support": "PASS",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "PASS",
+      "human_note": "Matches lived-practice-over-ritual theme and IDEA040 / TOP012."
+    }
+  ],
+  "selected_title": "Déjà héritiers",
+  "subtitle": "Vie, amour et autorité déjà donnés au croyant",
+  "editorial_angle": "Traiter le corpus comme un enseignement de retraite structuré : d'abord corriger ce qui a été hérité (tradition, peur, formules), puis exposer l'héritage scripturaire, puis en donner la pratique, et clore par les témoignages qui l'attestent.",
+  "target_reader": "Croyants en assemblée locale, participants de retraite, ministres et pasteurs recevant un enseignement biblique accompagné de témoignages.",
+  "book_concept": {
+    "purpose": "Un parcours d'enseignement qui montre au croyant ce qu'il a déjà reçu en Christ — vie, amour, autorité — et comment le pratiquer au quotidien.",
+    "core_subject": "Corpus d'enseignements et de témoignages sur l'identité héritée en Christ : offices sacrés, vie de résurrection, autorité spirituelle, anatomie esprit/âme/corps, guérison et providence.",
+    "reader_journey": "Du désapprentissage des traditions héritées, à l'exposition scripturaire de la vie déjà donnée, puis à l'union avec le Père, la discipline de l'esprit et de la pensée, et enfin la pratique attestée par les témoignages.",
+    "editorial_progression": "Voir (ce que Christ a accompli) -> recevoir (union, amour, grâce) -> pratiquer (pensée, prière, imagination) -> attester (témoignages et vision)."
+  },
+  "source_theme": "A multi-session teaching corpus on the believer's inherited identity in Christ, spanning sacred office, resurrection life, spiritual authority, mind/soul/spirit anatomy, and testimonies of healing, resurrection, and providence, all urging lived practice over ritual, tradition, or fear",
+  "source_author_intent": "To exposit scripture (Hebrews 2, John 17, Colossians 3, Malachi, etc.) teaching believers they already possess resurrection life, unconditional love, and spiritual authority, correcting legalism, rapture-fixation, and performance-based ministry, while grounding claims in personal testimony",
+  "source_audience": "Local congregations, retreat attendees, ministers and pastors receiving in-person Bible teaching and testimony",
+  "source_voice": {
+    "tone": [],
+    "register": "",
+    "sentence_style": ""
+  },
+  "source_primary_language": "en",
+  "plan_language": "fr",
+  "excluded_ideas": [],
+  "deferred_ideas": [],
+  "assigned_uncertainty_refs": [
+    "UNC001",
+    "UNC003",
+    "UNC004",
+    "UNC005",
+    "UNC006",
+    "UNC007",
+    "UNC009",
+    "UNC010",
+    "UNC011",
+    "UNC012",
+    "UNC016",
+    "UNC017",
+    "UNC018",
+    "UNC022",
+    "UNC023",
+    "UNC024",
+    "UNC025",
+    "UNC029",
+    "UNC035"
+  ],
+  "unassigned_uncertainty_refs": [
+    "UNC002",
+    "UNC008",
+    "UNC013",
+    "UNC014",
+    "UNC015",
+    "UNC019",
+    "UNC020",
+    "UNC021",
+    "UNC026",
+    "UNC027",
+    "UNC028",
+    "UNC030",
+    "UNC031",
+    "UNC032",
+    "UNC033",
+    "UNC034"
+  ],
+  "issues": [],
+  "review_flags": [
+    "Plan editorial language is French while SourceMap primary_language and IDEA/TOP summaries are English. Not content invention, but a human language/publication decision.",
+    "Selected title is an editorial construct, not a source fact and not a final approved title.",
+    "All 286 IDEAs ASSIGNED with 0 DEFERRED and 0 EXCLUDED: technically complete, but a human editor should confirm that small supporting retreat-logistics ideas belong in the opening chapter of a book."
+  ],
+  "notes": [
+    "286/286 technical coverage does not by itself prove good editorial organization. Chapters=13; assigned=286; deferred=0; excluded=0.",
+    "Automated EN/FR lexical overlap is not a valid invention test here. Human review compared plan framing to SourceMap theme, intent, and audience."
+  ],
+  "invention_boundary": "PASS",
+  "traceability": "PASS",
+  "manuscript_leakage": "PASS",
+  "human_review": {
+    "faithful_organization": "YES",
+    "invents_substantive_content": "NO",
+    "language_decision": "REVIEW_REQUIRED",
+    "title_is_final": "NO",
+    "chapter_progression": "Unlearn inherited habits (CH001) -> restored resurrection life / Hebrews 2 (CH002) -> faith vs tradition (CH003) -> sacred offices / Malachi (CH004) -> anointing without formula (CH005) -> John 17 union (CH006) -> unconditional love (CH007) -> mind set above / Colossians 3 (CH008) -> spirit/soul/body (CH009) -> training the soul (CH010) -> grace already given (CH011) -> death has no permission (CH012) -> testimonies (CH013). This is a coherent pedagogical arc matching SourceMap themes; chronological session order is not required.",
+    "coverage_quality": "Important themes are represented: inherited identity, resurrection, offices, anointing, John 17, love, mind, trichotomy, practice, grace/healing, death, testimony. CH006 holds 40/286 IDEAs (~14%), under the 60% overload warning. CH001 is smallest (~2.45%) and mixes retreat posture with food/exercise supporting ideas; still above the tiny-chapter heuristic.",
+    "audience_alignment": "French target_reader is a faithful rendering of SourceMap audience (local assembly / retreat / ministers and pastors receiving biblical teaching with testimony).",
+    "angle_alignment": "Angle (correct inherited tradition/fear/formulas, exposé scripture, practice, close with testimony) matches author_intent (correct legalism/rapture-fixation/performance, exposé Hebrews 2 / John 17 / Colossians 3 / Malachi, ground in testimony).",
+    "uncertainty": "18 UNC assigned, 17 listed unassigned. Policy allows unassigned UNC to remain listed. No conversion of uncertainty into certainty observed in titles/purposes.",
+    "examples_references": "No unknown EX/REF. Placement uses SourceMap IDs; no invented example or reference identifiers.",
+    "why_not_publication_eligible": "Technical contract passed. Semantic REVIEW_REQUIRED because (1) French editorial layer on an English SourceMap needs human language approval, (2) working title is not a human-approved title, (3) all-assigned 286/286 organization should be confirmed by a human editor before freeze/publication."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "phase": "4A.3",
+  "request_configuration": {
+    "thinking_mode": "provider_default",
+    "effort": null,
+    "thinking_budget_tokens": null,
+    "thinking_key_in_payload": false,
+    "effort_key_in_payload": false,
+    "temperature_in_payload": false,
+    "max_tokens": 65536,
+    "model": "claude-opus-5",
+    "sonnet5_thinking_disabled_copied": false
+  },
+  "response": {
+    "thinking_tokens": 6443,
+    "thinking_tokens_reported": true,
+    "thinking_block_present": true,
+    "output_tokens": 17791,
+    "finish_reason": "end_turn",
+    "content_metadata": {
+      "content_present": true,
+      "content_type": "list",
+      "block_count": 2,
+      "block_types": [
+        "thinking",
+        "text"
+      ],
+      "text_block_count": 1,
+      "text_lengths": [
+        22878
+      ]
+    },
+    "raw_usage": {
+      "input_tokens": 41425,
+      "output_tokens": 17791,
+      "output_tokens_details": {
+        "thinking_tokens": 6443
+      }
+    }
+  },
+  "OPUS5_PROVIDER_DEFAULT_THINKING_OBSERVED": "YES",
+  "THINKING_TOKENS": 6443,
+  "do_not_infer_from_a1": true,
+  "no_retry_on_thinking_observation": true,
+  "no_configuration_change_in_a3": true
+}

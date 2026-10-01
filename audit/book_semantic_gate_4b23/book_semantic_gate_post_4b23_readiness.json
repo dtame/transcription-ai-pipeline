@@ -1,0 +1,14 @@
+{
+  "READY_FOR_ONE_REAL_TERRA_SEMANTIC_GATE_CANARY": true,
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "recommended_next": "A. Terra benchmark canary on frozen historical cases",
+  "why_not_another_sonnet_ch016": "Do not authorize another Sonnet CH016 generation merely to seek a perfect sample. The next useful experiment tests the independent semantic gate against frozen human-labeled cases.",
+  "future_terra_canary_uses_frozen_candidates_only": true,
+  "future_terra_canary_needs_sonnet": false,
+  "book_json": "NOT PUBLISHED",
+  "phase_5": false,
+  "historical_4b2_status": "FAIL",
+  "historical_4b22_status": "PARTIAL"
+}

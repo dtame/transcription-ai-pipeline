@@ -1,0 +1,37 @@
+{
+  "phase": "4B.2.1",
+  "result": "PASS",
+  "historical_4b2_status": "FAIL",
+  "real_provider_calls": 0,
+  "selected_hardening": "book-generator-1.0.1 + local validator book-generation-validator-1.0.1 + hybrid semantic strategy",
+  "successor_prompt": "book-generator-1.0.1",
+  "transport": "book-generation-transport-1.0",
+  "schema_changed": false,
+  "future_model": "anthropic / claude-sonnet-5",
+  "future_thinking": "disabled",
+  "future_max_output": 16384,
+  "future_hydration": "SOURCE_MAP_PLUS_TARGETED_TRANSCRIPT_HYDRATION",
+  "future_request_sha256": "3fade89f3bda5a4e008242c28be9babf29c00dec5666a2bcde1900a99d46d071",
+  "future_request_determinism": true,
+  "READY_FOR_ONE_HARDENED_CH016_CANARY": "YES",
+  "READY_FOR_PRODUCTION_PREFLIGHT": "NO",
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": "NO",
+  "retry_rule": "A later hardened CH016 call is a new explicitly authorized canary phase. It is not an automatic retry.",
+  "book_json": "NOT PUBLISHED",
+  "tests": {
+    "returncode": 0,
+    "summary": "53 passed in 6.42s",
+    "passed": 53,
+    "stdout_tail": "53 passed in 6.42s",
+    "stderr_tail": "",
+    "new_failures": 0,
+    "network_blocked": true,
+    "suites": [
+      "app/tests/test_book_generation_4b1.py",
+      "app/tests/test_book_generation_4b1_corpus.py",
+      "app/tests/test_book_generator_canary_4b2.py",
+      "app/tests/test_book_generation_4b21.py"
+    ]
+  },
+  "next_action": "HUMAN REVIEW"
+}

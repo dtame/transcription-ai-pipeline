@@ -1,0 +1,36 @@
+{
+  "clean_acceptance": {
+    "UNSUPPORTED": 0,
+    "QUESTIONABLE": 0,
+    "unknown_handles": 0,
+    "missing_paragraph_results": 0,
+    "coverage_gaps": 0
+  },
+  "QUESTIONABLE_accepted": false,
+  "UNSUPPORTED_accepted": false,
+  "QUESTIONABLE_policy": {
+    "verdict": "REVIEW",
+    "review_required": true,
+    "cache_acceptance": false,
+    "silent_convert_to_pass": false
+  },
+  "UNSUPPORTED_policy": {
+    "verdict": "FAIL",
+    "review_required": true,
+    "cache_acceptance": false
+  },
+  "unknown_handles": "FAIL",
+  "missing_paragraph_result": "FAIL",
+  "coverage_gap": "FAIL",
+  "no_automatic_repair": true,
+  "no_generator_feedback_loop": true,
+  "future_repair_options_not_implemented": [
+    "human correction",
+    "explicit controlled regeneration",
+    "versioned prompt change",
+    "chapter rejection"
+  ],
+  "deterministic_validator_must_pass_first": true,
+  "empty_paragraph_is_not_semantic_gate_work": true,
+  "provider_kind_not_authoritative": true
+}

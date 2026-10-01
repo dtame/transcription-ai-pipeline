@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "engine": {
+    "class_name": "CountingAnthropicEngine",
+    "provider": "anthropic",
+    "retry_max_attempts": 1,
+    "is_anthropic": true,
+    "is_fake": false,
+    "generate_attempts": 1,
+    "post_attempts": 1,
+    "connect_timeout_seconds": 30.0,
+    "read_timeout_seconds": 180.0
+  },
+  "engine_generate_attempts": 1,
+  "anthropic_post_attempts": 1,
+  "retries": 0,
+  "error": null,
+  "forensic_path": "C:\\TranscriptionAI\\audit\\editorial_planner_canary_4a1\\provider_forensics\\CANARY_EP4A1\\5aa03c394cec7614664b25cf7c46182456c69aba53a1b60f8b5d3d686598fa00",
+  "production_data_sent": false,
+  "editorial_plan_json": "NOT PUBLISHED",
+  "book_generator": "NOT STARTED",
+  "tests": "108 passed (editorial planner + 4A.1 canary/audit + AI structured/schema/thinking)",
+  "new_failures": 0
+}

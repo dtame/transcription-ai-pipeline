@@ -1,0 +1,18 @@
+{
+  "phase": "4A.3.1",
+  "editorial_plan_json": "NOT PUBLISHED",
+  "production_path_absent": true,
+  "written": [
+    "assignments",
+    "chapters",
+    "identity",
+    "language",
+    "policy",
+    "publication",
+    "readiness",
+    "report",
+    "sections",
+    "title"
+  ],
+  "result": "PASS"
+}

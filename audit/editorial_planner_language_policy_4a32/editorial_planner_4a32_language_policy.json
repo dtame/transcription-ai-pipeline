@@ -1,0 +1,67 @@
+{
+  "policy": "TRANSCRIPTION_DERIVED_PRIMARY_LANGUAGE",
+  "policy_version": "canonical-document-language-policy-1.0",
+  "pipeline": [
+    "transcription language",
+    "canonical document language",
+    "Source Analyzer",
+    "Editorial Planner",
+    "Book Generator",
+    "Book Validator",
+    "Word/PDF"
+  ],
+  "preserves_canonical_language": true,
+  "hard_coded_en": false,
+  "hard_coded_fr": false,
+  "unknown_blocks": true,
+  "mismatch_blocks": true,
+  "llm_does_not_choose_language": true,
+  "current_project_language": "en",
+  "resolution": {
+    "policy_version": "canonical-document-language-policy-1.0",
+    "policy": "TRANSCRIPTION_DERIVED_PRIMARY_LANGUAGE",
+    "canonical_document_language": "en",
+    "status": "RESOLVED",
+    "blocked": false,
+    "source": "transcript.language.primary+source_map.language.primary+transcript_data.clean.language.primary",
+    "transcript_primary_language": "en",
+    "source_map_primary_language": "en",
+    "observed_fields": [
+      {
+        "field": "transcript.language.primary",
+        "value": "en"
+      },
+      {
+        "field": "source_map.language.primary",
+        "value": "en"
+      },
+      {
+        "field": "transcript_data.clean.language.primary",
+        "value": "en"
+      }
+    ],
+    "notes": [
+      "Canonical document language is the validated primary language derived from transcription. Source-document generation preserves this language. Translation is a later, explicit stage."
+    ],
+    "translation_during_source_generation": false
+  },
+  "future_translation": {
+    "implemented_now": false,
+    "requires_explicit_target_language": true,
+    "never_silently_replaces_source_book": true,
+    "source_artifact_preserved": true,
+    "stages": [
+      "completed validated source-language book",
+      "explicit translation request",
+      "translated book artifact",
+      "translation validation",
+      "translated Word/PDF"
+    ],
+    "not_in": [
+      "Editorial Planner",
+      "Book Generator",
+      "SourceMap",
+      "A.3 candidate"
+    ]
+  }
+}

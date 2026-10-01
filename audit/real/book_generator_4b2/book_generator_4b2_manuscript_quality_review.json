@@ -1,0 +1,24 @@
+{
+  "status": "FAIL",
+  "clarity": "PASS",
+  "coherence": "REVIEW",
+  "flow": "PASS",
+  "written_book_quality": "PASS",
+  "redundancy": "PASS",
+  "source_fidelity": "FAIL",
+  "formulaic_conclusions": 1,
+  "connective_paragraphs": 4,
+  "section_conclusions_required": false,
+  "chapter_conclusion_required": false,
+  "chapter_conclusion_produced": true,
+  "chapter_conclusion_note": "p13 is a contrast closer. Natural, but it makes a new argument and is not required.",
+  "empty_paragraph": true,
+  "v1_style_repeated_summaries": false,
+  "phase_5_not_invoked": true,
+  "notes": [
+    "Aside from the empty p9b paragraph, the chapter reads as polished written prose, not transcript cleanup.",
+    "Authorial exhortative voice is preserved without copying speech defects.",
+    "Quality FAIL is inherited from the empty paragraph and the unsupported/questionable items, not from literary weakness.",
+    "Do not optimize for flourish. Do not regenerate in this phase."
+  ]
+}

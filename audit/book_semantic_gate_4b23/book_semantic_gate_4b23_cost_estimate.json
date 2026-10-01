@@ -1,0 +1,168 @@
+{
+  "spent": false,
+  "counted_as_spent": false,
+  "counted_as_zero": false,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "pricing_verified": true,
+  "pricing_effective_date": "2026-09-18",
+  "input_cost_per_1m_tokens": 2.0,
+  "output_cost_per_1m_tokens": 12.0,
+  "input_tokens_pessimistic": 301263,
+  "output_tokens_conservative": 92160,
+  "input_cost_usd": 0.602526,
+  "output_cost_usd": 1.10592,
+  "total_cost_usd": 1.708446,
+  "total_cost_display": "1.708446 USD",
+  "status": "base_estimate",
+  "unknown_or_incomplete": true,
+  "unmodeled_regimes": "long_context_not_modeled",
+  "estimated_production_calls": 19,
+  "previous_rough_estimate_usd": 0.668268,
+  "previous_estimate_frozen": false,
+  "chapter_costs": [
+    {
+      "chapter_id": "CH001",
+      "input_tokens": 12589,
+      "output_tokens": 3840,
+      "cost_usd": 0.071258,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH002",
+      "input_tokens": 14482,
+      "output_tokens": 4800,
+      "cost_usd": 0.086564,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH003",
+      "input_tokens": 15399,
+      "output_tokens": 4480,
+      "cost_usd": 0.084558,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH004",
+      "input_tokens": 16818,
+      "output_tokens": 6080,
+      "cost_usd": 0.106596,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH005",
+      "input_tokens": 17693,
+      "output_tokens": 5760,
+      "cost_usd": 0.104506,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH006",
+      "input_tokens": 38042,
+      "output_tokens": 12160,
+      "cost_usd": 0.222004,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH007",
+      "input_tokens": 12765,
+      "output_tokens": 3200,
+      "cost_usd": 0.06393,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH008",
+      "input_tokens": 13879,
+      "output_tokens": 3520,
+      "cost_usd": 0.069998,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH009",
+      "input_tokens": 15039,
+      "output_tokens": 4480,
+      "cost_usd": 0.083838,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH010",
+      "input_tokens": 17919,
+      "output_tokens": 5120,
+      "cost_usd": 0.097278,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH011",
+      "input_tokens": 14074,
+      "output_tokens": 3840,
+      "cost_usd": 0.074228,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH012",
+      "input_tokens": 12289,
+      "output_tokens": 3520,
+      "cost_usd": 0.066818,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH013",
+      "input_tokens": 21105,
+      "output_tokens": 7680,
+      "cost_usd": 0.13437,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH014",
+      "input_tokens": 15825,
+      "output_tokens": 4800,
+      "cost_usd": 0.08925,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH015",
+      "input_tokens": 16414,
+      "output_tokens": 5120,
+      "cost_usd": 0.094268,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH016",
+      "input_tokens": 7483,
+      "output_tokens": 2560,
+      "cost_usd": 0.045686,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH017",
+      "input_tokens": 16971,
+      "output_tokens": 5440,
+      "cost_usd": 0.099222,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH018",
+      "input_tokens": 13403,
+      "output_tokens": 3520,
+      "cost_usd": 0.069046,
+      "status": "base_estimate"
+    },
+    {
+      "chapter_id": "CH019",
+      "input_tokens": 9074,
+      "output_tokens": 2240,
+      "cost_usd": 0.045028,
+      "status": "base_estimate"
+    }
+  ],
+  "long_context": {
+    "regime": "long_context_not_modeled",
+    "exact_threshold_modeled": false,
+    "assumed_applied": false,
+    "largest_request_input_tokens": 38042,
+    "context_window": 1050000,
+    "note": "Phase 2B does not model Terra long-context pricing thresholds. Current chapter estimates are a small fraction of the verified 1,050,000-token context window, so the long-context regime is not assumed to apply. Because the threshold is unknown, cost remains base_estimate, not known. Unknown != zero."
+  },
+  "note": "Estimate uses pessimistic input tokens and conservative audit output. Actual cost is unknown until real Terra usage is reported.",
+  "cost_status_is_not_known": true
+}

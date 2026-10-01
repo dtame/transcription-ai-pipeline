@@ -1,0 +1,218 @@
+{
+  "policy": {
+    "version": "editorial-language-validate-1.0",
+    "mechanism": "EXISTING_LANGUAGE_CLEANUP_CLASSIFIER",
+    "dependency_added": false,
+    "fragile_word_list": false,
+    "scope": "provider-generated editorial prose only; IDs and inherited refs excluded",
+    "supported_scoring_languages": [
+      "en",
+      "fr"
+    ],
+    "unsupported_language_result": "REVIEW",
+    "thresholds": {
+      "pass_confidence": 0.8,
+      "fail_confidence": 0.8,
+      "pass": "combined classification matches canonical language, confidence >= 0.8, and dominant field language matches",
+      "fail": "combined classification is the opposite supported language (EN vs FR) with confidence >= 0.8",
+      "review": "mixed, unknown, low confidence, unsupported canonical language, or conflicting field-level scores"
+    },
+    "results": [
+      "PASS",
+      "REVIEW",
+      "FAIL"
+    ],
+    "future_publication_gate": "EDITORIAL_LANGUAGE_MATCH",
+    "future_publication_requires": "PASS",
+    "future_publication_eligibility": {
+      "EDITORIAL_LANGUAGE_MATCH": "PASS",
+      "ready_for_editorial_plan_publication": false,
+      "audit_only_candidate_first": true,
+      "automatic_publication": false
+    },
+    "note": "Gross EN/FR mismatch is the A.3 failure mode this layer must catch. It is not a translation detector and does not score semantic fidelity."
+  },
+  "canonical_document_language": "en",
+  "detector_supports_canonical": true,
+  "measurement": {
+    "fields": {
+      "book_concept": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux anglais dominants (122 mot(s), fr_function=0, en_function=43, fr_elisions=0, en_contractions=1, fr_diacritics=0)",
+        "chars": 824
+      },
+      "title_candidates": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux anglais dominants (15 mot(s), fr_function=0, en_function=5, fr_elisions=0, en_contractions=0, fr_diacritics=0)",
+        "chars": 69
+      },
+      "selected_title": {
+        "language": "UNKNOWN",
+        "confidence": 0.0,
+        "reason": "aucun signal grammatical fiable (2 mot(s), fr_function=0, en_function=0, fr_elisions=0, en_contractions=0, fr_diacritics=0)",
+        "chars": 13
+      },
+      "subtitle": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux EN nettement dominants, rapport 4.00 (11 mot(s), fr_function=1, en_function=4, fr_elisions=0, en_contractions=0, fr_diacritics=0)",
+        "chars": 75
+      },
+      "editorial_angle": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux anglais dominants (38 mot(s), fr_function=0, en_function=15, fr_elisions=0, en_contractions=1, fr_diacritics=0)",
+        "chars": 239
+      },
+      "target_reader": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux anglais dominants (22 mot(s), fr_function=0, en_function=8, fr_elisions=0, en_contractions=0, fr_diacritics=0)",
+        "chars": 153
+      },
+      "editorial_strategy": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux anglais dominants (84 mot(s), fr_function=0, en_function=32, fr_elisions=0, en_contractions=0, fr_diacritics=0)",
+        "chars": 568
+      },
+      "chapter_titles": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux anglais dominants (62 mot(s), fr_function=0, en_function=23, fr_elisions=0, en_contractions=0, fr_diacritics=0)",
+        "chars": 402
+      },
+      "chapter_purposes": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux anglais dominants (353 mot(s), fr_function=0, en_function=113, fr_elisions=0, en_contractions=7, fr_diacritics=0)",
+        "chars": 2402
+      },
+      "section_titles": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux anglais dominants (300 mot(s), fr_function=0, en_function=109, fr_elisions=0, en_contractions=1, fr_diacritics=0)",
+        "chars": 1812
+      },
+      "section_purposes": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux EN nettement dominants, rapport 69.00 (931 mot(s), fr_function=5, en_function=321, fr_elisions=0, en_contractions=12, fr_diacritics=0)",
+        "chars": 6158
+      },
+      "editorial_actions": {
+        "language": "EN",
+        "confidence": 0.97,
+        "reason": "signaux EN nettement dominants, rapport 46.00 (428 mot(s), fr_function=0, en_function=138, fr_elisions=0, en_contractions=0, fr_diacritics=2)",
+        "chars": 2985
+      }
+    },
+    "combined": {
+      "language": "EN",
+      "confidence": 0.97,
+      "reason": "signaux EN nettement dominants, rapport 95.00 (2368 mot(s), fr_function=6, en_function=811, fr_elisions=0, en_contractions=22, fr_diacritics=2)",
+      "chars": 15711
+    },
+    "counts": {
+      "EN": 13
+    },
+    "editorial_plan_language": "predominantly English",
+    "note": "Inherited IDEA/TOP/EX/REF/UNC/SRC/CH/SEC identifiers were stripped before classification. Source quotations are not treated as provider editorial language unless they appear in plan prose."
+  },
+  "detected_combined": "EN",
+  "confidence": 0.97,
+  "editorial_plan_language": "predominantly English",
+  "status": "PASS",
+  "editorial_language_match": "PASS",
+  "reason": "Editorial prose matches canonical language en (detected EN, confidence 0.97)",
+  "ids_excluded": true,
+  "id_strip_example": "  remains",
+  "prose_fields": [
+    "book_concept",
+    "chapter_purposes",
+    "chapter_titles",
+    "editorial_actions",
+    "editorial_angle",
+    "editorial_strategy",
+    "section_purposes",
+    "section_titles",
+    "selected_title",
+    "subtitle",
+    "target_reader",
+    "title_candidates"
+  ],
+  "classified_character_counts": {
+    "combined_classified_chars": 15711,
+    "field_chars": {
+      "book_concept": 824,
+      "title_candidates": 69,
+      "selected_title": 13,
+      "subtitle": 75,
+      "editorial_angle": 239,
+      "target_reader": 153,
+      "editorial_strategy": 568,
+      "chapter_titles": 402,
+      "chapter_purposes": 2402,
+      "section_titles": 1812,
+      "section_purposes": 6158,
+      "editorial_actions": 2985
+    }
+  },
+  "en_evidence": {
+    "combined_language": "EN",
+    "combined_confidence": 0.97,
+    "fields": [
+      "book_concept",
+      "title_candidates",
+      "subtitle",
+      "editorial_angle",
+      "target_reader",
+      "editorial_strategy",
+      "chapter_titles",
+      "chapter_purposes",
+      "section_titles",
+      "section_purposes",
+      "editorial_actions"
+    ]
+  },
+  "fr_evidence": {
+    "fields": []
+  },
+  "mixed_unknown_evidence": {
+    "mixed_fields": [],
+    "unknown_fields": [
+      "selected_title"
+    ]
+  },
+  "fields_inspected": [
+    "book_concept",
+    "chapter_purposes",
+    "chapter_titles",
+    "editorial_actions",
+    "editorial_angle",
+    "editorial_strategy",
+    "section_purposes",
+    "section_titles",
+    "selected_title",
+    "subtitle",
+    "target_reader",
+    "title_candidates"
+  ],
+  "fields_excluded": [
+    "machine identifiers",
+    "inherited IDEA/TOP/EX/REF/UNC/SRC/CH/SEC refs"
+  ],
+  "thresholds_used": {
+    "pass_confidence": 0.8,
+    "fail_confidence": 0.8,
+    "pass": "combined classification matches canonical language, confidence >= 0.8, and dominant field language matches",
+    "fail": "combined classification is the opposite supported language (EN vs FR) with confidence >= 0.8",
+    "review": "mixed, unknown, low confidence, unsupported canonical language, or conflicting field-level scores"
+  },
+  "translated": false,
+  "repaired": false,
+  "second_provider_call": false,
+  "publication_requires": "EDITORIAL_LANGUAGE_MATCH=PASS"
+}

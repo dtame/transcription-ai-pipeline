@@ -1,0 +1,230 @@
+{
+  "future_real_call_count": 1,
+  "future_retries": 0,
+  "recommended_connect_timeout_seconds": 30.0,
+  "recommended_read_timeout_seconds": 1800.0,
+  "publication_after_response": "NOT AUTOMATIC — editorial_plan.json remains unpublished until a later authorized phase",
+  "gates": [
+    {
+      "id": "http_success",
+      "required": true,
+      "note": "HTTP 200, provider envelope valid"
+    },
+    {
+      "id": "normal_finish",
+      "required": true,
+      "note": "finish/stop_reason end_turn (not max_tokens)"
+    },
+    {
+      "id": "structured_parse",
+      "required": true,
+      "note": "JSON matches adapted schema"
+    },
+    {
+      "id": "transport_decoder",
+      "required": true,
+      "note": "editorial-plan-transport-1.0 decode"
+    },
+    {
+      "id": "handle_validation",
+      "required": true,
+      "note": "temporary h handles unique / well-formed"
+    },
+    {
+      "id": "canonical_reconstruction",
+      "required": true,
+      "note": "CH/SEC assigned in editorial order"
+    },
+    {
+      "id": "hierarchy",
+      "required": true,
+      "note": "BOOK -> CHAPTER -> SECTION only"
+    },
+    {
+      "id": "idea_coverage",
+      "required": true,
+      "note": "286/286 explicit ASSIGNED|DEFERRED|EXCLUDED"
+    },
+    {
+      "id": "silent_omission",
+      "required": true,
+      "note": "silent omission = FAIL"
+    },
+    {
+      "id": "unknown_refs",
+      "required": true,
+      "note": "unknown IDEA/TOP/EX/REF/UNC/REP = FAIL"
+    },
+    {
+      "id": "traceability",
+      "required": true,
+      "note": "every section derives SRC from SourceMap"
+    },
+    {
+      "id": "uncertainty",
+      "required": true,
+      "note": "UNC remain uncertainties; do not resolve"
+    },
+    {
+      "id": "invention_boundary",
+      "required": true,
+      "note": "no unsupported units / manuscript prose"
+    },
+    {
+      "id": "balance",
+      "required": false,
+      "note": "REVIEW heuristics, not automatic FAIL"
+    },
+    {
+      "id": "canonical_validator",
+      "required": true,
+      "note": "editorial-plan-validator-1.0 != FAIL"
+    },
+    {
+      "id": "deterministic_replay",
+      "required": true,
+      "note": "same transport reconstructs identically"
+    },
+    {
+      "id": "semantic_review",
+      "required": true,
+      "note": "human-readable review before any publication"
+    }
+  ],
+  "coverage_policy": {
+    "policy_version": "idea-coverage-1.0",
+    "dispositions": [
+      "ASSIGNED",
+      "DEFERRED",
+      "EXCLUDED"
+    ],
+    "exclusion_reasons": [
+      "non_substantive",
+      "administrative",
+      "duplicate_at_editorial_level",
+      "outside_selected_book_scope"
+    ],
+    "deferral_reasons": [
+      "later_volume",
+      "insufficient_support",
+      "requires_uncertainty_resolution"
+    ],
+    "silent_omission": "FORBIDDEN",
+    "grouping_is_not_semantic_merge": true,
+    "primary_assignment": "one primary section per ASSIGNED idea",
+    "reuse": "Additional section placements are explicit via additional_section_ids. Not a separate disposition.",
+    "default_expectation": "Substantive SourceMap IDEAs should appear somewhere in the plan. Silent omission is forbidden.",
+    "uncertainty_policy": "UNC refs remain visible. The planner must not convert uncertainty into certainty. Unassigned UNC refs are listed, never erased.",
+    "relations_authoritative": false,
+    "technical_windows_as_editorial_units": false
+  },
+  "validator_contract": {
+    "validator_version": "editorial-plan-validator-1.0",
+    "statuses": [
+      "PASS",
+      "REVIEW",
+      "FAIL"
+    ],
+    "hard_failures": [
+      "malformed hierarchy",
+      "empty chapter",
+      "empty section",
+      "duplicate canonical ids",
+      "unknown IDEA/TOP/EX/REF/UNC/REP",
+      "silent missing IDEA",
+      "invalid exclusion/deferral reason",
+      "section without IDEA provenance",
+      "invented unsupported unit",
+      "forbidden manuscript/technical/nested keys"
+    ],
+    "review_heuristics": [
+      "chapter count below preferred min",
+      "overloaded chapter",
+      "tiny chapter",
+      "overloaded section",
+      "excessive IDEA reuse",
+      "uncertainties present in SourceMap but none assigned"
+    ],
+    "silent_idea_omission": "FAIL",
+    "unknown_reference": "FAIL",
+    "controlled_reuse": "REVIEW unless policy later says FAIL",
+    "publication_requires": [
+      "provider completion valid",
+      "structured parse PASS",
+      "transport decoder PASS",
+      "reference validation PASS",
+      "coverage PASS",
+      "canonical reconstruction PASS",
+      "canonical validator PASS",
+      "semantic review acceptable"
+    ],
+    "phase4a_publication": "BLOCKED"
+  },
+  "retry_policy": {
+    "first_real_production_planning_canary": "exactly one call",
+    "retries": 0,
+    "controlled_canary_discipline": true
+  },
+  "semantic_review_plan": {
+    "required_human_readable_reviews": [
+      "working title",
+      "subtitle",
+      "editorial angle",
+      "target reader",
+      "book concept",
+      "chapter sequence",
+      "section sequence",
+      "286 IDEA disposition coverage",
+      "deferred ideas",
+      "excluded ideas",
+      "reused ideas",
+      "examples",
+      "references",
+      "uncertainties",
+      "editorial progression",
+      "unsupported claims/structure"
+    ],
+    "title_review": {
+      "selected_title_is": "editorial construct, not source fact",
+      "must_review_for": [
+        "fidelity",
+        "scope",
+        "unsupported promise"
+      ]
+    },
+    "chapter_review": {
+      "every_chapter": [
+        "purpose",
+        "idea support",
+        "coherence",
+        "boundary with adjacent chapters",
+        "balance"
+      ]
+    },
+    "section_review": {
+      "every_section": [
+        "idea support",
+        "coherence",
+        "non-empty coverage",
+        "lack of manuscript prose leakage"
+      ]
+    },
+    "exclusion_review": {
+      "every_excluded_idea": "individually reviewable",
+      "reason_required": true,
+      "closed_vocabulary": true
+    },
+    "deferral_review": {
+      "every_deferred_idea": "must have a reason",
+      "closed_vocabulary": true
+    },
+    "reuse_review": {
+      "every_reused_idea_must_expose": [
+        "primary section",
+        "extra sections"
+      ]
+    },
+    "no_fabricated_production_response": true,
+    "no_editorial_plan_json_in_4a2": true
+  }
+}

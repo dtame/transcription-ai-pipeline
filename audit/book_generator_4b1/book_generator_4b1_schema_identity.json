@@ -1,0 +1,22 @@
+{
+  "transport_version": "book-generation-transport-1.0",
+  "raw_schema_sha256": "075455fdbf18548b3bd2c05b5c7abf35bf43d2c4cecc74f3af6963c540028273",
+  "adapted_schema_sha256": "dce904e8a1a32a700d91cdef5e5d5bc916ce3d6ce10e2b644cdfaa6f68dc6626",
+  "raw_schema_bytes": 1035,
+  "adapted_schema_bytes": 1128,
+  "anthropic_known_incompatibilities": 0,
+  "anthropic_audit": {
+    "external_ref": [],
+    "unsupported_minItems": [],
+    "additionalProperties_not_false": [],
+    "minimum": [],
+    "maximum": [],
+    "multipleOf": [],
+    "minLength": [],
+    "maxLength": [],
+    "maxItems": []
+  },
+  "additional_properties_false_on_adapted": true,
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

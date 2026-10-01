@@ -1,0 +1,31 @@
+{
+  "EMPTY_PARAGRAPH_ROOT_CAUSE": [
+    "SCHEMA_EXPRESSIVENESS_LIMIT",
+    "PROVIDER_COMPLIANCE_FAILURE"
+  ],
+  "CONNECTIVE_ARGUMENT_ROOT_CAUSE": [
+    "PROMPT_SEMANTIC_BOUNDARY_TOO_WEAK",
+    "PROVIDER_COMPLIANCE_FAILURE"
+  ],
+  "INVENTED_ILLUSTRATION_ROOT_CAUSE": [
+    "PROMPT_SEMANTIC_BOUNDARY_TOO_WEAK",
+    "PROVIDER_COMPLIANCE_FAILURE"
+  ],
+  "HYDRATION_DEFECT": "NO",
+  "GENERATION_GRANULARITY_DEFECT": "NO",
+  "OUTPUT_BUDGET_DEFECT": "NO",
+  "THINKING_CONFIGURATION_DEFECT": "NOT_DEMONSTRATED",
+  "hydration_strategy": "SOURCE_MAP_PLUS_TARGETED_TRANSCRIPT_HYDRATION",
+  "hydration_frozen": true,
+  "chapter_level_generation_frozen": true,
+  "ch016_smallest_ample_budget": true,
+  "provider_finished_end_turn": true,
+  "thinking_remains_disabled": true,
+  "do_not_blame_hydration_without_evidence": true,
+  "notes": [
+    "4B.2 showed all six assigned IDEAs represented and remaining prose source-faithful.",
+    "CH016 is the smallest chapter with ample context/output budget.",
+    "Provider finished end_turn; max_output is not a demonstrated cause.",
+    "Thinking was disabled as configured; enabling it is not evidenced as a fix."
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "phase": "4A.1",
+  "request_id": "req_011CfYKsDYnSjXnFggrn6Z2D",
+  "http_status": 200,
+  "http_success": true,
+  "finish_reason": "end_turn",
+  "elapsed_ms": 89922,
+  "input_tokens": 4826,
+  "output_tokens": 2058,
+  "thinking_tokens": 158,
+  "cost": {
+    "status": "known",
+    "currency": "USD",
+    "input_cost": 0.02413,
+    "output_cost": 0.05145,
+    "total_cost": 0.07558,
+    "compute_cost_tracked": true,
+    "pricing_source": "Anthropic official pricing/model documentation",
+    "effective_date": "2026-09-18",
+    "verified": true,
+    "notes": "Actual canary cost only. Do not extrapolate production cost from this tiny fixture.",
+    "unmodeled_regimes": "",
+    "display": "0.0755800 USD",
+    "call_record": {
+      "call_id": "CALL000001",
+      "stage": "editorial_planner_canary_4a1",
+      "provider": "anthropic",
+      "model": "claude-opus-5",
+      "status": "completed",
+      "input_tokens": 4826,
+      "output_tokens": 2058,
+      "total_tokens": 6884,
+      "usage_source": "provider",
+      "unit": "tokens",
+      "unit_count": null,
+      "latency_ms": 89922,
+      "finish_reason": "end_turn",
+      "request_id": "req_011CfYKsDYnSjXnFggrn6Z2D",
+      "error_type": null,
+      "recorded_at": "2026-09-29T16:02:43",
+      "cost": {
+        "status": "known",
+        "currency": "USD",
+        "input_cost": 0.02413,
+        "output_cost": 0.05145,
+        "total_cost": 0.07558,
+        "compute_cost_tracked": true,
+        "pricing_source": "Anthropic official pricing/model documentation",
+        "effective_date": "2026-09-18",
+        "verified": true,
+        "notes": "",
+        "unmodeled_regimes": ""
+      }
+    }
+  },
+  "raw_structured_response_sha256": "180e7480c11e71389e935c2314f471c59e0f42eca79800d30a502a2c0681ff4d",
+  "raw_text_chars": 4865,
+  "provider_metadata": {
+    "schema_version": "1.0",
+    "provider": "Anthropic",
+    "model": "claude-opus-5",
+    "post_attempted": true,
+    "response_received": true,
+    "http_success": true,
+    "http_status": 200,
+    "headers_subset": {
+      "content-type": "application/json",
+      "request-id": "req_011CfYKsDYnSjXnFggrn6Z2D"
+    },
+    "request_id": "req_011CfYKsDYnSjXnFggrn6Z2D",
+    "raw_sha256": "b27c45c94b3ab6961d7f408520d2df9c4b7a7e6f4370f6f533b0a604e80dc71b",
+    "raw_size": 6964,
+    "text_encoding": "utf-8",
+    "text_decode_ok": true,
+    "json_decode_ok": true,
+    "json_top_level_type": "dict",
+    "usage": {
+      "input_tokens": 4826,
+      "output_tokens": 2058,
+      "output_tokens_details": {
+        "thinking_tokens": 158
+      }
+    },
+    "input_tokens": 4826,
+    "output_tokens": 2058,
+    "finish_reason": "end_turn",
+    "content_metadata": {
+      "content_present": true,
+      "content_type": "list",
+      "block_count": 2,
+      "block_types": [
+        "thinking",
+        "text"
+      ],
+      "text_block_count": 1,
+      "text_lengths": [
+        4865
+      ]
+    },
+    "elapsed_ms": 89922,
+    "classification": null,
+    "provider_envelope_valid": true,
+    "airesponse_created": true,
+    "structured_parse_passed": false,
+    "secrets_included": false
+  },
+  "airesponse": {
+    "provider": "anthropic",
+    "model": "claude-opus-5",
+    "input_tokens": 4826,
+    "output_tokens": 2058,
+    "total_tokens": 6884,
+    "usage_source": "provider",
+    "latency_ms": 89922,
+    "finish_reason": "end_turn",
+    "request_id": "req_011CfYKsDYnSjXnFggrn6Z2D",
+    "thinking_tokens": 158,
+    "text_chars": 4865
+  },
+  "secrets_included": false,
+  "forensic_path": "C:\\TranscriptionAI\\audit\\editorial_planner_canary_4a1\\provider_forensics\\CANARY_EP4A1\\5aa03c394cec7614664b25cf7c46182456c69aba53a1b60f8b5d3d686598fa00",
+  "error": null
+}

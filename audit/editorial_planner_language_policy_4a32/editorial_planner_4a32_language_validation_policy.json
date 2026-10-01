@@ -1,0 +1,33 @@
+{
+  "version": "editorial-language-validate-1.0",
+  "mechanism": "EXISTING_LANGUAGE_CLEANUP_CLASSIFIER",
+  "dependency_added": false,
+  "fragile_word_list": false,
+  "scope": "provider-generated editorial prose only; IDs and inherited refs excluded",
+  "supported_scoring_languages": [
+    "en",
+    "fr"
+  ],
+  "unsupported_language_result": "REVIEW",
+  "thresholds": {
+    "pass_confidence": 0.8,
+    "fail_confidence": 0.8,
+    "pass": "combined classification matches canonical language, confidence >= 0.8, and dominant field language matches",
+    "fail": "combined classification is the opposite supported language (EN vs FR) with confidence >= 0.8",
+    "review": "mixed, unknown, low confidence, unsupported canonical language, or conflicting field-level scores"
+  },
+  "results": [
+    "PASS",
+    "REVIEW",
+    "FAIL"
+  ],
+  "future_publication_gate": "EDITORIAL_LANGUAGE_MATCH",
+  "future_publication_requires": "PASS",
+  "future_publication_eligibility": {
+    "EDITORIAL_LANGUAGE_MATCH": "PASS",
+    "ready_for_editorial_plan_publication": false,
+    "audit_only_candidate_first": true,
+    "automatic_publication": false
+  },
+  "note": "Gross EN/FR mismatch is the A.3 failure mode this layer must catch. It is not a translation detector and does not score semantic fidelity."
+}

@@ -1,0 +1,9 @@
+{
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "4b22_candidate_cache": "NOT ACCEPTED",
+  "book_generator_101": "SUFFICIENT_WITH_SEMANTIC_GATE",
+  "why": "BLOCKED_PRECALL: OPENAI_API_KEY is not available in the environment or local .env. All other pre-call gates passed. The frozen benchmark request was built and not sent. ACTUAL TERRA CALLS = 0. No Sonnet call. No retry. Set OPENAI_API_KEY locally and re-authorize a later 4B.2.4 execution; do not invent a second automatic call."
+}

@@ -1,0 +1,309 @@
+{
+  "status": "PASS",
+  "chapter_count": 13,
+  "progression": "Unlearn inherited habits -> restored resurrection life -> faith vs tradition -> sacred offices -> anointing without formula -> union prayer -> unconditional love -> mind set above -> spirit/soul/body -> training the soul -> grace already given -> death has no permission -> testimonies. Chronological session order is not required.",
+  "boundaries": "PASS",
+  "balance": "PASS",
+  "idea_coherence": "PASS",
+  "topic_coherence": "PASS",
+  "notes": [
+    "Chapter titles being in another language than SourceMap summaries is not a structural defect.",
+    "Smallest opening chapter mixes retreat posture with supporting food/exercise illustrations; still a coherent unlearn gate, not a structural fail.",
+    "Largest middle chapter holds the John 17 spine. Share remains well under the 60% overload warning."
+  ],
+  "chapters": [
+    {
+      "chapter_id": "CH001",
+      "working_title": "Désapprendre pour entendre",
+      "purpose": "Ouvrir par la posture de retraite : écouter Dieu directement et réexaminer les habitudes héritées.",
+      "summary": "Écoute directe, discipline du corps, traditions alimentaires, la vérité prouvée par l'usage.",
+      "section_count": 3,
+      "idea_count": 7,
+      "topic_refs": [
+        "TOP001",
+        "TOP002",
+        "TOP003",
+        "TOP012"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 7
+      },
+      "questionable_count": 0,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH002",
+      "working_title": "La vie rendue : des fils des hommes aux fils de Dieu",
+      "purpose": "Exposer l'héritage de vie : chute, immortalité, résurrection corporelle, Hébreux 2.",
+      "summary": "Longévité et arbre de vie, la chute et l'intercession manquée, chair et os, Hébreux 2, réalité démoniaque, quel évangile prêcher.",
+      "section_count": 6,
+      "idea_count": 26,
+      "topic_refs": [
+        "TOP004",
+        "TOP005",
+        "TOP006",
+        "TOP007",
+        "TOP009",
+        "TOP010",
+        "TOP011"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 25,
+        "ACCEPTABLE_FIT": 1
+      },
+      "questionable_count": 0,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "Désapprendre pour entendre",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH003",
+      "working_title": "La foi, non la tradition",
+      "purpose": "Démonter les conditions ajoutées et rappeler que la puissance est déjà intérieure.",
+      "summary": "Conditions de type arbre de la connaissance, foi contre coutume, puissance intérieure, renouvellement confié aux pasteurs.",
+      "section_count": 3,
+      "idea_count": 7,
+      "topic_refs": [
+        "TOP008"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 7
+      },
+      "questionable_count": 0,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "La vie rendue : des fils des hommes aux fils de Dieu",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH004",
+      "working_title": "Les offices sacrés",
+      "purpose": "Exposer prêtre, prophète, roi, la reconnaissance de l'autorité et l'avertissement de Malachie.",
+      "summary": "L'Ancien comme ombre, les trois offices, Melchisédek, Malachie 2, ne pas mépriser l'appel.",
+      "section_count": 5,
+      "idea_count": 19,
+      "topic_refs": [
+        "TOP013",
+        "TOP014",
+        "TOP015",
+        "TOP016",
+        "TOP017",
+        "TOP018",
+        "TOP019"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 18,
+        "QUESTIONABLE_FIT": 1
+      },
+      "questionable_count": 1,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "La foi, non la tradition",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH005",
+      "working_title": "L'onction sans formule",
+      "purpose": "Distinguer accès et activation, corriger sacrifice, adoration et jeûne détournés.",
+      "summary": "Activer l'onction, cœur de l'offrande, adoration vraie, simplicité de la puissance, jeûne et ses limites.",
+      "section_count": 5,
+      "idea_count": 18,
+      "topic_refs": [
+        "TOP020",
+        "TOP021",
+        "TOP022",
+        "TOP023",
+        "TOP024"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 18
+      },
+      "questionable_count": 0,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "Les offices sacrés",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH006",
+      "working_title": "La prière d'union (Jean 17)",
+      "purpose": "Développer le texte pivot : unité, préservation, gloire, et ses conséquences pratiques.",
+      "summary": "Union avec le Père, gardés dans le monde, critique de l'obsession de l'enlèvement, gloire donnée, prière d'union, personne du Saint-Esprit, assurance et sensibilité pastorale.",
+      "section_count": 8,
+      "idea_count": 40,
+      "topic_refs": [
+        "TOP025",
+        "TOP026",
+        "TOP027",
+        "TOP028",
+        "TOP029",
+        "TOP030",
+        "TOP031"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 37,
+        "QUESTIONABLE_FIT": 3
+      },
+      "questionable_count": 3,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "L'onction sans formule",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH007",
+      "working_title": "Aimé exactement comme Jésus",
+      "purpose": "Établir l'amour inconditionnel et son corollaire : l'imperfection ne disqualifie pas.",
+      "summary": "Jean 17:23 sans condition ajoutée, figures bibliques défaillantes, refus des lois auto-imposées par imitation.",
+      "section_count": 3,
+      "idea_count": 19,
+      "topic_refs": [
+        "TOP032",
+        "TOP033",
+        "TOP037"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 19
+      },
+      "questionable_count": 0,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "La prière d'union (Jean 17)",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH008",
+      "working_title": "Affermir la pensée en haut",
+      "purpose": "Donner la discipline de l'attention : Colossiens 3, Philippiens 4, complétude en Christ, coût réel du chemin.",
+      "summary": "Fixer les affections, sélectionner les pensées, Christ tête et corps, coût historique de la doctrine.",
+      "section_count": 4,
+      "idea_count": 16,
+      "topic_refs": [
+        "TOP034",
+        "TOP035",
+        "TOP036",
+        "TOP038",
+        "TOP039"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 16
+      },
+      "questionable_count": 0,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "Aimé exactement comme Jésus",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH009",
+      "working_title": "Esprit, âme et corps",
+      "purpose": "Fournir l'anatomie spirituelle qui rend la pratique intelligible.",
+      "summary": "Structure tripartite, mort comme processus, nature du diable, cœur-âme-pensée, révélation contre chair et sang, pertinence sociale, forteresses de raisonnement.",
+      "section_count": 7,
+      "idea_count": 28,
+      "topic_refs": [
+        "TOP040",
+        "TOP041",
+        "TOP042",
+        "TOP043",
+        "TOP044"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 27,
+        "QUESTIONABLE_FIT": 1
+      },
+      "questionable_count": 1,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "Affermir la pensée en haut",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH010",
+      "working_title": "Entraîner l'âme : langues, imagination, communion",
+      "purpose": "Livrer la méthode pratique de prière et de méditation enseignée dans le corpus.",
+      "summary": "Usage juste des langues, correction reçue de Dieu, renouvellement de l'intelligence, imagination dirigée, connexion pensée-esprit, faim spirituelle, pratique de méditation.",
+      "section_count": 7,
+      "idea_count": 35,
+      "topic_refs": [
+        "TOP045",
+        "TOP046",
+        "TOP047",
+        "TOP048",
+        "TOP057"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 35
+      },
+      "questionable_count": 0,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "Esprit, âme et corps",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH011",
+      "working_title": "La grâce déjà donnée",
+      "purpose": "Montrer l'étendue non exploitée de la grâce : guérison acquise, sainteté, dons, croissance.",
+      "summary": "Grâce et vérité contre la loi, guérison accomplie, pureté intérieure, dons sans effort, mains comme portes, témoignages de transformation, semeur et croissance.",
+      "section_count": 7,
+      "idea_count": 26,
+      "topic_refs": [
+        "TOP051",
+        "TOP052",
+        "TOP053",
+        "TOP055",
+        "TOP056",
+        "TOP058",
+        "TOP059"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 26
+      },
+      "questionable_count": 0,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "Entraîner l'âme : langues, imagination, communion",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH012",
+      "working_title": "La mort n'a pas la permission",
+      "purpose": "Traiter la peur de la mort, la pratique intentionnelle et la question du choix et de la pauvreté.",
+      "summary": "Mourir est un gain vécu, christianisme délibéré, protection, choix et pauvreté examinés dans les Proverbes.",
+      "section_count": 3,
+      "idea_count": 22,
+      "topic_refs": [
+        "TOP054",
+        "TOP060",
+        "TOP061",
+        "TOP062",
+        "TOP063"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 22
+      },
+      "questionable_count": 0,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "La grâce déjà donnée",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "chapter_id": "CH013",
+      "working_title": "Témoignages : ce que la pratique a produit",
+      "purpose": "Clore par les récits de résurrection, l'humilité ministérielle et la vision pour la nation.",
+      "summary": "Foi anormale, prières courtes, résurrections, échecs assumés, mal converti en bénédiction, vision nationale.",
+      "section_count": 6,
+      "idea_count": 23,
+      "topic_refs": [
+        "TOP049",
+        "TOP050",
+        "TOP064",
+        "TOP065",
+        "TOP066",
+        "TOP067"
+      ],
+      "fit_distribution": {
+        "STRONG_FIT": 21,
+        "QUESTIONABLE_FIT": 2
+      },
+      "questionable_count": 2,
+      "possible_defer_exclude_count": 0,
+      "boundary_previous": "La mort n'a pas la permission",
+      "language_does_not_bias_structure": true
+    }
+  ]
+}

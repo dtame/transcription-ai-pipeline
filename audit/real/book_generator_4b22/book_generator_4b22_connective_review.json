@@ -1,0 +1,36 @@
+{
+  "reviewer": "human_exhaustive",
+  "count": 1,
+  "unsupported_connective_claims": 0,
+  "pass": true,
+  "note": "Provider kind=con is not trusted. Human reading of the only connective paragraph confirms non-substantive orientation.",
+  "connective_paragraphs": [
+    {
+      "handle": "p1",
+      "path": "SEC063.p1",
+      "section": "SEC063",
+      "text": "We have already seen what Scripture declares about death and resurrection. The question left standing is simpler and harder: do we actually live as though it were true?",
+      "provider_kind": "con",
+      "provider_kind_trusted": false,
+      "merely_connects_supported_ideas": true,
+      "introduces_new_proposition": false,
+      "introduces_new_implication": false,
+      "introduces_new_conclusion": false,
+      "introduces_new_argument": false,
+      "introduces_new_doctrine": false,
+      "introduces_new_example": false,
+      "classification": "CONNECTIVE_NON_SUBSTANTIVE",
+      "supported": true,
+      "questions": [
+        "Does it merely connect supported ideas?",
+        "Or does it introduce a new proposition, implication, conclusion, argument, doctrine, or example?"
+      ],
+      "answers": {
+        "merely_connects": "YES — orients from prior resurrection chapters to the lived-attitude question that is CH016/SEC063 purpose.",
+        "new_claim": "NO. 'Scripture declares about death and resurrection' is a continuity pointer, not a new citation or doctrine. The question restates the planned purpose."
+      },
+      "historical_p13_recurrence": false,
+      "reviewer": "human_exhaustive"
+    }
+  ]
+}

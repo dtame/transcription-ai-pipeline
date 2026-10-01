@@ -1,0 +1,989 @@
+{
+  "phase": "4A.3",
+  "authorization_scope": "EDITORIAL_PLANNER_4A3_ONE_REAL_PRODUCTION_CANARY_ONLY",
+  "blocked_precall": false,
+  "block_reasons": [],
+  "block_reason": null,
+  "source_identity": {
+    "status": "PASS",
+    "blocked_precall": false,
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+    "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "expected_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "hash_match": true,
+    "bytes": 202398,
+    "expected_bytes": 202398,
+    "bytes_match": true,
+    "chars": 202365,
+    "expected_chars": 202365,
+    "chars_match": true,
+    "inventory": {
+      "topics": 67,
+      "ideas": 286,
+      "examples": 49,
+      "references": 59,
+      "uncertainties": 35,
+      "repetitions": 0
+    },
+    "expected_inventory": {
+      "topics": 67,
+      "ideas": 286,
+      "examples": 49,
+      "references": 59,
+      "uncertainties": 35,
+      "repetitions": 0
+    },
+    "inventory_match": true,
+    "canonical_source_map_validation": "PASS",
+    "traceability": "PASS",
+    "source_map_validation_errors": [],
+    "forbidden_editorial_fields": [],
+    "forbidden_editorial_structure": "NO",
+    "relations_present": false,
+    "relation_quality_debt": "PRESERVED",
+    "source_map_not_modified": true,
+    "preflight": {
+      "status": "PASS",
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+      "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "expected_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "hash_match": true,
+      "bytes": 202398,
+      "expected_bytes": 202398,
+      "bytes_match": true,
+      "chars": 202365,
+      "inventory": {
+        "topics": 67,
+        "ideas": 286,
+        "examples": 49,
+        "references": 59,
+        "uncertainties": 35,
+        "repetitions": 0
+      },
+      "expected_inventory": {
+        "topics": 67,
+        "ideas": 286,
+        "examples": 49,
+        "references": 59,
+        "uncertainties": 35,
+        "repetitions": 0
+      },
+      "inventory_match": true,
+      "source_map_validation": "PASS",
+      "source_map_validation_errors": [],
+      "forbidden_editorial_fields": [],
+      "forbidden_editorial_structure": "NO",
+      "traceability": "PASS",
+      "relations_present": false,
+      "relation_quality_debt": "PRESERVED",
+      "identity": {
+        "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+        "bytes": 202398,
+        "schema_version": "1.0",
+        "project": "pastoral_retreat_v2_validation",
+        "inventory": {
+          "topic_count": 67,
+          "idea_count": 286,
+          "example_count": 49,
+          "reference_count": 59,
+          "uncertainty_count": 35,
+          "repetition_count": 0
+        }
+      },
+      "source_map_not_modified": true
+    }
+  },
+  "contract": {
+    "schema": {
+      "expected": {
+        "transport_version": "editorial-plan-transport-1.0",
+        "raw_schema_sha256": "34e3f0656e1781b791a899deb89a53dc2bfd7d459e10d949776e6f28f3f1f509",
+        "adapted_schema_sha256": "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e",
+        "raw_schema_bytes": 3661,
+        "adapted_schema_bytes": 3909
+      },
+      "live": {
+        "transport_version": "editorial-plan-transport-1.0",
+        "raw_schema_sha256": "34e3f0656e1781b791a899deb89a53dc2bfd7d459e10d949776e6f28f3f1f509",
+        "adapted_schema_sha256": "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e",
+        "raw_schema_bytes": 3661,
+        "adapted_schema_bytes": 3909,
+        "anthropic_known_incompatibilities": 0,
+        "additional_properties_false_on_adapted": true
+      },
+      "mismatches": [],
+      "identity": "MATCH",
+      "full_live": {
+        "transport_version": "editorial-plan-transport-1.0",
+        "raw_schema_sha256": "34e3f0656e1781b791a899deb89a53dc2bfd7d459e10d949776e6f28f3f1f509",
+        "adapted_schema_sha256": "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e",
+        "raw_schema_bytes": 3661,
+        "adapted_schema_bytes": 3909,
+        "anthropic_known_incompatibilities": 0,
+        "anthropic_audit": {
+          "external_ref": [],
+          "unsupported_minItems": [],
+          "additionalProperties_not_false": [],
+          "minimum": [],
+          "maximum": [],
+          "multipleOf": [],
+          "minLength": [],
+          "maxLength": [],
+          "maxItems": []
+        },
+        "additional_properties_false_on_adapted": true
+      }
+    },
+    "prompt": {
+      "expected": {
+        "version": "editorial-planner-1.0",
+        "system_sha256": "7faeacaa81d123510c321d4756f3cd975d6b58460fdd9f216146d6a15efeeb55",
+        "instructions_sha256": "e9193763e49859c03c1d30c9ef259163a05b371354cdca1979bf9b1db807294c",
+        "prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a"
+      },
+      "live": {
+        "version": "editorial-planner-1.0",
+        "system_sha256": "7faeacaa81d123510c321d4756f3cd975d6b58460fdd9f216146d6a15efeeb55",
+        "instructions_sha256": "e9193763e49859c03c1d30c9ef259163a05b371354cdca1979bf9b1db807294c",
+        "prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a"
+      },
+      "mismatches": [],
+      "identity": "MATCH"
+    },
+    "transport_version": "editorial-plan-transport-1.0",
+    "prompt_version": "editorial-planner-1.0",
+    "schema_identity": "MATCH",
+    "prompt_identity": "MATCH",
+    "blocked_precall": false,
+    "block_reason": null
+  },
+  "schema_identity": "MATCH",
+  "prompt_identity": "MATCH",
+  "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+  "source_map_bytes": 202398,
+  "source_map_chars": 202365,
+  "expected_source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+  "expected_source_map_bytes": 202398,
+  "expected_source_map_chars": 202365,
+  "source_map_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+  "historical_proposed_max_output": 16384,
+  "historical_settings_unchanged": true,
+  "frozen_settings_max_output_tokens": 16384,
+  "production_max_output_override": 65536,
+  "override_applied_via": "production_settings.replace(frozen, max_output_tokens=65536)",
+  "model": "claude-opus-5",
+  "max_tokens": 65536,
+  "thinking_present_in_payload": false,
+  "effort_present_in_payload": false,
+  "temperature_present_in_payload": false,
+  "thinking_mode": "provider_default",
+  "effort": null,
+  "thinking_budget_tokens": null,
+  "payload_keys": [
+    "max_tokens",
+    "messages",
+    "model",
+    "output_config",
+    "system"
+  ],
+  "expected_request_sha256": "99ee7e8f4f9a732b52fceab667d9d1fe8b9ce9acedc1e7b1e7c08c1f62b7b734",
+  "actual_request_sha256": "99ee7e8f4f9a732b52fceab667d9d1fe8b9ce9acedc1e7b1e7c08c1f62b7b734",
+  "actual_request_sha256_repeat": "99ee7e8f4f9a732b52fceab667d9d1fe8b9ce9acedc1e7b1e7c08c1f62b7b734",
+  "request_identity": "MATCH",
+  "request_determinism": true,
+  "request_chars": 114042,
+  "request_utf8_bytes": 114142,
+  "expected_request_chars": 114042,
+  "expected_request_utf8_bytes": 114142,
+  "prompt": "editorial-planner-1.0",
+  "transport": "editorial-plan-transport-1.0",
+  "schema_raw_adapted": "3661 / 3909",
+  "schema_hash": "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e",
+  "coverage": {
+    "idea_input_coverage": "286 / 286",
+    "idea_count": 286,
+    "idea_ids": [
+      "IDEA001",
+      "IDEA002",
+      "IDEA003",
+      "IDEA004",
+      "IDEA005",
+      "IDEA006",
+      "IDEA007",
+      "IDEA008",
+      "IDEA009",
+      "IDEA010",
+      "IDEA011",
+      "IDEA012",
+      "IDEA013",
+      "IDEA014",
+      "IDEA015",
+      "IDEA016",
+      "IDEA017",
+      "IDEA018",
+      "IDEA019",
+      "IDEA020",
+      "IDEA021",
+      "IDEA022",
+      "IDEA023",
+      "IDEA024",
+      "IDEA025",
+      "IDEA026",
+      "IDEA027",
+      "IDEA028",
+      "IDEA029",
+      "IDEA030",
+      "IDEA031",
+      "IDEA032",
+      "IDEA033",
+      "IDEA034",
+      "IDEA035",
+      "IDEA036",
+      "IDEA037",
+      "IDEA038",
+      "IDEA039",
+      "IDEA040",
+      "IDEA041",
+      "IDEA042",
+      "IDEA043",
+      "IDEA044",
+      "IDEA045",
+      "IDEA046",
+      "IDEA047",
+      "IDEA048",
+      "IDEA049",
+      "IDEA050",
+      "IDEA051",
+      "IDEA052",
+      "IDEA053",
+      "IDEA054",
+      "IDEA055",
+      "IDEA056",
+      "IDEA057",
+      "IDEA058",
+      "IDEA059",
+      "IDEA060",
+      "IDEA061",
+      "IDEA062",
+      "IDEA063",
+      "IDEA064",
+      "IDEA065",
+      "IDEA066",
+      "IDEA067",
+      "IDEA068",
+      "IDEA069",
+      "IDEA070",
+      "IDEA071",
+      "IDEA072",
+      "IDEA073",
+      "IDEA074",
+      "IDEA075",
+      "IDEA076",
+      "IDEA077",
+      "IDEA078",
+      "IDEA079",
+      "IDEA080",
+      "IDEA081",
+      "IDEA082",
+      "IDEA083",
+      "IDEA084",
+      "IDEA085",
+      "IDEA086",
+      "IDEA087",
+      "IDEA088",
+      "IDEA089",
+      "IDEA090",
+      "IDEA091",
+      "IDEA092",
+      "IDEA093",
+      "IDEA094",
+      "IDEA095",
+      "IDEA096",
+      "IDEA097",
+      "IDEA098",
+      "IDEA099",
+      "IDEA100",
+      "IDEA101",
+      "IDEA102",
+      "IDEA103",
+      "IDEA104",
+      "IDEA105",
+      "IDEA106",
+      "IDEA107",
+      "IDEA108",
+      "IDEA109",
+      "IDEA110",
+      "IDEA111",
+      "IDEA112",
+      "IDEA113",
+      "IDEA114",
+      "IDEA115",
+      "IDEA116",
+      "IDEA117",
+      "IDEA118",
+      "IDEA119",
+      "IDEA120",
+      "IDEA121",
+      "IDEA122",
+      "IDEA123",
+      "IDEA124",
+      "IDEA125",
+      "IDEA126",
+      "IDEA127",
+      "IDEA128",
+      "IDEA129",
+      "IDEA130",
+      "IDEA131",
+      "IDEA132",
+      "IDEA133",
+      "IDEA134",
+      "IDEA135",
+      "IDEA136",
+      "IDEA137",
+      "IDEA138",
+      "IDEA139",
+      "IDEA140",
+      "IDEA141",
+      "IDEA142",
+      "IDEA143",
+      "IDEA144",
+      "IDEA145",
+      "IDEA146",
+      "IDEA147",
+      "IDEA148",
+      "IDEA149",
+      "IDEA150",
+      "IDEA151",
+      "IDEA152",
+      "IDEA153",
+      "IDEA154",
+      "IDEA155",
+      "IDEA156",
+      "IDEA157",
+      "IDEA158",
+      "IDEA159",
+      "IDEA160",
+      "IDEA161",
+      "IDEA162",
+      "IDEA163",
+      "IDEA164",
+      "IDEA165",
+      "IDEA166",
+      "IDEA167",
+      "IDEA168",
+      "IDEA169",
+      "IDEA170",
+      "IDEA171",
+      "IDEA172",
+      "IDEA173",
+      "IDEA174",
+      "IDEA175",
+      "IDEA176",
+      "IDEA177",
+      "IDEA178",
+      "IDEA179",
+      "IDEA180",
+      "IDEA181",
+      "IDEA182",
+      "IDEA183",
+      "IDEA184",
+      "IDEA185",
+      "IDEA186",
+      "IDEA187",
+      "IDEA188",
+      "IDEA189",
+      "IDEA190",
+      "IDEA191",
+      "IDEA192",
+      "IDEA193",
+      "IDEA194",
+      "IDEA195",
+      "IDEA196",
+      "IDEA197",
+      "IDEA198",
+      "IDEA199",
+      "IDEA200",
+      "IDEA201",
+      "IDEA202",
+      "IDEA203",
+      "IDEA204",
+      "IDEA205",
+      "IDEA206",
+      "IDEA207",
+      "IDEA208",
+      "IDEA209",
+      "IDEA210",
+      "IDEA211",
+      "IDEA212",
+      "IDEA213",
+      "IDEA214",
+      "IDEA215",
+      "IDEA216",
+      "IDEA217",
+      "IDEA218",
+      "IDEA219",
+      "IDEA220",
+      "IDEA221",
+      "IDEA222",
+      "IDEA223",
+      "IDEA224",
+      "IDEA225",
+      "IDEA226",
+      "IDEA227",
+      "IDEA228",
+      "IDEA229",
+      "IDEA230",
+      "IDEA231",
+      "IDEA232",
+      "IDEA233",
+      "IDEA234",
+      "IDEA235",
+      "IDEA236",
+      "IDEA237",
+      "IDEA238",
+      "IDEA239",
+      "IDEA240",
+      "IDEA241",
+      "IDEA242",
+      "IDEA243",
+      "IDEA244",
+      "IDEA245",
+      "IDEA246",
+      "IDEA247",
+      "IDEA248",
+      "IDEA249",
+      "IDEA250",
+      "IDEA251",
+      "IDEA252",
+      "IDEA253",
+      "IDEA254",
+      "IDEA255",
+      "IDEA256",
+      "IDEA257",
+      "IDEA258",
+      "IDEA259",
+      "IDEA260",
+      "IDEA261",
+      "IDEA262",
+      "IDEA263",
+      "IDEA264",
+      "IDEA265",
+      "IDEA266",
+      "IDEA267",
+      "IDEA268",
+      "IDEA269",
+      "IDEA270",
+      "IDEA271",
+      "IDEA272",
+      "IDEA273",
+      "IDEA274",
+      "IDEA275",
+      "IDEA276",
+      "IDEA277",
+      "IDEA278",
+      "IDEA279",
+      "IDEA280",
+      "IDEA281",
+      "IDEA282",
+      "IDEA283",
+      "IDEA284",
+      "IDEA285",
+      "IDEA286"
+    ],
+    "missing_idea_ids": [],
+    "unknown_idea_ids": [],
+    "topic_count": 67,
+    "missing_topic_ids": [],
+    "unknown_topic_ids": [],
+    "example_count": 49,
+    "missing_example_ids": [],
+    "unknown_example_ids": [],
+    "reference_count": 59,
+    "missing_reference_ids": [],
+    "unknown_reference_ids": [],
+    "uncertainty_count": 35,
+    "missing_uncertainty_ids": [],
+    "unknown_uncertainty_ids": [],
+    "unknown_input_refs": 0,
+    "unknown_input_ref_ids": [],
+    "duplicate_canonical_ids": 0,
+    "duplicate_canonical_id_values": [],
+    "source_map_mutated": false,
+    "all_ideas_present": true,
+    "pass": true,
+    "digest_counts": {
+      "topics": 67,
+      "ideas": 286,
+      "examples": 49,
+      "references": 59,
+      "uncertainties": 35,
+      "repetitions": 0
+    },
+    "compact_digest_keys": [
+      "counts",
+      "examples",
+      "ideas",
+      "language",
+      "project",
+      "references",
+      "repetitions",
+      "schema_version",
+      "source_analysis",
+      "topics",
+      "uncertainties"
+    ]
+  },
+  "cache": {
+    "signature": "35f9098f1e747932eaef146a8a7f9c4f64e5f845657cd497d47840c84df4175f",
+    "deterministic": true,
+    "inputs": {
+      "coverage_policy_version": "idea-coverage-1.0",
+      "effort": "",
+      "max_output_tokens": 65536,
+      "model": "claude-opus-5",
+      "prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a",
+      "prompt_version": "editorial-planner-1.0",
+      "provider": "anthropic",
+      "response_schema_sha256": "34e3f0656e1781b791a899deb89a53dc2bfd7d459e10d949776e6f28f3f1f509",
+      "schema_version": "1.0",
+      "settings_version": "editorial-planner-settings-1.0",
+      "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "strategy": "global",
+      "thinking_mode": "provider_default",
+      "transport_version": "editorial-plan-transport-1.0"
+    },
+    "production_max_output_tokens": 65536,
+    "a1_synthetic_signature": "5aa03c394cec7614664b25cf7c46182456c69aba53a1b60f8b5d3d686598fa00",
+    "a1_synthetic_inputs": {
+      "coverage_policy_version": "idea-coverage-1.0",
+      "effort": "",
+      "max_output_tokens": 4096,
+      "model": "claude-opus-5",
+      "prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a",
+      "prompt_version": "editorial-planner-1.0",
+      "provider": "anthropic",
+      "response_schema_sha256": "34e3f0656e1781b791a899deb89a53dc2bfd7d459e10d949776e6f28f3f1f509",
+      "schema_version": "1.0",
+      "settings_version": "editorial-planner-settings-1.0",
+      "source_map_sha256": "b1a3615f07e1048f9a3a9ae2f598f6ccbaa681ce75e75cae5de7f08254aec1e8",
+      "strategy": "global",
+      "thinking_mode": "provider_default",
+      "transport_version": "editorial-plan-transport-1.0"
+    },
+    "distinct_from_a1_synthetic": true,
+    "distinct_reasons": [
+      "source_map_sha256 differs (production pastoral vs synthetic garden)",
+      "max_output_tokens differs (production selected vs canary 4096)"
+    ],
+    "cache_populated_for_production": false,
+    "a1_cache_cannot_collide": true
+  },
+  "input_budget": {
+    "methods": {
+      "local": "app.ai.estimation.estimate_tokens(system + newline + user, model=claude-opus-5) — existing repository estimator used by Phase 4A",
+      "provider_adjusted_mid": "ceil((system+user chars) / 2.5)",
+      "provider_adjusted_pessimistic": "ceil((system+user chars) / 1.9365384615384615) Phase 3B A.44 density — Phase 4A comparison method",
+      "payload_inclusive_pessimistic": "same pessimistic density applied to the exact provider payload (includes adapted JSON schema)",
+      "a1_calibrated_payload": "ceil(payload_chars / 2.1425611272275176) using A.1 actual input_tokens=4826 vs payload_chars=10340",
+      "planning_estimate": "max(local, system+user pessimistic, payload pessimistic, A.1-calibrated payload) — used for safety, not billing"
+    },
+    "system_chars": 1992,
+    "user_chars": 99256,
+    "system_plus_user_chars": 101248,
+    "payload_chars": 114042,
+    "payload_utf8_bytes": 114142,
+    "local_token_estimate": {
+      "tokens": 25313,
+      "method": "heuristic_chars_per_token",
+      "model": "claude-opus-5",
+      "estimated": true
+    },
+    "provider_adjusted_mid": 40500,
+    "provider_adjusted_pessimistic": 52283,
+    "payload_inclusive_pessimistic": 58890,
+    "a1_calibrated_input": 53227,
+    "planning_input_estimate": 58890,
+    "phase_4a_local": 25313,
+    "phase_4a_provider_adjusted_pessimistic": 52283,
+    "local_delta_vs_phase4a": 0,
+    "provider_adjusted_delta_vs_phase4a": 0,
+    "usable": {
+      "provider": "anthropic",
+      "model": "claude-opus-5",
+      "context_window": 1000000,
+      "model_max_output_tokens": 128000,
+      "planner_max_output_tokens": 65536,
+      "safety_ratio": 0.7,
+      "capabilities_known": true,
+      "usable_input_tokens": 634464,
+      "formula": "context_window * safety_ratio - max_output_tokens"
+    },
+    "usable_input_tokens": 634464,
+    "headroom_tokens": 575574,
+    "input_safety": "PASS",
+    "one_global_call_feasible": true,
+    "selected_max_output": 65536,
+    "model_context_window": 1000000,
+    "model_max_output_tokens": 128000,
+    "safety_ratio": 0.7,
+    "formula": "context_window * safety_ratio - max_output_tokens",
+    "web_research": false
+  },
+  "request_audit": {
+    "model": "claude-opus-5",
+    "max_tokens": 65536,
+    "old_proposed_max_output": 16384,
+    "selected_max_output": 65536,
+    "thinking_present": false,
+    "thinking_value": null,
+    "effort_present": false,
+    "temperature_present": false,
+    "thinking_mode": "provider_default",
+    "effort": null,
+    "thinking_budget_tokens": null,
+    "payload_keys": [
+      "max_tokens",
+      "messages",
+      "model",
+      "output_config",
+      "system"
+    ],
+    "structured_output": "json_schema",
+    "request_sha256": "99ee7e8f4f9a732b52fceab667d9d1fe8b9ce9acedc1e7b1e7c08c1f62b7b734",
+    "request_sha256_repeat": "99ee7e8f4f9a732b52fceab667d9d1fe8b9ce9acedc1e7b1e7c08c1f62b7b734",
+    "request_determinism": true,
+    "request_chars": 114042,
+    "request_utf8_bytes": 114142,
+    "system_prompt_chars": 1992,
+    "user_prompt_chars": 99256,
+    "digest_chars": 98065,
+    "digest_bytes": 98098,
+    "prompt_fingerprint_system_plus_user": "50e58087ef0dfb214dd1b9194a8d74c7d120fce9088b04a28249f1cd3cc51109",
+    "technical_chunks_in_digest": [],
+    "technical_chunks_in_user_digest": [],
+    "no_technical_chunks": true,
+    "compact_by_reference": {
+      "src_tables_omitted": true,
+      "idea_relations_omitted": true,
+      "idea_source_refs_omitted": true,
+      "idea_fields": [
+        "id",
+        "importance",
+        "kind",
+        "summary",
+        "topic_refs"
+      ],
+      "full_source_text_not_required": true,
+      "pass": true
+    },
+    "secrets_included": false,
+    "authorization_scope_note": "EDITORIAL_PLANNER_4A2_OFFLINE_PRODUCTION_PREFLIGHT_ONLY",
+    "engine_generate_called": false,
+    "thinking_mode_frozen": "provider_default",
+    "model_frozen": "claude-opus-5"
+  },
+  "payload": {
+    "model": "claude-opus-5",
+    "max_tokens": 65536,
+    "messages": [
+      {
+        "role": "user",
+        "content": "Organise le SourceMap fourni en plan éditorial compact.\n\nContraintes de sortie :\n- concept.promise / subject / journey / progression : courts, ancrés dans\n  le thème, l'intention, l'audience et les ideas du SourceMap.\n- titles[] : 2 à 5 candidats. Ce sont des constructions éditoriales.\n- pick : index du titre de travail retenu.\n- subtitle : optionnel, sans promesse non supportée.\n- angle, reader, strategy : éditoriaux, audience normalisée sans invention.\n- chapters[] : nombre libre mais cohérent. Pas de chapitre vide.\n- sections[] : au moins une par chapitre. Chaque section a i[] non vide\n  (IDEA IDs).\n- x[] / ref[] / u[] / rep[] : IDs canoniques existants seulement.\n- act[] : REORDER | GROUP | SPLIT_TOPIC | CONNECT | DEFER | EXCLUDE.\n- deferred[] / excluded[] : IDEA absentes des sections, motif fermé.\n\nInterdit :\n- paragraphes de livre\n- nouveaux IDEA / EX / REF / UNC / REP\n- structure dérivée de fenêtres techniques\n- chapitres dans des sections, ou niveaux au-delà de SECTION\n- copier les résumés d'idées dans le plan\n\nLe digest d'entrée ne contient pas les tableaux SRC : tu références les\nIDEA ; le programme rattache la traçabilité SRC localement.\n\nSOURCEMAP_DIGEST_JSON\n{\"schema_version\":\"1.0\",\"project\":\"pastoral_retreat_v2_validation\",\"language\":\"en\",\"source_analysis\":{\"main_theme\":\"A multi-session teaching corpus on the believer's inherited identity in Christ, spanning sacred office, resurrection life, spiritual authority, mind/soul/spirit anatomy, and testimonies of healing, resurrection, and providence, all urging lived practice over ritual, tradition, or fear\",\"author_intent\":{\"summary\":\"To exposit scripture (Hebrews 2, John 17, Colossians 3, Malachi, etc.) teaching believers they already possess resurrection life, unconditional love, and spiritual authority, correcting legalism, rapture-fixation, and performance-based ministry, while grounding claims in personal testimony\",\"confidence\":\"medium\",\"kinds\":[]},\"target_audience\":{\"summary\":\"Local congregations, retreat attendees, ministers and pastors receiving in-person Bible teaching and testimony\",\"confidence\":\"medium\",\"kinds\":[]}},\"topics\":[{\"id\":\"TOP001\",\"label\":\"Retreat exercise and physical discipline\",\"summary\":\"Retreat exercise and physical discipline\"},{\"id\":\"TOP002\",\"label\":\"Cultural food habits and health\",\"summary\":\"Cultural food habits and health\"},{\"id\":\"TOP003\",\"label\":\"Elders' wisdom and traditional cooking\",\"summary\":\"Elders' wisdom and traditional cooking\"},{\"id\":\"TOP004\",\"label\":\"Longevity, immortality and the tree of life\",\"summary\":\"Longevity, immortality and the tree of life\"},{\"id\":\"TOP005\",\"label\":\"Physical resurrection and flesh/bone identity of Christ\",\"summary\":\"Physical resurrection and flesh/bone identity of Christ\"},{\"id\":\"TOP006\",\"label\":\"Sons of men becoming sons of God\",\"summary\":\"Sons of men becoming sons of God\"},{\"id\":\"TOP007\",\"label\":\"Adam and Eve's fall and the man's failure to intercede\",\"summary\":\"Adam and Eve's fall and the man's failure to intercede\"},{\"id\":\"TOP008\",\"label\":\"Faith versus tradition and works\",\"summary\":\"Faith versus tradition and works\"},{\"id\":\"TOP009\",\"label\":\"Hebrews 2 exposition: Christ destroying the devil and death\",\"summary\":\"Hebrews 2 exposition: Christ destroying the devil and death\"},{\"id\":\"TOP010\",\"label\":\"Devil's real presence in African context vs. global gospel\",\"summary\":\"Devil's real presence in African context vs. global gospel\"},{\"id\":\"TOP011\",\"label\":\"Believer's inherited eternal life\",\"summary\":\"Believer's inherited eternal life\"},{\"id\":\"TOP012\",\"label\":\"Practicing what is preached\",\"summary\":\"Practicing what is preached\"},{\"id\":\"TOP013\",\"label\":\"Old Testament as shadow of the New\",\"summary\":\"Old Testament as shadow of the New\"},{\"id\":\"TOP014\",\"label\":\"Sacred offices: priest, prophet, king\",\"summary\":\"Sacred offices: priest, prophet, king\"},{\"id\":\"TOP015\",\"label\":\"Universal priesthood vs. ordained order\",\"summary\":\"Universal priesthood vs. ordained order\"},{\"id\":\"TOP016\",\"label\":\"Melchizedek and recognizing spiritual authority\",\"summary\":\"Melchizedek and recognizing spiritual authority\"},{\"id\":\"TOP017\",\"label\":\"Malachi's warning to priests\",\"summary\":\"Malachi's warning to priests\"},{\"id\":\"TOP018\",\"label\":\"Anointing and calling not to be despised\",\"summary\":\"Anointing and calling not to be despised\"},{\"id\":\"TOP019\",\"label\":\"Finding God brings people to you\",\"summary\":\"Finding God brings people to you\"},{\"id\":\"TOP020\",\"label\":\"Accessing and activating the anointing\",\"summary\":\"Accessing and activating the anointing\"},{\"id\":\"TOP021\",\"label\":\"Sacrifice, offering, and heart attitude\",\"summary\":\"Sacrifice, offering, and heart attitude\"},{\"id\":\"TOP022\",\"label\":\"True worship vs. performative worship\",\"summary\":\"True worship vs. performative worship\"},{\"id\":\"TOP023\",\"label\":\"Simplicity of receiving power vs. manufactured suffering doctrines\",\"summary\":\"Simplicity of receiving power vs. manufactured suffering doctrines\"},{\"id\":\"TOP024\",\"label\":\"Purpose and limits of fasting\",\"summary\":\"Purpose and limits of fasting\"},{\"id\":\"TOP025\",\"label\":\"Jesus' prayer of unity with the Father (John 17)\",\"summary\":\"Jesus' prayer of unity with the Father (John 17)\"},{\"id\":\"TOP026\",\"label\":\"John 17 - Jesus' prayer for unity and preservation\",\"summary\":\"John 17 - Jesus' prayer for unity and preservation\"},{\"id\":\"TOP027\",\"label\":\"Critique of rapture-centered eschatology\",\"summary\":\"Critique of rapture-centered eschatology\"},{\"id\":\"TOP028\",\"label\":\"Unity of believers with the Father and Son\",\"summary\":\"Unity of believers with the Father and Son\"},{\"id\":\"TOP029\",\"label\":\"Glory given to believers\",\"summary\":\"Glory given to believers\"},{\"id\":\"TOP030\",\"label\":\"Knowledge and confidence over the enemy\",\"summary\":\"Knowledge and confidence over the enemy\"},{\"id\":\"TOP031\",\"label\":\"Sensitivity to spiritual levels among people\",\"summary\":\"Sensitivity to spiritual levels among people\"},{\"id\":\"TOP032\",\"label\":\"God's unconditional love modeled on Jesus\",\"summary\":\"God's unconditional love modeled on Jesus\"},{\"id\":\"TOP033\",\"label\":\"Imperfect biblical figures used mightily by God\",\"summary\":\"Imperfect biblical figures used mightily by God\"},{\"id\":\"TOP034\",\"label\":\"Setting the mind on heavenly realities (Colossians 3 / Philippians 4)\",\"summary\":\"Setting the mind on heavenly realities (Colossians 3 / Philippians 4)\"},{\"id\":\"TOP035\",\"label\":\"Mind as battlefield\",\"summary\":\"Mind as battlefield\"},{\"id\":\"TOP036\",\"label\":\"Headship and completeness in Christ\",\"summary\":\"Headship and completeness in Christ\"},{\"id\":\"TOP037\",\"label\":\"Self-imposed laws from imitation\",\"summary\":\"Self-imposed laws from imitation\"},{\"id\":\"TOP038\",\"label\":\"Cost of following Jesus historically\",\"summary\":\"Cost of following Jesus historically\"},{\"id\":\"TOP039\",\"label\":\"Church coercion versus modern freedom of worship\",\"summary\":\"Church coercion versus modern freedom of worship\"},{\"id\":\"TOP040\",\"label\":\"Spirit, soul and body structure\",\"summary\":\"Spirit, soul and body structure\"},{\"id\":\"TOP041\",\"label\":\"Death and spiritual corruption after the Fall\",\"summary\":\"Death and spiritual corruption after the Fall\"},{\"id\":\"TOP042\",\"label\":\"Loving God with heart, soul and mind\",\"summary\":\"Loving God with heart, soul and mind\"},{\"id\":\"TOP043\",\"label\":\"Flesh and blood revelation versus spiritual revelation\",\"summary\":\"Flesh and blood revelation versus spiritual revelation\"},{\"id\":\"TOP044\",\"label\":\"Spiritual warfare and strongholds of reasoning\",\"summary\":\"Spiritual warfare and strongholds of reasoning\"},{\"id\":\"TOP045\",\"label\":\"Praying in tongues and refreshment\",\"summary\":\"Praying in tongues and refreshment\"},{\"id\":\"TOP046\",\"label\":\"Renewal of the mind\",\"summary\":\"Renewal of the mind\"},{\"id\":\"TOP047\",\"label\":\"Imagination as spiritual faculty\",\"summary\":\"Imagination as spiritual faculty\"},{\"id\":\"TOP048\",\"label\":\"Mind-spirit connection with God\",\"summary\":\"Mind-spirit connection with God\"},{\"id\":\"TOP049\",\"label\":\"Testimonies of raising the dead\",\"summary\":\"Testimonies of raising the dead\"},{\"id\":\"TOP050\",\"label\":\"Short, faith-filled prayer versus long prayers\",\"summary\":\"Short, faith-filled prayer versus long prayers\"},{\"id\":\"TOP051\",\"label\":\"Hands as doorways of the Spirit\",\"summary\":\"Hands as doorways of the Spirit\"},{\"id\":\"TOP052\",\"label\":\"Holiness and inner purity\",\"summary\":\"Holiness and inner purity\"},{\"id\":\"TOP053\",\"label\":\"Gifts and manifestation of the Holy Ghost\",\"summary\":\"Gifts and manifestation of the Holy Ghost\"},{\"id\":\"TOP054\",\"label\":\"Attitude toward death and heaven\",\"summary\":\"Attitude toward death and heaven\"},{\"id\":\"TOP055\",\"label\":\"Testimonies of personal transformation\",\"summary\":\"Testimonies of personal transformation\"},{\"id\":\"TOP056\",\"label\":\"Grace versus law\",\"summary\":\"Grace versus law\"},{\"id\":\"TOP057\",\"label\":\"Prayer, tongues, and meditation practice\",\"summary\":\"Prayer, tongues, and meditation practice\"},{\"id\":\"TOP058\",\"label\":\"Healing already accomplished\",\"summary\":\"Healing already accomplished\"},{\"id\":\"TOP059\",\"label\":\"Parable of the sower applied to one man's growth\",\"summary\":\"Parable of the sower applied to one man's growth\"},{\"id\":\"TOP060\",\"label\":\"Practicing intentional faith\",\"summary\":\"Practicing intentional faith\"},{\"id\":\"TOP061\",\"label\":\"Speech correction and self-monitoring\",\"summary\":\"Speech correction and self-monitoring\"},{\"id\":\"TOP062\",\"label\":\"Choice, poverty and blessing\",\"summary\":\"Choice, poverty and blessing\"},{\"id\":\"TOP063\",\"label\":\"Divine protection and preservation of life\",\"summary\":\"Divine protection and preservation of life\"},{\"id\":\"TOP064\",\"label\":\"Testimonies of resurrection from the dead\",\"summary\":\"Testimonies of resurrection from the dead\"},{\"id\":\"TOP065\",\"label\":\"Ministry humility versus performance\",\"summary\":\"Ministry humility versus performance\"},{\"id\":\"TOP066\",\"label\":\"Turning evil into blessing / testimony of transformation\",\"summary\":\"Turning evil into blessing / testimony of transformation\"},{\"id\":\"TOP067\",\"label\":\"Prophetic vision for the nation\",\"summary\":\"Prophetic vision for the nation\"}],\"ideas\":[{\"id\":\"IDEA001\",\"summary\":\"God's people often rely on external information rather than hearing directly from God, who would otherwise teach them everything.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[]},{\"id\":\"IDEA002\",\"summary\":\"Physical exercise is spiritually endorsed and beneficial, per 1 Timothy 4:8, and should be part of retreat discipline.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP001\"]},{\"id\":\"IDEA003\",\"summary\":\"Eating heavily at night and skipping breakfast is a cultural pattern that contributed to poor health (e.g., stomach issues).\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP002\"]},{\"id\":\"IDEA004\",\"summary\":\"Children were culturally forbidden from touching meat first; this was tradition, not wickedness, but not necessarily the best practice.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP002\"]},{\"id\":\"IDEA005\",\"summary\":\"Now that knowledge has increased, believers must learn better ways rather than continuing inherited but suboptimal customs.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP002\",\"TOP008\"]},{\"id\":\"IDEA006\",\"summary\":\"The speaker's grandmother, though uneducated, intuitively practiced wisdom (fresh cooking, clay pots) that the speaker identifies as reflecting God's nature.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP003\"]},{\"id\":\"IDEA007\",\"summary\":\"The speaker holds an ambition for extraordinarily long life (hundreds or a thousand years) if needed to fulfill God's vision.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP004\"]},{\"id\":\"IDEA008\",\"summary\":\"Long life is possible even for sinners (implying it is not righteousness alone that grants longevity), yet believers are not harvesting long life because they have not 'planted' it.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP004\"]},{\"id\":\"IDEA009\",\"summary\":\"Much church teaching focuses on preparing people to die well rather than teaching them to inherit resurrection life, citing selective use of 'flesh and blood cannot inherit' while omitting 'flesh and bone can inherit.'\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP005\"]},{\"id\":\"IDEA010\",\"summary\":\"Christ's resurrection was physical: he invited Thomas to touch him and declared spirits do not have flesh and bone, then ascended bodily rather than merely disappearing spiritually.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP005\"]},{\"id\":\"IDEA011\",\"summary\":\"A man (Jesus) sits physically before the throne of grace, contrary to purely spiritual/positional theological interpretations.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP005\"]},{\"id\":\"IDEA012\",\"summary\":\"Teaching that resurrection/inheritance is merely 'positional status' with no real experiential possibility is labeled antichrist heresy.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP005\",\"TOP008\"]},{\"id\":\"IDEA013\",\"summary\":\"Jesus came not merely so believers live 'in the spirit' but so sons of men become sons of God, restoring what was lost when Adam fell.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP006\"]},{\"id\":\"IDEA014\",\"summary\":\"Adam was originally son of God; after his rebellion he began fathering children after his own fallen image, making humanity 'sons of men' per Genesis 5.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP006\"]},{\"id\":\"IDEA015\",\"summary\":\"Eve was deceived because she lacked full awareness/senses at the moment, making her act non-deliberate, unlike a knowing transgression.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP007\"]},{\"id\":\"IDEA016\",\"summary\":\"Man's covering role over woman arose because man was the source ('womb') from which woman was taken, making him the first responsible party.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP007\"]},{\"id\":\"IDEA017\",\"summary\":\"Adam, present during the temptation, failed to intervene or intercede with God on Eve's behalf, though he could have and God would have forgiven her.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP007\"]},{\"id\":\"IDEA018\",\"summary\":\"By contrast, Jesus as husband of the church interceded, 'Father forgive them,' and this prayer secured the Father's forgiveness for humanity while still sinners.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP007\"]},{\"id\":\"IDEA019\",\"summary\":\"When Adam sinned, time (chronos) arrested him and broke the chain of immortality/eternity that he had carried even into sin.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP004\",\"TOP006\"]},{\"id\":\"IDEA020\",\"summary\":\"God barred Adam from the tree of life after the fall specifically to prevent him from eating and living forever in a fallen state.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP004\"]},{\"id\":\"IDEA021\",\"summary\":\"Jesus destroyed death and brought life and immortality to light, restoring access typified by the tree of life.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP004\",\"TOP006\"]},{\"id\":\"IDEA022\",\"summary\":\"Requiring rigid conditions such as 40-day fasting as prerequisites for God's move is compared to the tree of knowledge of good and evil, an improper condition-based approach to God.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP008\"]},{\"id\":\"IDEA023\",\"summary\":\"Faith, not tradition or ritual works, is the foundation of walking with God; without faith it is impossible to please God, and eating without faith is sin (Romans 14:23).\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP008\"]},{\"id\":\"IDEA024\",\"summary\":\"Cultural traditions, no matter their origin or the intelligence of those who started them, cannot attain acceptance before God; only Christ is accepted.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP008\"]},{\"id\":\"IDEA025\",\"summary\":\"Many believers hold an image of a 'powerful Christ' performing miracles but fail to see themselves as participants in that same power dwelling inside them.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP008\"]},{\"id\":\"IDEA026\",\"summary\":\"The power of God is already inside the believer; external efforts like extreme fasting or mountain retreats are not the condition for accessing it.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP008\"]},{\"id\":\"IDEA027\",\"summary\":\"Pastors are instructed (Romans 12:1-2) to present believers as living sacrifices and to renew minds rather than conform to worldly patterns, since the mind is where the battle occurs.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP008\"]},{\"id\":\"IDEA028\",\"summary\":\"Churches should consistently teach the same core gospel message ('Jesus and him glorified') rather than introducing new revelations that fragment doctrine.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP008\"]},{\"id\":\"IDEA029\",\"summary\":\"Believers, like Christ, deserve glory though many resist accepting this because they were taught they do not deserve it; false modesty is framed as antichrist thinking.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP008\",\"TOP009\"]},{\"id\":\"IDEA030\",\"summary\":\"An anecdote about missionaries in the Mambila plateau handling scorpions and snakes without harm illustrates believers exercising power over the demonic/dangerous when preaching the true gospel.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP010\"]},{\"id\":\"IDEA031\",\"summary\":\"Preachers themselves are sometimes described as trying to dodge or escape exercising the power of God that is rightfully in their life and mouth.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP010\"]},{\"id\":\"IDEA032\",\"summary\":\"Hebrews 2 group reading affirms Jesus was made a little lower than angels, suffered death for everyone, and was crowned with glory and honor.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP009\"]},{\"id\":\"IDEA033\",\"summary\":\"Hebrews 2 in French and English states Christ shared in flesh and blood so that through death he might destroy (rendered 'néanti'/annul) the one holding the power of death, the devil.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP009\"]},{\"id\":\"IDEA034\",\"summary\":\"There is a striking contrast between how the global church experiences the demonic (relatively muted) and how African contexts often emphasize and even take pride in intense demonic reality.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP010\"]},{\"id\":\"IDEA035\",\"summary\":\"There is debate over the French translation 'néanti' (annulled/destroyed) versus a weaker reading implying the devil merely negotiated or retained some power.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP009\"]},{\"id\":\"IDEA036\",\"summary\":\"The devil used fear of death to hold people in lifelong bondage, but Jesus destroyed death and, through the gospel, brought life and immortality to light.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP004\",\"TOP009\"]},{\"id\":\"IDEA037\",\"summary\":\"Believers may suffer persecution or misinterpretation for the gospel's sake, but this suffering does not negate the reality of Christ's victory or the believer's inherited life.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP009\"]},{\"id\":\"IDEA038\",\"summary\":\"Each minister/pastor is challenged to decide what gospel they will preach going forward, echoing apostolic accountability for the message delivered.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP008\",\"TOP011\"]},{\"id\":\"IDEA039\",\"summary\":\"The closing exhortation asserts that believers already possess eternal life — older, better, stronger and everlasting — that transcends physical death and bodily departure.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP004\",\"TOP011\"]},{\"id\":\"IDEA040\",\"summary\":\"Spiritual truths are only proven true through practice and use, not by mere declaration.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP012\"]},{\"id\":\"IDEA041\",\"summary\":\"Old Testament encounters existed to prefigure and shadow the New Testament reality.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP013\"]},{\"id\":\"IDEA042\",\"summary\":\"God does not change; apparent shifts in dealing with people serve his unchanging purpose to teach future generations to serve him.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP013\"]},{\"id\":\"IDEA043\",\"summary\":\"History repeats because human nature repeats; knowing past patterns equips believers to manage present circumstances.\",\"kind\":\"\",\"importance\":\"minor\",\"topic_refs\":[\"TOP013\"]},{\"id\":\"IDEA044\",\"summary\":\"Priest, prophet, and king are the three sacred offices in the Old Testament society, consecrated and anointed with oil.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP014\"]},{\"id\":\"IDEA045\",\"summary\":\"These three offices remain sacred and unchanged even though their form has evolved into a universal commonwealth.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP014\",\"TOP015\"]},{\"id\":\"IDEA046\",\"summary\":\"There is a common priesthood shared by all believers, but there is also an ordered priesthood that is distinct and set apart.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP015\"]},{\"id\":\"IDEA047\",\"summary\":\"It is careless to claim total equivalence between all believers and specifically called and ordered ministers.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP015\"]},{\"id\":\"IDEA048\",\"summary\":\"There was no prior prophecy about Melchizedek before he met Abraham, yet Abraham recognized his higher spiritual authority.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP016\"]},{\"id\":\"IDEA049\",\"summary\":\"The witness of the Spirit reveals spiritual authority regardless of a person's age or outward stature.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP016\"]},{\"id\":\"IDEA050\",\"summary\":\"Believers must remain vigilant in recognizing higher spiritual presence, since wrong attitude causes people to miss what God has placed before them.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP016\"]},{\"id\":\"IDEA051\",\"summary\":\"Malachi warns priests that failing to honor God's name and take his commandment to heart results in a curse upon their blessing.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP017\"]},{\"id\":\"IDEA052\",\"summary\":\"God's covenant with Levi was one of life and peace, given so that Levi would fear and revere God's name.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP017\"]},{\"id\":\"IDEA053\",\"summary\":\"The priest's lips must guard knowledge and the law because he is a messenger of the Lord of hosts.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP017\"]},{\"id\":\"IDEA054\",\"summary\":\"Those who walk closely with God establish principles for living that others receive as authoritative laws.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP017\"]},{\"id\":\"IDEA055\",\"summary\":\"The priesthood pioneered the function of teaching/school, later fulfilled by all nations coming to the house of the Lord to be taught his ways.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP014\",\"TOP017\"]},{\"id\":\"IDEA056\",\"summary\":\"Ministers should not falsely display humility by denying their calling; they are genuinely set apart and should not equate themselves with everyone else.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP018\"]},{\"id\":\"IDEA057\",\"summary\":\"Ministers must commit fully to the demanding, heavy work of ministry without arrogance or false modesty.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP018\"]},{\"id\":\"IDEA058\",\"summary\":\"Paul's charge to Timothy not to let others despise his youth is about inward calling and confidence, not confrontational posturing.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP018\"]},{\"id\":\"IDEA059\",\"summary\":\"When one truly finds God, others will seek that person out; there is no need to strain for recognition or audience.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP019\"]},{\"id\":\"IDEA060\",\"summary\":\"Being genuinely anointed does not guarantee access; the anointing must be intentionally activated through right understanding.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP020\"]},{\"id\":\"IDEA061\",\"summary\":\"God's blessing may already be given; the failure lies in not accessing that blessing, not in God withholding it.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP020\"]},{\"id\":\"IDEA062\",\"summary\":\"Religious activities like fasting, sacrifice, and disciplines are not wrong in themselves, but become harmful when they replace God as the center of devotion.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP020\",\"TOP024\"]},{\"id\":\"IDEA063\",\"summary\":\"The heart attitude behind an offering matters more to God than the offering itself; unwilling or joyless giving can nullify the sacrifice.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP021\"]},{\"id\":\"IDEA064\",\"summary\":\"If sacrifice becomes more important than God himself, the sacrifice is effectively cancelled by the giver's own misplaced priority.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP021\"]},{\"id\":\"IDEA065\",\"summary\":\"Outward worship expressions like lifting hands can become empty performance rather than genuine seeking of God's presence.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP022\"]},{\"id\":\"IDEA066\",\"summary\":\"When a person genuinely encounters God, there is spontaneous liberty and loss of self-consciousness, without needing instruction to respond.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP022\"]},{\"id\":\"IDEA067\",\"summary\":\"Worship is fundamentally fellowship with God, and God instituted it so that he would be the center of attention.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP022\"]},{\"id\":\"IDEA068\",\"summary\":\"Engrossed reading of Scripture can itself become an act of deep communion and worship with God.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP022\"]},{\"id\":\"IDEA069\",\"summary\":\"Jesus taught a simple reception of power: receiving the Holy Spirit, not elaborate human requirements like prolonged fasting or suffering.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP023\"]},{\"id\":\"IDEA070\",\"summary\":\"Teachings that require extended fasting or suffering to 'release power' add conditions Jesus never stated and are therefore not from God.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP023\"]},{\"id\":\"IDEA071\",\"summary\":\"Adding anything to God's word that he did not say is an insult to God and prevents the added teaching from working.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP023\"]},{\"id\":\"IDEA072\",\"summary\":\"Ministers who teach painful personal formulas for anointing produce no true successors, showing the method did not originate from God.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP023\"]},{\"id\":\"IDEA073\",\"summary\":\"Anything practiced repeatedly can be mastered, but people who want power without practice remain stuck seeking one magic experience.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP023\"]},{\"id\":\"IDEA074\",\"summary\":\"Fasting brings the body under subjection and cultivates temperance, offering real spiritual profit without changing God's disposition.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP024\"]},{\"id\":\"IDEA075\",\"summary\":\"Scripture (Isaiah 58) affirms fasting yields personal profit, not a change in God, and there is never a divine condition attached to blessing.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP024\"]},{\"id\":\"IDEA076\",\"summary\":\"The disciples' inability to cast out a demon led to a situational teaching about fasting and prayer that should not be turned into rigid universal doctrine.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP024\"]},{\"id\":\"IDEA077\",\"summary\":\"Naming or engaging demons at length is not the pattern of deliverance; Jesus's inquiry of the demon's name fulfilled a specific prophecy, not a general method.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP024\"]},{\"id\":\"IDEA078\",\"summary\":\"Jesus's prayer in John 17 shows his life and ministry were entirely dependent on union with the Father, and he prays that believers share that same oneness.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP025\"]},{\"id\":\"IDEA079\",\"summary\":\"Jesus's prayer for unity is not primarily about institutional church unity but about believers' union with God himself.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP025\"]},{\"id\":\"IDEA080\",\"summary\":\"Jesus prays not to remove believers from the world but to preserve them from evil while they remain in it.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP026\"]},{\"id\":\"IDEA081\",\"summary\":\"Jesus did not commission the church primarily to prepare for his second coming, but to be faithfully doing his work when he returns.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP027\"]},{\"id\":\"IDEA082\",\"summary\":\"Believers should not preoccupy themselves with timing of the end but focus on serving God and maintaining relationship with him.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP027\"]},{\"id\":\"IDEA083\",\"summary\":\"Whether Jesus raptures the church or returns a second time is not the believer's concern; the priority is a right relationship with God.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP027\"]},{\"id\":\"IDEA084\",\"summary\":\"Excessive emphasis on rapture preaching produces a lethargic, passive Christianity rather than active discipleship.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP027\"]},{\"id\":\"IDEA085\",\"summary\":\"Peter addressed scoffers who thought God's promises were delayed, teaching that a day and a thousand years are the same to God, who is not under human pressure of time.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP027\"]},{\"id\":\"IDEA086\",\"summary\":\"Two thousand years later the church still behaves with the same impatience Peter rebuked, showing little has changed in attitude toward Christ's return.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP027\"]},{\"id\":\"IDEA087\",\"summary\":\"Preoccupation with preaching the rapture or second coming does not impress anyone; the real mandate is to preach Christ, who is present now.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP027\"]},{\"id\":\"IDEA088\",\"summary\":\"Jesus comes specifically for those who are already in him, reinforcing that present union with Christ matters more than future timing.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP027\",\"TOP028\"]},{\"id\":\"IDEA089\",\"summary\":\"Jesus sanctifies himself so that believers may be sanctified by the truth, which is God's word.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP026\"]},{\"id\":\"IDEA090\",\"summary\":\"Jesus prays not only for his immediate disciples but for all who will believe through their word, across all generations.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP026\",\"TOP028\"]},{\"id\":\"IDEA091\",\"summary\":\"The unity Jesus prays for is the same unity of essence and indwelling that exists between Father and Son, extended into believers.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP028\"]},{\"id\":\"IDEA092\",\"summary\":\"For the world to believe the Father sent Jesus, believers must be perfectly one, and this unity itself becomes evidence of God's love for them.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP028\",\"TOP029\"]},{\"id\":\"IDEA093\",\"summary\":\"Believers have been given the same glory the Father gave Jesus, though what that glory practically means requires reflection rather than assumption.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP029\"]},{\"id\":\"IDEA094\",\"summary\":\"Rather than answering what glory is, the more honest question each person must ask is what glory personally means for them and whether it is present in their life.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP029\"]},{\"id\":\"IDEA095\",\"summary\":\"When believers claim to 'receive by faith,' it often reveals they have not yet experienced the reality, only a hoped-for, unseen possession requiring faith to perceive.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP029\"]},{\"id\":\"IDEA096\",\"summary\":\"Believers must be honest and factual about where they truly stand in their walk with God rather than making exaggerated faith declarations disconnected from reality.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP029\"]},{\"id\":\"IDEA097\",\"summary\":\"There is a stage of spiritual infancy or ignorance that God overlooks, but growth brings a time when greater responsibility and commandment comes upon a believer's life.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP029\"]},{\"id\":\"IDEA098\",\"summary\":\"Discovering that the devil and death have already been destroyed radically changes the boldness and content of a believer's prayer.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP030\"]},{\"id\":\"IDEA099\",\"summary\":\"Confidence that comes with spiritual knowledge means a demon or threatening power no longer causes alarm because its defeat is already known.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP030\"]},{\"id\":\"IDEA100\",\"summary\":\"A minister carries an anointing/mantle that a local community may specifically need, and their felt urgency for a particular figure's presence reflects a spiritual reality, not mere superstition.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP030\"]},{\"id\":\"IDEA101\",\"summary\":\"Like Jesus who wept and grieved over people's unresponsiveness, believers may see people making choices that grieve them, yet must recognize others are not always at their own spiritual level.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP031\"]},{\"id\":\"IDEA102\",\"summary\":\"Decisions or statements made in a meeting at a certain spiritual level can adversely affect people who have not reached that same level, requiring sensitivity.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP031\"]},{\"id\":\"IDEA103\",\"summary\":\"Ministry must sometimes be adapted to context and audience without abandoning underlying conviction, similar to Paul becoming all things to all people without violating the law of Christ.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP031\"]},{\"id\":\"IDEA104\",\"summary\":\"One must know where people are spiritually in order to minister appropriately, balancing bold authority with pastoral awareness.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP031\"]},{\"id\":\"IDEA105\",\"summary\":\"True spiritual authority and speech flow from the overflow of one's communion with the Father, not merely rehearsed formulas.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP028\"]},{\"id\":\"IDEA106\",\"summary\":\"Reciting scriptural phrases in prayer without genuine union or presence-consciousness is not true prayer and produces no manifestation.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP028\"]},{\"id\":\"IDEA107\",\"summary\":\"The Holy Spirit does not need to be summoned from a distance since he is already indwelling the believer as his temple and house.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP034\"]},{\"id\":\"IDEA108\",\"summary\":\"When believers live in conscious union and carry God's presence, tribal, ethnic, and denominational divisions dissolve.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP028\"]},{\"id\":\"IDEA109\",\"summary\":\"The church has over-magnified spiritual gifts while neglecting relationship with the Holy Spirit himself as a person to be known.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP028\"]},{\"id\":\"IDEA110\",\"summary\":\"Instead of giving isolated gifts like a word of knowledge or wisdom, the Holy Spirit can give the believer the abiding spirit of knowledge or wisdom itself.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP028\"]},{\"id\":\"IDEA111\",\"summary\":\"The Holy Spirit's activity is described as dependent on human cooperation, needing the believer as a vessel through which he can move.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP028\"]},{\"id\":\"IDEA112\",\"summary\":\"God redirects invitation from those who were sought and did not respond to those previously excluded, so former sinners now become pillars of the church.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP028\"]},{\"id\":\"IDEA113\",\"summary\":\"Children born into the church inherit the kingdom of God directly and are described as holy seed needing no further qualification.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP028\"]},{\"id\":\"IDEA114\",\"summary\":\"John 17:23 stating God loves believers exactly as he loves Jesus is presented as one of the greatest possible preaching texts on divine love.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP032\"]},{\"id\":\"IDEA115\",\"summary\":\"Preachers often illegitimately attach conditions (holiness, focus, preservation) onto God's declared unconditional love, though the text states no such condition.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP032\"]},{\"id\":\"IDEA116\",\"summary\":\"Daring to believe God loves the believer identically to Jesus, despite known weaknesses, is itself what produces the power to live pure, since God's goodness rather than fear of judgment brings transformation.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP032\"]},{\"id\":\"IDEA117\",\"summary\":\"No biblical figure besides Jesus was without sin, yet God used deeply flawed people mightily, showing sinfulness does not disqualify someone from carrying great power.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP033\"]},{\"id\":\"IDEA118\",\"summary\":\"Moses broke the tablets God gave him in anger and was later barred from entering the promised land, illustrating a flawed man still used greatly by God.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP033\"]},{\"id\":\"IDEA119\",\"summary\":\"Elijah became so sick he nearly died from illness according to scripture, yet remained a powerful prophet used by God.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP033\"]},{\"id\":\"IDEA120\",\"summary\":\"Elisha received a double portion of Elijah's anointing yet the first recorded act of that anointing was cursing children who mocked him, resulting in their death by bears.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP033\"]},{\"id\":\"IDEA121\",\"summary\":\"Elisha's power extended to commanding nature, calling things that are not as though they are, causing an axe head (iron) to float, and multiplying bread before Jesus performed similar miracles.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP033\"]},{\"id\":\"IDEA122\",\"summary\":\"John the Baptist, though flawed and lacking what New Testament believers now have, was declared by Jesus to be surpassed in status by every believer under the new covenant.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP033\"]},{\"id\":\"IDEA123\",\"summary\":\"Believers today carry power greater than Deborah and other Old Testament figures and should not let circumstances make them boast in fear rather than authority.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP033\"]},{\"id\":\"IDEA124\",\"summary\":\"Jesus' prayer in John 17 functioned as 'the key of life,' inviting believers into a dimension where creation itself responds to their spoken word, unlike ordinary prayer.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP026\",\"TOP033\"]},{\"id\":\"IDEA125\",\"summary\":\"Confessing simple declarations such as being one with the Father and being God's habitation is the intended practice arising from John 17, not complicated theology.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP026\",\"TOP034\"]},{\"id\":\"IDEA126\",\"summary\":\"Jesus told disciples that though the world would see him no more, they would see him because he lives, and they too would live, referring to a coming spiritual dimension revealed later in chapter 17.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP026\"]},{\"id\":\"IDEA127\",\"summary\":\"In this promised dimension believers will see Jesus but the world will not truly know him, and encounters with angels or supernatural things will feel entirely natural rather than extraordinary.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP026\"]},{\"id\":\"IDEA128\",\"summary\":\"Believers are instructed to intentionally enter conscious fellowship each night, affirming the indwelling Father, Son, and Holy Spirit, and to sustain that fixed focus deliberately.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP034\"]},{\"id\":\"IDEA129\",\"summary\":\"Colossians 3 commands setting one's affections and mind on heavenly things, understood not as suppressing worldly thought entirely but as anchoring focus habitually despite distractions.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP034\"]},{\"id\":\"IDEA130\",\"summary\":\"Consistent practice of setting the mind on heavenly realities will produce distractions at first but eventually leads to sustained awareness, described metaphorically as flying into that place.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP034\"]},{\"id\":\"IDEA131\",\"summary\":\"This teaching is not abstract but is a concrete duty and method following prior 'kingdom words,' meant to be practiced rather than merely known.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP034\"]},{\"id\":\"IDEA132\",\"summary\":\"Believers are citizens of heaven whose spirit is God's seat, meaning the practice is not escaping to heaven but recognizing heaven's reality already dwelling within.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP034\"]},{\"id\":\"IDEA133\",\"summary\":\"Philippians 4:8 gives a further practical instruction for walking in heavenly awareness during ordinary daily activities by dwelling on what is true, honorable, just, pure, and praiseworthy.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP034\"]},{\"id\":\"IDEA134\",\"summary\":\"Believers must select their thoughts, filtering for what is pure, excellent and praiseworthy\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP035\"]},{\"id\":\"IDEA135\",\"summary\":\"The mind, not external circumstance, is the true battlefield of life\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP035\"]},{\"id\":\"IDEA136\",\"summary\":\"Christ, as head of all principality and power, dwells fully in believers making them complete\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP036\"]},{\"id\":\"IDEA137\",\"summary\":\"The principalities and powers believers wrestle against are spiritual, not flesh and blood\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP036\"]},{\"id\":\"IDEA138\",\"summary\":\"It is a doctrinal contradiction that Christ the head is powerful while his body (the church) suffers sickness and poverty\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP036\"]},{\"id\":\"IDEA139\",\"summary\":\"Spiritual experience is individual and personal, not a general universal standard\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP037\"]},{\"id\":\"IDEA140\",\"summary\":\"Admiring a spiritual role model can unconsciously create personal legalistic rules that constrain instead of liberate\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP037\"]},{\"id\":\"IDEA141\",\"summary\":\"God gave no explicit conditions or fasting requirements to reach Him; such demands are self-imposed\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP037\"]},{\"id\":\"IDEA142\",\"summary\":\"Comparing oneself to another's spiritual attainment (e.g. wanting to 'be like' a famous minister) stems from despising oneself and doubting God's personal knowledge of you\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP037\"]},{\"id\":\"IDEA143\",\"summary\":\"Every person is uniquely made by God and placed deliberately, not randomly or inferior to others\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP037\"]},{\"id\":\"IDEA144\",\"summary\":\"God cannot create a law that would break the very person He deeply knows and loves\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP037\"]},{\"id\":\"IDEA145\",\"summary\":\"God intimately knows each person's origin, hardship and context, and enables them to function as Jesus functioned despite it\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP037\"]},{\"id\":\"IDEA146\",\"summary\":\"Jesus' actual teachings (going the extra mile, giving up one's coat) were given under harsh Roman military occupation, demonstrating the doctrine's real cost\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP038\"]},{\"id\":\"IDEA147\",\"summary\":\"Modern believers should not imagine Jesus' era or doctrine as easy; it demanded real submission and suffering\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP038\"]},{\"id\":\"IDEA148\",\"summary\":\"Teachers must be careful with modern illustrations (democracy, freedom of speech) since they can misrepresent biblical realities if scripture isn't checked\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP038\",\"TOP039\"]},{\"id\":\"IDEA149\",\"summary\":\"Historically, church attendance and tithing were enforced by civil/religious authority, unlike today's voluntary participation\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP039\"]},{\"id\":\"IDEA150\",\"summary\":\"Religious and political authorities historically collaborated to execute those who dissented, as with Jesus' death\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP039\"]},{\"id\":\"IDEA151\",\"summary\":\"Testimonies of spiritual breakthrough are often the result of long process (prayer, fasting, years), not instant achievement, akin to a marathon not a sprint\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP037\"]},{\"id\":\"IDEA152\",\"summary\":\"Believers often overestimate the difficulty of drawing near to God, imagining Him as a distant, demanding figure requiring extreme feats\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP037\"]},{\"id\":\"IDEA153\",\"summary\":\"Man is composed of spirit (linked directly to God), soul (personality, mind, memory) and body (covering), forming a tripartite being\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP040\"]},{\"id\":\"IDEA154\",\"summary\":\"The body was never inherently bad; sin, not the body itself, is what corrupted man\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP041\"]},{\"id\":\"IDEA155\",\"summary\":\"Conscience is what identifies and distinguishes the human spirit from other spiritual entities\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP040\"]},{\"id\":\"IDEA156\",\"summary\":\"The soul functions as a communication center or hub that channels information between the eternal spirit and the physical body\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP040\"]},{\"id\":\"IDEA157\",\"summary\":\"The spirit, having come from God, has no age and is eternal, unlike the soul and body\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP040\"]},{\"id\":\"IDEA158\",\"summary\":\"Actions performed in the body immediately affect and permeate the soul, as illustrated by sexual union outside marriage exchanging soul, not just body\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP040\"]},{\"id\":\"IDEA159\",\"summary\":\"After the Fall, man was cut off from the tree of life, and his spirit progressively died and grew distant from God\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP041\"]},{\"id\":\"IDEA160\",\"summary\":\"God's warning to Adam was not instant death but a beginning of dying, a process of spiritual decay\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP041\"]},{\"id\":\"IDEA161\",\"summary\":\"In Christ, believers move from spiritual infancy to sonship through a process of growth, echoing John 1:12's 'power to become'\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP041\"]},{\"id\":\"IDEA162\",\"summary\":\"Corruption (lying, conniving, deceit) comes naturally to fallen man without being taught, reflecting inherited fallen nature\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP041\"]},{\"id\":\"IDEA163\",\"summary\":\"Jesus identified some of his opponents as spiritually fathered by the devil, a liar and murderer from the beginning, whose evil is intrinsic to his nature\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP041\"]},{\"id\":\"IDEA164\",\"summary\":\"Lucifer and the devil are presented as not identical, correcting a common misconception in spiritual warfare teaching\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP041\"]},{\"id\":\"IDEA165\",\"summary\":\"Believers who conflate Lucifer, Satan, and the devil as one entity may be fighting something that doesn't exist, weakening their spiritual warfare\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP041\"]},{\"id\":\"IDEA166\",\"summary\":\"Jesus' distinguishing of heart, soul and mind in the greatest commandment (Matt 22:37) is presented as a hidden key to spiritual breakthrough\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP040\",\"TOP042\"]},{\"id\":\"IDEA167\",\"summary\":\"Paul warns the Corinthians that they, like Eve, risk being deceived away from the simplicity that is in Christ\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP043\"]},{\"id\":\"IDEA168\",\"summary\":\"Paul contrasts his humble in-person presence with his bold written authority, teaching a model of meekness among believers despite spiritual power\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP043\"]},{\"id\":\"IDEA169\",\"summary\":\"Paul states believers do not walk after the flesh even though they live in it, distinguishing bodily existence from fleshly, carnal thinking\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP043\"]},{\"id\":\"IDEA170\",\"summary\":\"Peter's confession that Jesus is the Christ came from divine revelation, not flesh and blood (natural human) knowledge, illustrating a distinct category of 'flesh and blood revelation' still evident today in modern science\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP043\"]},{\"id\":\"IDEA171\",\"summary\":\"Believers must remain informed and relevant to their society and world events rather than being detached from worldly knowledge in the name of spirituality\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP043\"]},{\"id\":\"IDEA172\",\"summary\":\"Spiritual authority is undermined if leaders are irrelevant or ignorant of the practical concerns (like economy) of the people they are sent to serve\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP043\"]},{\"id\":\"IDEA173\",\"summary\":\"Physical needs (like food) must be addressed even after a miraculous spiritual act, as seen when Jesus ordered food given to the resurrected\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP043\"]},{\"id\":\"IDEA174\",\"summary\":\"Prolonged fasting imposed on already weak or sick people can be dangerous rather than spiritually effective; discernment is needed\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP043\"]},{\"id\":\"IDEA175\",\"summary\":\"Spiritual warfare weapons are not natural but are made mighty through God to pull down strongholds\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP043\"]},{\"id\":\"IDEA176\",\"summary\":\"The real combat of the believer is not physical but takes place in the realm of reasonings/knowledge that oppose the knowledge of God.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP044\"]},{\"id\":\"IDEA177\",\"summary\":\"Believers are called to take every thought captive, repeated insistently as a discipline against enemy infiltration.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP044\"]},{\"id\":\"IDEA178\",\"summary\":\"If the enemy penetrates the barrier of the mind, extended prayer effort (even 365 days) will not fix what was already breached.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP044\"]},{\"id\":\"IDEA179\",\"summary\":\"Praying all night in tongues without discernment can become mere fatigue-inducing 'bavardage' rather than purposeful prayer.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP045\"]},{\"id\":\"IDEA180\",\"summary\":\"One of the primary benefits of praying in tongues is to cool/refresh oneself, grounded in Isaiah 28 and 1 Corinthians 14.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP045\"]},{\"id\":\"IDEA181\",\"summary\":\"When fatigued, a short five-minute season of praying in tongues brings refreshment rather than exhausting all-night sessions.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP045\"]},{\"id\":\"IDEA182\",\"summary\":\"Tongues fail to produce results when believers do not practice what Scripture actually instructs about them.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP045\"]},{\"id\":\"IDEA183\",\"summary\":\"Love for God must engage heart, soul, and mind together, not merely emotion.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP046\"]},{\"id\":\"IDEA184\",\"summary\":\"A personal revelation: God told the speaker directly that he was 'tired' and that continuing without correction would lead him to preach a wrong doctrine.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP045\"]},{\"id\":\"IDEA185\",\"summary\":\"God was not absent or waiting somewhere else to hear prayer — He is present, and the issue is whether the prayer touches/reaches Him ('the ceiling').\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP045\"]},{\"id\":\"IDEA186\",\"summary\":\"Sincerity alone was not enough; the previous manner of praying was based on ignorance, not correct knowledge.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP045\"]},{\"id\":\"IDEA187\",\"summary\":\"The soul, not the spirit, is the place a Christian must develop, since the spirit is already complete.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP048\"]},{\"id\":\"IDEA188\",\"summary\":\"Presenting the body as a living sacrifice is an acceptable service to God, achieved through the renewing of the mind (Romans 12:2).\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP046\"]},{\"id\":\"IDEA189\",\"summary\":\"The brain/head is an instrument ('engine, motor') given by God that can serve powerfully or produce a bad result depending on use.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP046\"]},{\"id\":\"IDEA190\",\"summary\":\"Renewing the mind is not accomplished by force, power, or by spirit alone, but by intentional engagement of thought and imagination.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP046\"]},{\"id\":\"IDEA191\",\"summary\":\"Imagination is a God-given faculty present even in the uneducated; the real problem is failing to use or direct it rightly.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP047\"]},{\"id\":\"IDEA192\",\"summary\":\"Left undirected, the imagination fills with negative or trivial images (accidents, being slapped) instead of godly images.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP047\"]},{\"id\":\"IDEA193\",\"summary\":\"There exists a hidden power called imagination that the church has often failed to teach, unlike other traditions.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP047\"]},{\"id\":\"IDEA194\",\"summary\":\"Jesus modeled imagination under the Spirit's leading, being led into the desert where the devil tested Him with visualized temptation ('jump from the temple').\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP047\"]},{\"id\":\"IDEA195\",\"summary\":\"Even while praying in tongues, the imagination can wander to unrelated, worldly concerns (like a dean withholding grades), leaving the mind unproductive/sterile.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP047\"]},{\"id\":\"IDEA196\",\"summary\":\"The remedy is to actively bring Jesus into one's thought and keep the mind fixed there, making the mind productive instead of sterile.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP046\",\"TOP047\"]},{\"id\":\"IDEA197\",\"summary\":\"The creation account (earth void, formless, Spirit hovering) mirrors the human mind's potential to be filled and made productive by the Spirit.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP047\"]},{\"id\":\"IDEA198\",\"summary\":\"Other world traditions (Hindu, Chinese, Shinto, Buddhist) practice and teach transcendental meditation and imaginative techniques to businessmen and national leaders, while stewards of God's mysteries remain ignorant of these principles.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP047\"]},{\"id\":\"IDEA199\",\"summary\":\"What the church calls mere 'positive thinking' is misunderstood; true faith is not positive thinking but is grounded in what one hopes for.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP047\"]},{\"id\":\"IDEA200\",\"summary\":\"Believers are instructed to let the mind that was in Christ be in them also, connecting mind to the eternal spirit for lasting fellowship.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP048\"]},{\"id\":\"IDEA201\",\"summary\":\"The Father seeks to influence the mind, not the body, because the spirit is already connected to Him but the mind is disjointed.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP048\"]},{\"id\":\"IDEA202\",\"summary\":\"When mind connects to spirit, communion becomes eternal and one can speak/understand things that are supernatural to others but natural to the believer.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP048\"]},{\"id\":\"IDEA203\",\"summary\":\"When kneeling to pray, one should imagine Jesus directly rather than merely speaking words absentmindedly.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP047\",\"TOP048\"]},{\"id\":\"IDEA204\",\"summary\":\"Paul testified he did not hinder the believers, despite having had revelations in the third heaven he was told not to utter, implying deep spiritual reserves beyond ordinary prayer requests.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP048\"]},{\"id\":\"IDEA205\",\"summary\":\"If the mind is elsewhere during prayer (e.g., thinking of malaria or doctors) while only the body speaks, the spirit remains 'in prison' unable to cross into agreement with the soul.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP048\"]},{\"id\":\"IDEA206\",\"summary\":\"Repeating 'amen' outwardly does not guarantee inward spiritual engagement if the mind was never present during the prayer.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP048\"]},{\"id\":\"IDEA207\",\"summary\":\"Ordinary, unremarkable behavior draws no attention; only those who act in extraordinary (abnormal) faith draw attention and impact.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP049\"]},{\"id\":\"IDEA208\",\"summary\":\"God explicitly instructed the speaker to pray short prayers rather than long ones when seeking miracles, modeled after Jesus.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP050\"]},{\"id\":\"IDEA209\",\"summary\":\"Acting in faith often means proceeding without knowing the outcome — only the beginning step of obedience is required.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP049\"]},{\"id\":\"IDEA210\",\"summary\":\"Doubt ('what if it doesn't work') can assail the mind even during a faith act, but the minister proceeds anyway, closing his eyes to avoid seeing possible disappointment.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP049\"]},{\"id\":\"IDEA211\",\"summary\":\"A believer must never preach a doctrine he does not personally know or has not tested; humility about limited knowledge is emphasized alongside confidence in what is known.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP050\"]},{\"id\":\"IDEA212\",\"summary\":\"God's disposition has always been to pour His Spirit and blessing on the thirsty and their descendants, as shown in Isaiah 44:3, fulfilled in Jesus' beatitude on hungering and thirsting for righteousness.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP045\"]},{\"id\":\"IDEA213\",\"summary\":\"Spiritual hunger is the anchor condition for receiving more of God; God is no respecter of persons and desires to be discovered by all who hunger.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP045\"]},{\"id\":\"IDEA214\",\"summary\":\"The stripes/wounds of Jesus are described as a torn veil giving access inward to God and outward expression through the believer's hands.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP051\"]},{\"id\":\"IDEA215\",\"summary\":\"Testimony: the speaker's hands were perceived as glorious open doors revealing the color of the sky/heaven, connecting to teaching that hands are doorways through which the Holy Spirit is released outward.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP051\"]},{\"id\":\"IDEA216\",\"summary\":\"A separate testimony described a vision of white dust in the hands with an opening/door colored like the sky, reinforcing the teaching about hands as spiritual doorways.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP051\"]},{\"id\":\"IDEA217\",\"summary\":\"If God can forgive sins, he can also heal diseases; believers should keep faith simple.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP052\"]},{\"id\":\"IDEA218\",\"summary\":\"A holy man lacks nothing; heaven and earth agree with him and darkness cannot approach.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP052\"]},{\"id\":\"IDEA219\",\"summary\":\"An unclean soul is clouded and repels the presence associated with holiness.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP052\"]},{\"id\":\"IDEA220\",\"summary\":\"As one grows spiritually, the gift of the Holy Ghost operates without struggle or effort.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP053\"]},{\"id\":\"IDEA221\",\"summary\":\"One can perceive another's future by spiritual insight, as if watching a television of their life.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP053\"]},{\"id\":\"IDEA222\",\"summary\":\"Living out of spiritual overflow becomes a way of life once in communion with the Spirit.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP053\"]},{\"id\":\"IDEA223\",\"summary\":\"Staying in communion with the spirit of knowledge and wisdom guarantees never lacking words of knowledge or wisdom.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP053\"]},{\"id\":\"IDEA224\",\"summary\":\"Believers should not fear death since there is no set time and going to heaven should bring joy, not fear.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP054\"]},{\"id\":\"IDEA225\",\"summary\":\"Living is abused when death is feared; fear of death is the devil's old strategy.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP054\"]},{\"id\":\"IDEA226\",\"summary\":\"Death as gain must become one's lived reality, not merely an intellectual idea.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP054\"]},{\"id\":\"IDEA227\",\"summary\":\"The program brought clarity and blessing, shifting focus from praying for others toward personal communion with God.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP055\"]},{\"id\":\"IDEA228\",\"summary\":\"Recognizing Jesus as an indwelling light transformed understanding of prayer orientation and worship.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP055\"]},{\"id\":\"IDEA229\",\"summary\":\"Teaching revolutionized the way one worships and perceives God, leading to deep, wordless worship.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP055\"]},{\"id\":\"IDEA230\",\"summary\":\"True prayer and presence of God renew strength rather than causing fatigue.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP055\"]},{\"id\":\"IDEA231\",\"summary\":\"Believers today have not yet fully understood or exploited the grace given to them.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP056\"]},{\"id\":\"IDEA232\",\"summary\":\"The teaching helps believers grasp that they have barely begun to access the grace already given.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP055\",\"TOP056\"]},{\"id\":\"IDEA233\",\"summary\":\"Grace and truth came through Jesus, while the law came through Moses; grace exceeds imagination.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP056\"]},{\"id\":\"IDEA234\",\"summary\":\"Truth means manifestation or reality of what grace makes possible; the word became flesh.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP056\"]},{\"id\":\"IDEA235\",\"summary\":\"Moses experienced only a temporary, partial encounter with God's presence, never seeing His face.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP056\"]},{\"id\":\"IDEA236\",\"summary\":\"God now lives inside believers rather than being seen from outside as with Moses.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP056\"]},{\"id\":\"IDEA237\",\"summary\":\"Praying in tongues brings peace, described as the Spirit of God praying through the believer.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP057\"]},{\"id\":\"IDEA238\",\"summary\":\"Doing spiritual practices sincerely but incorrectly still needs correction to reach true rest.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP057\"]},{\"id\":\"IDEA239\",\"summary\":\"The mind wanders during meditation unless trained to compartmentalize daily concerns before focusing on God.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP057\"]},{\"id\":\"IDEA240\",\"summary\":\"Training the mind to focus on God before sleep prevents bad dreams and allows recalling meaningful dreams intentionally.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP057\"]},{\"id\":\"IDEA241\",\"summary\":\"Excessive worry about others' problems does not help them and only adds to one's own burden.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP057\"]},{\"id\":\"IDEA242\",\"summary\":\"Spiritual life must be practiced gradually like a child learning life skills, growing from small beginnings.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP057\"]},{\"id\":\"IDEA243\",\"summary\":\"Healing was already accomplished through Christ's stripes; believers only need to declare and believe it, not seek new healing.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP058\"]},{\"id\":\"IDEA244\",\"summary\":\"Understanding scripture is progressive and dimensional; revisiting the same text later reveals more depth.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP056\",\"TOP058\"]},{\"id\":\"IDEA245\",\"summary\":\"Spiritual life requires proper conscious adaptation to different dimensions, illustrated by breathing on land versus underwater.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP057\"]},{\"id\":\"IDEA246\",\"summary\":\"The parable of the sower can represent stages of growth within a single person rather than different people.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP059\"]},{\"id\":\"IDEA247\",\"summary\":\"A new believer's understanding grows progressively through repeated encounters with the word, moving from no soil to fruitful soil.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP059\"]},{\"id\":\"IDEA248\",\"summary\":\"The good shepherd's task is to keep sowing the seed patiently despite repetition or lack of visible results.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP059\"]},{\"id\":\"IDEA249\",\"summary\":\"Persistent preaching and prayer over years can eventually reach and transform even one seemingly unlikely person into a powerful minister.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP059\"]},{\"id\":\"IDEA250\",\"summary\":\"Fear of death observed even among believers reveals it is not yet fully embraced as gain.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP054\"]},{\"id\":\"IDEA251\",\"summary\":\"If a believer does not practice Christ as life, facing death becomes heavy and difficult.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP054\",\"TOP056\"]},{\"id\":\"IDEA252\",\"summary\":\"Some believers foreknow the exact hour of their death and depart peacefully.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP054\"]},{\"id\":\"IDEA253\",\"summary\":\"Christianity is not lived by chance; one must deliberately practice and set the mind on faith daily.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP060\"]},{\"id\":\"IDEA254\",\"summary\":\"An aura of protection surrounds someone who practices life intentionally, preventing certain accidents.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP060\",\"TOP063\"]},{\"id\":\"IDEA255\",\"summary\":\"One must be intentional even in speech, correcting wrong words immediately, even during prayer.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP060\",\"TOP061\"]},{\"id\":\"IDEA256\",\"summary\":\"A popular pastor's claim that God made poor people, drawn from Proverbs, is being critically examined and disputed.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP062\"]},{\"id\":\"IDEA257\",\"summary\":\"God blesses but does not make anyone poor; poverty results from choices, not divine design.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP062\"]},{\"id\":\"IDEA258\",\"summary\":\"Some hardships in life come from bad choices, and wrong choices bring a bad harvest.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP062\"]},{\"id\":\"IDEA259\",\"summary\":\"Proverbs 19:1 is read closely to argue that integrity, not poverty itself, is the point of the text, challenging a simplistic 'poor=blessed' reading.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP062\"]},{\"id\":\"IDEA260\",\"summary\":\"Lack of knowledge and hasty action lead to sin or failure.\",\"kind\":\"\",\"importance\":\"minor\",\"topic_refs\":[\"TOP062\"]},{\"id\":\"IDEA261\",\"summary\":\"A person's perverse ways and fretting heart against God reflect human folly, framed as generational/ancestral patterning versus lineage in God.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP062\"]},{\"id\":\"IDEA262\",\"summary\":\"Wealth attracts many friends while poverty drives them away, according to multiple Bible translations of the same verse.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP062\"]},{\"id\":\"IDEA263\",\"summary\":\"God is the maker of everyone without exception, but individual choices—sometimes made before one's birth by parents/ancestors—shape trajectories of poverty or wealth.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP062\"]},{\"id\":\"IDEA264\",\"summary\":\"Some parents are simply lazy and justify their poor condition by blaming ancestry rather than taking responsibility.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP062\"]},{\"id\":\"IDEA265\",\"summary\":\"One should not blame God for consequences of one's own choices; God did not make anyone the way that leads to hardship.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP062\"]},{\"id\":\"IDEA266\",\"summary\":\"Scripture's warning passages (the 'B part') must be balanced with promises of life in Christ (the 'A part'); living in Christ contradicts living under a curse of death.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP060\",\"TOP062\"]},{\"id\":\"IDEA267\",\"summary\":\"Training oneself spiritually (e.g., to sleep peacefully while traveling) reflects deep trust that death has no permission to take him.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP060\",\"TOP063\"]},{\"id\":\"IDEA268\",\"summary\":\"Christianity is real and should be judged by faithful practitioners, not by those who fail to practice it; Paul offered himself as an imitator of Christ as the standard.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP060\"]},{\"id\":\"IDEA269\",\"summary\":\"A prophetic word given to a family that their daughter would not die was tested when she died and was buried, yet the minister persisted in faith that God's word cannot fail.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP064\"]},{\"id\":\"IDEA270\",\"summary\":\"News of unusual events travels without conventional media because only abnormal acts draw public attention.\",\"kind\":\"\",\"importance\":\"minor\",\"topic_refs\":[\"TOP064\"]},{\"id\":\"IDEA271\",\"summary\":\"The devil taunted the minister that his ministry was over in front of the crowd at the grave, but he held to God's word that the girl would live.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP063\",\"TOP064\"]},{\"id\":\"IDEA272\",\"summary\":\"Prayers for miracles should be short and confident, following the model of Jesus, rather than long pleading prayers.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP064\"]},{\"id\":\"IDEA273\",\"summary\":\"Miraculous acts function as 'activation' of something God has already ordained, similar to Israel's shout at Jericho releasing what angels were already prepared to do.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP064\"]},{\"id\":\"IDEA274\",\"summary\":\"Believers are taught to speak healing directly to sickness/the person, not converse with or address the demon/sickness itself.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP064\"]},{\"id\":\"IDEA275\",\"summary\":\"Believing God's spoken word, even under fear of being wrong or causing harm to someone's faith, is central to operating in resurrection power.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP060\",\"TOP064\"]},{\"id\":\"IDEA276\",\"summary\":\"A young man who died in church of asthma was raised despite social pressure and rumors about betrayal to a foreign religion.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP064\"]},{\"id\":\"IDEA277\",\"summary\":\"Not every prayer for healing or resurrection succeeds; a pregnant woman with food poisoning died despite prayer, illustrating that outcomes are God's responsibility, not the minister's failure.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP064\",\"TOP065\"]},{\"id\":\"IDEA278\",\"summary\":\"A minister's role is simply to be an available, obedient vessel; if healing doesn't happen it is not the minister's fault, God does his own part.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP065\"]},{\"id\":\"IDEA279\",\"summary\":\"Ministers should avoid making healing or miracles about their own performance or reputation; the results belong to God and to the church of Jesus Christ generally.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP065\"]},{\"id\":\"IDEA280\",\"summary\":\"A robbed minister's stolen, marked-up old Bible ended up years later in the hands of the very thief who became a powerful healer, illustrating unexpected redemptive providence.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP066\"]},{\"id\":\"IDEA281\",\"summary\":\"Financial loss or being taken advantage of should be treated as a seed/divine investment rather than a cause for bitterness.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP062\",\"TOP066\"]},{\"id\":\"IDEA282\",\"summary\":\"What is meant for evil (theft, betrayal, harm) can be converted by God into promotion or blessing, echoing 'out of the eater came something sweet' from Samson.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP062\",\"TOP066\"]},{\"id\":\"IDEA283\",\"summary\":\"A word of prophetic encouragement is declared: exponential growth in ministry is already activated and coming soon for listeners.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP066\"]},{\"id\":\"IDEA284\",\"summary\":\"The speaker envisions a transformed Cameroon and nation where sickness is banished from the church and citizens gain international respect without needing visas.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP067\"]},{\"id\":\"IDEA285\",\"summary\":\"The speaker saw a vision of angels dancing over the nation, which drives his conviction about the nation's coming transformation.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP067\"]},{\"id\":\"IDEA286\",\"summary\":\"Believers are urged to hold hands with someone nearby and pray earnestly together to release the promised move of God.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP060\",\"TOP067\"]}],\"examples\":[{\"id\":\"EX001\",\"kind\":\"anecdote\",\"summary\":\"Speaker recounts eating with his daughter, who was surprised he avoided meat, contrasting inherited cultural food priorities across generations.\",\"supports_idea_refs\":[\"IDEA003\"]},{\"id\":\"EX002\",\"kind\":\"anecdote\",\"summary\":\"Grandmother's insistence on fresh daily-cooked soup in clay pots, refusing iron or aluminum pots, illustrating intuitive wisdom.\",\"supports_idea_refs\":[\"IDEA006\"]},{\"id\":\"EX003\",\"kind\":\"case_study\",\"summary\":\"Story of missionaries reaching a remote plateau, being given land by local authorities via a stone-throwing ritual, and villagers bringing snakes and scorpions unharmed after the gospel was preached.\",\"supports_idea_refs\":[\"IDEA030\"]},{\"id\":\"EX004\",\"kind\":\"case_study\",\"summary\":\"Group live reading of Hebrews 2 in both English and French, comparing translation nuances of key terms like 'néanti' and 'célébrer'.\",\"supports_idea_refs\":[\"IDEA033\",\"IDEA035\"]},{\"id\":\"EX005\",\"kind\":\"illustration\",\"summary\":\"Comparison of pastors globally acknowledging less demonic intensity outside Africa versus African believers emphasizing terrifying local demons.\",\"supports_idea_refs\":[\"IDEA034\"]},{\"id\":\"EX006\",\"kind\":\"case_study\",\"summary\":\"Melchizedek meeting Abraham with no prior prophecy, yet Abraham inwardly recognized him as different and submitted.\",\"supports_idea_refs\":[\"IDEA045\"]},{\"id\":\"EX007\",\"kind\":\"analogy\",\"summary\":\"Analogy of women crossing seven mountains and seven valleys to find a good hairdresser, illustrating how people seek out genuine spiritual gifting.\",\"supports_idea_refs\":[\"IDEA059\"]},{\"id\":\"EX008\",\"kind\":\"anecdote\",\"summary\":\"A struggling man of God sent by God to sit with an elder minister, who fed him and ignored his need for a direct 'word' until he realized God's simple presence was the answer.\",\"supports_idea_refs\":[\"IDEA062\",\"IDEA072\"]},{\"id\":\"EX009\",\"kind\":\"testimony\",\"summary\":\"Speaker's personal experience in November 1986 being 'swallowed' into Isaiah 42 during Scripture reading, later dismissed casually by a prophet.\",\"supports_idea_refs\":[\"IDEA066\"]},{\"id\":\"EX010\",\"kind\":\"testimony\",\"summary\":\"Pentecostal upbringing teaching that gospel without power is meaningless, requiring 21 days of fasting to 'release atomic power'.\",\"supports_idea_refs\":[\"IDEA070\"]},{\"id\":\"EX011\",\"kind\":\"case_study\",\"summary\":\"The Legion demon narrative and Jesus's question 'What is your name?' tied to the prophecy in Genesis 49 about a legion attacking but being prevailed over.\",\"supports_idea_refs\":[\"IDEA076\"]},{\"id\":\"EX012\",\"kind\":\"illustration\",\"summary\":\"Hypothetical demon named 'Gombo' or 'Okro' engaged in prolonged conversation, cited as a caution against turning demon-naming into ritual practice.\",\"supports_idea_refs\":[\"IDEA076\"]},{\"id\":\"EX013\",\"kind\":\"testimony\",\"summary\":\"Story of the speaker's ministry trip to Nigeria doing 'village deliverance,' where villagers begged him to destroy idols because his higher anointing was needed to confront communal spirits without local backlash.\",\"supports_idea_refs\":[\"IDEA100\"]},{\"id\":\"EX014\",\"kind\":\"illustration\",\"summary\":\"Jesus weeping over Jerusalem and lamenting an unresponsive generation who neither danced to the flute nor mourned at the dirge, illustrating grief over people's spiritual indifference.\",\"supports_idea_refs\":[\"IDEA101\"]},{\"id\":\"EX015\",\"kind\":\"anecdote\",\"summary\":\"Anecdote of arriving in a village where before finishing the count of three, chiefs and townspeople already carried out the command against demonic influence, showing feared spiritual authority.\",\"supports_idea_refs\":[\"IDEA100\"]},{\"id\":\"EX016\",\"kind\":\"illustration\",\"summary\":\"Someone praying with borrowed scriptural phrases like 'let your enemies be scattered' merely by rote, illustrating prayer without real conscious union or presence, described as producing no result.\",\"supports_idea_refs\":[\"IDEA106\"]},{\"id\":\"EX017\",\"kind\":\"case_study\",\"summary\":\"The image of Moses smashing the stone tablets in anger and later being barred from the Promised Land as a concrete case of a flawed leader still greatly used by God.\",\"supports_idea_refs\":[\"IDEA164\"]},{\"id\":\"EX018\",\"kind\":\"case_study\",\"summary\":\"Elisha cursing mocking children resulting in bears mauling them, presented as the disturbing first fruit of his double-portion anointing.\",\"supports_idea_refs\":[\"IDEA161\"]},{\"id\":\"EX019\",\"kind\":\"case_study\",\"summary\":\"Elisha making an iron axe head float and multiplying bread, cited as evidence of extraordinary supernatural power carried despite personal flaws.\",\"supports_idea_refs\":[\"IDEA161\"]},{\"id\":\"EX020\",\"kind\":\"illustration\",\"summary\":\"The teacher instructs listeners to close their eyes and declare 'I see Jesus on the throne of my heart,' modeling the practice of setting affections above in real time.\",\"supports_idea_refs\":[\"IDEA128\"]},{\"id\":\"EX021\",\"kind\":\"illustration\",\"summary\":\"Illustration of practicing heavenly-mindedness during mundane travel — in a taxi, car, bus, or airplane — applying Philippians 4:8 in ordinary daily movement.\",\"supports_idea_refs\":[\"IDEA133\"]},{\"id\":\"EX022\",\"kind\":\"testimony\",\"summary\":\"A believer admiring 'Mama Sabine' pastor's resilience, dance, and speech style, then unconsciously trying to imitate her mannerisms\",\"supports_idea_refs\":[\"IDEA140\"]},{\"id\":\"EX023\",\"kind\":\"anecdote\",\"summary\":\"Roman soldier compelling a passerby to carry his pack one mile, and Jesus' instruction to go two miles instead\",\"supports_idea_refs\":[\"IDEA146\"]},{\"id\":\"EX024\",\"kind\":\"anecdote\",\"summary\":\"A colonial-era tutor demanding a person's shirt simply by admiring it, and Jesus teaching to give even the suit as well\",\"supports_idea_refs\":[\"IDEA146\"]},{\"id\":\"EX025\",\"kind\":\"testimony\",\"summary\":\"West Virginia pastor calling police on tithe non-payers, and American pastors reporting neighbors playing music on Sundays\",\"supports_idea_refs\":[\"IDEA149\"]},{\"id\":\"EX026\",\"kind\":\"testimony\",\"summary\":\"Switzerland and Germany still directing a portion of citizens' income to registered churches\",\"supports_idea_refs\":[\"IDEA149\"]},{\"id\":\"EX027\",\"kind\":\"illustration\",\"summary\":\"Pig heart and liver transplanted into human recipients who survive, cited as modern flesh-and-blood scientific marvel\",\"supports_idea_refs\":[\"IDEA170\"]},{\"id\":\"EX028\",\"kind\":\"illustration\",\"summary\":\"Paul Biya's speeches always addressing the economy, cited as example of relevance to one's people\",\"supports_idea_refs\":[\"IDEA172\"]},{\"id\":\"EX029\",\"kind\":\"example\",\"summary\":\"Jesus giving instruction to feed Lazarus and Jairus's daughter immediately after their resurrection\",\"supports_idea_refs\":[\"IDEA173\"]},{\"id\":\"EX030\",\"kind\":\"testimony\",\"summary\":\"Speaker describes losing strength, voice broken from intense long prayer, until God told him directly he was tired and needed correction.\",\"supports_idea_refs\":[\"IDEA184\"]},{\"id\":\"EX031\",\"kind\":\"illustration\",\"summary\":\"Imagination compared to seeing a road accident between Douala and Yaoundé with severed limbs as the default negative mental image.\",\"supports_idea_refs\":[\"IDEA192\"]},{\"id\":\"EX032\",\"kind\":\"testimony\",\"summary\":\"Story of a young woman prophesied to live who died and was buried; the minister prayed a short prayer at the opened, decomposed grave and she rose alive, later recognized in a newspaper report.\",\"supports_idea_refs\":[\"IDEA207\",\"IDEA208\",\"IDEA209\"]},{\"id\":\"EX033\",\"kind\":\"testimony\",\"summary\":\"A repeated account (second telling) of the same resurrection testimony involving Reverend John/Brother Samson, digging open the grave and the girl sitting up alive.\",\"supports_idea_refs\":[\"IDEA209\"]},{\"id\":\"EX034\",\"kind\":\"testimony\",\"summary\":\"Mention of a living white preacher in Nigeria still active on the internet, cited as proof these resurrection accounts are not distant history.\",\"supports_idea_refs\":[\"IDEA209\"]},{\"id\":\"EX035\",\"kind\":\"testimony\",\"summary\":\"Testimony of seeing glorious open doors, colored like the sky, in the hands of a singer during a fellowship time within a 21-day fast.\",\"supports_idea_refs\":[\"IDEA215\"]},{\"id\":\"EX036\",\"kind\":\"testimony\",\"summary\":\"A second testimony of white dust and an opening/door in the hands, connected to the earlier teaching on hands as spiritual doorways.\",\"supports_idea_refs\":[\"IDEA216\"]},{\"id\":\"EX037\",\"kind\":\"testimony\",\"summary\":\"A brother testifies that after worshiping silently at home he lost track of time, felt transformed, and wasn't tired the next morning.\",\"supports_idea_refs\":[\"IDEA229\",\"IDEA230\"]},{\"id\":\"EX038\",\"kind\":\"case_study\",\"summary\":\"Manoa's wife encountered an angel who left when she feared to speak, then Manoa called it back through prayer, showing one can recall a divine encounter.\",\"supports_idea_refs\":[\"IDEA240\"]},{\"id\":\"EX039\",\"kind\":\"testimony\",\"summary\":\"A preacher describes reluctance to repeat an old sermon on Luke 18, then receiving fresh revelation after being pushed to return to the text.\",\"supports_idea_refs\":[\"IDEA244\"]},{\"id\":\"EX040\",\"kind\":\"analogy\",\"summary\":\"Breathing on land versus holding breath underwater illustrates adapting to different spiritual 'dimensions' correctly.\",\"supports_idea_refs\":[\"IDEA245\"]},{\"id\":\"EX041\",\"kind\":\"case_study\",\"summary\":\"A man who came to church repeatedly moved from not understanding the message, to being excited but fruitless, to bearing thirty-fold fruit.\",\"supports_idea_refs\":[\"IDEA247\"]},{\"id\":\"EX042\",\"kind\":\"testimony\",\"summary\":\"A young boy named Remy, found playing in dirty clothes, was invited into Bible college and later became a powerful preacher followed by millions.\",\"supports_idea_refs\":[\"IDEA249\"]},{\"id\":\"EX043\",\"kind\":\"anecdote\",\"summary\":\"Speaker describes catching himself mid-prayer and correcting his wording, showing intentional self-monitoring in speech.\",\"supports_idea_refs\":[\"IDEA255\"]},{\"id\":\"EX044\",\"kind\":\"testimony\",\"summary\":\"Mama Jan raised children in extreme poverty, faced jealousy, then chose to break the cycle and vowed no one under her would sleep hungry again.\",\"supports_idea_refs\":[\"IDEA263\"]},{\"id\":\"EX045\",\"kind\":\"anecdote\",\"summary\":\"On a turbulent Ethiopian Airlines flight, the speaker slept through panic among passengers, and afterward youths told him they knew nothing bad would happen because he was calmly sleeping.\",\"supports_idea_refs\":[\"IDEA267\"]},{\"id\":\"EX046\",\"kind\":\"testimony\",\"summary\":\"A girl who was prophesied to live died and was buried; on the third day the minister came, prayed a short prayer, and she awoke alive in the coffin, later reported in Tribune newspaper.\",\"supports_idea_refs\":[\"IDEA269\"]},{\"id\":\"EX047\",\"kind\":\"testimony\",\"summary\":\"A young man reportedly dead of an asthma crisis, with cotton in his nose, was commanded to rise in Jesus' name and awoke, greeting the minister by name, amid rumors he'd sold his soul to America.\",\"supports_idea_refs\":[\"IDEA276\"]},{\"id\":\"EX048\",\"kind\":\"testimony\",\"summary\":\"A pregnant woman with food poisoning died at the hospital despite hours of prayer; the minister told the husband to bury her, illustrating that not every prayer results in resurrection.\",\"supports_idea_refs\":[\"IDEA277\"]},{\"id\":\"EX049\",\"kind\":\"testimony\",\"summary\":\"Apostle Kalita's house was robbed and his old marked-up Bible stolen; years later the same thief-turned-preacher used that very Bible to testify and lead his own congregation without ever recognizing its origin.\",\"supports_idea_refs\":[\"IDEA280\"]}],\"references\":[{\"id\":\"REF001\",\"kind\":\"biblical\",\"raw\":\"1 Timothy 4:8\",\"completeness\":\"complete\"},{\"id\":\"REF002\",\"kind\":\"biblical\",\"raw\":\"Genesis chapter 5\",\"completeness\":\"partial\"},{\"id\":\"REF003\",\"kind\":\"biblical\",\"raw\":\"Romans chapter 14:23\",\"completeness\":\"complete\"},{\"id\":\"REF004\",\"kind\":\"biblical\",\"raw\":\"Romans chapter 10 (about verse 7)\",\"completeness\":\"vague\"},{\"id\":\"REF005\",\"kind\":\"biblical\",\"raw\":\"Romans chapter 12 verses 1-2\",\"completeness\":\"complete\"},{\"id\":\"REF006\",\"kind\":\"biblical\",\"raw\":\"2 Corinthians chapter 5\",\"completeness\":\"partial\"},{\"id\":\"REF007\",\"kind\":\"biblical\",\"raw\":\"Hebrews chapter 2\",\"completeness\":\"complete\"},{\"id\":\"REF008\",\"kind\":\"biblical\",\"raw\":\"1 John chapter 3 verse 8\",\"completeness\":\"complete\"},{\"id\":\"REF009\",\"kind\":\"biblical\",\"raw\":\"John chapter 17\",\"completeness\":\"complete\"},{\"id\":\"REF010\",\"kind\":\"biblical\",\"raw\":\"Isaiah chapter 8\",\"completeness\":\"complete\"},{\"id\":\"REF011\",\"kind\":\"biblical\",\"raw\":\"2 Timothy chapter 1\",\"completeness\":\"partial\"},{\"id\":\"REF012\",\"kind\":\"biblical\",\"raw\":\"Malachi chapter 2\",\"completeness\":\"partial\"},{\"id\":\"REF013\",\"kind\":\"biblical\",\"raw\":\"Isaiah chapter 2\",\"completeness\":\"partial\"},{\"id\":\"REF014\",\"kind\":\"biblical\",\"raw\":\"2 Corinthians chapter 9\",\"completeness\":\"partial\"},{\"id\":\"REF015\",\"kind\":\"biblical\",\"raw\":\"Isaiah 42\",\"completeness\":\"partial\"},{\"id\":\"REF016\",\"kind\":\"biblical\",\"raw\":\"John chapter 17\",\"completeness\":\"partial\"},{\"id\":\"REF017\",\"kind\":\"biblical\",\"raw\":\"Hebrew chapter 10\",\"completeness\":\"partial\"},{\"id\":\"REF018\",\"kind\":\"biblical\",\"raw\":\"Isaiah 58\",\"completeness\":\"partial\"},{\"id\":\"REF019\",\"kind\":\"biblical\",\"raw\":\"Genesis chapter 49\",\"completeness\":\"partial\"},{\"id\":\"REF020\",\"kind\":\"biblical\",\"raw\":\"John 17 (prayer of Jesus quoted extensively, including verses on preservation, sanctification, glory, and unity)\",\"completeness\":\"partial\"},{\"id\":\"REF021\",\"kind\":\"biblical\",\"raw\":\"Second Peter chapter 3\",\"completeness\":\"complete\"},{\"id\":\"REF022\",\"kind\":\"biblical\",\"raw\":\"Acts 17\",\"completeness\":\"complete\"},{\"id\":\"REF023\",\"kind\":\"biblical\",\"raw\":\"Galatians chapter 4\",\"completeness\":\"complete\"},{\"id\":\"REF024\",\"kind\":\"biblical\",\"raw\":\"John chapter 14, verse 19 and surrounding chapters (13-17)\",\"completeness\":\"partial\"},{\"id\":\"REF025\",\"kind\":\"biblical\",\"raw\":\"Story/account of Elijah and Elisha (double portion, bears, floating axe head, multiplying bread)\",\"completeness\":\"partial\"},{\"id\":\"REF026\",\"kind\":\"biblical\",\"raw\":\"Colossians chapter 3 (setting affections/mind on things above)\",\"completeness\":\"complete\"},{\"id\":\"REF027\",\"kind\":\"biblical\",\"raw\":\"Philippians chapter 3 verse 20 and chapter 4 verse 8\",\"completeness\":\"complete\"},{\"id\":\"REF028\",\"kind\":\"biblical\",\"raw\":\"Colossians 2:9-10\",\"completeness\":\"complete\"},{\"id\":\"REF029\",\"kind\":\"biblical\",\"raw\":\"Ephesians 6 (wrestling not against flesh and blood)\",\"completeness\":\"partial\"},{\"id\":\"REF030\",\"kind\":\"biblical\",\"raw\":\"John chapter 1 verse 12\",\"completeness\":\"complete\"},{\"id\":\"REF031\",\"kind\":\"biblical\",\"raw\":\"John chapter 8 (Jesus to the Jews about the devil as father)\",\"completeness\":\"partial\"},{\"id\":\"REF032\",\"kind\":\"biblical\",\"raw\":\"Matthew 22:37 (love the Lord with heart, soul, mind)\",\"completeness\":\"complete\"},{\"id\":\"REF033\",\"kind\":\"biblical\",\"raw\":\"2 Corinthians chapter 11 verse 3 (fear of deception like Eve)\",\"completeness\":\"complete\"},{\"id\":\"REF034\",\"kind\":\"biblical\",\"raw\":\"2 Corinthians chapter 10 (meekness and gentleness of Christ, not walking after the flesh)\",\"completeness\":\"complete\"},{\"id\":\"REF035\",\"kind\":\"biblical\",\"raw\":\"Matthew chapter 16 (Peter's confession of Christ)\",\"completeness\":\"complete\"},{\"id\":\"REF036\",\"kind\":\"biblical\",\"raw\":\"Isaiah 28\",\"completeness\":\"partial\"},{\"id\":\"REF037\",\"kind\":\"biblical\",\"raw\":\"Jude vers 20\",\"completeness\":\"partial\"},{\"id\":\"REF038\",\"kind\":\"biblical\",\"raw\":\"1 Corinthiens 14\",\"completeness\":\"partial\"},{\"id\":\"REF039\",\"kind\":\"biblical\",\"raw\":\"Romain 12 verset 2\",\"completeness\":\"complete\"},{\"id\":\"REF040\",\"kind\":\"biblical\",\"raw\":\"Jesus tempted in the desert by the devil ('jump from the temple')\",\"completeness\":\"partial\"},{\"id\":\"REF041\",\"kind\":\"other\",\"raw\":\"Tribune newspaper account of resurrection testimony\",\"completeness\":\"vague\"},{\"id\":\"REF042\",\"kind\":\"biblical\",\"raw\":\"Isaiah 44 verse 3\",\"completeness\":\"complete\"},{\"id\":\"REF043\",\"kind\":\"biblical\",\"raw\":\"Beatitude on hungering and thirsting for righteousness\",\"completeness\":\"partial\"},{\"id\":\"REF044\",\"kind\":\"biblical\",\"raw\":\"Isaiah 28:11\",\"completeness\":\"complete\"},{\"id\":\"REF045\",\"kind\":\"biblical\",\"raw\":\"John chapter 1\",\"completeness\":\"partial\"},{\"id\":\"REF046\",\"kind\":\"biblical\",\"raw\":\"Exodus chapter 33\",\"completeness\":\"partial\"},{\"id\":\"REF047\",\"kind\":\"biblical\",\"raw\":\"1 Corinthians chapter 14, verse 21\",\"completeness\":\"complete\"},{\"id\":\"REF048\",\"kind\":\"biblical\",\"raw\":\"Ecclesiastes chapter 5, verse 4\",\"completeness\":\"complete\"},{\"id\":\"REF049\",\"kind\":\"biblical\",\"raw\":\"Isaiah chapter 53 verse 5\",\"completeness\":\"complete\"},{\"id\":\"REF050\",\"kind\":\"biblical\",\"raw\":\"1 Corinthians 15\",\"completeness\":\"partial\"},{\"id\":\"REF051\",\"kind\":\"biblical\",\"raw\":\"Philippians chapter 1, verse 21\",\"completeness\":\"complete\"},{\"id\":\"REF052\",\"kind\":\"biblical\",\"raw\":\"Deuteronome 13\",\"completeness\":\"partial\"},{\"id\":\"REF053\",\"kind\":\"biblical\",\"raw\":\"Proverbs chapter 19, verse 1\",\"completeness\":\"complete\"},{\"id\":\"REF054\",\"kind\":\"biblical\",\"raw\":\"Proverbs 19 verse 4 (wealth maketh many friends)\",\"completeness\":\"complete\"},{\"id\":\"REF055\",\"kind\":\"biblical\",\"raw\":\"Deuteronomy 30:19 (choice of life)\",\"completeness\":\"complete\"},{\"id\":\"REF056\",\"kind\":\"biblical\",\"raw\":\"'To live is Christ' (Philippians reference)\",\"completeness\":\"partial\"},{\"id\":\"REF057\",\"kind\":\"biblical\",\"raw\":\"'Be my imitators as I imitate Christ' (Pauline reference)\",\"completeness\":\"partial\"},{\"id\":\"REF058\",\"kind\":\"biblical\",\"raw\":\"Joshua and the fall of Jericho\",\"completeness\":\"complete\"},{\"id\":\"REF059\",\"kind\":\"biblical\",\"raw\":\"Samson riddle: 'out of the eater came something sweet'\",\"completeness\":\"complete\"}],\"uncertainties\":[{\"id\":\"UNC001\",\"kind\":\"uncertain_attribution\",\"summary\":\"Attribution of the teaching on 'positional status' theology is to an unnamed third-party teacher heard 'the other day'; identity and exact content are unclear.\",\"severity\":\"low\"},{\"id\":\"UNC002\",\"kind\":\"interrupted_thought\",\"summary\":\"Several short filler exchanges (e.g., repeated 'they will tell you,' birthday celebration segment) interrupt the doctrinal argument, making the boundary between teaching and event footage unclear.\",\"severity\":\"low\"},{\"id\":\"UNC003\",\"kind\":\"ambiguous_meaning\",\"summary\":\"Speaker's teaching that Adam retained a form of immortality even after sin until 'chronos arrested him' is theologically dense and possibly interrupted; exact doctrinal claim is ambiguous.\",\"severity\":\"medium\"},{\"id\":\"UNC004\",\"kind\":\"incomplete_reference\",\"summary\":\"Segment concerning the president giving land and the stone-throwing ritual is recounted secondhand ('he told me') with unclear identity of 'he' and incomplete narrative details.\",\"severity\":\"low\"},{\"id\":\"UNC005\",\"kind\":\"ambiguous_transcription\",\"summary\":\"French term 'néanti' translated variably as 'destroyed,' 'annulled,' or 'negotiated with' creates disputed meaning in the live discussion of Hebrews 2:14.\",\"severity\":\"medium\"},{\"id\":\"UNC006\",\"kind\":\"ambiguous_meaning\",\"summary\":\"Speaker references 'verse 5' and 'verse 7' of Malachi 2 out of sequence and with overlapping repeated readings, making exact verse mapping unclear.\",\"severity\":\"low\"},{\"id\":\"UNC007\",\"kind\":\"uncertain_attribution\",\"summary\":\"The anecdote about the struggling man of God sent to an elder minister lacks a named source or clear conclusion on whether it is testimony or parable.\",\"severity\":\"low\"},{\"id\":\"UNC008\",\"kind\":\"ambiguous_transcription\",\"summary\":\"Transcript contains a long duplicated stretch of near-identical micro-segments ('you know,' 'you are so in') suggesting transcription artifacts rather than distinct spoken content.\",\"severity\":\"low\"},{\"id\":\"UNC009\",\"kind\":\"uncertain_attribution\",\"summary\":\"The identity and specific teaching of 'one apostle' referenced regarding 'secret of midnight prayer' is not named, leaving attribution vague.\",\"severity\":\"medium\"},{\"id\":\"UNC010\",\"kind\":\"ambiguous_meaning\",\"summary\":\"The reasoning connecting 'higher anointing' needed for village deliverance versus the head bishop's role is only partially clear regarding who requested whom and why.\",\"severity\":\"low\"},{\"id\":\"UNC011\",\"kind\":\"possible_wrong_word\",\"summary\":\"Passage about 'Chove, chove, chove' and turning to 'command nature' is unclear in reference and possibly a mistranscribed word or name.\",\"severity\":\"medium\"},{\"id\":\"UNC012\",\"kind\":\"ambiguous_transcription\",\"summary\":\"Reference to 'the man called bear out' and surrounding narrative about Elisha commanding bears is garbled/repeated in transcript, making exact meaning of some phrases unclear.\",\"severity\":\"medium\"},{\"id\":\"UNC013\",\"kind\":\"ambiguous_transcription\",\"summary\":\"Long repeated block of near-identical short segments ('This is from heaven') appears to be a transcription artifact of a repeated refrain or loop rather than distinct new content.\",\"severity\":\"low\"},{\"id\":\"UNC014\",\"kind\":\"ambiguous_transcription\",\"summary\":\"Extended repeated 'Thank you, Lord Jesus' segment across many consecutive SRC identifiers appears to be a worship refrain repetition with unclear boundaries for distinct semantic content.\",\"severity\":\"low\"},{\"id\":\"UNC015\",\"kind\":\"incomplete_reference\",\"summary\":\"The phrase 'I am Marutensa' is unclear and its meaning/reference cannot be confidently identified from context.\",\"severity\":\"medium\"},{\"id\":\"UNC016\",\"kind\":\"ambiguous_meaning\",\"summary\":\"The term for the soul as an information 'hub' or 'call center' is searched for aloud by the speaker, suggesting uncertain or improvised terminology\",\"severity\":\"low\"},{\"id\":\"UNC017\",\"kind\":\"interrupted_thought\",\"summary\":\"Speaker references a discourse on Genesis regarding 'in dying you will die' but the underlying Hebrew phrase and full doctrinal implication is left unexplained mid-thought\",\"severity\":\"medium\"},{\"id\":\"UNC018\",\"kind\":\"incomplete_reference\",\"summary\":\"Distinction between Lucifer, Satan and the devil is asserted but full doctrine is deferred to a future session, leaving the claim unexplained here\",\"severity\":\"medium\"},{\"id\":\"UNC019\",\"kind\":\"ambiguous_meaning\",\"summary\":\"Passage about 'Boruga' (a food) inserted humorously mid-teaching without clear connection to surrounding doctrinal content\",\"severity\":\"low\"},{\"id\":\"UNC020\",\"kind\":\"incomplete_reference\",\"summary\":\"Reference to 'Davos' meeting and its relevance is mentioned but not identified or elaborated\",\"severity\":\"low\"},{\"id\":\"UNC021\",\"kind\":\"possible_wrong_word\",\"summary\":\"Segment referencing 'Manfaco'/'l'esprit de Faco' is unclear in meaning or possibly a mistranscribed proper noun/term.\",\"severity\":\"medium\"},{\"id\":\"UNC022\",\"kind\":\"ambiguous_transcription\",\"summary\":\"Long repeated stretch of near-identical phrase 'nous aménons toutes pensées' across dozens of consecutive segments suggests transcription looping or repeated emphasis without clear semantic progression.\",\"severity\":\"medium\"},{\"id\":\"UNC023\",\"kind\":\"ambiguous_meaning\",\"summary\":\"Passage referencing 'girafe avec la tête d'un être humain' and other imagination imagery is unclear whether intended literally or as absurdist illustration of poor imagination.\",\"severity\":\"low\"},{\"id\":\"UNC024\",\"kind\":\"apparent_contradiction\",\"summary\":\"Speaker's account of the resurrection testimony is told twice with near-duplicate wording (Reverend John/Brother Samson), possibly reflecting a repeated take or transcription duplication rather than two distinct events.\",\"severity\":\"medium\"},{\"id\":\"UNC025\",\"kind\":\"uncertain_attribution\",\"summary\":\"Attribution unclear as to which speaker specifically claims the vision of hands as doors ('masters'/'veil' discussion) — dialogue between multiple people makes exact speaker attribution uncertain.\",\"severity\":\"medium\"},{\"id\":\"UNC026\",\"kind\":\"ambiguous_transcription\",\"summary\":\"Garbled or unclear transcription fragment 'D 점' with no discernible meaning.\",\"severity\":\"low\"},{\"id\":\"UNC027\",\"kind\":\"ambiguous_transcription\",\"summary\":\"Long series of near-duplicate micro-segments repeating 'I feel like I am being blessed' suggests transcription artifact rather than distinct utterances.\",\"severity\":\"low\"},{\"id\":\"UNC028\",\"kind\":\"ambiguous_transcription\",\"summary\":\"Speaker referenced as 'Jesus' appears to actually mean a person named Jesus (possibly a proper name of a church member), causing ambiguity with Christ references.\",\"severity\":\"medium\"},{\"id\":\"UNC029\",\"kind\":\"ambiguous_meaning\",\"summary\":\"Isaiah chapter 26 versus 28 reference is confused mid-speech, unclear which chapter verse 3 belongs to.\",\"severity\":\"medium\"},{\"id\":\"UNC030\",\"kind\":\"uncertain_attribution\",\"summary\":\"Reference to 'Dadi' insisting on preaching return to a text is unclear whether it names a specific person or role.\",\"severity\":\"low\"},{\"id\":\"UNC031\",\"kind\":\"incomplete_reference\",\"summary\":\"Long repeated 'French' placeholder segments (SRC007413–SRC007476) suggest transcription gaps or untranscribed French speech, obscuring the content of that passage.\",\"severity\":\"high\"},{\"id\":\"UNC032\",\"kind\":\"incomplete_reference\",\"summary\":\"The identity and role of 'Ayali Kabusa' referenced as a message recipient is unclear from context.\",\"severity\":\"low\"},{\"id\":\"UNC033\",\"kind\":\"possible_wrong_word\",\"summary\":\"The phrase 'misanthetic' / 'my ancestors' exchange is unclear in meaning and may reflect a mistranscribed word.\",\"severity\":\"low\"},{\"id\":\"UNC034\",\"kind\":\"ambiguous_transcription\",\"summary\":\"Repeated fragmented 'In emergency' lines (SRC008019-SRC008029) appear to be transcription artifacts rather than meaningful distinct utterances.\",\"severity\":\"medium\"},{\"id\":\"UNC035\",\"kind\":\"ambiguous_transcription\",\"summary\":\"Repeated identical lines 'and pray earnestly with that person' (SRC008401-SRC008414) likely reflect looped or duplicated audio/transcription rather than intentional repetition of content.\",\"severity\":\"medium\"}],\"repetitions\":[],\"counts\":{\"topics\":67,\"ideas\":286,\"examples\":49,\"references\":59,\"uncertainties\":35,\"repetitions\":0}}\n"
+      }
+    ],
+    "system": "Tu es l'Editorial Planner d'un pipeline de livre.\n\nTu reçois uniquement un SourceMap sémantique déjà validé (thème, audience,\ntopics, ideas, examples, references, uncertainties, repetitions).\n\nTa tâche : décider COMMENT organiser ce matériel en livre cohérent.\n\nTu n'es PAS le Source Analyzer. Tu n'ajoutes aucun argument, doctrine, fait,\nexemple, référence, témoignage, opinion ou conclusion absent du SourceMap.\n\nTu n'es PAS le Book Generator. Tu n'écris AUCUN paragraphe de manuscrit.\n\nHiérarchie obligatoire, et seulement celle-ci :\nBOOK -> CHAPTER -> SECTION.\n\nLes fenêtres techniques, chunks, fichiers processed/chunk_*.md et horodatages\nde transcription ne sont PAS des chapitres, PAS des sections, PAS des parties\nde livre. Tu ignores toute frontière technique.\n\nLiberté éditoriale HAUTE : organisation, ordre, regroupement, titres de\ntravail, angle, parcours lecteur, frontières de chapitres et de sections.\n\nLiberté sémantique BASSE : pas d'invention de contenu.\n\nChaque section substantielle référence des IDEA par identifiants canoniques\n(IDEA001, …). Tu peux réordonner les idées. L'ordre chronologique de la\nsource n'est pas obligatoire.\n\nPlusieurs IDEA peuvent partager une section : ce n'est pas une fusion\nsémantique. Conserve toutes les refs.\n\nToute IDEA du SourceMap doit avoir une disposition explicite :\n- présente dans une section (ASSIGNED), ou\n- listed in deferred avec motif, ou\n- listed in excluded avec motif.\n\nL'omission silencieuse est interdite.\n\nLes identifiants que tu fournis (h) sont des poignées temporaires. Le\nprogramme assignera CH001 / SEC001. Ne recopie pas les textes d'idées :\nréférence les IDs.\n\nLes relations d'idées du SourceMap peuvent être absentes ou non\nautoritatives. N'en dépends pas.\n\nLes incertitudes (UNC) restent des incertitudes. Ne les résous pas.\n\nTitres et sous-titres sont des constructions éditoriales, pas des faits\nde source. L'angle améliore la cohérence sans altérer le message.\n\nRéponds uniquement via le schéma JSON demandé.\n",
+    "output_config": {
+      "format": {
+        "type": "json_schema",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "title": "editorial-plan-transport-1.0",
+          "type": "object",
+          "required": [
+            "concept",
+            "titles",
+            "pick",
+            "angle",
+            "reader",
+            "strategy",
+            "chapters",
+            "deferred",
+            "excluded"
+          ],
+          "properties": {
+            "concept": {
+              "type": "object",
+              "properties": {
+                "promise": {
+                  "type": "string"
+                },
+                "subject": {
+                  "type": "string"
+                },
+                "journey": {
+                  "type": "string"
+                },
+                "progression": {
+                  "type": "string",
+                  "description": "Reader progression if supported by content."
+                }
+              },
+              "required": [
+                "promise",
+                "subject",
+                "journey",
+                "progression"
+              ],
+              "additionalProperties": false
+            },
+            "titles": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "t": {
+                    "type": "string",
+                    "description": "Editorial title candidate."
+                  },
+                  "why": {
+                    "type": "string",
+                    "description": "Why this candidate."
+                  }
+                },
+                "required": [
+                  "t"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "pick": {
+              "type": "integer",
+              "description": "Index into titles for the working title."
+            },
+            "subtitle": {
+              "type": "string"
+            },
+            "angle": {
+              "type": "string"
+            },
+            "reader": {
+              "type": "string"
+            },
+            "strategy": {
+              "type": "string"
+            },
+            "chapters": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/chapter"
+              }
+            },
+            "deferred": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Canonical IDEA id."
+                  },
+                  "why": {
+                    "type": "string",
+                    "description": "Closed reason vocabulary."
+                  },
+                  "n": {
+                    "type": "string",
+                    "description": "Short note."
+                  }
+                },
+                "required": [
+                  "id",
+                  "why"
+                ],
+                "additionalProperties": false
+              },
+              "description": "IDEAs deferred. why in ['later_volume', 'insufficient_support', 'requires_uncertainty_resolution']."
+            },
+            "excluded": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Canonical IDEA id."
+                  },
+                  "why": {
+                    "type": "string",
+                    "description": "Closed reason vocabulary."
+                  },
+                  "n": {
+                    "type": "string",
+                    "description": "Short note."
+                  }
+                },
+                "required": [
+                  "id",
+                  "why"
+                ],
+                "additionalProperties": false
+              },
+              "description": "IDEAs excluded. why in ['non_substantive', 'administrative', 'duplicate_at_editorial_level', 'outside_selected_book_scope']."
+            }
+          },
+          "$defs": {
+            "action": {
+              "type": "object",
+              "properties": {
+                "k": {
+                  "type": "string",
+                  "enum": [
+                    "REORDER",
+                    "GROUP",
+                    "SPLIT_TOPIC",
+                    "CONNECT",
+                    "DEFER",
+                    "EXCLUDE"
+                  ],
+                  "description": "Editorial action kind."
+                },
+                "n": {
+                  "type": "string",
+                  "description": "Short organizational note."
+                }
+              },
+              "required": [
+                "k"
+              ],
+              "additionalProperties": false
+            },
+            "section": {
+              "type": "object",
+              "properties": {
+                "h": {
+                  "type": "string",
+                  "description": "Temporary section handle."
+                },
+                "t": {
+                  "type": "string",
+                  "description": "Working title."
+                },
+                "p": {
+                  "type": "string",
+                  "description": "Purpose, not manuscript prose."
+                },
+                "i": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "IDEA ids. At least one after validation."
+                },
+                "x": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "EXAMPLE ids."
+                },
+                "ref": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "REFERENCE ids."
+                },
+                "u": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "UNCERTAINTY ids."
+                },
+                "rep": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "REPETITION ids."
+                },
+                "top": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "TOPIC ids."
+                },
+                "act": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/action"
+                  }
+                }
+              },
+              "required": [
+                "t",
+                "p",
+                "i"
+              ],
+              "additionalProperties": false
+            },
+            "chapter": {
+              "type": "object",
+              "properties": {
+                "h": {
+                  "type": "string",
+                  "description": "Temporary chapter handle."
+                },
+                "t": {
+                  "type": "string",
+                  "description": "Working title."
+                },
+                "p": {
+                  "type": "string",
+                  "description": "Purpose."
+                },
+                "sum": {
+                  "type": "string",
+                  "description": "Short coverage summary."
+                },
+                "top": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "TOPIC ids."
+                },
+                "act": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/action"
+                  }
+                },
+                "sections": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "#/$defs/section"
+                  }
+                }
+              },
+              "required": [
+                "t",
+                "p",
+                "sections"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "publication_absent": true,
+  "production_source_map_included": true,
+  "secrets_included": false
+}

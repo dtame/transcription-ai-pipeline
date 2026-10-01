@@ -1,0 +1,13 @@
+{
+  "status": "BLOCKED_PRECALL",
+  "actual_terra_calls": 0,
+  "reason": "BLOCKED_PRECALL: OPENAI_API_KEY is not available in the environment or local .env. All other pre-call gates passed. The frozen benchmark request was built and not sent. ACTUAL TERRA CALLS = 0. No Sonnet call. No retry. Set OPENAI_API_KEY locally and re-authorize a later 4B.2.4 execution; do not invent a second automatic call.",
+  "http_sent": false,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "secrets_included": false,
+  "retries": 0,
+  "fallbacks": 0,
+  "sonnet_calls": 0,
+  "stage": "book_semantic_validation_canary_4b24"
+}

@@ -1,0 +1,13 @@
+{
+  "phase": "4A.1",
+  "expected_output_tokens": 4192,
+  "conservative_output_tokens": 10822,
+  "hard_output_tokens": 21644,
+  "proposed_max_output": 16384,
+  "PRODUCTION_OUTPUT_BUDGET_REVIEW_REQUIRED": "YES",
+  "reason": "hard estimate 21644 > proposed max_output 16384",
+  "canary_max_output_tokens": 4096,
+  "canary_max_is_not_production_max": true,
+  "do_not_authorize_production_from_canary": true,
+  "do_not_extrapolate_production_cost_from_canary": true
+}

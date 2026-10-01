@@ -1,0 +1,21 @@
+{
+  "status": "estimated",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "stage": "book_generation",
+  "pricing_verified": true,
+  "pricing_effective_date": "2026-09-18",
+  "input_tokens_pessimistic": 218697,
+  "output_tokens_conservative": 111609,
+  "input_cost_per_1m_tokens": 2.0,
+  "output_cost_per_1m_tokens": 10.0,
+  "input_cost_usd": 0.437394,
+  "output_cost_usd": 1.11609,
+  "total_cost_usd": 1.553484,
+  "total_cost_display": "$1.55",
+  "estimated_production_calls": 19,
+  "unknown_or_incomplete": false,
+  "note": "Estimate uses pessimistic input tokens and conservative manuscript output. Actual cost is unknown until real usage is reported.",
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

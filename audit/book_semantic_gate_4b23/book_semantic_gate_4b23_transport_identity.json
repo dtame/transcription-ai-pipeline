@@ -1,0 +1,32 @@
+{
+  "version": "book-semantic-validation-transport-1.0",
+  "top_level": [
+    "ch",
+    "pr",
+    "rr",
+    "sc",
+    "uh",
+    "v"
+  ],
+  "paragraph_fields": [
+    "c",
+    "ev",
+    "h",
+    "r",
+    "v"
+  ],
+  "claim_fields": [
+    "cf",
+    "e",
+    "ev",
+    "i",
+    "k",
+    "r",
+    "s",
+    "t",
+    "x"
+  ],
+  "canonical_ids_from_provider": false,
+  "engine_decode": "local_only",
+  "no_service_json_loads_of_http": true
+}

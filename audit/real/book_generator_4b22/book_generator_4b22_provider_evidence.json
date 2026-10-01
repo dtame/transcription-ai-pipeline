@@ -1,0 +1,113 @@
+{
+  "phase": "4B.2.2",
+  "request_id": "req_011CfatMh6WSVme4Zq9oyUCn",
+  "http_status": 200,
+  "http_success": true,
+  "finish_reason": "end_turn",
+  "elapsed_ms": 14530,
+  "input_tokens": 6626,
+  "output_tokens": 1292,
+  "thinking_tokens": 0,
+  "thinking_block_present": "NO",
+  "cost": {
+    "status": "known",
+    "currency": "USD",
+    "input_cost": 0.013252,
+    "output_cost": 0.01292,
+    "total_cost": 0.026172,
+    "compute_cost_tracked": true,
+    "pricing_source": "Anthropic official pricing/model documentation",
+    "effective_date": "2026-09-18",
+    "verified": true,
+    "notes": "Actual 4B.2.2 CH016 hardened canary cost. Stage=book_generation_canary_4b22. Not production manuscript cost.",
+    "unmodeled_regimes": "",
+    "display": "0.0261720 USD",
+    "stage": "book_generation_canary_4b22",
+    "call_record": {
+      "call_id": "CALL000001",
+      "stage": "book_generation_canary_4b22",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "status": "completed",
+      "input_tokens": 6626,
+      "output_tokens": 1292,
+      "total_tokens": 7918,
+      "usage_source": "provider",
+      "unit": "tokens",
+      "unit_count": null,
+      "latency_ms": 14530,
+      "finish_reason": "end_turn",
+      "request_id": "req_011CfatMh6WSVme4Zq9oyUCn",
+      "error_type": null,
+      "recorded_at": "2026-10-01T00:28:42",
+      "cost": {
+        "status": "known",
+        "currency": "USD",
+        "input_cost": 0.013252,
+        "output_cost": 0.01292,
+        "total_cost": 0.026172,
+        "compute_cost_tracked": true,
+        "pricing_source": "Anthropic official pricing/model documentation",
+        "effective_date": "2026-09-18",
+        "verified": true,
+        "notes": "",
+        "unmodeled_regimes": ""
+      }
+    }
+  },
+  "raw_response_sha256": "a94da792925165aea5d8b8a19973e3262add81e96954e87676fce17d24195250",
+  "provider_metadata": {
+    "schema_version": "1.0",
+    "provider": "Anthropic",
+    "model": "claude-sonnet-5",
+    "post_attempted": true,
+    "response_received": true,
+    "http_success": true,
+    "http_status": 200,
+    "headers_subset": {
+      "content-type": "application/json",
+      "request-id": "req_011CfatMh6WSVme4Zq9oyUCn"
+    },
+    "request_id": "req_011CfatMh6WSVme4Zq9oyUCn",
+    "raw_sha256": "8bbc9c741f3c140e47ebe8e4cdb866dc5d4a45c8d04583477aa9f22d03a0a87d",
+    "raw_size": 4356,
+    "text_encoding": "utf-8",
+    "text_decode_ok": true,
+    "json_decode_ok": true,
+    "json_top_level_type": "dict",
+    "usage": {
+      "input_tokens": 6626,
+      "output_tokens": 1292,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      }
+    },
+    "input_tokens": 6626,
+    "output_tokens": 1292,
+    "finish_reason": "end_turn",
+    "content_metadata": {
+      "content_present": true,
+      "content_type": "list",
+      "block_count": 1,
+      "block_types": [
+        "text"
+      ],
+      "text_block_count": 1,
+      "text_lengths": [
+        3620
+      ]
+    },
+    "elapsed_ms": 14530,
+    "classification": null,
+    "provider_envelope_valid": true,
+    "airesponse_created": true,
+    "structured_parse_passed": false,
+    "secrets_included": false
+  },
+  "secrets_included": false,
+  "forensic_path": "C:\\TranscriptionAI\\audit\\real\\book_generator_4b22\\provider_forensics\\CANARY_BG4B22\\3fade89f3bda5a4e008242c28be9babf29c00dec5666a2bcde1900a99d46d071",
+  "error": null,
+  "retries": 0,
+  "fallbacks": 0,
+  "stage": "book_generation_canary_4b22"
+}

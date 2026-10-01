@@ -1,0 +1,242 @@
+{
+  "historical_1_0_mutated": false,
+  "historical_1_0_1_mutated": false,
+  "principal_1_0_vs_1_0_1_diff": "canonical language rule only",
+  "language_rule_preserved_in_1_0_2": true,
+  "v10": {
+    "system": {
+      "chars": 1992,
+      "phrases": {
+        "Toute IDEA": {
+          "present": true,
+          "offset": 1262,
+          "fraction": 0.634,
+          "band": "middle"
+        },
+        "disposition explicite": {
+          "present": true,
+          "offset": 1301,
+          "fraction": 0.653,
+          "band": "middle"
+        },
+        "omission silencieuse": {
+          "present": true,
+          "offset": 1440,
+          "fraction": 0.723,
+          "band": "late"
+        },
+        "deferred": {
+          "present": true,
+          "offset": 1380,
+          "fraction": 0.693,
+          "band": "late"
+        },
+        "excluded": {
+          "present": true,
+          "offset": 1416,
+          "fraction": 0.711,
+          "band": "late"
+        }
+      }
+    },
+    "instructions": {
+      "chars": 1167,
+      "phrases": {
+        "Toute IDEA": {
+          "present": false,
+          "offset": -1,
+          "fraction": null,
+          "band": null
+        },
+        "disposition explicite": {
+          "present": false,
+          "offset": -1,
+          "fraction": null,
+          "band": null
+        },
+        "omission silencieuse": {
+          "present": false,
+          "offset": -1,
+          "fraction": null,
+          "band": null
+        },
+        "deferred": {
+          "present": true,
+          "offset": 747,
+          "fraction": 0.64,
+          "band": "middle"
+        },
+        "excluded": {
+          "present": true,
+          "offset": 760,
+          "fraction": 0.651,
+          "band": "middle"
+        }
+      }
+    }
+  },
+  "v101": {
+    "system": {
+      "chars": 2393,
+      "phrases": {
+        "Toute IDEA": {
+          "present": true,
+          "offset": 1262,
+          "fraction": 0.527,
+          "band": "middle"
+        },
+        "disposition explicite": {
+          "present": true,
+          "offset": 1301,
+          "fraction": 0.544,
+          "band": "middle"
+        },
+        "omission silencieuse": {
+          "present": true,
+          "offset": 1440,
+          "fraction": 0.602,
+          "band": "middle"
+        },
+        "deferred": {
+          "present": true,
+          "offset": 1380,
+          "fraction": 0.577,
+          "band": "middle"
+        },
+        "excluded": {
+          "present": true,
+          "offset": 1416,
+          "fraction": 0.592,
+          "band": "middle"
+        }
+      }
+    },
+    "instructions": {
+      "chars": 1939,
+      "phrases": {
+        "Toute IDEA": {
+          "present": false,
+          "offset": -1,
+          "fraction": null,
+          "band": null
+        },
+        "disposition explicite": {
+          "present": false,
+          "offset": -1,
+          "fraction": null,
+          "band": null
+        },
+        "omission silencieuse": {
+          "present": false,
+          "offset": -1,
+          "fraction": null,
+          "band": null
+        },
+        "deferred": {
+          "present": true,
+          "offset": 747,
+          "fraction": 0.385,
+          "band": "middle"
+        },
+        "excluded": {
+          "present": true,
+          "offset": 760,
+          "fraction": 0.392,
+          "band": "middle"
+        }
+      }
+    }
+  },
+  "v102": {
+    "system": {
+      "chars": 3245,
+      "phrases": {
+        "Toute IDEA": {
+          "present": true,
+          "offset": 1262,
+          "fraction": 0.389,
+          "band": "middle"
+        },
+        "disposition explicite": {
+          "present": true,
+          "offset": 1301,
+          "fraction": 0.401,
+          "band": "middle"
+        },
+        "omission silencieuse": {
+          "present": true,
+          "offset": 1440,
+          "fraction": 0.444,
+          "band": "middle"
+        },
+        "deferred": {
+          "present": true,
+          "offset": 1380,
+          "fraction": 0.425,
+          "band": "middle"
+        },
+        "excluded": {
+          "present": true,
+          "offset": 1416,
+          "fraction": 0.436,
+          "band": "middle"
+        }
+      }
+    },
+    "instructions": {
+      "chars": 2791,
+      "phrases": {
+        "Toute IDEA": {
+          "present": false,
+          "offset": -1,
+          "fraction": null,
+          "band": null
+        },
+        "disposition explicite": {
+          "present": true,
+          "offset": 2672,
+          "fraction": 0.957,
+          "band": "late"
+        },
+        "omission silencieuse": {
+          "present": false,
+          "offset": -1,
+          "fraction": null,
+          "band": null
+        },
+        "deferred": {
+          "present": true,
+          "offset": 747,
+          "fraction": 0.268,
+          "band": "early"
+        },
+        "excluded": {
+          "present": true,
+          "offset": 760,
+          "fraction": 0.272,
+          "band": "early"
+        }
+      }
+    },
+    "contains_hardening": true,
+    "mentions_IDEA007": false,
+    "mentions_IDEA008": false,
+    "mentions_pastoral_specifics": false
+  },
+  "coverage_wording_1_0_system": "Toute IDEA du SourceMap doit avoir une disposition explicite :\n- présente dans une section (ASSIGNED), ou\n- listed in deferred avec motif, ou\n- listed in excluded avec motif.\n\nL'omission silencieuse est interdite.",
+  "coverage_wording_1_0_instructions": "deferred[] / excluded[] : IDEA absentes des sections, motif fermé.",
+  "explicit_every_idea_exactly_once": true,
+  "exactly_once_primary_disposition_stated": false,
+  "repeated_near_output_contract_in_1_0_1": false,
+  "coverage_salience_1_0_1": {
+    "system_band": "middle",
+    "instructions_near_output_contract": false,
+    "language_rule_appended_after_coverage": true
+  },
+  "ambiguity": {
+    "could_organize_important_ideas_without_emitting_every_handle": true,
+    "why": "The exhaustive-handle rule sits mid-system. Instructions require non-empty section i[] and closed deferred/excluded reasons but do not restate that every input IDEA ID must appear. A model can emit a coherent book structure and still drop two handles."
+  },
+  "prompt_coverage_weakness": "YES",
+  "prompt_1_0_2_hardening_present": true
+}

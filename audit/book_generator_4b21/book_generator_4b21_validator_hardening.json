@@ -1,0 +1,60 @@
+{
+  "historical_validator": "book-generation-validator-1.0",
+  "successor_validator": "book-generation-validator-1.0.1",
+  "local_validator_changed": true,
+  "strengthened": [
+    "empty text after whitespace normalization",
+    "whitespace-only text",
+    "missing substantive evidence",
+    "unknown evidence",
+    "structure",
+    "coverage"
+  ],
+  "not_implemented_as_deterministic": [
+    "new arguments in connective prose",
+    "invented examples",
+    "semantic drift"
+  ],
+  "empty_paragraph_never_dropped": true,
+  "validator_defect": "NO",
+  "contract": {
+    "version": "book-generation-validator-1.0.1",
+    "scope": [
+      "generation-unit structure",
+      "section identity/order",
+      "IDEA accountability",
+      "evidence handles",
+      "SRC validity",
+      "language",
+      "uncertainty metadata",
+      "paragraph provenance",
+      "determinism of reconstruction"
+    ],
+    "non_scope": [
+      "unsupported semantic claims",
+      "subtle contradictions",
+      "doctrinal distortion",
+      "whole-book redundancy",
+      "whole-book narrative quality"
+    ],
+    "phase_5": "Book Validator owns whole-book semantic validation",
+    "limitation": "Paragraph-level reference presence does not prove every sentence is supported.",
+    "silent_idea_omission": "FAIL",
+    "extra_idea": "FAIL",
+    "missing_section": "FAIL",
+    "extra_section": "FAIL",
+    "wrong_section_order": "FAIL",
+    "unsourced_substantive": "FAIL",
+    "empty_paragraph": "FAIL",
+    "whitespace_only_paragraph": "FAIL",
+    "empty_paragraph_never_dropped": true,
+    "connective_without_source": "ALLOWED",
+    "connective_new_claim": "SEMANTIC_NOT_DETERMINISTIC",
+    "invented_example": "SEMANTIC_NOT_DETERMINISTIC",
+    "invented_illustration": "SEMANTIC_NOT_DETERMINISTIC",
+    "invented_hypothetical": "SEMANTIC_NOT_DETERMINISTIC",
+    "deferred_or_excluded_in_manuscript": "FAIL",
+    "unknown_handle": "FAIL"
+  },
+  "historical_replay_still_fail": true
+}

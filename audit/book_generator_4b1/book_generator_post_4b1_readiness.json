@@ -1,0 +1,8 @@
+{
+  "PHASE_4B1": "COMPLETE",
+  "READY_FOR_BOOK_GENERATOR_GRAMMAR_CANARY": true,
+  "READY_FOR_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

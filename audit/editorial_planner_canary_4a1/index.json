@@ -1,0 +1,20 @@
+{
+  "phase": "4A.1",
+  "editorial_plan_json": "NOT PUBLISHED",
+  "production_path_absent": true,
+  "written": [
+    "budget",
+    "contract",
+    "execution",
+    "fixture",
+    "precall",
+    "raw_response",
+    "readiness",
+    "reconstructed",
+    "report",
+    "request",
+    "response",
+    "semantic",
+    "thinking"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "result": "FAIL",
+  "engine": {
+    "class_name": "CountingAnthropicEngine",
+    "provider": "anthropic",
+    "retry_max_attempts": 1,
+    "is_anthropic": true,
+    "is_fake": false,
+    "generate_attempts": 1,
+    "post_attempts": 1,
+    "connect_timeout_seconds": 30.0,
+    "read_timeout_seconds": 1800.0,
+    "engine_max_output_tokens": 16384
+  },
+  "engine_generate_attempts": 1,
+  "anthropic_post_attempts": 1,
+  "retries": 0,
+  "fallbacks": 0,
+  "error": null,
+  "forensic_path": "C:\\TranscriptionAI\\audit\\real\\book_generator_4b2\\provider_forensics\\CANARY_BG4B2\\3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+  "book_json": "NOT PUBLISHED",
+  "inputs_unchanged": true,
+  "stage": "book_generation_canary"
+}

@@ -1,0 +1,15 @@
+{
+  "substantive": "handles → SRC resolution required",
+  "connective": "allowed without source claims; no new assertions",
+  "handles": [
+    "IDEA",
+    "EX",
+    "REF",
+    "UNC",
+    "SRC"
+  ],
+  "provider_canonical_ids": false,
+  "limitation": "Paragraph-level reference presence does not prove every sentence is supported.",
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

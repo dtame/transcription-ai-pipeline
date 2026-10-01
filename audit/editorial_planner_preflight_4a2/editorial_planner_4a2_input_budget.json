@@ -1,0 +1,51 @@
+{
+  "methods": {
+    "local": "app.ai.estimation.estimate_tokens(system + newline + user, model=claude-opus-5) — existing repository estimator used by Phase 4A",
+    "provider_adjusted_mid": "ceil((system+user chars) / 2.5)",
+    "provider_adjusted_pessimistic": "ceil((system+user chars) / 1.9365384615384615) Phase 3B A.44 density — Phase 4A comparison method",
+    "payload_inclusive_pessimistic": "same pessimistic density applied to the exact provider payload (includes adapted JSON schema)",
+    "a1_calibrated_payload": "ceil(payload_chars / 2.1425611272275176) using A.1 actual input_tokens=4826 vs payload_chars=10340",
+    "planning_estimate": "max(local, system+user pessimistic, payload pessimistic, A.1-calibrated payload) — used for safety, not billing"
+  },
+  "system_chars": 1992,
+  "user_chars": 99256,
+  "system_plus_user_chars": 101248,
+  "payload_chars": 114042,
+  "payload_utf8_bytes": 114142,
+  "local_token_estimate": {
+    "tokens": 25313,
+    "method": "heuristic_chars_per_token",
+    "model": "claude-opus-5",
+    "estimated": true
+  },
+  "provider_adjusted_mid": 40500,
+  "provider_adjusted_pessimistic": 52283,
+  "payload_inclusive_pessimistic": 58890,
+  "a1_calibrated_input": 53227,
+  "planning_input_estimate": 58890,
+  "phase_4a_local": 25313,
+  "phase_4a_provider_adjusted_pessimistic": 52283,
+  "local_delta_vs_phase4a": 0,
+  "provider_adjusted_delta_vs_phase4a": 0,
+  "usable": {
+    "provider": "anthropic",
+    "model": "claude-opus-5",
+    "context_window": 1000000,
+    "model_max_output_tokens": 128000,
+    "planner_max_output_tokens": 65536,
+    "safety_ratio": 0.7,
+    "capabilities_known": true,
+    "usable_input_tokens": 634464,
+    "formula": "context_window * safety_ratio - max_output_tokens"
+  },
+  "usable_input_tokens": 634464,
+  "headroom_tokens": 575574,
+  "input_safety": "PASS",
+  "one_global_call_feasible": true,
+  "selected_max_output": 65536,
+  "model_context_window": 1000000,
+  "model_max_output_tokens": 128000,
+  "safety_ratio": 0.7,
+  "formula": "context_window * safety_ratio - max_output_tokens",
+  "web_research": false
+}

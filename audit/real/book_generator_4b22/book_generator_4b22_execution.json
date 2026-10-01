@@ -1,0 +1,33 @@
+{
+  "result": "PARTIAL",
+  "engine": {
+    "class_name": "CountingAnthropicEngine",
+    "provider": "anthropic",
+    "retry_max_attempts": 1,
+    "is_anthropic": true,
+    "is_fake": false,
+    "generate_attempts": 1,
+    "post_attempts": 1,
+    "connect_timeout_seconds": 30.0,
+    "read_timeout_seconds": 1800.0,
+    "engine_max_output_tokens": 16384
+  },
+  "engine_generate_attempts": 1,
+  "anthropic_post_attempts": 1,
+  "retries": 0,
+  "fallbacks": 0,
+  "error": null,
+  "forensic_path": "C:\\TranscriptionAI\\audit\\real\\book_generator_4b22\\provider_forensics\\CANARY_BG4B22\\3fade89f3bda5a4e008242c28be9babf29c00dec5666a2bcde1900a99d46d071",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "NOT ACCEPTED",
+  "inputs_unchanged": true,
+  "stage": "book_generation_canary_4b22",
+  "human_review": "exhaustive",
+  "questionable_paragraphs": ["p3", "p8"],
+  "historical_defects_recurred": {
+    "empty_paragraph_p9b": false,
+    "unsupported_connective_p13": false,
+    "invented_funeral_p8": false
+  },
+  "tests": "111 passed / 0 new failures"
+}

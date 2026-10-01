@@ -1,0 +1,69 @@
+{
+  "transport_version": "editorial-plan-transport-1.0",
+  "schema_raw_adapted": "3661 / 3909",
+  "schema_sha256": "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e",
+  "schema_identity": "MATCH",
+  "schema_changed": "NO",
+  "schema_required_keys": [
+    "concept",
+    "titles",
+    "pick",
+    "angle",
+    "reader",
+    "strategy",
+    "chapters",
+    "deferred",
+    "excluded"
+  ],
+  "schema_mentions_concrete_idea_ids": false,
+  "schema_can_require_all_input_ids_dynamically": false,
+  "schema_responsibility": "JSON Schema validates item shape (deferred/excluded objects, section i[] of strings). It cannot dynamically enumerate the 286 input IDEA IDs. Completeness is a validator cross-input check, not a grammar duty.",
+  "schema_defect": "NO",
+  "transport_defect": "NO",
+  "transport_rationale": "A.3 used the same transport/schema and produced 286/286. A.3.3 decoded 284 explicit ASSIGNED dispositions plus two empty reconstructed rows. Transport represented the provider output faithfully.",
+  "validator_detected_IDEA007": true,
+  "validator_detected_IDEA008": true,
+  "validator_status": "FAIL",
+  "validator_errors": [
+    "IDEA007 disposition invalide ou manquante ('')",
+    "IDEA008 disposition invalide ou manquante ('')"
+  ],
+  "reconstruct_missing_idea_ids": [],
+  "reconstruct_empty_disposition_ids": [
+    "IDEA007",
+    "IDEA008"
+  ],
+  "validator_defect": "NO",
+  "validator_success": true,
+  "validator_note": "Reconstruct inserts an empty disposition row for omitted input IDs. Validator rejects empty/missing dispositions. This is the intended hard gate, not a defect.",
+  "automatic_repair_implemented": false,
+  "automatic_retry_implemented": false,
+  "frozen_a33_passes": [
+    "canonical language resolution",
+    "English language enforcement",
+    "schema",
+    "structured parse",
+    "transport decoder",
+    "handle validation",
+    "canonical reconstruction",
+    "hierarchy",
+    "unknown refs = 0",
+    "traceability",
+    "invention boundary",
+    "uncertainty preservation",
+    "deterministic replay"
+  ],
+  "output_budget": {
+    "output_tokens": 10800,
+    "max_tokens": 65536,
+    "utilization": 0.1648,
+    "utilization_display": "16.48%",
+    "finish": "200 / end_turn",
+    "output_cap_failure": "NO",
+    "thinking_tokens": 0,
+    "thinking_block_present": false,
+    "thinking_budget_blamed": false,
+    "input_tokens": 41945,
+    "a33_finish_reason": "end_turn"
+  }
+}

@@ -31,6 +31,7 @@ from app.source_analysis.models import (
     format_repetition_id,
     format_topic_id,
     format_uncertainty_id,
+    scan_editorial_structure,
 )
 from app.transcript_models import SCHEMA_VERSION as TRANSCRIPT_SCHEMA_VERSION
 
@@ -319,6 +320,25 @@ class TestEditorialBoundary:
     def test_un_mapping_invalide_ne_leve_pas(self):
         assert forbidden_editorial_fields(None) == ()
         assert forbidden_editorial_fields("chapters") == ()
+
+    def test_lexical_chapter_in_text_is_not_structure(self):
+        payload = {
+            "ideas": [
+                {"summary": "Genesis chapter 5 later in chapter 17 of the book of Hebrews."}
+            ]
+        }
+        assert forbidden_editorial_fields(payload) == ()
+        assert scan_editorial_structure(payload)["ok"] is True
+
+    def test_chapter_title_object_is_forbidden_structure(self):
+        payload = {"chapter_title": "One"}
+        assert "chapter_title" in forbidden_editorial_fields(payload)
+        assert scan_editorial_structure(payload)["ok"] is False
+
+    def test_book_parts_and_toc_objects_are_forbidden(self):
+        assert scan_editorial_structure({"book_parts": [{"title": "I"}]})["ok"] is False
+        assert "book_parts" in forbidden_editorial_fields({"book_parts": []})
+        assert scan_editorial_structure({"table_of_contents": []})["ok"] is False
 
     def test_aucun_concept_de_livre_dans_le_module(self):
         """

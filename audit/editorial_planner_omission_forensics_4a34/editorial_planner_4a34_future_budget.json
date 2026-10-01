@@ -1,0 +1,163 @@
+{
+  "input": {
+    "system_chars": 3245,
+    "user_chars": 100972,
+    "system_plus_user_chars": 104217,
+    "payload_chars": 117073,
+    "payload_utf8_bytes": 117241,
+    "local_token_estimate": {
+      "tokens": 26055,
+      "method": "heuristic_chars_per_token",
+      "model": "claude-opus-5",
+      "estimated": true
+    },
+    "provider_adjusted_mid": 41687,
+    "provider_adjusted_pessimistic": 53817,
+    "payload_inclusive_pessimistic": 60455,
+    "a33_calibrated_input": 42603,
+    "planning_input_estimate": 60455,
+    "a33_actual_provider_input": 41945,
+    "input_delta_vs_a33_actual": 18510,
+    "usable": {
+      "provider": "anthropic",
+      "model": "claude-opus-5",
+      "context_window": 1000000,
+      "model_max_output_tokens": 128000,
+      "planner_max_output_tokens": 65536,
+      "safety_ratio": 0.7,
+      "capabilities_known": true,
+      "usable_input_tokens": 634464,
+      "formula": "context_window * safety_ratio - max_output_tokens"
+    },
+    "usable_input_tokens": 634464,
+    "headroom_tokens": 574009,
+    "input_safety": "PASS",
+    "context_safety": "PASS",
+    "selected_max_output": 65536,
+    "formula": "context_window * safety_ratio - max_output_tokens"
+  },
+  "output": {
+    "prompt_change_materially_alters_output_scenarios": false,
+    "expected_output_tokens": 10800,
+    "conservative_output_tokens": 19666,
+    "hard_output_tokens": 34555,
+    "selected_max_output": 65536,
+    "a33_actual_output": 10800,
+    "a33_actual_thinking": 0,
+    "a2_expected_output_tokens": 8670,
+    "thinking_may_reappear_under_provider_default": true,
+    "output_budget_redesign": false,
+    "max_output_changed": false,
+    "output_fits_selected": true,
+    "output_cap_failure_a33": "NO"
+  },
+  "cost": {
+    "cost_status_mark": "ESTIMATED",
+    "not_actual": true,
+    "a34_actual_usd": 0.0,
+    "do_not_double_count": {
+      "a3_usd": 0.6519,
+      "a33_usd": 0.479725,
+      "a34_usd": 0.0
+    },
+    "a33_actual_calibration": {
+      "input_tokens": 41945,
+      "output_tokens": 10800,
+      "thinking_tokens": 0,
+      "cost_usd": 0.479725,
+      "catalog_recompute": 0.479725,
+      "note": "A.3.3 actual 41945 / 10800 / 0 thinking = 0.4797250 USD is the primary calibration. Thinking may reappear under provider_default and is not assumed to stay 0."
+    },
+    "pricing": {
+      "provider": "anthropic",
+      "model": "claude-opus-5",
+      "input_cost_per_1m": 5.0,
+      "output_cost_per_1m": 25.0,
+      "source": "Phase 2B catalog / A.3.3 actual"
+    },
+    "long_context": {
+      "provider": "anthropic",
+      "model": "claude-opus-5",
+      "estimated_input_tokens": 60455,
+      "opus_unmodeled_regimes": null,
+      "opus_long_context_regime_declared": false,
+      "gpt_terra_has_unmodeled_long_context": true,
+      "phase2b_pricing_completeness": "Opus 5 has verified base input/output rates and no declared long_context unmodeled regime in AI_PRICING_ENTRIES. GPT-5.6 Terra is the only Phase 2B production model marked long_context_not_modeled.",
+      "crosses_declared_long_context_threshold": false,
+      "threshold_modeled_for_opus": false,
+      "status": "BASE_PRICING_APPLIES_NO_OPUS_LONG_CONTEXT_REGIME",
+      "web_research": false
+    },
+    "expected": {
+      "status": "known",
+      "currency": "USD",
+      "input_cost": 0.302275,
+      "output_cost": 0.27,
+      "total_cost": 0.572275,
+      "compute_cost_tracked": true,
+      "pricing_source": "Anthropic official pricing/model documentation",
+      "effective_date": "2026-09-18",
+      "verified": true,
+      "notes": "",
+      "unmodeled_regimes": "",
+      "display": "0.5722750 USD",
+      "cost_status_mark": "ESTIMATED",
+      "input_tokens": 60455,
+      "output_tokens": 10800
+    },
+    "conservative": {
+      "status": "known",
+      "currency": "USD",
+      "input_cost": 0.302275,
+      "output_cost": 0.49165,
+      "total_cost": 0.793925,
+      "compute_cost_tracked": true,
+      "pricing_source": "Anthropic official pricing/model documentation",
+      "effective_date": "2026-09-18",
+      "verified": true,
+      "notes": "",
+      "unmodeled_regimes": "",
+      "display": "0.7939250 USD",
+      "cost_status_mark": "ESTIMATED",
+      "input_tokens": 60455,
+      "output_tokens": 19666
+    },
+    "hard": {
+      "status": "known",
+      "currency": "USD",
+      "input_cost": 0.302275,
+      "output_cost": 0.863875,
+      "total_cost": 1.16615,
+      "compute_cost_tracked": true,
+      "pricing_source": "Anthropic official pricing/model documentation",
+      "effective_date": "2026-09-18",
+      "verified": true,
+      "notes": "",
+      "unmodeled_regimes": "",
+      "display": "1.1661500 USD",
+      "cost_status_mark": "ESTIMATED",
+      "input_tokens": 60455,
+      "output_tokens": 34555
+    },
+    "thinking_reappear_acknowledged": true,
+    "thinking_reappear_estimate_note": "If thinking returns near the A.3 6443-token observation, add that volume to output-side cost. Not assumed equal.",
+    "expected_cost": "0.5722750 USD",
+    "conservative_cost": "0.7939250 USD",
+    "hard_cost": "1.1661500 USD",
+    "estimated_cost": "0.5722750 USD",
+    "thinking_placeholder": "0.5722750 USD"
+  },
+  "timeouts": {
+    "connect_seconds": 30.0,
+    "read_seconds": 1800.0
+  },
+  "future_call": {
+    "count": 1,
+    "retries": 0,
+    "provider": "Anthropic",
+    "model": "claude-opus-5",
+    "thinking": "provider_default",
+    "max_tokens": 65536
+  },
+  "a34_actual_usd": 0.0
+}

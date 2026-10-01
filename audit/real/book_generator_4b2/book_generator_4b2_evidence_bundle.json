@@ -1,0 +1,483 @@
+{
+  "v": "book-evidence-bundle-1.0",
+  "strategy": "SOURCE_MAP_PLUS_TARGETED_TRANSCRIPT_HYDRATION",
+  "canonical_document_language": "en",
+  "book": {
+    "title": "The Life You Already Inherited",
+    "subtitle": "Resurrection life, union with God, and the practice of spiritual authority",
+    "title_status": "working",
+    "purpose": "A teaching book that shows believers what they already inherited in Christ — resurrection life, union with the Father, unconditional love and usable spiritual authority — and how to practice it daily.",
+    "core_subject": "A multi-session teaching corpus expounding Hebrews 2, John 17, Colossians 3, Malachi and related texts, joined to personal testimony of healing, resurrection and providence.",
+    "reader_journey": "From inherited habit, tradition and fear of death, through scriptural exposition of destroyed death and granted union, into a disciplined practice of mind, prayer and ministry, ending in testimony and prophetic vision.",
+    "editorial_progression": "Diagnosis of inherited religion → doctrinal foundation (resurrection life, offices, union) → interior anatomy and mental discipline → practice and testimony → corporate vision.",
+    "angle": "Treat the corpus as a sustained correction: against legalism, rapture-fixation, performance ministry and fear of death, replaced by inheritance already granted and practiced.",
+    "reader": "Local congregations, retreat attendees, pastors and ministers receiving in-person Bible teaching and testimony.",
+    "strategy": "Group the scattered sessions by doctrinal and practical theme rather than chronology; place exposition before interior discipline, discipline before testimony, and reserve testimony chapters as demonstration of the earlier teaching. Uncertainties are flagged in situ, never resolved.",
+    "canonical_document_language": "en",
+    "do_not_replace_title": true
+  },
+  "voice": {
+    "tone": [],
+    "register": "",
+    "sentence_style": "",
+    "rhetorical_patterns": [],
+    "use_of_questions": "",
+    "use_of_repetition": "",
+    "use_of_examples": "",
+    "direct_address": "",
+    "teaching_style": "Instructional, exhortative preacher's voice mixing expository Bible teaching, personal testimony, and pastoral correction",
+    "distinctive_traits": [
+      "Instructional, exhortative preacher's voice mixing expository Bible teaching, personal testimony, and pastoral correction"
+    ]
+  },
+  "continuity": {
+    "previous_chapter_id": "CH015",
+    "previous_chapter_title": "Grace Barely Touched",
+    "previous_chapter_purpose": "Show how much is already given and how believers testify to discovering it.",
+    "previous_section_title": "The Sower in One Man",
+    "book_progression": "Diagnosis of inherited religion → doctrinal foundation (resurrection life, offices, union) → interior anatomy and mental discipline → practice and testimony → corporate vision.",
+    "source": "editorial_plan",
+    "provider_generated_summary": false,
+    "do_not_restate": [
+      "book thesis",
+      "chapter thesis of previous chapters",
+      "previous section conclusions"
+    ]
+  },
+  "chapter": {
+    "id": "CH016",
+    "t": "Death as Gain",
+    "p": "Resolve the fear-of-death thread opened in the resurrection chapters.",
+    "sum": "No fear of death, fear as the devil's old strategy, death as gain lived rather than recited, peaceful departures."
+  },
+  "sections": [
+    {
+      "id": "SEC063",
+      "t": "To Live Is Christ",
+      "p": "Convert the doctrine of destroyed death into lived attitude.",
+      "i": [
+        "IDEA224",
+        "IDEA225",
+        "IDEA226",
+        "IDEA250",
+        "IDEA251",
+        "IDEA252"
+      ],
+      "x": [],
+      "ref": [
+        "REF050",
+        "REF051",
+        "REF056"
+      ],
+      "u": [],
+      "src": [
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187",
+        "SRC006152",
+        "SRC006154",
+        "SRC006155",
+        "SRC006156",
+        "SRC006157",
+        "SRC006192",
+        "SRC006193",
+        "SRC006195",
+        "SRC007115",
+        "SRC007116",
+        "SRC007117",
+        "SRC007118",
+        "SRC007151",
+        "SRC007152",
+        "SRC007155",
+        "SRC007156",
+        "SRC007158",
+        "SRC007161",
+        "SRC007162",
+        "SRC007193",
+        "SRC007197",
+        "SRC007199",
+        "SRC007201",
+        "SRC007204",
+        "SRC006788",
+        "SRC007129",
+        "SRC007132",
+        "SRC007149",
+        "SRC007559",
+        "SRC007560"
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "id": "IDEA224",
+      "sum": "Believers should not fear death since there is no set time and going to heaven should bring joy, not fear.",
+      "kind": "",
+      "imp": "central",
+      "src": [
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "top": [
+        "TOP054"
+      ]
+    },
+    {
+      "id": "IDEA225",
+      "sum": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+      "kind": "",
+      "imp": "central",
+      "src": [
+        "SRC006152",
+        "SRC006154",
+        "SRC006155",
+        "SRC006156",
+        "SRC006157"
+      ],
+      "top": [
+        "TOP054"
+      ]
+    },
+    {
+      "id": "IDEA226",
+      "sum": "Death as gain must become one's lived reality, not merely an intellectual idea.",
+      "kind": "",
+      "imp": "central",
+      "src": [
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "top": [
+        "TOP054"
+      ]
+    },
+    {
+      "id": "IDEA250",
+      "sum": "Fear of death observed even among believers reveals it is not yet fully embraced as gain.",
+      "kind": "",
+      "imp": "supporting",
+      "src": [
+        "SRC007115",
+        "SRC007116",
+        "SRC007117",
+        "SRC007118"
+      ],
+      "top": [
+        "TOP054"
+      ]
+    },
+    {
+      "id": "IDEA251",
+      "sum": "If a believer does not practice Christ as life, facing death becomes heavy and difficult.",
+      "kind": "",
+      "imp": "central",
+      "src": [
+        "SRC007151",
+        "SRC007152",
+        "SRC007155",
+        "SRC007156",
+        "SRC007158",
+        "SRC007161",
+        "SRC007162"
+      ],
+      "top": [
+        "TOP054",
+        "TOP056"
+      ]
+    },
+    {
+      "id": "IDEA252",
+      "sum": "Some believers foreknow the exact hour of their death and depart peacefully.",
+      "kind": "",
+      "imp": "supporting",
+      "src": [
+        "SRC007193",
+        "SRC007197",
+        "SRC007199",
+        "SRC007201",
+        "SRC007204"
+      ],
+      "top": [
+        "TOP054"
+      ]
+    }
+  ],
+  "examples": [],
+  "references": [
+    {
+      "id": "REF050",
+      "kind": "biblical",
+      "raw": "1 Corinthians 15",
+      "norm": "1 Corinthians 15",
+      "comp": "partial",
+      "src": [
+        "SRC006788"
+      ]
+    },
+    {
+      "id": "REF051",
+      "kind": "biblical",
+      "raw": "Philippians chapter 1, verse 21",
+      "norm": "Philippians chapter 1, verse 21",
+      "comp": "complete",
+      "src": [
+        "SRC007129",
+        "SRC007132",
+        "SRC007149"
+      ]
+    },
+    {
+      "id": "REF056",
+      "kind": "biblical",
+      "raw": "'To live is Christ' (Philippians reference)",
+      "norm": "'To live is Christ' (Philippians reference)",
+      "comp": "partial",
+      "src": [
+        "SRC007559",
+        "SRC007560"
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "src": [
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157",
+    "SRC006192",
+    "SRC006193",
+    "SRC006195",
+    "SRC007115",
+    "SRC007116",
+    "SRC007117",
+    "SRC007118",
+    "SRC007151",
+    "SRC007152",
+    "SRC007155",
+    "SRC007156",
+    "SRC007158",
+    "SRC007161",
+    "SRC007162",
+    "SRC007193",
+    "SRC007197",
+    "SRC007199",
+    "SRC007201",
+    "SRC007204",
+    "SRC006788",
+    "SRC007129",
+    "SRC007132",
+    "SRC007149",
+    "SRC007559",
+    "SRC007560"
+  ],
+  "src_text": [
+    {
+      "id": "SRC006149",
+      "t": "Don't ever be afraid of death."
+    },
+    {
+      "id": "SRC006152",
+      "t": "It is an abuse"
+    },
+    {
+      "id": "SRC006154",
+      "t": "It is an abuse to your person."
+    },
+    {
+      "id": "SRC006155",
+      "t": "And the devil"
+    },
+    {
+      "id": "SRC006156",
+      "t": "has used it since."
+    },
+    {
+      "id": "SRC006157",
+      "t": "He has not changed his style."
+    },
+    {
+      "id": "SRC006180",
+      "t": "But you can see fear"
+    },
+    {
+      "id": "SRC006182",
+      "t": "It's not normal."
+    },
+    {
+      "id": "SRC006183",
+      "t": "It should be our joy."
+    },
+    {
+      "id": "SRC006187",
+      "t": "So if somebody has gone to heaven,"
+    },
+    {
+      "id": "SRC006192",
+      "t": "It's not mind over matter."
+    },
+    {
+      "id": "SRC006193",
+      "t": "It must be your reality."
+    },
+    {
+      "id": "SRC006195",
+      "t": "It must be your reality."
+    },
+    {
+      "id": "SRC006788",
+      "t": "on 1 Corinthians 15"
+    },
+    {
+      "id": "SRC007115",
+      "t": "Of recent, I've heard about the death of many supposed children of God who didn't embrace death as gain."
+    },
+    {
+      "id": "SRC007116",
+      "t": "Any time I hear a child of God has gone and given to God, my first question is, how were the last hours?"
+    },
+    {
+      "id": "SRC007117",
+      "t": "And I usually hear, he died saying, I don't want to die now, or she died saying, I don't want to die now."
+    },
+    {
+      "id": "SRC007118",
+      "t": "So, I am actually sincerely worried and troubled, because I don't know if it's that we have not, the church has not been filled enough."
+    },
+    {
+      "id": "SRC007129",
+      "t": "The question she's asking, Philippians chapter 1, verse 21."
+    },
+    {
+      "id": "SRC007132",
+      "t": "Philippians 1, verse 21."
+    },
+    {
+      "id": "SRC007149",
+      "t": "Philippians chapter 1, verse 21."
+    },
+    {
+      "id": "SRC007151",
+      "t": "Christ is my life."
+    },
+    {
+      "id": "SRC007152",
+      "t": "To live is Christ."
+    },
+    {
+      "id": "SRC007155",
+      "t": "If you don't practice Christ,"
+    },
+    {
+      "id": "SRC007156",
+      "t": "death will be difficult for you."
+    },
+    {
+      "id": "SRC007158",
+      "t": "You got to practice Christ."
+    },
+    {
+      "id": "SRC007161",
+      "t": "If you're not practicing life,"
+    },
+    {
+      "id": "SRC007162",
+      "t": "death will be heavy."
+    },
+    {
+      "id": "SRC007193",
+      "t": "I know at least two men."
+    },
+    {
+      "id": "SRC007197",
+      "t": "Exact hour."
+    },
+    {
+      "id": "SRC007199",
+      "t": "Exact date."
+    },
+    {
+      "id": "SRC007201",
+      "t": "So you better come."
+    },
+    {
+      "id": "SRC007204",
+      "t": "I'll go to heaven."
+    },
+    {
+      "id": "SRC007559",
+      "t": "to live is Christ"
+    },
+    {
+      "id": "SRC007560",
+      "t": "anything he might live"
+    }
+  ],
+  "allowed": [
+    "IDEA224",
+    "IDEA225",
+    "IDEA226",
+    "IDEA250",
+    "IDEA251",
+    "IDEA252",
+    "REF050",
+    "REF051",
+    "REF056",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157",
+    "SRC006192",
+    "SRC006193",
+    "SRC006195",
+    "SRC007115",
+    "SRC007116",
+    "SRC007117",
+    "SRC007118",
+    "SRC007151",
+    "SRC007152",
+    "SRC007155",
+    "SRC007156",
+    "SRC007158",
+    "SRC007161",
+    "SRC007162",
+    "SRC007193",
+    "SRC007197",
+    "SRC007199",
+    "SRC007201",
+    "SRC007204",
+    "SRC006788",
+    "SRC007129",
+    "SRC007132",
+    "SRC007149",
+    "SRC007559",
+    "SRC007560"
+  ],
+  "blocked": [],
+  "rules": {
+    "follow_section_order": true,
+    "no_invented_ids": true,
+    "no_external_knowledge": true,
+    "no_translation": true,
+    "no_auto_section_summary": true,
+    "no_auto_chapter_conclusion": true,
+    "preserve_uncertainty": true,
+    "preserve_prayer_exhortation_exercise": true
+  }
+}

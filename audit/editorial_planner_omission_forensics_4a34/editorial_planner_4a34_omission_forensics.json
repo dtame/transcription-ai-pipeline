@@ -1,0 +1,290 @@
+{
+  "historical_status": "FAIL",
+  "coverage": "284 / 286",
+  "missing": [
+    "IDEA007",
+    "IDEA008"
+  ],
+  "presence": {
+    "historical_a33_request_sha256": "8ae3170b79a148979a6480a06c922116fc4b2982bd4965cc2bc6ce74d51b3b69",
+    "rebuilt_a33_request_sha256": "8ae3170b79a148979a6480a06c922116fc4b2982bd4965cc2bc6ce74d51b3b69",
+    "request_identity_match": true,
+    "canonical_document_language": "en",
+    "digest_idea_count": 286,
+    "digest_unique_idea_count": 286,
+    "digest_counts": {
+      "topics": 67,
+      "ideas": 286,
+      "examples": 49,
+      "references": 59,
+      "uncertainties": 35,
+      "repetitions": 0
+    },
+    "neighbors": [
+      "IDEA005",
+      "IDEA006",
+      "IDEA007",
+      "IDEA008",
+      "IDEA009",
+      "IDEA010",
+      "IDEA011"
+    ],
+    "adjacency_IDEA007_IDEA008": true,
+    "request_truncation": "NO",
+    "serialization_truncation": "NO",
+    "digest_clipping": "NO",
+    "token_budget_clipping": "NO",
+    "clipping_rationale": "IDEA007 and IDEA008 sit at ordinals 7–8 of 286, mid-digest, with full SourceMap summaries and a matching A.3.3 request hash. End-of-request truncation is not demonstrated.",
+    "equivalent_manifest_already_present": true,
+    "manifest_note": "The compact digest already lists every IDEA ID exactly once and includes counts.ideas. A second expected_idea_ids array would duplicate tokens without demonstrated benefit.",
+    "ideas": {
+      "IDEA007": {
+        "present_in_request": true,
+        "present_yes_no": "YES",
+        "well_formed": true,
+        "unique_in_digest": true,
+        "unique_in_user": true,
+        "ordinal_1_based": 7,
+        "index_0_based": 6,
+        "surrounding_idea_ids": [
+          "IDEA006",
+          "IDEA007",
+          "IDEA008"
+        ],
+        "user_offsets": [
+          12126
+        ],
+        "request_representation": "{\"id\":\"IDEA007\",\"summary\":\"The speaker holds an ambition for extraordinarily long life (hundreds or a thousand years) if needed to fulfill God's vision.\",\"kind\":\"\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP004\"]}",
+        "digest_row": {
+          "id": "IDEA007",
+          "summary": "The speaker holds an ambition for extraordinarily long life (hundreds or a thousand years) if needed to fulfill God's vision.",
+          "kind": "",
+          "importance": "supporting",
+          "topic_refs": [
+            "TOP004"
+          ]
+        },
+        "digest_summary_equals_source": true,
+        "digest_summary_chars": 125,
+        "source_summary_chars": 125,
+        "field_size_clipped": false,
+        "exact_summary_under_other_ids": []
+      },
+      "IDEA008": {
+        "present_in_request": true,
+        "present_yes_no": "YES",
+        "well_formed": true,
+        "unique_in_digest": true,
+        "unique_in_user": true,
+        "ordinal_1_based": 8,
+        "index_0_based": 7,
+        "surrounding_idea_ids": [
+          "IDEA007",
+          "IDEA008",
+          "IDEA009"
+        ],
+        "user_offsets": [
+          12341
+        ],
+        "request_representation": "{\"id\":\"IDEA008\",\"summary\":\"Long life is possible even for sinners (implying it is not righteousness alone that grants longevity), yet believers are not harvesting long life because they have not 'planted' it.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP004\"]}",
+        "digest_row": {
+          "id": "IDEA008",
+          "summary": "Long life is possible even for sinners (implying it is not righteousness alone that grants longevity), yet believers are not harvesting long life because they have not 'planted' it.",
+          "kind": "",
+          "importance": "central",
+          "topic_refs": [
+            "TOP004"
+          ]
+        },
+        "digest_summary_equals_source": true,
+        "digest_summary_chars": 181,
+        "source_summary_chars": 181,
+        "field_size_clipped": false,
+        "exact_summary_under_other_ids": []
+      }
+    },
+    "IDEA007_present_in_request": "YES",
+    "IDEA008_present_in_request": "YES",
+    "request_input_defect": "NO"
+  },
+  "neighbors": {
+    "IDEA005": {
+      "idea_id": "IDEA005",
+      "kind": "",
+      "importance": "central",
+      "summary": "Now that knowledge has increased, believers must learn better ways rather than continuing inherited but suboptimal customs.",
+      "topic_refs": [
+        "TOP002",
+        "TOP008"
+      ],
+      "source_refs": [
+        "SRC000116",
+        "SRC000117",
+        "SRC000160",
+        "SRC000162"
+      ],
+      "topics": [
+        {
+          "topic_id": "TOP002",
+          "label": "Cultural food habits and health",
+          "summary": "Cultural food habits and health"
+        },
+        {
+          "topic_id": "TOP008",
+          "label": "Faith versus tradition and works",
+          "summary": "Faith versus tradition and works"
+        }
+      ],
+      "summary_chars": 123
+    },
+    "IDEA006": {
+      "idea_id": "IDEA006",
+      "kind": "",
+      "importance": "supporting",
+      "summary": "The speaker's grandmother, though uneducated, intuitively practiced wisdom (fresh cooking, clay pots) that the speaker identifies as reflecting God's nature.",
+      "topic_refs": [
+        "TOP003"
+      ],
+      "source_refs": [
+        "SRC000121",
+        "SRC000140",
+        "SRC000149",
+        "SRC000153"
+      ],
+      "topics": [
+        {
+          "topic_id": "TOP003",
+          "label": "Elders' wisdom and traditional cooking",
+          "summary": "Elders' wisdom and traditional cooking"
+        }
+      ],
+      "summary_chars": 157
+    },
+    "IDEA007": {
+      "idea_id": "IDEA007",
+      "kind": "",
+      "importance": "supporting",
+      "summary": "The speaker holds an ambition for extraordinarily long life (hundreds or a thousand years) if needed to fulfill God's vision.",
+      "topic_refs": [
+        "TOP004"
+      ],
+      "source_refs": [
+        "SRC000171",
+        "SRC000174",
+        "SRC000180",
+        "SRC000181"
+      ],
+      "topics": [
+        {
+          "topic_id": "TOP004",
+          "label": "Longevity, immortality and the tree of life",
+          "summary": "Longevity, immortality and the tree of life"
+        }
+      ],
+      "summary_chars": 125
+    },
+    "IDEA008": {
+      "idea_id": "IDEA008",
+      "kind": "",
+      "importance": "central",
+      "summary": "Long life is possible even for sinners (implying it is not righteousness alone that grants longevity), yet believers are not harvesting long life because they have not 'planted' it.",
+      "topic_refs": [
+        "TOP004"
+      ],
+      "source_refs": [
+        "SRC000183",
+        "SRC000186",
+        "SRC000190",
+        "SRC000192"
+      ],
+      "topics": [
+        {
+          "topic_id": "TOP004",
+          "label": "Longevity, immortality and the tree of life",
+          "summary": "Longevity, immortality and the tree of life"
+        }
+      ],
+      "summary_chars": 181
+    },
+    "IDEA009": {
+      "idea_id": "IDEA009",
+      "kind": "",
+      "importance": "central",
+      "summary": "Much church teaching focuses on preparing people to die well rather than teaching them to inherit resurrection life, citing selective use of 'flesh and blood cannot inherit' while omitting 'flesh and bone can inherit.'",
+      "topic_refs": [
+        "TOP005"
+      ],
+      "source_refs": [
+        "SRC000194",
+        "SRC000196",
+        "SRC000203",
+        "SRC000209"
+      ],
+      "topics": [
+        {
+          "topic_id": "TOP005",
+          "label": "Physical resurrection and flesh/bone identity of Christ",
+          "summary": "Physical resurrection and flesh/bone identity of Christ"
+        }
+      ],
+      "summary_chars": 218
+    },
+    "IDEA010": {
+      "idea_id": "IDEA010",
+      "kind": "",
+      "importance": "central",
+      "summary": "Christ's resurrection was physical: he invited Thomas to touch him and declared spirits do not have flesh and bone, then ascended bodily rather than merely disappearing spiritually.",
+      "topic_refs": [
+        "TOP005"
+      ],
+      "source_refs": [
+        "SRC000216",
+        "SRC000219",
+        "SRC000220",
+        "SRC000221"
+      ],
+      "topics": [
+        {
+          "topic_id": "TOP005",
+          "label": "Physical resurrection and flesh/bone identity of Christ",
+          "summary": "Physical resurrection and flesh/bone identity of Christ"
+        }
+      ],
+      "summary_chars": 181
+    }
+  },
+  "semantic_proximity": {
+    "IDEA005_IDEA006": "diet / inherited customs / elders' cooking; TOP002/TOP003/TOP008",
+    "IDEA007_IDEA008": "both TOP004 longevity / tree of life; consecutive supporting+central pair",
+    "IDEA009_IDEA010": "TOP005 physical resurrection / flesh and bone",
+    "cluster_break": "The omitted pair is the only consecutive TOP004 pair between habit/elders material and resurrection teaching."
+  },
+  "survival": {
+    "IDEA007": "NO_SURVIVAL",
+    "IDEA008": "NO_SURVIVAL",
+    "implicit_coverage_allowed": false,
+    "related_topic_cluster_note": "CH002 / tree-of-life / immortality wording belongs to other assigned TOP004-adjacent ideas. It is not IDEA007 or IDEA008 content and is not implicit coverage."
+  },
+  "a3_comparison": {
+    "a3_coverage": "286 / 286",
+    "a33_coverage": "284 / 286",
+    "a3_chapters": 13,
+    "a3_sections": 67,
+    "a33_chapters": 9,
+    "a33_sections": 63,
+    "a3_IDEA007_IDEA008": [
+      {
+        "idea_id": "IDEA007",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC004"
+      },
+      {
+        "idea_id": "IDEA008",
+        "disposition": "ASSIGNED",
+        "primary_section_id": "SEC004"
+      }
+    ],
+    "same_transport_schema": true
+  },
+  "historical_repair_performed": false
+}

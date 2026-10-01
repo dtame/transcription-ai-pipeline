@@ -1,0 +1,121 @@
+"""Markdown report for Phase 4A.3.4."""
+
+from __future__ import annotations
+
+from typing import Any, Mapping
+
+
+def _v(header: Mapping[str, Any], key: str, default: str = "...") -> Any:
+    value = header.get(key)
+    if value is None or value == "":
+        return default
+    return value
+
+
+def render_report(bundle: Mapping[str, Any]) -> str:
+    header = dict(bundle.get("header") or {})
+    return "\n".join(
+        [
+            "# PHASE 4A.3.4 — EDITORIAL PLANNER SILENT-OMISSION FORENSICS",
+            "",
+            "## Result",
+            "",
+            str(_v(header, "result", "FAIL")),
+            "",
+            f"REAL PROVIDER CALLS = {_v(header, 'real_provider_calls', 0)}",
+            "",
+            f"A.3.3 HISTORICAL STATUS = {_v(header, 'a33_historical_status')}",
+            "",
+            f"A.3.3 RAW RESPONSE UNCHANGED = {_v(header, 'a33_raw_unchanged')}",
+            "",
+            f"A.3.3 CANDIDATE UNCHANGED = {_v(header, 'a33_candidate_unchanged')}",
+            "",
+            f"SOURCE MAP UNCHANGED = {_v(header, 'source_map_unchanged')}",
+            "",
+            f"HISTORICAL COVERAGE = {_v(header, 'historical_coverage')}",
+            "",
+            f"MISSING IDEAS = {_v(header, 'missing_ideas')}",
+            "",
+            f"IDEA007 PRESENT IN REQUEST = {_v(header, 'idea007_present_in_request')}",
+            "",
+            f"IDEA008 PRESENT IN REQUEST = {_v(header, 'idea008_present_in_request')}",
+            "",
+            f"IDEA007 CONTENT SURVIVAL = {_v(header, 'idea007_content_survival')}",
+            "",
+            f"IDEA008 CONTENT SURVIVAL = {_v(header, 'idea008_content_survival')}",
+            "",
+            f"REQUEST INPUT DEFECT = {_v(header, 'request_input_defect')}",
+            "",
+            f"OUTPUT CAP FAILURE = {_v(header, 'output_cap_failure')}",
+            "",
+            f"TRANSPORT DEFECT = {_v(header, 'transport_defect')}",
+            "",
+            f"SCHEMA DEFECT = {_v(header, 'schema_defect')}",
+            "",
+            f"VALIDATOR DEFECT = {_v(header, 'validator_defect')}",
+            "",
+            f"PROMPT COVERAGE WEAKNESS = {_v(header, 'prompt_coverage_weakness')}",
+            "",
+            f"PROVIDER COMPLIANCE FAILURE = {_v(header, 'provider_compliance_failure')}",
+            "",
+            f"PRIMARY ROOT CAUSE = {_v(header, 'primary_root_cause')}",
+            "",
+            f"SECONDARY CONTRIBUTORS = {_v(header, 'secondary_contributors')}",
+            "",
+            f"HISTORICAL A.3 COVERAGE = {_v(header, 'historical_a3_coverage')}",
+            "",
+            f"HISTORICAL A.3.3 COVERAGE = {_v(header, 'historical_a33_coverage')}",
+            "",
+            f"SELECTED FIX = {_v(header, 'selected_fix')}",
+            "",
+            f"SUCCESSOR PROMPT = {_v(header, 'successor_prompt')}",
+            "",
+            f"TRANSPORT = {_v(header, 'transport')}",
+            "",
+            f"SCHEMA CHANGED = {_v(header, 'schema_changed')}",
+            "",
+            f"NEW GRAMMAR CANARY REQUIRED = {_v(header, 'new_grammar_canary_required')}",
+            "",
+            f"NEW SYNTHETIC CONTRACT CANARY REQUIRED = {_v(header, 'new_synthetic_contract_canary_required')}",
+            "",
+            f"FUTURE CANONICAL LANGUAGE = {_v(header, 'future_canonical_language')}",
+            "",
+            f"FUTURE MAX_OUTPUT = {_v(header, 'future_max_output')}",
+            "",
+            f"FUTURE EXACT REQUEST SHA256 = {_v(header, 'future_exact_request_sha256')}",
+            "",
+            f"FUTURE REQUEST DETERMINISM = {_v(header, 'future_request_determinism')}",
+            "",
+            f"FUTURE IDEA INPUT COVERAGE = {_v(header, 'future_idea_input_coverage')}",
+            "",
+            f"FUTURE INPUT ESTIMATE = {_v(header, 'future_input_estimate')}",
+            "",
+            f"FUTURE ESTIMATED COST = {_v(header, 'future_estimated_cost')}",
+            "",
+            f"FAKEAI COVERAGE STRESS = {_v(header, 'fakeai_coverage_stress')}",
+            "",
+            f"TESTS = {_v(header, 'tests')}",
+            "",
+            f"NEW FAILURES = {_v(header, 'new_failures')}",
+            "",
+            f"editorial_plan.json = {_v(header, 'editorial_plan_json')}",
+            "",
+            f"READY_FOR_ONE_FINAL_CONTROLLED_EDITORIAL_PLANNER_CANARY = {_v(header, 'ready_for_one_final_controlled_editorial_planner_canary')}",
+            "",
+            f"READY_FOR_EDITORIAL_PLAN_PUBLICATION = {_v(header, 'ready_for_editorial_plan_publication')}",
+            "",
+            f"BOOK GENERATOR = {_v(header, 'book_generator')}",
+            "",
+            f"NEXT ACTION = {_v(header, 'next_action')}",
+            "",
+            "## Notes",
+            "",
+            "This phase is offline. Historical A.3.3 remains FAIL. IDEA007 and",
+            "IDEA008 were not repaired. editorial_plan.json was not published.",
+            "A future real call is a new human-authorized canary, not an automatic retry.",
+            "",
+        ]
+    )
+
+
+__all__ = ["render_report"]

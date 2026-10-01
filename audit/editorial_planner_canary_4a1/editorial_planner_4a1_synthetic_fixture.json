@@ -1,0 +1,313 @@
+{
+  "domain": "community garden workshop",
+  "project_name": "community_garden_workshop_canary_4a1",
+  "transcript_id": "TR_CANARY_EP4A1",
+  "primary_language": "en",
+  "inventory": {
+    "topics": 3,
+    "ideas": 7,
+    "examples": 2,
+    "references": 2,
+    "uncertainties": 1,
+    "repetitions": 0
+  },
+  "ids": {
+    "topics": [
+      "TOP001",
+      "TOP002",
+      "TOP003"
+    ],
+    "ideas": [
+      "IDEA001",
+      "IDEA002",
+      "IDEA003",
+      "IDEA004",
+      "IDEA005",
+      "IDEA006",
+      "IDEA007"
+    ],
+    "examples": [
+      "EX001",
+      "EX002"
+    ],
+    "references": [
+      "REF001",
+      "REF002"
+    ],
+    "uncertainties": [
+      "UNC001"
+    ]
+  },
+  "src_ids": [
+    "SRC999101",
+    "SRC999102",
+    "SRC999103",
+    "SRC999104",
+    "SRC999105",
+    "SRC999106",
+    "SRC999107",
+    "SRC999108"
+  ],
+  "expected_src_ids": [
+    "SRC999101",
+    "SRC999102",
+    "SRC999103",
+    "SRC999104",
+    "SRC999105",
+    "SRC999106",
+    "SRC999107",
+    "SRC999108"
+  ],
+  "administrative_idea_candidate": "IDEA007",
+  "grouping_candidates": [
+    "IDEA001",
+    "IDEA002",
+    "IDEA003"
+  ],
+  "optional_reuse_candidate": "IDEA001",
+  "uncertainty_id": "UNC001",
+  "technical_windows": false,
+  "fixture_sha256": "b1a3615f07e1048f9a3a9ae2f598f6ccbaa681ce75e75cae5de7f08254aec1e8",
+  "fixture_bytes": 4696,
+  "source_map": {
+    "schema_version": "1.0",
+    "transcript_id": "TR_CANARY_EP4A1",
+    "project": {
+      "name": "community_garden_workshop_canary_4a1"
+    },
+    "language": {
+      "primary": "en"
+    },
+    "source_analysis": {
+      "main_theme": "A community garden workshop on preparing soil, planting in sequence, watering carefully, and sharing surplus harvest",
+      "author_intent": {
+        "summary": "Teach neighbors a practical method for a shared garden plot",
+        "confidence": "high",
+        "kinds": [
+          "enseigner"
+        ]
+      },
+      "target_audience": {
+        "summary": "Adult neighbors joining a first-year community garden workshop",
+        "confidence": "high",
+        "kinds": []
+      }
+    },
+    "topics": [
+      {
+        "topic_id": "TOP001",
+        "label": "Soil and bed preparation",
+        "summary": "How the workshop prepares garden soil and maps the site.",
+        "source_refs": [
+          "SRC999101",
+          "SRC999102"
+        ]
+      },
+      {
+        "topic_id": "TOP002",
+        "label": "Planting and watering",
+        "summary": "How the workshop sequences planting and waters plants.",
+        "source_refs": [
+          "SRC999103",
+          "SRC999104",
+          "SRC999105"
+        ]
+      },
+      {
+        "topic_id": "TOP003",
+        "label": "Harvest sharing and volunteer roles",
+        "summary": "How surplus produce is shared and how volunteers help.",
+        "source_refs": [
+          "SRC999106",
+          "SRC999107",
+          "SRC999108"
+        ]
+      }
+    ],
+    "ideas": [
+      {
+        "idea_id": "IDEA001",
+        "summary": "Test soil pH before planting so beds are not committed to the wrong crop.",
+        "kind": "instruction",
+        "importance": "central",
+        "topic_refs": [
+          "TOP001"
+        ],
+        "relations": [],
+        "source_refs": [
+          "SRC999101"
+        ]
+      },
+      {
+        "idea_id": "IDEA002",
+        "summary": "Add compost in thin layers mixed into the topsoil rather than dumping one pile.",
+        "kind": "instruction",
+        "importance": "central",
+        "topic_refs": [
+          "TOP001"
+        ],
+        "relations": [],
+        "source_refs": [
+          "SRC999102"
+        ]
+      },
+      {
+        "idea_id": "IDEA003",
+        "summary": "Map sun and shade across the plot before choosing which beds get which plants.",
+        "kind": "instruction",
+        "importance": "supporting",
+        "topic_refs": [
+          "TOP001"
+        ],
+        "relations": [],
+        "source_refs": [
+          "SRC999102"
+        ]
+      },
+      {
+        "idea_id": "IDEA004",
+        "summary": "Plant in staggered weeks so harvest arrives continuously instead of all at once.",
+        "kind": "principle",
+        "importance": "central",
+        "topic_refs": [
+          "TOP002"
+        ],
+        "relations": [],
+        "source_refs": [
+          "SRC999103"
+        ]
+      },
+      {
+        "idea_id": "IDEA005",
+        "summary": "Water at the base in the morning to keep leaves dry and reduce disease.",
+        "kind": "instruction",
+        "importance": "central",
+        "topic_refs": [
+          "TOP002"
+        ],
+        "relations": [],
+        "source_refs": [
+          "SRC999104"
+        ]
+      },
+      {
+        "idea_id": "IDEA006",
+        "summary": "Share surplus produce on a simple weekly harvest table that neighbors can take from.",
+        "kind": "claim",
+        "importance": "supporting",
+        "topic_refs": [
+          "TOP003"
+        ],
+        "relations": [],
+        "source_refs": [
+          "SRC999106"
+        ]
+      },
+      {
+        "idea_id": "IDEA007",
+        "summary": "A volunteer sign-in clipboard on the folding table collects emails for the newsletter.",
+        "kind": "observation",
+        "importance": "minor",
+        "topic_refs": [
+          "TOP003"
+        ],
+        "relations": [],
+        "source_refs": [
+          "SRC999107"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "example_id": "EX001",
+        "kind": "anecdote",
+        "summary": "Last year the east bed stayed wet until June after the group skipped the soil test.",
+        "supports_idea_refs": [
+          "IDEA001"
+        ],
+        "source_refs": [
+          "SRC999101"
+        ]
+      },
+      {
+        "example_id": "EX002",
+        "kind": "example",
+        "summary": "A neighbor's tomatoes developed blight after evening overhead watering.",
+        "supports_idea_refs": [
+          "IDEA005"
+        ],
+        "source_refs": [
+          "SRC999105"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "reference_id": "REF001",
+        "kind": "book",
+        "raw_reference": "the city's community garden handbook, 2024 edition",
+        "normalized_reference": "city community garden handbook 2024",
+        "completeness": "partial",
+        "source_refs": [
+          "SRC999103"
+        ]
+      },
+      {
+        "reference_id": "REF002",
+        "kind": "other",
+        "raw_reference": "the seed-packet instruction sheet from the co-op",
+        "normalized_reference": "co-op seed packet instruction sheet",
+        "completeness": "partial",
+        "source_refs": [
+          "SRC999104"
+        ]
+      }
+    ],
+    "uncertainties": [
+      {
+        "uncertainty_id": "UNC001",
+        "kind": "ambiguous_meaning",
+        "description": "The speaker was unsure whether the municipal compost drop-off is open on Sundays or only Saturday mornings.",
+        "severity": "low",
+        "source_refs": [
+          "SRC999108"
+        ]
+      }
+    ],
+    "repetitions": [],
+    "author_voice_profile": {
+      "tone": [
+        "practical",
+        "encouraging"
+      ],
+      "register": "oral",
+      "sentence_style": "",
+      "rhetorical_patterns": [],
+      "use_of_questions": "",
+      "use_of_repetition": "",
+      "use_of_examples": "",
+      "direct_address": "",
+      "teaching_style": "direct",
+      "distinctive_traits": []
+    },
+    "stats": {
+      "topic_count": 3,
+      "idea_count": 7,
+      "example_count": 2,
+      "reference_count": 2,
+      "uncertainty_count": 1,
+      "repetition_count": 0,
+      "source_segment_count": 8,
+      "referenced_source_segments": 8,
+      "source_coverage_ratio": 1.0
+    },
+    "analysis": {
+      "prompt_version": "synthetic-canary-4a1",
+      "schema_version": "1.0",
+      "provider": "synthetic",
+      "model": "none",
+      "strategy": "global",
+      "signature": "synthetic-garden-workshop-4a1"
+    }
+  }
+}

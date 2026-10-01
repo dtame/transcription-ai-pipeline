@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "coherent_organization": "PASS",
+  "chapter_section_boundaries": "PASS",
+  "all_ideas_handled": "PASS",
+  "invention": "PASS",
+  "deferred_excluded_justified": "PASS",
+  "uncertainty_preserved": "PASS",
+  "selected_title": "Prepare, Plant, Share",
+  "subtitle": "A workshop method for soil, planting, and shared harvest",
+  "editorial_angle": "Treat the workshop as a sequence of decisions made before, during, and after the growing season, so each instruction sits where a gardener would actually need it.",
+  "target_reader": "Adult neighbors joining a first-year community garden workshop, with no assumed prior gardening experience.",
+  "chapter_titles": [
+    "Reading the Ground Before You Plant",
+    "Planting and Watering Through the Season",
+    "What the Plot Gives Back"
+  ],
+  "section_titles": [
+    "Test First, Commit Later",
+    "Compost in Thin Layers",
+    "Mapping Sun and Shade",
+    "Stagger the Weeks",
+    "Water Low, Water Early",
+    "The Weekly Harvest Table",
+    "Signing In, Staying Connected"
+  ],
+  "deferred_excluded": [],
+  "issues": [],
+  "notes": []
+}

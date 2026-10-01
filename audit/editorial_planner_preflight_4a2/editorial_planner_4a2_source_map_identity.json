@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "blocked_precall": false,
+  "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+  "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+  "expected_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+  "hash_match": true,
+  "bytes": 202398,
+  "expected_bytes": 202398,
+  "bytes_match": true,
+  "chars": 202365,
+  "expected_chars": 202365,
+  "chars_match": true,
+  "inventory": {
+    "topics": 67,
+    "ideas": 286,
+    "examples": 49,
+    "references": 59,
+    "uncertainties": 35,
+    "repetitions": 0
+  },
+  "expected_inventory": {
+    "topics": 67,
+    "ideas": 286,
+    "examples": 49,
+    "references": 59,
+    "uncertainties": 35,
+    "repetitions": 0
+  },
+  "inventory_match": true,
+  "canonical_source_map_validation": "PASS",
+  "traceability": "PASS",
+  "source_map_validation_errors": [],
+  "forbidden_editorial_fields": [],
+  "forbidden_editorial_structure": "NO",
+  "relations_present": false,
+  "relation_quality_debt": "PRESERVED",
+  "source_map_not_modified": true,
+  "preflight": {
+    "status": "PASS",
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+    "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "expected_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "hash_match": true,
+    "bytes": 202398,
+    "expected_bytes": 202398,
+    "bytes_match": true,
+    "chars": 202365,
+    "inventory": {
+      "topics": 67,
+      "ideas": 286,
+      "examples": 49,
+      "references": 59,
+      "uncertainties": 35,
+      "repetitions": 0
+    },
+    "expected_inventory": {
+      "topics": 67,
+      "ideas": 286,
+      "examples": 49,
+      "references": 59,
+      "uncertainties": 35,
+      "repetitions": 0
+    },
+    "inventory_match": true,
+    "source_map_validation": "PASS",
+    "source_map_validation_errors": [],
+    "forbidden_editorial_fields": [],
+    "forbidden_editorial_structure": "NO",
+    "traceability": "PASS",
+    "relations_present": false,
+    "relation_quality_debt": "PRESERVED",
+    "identity": {
+      "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "bytes": 202398,
+      "schema_version": "1.0",
+      "project": "pastoral_retreat_v2_validation",
+      "inventory": {
+        "topic_count": 67,
+        "idea_count": 286,
+        "example_count": 49,
+        "reference_count": 59,
+        "uncertainty_count": 35,
+        "repetition_count": 0
+      }
+    },
+    "source_map_not_modified": true
+  }
+}

@@ -1,0 +1,332 @@
+"""Constantes 3B.7.7A.29 — forensics plafond de longueur WIN003. 0 provider."""
+
+from __future__ import annotations
+
+from app.source_analysis.writer import source_map_path
+from app.source_analysis_hybrid.constants import PLANNER_VERSION
+from app.source_analysis_local_v2.constants import (
+    CANDIDATE_PLANNER_VERSION,
+    HARD_CEILINGS,
+    PROJECT_NAME,
+    SOURCE_REFS_HARD_MAX,
+    TOTAL_HARD_CEILING,
+)
+from app.source_analysis_local_v2.granularity import (
+    TEXT_HARD_LIMITS as V2_TEXT_HARD_LIMITS,
+    V11_MINIMAL_TEXT_HARD_LIMITS,
+)
+from app.source_analysis_local_v3.constants import (
+    SEMANTIC_TRANSPORT_VERSION_V3,
+    SEMANTIC_TRANSPORT_VERSION_V31_LOCAL_LITE,
+    WINDOW_ANALYSIS_PROMPT_VERSION_V140,
+)
+from app.source_analysis_local_v3.schema import (
+    semantic_transport_v3_fingerprint,
+    semantic_transport_v31_local_lite_fingerprint,
+)
+from app.source_analysis.window_granularity import TEXT_HARD_LIMITS as V10_TEXT_HARD_LIMITS
+from app.source_analysis_v3_a22_forensics.constants import (
+    A22_FORENSIC_RELATIVE,
+    A22_RAW_SHA256,
+    A22_RAW_SIZE,
+    A22_SIGNATURE,
+    A22_STATUS_UNCHANGED,
+)
+from app.source_analysis_v3_a25_forensics.constants import (
+    A24_FORENSIC_RELATIVE,
+    A24_RAW_SHA256,
+    A24_RAW_SIZE,
+    A24_SIGNATURE,
+    A24_STATUS_UNCHANGED,
+)
+from app.source_analysis_v3_hardened_win001.constants import (
+    EXPECTED_ANALYSIS_SIGNATURE as A21_SIGNATURE,
+    REPORT_NAME as A21_REPORT_NAME,
+)
+from app.source_analysis_v3_second_window.constants import EXPECTED_SCHEMA_HASH
+from app.source_analysis_v3_symbolic_grammar_canary.constants import (
+    EXPECTED_ADAPTED_SCHEMA_BYTES,
+    EXPECTED_RAW_SCHEMA_BYTES,
+)
+from app.source_analysis_v31_real_win004.constants import (
+    EXPECTED_ANALYSIS_SIGNATURE as A27_SIGNATURE,
+    REPORT_NAME as A27_REPORT_NAME,
+)
+from app.source_analysis_v31_remaining_windows.constants import (
+    A19_RESULT,
+    A21_RESULT,
+    A22_RESULT,
+    A24_RESULT,
+    A25_RESULT,
+    A26_RESULT,
+    A261_RESULT,
+    A27_RESULT,
+    PHASE_3B_STATUS as A28_PHASE_3B_STATUS,
+    PROTECTED_HISTORICAL as A28_PROTECTED_HISTORICAL,
+    REPORT_NAME as A28_REPORT_NAME,
+    WINDOW_SPECS,
+)
+
+SCHEMA_VERSION = "1.0"
+PHASE = "3B.7.7A.29"
+MODE = "WIN003_VALUE_LENGTH_CEILING_FORENSICS_OFFLINE"
+
+REAL_PROVIDER_CALLS_THIS_PHASE = 0
+REAL_WINDOW_CALLS = 0
+WIN003_RETRY_AUTHORIZED = False
+WIN005_AUTHORIZED = False
+WIN006_AUTHORIZED = False
+WIN007_AUTHORIZED = False
+CONSOLIDATION_AUTHORIZED = False
+PRODUCTION_LENGTH_POLICY_MUTATED = False
+
+A27_STATUS_UNCHANGED = "PASS"
+A28_STATUS_UNCHANGED = "FAIL"
+READY_WINDOWS = "3 / 7"
+READY_COUNT = 3
+TOTAL_WINDOWS = 7
+PHASE_3B_STATUS = "INCOMPLETE"
+SOURCE_MAP_STATUS = "NOT PUBLISHED"
+
+WINDOW_ID = "WIN003"
+WIN003_SIGNATURE = WINDOW_SPECS["WIN003"]["analysis_signature"]
+WIN003_FORENSIC = WINDOW_SPECS["WIN003"]["forensic_identity"]
+WIN002_SIGNATURE = WINDOW_SPECS["WIN002"]["analysis_signature"]
+WIN003_RAW_SHA256 = (
+    "c6d500e12a33bafa84fbdaf83aa507230cc39b0109b5f4b99ebcdcc0d572ccda"
+)
+WIN003_RAW_SIZE = 30470
+WIN003_COST_USD = 0.215686
+WIN003_ELAPSED_MS = 101000
+WIN003_REQUEST_ID = "req_011CfUkAxvFJzkfSNhdHiMmb"
+WIN003_FORENSIC_RELATIVE = (
+    "audit/canary/v31_local_lite_remaining/provider_forensics/WIN003/"
+    + WIN003_SIGNATURE
+)
+
+A28_VALIDATOR_ERROR = (
+    "theme : 212 caractères > 200 | records[81].v (EXAMPLE) : 213 > 200"
+)
+THEME_CHARS = 212
+IDEA_INDEX = 45
+IDEA_CHARS = 209
+EXAMPLE_INDEX = 81
+EXAMPLE_CHARS = 213
+
+# A.29-era production limits = frozen 1.1-minimal. Live 1.2 is A.30.
+CURRENT_THEME_LIMIT = V11_MINIMAL_TEXT_HARD_LIMITS["theme"]
+CURRENT_IDEA_LIMIT = V11_MINIMAL_TEXT_HARD_LIMITS["IDEA.v"]
+CURRENT_EXAMPLE_LIMIT = V11_MINIMAL_TEXT_HARD_LIMITS["EXAMPLE.v"]
+CURRENT_TOPIC_LIMIT = V11_MINIMAL_TEXT_HARD_LIMITS["TOPIC.v"]
+CURRENT_RELATION_LIMIT = V11_MINIMAL_TEXT_HARD_LIMITS["RELATION.v"]
+CURRENT_REFERENCE_LIMIT = V11_MINIMAL_TEXT_HARD_LIMITS["REFERENCE.v"]
+CURRENT_UNCERTAINTY_LIMIT = V11_MINIMAL_TEXT_HARD_LIMITS["UNCERTAINTY.v"]
+CURRENT_INTENT_LIMIT = V11_MINIMAL_TEXT_HARD_LIMITS["intent"]
+CURRENT_AUD_LIMIT = V11_MINIMAL_TEXT_HARD_LIMITS["aud"]
+
+assert CURRENT_THEME_LIMIT == 200
+assert CURRENT_EXAMPLE_LIMIT == 200
+assert CURRENT_IDEA_LIMIT == 280
+assert CURRENT_TOPIC_LIMIT == 80
+assert CURRENT_RELATION_LIMIT == 40
+assert CURRENT_REFERENCE_LIMIT == 220
+assert CURRENT_UNCERTAINTY_LIMIT == 280
+assert CURRENT_INTENT_LIMIT == 280
+assert CURRENT_AUD_LIMIT == 280
+assert V10_TEXT_HARD_LIMITS["theme"] == 200
+assert V10_TEXT_HARD_LIMITS["IDEA.v"] == 280
+assert V10_TEXT_HARD_LIMITS["EXAMPLE.v"] == 200
+assert V11_MINIMAL_TEXT_HARD_LIMITS["theme"] == 200
+assert V11_MINIMAL_TEXT_HARD_LIMITS["EXAMPLE.v"] == 200
+assert V2_TEXT_HARD_LIMITS["IDEA.v"] == 280
+
+LENGTH_MECHANISM = "python_len_str_unicode_code_points"
+LENGTH_NOT_BYTES = True
+LENGTH_NOT_TOKENS = True
+LENGTH_NOT_TRIMMED = True
+LENGTH_NOT_NORMALIZED = True
+LOCAL_STRING_TRUNCATION = False
+LOCAL_SEMANTIC_MERGE = False
+
+CANDIDATE_CEILINGS = (200, 225, 250, 300)
+PROPOSED_THEME_LIMIT = 225
+PROPOSED_EXAMPLE_LIMIT = 225
+PROPOSED_IDEA_LIMIT = 280
+
+SELECTED_POLICY = "USE_KIND_SPECIFIC_LIMITS"
+WIN003_FUTURE_ACTION = "NO_RETRY_REQUIRED_SAVED_RESPONSE_CAN_BE_REVALIDATED"
+FAILURE_CLASS = "LIKELY_FALSE_NEGATIVE_FROM_OVERSTRICT_LIMIT"
+A18_PROOF_STILL_APPLIES = True
+SCHEMA_IDENTITY_CHANGES = False
+PROMPT_CHANGE_REQUIRED = False
+TRANSPORT_VERSION_CHANGE_REQUIRED = False
+WIN005_007_SAFE_AFTER_FIX = True
+
+PROMPT_VERSION = WINDOW_ANALYSIS_PROMPT_VERSION_V140
+TRANSPORT_VERSION = SEMANTIC_TRANSPORT_VERSION_V31_LOCAL_LITE
+PRODUCTION_PLANNER_VERSION = PLANNER_VERSION
+CANDIDATE_PLANNER = CANDIDATE_PLANNER_VERSION
+
+BOUNDARY_ARTIFACT = "source_analysis_value_length_boundary_map.json"
+DISTRIBUTION_ARTIFACT = "source_analysis_real_value_length_distribution.json"
+FORENSICS_ARTIFACT = "source_analysis_win003_overlength_forensics.json"
+OPTIONS_ARTIFACT = "source_analysis_length_policy_options.json"
+COUNTERFACTUAL_ARTIFACT = "source_analysis_win003_counterfactual_validation.json"
+DECISION_ARTIFACT = "source_analysis_length_policy_decision.json"
+REPORT_NAME = "PHASE_3B77A29_WIN003_VALUE_LENGTH_CEILING_FORENSICS_REPORT.md"
+
+PROTECTED_A28 = (
+    f"audit/{A28_REPORT_NAME}",
+    "audit/source_analysis_v31_WIN002_canonical_reconstruction.json",
+    "audit/source_analysis_v31_WIN002_contract_analysis.json",
+    "audit/source_analysis_v31_WIN002_execution.json",
+    "audit/source_analysis_v31_WIN002_handle_analysis.json",
+    "audit/source_analysis_v31_WIN002_semantic_review.json",
+    "audit/source_analysis_v31_WIN002_src_analysis.json",
+    "audit/source_analysis_v31_WIN003_contract_analysis.json",
+    "audit/source_analysis_v31_WIN003_execution.json",
+    "audit/source_analysis_v31_WIN003_forensic_inventory.json",
+    "audit/source_analysis_v31_WIN003_handle_analysis.json",
+    "audit/source_analysis_v31_WIN003_semantic_review.json",
+    "audit/source_analysis_v31_WIN003_src_analysis.json",
+    "audit/source_analysis_v31_ready_windows_state.json",
+    "audit/source_analysis_v31_relation_quality_cross_window.json",
+    f"{WIN003_FORENSIC_RELATIVE}/provider_raw_response.bin",
+    f"{WIN003_FORENSIC_RELATIVE}/provider_http_envelope.json",
+    f"audit/{A27_REPORT_NAME}",
+    f"audit/{A21_REPORT_NAME}",
+)
+PROTECTED_HISTORICAL = tuple(A28_PROTECTED_HISTORICAL) + PROTECTED_A28
+
+NEXT_ACTION = "HUMAN REVIEW"
+NEXT_PHASE = "3B.7.7A.30_HUMAN_REVIEW_OF_LENGTH_POLICY"
+NEXT_PHASE_LABEL = (
+    "3B.7.7A.30 — HUMAN REVIEW OF WIN003 LENGTH POLICY "
+    "(do not implement, retry, or resume remaining windows here)"
+)
+
+assert EXPECTED_RAW_SCHEMA_BYTES == 588
+assert EXPECTED_ADAPTED_SCHEMA_BYTES == 650
+assert semantic_transport_v31_local_lite_fingerprint() == EXPECTED_SCHEMA_HASH
+assert semantic_transport_v3_fingerprint() == EXPECTED_SCHEMA_HASH
+assert PROMPT_VERSION == "window-analysis-1.4.0"
+assert TRANSPORT_VERSION == "semantic-transport-v3.1-local-lite"
+assert A27_STATUS_UNCHANGED == "PASS"
+assert A28_STATUS_UNCHANGED == "FAIL"
+assert A28_PHASE_3B_STATUS == "INCOMPLETE"
+assert not source_map_path(PROJECT_NAME).is_file() or SOURCE_MAP_STATUS == "NOT PUBLISHED"
+
+__all__ = [
+    "A18_PROOF_STILL_APPLIES",
+    "A19_RESULT",
+    "A21_RESULT",
+    "A21_SIGNATURE",
+    "A22_FORENSIC_RELATIVE",
+    "A22_RAW_SHA256",
+    "A22_RAW_SIZE",
+    "A22_RESULT",
+    "A22_SIGNATURE",
+    "A22_STATUS_UNCHANGED",
+    "A24_FORENSIC_RELATIVE",
+    "A24_RAW_SHA256",
+    "A24_RAW_SIZE",
+    "A24_RESULT",
+    "A24_SIGNATURE",
+    "A24_STATUS_UNCHANGED",
+    "A25_RESULT",
+    "A26_RESULT",
+    "A261_RESULT",
+    "A27_RESULT",
+    "A27_SIGNATURE",
+    "A27_STATUS_UNCHANGED",
+    "A28_PROTECTED_HISTORICAL",
+    "A28_REPORT_NAME",
+    "A28_STATUS_UNCHANGED",
+    "A28_VALIDATOR_ERROR",
+    "BOUNDARY_ARTIFACT",
+    "CANDIDATE_CEILINGS",
+    "CANDIDATE_PLANNER",
+    "CONSOLIDATION_AUTHORIZED",
+    "COUNTERFACTUAL_ARTIFACT",
+    "CURRENT_AUD_LIMIT",
+    "CURRENT_EXAMPLE_LIMIT",
+    "CURRENT_IDEA_LIMIT",
+    "CURRENT_INTENT_LIMIT",
+    "CURRENT_REFERENCE_LIMIT",
+    "CURRENT_RELATION_LIMIT",
+    "CURRENT_THEME_LIMIT",
+    "CURRENT_TOPIC_LIMIT",
+    "CURRENT_UNCERTAINTY_LIMIT",
+    "DECISION_ARTIFACT",
+    "DISTRIBUTION_ARTIFACT",
+    "EXAMPLE_CHARS",
+    "EXAMPLE_INDEX",
+    "EXPECTED_ADAPTED_SCHEMA_BYTES",
+    "EXPECTED_RAW_SCHEMA_BYTES",
+    "EXPECTED_SCHEMA_HASH",
+    "FAILURE_CLASS",
+    "FORENSICS_ARTIFACT",
+    "HARD_CEILINGS",
+    "IDEA_CHARS",
+    "IDEA_INDEX",
+    "LENGTH_MECHANISM",
+    "LENGTH_NOT_BYTES",
+    "LENGTH_NOT_NORMALIZED",
+    "LENGTH_NOT_TOKENS",
+    "LENGTH_NOT_TRIMMED",
+    "LOCAL_SEMANTIC_MERGE",
+    "LOCAL_STRING_TRUNCATION",
+    "MODE",
+    "NEXT_ACTION",
+    "NEXT_PHASE",
+    "NEXT_PHASE_LABEL",
+    "OPTIONS_ARTIFACT",
+    "PHASE",
+    "PHASE_3B_STATUS",
+    "PRODUCTION_LENGTH_POLICY_MUTATED",
+    "PRODUCTION_PLANNER_VERSION",
+    "PROJECT_NAME",
+    "PROMPT_CHANGE_REQUIRED",
+    "PROMPT_VERSION",
+    "PROPOSED_EXAMPLE_LIMIT",
+    "PROPOSED_IDEA_LIMIT",
+    "PROPOSED_THEME_LIMIT",
+    "PROTECTED_A28",
+    "PROTECTED_HISTORICAL",
+    "READY_COUNT",
+    "READY_WINDOWS",
+    "REAL_PROVIDER_CALLS_THIS_PHASE",
+    "REAL_WINDOW_CALLS",
+    "REPORT_NAME",
+    "SCHEMA_IDENTITY_CHANGES",
+    "SCHEMA_VERSION",
+    "SELECTED_POLICY",
+    "SEMANTIC_TRANSPORT_VERSION_V3",
+    "SOURCE_MAP_STATUS",
+    "SOURCE_REFS_HARD_MAX",
+    "THEME_CHARS",
+    "TOTAL_HARD_CEILING",
+    "TOTAL_WINDOWS",
+    "TRANSPORT_VERSION",
+    "TRANSPORT_VERSION_CHANGE_REQUIRED",
+    "V10_TEXT_HARD_LIMITS",
+    "V11_MINIMAL_TEXT_HARD_LIMITS",
+    "V2_TEXT_HARD_LIMITS",
+    "WIN002_SIGNATURE",
+    "WIN003_COST_USD",
+    "WIN003_ELAPSED_MS",
+    "WIN003_FORENSIC",
+    "WIN003_FORENSIC_RELATIVE",
+    "WIN003_FUTURE_ACTION",
+    "WIN003_RAW_SHA256",
+    "WIN003_RAW_SIZE",
+    "WIN003_REQUEST_ID",
+    "WIN003_RETRY_AUTHORIZED",
+    "WIN003_SIGNATURE",
+    "WIN005_007_SAFE_AFTER_FIX",
+    "WIN005_AUTHORIZED",
+    "WIN006_AUTHORIZED",
+    "WIN007_AUTHORIZED",
+    "WINDOW_ID",
+    "WINDOW_SPECS",
+]

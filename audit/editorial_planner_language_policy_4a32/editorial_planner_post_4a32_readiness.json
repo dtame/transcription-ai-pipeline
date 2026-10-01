@@ -1,0 +1,8 @@
+{
+  "READY_FOR_ONE_REAL_ENGLISH_EDITORIAL_PLANNER_CANARY": true,
+  "READY_FOR_EDITORIAL_PLAN_PUBLICATION": false,
+  "BOOK_GENERATOR": "NOT STARTED",
+  "NEW_GRAMMAR_CANARY_REQUIRED": "NO",
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "why": "Language policy, 1.0.1 request identity, schema, coverage, and context budget passed. Next phase may authorize exactly one real Anthropic Opus 5 call using this request. Do not auto-publish."
+}

@@ -1,0 +1,303 @@
+"""Constantes 3B.7.7A.40 — tiny synthetic grammar + membership canary transport 2.0."""
+
+from __future__ import annotations
+
+from app.source_analysis.writer import source_map_path
+from app.source_analysis_v31_global_output_architecture.constants import (
+    A34_STATUS_PRESERVED,
+    A35_STATUS_PRESERVED,
+    A36_STATUS_PRESERVED,
+    A37_STATUS_PRESERVED,
+    A38_STATUS_PRESERVED,
+    DROP_REASONS_V20,
+    NEXT_MAX_OUTPUT_TOKENS,
+    NEXT_PROMPT_VERSION,
+    NEXT_SCHEMA_ADAPTED_BYTES,
+    NEXT_SCHEMA_ARTIFACT,
+    NEXT_SCHEMA_HASH,
+    NEXT_SCHEMA_RAW_BYTES,
+    NEXT_TRANSPORT_VERSION,
+    READINESS_DECISION as A39_READINESS_DECISION,
+    RETIRED_DISPOSITION_OPS_V20,
+    RETIRED_DROP_REASONS_V20,
+    SAFETY_RATIO,
+    SAFETY_TARGET_TOKENS,
+    TEXT_LIMITS,
+    V11_PROMPT_VERSION,
+    V11_TRANSPORT_VERSION,
+)
+from app.source_analysis_v31_global_grammar_canary.constants import (
+    CANARY_CONNECT_TIMEOUT_SECONDS,
+    CANARY_READ_TIMEOUT_SECONDS,
+    FROZEN_GRANULARITY,
+    FROZEN_PLANNER,
+    FROZEN_PROMPT,
+    FROZEN_SRC_POLICY,
+    FROZEN_TRANSPORT,
+    HANDLE_PREFIX_BY_KIND,
+    MODEL,
+    NODE_KINDS,
+    NORMAL_FINISH_REASONS,
+    PASTORAL_MARKERS,
+    PRODUCTION_SRC_PATTERN,
+    PROJECT_NAME,
+    PROVIDER,
+    THINKING_CONTRACT,
+    THINKING_MODE,
+)
+from app.source_analysis_v31_global_preflight.constants import (
+    IDEA_DISPOSITION_COVERAGE_REQUIRED,
+    IDEA_KIND_POLICY,
+    RELATION_QUALITY_TECHNICAL_DEBT,
+)
+
+SCHEMA_VERSION = "1.0"
+PHASE = "3B.7.7A.40"
+MODE = "GLOBAL_CONSOLIDATION_2_0_TINY_SYNTHETIC_GRAMMAR_CANARY"
+AUTHORIZATION_SCOPE = "GLOBAL_CONSOLIDATION_2_0_TINY_SYNTHETIC_GRAMMAR_CANARY_ONLY"
+
+A39_STATUS_PRESERVED = "PASS"
+assert A34_STATUS_PRESERVED == "PASS"
+assert A35_STATUS_PRESERVED == "FAIL"
+assert A36_STATUS_PRESERVED == "PASS"
+assert A37_STATUS_PRESERVED == "PASS"
+assert A38_STATUS_PRESERVED == "FAIL"
+assert A39_STATUS_PRESERVED == "PASS"
+assert A39_READINESS_DECISION == "READY_FOR_COMPACT_GLOBAL_GRAMMAR_CANARY"
+
+PROMPT_VERSION = NEXT_PROMPT_VERSION
+TRANSPORT_VERSION = NEXT_TRANSPORT_VERSION
+SCHEMA_RAW_BYTES = NEXT_SCHEMA_RAW_BYTES
+SCHEMA_ADAPTED_BYTES = NEXT_SCHEMA_ADAPTED_BYTES
+SCHEMA_HASH = NEXT_SCHEMA_HASH
+A39_SCHEMA_ARTIFACT = NEXT_SCHEMA_ARTIFACT
+
+assert PROMPT_VERSION == "global-consolidation-2.0"
+assert TRANSPORT_VERSION == "global-consolidation-transport-2.0"
+assert SCHEMA_RAW_BYTES == 1588
+assert SCHEMA_ADAPTED_BYTES == 1836
+assert SCHEMA_HASH == (
+    "90b99a38ac704d00e1304495da0c757118293e43493ddb7321b3ffb3256d8330"
+)
+assert SCHEMA_HASH.startswith("90b99a38")
+assert SCHEMA_HASH.endswith("6d8330")
+assert V11_PROMPT_VERSION == "global-consolidation-1.0.1"
+assert V11_TRANSPORT_VERSION == "global-consolidation-transport-1.1"
+assert PROVIDER == "anthropic"
+assert MODEL == "claude-sonnet-5"
+assert THINKING_MODE == "disabled"
+assert DROP_REASONS_V20 == ("transport_artifact", "non_substantive_fragment")
+assert RETIRED_DROP_REASONS_V20 == ("exact_duplicate",)
+assert RETIRED_DISPOSITION_OPS_V20 == ("OTHER",)
+assert IDEA_KIND_POLICY == "KEEP_EMPTY_GLOBALLY"
+
+MAX_ENGINE_GENERATE = 1
+MAX_ANTHROPIC_POST = 1
+MAX_ATTEMPTS = 1
+AUTO_RETRY = False
+AUTO_FALLBACK = False
+AUTO_CONTINUE = False
+EFFORT = None
+
+# Tiny hard bound from A.39 estimator = 1188 tokens. 1024 is unsafe.
+CANARY_MAX_OUTPUT_TOKENS = 2048
+PRODUCTION_MAX_OUTPUT_TOKENS = NEXT_MAX_OUTPUT_TOKENS
+PRODUCTION_EXPECTED_OUTPUT_TOKENS = 28735
+PRODUCTION_HARD_PLANNING_TOKENS = 35284
+PRODUCTION_SAFETY_THRESHOLD = SAFETY_TARGET_TOKENS
+PRODUCTION_SAFETY_MARGIN = (
+    PRODUCTION_SAFETY_THRESHOLD - PRODUCTION_HARD_PLANNING_TOKENS
+)
+PRODUCTION_ABSOLUTE_HEADROOM = (
+    PRODUCTION_MAX_OUTPUT_TOKENS - PRODUCTION_HARD_PLANNING_TOKENS
+)
+PRODUCTION_OUTPUT_RISK = "PASS_BUT_TIGHT_AT_75_PERCENT_THRESHOLD"
+assert PRODUCTION_MAX_OUTPUT_TOKENS == 48000
+assert PRODUCTION_SAFETY_THRESHOLD == 36000
+assert SAFETY_RATIO == 0.75
+assert PRODUCTION_SAFETY_MARGIN == 716
+assert PRODUCTION_ABSOLUTE_HEADROOM == 12716
+
+CANARY_VERSION = "global-consolidation-tiny-grammar-canary-v20-1.0"
+STAGE_CANARY = "source_analysis_v31_global_v20_grammar_canary"
+CANARY_SUBDIR = "canary/global_consolidation_transport_v20"
+CANARY_WINDOW_ID = "SYN_GLOBAL_V20"
+CANARY_TRANSCRIPT_ID = "TR_CANARY_GARDEN_A40"
+LOCK_NAME = "canary_real_call.lock"
+
+SYNTHETIC_NAMESPACE = "SYN"
+SYNTHETIC_WINDOW_IDS = ("SYN:W001", "SYN:W002")
+SYNTHETIC_SRC_IDS = (
+    "SRC998101",
+    "SRC998102",
+    "SRC998103",
+    "SRC998104",
+    "SRC998105",
+    "SRC998106",
+    "SRC998107",
+    "SRC998108",
+    "SRC998109",
+    "SRC998110",
+    "SRC998111",
+    "SRC998112",
+)
+FORBIDDEN_WINDOW_IDS = (
+    "WIN001",
+    "WIN002",
+    "WIN003",
+    "WIN004",
+    "WIN005",
+    "WIN006",
+    "WIN007",
+)
+FORBIDDEN_TRANSCRIPT_IDS = ("TR001",)
+
+FIXTURE_ARTIFACT = "global_consolidation_v20_synthetic_fixture.json"
+REQUEST_ARTIFACT = "global_consolidation_v20_canary_request.json"
+MEMBERSHIP_ARTIFACT = "global_consolidation_v20_membership_audit.json"
+DERIVED_DISPOSITION_ARTIFACT = "global_consolidation_v20_derived_dispositions.json"
+DERIVED_SRC_ARTIFACT = "global_consolidation_v20_derived_src_audit.json"
+VALIDATOR_ARTIFACT = "global_consolidation_v20_validator_result.json"
+CANONICAL_ARTIFACT = "global_consolidation_v20_canonical_reconstruction.json"
+ESTIMATOR_ARTIFACT = "global_consolidation_v20_output_estimator_validation.json"
+USAGE_ARTIFACT = "global_consolidation_v20_usage_cost.json"
+READINESS_ARTIFACT = "global_consolidation_post_a40_readiness.json"
+EXECUTION_ARTIFACT = "global_consolidation_v20_canary_execution.json"
+REPORT_NAME = (
+    "PHASE_3B77A40_COMPACT_GLOBAL_CONSOLIDATION_V20_GRAMMAR_CANARY_REPORT.md"
+)
+BASELINE_ARTIFACT = "source_analysis_a40_test_baseline.json"
+POST_TEST_ARTIFACT = "source_analysis_a40_test_delta.json"
+
+FOCUSED_TEST_PATHS = (
+    "app/tests/test_source_analysis_v31_global_v20_grammar_canary.py",
+    "app/tests/test_source_analysis_v31_global_v20_grammar_canary_audit.py",
+    "app/tests/test_source_analysis_v31_global_output_architecture.py",
+    "app/tests/test_source_analysis_v31_global_output_architecture_audit.py",
+)
+
+DRY_RUN_COMMAND = (
+    r".venv\Scripts\python.exe -m app.source_analysis_v31_global_v20_grammar_canary "
+    "pastoral_retreat_v2_validation "
+    "--authorization-scope GLOBAL_CONSOLIDATION_2_0_TINY_SYNTHETIC_GRAMMAR_CANARY_ONLY "
+    "--dry-run"
+)
+REAL_COMMAND = (
+    r".venv\Scripts\python.exe -m app.source_analysis_v31_global_v20_grammar_canary "
+    "pastoral_retreat_v2_validation "
+    "--authorization-scope GLOBAL_CONSOLIDATION_2_0_TINY_SYNTHETIC_GRAMMAR_CANARY_ONLY "
+    "--execute-real"
+)
+
+PHASE_3B_STATUS = "INCOMPLETE"
+SOURCE_MAP_STATUS = "NOT PUBLISHED"
+NEXT_ACTION = "HUMAN REVIEW"
+LOCAL_EXTRACTION_FUNCTIONALLY_FROZEN = "YES"
+READY_FOR_REAL_GLOBAL_CONSOLIDATION_CANARY = "NO"
+CONSOLIDATION_AUTHORIZED = False
+SOURCE_MAP_PUBLICATION_AUTHORIZED = False
+
+assert not source_map_path(PROJECT_NAME).is_file() or SOURCE_MAP_STATUS == "NOT PUBLISHED"
+assert RELATION_QUALITY_TECHNICAL_DEBT == "YES"
+assert FROZEN_PLANNER == "window-planner-v2.1-small"
+assert FROZEN_PROMPT == "window-analysis-1.4.0"
+assert FROZEN_TRANSPORT == "semantic-transport-v3.1-local-lite"
+assert FROZEN_GRANULARITY == "window-granularity-1.2-kind-specific"
+assert FROZEN_SRC_POLICY == "src-reference-policy-1.1-narrow-canonicalization"
+
+__all__ = [
+    "A34_STATUS_PRESERVED",
+    "A35_STATUS_PRESERVED",
+    "A36_STATUS_PRESERVED",
+    "A37_STATUS_PRESERVED",
+    "A38_STATUS_PRESERVED",
+    "A39_READINESS_DECISION",
+    "A39_SCHEMA_ARTIFACT",
+    "A39_STATUS_PRESERVED",
+    "AUTHORIZATION_SCOPE",
+    "AUTO_CONTINUE",
+    "AUTO_FALLBACK",
+    "AUTO_RETRY",
+    "BASELINE_ARTIFACT",
+    "CANARY_CONNECT_TIMEOUT_SECONDS",
+    "CANARY_MAX_OUTPUT_TOKENS",
+    "CANARY_READ_TIMEOUT_SECONDS",
+    "CANARY_SUBDIR",
+    "CANARY_TRANSCRIPT_ID",
+    "CANARY_VERSION",
+    "CANARY_WINDOW_ID",
+    "CANONICAL_ARTIFACT",
+    "CONSOLIDATION_AUTHORIZED",
+    "DERIVED_DISPOSITION_ARTIFACT",
+    "DERIVED_SRC_ARTIFACT",
+    "DROP_REASONS_V20",
+    "DRY_RUN_COMMAND",
+    "EFFORT",
+    "ESTIMATOR_ARTIFACT",
+    "EXECUTION_ARTIFACT",
+    "FIXTURE_ARTIFACT",
+    "FOCUSED_TEST_PATHS",
+    "FORBIDDEN_TRANSCRIPT_IDS",
+    "FORBIDDEN_WINDOW_IDS",
+    "FROZEN_GRANULARITY",
+    "FROZEN_PLANNER",
+    "FROZEN_PROMPT",
+    "FROZEN_SRC_POLICY",
+    "FROZEN_TRANSPORT",
+    "HANDLE_PREFIX_BY_KIND",
+    "IDEA_DISPOSITION_COVERAGE_REQUIRED",
+    "IDEA_KIND_POLICY",
+    "LOCAL_EXTRACTION_FUNCTIONALLY_FROZEN",
+    "LOCK_NAME",
+    "MAX_ANTHROPIC_POST",
+    "MAX_ATTEMPTS",
+    "MAX_ENGINE_GENERATE",
+    "MEMBERSHIP_ARTIFACT",
+    "MODE",
+    "MODEL",
+    "NEXT_ACTION",
+    "NODE_KINDS",
+    "NORMAL_FINISH_REASONS",
+    "PASTORAL_MARKERS",
+    "PHASE",
+    "PHASE_3B_STATUS",
+    "POST_TEST_ARTIFACT",
+    "PRODUCTION_ABSOLUTE_HEADROOM",
+    "PRODUCTION_EXPECTED_OUTPUT_TOKENS",
+    "PRODUCTION_HARD_PLANNING_TOKENS",
+    "PRODUCTION_MAX_OUTPUT_TOKENS",
+    "PRODUCTION_OUTPUT_RISK",
+    "PRODUCTION_SAFETY_MARGIN",
+    "PRODUCTION_SAFETY_THRESHOLD",
+    "PRODUCTION_SRC_PATTERN",
+    "PROJECT_NAME",
+    "PROMPT_VERSION",
+    "PROVIDER",
+    "READINESS_ARTIFACT",
+    "READY_FOR_REAL_GLOBAL_CONSOLIDATION_CANARY",
+    "REAL_COMMAND",
+    "RELATION_QUALITY_TECHNICAL_DEBT",
+    "REPORT_NAME",
+    "REQUEST_ARTIFACT",
+    "RETIRED_DISPOSITION_OPS_V20",
+    "RETIRED_DROP_REASONS_V20",
+    "SAFETY_RATIO",
+    "SCHEMA_ADAPTED_BYTES",
+    "SCHEMA_HASH",
+    "SCHEMA_RAW_BYTES",
+    "SCHEMA_VERSION",
+    "SOURCE_MAP_PUBLICATION_AUTHORIZED",
+    "SOURCE_MAP_STATUS",
+    "STAGE_CANARY",
+    "SYNTHETIC_NAMESPACE",
+    "SYNTHETIC_SRC_IDS",
+    "SYNTHETIC_WINDOW_IDS",
+    "TEXT_LIMITS",
+    "THINKING_CONTRACT",
+    "THINKING_MODE",
+    "TRANSPORT_VERSION",
+    "USAGE_ARTIFACT",
+    "V11_PROMPT_VERSION",
+    "V11_TRANSPORT_VERSION",
+    "VALIDATOR_ARTIFACT",
+]

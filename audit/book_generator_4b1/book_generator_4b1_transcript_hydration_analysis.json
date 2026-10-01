@@ -1,0 +1,182 @@
+{
+  "policy": {
+    "version": "book-src-hydration-1.0",
+    "artifact": "post-language-cleanup canonical transcript",
+    "not_used": [
+      "pre-clean interpreter-duplicated source",
+      "V1 technical chunks",
+      "whole transcript per chapter"
+    ],
+    "selection": "IDEA/EX/REF/UNC/section SRC refs → unique SRC IDs",
+    "order": "canonical SRC identifier order",
+    "overlap": "unique SRC IDs only; Phase 1 ownership not reopened",
+    "missing_src": "omit silently from hydration; validator still requires resolution"
+  },
+  "transcript": {
+    "transcript_id": "TR001",
+    "content_sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+    "primary_language": "en",
+    "segment_count": 8298,
+    "artifact": "transcripts/clean/transcript_data.json",
+    "mutated": false
+  },
+  "selected": true,
+  "strategy": "SOURCE_MAP_PLUS_TARGETED_TRANSCRIPT_HYDRATION",
+  "chapter_comparison": [
+    {
+      "chapter_id": "CH001",
+      "idea_summary_chars": 1725,
+      "hydrated_src_chars": 1519,
+      "dry_input_pessimistic": 7506,
+      "wet_input_pessimistic": 9044,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH002",
+      "idea_summary_chars": 2270,
+      "hydrated_src_chars": 1725,
+      "dry_input_pessimistic": 8208,
+      "wet_input_pessimistic": 9933,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH003",
+      "idea_summary_chars": 2239,
+      "hydrated_src_chars": 2237,
+      "dry_input_pessimistic": 9148,
+      "wet_input_pessimistic": 11339,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH004",
+      "idea_summary_chars": 2252,
+      "hydrated_src_chars": 1552,
+      "dry_input_pessimistic": 8882,
+      "wet_input_pessimistic": 10665,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH005",
+      "idea_summary_chars": 2381,
+      "hydrated_src_chars": 2367,
+      "dry_input_pessimistic": 9669,
+      "wet_input_pessimistic": 11940,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH006",
+      "idea_summary_chars": 5586,
+      "hydrated_src_chars": 7878,
+      "dry_input_pessimistic": 17757,
+      "wet_input_pessimistic": 25506,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH007",
+      "idea_summary_chars": 1645,
+      "hydrated_src_chars": 2107,
+      "dry_input_pessimistic": 8470,
+      "wet_input_pessimistic": 10593,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH008",
+      "idea_summary_chars": 1523,
+      "hydrated_src_chars": 2447,
+      "dry_input_pessimistic": 8691,
+      "wet_input_pessimistic": 11259,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH009",
+      "idea_summary_chars": 1724,
+      "hydrated_src_chars": 2620,
+      "dry_input_pessimistic": 8694,
+      "wet_input_pessimistic": 11284,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH010",
+      "idea_summary_chars": 1867,
+      "hydrated_src_chars": 3255,
+      "dry_input_pessimistic": 10083,
+      "wet_input_pessimistic": 13403,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH011",
+      "idea_summary_chars": 1667,
+      "hydrated_src_chars": 2220,
+      "dry_input_pessimistic": 8559,
+      "wet_input_pessimistic": 10727,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH012",
+      "idea_summary_chars": 1427,
+      "hydrated_src_chars": 1414,
+      "dry_input_pessimistic": 7739,
+      "wet_input_pessimistic": 9223,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH013",
+      "idea_summary_chars": 3299,
+      "hydrated_src_chars": 2761,
+      "dry_input_pessimistic": 10631,
+      "wet_input_pessimistic": 13495,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH014",
+      "idea_summary_chars": 1868,
+      "hydrated_src_chars": 2292,
+      "dry_input_pessimistic": 9142,
+      "wet_input_pessimistic": 11442,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH015",
+      "idea_summary_chars": 1651,
+      "hydrated_src_chars": 3376,
+      "dry_input_pessimistic": 8832,
+      "wet_input_pessimistic": 11651,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH016",
+      "idea_summary_chars": 520,
+      "hydrated_src_chars": 1177,
+      "dry_input_pessimistic": 5715,
+      "wet_input_pessimistic": 6807,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH017",
+      "idea_summary_chars": 2018,
+      "hydrated_src_chars": 2597,
+      "dry_input_pessimistic": 9480,
+      "wet_input_pessimistic": 12072,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH018",
+      "idea_summary_chars": 1602,
+      "hydrated_src_chars": 1933,
+      "dry_input_pessimistic": 8395,
+      "wet_input_pessimistic": 10469,
+      "wet_context_safe": true
+    },
+    {
+      "chapter_id": "CH019",
+      "idea_summary_chars": 996,
+      "hydrated_src_chars": 1202,
+      "dry_input_pessimistic": 6605,
+      "wet_input_pessimistic": 7845,
+      "wet_context_safe": true
+    }
+  ],
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

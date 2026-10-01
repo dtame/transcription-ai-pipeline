@@ -1,0 +1,15 @@
+{
+  "transport": "book-generation-transport-1.0",
+  "transport_changed": false,
+  "schema_changed": false,
+  "schema_versioning_identity_preserved": true,
+  "raw_schema_sha256": "075455fdbf18548b3bd2c05b5c7abf35bf43d2c4cecc74f3af6963c540028273",
+  "adapted_schema_sha256": "dce904e8a1a32a700d91cdef5e5d5bc916ce3d6ce10e2b644cdfaa6f68dc6626",
+  "raw_schema_bytes": 1035,
+  "adapted_schema_bytes": 1128,
+  "schema_limitation": "Anthropic structured-output subset does not permit minLength. Empty string remains schema-legal. Local validator + prompt hardening hold the non-empty invariant.",
+  "do_not_add_unsupported_minLength": true,
+  "new_grammar_canary_required": "NO",
+  "reason_no_grammar_canary": "Transport unchanged, schema bytes unchanged, only prompt semantics changed.",
+  "preferred_transport": "book-generation-transport-1.0"
+}

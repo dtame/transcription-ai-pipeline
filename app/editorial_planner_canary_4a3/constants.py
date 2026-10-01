@@ -1,0 +1,155 @@
+"""
+Phase 4A.3 — one real exact-request production canary.
+
+Does not mutate Phase 4A / 4A.1 frozen prompt, schema, transport, or
+historical max_output=16384. Applies the A.2 production override 65536
+through the existing production request path.
+"""
+
+from __future__ import annotations
+
+from app.editorial_planning.constants import (
+    EDITORIAL_PLAN_TRANSPORT_VERSION,
+    EDITORIAL_PLANNER_PROMPT_VERSION,
+    EXPECTED_EXAMPLE_COUNT,
+    EXPECTED_IDEA_COUNT,
+    EXPECTED_REFERENCE_COUNT,
+    EXPECTED_SOURCE_MAP_BYTES,
+    EXPECTED_SOURCE_MAP_SHA256,
+    EXPECTED_TOPIC_COUNT,
+    EXPECTED_UNCERTAINTY_COUNT,
+    HARD_MAX_OUTPUT_TOKENS,
+    MODEL,
+    PROPOSED_MAX_OUTPUT_TOKENS,
+    PROVIDER,
+    STAGE_EDITORIAL_PLANNING,
+    VALIDATION_PROJECT_NAME,
+)
+from app.editorial_planner_canary_4a1.constants import (
+    PHASE_4A_ADAPTED_SCHEMA_BYTES,
+    PHASE_4A_ADAPTED_SCHEMA_SHA256,
+    PHASE_4A_INSTRUCTIONS_SHA256,
+    PHASE_4A_PROMPT_SHA256,
+    PHASE_4A_RAW_SCHEMA_BYTES,
+    PHASE_4A_RAW_SCHEMA_SHA256,
+    PHASE_4A_SYSTEM_SHA256,
+)
+
+PHASE = "4A.3"
+PHASE_NAME = "EDITORIAL_PLANNER_ONE_REAL_PRODUCTION_CANARY"
+CANARY_VERSION = "editorial-planner-canary-4a3-1.0"
+
+AUTHORIZATION_SCOPE = "EDITORIAL_PLANNER_4A3_ONE_REAL_PRODUCTION_CANARY_ONLY"
+
+assert PROVIDER == "anthropic"
+assert MODEL == "claude-opus-5"
+
+PROMPT_VERSION = EDITORIAL_PLANNER_PROMPT_VERSION
+TRANSPORT_VERSION = EDITORIAL_PLAN_TRANSPORT_VERSION
+assert PROMPT_VERSION == "editorial-planner-1.0"
+assert TRANSPORT_VERSION == "editorial-plan-transport-1.0"
+
+STAGE_CANARY = STAGE_EDITORIAL_PLANNING
+assert STAGE_CANARY == "editorial_planning"
+
+PROJECT_NAME = VALIDATION_PROJECT_NAME
+assert PROJECT_NAME == "pastoral_retreat_v2_validation"
+
+MAX_ENGINE_GENERATE = 1
+MAX_ANTHROPIC_POST = 1
+MAX_ATTEMPTS = 1
+RETRIES = 0
+AUTHORIZED_PROVIDER_CALLS = 1
+
+# Historical frozen settings — must remain untouched.
+HISTORICAL_PROPOSED_MAX_OUTPUT = PROPOSED_MAX_OUTPUT_TOKENS
+assert HISTORICAL_PROPOSED_MAX_OUTPUT == 16384
+assert HARD_MAX_OUTPUT_TOKENS == 32000
+
+# A.2-selected runtime production override. Applied via replace(), never
+# by mutating PROPOSED_MAX_OUTPUT_TOKENS / HARD_MAX_OUTPUT_TOKENS.
+PRODUCTION_MAX_OUTPUT_TOKENS = 65536
+
+CONNECT_TIMEOUT_SECONDS = 30.0
+READ_TIMEOUT_SECONDS = 1800.0
+
+EXPECTED_SOURCE_MAP_CHARS = 202365
+assert EXPECTED_SOURCE_MAP_SHA256 == (
+    "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855"
+)
+assert EXPECTED_SOURCE_MAP_BYTES == 202398
+assert EXPECTED_TOPIC_COUNT == 67
+assert EXPECTED_IDEA_COUNT == 286
+assert EXPECTED_EXAMPLE_COUNT == 49
+assert EXPECTED_REFERENCE_COUNT == 59
+assert EXPECTED_UNCERTAINTY_COUNT == 35
+
+RAW_SCHEMA_SHA256 = PHASE_4A_RAW_SCHEMA_SHA256
+ADAPTED_SCHEMA_SHA256 = PHASE_4A_ADAPTED_SCHEMA_SHA256
+RAW_SCHEMA_BYTES = PHASE_4A_RAW_SCHEMA_BYTES
+ADAPTED_SCHEMA_BYTES = PHASE_4A_ADAPTED_SCHEMA_BYTES
+SYSTEM_SHA256 = PHASE_4A_SYSTEM_SHA256
+INSTRUCTIONS_SHA256 = PHASE_4A_INSTRUCTIONS_SHA256
+PROMPT_SHA256 = PHASE_4A_PROMPT_SHA256
+assert RAW_SCHEMA_BYTES == 3661
+assert ADAPTED_SCHEMA_BYTES == 3909
+assert ADAPTED_SCHEMA_SHA256 == (
+    "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e"
+)
+
+THINKING_MODE = "provider_default"
+EFFORT = None
+BUDGET_TOKENS = None
+
+EXPECTED_REQUEST_SHA256 = (
+    "99ee7e8f4f9a732b52fceab667d9d1fe8b9ce9acedc1e7b1e7c08c1f62b7b734"
+)
+EXPECTED_REQUEST_CHARS = 114042
+EXPECTED_REQUEST_UTF8_BYTES = 114142
+
+A2_LOCAL_INPUT_ESTIMATE = 25313
+A2_PROVIDER_ADJUSTED_PESSIMISTIC = 52283
+A2_EXPECTED_OUTPUT_TOKENS = 8670
+A2_CONSERVATIVE_OUTPUT_TOKENS = 19666
+A2_HARD_OUTPUT_TOKENS = 34555
+A2_EXPECTED_COST_USD = 0.5624
+A2_CONSERVATIVE_COST_USD = 0.8373
+A2_HARD_COST_USD = 1.2095
+A2_THINKING_HEADROOM_TOKENS = 2048
+
+CANARY_WINDOW_ID = "CANARY_EP4A3"
+LOCK_NAME = "canary_real_call.lock"
+
+AUDIT_DIRNAME = "editorial_planner_4a3"
+AUDIT_REAL_PARENT = "real"
+AUDIT_PRECALL = "editorial_planner_4a3_precall_identity.json"
+AUDIT_PROVIDER = "editorial_planner_4a3_provider_evidence.json"
+AUDIT_RESPONSE = "editorial_planner_4a3_response_identity.json"
+AUDIT_THINKING = "editorial_planner_4a3_thinking_observation.json"
+AUDIT_BUDGET = "editorial_planner_4a3_budget_calibration.json"
+AUDIT_TECHNICAL = "editorial_planner_4a3_technical_validation.json"
+AUDIT_COVERAGE = "editorial_planner_4a3_idea_coverage.json"
+AUDIT_CHAPTER = "editorial_planner_4a3_chapter_review.json"
+AUDIT_SECTION = "editorial_planner_4a3_section_review.json"
+AUDIT_SEMANTIC = "editorial_planner_4a3_semantic_review.json"
+AUDIT_PUBLICATION = "editorial_planner_4a3_publication_eligibility.json"
+AUDIT_READINESS = "editorial_planner_post_4a3_readiness.json"
+AUDIT_CANDIDATE = "editorial_plan_candidate.json"
+AUDIT_RAW_RESPONSE = "editorial_planner_4a3_raw_structured_response.json"
+AUDIT_RAW_TEXT = "editorial_planner_4a3_raw_provider_text.txt"
+AUDIT_EXECUTION = "editorial_planner_4a3_execution.json"
+AUDIT_CACHE = "editorial_planner_4a3_cache_signature.json"
+REPORT_NAME = "PHASE_4A3_EDITORIAL_PLANNER_ONE_REAL_PRODUCTION_CANARY_REPORT.md"
+
+PUBLICATION_AUTHORIZED = False
+BOOK_GENERATOR = "NOT STARTED"
+NEXT_ACTION = "HUMAN REVIEW"
+
+assert PUBLICATION_AUTHORIZED is False
+assert RETRIES == 0
+assert MAX_ENGINE_GENERATE == 1
+assert PRODUCTION_MAX_OUTPUT_TOKENS == 65536
+assert HISTORICAL_PROPOSED_MAX_OUTPUT == 16384
+assert THINKING_MODE == "provider_default"
+assert EFFORT is None
+assert BUDGET_TOKENS is None

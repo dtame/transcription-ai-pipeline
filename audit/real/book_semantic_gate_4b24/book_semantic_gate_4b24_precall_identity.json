@@ -1,0 +1,400 @@
+{
+  "phase": "4B.2.4",
+  "authorization_scope": "BOOK_SEMANTIC_GATE_4B24_ONE_REAL_TERRA_HISTORICAL_BENCHMARK_CANARY_ONLY",
+  "blocked_precall": true,
+  "block_reasons": [
+    "openai_credential"
+  ],
+  "block_reason": "openai_credential",
+  "identities_before": {
+    "project_name": "pastoral_retreat_v2_validation",
+    "source_map": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+      "exists": true,
+      "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "bytes": 202398
+    },
+    "editorial_plan": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+      "exists": true,
+      "sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "bytes": 234637
+    },
+    "clean_transcript": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+      "exists": true,
+      "sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+      "bytes": 1487812
+    },
+    "historical_4b2_raw_response_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/book_generator_4b2_raw_structured_response.json",
+      "exists": true,
+      "sha256": "06e885eb0b7909446b736d7dfcd631422f632aa7dd679e64c7960ee0f086232f",
+      "bytes": 12201
+    },
+    "historical_4b2_raw_provider_text": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/book_generator_4b2_raw_provider_text.txt",
+      "exists": true,
+      "sha256": "04eb5d4bbc4f0820adc489fe08d8fab86d2f93d647cceca8c5a8d13edf6b625d",
+      "bytes": 5151
+    },
+    "historical_4b2_candidate_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/chapter_CH016_candidate.json",
+      "exists": true,
+      "sha256": "6b1a1f2308a88576d38211c32ec569d9a94441cc27936fd0d4c0f3cb7b3d8e76",
+      "bytes": 12182
+    },
+    "historical_4b22_raw_response_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b22/book_generator_4b22_raw_structured_response.json",
+      "exists": true,
+      "sha256": "1488a2492fa2722899a6f9649f86ef71b74a7b5759215bb4a01d4792f29f6b75",
+      "bytes": 9015
+    },
+    "historical_4b22_candidate_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b22/chapter_CH016_candidate.json",
+      "exists": true,
+      "sha256": "5e64dd949f8458356ef93d7f53819951c770641e2164b78e2715932e662343ba",
+      "bytes": 9462
+    },
+    "source_map_unchanged": true,
+    "editorial_plan_unchanged": true,
+    "clean_transcript_unchanged": true,
+    "raw_4b2_unchanged": true,
+    "candidate_4b2_unchanged": true,
+    "candidate_4b22_unchanged": true,
+    "historical_4b21_audits_present": true,
+    "candidate_4b2_canonical_sha256": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+    "candidate_4b2_file_sha256": "6b1a1f2308a88576d38211c32ec569d9a94441cc27936fd0d4c0f3cb7b3d8e76",
+    "candidate_4b22_canonical_sha256": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c",
+    "candidate_4b22_file_sha256": "5e64dd949f8458356ef93d7f53819951c770641e2164b78e2715932e662343ba",
+    "raw_4b2_inner_sha256": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749",
+    "expected": {
+      "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+      "raw_4b2": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749",
+      "candidate_4b2": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+      "candidate_4b22": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c"
+    }
+  },
+  "identities_after": {
+    "project_name": "pastoral_retreat_v2_validation",
+    "source_map": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+      "exists": true,
+      "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "bytes": 202398
+    },
+    "editorial_plan": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+      "exists": true,
+      "sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "bytes": 234637
+    },
+    "clean_transcript": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+      "exists": true,
+      "sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+      "bytes": 1487812
+    },
+    "historical_4b2_raw_response_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/book_generator_4b2_raw_structured_response.json",
+      "exists": true,
+      "sha256": "06e885eb0b7909446b736d7dfcd631422f632aa7dd679e64c7960ee0f086232f",
+      "bytes": 12201
+    },
+    "historical_4b2_raw_provider_text": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/book_generator_4b2_raw_provider_text.txt",
+      "exists": true,
+      "sha256": "04eb5d4bbc4f0820adc489fe08d8fab86d2f93d647cceca8c5a8d13edf6b625d",
+      "bytes": 5151
+    },
+    "historical_4b2_candidate_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/chapter_CH016_candidate.json",
+      "exists": true,
+      "sha256": "6b1a1f2308a88576d38211c32ec569d9a94441cc27936fd0d4c0f3cb7b3d8e76",
+      "bytes": 12182
+    },
+    "historical_4b22_raw_response_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b22/book_generator_4b22_raw_structured_response.json",
+      "exists": true,
+      "sha256": "1488a2492fa2722899a6f9649f86ef71b74a7b5759215bb4a01d4792f29f6b75",
+      "bytes": 9015
+    },
+    "historical_4b22_candidate_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b22/chapter_CH016_candidate.json",
+      "exists": true,
+      "sha256": "5e64dd949f8458356ef93d7f53819951c770641e2164b78e2715932e662343ba",
+      "bytes": 9462
+    },
+    "source_map_unchanged": true,
+    "editorial_plan_unchanged": true,
+    "clean_transcript_unchanged": true,
+    "raw_4b2_unchanged": true,
+    "candidate_4b2_unchanged": true,
+    "candidate_4b22_unchanged": true,
+    "historical_4b21_audits_present": true,
+    "candidate_4b2_canonical_sha256": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+    "candidate_4b2_file_sha256": "6b1a1f2308a88576d38211c32ec569d9a94441cc27936fd0d4c0f3cb7b3d8e76",
+    "candidate_4b22_canonical_sha256": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c",
+    "candidate_4b22_file_sha256": "5e64dd949f8458356ef93d7f53819951c770641e2164b78e2715932e662343ba",
+    "raw_4b2_inner_sha256": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749",
+    "expected": {
+      "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+      "raw_4b2": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749",
+      "candidate_4b2": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+      "candidate_4b22": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c"
+    }
+  },
+  "inputs_unchanged": true,
+  "language": "en",
+  "benchmark": {
+    "phase": "4B.2.4",
+    "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b23/book_semantic_gate_4b23_historical_benchmark.json",
+    "exists": true,
+    "sha256": "3888806c68eeff7dc363790d4e0ffcf063e099c3f295e684b80b3c9e8167af82",
+    "bytes": 13293,
+    "dataset_sha256": "c247aa88c46ee4e563a00b777dd24f9e49bc4475b60b55e1463f7f60be9e10a8",
+    "artifact_case_count": 11,
+    "scored_case_count": 10,
+    "positive_count": 6,
+    "negative_count": 4,
+    "positive_case_ids": [
+      "4b22_p2_supported",
+      "4b22_p4_supported",
+      "4b22_p5_supported",
+      "4b22_p6_supported",
+      "4b22_p7_supported",
+      "4b2_p2_supported"
+    ],
+    "negative_case_ids": [
+      "4b22_p3_new_causal",
+      "4b22_p8_reference_completion",
+      "4b2_p8_invented_funeral",
+      "4b2_p13_unsupported_connective"
+    ],
+    "excluded_case_ids": [
+      "4b22_p1_connective"
+    ],
+    "p9b": {
+      "status": "DETERMINISTIC_VALIDATOR_BLOCK",
+      "semantic_benchmark_case": false,
+      "raw_present": true,
+      "reason": "Empty paragraph is deterministic BookGenerationValidator territory. It is blocked before the semantic gate and is not a semantic PASS/FAIL label."
+    },
+    "human_labels_are_ground_truth": true,
+    "original_candidates_modified": false,
+    "terra_called_in_artifact": false,
+    "expected": {
+      "sha256": "3888806c68eeff7dc363790d4e0ffcf063e099c3f295e684b80b3c9e8167af82",
+      "bytes": 13293,
+      "dataset_sha256": "c247aa88c46ee4e563a00b777dd24f9e49bc4475b60b55e1463f7f60be9e10a8",
+      "artifact_cases": 11,
+      "scored_cases": 10,
+      "positives": 6,
+      "negatives": 4
+    },
+    "identity_match": true
+  },
+  "contracts": {
+    "prompt": {
+      "version": "book-semantic-validator-1.0",
+      "system_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+      "instructions_sha256": "4747261db399a1b934221c455502e9b55f54498bab4f31ae29dff9ef6e6e8ccc",
+      "prompt_sha256": "6bc72002b50f77613f71c0241cde133fdc04527c37d6b630bf5794641a443bbf",
+      "role": "evidence-bounded semantic auditor",
+      "no_chain_of_thought": true,
+      "no_manuscript_rewrite": true
+    },
+    "schema": {
+      "transport_version": "book-semantic-validation-transport-1.0",
+      "raw_schema_sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689",
+      "raw_schema_bytes": 3261,
+      "engine_mode": "json_object",
+      "native_json_schema_response_format": false,
+      "openai_engine_compatible": true,
+      "temperature_in_schema": false,
+      "thinking_in_schema": false,
+      "additional_properties_closed": false,
+      "note": "OpenAIEngine currently sends response_format=json_object. This schema is the local contract and prompt identity, not an unverified native json_schema API feature."
+    },
+    "transport": {
+      "version": "book-semantic-validation-transport-1.0",
+      "top_level": [
+        "ch",
+        "pr",
+        "rr",
+        "sc",
+        "uh",
+        "v"
+      ],
+      "paragraph_fields": [
+        "c",
+        "ev",
+        "h",
+        "r",
+        "v"
+      ],
+      "claim_fields": [
+        "cf",
+        "e",
+        "ev",
+        "i",
+        "k",
+        "r",
+        "s",
+        "t",
+        "x"
+      ],
+      "canonical_ids_from_provider": false,
+      "engine_decode": "local_only",
+      "no_service_json_loads_of_http": true
+    },
+    "prompt_match": true,
+    "schema_match": true,
+    "transport_match": true,
+    "contract_match": true
+  },
+  "evidence_sha256": "bc15f06b05b1160aed413720f52c104cbb63cf4c98f07ce3fb8e8d2d732a0e93",
+  "candidate_handles": [
+    "h01",
+    "h02",
+    "h03",
+    "h04",
+    "h05",
+    "h06",
+    "h07",
+    "h08",
+    "h09",
+    "h10"
+  ],
+  "request": {
+    "sha256": "09d6472e544bc60231c77908e6608ff7ee7b6fd4746317f206301082e21eab53",
+    "sha256_repeat": "09d6472e544bc60231c77908e6608ff7ee7b6fd4746317f206301082e21eab53",
+    "chars": 17115,
+    "bytes": 17141,
+    "deterministic": true,
+    "temperature_present": false,
+    "thinking_present": false,
+    "response_format": {
+      "type": "json_object"
+    },
+    "max_tokens": 8192,
+    "model": "gpt-5.6-terra",
+    "gate_input_sha256": "23b728156b5ce78b0b8fc724eb0747f75ae7f5442b0e09204b13552b4f06c565"
+  },
+  "label_leak": {
+    "label_leakage": 0,
+    "hits": [],
+    "opaque_handle_leaks": [],
+    "scanned_chars": 32686,
+    "human_labels_sent": false,
+    "case_roles_sent": false,
+    "expected_classes_sent": false,
+    "pass": true
+  },
+  "cost_estimate": {
+    "status": "ESTIMATED",
+    "stage": "book_semantic_validation_canary_4b24",
+    "production_chapter_validation": false,
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "pricing_verified": true,
+    "local_input_tokens": {
+      "tokens": 3893,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "request_chars": 15569,
+    "provider_adjusted_mid": 6228,
+    "provider_adjusted_pessimistic": 8040,
+    "output_tokens_conservative": 8192,
+    "max_output_tokens": 8192,
+    "context_window": 1050000,
+    "usable_input_tokens": 726808,
+    "context_utilization_pessimistic": 0.011062,
+    "context_safe": true,
+    "long_context_regime": "NOT APPLICABLE",
+    "long_context_threshold_modeled": false,
+    "long_context_assumed_applied": false,
+    "input_cost_usd": 0.01608,
+    "output_cost_usd": 0.098304,
+    "total_cost_usd": 0.114384,
+    "total_cost_display": "0.114384 USD",
+    "cost_status": "base_estimate",
+    "unknown_or_incomplete": true,
+    "unmodeled_regimes": "long_context_not_modeled",
+    "note": "Single semantic-validation canary estimate. Not a completed production chapter validation. Long-context pricing threshold is not modeled; current request is a small fraction of the 1,050,000-token context window.",
+    "cost_status_is_not_known": true
+  },
+  "budget": {
+    "context_safe": true,
+    "request": {
+      "system_chars": 2661,
+      "user_chars": 12908,
+      "payload_sha256": "4c00dae907f46fab6df1afaa8e7406e56405d5297a9f0663616afbdbe49f58cc",
+      "local_token_estimate": 3893,
+      "provider_adjusted_mid": 6228,
+      "provider_adjusted_pessimistic": 8040
+    },
+    "output": {
+      "paragraph_count": 10,
+      "expected_output_tokens": 1800,
+      "conservative_output_tokens": 3200,
+      "recommended_max_output": 4096
+    },
+    "context_utilization_pessimistic": 0.011
+  },
+  "credential_available": false,
+  "production_book_absent": true,
+  "allowed_handles": [
+    "IDEA224",
+    "IDEA225",
+    "IDEA226",
+    "IDEA250",
+    "IDEA251",
+    "IDEA252",
+    "REF050",
+    "REF051",
+    "REF056",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157",
+    "SRC006192",
+    "SRC006193",
+    "SRC006195",
+    "SRC007115",
+    "SRC007116",
+    "SRC007117",
+    "SRC007118",
+    "SRC007151",
+    "SRC007152",
+    "SRC007155",
+    "SRC007156",
+    "SRC007158",
+    "SRC007161",
+    "SRC007162",
+    "SRC007193",
+    "SRC007197",
+    "SRC007199",
+    "SRC007201",
+    "SRC007204",
+    "SRC006788",
+    "SRC007129",
+    "SRC007132",
+    "SRC007149",
+    "SRC007559",
+    "SRC007560"
+  ],
+  "http_sent": false,
+  "engine_generate_called": false
+}

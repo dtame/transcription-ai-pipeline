@@ -1,0 +1,30 @@
+{
+  "selected_fix": "PROMPT_COVERAGE_HARDENING_1_0_2",
+  "successor_prompt": "editorial-planner-1.0.2",
+  "successor_prompt_version_constant_unchanged": "editorial-planner-1.0.1",
+  "note_on_successor_constant": "language_policy.SUCCESSOR_PROMPT_VERSION remains editorial-planner-1.0.1. Production 1.0.2 is a new module, not a silent replacement of the language-policy successor.",
+  "historical_prompt_1_0_mutated": false,
+  "historical_prompt_1_0_1_mutated": false,
+  "transport": "editorial-plan-transport-1.0",
+  "transport_changed": false,
+  "schema_changed": "NO",
+  "language_rule_changed": false,
+  "idea_specific_prompting": false,
+  "pastoral_specific_prompting": false,
+  "automatic_repair": false,
+  "automatic_provider_retry": false,
+  "expected_idea_ids_duplicated": false,
+  "expected_idea_count_added": true,
+  "expected_idea_count_derived_dynamically": true,
+  "new_grammar_canary_required": "NO",
+  "new_synthetic_contract_canary_required": "NO",
+  "canary_decision": "DIRECT_REAL_RETRY_JUSTIFIED_AFTER_OFFLINE_PREFLIGHT",
+  "canary_justification": "The change is semantic completeness wording plus a cheap expected_idea_count signal. Grammar is unchanged (A.1 already proved it; A.3 produced 286/286 on this transport; A.3.3 decoded a valid English plan). A paid synthetic contract canary would not prove live Opus compliance. FakeAI proves the validator gate. One human-authorized real production retry is the remaining empirical test.",
+  "prompt_only_hardening_sufficient": true,
+  "v102_version": "editorial-planner-1.0.2",
+  "base_prompts": {
+    "historical": "editorial-planner-1.0",
+    "a33": "editorial-planner-1.0.1"
+  },
+  "narrowest_fix_rationale": "Harden the prompt/contract. Keep transport, schema, language rule, and the hard validator gate. Do not auto-assign omitted ideas and do not auto-retry."
+}

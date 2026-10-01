@@ -1,0 +1,496 @@
+{
+  "chapters": [
+    {
+      "chapter_id": "CH001",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 21718,
+        "payload_sha256": "c2dc94db1cf4b8c51c9c0d03dfdcb98375eda83afdd80566662c6ec94f2a6ece",
+        "local_token_estimate": 6095,
+        "provider_adjusted_mid": 9752,
+        "provider_adjusted_pessimistic": 12589
+      },
+      "output": {
+        "paragraph_count": 4,
+        "expected_output_tokens": 2160,
+        "conservative_output_tokens": 3840,
+        "recommended_max_output": 4096
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.017224,
+      "evidence_chars": 13298,
+      "gate_input_chars": 20336
+    },
+    {
+      "chapter_id": "CH002",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 25383,
+        "payload_sha256": "a94a6fcb3b86077d59279d1249192382a222da4f067946e6e7cb681ac103d719",
+        "local_token_estimate": 7012,
+        "provider_adjusted_mid": 11218,
+        "provider_adjusted_pessimistic": 14482
+      },
+      "output": {
+        "paragraph_count": 4,
+        "expected_output_tokens": 2700,
+        "conservative_output_tokens": 4800,
+        "recommended_max_output": 4800
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.019833,
+      "evidence_chars": 15019,
+      "gate_input_chars": 24001
+    },
+    {
+      "chapter_id": "CH003",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 27158,
+        "payload_sha256": "694805795d136eb6634820778ffcdd8b069d7eef26ee646e0a7b216dcf582fe9",
+        "local_token_estimate": 7455,
+        "provider_adjusted_mid": 11928,
+        "provider_adjusted_pessimistic": 15399
+      },
+      "output": {
+        "paragraph_count": 4,
+        "expected_output_tokens": 2520,
+        "conservative_output_tokens": 4480,
+        "recommended_max_output": 4480
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.02108,
+      "evidence_chars": 17742,
+      "gate_input_chars": 25776
+    },
+    {
+      "chapter_id": "CH004",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 29906,
+        "payload_sha256": "a4cbcb90d88cd80c9336d0b5a39fed0c8de726ca9370b05390cbbd7072939c54",
+        "local_token_estimate": 8142,
+        "provider_adjusted_mid": 13027,
+        "provider_adjusted_pessimistic": 16818
+      },
+      "output": {
+        "paragraph_count": 5,
+        "expected_output_tokens": 3420,
+        "conservative_output_tokens": 6080,
+        "recommended_max_output": 6080
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.023072,
+      "evidence_chars": 16437,
+      "gate_input_chars": 28524
+    },
+    {
+      "chapter_id": "CH005",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 31601,
+        "payload_sha256": "4a55d9673e4d68795317a0887d3807ba717c6d00157d5eeec5072dd95113f679",
+        "local_token_estimate": 8566,
+        "provider_adjusted_mid": 13705,
+        "provider_adjusted_pessimistic": 17693
+      },
+      "output": {
+        "paragraph_count": 5,
+        "expected_output_tokens": 3240,
+        "conservative_output_tokens": 5760,
+        "recommended_max_output": 5760
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.024262,
+      "evidence_chars": 18907,
+      "gate_input_chars": 30219
+    },
+    {
+      "chapter_id": "CH006",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 71008,
+        "payload_sha256": "7b2a1c8928246d1d324b2e230d97e228fc112eed1dbf42ec6f04b3fcc6fae9f1",
+        "local_token_estimate": 18418,
+        "provider_adjusted_mid": 29468,
+        "provider_adjusted_pessimistic": 38042
+      },
+      "output": {
+        "paragraph_count": 8,
+        "expected_output_tokens": 6840,
+        "conservative_output_tokens": 12160,
+        "recommended_max_output": 8192
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.052341,
+      "evidence_chars": 45177,
+      "gate_input_chars": 69626
+    },
+    {
+      "chapter_id": "CH007",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 22058,
+        "payload_sha256": "2874a0d1cc2d904fb4904644a43b362c0e198507a07b77b66d6a90971eec5722",
+        "local_token_estimate": 6180,
+        "provider_adjusted_mid": 9888,
+        "provider_adjusted_pessimistic": 12765
+      },
+      "output": {
+        "paragraph_count": 2,
+        "expected_output_tokens": 1800,
+        "conservative_output_tokens": 3200,
+        "recommended_max_output": 4096
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.017465,
+      "evidence_chars": 16298,
+      "gate_input_chars": 20676
+    },
+    {
+      "chapter_id": "CH008",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 24215,
+        "payload_sha256": "f77e0fc88849de564c683ea8ef48caa472d9b6b7f4fcc63545b3272f783a1bf3",
+        "local_token_estimate": 6720,
+        "provider_adjusted_mid": 10751,
+        "provider_adjusted_pessimistic": 13879
+      },
+      "output": {
+        "paragraph_count": 3,
+        "expected_output_tokens": 1980,
+        "conservative_output_tokens": 3520,
+        "recommended_max_output": 4096
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.018989,
+      "evidence_chars": 17587,
+      "gate_input_chars": 22833
+    },
+    {
+      "chapter_id": "CH009",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 26462,
+        "payload_sha256": "c41e09fa80bdeed2fbf8a1e9e1bfd43ca90cd8dc4c7416979e94a729e41e11d6",
+        "local_token_estimate": 7281,
+        "provider_adjusted_mid": 11650,
+        "provider_adjusted_pessimistic": 15039
+      },
+      "output": {
+        "paragraph_count": 3,
+        "expected_output_tokens": 2520,
+        "conservative_output_tokens": 4480,
+        "recommended_max_output": 4480
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.020587,
+      "evidence_chars": 17635,
+      "gate_input_chars": 25080
+    },
+    {
+      "chapter_id": "CH010",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 32039,
+        "payload_sha256": "a1badb38dfd93f1f84f566ad4f075e06e48d72ab8f219280461893fd720797cf",
+        "local_token_estimate": 8676,
+        "provider_adjusted_mid": 13880,
+        "provider_adjusted_pessimistic": 17919
+      },
+      "output": {
+        "paragraph_count": 4,
+        "expected_output_tokens": 2880,
+        "conservative_output_tokens": 5120,
+        "recommended_max_output": 5120
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.024551,
+      "evidence_chars": 21740,
+      "gate_input_chars": 30657
+    },
+    {
+      "chapter_id": "CH011",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 24592,
+        "payload_sha256": "af9ecc430edc8f52971cb1a0d380d3701a75a5fc757cb4def47869a99aa92c15",
+        "local_token_estimate": 6814,
+        "provider_adjusted_mid": 10902,
+        "provider_adjusted_pessimistic": 14074
+      },
+      "output": {
+        "paragraph_count": 4,
+        "expected_output_tokens": 2160,
+        "conservative_output_tokens": 3840,
+        "recommended_max_output": 4096
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.019256,
+      "evidence_chars": 16558,
+      "gate_input_chars": 23210
+    },
+    {
+      "chapter_id": "CH012",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 21137,
+        "payload_sha256": "effca99df46887ff543c573f145a1d76672b37f94e4ec382aebc212030d5ecd5",
+        "local_token_estimate": 5950,
+        "provider_adjusted_mid": 9520,
+        "provider_adjusted_pessimistic": 12289
+      },
+      "output": {
+        "paragraph_count": 4,
+        "expected_output_tokens": 1980,
+        "conservative_output_tokens": 3520,
+        "recommended_max_output": 4096
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.016813,
+      "evidence_chars": 13644,
+      "gate_input_chars": 19755
+    },
+    {
+      "chapter_id": "CH013",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 38209,
+        "payload_sha256": "c2dd439810928a9427b74913410dcf7a5d0790f8986278c98142caba4ec0148b",
+        "local_token_estimate": 10218,
+        "provider_adjusted_mid": 16348,
+        "provider_adjusted_pessimistic": 21105
+      },
+      "output": {
+        "paragraph_count": 4,
+        "expected_output_tokens": 4320,
+        "conservative_output_tokens": 7680,
+        "recommended_max_output": 7680
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.029017,
+      "evidence_chars": 21918,
+      "gate_input_chars": 36827
+    },
+    {
+      "chapter_id": "CH014",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 27984,
+        "payload_sha256": "9b9a651631027d6f9146022147feddd174699deb6e2e5b672263adb6a5b142ad",
+        "local_token_estimate": 7662,
+        "provider_adjusted_mid": 12258,
+        "provider_adjusted_pessimistic": 15825
+      },
+      "output": {
+        "paragraph_count": 4,
+        "expected_output_tokens": 2700,
+        "conservative_output_tokens": 4800,
+        "recommended_max_output": 4800
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.021672,
+      "evidence_chars": 17941,
+      "gate_input_chars": 26602
+    },
+    {
+      "chapter_id": "CH015",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 29124,
+        "payload_sha256": "b26c1f7b31e45b960f83f935220c23c35dcb737bc4d59ce4bfb121581e4c34cb",
+        "local_token_estimate": 7947,
+        "provider_adjusted_mid": 12714,
+        "provider_adjusted_pessimistic": 16414
+      },
+      "output": {
+        "paragraph_count": 4,
+        "expected_output_tokens": 2880,
+        "conservative_output_tokens": 5120,
+        "recommended_max_output": 5120
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.022489,
+      "evidence_chars": 18346,
+      "gate_input_chars": 27742
+    },
+    {
+      "chapter_id": "CH016",
+      "candidate_source": "historical_or_supplied_candidate",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 11829,
+        "payload_sha256": "561aaa7d2a7c65a2658615106127bed6125c291efa587821567787073aa12747",
+        "local_token_estimate": 3623,
+        "provider_adjusted_mid": 5796,
+        "provider_adjusted_pessimistic": 7483
+      },
+      "output": {
+        "paragraph_count": 8,
+        "expected_output_tokens": 1440,
+        "conservative_output_tokens": 2560,
+        "recommended_max_output": 4096
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.010238,
+      "evidence_chars": 8967,
+      "gate_input_chars": 10447
+    },
+    {
+      "chapter_id": "CH017",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 30203,
+        "payload_sha256": "aa8bd7897c34f3589f2071515d4a7b9c3bf9199d6db7a0c377e69255f7dc282f",
+        "local_token_estimate": 8217,
+        "provider_adjusted_mid": 13146,
+        "provider_adjusted_pessimistic": 16971
+      },
+      "output": {
+        "paragraph_count": 3,
+        "expected_output_tokens": 3060,
+        "conservative_output_tokens": 5440,
+        "recommended_max_output": 5440
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.023262,
+      "evidence_chars": 19161,
+      "gate_input_chars": 28821
+    },
+    {
+      "chapter_id": "CH018",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 23294,
+        "payload_sha256": "f2eefcc1b90f746fc42319a8ba1961bc3d13bdf831a854419e851ca1097d8d63",
+        "local_token_estimate": 6489,
+        "provider_adjusted_mid": 10382,
+        "provider_adjusted_pessimistic": 13403
+      },
+      "output": {
+        "paragraph_count": 4,
+        "expected_output_tokens": 1980,
+        "conservative_output_tokens": 3520,
+        "recommended_max_output": 4096
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.018338,
+      "evidence_chars": 16057,
+      "gate_input_chars": 21912
+    },
+    {
+      "chapter_id": "CH019",
+      "candidate_source": "estimated_generated_text",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 14911,
+        "payload_sha256": "18a672f485734028f313f320a6a0c9d2b863874a69f607d566b9c5a2647b52d1",
+        "local_token_estimate": 4394,
+        "provider_adjusted_mid": 7029,
+        "provider_adjusted_pessimistic": 9074
+      },
+      "output": {
+        "paragraph_count": 2,
+        "expected_output_tokens": 1260,
+        "conservative_output_tokens": 2240,
+        "recommended_max_output": 4096
+      },
+      "context_safe": true,
+      "context_utilization_pessimistic": 0.012415,
+      "evidence_chars": 10976,
+      "gate_input_chars": 13529
+    }
+  ],
+  "extrema": {
+    "ch016": {
+      "chapter_id": "CH016",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 11829,
+        "payload_sha256": "561aaa7d2a7c65a2658615106127bed6125c291efa587821567787073aa12747",
+        "local_token_estimate": 3623,
+        "provider_adjusted_mid": 5796,
+        "provider_adjusted_pessimistic": 7483
+      },
+      "output": {
+        "paragraph_count": 8,
+        "expected_output_tokens": 1440,
+        "conservative_output_tokens": 2560,
+        "recommended_max_output": 4096
+      },
+      "context_safe": true
+    },
+    "smallest": {
+      "chapter_id": "CH016",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 11829,
+        "payload_sha256": "561aaa7d2a7c65a2658615106127bed6125c291efa587821567787073aa12747",
+        "local_token_estimate": 3623,
+        "provider_adjusted_mid": 5796,
+        "provider_adjusted_pessimistic": 7483
+      },
+      "output": {
+        "paragraph_count": 8,
+        "expected_output_tokens": 1440,
+        "conservative_output_tokens": 2560,
+        "recommended_max_output": 4096
+      },
+      "context_safe": true
+    },
+    "median": {
+      "chapter_id": "CH009",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 26462,
+        "payload_sha256": "c41e09fa80bdeed2fbf8a1e9e1bfd43ca90cd8dc4c7416979e94a729e41e11d6",
+        "local_token_estimate": 7281,
+        "provider_adjusted_mid": 11650,
+        "provider_adjusted_pessimistic": 15039
+      },
+      "output": {
+        "paragraph_count": 3,
+        "expected_output_tokens": 2520,
+        "conservative_output_tokens": 4480,
+        "recommended_max_output": 4480
+      },
+      "context_safe": true
+    },
+    "largest": {
+      "chapter_id": "CH006",
+      "request": {
+        "system_chars": 2661,
+        "user_chars": 71008,
+        "payload_sha256": "7b2a1c8928246d1d324b2e230d97e228fc112eed1dbf42ec6f04b3fcc6fae9f1",
+        "local_token_estimate": 18418,
+        "provider_adjusted_mid": 29468,
+        "provider_adjusted_pessimistic": 38042
+      },
+      "output": {
+        "paragraph_count": 8,
+        "expected_output_tokens": 6840,
+        "conservative_output_tokens": 12160,
+        "recommended_max_output": 8192
+      },
+      "context_safe": true
+    }
+  }
+}

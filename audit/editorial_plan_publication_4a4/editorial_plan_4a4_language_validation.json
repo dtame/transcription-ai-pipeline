@@ -1,0 +1,101 @@
+{
+  "phase": "4A.4",
+  "canonical_language": "en",
+  "language_policy": "TRANSCRIPTION_DERIVED_PRIMARY_LANGUAGE",
+  "editorial_language": "PASS",
+  "canonical_document_language": "en",
+  "detector_supports_canonical": true,
+  "detected_combined": "EN",
+  "confidence": 0.97,
+  "editorial_plan_language": "predominantly English",
+  "status": "PASS",
+  "editorial_language_match": "PASS",
+  "reason": "Editorial prose matches canonical language en (detected EN, confidence 0.97)",
+  "ids_excluded": true,
+  "id_strip_example": "  remains",
+  "prose_fields": [
+    "book_concept",
+    "chapter_purposes",
+    "chapter_titles",
+    "editorial_actions",
+    "editorial_angle",
+    "editorial_strategy",
+    "section_purposes",
+    "section_titles",
+    "selected_title",
+    "subtitle",
+    "target_reader",
+    "title_candidates"
+  ],
+  "classified_character_counts": {
+    "combined_classified_chars": 16534,
+    "field_chars": {
+      "book_concept": 770,
+      "title_candidates": 79,
+      "selected_title": 30,
+      "subtitle": 74,
+      "editorial_angle": 174,
+      "target_reader": 111,
+      "editorial_strategy": 283,
+      "chapter_titles": 481,
+      "chapter_purposes": 4312,
+      "section_titles": 1855,
+      "section_purposes": 5239,
+      "editorial_actions": 3115
+    }
+  },
+  "en_evidence": {
+    "combined_language": "EN",
+    "combined_confidence": 0.97,
+    "fields": [
+      "book_concept",
+      "title_candidates",
+      "selected_title",
+      "subtitle",
+      "editorial_angle",
+      "target_reader",
+      "editorial_strategy",
+      "chapter_titles",
+      "chapter_purposes",
+      "section_titles",
+      "section_purposes",
+      "editorial_actions"
+    ]
+  },
+  "fr_evidence": {
+    "fields": []
+  },
+  "mixed_unknown_evidence": {
+    "mixed_fields": [],
+    "unknown_fields": []
+  },
+  "fields_inspected": [
+    "book_concept",
+    "chapter_purposes",
+    "chapter_titles",
+    "editorial_actions",
+    "editorial_angle",
+    "editorial_strategy",
+    "section_purposes",
+    "section_titles",
+    "selected_title",
+    "subtitle",
+    "target_reader",
+    "title_candidates"
+  ],
+  "fields_excluded": [
+    "machine identifiers",
+    "inherited IDEA/TOP/EX/REF/UNC/SRC/CH/SEC refs"
+  ],
+  "thresholds_used": {
+    "pass_confidence": 0.8,
+    "fail_confidence": 0.8,
+    "pass": "combined classification matches canonical language, confidence >= 0.8, and dominant field language matches",
+    "fail": "combined classification is the opposite supported language (EN vs FR) with confidence >= 0.8",
+    "review": "mixed, unknown, low confidence, unsupported canonical language, or conflicting field-level scores"
+  },
+  "translated": false,
+  "repaired": false,
+  "second_provider_call": false,
+  "publication_requires": "EDITORIAL_LANGUAGE_MATCH=PASS"
+}

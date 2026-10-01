@@ -1,0 +1,1530 @@
+{
+  "parsed": {
+    "concept": {
+      "promise": "A teaching book that moves believers from inherited religious assumption to lived possession of resurrection life, spiritual authority, and union with God.",
+      "subject": "Exposition of the believer's inherited identity in Christ — sacred office, destroyed death, unconditional love, the renewed mind, and the practice of faith — grounded in Scripture and personal testimony.",
+      "journey": "From questioning inherited tradition, through the scriptural foundation of destroyed death and sonship, into office and calling, union and love, the anatomy of mind and spirit, and finally into tested practice and testimony.",
+      "progression": "Each part assumes the previous: what has already been given (foundation) → who the believer has been made (office and union) → how the inner person is trained (mind, soul, spirit) → how it is lived and proven (practice, testimony, vision)."
+    },
+    "titles": [
+      {
+        "t": "Flesh and Bone",
+        "why": "Draws on the central exegetical pivot of IDEA009–IDEA011 about physical resurrection and real inheritance."
+      },
+      {
+        "t": "Already Given",
+        "why": "Captures the repeated thesis that life, power, love, and healing are already possessed, not pending."
+      },
+      {
+        "t": "The Key of Life",
+        "why": "Uses the teaching's own framing of John 17 (IDEA124) as an entry into a lived dimension."
+      },
+      {
+        "t": "Sons of Men, Sons of God",
+        "why": "Names the restoration arc from Adam to Christ (IDEA013, IDEA014)."
+      }
+    ],
+    "pick": 1,
+    "subtitle": "Teachings on inherited life, spiritual authority, and the practice of faith",
+    "angle": "Treat the corpus as a progressive teaching course: every chapter removes a condition believers have added to God's word and replaces it with a received reality to be practiced, with testimony serving as verification rather than decoration.",
+    "reader": "Local congregations, retreat attendees, ministers and pastors who receive in-person Bible teaching and testimony and want doctrine that can be practiced.",
+    "strategy": "Group the 67 topics into seven thematic chapters that follow a doctrinal-to-practical arc rather than session chronology. Open with the critique of inherited habit and condition-based religion, establish the Hebrews 2 foundation, then office and calling, then John 17 union and love, then the anatomy of spirit/soul/mind, then disciplines of practice, then testimonies and closing vision. Reorder freely across the source timeline; keep testimonies attached to the doctrine they verify. Uncertainties are carried in the sections where they arise and remain unresolved.",
+    "chapters": [
+      {
+        "h": "c1",
+        "t": "What We Inherited Without Examining It",
+        "p": "Open by exposing inherited custom, condition-based religion, and secondhand information as the obstacles the rest of the book dismantles.",
+        "sum": "Hearing from God directly, cultural and bodily habits, tradition versus faith, and the refusal of manufactured conditions for access to God.",
+        "top": [
+          "TOP001",
+          "TOP002",
+          "TOP003",
+          "TOP008",
+          "TOP012",
+          "TOP013",
+          "TOP037"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Cluster retreat-level habit material with the broader tradition-versus-faith critique."
+          },
+          {
+            "k": "REORDER",
+            "n": "Move the faith-versus-tradition doctrine forward to frame the whole book."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c1s1",
+            "t": "Information or Revelation",
+            "p": "Set the book's starting problem: dependence on external information instead of direct hearing from God.",
+            "i": [
+              "IDEA001",
+              "IDEA040"
+            ],
+            "top": [
+              "TOP012"
+            ]
+          },
+          {
+            "h": "c1s2",
+            "t": "Habits We Were Handed",
+            "p": "Present the everyday material on diet, discipline and elders' intuition as the accessible entry to the tradition question.",
+            "i": [
+              "IDEA002",
+              "IDEA003",
+              "IDEA004",
+              "IDEA005",
+              "IDEA006"
+            ],
+            "x": [
+              "EX001",
+              "EX002"
+            ],
+            "ref": [
+              "REF001"
+            ],
+            "top": [
+              "TOP001",
+              "TOP002",
+              "TOP003"
+            ]
+          },
+          {
+            "h": "c1s3",
+            "t": "Tradition Cannot Be Accepted for You",
+            "p": "State the doctrinal core: faith, not inherited ritual or works, is the ground of walking with God.",
+            "i": [
+              "IDEA023",
+              "IDEA024",
+              "IDEA022",
+              "IDEA028"
+            ],
+            "ref": [
+              "REF003"
+            ],
+            "top": [
+              "TOP008"
+            ]
+          },
+          {
+            "h": "c1s4",
+            "t": "The Laws We Make for Ourselves",
+            "p": "Show how imitation and comparison generate self-imposed conditions that constrain rather than liberate.",
+            "i": [
+              "IDEA139",
+              "IDEA140",
+              "IDEA141",
+              "IDEA142",
+              "IDEA143",
+              "IDEA144",
+              "IDEA145",
+              "IDEA151",
+              "IDEA152"
+            ],
+            "x": [
+              "EX022"
+            ],
+            "top": [
+              "TOP037"
+            ]
+          },
+          {
+            "h": "c1s5",
+            "t": "The Shadow and the Reality",
+            "p": "Frame Old Testament encounter as shadow of New Testament reality and establish God's unchanging purpose.",
+            "i": [
+              "IDEA041",
+              "IDEA042",
+              "IDEA043"
+            ],
+            "top": [
+              "TOP013"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c2",
+        "t": "Death Destroyed, Life Inherited",
+        "p": "Lay the scriptural foundation: physical resurrection, the fall and its reversal, and the believer's already-possessed eternal life.",
+        "sum": "Hebrews 2 exposition, flesh-and-bone resurrection, Adam's failure and Christ's intercession, the tree of life, and the charge about which gospel will be preached.",
+        "top": [
+          "TOP004",
+          "TOP005",
+          "TOP006",
+          "TOP007",
+          "TOP009",
+          "TOP010",
+          "TOP011"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Bring the Hebrews 2 reading together with the resurrection-body and sonship material."
+          },
+          {
+            "k": "CONNECT",
+            "n": "Link the fall narrative to the destruction of death as one continuous argument."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c2s1",
+            "t": "Flesh and Bone Can Inherit",
+            "p": "Correct the selective reading that prepares people to die rather than to inherit resurrection life.",
+            "i": [
+              "IDEA009",
+              "IDEA010",
+              "IDEA011",
+              "IDEA012"
+            ],
+            "u": [
+              "UNC001"
+            ],
+            "rep": [],
+            "top": [
+              "TOP005"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Carry UNC001 forward unresolved regarding the unnamed source of positional-status teaching."
+              }
+            ]
+          },
+          {
+            "h": "c2s2",
+            "t": "From Sons of Men to Sons of God",
+            "p": "Explain the fall of Adam's sonship and Christ's purpose of restoring it.",
+            "i": [
+              "IDEA013",
+              "IDEA014",
+              "IDEA019",
+              "IDEA020"
+            ],
+            "ref": [
+              "REF002"
+            ],
+            "u": [
+              "UNC003"
+            ],
+            "top": [
+              "TOP006",
+              "TOP004"
+            ]
+          },
+          {
+            "h": "c2s3",
+            "t": "The Intercession Adam Never Made",
+            "p": "Contrast Adam's silence at the temptation with Christ's intercessory prayer for forgiveness.",
+            "i": [
+              "IDEA015",
+              "IDEA016",
+              "IDEA017",
+              "IDEA018"
+            ],
+            "top": [
+              "TOP007"
+            ]
+          },
+          {
+            "h": "c2s4",
+            "t": "Reading Hebrews 2 Together",
+            "p": "Present the group exposition of Hebrews 2 and the destruction of the one holding the power of death.",
+            "i": [
+              "IDEA032",
+              "IDEA033",
+              "IDEA035",
+              "IDEA036",
+              "IDEA021"
+            ],
+            "x": [
+              "EX004"
+            ],
+            "ref": [
+              "REF007",
+              "REF008",
+              "REF011"
+            ],
+            "u": [
+              "UNC005"
+            ],
+            "top": [
+              "TOP009",
+              "TOP004"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Keep the translation dispute as an open uncertainty rather than settling 'néanti'."
+              }
+            ]
+          },
+          {
+            "h": "c2s5",
+            "t": "Power Already Inside You",
+            "p": "Apply the victory: believers participate in the power they admire in Christ, without external preconditions.",
+            "i": [
+              "IDEA025",
+              "IDEA026",
+              "IDEA029",
+              "IDEA031"
+            ],
+            "top": [
+              "TOP008",
+              "TOP010"
+            ]
+          },
+          {
+            "h": "c2s6",
+            "t": "Two Experiences of the Demonic",
+            "p": "Address the contrast between African and global experience of demonic reality and the authority of the preached gospel.",
+            "i": [
+              "IDEA030",
+              "IDEA034"
+            ],
+            "x": [
+              "EX003",
+              "EX005"
+            ],
+            "u": [
+              "UNC004"
+            ],
+            "top": [
+              "TOP010"
+            ]
+          },
+          {
+            "h": "c2s7",
+            "t": "Which Gospel Will You Preach",
+            "p": "Close the foundation with the ministerial charge and the affirmation of eternal life already possessed.",
+            "i": [
+              "IDEA037",
+              "IDEA038",
+              "IDEA039"
+            ],
+            "top": [
+              "TOP011",
+              "TOP008"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c3",
+        "t": "Office, Anointing and the Weight of Calling",
+        "p": "Treat the sacred offices, the ordered priesthood, Malachi's warning, and the activation of anointing.",
+        "sum": "Priest, prophet, king; common versus ordered priesthood; Melchizedek and discernment of authority; Malachi's charge; false modesty; accessing the anointing.",
+        "top": [
+          "TOP014",
+          "TOP015",
+          "TOP016",
+          "TOP017",
+          "TOP018",
+          "TOP019",
+          "TOP020"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Consolidate all office, calling and anointing-access material into one chapter."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c3s1",
+            "t": "Three Sacred Offices",
+            "p": "Establish priest, prophet and king as consecrated offices whose form evolved but whose sacredness did not.",
+            "i": [
+              "IDEA044",
+              "IDEA045",
+              "IDEA055"
+            ],
+            "ref": [
+              "REF013"
+            ],
+            "top": [
+              "TOP014"
+            ]
+          },
+          {
+            "h": "c3s2",
+            "t": "Common Priesthood and Ordered Priesthood",
+            "p": "Distinguish the priesthood shared by all believers from the ordered, set-apart ministry.",
+            "i": [
+              "IDEA046",
+              "IDEA047"
+            ],
+            "top": [
+              "TOP015"
+            ]
+          },
+          {
+            "h": "c3s3",
+            "t": "Recognizing Authority Without a Prophecy",
+            "p": "Use Melchizedek to teach discernment of spiritual authority by the witness of the Spirit.",
+            "i": [
+              "IDEA048",
+              "IDEA049",
+              "IDEA050"
+            ],
+            "x": [
+              "EX006"
+            ],
+            "top": [
+              "TOP016"
+            ]
+          },
+          {
+            "h": "c3s4",
+            "t": "Malachi's Warning to the Priests",
+            "p": "Present the covenant with Levi, the guarding of knowledge, and the curse on an unhonoring priesthood.",
+            "i": [
+              "IDEA051",
+              "IDEA052",
+              "IDEA053",
+              "IDEA054"
+            ],
+            "ref": [
+              "REF012"
+            ],
+            "u": [
+              "UNC006"
+            ],
+            "top": [
+              "TOP017"
+            ]
+          },
+          {
+            "h": "c3s5",
+            "t": "Do Not Despise Your Calling",
+            "p": "Correct false modesty and establish confident, non-arrogant commitment to ministry.",
+            "i": [
+              "IDEA056",
+              "IDEA057",
+              "IDEA058"
+            ],
+            "top": [
+              "TOP018"
+            ]
+          },
+          {
+            "h": "c3s6",
+            "t": "When You Find God, People Find You",
+            "p": "Teach that genuine attainment removes the need to strain for recognition.",
+            "i": [
+              "IDEA059"
+            ],
+            "x": [
+              "EX007"
+            ],
+            "top": [
+              "TOP019"
+            ]
+          },
+          {
+            "h": "c3s7",
+            "t": "Activating What Was Already Given",
+            "p": "Explain that anointing and blessing must be accessed and activated through right understanding.",
+            "i": [
+              "IDEA060",
+              "IDEA061"
+            ],
+            "top": [
+              "TOP020"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c4",
+        "t": "Worship, Sacrifice and the Conditions God Never Set",
+        "p": "Dismantle performance-based devotion and restore worship and fasting to their stated purpose.",
+        "sum": "Heart attitude in offering, worship as fellowship, the simplicity of receiving power, and the real but limited profit of fasting.",
+        "top": [
+          "TOP021",
+          "TOP022",
+          "TOP023",
+          "TOP024"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Join offering, worship, power-reception and fasting as one critique of added conditions."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c4s1",
+            "t": "The Heart Behind the Offering",
+            "p": "Show that attitude determines whether a sacrifice stands or is cancelled.",
+            "i": [
+              "IDEA063",
+              "IDEA064",
+              "IDEA062"
+            ],
+            "ref": [
+              "REF014",
+              "REF048"
+            ],
+            "top": [
+              "TOP021",
+              "TOP020"
+            ]
+          },
+          {
+            "h": "c4s2",
+            "t": "Worship as Fellowship, Not Performance",
+            "p": "Separate genuine encounter and spontaneous liberty from instructed outward display.",
+            "i": [
+              "IDEA065",
+              "IDEA066",
+              "IDEA067",
+              "IDEA068"
+            ],
+            "x": [
+              "EX009"
+            ],
+            "ref": [
+              "REF015"
+            ],
+            "top": [
+              "TOP022"
+            ]
+          },
+          {
+            "h": "c4s3",
+            "t": "Receiving Power Is Simple",
+            "p": "Contrast Jesus' simple instruction to receive the Spirit with manufactured suffering doctrines.",
+            "i": [
+              "IDEA069",
+              "IDEA070",
+              "IDEA071",
+              "IDEA072",
+              "IDEA073"
+            ],
+            "x": [
+              "EX008",
+              "EX010"
+            ],
+            "u": [
+              "UNC007",
+              "UNC009"
+            ],
+            "top": [
+              "TOP023"
+            ]
+          },
+          {
+            "h": "c4s4",
+            "t": "What Fasting Actually Does",
+            "p": "Define the profit and the limits of fasting, and resist turning situational teaching into universal law.",
+            "i": [
+              "IDEA074",
+              "IDEA075",
+              "IDEA076",
+              "IDEA077"
+            ],
+            "x": [
+              "EX011",
+              "EX012"
+            ],
+            "ref": [
+              "REF018",
+              "REF019"
+            ],
+            "top": [
+              "TOP024"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c5",
+        "t": "One With the Father: John 17 and the Love Without Conditions",
+        "p": "Expound the prayer of Jesus as the believer's charter of union, glory, and unconditional love, and correct rapture-centered preaching.",
+        "sum": "Union with the Father, preservation in the world, glory given, critique of rapture fixation, the love of John 17:23, and flawed figures used by God.",
+        "top": [
+          "TOP025",
+          "TOP026",
+          "TOP027",
+          "TOP028",
+          "TOP029",
+          "TOP030",
+          "TOP031",
+          "TOP032",
+          "TOP033"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Unify all John 17 strands with the love and glory material."
+          },
+          {
+            "k": "SPLIT_TOPIC",
+            "n": "Separate the eschatology critique from the union exposition so each stands clearly."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c5s1",
+            "t": "The Prayer That Opens a Dimension",
+            "p": "Introduce John 17 as dependence on union with the Father and as the 'key of life'.",
+            "i": [
+              "IDEA078",
+              "IDEA079",
+              "IDEA124",
+              "IDEA126",
+              "IDEA127"
+            ],
+            "ref": [
+              "REF009",
+              "REF016",
+              "REF020",
+              "REF024"
+            ],
+            "top": [
+              "TOP025",
+              "TOP026"
+            ]
+          },
+          {
+            "h": "c5s2",
+            "t": "Kept in the World, Sanctified by Truth",
+            "p": "Present preservation and sanctification as the content of Jesus' request, extended to all later believers.",
+            "i": [
+              "IDEA080",
+              "IDEA089",
+              "IDEA090"
+            ],
+            "top": [
+              "TOP026"
+            ]
+          },
+          {
+            "h": "c5s3",
+            "t": "Not Waiting, but Working",
+            "p": "Correct rapture-centered eschatology and redirect attention to present relationship and active service.",
+            "i": [
+              "IDEA081",
+              "IDEA082",
+              "IDEA083",
+              "IDEA084",
+              "IDEA085",
+              "IDEA086",
+              "IDEA087",
+              "IDEA088"
+            ],
+            "ref": [
+              "REF021"
+            ],
+            "top": [
+              "TOP027"
+            ]
+          },
+          {
+            "h": "c5s4",
+            "t": "The Same Unity, the Same Glory",
+            "p": "Expound the unity of essence extended to believers and the glory given, keeping the honest question open.",
+            "i": [
+              "IDEA091",
+              "IDEA092",
+              "IDEA093",
+              "IDEA094",
+              "IDEA095",
+              "IDEA096",
+              "IDEA097"
+            ],
+            "top": [
+              "TOP028",
+              "TOP029"
+            ]
+          },
+          {
+            "h": "c5s5",
+            "t": "Speaking From Overflow",
+            "p": "Contrast prayer born of communion with recited formulas, and present the indwelling Spirit as already present.",
+            "i": [
+              "IDEA105",
+              "IDEA106",
+              "IDEA107",
+              "IDEA108"
+            ],
+            "x": [
+              "EX016"
+            ],
+            "top": [
+              "TOP028",
+              "TOP034"
+            ]
+          },
+          {
+            "h": "c5s6",
+            "t": "Knowing the Spirit, Not Only His Gifts",
+            "p": "Rebalance the church's emphasis from isolated gifts toward relationship with the Holy Spirit himself.",
+            "i": [
+              "IDEA109",
+              "IDEA110",
+              "IDEA111",
+              "IDEA112",
+              "IDEA113"
+            ],
+            "top": [
+              "TOP028"
+            ]
+          },
+          {
+            "h": "c5s7",
+            "t": "Loved Exactly as Jesus Is Loved",
+            "p": "Expound John 17:23 and strip away conditions preachers attach to declared love.",
+            "i": [
+              "IDEA114",
+              "IDEA115",
+              "IDEA116"
+            ],
+            "top": [
+              "TOP032"
+            ]
+          },
+          {
+            "h": "c5s8",
+            "t": "Flawed People, Real Power",
+            "p": "Use Moses, Elijah, Elisha, John the Baptist and Deborah to show weakness does not disqualify.",
+            "i": [
+              "IDEA117",
+              "IDEA118",
+              "IDEA119",
+              "IDEA120",
+              "IDEA121",
+              "IDEA122",
+              "IDEA123"
+            ],
+            "x": [
+              "EX017",
+              "EX018",
+              "EX019"
+            ],
+            "ref": [
+              "REF025"
+            ],
+            "u": [
+              "UNC011",
+              "UNC012"
+            ],
+            "top": [
+              "TOP033"
+            ]
+          },
+          {
+            "h": "c5s9",
+            "t": "Bold Before the Enemy, Gentle With People",
+            "p": "Combine confidence from knowledge of the enemy's defeat with sensitivity to others' spiritual level.",
+            "i": [
+              "IDEA098",
+              "IDEA099",
+              "IDEA100",
+              "IDEA101",
+              "IDEA102",
+              "IDEA103",
+              "IDEA104"
+            ],
+            "x": [
+              "EX013",
+              "EX014",
+              "EX015"
+            ],
+            "u": [
+              "UNC010"
+            ],
+            "top": [
+              "TOP030",
+              "TOP031"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c6",
+        "t": "Spirit, Soul and Mind: The Battlefield and the Instrument",
+        "p": "Teach the tripartite anatomy of the human being and establish the mind as the place of development and warfare.",
+        "sum": "Spirit/soul/body structure, death as process, heart-soul-mind, flesh-and-blood versus spiritual revelation, strongholds, renewal of the mind, and imagination.",
+        "top": [
+          "TOP034",
+          "TOP035",
+          "TOP036",
+          "TOP038",
+          "TOP039",
+          "TOP040",
+          "TOP041",
+          "TOP042",
+          "TOP043",
+          "TOP044",
+          "TOP046",
+          "TOP047",
+          "TOP048"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Assemble all anthropology, warfare and mind-renewal material into one developmental chapter."
+          },
+          {
+            "k": "REORDER",
+            "n": "Place structural anatomy before the practice of setting the mind above."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c6s1",
+            "t": "How Man Is Made",
+            "p": "Set out spirit, soul and body, conscience, the soul as communication hub, and the body's innocence.",
+            "i": [
+              "IDEA153",
+              "IDEA154",
+              "IDEA155",
+              "IDEA156",
+              "IDEA157",
+              "IDEA158"
+            ],
+            "u": [
+              "UNC016"
+            ],
+            "top": [
+              "TOP040",
+              "TOP041"
+            ]
+          },
+          {
+            "h": "c6s2",
+            "t": "In Dying You Shall Die",
+            "p": "Present the fall as progressive spiritual decay, inherited corruption, and the process of growth into sonship.",
+            "i": [
+              "IDEA159",
+              "IDEA160",
+              "IDEA161",
+              "IDEA162",
+              "IDEA163",
+              "IDEA164",
+              "IDEA165"
+            ],
+            "ref": [
+              "REF030",
+              "REF031"
+            ],
+            "u": [
+              "UNC017",
+              "UNC018"
+            ],
+            "top": [
+              "TOP041"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Retain the Lucifer/devil distinction as explicitly deferred by the speaker, unresolved here."
+              }
+            ]
+          },
+          {
+            "h": "c6s3",
+            "t": "Heart, Soul and Mind",
+            "p": "Open the greatest commandment as a key, and establish the soul as the Christian's place of development.",
+            "i": [
+              "IDEA166",
+              "IDEA183",
+              "IDEA187"
+            ],
+            "ref": [
+              "REF032"
+            ],
+            "top": [
+              "TOP042",
+              "TOP046",
+              "TOP048"
+            ]
+          },
+          {
+            "h": "c6s4",
+            "t": "Flesh and Blood Revelation",
+            "p": "Distinguish bodily life from carnal thinking and natural knowledge from divine revelation, including relevance to society.",
+            "i": [
+              "IDEA167",
+              "IDEA168",
+              "IDEA169",
+              "IDEA170",
+              "IDEA171",
+              "IDEA172",
+              "IDEA173",
+              "IDEA174"
+            ],
+            "x": [
+              "EX027",
+              "EX028",
+              "EX029"
+            ],
+            "ref": [
+              "REF033",
+              "REF034",
+              "REF035"
+            ],
+            "u": [
+              "UNC020"
+            ],
+            "top": [
+              "TOP043"
+            ]
+          },
+          {
+            "h": "c6s5",
+            "t": "Strongholds of Reasoning",
+            "p": "Define the real combat as reasoning against the knowledge of God and the taking of thoughts captive.",
+            "i": [
+              "IDEA175",
+              "IDEA176",
+              "IDEA177",
+              "IDEA178",
+              "IDEA135",
+              "IDEA134"
+            ],
+            "ref": [
+              "REF029"
+            ],
+            "u": [
+              "UNC022"
+            ],
+            "top": [
+              "TOP044",
+              "TOP035"
+            ]
+          },
+          {
+            "h": "c6s6",
+            "t": "Complete in the Head",
+            "p": "Teach Christ as head of all principality dwelling fully in believers, and confront the head/body contradiction.",
+            "i": [
+              "IDEA136",
+              "IDEA137",
+              "IDEA138"
+            ],
+            "ref": [
+              "REF028"
+            ],
+            "top": [
+              "TOP036"
+            ]
+          },
+          {
+            "h": "c6s7",
+            "t": "The Renewing of the Mind",
+            "p": "Present the mind as an instrument renewed by intentional thought rather than by force.",
+            "i": [
+              "IDEA188",
+              "IDEA189",
+              "IDEA190",
+              "IDEA027"
+            ],
+            "ref": [
+              "REF005",
+              "REF039"
+            ],
+            "top": [
+              "TOP046",
+              "TOP008"
+            ]
+          },
+          {
+            "h": "c6s8",
+            "t": "Imagination, the Faculty the Church Left Untaught",
+            "p": "Recover imagination as a God-given faculty and show the cost of leaving it undirected.",
+            "i": [
+              "IDEA191",
+              "IDEA192",
+              "IDEA193",
+              "IDEA194",
+              "IDEA195",
+              "IDEA196",
+              "IDEA197",
+              "IDEA198",
+              "IDEA199"
+            ],
+            "x": [
+              "EX031"
+            ],
+            "ref": [
+              "REF040"
+            ],
+            "u": [
+              "UNC023"
+            ],
+            "top": [
+              "TOP047"
+            ]
+          },
+          {
+            "h": "c6s9",
+            "t": "When the Mind Joins the Spirit",
+            "p": "Teach the mind-spirit connection as the condition for real prayer and eternal communion.",
+            "i": [
+              "IDEA200",
+              "IDEA201",
+              "IDEA202",
+              "IDEA203",
+              "IDEA204",
+              "IDEA205",
+              "IDEA206"
+            ],
+            "top": [
+              "TOP048"
+            ]
+          },
+          {
+            "h": "c6s10",
+            "t": "What the Doctrine Actually Cost",
+            "p": "Ground the teaching historically: Jesus' instructions under occupation and the coerced religion of earlier eras.",
+            "i": [
+              "IDEA146",
+              "IDEA147",
+              "IDEA148",
+              "IDEA149",
+              "IDEA150"
+            ],
+            "x": [
+              "EX023",
+              "EX024",
+              "EX025",
+              "EX026"
+            ],
+            "top": [
+              "TOP038",
+              "TOP039"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c7",
+        "t": "The Practice: Setting the Mind, Praying, and Living It",
+        "p": "Convert the doctrine into daily disciplines of focus, tongues, holiness, grace and deliberate faith.",
+        "sum": "Colossians 3 and Philippians 4 practice, praying in tongues, hunger, hands as doorways, holiness, gifts, grace versus law, meditation, healing and growth.",
+        "top": [
+          "TOP034",
+          "TOP045",
+          "TOP051",
+          "TOP052",
+          "TOP053",
+          "TOP056",
+          "TOP057",
+          "TOP058",
+          "TOP059",
+          "TOP060",
+          "TOP061"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Gather all method and discipline material into a practice chapter."
+          },
+          {
+            "k": "REORDER",
+            "n": "Follow interior disciplines with outward practice and growth."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c7s1",
+            "t": "Set Your Affection Above",
+            "p": "Give the Colossians 3 and Philippians 4 practice of habitual heavenly focus in ordinary life.",
+            "i": [
+              "IDEA128",
+              "IDEA129",
+              "IDEA130",
+              "IDEA131",
+              "IDEA132",
+              "IDEA133",
+              "IDEA125"
+            ],
+            "x": [
+              "EX020",
+              "EX021"
+            ],
+            "ref": [
+              "REF026",
+              "REF027"
+            ],
+            "top": [
+              "TOP034"
+            ]
+          },
+          {
+            "h": "c7s2",
+            "t": "Tongues, Rest and Refreshment",
+            "p": "Correct exhausting prayer practice and restore the stated purpose of praying in tongues.",
+            "i": [
+              "IDEA179",
+              "IDEA180",
+              "IDEA181",
+              "IDEA182",
+              "IDEA237",
+              "IDEA238",
+              "IDEA185",
+              "IDEA186",
+              "IDEA184"
+            ],
+            "x": [
+              "EX030"
+            ],
+            "ref": [
+              "REF036",
+              "REF037",
+              "REF038",
+              "REF044",
+              "REF047"
+            ],
+            "u": [
+              "UNC029"
+            ],
+            "top": [
+              "TOP045",
+              "TOP057"
+            ]
+          },
+          {
+            "h": "c7s3",
+            "t": "The Thirsty Will Be Filled",
+            "p": "Establish hunger as the anchor condition God himself set for receiving more.",
+            "i": [
+              "IDEA212",
+              "IDEA213"
+            ],
+            "ref": [
+              "REF042",
+              "REF043"
+            ],
+            "top": [
+              "TOP045"
+            ]
+          },
+          {
+            "h": "c7s4",
+            "t": "Hands as Doorways",
+            "p": "Connect the torn veil to access inward and release outward through the believer's hands, with supporting testimony.",
+            "i": [
+              "IDEA214",
+              "IDEA215",
+              "IDEA216"
+            ],
+            "x": [
+              "EX035",
+              "EX036"
+            ],
+            "ref": [
+              "REF017"
+            ],
+            "u": [
+              "UNC025"
+            ],
+            "top": [
+              "TOP051"
+            ]
+          },
+          {
+            "h": "c7s5",
+            "t": "Holiness and a Clear Soul",
+            "p": "Teach inner purity as the condition of unhindered presence and simple faith for healing.",
+            "i": [
+              "IDEA217",
+              "IDEA218",
+              "IDEA219"
+            ],
+            "top": [
+              "TOP052"
+            ]
+          },
+          {
+            "h": "c7s6",
+            "t": "Gifts Without Struggle",
+            "p": "Describe mature operation of the Spirit's gifts as overflow rather than effort.",
+            "i": [
+              "IDEA220",
+              "IDEA221",
+              "IDEA222",
+              "IDEA223"
+            ],
+            "top": [
+              "TOP053"
+            ]
+          },
+          {
+            "h": "c7s7",
+            "t": "Grace Exceeds Imagination",
+            "p": "Contrast law through Moses with grace and truth through Jesus, and the indwelling versus external presence.",
+            "i": [
+              "IDEA231",
+              "IDEA232",
+              "IDEA233",
+              "IDEA234",
+              "IDEA235",
+              "IDEA236",
+              "IDEA244"
+            ],
+            "x": [
+              "EX039"
+            ],
+            "ref": [
+              "REF045",
+              "REF046"
+            ],
+            "u": [
+              "UNC030"
+            ],
+            "top": [
+              "TOP056",
+              "TOP058"
+            ]
+          },
+          {
+            "h": "c7s8",
+            "t": "Training the Mind Before Sleep",
+            "p": "Give the meditation discipline: compartmentalizing concerns, fixing attention, recalling encounters.",
+            "i": [
+              "IDEA239",
+              "IDEA240",
+              "IDEA241",
+              "IDEA242",
+              "IDEA245"
+            ],
+            "x": [
+              "EX038",
+              "EX040"
+            ],
+            "top": [
+              "TOP057"
+            ]
+          },
+          {
+            "h": "c7s9",
+            "t": "Healing Already Accomplished",
+            "p": "Teach healing as finished work to be declared rather than newly sought.",
+            "i": [
+              "IDEA243"
+            ],
+            "ref": [
+              "REF049"
+            ],
+            "top": [
+              "TOP058"
+            ]
+          },
+          {
+            "h": "c7s10",
+            "t": "The Sower Within One Life",
+            "p": "Reread the parable as stages of growth in a single person and charge the shepherd to keep sowing.",
+            "i": [
+              "IDEA246",
+              "IDEA247",
+              "IDEA248",
+              "IDEA249"
+            ],
+            "x": [
+              "EX041",
+              "EX042"
+            ],
+            "top": [
+              "TOP059"
+            ]
+          },
+          {
+            "h": "c7s11",
+            "t": "Christianity Is Not Lived by Chance",
+            "p": "Establish deliberate daily practice, speech correction, and the believer as the standard by which faith is judged.",
+            "i": [
+              "IDEA253",
+              "IDEA254",
+              "IDEA255",
+              "IDEA268"
+            ],
+            "x": [
+              "EX043"
+            ],
+            "ref": [
+              "REF057"
+            ],
+            "top": [
+              "TOP060",
+              "TOP061"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c8",
+        "t": "Death, Choice and Providence",
+        "p": "Confront fear of death, the question of poverty and blessing, and God's redemptive handling of loss.",
+        "sum": "Death as gain, divine preservation, the dispute over God-made poverty, choice and harvest, and evil turned into blessing.",
+        "top": [
+          "TOP054",
+          "TOP062",
+          "TOP063",
+          "TOP066"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Join the death-attitude material with choice, preservation and providence."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c8s1",
+            "t": "Death as Gain, Not Dread",
+            "p": "Teach that fear of death abuses life and that death as gain must be lived, not merely affirmed.",
+            "i": [
+              "IDEA224",
+              "IDEA225",
+              "IDEA226",
+              "IDEA250",
+              "IDEA251",
+              "IDEA252"
+            ],
+            "ref": [
+              "REF050",
+              "REF051",
+              "REF056"
+            ],
+            "top": [
+              "TOP054"
+            ]
+          },
+          {
+            "h": "c8s2",
+            "t": "Preserved While You Sleep",
+            "p": "Present intentional trust and divine preservation of life as the practical fruit of that conviction.",
+            "i": [
+              "IDEA267",
+              "IDEA266"
+            ],
+            "x": [
+              "EX045"
+            ],
+            "ref": [
+              "REF052",
+              "REF055"
+            ],
+            "top": [
+              "TOP063",
+              "TOP060"
+            ]
+          },
+          {
+            "h": "c8s3",
+            "t": "Did God Make the Poor",
+            "p": "Examine and dispute the claim that God makes people poor, reading Proverbs closely.",
+            "i": [
+              "IDEA256",
+              "IDEA257",
+              "IDEA258",
+              "IDEA259",
+              "IDEA260",
+              "IDEA261",
+              "IDEA262",
+              "IDEA263",
+              "IDEA264",
+              "IDEA265"
+            ],
+            "x": [
+              "EX044"
+            ],
+            "ref": [
+              "REF053",
+              "REF054"
+            ],
+            "u": [
+              "UNC033"
+            ],
+            "top": [
+              "TOP062"
+            ]
+          },
+          {
+            "h": "c8s4",
+            "t": "Out of the Eater, Something Sweet",
+            "p": "Show loss and betrayal converted by God into promotion, with the stolen Bible account.",
+            "i": [
+              "IDEA280",
+              "IDEA281",
+              "IDEA282"
+            ],
+            "x": [
+              "EX049"
+            ],
+            "ref": [
+              "REF059"
+            ],
+            "top": [
+              "TOP066",
+              "TOP062"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c9",
+        "t": "Testimonies and the Vision Ahead",
+        "p": "Verify the teaching with resurrection and healing testimonies, set the boundaries of ministerial humility, and close with the prophetic vision and call to prayer.",
+        "sum": "Abnormal faith, short prayers, resurrection accounts, failed outcomes, ministry humility, transformation testimonies, and the vision for the nation.",
+        "top": [
+          "TOP049",
+          "TOP050",
+          "TOP055",
+          "TOP064",
+          "TOP065",
+          "TOP067"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Collect all testimony material as verification of the preceding doctrine."
+          },
+          {
+            "k": "CONNECT",
+            "n": "Pair successful resurrections with the account of a prayer that did not succeed."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c9s1",
+            "t": "Abnormal Faith Draws Attention",
+            "p": "Establish that only extraordinary obedience has impact and that only the first step must be known.",
+            "i": [
+              "IDEA207",
+              "IDEA209",
+              "IDEA210",
+              "IDEA270"
+            ],
+            "top": [
+              "TOP049",
+              "TOP064"
+            ]
+          },
+          {
+            "h": "c9s2",
+            "t": "Short Prayers, Confident Words",
+            "p": "Give the instruction on short faith-filled prayer and the discipline of not preaching untested doctrine.",
+            "i": [
+              "IDEA208",
+              "IDEA272",
+              "IDEA211",
+              "IDEA274"
+            ],
+            "top": [
+              "TOP050",
+              "TOP064"
+            ]
+          },
+          {
+            "h": "c9s3",
+            "t": "Raising the Dead",
+            "p": "Present the resurrection accounts and the activation principle behind them.",
+            "i": [
+              "IDEA269",
+              "IDEA271",
+              "IDEA273",
+              "IDEA275",
+              "IDEA276"
+            ],
+            "x": [
+              "EX032",
+              "EX033",
+              "EX034",
+              "EX046",
+              "EX047"
+            ],
+            "ref": [
+              "REF041",
+              "REF058"
+            ],
+            "u": [
+              "UNC024"
+            ],
+            "top": [
+              "TOP064"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Keep the duplicated telling flagged as an unresolved uncertainty."
+              }
+            ]
+          },
+          {
+            "h": "c9s4",
+            "t": "When It Does Not Happen",
+            "p": "Hold the account of a prayer that did not result in resurrection and the resulting doctrine of ministerial humility.",
+            "i": [
+              "IDEA277",
+              "IDEA278",
+              "IDEA279"
+            ],
+            "x": [
+              "EX048"
+            ],
+            "top": [
+              "TOP065",
+              "TOP064"
+            ]
+          },
+          {
+            "h": "c9s5",
+            "t": "What Changed in Us",
+            "p": "Gather participants' testimonies of transformed worship, prayer orientation and renewed strength.",
+            "i": [
+              "IDEA227",
+              "IDEA228",
+              "IDEA229",
+              "IDEA230"
+            ],
+            "x": [
+              "EX037"
+            ],
+            "u": [
+              "UNC028"
+            ],
+            "top": [
+              "TOP055"
+            ]
+          },
+          {
+            "h": "c9s6",
+            "t": "Angels Over the Nation",
+            "p": "Close with the prophetic vision for the nation, the word of growth, and the call to join hands in prayer.",
+            "i": [
+              "IDEA283",
+              "IDEA284",
+              "IDEA285",
+              "IDEA286"
+            ],
+            "u": [
+              "UNC031",
+              "UNC035"
+            ],
+            "top": [
+              "TOP067",
+              "TOP066",
+              "TOP060"
+            ]
+          }
+        ]
+      }
+    ],
+    "deferred": [],
+    "excluded": []
+  },
+  "text": "{\"concept\":{\"promise\":\"A teaching book that moves believers from inherited religious assumption to lived possession of resurrection life, spiritual authority, and union with God.\",\"subject\":\"Exposition of the believer's inherited identity in Christ — sacred office, destroyed death, unconditional love, the renewed mind, and the practice of faith — grounded in Scripture and personal testimony.\",\"journey\":\"From questioning inherited tradition, through the scriptural foundation of destroyed death and sonship, into office and calling, union and love, the anatomy of mind and spirit, and finally into tested practice and testimony.\",\"progression\":\"Each part assumes the previous: what has already been given (foundation) → who the believer has been made (office and union) → how the inner person is trained (mind, soul, spirit) → how it is lived and proven (practice, testimony, vision).\"},\"titles\":[{\"t\":\"Flesh and Bone\",\"why\":\"Draws on the central exegetical pivot of IDEA009–IDEA011 about physical resurrection and real inheritance.\"},{\"t\":\"Already Given\",\"why\":\"Captures the repeated thesis that life, power, love, and healing are already possessed, not pending.\"},{\"t\":\"The Key of Life\",\"why\":\"Uses the teaching's own framing of John 17 (IDEA124) as an entry into a lived dimension.\"},{\"t\":\"Sons of Men, Sons of God\",\"why\":\"Names the restoration arc from Adam to Christ (IDEA013, IDEA014).\"}],\"pick\":1,\"subtitle\":\"Teachings on inherited life, spiritual authority, and the practice of faith\",\"angle\":\"Treat the corpus as a progressive teaching course: every chapter removes a condition believers have added to God's word and replaces it with a received reality to be practiced, with testimony serving as verification rather than decoration.\",\"reader\":\"Local congregations, retreat attendees, ministers and pastors who receive in-person Bible teaching and testimony and want doctrine that can be practiced.\",\"strategy\":\"Group the 67 topics into seven thematic chapters that follow a doctrinal-to-practical arc rather than session chronology. Open with the critique of inherited habit and condition-based religion, establish the Hebrews 2 foundation, then office and calling, then John 17 union and love, then the anatomy of spirit/soul/mind, then disciplines of practice, then testimonies and closing vision. Reorder freely across the source timeline; keep testimonies attached to the doctrine they verify. Uncertainties are carried in the sections where they arise and remain unresolved.\",\"chapters\":[{\"h\":\"c1\",\"t\":\"What We Inherited Without Examining It\",\"p\":\"Open by exposing inherited custom, condition-based religion, and secondhand information as the obstacles the rest of the book dismantles.\",\"sum\":\"Hearing from God directly, cultural and bodily habits, tradition versus faith, and the refusal of manufactured conditions for access to God.\",\"top\":[\"TOP001\",\"TOP002\",\"TOP003\",\"TOP008\",\"TOP012\",\"TOP013\",\"TOP037\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Cluster retreat-level habit material with the broader tradition-versus-faith critique.\"},{\"k\":\"REORDER\",\"n\":\"Move the faith-versus-tradition doctrine forward to frame the whole book.\"}],\"sections\":[{\"h\":\"c1s1\",\"t\":\"Information or Revelation\",\"p\":\"Set the book's starting problem: dependence on external information instead of direct hearing from God.\",\"i\":[\"IDEA001\",\"IDEA040\"],\"top\":[\"TOP012\"]},{\"h\":\"c1s2\",\"t\":\"Habits We Were Handed\",\"p\":\"Present the everyday material on diet, discipline and elders' intuition as the accessible entry to the tradition question.\",\"i\":[\"IDEA002\",\"IDEA003\",\"IDEA004\",\"IDEA005\",\"IDEA006\"],\"x\":[\"EX001\",\"EX002\"],\"ref\":[\"REF001\"],\"top\":[\"TOP001\",\"TOP002\",\"TOP003\"]},{\"h\":\"c1s3\",\"t\":\"Tradition Cannot Be Accepted for You\",\"p\":\"State the doctrinal core: faith, not inherited ritual or works, is the ground of walking with God.\",\"i\":[\"IDEA023\",\"IDEA024\",\"IDEA022\",\"IDEA028\"],\"ref\":[\"REF003\"],\"top\":[\"TOP008\"]},{\"h\":\"c1s4\",\"t\":\"The Laws We Make for Ourselves\",\"p\":\"Show how imitation and comparison generate self-imposed conditions that constrain rather than liberate.\",\"i\":[\"IDEA139\",\"IDEA140\",\"IDEA141\",\"IDEA142\",\"IDEA143\",\"IDEA144\",\"IDEA145\",\"IDEA151\",\"IDEA152\"],\"x\":[\"EX022\"],\"top\":[\"TOP037\"]},{\"h\":\"c1s5\",\"t\":\"The Shadow and the Reality\",\"p\":\"Frame Old Testament encounter as shadow of New Testament reality and establish God's unchanging purpose.\",\"i\":[\"IDEA041\",\"IDEA042\",\"IDEA043\"],\"top\":[\"TOP013\"]}]},{\"h\":\"c2\",\"t\":\"Death Destroyed, Life Inherited\",\"p\":\"Lay the scriptural foundation: physical resurrection, the fall and its reversal, and the believer's already-possessed eternal life.\",\"sum\":\"Hebrews 2 exposition, flesh-and-bone resurrection, Adam's failure and Christ's intercession, the tree of life, and the charge about which gospel will be preached.\",\"top\":[\"TOP004\",\"TOP005\",\"TOP006\",\"TOP007\",\"TOP009\",\"TOP010\",\"TOP011\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Bring the Hebrews 2 reading together with the resurrection-body and sonship material.\"},{\"k\":\"CONNECT\",\"n\":\"Link the fall narrative to the destruction of death as one continuous argument.\"}],\"sections\":[{\"h\":\"c2s1\",\"t\":\"Flesh and Bone Can Inherit\",\"p\":\"Correct the selective reading that prepares people to die rather than to inherit resurrection life.\",\"i\":[\"IDEA009\",\"IDEA010\",\"IDEA011\",\"IDEA012\"],\"u\":[\"UNC001\"],\"rep\":[],\"top\":[\"TOP005\"],\"act\":[{\"k\":\"CONNECT\",\"n\":\"Carry UNC001 forward unresolved regarding the unnamed source of positional-status teaching.\"}]},{\"h\":\"c2s2\",\"t\":\"From Sons of Men to Sons of God\",\"p\":\"Explain the fall of Adam's sonship and Christ's purpose of restoring it.\",\"i\":[\"IDEA013\",\"IDEA014\",\"IDEA019\",\"IDEA020\"],\"ref\":[\"REF002\"],\"u\":[\"UNC003\"],\"top\":[\"TOP006\",\"TOP004\"]},{\"h\":\"c2s3\",\"t\":\"The Intercession Adam Never Made\",\"p\":\"Contrast Adam's silence at the temptation with Christ's intercessory prayer for forgiveness.\",\"i\":[\"IDEA015\",\"IDEA016\",\"IDEA017\",\"IDEA018\"],\"top\":[\"TOP007\"]},{\"h\":\"c2s4\",\"t\":\"Reading Hebrews 2 Together\",\"p\":\"Present the group exposition of Hebrews 2 and the destruction of the one holding the power of death.\",\"i\":[\"IDEA032\",\"IDEA033\",\"IDEA035\",\"IDEA036\",\"IDEA021\"],\"x\":[\"EX004\"],\"ref\":[\"REF007\",\"REF008\",\"REF011\"],\"u\":[\"UNC005\"],\"top\":[\"TOP009\",\"TOP004\"],\"act\":[{\"k\":\"CONNECT\",\"n\":\"Keep the translation dispute as an open uncertainty rather than settling 'néanti'.\"}]},{\"h\":\"c2s5\",\"t\":\"Power Already Inside You\",\"p\":\"Apply the victory: believers participate in the power they admire in Christ, without external preconditions.\",\"i\":[\"IDEA025\",\"IDEA026\",\"IDEA029\",\"IDEA031\"],\"top\":[\"TOP008\",\"TOP010\"]},{\"h\":\"c2s6\",\"t\":\"Two Experiences of the Demonic\",\"p\":\"Address the contrast between African and global experience of demonic reality and the authority of the preached gospel.\",\"i\":[\"IDEA030\",\"IDEA034\"],\"x\":[\"EX003\",\"EX005\"],\"u\":[\"UNC004\"],\"top\":[\"TOP010\"]},{\"h\":\"c2s7\",\"t\":\"Which Gospel Will You Preach\",\"p\":\"Close the foundation with the ministerial charge and the affirmation of eternal life already possessed.\",\"i\":[\"IDEA037\",\"IDEA038\",\"IDEA039\"],\"top\":[\"TOP011\",\"TOP008\"]}]},{\"h\":\"c3\",\"t\":\"Office, Anointing and the Weight of Calling\",\"p\":\"Treat the sacred offices, the ordered priesthood, Malachi's warning, and the activation of anointing.\",\"sum\":\"Priest, prophet, king; common versus ordered priesthood; Melchizedek and discernment of authority; Malachi's charge; false modesty; accessing the anointing.\",\"top\":[\"TOP014\",\"TOP015\",\"TOP016\",\"TOP017\",\"TOP018\",\"TOP019\",\"TOP020\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Consolidate all office, calling and anointing-access material into one chapter.\"}],\"sections\":[{\"h\":\"c3s1\",\"t\":\"Three Sacred Offices\",\"p\":\"Establish priest, prophet and king as consecrated offices whose form evolved but whose sacredness did not.\",\"i\":[\"IDEA044\",\"IDEA045\",\"IDEA055\"],\"ref\":[\"REF013\"],\"top\":[\"TOP014\"]},{\"h\":\"c3s2\",\"t\":\"Common Priesthood and Ordered Priesthood\",\"p\":\"Distinguish the priesthood shared by all believers from the ordered, set-apart ministry.\",\"i\":[\"IDEA046\",\"IDEA047\"],\"top\":[\"TOP015\"]},{\"h\":\"c3s3\",\"t\":\"Recognizing Authority Without a Prophecy\",\"p\":\"Use Melchizedek to teach discernment of spiritual authority by the witness of the Spirit.\",\"i\":[\"IDEA048\",\"IDEA049\",\"IDEA050\"],\"x\":[\"EX006\"],\"top\":[\"TOP016\"]},{\"h\":\"c3s4\",\"t\":\"Malachi's Warning to the Priests\",\"p\":\"Present the covenant with Levi, the guarding of knowledge, and the curse on an unhonoring priesthood.\",\"i\":[\"IDEA051\",\"IDEA052\",\"IDEA053\",\"IDEA054\"],\"ref\":[\"REF012\"],\"u\":[\"UNC006\"],\"top\":[\"TOP017\"]},{\"h\":\"c3s5\",\"t\":\"Do Not Despise Your Calling\",\"p\":\"Correct false modesty and establish confident, non-arrogant commitment to ministry.\",\"i\":[\"IDEA056\",\"IDEA057\",\"IDEA058\"],\"top\":[\"TOP018\"]},{\"h\":\"c3s6\",\"t\":\"When You Find God, People Find You\",\"p\":\"Teach that genuine attainment removes the need to strain for recognition.\",\"i\":[\"IDEA059\"],\"x\":[\"EX007\"],\"top\":[\"TOP019\"]},{\"h\":\"c3s7\",\"t\":\"Activating What Was Already Given\",\"p\":\"Explain that anointing and blessing must be accessed and activated through right understanding.\",\"i\":[\"IDEA060\",\"IDEA061\"],\"top\":[\"TOP020\"]}]},{\"h\":\"c4\",\"t\":\"Worship, Sacrifice and the Conditions God Never Set\",\"p\":\"Dismantle performance-based devotion and restore worship and fasting to their stated purpose.\",\"sum\":\"Heart attitude in offering, worship as fellowship, the simplicity of receiving power, and the real but limited profit of fasting.\",\"top\":[\"TOP021\",\"TOP022\",\"TOP023\",\"TOP024\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Join offering, worship, power-reception and fasting as one critique of added conditions.\"}],\"sections\":[{\"h\":\"c4s1\",\"t\":\"The Heart Behind the Offering\",\"p\":\"Show that attitude determines whether a sacrifice stands or is cancelled.\",\"i\":[\"IDEA063\",\"IDEA064\",\"IDEA062\"],\"ref\":[\"REF014\",\"REF048\"],\"top\":[\"TOP021\",\"TOP020\"]},{\"h\":\"c4s2\",\"t\":\"Worship as Fellowship, Not Performance\",\"p\":\"Separate genuine encounter and spontaneous liberty from instructed outward display.\",\"i\":[\"IDEA065\",\"IDEA066\",\"IDEA067\",\"IDEA068\"],\"x\":[\"EX009\"],\"ref\":[\"REF015\"],\"top\":[\"TOP022\"]},{\"h\":\"c4s3\",\"t\":\"Receiving Power Is Simple\",\"p\":\"Contrast Jesus' simple instruction to receive the Spirit with manufactured suffering doctrines.\",\"i\":[\"IDEA069\",\"IDEA070\",\"IDEA071\",\"IDEA072\",\"IDEA073\"],\"x\":[\"EX008\",\"EX010\"],\"u\":[\"UNC007\",\"UNC009\"],\"top\":[\"TOP023\"]},{\"h\":\"c4s4\",\"t\":\"What Fasting Actually Does\",\"p\":\"Define the profit and the limits of fasting, and resist turning situational teaching into universal law.\",\"i\":[\"IDEA074\",\"IDEA075\",\"IDEA076\",\"IDEA077\"],\"x\":[\"EX011\",\"EX012\"],\"ref\":[\"REF018\",\"REF019\"],\"top\":[\"TOP024\"]}]},{\"h\":\"c5\",\"t\":\"One With the Father: John 17 and the Love Without Conditions\",\"p\":\"Expound the prayer of Jesus as the believer's charter of union, glory, and unconditional love, and correct rapture-centered preaching.\",\"sum\":\"Union with the Father, preservation in the world, glory given, critique of rapture fixation, the love of John 17:23, and flawed figures used by God.\",\"top\":[\"TOP025\",\"TOP026\",\"TOP027\",\"TOP028\",\"TOP029\",\"TOP030\",\"TOP031\",\"TOP032\",\"TOP033\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Unify all John 17 strands with the love and glory material.\"},{\"k\":\"SPLIT_TOPIC\",\"n\":\"Separate the eschatology critique from the union exposition so each stands clearly.\"}],\"sections\":[{\"h\":\"c5s1\",\"t\":\"The Prayer That Opens a Dimension\",\"p\":\"Introduce John 17 as dependence on union with the Father and as the 'key of life'.\",\"i\":[\"IDEA078\",\"IDEA079\",\"IDEA124\",\"IDEA126\",\"IDEA127\"],\"ref\":[\"REF009\",\"REF016\",\"REF020\",\"REF024\"],\"top\":[\"TOP025\",\"TOP026\"]},{\"h\":\"c5s2\",\"t\":\"Kept in the World, Sanctified by Truth\",\"p\":\"Present preservation and sanctification as the content of Jesus' request, extended to all later believers.\",\"i\":[\"IDEA080\",\"IDEA089\",\"IDEA090\"],\"top\":[\"TOP026\"]},{\"h\":\"c5s3\",\"t\":\"Not Waiting, but Working\",\"p\":\"Correct rapture-centered eschatology and redirect attention to present relationship and active service.\",\"i\":[\"IDEA081\",\"IDEA082\",\"IDEA083\",\"IDEA084\",\"IDEA085\",\"IDEA086\",\"IDEA087\",\"IDEA088\"],\"ref\":[\"REF021\"],\"top\":[\"TOP027\"]},{\"h\":\"c5s4\",\"t\":\"The Same Unity, the Same Glory\",\"p\":\"Expound the unity of essence extended to believers and the glory given, keeping the honest question open.\",\"i\":[\"IDEA091\",\"IDEA092\",\"IDEA093\",\"IDEA094\",\"IDEA095\",\"IDEA096\",\"IDEA097\"],\"top\":[\"TOP028\",\"TOP029\"]},{\"h\":\"c5s5\",\"t\":\"Speaking From Overflow\",\"p\":\"Contrast prayer born of communion with recited formulas, and present the indwelling Spirit as already present.\",\"i\":[\"IDEA105\",\"IDEA106\",\"IDEA107\",\"IDEA108\"],\"x\":[\"EX016\"],\"top\":[\"TOP028\",\"TOP034\"]},{\"h\":\"c5s6\",\"t\":\"Knowing the Spirit, Not Only His Gifts\",\"p\":\"Rebalance the church's emphasis from isolated gifts toward relationship with the Holy Spirit himself.\",\"i\":[\"IDEA109\",\"IDEA110\",\"IDEA111\",\"IDEA112\",\"IDEA113\"],\"top\":[\"TOP028\"]},{\"h\":\"c5s7\",\"t\":\"Loved Exactly as Jesus Is Loved\",\"p\":\"Expound John 17:23 and strip away conditions preachers attach to declared love.\",\"i\":[\"IDEA114\",\"IDEA115\",\"IDEA116\"],\"top\":[\"TOP032\"]},{\"h\":\"c5s8\",\"t\":\"Flawed People, Real Power\",\"p\":\"Use Moses, Elijah, Elisha, John the Baptist and Deborah to show weakness does not disqualify.\",\"i\":[\"IDEA117\",\"IDEA118\",\"IDEA119\",\"IDEA120\",\"IDEA121\",\"IDEA122\",\"IDEA123\"],\"x\":[\"EX017\",\"EX018\",\"EX019\"],\"ref\":[\"REF025\"],\"u\":[\"UNC011\",\"UNC012\"],\"top\":[\"TOP033\"]},{\"h\":\"c5s9\",\"t\":\"Bold Before the Enemy, Gentle With People\",\"p\":\"Combine confidence from knowledge of the enemy's defeat with sensitivity to others' spiritual level.\",\"i\":[\"IDEA098\",\"IDEA099\",\"IDEA100\",\"IDEA101\",\"IDEA102\",\"IDEA103\",\"IDEA104\"],\"x\":[\"EX013\",\"EX014\",\"EX015\"],\"u\":[\"UNC010\"],\"top\":[\"TOP030\",\"TOP031\"]}]},{\"h\":\"c6\",\"t\":\"Spirit, Soul and Mind: The Battlefield and the Instrument\",\"p\":\"Teach the tripartite anatomy of the human being and establish the mind as the place of development and warfare.\",\"sum\":\"Spirit/soul/body structure, death as process, heart-soul-mind, flesh-and-blood versus spiritual revelation, strongholds, renewal of the mind, and imagination.\",\"top\":[\"TOP034\",\"TOP035\",\"TOP036\",\"TOP038\",\"TOP039\",\"TOP040\",\"TOP041\",\"TOP042\",\"TOP043\",\"TOP044\",\"TOP046\",\"TOP047\",\"TOP048\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Assemble all anthropology, warfare and mind-renewal material into one developmental chapter.\"},{\"k\":\"REORDER\",\"n\":\"Place structural anatomy before the practice of setting the mind above.\"}],\"sections\":[{\"h\":\"c6s1\",\"t\":\"How Man Is Made\",\"p\":\"Set out spirit, soul and body, conscience, the soul as communication hub, and the body's innocence.\",\"i\":[\"IDEA153\",\"IDEA154\",\"IDEA155\",\"IDEA156\",\"IDEA157\",\"IDEA158\"],\"u\":[\"UNC016\"],\"top\":[\"TOP040\",\"TOP041\"]},{\"h\":\"c6s2\",\"t\":\"In Dying You Shall Die\",\"p\":\"Present the fall as progressive spiritual decay, inherited corruption, and the process of growth into sonship.\",\"i\":[\"IDEA159\",\"IDEA160\",\"IDEA161\",\"IDEA162\",\"IDEA163\",\"IDEA164\",\"IDEA165\"],\"ref\":[\"REF030\",\"REF031\"],\"u\":[\"UNC017\",\"UNC018\"],\"top\":[\"TOP041\"],\"act\":[{\"k\":\"CONNECT\",\"n\":\"Retain the Lucifer/devil distinction as explicitly deferred by the speaker, unresolved here.\"}]},{\"h\":\"c6s3\",\"t\":\"Heart, Soul and Mind\",\"p\":\"Open the greatest commandment as a key, and establish the soul as the Christian's place of development.\",\"i\":[\"IDEA166\",\"IDEA183\",\"IDEA187\"],\"ref\":[\"REF032\"],\"top\":[\"TOP042\",\"TOP046\",\"TOP048\"]},{\"h\":\"c6s4\",\"t\":\"Flesh and Blood Revelation\",\"p\":\"Distinguish bodily life from carnal thinking and natural knowledge from divine revelation, including relevance to society.\",\"i\":[\"IDEA167\",\"IDEA168\",\"IDEA169\",\"IDEA170\",\"IDEA171\",\"IDEA172\",\"IDEA173\",\"IDEA174\"],\"x\":[\"EX027\",\"EX028\",\"EX029\"],\"ref\":[\"REF033\",\"REF034\",\"REF035\"],\"u\":[\"UNC020\"],\"top\":[\"TOP043\"]},{\"h\":\"c6s5\",\"t\":\"Strongholds of Reasoning\",\"p\":\"Define the real combat as reasoning against the knowledge of God and the taking of thoughts captive.\",\"i\":[\"IDEA175\",\"IDEA176\",\"IDEA177\",\"IDEA178\",\"IDEA135\",\"IDEA134\"],\"ref\":[\"REF029\"],\"u\":[\"UNC022\"],\"top\":[\"TOP044\",\"TOP035\"]},{\"h\":\"c6s6\",\"t\":\"Complete in the Head\",\"p\":\"Teach Christ as head of all principality dwelling fully in believers, and confront the head/body contradiction.\",\"i\":[\"IDEA136\",\"IDEA137\",\"IDEA138\"],\"ref\":[\"REF028\"],\"top\":[\"TOP036\"]},{\"h\":\"c6s7\",\"t\":\"The Renewing of the Mind\",\"p\":\"Present the mind as an instrument renewed by intentional thought rather than by force.\",\"i\":[\"IDEA188\",\"IDEA189\",\"IDEA190\",\"IDEA027\"],\"ref\":[\"REF005\",\"REF039\"],\"top\":[\"TOP046\",\"TOP008\"]},{\"h\":\"c6s8\",\"t\":\"Imagination, the Faculty the Church Left Untaught\",\"p\":\"Recover imagination as a God-given faculty and show the cost of leaving it undirected.\",\"i\":[\"IDEA191\",\"IDEA192\",\"IDEA193\",\"IDEA194\",\"IDEA195\",\"IDEA196\",\"IDEA197\",\"IDEA198\",\"IDEA199\"],\"x\":[\"EX031\"],\"ref\":[\"REF040\"],\"u\":[\"UNC023\"],\"top\":[\"TOP047\"]},{\"h\":\"c6s9\",\"t\":\"When the Mind Joins the Spirit\",\"p\":\"Teach the mind-spirit connection as the condition for real prayer and eternal communion.\",\"i\":[\"IDEA200\",\"IDEA201\",\"IDEA202\",\"IDEA203\",\"IDEA204\",\"IDEA205\",\"IDEA206\"],\"top\":[\"TOP048\"]},{\"h\":\"c6s10\",\"t\":\"What the Doctrine Actually Cost\",\"p\":\"Ground the teaching historically: Jesus' instructions under occupation and the coerced religion of earlier eras.\",\"i\":[\"IDEA146\",\"IDEA147\",\"IDEA148\",\"IDEA149\",\"IDEA150\"],\"x\":[\"EX023\",\"EX024\",\"EX025\",\"EX026\"],\"top\":[\"TOP038\",\"TOP039\"]}]},{\"h\":\"c7\",\"t\":\"The Practice: Setting the Mind, Praying, and Living It\",\"p\":\"Convert the doctrine into daily disciplines of focus, tongues, holiness, grace and deliberate faith.\",\"sum\":\"Colossians 3 and Philippians 4 practice, praying in tongues, hunger, hands as doorways, holiness, gifts, grace versus law, meditation, healing and growth.\",\"top\":[\"TOP034\",\"TOP045\",\"TOP051\",\"TOP052\",\"TOP053\",\"TOP056\",\"TOP057\",\"TOP058\",\"TOP059\",\"TOP060\",\"TOP061\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Gather all method and discipline material into a practice chapter.\"},{\"k\":\"REORDER\",\"n\":\"Follow interior disciplines with outward practice and growth.\"}],\"sections\":[{\"h\":\"c7s1\",\"t\":\"Set Your Affection Above\",\"p\":\"Give the Colossians 3 and Philippians 4 practice of habitual heavenly focus in ordinary life.\",\"i\":[\"IDEA128\",\"IDEA129\",\"IDEA130\",\"IDEA131\",\"IDEA132\",\"IDEA133\",\"IDEA125\"],\"x\":[\"EX020\",\"EX021\"],\"ref\":[\"REF026\",\"REF027\"],\"top\":[\"TOP034\"]},{\"h\":\"c7s2\",\"t\":\"Tongues, Rest and Refreshment\",\"p\":\"Correct exhausting prayer practice and restore the stated purpose of praying in tongues.\",\"i\":[\"IDEA179\",\"IDEA180\",\"IDEA181\",\"IDEA182\",\"IDEA237\",\"IDEA238\",\"IDEA185\",\"IDEA186\",\"IDEA184\"],\"x\":[\"EX030\"],\"ref\":[\"REF036\",\"REF037\",\"REF038\",\"REF044\",\"REF047\"],\"u\":[\"UNC029\"],\"top\":[\"TOP045\",\"TOP057\"]},{\"h\":\"c7s3\",\"t\":\"The Thirsty Will Be Filled\",\"p\":\"Establish hunger as the anchor condition God himself set for receiving more.\",\"i\":[\"IDEA212\",\"IDEA213\"],\"ref\":[\"REF042\",\"REF043\"],\"top\":[\"TOP045\"]},{\"h\":\"c7s4\",\"t\":\"Hands as Doorways\",\"p\":\"Connect the torn veil to access inward and release outward through the believer's hands, with supporting testimony.\",\"i\":[\"IDEA214\",\"IDEA215\",\"IDEA216\"],\"x\":[\"EX035\",\"EX036\"],\"ref\":[\"REF017\"],\"u\":[\"UNC025\"],\"top\":[\"TOP051\"]},{\"h\":\"c7s5\",\"t\":\"Holiness and a Clear Soul\",\"p\":\"Teach inner purity as the condition of unhindered presence and simple faith for healing.\",\"i\":[\"IDEA217\",\"IDEA218\",\"IDEA219\"],\"top\":[\"TOP052\"]},{\"h\":\"c7s6\",\"t\":\"Gifts Without Struggle\",\"p\":\"Describe mature operation of the Spirit's gifts as overflow rather than effort.\",\"i\":[\"IDEA220\",\"IDEA221\",\"IDEA222\",\"IDEA223\"],\"top\":[\"TOP053\"]},{\"h\":\"c7s7\",\"t\":\"Grace Exceeds Imagination\",\"p\":\"Contrast law through Moses with grace and truth through Jesus, and the indwelling versus external presence.\",\"i\":[\"IDEA231\",\"IDEA232\",\"IDEA233\",\"IDEA234\",\"IDEA235\",\"IDEA236\",\"IDEA244\"],\"x\":[\"EX039\"],\"ref\":[\"REF045\",\"REF046\"],\"u\":[\"UNC030\"],\"top\":[\"TOP056\",\"TOP058\"]},{\"h\":\"c7s8\",\"t\":\"Training the Mind Before Sleep\",\"p\":\"Give the meditation discipline: compartmentalizing concerns, fixing attention, recalling encounters.\",\"i\":[\"IDEA239\",\"IDEA240\",\"IDEA241\",\"IDEA242\",\"IDEA245\"],\"x\":[\"EX038\",\"EX040\"],\"top\":[\"TOP057\"]},{\"h\":\"c7s9\",\"t\":\"Healing Already Accomplished\",\"p\":\"Teach healing as finished work to be declared rather than newly sought.\",\"i\":[\"IDEA243\"],\"ref\":[\"REF049\"],\"top\":[\"TOP058\"]},{\"h\":\"c7s10\",\"t\":\"The Sower Within One Life\",\"p\":\"Reread the parable as stages of growth in a single person and charge the shepherd to keep sowing.\",\"i\":[\"IDEA246\",\"IDEA247\",\"IDEA248\",\"IDEA249\"],\"x\":[\"EX041\",\"EX042\"],\"top\":[\"TOP059\"]},{\"h\":\"c7s11\",\"t\":\"Christianity Is Not Lived by Chance\",\"p\":\"Establish deliberate daily practice, speech correction, and the believer as the standard by which faith is judged.\",\"i\":[\"IDEA253\",\"IDEA254\",\"IDEA255\",\"IDEA268\"],\"x\":[\"EX043\"],\"ref\":[\"REF057\"],\"top\":[\"TOP060\",\"TOP061\"]}]},{\"h\":\"c8\",\"t\":\"Death, Choice and Providence\",\"p\":\"Confront fear of death, the question of poverty and blessing, and God's redemptive handling of loss.\",\"sum\":\"Death as gain, divine preservation, the dispute over God-made poverty, choice and harvest, and evil turned into blessing.\",\"top\":[\"TOP054\",\"TOP062\",\"TOP063\",\"TOP066\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Join the death-attitude material with choice, preservation and providence.\"}],\"sections\":[{\"h\":\"c8s1\",\"t\":\"Death as Gain, Not Dread\",\"p\":\"Teach that fear of death abuses life and that death as gain must be lived, not merely affirmed.\",\"i\":[\"IDEA224\",\"IDEA225\",\"IDEA226\",\"IDEA250\",\"IDEA251\",\"IDEA252\"],\"ref\":[\"REF050\",\"REF051\",\"REF056\"],\"top\":[\"TOP054\"]},{\"h\":\"c8s2\",\"t\":\"Preserved While You Sleep\",\"p\":\"Present intentional trust and divine preservation of life as the practical fruit of that conviction.\",\"i\":[\"IDEA267\",\"IDEA266\"],\"x\":[\"EX045\"],\"ref\":[\"REF052\",\"REF055\"],\"top\":[\"TOP063\",\"TOP060\"]},{\"h\":\"c8s3\",\"t\":\"Did God Make the Poor\",\"p\":\"Examine and dispute the claim that God makes people poor, reading Proverbs closely.\",\"i\":[\"IDEA256\",\"IDEA257\",\"IDEA258\",\"IDEA259\",\"IDEA260\",\"IDEA261\",\"IDEA262\",\"IDEA263\",\"IDEA264\",\"IDEA265\"],\"x\":[\"EX044\"],\"ref\":[\"REF053\",\"REF054\"],\"u\":[\"UNC033\"],\"top\":[\"TOP062\"]},{\"h\":\"c8s4\",\"t\":\"Out of the Eater, Something Sweet\",\"p\":\"Show loss and betrayal converted by God into promotion, with the stolen Bible account.\",\"i\":[\"IDEA280\",\"IDEA281\",\"IDEA282\"],\"x\":[\"EX049\"],\"ref\":[\"REF059\"],\"top\":[\"TOP066\",\"TOP062\"]}]},{\"h\":\"c9\",\"t\":\"Testimonies and the Vision Ahead\",\"p\":\"Verify the teaching with resurrection and healing testimonies, set the boundaries of ministerial humility, and close with the prophetic vision and call to prayer.\",\"sum\":\"Abnormal faith, short prayers, resurrection accounts, failed outcomes, ministry humility, transformation testimonies, and the vision for the nation.\",\"top\":[\"TOP049\",\"TOP050\",\"TOP055\",\"TOP064\",\"TOP065\",\"TOP067\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Collect all testimony material as verification of the preceding doctrine.\"},{\"k\":\"CONNECT\",\"n\":\"Pair successful resurrections with the account of a prayer that did not succeed.\"}],\"sections\":[{\"h\":\"c9s1\",\"t\":\"Abnormal Faith Draws Attention\",\"p\":\"Establish that only extraordinary obedience has impact and that only the first step must be known.\",\"i\":[\"IDEA207\",\"IDEA209\",\"IDEA210\",\"IDEA270\"],\"top\":[\"TOP049\",\"TOP064\"]},{\"h\":\"c9s2\",\"t\":\"Short Prayers, Confident Words\",\"p\":\"Give the instruction on short faith-filled prayer and the discipline of not preaching untested doctrine.\",\"i\":[\"IDEA208\",\"IDEA272\",\"IDEA211\",\"IDEA274\"],\"top\":[\"TOP050\",\"TOP064\"]},{\"h\":\"c9s3\",\"t\":\"Raising the Dead\",\"p\":\"Present the resurrection accounts and the activation principle behind them.\",\"i\":[\"IDEA269\",\"IDEA271\",\"IDEA273\",\"IDEA275\",\"IDEA276\"],\"x\":[\"EX032\",\"EX033\",\"EX034\",\"EX046\",\"EX047\"],\"ref\":[\"REF041\",\"REF058\"],\"u\":[\"UNC024\"],\"top\":[\"TOP064\"],\"act\":[{\"k\":\"CONNECT\",\"n\":\"Keep the duplicated telling flagged as an unresolved uncertainty.\"}]},{\"h\":\"c9s4\",\"t\":\"When It Does Not Happen\",\"p\":\"Hold the account of a prayer that did not result in resurrection and the resulting doctrine of ministerial humility.\",\"i\":[\"IDEA277\",\"IDEA278\",\"IDEA279\"],\"x\":[\"EX048\"],\"top\":[\"TOP065\",\"TOP064\"]},{\"h\":\"c9s5\",\"t\":\"What Changed in Us\",\"p\":\"Gather participants' testimonies of transformed worship, prayer orientation and renewed strength.\",\"i\":[\"IDEA227\",\"IDEA228\",\"IDEA229\",\"IDEA230\"],\"x\":[\"EX037\"],\"u\":[\"UNC028\"],\"top\":[\"TOP055\"]},{\"h\":\"c9s6\",\"t\":\"Angels Over the Nation\",\"p\":\"Close with the prophetic vision for the nation, the word of growth, and the call to join hands in prayer.\",\"i\":[\"IDEA283\",\"IDEA284\",\"IDEA285\",\"IDEA286\"],\"u\":[\"UNC031\",\"UNC035\"],\"top\":[\"TOP067\",\"TOP066\",\"TOP060\"]}]}],\"deferred\":[],\"excluded\":[]}",
+  "sha256": "e265de18325031e547791c899934062cd8d43f0fd8bd689a7569a6f865db0cd6",
+  "repaired": false,
+  "truncated": false,
+  "manually_edited": false,
+  "translated": false
+}

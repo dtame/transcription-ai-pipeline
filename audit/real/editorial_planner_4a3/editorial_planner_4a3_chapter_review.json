@@ -1,0 +1,2145 @@
+{
+  "status": "PASS",
+  "chapter_count": 13,
+  "overloaded_chapters": [],
+  "tiny_chapters": [],
+  "chapters": [
+    {
+      "canonical_id": "CH001",
+      "working_title": "Désapprendre pour entendre",
+      "purpose": "Ouvrir par la posture de retraite : écouter Dieu directement et réexaminer les habitudes héritées.",
+      "summary": "Écoute directe, discipline du corps, traditions alimentaires, la vérité prouvée par l'usage.",
+      "section_count": 3,
+      "idea_count": 7,
+      "idea_share": 0.0245,
+      "major_topic_refs": [
+        "TOP001",
+        "TOP002",
+        "TOP003",
+        "TOP012"
+      ],
+      "topic_labels": [
+        "Retreat exercise and physical discipline",
+        "Cultural food habits and health",
+        "Elders' wisdom and traditional cooking",
+        "Practicing what is preached"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA001",
+          "summary": "God's people often rely on external information rather than hearing directly from God, who would otherwise teach them everything.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA005",
+          "summary": "Now that knowledge has increased, believers must learn better ways rather than continuing inherited but suboptimal customs.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA002",
+          "summary": "Physical exercise is spiritually endorsed and beneficial, per 1 Timothy 4:8, and should be part of retreat discipline.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA003",
+          "summary": "Eating heavily at night and skipping breakfast is a cultural pattern that contributed to poor health (e.g., stomach issues).",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA004",
+          "summary": "Children were culturally forbidden from touching meat first; this was tradition, not wickedness, but not necessarily the best practice.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA006",
+          "summary": "The speaker's grandmother, though uneducated, intuitively practiced wisdom (fresh cooking, clay pots) that the speaker identifies as reflecting God's nature.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA040",
+          "summary": "Spiritual truths are only proven true through practice and use, not by mere declaration.",
+          "kind": "",
+          "importance": "central"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "",
+      "boundary_next": "La vie rendue : des fils des hommes aux fils de Dieu",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH002",
+      "working_title": "La vie rendue : des fils des hommes aux fils de Dieu",
+      "purpose": "Exposer l'héritage de vie : chute, immortalité, résurrection corporelle, Hébreux 2.",
+      "summary": "Longévité et arbre de vie, la chute et l'intercession manquée, chair et os, Hébreux 2, réalité démoniaque, quel évangile prêcher.",
+      "section_count": 6,
+      "idea_count": 26,
+      "idea_share": 0.0909,
+      "major_topic_refs": [
+        "TOP004",
+        "TOP005",
+        "TOP006",
+        "TOP007",
+        "TOP009",
+        "TOP010",
+        "TOP011"
+      ],
+      "topic_labels": [
+        "Longevity, immortality and the tree of life",
+        "Physical resurrection and flesh/bone identity of Christ",
+        "Sons of men becoming sons of God",
+        "Adam and Eve's fall and the man's failure to intercede",
+        "Hebrews 2 exposition: Christ destroying the devil and death",
+        "Devil's real presence in African context vs. global gospel",
+        "Believer's inherited eternal life"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA007",
+          "summary": "The speaker holds an ambition for extraordinarily long life (hundreds or a thousand years) if needed to fulfill God's vision.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA008",
+          "summary": "Long life is possible even for sinners (implying it is not righteousness alone that grants longevity), yet believers are not harvesting long life because they have not 'planted' it.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA019",
+          "summary": "When Adam sinned, time (chronos) arrested him and broke the chain of immortality/eternity that he had carried even into sin.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA020",
+          "summary": "God barred Adam from the tree of life after the fall specifically to prevent him from eating and living forever in a fallen state.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA021",
+          "summary": "Jesus destroyed death and brought life and immortality to light, restoring access typified by the tree of life.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA013",
+          "summary": "Jesus came not merely so believers live 'in the spirit' but so sons of men become sons of God, restoring what was lost when Adam fell.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA014",
+          "summary": "Adam was originally son of God; after his rebellion he began fathering children after his own fallen image, making humanity 'sons of men' per Genesis 5.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA015",
+          "summary": "Eve was deceived because she lacked full awareness/senses at the moment, making her act non-deliberate, unlike a knowing transgression.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA016",
+          "summary": "Man's covering role over woman arose because man was the source ('womb') from which woman was taken, making him the first responsible party.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA017",
+          "summary": "Adam, present during the temptation, failed to intervene or intercede with God on Eve's behalf, though he could have and God would have forgiven her.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA018",
+          "summary": "By contrast, Jesus as husband of the church interceded, 'Father forgive them,' and this prayer secured the Father's forgiveness for humanity while still sinners.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA009",
+          "summary": "Much church teaching focuses on preparing people to die well rather than teaching them to inherit resurrection life, citing selective use of 'flesh and blood cannot inherit' while omitting 'flesh and bone can inherit.'",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA010",
+          "summary": "Christ's resurrection was physical: he invited Thomas to touch him and declared spirits do not have flesh and bone, then ascended bodily rather than merely disappearing spiritually.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA011",
+          "summary": "A man (Jesus) sits physically before the throne of grace, contrary to purely spiritual/positional theological interpretations.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA012",
+          "summary": "Teaching that resurrection/inheritance is merely 'positional status' with no real experiential possibility is labeled antichrist heresy.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA032",
+          "summary": "Hebrews 2 group reading affirms Jesus was made a little lower than angels, suffered death for everyone, and was crowned with glory and honor.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA033",
+          "summary": "Hebrews 2 in French and English states Christ shared in flesh and blood so that through death he might destroy (rendered 'néanti'/annul) the one holding the power of death, the devil.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA035",
+          "summary": "There is debate over the French translation 'néanti' (annulled/destroyed) versus a weaker reading implying the devil merely negotiated or retained some power.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA036",
+          "summary": "The devil used fear of death to hold people in lifelong bondage, but Jesus destroyed death and, through the gospel, brought life and immortality to light.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA037",
+          "summary": "Believers may suffer persecution or misinterpretation for the gospel's sake, but this suffering does not negate the reality of Christ's victory or the believer's inherited life.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA030",
+          "summary": "An anecdote about missionaries in the Mambila plateau handling scorpions and snakes without harm illustrates believers exercising power over the demonic/dangerous when preaching the true gospel.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA031",
+          "summary": "Preachers themselves are sometimes described as trying to dodge or escape exercising the power of God that is rightfully in their life and mouth.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA034",
+          "summary": "There is a striking contrast between how the global church experiences the demonic (relatively muted) and how African contexts often emphasize and even take pride in intense demonic reality.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA029",
+          "summary": "Believers, like Christ, deserve glory though many resist accepting this because they were taught they do not deserve it; false modesty is framed as antichrist thinking.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA038",
+          "summary": "Each minister/pastor is challenged to decide what gospel they will preach going forward, echoing apostolic accountability for the message delivered.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA039",
+          "summary": "The closing exhortation asserts that believers already possess eternal life — older, better, stronger and everlasting — that transcends physical death and bodily departure.",
+          "kind": "",
+          "importance": "central"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "Désapprendre pour entendre",
+      "boundary_next": "La foi, non la tradition",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH003",
+      "working_title": "La foi, non la tradition",
+      "purpose": "Démonter les conditions ajoutées et rappeler que la puissance est déjà intérieure.",
+      "summary": "Conditions de type arbre de la connaissance, foi contre coutume, puissance intérieure, renouvellement confié aux pasteurs.",
+      "section_count": 3,
+      "idea_count": 7,
+      "idea_share": 0.0245,
+      "major_topic_refs": [
+        "TOP008"
+      ],
+      "topic_labels": [
+        "Faith versus tradition and works"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA022",
+          "summary": "Requiring rigid conditions such as 40-day fasting as prerequisites for God's move is compared to the tree of knowledge of good and evil, an improper condition-based approach to God.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA023",
+          "summary": "Faith, not tradition or ritual works, is the foundation of walking with God; without faith it is impossible to please God, and eating without faith is sin (Romans 14:23).",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA024",
+          "summary": "Cultural traditions, no matter their origin or the intelligence of those who started them, cannot attain acceptance before God; only Christ is accepted.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA025",
+          "summary": "Many believers hold an image of a 'powerful Christ' performing miracles but fail to see themselves as participants in that same power dwelling inside them.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA026",
+          "summary": "The power of God is already inside the believer; external efforts like extreme fasting or mountain retreats are not the condition for accessing it.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA027",
+          "summary": "Pastors are instructed (Romans 12:1-2) to present believers as living sacrifices and to renew minds rather than conform to worldly patterns, since the mind is where the battle occurs.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA028",
+          "summary": "Churches should consistently teach the same core gospel message ('Jesus and him glorified') rather than introducing new revelations that fragment doctrine.",
+          "kind": "",
+          "importance": "supporting"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "La vie rendue : des fils des hommes aux fils de Dieu",
+      "boundary_next": "Les offices sacrés",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH004",
+      "working_title": "Les offices sacrés",
+      "purpose": "Exposer prêtre, prophète, roi, la reconnaissance de l'autorité et l'avertissement de Malachie.",
+      "summary": "L'Ancien comme ombre, les trois offices, Melchisédek, Malachie 2, ne pas mépriser l'appel.",
+      "section_count": 5,
+      "idea_count": 19,
+      "idea_share": 0.0664,
+      "major_topic_refs": [
+        "TOP013",
+        "TOP014",
+        "TOP015",
+        "TOP016",
+        "TOP017",
+        "TOP018",
+        "TOP019"
+      ],
+      "topic_labels": [
+        "Old Testament as shadow of the New",
+        "Sacred offices: priest, prophet, king",
+        "Universal priesthood vs. ordained order",
+        "Melchizedek and recognizing spiritual authority",
+        "Malachi's warning to priests",
+        "Anointing and calling not to be despised",
+        "Finding God brings people to you"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA041",
+          "summary": "Old Testament encounters existed to prefigure and shadow the New Testament reality.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA042",
+          "summary": "God does not change; apparent shifts in dealing with people serve his unchanging purpose to teach future generations to serve him.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA043",
+          "summary": "History repeats because human nature repeats; knowing past patterns equips believers to manage present circumstances.",
+          "kind": "",
+          "importance": "minor"
+        },
+        {
+          "idea_id": "IDEA044",
+          "summary": "Priest, prophet, and king are the three sacred offices in the Old Testament society, consecrated and anointed with oil.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA045",
+          "summary": "These three offices remain sacred and unchanged even though their form has evolved into a universal commonwealth.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA046",
+          "summary": "There is a common priesthood shared by all believers, but there is also an ordered priesthood that is distinct and set apart.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA047",
+          "summary": "It is careless to claim total equivalence between all believers and specifically called and ordered ministers.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA055",
+          "summary": "The priesthood pioneered the function of teaching/school, later fulfilled by all nations coming to the house of the Lord to be taught his ways.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA048",
+          "summary": "There was no prior prophecy about Melchizedek before he met Abraham, yet Abraham recognized his higher spiritual authority.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA049",
+          "summary": "The witness of the Spirit reveals spiritual authority regardless of a person's age or outward stature.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA050",
+          "summary": "Believers must remain vigilant in recognizing higher spiritual presence, since wrong attitude causes people to miss what God has placed before them.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA054",
+          "summary": "Those who walk closely with God establish principles for living that others receive as authoritative laws.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA051",
+          "summary": "Malachi warns priests that failing to honor God's name and take his commandment to heart results in a curse upon their blessing.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA052",
+          "summary": "God's covenant with Levi was one of life and peace, given so that Levi would fear and revere God's name.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA053",
+          "summary": "The priest's lips must guard knowledge and the law because he is a messenger of the Lord of hosts.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA056",
+          "summary": "Ministers should not falsely display humility by denying their calling; they are genuinely set apart and should not equate themselves with everyone else.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA057",
+          "summary": "Ministers must commit fully to the demanding, heavy work of ministry without arrogance or false modesty.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA058",
+          "summary": "Paul's charge to Timothy not to let others despise his youth is about inward calling and confidence, not confrontational posturing.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA059",
+          "summary": "When one truly finds God, others will seek that person out; there is no need to strain for recognition or audience.",
+          "kind": "",
+          "importance": "central"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "La foi, non la tradition",
+      "boundary_next": "L'onction sans formule",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH005",
+      "working_title": "L'onction sans formule",
+      "purpose": "Distinguer accès et activation, corriger sacrifice, adoration et jeûne détournés.",
+      "summary": "Activer l'onction, cœur de l'offrande, adoration vraie, simplicité de la puissance, jeûne et ses limites.",
+      "section_count": 5,
+      "idea_count": 18,
+      "idea_share": 0.0629,
+      "major_topic_refs": [
+        "TOP020",
+        "TOP021",
+        "TOP022",
+        "TOP023",
+        "TOP024"
+      ],
+      "topic_labels": [
+        "Accessing and activating the anointing",
+        "Sacrifice, offering, and heart attitude",
+        "True worship vs. performative worship",
+        "Simplicity of receiving power vs. manufactured suffering doctrines",
+        "Purpose and limits of fasting"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA060",
+          "summary": "Being genuinely anointed does not guarantee access; the anointing must be intentionally activated through right understanding.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA061",
+          "summary": "God's blessing may already be given; the failure lies in not accessing that blessing, not in God withholding it.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA062",
+          "summary": "Religious activities like fasting, sacrifice, and disciplines are not wrong in themselves, but become harmful when they replace God as the center of devotion.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA063",
+          "summary": "The heart attitude behind an offering matters more to God than the offering itself; unwilling or joyless giving can nullify the sacrifice.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA064",
+          "summary": "If sacrifice becomes more important than God himself, the sacrifice is effectively cancelled by the giver's own misplaced priority.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA065",
+          "summary": "Outward worship expressions like lifting hands can become empty performance rather than genuine seeking of God's presence.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA066",
+          "summary": "When a person genuinely encounters God, there is spontaneous liberty and loss of self-consciousness, without needing instruction to respond.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA067",
+          "summary": "Worship is fundamentally fellowship with God, and God instituted it so that he would be the center of attention.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA068",
+          "summary": "Engrossed reading of Scripture can itself become an act of deep communion and worship with God.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA069",
+          "summary": "Jesus taught a simple reception of power: receiving the Holy Spirit, not elaborate human requirements like prolonged fasting or suffering.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA070",
+          "summary": "Teachings that require extended fasting or suffering to 'release power' add conditions Jesus never stated and are therefore not from God.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA071",
+          "summary": "Adding anything to God's word that he did not say is an insult to God and prevents the added teaching from working.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA072",
+          "summary": "Ministers who teach painful personal formulas for anointing produce no true successors, showing the method did not originate from God.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA073",
+          "summary": "Anything practiced repeatedly can be mastered, but people who want power without practice remain stuck seeking one magic experience.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA074",
+          "summary": "Fasting brings the body under subjection and cultivates temperance, offering real spiritual profit without changing God's disposition.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA075",
+          "summary": "Scripture (Isaiah 58) affirms fasting yields personal profit, not a change in God, and there is never a divine condition attached to blessing.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA076",
+          "summary": "The disciples' inability to cast out a demon led to a situational teaching about fasting and prayer that should not be turned into rigid universal doctrine.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA077",
+          "summary": "Naming or engaging demons at length is not the pattern of deliverance; Jesus's inquiry of the demon's name fulfilled a specific prophecy, not a general method.",
+          "kind": "",
+          "importance": "supporting"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "Les offices sacrés",
+      "boundary_next": "La prière d'union (Jean 17)",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH006",
+      "working_title": "La prière d'union (Jean 17)",
+      "purpose": "Développer le texte pivot : unité, préservation, gloire, et ses conséquences pratiques.",
+      "summary": "Union avec le Père, gardés dans le monde, critique de l'obsession de l'enlèvement, gloire donnée, prière d'union, personne du Saint-Esprit, assurance et sensibilité pastorale.",
+      "section_count": 8,
+      "idea_count": 40,
+      "idea_share": 0.1399,
+      "major_topic_refs": [
+        "TOP025",
+        "TOP026",
+        "TOP027",
+        "TOP028",
+        "TOP029",
+        "TOP030",
+        "TOP031"
+      ],
+      "topic_labels": [
+        "Jesus' prayer of unity with the Father (John 17)",
+        "John 17 - Jesus' prayer for unity and preservation",
+        "Critique of rapture-centered eschatology",
+        "Unity of believers with the Father and Son",
+        "Glory given to believers",
+        "Knowledge and confidence over the enemy",
+        "Sensitivity to spiritual levels among people"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA078",
+          "summary": "Jesus's prayer in John 17 shows his life and ministry were entirely dependent on union with the Father, and he prays that believers share that same oneness.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA079",
+          "summary": "Jesus's prayer for unity is not primarily about institutional church unity but about believers' union with God himself.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA089",
+          "summary": "Jesus sanctifies himself so that believers may be sanctified by the truth, which is God's word.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA090",
+          "summary": "Jesus prays not only for his immediate disciples but for all who will believe through their word, across all generations.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA091",
+          "summary": "The unity Jesus prays for is the same unity of essence and indwelling that exists between Father and Son, extended into believers.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA080",
+          "summary": "Jesus prays not to remove believers from the world but to preserve them from evil while they remain in it.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA124",
+          "summary": "Jesus' prayer in John 17 functioned as 'the key of life,' inviting believers into a dimension where creation itself responds to their spoken word, unlike ordinary prayer.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA125",
+          "summary": "Confessing simple declarations such as being one with the Father and being God's habitation is the intended practice arising from John 17, not complicated theology.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA126",
+          "summary": "Jesus told disciples that though the world would see him no more, they would see him because he lives, and they too would live, referring to a coming spiritual dimension revealed later in chapter 17.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA127",
+          "summary": "In this promised dimension believers will see Jesus but the world will not truly know him, and encounters with angels or supernatural things will feel entirely natural rather than extraordinary.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA081",
+          "summary": "Jesus did not commission the church primarily to prepare for his second coming, but to be faithfully doing his work when he returns.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA082",
+          "summary": "Believers should not preoccupy themselves with timing of the end but focus on serving God and maintaining relationship with him.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA083",
+          "summary": "Whether Jesus raptures the church or returns a second time is not the believer's concern; the priority is a right relationship with God.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA084",
+          "summary": "Excessive emphasis on rapture preaching produces a lethargic, passive Christianity rather than active discipleship.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA085",
+          "summary": "Peter addressed scoffers who thought God's promises were delayed, teaching that a day and a thousand years are the same to God, who is not under human pressure of time.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA086",
+          "summary": "Two thousand years later the church still behaves with the same impatience Peter rebuked, showing little has changed in attitude toward Christ's return.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA087",
+          "summary": "Preoccupation with preaching the rapture or second coming does not impress anyone; the real mandate is to preach Christ, who is present now.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA088",
+          "summary": "Jesus comes specifically for those who are already in him, reinforcing that present union with Christ matters more than future timing.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA092",
+          "summary": "For the world to believe the Father sent Jesus, believers must be perfectly one, and this unity itself becomes evidence of God's love for them.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA093",
+          "summary": "Believers have been given the same glory the Father gave Jesus, though what that glory practically means requires reflection rather than assumption.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA094",
+          "summary": "Rather than answering what glory is, the more honest question each person must ask is what glory personally means for them and whether it is present in their life.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA095",
+          "summary": "When believers claim to 'receive by faith,' it often reveals they have not yet experienced the reality, only a hoped-for, unseen possession requiring faith to perceive.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA096",
+          "summary": "Believers must be honest and factual about where they truly stand in their walk with God rather than making exaggerated faith declarations disconnected from reality.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA097",
+          "summary": "There is a stage of spiritual infancy or ignorance that God overlooks, but growth brings a time when greater responsibility and commandment comes upon a believer's life.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA105",
+          "summary": "True spiritual authority and speech flow from the overflow of one's communion with the Father, not merely rehearsed formulas.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA106",
+          "summary": "Reciting scriptural phrases in prayer without genuine union or presence-consciousness is not true prayer and produces no manifestation.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA107",
+          "summary": "The Holy Spirit does not need to be summoned from a distance since he is already indwelling the believer as his temple and house.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA108",
+          "summary": "When believers live in conscious union and carry God's presence, tribal, ethnic, and denominational divisions dissolve.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA109",
+          "summary": "The church has over-magnified spiritual gifts while neglecting relationship with the Holy Spirit himself as a person to be known.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA110",
+          "summary": "Instead of giving isolated gifts like a word of knowledge or wisdom, the Holy Spirit can give the believer the abiding spirit of knowledge or wisdom itself.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA111",
+          "summary": "The Holy Spirit's activity is described as dependent on human cooperation, needing the believer as a vessel through which he can move.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA112",
+          "summary": "God redirects invitation from those who were sought and did not respond to those previously excluded, so former sinners now become pillars of the church.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA113",
+          "summary": "Children born into the church inherit the kingdom of God directly and are described as holy seed needing no further qualification.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA098",
+          "summary": "Discovering that the devil and death have already been destroyed radically changes the boldness and content of a believer's prayer.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA099",
+          "summary": "Confidence that comes with spiritual knowledge means a demon or threatening power no longer causes alarm because its defeat is already known.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA100",
+          "summary": "A minister carries an anointing/mantle that a local community may specifically need, and their felt urgency for a particular figure's presence reflects a spiritual reality, not mere superstition.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA101",
+          "summary": "Like Jesus who wept and grieved over people's unresponsiveness, believers may see people making choices that grieve them, yet must recognize others are not always at their own spiritual level.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA102",
+          "summary": "Decisions or statements made in a meeting at a certain spiritual level can adversely affect people who have not reached that same level, requiring sensitivity.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA103",
+          "summary": "Ministry must sometimes be adapted to context and audience without abandoning underlying conviction, similar to Paul becoming all things to all people without violating the law of Christ.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA104",
+          "summary": "One must know where people are spiritually in order to minister appropriately, balancing bold authority with pastoral awareness.",
+          "kind": "",
+          "importance": "supporting"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "L'onction sans formule",
+      "boundary_next": "Aimé exactement comme Jésus",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH007",
+      "working_title": "Aimé exactement comme Jésus",
+      "purpose": "Établir l'amour inconditionnel et son corollaire : l'imperfection ne disqualifie pas.",
+      "summary": "Jean 17:23 sans condition ajoutée, figures bibliques défaillantes, refus des lois auto-imposées par imitation.",
+      "section_count": 3,
+      "idea_count": 19,
+      "idea_share": 0.0664,
+      "major_topic_refs": [
+        "TOP032",
+        "TOP033",
+        "TOP037"
+      ],
+      "topic_labels": [
+        "God's unconditional love modeled on Jesus",
+        "Imperfect biblical figures used mightily by God",
+        "Self-imposed laws from imitation"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA114",
+          "summary": "John 17:23 stating God loves believers exactly as he loves Jesus is presented as one of the greatest possible preaching texts on divine love.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA115",
+          "summary": "Preachers often illegitimately attach conditions (holiness, focus, preservation) onto God's declared unconditional love, though the text states no such condition.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA116",
+          "summary": "Daring to believe God loves the believer identically to Jesus, despite known weaknesses, is itself what produces the power to live pure, since God's goodness rather than fear of judgment brings transformation.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA117",
+          "summary": "No biblical figure besides Jesus was without sin, yet God used deeply flawed people mightily, showing sinfulness does not disqualify someone from carrying great power.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA118",
+          "summary": "Moses broke the tablets God gave him in anger and was later barred from entering the promised land, illustrating a flawed man still used greatly by God.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA119",
+          "summary": "Elijah became so sick he nearly died from illness according to scripture, yet remained a powerful prophet used by God.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA120",
+          "summary": "Elisha received a double portion of Elijah's anointing yet the first recorded act of that anointing was cursing children who mocked him, resulting in their death by bears.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA121",
+          "summary": "Elisha's power extended to commanding nature, calling things that are not as though they are, causing an axe head (iron) to float, and multiplying bread before Jesus performed similar miracles.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA122",
+          "summary": "John the Baptist, though flawed and lacking what New Testament believers now have, was declared by Jesus to be surpassed in status by every believer under the new covenant.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA123",
+          "summary": "Believers today carry power greater than Deborah and other Old Testament figures and should not let circumstances make them boast in fear rather than authority.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA139",
+          "summary": "Spiritual experience is individual and personal, not a general universal standard",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA140",
+          "summary": "Admiring a spiritual role model can unconsciously create personal legalistic rules that constrain instead of liberate",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA141",
+          "summary": "God gave no explicit conditions or fasting requirements to reach Him; such demands are self-imposed",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA142",
+          "summary": "Comparing oneself to another's spiritual attainment (e.g. wanting to 'be like' a famous minister) stems from despising oneself and doubting God's personal knowledge of you",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA143",
+          "summary": "Every person is uniquely made by God and placed deliberately, not randomly or inferior to others",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA144",
+          "summary": "God cannot create a law that would break the very person He deeply knows and loves",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA145",
+          "summary": "God intimately knows each person's origin, hardship and context, and enables them to function as Jesus functioned despite it",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA151",
+          "summary": "Testimonies of spiritual breakthrough are often the result of long process (prayer, fasting, years), not instant achievement, akin to a marathon not a sprint",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA152",
+          "summary": "Believers often overestimate the difficulty of drawing near to God, imagining Him as a distant, demanding figure requiring extreme feats",
+          "kind": "",
+          "importance": "supporting"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "La prière d'union (Jean 17)",
+      "boundary_next": "Affermir la pensée en haut",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH008",
+      "working_title": "Affermir la pensée en haut",
+      "purpose": "Donner la discipline de l'attention : Colossiens 3, Philippiens 4, complétude en Christ, coût réel du chemin.",
+      "summary": "Fixer les affections, sélectionner les pensées, Christ tête et corps, coût historique de la doctrine.",
+      "section_count": 4,
+      "idea_count": 16,
+      "idea_share": 0.0559,
+      "major_topic_refs": [
+        "TOP034",
+        "TOP035",
+        "TOP036",
+        "TOP038",
+        "TOP039"
+      ],
+      "topic_labels": [
+        "Setting the mind on heavenly realities (Colossians 3 / Philippians 4)",
+        "Mind as battlefield",
+        "Headship and completeness in Christ",
+        "Cost of following Jesus historically",
+        "Church coercion versus modern freedom of worship"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA128",
+          "summary": "Believers are instructed to intentionally enter conscious fellowship each night, affirming the indwelling Father, Son, and Holy Spirit, and to sustain that fixed focus deliberately.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA129",
+          "summary": "Colossians 3 commands setting one's affections and mind on heavenly things, understood not as suppressing worldly thought entirely but as anchoring focus habitually despite distractions.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA130",
+          "summary": "Consistent practice of setting the mind on heavenly realities will produce distractions at first but eventually leads to sustained awareness, described metaphorically as flying into that place.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA131",
+          "summary": "This teaching is not abstract but is a concrete duty and method following prior 'kingdom words,' meant to be practiced rather than merely known.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA132",
+          "summary": "Believers are citizens of heaven whose spirit is God's seat, meaning the practice is not escaping to heaven but recognizing heaven's reality already dwelling within.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA133",
+          "summary": "Philippians 4:8 gives a further practical instruction for walking in heavenly awareness during ordinary daily activities by dwelling on what is true, honorable, just, pure, and praiseworthy.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA134",
+          "summary": "Believers must select their thoughts, filtering for what is pure, excellent and praiseworthy",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA135",
+          "summary": "The mind, not external circumstance, is the true battlefield of life",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA136",
+          "summary": "Christ, as head of all principality and power, dwells fully in believers making them complete",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA137",
+          "summary": "The principalities and powers believers wrestle against are spiritual, not flesh and blood",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA138",
+          "summary": "It is a doctrinal contradiction that Christ the head is powerful while his body (the church) suffers sickness and poverty",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA146",
+          "summary": "Jesus' actual teachings (going the extra mile, giving up one's coat) were given under harsh Roman military occupation, demonstrating the doctrine's real cost",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA147",
+          "summary": "Modern believers should not imagine Jesus' era or doctrine as easy; it demanded real submission and suffering",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA148",
+          "summary": "Teachers must be careful with modern illustrations (democracy, freedom of speech) since they can misrepresent biblical realities if scripture isn't checked",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA149",
+          "summary": "Historically, church attendance and tithing were enforced by civil/religious authority, unlike today's voluntary participation",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA150",
+          "summary": "Religious and political authorities historically collaborated to execute those who dissented, as with Jesus' death",
+          "kind": "",
+          "importance": "supporting"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "Aimé exactement comme Jésus",
+      "boundary_next": "Esprit, âme et corps",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH009",
+      "working_title": "Esprit, âme et corps",
+      "purpose": "Fournir l'anatomie spirituelle qui rend la pratique intelligible.",
+      "summary": "Structure tripartite, mort comme processus, nature du diable, cœur-âme-pensée, révélation contre chair et sang, pertinence sociale, forteresses de raisonnement.",
+      "section_count": 7,
+      "idea_count": 28,
+      "idea_share": 0.0979,
+      "major_topic_refs": [
+        "TOP040",
+        "TOP041",
+        "TOP042",
+        "TOP043",
+        "TOP044"
+      ],
+      "topic_labels": [
+        "Spirit, soul and body structure",
+        "Death and spiritual corruption after the Fall",
+        "Loving God with heart, soul and mind",
+        "Flesh and blood revelation versus spiritual revelation",
+        "Spiritual warfare and strongholds of reasoning"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA153",
+          "summary": "Man is composed of spirit (linked directly to God), soul (personality, mind, memory) and body (covering), forming a tripartite being",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA155",
+          "summary": "Conscience is what identifies and distinguishes the human spirit from other spiritual entities",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA156",
+          "summary": "The soul functions as a communication center or hub that channels information between the eternal spirit and the physical body",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA157",
+          "summary": "The spirit, having come from God, has no age and is eternal, unlike the soul and body",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA158",
+          "summary": "Actions performed in the body immediately affect and permeate the soul, as illustrated by sexual union outside marriage exchanging soul, not just body",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA154",
+          "summary": "The body was never inherently bad; sin, not the body itself, is what corrupted man",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA159",
+          "summary": "After the Fall, man was cut off from the tree of life, and his spirit progressively died and grew distant from God",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA160",
+          "summary": "God's warning to Adam was not instant death but a beginning of dying, a process of spiritual decay",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA161",
+          "summary": "In Christ, believers move from spiritual infancy to sonship through a process of growth, echoing John 1:12's 'power to become'",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA162",
+          "summary": "Corruption (lying, conniving, deceit) comes naturally to fallen man without being taught, reflecting inherited fallen nature",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA163",
+          "summary": "Jesus identified some of his opponents as spiritually fathered by the devil, a liar and murderer from the beginning, whose evil is intrinsic to his nature",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA164",
+          "summary": "Lucifer and the devil are presented as not identical, correcting a common misconception in spiritual warfare teaching",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA165",
+          "summary": "Believers who conflate Lucifer, Satan, and the devil as one entity may be fighting something that doesn't exist, weakening their spiritual warfare",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA166",
+          "summary": "Jesus' distinguishing of heart, soul and mind in the greatest commandment (Matt 22:37) is presented as a hidden key to spiritual breakthrough",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA183",
+          "summary": "Love for God must engage heart, soul, and mind together, not merely emotion.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA187",
+          "summary": "The soul, not the spirit, is the place a Christian must develop, since the spirit is already complete.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA167",
+          "summary": "Paul warns the Corinthians that they, like Eve, risk being deceived away from the simplicity that is in Christ",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA168",
+          "summary": "Paul contrasts his humble in-person presence with his bold written authority, teaching a model of meekness among believers despite spiritual power",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA169",
+          "summary": "Paul states believers do not walk after the flesh even though they live in it, distinguishing bodily existence from fleshly, carnal thinking",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA170",
+          "summary": "Peter's confession that Jesus is the Christ came from divine revelation, not flesh and blood (natural human) knowledge, illustrating a distinct category of 'flesh and blood revelation' still evident today in modern science",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA171",
+          "summary": "Believers must remain informed and relevant to their society and world events rather than being detached from worldly knowledge in the name of spirituality",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA172",
+          "summary": "Spiritual authority is undermined if leaders are irrelevant or ignorant of the practical concerns (like economy) of the people they are sent to serve",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA173",
+          "summary": "Physical needs (like food) must be addressed even after a miraculous spiritual act, as seen when Jesus ordered food given to the resurrected",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA174",
+          "summary": "Prolonged fasting imposed on already weak or sick people can be dangerous rather than spiritually effective; discernment is needed",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA175",
+          "summary": "Spiritual warfare weapons are not natural but are made mighty through God to pull down strongholds",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA176",
+          "summary": "The real combat of the believer is not physical but takes place in the realm of reasonings/knowledge that oppose the knowledge of God.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA177",
+          "summary": "Believers are called to take every thought captive, repeated insistently as a discipline against enemy infiltration.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA178",
+          "summary": "If the enemy penetrates the barrier of the mind, extended prayer effort (even 365 days) will not fix what was already breached.",
+          "kind": "",
+          "importance": "supporting"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "Affermir la pensée en haut",
+      "boundary_next": "Entraîner l'âme : langues, imagination, communion",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH010",
+      "working_title": "Entraîner l'âme : langues, imagination, communion",
+      "purpose": "Livrer la méthode pratique de prière et de méditation enseignée dans le corpus.",
+      "summary": "Usage juste des langues, correction reçue de Dieu, renouvellement de l'intelligence, imagination dirigée, connexion pensée-esprit, faim spirituelle, pratique de méditation.",
+      "section_count": 7,
+      "idea_count": 35,
+      "idea_share": 0.1224,
+      "major_topic_refs": [
+        "TOP045",
+        "TOP046",
+        "TOP047",
+        "TOP048",
+        "TOP057"
+      ],
+      "topic_labels": [
+        "Praying in tongues and refreshment",
+        "Renewal of the mind",
+        "Imagination as spiritual faculty",
+        "Mind-spirit connection with God",
+        "Prayer, tongues, and meditation practice"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA179",
+          "summary": "Praying all night in tongues without discernment can become mere fatigue-inducing 'bavardage' rather than purposeful prayer.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA180",
+          "summary": "One of the primary benefits of praying in tongues is to cool/refresh oneself, grounded in Isaiah 28 and 1 Corinthians 14.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA181",
+          "summary": "When fatigued, a short five-minute season of praying in tongues brings refreshment rather than exhausting all-night sessions.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA182",
+          "summary": "Tongues fail to produce results when believers do not practice what Scripture actually instructs about them.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA184",
+          "summary": "A personal revelation: God told the speaker directly that he was 'tired' and that continuing without correction would lead him to preach a wrong doctrine.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA185",
+          "summary": "God was not absent or waiting somewhere else to hear prayer — He is present, and the issue is whether the prayer touches/reaches Him ('the ceiling').",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA186",
+          "summary": "Sincerity alone was not enough; the previous manner of praying was based on ignorance, not correct knowledge.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA188",
+          "summary": "Presenting the body as a living sacrifice is an acceptable service to God, achieved through the renewing of the mind (Romans 12:2).",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA189",
+          "summary": "The brain/head is an instrument ('engine, motor') given by God that can serve powerfully or produce a bad result depending on use.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA190",
+          "summary": "Renewing the mind is not accomplished by force, power, or by spirit alone, but by intentional engagement of thought and imagination.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA196",
+          "summary": "The remedy is to actively bring Jesus into one's thought and keep the mind fixed there, making the mind productive instead of sterile.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA191",
+          "summary": "Imagination is a God-given faculty present even in the uneducated; the real problem is failing to use or direct it rightly.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA192",
+          "summary": "Left undirected, the imagination fills with negative or trivial images (accidents, being slapped) instead of godly images.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA193",
+          "summary": "There exists a hidden power called imagination that the church has often failed to teach, unlike other traditions.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA194",
+          "summary": "Jesus modeled imagination under the Spirit's leading, being led into the desert where the devil tested Him with visualized temptation ('jump from the temple').",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA195",
+          "summary": "Even while praying in tongues, the imagination can wander to unrelated, worldly concerns (like a dean withholding grades), leaving the mind unproductive/sterile.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA197",
+          "summary": "The creation account (earth void, formless, Spirit hovering) mirrors the human mind's potential to be filled and made productive by the Spirit.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA198",
+          "summary": "Other world traditions (Hindu, Chinese, Shinto, Buddhist) practice and teach transcendental meditation and imaginative techniques to businessmen and national leaders, while stewards of God's mysteries remain ignorant of these principles.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA199",
+          "summary": "What the church calls mere 'positive thinking' is misunderstood; true faith is not positive thinking but is grounded in what one hopes for.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA200",
+          "summary": "Believers are instructed to let the mind that was in Christ be in them also, connecting mind to the eternal spirit for lasting fellowship.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA201",
+          "summary": "The Father seeks to influence the mind, not the body, because the spirit is already connected to Him but the mind is disjointed.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA202",
+          "summary": "When mind connects to spirit, communion becomes eternal and one can speak/understand things that are supernatural to others but natural to the believer.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA203",
+          "summary": "When kneeling to pray, one should imagine Jesus directly rather than merely speaking words absentmindedly.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA204",
+          "summary": "Paul testified he did not hinder the believers, despite having had revelations in the third heaven he was told not to utter, implying deep spiritual reserves beyond ordinary prayer requests.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA205",
+          "summary": "If the mind is elsewhere during prayer (e.g., thinking of malaria or doctors) while only the body speaks, the spirit remains 'in prison' unable to cross into agreement with the soul.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA206",
+          "summary": "Repeating 'amen' outwardly does not guarantee inward spiritual engagement if the mind was never present during the prayer.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA212",
+          "summary": "God's disposition has always been to pour His Spirit and blessing on the thirsty and their descendants, as shown in Isaiah 44:3, fulfilled in Jesus' beatitude on hungering and thirsting for righteousness.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA213",
+          "summary": "Spiritual hunger is the anchor condition for receiving more of God; God is no respecter of persons and desires to be discovered by all who hunger.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA237",
+          "summary": "Praying in tongues brings peace, described as the Spirit of God praying through the believer.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA238",
+          "summary": "Doing spiritual practices sincerely but incorrectly still needs correction to reach true rest.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA239",
+          "summary": "The mind wanders during meditation unless trained to compartmentalize daily concerns before focusing on God.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA240",
+          "summary": "Training the mind to focus on God before sleep prevents bad dreams and allows recalling meaningful dreams intentionally.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA241",
+          "summary": "Excessive worry about others' problems does not help them and only adds to one's own burden.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA242",
+          "summary": "Spiritual life must be practiced gradually like a child learning life skills, growing from small beginnings.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA245",
+          "summary": "Spiritual life requires proper conscious adaptation to different dimensions, illustrated by breathing on land versus underwater.",
+          "kind": "",
+          "importance": "supporting"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "Esprit, âme et corps",
+      "boundary_next": "La grâce déjà donnée",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH011",
+      "working_title": "La grâce déjà donnée",
+      "purpose": "Montrer l'étendue non exploitée de la grâce : guérison acquise, sainteté, dons, croissance.",
+      "summary": "Grâce et vérité contre la loi, guérison accomplie, pureté intérieure, dons sans effort, mains comme portes, témoignages de transformation, semeur et croissance.",
+      "section_count": 7,
+      "idea_count": 26,
+      "idea_share": 0.0909,
+      "major_topic_refs": [
+        "TOP051",
+        "TOP052",
+        "TOP053",
+        "TOP055",
+        "TOP056",
+        "TOP058",
+        "TOP059"
+      ],
+      "topic_labels": [
+        "Hands as doorways of the Spirit",
+        "Holiness and inner purity",
+        "Gifts and manifestation of the Holy Ghost",
+        "Testimonies of personal transformation",
+        "Grace versus law",
+        "Healing already accomplished",
+        "Parable of the sower applied to one man's growth"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA231",
+          "summary": "Believers today have not yet fully understood or exploited the grace given to them.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA232",
+          "summary": "The teaching helps believers grasp that they have barely begun to access the grace already given.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA233",
+          "summary": "Grace and truth came through Jesus, while the law came through Moses; grace exceeds imagination.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA234",
+          "summary": "Truth means manifestation or reality of what grace makes possible; the word became flesh.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA235",
+          "summary": "Moses experienced only a temporary, partial encounter with God's presence, never seeing His face.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA236",
+          "summary": "God now lives inside believers rather than being seen from outside as with Moses.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA217",
+          "summary": "If God can forgive sins, he can also heal diseases; believers should keep faith simple.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA243",
+          "summary": "Healing was already accomplished through Christ's stripes; believers only need to declare and believe it, not seek new healing.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA244",
+          "summary": "Understanding scripture is progressive and dimensional; revisiting the same text later reveals more depth.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA218",
+          "summary": "A holy man lacks nothing; heaven and earth agree with him and darkness cannot approach.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA219",
+          "summary": "An unclean soul is clouded and repels the presence associated with holiness.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA220",
+          "summary": "As one grows spiritually, the gift of the Holy Ghost operates without struggle or effort.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA221",
+          "summary": "One can perceive another's future by spiritual insight, as if watching a television of their life.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA222",
+          "summary": "Living out of spiritual overflow becomes a way of life once in communion with the Spirit.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA223",
+          "summary": "Staying in communion with the spirit of knowledge and wisdom guarantees never lacking words of knowledge or wisdom.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA214",
+          "summary": "The stripes/wounds of Jesus are described as a torn veil giving access inward to God and outward expression through the believer's hands.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA215",
+          "summary": "Testimony: the speaker's hands were perceived as glorious open doors revealing the color of the sky/heaven, connecting to teaching that hands are doorways through which the Holy Spirit is released outward.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA216",
+          "summary": "A separate testimony described a vision of white dust in the hands with an opening/door colored like the sky, reinforcing the teaching about hands as spiritual doorways.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA227",
+          "summary": "The program brought clarity and blessing, shifting focus from praying for others toward personal communion with God.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA228",
+          "summary": "Recognizing Jesus as an indwelling light transformed understanding of prayer orientation and worship.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA229",
+          "summary": "Teaching revolutionized the way one worships and perceives God, leading to deep, wordless worship.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA230",
+          "summary": "True prayer and presence of God renew strength rather than causing fatigue.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA246",
+          "summary": "The parable of the sower can represent stages of growth within a single person rather than different people.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA247",
+          "summary": "A new believer's understanding grows progressively through repeated encounters with the word, moving from no soil to fruitful soil.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA248",
+          "summary": "The good shepherd's task is to keep sowing the seed patiently despite repetition or lack of visible results.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA249",
+          "summary": "Persistent preaching and prayer over years can eventually reach and transform even one seemingly unlikely person into a powerful minister.",
+          "kind": "",
+          "importance": "central"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "Entraîner l'âme : langues, imagination, communion",
+      "boundary_next": "La mort n'a pas la permission",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH012",
+      "working_title": "La mort n'a pas la permission",
+      "purpose": "Traiter la peur de la mort, la pratique intentionnelle et la question du choix et de la pauvreté.",
+      "summary": "Mourir est un gain vécu, christianisme délibéré, protection, choix et pauvreté examinés dans les Proverbes.",
+      "section_count": 3,
+      "idea_count": 22,
+      "idea_share": 0.0769,
+      "major_topic_refs": [
+        "TOP054",
+        "TOP060",
+        "TOP061",
+        "TOP062",
+        "TOP063"
+      ],
+      "topic_labels": [
+        "Attitude toward death and heaven",
+        "Practicing intentional faith",
+        "Speech correction and self-monitoring",
+        "Choice, poverty and blessing",
+        "Divine protection and preservation of life"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA224",
+          "summary": "Believers should not fear death since there is no set time and going to heaven should bring joy, not fear.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA225",
+          "summary": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA226",
+          "summary": "Death as gain must become one's lived reality, not merely an intellectual idea.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA250",
+          "summary": "Fear of death observed even among believers reveals it is not yet fully embraced as gain.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA251",
+          "summary": "If a believer does not practice Christ as life, facing death becomes heavy and difficult.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA252",
+          "summary": "Some believers foreknow the exact hour of their death and depart peacefully.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA253",
+          "summary": "Christianity is not lived by chance; one must deliberately practice and set the mind on faith daily.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA254",
+          "summary": "An aura of protection surrounds someone who practices life intentionally, preventing certain accidents.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA255",
+          "summary": "One must be intentional even in speech, correcting wrong words immediately, even during prayer.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA266",
+          "summary": "Scripture's warning passages (the 'B part') must be balanced with promises of life in Christ (the 'A part'); living in Christ contradicts living under a curse of death.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA267",
+          "summary": "Training oneself spiritually (e.g., to sleep peacefully while traveling) reflects deep trust that death has no permission to take him.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA268",
+          "summary": "Christianity is real and should be judged by faithful practitioners, not by those who fail to practice it; Paul offered himself as an imitator of Christ as the standard.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA256",
+          "summary": "A popular pastor's claim that God made poor people, drawn from Proverbs, is being critically examined and disputed.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA257",
+          "summary": "God blesses but does not make anyone poor; poverty results from choices, not divine design.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA258",
+          "summary": "Some hardships in life come from bad choices, and wrong choices bring a bad harvest.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA259",
+          "summary": "Proverbs 19:1 is read closely to argue that integrity, not poverty itself, is the point of the text, challenging a simplistic 'poor=blessed' reading.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA260",
+          "summary": "Lack of knowledge and hasty action lead to sin or failure.",
+          "kind": "",
+          "importance": "minor"
+        },
+        {
+          "idea_id": "IDEA261",
+          "summary": "A person's perverse ways and fretting heart against God reflect human folly, framed as generational/ancestral patterning versus lineage in God.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA262",
+          "summary": "Wealth attracts many friends while poverty drives them away, according to multiple Bible translations of the same verse.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA263",
+          "summary": "God is the maker of everyone without exception, but individual choices—sometimes made before one's birth by parents/ancestors—shape trajectories of poverty or wealth.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA264",
+          "summary": "Some parents are simply lazy and justify their poor condition by blaming ancestry rather than taking responsibility.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA265",
+          "summary": "One should not blame God for consequences of one's own choices; God did not make anyone the way that leads to hardship.",
+          "kind": "",
+          "importance": "supporting"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "La grâce déjà donnée",
+      "boundary_next": "Témoignages : ce que la pratique a produit",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    },
+    {
+      "canonical_id": "CH013",
+      "working_title": "Témoignages : ce que la pratique a produit",
+      "purpose": "Clore par les récits de résurrection, l'humilité ministérielle et la vision pour la nation.",
+      "summary": "Foi anormale, prières courtes, résurrections, échecs assumés, mal converti en bénédiction, vision nationale.",
+      "section_count": 6,
+      "idea_count": 23,
+      "idea_share": 0.0804,
+      "major_topic_refs": [
+        "TOP049",
+        "TOP050",
+        "TOP064",
+        "TOP065",
+        "TOP066",
+        "TOP067"
+      ],
+      "topic_labels": [
+        "Testimonies of raising the dead",
+        "Short, faith-filled prayer versus long prayers",
+        "Testimonies of resurrection from the dead",
+        "Ministry humility versus performance",
+        "Turning evil into blessing / testimony of transformation",
+        "Prophetic vision for the nation"
+      ],
+      "idea_summaries": [
+        {
+          "idea_id": "IDEA207",
+          "summary": "Ordinary, unremarkable behavior draws no attention; only those who act in extraordinary (abnormal) faith draw attention and impact.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA209",
+          "summary": "Acting in faith often means proceeding without knowing the outcome — only the beginning step of obedience is required.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA210",
+          "summary": "Doubt ('what if it doesn't work') can assail the mind even during a faith act, but the minister proceeds anyway, closing his eyes to avoid seeing possible disappointment.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA270",
+          "summary": "News of unusual events travels without conventional media because only abnormal acts draw public attention.",
+          "kind": "",
+          "importance": "minor"
+        },
+        {
+          "idea_id": "IDEA208",
+          "summary": "God explicitly instructed the speaker to pray short prayers rather than long ones when seeking miracles, modeled after Jesus.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA211",
+          "summary": "A believer must never preach a doctrine he does not personally know or has not tested; humility about limited knowledge is emphasized alongside confidence in what is known.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA272",
+          "summary": "Prayers for miracles should be short and confident, following the model of Jesus, rather than long pleading prayers.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA269",
+          "summary": "A prophetic word given to a family that their daughter would not die was tested when she died and was buried, yet the minister persisted in faith that God's word cannot fail.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA271",
+          "summary": "The devil taunted the minister that his ministry was over in front of the crowd at the grave, but he held to God's word that the girl would live.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA273",
+          "summary": "Miraculous acts function as 'activation' of something God has already ordained, similar to Israel's shout at Jericho releasing what angels were already prepared to do.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA274",
+          "summary": "Believers are taught to speak healing directly to sickness/the person, not converse with or address the demon/sickness itself.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA275",
+          "summary": "Believing God's spoken word, even under fear of being wrong or causing harm to someone's faith, is central to operating in resurrection power.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA276",
+          "summary": "A young man who died in church of asthma was raised despite social pressure and rumors about betrayal to a foreign religion.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA277",
+          "summary": "Not every prayer for healing or resurrection succeeds; a pregnant woman with food poisoning died despite prayer, illustrating that outcomes are God's responsibility, not the minister's failure.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA278",
+          "summary": "A minister's role is simply to be an available, obedient vessel; if healing doesn't happen it is not the minister's fault, God does his own part.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA279",
+          "summary": "Ministers should avoid making healing or miracles about their own performance or reputation; the results belong to God and to the church of Jesus Christ generally.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA280",
+          "summary": "A robbed minister's stolen, marked-up old Bible ended up years later in the hands of the very thief who became a powerful healer, illustrating unexpected redemptive providence.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA281",
+          "summary": "Financial loss or being taken advantage of should be treated as a seed/divine investment rather than a cause for bitterness.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA282",
+          "summary": "What is meant for evil (theft, betrayal, harm) can be converted by God into promotion or blessing, echoing 'out of the eater came something sweet' from Samson.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA283",
+          "summary": "A word of prophetic encouragement is declared: exponential growth in ministry is already activated and coming soon for listeners.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA284",
+          "summary": "The speaker envisions a transformed Cameroon and nation where sickness is banished from the church and citizens gain international respect without needing visas.",
+          "kind": "",
+          "importance": "central"
+        },
+        {
+          "idea_id": "IDEA285",
+          "summary": "The speaker saw a vision of angels dancing over the nation, which drives his conviction about the nation's coming transformation.",
+          "kind": "",
+          "importance": "supporting"
+        },
+        {
+          "idea_id": "IDEA286",
+          "summary": "Believers are urged to hold hands with someone nearby and pray earnestly together to release the promised move of God.",
+          "kind": "",
+          "importance": "supporting"
+        }
+      ],
+      "unknown_topic_refs": [],
+      "unknown_idea_refs": [],
+      "manuscript_leakage": false,
+      "boundary_previous": "La mort n'a pas la permission",
+      "boundary_next": "",
+      "semantic_coherence": "PASS",
+      "support_verdict": "PASS"
+    }
+  ],
+  "validator_warnings": []
+}

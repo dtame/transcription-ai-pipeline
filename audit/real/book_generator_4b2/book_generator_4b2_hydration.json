@@ -1,0 +1,20 @@
+{
+  "hydrated_src_count": 35,
+  "required_src_count": 35,
+  "hydrated_chars": 1177,
+  "estimated_tokens": {
+    "tokens": 303,
+    "method": "heuristic_chars_per_token",
+    "model": "claude-sonnet-5",
+    "estimated": true
+  },
+  "first_src_id": "SRC006149",
+  "last_src_id": "SRC007560",
+  "ordering_valid": true,
+  "unknown_src_count": 0,
+  "missing_src_count": 0,
+  "unknown_src_ids": [],
+  "missing_src_ids": [],
+  "complete": true,
+  "whole_transcript_sent": false
+}

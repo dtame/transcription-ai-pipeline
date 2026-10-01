@@ -1,0 +1,84 @@
+{
+  "phase": "4B.2",
+  "target_chapter_id": "CH016",
+  "request_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+  "request_sha256_repeat": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+  "determinism": true,
+  "request_identity": "MATCH",
+  "expected_request_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+  "max_tokens": 16384,
+  "model": "claude-sonnet-5",
+  "thinking_payload": {
+    "type": "disabled"
+  },
+  "content_audit": {
+    "chapter_id_match": true,
+    "all_planned_sections": true,
+    "all_assigned_ideas": true,
+    "canonical_language": true,
+    "voice_present": true,
+    "allowed_handles_present": true,
+    "traceability_src_present": true,
+    "unrelated_chapter_excluded": true,
+    "blocked_listed": true,
+    "whole_transcript_sent": false,
+    "full_source_map_sent": false
+  },
+  "request": {
+    "secrets_included": false,
+    "model": "claude-sonnet-5",
+    "max_tokens": 16384,
+    "thinking_present": true,
+    "effort_present": false,
+    "temperature_present": false,
+    "structured_output": "json_schema",
+    "prompt_fingerprint": "1aafff4920c5c9fb9384515cd53b25ea164ac14861fd569907ec2088917df02b",
+    "user_prompt_chars": 9944,
+    "system_prompt_chars": 3238,
+    "payload_chars": 15522,
+    "payload_bytes": 15544,
+    "payload_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+    "adapted_schema_in_payload": true,
+    "stage": "book_generation",
+    "chapter_id": "CH016",
+    "http_sent": false,
+    "request_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+    "request_sha256_repeat": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+    "determinism": true,
+    "content_audit": {
+      "chapter_id_match": true,
+      "all_planned_sections": true,
+      "all_assigned_ideas": true,
+      "canonical_language": true,
+      "voice_present": true,
+      "allowed_handles_present": true,
+      "traceability_src_present": true,
+      "unrelated_chapter_excluded": true,
+      "blocked_listed": true,
+      "whole_transcript_sent": false,
+      "full_source_map_sent": false
+    },
+    "idea_set_exact": true,
+    "section_set_exact": true,
+    "src_handles_hydrated": true,
+    "expected_chapter_ideas": [
+      "IDEA224",
+      "IDEA225",
+      "IDEA226",
+      "IDEA250",
+      "IDEA251",
+      "IDEA252"
+    ],
+    "expected_chapter_sections": [
+      "SEC063"
+    ],
+    "prompt_version": "book-generator-1.0",
+    "transport_version": "book-generation-transport-1.0",
+    "thinking_mode": "disabled",
+    "thinking_payload": {
+      "type": "disabled"
+    }
+  },
+  "secrets_included": false,
+  "http_sent": false
+}

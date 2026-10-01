@@ -1,0 +1,317 @@
+{
+  "phase_4a_preliminary": {
+    "expected": 4192,
+    "conservative": 10822,
+    "hard": 21644,
+    "proposed_max_output": 16384
+  },
+  "a1_calibration": {
+    "output_tokens": 2058,
+    "thinking_tokens": 158,
+    "visible_text_chars": 4865,
+    "chars_per_reported_output_token": 2.3639455782312924,
+    "chars_per_token_if_thinking_included_in_output": 2.5605263157894735,
+    "one_calibration_point_not_universal": true
+  },
+  "methods": {
+    "local": "app.ai.estimation.estimate_tokens on compact transport JSON",
+    "provider_adjusted_pessimistic": "ceil(chars / 1.9365384615384615) Phase 3B A.44 compact-output density",
+    "a1_calibrated": "ceil(chars / 2.3639455782312924) from A.1 text/output",
+    "budget_token": "A.1-calibrated tokens (visible structured JSON). Pessimistic Phase 3B density is reported as sensitivity, not the authorization figure."
+  },
+  "assumptions": {
+    "EXPECTED": {
+      "chapters": 12,
+      "sections": 36,
+      "titles": 4,
+      "assigned": "most ideas (272)",
+      "deferred": 8,
+      "excluded": 6,
+      "reuse": "about 5% / one extra section",
+      "wording": "A.1-like compact editorial fields",
+      "note": "Budget modelling only. Not a real chapter count."
+    },
+    "CONSERVATIVE": {
+      "chapters": 16,
+      "sections": 64,
+      "titles": 6,
+      "assigned": 250,
+      "deferred": 20,
+      "excluded": 16,
+      "reuse": "about 10%",
+      "wording": "1.6x A.1 field lengths, optional disposition notes",
+      "note": "Still plausible. Not a real plan."
+    },
+    "HARD": {
+      "chapters": 40,
+      "sections": 200,
+      "titles": 8,
+      "assigned": "enough to fill every section (200)",
+      "deferred": 50,
+      "excluded": 36,
+      "reuse": "warn-threshold ratio 0.15 and 3 placements",
+      "wording": "A.1-like short fields (prompt requires courts; not 2x padded)",
+      "bounds": {
+        "max_chapters_fail": 40,
+        "max_total_sections_fail": 200,
+        "max_sections_per_chapter_warn": 20,
+        "max_title_candidates": 8,
+        "reuse_ratio_warn": 0.15,
+        "reuse_count_warn": 3
+      },
+      "note": "Safe structural maxima permitted by the frozen planner contract. String lengths are bounded; unbounded prose is forbidden by the prompt (no manuscript paragraphs)."
+    }
+  },
+  "expected": {
+    "name": "EXPECTED",
+    "chars": 20494,
+    "utf8_bytes": 20494,
+    "local_token_estimate": {
+      "tokens": 5124,
+      "method": "heuristic_chars_per_token",
+      "model": "claude-opus-5",
+      "estimated": true
+    },
+    "provider_adjusted_mid": 8198,
+    "provider_adjusted_pessimistic": 10583,
+    "a1_calibrated_tokens": 8670,
+    "a1_chars_per_token": 2.3639455782312924,
+    "structure": {
+      "chapters": 12,
+      "sections": 36,
+      "titles": 4,
+      "deferred": 8,
+      "excluded": 6,
+      "assigned_idea_mentions": 285
+    },
+    "meta": {
+      "name": "EXPECTED",
+      "chapter_count": 12,
+      "section_count": 36,
+      "title_count": 4,
+      "assigned_count": 272,
+      "deferred_count": 8,
+      "excluded_count": 6,
+      "reuse_count": 14,
+      "reuse_extra": 1,
+      "field_scale": 1.0,
+      "budget_modelling_only": true
+    },
+    "output_tokens_for_budget": 8670,
+    "pessimistic_sensitivity_tokens": 10583
+  },
+  "conservative": {
+    "name": "CONSERVATIVE",
+    "chars": 46487,
+    "utf8_bytes": 46487,
+    "local_token_estimate": {
+      "tokens": 11622,
+      "method": "heuristic_chars_per_token",
+      "model": "claude-opus-5",
+      "estimated": true
+    },
+    "provider_adjusted_mid": 18595,
+    "provider_adjusted_pessimistic": 24006,
+    "a1_calibrated_tokens": 19666,
+    "a1_chars_per_token": 2.3639455782312924,
+    "structure": {
+      "chapters": 16,
+      "sections": 64,
+      "titles": 6,
+      "deferred": 20,
+      "excluded": 16,
+      "assigned_idea_mentions": 274
+    },
+    "meta": {
+      "name": "CONSERVATIVE",
+      "chapter_count": 16,
+      "section_count": 64,
+      "title_count": 6,
+      "assigned_count": 250,
+      "deferred_count": 20,
+      "excluded_count": 16,
+      "reuse_count": 25,
+      "reuse_extra": 1,
+      "field_scale": 1.6,
+      "budget_modelling_only": true
+    },
+    "output_tokens_for_budget": 19666,
+    "pessimistic_sensitivity_tokens": 24006
+  },
+  "hard": {
+    "name": "HARD",
+    "chars": 81684,
+    "utf8_bytes": 81684,
+    "local_token_estimate": {
+      "tokens": 20421,
+      "method": "heuristic_chars_per_token",
+      "model": "claude-opus-5",
+      "estimated": true
+    },
+    "provider_adjusted_mid": 32674,
+    "provider_adjusted_pessimistic": 42181,
+    "a1_calibrated_tokens": 34555,
+    "a1_chars_per_token": 2.3639455782312924,
+    "structure": {
+      "chapters": 40,
+      "sections": 200,
+      "titles": 8,
+      "deferred": 50,
+      "excluded": 36,
+      "assigned_idea_mentions": 282
+    },
+    "meta": {
+      "name": "HARD",
+      "chapter_count": 40,
+      "section_count": 200,
+      "title_count": 8,
+      "assigned_count": 200,
+      "deferred_count": 50,
+      "excluded_count": 36,
+      "reuse_count": 42,
+      "reuse_extra": 2,
+      "field_scale": 1.0,
+      "budget_modelling_only": true
+    },
+    "output_tokens_for_budget": 34555,
+    "pessimistic_sensitivity_tokens": 42181
+  },
+  "expected_output_tokens": 8670,
+  "conservative_output_tokens": 19666,
+  "hard_output_tokens": 34555,
+  "component_breakdown_hard": {
+    "total_chars": 81684,
+    "idea_id_chars_approx": 2538,
+    "deferred_row_chars_approx": 3800,
+    "excluded_row_chars_approx": 2448,
+    "fixed_and_prose_chars_approx": 72898,
+    "per_chapter_prose_chars_approx": 1822,
+    "per_section_prose_chars_approx": 364,
+    "titles": 8,
+    "do_not_scale_a1_linearly": true,
+    "invalid_linear_scale_tokens": 84084,
+    "why_linear_invalid": "A.1 7-IDEA output includes fixed metadata, book concept, titles, and chapter/section prose. Multiplying 2058 by 286/7 double-counts fixed overhead and ignores disposition compactness.",
+    "disposition_unit_costs": {
+      "assigned_id_chars": 9,
+      "assigned_singleton_array_chars": 11,
+      "deferred_min_chars": 45,
+      "deferred_with_note_chars": 76,
+      "excluded_min_chars": 40,
+      "excluded_with_note_chars": 68,
+      "assigned_reason_required": false,
+      "deferred_reason_required": true,
+      "excluded_reason_required": true,
+      "closed_deferral_reasons": [
+        "later_volume",
+        "insufficient_support",
+        "requires_uncertainty_resolution"
+      ],
+      "closed_exclusion_reasons": [
+        "non_substantive",
+        "administrative",
+        "duplicate_at_editorial_level",
+        "outside_selected_book_scope"
+      ],
+      "note": "ASSIGNED ideas appear only as canonical IDs in section i[]. DEFERRED/EXCLUDED require a closed why; n is optional."
+    }
+  },
+  "disposition_costs": {
+    "assigned_id_chars": 9,
+    "assigned_singleton_array_chars": 11,
+    "deferred_min_chars": 45,
+    "deferred_with_note_chars": 76,
+    "excluded_min_chars": 40,
+    "excluded_with_note_chars": 68,
+    "assigned_reason_required": false,
+    "deferred_reason_required": true,
+    "excluded_reason_required": true,
+    "closed_deferral_reasons": [
+      "later_volume",
+      "insufficient_support",
+      "requires_uncertainty_resolution"
+    ],
+    "closed_exclusion_reasons": [
+      "non_substantive",
+      "administrative",
+      "duplicate_at_editorial_level",
+      "outside_selected_book_scope"
+    ],
+    "note": "ASSIGNED ideas appear only as canonical IDs in section i[]. DEFERRED/EXCLUDED require a closed why; n is optional."
+  },
+  "selection": {
+    "hard_visible_tokens": 34555,
+    "thinking_headroom_tokens": 2048,
+    "hard_plus_thinking": 36603,
+    "utilization_target": 0.7,
+    "utilization_target_source": "Phase 3B context/output safety practice and app.config.AI_CONTEXT_SAFETY_RATIO=0.70",
+    "candidates_evaluated": [
+      {
+        "candidate": 16384,
+        "hard_plus_thinking": 36603,
+        "utilization": 2.2341,
+        "fits_target": false,
+        "at_or_below_model_ceiling": true,
+        "planner_operational_hard_cap": 32000
+      },
+      {
+        "candidate": 24576,
+        "hard_plus_thinking": 36603,
+        "utilization": 1.4894,
+        "fits_target": false,
+        "at_or_below_model_ceiling": true,
+        "planner_operational_hard_cap": 32000
+      },
+      {
+        "candidate": 32000,
+        "hard_plus_thinking": 36603,
+        "utilization": 1.1438,
+        "fits_target": false,
+        "at_or_below_model_ceiling": true,
+        "planner_operational_hard_cap": 32000
+      },
+      {
+        "candidate": 32768,
+        "hard_plus_thinking": 36603,
+        "utilization": 1.117,
+        "fits_target": false,
+        "at_or_below_model_ceiling": true,
+        "planner_operational_hard_cap": 32000
+      },
+      {
+        "candidate": 48000,
+        "hard_plus_thinking": 36603,
+        "utilization": 0.7626,
+        "fits_target": false,
+        "at_or_below_model_ceiling": true,
+        "planner_operational_hard_cap": 32000
+      },
+      {
+        "candidate": 65536,
+        "hard_plus_thinking": 36603,
+        "utilization": 0.5585,
+        "fits_target": true,
+        "at_or_below_model_ceiling": true,
+        "planner_operational_hard_cap": 32000
+      }
+    ],
+    "selected": 65536,
+    "decision": "RAISE_MAX_OUTPUT",
+    "transport_change_required": "NO",
+    "prompt_change_required": "NO",
+    "new_grammar_canary_required": "NO",
+    "do_not_blindly_select_32768": true,
+    "model_output_ceiling": 128000,
+    "old_proposed_max_output": 16384,
+    "authorization_token_method": "A.1 observed chars/token on compact serialized transport; pessimistic Phase 3B density is sensitivity only",
+    "why_not_redesign_if_raise": "Assigned IDEA cost is ID-only (~9 chars). Hard-size is chapter/section purpose strings required by frozen transport 1.0, not duplicated source text. Preferred outcome: preserve prompt/schema/transport and change only runtime max_output.",
+    "hard_output_utilization": 0.5585
+  },
+  "selected_max_output": 65536,
+  "output_budget_decision": "RAISE_MAX_OUTPUT",
+  "transport_change_required": "NO",
+  "prompt_change_required": "NO",
+  "new_grammar_canary_required": "NO",
+  "hard_output_utilization": 0.5585,
+  "thinking_headroom": 2048,
+  "output_fits_selected": true
+}

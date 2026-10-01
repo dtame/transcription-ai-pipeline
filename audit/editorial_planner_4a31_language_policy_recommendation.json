@@ -1,0 +1,59 @@
+{
+  "recommended_generic_language_policy": "PLAN_LANGUAGE_MUST_MATCH_BOOK_LANGUAGE",
+  "recommended_setting": "book_language",
+  "setting_aliases_considered": [
+    "book_language",
+    "output_language",
+    "editorial_language"
+  ],
+  "preferred_name": "book_language",
+  "do_not_assume_source_primary_equals_book": true,
+  "evaluated_defaults": {
+    "A_inherit_source_primary": "Deterministic, generic, and useful as an optional mode. Rejected as the recommended default because this forensics shows source language and desired book language can diverge.",
+    "B_inherit_dominant_author_source": "Not separately stored from SourceMap.primary_language today. Would duplicate A unless a distinct author_original_language is added.",
+    "C_require_explicit_before_planner": "Recommended default. Forces a human/project choice. Does not hard-code English or French."
+  },
+  "recommended_default_when_missing": "require_explicit",
+  "current_project": {
+    "source_primary_language": "en",
+    "project_yaml_language": "en",
+    "editorial_plan_language": "predominantly French",
+    "planner_consumed_project_language": false,
+    "book_language_requires_human_decision": true,
+    "resolution": {
+      "policy_version": "editorial-planner-language-policy-1.0",
+      "book_language": "",
+      "status": "UNRESOLVED_REQUIRES_HUMAN_DECISION",
+      "source": "",
+      "requires_human_decision": true,
+      "source_primary_language": "en",
+      "project_language": "en",
+      "requested_book_language": "",
+      "inherit_mode": "require_explicit",
+      "recommended_alignment": "PLAN_LANGUAGE_MUST_MATCH_BOOK_LANGUAGE",
+      "recommended_setting": "book_language",
+      "notes": [
+        "No explicit book_language. Recommended default is to require a project-level book_language before Editorial Planner, rather than assuming SourceMap.primary_language is the book language."
+      ]
+    }
+  },
+  "human_decision_required": "Choose book_language for this project explicitly. depot project.yaml language=en is document-identity metadata and was not an Editorial Planner input; do not treat it as a silent book-language decision, and do not treat the French plan as one either. If French planning language is accepted, the unchanged A.3 candidate may remain untranslated as a plan, and that plan language should be the book language. If English or another language is required for the plan, do not repair or translate this candidate; a later phase would need editorial-planner-1.0.1 and a new provider call.",
+  "successor_prompt": "editorial-planner-1.0.1",
+  "mutate_editorial_planner_1_0": false,
+  "future_prompt_change_required": true,
+  "new_grammar_canary_required": false,
+  "grammar_vs_prompt_semantics": "Adding a deterministic language instruction is prompt semantics. Transport grammar and JSON schema stay editorial-plan-transport-1.0 and schema 3661/3909. No new grammar canary is required for that instruction alone.",
+  "transport_change_required": false,
+  "schema_change_required": false,
+  "alignment": {
+    "policy": "PLAN_LANGUAGE_MUST_MATCH_BOOK_LANGUAGE",
+    "rationale": "EditorialPlan titles, purposes, angle, and reader journey become the Book Generator's organizing language. A plan in language A and a manuscript in language B creates avoidable semantic and style risk (re-translation of editorial framing, title drift, audience-register mismatch). Plan language must match book language.",
+    "mismatch_architecturally_safe": false,
+    "successor_prompt_if_instruction_needed": "editorial-planner-1.0.1",
+    "do_not_mutate_active_prompt": "editorial-planner-1.0",
+    "new_grammar_canary_required_for_language_instruction_only": false,
+    "schema_change_required_for_language_policy": false,
+    "transport_change_required_for_language_policy": false
+  },
+  "status": "UNRESOLVED_REQUIRES_HUMAN_DECISION"
+}

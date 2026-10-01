@@ -1,0 +1,84 @@
+{
+  "structured_parse": "PASS",
+  "transport_decoder": "PASS",
+  "transport_errors": [],
+  "handle_validation": {
+    "status": "PASS",
+    "errors": [],
+    "unknown": 0,
+    "malformed": 0,
+    "paragraph_handles": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "p8",
+      "p9",
+      "p9b",
+      "p10",
+      "p11",
+      "p12",
+      "p13"
+    ],
+    "section_ids": [
+      "SEC063"
+    ]
+  },
+  "canonical_reconstruction": "PASS",
+  "deterministic_replay": "PASS",
+  "replay_sha256": [
+    "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+    "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+    "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5"
+  ],
+  "candidate_sha256": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+  "candidate_bytes": 9065,
+  "candidate_chars": 9049,
+  "chapter_identity": "PASS",
+  "section_coverage": "PASS",
+  "section_order": "PASS",
+  "section_titles": "PASS",
+  "missing_sections": [],
+  "extra_sections": [],
+  "expected_sections": [
+    "SEC063"
+  ],
+  "got_sections": [
+    "SEC063"
+  ],
+  "idea_coverage": "PASS",
+  "silent_idea_omissions": 0,
+  "missing_idea_ids": [],
+  "unknown_idea_refs": 0,
+  "unknown_idea_ids": [],
+  "unknown_src_refs": 0,
+  "unknown_src_ids": [],
+  "unsourced_substantive_paragraphs": 1,
+  "connective_paragraphs": 4,
+  "paragraph_count": 14,
+  "word_count": 828,
+  "language": {
+    "canonical_document_language": "en",
+    "detected": "EN",
+    "confidence": 0.97,
+    "status": "PASS",
+    "reason": "Manuscript prose matches canonical language en (detected EN, confidence 0.97)",
+    "chars": 4487
+  },
+  "local_validator": {
+    "status": "FAIL",
+    "errors": [
+      "SEC063.p10: empty text",
+      "SEC063.p10: substantive paragraph empty",
+      "SEC063.p10: substantive paragraph has no evidence handles"
+    ],
+    "warnings": [],
+    "validator_version": "book-generation-validator-1.0"
+  },
+  "raw_text_chars": 5134,
+  "chapter_id": "CH016",
+  "human_review_note": "FAIL is the empty p9b substantive paragraph. Transport/reconstruction/replay remain PASS. Do not repair."
+}

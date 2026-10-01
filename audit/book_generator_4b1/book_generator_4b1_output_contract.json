@@ -1,0 +1,10 @@
+{
+  "artifact": "book.json (future, not published)",
+  "semantic_only": true,
+  "title_status": "working",
+  "front_matter": false,
+  "back_cover": false,
+  "canonical_paragraph_ids": "P000001 locally during assembly",
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

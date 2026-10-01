@@ -1,0 +1,9 @@
+{
+  "status": "BLOCKED_PRECALL",
+  "actual_terra_calls": 0,
+  "reason": "BLOCKED_PRECALL: OPENAI_API_KEY is not available in the environment or local .env. All other pre-call gates passed. The frozen benchmark request was built and not sent. ACTUAL TERRA CALLS = 0. No Sonnet call. No retry. Set OPENAI_API_KEY locally and re-authorize a later 4B.2.4 execution; do not invent a second automatic call.",
+  "http_sent": false,
+  "json_parse": "n/a",
+  "transport_decode": "n/a",
+  "structural_pass": false
+}

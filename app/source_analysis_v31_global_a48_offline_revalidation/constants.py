@@ -1,0 +1,300 @@
+"""Constantes 3B.7.7A.48 — contrat 320 + replay offline A.46. 0 provider."""
+
+from __future__ import annotations
+
+from app.source_analysis.writer import source_map_path
+from app.source_analysis_v31_global_a47_contract_forensics.constants import (
+    A34_STATUS_PRESERVED,
+    A35_STATUS_PRESERVED,
+    A36_STATUS_PRESERVED,
+    A37_STATUS_PRESERVED,
+    A38_STATUS_PRESERVED,
+    A39_STATUS_PRESERVED,
+    A40_STATUS_PRESERVED,
+    A41_STATUS_PRESERVED,
+    A42_STATUS_PRESERVED,
+    A43_STATUS_PRESERVED,
+    A44_STATUS_PRESERVED,
+    A45_ESTIMATED_INPUT,
+    A45_EXPECTED_OUTPUT,
+    A45_EXPECTED_OUTPUT_ERROR_ABS,
+    A45_EXPECTED_OUTPUT_ERROR_PERCENT,
+    A45_INPUT_ESTIMATE_ERROR_ABS,
+    A45_INPUT_ESTIMATE_ERROR_PERCENT,
+    A45_NORMALIZED_INPUT_HASH,
+    A45_REQUEST_HASH,
+    A45_STATUS_PRESERVED,
+    A46_CANARY_SUBDIR,
+    A46_COST_USD,
+    A46_DROP,
+    A46_ELAPSED_MS,
+    A46_ELAPSED_SECONDS,
+    A46_FINISH_REASON,
+    A46_HTTP_STATUS,
+    A46_IDEA_ACCOUNTABILITY,
+    A46_INPUT_TOKENS,
+    A46_INTENT_LENGTH,
+    A46_KEEP,
+    A46_MERGE,
+    A46_NORMALIZED_INPUT_HASH,
+    A46_OUTPUT_TOKENS,
+    A46_OUTPUT_UTILIZATION_PERCENT,
+    A46_PROTECTED_HISTORICAL,
+    A46_RAW_RESPONSE_ARTIFACT,
+    A46_RAW_RESPONSE_HASH,
+    A46_RAW_TEXT_BYTES,
+    A46_RAW_TEXT_CHARS,
+    A46_REPORT_NAME,
+    A46_REQUEST_HASH,
+    A46_REQUEST_ID,
+    A46_RESPONSE_IDENTITY_ARTIFACT,
+    A46_STATUS_PRESERVED,
+    A46_THINKING_TOKENS,
+    EXPECTED_IDEA,
+    FROZEN_PROMPT_VERSION,
+    FROZEN_TRANSPORT_VERSION,
+    HISTORICAL_240_ORIGIN,
+    HISTORICAL_INTENT_LIMIT,
+    LIMIT_JUSTIFICATION,
+    LOCAL_EXTRACTION_FUNCTIONALLY_FROZEN,
+    LOCAL_WINDOW_INTENT_LIMIT,
+    MODEL,
+    PRODUCTION_MAX_OUTPUT_TOKENS,
+    PROJECT_NAME,
+    PROVIDER,
+    RELATION_QUALITY_TECHNICAL_DEBT,
+    REPORT_NAME as A47_REPORT_NAME,
+    SCHEMA_ADAPTED_BYTES,
+    SCHEMA_HASH,
+    SCHEMA_RAW_BYTES,
+    SELECTED_INTENT_LIMIT,
+    TEXT_LIMITS,
+    THEME_LIMIT,
+    THINKING_MODE,
+)
+from app.source_analysis_v31_global_output_architecture.constants import (
+    A39_INTENT_COMPACTNESS_BOUND,
+    GLOBAL_INTENT_MAX_CHARS,
+)
+from app.source_analysis_v31_global_reuse_output.constants import FUTURE_PROMPT_VERSION
+from app.source_analysis_v31_global_v30_real_canary.constants import (
+    CANDIDATE_SOURCE_MAP_NAME as A46_CANDIDATE_SOURCE_MAP_NAME,
+)
+
+SCHEMA_VERSION = "1.0"
+PHASE = "3B.7.7A.48"
+MODE = "A46_OFFLINE_REVALIDATION_UNDER_CORRECTED_CONTRACT"
+
+REAL_PROVIDER_CALLS_THIS_PHASE = 0
+REAL_ANTHROPIC_CALLS = 0
+REAL_OPENAI_CALLS = 0
+REAL_CONSOLIDATION_CALLS = 0
+GRAMMAR_CANARY_CALLS = 0
+CONSOLIDATION_AUTHORIZED = False
+SOURCE_MAP_PUBLICATION_AUTHORIZED = False
+
+A47_STATUS_PRESERVED = "PASS"
+assert A34_STATUS_PRESERVED == "PASS"
+assert A35_STATUS_PRESERVED == "FAIL"
+assert A36_STATUS_PRESERVED == "PASS"
+assert A37_STATUS_PRESERVED == "PASS"
+assert A38_STATUS_PRESERVED == "FAIL"
+assert A39_STATUS_PRESERVED == "PASS"
+assert A40_STATUS_PRESERVED == "FAIL"
+assert A41_STATUS_PRESERVED == "PASS"
+assert A42_STATUS_PRESERVED == "PASS"
+assert A43_STATUS_PRESERVED == "PASS"
+assert A44_STATUS_PRESERVED == "PASS"
+assert A45_STATUS_PRESERVED == "PASS"
+assert A46_STATUS_PRESERVED == "FAIL"
+assert A47_STATUS_PRESERVED == "PASS"
+assert FROZEN_PROMPT_VERSION == "global-consolidation-3.0"
+assert FUTURE_PROMPT_VERSION == "global-consolidation-3.0.1"
+assert FROZEN_TRANSPORT_VERSION == "global-consolidation-transport-3.0"
+assert SCHEMA_RAW_BYTES == 1583
+assert SCHEMA_ADAPTED_BYTES == 1831
+assert SCHEMA_HASH == (
+    "822397b642b0e1724e29686962caab32bff63effe18f05bff26b404bad9b2a90"
+)
+assert PROVIDER == "anthropic"
+assert MODEL == "claude-sonnet-5"
+assert THINKING_MODE == "disabled"
+assert GLOBAL_INTENT_MAX_CHARS == SELECTED_INTENT_LIMIT == 320
+assert TEXT_LIMITS["intent"] == GLOBAL_INTENT_MAX_CHARS
+assert A39_INTENT_COMPACTNESS_BOUND == HISTORICAL_INTENT_LIMIT == 240
+assert LOCAL_WINDOW_INTENT_LIMIT == 280
+assert THEME_LIMIT == 360
+assert A46_INTENT_LENGTH == 290
+assert A45_EXPECTED_OUTPUT_ERROR_ABS == 205
+assert A45_EXPECTED_OUTPUT_ERROR_PERCENT == 1.56
+
+A48_COST_USD = 0.0
+NEW_GRAMMAR_CANARY_REQUIRED = "NO"
+NEW_PROVIDER_CANARY_REQUIRED_FOR_A46 = "NO"
+HISTORICAL_PROMPT = FROZEN_PROMPT_VERSION
+FUTURE_PROMPT = FUTURE_PROMPT_VERSION
+TRANSPORT_VERSION = FROZEN_TRANSPORT_VERSION
+
+CONTRACT_ARTIFACT = "global_consolidation_a48_corrected_contract.json"
+RAW_IDENTITY_ARTIFACT = "global_consolidation_a48_a46_raw_identity.json"
+TECHNICAL_ARTIFACT = "global_consolidation_a48_technical_revalidation.json"
+STRUCTURAL_ARTIFACT = "global_consolidation_a48_structural_scan.json"
+SEMANTIC_ARTIFACT = "global_consolidation_a48_semantic_review.json"
+PUBLICATION_ARTIFACT = "global_consolidation_a48_publication_eligibility.json"
+ARCHITECTURE_ARTIFACT = "global_consolidation_a48_architecture_freeze.json"
+READINESS_ARTIFACT = "global_consolidation_post_a48_readiness.json"
+CANDIDATE_SOURCE_MAP_NAME = "global_consolidation_a48_source_map_candidate.json"
+TEST_DELTA_ARTIFACT = "source_analysis_a48_test_delta.json"
+BASELINE_ARTIFACT = "source_analysis_a48_test_baseline.json"
+REPORT_NAME = "PHASE_3B77A48_A46_OFFLINE_REVALIDATION_REPORT.md"
+
+PROTECTED_HISTORICAL = A46_PROTECTED_HISTORICAL + (
+    f"audit/{A46_REPORT_NAME}",
+    f"audit/{A46_CANARY_SUBDIR}/{A46_RAW_RESPONSE_ARTIFACT}",
+    f"audit/{A46_CANARY_SUBDIR}/{A46_RESPONSE_IDENTITY_ARTIFACT}",
+    f"audit/{A46_CANARY_SUBDIR}/{A46_CANDIDATE_SOURCE_MAP_NAME}",
+    f"audit/{A47_REPORT_NAME}",
+)
+
+FOCUSED_TEST_PATHS = (
+    "app/tests/test_source_analysis_v31_global_a48_offline_revalidation.py",
+    "app/tests/test_source_analysis_v31_global_a48_offline_revalidation_audit.py",
+)
+BROADER_SLICE_TEST_PATHS = FOCUSED_TEST_PATHS + (
+    "app/tests/test_source_analysis_v31_global_a47_contract_forensics.py",
+    "app/tests/test_source_analysis_v31_global_a47_contract_forensics_audit.py",
+    "app/tests/test_source_analysis_v31_global_v30_real_canary.py",
+    "app/tests/test_source_analysis_v31_global_v30_real_canary_audit.py",
+    "app/tests/test_source_analysis_v31_global_v30_exact_preflight.py",
+    "app/tests/test_source_analysis_v31_global_v30_grammar_canary.py",
+    "app/tests/test_source_analysis_v31_global_reuse_output.py",
+    "app/tests/test_source_analysis_v31_global_v20_grammar_canary.py",
+    "app/tests/test_source_analysis_v31_global_output_architecture.py",
+    "app/tests/test_source_map_validator.py",
+    "app/tests/test_source_map_normalization.py",
+    "app/tests/test_source_map_models.py",
+)
+CANONICAL_VALIDATOR_TEST_PATHS = (
+    "app/tests/test_source_map_validator.py",
+    "app/tests/test_source_map_normalization.py",
+    "app/tests/test_source_map_models.py",
+    "app/tests/test_source_analysis_compact_schema.py",
+)
+
+PHASE_3B_STATUS = "INCOMPLETE"
+SOURCE_MAP_STATUS = "NOT PUBLISHED"
+NEXT_ACTION = "HUMAN REVIEW"
+NEXT_PHASE_AFTER_PASS = "A.49 — CANONICAL SOURCE_MAP PUBLICATION AND PHASE 3B FREEZE"
+
+assert REAL_PROVIDER_CALLS_THIS_PHASE == 0
+assert REAL_ANTHROPIC_CALLS == 0
+assert REAL_OPENAI_CALLS == 0
+assert SOURCE_MAP_PUBLICATION_AUTHORIZED is False
+assert A46_STATUS_PRESERVED == "FAIL"
+assert not source_map_path(PROJECT_NAME).is_file() or SOURCE_MAP_STATUS == "NOT PUBLISHED"
+
+__all__ = [
+    "A34_STATUS_PRESERVED",
+    "A35_STATUS_PRESERVED",
+    "A36_STATUS_PRESERVED",
+    "A37_STATUS_PRESERVED",
+    "A38_STATUS_PRESERVED",
+    "A39_INTENT_COMPACTNESS_BOUND",
+    "A39_STATUS_PRESERVED",
+    "A40_STATUS_PRESERVED",
+    "A41_STATUS_PRESERVED",
+    "A42_STATUS_PRESERVED",
+    "A43_STATUS_PRESERVED",
+    "A44_STATUS_PRESERVED",
+    "A45_ESTIMATED_INPUT",
+    "A45_EXPECTED_OUTPUT",
+    "A45_EXPECTED_OUTPUT_ERROR_ABS",
+    "A45_EXPECTED_OUTPUT_ERROR_PERCENT",
+    "A45_INPUT_ESTIMATE_ERROR_ABS",
+    "A45_INPUT_ESTIMATE_ERROR_PERCENT",
+    "A45_NORMALIZED_INPUT_HASH",
+    "A45_REQUEST_HASH",
+    "A45_STATUS_PRESERVED",
+    "A46_CANARY_SUBDIR",
+    "A46_CANDIDATE_SOURCE_MAP_NAME",
+    "A46_COST_USD",
+    "A46_DROP",
+    "A46_ELAPSED_MS",
+    "A46_ELAPSED_SECONDS",
+    "A46_FINISH_REASON",
+    "A46_HTTP_STATUS",
+    "A46_IDEA_ACCOUNTABILITY",
+    "A46_INPUT_TOKENS",
+    "A46_INTENT_LENGTH",
+    "A46_KEEP",
+    "A46_MERGE",
+    "A46_NORMALIZED_INPUT_HASH",
+    "A46_OUTPUT_TOKENS",
+    "A46_OUTPUT_UTILIZATION_PERCENT",
+    "A46_PROTECTED_HISTORICAL",
+    "A46_RAW_RESPONSE_ARTIFACT",
+    "A46_RAW_RESPONSE_HASH",
+    "A46_RAW_TEXT_BYTES",
+    "A46_RAW_TEXT_CHARS",
+    "A46_REPORT_NAME",
+    "A46_REQUEST_HASH",
+    "A46_REQUEST_ID",
+    "A46_RESPONSE_IDENTITY_ARTIFACT",
+    "A46_STATUS_PRESERVED",
+    "A46_THINKING_TOKENS",
+    "A47_REPORT_NAME",
+    "A47_STATUS_PRESERVED",
+    "A48_COST_USD",
+    "ARCHITECTURE_ARTIFACT",
+    "BASELINE_ARTIFACT",
+    "BROADER_SLICE_TEST_PATHS",
+    "CANONICAL_VALIDATOR_TEST_PATHS",
+    "CANDIDATE_SOURCE_MAP_NAME",
+    "CONTRACT_ARTIFACT",
+    "EXPECTED_IDEA",
+    "FOCUSED_TEST_PATHS",
+    "FROZEN_PROMPT_VERSION",
+    "FROZEN_TRANSPORT_VERSION",
+    "FUTURE_PROMPT",
+    "FUTURE_PROMPT_VERSION",
+    "GLOBAL_INTENT_MAX_CHARS",
+    "GRAMMAR_CANARY_CALLS",
+    "HISTORICAL_240_ORIGIN",
+    "HISTORICAL_INTENT_LIMIT",
+    "HISTORICAL_PROMPT",
+    "LIMIT_JUSTIFICATION",
+    "LOCAL_EXTRACTION_FUNCTIONALLY_FROZEN",
+    "LOCAL_WINDOW_INTENT_LIMIT",
+    "MODE",
+    "MODEL",
+    "NEW_GRAMMAR_CANARY_REQUIRED",
+    "NEW_PROVIDER_CANARY_REQUIRED_FOR_A46",
+    "NEXT_ACTION",
+    "NEXT_PHASE_AFTER_PASS",
+    "PHASE",
+    "PHASE_3B_STATUS",
+    "PRODUCTION_MAX_OUTPUT_TOKENS",
+    "PROJECT_NAME",
+    "PROTECTED_HISTORICAL",
+    "PROVIDER",
+    "PUBLICATION_ARTIFACT",
+    "RAW_IDENTITY_ARTIFACT",
+    "READINESS_ARTIFACT",
+    "RELATION_QUALITY_TECHNICAL_DEBT",
+    "REPORT_NAME",
+    "SCHEMA_ADAPTED_BYTES",
+    "SCHEMA_HASH",
+    "SCHEMA_RAW_BYTES",
+    "SCHEMA_VERSION",
+    "SELECTED_INTENT_LIMIT",
+    "SEMANTIC_ARTIFACT",
+    "SOURCE_MAP_PUBLICATION_AUTHORIZED",
+    "SOURCE_MAP_STATUS",
+    "STRUCTURAL_ARTIFACT",
+    "TECHNICAL_ARTIFACT",
+    "TEST_DELTA_ARTIFACT",
+    "TEXT_LIMITS",
+    "THEME_LIMIT",
+    "THINKING_MODE",
+    "TRANSPORT_VERSION",
+]

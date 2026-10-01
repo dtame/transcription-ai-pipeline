@@ -1,0 +1,39 @@
+{
+  "spent": false,
+  "counted_as_spent": false,
+  "future_model": "anthropic / claude-sonnet-5",
+  "future_max_output": 16384,
+  "calibration": {
+    "historical_input_tokens": 6063,
+    "historical_output_tokens": 1754,
+    "historical_cost_usd": 0.029666,
+    "historical_system_chars": 3238,
+    "historical_user_chars": 9944,
+    "future_system_chars": 4453,
+    "future_user_chars": 10401,
+    "input_char_ratio": 1.12684
+  },
+  "hardened_ch016": {
+    "estimated_input_tokens": 6832,
+    "estimated_output_tokens": 1754,
+    "input_cost_usd": 0.013664,
+    "output_cost_usd": 0.01754,
+    "total_cost_usd": 0.031204,
+    "total_cost_display": "0.031204 USD",
+    "pricing_verified": true,
+    "not_executed": true
+  },
+  "future_terra_chapter_semantic_gate": {
+    "model": "openai / gpt-5.6-terra",
+    "independence_from_generator": true,
+    "estimated_calls_if_per_chapter": 19,
+    "estimated_input_tokens_per_call": 8586,
+    "estimated_output_tokens_per_call": 1500,
+    "estimated_cost_usd_per_call": 0.035172,
+    "estimated_cost_usd_19_chapters": 0.668268,
+    "cost_status": "base_estimate",
+    "unmodeled_regimes": "long_context_not_modeled",
+    "not_executed": true
+  },
+  "note": "Estimates only. Hardened CH016 is not spent. Terra semantic-gate cost is architecture analysis only."
+}

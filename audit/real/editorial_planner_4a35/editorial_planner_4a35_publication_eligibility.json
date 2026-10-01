@@ -1,0 +1,16 @@
+{
+  "PUBLICATION_ELIGIBLE": true,
+  "EDITORIAL_LANGUAGE_MATCH": "PASS",
+  "semantic_review": "PASS",
+  "accountability": "PASS",
+  "technical_result": "PASS",
+  "editorial_plan_json": "NOT PUBLISHED",
+  "automatic_publication": false,
+  "candidate_written": true,
+  "candidate_is_not_production_publication": true,
+  "historical_a3_candidate_untouched": true,
+  "historical_a33_candidate_untouched": true,
+  "final_title_approved": false,
+  "EDITORIAL_PLANNER_REQUIRES_ARCHITECTURAL_REVIEW": false,
+  "why": "All technical, language, accountability, and semantic gates passed. A.3.5 still does not publish."
+}

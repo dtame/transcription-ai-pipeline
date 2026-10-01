@@ -1,0 +1,56 @@
+{
+  "reviewer": "human_exhaustive",
+  "references": [
+    {
+      "handle": "p6",
+      "path": "SEC063.p6",
+      "section": "SEC063",
+      "reference": "Philippians chapter 1, verse 21",
+      "source_supported": true,
+      "support": ["REF051", "SRC007129", "SRC007132", "SRC007149"],
+      "classification": "SUPPORTED_REFERENCE",
+      "completeness": "complete_in_source_map"
+    },
+    {
+      "handle": "p6",
+      "path": "SEC063.p6",
+      "section": "SEC063",
+      "reference": "to live is Christ, and to die is gain",
+      "source_supported": true,
+      "support": ["REF051 complete", "REF056", "SRC007152", "SRC007559", "chapter theme Death as Gain"],
+      "classification": "SUPPORTED_REFERENCE",
+      "note": "Full verse wording of a complete supplied reference, not a new citation."
+    },
+    {
+      "handle": "p8",
+      "path": "SEC063.p8",
+      "section": "SEC063",
+      "reference": "1 Corinthians 15",
+      "source_supported": true,
+      "support": ["REF050", "SRC006788"],
+      "classification": "SUPPORTED_REFERENCE",
+      "completeness": "partial_in_source_map"
+    },
+    {
+      "handle": "p8",
+      "path": "SEC063.p8",
+      "section": "SEC063",
+      "reference": "the sting long since removed from death",
+      "source_supported": false,
+      "support": [],
+      "classification": "PARTIAL_REFERENCE_COMPLETION",
+      "invented_named_reference": false,
+      "note": "Content from 1 Cor 15:55-57 is not in the supplied CH016 evidence. REF050 is partial (chapter only). Not counted as a new invented book/chapter citation."
+    }
+  ],
+  "count": 4,
+  "invented_references": 0,
+  "partial_reference_completions": 1,
+  "allowed_bible_in_evidence": [
+    "1 Corinthians 15",
+    "Philippians chapter 1, verse 21",
+    "To live is Christ"
+  ],
+  "pass": true,
+  "note": "No new named reference. One partial-reference completion is recorded in fidelity as QUESTIONABLE prose, not as INVENTED_REFERENCE."
+}

@@ -1,0 +1,26 @@
+{
+  "minimal_chapter_input": [
+    "generated chapter candidate",
+    "canonical chapter/section structure",
+    "assigned IDEA evidence",
+    "EX evidence",
+    "REF evidence",
+    "UNC evidence",
+    "hydrated SRC text",
+    "canonical language",
+    "traceability handles"
+  ],
+  "no_whole_book": true,
+  "no_whole_transcript": true,
+  "evidence_scope": "DECLARED_FIRST_PLUS_BOUNDED_SECTION_EVIDENCE",
+  "declared_handles": "hints, never proof",
+  "verification_scope": "bounded canonical section evidence",
+  "do_not_rescue_with_other_chapters": true,
+  "approved_reuse_only_when_editorial_plan_authorizes": true,
+  "hydrated_src_is_primary_wording_evidence": true,
+  "source_map_provides_organization_and_traceability": true,
+  "partial_reference_rule": "A partial REF permits only what the supplied REF/SRC evidence actually contains.",
+  "not_bible_specific": true,
+  "bundle_version": "book-semantic-gate-validator-1.0",
+  "note": "Gate input is derived from the existing chapter evidence bundle plus the generated candidate. Full SourceMap and full transcript are never sent."
+}

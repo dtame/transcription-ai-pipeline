@@ -1,0 +1,147 @@
+{
+  "phase": "4A.1",
+  "blocked_precall": false,
+  "schema": {
+    "expected": {
+      "transport_version": "editorial-plan-transport-1.0",
+      "raw_schema_sha256": "34e3f0656e1781b791a899deb89a53dc2bfd7d459e10d949776e6f28f3f1f509",
+      "adapted_schema_sha256": "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e",
+      "raw_schema_bytes": 3661,
+      "adapted_schema_bytes": 3909
+    },
+    "live": {
+      "transport_version": "editorial-plan-transport-1.0",
+      "raw_schema_sha256": "34e3f0656e1781b791a899deb89a53dc2bfd7d459e10d949776e6f28f3f1f509",
+      "adapted_schema_sha256": "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e",
+      "raw_schema_bytes": 3661,
+      "adapted_schema_bytes": 3909,
+      "anthropic_known_incompatibilities": 0,
+      "additional_properties_false_on_adapted": true
+    },
+    "mismatches": [],
+    "identity": "MATCH",
+    "full_live": {
+      "transport_version": "editorial-plan-transport-1.0",
+      "raw_schema_sha256": "34e3f0656e1781b791a899deb89a53dc2bfd7d459e10d949776e6f28f3f1f509",
+      "adapted_schema_sha256": "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e",
+      "raw_schema_bytes": 3661,
+      "adapted_schema_bytes": 3909,
+      "anthropic_known_incompatibilities": 0,
+      "anthropic_audit": {
+        "external_ref": [],
+        "unsupported_minItems": [],
+        "additionalProperties_not_false": [],
+        "minimum": [],
+        "maximum": [],
+        "multipleOf": [],
+        "minLength": [],
+        "maxLength": [],
+        "maxItems": []
+      },
+      "additional_properties_false_on_adapted": true
+    }
+  },
+  "prompt": {
+    "expected": {
+      "version": "editorial-planner-1.0",
+      "system_sha256": "7faeacaa81d123510c321d4756f3cd975d6b58460fdd9f216146d6a15efeeb55",
+      "instructions_sha256": "e9193763e49859c03c1d30c9ef259163a05b371354cdca1979bf9b1db807294c",
+      "prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a"
+    },
+    "live": {
+      "version": "editorial-planner-1.0",
+      "system_sha256": "7faeacaa81d123510c321d4756f3cd975d6b58460fdd9f216146d6a15efeeb55",
+      "instructions_sha256": "e9193763e49859c03c1d30c9ef259163a05b371354cdca1979bf9b1db807294c",
+      "prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a"
+    },
+    "mismatches": [],
+    "identity": "MATCH"
+  },
+  "thinking": {
+    "thinking_mode": "provider_default",
+    "effort": null,
+    "budget_tokens": null,
+    "sonnet5_thinking_disabled_copied": false,
+    "historical_provider_default": true,
+    "recommendation": {
+      "audited_model": "anthropic:claude-opus-5",
+      "capabilities_known": false,
+      "sonnet5_contract_generalized": false,
+      "phase4a_thinking_mode": "provider_default",
+      "phase4a_effort": null,
+      "phase4a_thinking_budget_tokens": null,
+      "rationale": "Editorial planning is high-complexity organization with a tight structured-output budget. Opus 5 thinking/effort is unverified in this repository (known=False). Source Analyzer Sonnet 5 thinking must not be copied. Phase 4A therefore omits thinking and effort (provider_default). A future Opus 5 thinking audit is required before adaptive thinking. If that audit confirms a Sonnet-like shared max_tokens contract, adaptive+medium may help planning quality but risks eating the JSON budget; keep provider_default until measured.",
+      "future_candidate_after_audit": {
+        "thinking_mode": "adaptive",
+        "effort": "medium",
+        "blocked_until": "opus-5-thinking-capability-audit"
+      },
+      "hard_max_output_cap": 32000,
+      "do_not_raise_max_output_blindly": true,
+      "capabilities": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "known": false,
+        "adaptive_thinking_supported": false,
+        "thinking_disabled_supported": false,
+        "manual_budget_tokens_supported": false,
+        "effort_supported": false,
+        "effort_values": [],
+        "adaptive_thinking_default": false,
+        "default_effort": null,
+        "max_tokens_shared_output": false,
+        "task_budget_supported": false,
+        "source": "unverified — do not generalize Sonnet 5 thinking contract"
+      }
+    },
+    "canary_max_output_tokens": 4096,
+    "production_proposed_max_output": 16384,
+    "canary_max_is_not_production_max": true,
+    "provider": "anthropic",
+    "model": "claude-opus-5"
+  },
+  "transport_version": "editorial-plan-transport-1.0",
+  "prompt_version": "editorial-planner-1.0",
+  "schema_identity": "MATCH",
+  "prompt_identity": "MATCH",
+  "block_reason": null,
+  "payload_keys": [
+    "max_tokens",
+    "messages",
+    "model",
+    "output_config",
+    "system"
+  ],
+  "thinking_present_in_payload": false,
+  "effort_present_in_payload": false,
+  "temperature_present_in_payload": false,
+  "max_tokens": 4096,
+  "model": "claude-opus-5",
+  "cache": {
+    "signature": "5aa03c394cec7614664b25cf7c46182456c69aba53a1b60f8b5d3d686598fa00",
+    "deterministic": true,
+    "inputs": {
+      "coverage_policy_version": "idea-coverage-1.0",
+      "effort": "",
+      "max_output_tokens": 4096,
+      "model": "claude-opus-5",
+      "prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a",
+      "prompt_version": "editorial-planner-1.0",
+      "provider": "anthropic",
+      "response_schema_sha256": "34e3f0656e1781b791a899deb89a53dc2bfd7d459e10d949776e6f28f3f1f509",
+      "schema_version": "1.0",
+      "settings_version": "editorial-planner-settings-1.0",
+      "source_map_sha256": "b1a3615f07e1048f9a3a9ae2f598f6ccbaa681ce75e75cae5de7f08254aec1e8",
+      "strategy": "global",
+      "thinking_mode": "provider_default",
+      "transport_version": "editorial-plan-transport-1.0"
+    },
+    "canary_max_output_tokens": 4096,
+    "production_max_output_tokens": 16384,
+    "distinct_from_production_max": true,
+    "cache_populated_for_production": false,
+    "note": "Synthetic canary signature includes canary max_output=4096 and synthetic SourceMap hash. It must not be stored as a production pastoral planning cache hit."
+  },
+  "production_source_map_path_exists": true,
+  "production_source_map_included_in_request": false
+}

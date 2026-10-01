@@ -1,0 +1,22 @@
+{
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "why": "4B.2 FAIL. One empty unsupported substantive paragraph (p9b) failed the local validator. One connective paragraph advanced a new argument. One invented funeral illustration. Saved evidence is sufficient. Do not retry CH016. Do not start 19 production calls. Do not publish book.json.",
+  "cached_as_production": false,
+  "book_json": "NOT PUBLISHED",
+  "phase_5": false,
+  "defect_classification": {
+    "prompt": "Model emitted an empty substantive paragraph and a connective argument.",
+    "transport": "Decoded as specified; empty t is legal under frozen schema.",
+    "schema": "Frozen 4B.1 schema cannot use minLength; empty t is therefore schema-legal.",
+    "hydration": "PASS — not the defect.",
+    "traceability_contract": "Empty substantive paragraph has no handles; validator correctly FAILed.",
+    "generation_granularity": "CHAPTER unit was appropriate for CH016; fallback was not triggered and must not be used as a retry.",
+    "local_validator": "PASS as a detector — it caught the empty paragraph. Chapter candidate is FAIL."
+  },
+  "authorized_provider_calls": 1,
+  "actual_provider_calls": 1,
+  "retries": 0,
+  "fallbacks": 0
+}

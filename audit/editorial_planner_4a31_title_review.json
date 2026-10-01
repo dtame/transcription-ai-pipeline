@@ -1,0 +1,137 @@
+{
+  "working_title": "Déjà héritiers",
+  "expected_working_title": "Déjà héritiers",
+  "title_matches_expected": true,
+  "subtitle": "Vie, amour et autorité déjà donnés au croyant",
+  "status": "SUPPORTED_BUT_HUMAN_REVIEW",
+  "final_title_approved": false,
+  "is_editorial_construct": true,
+  "title_is_not_source_fact": true,
+  "verbatim_in_sourcemap": false,
+  "source_support": {
+    "global_theme_hits": [
+      "inherit",
+      "resurrection life",
+      "spiritual authority"
+    ],
+    "author_intent_hits": [
+      "already possess",
+      "already",
+      "resurrection life",
+      "unconditional love",
+      "spiritual authority"
+    ],
+    "supporting_central_ideas": [
+      {
+        "idea_id": "IDEA005",
+        "matched": [
+          "inherit"
+        ],
+        "summary": "Now that knowledge has increased, believers must learn better ways rather than continuing inherited but suboptimal customs."
+      },
+      {
+        "idea_id": "IDEA009",
+        "matched": [
+          "inherit",
+          "resurrection life"
+        ],
+        "summary": "Much church teaching focuses on preparing people to die well rather than teaching them to inherit resurrection life, citing selective use of 'flesh and blood cannot inherit' while omitting 'flesh and bone can inherit.'"
+      },
+      {
+        "idea_id": "IDEA012",
+        "matched": [
+          "inherit"
+        ],
+        "summary": "Teaching that resurrection/inheritance is merely 'positional status' with no real experiential possibility is labeled antichrist heresy."
+      },
+      {
+        "idea_id": "IDEA013",
+        "matched": [
+          "sons of god"
+        ],
+        "summary": "Jesus came not merely so believers live 'in the spirit' but so sons of men become sons of God, restoring what was lost when Adam fell."
+      },
+      {
+        "idea_id": "IDEA039",
+        "matched": [
+          "already possess"
+        ],
+        "summary": "The closing exhortation asserts that believers already possess eternal life — older, better, stronger and everlasting — that transcends physical death and bodily departure."
+      },
+      {
+        "idea_id": "IDEA115",
+        "matched": [
+          "unconditional love"
+        ],
+        "summary": "Preachers often illegitimately attach conditions (holiness, focus, preservation) onto God's declared unconditional love, though the text states no such condition."
+      },
+      {
+        "idea_id": "IDEA162",
+        "matched": [
+          "inherit"
+        ],
+        "summary": "Corruption (lying, conniving, deceit) comes naturally to fallen man without being taught, reflecting inherited fallen nature"
+      }
+    ],
+    "supporting_topics": [
+      {
+        "topic_id": "TOP005",
+        "label": "Physical resurrection and flesh/bone identity of Christ"
+      },
+      {
+        "topic_id": "TOP011",
+        "label": "Believer's inherited eternal life"
+      },
+      {
+        "topic_id": "TOP016",
+        "label": "Melchizedek and recognizing spiritual authority"
+      },
+      {
+        "topic_id": "TOP032",
+        "label": "God's unconditional love modeled on Jesus"
+      },
+      {
+        "topic_id": "TOP064",
+        "label": "Testimonies of resurrection from the dead"
+      }
+    ]
+  },
+  "scope": "Represents the proposed book better than the other three stored candidates: inherited/already-given life, love, and authority. Offices, practice, and closing testimonies are downstream of that thesis rather than a different book.",
+  "promise": "Does not promise a topic absent from the SourceMap. It frames believers as already heirs of what the corpus teaches is already given.",
+  "ambiguity": "French 'héritiers' can be read as legal inheritance, spiritual identity, or both. That is a working-title ambiguity, not an unsupported factual claim. Marketing quality is not judged here.",
+  "candidates_already_in_a3": [
+    {
+      "title": "Déjà héritiers",
+      "rationale": "Condense la thèse centrale des IDEA sur la vie, la grâce et la puissance déjà données.",
+      "source_support": "PASS",
+      "scope_note": "whole-book working construct: already-given life, love, and authority.",
+      "overweighted": false,
+      "selected": true
+    },
+    {
+      "title": "Chair et os",
+      "rationale": "Renvoie à l'exposition de la résurrection physique et au refus d'une foi seulement positionnelle.",
+      "source_support": "PASS",
+      "scope_note": "Supported, but overweight physical resurrection / flesh-and-bone (CH002) relative to offices, John 17, practice, and testimonies.",
+      "overweighted": true,
+      "selected": false
+    },
+    {
+      "title": "La prière qui unit",
+      "rationale": "Centre le livre sur Jean 17, colonne vertébrale du corpus.",
+      "source_support": "PASS",
+      "scope_note": "Supported, but overweight John 17 (CH006) as if it were the whole book.",
+      "overweighted": true,
+      "selected": false
+    },
+    {
+      "title": "Pratiquer ce que l'on prêche",
+      "rationale": "Reprend l'insistance du corpus sur la vérité prouvée par l'usage.",
+      "source_support": "PASS",
+      "scope_note": "Supported practice-over-declaration theme (TOP012 / IDEA040); narrower than inherited identity plus love plus authority.",
+      "overweighted": false,
+      "selected": false
+    }
+  ],
+  "new_alternatives_generated": false
+}

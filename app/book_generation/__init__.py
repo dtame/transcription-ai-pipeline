@@ -1,0 +1,18 @@
+"""Book Generator — Phase 4B.1 offline architecture. No provider calls."""
+
+from app.book_generation.constants import (
+    BOOK_GENERATION_TRANSPORT_VERSION,
+    BOOK_GENERATOR_PROMPT_VERSION,
+    BOOK_SCHEMA_VERSION,
+    PUBLICATION_AUTHORIZED,
+    REAL_PROVIDER_CALLS_THIS_PHASE,
+)
+
+assert PUBLICATION_AUTHORIZED is False
+assert REAL_PROVIDER_CALLS_THIS_PHASE == 0
+
+__all__ = [
+    "BOOK_GENERATION_TRANSPORT_VERSION",
+    "BOOK_GENERATOR_PROMPT_VERSION",
+    "BOOK_SCHEMA_VERSION",
+]

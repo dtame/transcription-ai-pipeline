@@ -1,0 +1,31 @@
+{
+  "phase": "4A.3.5",
+  "editorial_plan_json": "NOT PUBLISHED",
+  "production_path_absent": true,
+  "written": [
+    "accountability",
+    "budget",
+    "candidate",
+    "chapter",
+    "execution",
+    "language",
+    "precall",
+    "provider",
+    "publication",
+    "raw_response",
+    "raw_text",
+    "readiness",
+    "report",
+    "response",
+    "section",
+    "semantic",
+    "technical",
+    "thinking"
+  ],
+  "result": "PASS",
+  "tests": "80 passed / 0 failed",
+  "new_failures": 0,
+  "publication_eligible": "YES",
+  "ready_for_controlled_editorial_plan_publication": "YES",
+  "editorial_planner_requires_architectural_review": "NO"
+}

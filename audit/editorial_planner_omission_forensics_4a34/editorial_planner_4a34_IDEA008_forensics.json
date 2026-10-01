@@ -1,0 +1,64 @@
+{
+  "idea_id": "IDEA008",
+  "kind": "",
+  "importance": "central",
+  "summary": "Long life is possible even for sinners (implying it is not righteousness alone that grants longevity), yet believers are not harvesting long life because they have not 'planted' it.",
+  "topic_refs": [
+    "TOP004"
+  ],
+  "source_refs": [
+    "SRC000183",
+    "SRC000186",
+    "SRC000190",
+    "SRC000192"
+  ],
+  "topics": [
+    {
+      "topic_id": "TOP004",
+      "label": "Longevity, immortality and the tree of life",
+      "summary": "Longevity, immortality and the tree of life"
+    }
+  ],
+  "summary_chars": 181,
+  "request": {
+    "present_in_request": true,
+    "present_yes_no": "YES",
+    "well_formed": true,
+    "unique_in_digest": true,
+    "unique_in_user": true,
+    "ordinal_1_based": 8,
+    "index_0_based": 7,
+    "surrounding_idea_ids": [
+      "IDEA007",
+      "IDEA008",
+      "IDEA009"
+    ],
+    "user_offsets": [
+      12341
+    ],
+    "request_representation": "{\"id\":\"IDEA008\",\"summary\":\"Long life is possible even for sinners (implying it is not righteousness alone that grants longevity), yet believers are not harvesting long life because they have not 'planted' it.\",\"kind\":\"\",\"importance\":\"central\",\"topic_refs\":[\"TOP004\"]}",
+    "digest_row": {
+      "id": "IDEA008",
+      "summary": "Long life is possible even for sinners (implying it is not righteousness alone that grants longevity), yet believers are not harvesting long life because they have not 'planted' it.",
+      "kind": "",
+      "importance": "central",
+      "topic_refs": [
+        "TOP004"
+      ]
+    },
+    "digest_summary_equals_source": true,
+    "digest_summary_chars": 181,
+    "source_summary_chars": 181,
+    "field_size_clipped": false,
+    "exact_summary_under_other_ids": []
+  },
+  "survival": {
+    "idea_disposition_present": false,
+    "reconstructed_disposition": "",
+    "reconstructed_primary_section_id": "",
+    "present_in_raw_structured_text": false,
+    "content_survived_implicitly": false,
+    "survival_class": "NO_SURVIVAL",
+    "coverage_still_fail": true
+  }
+}

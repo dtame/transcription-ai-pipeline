@@ -1,0 +1,8 @@
+{
+  "READY_FOR_CONTROLLED_EDITORIAL_PLAN_PUBLICATION": false,
+  "PUBLICATION_ELIGIBLE": false,
+  "BOOK_GENERATOR": "NOT STARTED",
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "NEXT_PHASE_IF_PASS": "HUMAN REVIEW",
+  "why": "Technical contract passed. Semantic REVIEW_REQUIRED: French editorial layer on an English SourceMap, working title not human-approved, and all-assigned 286/286 organization need human confirmation. Candidate preserved. No retry. editorial_plan.json not published."
+}

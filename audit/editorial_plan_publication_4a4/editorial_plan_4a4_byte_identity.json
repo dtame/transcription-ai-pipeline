@@ -1,0 +1,9 @@
+{
+  "phase": "4A.4",
+  "byte_identity": "PASS",
+  "published_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+  "actual_candidate_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+  "expected_candidate_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+  "published_bytes": 234637,
+  "published_chars": 234625
+}

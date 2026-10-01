@@ -1,0 +1,49 @@
+{
+  "stream": "B_UNSUPPORTED_CONNECTIVE_CLAIM",
+  "provider_handle": "p13",
+  "section": "SEC063",
+  "raw_object": {
+    "h": "p13",
+    "k": "con",
+    "t": "The contrast could not be sharper: on one side, believers startled at the threshold, still asking not to die; on the other, believers who named the hour and walked into it in peace. The difference was not the amount of doctrine known, but the amount of Christ practiced."
+  },
+  "kind_label": "con",
+  "provider_self_classified_connective": true,
+  "self_classification_trusted": false,
+  "exact_text": "The contrast could not be sharper: on one side, believers startled at the threshold, still asking not to die; on the other, believers who named the hour and walked into it in peace. The difference was not the amount of doctrine known, but the amount of Christ practiced.",
+  "declared_evidence_handles": [],
+  "evidence_adequacy": "none",
+  "evidence_field_status": "none_field_absent",
+  "proposition": "The difference between fearful and peaceful death was not the amount of doctrine known, but the amount of Christ practiced.",
+  "support_search_scope": [
+    "IDEA summaries",
+    "EX",
+    "REF",
+    "UNC",
+    "hydrated SRC text"
+  ],
+  "support_token_hits": {
+    "the difference was not the amount of doctrine known": false,
+    "amount of doctrine known": false,
+    "amount of christ practiced": false
+  },
+  "supported": false,
+  "external_knowledge_used": false,
+  "classification": "SUBSTANTIVE_UNSUPPORTED",
+  "prompt_1_0_permits_broad_connective": true,
+  "prompt_1_0_already_said": "kind=con need not cite evidence. They must not introduce new substantive assertions.",
+  "contract_problem": "book-generator-1.0 named the boundary but did not constrain closers, bridges, introductions, or transitions tightly enough, and the provider treated a summarizing argument as connective.",
+  "applies_to": [
+    "section closers",
+    "chapter closers",
+    "bridges",
+    "introductions",
+    "transitions"
+  ],
+  "local_semantic_validation_authoritative": true,
+  "rewritten": false,
+  "root_cause": [
+    "PROMPT_SEMANTIC_BOUNDARY_TOO_WEAK",
+    "PROVIDER_COMPLIANCE_FAILURE"
+  ]
+}

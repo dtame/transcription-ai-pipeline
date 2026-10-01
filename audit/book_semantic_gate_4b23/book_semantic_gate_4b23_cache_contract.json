@@ -1,0 +1,54 @@
+{
+  "accepted_chapter_requires": [
+    "chapter_id",
+    "canonical_language",
+    "generator_provider",
+    "generator_model",
+    "generator_prompt_version",
+    "generator_prompt_sha256",
+    "generator_transport_version",
+    "generator_schema_sha256",
+    "generator_signature",
+    "deterministic_validator_version",
+    "deterministic_validator_status",
+    "semantic_gate_provider",
+    "semantic_gate_model",
+    "semantic_gate_prompt_version",
+    "semantic_gate_prompt_sha256",
+    "semantic_gate_transport_version",
+    "semantic_gate_schema_sha256",
+    "semantic_gate_status",
+    "candidate_sha256",
+    "evidence_bundle_sha256",
+    "gate_input_sha256",
+    "semantic_audit_sha256",
+    "settings_version"
+  ],
+  "cache_acceptance_requires_semantic_pass": true,
+  "questionable_blocks_cache": true,
+  "unsupported_blocks_cache": true,
+  "4b22_candidate_production_cache": "NOT ACCEPTED",
+  "invalidation": {
+    "candidate_bytes_change": "semantic PASS becomes invalid",
+    "evidence_change": "semantic PASS becomes invalid",
+    "semantic_validator_contract_change": "revalidation policy must be explicit; do not reuse a PASS from a prior prompt/transport/schema identity"
+  },
+  "revalidation_policy": {
+    "prompt_change": "REVALIDATE",
+    "transport_change": "REVALIDATE",
+    "schema_change": "REVALIDATE",
+    "model_change": "REVALIDATE",
+    "evidence_change": "INVALIDATE",
+    "candidate_change": "INVALIDATE"
+  },
+  "no_production_write_this_phase": true,
+  "identities": {
+    "generator_prompt": "book-generator-1.0.1",
+    "deterministic_validator": "book-generation-validator-1.0.1",
+    "semantic_gate_provider": "openai",
+    "semantic_gate_model": "gpt-5.6-terra",
+    "semantic_gate_prompt": "book-semantic-validator-1.0",
+    "semantic_gate_transport": "book-semantic-validation-transport-1.0",
+    "settings_version": "book-semantic-gate-settings-1.0"
+  }
+}

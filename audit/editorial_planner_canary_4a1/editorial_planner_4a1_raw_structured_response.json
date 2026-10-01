@@ -1,0 +1,217 @@
+{
+  "parsed": {
+    "concept": {
+      "promise": "A practical, ordered method for a shared garden plot: prepare the soil, plant in sequence, water with care, and share what grows.",
+      "subject": "A community garden workshop covering soil and bed preparation, planting and watering practice, and the sharing of surplus harvest with volunteer support.",
+      "journey": "The reader moves from reading the site and its soil, to sequencing planting and watering, to organizing what the plot produces with neighbors.",
+      "progression": "From ground conditions, to seasonal practice, to shared stewardship of the harvest."
+    },
+    "titles": [
+      {
+        "t": "The Shared Plot",
+        "why": "Short, names the collective subject without over-promising."
+      },
+      {
+        "t": "Soil First, Then Seasons",
+        "why": "Mirrors the actual order of the workshop material."
+      },
+      {
+        "t": "A First Year in the Community Garden",
+        "why": "Matches the first-year workshop audience directly."
+      },
+      {
+        "t": "Prepare, Plant, Share",
+        "why": "Names the three topic clusters as a reader path."
+      }
+    ],
+    "pick": 3,
+    "subtitle": "A workshop method for soil, planting, and shared harvest",
+    "angle": "Treat the workshop as a sequence of decisions made before, during, and after the growing season, so each instruction sits where a gardener would actually need it.",
+    "reader": "Adult neighbors joining a first-year community garden workshop, with no assumed prior gardening experience.",
+    "strategy": "Group the material by the three source topics, but order chapters along the working calendar of the plot. Place cautionary anecdotes next to the instruction they support, keep the single compost-schedule uncertainty flagged where compost is discussed, and give the minor volunteer observation its own short section rather than diluting the harvest-sharing claim.",
+    "chapters": [
+      {
+        "h": "c1",
+        "t": "Reading the Ground Before You Plant",
+        "p": "Establish the preparation decisions that constrain everything later: soil condition, compost handling, and light across the plot.",
+        "sum": "Soil testing, layered compost with an open question on drop-off hours, and sun/shade mapping of beds.",
+        "top": [
+          "TOP001"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Cluster all TOP001 preparation instructions into one opening chapter."
+          },
+          {
+            "k": "REORDER",
+            "n": "Lead with the soil test because the supporting anecdote frames the cost of skipping it."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c1s1",
+            "t": "Test First, Commit Later",
+            "p": "Set out the soil-test step as the gate before any bed is assigned a crop, using the past-season anecdote as the cautionary case.",
+            "i": [
+              "IDEA001"
+            ],
+            "x": [
+              "EX001"
+            ],
+            "ref": [
+              "REF001"
+            ],
+            "top": [
+              "TOP001"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Tie the anecdote directly to the instruction it supports."
+              }
+            ]
+          },
+          {
+            "h": "c1s2",
+            "t": "Compost in Thin Layers",
+            "p": "Explain the layering approach to amending topsoil and keep the unresolved compost drop-off schedule visible as an open point.",
+            "i": [
+              "IDEA002"
+            ],
+            "u": [
+              "UNC001"
+            ],
+            "top": [
+              "TOP001"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Keep UNC001 adjacent to the compost instruction without resolving it."
+              }
+            ]
+          },
+          {
+            "h": "c1s3",
+            "t": "Mapping Sun and Shade",
+            "p": "Cover the light survey of the plot as the basis for matching beds to plants.",
+            "i": [
+              "IDEA003"
+            ],
+            "ref": [
+              "REF002"
+            ],
+            "top": [
+              "TOP001"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c2",
+        "t": "Planting and Watering Through the Season",
+        "p": "Move from site preparation to recurring seasonal practice: how planting is spaced in time and how water is applied.",
+        "sum": "Staggered planting weeks for continuous harvest, and morning base watering with the blight example.",
+        "top": [
+          "TOP002"
+        ],
+        "act": [
+          {
+            "k": "GROUP",
+            "n": "Hold the two central TOP002 practices together as the season chapter."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c2s1",
+            "t": "Stagger the Weeks",
+            "p": "Present staggered planting as the principle that spreads harvest across time rather than concentrating it.",
+            "i": [
+              "IDEA004"
+            ],
+            "ref": [
+              "REF002"
+            ],
+            "top": [
+              "TOP002"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Forward-link continuous harvest to the sharing chapter."
+              }
+            ]
+          },
+          {
+            "h": "c2s2",
+            "t": "Water Low, Water Early",
+            "p": "Give the watering instruction and the neighbor's blight case as the consequence of the opposite habit.",
+            "i": [
+              "IDEA005"
+            ],
+            "x": [
+              "EX002"
+            ],
+            "top": [
+              "TOP002"
+            ]
+          }
+        ]
+      },
+      {
+        "h": "c3",
+        "t": "What the Plot Gives Back",
+        "p": "Close on the shared outcome: distributing surplus and the practical volunteer arrangement around it.",
+        "sum": "The weekly harvest table for surplus, plus the sign-in clipboard observation.",
+        "top": [
+          "TOP003"
+        ],
+        "act": [
+          {
+            "k": "SPLIT_TOPIC",
+            "n": "Separate the surplus-sharing claim from the minor volunteer sign-in observation."
+          }
+        ],
+        "sections": [
+          {
+            "h": "c3s1",
+            "t": "The Weekly Harvest Table",
+            "p": "Describe surplus sharing as the simple standing arrangement neighbors draw from.",
+            "i": [
+              "IDEA006"
+            ],
+            "ref": [
+              "REF001"
+            ],
+            "top": [
+              "TOP003"
+            ],
+            "act": [
+              {
+                "k": "CONNECT",
+                "n": "Link back to staggered planting as the reason surplus is continuous."
+              }
+            ]
+          },
+          {
+            "h": "c3s2",
+            "t": "Signing In, Staying Connected",
+            "p": "Note the volunteer clipboard and newsletter collection as the light logistical layer beside the table.",
+            "i": [
+              "IDEA007"
+            ],
+            "top": [
+              "TOP003"
+            ]
+          }
+        ]
+      }
+    ],
+    "deferred": [],
+    "excluded": []
+  },
+  "text": "{\"concept\":{\"promise\":\"A practical, ordered method for a shared garden plot: prepare the soil, plant in sequence, water with care, and share what grows.\",\"subject\":\"A community garden workshop covering soil and bed preparation, planting and watering practice, and the sharing of surplus harvest with volunteer support.\",\"journey\":\"The reader moves from reading the site and its soil, to sequencing planting and watering, to organizing what the plot produces with neighbors.\",\"progression\":\"From ground conditions, to seasonal practice, to shared stewardship of the harvest.\"},\"titles\":[{\"t\":\"The Shared Plot\",\"why\":\"Short, names the collective subject without over-promising.\"},{\"t\":\"Soil First, Then Seasons\",\"why\":\"Mirrors the actual order of the workshop material.\"},{\"t\":\"A First Year in the Community Garden\",\"why\":\"Matches the first-year workshop audience directly.\"},{\"t\":\"Prepare, Plant, Share\",\"why\":\"Names the three topic clusters as a reader path.\"}],\"pick\":3,\"subtitle\":\"A workshop method for soil, planting, and shared harvest\",\"angle\":\"Treat the workshop as a sequence of decisions made before, during, and after the growing season, so each instruction sits where a gardener would actually need it.\",\"reader\":\"Adult neighbors joining a first-year community garden workshop, with no assumed prior gardening experience.\",\"strategy\":\"Group the material by the three source topics, but order chapters along the working calendar of the plot. Place cautionary anecdotes next to the instruction they support, keep the single compost-schedule uncertainty flagged where compost is discussed, and give the minor volunteer observation its own short section rather than diluting the harvest-sharing claim.\",\"chapters\":[{\"h\":\"c1\",\"t\":\"Reading the Ground Before You Plant\",\"p\":\"Establish the preparation decisions that constrain everything later: soil condition, compost handling, and light across the plot.\",\"sum\":\"Soil testing, layered compost with an open question on drop-off hours, and sun/shade mapping of beds.\",\"top\":[\"TOP001\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Cluster all TOP001 preparation instructions into one opening chapter.\"},{\"k\":\"REORDER\",\"n\":\"Lead with the soil test because the supporting anecdote frames the cost of skipping it.\"}],\"sections\":[{\"h\":\"c1s1\",\"t\":\"Test First, Commit Later\",\"p\":\"Set out the soil-test step as the gate before any bed is assigned a crop, using the past-season anecdote as the cautionary case.\",\"i\":[\"IDEA001\"],\"x\":[\"EX001\"],\"ref\":[\"REF001\"],\"top\":[\"TOP001\"],\"act\":[{\"k\":\"CONNECT\",\"n\":\"Tie the anecdote directly to the instruction it supports.\"}]},{\"h\":\"c1s2\",\"t\":\"Compost in Thin Layers\",\"p\":\"Explain the layering approach to amending topsoil and keep the unresolved compost drop-off schedule visible as an open point.\",\"i\":[\"IDEA002\"],\"u\":[\"UNC001\"],\"top\":[\"TOP001\"],\"act\":[{\"k\":\"CONNECT\",\"n\":\"Keep UNC001 adjacent to the compost instruction without resolving it.\"}]},{\"h\":\"c1s3\",\"t\":\"Mapping Sun and Shade\",\"p\":\"Cover the light survey of the plot as the basis for matching beds to plants.\",\"i\":[\"IDEA003\"],\"ref\":[\"REF002\"],\"top\":[\"TOP001\"]}]},{\"h\":\"c2\",\"t\":\"Planting and Watering Through the Season\",\"p\":\"Move from site preparation to recurring seasonal practice: how planting is spaced in time and how water is applied.\",\"sum\":\"Staggered planting weeks for continuous harvest, and morning base watering with the blight example.\",\"top\":[\"TOP002\"],\"act\":[{\"k\":\"GROUP\",\"n\":\"Hold the two central TOP002 practices together as the season chapter.\"}],\"sections\":[{\"h\":\"c2s1\",\"t\":\"Stagger the Weeks\",\"p\":\"Present staggered planting as the principle that spreads harvest across time rather than concentrating it.\",\"i\":[\"IDEA004\"],\"ref\":[\"REF002\"],\"top\":[\"TOP002\"],\"act\":[{\"k\":\"CONNECT\",\"n\":\"Forward-link continuous harvest to the sharing chapter.\"}]},{\"h\":\"c2s2\",\"t\":\"Water Low, Water Early\",\"p\":\"Give the watering instruction and the neighbor's blight case as the consequence of the opposite habit.\",\"i\":[\"IDEA005\"],\"x\":[\"EX002\"],\"top\":[\"TOP002\"]}]},{\"h\":\"c3\",\"t\":\"What the Plot Gives Back\",\"p\":\"Close on the shared outcome: distributing surplus and the practical volunteer arrangement around it.\",\"sum\":\"The weekly harvest table for surplus, plus the sign-in clipboard observation.\",\"top\":[\"TOP003\"],\"act\":[{\"k\":\"SPLIT_TOPIC\",\"n\":\"Separate the surplus-sharing claim from the minor volunteer sign-in observation.\"}],\"sections\":[{\"h\":\"c3s1\",\"t\":\"The Weekly Harvest Table\",\"p\":\"Describe surplus sharing as the simple standing arrangement neighbors draw from.\",\"i\":[\"IDEA006\"],\"ref\":[\"REF001\"],\"top\":[\"TOP003\"],\"act\":[{\"k\":\"CONNECT\",\"n\":\"Link back to staggered planting as the reason surplus is continuous.\"}]},{\"h\":\"c3s2\",\"t\":\"Signing In, Staying Connected\",\"p\":\"Note the volunteer clipboard and newsletter collection as the light logistical layer beside the table.\",\"i\":[\"IDEA007\"],\"top\":[\"TOP003\"]}]}],\"deferred\":[],\"excluded\":[]}",
+  "sha256": "180e7480c11e71389e935c2314f471c59e0f42eca79800d30a502a2c0681ff4d",
+  "repaired": false
+}

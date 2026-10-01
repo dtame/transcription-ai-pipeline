@@ -1,0 +1,167 @@
+{
+  "concepts": {
+    "SOURCE_PRIMARY_LANGUAGE": "en",
+    "AUTHOR_ORIGINAL_LANGUAGE": "English teaching corpus as captured by SourceMap summaries; author/audience metadata are English. Not a planner output rule.",
+    "EDITORIAL_PLANNING_LANGUAGE": "predominantly French",
+    "FINAL_BOOK_LANGUAGE": "UNRESOLVED — no explicit book_language consumed by the planner.",
+    "UI_PROJECT_LANGUAGE": "en",
+    "PROMPT_INSTRUCTION_LANGUAGE": "fr"
+  },
+  "language_concepts_are_not_the_same": [
+    "SOURCE_PRIMARY_LANGUAGE",
+    "AUTHOR_ORIGINAL_LANGUAGE",
+    "EDITORIAL_PLANNING_LANGUAGE",
+    "FINAL_BOOK_LANGUAGE",
+    "UI_PROJECT_LANGUAGE",
+    "PROMPT_INSTRUCTION_LANGUAGE"
+  ],
+  "source_primary_language": "en",
+  "editorial_plan_language": "predominantly French",
+  "plan_language_audit": {
+    "fields": {
+      "book_concept": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux FR nettement dominants, rapport 46.25 (107 mot(s), fr_function=37, en_function=2, fr_elisions=6, en_contractions=0, fr_diacritics=29)",
+        "chars": 693
+      },
+      "title_candidates": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux FR nettement dominants, rapport 15.50 (15 mot(s), fr_function=6, en_function=1, fr_elisions=1, en_contractions=0, fr_diacritics=5)",
+        "chars": 74
+      },
+      "selected_title": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux français dominants (2 mot(s), fr_function=0, en_function=0, fr_elisions=0, en_contractions=0, fr_diacritics=3)",
+        "chars": 14
+      },
+      "subtitle": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux français dominants (8 mot(s), fr_function=2, en_function=0, fr_elisions=0, en_contractions=0, fr_diacritics=4)",
+        "chars": 45
+      },
+      "editorial_angle": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux FR nettement dominants, rapport 29.50 (38 mot(s), fr_function=13, en_function=1, fr_elisions=3, en_contractions=0, fr_diacritics=7)",
+        "chars": 241
+      },
+      "target_reader": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux français dominants (17 mot(s), fr_function=5, en_function=0, fr_elisions=0, en_contractions=0, fr_diacritics=3)",
+        "chars": 138
+      },
+      "editorial_strategy": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux français dominants (62 mot(s), fr_function=25, en_function=0, fr_elisions=3, en_contractions=0, fr_diacritics=14)",
+        "chars": 458
+      },
+      "chapter_titles": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux FR nettement dominants, rapport 27.00 (68 mot(s), fr_function=25, en_function=2, fr_elisions=4, en_contractions=0, fr_diacritics=14)",
+        "chars": 394
+      },
+      "chapter_purposes": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux français dominants (396 mot(s), fr_function=128, en_function=0, fr_elisions=19, en_contractions=0, fr_diacritics=103)",
+        "chars": 2798
+      },
+      "section_titles": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux FR nettement dominants, rapport 46.71 (380 mot(s), fr_function=167, en_function=7, fr_elisions=32, en_contractions=0, fr_diacritics=64)",
+        "chars": 2135
+      },
+      "section_purposes": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux français dominants (842 mot(s), fr_function=349, en_function=0, fr_elisions=52, en_contractions=0, fr_diacritics=164)",
+        "chars": 5275
+      },
+      "editorial_actions": {
+        "language": "FR",
+        "confidence": 0.97,
+        "reason": "signaux français dominants (216 mot(s), fr_function=88, en_function=0, fr_elisions=12, en_contractions=0, fr_diacritics=56)",
+        "chars": 1443
+      }
+    },
+    "combined": {
+      "language": "FR",
+      "confidence": 0.97,
+      "reason": "signaux FR nettement dominants, rapport 139.08 (2151 mot(s), fr_function=845, en_function=13, fr_elisions=132, en_contractions=0, fr_diacritics=466)",
+      "chars": 13719
+    },
+    "counts": {
+      "FR": 14
+    },
+    "editorial_plan_language": "predominantly French",
+    "note": "Inherited IDEA/TOP/EX/REF/UNC/SRC/CH/SEC identifiers were stripped before classification. Source quotations are not treated as provider editorial language unless they appear in plan prose."
+  },
+  "explicit_pre_a3_language_contract": "NO",
+  "language_contract_result": "UNSPECIFIED_POLICY",
+  "do_not_declare_french_invalid_because_primary_is_en": true,
+  "why_french_may_have_occurred": [
+    "editorial-planner-1.0 system and instructions are written in French.",
+    "No planner output-language directive existed before A.3 (unlike Source Analyzer).",
+    "Digest includes language=SourceMap.primary_language (en) as metadata only.",
+    "Validator, transport 1.0, and schema 3661/3909 do not constrain plan language.",
+    "A.1 used the same prompt with an English synthetic digest and produced an English plan, so French prompt prose does not deterministically force French plans.",
+    "A.3 French editorial prose is therefore an unspecified provider choice under missing policy, not a proven contract command."
+  ],
+  "speculation_beyond_evidence": false,
+  "frozen_contract": {
+    "active_prompt_version": "editorial-planner-1.0",
+    "system_sha256": "7faeacaa81d123510c321d4756f3cd975d6b58460fdd9f216146d6a15efeeb55",
+    "instructions_sha256": "e9193763e49859c03c1d30c9ef259163a05b371354cdca1979bf9b1db807294c",
+    "prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a",
+    "prompt_instruction_language_evidence": "French system and instruction prose (Tu es / Organise / Réponds).",
+    "planner_explicit_output_language_rule": false,
+    "analyzer_has_output_language_directive": true,
+    "validator_checks_plan_language": false,
+    "transport_has_language_field": false,
+    "schema_has_language_field": false,
+    "models_have_book_language": false,
+    "phase_4a_4a1_4a2_declared_output_language_rule": false,
+    "explicit_pre_a3_language_contract": false,
+    "do_not_mutate_prompt_in_place": true
+  },
+  "project_yaml_language": "en",
+  "project_yaml_wired_into_planner": false,
+  "current_resolution": {
+    "policy_version": "editorial-planner-language-policy-1.0",
+    "book_language": "",
+    "status": "UNRESOLVED_REQUIRES_HUMAN_DECISION",
+    "source": "",
+    "requires_human_decision": true,
+    "source_primary_language": "en",
+    "project_language": "en",
+    "requested_book_language": "",
+    "inherit_mode": "require_explicit",
+    "recommended_alignment": "PLAN_LANGUAGE_MUST_MATCH_BOOK_LANGUAGE",
+    "recommended_setting": "book_language",
+    "notes": [
+      "No explicit book_language. Recommended default is to require a project-level book_language before Editorial Planner, rather than assuming SourceMap.primary_language is the book language."
+    ]
+  },
+  "validator_status": "PASS",
+  "book_language_requires_human_decision": true,
+  "publication_without_translation_if_french_plan_accepted": "YES — the unchanged candidate can remain a French editorial plan if a human explicitly accepts French as planning language. That is not the same as choosing the final book language.",
+  "plan_vs_book_mismatch_risk": {
+    "policy": "PLAN_LANGUAGE_MUST_MATCH_BOOK_LANGUAGE",
+    "rationale": "EditorialPlan titles, purposes, angle, and reader journey become the Book Generator's organizing language. A plan in language A and a manuscript in language B creates avoidable semantic and style risk (re-translation of editorial framing, title drift, audience-register mismatch). Plan language must match book language.",
+    "mismatch_architecturally_safe": false,
+    "successor_prompt_if_instruction_needed": "editorial-planner-1.0.1",
+    "do_not_mutate_active_prompt": "editorial-planner-1.0",
+    "new_grammar_canary_required_for_language_instruction_only": false,
+    "schema_change_required_for_language_policy": false,
+    "transport_change_required_for_language_policy": false
+  },
+  "source_differs_from_plan": true
+}

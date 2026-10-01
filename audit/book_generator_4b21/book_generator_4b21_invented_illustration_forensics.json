@@ -1,0 +1,45 @@
+{
+  "stream": "C_INVENTED_ILLUSTRATION",
+  "provider_handle": "p8",
+  "section": "SEC063",
+  "raw_object": {
+    "h": "p8",
+    "k": "sub",
+    "t": "This is exactly why death as gain cannot remain an idea admired from a safe intellectual distance. It is not mind over matter — it is not a technique of positive thinking applied at the last moment to overpower natural terror. It must be your reality. Not a doctrine filed away for later, not a verse quoted at funerals, but the actual ground a person is standing on when the hour comes.",
+    "e": [
+      "IDEA226"
+    ],
+    "u": []
+  },
+  "exact_text": "This is exactly why death as gain cannot remain an idea admired from a safe intellectual distance. It is not mind over matter — it is not a technique of positive thinking applied at the last moment to overpower natural terror. It must be your reality. Not a doctrine filed away for later, not a verse quoted at funerals, but the actual ground a person is standing on when the hour comes.",
+  "declared_evidence_handles": [
+    "IDEA226"
+  ],
+  "illustration_phrase": "not a verse quoted at funerals",
+  "search_scope": [
+    "IDEA",
+    "EX",
+    "REF",
+    "UNC",
+    "hydrated SRC"
+  ],
+  "search_hits": {
+    "funeral": false,
+    "funerals": false,
+    "verse quoted at funerals": false,
+    "quoted at funerals": false
+  },
+  "source_supported": false,
+  "classification": "INVENTED_EXAMPLE",
+  "invented_reference": false,
+  "reference_distinction": "Invented illustrative scenario, not an invented scripture/reference. 4B.2 recorded invented_references=0.",
+  "prompt_1_0_already_said": "Do not invent arguments, facts, examples, anecdotes, quotations, Bible references...",
+  "contract_problem": "The example/illustration prohibition existed but did not explicitly forbid helpful literary illustrations added for clarity or flow.",
+  "stylistic_expansion_allowed": true,
+  "semantic_expansion_allowed": false,
+  "rewritten": false,
+  "root_cause": [
+    "PROMPT_SEMANTIC_BOUNDARY_TOO_WEAK",
+    "PROVIDER_COMPLIANCE_FAILURE"
+  ]
+}

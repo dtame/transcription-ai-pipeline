@@ -1,0 +1,266 @@
+"""
+Phase 4B.2.4 — One real Terra semantic-gate benchmark canary.
+
+Exactly one OpenAI gpt-5.6-terra call. Zero Sonnet. Zero retries.
+Frozen historical benchmark only. No generation. No cache acceptance.
+"""
+
+from __future__ import annotations
+
+from app.book_generation.constants import VALIDATION_PROJECT_NAME
+from app.book_semantic_gate_4b23.constants import (
+    CLASS_NON_SUBSTANTIVE,
+    CLASS_QUESTIONABLE,
+    CLASS_SUPPORTED,
+    CLASS_UNSUPPORTED,
+    CLASSIFICATIONS,
+    CONSERVATIVE_MAX_OUTPUT_TOKENS,
+    DEFAULT_MAX_OUTPUT_TOKENS,
+    EXPECTED_CLEAN_TRANSCRIPT,
+    EXPECTED_EDITORIAL_PLAN,
+    EXPECTED_EVIDENCE_SHA256,
+    EXPECTED_SOURCE_MAP,
+    HARD_MAX_OUTPUT_TOKENS,
+    HISTORICAL_4B21_STATUS,
+    HISTORICAL_4B22_CANDIDATE_CANONICAL_SHA256,
+    HISTORICAL_4B22_STATUS,
+    HISTORICAL_4B2_CANDIDATE_SHA256,
+    HISTORICAL_4B2_STATUS,
+    SEMANTIC_GATE_MODEL,
+    SEMANTIC_GATE_PROVIDER,
+    SEMANTIC_GATE_STAGE,
+    SEMANTIC_GATE_VALIDATOR_VERSION,
+    SEMANTIC_VALIDATION_TRANSPORT_VERSION,
+    SEMANTIC_VALIDATOR_PROMPT_VERSION,
+    STRUCTURED_OUTPUT_MODE,
+    TARGET_CHAPTER_ID,
+    TARGET_SECTION_ID,
+    TEMPERATURE_POLICY,
+    THINKING_MODE,
+    VERDICT_FAIL,
+    VERDICT_PASS,
+    VERDICT_REVIEW,
+)
+
+PHASE = "4B.2.4"
+PHASE_NAME = "ONE_REAL_TERRA_SEMANTIC_GATE_BENCHMARK_CANARY"
+
+PROJECT_NAME = VALIDATION_PROJECT_NAME
+assert PROJECT_NAME == "pastoral_retreat_v2_validation"
+
+AUTHORIZATION_SCOPE = (
+    "BOOK_SEMANTIC_GATE_4B24_ONE_REAL_TERRA_HISTORICAL_BENCHMARK_CANARY_ONLY"
+)
+AUTHORIZED_TERRA_CALLS = 1
+AUTHORIZED_SONNET_CALLS = 0
+MAX_ENGINE_GENERATE = 1
+MAX_OPENAI_POST = 1
+RETRIES = 0
+FALLBACKS = 0
+PUBLICATION_AUTHORIZED = False
+
+PROVIDER = SEMANTIC_GATE_PROVIDER
+MODEL = SEMANTIC_GATE_MODEL
+STAGE_CANARY = "book_semantic_validation_canary_4b24"
+PROMPT_VERSION = SEMANTIC_VALIDATOR_PROMPT_VERSION
+TRANSPORT_VERSION = SEMANTIC_VALIDATION_TRANSPORT_VERSION
+OUTPUT_MODE = STRUCTURED_OUTPUT_MODE
+
+assert PROVIDER == "openai"
+assert MODEL == "gpt-5.6-terra"
+assert PROMPT_VERSION == "book-semantic-validator-1.0"
+assert TRANSPORT_VERSION == "book-semantic-validation-transport-1.0"
+assert OUTPUT_MODE == "json_object"
+assert THINKING_MODE == "provider_default"
+assert TEMPERATURE_POLICY == "omit"
+
+EXPECTED_PROMPT_SHA256 = (
+    "6bc72002b50f77613f71c0241cde133fdc04527c37d6b630bf5794641a443bbf"
+)
+EXPECTED_PROMPT_SYSTEM_SHA256 = (
+    "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc"
+)
+EXPECTED_PROMPT_INSTRUCTIONS_SHA256 = (
+    "4747261db399a1b934221c455502e9b55f54498bab4f31ae29dff9ef6e6e8ccc"
+)
+EXPECTED_SCHEMA_SHA256 = (
+    "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689"
+)
+EXPECTED_SCHEMA_BYTES = 3261
+EXPECTED_BENCHMARK_DATASET_SHA256 = (
+    "c247aa88c46ee4e563a00b777dd24f9e49bc4475b60b55e1463f7f60be9e10a8"
+)
+EXPECTED_BENCHMARK_FILE_SHA256 = (
+    "3888806c68eeff7dc363790d4e0ffcf063e099c3f295e684b80b3c9e8167af82"
+)
+EXPECTED_BENCHMARK_FILE_BYTES = 13293
+EXPECTED_BENCHMARK_ARTIFACT_CASES = 11
+EXPECTED_SCORED_CASES = 10
+EXPECTED_POSITIVE_CASES = 6
+EXPECTED_NEGATIVE_CASES = 4
+EXPECTED_REQUEST_SHA256 = (
+    "09d6472e544bc60231c77908e6608ff7ee7b6fd4746317f206301082e21eab53"
+)
+
+CONNECT_TIMEOUT_SECONDS = 30.0
+READ_TIMEOUT_SECONDS = 300.0
+
+CANARY_WINDOW_ID = "book-semantic-gate-4b24"
+
+# Opaque handles. Do not encode positive/negative/invented/unsupported.
+SCORED_CASE_ORDER: tuple[tuple[str, str], ...] = (
+    ("h01", "4b22_p2_supported"),
+    ("h02", "4b22_p3_new_causal"),
+    ("h03", "4b22_p4_supported"),
+    ("h04", "4b22_p5_supported"),
+    ("h05", "4b22_p6_supported"),
+    ("h06", "4b22_p7_supported"),
+    ("h07", "4b22_p8_reference_completion"),
+    ("h08", "4b2_p2_supported"),
+    ("h09", "4b2_p8_invented_funeral"),
+    ("h10", "4b2_p13_unsupported_connective"),
+)
+
+POSITIVE_CASE_IDS = (
+    "4b22_p2_supported",
+    "4b22_p4_supported",
+    "4b22_p5_supported",
+    "4b22_p6_supported",
+    "4b22_p7_supported",
+    "4b2_p2_supported",
+)
+NEGATIVE_CASE_IDS = (
+    "4b22_p3_new_causal",
+    "4b22_p8_reference_completion",
+    "4b2_p8_invented_funeral",
+    "4b2_p13_unsupported_connective",
+)
+EXCLUDED_FROM_SCORE = (
+    "4b22_p1_connective",
+)
+P9B_STATUS = "DETERMINISTIC_VALIDATOR_BLOCK"
+
+FUNERAL_CASE_ID = "4b2_p8_invented_funeral"
+CONNECTIVE_CASE_ID = "4b2_p13_unsupported_connective"
+P3_CASE_ID = "4b22_p3_new_causal"
+P8_CASE_ID = "4b22_p8_reference_completion"
+
+AUDIT_DIRNAME = "book_semantic_gate_4b24"
+AUDIT_REAL_PARENT = "real"
+ATTEMPT_1_DIRNAME = "attempt_1_blocked_precall"
+ATTEMPT_2_DIRNAME = "attempt_2_resume"
+AUDIT_PRECALL = "book_semantic_gate_4b24_precall_identity.json"
+AUDIT_BENCHMARK = "book_semantic_gate_4b24_benchmark_identity.json"
+AUDIT_LEAK = "book_semantic_gate_4b24_label_leak_audit.json"
+AUDIT_REQUEST = "book_semantic_gate_4b24_request_identity.json"
+AUDIT_PROVIDER = "book_semantic_gate_4b24_provider_evidence.json"
+AUDIT_RESPONSE = "book_semantic_gate_4b24_response_identity.json"
+AUDIT_VALIDATION = "book_semantic_gate_4b24_response_validation.json"
+AUDIT_CASES = "book_semantic_gate_4b24_case_results.json"
+AUDIT_SCORE = "book_semantic_gate_4b24_benchmark_score.json"
+AUDIT_REASONS = "book_semantic_gate_4b24_reason_code_review.json"
+AUDIT_HUMAN = "book_semantic_gate_4b24_human_review.json"
+AUDIT_COST = "book_semantic_gate_4b24_cost_calibration.json"
+AUDIT_READINESS = "book_semantic_gate_post_4b24_readiness.json"
+AUDIT_RAW_RESPONSE = "book_semantic_gate_4b24_raw_structured_response.json"
+AUDIT_RAW_TEXT = "book_semantic_gate_4b24_raw_provider_text.txt"
+AUDIT_LOCK = "book_semantic_gate_4b24_real_call.lock"
+REPORT_NAME = "PHASE_4B24_ONE_REAL_TERRA_SEMANTIC_GATE_BENCHMARK_CANARY_REPORT.md"
+
+NEXT_ACTION = "HUMAN REVIEW"
+READY_FOR_FULL_REAL_BOOK_GENERATION = False
+
+assert AUTHORIZED_TERRA_CALLS == 1
+assert AUTHORIZED_SONNET_CALLS == 0
+assert RETRIES == 0
+assert FALLBACKS == 0
+assert PUBLICATION_AUTHORIZED is False
+assert READY_FOR_FULL_REAL_BOOK_GENERATION is False
+assert HISTORICAL_4B2_STATUS == "FAIL"
+assert HISTORICAL_4B21_STATUS == "PASS"
+assert HISTORICAL_4B22_STATUS == "PARTIAL"
+assert EXPECTED_SOURCE_MAP == (
+    "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855"
+)
+assert EXPECTED_EDITORIAL_PLAN == (
+    "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440"
+)
+assert EXPECTED_CLEAN_TRANSCRIPT == (
+    "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+)
+
+__all__ = [
+    "AUTHORIZATION_SCOPE",
+    "AUTHORIZED_SONNET_CALLS",
+    "AUTHORIZED_TERRA_CALLS",
+    "CANARY_WINDOW_ID",
+    "CLASSIFICATIONS",
+    "CLASS_NON_SUBSTANTIVE",
+    "CLASS_QUESTIONABLE",
+    "CLASS_SUPPORTED",
+    "CLASS_UNSUPPORTED",
+    "CONNECTIVE_CASE_ID",
+    "CONNECT_TIMEOUT_SECONDS",
+    "CONSERVATIVE_MAX_OUTPUT_TOKENS",
+    "DEFAULT_MAX_OUTPUT_TOKENS",
+    "EXPECTED_BENCHMARK_ARTIFACT_CASES",
+    "EXPECTED_BENCHMARK_DATASET_SHA256",
+    "EXPECTED_BENCHMARK_FILE_BYTES",
+    "EXPECTED_BENCHMARK_FILE_SHA256",
+    "EXPECTED_CLEAN_TRANSCRIPT",
+    "EXPECTED_EDITORIAL_PLAN",
+    "EXPECTED_EVIDENCE_SHA256",
+    "EXPECTED_NEGATIVE_CASES",
+    "EXPECTED_POSITIVE_CASES",
+    "EXPECTED_PROMPT_INSTRUCTIONS_SHA256",
+    "EXPECTED_PROMPT_SHA256",
+    "EXPECTED_PROMPT_SYSTEM_SHA256",
+    "EXPECTED_REQUEST_SHA256",
+    "EXPECTED_SCHEMA_BYTES",
+    "EXPECTED_SCHEMA_SHA256",
+    "EXPECTED_SCORED_CASES",
+    "EXPECTED_SOURCE_MAP",
+    "ATTEMPT_1_DIRNAME",
+    "ATTEMPT_2_DIRNAME",
+    "EXCLUDED_FROM_SCORE",
+    "FALLBACKS",
+    "FUNERAL_CASE_ID",
+    "HARD_MAX_OUTPUT_TOKENS",
+    "HISTORICAL_4B21_STATUS",
+    "HISTORICAL_4B22_CANDIDATE_CANONICAL_SHA256",
+    "HISTORICAL_4B22_STATUS",
+    "HISTORICAL_4B2_CANDIDATE_SHA256",
+    "HISTORICAL_4B2_STATUS",
+    "MAX_ENGINE_GENERATE",
+    "MAX_OPENAI_POST",
+    "MODEL",
+    "NEGATIVE_CASE_IDS",
+    "NEXT_ACTION",
+    "OUTPUT_MODE",
+    "P3_CASE_ID",
+    "P8_CASE_ID",
+    "P9B_STATUS",
+    "PHASE",
+    "PHASE_NAME",
+    "POSITIVE_CASE_IDS",
+    "PROJECT_NAME",
+    "PROMPT_VERSION",
+    "PROVIDER",
+    "PUBLICATION_AUTHORIZED",
+    "READ_TIMEOUT_SECONDS",
+    "READY_FOR_FULL_REAL_BOOK_GENERATION",
+    "REPORT_NAME",
+    "RETRIES",
+    "SCORED_CASE_ORDER",
+    "SEMANTIC_GATE_STAGE",
+    "SEMANTIC_GATE_VALIDATOR_VERSION",
+    "STAGE_CANARY",
+    "TARGET_CHAPTER_ID",
+    "TARGET_SECTION_ID",
+    "TEMPERATURE_POLICY",
+    "THINKING_MODE",
+    "TRANSPORT_VERSION",
+    "VERDICT_FAIL",
+    "VERDICT_PASS",
+    "VERDICT_REVIEW",
+]

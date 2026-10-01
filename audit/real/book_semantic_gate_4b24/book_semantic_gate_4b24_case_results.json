@@ -1,0 +1,49 @@
+{
+  "status": "BLOCKED_PRECALL",
+  "actual_terra_calls": 0,
+  "reason": "BLOCKED_PRECALL: OPENAI_API_KEY is not available in the environment or local .env. All other pre-call gates passed. The frozen benchmark request was built and not sent. ACTUAL TERRA CALLS = 0. No Sonnet call. No retry. Set OPENAI_API_KEY locally and re-authorize a later 4B.2.4 execution; do not invent a second automatic call.",
+  "http_sent": false,
+  "rows": [],
+  "mapping": [
+    {
+      "opaque_handle": "h01",
+      "case_id": "4b22_p2_supported"
+    },
+    {
+      "opaque_handle": "h02",
+      "case_id": "4b22_p3_new_causal"
+    },
+    {
+      "opaque_handle": "h03",
+      "case_id": "4b22_p4_supported"
+    },
+    {
+      "opaque_handle": "h04",
+      "case_id": "4b22_p5_supported"
+    },
+    {
+      "opaque_handle": "h05",
+      "case_id": "4b22_p6_supported"
+    },
+    {
+      "opaque_handle": "h06",
+      "case_id": "4b22_p7_supported"
+    },
+    {
+      "opaque_handle": "h07",
+      "case_id": "4b22_p8_reference_completion"
+    },
+    {
+      "opaque_handle": "h08",
+      "case_id": "4b2_p2_supported"
+    },
+    {
+      "opaque_handle": "h09",
+      "case_id": "4b2_p8_invented_funeral"
+    },
+    {
+      "opaque_handle": "h10",
+      "case_id": "4b2_p13_unsupported_connective"
+    }
+  ]
+}

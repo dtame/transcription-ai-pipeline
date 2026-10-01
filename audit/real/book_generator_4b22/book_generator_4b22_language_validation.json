@@ -1,0 +1,8 @@
+{
+  "canonical_document_language": "en",
+  "detected": "EN",
+  "confidence": 0.97,
+  "status": "PASS",
+  "reason": "Manuscript prose matches canonical language en (detected EN, confidence 0.97)",
+  "chars": 2849
+}

@@ -1,0 +1,35 @@
+{
+  "evaluated_options": {
+    "A": "human-only review during canary/rollout",
+    "B": "future Phase 5 Book Validator only",
+    "C": "dedicated automated chapter-level semantic validator before cache accept",
+    "D": "hybrid approach"
+  },
+  "selected": "D_HYBRID",
+  "book_generation_validator": "deterministic structural/provenance/coverage/language checks",
+  "future_semantic_gate": "unsupported claims, invented examples, evidence fidelity before a chapter cache entry is accepted for final assembly",
+  "next_hardened_canary_gate": "human semantic review + hardened local validator",
+  "production_19_chapter_problem": "Manual exhaustive paragraph review is possible but expensive. Phase 4B must not silently accept chapters because structure passed.",
+  "phase_5_boundary": {
+    "implement_wholesale_here": false,
+    "chapter_level_semantic_validation": "remain Phase 5 / later 4B acceptance work, but prevent book publication until validated",
+    "trade_offs": [
+      "Implementing now would start Phase 5 and likely need a Terra call.",
+      "Deferring without a gate would let structural PASS publish unsupported prose.",
+      "Hybrid keeps 4B.2.1 offline while making the next canary depend on human review."
+    ]
+  },
+  "independence_principle": "Do not use Sonnet to validate Sonnet. Frozen Book Validator production model is OpenAI gpt-5.6-terra.",
+  "future_model_if_automated": "openai / gpt-5.6-terra",
+  "no_semantic_validator_provider_call_this_phase": true,
+  "terra_pricing": {
+    "verified": true,
+    "input_cost_per_1m_tokens": 2.0,
+    "output_cost_per_1m_tokens": 12.0,
+    "unmodeled_regimes": "long_context_not_modeled",
+    "cost_status": "base_estimate"
+  },
+  "future_call_count_if_per_chapter": 19,
+  "future_cost_not_spent": true,
+  "phase_5_not_started": true
+}

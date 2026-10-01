@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "valid_chapter",
+      "expected": "PASS_OR_REVIEW",
+      "got": "PASS",
+      "ok": true,
+      "errors": []
+    },
+    {
+      "name": "missing_section",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "ok": true,
+      "errors": [
+        "missing sections: ['SEC002']",
+        "missing planned IDEAs: ['IDEA002']"
+      ]
+    },
+    {
+      "name": "extra_section",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "ok": true,
+      "errors": [
+        "extra sections: ['SEC999']"
+      ]
+    },
+    {
+      "name": "wrong_order",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "ok": true,
+      "errors": [
+        "section order ['SEC002', 'SEC001'] ≠ ['SEC001', 'SEC002']",
+        "missing planned IDEAs: ['IDEA001', 'IDEA002']"
+      ]
+    },
+    {
+      "name": "missing_idea",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "ok": true,
+      "errors": [
+        "missing planned IDEAs: ['IDEA001']"
+      ]
+    },
+    {
+      "name": "unknown_idea",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "ok": true,
+      "errors": [
+        "SEC001.p3: unknown source handle IDEA999",
+        "SEC001.p3: handle not in generation-unit evidence IDEA999",
+        "SEC001.p3: cross-section IDEA leakage IDEA999",
+        "SEC001.p3: substantive paragraph does not resolve to SRC evidence",
+        "unknown/unassigned IDEAs: ['IDEA999']"
+      ]
+    },
+    {
+      "name": "unknown_source",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "ok": true,
+      "errors": [
+        "SEC001.p3: unknown source handle SRC999999",
+        "SEC001.p3: handle not in generation-unit evidence SRC999999"
+      ]
+    },
+    {
+      "name": "unsourced_paragraph",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "ok": true,
+      "errors": [
+        "SEC001.p3: substantive paragraph has no evidence handles"
+      ]
+    },
+    {
+      "name": "wrong_language",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "ok": true,
+      "errors": [
+        "Gross language mismatch: canonical=en, detected=FR, confidence=0.97"
+      ]
+    },
+    {
+      "name": "deferred_idea",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "ok": true,
+      "errors": [
+        "SEC001.p3: handle not in generation-unit evidence IDEA004",
+        "SEC001.p3: blocked DEFERRED/EXCLUDED handle IDEA004",
+        "SEC001.p3: cross-section IDEA leakage IDEA004",
+        "unknown/unassigned IDEAs: ['IDEA004']",
+        "DEFERRED/EXCLUDED IDEAs entered manuscript: ['IDEA004']"
+      ]
+    },
+    {
+      "name": "excluded_idea",
+      "expected": "FAIL",
+      "got": "FAIL",
+      "ok": true,
+      "errors": [
+        "SEC001.p3: handle not in generation-unit evidence IDEA005",
+        "SEC001.p3: blocked DEFERRED/EXCLUDED handle IDEA005",
+        "SEC001.p3: cross-section IDEA leakage IDEA005",
+        "unknown/unassigned IDEAs: ['IDEA005']",
+        "DEFERRED/EXCLUDED IDEAs entered manuscript: ['IDEA005']"
+      ]
+    },
+    {
+      "name": "connective_paragraph",
+      "expected": "PASS_OR_REVIEW",
+      "got": "PASS",
+      "ok": true,
+      "errors": []
+    }
+  ],
+  "connective_allowed": true,
+  "determinism": true,
+  "cache": {
+    "same_signature_hit": true,
+    "changed_prompt_miss": true,
+    "changed_plan_miss": true,
+    "changed_source_map_miss": true,
+    "changed_language_miss": true,
+    "changed_evidence_miss": true,
+    "ok": true
+  },
+  "resume": {
+    "ch001_reused": true,
+    "ch002_reused": true,
+    "ch003_failed_isolated": true,
+    "ok": true
+  },
+  "assembled_book_sha256": "0616f1f5c7bbc59df76cf58da943c8aea8c984f94a830ff06a8a3c2772fa997f",
+  "precheck": {
+    "status": "PASS",
+    "errors": [],
+    "warnings": [],
+    "validator_version": "book-generation-validator-1.0"
+  },
+  "engine_is_fake": true,
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

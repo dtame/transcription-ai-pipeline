@@ -1,0 +1,10 @@
+{
+  "label_leakage": 0,
+  "hits": [],
+  "opaque_handle_leaks": [],
+  "scanned_chars": 32686,
+  "human_labels_sent": false,
+  "case_roles_sent": false,
+  "expected_classes_sent": false,
+  "pass": true
+}

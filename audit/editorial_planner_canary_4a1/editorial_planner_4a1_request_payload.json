@@ -1,0 +1,334 @@
+{
+  "secrets_included": false,
+  "model": "claude-opus-5",
+  "max_tokens": 4096,
+  "thinking_present": false,
+  "thinking_value": null,
+  "effort_present": false,
+  "temperature_present": false,
+  "structured_output": "json_schema",
+  "adapted_schema_in_payload": true,
+  "prompt_fingerprint_system_plus_user": "a5c9a6cc9656b254c1ffe9afdc0e84bbe6019408c8342583598cad202217c3b9",
+  "frozen_prompt_sha256": "1c2e8309ede9d7b5d4aed1c2b09f28437d8041b9efdf668f504527f8a7aef68a",
+  "digest_chars": 2992,
+  "digest_bytes": 2992,
+  "user_prompt_chars": 4183,
+  "system_prompt_chars": 1992,
+  "payload_chars": 10340,
+  "payload_bytes": 10407,
+  "payload_sha256": "9582e720ef29fd54a62a247609cb60f68e6fa76b44737d6631e9b6fbe58dab94",
+  "payload_keys": [
+    "max_tokens",
+    "messages",
+    "model",
+    "output_config",
+    "system"
+  ],
+  "stage": "editorial_planner_canary_4a1",
+  "authorization_scope": "EDITORIAL_PLANNER_4A1_TINY_GRAMMAR_CONTRACT_CANARY_ONLY",
+  "production_data_sent": false,
+  "request_thinking_mode": "provider_default",
+  "request_effort": null,
+  "request_thinking_budget_tokens": null,
+  "payload": {
+    "model": "claude-opus-5",
+    "max_tokens": 4096,
+    "messages": [
+      {
+        "role": "user",
+        "content": "Organise le SourceMap fourni en plan éditorial compact.\n\nContraintes de sortie :\n- concept.promise / subject / journey / progression : courts, ancrés dans\n  le thème, l'intention, l'audience et les ideas du SourceMap.\n- titles[] : 2 à 5 candidats. Ce sont des constructions éditoriales.\n- pick : index du titre de travail retenu.\n- subtitle : optionnel, sans promesse non supportée.\n- angle, reader, strategy : éditoriaux, audience normalisée sans invention.\n- chapters[] : nombre libre mais cohérent. Pas de chapitre vide.\n- sections[] : au moins une par chapitre. Chaque section a i[] non vide\n  (IDEA IDs).\n- x[] / ref[] / u[] / rep[] : IDs canoniques existants seulement.\n- act[] : REORDER | GROUP | SPLIT_TOPIC | CONNECT | DEFER | EXCLUDE.\n- deferred[] / excluded[] : IDEA absentes des sections, motif fermé.\n\nInterdit :\n- paragraphes de livre\n- nouveaux IDEA / EX / REF / UNC / REP\n- structure dérivée de fenêtres techniques\n- chapitres dans des sections, ou niveaux au-delà de SECTION\n- copier les résumés d'idées dans le plan\n\nLe digest d'entrée ne contient pas les tableaux SRC : tu références les\nIDEA ; le programme rattache la traçabilité SRC localement.\n\nSOURCEMAP_DIGEST_JSON\n{\"schema_version\":\"1.0\",\"project\":\"community_garden_workshop_canary_4a1\",\"language\":\"en\",\"source_analysis\":{\"main_theme\":\"A community garden workshop on preparing soil, planting in sequence, watering carefully, and sharing surplus harvest\",\"author_intent\":{\"summary\":\"Teach neighbors a practical method for a shared garden plot\",\"confidence\":\"high\",\"kinds\":[\"enseigner\"]},\"target_audience\":{\"summary\":\"Adult neighbors joining a first-year community garden workshop\",\"confidence\":\"high\",\"kinds\":[]}},\"topics\":[{\"id\":\"TOP001\",\"label\":\"Soil and bed preparation\",\"summary\":\"How the workshop prepares garden soil and maps the site.\"},{\"id\":\"TOP002\",\"label\":\"Planting and watering\",\"summary\":\"How the workshop sequences planting and waters plants.\"},{\"id\":\"TOP003\",\"label\":\"Harvest sharing and volunteer roles\",\"summary\":\"How surplus produce is shared and how volunteers help.\"}],\"ideas\":[{\"id\":\"IDEA001\",\"summary\":\"Test soil pH before planting so beds are not committed to the wrong crop.\",\"kind\":\"instruction\",\"importance\":\"central\",\"topic_refs\":[\"TOP001\"]},{\"id\":\"IDEA002\",\"summary\":\"Add compost in thin layers mixed into the topsoil rather than dumping one pile.\",\"kind\":\"instruction\",\"importance\":\"central\",\"topic_refs\":[\"TOP001\"]},{\"id\":\"IDEA003\",\"summary\":\"Map sun and shade across the plot before choosing which beds get which plants.\",\"kind\":\"instruction\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP001\"]},{\"id\":\"IDEA004\",\"summary\":\"Plant in staggered weeks so harvest arrives continuously instead of all at once.\",\"kind\":\"principle\",\"importance\":\"central\",\"topic_refs\":[\"TOP002\"]},{\"id\":\"IDEA005\",\"summary\":\"Water at the base in the morning to keep leaves dry and reduce disease.\",\"kind\":\"instruction\",\"importance\":\"central\",\"topic_refs\":[\"TOP002\"]},{\"id\":\"IDEA006\",\"summary\":\"Share surplus produce on a simple weekly harvest table that neighbors can take from.\",\"kind\":\"claim\",\"importance\":\"supporting\",\"topic_refs\":[\"TOP003\"]},{\"id\":\"IDEA007\",\"summary\":\"A volunteer sign-in clipboard on the folding table collects emails for the newsletter.\",\"kind\":\"observation\",\"importance\":\"minor\",\"topic_refs\":[\"TOP003\"]}],\"examples\":[{\"id\":\"EX001\",\"kind\":\"anecdote\",\"summary\":\"Last year the east bed stayed wet until June after the group skipped the soil test.\",\"supports_idea_refs\":[\"IDEA001\"]},{\"id\":\"EX002\",\"kind\":\"example\",\"summary\":\"A neighbor's tomatoes developed blight after evening overhead watering.\",\"supports_idea_refs\":[\"IDEA005\"]}],\"references\":[{\"id\":\"REF001\",\"kind\":\"book\",\"raw\":\"the city's community garden handbook, 2024 edition\",\"completeness\":\"partial\"},{\"id\":\"REF002\",\"kind\":\"other\",\"raw\":\"the seed-packet instruction sheet from the co-op\",\"completeness\":\"partial\"}],\"uncertainties\":[{\"id\":\"UNC001\",\"kind\":\"ambiguous_meaning\",\"summary\":\"The speaker was unsure whether the municipal compost drop-off is open on Sundays or only Saturday mornings.\",\"severity\":\"low\"}],\"repetitions\":[],\"counts\":{\"topics\":3,\"ideas\":7,\"examples\":2,\"references\":2,\"uncertainties\":1,\"repetitions\":0}}\n"
+      }
+    ],
+    "system": "Tu es l'Editorial Planner d'un pipeline de livre.\n\nTu reçois uniquement un SourceMap sémantique déjà validé (thème, audience,\ntopics, ideas, examples, references, uncertainties, repetitions).\n\nTa tâche : décider COMMENT organiser ce matériel en livre cohérent.\n\nTu n'es PAS le Source Analyzer. Tu n'ajoutes aucun argument, doctrine, fait,\nexemple, référence, témoignage, opinion ou conclusion absent du SourceMap.\n\nTu n'es PAS le Book Generator. Tu n'écris AUCUN paragraphe de manuscrit.\n\nHiérarchie obligatoire, et seulement celle-ci :\nBOOK -> CHAPTER -> SECTION.\n\nLes fenêtres techniques, chunks, fichiers processed/chunk_*.md et horodatages\nde transcription ne sont PAS des chapitres, PAS des sections, PAS des parties\nde livre. Tu ignores toute frontière technique.\n\nLiberté éditoriale HAUTE : organisation, ordre, regroupement, titres de\ntravail, angle, parcours lecteur, frontières de chapitres et de sections.\n\nLiberté sémantique BASSE : pas d'invention de contenu.\n\nChaque section substantielle référence des IDEA par identifiants canoniques\n(IDEA001, …). Tu peux réordonner les idées. L'ordre chronologique de la\nsource n'est pas obligatoire.\n\nPlusieurs IDEA peuvent partager une section : ce n'est pas une fusion\nsémantique. Conserve toutes les refs.\n\nToute IDEA du SourceMap doit avoir une disposition explicite :\n- présente dans une section (ASSIGNED), ou\n- listed in deferred avec motif, ou\n- listed in excluded avec motif.\n\nL'omission silencieuse est interdite.\n\nLes identifiants que tu fournis (h) sont des poignées temporaires. Le\nprogramme assignera CH001 / SEC001. Ne recopie pas les textes d'idées :\nréférence les IDs.\n\nLes relations d'idées du SourceMap peuvent être absentes ou non\nautoritatives. N'en dépends pas.\n\nLes incertitudes (UNC) restent des incertitudes. Ne les résous pas.\n\nTitres et sous-titres sont des constructions éditoriales, pas des faits\nde source. L'angle améliore la cohérence sans altérer le message.\n\nRéponds uniquement via le schéma JSON demandé.\n",
+    "output_config": {
+      "format": {
+        "type": "json_schema",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "title": "editorial-plan-transport-1.0",
+          "type": "object",
+          "required": [
+            "concept",
+            "titles",
+            "pick",
+            "angle",
+            "reader",
+            "strategy",
+            "chapters",
+            "deferred",
+            "excluded"
+          ],
+          "properties": {
+            "concept": {
+              "type": "object",
+              "properties": {
+                "promise": {
+                  "type": "string"
+                },
+                "subject": {
+                  "type": "string"
+                },
+                "journey": {
+                  "type": "string"
+                },
+                "progression": {
+                  "type": "string",
+                  "description": "Reader progression if supported by content."
+                }
+              },
+              "required": [
+                "promise",
+                "subject",
+                "journey",
+                "progression"
+              ],
+              "additionalProperties": false
+            },
+            "titles": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "t": {
+                    "type": "string",
+                    "description": "Editorial title candidate."
+                  },
+                  "why": {
+                    "type": "string",
+                    "description": "Why this candidate."
+                  }
+                },
+                "required": [
+                  "t"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "pick": {
+              "type": "integer",
+              "description": "Index into titles for the working title."
+            },
+            "subtitle": {
+              "type": "string"
+            },
+            "angle": {
+              "type": "string"
+            },
+            "reader": {
+              "type": "string"
+            },
+            "strategy": {
+              "type": "string"
+            },
+            "chapters": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/chapter"
+              }
+            },
+            "deferred": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Canonical IDEA id."
+                  },
+                  "why": {
+                    "type": "string",
+                    "description": "Closed reason vocabulary."
+                  },
+                  "n": {
+                    "type": "string",
+                    "description": "Short note."
+                  }
+                },
+                "required": [
+                  "id",
+                  "why"
+                ],
+                "additionalProperties": false
+              },
+              "description": "IDEAs deferred. why in ['later_volume', 'insufficient_support', 'requires_uncertainty_resolution']."
+            },
+            "excluded": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Canonical IDEA id."
+                  },
+                  "why": {
+                    "type": "string",
+                    "description": "Closed reason vocabulary."
+                  },
+                  "n": {
+                    "type": "string",
+                    "description": "Short note."
+                  }
+                },
+                "required": [
+                  "id",
+                  "why"
+                ],
+                "additionalProperties": false
+              },
+              "description": "IDEAs excluded. why in ['non_substantive', 'administrative', 'duplicate_at_editorial_level', 'outside_selected_book_scope']."
+            }
+          },
+          "$defs": {
+            "action": {
+              "type": "object",
+              "properties": {
+                "k": {
+                  "type": "string",
+                  "enum": [
+                    "REORDER",
+                    "GROUP",
+                    "SPLIT_TOPIC",
+                    "CONNECT",
+                    "DEFER",
+                    "EXCLUDE"
+                  ],
+                  "description": "Editorial action kind."
+                },
+                "n": {
+                  "type": "string",
+                  "description": "Short organizational note."
+                }
+              },
+              "required": [
+                "k"
+              ],
+              "additionalProperties": false
+            },
+            "section": {
+              "type": "object",
+              "properties": {
+                "h": {
+                  "type": "string",
+                  "description": "Temporary section handle."
+                },
+                "t": {
+                  "type": "string",
+                  "description": "Working title."
+                },
+                "p": {
+                  "type": "string",
+                  "description": "Purpose, not manuscript prose."
+                },
+                "i": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "IDEA ids. At least one after validation."
+                },
+                "x": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "EXAMPLE ids."
+                },
+                "ref": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "REFERENCE ids."
+                },
+                "u": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "UNCERTAINTY ids."
+                },
+                "rep": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "REPETITION ids."
+                },
+                "top": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "TOPIC ids."
+                },
+                "act": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/action"
+                  }
+                }
+              },
+              "required": [
+                "t",
+                "p",
+                "i"
+              ],
+              "additionalProperties": false
+            },
+            "chapter": {
+              "type": "object",
+              "properties": {
+                "h": {
+                  "type": "string",
+                  "description": "Temporary chapter handle."
+                },
+                "t": {
+                  "type": "string",
+                  "description": "Working title."
+                },
+                "p": {
+                  "type": "string",
+                  "description": "Purpose."
+                },
+                "sum": {
+                  "type": "string",
+                  "description": "Short coverage summary."
+                },
+                "top": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "TOPIC ids."
+                },
+                "act": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/action"
+                  }
+                },
+                "sections": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "#/$defs/section"
+                  }
+                }
+              },
+              "required": [
+                "t",
+                "p",
+                "sections"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}

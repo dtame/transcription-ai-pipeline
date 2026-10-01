@@ -1,0 +1,66 @@
+{
+  "policy": "TRANSCRIPTION_DERIVED_PRIMARY_LANGUAGE",
+  "policy_version": "canonical-document-language-policy-1.0",
+  "authoritative_field": "transcript.language.primary",
+  "carried_field": "source_map.language.primary",
+  "chain": [
+    "transcription language.primary",
+    "transcript_data.language.primary",
+    "Source Analyzer copies to SourceMap.language.primary",
+    "Source Analyzer validator requires transcript/source_map match",
+    "planner digest.language + canonical_document_language",
+    "editorial-planner-1.0.1 request"
+  ],
+  "transcription": {
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/transcript_data.json",
+    "present": true,
+    "primary": "en",
+    "detected": [
+      "en"
+    ],
+    "transcript_id": "TR001"
+  },
+  "transcript_clean": {
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+    "present": true,
+    "primary": "en",
+    "detected": [
+      "en"
+    ],
+    "transcript_id": "TR001"
+  },
+  "source_map_primary_language": "en",
+  "source_map_rewritten": false,
+  "resolution": {
+    "policy_version": "canonical-document-language-policy-1.0",
+    "policy": "TRANSCRIPTION_DERIVED_PRIMARY_LANGUAGE",
+    "canonical_document_language": "en",
+    "status": "RESOLVED",
+    "blocked": false,
+    "source": "transcript.language.primary+source_map.language.primary+transcript_data.clean.language.primary",
+    "transcript_primary_language": "en",
+    "source_map_primary_language": "en",
+    "observed_fields": [
+      {
+        "field": "transcript.language.primary",
+        "value": "en"
+      },
+      {
+        "field": "source_map.language.primary",
+        "value": "en"
+      },
+      {
+        "field": "transcript_data.clean.language.primary",
+        "value": "en"
+      }
+    ],
+    "notes": [
+      "Canonical document language is the validated primary language derived from transcription. Source-document generation preserves this language. Translation is a later, explicit stage."
+    ],
+    "translation_during_source_generation": false
+  },
+  "canonical_document_language": "en",
+  "blocked": false,
+  "multilingual_primary_used": true,
+  "translation_not_applied": true
+}

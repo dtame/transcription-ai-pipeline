@@ -1,0 +1,100 @@
+{
+  "smallest": {
+    "chapter_id": "CH016",
+    "title": "Death as Gain",
+    "section_count": 1,
+    "idea_count": 6,
+    "evidence_sha256": "bc15f06b05b1160aed413720f52c104cbb63cf4c98f07ce3fb8e8d2d732a0e93",
+    "request_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+    "request_sha256_repeat": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+    "determinism": true,
+    "content_audit": {
+      "chapter_id_match": true,
+      "all_planned_sections": true,
+      "all_assigned_ideas": true,
+      "canonical_language": true,
+      "voice_present": true,
+      "allowed_handles_present": true,
+      "traceability_src_present": true,
+      "unrelated_chapter_excluded": true,
+      "blocked_listed": true,
+      "whole_transcript_sent": false,
+      "full_source_map_sent": false
+    },
+    "budget": {
+      "provider_adjusted_pessimistic": 6807,
+      "recommended_max_output": 16384,
+      "context_utilization_pessimistic": 0.01,
+      "context_safe": true,
+      "fallback_triggered": false,
+      "generation_unit": "CHAPTER"
+    },
+    "http_sent": false
+  },
+  "median": {
+    "chapter_id": "CH003",
+    "title": "Hebrews 2: Death Already Destroyed",
+    "section_count": 4,
+    "idea_count": 14,
+    "evidence_sha256": "2830d9420311eaf7448654cb857127e4b6de7bfb87b368327b690204c077faed",
+    "request_sha256": "21a48a26cdaa84ad2848467884e007e4b43641d10474429adc2b2a30112b5cd8",
+    "request_sha256_repeat": "21a48a26cdaa84ad2848467884e007e4b43641d10474429adc2b2a30112b5cd8",
+    "determinism": true,
+    "content_audit": {
+      "chapter_id_match": true,
+      "all_planned_sections": true,
+      "all_assigned_ideas": true,
+      "canonical_language": true,
+      "voice_present": true,
+      "allowed_handles_present": true,
+      "traceability_src_present": true,
+      "unrelated_chapter_excluded": true,
+      "blocked_listed": true,
+      "whole_transcript_sent": false,
+      "full_source_map_sent": false
+    },
+    "budget": {
+      "provider_adjusted_pessimistic": 11339,
+      "recommended_max_output": 16384,
+      "context_utilization_pessimistic": 0.0166,
+      "context_safe": true,
+      "fallback_triggered": false,
+      "generation_unit": "CHAPTER"
+    },
+    "http_sent": false
+  },
+  "largest": {
+    "chapter_id": "CH006",
+    "title": "That They May Be One",
+    "section_count": 8,
+    "idea_count": 38,
+    "evidence_sha256": "bc5e012b89d58e2f9ceac5a0960e5a0519e43caacc34659fe97a71fdbcc32da8",
+    "request_sha256": "17cdcc021821b60267699b4ec93ea4bd4e19727c0410626f30c8060e28d27245",
+    "request_sha256_repeat": "17cdcc021821b60267699b4ec93ea4bd4e19727c0410626f30c8060e28d27245",
+    "determinism": true,
+    "content_audit": {
+      "chapter_id_match": true,
+      "all_planned_sections": true,
+      "all_assigned_ideas": true,
+      "canonical_language": true,
+      "voice_present": true,
+      "allowed_handles_present": true,
+      "traceability_src_present": true,
+      "unrelated_chapter_excluded": true,
+      "blocked_listed": true,
+      "whole_transcript_sent": false,
+      "full_source_map_sent": false
+    },
+    "budget": {
+      "provider_adjusted_pessimistic": 25506,
+      "recommended_max_output": 29250,
+      "context_utilization_pessimistic": 0.038,
+      "context_safe": true,
+      "fallback_triggered": false,
+      "generation_unit": "CHAPTER"
+    },
+    "http_sent": false
+  },
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

@@ -1,0 +1,27 @@
+{
+  "primary_root_cause": "PROVIDER_COMPLIANCE_FAILURE",
+  "secondary_contributors": [
+    "PROMPT_COVERAGE_INSTRUCTION_TOO_WEAK",
+    "NO_IMPLICIT_CONTENT_SURVIVAL_IDEA007",
+    "NO_IMPLICIT_CONTENT_SURVIVAL_IDEA008",
+    "ADJACENT_TOP004_PAIR_OMITTED_TOGETHER"
+  ],
+  "rejected": {
+    "REQUEST_INPUT_DEFECT": true,
+    "OUTPUT_BUDGET_FAILURE": true,
+    "TRANSPORT_DESIGN_DEFECT": true,
+    "SCHEMA_DESIGN_DEFECT": true,
+    "VALIDATOR_DEFECT": true
+  },
+  "evidence": {
+    "both_ideas_present_in_a33_request": true,
+    "a33_request_hash_match": true,
+    "output_utilization": "16.48%",
+    "finish": "200 / end_turn",
+    "validator_success": true,
+    "a3_same_transport_286_of_286": true,
+    "prompt_rule_existed_mid_system": true,
+    "prompt_rule_not_restated_near_output": true
+  },
+  "narrative": "IDEA007 and IDEA008 were fully represented, unique, and unclipped in the A.3.3 request. The same transport/schema previously carried a 286/286 French plan. Output used 16.48% of max_tokens and finished end_turn. The validator correctly failed the two empty reconstructed dispositions. The provider returned a structurally valid English plan that silently omitted two adjacent TOP004 handles. Prompt 1.0 already forbids silent omission mid-system, but that instruction is not restated at the output contract and was further displaced by the 1.0.1 language rule. Primary class: provider compliance. Secondary: coverage-instruction salience too weak."
+}

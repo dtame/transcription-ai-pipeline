@@ -1,0 +1,912 @@
+{
+  "status": "PASS",
+  "section_count": 67,
+  "weak_thematic_cohesion": [
+    "SEC015",
+    "SEC028",
+    "SEC029",
+    "SEC042",
+    "SEC066"
+  ],
+  "high_density_coherent": [
+    "SEC033",
+    "SEC061"
+  ],
+  "possible_catch_all": [
+    "SEC028"
+  ],
+  "over_fragmentation": "NO",
+  "redundancy": "NO material editorial duplication beyond SourceMap's 286 distinct IDEAs.",
+  "notes": [
+    "67 sections follow closed topic clusters. One mild leftover grouping (SEC028) is documented.",
+    "SEC015, SEC029, SEC042, and SEC066 each keep one looser idea; the section purpose remains coherent.",
+    "SEC033 (9), SEC048 (8), SEC025 (8), and SEC061 (10) are dense but single-subject.",
+    "French section titles are not treated as structural defects.",
+    "No section is a recording, logistics, or housekeeping dump."
+  ],
+  "sections": [
+    {
+      "section_id": "SEC001",
+      "chapter_id": "CH001",
+      "working_title": "Entendre Dieu plutôt que s'informer sur lui",
+      "purpose": "Poser le problème de la dépendance à l'information externe et la nécessité d'apprendre mieux.",
+      "idea_count": 2,
+      "topic_refs": [
+        "TOP008"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC002",
+      "chapter_id": "CH001",
+      "working_title": "Le corps, la table et la sagesse des anciens",
+      "purpose": "Rassembler l'exercice physique et les habitudes alimentaires culturelles comme cas concrets de tradition à réévaluer.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP001",
+        "TOP002",
+        "TOP003"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC003",
+      "chapter_id": "CH001",
+      "working_title": "Ce qui n'est pas pratiqué n'est pas prouvé",
+      "purpose": "Installer le critère qui gouverne tout le livre : la vérité spirituelle se vérifie à l'usage.",
+      "idea_count": 1,
+      "topic_refs": [
+        "TOP012"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC004",
+      "chapter_id": "CH002",
+      "working_title": "Longévité, chronos et l'arbre de vie",
+      "purpose": "Traiter l'ambition de longue vie, la rupture d'immortalité et sa restauration.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP004"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC005",
+      "chapter_id": "CH002",
+      "working_title": "Adam n'a pas intercédé, Jésus l'a fait",
+      "purpose": "Exposer la chute, la responsabilité de l'homme et l'intercession contrastée du Christ.",
+      "idea_count": 6,
+      "topic_refs": [
+        "TOP006",
+        "TOP007"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC006",
+      "chapter_id": "CH002",
+      "working_title": "Chair et os : une résurrection réelle",
+      "purpose": "Opposer l'inheritance expérimentale à une lecture purement positionnelle.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP005"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC007",
+      "chapter_id": "CH002",
+      "working_title": "Hébreux 2 lu à haute voix",
+      "purpose": "Restituer l'exposition collective du texte et le débat de traduction.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP009"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC008",
+      "chapter_id": "CH002",
+      "working_title": "Le démoniaque selon les contextes",
+      "purpose": "Situer le contraste entre expérience africaine et globale du démoniaque, et la puissance exercée.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP010"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC009",
+      "chapter_id": "CH002",
+      "working_title": "Quel évangile vas-tu prêcher ?",
+      "purpose": "Fermer le chapitre sur la responsabilité du message et la vie éternelle déjà possédée.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP011"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC010",
+      "chapter_id": "CH003",
+      "working_title": "Des conditions que Dieu n'a pas posées",
+      "purpose": "Rassembler la critique des prérequis rituels et l'affirmation de la foi comme fondement.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP008"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC011",
+      "chapter_id": "CH003",
+      "working_title": "La puissance est déjà dedans",
+      "purpose": "Corriger l'image d'un Christ puissant extérieur au croyant.",
+      "idea_count": 2,
+      "topic_refs": [
+        "TOP008"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC012",
+      "chapter_id": "CH003",
+      "working_title": "Charge des pasteurs : un seul message",
+      "purpose": "Relier le mandat de Romains 12 à la cohérence doctrinale.",
+      "idea_count": 2,
+      "topic_refs": [
+        "TOP008"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC013",
+      "chapter_id": "CH004",
+      "working_title": "L'Ancien Testament comme ombre",
+      "purpose": "Poser le cadre herméneutique du chapitre.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP013"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC014",
+      "chapter_id": "CH004",
+      "working_title": "Prêtre, prophète, roi",
+      "purpose": "Définir les trois offices et distinguer sacerdoce commun et ordre établi.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP014",
+        "TOP015"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC015",
+      "chapter_id": "CH004",
+      "working_title": "Reconnaître une autorité plus haute",
+      "purpose": "Melchisédek et la vigilance d'attitude devant ce que Dieu place devant soi.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP016"
+      ],
+      "cohesion": "REVIEW",
+      "note": "Closed purpose, with one looser idea documented in the assignment review. Not a catch-all and not a structural fail.",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC016",
+      "chapter_id": "CH004",
+      "working_title": "L'avertissement de Malachie aux prêtres",
+      "purpose": "Restituer l'exposition de l'alliance de Lévi et de la garde de la connaissance.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP017"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC017",
+      "chapter_id": "CH004",
+      "working_title": "Ne pas mépriser l'appel",
+      "purpose": "Traiter la fausse modestie, l'engagement au travail et la recherche naturelle de ceux qui ont trouvé Dieu.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP018",
+        "TOP019"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC018",
+      "chapter_id": "CH005",
+      "working_title": "Oint mais sans accès",
+      "purpose": "Poser l'écart entre bénédiction donnée et bénédiction accédée.",
+      "idea_count": 2,
+      "topic_refs": [
+        "TOP020"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC019",
+      "chapter_id": "CH005",
+      "working_title": "Le cœur avant l'offrande",
+      "purpose": "Traiter l'attitude qui valide ou annule le sacrifice.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP021"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC020",
+      "chapter_id": "CH005",
+      "working_title": "Adorer ou se donner en spectacle",
+      "purpose": "Opposer expression apprise et liberté spontanée devant Dieu.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP022"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC021",
+      "chapter_id": "CH005",
+      "working_title": "Recevoir simplement la puissance",
+      "purpose": "Critiquer les doctrines de souffrance ajoutées et rappeler la valeur de la pratique.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP023"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC022",
+      "chapter_id": "CH005",
+      "working_title": "Ce que le jeûne fait et ne fait pas",
+      "purpose": "Situer le profit réel du jeûne et refuser sa transformation en doctrine universelle.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP024"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC023",
+      "chapter_id": "CH006",
+      "working_title": "Un comme le Père et le Fils",
+      "purpose": "Exposer la dépendance de Jésus au Père et l'extension de cette union aux croyants.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP025",
+        "TOP026"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC024",
+      "chapter_id": "CH006",
+      "working_title": "Gardés dans le monde, non retirés",
+      "purpose": "Traiter la préservation et la dimension promise où le croyant voit ce que le monde ne voit pas.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP026"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC025",
+      "chapter_id": "CH006",
+      "working_title": "Cesser de prêcher l'attente",
+      "purpose": "Rassembler la critique de l'eschatologie centrée sur l'enlèvement.",
+      "idea_count": 8,
+      "topic_refs": [
+        "TOP027"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC026",
+      "chapter_id": "CH006",
+      "working_title": "La gloire donnée, et la question honnête",
+      "purpose": "Poser la gloire reçue puis la question personnelle sur sa réalité vécue.",
+      "idea_count": 6,
+      "topic_refs": [
+        "TOP029"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC027",
+      "chapter_id": "CH006",
+      "working_title": "Prier depuis l'union, non depuis la formule",
+      "purpose": "Opposer récitation et communion consciente, et rappeler l'Esprit déjà résident.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP028"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC028",
+      "chapter_id": "CH006",
+      "working_title": "Connaître l'Esprit plus que ses dons",
+      "purpose": "Recentrer sur la personne du Saint-Esprit et sur la coopération du vase humain.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP028"
+      ],
+      "cohesion": "REVIEW",
+      "note": "Person-of-the-Spirit teaching plus leftover inclusion ideas (former sinners; holy seed). Mild catch-all, not empty of purpose.",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC029",
+      "chapter_id": "CH006",
+      "working_title": "L'assurance née de la connaissance",
+      "purpose": "Montrer l'effet de la victoire connue sur la hardiesse de la prière et l'onction portée.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP030"
+      ],
+      "cohesion": "REVIEW",
+      "note": "Closed purpose, with one looser idea documented in the assignment review. Not a catch-all and not a structural fail.",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC030",
+      "chapter_id": "CH006",
+      "working_title": "Discerner le niveau des personnes",
+      "purpose": "Équilibrer autorité et sensibilité pastorale selon l'auditoire.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP031"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC031",
+      "chapter_id": "CH007",
+      "working_title": "Un amour sans conditions ajoutées",
+      "purpose": "Exposer le texte et dénoncer les conditions rajoutées par les prédicateurs.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP032"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC032",
+      "chapter_id": "CH007",
+      "working_title": "Des hommes faillibles, puissamment utilisés",
+      "purpose": "Aligner Moïse, Élie, Élisée, Jean-Baptiste, Débora comme preuve que le défaut ne disqualifie pas.",
+      "idea_count": 7,
+      "topic_refs": [
+        "TOP033"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC033",
+      "chapter_id": "CH007",
+      "working_title": "Les lois que l'on s'impose soi-même",
+      "purpose": "Traiter l'imitation des modèles, la comparaison et l'unicité voulue par Dieu.",
+      "idea_count": 9,
+      "topic_refs": [
+        "TOP037"
+      ],
+      "cohesion": "PASS",
+      "note": "High idea count but a single closed topic cluster, not a dump.",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC034",
+      "chapter_id": "CH008",
+      "working_title": "Fixer les affections en haut",
+      "purpose": "Exposer Colossiens 3 comme devoir concret et non abstraction.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP034"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC035",
+      "chapter_id": "CH008",
+      "working_title": "Choisir ses pensées dans l'ordinaire",
+      "purpose": "Appliquer Philippiens 4:8 au quotidien et nommer la pensée comme champ de bataille.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP035"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC036",
+      "chapter_id": "CH008",
+      "working_title": "Complets dans la tête",
+      "purpose": "Traiter la contradiction entre une tête puissante et un corps malade.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP036"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC037",
+      "chapter_id": "CH008",
+      "working_title": "Le coût réel de la doctrine",
+      "purpose": "Rappeler le contexte d'occupation et la contrainte religieuse historique face à la liberté actuelle.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP038",
+        "TOP039"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC038",
+      "chapter_id": "CH009",
+      "working_title": "L'homme en trois",
+      "purpose": "Décrire esprit, âme et corps, la conscience et l'âme comme centre de communication.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP040"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC039",
+      "chapter_id": "CH009",
+      "working_title": "Mourir est un processus",
+      "purpose": "Exposer la corruption après la chute et le passage de l'enfance à la filiation.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP041"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC040",
+      "chapter_id": "CH009",
+      "working_title": "Savoir contre qui l'on combat",
+      "purpose": "Poser la nature du diable et la distinction annoncée mais non développée ici.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP041"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC041",
+      "chapter_id": "CH009",
+      "working_title": "Cœur, âme, pensée",
+      "purpose": "Relier le grand commandement au lieu à développer : l'âme.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP042",
+        "TOP046",
+        "TOP048"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC042",
+      "chapter_id": "CH009",
+      "working_title": "Révélation ou chair et sang",
+      "purpose": "Distinguer connaissance naturelle et révélation, sans mépriser le corps.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP043"
+      ],
+      "cohesion": "REVIEW",
+      "note": "Closed purpose, with one looser idea documented in the assignment review. Not a catch-all and not a structural fail.",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC043",
+      "chapter_id": "CH009",
+      "working_title": "Rester pertinent pour ceux que l'on sert",
+      "purpose": "Traiter l'information du monde, l'économie, les besoins corporels et la prudence du jeûne imposé.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP043"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC044",
+      "chapter_id": "CH009",
+      "working_title": "Abattre les forteresses de raisonnement",
+      "purpose": "Situer le combat au lieu des pensées et de la connaissance opposée à Dieu.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP044"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC045",
+      "chapter_id": "CH010",
+      "working_title": "Les langues pour se rafraîchir",
+      "purpose": "Corriger l'usage épuisant des langues par leur finalité scripturaire.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP045"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC046",
+      "chapter_id": "CH010",
+      "working_title": "« Tu es fatigué »",
+      "purpose": "Restituer la correction personnelle reçue et l'insuffisance de la sincérité seule.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP045"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC047",
+      "chapter_id": "CH010",
+      "working_title": "Renouveler l'intelligence",
+      "purpose": "Exposer le sacrifice vivant obtenu par la pensée engagée, non par la force.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP046"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC048",
+      "chapter_id": "CH010",
+      "working_title": "L'imagination, faculté négligée",
+      "purpose": "Traiter l'imagination comme puissance donnée, ses dérives et son usage dirigé.",
+      "idea_count": 8,
+      "topic_refs": [
+        "TOP047"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC049",
+      "chapter_id": "CH010",
+      "working_title": "Quand la pensée rejoint l'esprit",
+      "purpose": "Montrer la prière consciente où la pensée est présente et l'esprit n'est plus enfermé.",
+      "idea_count": 7,
+      "topic_refs": [
+        "TOP048"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC050",
+      "chapter_id": "CH010",
+      "working_title": "La faim comme seule condition",
+      "purpose": "Poser la soif spirituelle comme disposition constante de Dieu envers tous.",
+      "idea_count": 2,
+      "topic_refs": [
+        "TOP045"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC051",
+      "chapter_id": "CH010",
+      "working_title": "Méditer, dormir, recommencer",
+      "purpose": "Donner la pratique progressive de la méditation, du sommeil orienté et de la charge des autres.",
+      "idea_count": 7,
+      "topic_refs": [
+        "TOP057"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC052",
+      "chapter_id": "CH011",
+      "working_title": "Nous n'avons presque rien touché",
+      "purpose": "Exposer l'écart entre la grâce donnée et la grâce exploitée, Moïse dehors et Dieu dedans.",
+      "idea_count": 6,
+      "topic_refs": [
+        "TOP056"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC053",
+      "chapter_id": "CH011",
+      "working_title": "La guérison est déjà acquise",
+      "purpose": "Traiter la guérison comme accomplie et la lecture progressive du texte.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP058"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC054",
+      "chapter_id": "CH011",
+      "working_title": "L'homme saint ne manque de rien",
+      "purpose": "Poser la pureté intérieure comme condition d'accord entre ciel et terre.",
+      "idea_count": 2,
+      "topic_refs": [
+        "TOP052"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC055",
+      "chapter_id": "CH011",
+      "working_title": "Les dons coulent sans effort",
+      "purpose": "Décrire l'opération spontanée de l'Esprit dans la maturité et la communion.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP053"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC056",
+      "chapter_id": "CH011",
+      "working_title": "Les mains comme portes",
+      "purpose": "Relier les plaies du Christ et les témoignages de mains ouvertes.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP051"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC057",
+      "chapter_id": "CH011",
+      "working_title": "Ce que l'enseignement a changé",
+      "purpose": "Rassembler les témoignages de réorientation de la prière et de l'adoration.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP055"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC058",
+      "chapter_id": "CH011",
+      "working_title": "Le semeur et la croissance d'un seul homme",
+      "purpose": "Relire la parabole comme étapes d'une même vie et devoir du berger.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP059"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC059",
+      "chapter_id": "CH012",
+      "working_title": "Mourir est un gain, pas une idée",
+      "purpose": "Confronter la peur de la mort observée jusque chez les croyants.",
+      "idea_count": 6,
+      "topic_refs": [
+        "TOP054"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC060",
+      "chapter_id": "CH012",
+      "working_title": "Rien par hasard : pratiquer délibérément",
+      "purpose": "Rassembler intentionnalité, correction de la parole, équilibre des avertissements et protection vécue.",
+      "idea_count": 6,
+      "topic_refs": [
+        "TOP060",
+        "TOP061",
+        "TOP063"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC061",
+      "chapter_id": "CH012",
+      "working_title": "Dieu ne fabrique pas de pauvres",
+      "purpose": "Restituer l'examen contradictoire des Proverbes sur pauvreté, choix et responsabilité.",
+      "idea_count": 10,
+      "topic_refs": [
+        "TOP062"
+      ],
+      "cohesion": "PASS",
+      "note": "High idea count but a single closed topic cluster, not a dump.",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC062",
+      "chapter_id": "CH013",
+      "working_title": "Seul l'anormal attire l'attention",
+      "purpose": "Poser le principe de l'acte de foi posé sans garantie de résultat.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP049"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC063",
+      "chapter_id": "CH013",
+      "working_title": "Prier court, prier sûr",
+      "purpose": "Exposer l'instruction sur les prières brèves et l'honnêteté doctrinale du prédicateur.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP050"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC064",
+      "chapter_id": "CH013",
+      "working_title": "La tombe ouverte",
+      "purpose": "Restituer le récit de la jeune fille et les principes d'activation et de parole adressée.",
+      "idea_count": 5,
+      "topic_refs": [
+        "TOP064"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC065",
+      "chapter_id": "CH013",
+      "working_title": "Quand cela n'arrive pas",
+      "purpose": "Assumer l'échec apparent et recentrer sur le rôle du vase disponible.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP064",
+        "TOP065"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC066",
+      "chapter_id": "CH013",
+      "working_title": "De l'assaillant est sorti le doux",
+      "purpose": "Raconter la Bible volée et la conversion du préjudice en semence.",
+      "idea_count": 4,
+      "topic_refs": [
+        "TOP066"
+      ],
+      "cohesion": "REVIEW",
+      "note": "Closed purpose, with one looser idea documented in the assignment review. Not a catch-all and not a structural fail.",
+      "language_does_not_bias_structure": true
+    },
+    {
+      "section_id": "SEC067",
+      "chapter_id": "CH013",
+      "working_title": "Une vision pour la nation",
+      "purpose": "Fermer le livre sur la vision prophétique et l'appel à prier ensemble.",
+      "idea_count": 3,
+      "topic_refs": [
+        "TOP067"
+      ],
+      "cohesion": "PASS",
+      "note": "",
+      "language_does_not_bias_structure": true
+    }
+  ]
+}

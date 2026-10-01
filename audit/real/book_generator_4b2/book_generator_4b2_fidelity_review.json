@@ -1,0 +1,154 @@
+{
+  "status": "FAIL",
+  "source_meaning": "FAIL",
+  "oral_to_written": "PASS",
+  "author_voice": "ACCEPTABLE",
+  "invented_facts": 0,
+  "invented_arguments": 1,
+  "invented_examples": 1,
+  "invented_references": 0,
+  "uncertainty_preservation": "PASS",
+  "repetition_control": "PASS",
+  "questionable_support": 1,
+  "unsupported": 1,
+  "weak_ideas": 0,
+  "missing_ideas": 0,
+  "phase_5_not_invoked": true,
+  "no_retry": true,
+  "no_repair": true,
+  "exhaustive_paragraph_review": true,
+  "paragraphs": [
+    {
+      "path": "SEC063.p1",
+      "handle": "p1",
+      "verdict": "CONNECTIVE_NON_SUBSTANTIVE",
+      "note": "Continuity framing from prior chapters. Allowed minimal book-level bridge. Restates destroyed-death / inheritance without citing CH016 evidence."
+    },
+    {
+      "path": "SEC063.p2",
+      "handle": "p2",
+      "verdict": "SUBSTANTIVE_SUPPORTED",
+      "handles": ["IDEA224"],
+      "note": "Matches SRC006149 'Don't ever be afraid of death.' Stylistic expansion only."
+    },
+    {
+      "path": "SEC063.p3",
+      "handle": "p3",
+      "verdict": "SUBSTANTIVE_SUPPORTED",
+      "handles": ["IDEA224"],
+      "note": "Matches SRC006180/182/183/187: fear not normal; heaven should be joy."
+    },
+    {
+      "path": "SEC063.p4",
+      "handle": "p4",
+      "verdict": "SUBSTANTIVE_SUPPORTED",
+      "handles": ["IDEA224"],
+      "note": "No-set-time claim is in the IDEA224 summary. 'gain, not loss' is mild synthesis with the chapter theme, not a new fact."
+    },
+    {
+      "path": "SEC063.p5",
+      "handle": "p5",
+      "verdict": "SUBSTANTIVE_SUPPORTED",
+      "handles": ["IDEA225"],
+      "note": "Matches SRC006152-157: abuse to your person; devil has not changed his style. Weapon metaphor is stylistic."
+    },
+    {
+      "path": "SEC063.p6",
+      "handle": "p6",
+      "verdict": "CONNECTIVE_NON_SUBSTANTIVE",
+      "note": "Short non-substantive bridge."
+    },
+    {
+      "path": "SEC063.p7",
+      "handle": "p7",
+      "verdict": "SUBSTANTIVE_SUPPORTED",
+      "handles": ["IDEA250"],
+      "note": "Close paraphrase of SRC007115-118, including 'supposed children of God', last-hours question, and church not filled enough."
+    },
+    {
+      "path": "SEC063.p8",
+      "handle": "p8",
+      "verdict": "SUBSTANTIVE_SUPPORTED",
+      "handles": ["IDEA226"],
+      "note": "Core matches SRC006192-195. Invented illustration: 'not a verse quoted at funerals' is absent from evidence."
+    },
+    {
+      "path": "SEC063.p9",
+      "handle": "p9",
+      "verdict": "SUBSTANTIVE_SUPPORTED",
+      "handles": ["IDEA251"],
+      "note": "Philippians 1:21 is REF051 / SRC007129-149. 'To live is Christ' and 'anything he might live' are in SRC007151/152/560. Completing 'to die is gain' follows the cited complete verse reference and chapter theme, not a new verse number."
+    },
+    {
+      "path": "SEC063.p10",
+      "handle": "p9b",
+      "verdict": "UNSUPPORTED",
+      "note": "Empty substantive paragraph. Hard technical FAIL. Not repaired."
+    },
+    {
+      "path": "SEC063.p11",
+      "handle": "p10",
+      "verdict": "SUBSTANTIVE_SUPPORTED",
+      "handles": ["IDEA251"],
+      "note": "Matches SRC007155-162: practice Christ or death is difficult/heavy."
+    },
+    {
+      "path": "SEC063.p12",
+      "handle": "p11",
+      "verdict": "CONNECTIVE_NON_SUBSTANTIVE",
+      "note": "Short demonstration bridge."
+    },
+    {
+      "path": "SEC063.p13",
+      "handle": "p12",
+      "verdict": "SUBSTANTIVE_SUPPORTED",
+      "handles": ["IDEA252"],
+      "note": "Matches SRC007193/197/199/201/204: at least two men; exact hour/date; 'you better come'; 'I'll go to heaven'."
+    },
+    {
+      "path": "SEC063.p14",
+      "handle": "p13",
+      "verdict": "QUESTIONABLE_SUPPORT",
+      "note": "Labeled connective but argues that the difference is doctrine-known vs Christ-practiced. New summarizing argument without handles."
+    }
+  ],
+  "bible": {
+    "new_verse_references": 0,
+    "completed_from_model_memory": "Philippians 1:21 second clause 'to die is gain' completed from a cited complete REF051, not a new reference.",
+    "1_corinthians_15": "Present in evidence (REF050) but unused in manuscript. Not a defect."
+  },
+  "uncertainty": {
+    "canonical_unc_in_ch016": 0,
+    "status": "PASS",
+    "note": "No UNC handles assigned to CH016. Nothing to qualify or drop."
+  },
+  "oral_artifacts": {
+    "session_logistics": 0,
+    "speaker_management": 0,
+    "recording_references": 0,
+    "interpreter_artifacts": 0,
+    "retained_authorial_oral": [
+      "'Of recent' kept from SRC007115 — authorial, not session debris."
+    ]
+  },
+  "synthesis": "Allowed. p4 and p13 synthesize; p13 oversteps connective rules.",
+  "compression": "No assigned IDEA removed.",
+  "expansion": "Stylistic expansion is generally non-substantive except the funeral-verse illustration.",
+  "defect_belongs_to": [
+    "schema (empty string t is legal; Anthropic forbids minLength)",
+    "prompt/transport (model emitted an empty substantive paragraph)",
+    "local validator correctly detected the empty paragraph"
+  ],
+  "not_the_defect": [
+    "hydration",
+    "request identity",
+    "language",
+    "section structure",
+    "IDEA accountability of non-empty paragraphs"
+  ],
+  "notes": [
+    "Non-empty prose is largely source-faithful written-book English.",
+    "Clean PASS is blocked by 1 empty unsupported substantive paragraph, 1 questionable connective argument, and 1 invented funeral illustration.",
+    "Do not regenerate CH016 in this phase."
+  ]
+}

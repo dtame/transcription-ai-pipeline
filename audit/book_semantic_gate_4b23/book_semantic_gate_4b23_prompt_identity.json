@@ -1,0 +1,9 @@
+{
+  "version": "book-semantic-validator-1.0",
+  "system_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+  "instructions_sha256": "4747261db399a1b934221c455502e9b55f54498bab4f31ae29dff9ef6e6e8ccc",
+  "prompt_sha256": "6bc72002b50f77613f71c0241cde133fdc04527c37d6b630bf5794641a443bbf",
+  "role": "evidence-bounded semantic auditor",
+  "no_chain_of_thought": true,
+  "no_manuscript_rewrite": true
+}

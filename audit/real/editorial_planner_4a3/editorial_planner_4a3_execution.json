@@ -1,0 +1,23 @@
+{
+  "result": "PARTIAL",
+  "engine": {
+    "class_name": "CountingAnthropicEngine",
+    "provider": "anthropic",
+    "retry_max_attempts": 1,
+    "is_anthropic": true,
+    "is_fake": false,
+    "generate_attempts": 1,
+    "post_attempts": 1,
+    "connect_timeout_seconds": 30.0,
+    "read_timeout_seconds": 1800.0,
+    "engine_max_output_tokens": 65536
+  },
+  "engine_generate_attempts": 1,
+  "anthropic_post_attempts": 1,
+  "retries": 0,
+  "error": null,
+  "forensic_path": "C:\\TranscriptionAI\\audit\\real\\editorial_planner_4a3\\provider_forensics\\CANARY_EP4A3\\35f9098f1e747932eaef146a8a7f9c4f64e5f845657cd497d47840c84df4175f",
+  "editorial_plan_json": "NOT PUBLISHED",
+  "book_generator": "NOT STARTED",
+  "source_map_unchanged": true
+}

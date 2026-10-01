@@ -1,0 +1,12 @@
+{
+  "transport_version": "book-semantic-validation-transport-1.0",
+  "raw_schema_sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689",
+  "raw_schema_bytes": 3261,
+  "engine_mode": "json_object",
+  "native_json_schema_response_format": false,
+  "openai_engine_compatible": true,
+  "temperature_in_schema": false,
+  "thinking_in_schema": false,
+  "additional_properties_closed": false,
+  "note": "OpenAIEngine currently sends response_format=json_object. This schema is the local contract and prompt identity, not an unverified native json_schema API feature."
+}

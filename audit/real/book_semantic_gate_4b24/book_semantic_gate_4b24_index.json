@@ -1,0 +1,23 @@
+{
+  "phase": "4B.2.4",
+  "book_json": "NOT PUBLISHED",
+  "production_book_absent": true,
+  "written": [
+    "benchmark",
+    "cases",
+    "cost",
+    "human",
+    "leak",
+    "precall",
+    "provider",
+    "readiness",
+    "reasons",
+    "report",
+    "request",
+    "response",
+    "score",
+    "validation"
+  ],
+  "result": "BLOCKED_PRECALL",
+  "actual_terra_calls": 0
+}

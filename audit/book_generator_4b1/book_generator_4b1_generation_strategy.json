@@ -1,0 +1,35 @@
+{
+  "unit": "CHAPTER",
+  "fallback": "one_section_per_call",
+  "order": [
+    "CH001",
+    "CH002",
+    "CH003",
+    "CH004",
+    "CH005",
+    "CH006",
+    "CH007",
+    "CH008",
+    "CH009",
+    "CH010",
+    "CH011",
+    "CH012",
+    "CH013",
+    "CH014",
+    "CH015",
+    "CH016",
+    "CH017",
+    "CH018",
+    "CH019"
+  ],
+  "retry": {
+    "policy": "one_real_call_per_generation_unit",
+    "automatic_retries_during_canary": 0
+  },
+  "continuity": "plan-derived previous chapter title/purpose only",
+  "raw_response_preservation": "required on future real generation",
+  "chapter_candidate_before_book": true,
+  "assembly_calls_ai": false,
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

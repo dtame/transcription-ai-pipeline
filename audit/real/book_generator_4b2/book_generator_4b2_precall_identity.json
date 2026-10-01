@@ -1,0 +1,472 @@
+{
+  "phase": "4B.2",
+  "authorization_scope": "BOOK_GENERATOR_4B2_ONE_REAL_SMALL_CHAPTER_CANARY_ONLY",
+  "blocked_precall": false,
+  "block_reasons": [],
+  "block_reason": null,
+  "project_name": "pastoral_retreat_v2_validation",
+  "target_chapter_id": "CH016",
+  "smallest_recomputed": "CH016",
+  "smallest_is_ch016": true,
+  "chapter_ranking": [
+    {
+      "chapter_id": "CH016",
+      "idea_count": 6,
+      "evidence_chars": 8967
+    },
+    {
+      "chapter_id": "CH019",
+      "idea_count": 7,
+      "evidence_chars": 10976
+    },
+    {
+      "chapter_id": "CH007",
+      "idea_count": 10,
+      "evidence_chars": 16298
+    },
+    {
+      "chapter_id": "CH012",
+      "idea_count": 11,
+      "evidence_chars": 13644
+    },
+    {
+      "chapter_id": "CH018",
+      "idea_count": 11,
+      "evidence_chars": 16057
+    },
+    {
+      "chapter_id": "CH008",
+      "idea_count": 11,
+      "evidence_chars": 17587
+    },
+    {
+      "chapter_id": "CH001",
+      "idea_count": 12,
+      "evidence_chars": 13298
+    },
+    {
+      "chapter_id": "CH011",
+      "idea_count": 12,
+      "evidence_chars": 16558
+    },
+    {
+      "chapter_id": "CH009",
+      "idea_count": 14,
+      "evidence_chars": 17635
+    },
+    {
+      "chapter_id": "CH003",
+      "idea_count": 14,
+      "evidence_chars": 17742
+    },
+    {
+      "chapter_id": "CH002",
+      "idea_count": 15,
+      "evidence_chars": 15019
+    },
+    {
+      "chapter_id": "CH014",
+      "idea_count": 15,
+      "evidence_chars": 17941
+    },
+    {
+      "chapter_id": "CH015",
+      "idea_count": 16,
+      "evidence_chars": 18346
+    },
+    {
+      "chapter_id": "CH010",
+      "idea_count": 16,
+      "evidence_chars": 21740
+    },
+    {
+      "chapter_id": "CH017",
+      "idea_count": 17,
+      "evidence_chars": 19161
+    },
+    {
+      "chapter_id": "CH005",
+      "idea_count": 18,
+      "evidence_chars": 18907
+    },
+    {
+      "chapter_id": "CH004",
+      "idea_count": 19,
+      "evidence_chars": 16437
+    },
+    {
+      "chapter_id": "CH013",
+      "idea_count": 24,
+      "evidence_chars": 21918
+    },
+    {
+      "chapter_id": "CH006",
+      "idea_count": 38,
+      "evidence_chars": 45177
+    }
+  ],
+  "language_policy": "TRANSCRIPTION_DERIVED_PRIMARY_LANGUAGE",
+  "canonical_document_language": "en",
+  "schema": {
+    "transport_version": "book-generation-transport-1.0",
+    "raw_schema_sha256": "075455fdbf18548b3bd2c05b5c7abf35bf43d2c4cecc74f3af6963c540028273",
+    "adapted_schema_sha256": "dce904e8a1a32a700d91cdef5e5d5bc916ce3d6ce10e2b644cdfaa6f68dc6626",
+    "raw_schema_bytes": 1035,
+    "adapted_schema_bytes": 1128,
+    "anthropic_known_incompatibilities": 0,
+    "anthropic_audit": {
+      "external_ref": [],
+      "unsupported_minItems": [],
+      "additionalProperties_not_false": [],
+      "minimum": [],
+      "maximum": [],
+      "multipleOf": [],
+      "minLength": [],
+      "maxLength": [],
+      "maxItems": []
+    },
+    "additional_properties_false_on_adapted": true
+  },
+  "schema_identity": "MATCH",
+  "schema_raw_adapted": "1035 / 1128",
+  "schema_sha256": "075455fdbf18548b3bd2c05b5c7abf35bf43d2c4cecc74f3af6963c540028273",
+  "adapted_schema_sha256": "dce904e8a1a32a700d91cdef5e5d5bc916ce3d6ce10e2b644cdfaa6f68dc6626",
+  "source_map_sha256_pre": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+  "editorial_plan_sha256_pre": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+  "transcript_sha256_pre": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+  "source_map_bytes": 202398,
+  "editorial_plan_bytes": 234637,
+  "transcript_bytes": 1487812,
+  "transcript_chars": 1487196,
+  "source_map_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+  "editorial_plan_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+  "transcript_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+  "transcript": {
+    "transcript_id": "TR001",
+    "content_sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+    "primary_language": "en",
+    "segment_count": 8298,
+    "artifact": "transcripts/clean/transcript_data.json",
+    "mutated": false,
+    "mode": "DERIVED",
+    "post_interpreter_cleanup": true,
+    "preclean_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/transcript_data.json",
+    "preclean_distinct": true
+  },
+  "file_identity_pre": {
+    "source_map": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+      "exists": true,
+      "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "bytes": 202398,
+      "chars": 202365
+    },
+    "editorial_plan": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+      "exists": true,
+      "sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "bytes": 234637,
+      "chars": 234625
+    },
+    "clean_transcript": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+      "exists": true,
+      "sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+      "bytes": 1487812,
+      "chars": 1487196
+    },
+    "preclean_transcript": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/transcript_data.json",
+      "exists": true,
+      "sha256": "ed115cd27e563087fca50698d85c0ecbaf5ec74749381f043b60a65ef2fb4c97",
+      "bytes": 1577433,
+      "chars": 1576725
+    }
+  },
+  "publication_absent": true,
+  "chapter_inventory": {
+    "chapter_id": "CH016",
+    "title": "Death as Gain",
+    "purpose": "Resolve the fear-of-death thread opened in the resurrection chapters.",
+    "summary": "No fear of death, fear as the devil's old strategy, death as gain lived rather than recited, peaceful departures.",
+    "section_ids": [
+      "SEC063"
+    ],
+    "section_titles": [
+      "To Live Is Christ"
+    ],
+    "section_purposes": [
+      "Convert the doctrine of destroyed death into lived attitude."
+    ],
+    "assigned_idea_refs": [
+      "IDEA224",
+      "IDEA225",
+      "IDEA226",
+      "IDEA250",
+      "IDEA251",
+      "IDEA252"
+    ],
+    "approved_reused_refs": [],
+    "sections": [
+      {
+        "id": "SEC063",
+        "title": "To Live Is Christ",
+        "purpose": "Convert the doctrine of destroyed death into lived attitude.",
+        "idea_refs": [
+          "IDEA224",
+          "IDEA225",
+          "IDEA226",
+          "IDEA250",
+          "IDEA251",
+          "IDEA252"
+        ],
+        "example_refs": [],
+        "reference_refs": [
+          "REF050",
+          "REF051",
+          "REF056"
+        ],
+        "uncertainty_refs": [],
+        "source_refs": [
+          "SRC006149",
+          "SRC006180",
+          "SRC006182",
+          "SRC006183",
+          "SRC006187",
+          "SRC006152",
+          "SRC006154",
+          "SRC006155",
+          "SRC006156",
+          "SRC006157",
+          "SRC006192",
+          "SRC006193",
+          "SRC006195",
+          "SRC007115",
+          "SRC007116",
+          "SRC007117",
+          "SRC007118",
+          "SRC007151",
+          "SRC007152",
+          "SRC007155",
+          "SRC007156",
+          "SRC007158",
+          "SRC007161",
+          "SRC007162",
+          "SRC007193",
+          "SRC007197",
+          "SRC007199",
+          "SRC007201",
+          "SRC007204",
+          "SRC006788",
+          "SRC007129",
+          "SRC007132",
+          "SRC007149",
+          "SRC007559",
+          "SRC007560"
+        ]
+      }
+    ]
+  },
+  "expected_chapter_ideas": [
+    "IDEA224",
+    "IDEA225",
+    "IDEA226",
+    "IDEA250",
+    "IDEA251",
+    "IDEA252"
+  ],
+  "expected_chapter_sections": [
+    "SEC063"
+  ],
+  "evidence_sha256": "bc15f06b05b1160aed413720f52c104cbb63cf4c98f07ce3fb8e8d2d732a0e93",
+  "expected_evidence_sha256": "bc15f06b05b1160aed413720f52c104cbb63cf4c98f07ce3fb8e8d2d732a0e93",
+  "hydration": {
+    "hydrated_src_count": 35,
+    "required_src_count": 35,
+    "hydrated_chars": 1177,
+    "estimated_tokens": {
+      "tokens": 303,
+      "method": "heuristic_chars_per_token",
+      "model": "claude-sonnet-5",
+      "estimated": true
+    },
+    "first_src_id": "SRC006149",
+    "last_src_id": "SRC007560",
+    "ordering_valid": true,
+    "unknown_src_count": 0,
+    "missing_src_count": 0,
+    "unknown_src_ids": [],
+    "missing_src_ids": [],
+    "complete": true,
+    "whole_transcript_sent": false
+  },
+  "budget": {
+    "evidence": {
+      "chars": 8967,
+      "utf8_bytes": 8987,
+      "section_count": 1,
+      "idea_count": 6,
+      "example_count": 0,
+      "reference_count": 3,
+      "uncertainty_count": 0,
+      "src_ref_count": 35,
+      "hydrated_segment_count": 35,
+      "idea_summary_chars": 520,
+      "hydrated_src_chars": 1177,
+      "sha256": "bc15f06b05b1160aed413720f52c104cbb63cf4c98f07ce3fb8e8d2d732a0e93"
+    },
+    "request": {
+      "system_chars": 3238,
+      "user_chars": 9944,
+      "payload_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+      "local_token_estimate": {
+        "tokens": 3296,
+        "method": "heuristic_chars_per_token",
+        "model": "claude-sonnet-5",
+        "estimated": true
+      },
+      "provider_adjusted_mid": 5273,
+      "provider_adjusted_pessimistic": 6807
+    },
+    "output": {
+      "expected_output_tokens": 1235,
+      "conservative_output_tokens": 2275,
+      "estimated_mid_words": 760,
+      "estimated_high_words": 1400
+    },
+    "recommended_max_output": 16384,
+    "usable": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "context_window": 1000000,
+      "model_max_output_tokens": 128000,
+      "reserved_output_tokens": 16384,
+      "safety_ratio": 0.7,
+      "capabilities_known": true,
+      "usable_input_tokens": 683616,
+      "formula": "context_window * safety_ratio - reserved_output"
+    },
+    "context_utilization_pessimistic": 0.01,
+    "context_safe": true,
+    "generation_unit": "CHAPTER",
+    "fallback_unit": "one_section_per_call",
+    "fallback_triggered": false
+  },
+  "recommended_max_output": 16384,
+  "expected_max_output": 16384,
+  "request": {
+    "secrets_included": false,
+    "model": "claude-sonnet-5",
+    "max_tokens": 16384,
+    "thinking_present": true,
+    "effort_present": false,
+    "temperature_present": false,
+    "structured_output": "json_schema",
+    "prompt_fingerprint": "1aafff4920c5c9fb9384515cd53b25ea164ac14861fd569907ec2088917df02b",
+    "user_prompt_chars": 9944,
+    "system_prompt_chars": 3238,
+    "payload_chars": 15522,
+    "payload_bytes": 15544,
+    "payload_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+    "local_input_token_estimate": {
+      "tokens": 3296,
+      "method": "heuristic_chars_per_token",
+      "model": "claude-sonnet-5",
+      "estimated": true
+    },
+    "adapted_schema_in_payload": true,
+    "stage": "book_generation",
+    "chapter_id": "CH016",
+    "http_sent": false,
+    "request_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+    "request_sha256_repeat": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+    "determinism": true,
+    "content_audit": {
+      "chapter_id_match": true,
+      "all_planned_sections": true,
+      "all_assigned_ideas": true,
+      "canonical_language": true,
+      "voice_present": true,
+      "allowed_handles_present": true,
+      "traceability_src_present": true,
+      "unrelated_chapter_excluded": true,
+      "blocked_listed": true,
+      "whole_transcript_sent": false,
+      "full_source_map_sent": false
+    },
+    "idea_set_exact": true,
+    "section_set_exact": true,
+    "src_handles_hydrated": true,
+    "expected_chapter_ideas": [
+      "IDEA224",
+      "IDEA225",
+      "IDEA226",
+      "IDEA250",
+      "IDEA251",
+      "IDEA252"
+    ],
+    "expected_chapter_sections": [
+      "SEC063"
+    ],
+    "prompt_version": "book-generator-1.0",
+    "transport_version": "book-generation-transport-1.0",
+    "thinking_mode": "disabled",
+    "thinking_payload": {
+      "type": "disabled"
+    }
+  },
+  "request_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+  "request_determinism": true,
+  "expected_request_sha256": "3e1b3ab243eb17ce07186fe38853c54d903470d81391c7540b757245f92744d8",
+  "request_identity": "MATCH",
+  "content_audit": {
+    "chapter_id_match": true,
+    "all_planned_sections": true,
+    "all_assigned_ideas": true,
+    "canonical_language": true,
+    "voice_present": true,
+    "allowed_handles_present": true,
+    "traceability_src_present": true,
+    "unrelated_chapter_excluded": true,
+    "blocked_listed": true,
+    "whole_transcript_sent": false,
+    "full_source_map_sent": false
+  },
+  "cost_estimate": {
+    "status": "ESTIMATED",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5",
+    "stage": "book_generation_canary",
+    "pricing_verified": true,
+    "pricing_effective_date": "2026-09-18",
+    "input_tokens_pessimistic": 6807,
+    "output_tokens_conservative": 2275,
+    "input_cost_per_1m_tokens": 2.0,
+    "output_cost_per_1m_tokens": 10.0,
+    "input_cost_usd": 0.013614,
+    "output_cost_usd": 0.02275,
+    "total_cost_usd": 0.036364,
+    "total_cost_display": "$0.04",
+    "estimated_production_calls": 1,
+    "unknown_or_incomplete": false,
+    "note": "Single CH016 canary estimate. Not a completed production manuscript cost.",
+    "pass_fail_criterion": false
+  },
+  "model": "anthropic / claude-sonnet-5",
+  "prompt": "book-generator-1.0",
+  "transport": "book-generation-transport-1.0",
+  "thinking": "disabled",
+  "settings": {
+    "settings_version": "book-generator-settings-1.0",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5",
+    "strategy": "one_chapter_per_call",
+    "thinking_mode": "disabled",
+    "effort": null,
+    "max_output_tokens": 16384,
+    "temperature": null
+  },
+  "secrets_included": false,
+  "http_sent": false
+}

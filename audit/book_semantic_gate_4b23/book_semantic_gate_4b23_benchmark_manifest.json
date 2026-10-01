@@ -1,0 +1,34 @@
+{
+  "case_count": 11,
+  "positive_count": 6,
+  "negative_count": 4,
+  "non_substantive_count": 1,
+  "case_ids": [
+    "4b22_p1_connective",
+    "4b22_p2_supported",
+    "4b22_p4_supported",
+    "4b22_p5_supported",
+    "4b22_p6_supported",
+    "4b22_p7_supported",
+    "4b2_p2_supported",
+    "4b22_p3_new_causal",
+    "4b22_p8_reference_completion",
+    "4b2_p8_invented_funeral",
+    "4b2_p13_unsupported_connective"
+  ],
+  "dataset_sha256": "c247aa88c46ee4e563a00b777dd24f9e49bc4475b60b55e1463f7f60be9e10a8",
+  "sources": [
+    "4B.2 candidate",
+    "4B.2.2 candidate"
+  ],
+  "originals_modified": false,
+  "terra_called": false,
+  "p9b_included_as_semantic_pass_fail": false,
+  "four_known_failure_types": [
+    "INVENTED_EXAMPLE",
+    "NEW_ARGUMENT",
+    "NEW_CAUSAL_LINK",
+    "REFERENCE_COMPLETION"
+  ],
+  "human_label_authority": true
+}

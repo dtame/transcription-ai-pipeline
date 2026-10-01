@@ -1,0 +1,286 @@
+"""Constantes 3B.7.7A.37 — second tiny synthetic grammar canary transport 1.1."""
+
+from __future__ import annotations
+
+from app.source_analysis.writer import source_map_path
+from app.source_analysis_v31_global_canary_forensics.constants import (
+    A34_SCHEMA_ADAPTED,
+    A34_SCHEMA_HASH,
+    A34_SCHEMA_RAW,
+    A34_STATUS_PRESERVED,
+    A35_STATUS_PRESERVED,
+    CANONICAL_DROP_TOKEN,
+    NEXT_PROMPT_VERSION,
+    NEXT_SCHEMA_ADAPTED_BYTES,
+    NEXT_SCHEMA_HASH,
+    NEXT_SCHEMA_RAW_BYTES,
+    NEXT_TRANSPORT_VERSION,
+    OLD_PROMPT_VERSION,
+    OLD_TRANSPORT_VERSION,
+    READINESS_DECISION as A36_READINESS_DECISION,
+)
+from app.source_analysis_v31_global_canary_forensics.transport_v11 import (
+    DROP_REASON_CODES,
+    NON_DROP_REASON_CODE,
+    REASON_CODES,
+    REPRESENTATION_OPS,
+    RETIRED_OPS,
+)
+from app.source_analysis_v31_global_grammar_canary.constants import (
+    CANARY_CONNECT_TIMEOUT_SECONDS,
+    CANARY_MAX_OUTPUT_TOKENS,
+    CANARY_READ_TIMEOUT_SECONDS,
+    CANARY_TRANSCRIPT_ID,
+    CANARY_WINDOW_ID,
+    FORBIDDEN_TRANSCRIPT_IDS,
+    FORBIDDEN_WINDOW_IDS,
+    FROZEN_GRANULARITY,
+    FROZEN_PLANNER,
+    FROZEN_PROMPT,
+    FROZEN_SRC_POLICY,
+    FROZEN_TRANSPORT,
+    HANDLE_PREFIX_BY_KIND,
+    MODEL,
+    NODE_KINDS,
+    NORMAL_FINISH_REASONS,
+    PASTORAL_MARKERS,
+    PRODUCTION_ESTIMATED_COST_USD,
+    PRODUCTION_LOCAL_ESTIMATE_TOKENS,
+    PRODUCTION_MAX_OUTPUT_TOKENS,
+    PRODUCTION_NORMALIZED_CHARS,
+    PRODUCTION_OUTPUT_HEADROOM_TOKENS,
+    PRODUCTION_PROVIDER_ADJUSTED_TOKENS,
+    PRODUCTION_SRC_PATTERN,
+    PRODUCTION_WORST_CASE_OUTPUT_TOKENS,
+    PROJECT_NAME,
+    PROVIDER,
+    SYNTHETIC_NAMESPACE,
+    SYNTHETIC_SRC_IDS,
+    SYNTHETIC_WINDOW_IDS,
+    THINKING_CONTRACT,
+    THINKING_MODE,
+)
+from app.source_analysis_v31_global_preflight.constants import (
+    IDEA_DISPOSITION_COVERAGE_REQUIRED,
+    IDEA_KIND_POLICY,
+    RELATION_POLICY_OPTION,
+    RELATION_QUALITY_TECHNICAL_DEBT,
+)
+
+SCHEMA_VERSION = "1.0"
+PHASE = "3B.7.7A.37"
+MODE = "GLOBAL_CONSOLIDATION_V11_TINY_SYNTHETIC_GRAMMAR_CANARY"
+AUTHORIZATION_SCOPE = "GLOBAL_CONSOLIDATION_V11_TINY_SYNTHETIC_GRAMMAR_CANARY_ONLY"
+
+A36_STATUS_PRESERVED = "PASS"
+assert A34_STATUS_PRESERVED == "PASS"
+assert A35_STATUS_PRESERVED == "FAIL"
+assert A36_STATUS_PRESERVED == "PASS"
+assert A36_READINESS_DECISION == "READY_FOR_SECOND_GLOBAL_GRAMMAR_CANARY"
+
+PROMPT_VERSION = NEXT_PROMPT_VERSION
+TRANSPORT_VERSION = NEXT_TRANSPORT_VERSION
+SCHEMA_RAW_BYTES = NEXT_SCHEMA_RAW_BYTES
+SCHEMA_ADAPTED_BYTES = NEXT_SCHEMA_ADAPTED_BYTES
+SCHEMA_HASH = NEXT_SCHEMA_HASH
+
+assert PROMPT_VERSION == "global-consolidation-1.0.1"
+assert TRANSPORT_VERSION == "global-consolidation-transport-1.1"
+assert SCHEMA_RAW_BYTES == 1182
+assert SCHEMA_ADAPTED_BYTES == 1337
+assert SCHEMA_HASH == (
+    "c98e57c3497843abdf294abfb2b691638ed54bdd86e651ab813efca563c6b3e6"
+)
+assert OLD_PROMPT_VERSION == "global-consolidation-1.0"
+assert OLD_TRANSPORT_VERSION == "global-consolidation-transport-1.0"
+assert A34_SCHEMA_RAW == 1040
+assert A34_SCHEMA_ADAPTED == 1195
+assert PROVIDER == "anthropic"
+assert MODEL == "claude-sonnet-5"
+assert THINKING_MODE == "disabled"
+assert CANARY_MAX_OUTPUT_TOKENS == 2048
+assert PRODUCTION_MAX_OUTPUT_TOKENS == 32000
+assert REPRESENTATION_OPS == ("KEEP", "MERGE_EQUIVALENT", "DROP", "OTHER")
+assert REASON_CODES == (
+    "none",
+    "exact_duplicate",
+    "transport_artifact",
+    "non_substantive_fragment",
+)
+assert DROP_REASON_CODES == (
+    "exact_duplicate",
+    "transport_artifact",
+    "non_substantive_fragment",
+)
+assert NON_DROP_REASON_CODE == "none"
+assert RETIRED_OPS == ("LINK_RELATED",)
+assert CANONICAL_DROP_TOKEN == "non_substantive_fragment"
+assert IDEA_KIND_POLICY == "KEEP_EMPTY_GLOBALLY"
+
+MAX_ENGINE_GENERATE = 1
+MAX_ANTHROPIC_POST = 1
+MAX_ATTEMPTS = 1
+AUTO_RETRY = False
+AUTO_FALLBACK = False
+AUTO_CONTINUE = False
+EFFORT = None
+
+CANARY_VERSION = "global-consolidation-tiny-grammar-canary-v11-1.0"
+STAGE_CANARY = "source_analysis_v31_global_v11_grammar_canary"
+CANARY_SUBDIR = "canary/global_consolidation_transport_v11"
+LOCK_NAME = "canary_real_call.lock"
+
+OUTPUT_HEADROOM_PERCENT = round(
+    100.0 * PRODUCTION_OUTPUT_HEADROOM_TOKENS / PRODUCTION_MAX_OUTPUT_TOKENS, 1
+)
+OUTPUT_HEADROOM_LABEL = "MARGINAL"
+assert PRODUCTION_OUTPUT_HEADROOM_TOKENS == 7654
+assert OUTPUT_HEADROOM_PERCENT == 23.9
+assert OUTPUT_HEADROOM_LABEL == "MARGINAL"
+
+FIXTURE_ARTIFACT = "global_consolidation_v11_synthetic_fixture.json"
+REQUEST_ARTIFACT = "global_consolidation_v11_canary_request.json"
+ENUM_ARTIFACT = "global_consolidation_v11_enum_audit.json"
+DISPOSITION_ARTIFACT = "global_consolidation_v11_disposition_audit.json"
+VALIDATOR_ARTIFACT = "global_consolidation_v11_validator_result.json"
+CANONICAL_ARTIFACT = "global_consolidation_v11_canonical_reconstruction.json"
+USAGE_ARTIFACT = "global_consolidation_v11_usage_cost.json"
+READINESS_ARTIFACT = "global_consolidation_real_call_readiness_after_a37.json"
+EXECUTION_ARTIFACT = "global_consolidation_v11_canary_execution.json"
+REPORT_NAME = "PHASE_3B77A37_GLOBAL_CONSOLIDATION_V11_TINY_GRAMMAR_CANARY_REPORT.md"
+BASELINE_ARTIFACT = "source_analysis_a37_test_baseline.json"
+POST_TEST_ARTIFACT = "source_analysis_a37_test_delta.json"
+
+FOCUSED_TEST_PATHS = (
+    "app/tests/test_source_analysis_v31_global_v11_grammar_canary.py",
+    "app/tests/test_source_analysis_v31_global_v11_grammar_canary_audit.py",
+    "app/tests/test_source_analysis_v31_global_canary_forensics.py",
+    "app/tests/test_source_analysis_v31_global_grammar_canary.py",
+)
+
+DRY_RUN_COMMAND = (
+    r".venv\Scripts\python.exe -m app.source_analysis_v31_global_v11_grammar_canary "
+    "pastoral_retreat_v2_validation "
+    "--authorization-scope GLOBAL_CONSOLIDATION_V11_TINY_SYNTHETIC_GRAMMAR_CANARY_ONLY "
+    "--dry-run"
+)
+REAL_COMMAND = (
+    r".venv\Scripts\python.exe -m app.source_analysis_v31_global_v11_grammar_canary "
+    "pastoral_retreat_v2_validation "
+    "--authorization-scope GLOBAL_CONSOLIDATION_V11_TINY_SYNTHETIC_GRAMMAR_CANARY_ONLY "
+    "--execute-real"
+)
+
+PHASE_3B_STATUS = "INCOMPLETE"
+SOURCE_MAP_STATUS = "NOT PUBLISHED"
+NEXT_ACTION = "HUMAN REVIEW"
+LOCAL_EXTRACTION_FUNCTIONALLY_FROZEN = "YES"
+READY_FOR_REAL_GLOBAL_CONSOLIDATION_CANARY = "NO"
+CONSOLIDATION_AUTHORIZED = False
+SOURCE_MAP_PUBLICATION_AUTHORIZED = False
+
+assert not source_map_path(PROJECT_NAME).is_file() or SOURCE_MAP_STATUS == "NOT PUBLISHED"
+assert RELATION_QUALITY_TECHNICAL_DEBT == "YES"
+assert FROZEN_PLANNER == "window-planner-v2.1-small"
+assert FROZEN_PROMPT == "window-analysis-1.4.0"
+assert FROZEN_TRANSPORT == "semantic-transport-v3.1-local-lite"
+assert FROZEN_GRANULARITY == "window-granularity-1.2-kind-specific"
+assert FROZEN_SRC_POLICY == "src-reference-policy-1.1-narrow-canonicalization"
+
+__all__ = [
+    "A34_SCHEMA_ADAPTED",
+    "A34_SCHEMA_HASH",
+    "A34_SCHEMA_RAW",
+    "A34_STATUS_PRESERVED",
+    "A35_STATUS_PRESERVED",
+    "A36_READINESS_DECISION",
+    "A36_STATUS_PRESERVED",
+    "AUTHORIZATION_SCOPE",
+    "AUTO_CONTINUE",
+    "AUTO_FALLBACK",
+    "AUTO_RETRY",
+    "BASELINE_ARTIFACT",
+    "CANARY_CONNECT_TIMEOUT_SECONDS",
+    "CANARY_MAX_OUTPUT_TOKENS",
+    "CANARY_READ_TIMEOUT_SECONDS",
+    "CANARY_SUBDIR",
+    "CANARY_TRANSCRIPT_ID",
+    "CANARY_VERSION",
+    "CANARY_WINDOW_ID",
+    "CANONICAL_ARTIFACT",
+    "CANONICAL_DROP_TOKEN",
+    "CONSOLIDATION_AUTHORIZED",
+    "DISPOSITION_ARTIFACT",
+    "DROP_REASON_CODES",
+    "DRY_RUN_COMMAND",
+    "EFFORT",
+    "ENUM_ARTIFACT",
+    "EXECUTION_ARTIFACT",
+    "FIXTURE_ARTIFACT",
+    "FOCUSED_TEST_PATHS",
+    "FORBIDDEN_TRANSCRIPT_IDS",
+    "FORBIDDEN_WINDOW_IDS",
+    "FROZEN_GRANULARITY",
+    "FROZEN_PLANNER",
+    "FROZEN_PROMPT",
+    "FROZEN_SRC_POLICY",
+    "FROZEN_TRANSPORT",
+    "HANDLE_PREFIX_BY_KIND",
+    "IDEA_DISPOSITION_COVERAGE_REQUIRED",
+    "IDEA_KIND_POLICY",
+    "LOCAL_EXTRACTION_FUNCTIONALLY_FROZEN",
+    "LOCK_NAME",
+    "MAX_ANTHROPIC_POST",
+    "MAX_ATTEMPTS",
+    "MAX_ENGINE_GENERATE",
+    "MODE",
+    "MODEL",
+    "NEXT_ACTION",
+    "NODE_KINDS",
+    "NON_DROP_REASON_CODE",
+    "NORMAL_FINISH_REASONS",
+    "OLD_PROMPT_VERSION",
+    "OLD_TRANSPORT_VERSION",
+    "OUTPUT_HEADROOM_LABEL",
+    "OUTPUT_HEADROOM_PERCENT",
+    "PASTORAL_MARKERS",
+    "PHASE",
+    "PHASE_3B_STATUS",
+    "POST_TEST_ARTIFACT",
+    "PRODUCTION_ESTIMATED_COST_USD",
+    "PRODUCTION_LOCAL_ESTIMATE_TOKENS",
+    "PRODUCTION_MAX_OUTPUT_TOKENS",
+    "PRODUCTION_NORMALIZED_CHARS",
+    "PRODUCTION_OUTPUT_HEADROOM_TOKENS",
+    "PRODUCTION_PROVIDER_ADJUSTED_TOKENS",
+    "PRODUCTION_SRC_PATTERN",
+    "PRODUCTION_WORST_CASE_OUTPUT_TOKENS",
+    "PROJECT_NAME",
+    "PROMPT_VERSION",
+    "PROVIDER",
+    "READINESS_ARTIFACT",
+    "READY_FOR_REAL_GLOBAL_CONSOLIDATION_CANARY",
+    "REAL_COMMAND",
+    "REASON_CODES",
+    "RELATION_POLICY_OPTION",
+    "RELATION_QUALITY_TECHNICAL_DEBT",
+    "REPORT_NAME",
+    "REPRESENTATION_OPS",
+    "REQUEST_ARTIFACT",
+    "RETIRED_OPS",
+    "SCHEMA_ADAPTED_BYTES",
+    "SCHEMA_HASH",
+    "SCHEMA_RAW_BYTES",
+    "SCHEMA_VERSION",
+    "SOURCE_MAP_PUBLICATION_AUTHORIZED",
+    "SOURCE_MAP_STATUS",
+    "STAGE_CANARY",
+    "SYNTHETIC_NAMESPACE",
+    "SYNTHETIC_SRC_IDS",
+    "SYNTHETIC_WINDOW_IDS",
+    "THINKING_CONTRACT",
+    "THINKING_MODE",
+    "TRANSPORT_VERSION",
+    "USAGE_ARTIFACT",
+    "VALIDATOR_ARTIFACT",
+]

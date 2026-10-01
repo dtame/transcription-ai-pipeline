@@ -1,0 +1,11 @@
+{
+  "decision": "SOURCE_MAP_PLUS_TARGETED_TRANSCRIPT_HYDRATION",
+  "rationale": "SourceMap summaries are planning compressions. Targeted SRC hydration restores author wording, examples, and rhetorical texture when the chapter context budget remains safe.",
+  "source_map_summary_chars": 38260,
+  "hydrated_src_chars": 46679,
+  "src_text_richer_than_summaries": true,
+  "all_hydrated_requests_context_safe": true,
+  "full_source_map_per_chapter": false,
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

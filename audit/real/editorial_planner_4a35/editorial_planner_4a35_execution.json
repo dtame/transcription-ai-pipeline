@@ -1,0 +1,37 @@
+{
+  "result": "PASS",
+  "engine": {
+    "class_name": "CountingAnthropicEngine",
+    "provider": "anthropic",
+    "retry_max_attempts": 1,
+    "is_anthropic": true,
+    "is_fake": false,
+    "generate_attempts": 1,
+    "post_attempts": 1,
+    "connect_timeout_seconds": 30.0,
+    "read_timeout_seconds": 1800.0,
+    "engine_max_output_tokens": 65536
+  },
+  "engine_generate_attempts": 1,
+  "anthropic_post_attempts": 1,
+  "retries": 0,
+  "fallbacks": 0,
+  "error": null,
+  "forensic_path": "C:\\TranscriptionAI\\audit\\real\\editorial_planner_4a35\\provider_forensics\\CANARY_EP4A35\\df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+  "editorial_plan_json": "NOT PUBLISHED",
+  "book_generator": "NOT STARTED",
+  "source_map_unchanged": true,
+  "historical_a3_candidate_untouched": true,
+  "historical_a33_candidate_untouched": true,
+  "tests": "80 passed / 0 failed",
+  "new_failures": 0,
+  "test_suites": [
+    "test_editorial_planner_canary_4a35.py",
+    "test_editorial_planner_forensics_4a34.py",
+    "test_editorial_planner_canary_4a33.py",
+    "test_editorial_planning_document_language.py",
+    "test_editorial_planning.py",
+    "test_editorial_planning_language_policy.py",
+    "test_editorial_planning_phase4a_audit.py"
+  ]
+}

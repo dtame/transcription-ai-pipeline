@@ -1,0 +1,65 @@
+{
+  "reviewer": "human_exhaustive",
+  "expected": [
+    "IDEA224",
+    "IDEA225",
+    "IDEA226",
+    "IDEA250",
+    "IDEA251",
+    "IDEA252"
+  ],
+  "CLEARLY_REPRESENTED": 6,
+  "WEAKLY_REPRESENTED": 0,
+  "MISSING": 0,
+  "coverage_complete": true,
+  "ideas": [
+    {
+      "idea_id": "IDEA224",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 1,
+      "handles": ["p2"],
+      "summary": "Believers should not fear death since there is no set time and going to heaven should bring joy, not fear.",
+      "note": "p2 states no fear, no fixed hour, heaven should be joy."
+    },
+    {
+      "idea_id": "IDEA225",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 1,
+      "handles": ["p3"],
+      "summary": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+      "note": "p3 states abuse to the person and the devil's unchanged old strategy. Residual QUESTIONABLE causal clause does not omit the IDEA."
+    },
+    {
+      "idea_id": "IDEA226",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 1,
+      "handles": ["p4"],
+      "summary": "Death as gain must become one's lived reality, not merely an intellectual idea.",
+      "note": "p4: not mind over matter; must be your reality, not a sermon idea."
+    },
+    {
+      "idea_id": "IDEA250",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 1,
+      "handles": ["p5"],
+      "summary": "Fear of death observed even among believers reveals it is not yet fully embraced as gain.",
+      "note": "Automated first-pass marked WEAKLY_REPRESENTED on lexical overlap 0.0392. Human reading: p5 is a near-direct written form of SRC007115-118. Override to CLEARLY_REPRESENTED."
+    },
+    {
+      "idea_id": "IDEA251",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 1,
+      "handles": ["p6"],
+      "summary": "If a believer does not practice Christ as life, facing death becomes heavy and difficult.",
+      "note": "p6: practice Christ / death difficult / death heavy."
+    },
+    {
+      "idea_id": "IDEA252",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 1,
+      "handles": ["p7"],
+      "summary": "Some believers foreknow the exact hour of their death and depart peacefully.",
+      "note": "p7: two men, exact hour and date, I'll go to heaven."
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "status": "PASS",
+  "primary_question": "PASS",
+  "primary_question_text": "Does this plan provide a faithful and coherent organization of the validated SourceMap into a potential book WITHOUT inventing the book's substantive content?",
+  "coverage": "PASS",
+  "coverage_note": "286/286 technical coverage does not by itself prove good editorial organization. Chapters=19; assigned=286; deferred=0; excluded=0.",
+  "order": "PASS",
+  "boundaries": "PASS",
+  "repetition": "PASS",
+  "exclusions": "PASS",
+  "deferred": "PASS",
+  "uncertainty": "PASS",
+  "author_intent": "PASS",
+  "audience": "PASS",
+  "voice": "PASS",
+  "title_review": [
+    {
+      "title": "Flesh and Bone",
+      "rationale": "Anchors the central corrective about physical resurrection and real inheritance.",
+      "source_support": "REVIEW",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "REVIEW"
+    },
+    {
+      "title": "Already Yours",
+      "rationale": "Captures the recurring claim that life, love, power and grace are already given.",
+      "source_support": "PASS",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "PASS"
+    },
+    {
+      "title": "The Life You Already Inherited",
+      "rationale": "Explicit, pastoral, matches teaching audience.",
+      "source_support": "PASS",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "PASS"
+    },
+    {
+      "title": "One With the Father",
+      "rationale": "Foregrounds the John 17 spine of the corpus.",
+      "source_support": "REVIEW",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "REVIEW"
+    }
+  ],
+  "selected_title": "The Life You Already Inherited",
+  "subtitle": "Resurrection life, union with God, and the practice of spiritual authority",
+  "editorial_angle": "Treat the corpus as a sustained correction: against legalism, rapture-fixation, performance ministry and fear of death, replaced by inheritance already granted and practiced.",
+  "target_reader": "Local congregations, retreat attendees, pastors and ministers receiving in-person Bible teaching and testimony.",
+  "book_concept": {
+    "purpose": "A teaching book that shows believers what they already inherited in Christ — resurrection life, union with the Father, unconditional love and usable spiritual authority — and how to practice it daily.",
+    "core_subject": "A multi-session teaching corpus expounding Hebrews 2, John 17, Colossians 3, Malachi and related texts, joined to personal testimony of healing, resurrection and providence.",
+    "reader_journey": "From inherited habit, tradition and fear of death, through scriptural exposition of destroyed death and granted union, into a disciplined practice of mind, prayer and ministry, ending in testimony and prophetic vision.",
+    "editorial_progression": "Diagnosis of inherited religion → doctrinal foundation (resurrection life, offices, union) → interior anatomy and mental discipline → practice and testimony → corporate vision."
+  },
+  "source_theme": "A multi-session teaching corpus on the believer's inherited identity in Christ, spanning sacred office, resurrection life, spiritual authority, mind/soul/spirit anatomy, and testimonies of healing, resurrection, and providence, all urging lived practice over ritual, tradition, or fear",
+  "source_author_intent": "To exposit scripture (Hebrews 2, John 17, Colossians 3, Malachi, etc.) teaching believers they already possess resurrection life, unconditional love, and spiritual authority, correcting legalism, rapture-fixation, and performance-based ministry, while grounding claims in personal testimony",
+  "source_audience": "Local congregations, retreat attendees, ministers and pastors receiving in-person Bible teaching and testimony",
+  "source_voice": {
+    "tone": [],
+    "register": "",
+    "sentence_style": ""
+  },
+  "excluded_ideas": [],
+  "deferred_ideas": [],
+  "assigned_uncertainty_refs": [
+    "UNC001",
+    "UNC003",
+    "UNC004",
+    "UNC005",
+    "UNC006",
+    "UNC007",
+    "UNC009",
+    "UNC010",
+    "UNC011",
+    "UNC012",
+    "UNC016",
+    "UNC017",
+    "UNC018",
+    "UNC022",
+    "UNC023",
+    "UNC024",
+    "UNC025",
+    "UNC029",
+    "UNC030"
+  ],
+  "unassigned_uncertainty_refs": [
+    "UNC002",
+    "UNC008",
+    "UNC013",
+    "UNC014",
+    "UNC015",
+    "UNC019",
+    "UNC020",
+    "UNC021",
+    "UNC026",
+    "UNC027",
+    "UNC028",
+    "UNC031",
+    "UNC032",
+    "UNC033",
+    "UNC034",
+    "UNC035"
+  ],
+  "issues": [],
+  "review_flags": [],
+  "notes": [
+    "286/286 technical coverage does not by itself prove good editorial organization. Chapters=19; assigned=286; deferred=0; excluded=0.",
+    "Provider-generated editorial prose matches canonical document language.",
+    "Historical working title « Déjà héritiers » is not required. Reproduced=False.",
+    "Exact accountability equation holds: every input IDEA has exactly one primary disposition.",
+    "Historical titles are not required. Already Given reproduced=False. Déjà héritiers reproduced=False."
+  ],
+  "invention_boundary": "PASS",
+  "traceability": "PASS",
+  "manuscript_leakage": "PASS",
+  "language": "PASS",
+  "language_hard_publication_criterion": true,
+  "final_title_approved": false,
+  "historical_french_title_required": false,
+  "historical_french_title_reproduced": false,
+  "historical_questionable_fit": [
+    {
+      "idea_id": "IDEA054",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC016",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH004",
+          "section_id": "SEC016",
+          "working_title": "Malachi's Warning to the Priests"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA100",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC030",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH006",
+          "section_id": "SEC030",
+          "working_title": "Knowing Where People Are"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA112",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC028",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH006",
+          "section_id": "SEC028",
+          "working_title": "Knowing the Spirit, Not Only the Gifts"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA113",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC028",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH006",
+          "section_id": "SEC028",
+          "working_title": "Knowing the Spirit, Not Only the Gifts"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA168",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC043",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH011",
+          "section_id": "SEC043",
+          "working_title": "The Simplicity That Is in Christ"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA283",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC072",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH019",
+          "section_id": "SEC072",
+          "working_title": "Angels Over the Nation"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA286",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC072",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH019",
+          "section_id": "SEC072",
+          "working_title": "Angels Over the Nation"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    }
+  ],
+  "historical_sec028": {
+    "section_id": "SEC028",
+    "working_title": "Knowing the Spirit, Not Only the Gifts",
+    "idea_count": 5,
+    "review_evidence_only": true,
+    "structure_not_forced": true
+  },
+  "assignment_reviewed_independently": true,
+  "historical_286_assigned_not_assumed": true,
+  "title_status": "SUPPORTED_WORKING_TITLE",
+  "working_title": "The Life You Already Inherited",
+  "book_concept_review": "PASS",
+  "chapter_architecture": "PASS",
+  "section_architecture": "PASS",
+  "accountability_status": "PASS"
+}

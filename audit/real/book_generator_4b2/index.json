@@ -1,0 +1,27 @@
+{
+  "phase": "4B.2",
+  "book_json": "NOT PUBLISHED",
+  "production_path_absent": true,
+  "written": [
+    "candidate",
+    "cost",
+    "coverage",
+    "evidence",
+    "execution",
+    "fidelity",
+    "hydration",
+    "language",
+    "precall",
+    "provenance",
+    "provider",
+    "quality",
+    "raw_response",
+    "raw_text",
+    "readiness",
+    "report",
+    "request",
+    "response",
+    "structural"
+  ],
+  "result": "FAIL"
+}

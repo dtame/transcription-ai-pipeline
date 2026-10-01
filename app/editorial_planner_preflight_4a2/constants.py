@@ -1,0 +1,204 @@
+"""
+Phase 4A.2 — exact production preflight. Offline only.
+
+Does not mutate Phase 4A / 4A.1 frozen prompt, schema, or transport.
+Does not send a provider request. Does not publish editorial_plan.json.
+"""
+
+from __future__ import annotations
+
+from app.editorial_planning.constants import (
+    EDITORIAL_PLAN_TRANSPORT_VERSION,
+    EDITORIAL_PLANNER_PROMPT_VERSION,
+    EXPECTED_EXAMPLE_COUNT,
+    EXPECTED_IDEA_COUNT,
+    EXPECTED_REFERENCE_COUNT,
+    EXPECTED_SOURCE_MAP_BYTES,
+    EXPECTED_SOURCE_MAP_SHA256,
+    EXPECTED_TOPIC_COUNT,
+    EXPECTED_UNCERTAINTY_COUNT,
+    HARD_MAX_OUTPUT_TOKENS,
+    MODEL,
+    PROPOSED_MAX_OUTPUT_TOKENS,
+    PROVIDER,
+    VALIDATION_PROJECT_NAME,
+)
+from app.editorial_planner_canary_4a1.constants import (
+    PHASE_4A_ADAPTED_SCHEMA_BYTES,
+    PHASE_4A_ADAPTED_SCHEMA_SHA256,
+    PHASE_4A_CONSERVATIVE_OUTPUT_TOKENS,
+    PHASE_4A_EXPECTED_OUTPUT_TOKENS,
+    PHASE_4A_HARD_OUTPUT_TOKENS,
+    PHASE_4A_INSTRUCTIONS_SHA256,
+    PHASE_4A_PROMPT_SHA256,
+    PHASE_4A_RAW_SCHEMA_BYTES,
+    PHASE_4A_RAW_SCHEMA_SHA256,
+    PHASE_4A_SYSTEM_SHA256,
+)
+
+PHASE = "4A.2"
+PHASE_NAME = "EDITORIAL_PLANNER_EXACT_PRODUCTION_PREFLIGHT"
+PREFLIGHT_VERSION = "editorial-planner-preflight-4a2-1.0"
+
+AUTHORIZATION_SCOPE = "EDITORIAL_PLANNER_4A2_OFFLINE_PRODUCTION_PREFLIGHT_ONLY"
+
+PROVIDER = PROVIDER
+MODEL = MODEL
+assert PROVIDER == "anthropic"
+assert MODEL == "claude-opus-5"
+
+PROMPT_VERSION = EDITORIAL_PLANNER_PROMPT_VERSION
+TRANSPORT_VERSION = EDITORIAL_PLAN_TRANSPORT_VERSION
+assert PROMPT_VERSION == "editorial-planner-1.0"
+assert TRANSPORT_VERSION == "editorial-plan-transport-1.0"
+
+PROJECT_NAME = VALIDATION_PROJECT_NAME
+assert PROJECT_NAME == "pastoral_retreat_v2_validation"
+
+EXPECTED_SOURCE_MAP_SHA256 = EXPECTED_SOURCE_MAP_SHA256
+EXPECTED_SOURCE_MAP_BYTES = EXPECTED_SOURCE_MAP_BYTES
+EXPECTED_SOURCE_MAP_CHARS = 202365
+EXPECTED_TOPIC_COUNT = EXPECTED_TOPIC_COUNT
+EXPECTED_IDEA_COUNT = EXPECTED_IDEA_COUNT
+EXPECTED_EXAMPLE_COUNT = EXPECTED_EXAMPLE_COUNT
+EXPECTED_REFERENCE_COUNT = EXPECTED_REFERENCE_COUNT
+EXPECTED_UNCERTAINTY_COUNT = EXPECTED_UNCERTAINTY_COUNT
+assert EXPECTED_SOURCE_MAP_SHA256 == (
+    "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855"
+)
+assert EXPECTED_SOURCE_MAP_BYTES == 202398
+assert EXPECTED_TOPIC_COUNT == 67
+assert EXPECTED_IDEA_COUNT == 286
+assert EXPECTED_EXAMPLE_COUNT == 49
+assert EXPECTED_REFERENCE_COUNT == 59
+assert EXPECTED_UNCERTAINTY_COUNT == 35
+
+PHASE_4A_STATUS = "PASS"
+PHASE_4A1_STATUS = "PASS"
+PHASE_3B_STATUS = "COMPLETE / FROZEN"
+
+PHASE_4A_LOCAL_INPUT_ESTIMATE = 25313
+PHASE_4A_PROVIDER_ADJUSTED_PESSIMISTIC = 52283
+PHASE_4A_EXPECTED_OUTPUT_TOKENS = PHASE_4A_EXPECTED_OUTPUT_TOKENS
+PHASE_4A_CONSERVATIVE_OUTPUT_TOKENS = PHASE_4A_CONSERVATIVE_OUTPUT_TOKENS
+PHASE_4A_HARD_OUTPUT_TOKENS = PHASE_4A_HARD_OUTPUT_TOKENS
+assert PHASE_4A_EXPECTED_OUTPUT_TOKENS == 4192
+assert PHASE_4A_CONSERVATIVE_OUTPUT_TOKENS == 10822
+assert PHASE_4A_HARD_OUTPUT_TOKENS == 21644
+
+OLD_PROPOSED_MAX_OUTPUT = PROPOSED_MAX_OUTPUT_TOKENS
+assert OLD_PROPOSED_MAX_OUTPUT == 16384
+PLANNER_HARD_MAX_OUTPUT = HARD_MAX_OUTPUT_TOKENS
+assert PLANNER_HARD_MAX_OUTPUT == 32000
+MODEL_OUTPUT_CEILING = 128000
+
+# 16384 / 24576 / 32768 requested. 32000 is the frozen planner operational
+# cap. 48000 is the repository-supported Source Analyzer production cap.
+# 65536 is the next aligned step under the Opus 128000 ceiling, used only
+# if 48000 misses the documented 70% utilization target.
+MAX_OUTPUT_CANDIDATES = (16384, 24576, 32000, 32768, 48000, 65536)
+
+# Phase 3B / AI_CONTEXT_SAFETY_RATIO. Documented, not invented.
+OUTPUT_UTILIZATION_TARGET = 0.70
+UTILIZATION_TARGET_SOURCE = (
+    "Phase 3B context/output safety practice and app.config.AI_CONTEXT_SAFETY_RATIO=0.70"
+)
+
+# Frozen schema / prompt identity — must match Phase 4A.1 live recomputation.
+RAW_SCHEMA_SHA256 = PHASE_4A_RAW_SCHEMA_SHA256
+ADAPTED_SCHEMA_SHA256 = PHASE_4A_ADAPTED_SCHEMA_SHA256
+RAW_SCHEMA_BYTES = PHASE_4A_RAW_SCHEMA_BYTES
+ADAPTED_SCHEMA_BYTES = PHASE_4A_ADAPTED_SCHEMA_BYTES
+SYSTEM_SHA256 = PHASE_4A_SYSTEM_SHA256
+INSTRUCTIONS_SHA256 = PHASE_4A_INSTRUCTIONS_SHA256
+PROMPT_SHA256 = PHASE_4A_PROMPT_SHA256
+assert RAW_SCHEMA_BYTES == 3661
+assert ADAPTED_SCHEMA_BYTES == 3909
+assert ADAPTED_SCHEMA_SHA256 == (
+    "1cebcf97ed7fa5cfa4b4758d1eb1451b6770347e9508772e8287228a768ba77e"
+)
+
+# A.1 historical facts — preserved, not re-run.
+A1_PROVIDER = "Anthropic"
+A1_MODEL = "claude-opus-5"
+A1_REQUEST_ID = "req_011CfYKsDYnSjXnFggrn6Z2D"
+A1_INPUT_TOKENS = 4826
+A1_OUTPUT_TOKENS = 2058
+A1_THINKING_TOKENS = 158
+A1_COST_USD = "0.0755800"
+A1_ELAPSED_MS = 89922
+A1_FINISH = "end_turn"
+A1_MAX_OUTPUT = 4096
+A1_TEXT_CHARS = 4865
+A1_PAYLOAD_CHARS = 10340
+OPUS5_PROVIDER_DEFAULT_THINKING_OBSERVED = "YES"
+
+THINKING_MODE = "provider_default"
+EFFORT = None
+BUDGET_TOKENS = None
+
+# Conservative thinking headroom. Not a linear scale of 158 * 286/7.
+THINKING_HEADROOM_TOKENS = 2048
+THINKING_HEADROOM_RATIONALE = (
+    "A.1 observed 158 thinking tokens on a 7-IDEA synthetic fixture under "
+    "provider_default. Production thinking is not assumed to equal that ratio. "
+    "Opus 5 thinking capabilities are unverified in this repository "
+    "(known=False; do not copy Sonnet 5). Headroom is a conservative additive "
+    "buffer (~13x A.1 observed), not a prediction."
+)
+
+REAL_PROVIDER_CALLS_THIS_PHASE = 0
+MAX_ENGINE_GENERATE = 0
+MAX_ANTHROPIC_POST = 0
+FUTURE_REAL_CALL_COUNT = 1
+FUTURE_RETRIES = 0
+
+RECOMMENDED_CONNECT_TIMEOUT_SECONDS = 30.0
+# A.1 elapsed 89.922s for 2058 output tokens. Production output/input are
+# larger and Opus may think. 1800s matches Phase 3B window read budget.
+RECOMMENDED_READ_TIMEOUT_SECONDS = 1800.0
+
+PUBLICATION_AUTHORIZED = False
+BOOK_GENERATOR = "NOT STARTED"
+NEXT_ACTION = "HUMAN REVIEW"
+
+AUDIT_DIRNAME = "editorial_planner_preflight_4a2"
+AUDIT_SOURCE_IDENTITY = "editorial_planner_4a2_source_map_identity.json"
+AUDIT_REQUEST_IDENTITY = "editorial_planner_4a2_exact_request_identity.json"
+AUDIT_INPUT_BUDGET = "editorial_planner_4a2_input_budget.json"
+AUDIT_OUTPUT_BUDGET = "editorial_planner_4a2_output_budget.json"
+AUDIT_THINKING = "editorial_planner_4a2_thinking_budget.json"
+AUDIT_COST = "editorial_planner_4a2_cost_estimate.json"
+AUDIT_CACHE = "editorial_planner_4a2_cache_signature.json"
+AUDIT_COVERAGE = "editorial_planner_4a2_input_coverage.json"
+AUDIT_GATES = "editorial_planner_4a2_future_real_call_gates.json"
+AUDIT_READINESS = "editorial_planner_post_4a2_readiness.json"
+REPORT_NAME = "PHASE_4A2_EDITORIAL_PLANNER_EXACT_PRODUCTION_PREFLIGHT_REPORT.md"
+
+FORBIDDEN_TECHNICAL_TOKENS = (
+    "analysis_window",
+    "chunk_id",
+    "chunk_index",
+    "technical_window",
+    "window_id",
+    "win_id",
+    "processed/chunk",
+    "chunk_*.md",
+)
+FORBIDDEN_WINDOW_IDS = (
+    "WIN001",
+    "WIN002",
+    "WIN003",
+    "WIN004",
+    "WIN005",
+    "WIN006",
+    "WIN007",
+)
+
+assert PUBLICATION_AUTHORIZED is False
+assert REAL_PROVIDER_CALLS_THIS_PHASE == 0
+assert MAX_ENGINE_GENERATE == 0
+assert MAX_ANTHROPIC_POST == 0
+assert THINKING_MODE == "provider_default"
+assert EFFORT is None
+assert BUDGET_TOKENS is None

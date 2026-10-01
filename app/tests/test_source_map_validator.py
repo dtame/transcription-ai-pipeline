@@ -474,6 +474,24 @@ class TestEditorialGuard:
 
         assert excinfo.value.location == "test"
 
+    def test_un_champ_interdit_imbrique_dans_une_idee_est_refuse(self):
+        with pytest.raises(SourceMapEditorialLeakError) as excinfo:
+            ensure_no_editorial_fields(
+                {"ideas": [{"summary": "ok", "chapters": [{"title": "no"}]}]},
+                location="nested",
+            )
+        assert "chapters" in excinfo.value.fields
+
+    def test_un_texte_lexical_chapter_n_est_pas_une_structure(self):
+        ensure_no_editorial_fields(
+            {"ideas": [{"summary": "this section of scripture and the book of Hebrews"}]}
+        )
+
+    def test_chapter_title_structure_leve(self):
+        with pytest.raises(SourceMapEditorialLeakError) as excinfo:
+            ensure_no_editorial_fields({"chapter_title": "One"}, location="test")
+        assert "chapter_title" in excinfo.value.fields
+
     def test_la_publication_refuse_un_source_map_invalide(
         self, source_map, transcript
     ):

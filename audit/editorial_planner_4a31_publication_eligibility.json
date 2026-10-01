@@ -1,0 +1,13 @@
+{
+  "publication_eligible": "NO",
+  "technical_a3_pass_preserved": true,
+  "semantic_review": "REVIEW_REQUIRED",
+  "language_policy_resolved": false,
+  "working_title_acceptable": true,
+  "assignment_credible": true,
+  "other_semantic_blocker": false,
+  "editorial_plan_json": "NOT PUBLISHED",
+  "reason": "Language policy was unspecified before A.3 and still requires an explicit human book_language / planning-language decision. The unchanged candidate is not published in this phase.",
+  "if_human_accepts_french_plan": "Candidate may remain untranslated as an editorial plan. Controlled publication would be a later 4A.4 phase. Plan language should then match chosen book language.",
+  "if_human_requires_other_plan_language": "Do not repair or translate this candidate. A later phase would need editorial-planner-1.0.1 and a new provider call."
+}

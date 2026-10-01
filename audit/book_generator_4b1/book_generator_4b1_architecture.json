@@ -1,0 +1,32 @@
+{
+  "package": "app.book_generation",
+  "authority": {
+    "editorial_plan": "WHERE",
+    "source_map": "WHAT",
+    "book_generator": "HOW expressed as prose"
+  },
+  "generation_unit": "CHAPTER",
+  "fallback_unit": "one_section_per_call",
+  "why_not_whole_book": [
+    "context pressure",
+    "output ceiling",
+    "traceability loss",
+    "coverage loss",
+    "repair difficulty",
+    "retry cost",
+    "replay complexity"
+  ],
+  "why_chapter_level": [
+    "bounded context",
+    "bounded output",
+    "chapter-level retry isolation",
+    "stronger traceability",
+    "coverage validation",
+    "lower failure blast radius"
+  ],
+  "no_technical_chunks": true,
+  "no_word_pdf": true,
+  "publication_authorized": false,
+  "schema_version": "1.0",
+  "phase": "4B.1"
+}

@@ -1,0 +1,59 @@
+{
+  "expected": [
+    "IDEA224",
+    "IDEA225",
+    "IDEA226",
+    "IDEA250",
+    "IDEA251",
+    "IDEA252"
+  ],
+  "CLEARLY_REPRESENTED": 6,
+  "WEAKLY_REPRESENTED": 0,
+  "MISSING": 0,
+  "ideas": [
+    {
+      "idea_id": "IDEA224",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 3,
+      "summary_overlap": 0.1613,
+      "summary": "Believers should not fear death since there is no set time and going to heaven should bring joy, not fear."
+    },
+    {
+      "idea_id": "IDEA225",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 1,
+      "summary_overlap": 0.0541,
+      "summary": "Living is abused when death is feared; fear of death is the devil's old strategy."
+    },
+    {
+      "idea_id": "IDEA226",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 1,
+      "summary_overlap": 0.1463,
+      "summary": "Death as gain must become one's lived reality, not merely an intellectual idea."
+    },
+    {
+      "idea_id": "IDEA250",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 1,
+      "summary_overlap": 0.0377,
+      "summary": "Fear of death observed even among believers reveals it is not yet fully embraced as gain.",
+      "human_review": "Lexical overlap is low because the model stayed close to SRC007115-118 rather than the SourceMap summary. Meaning is clearly represented."
+    },
+    {
+      "idea_id": "IDEA251",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 2,
+      "summary_overlap": 0.1622,
+      "summary": "If a believer does not practice Christ as life, facing death becomes heavy and difficult."
+    },
+    {
+      "idea_id": "IDEA252",
+      "status": "CLEARLY_REPRESENTED",
+      "cited_paragraphs": 1,
+      "summary_overlap": 0.0612,
+      "summary": "Some believers foreknow the exact hour of their death and depart peacefully."
+    }
+  ],
+  "coverage_complete": true
+}

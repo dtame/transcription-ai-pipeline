@@ -1,0 +1,8 @@
+{
+  "READY_FOR_CONTROLLED_EDITORIAL_PLAN_PUBLICATION": false,
+  "PUBLICATION_ELIGIBLE": false,
+  "BOOK_GENERATOR": "NOT STARTED",
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "NEXT_PHASE_IF_PASS": "HUMAN REVIEW",
+  "why": "Not eligible for publication. No retry. No translation. Preserve candidate."
+}

@@ -1,0 +1,94 @@
+{
+  "stream": "A_EMPTY_PARAGRAPH",
+  "provider_handle": "p9b",
+  "section": "SEC063",
+  "raw_object": {
+    "h": "p9b",
+    "k": "sub",
+    "t": "",
+    "e": [],
+    "u": []
+  },
+  "object_shape": [
+    "e",
+    "h",
+    "k",
+    "t",
+    "u"
+  ],
+  "raw_text_value": "",
+  "raw_evidence_handles": [],
+  "empty_text_case": "\"\"",
+  "empty_evidence_case": "[]",
+  "kind": "sub",
+  "neighbors": {
+    "previous": {
+      "h": "p9",
+      "k": "sub",
+      "t": "This is where Paul's own confession becomes the test case. The question under discussion was Philippians chapter one, verse twenty-one — to live is Christ, and to die is gain. Paul could say that anything he might go on living would still be Christ; life itself, in all its ordinary continuation, was nothing other than Christ being lived out. Christ is my life, Paul says, in effect. To live is Christ.",
+      "e": [
+        "IDEA251"
+      ],
+      "u": []
+    },
+    "next": {
+      "h": "p10",
+      "k": "sub",
+      "t": "But that confession was not abstract theology for Paul, and it cannot be abstract theology for anyone who repeats it. If you don't practice Christ, death will be difficult for you. You have got to practice Christ — not merely believe a statement about him, not merely know the verse, but actually live out his life as your own day by day. If you are not practicing life now, death will be heavy when it comes. The weight a person carries at the end is, in large part, the weight of what was or was not practiced beforehand.",
+      "e": [
+        "IDEA251"
+      ],
+      "u": []
+    },
+    "index": 9,
+    "count": 14
+  },
+  "schema_accepted_because": [
+    "canonical paragraph.t is type=string with no minLength",
+    "empty string is a valid JSON Schema string",
+    "canonical paragraph.e is an optional array with no minItems>0",
+    "required fields are only k and t, both present"
+  ],
+  "minlength_limitation": {
+    "anthropic_structured_output_permits_minLength": false,
+    "adapter_strips_minLength": true,
+    "adapter_lists_minLength_unsupported": true,
+    "do_not_add_unsupported_schema_keyword": true,
+    "evidence": "app/ai/providers/_anthropic_schema.py _STRIPPED_KEYWORDS and _UNSUPPORTED_KEYWORDS"
+  },
+  "local_validator": {
+    "rejected": true,
+    "errors": [
+      "SEC063.p10: empty text",
+      "SEC063.p10: substantive paragraph empty",
+      "SEC063.p10: substantive paragraph has no evidence handles"
+    ],
+    "validator_defect": "NO"
+  },
+  "empty_paragraph_policy": "FAIL_never_silently_drop",
+  "why_not_drop": "Dropping empty paragraphs would convert malformed provider output into apparently valid output and hide the contract violation.",
+  "candidate_text_preserved": "",
+  "historical_repaired": false,
+  "root_cause": [
+    "SCHEMA_EXPRESSIVENESS_LIMIT",
+    "PROVIDER_COMPLIANCE_FAILURE"
+  ],
+  "contributing": [
+    "PROMPT_CONTRACT_WEAKNESS"
+  ],
+  "not_root_cause": [
+    "NORMALIZER_DEFECT",
+    "VALIDATOR_DEFECT"
+  ],
+  "anthropic_audit_on_adapted": {
+    "external_ref": [],
+    "unsupported_minItems": [],
+    "additionalProperties_not_false": [],
+    "minimum": [],
+    "maximum": [],
+    "multipleOf": [],
+    "minLength": [],
+    "maxLength": [],
+    "maxItems": []
+  }
+}

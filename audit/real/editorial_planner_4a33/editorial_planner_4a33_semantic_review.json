@@ -1,0 +1,263 @@
+{
+  "status": "FAIL",
+  "primary_question": "FAIL",
+  "primary_question_text": "Does this plan provide a faithful and coherent organization of the validated SourceMap into a potential book WITHOUT inventing the book's substantive content?",
+  "coverage": "FAIL",
+  "coverage_note": "286/286 technical coverage does not by itself prove good editorial organization. Chapters=9; assigned=284; deferred=0; excluded=0.",
+  "order": "PASS",
+  "boundaries": "PASS",
+  "repetition": "PASS",
+  "exclusions": "PASS",
+  "deferred": "PASS",
+  "uncertainty": "PASS",
+  "author_intent": "PASS",
+  "audience": "PASS",
+  "voice": "PASS",
+  "title_review": [
+    {
+      "title": "Flesh and Bone",
+      "rationale": "Draws on the central exegetical pivot of IDEA009–IDEA011 about physical resurrection and real inheritance.",
+      "source_support": "REVIEW",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "REVIEW"
+    },
+    {
+      "title": "Already Given",
+      "rationale": "Captures the repeated thesis that life, power, love, and healing are already possessed, not pending.",
+      "source_support": "PASS",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "PASS"
+    },
+    {
+      "title": "The Key of Life",
+      "rationale": "Uses the teaching's own framing of John 17 (IDEA124) as an entry into a lived dimension.",
+      "source_support": "PASS",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "PASS"
+    },
+    {
+      "title": "Sons of Men, Sons of God",
+      "rationale": "Names the restoration arc from Adam to Christ (IDEA013, IDEA014).",
+      "source_support": "REVIEW",
+      "scope": "PASS",
+      "unsupported_promise": "PASS",
+      "fit_with_author_intent": "REVIEW"
+    }
+  ],
+  "selected_title": "Already Given",
+  "subtitle": "Teachings on inherited life, spiritual authority, and the practice of faith",
+  "editorial_angle": "Treat the corpus as a progressive teaching course: every chapter removes a condition believers have added to God's word and replaces it with a received reality to be practiced, with testimony serving as verification rather than decoration.",
+  "target_reader": "Local congregations, retreat attendees, ministers and pastors who receive in-person Bible teaching and testimony and want doctrine that can be practiced.",
+  "book_concept": {
+    "purpose": "A teaching book that moves believers from inherited religious assumption to lived possession of resurrection life, spiritual authority, and union with God.",
+    "core_subject": "Exposition of the believer's inherited identity in Christ — sacred office, destroyed death, unconditional love, the renewed mind, and the practice of faith — grounded in Scripture and personal testimony.",
+    "reader_journey": "From questioning inherited tradition, through the scriptural foundation of destroyed death and sonship, into office and calling, union and love, the anatomy of mind and spirit, and finally into tested practice and testimony.",
+    "editorial_progression": "Each part assumes the previous: what has already been given (foundation) → who the believer has been made (office and union) → how the inner person is trained (mind, soul, spirit) → how it is lived and proven (practice, testimony, vision)."
+  },
+  "source_theme": "A multi-session teaching corpus on the believer's inherited identity in Christ, spanning sacred office, resurrection life, spiritual authority, mind/soul/spirit anatomy, and testimonies of healing, resurrection, and providence, all urging lived practice over ritual, tradition, or fear",
+  "source_author_intent": "To exposit scripture (Hebrews 2, John 17, Colossians 3, Malachi, etc.) teaching believers they already possess resurrection life, unconditional love, and spiritual authority, correcting legalism, rapture-fixation, and performance-based ministry, while grounding claims in personal testimony",
+  "source_audience": "Local congregations, retreat attendees, ministers and pastors receiving in-person Bible teaching and testimony",
+  "source_voice": {
+    "tone": [],
+    "register": "",
+    "sentence_style": ""
+  },
+  "excluded_ideas": [],
+  "deferred_ideas": [],
+  "assigned_uncertainty_refs": [
+    "UNC001",
+    "UNC003",
+    "UNC004",
+    "UNC005",
+    "UNC006",
+    "UNC007",
+    "UNC009",
+    "UNC010",
+    "UNC011",
+    "UNC012",
+    "UNC016",
+    "UNC017",
+    "UNC018",
+    "UNC020",
+    "UNC022",
+    "UNC023",
+    "UNC024",
+    "UNC025",
+    "UNC028",
+    "UNC029",
+    "UNC030",
+    "UNC031",
+    "UNC033",
+    "UNC035"
+  ],
+  "unassigned_uncertainty_refs": [
+    "UNC002",
+    "UNC008",
+    "UNC013",
+    "UNC014",
+    "UNC015",
+    "UNC019",
+    "UNC021",
+    "UNC026",
+    "UNC027",
+    "UNC032",
+    "UNC034"
+  ],
+  "issues": [
+    "IDEA coverage incomplete"
+  ],
+  "review_flags": [],
+  "notes": [
+    "286/286 technical coverage does not by itself prove good editorial organization. Chapters=9; assigned=284; deferred=0; excluded=0.",
+    "Provider-generated editorial prose matches canonical document language.",
+    "Historical working title « Déjà héritiers » is not required. Reproduced=False."
+  ],
+  "invention_boundary": "PASS",
+  "traceability": "PASS",
+  "manuscript_leakage": "PASS",
+  "language": "PASS",
+  "language_hard_publication_criterion": true,
+  "final_title_approved": false,
+  "historical_french_title_required": false,
+  "historical_french_title_reproduced": false,
+  "historical_questionable_fit": [
+    {
+      "idea_id": "IDEA054",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC016",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH003",
+          "section_id": "SEC016",
+          "working_title": "Malachi's Warning to the Priests"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA100",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC032",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH005",
+          "section_id": "SEC032",
+          "working_title": "Bold Before the Enemy, Gentle With People"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA112",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC029",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH005",
+          "section_id": "SEC029",
+          "working_title": "Knowing the Spirit, Not Only His Gifts"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA113",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC029",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH005",
+          "section_id": "SEC029",
+          "working_title": "Knowing the Spirit, Not Only His Gifts"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA168",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC036",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH006",
+          "section_id": "SEC036",
+          "working_title": "Flesh and Blood Revelation"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA283",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC063",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH009",
+          "section_id": "SEC063",
+          "working_title": "Angels Over the Nation"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    },
+    {
+      "idea_id": "IDEA286",
+      "disposition": "ASSIGNED",
+      "primary_section_id": "SEC063",
+      "additional_section_ids": [],
+      "reason": "",
+      "note": "",
+      "sections": [
+        {
+          "chapter_id": "CH009",
+          "section_id": "SEC063",
+          "working_title": "Angels Over the Nation"
+        }
+      ],
+      "attention_only": true,
+      "provider_not_instructed": true,
+      "different_placement_not_required": true
+    }
+  ],
+  "historical_sec028": {
+    "section_id": "SEC028",
+    "working_title": "Speaking From Overflow",
+    "idea_count": 4,
+    "review_evidence_only": true,
+    "structure_not_forced": true
+  },
+  "assignment_reviewed_independently": true,
+  "historical_286_assigned_not_assumed": true
+}

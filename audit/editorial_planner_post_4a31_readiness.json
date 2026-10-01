@@ -1,0 +1,8 @@
+{
+  "ready_for_controlled_editorial_plan_publication": "NO",
+  "book_generator": "NOT STARTED",
+  "next_action": "HUMAN REVIEW",
+  "human_decision_required": "Choose book_language for this project explicitly. depot project.yaml language=en is document-identity metadata and was not an Editorial Planner input; do not treat it as a silent book-language decision, and do not treat the French plan as one either. If French planning language is accepted, the unchanged A.3 candidate may remain untranslated as a plan, and that plan language should be the book language. If English or another language is required for the plan, do not repair or translate this candidate; a later phase would need editorial-planner-1.0.1 and a new provider call.",
+  "new_provider_call_required_to_validate_current_candidate": "NO",
+  "a3_remains_historical_partial": true
+}

@@ -1,0 +1,20 @@
+{
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_INDEPENDENT_SEMANTIC_GATE_DESIGN": true,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "candidate_status": "AUDIT_ONLY",
+  "validated_audit_candidate": false,
+  "cached_as_production": false,
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "NOT ACCEPTED",
+  "phase_5": false,
+  "terra_called": false,
+  "historical_4b2_status": "FAIL",
+  "semantic_strategy": "HYBRID",
+  "future_validator_model": "openai / gpt-5.6-terra",
+  "why": "Technical contract passed and the three 4B.2 defects did not recur, but human review found two QUESTIONABLE paragraphs (p3 causal implication; p8 partial-reference completion). Clean PASS criteria are not met. Do not regenerate CH016 automatically. Investigate whether prompt 1.0.1 is sufficient before any further provider call. Independent semantic-gate design remains the correct next architectural step because the local validator PASSed while residual semantic expansion remained. Do not start 19 production calls. Do not promote this candidate to production cache.",
+  "prompt_sufficiency_investigation_required": true,
+  "nineteen_chapter_rollout": false,
+  "word_pdf_cover": false
+}

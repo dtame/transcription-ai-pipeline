@@ -1,0 +1,25 @@
+{
+  "READY_FOR_BOOK_GENERATOR_PHASE_4B": "YES",
+  "PHASE_4_STATUS": "FROZEN",
+  "editorial_plan.json": "PUBLISHED",
+  "BOOK_GENERATOR": "NOT STARTED",
+  "FINAL_TITLE_APPROVED": "NO",
+  "REAL_PROVIDER_CALLS": 0,
+  "PHASE_4A4_COST_USD": 0.0,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "do_not_call_provider": true,
+  "do_not_start_book_generator": true,
+  "do_not_create_book_json": true,
+  "do_not_generate_manuscript": true,
+  "do_not_start_word": true,
+  "do_not_generate_cover": true,
+  "do_not_generate_pdf": true,
+  "do_not_implement_translation": true,
+  "future_change_requires_versioned_request": true,
+  "expected_inventory": {
+    "chapters": 19,
+    "sections": 72,
+    "ideas": 286
+  },
+  "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855"
+}
