@@ -1,0 +1,10 @@
+4B.2.17
+BOOK_GENERATION_4B217_CH012_FAITHFUL_REAL_PILOT_GENERATION_ONLY
+consumed=1
+boundary=remote_invocation
+reusable=0
+fallback=forbidden
+openai=forbidden
+terra=forbidden
+other_chapters=forbidden
+production_writes=forbidden

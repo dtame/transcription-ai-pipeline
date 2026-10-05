@@ -1,0 +1,82 @@
+{
+  "returncode": 0,
+  "summary": "157 passed in 5.28s",
+  "passed": 157,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b261.py",
+    "app/tests/test_book_semantic_gate_4b26.py",
+    "app/tests/test_book_semantic_gate_4b251.py",
+    "app/tests/test_book_semantic_gate_4b23.py",
+    "app/tests/test_ai_providers.py"
+  ],
+  "real_provider_calls": 0,
+  "empty_recorded_response": {
+    "json_parse": "FAIL",
+    "case_coverage": "FAIL",
+    "missing_cases": [
+      "h01",
+      "h02",
+      "h03",
+      "h04",
+      "h05",
+      "h06",
+      "h07",
+      "h08",
+      "h09",
+      "h10"
+    ],
+    "classifications_issued": 0,
+    "cache_acceptance": false,
+    "missing_is_not_misclassification": true
+  },
+  "compact_simulation": {
+    "positives_accepted": 6,
+    "negatives_blocked": 4,
+    "negative_false_negatives": 0,
+    "funeral_blocked": true,
+    "connective_blocked": true,
+    "p3_blocked": true,
+    "p8_blocked": true
+  },
+  "fakeai": {
+    "historical_fakeai_passed": true,
+    "historical_fakeai_count": 8,
+    "reason_expectations_frozen": {
+      "P3": [
+        "NEW_CAUSAL_LINK",
+        "NEW_IMPLICATION"
+      ],
+      "P8": [
+        "REFERENCE_COMPLETION",
+        "REFERENCE_EXPANSION"
+      ],
+      "FUNERAL": [
+        "INVENTED_EXAMPLE"
+      ],
+      "CONNECTIVE": [
+        "NEW_ARGUMENT",
+        "NEW_CONCLUSION",
+        "NEW_IMPLICATION"
+      ]
+    },
+    "negative_ids": [
+      "4b22_p3_new_causal",
+      "4b22_p8_reference_completion",
+      "4b2_p8_invented_funeral",
+      "4b2_p13_unsupported_connective"
+    ],
+    "positive_ids": [
+      "4b22_p2_supported",
+      "4b22_p4_supported",
+      "4b22_p5_supported",
+      "4b22_p6_supported",
+      "4b22_p7_supported",
+      "4b2_p2_supported"
+    ]
+  },
+  "benchmark_identity_match": true
+}

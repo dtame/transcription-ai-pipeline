@@ -1,0 +1,588 @@
+{
+  "phase": "4B.2.7.2",
+  "handle": "h02",
+  "case_id_audit_only": "4b22_p3_new_causal",
+  "paragraph": {
+    "handle": "h02",
+    "exact_text": "Yet we can see fear operating in believers, and this is not normal. Fear of death is an abuse — an abuse to your very person, a diminishment of what you were made and remade to be. It is worth naming where this abuse comes from. The devil has used it since the beginning; he has not changed his style. The same old strategy that first weaponized death against humanity is still being run today, unchanged, because it still works wherever it is not resisted by truth.",
+    "chars": 466,
+    "unicode_codepoints": 466,
+    "utf8_bytes": 468,
+    "source": "frozen 4B.2.3 benchmark / 4B.2.6 gate slice h02"
+  },
+  "ideas": [
+    {
+      "id": "IDEA225",
+      "canonical_id": "IDEA225",
+      "exact_text": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+      "kind": "",
+      "importance": "central",
+      "topic_refs": [
+        "TOP054"
+      ],
+      "relations": [],
+      "source_refs": [
+        "SRC006152",
+        "SRC006154",
+        "SRC006155",
+        "SRC006156",
+        "SRC006157"
+      ],
+      "gate_request_text": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "analysis/source_map.json",
+        "field": "ideas[].summary",
+        "note": "SourceMap idea records contain a summary, not a longer body. No additional IDEA225 prose exists."
+      },
+      "editorial_assignment": {
+        "chapter_id": "CH016",
+        "section_id": "SEC063",
+        "purpose": "Convert the doctrine of destroyed death into lived attitude.",
+        "idea_refs": [
+          "IDEA224",
+          "IDEA225",
+          "IDEA226",
+          "IDEA250",
+          "IDEA251",
+          "IDEA252"
+        ]
+      },
+      "relation_with_paragraph": "Canonical restatement that living is abused when death is feared, and that fear of death is the devil's old strategy.",
+      "relation_with_causal_clause": "Names an old strategy. Does not say the strategy still works wherever it is not resisted by truth.",
+      "contains_exact_clause": false,
+      "contains_because": false,
+      "sufficient_to_justify_causality": false,
+      "sufficiency_for_causality": "insufficient"
+    }
+  ],
+  "src": [
+    {
+      "id": "SRC006152",
+      "canonical_id": "SRC006152",
+      "exact_text": "It is an abuse",
+      "gate_request_text": "It is an abuse",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1048.08,
+        "end_seconds": 1049.78
+      },
+      "local_context": [
+        {
+          "id": "SRC006149",
+          "text": "Don't ever be afraid of death.",
+          "start_seconds": 1041.76,
+          "end_seconds": 1043.78,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006150",
+          "text": "No.",
+          "start_seconds": 1045.68,
+          "end_seconds": 1046.08,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006151",
+          "text": "No, no.",
+          "start_seconds": 1046.08,
+          "end_seconds": 1046.84,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006152",
+          "text": "It is an abuse",
+          "start_seconds": 1048.08,
+          "end_seconds": 1049.78,
+          "is_target": true,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006153",
+          "text": "to live.",
+          "start_seconds": 1049.78,
+          "end_seconds": 1049.98,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006154",
+          "text": "It is an abuse to your person.",
+          "start_seconds": 1050.0,
+          "end_seconds": 1052.0,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006155",
+          "text": "And the devil",
+          "start_seconds": 1053.42,
+          "end_seconds": 1053.98,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        }
+      ],
+      "relation_with_paragraph": "Supports 'Fear of death is an abuse'. Does not state why a strategy continues to operate.",
+      "relation_with_causal_clause": "Does not explicitly affirm or entail the disputed because-clause.",
+      "sufficiency_for_causality": "insufficient",
+      "contains_exact_clause": false,
+      "contains_because": false,
+      "sufficient_to_justify_causality": false
+    },
+    {
+      "id": "SRC006154",
+      "canonical_id": "SRC006154",
+      "exact_text": "It is an abuse to your person.",
+      "gate_request_text": "It is an abuse to your person.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1050.0,
+        "end_seconds": 1052.0
+      },
+      "local_context": [
+        {
+          "id": "SRC006151",
+          "text": "No, no.",
+          "start_seconds": 1046.08,
+          "end_seconds": 1046.84,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006152",
+          "text": "It is an abuse",
+          "start_seconds": 1048.08,
+          "end_seconds": 1049.78,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006153",
+          "text": "to live.",
+          "start_seconds": 1049.78,
+          "end_seconds": 1049.98,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006154",
+          "text": "It is an abuse to your person.",
+          "start_seconds": 1050.0,
+          "end_seconds": 1052.0,
+          "is_target": true,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006155",
+          "text": "And the devil",
+          "start_seconds": 1053.42,
+          "end_seconds": 1053.98,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006156",
+          "text": "has used it since.",
+          "start_seconds": 1053.98,
+          "end_seconds": 1055.12,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006157",
+          "text": "He has not changed his style.",
+          "start_seconds": 1055.2,
+          "end_seconds": 1056.0,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        }
+      ],
+      "relation_with_paragraph": "Supports 'an abuse to your very person'. No causal 'because' and no resistance-by-truth condition.",
+      "relation_with_causal_clause": "Does not explicitly affirm or entail the disputed because-clause.",
+      "sufficiency_for_causality": "insufficient",
+      "contains_exact_clause": false,
+      "contains_because": false,
+      "sufficient_to_justify_causality": false
+    },
+    {
+      "id": "SRC006155",
+      "canonical_id": "SRC006155",
+      "exact_text": "And the devil",
+      "gate_request_text": "And the devil",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1053.42,
+        "end_seconds": 1053.98
+      },
+      "local_context": [
+        {
+          "id": "SRC006152",
+          "text": "It is an abuse",
+          "start_seconds": 1048.08,
+          "end_seconds": 1049.78,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006153",
+          "text": "to live.",
+          "start_seconds": 1049.78,
+          "end_seconds": 1049.98,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006154",
+          "text": "It is an abuse to your person.",
+          "start_seconds": 1050.0,
+          "end_seconds": 1052.0,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006155",
+          "text": "And the devil",
+          "start_seconds": 1053.42,
+          "end_seconds": 1053.98,
+          "is_target": true,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006156",
+          "text": "has used it since.",
+          "start_seconds": 1053.98,
+          "end_seconds": 1055.12,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006157",
+          "text": "He has not changed his style.",
+          "start_seconds": 1055.2,
+          "end_seconds": 1056.0,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006158",
+          "text": "Amen.",
+          "start_seconds": 1060.02,
+          "end_seconds": 1060.28,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        }
+      ],
+      "relation_with_paragraph": "Names the devil as the agent of the abuse. No effectiveness or truth-resistance claim.",
+      "relation_with_causal_clause": "Does not explicitly affirm or entail the disputed because-clause.",
+      "sufficiency_for_causality": "insufficient",
+      "contains_exact_clause": false,
+      "contains_because": false,
+      "sufficient_to_justify_causality": false
+    },
+    {
+      "id": "SRC006156",
+      "canonical_id": "SRC006156",
+      "exact_text": "has used it since.",
+      "gate_request_text": "has used it since.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1053.98,
+        "end_seconds": 1055.12
+      },
+      "local_context": [
+        {
+          "id": "SRC006153",
+          "text": "to live.",
+          "start_seconds": 1049.78,
+          "end_seconds": 1049.98,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006154",
+          "text": "It is an abuse to your person.",
+          "start_seconds": 1050.0,
+          "end_seconds": 1052.0,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006155",
+          "text": "And the devil",
+          "start_seconds": 1053.42,
+          "end_seconds": 1053.98,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006156",
+          "text": "has used it since.",
+          "start_seconds": 1053.98,
+          "end_seconds": 1055.12,
+          "is_target": true,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006157",
+          "text": "He has not changed his style.",
+          "start_seconds": 1055.2,
+          "end_seconds": 1056.0,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006158",
+          "text": "Amen.",
+          "start_seconds": 1060.02,
+          "end_seconds": 1060.28,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006159",
+          "text": "If I were you,",
+          "start_seconds": 1061.34,
+          "end_seconds": 1062.08,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        }
+      ],
+      "relation_with_paragraph": "Attests that the devil has used the abuse since. Continuity of use is not a because-clause about present efficacy wherever truth does not resist.",
+      "relation_with_causal_clause": "Does not explicitly affirm or entail the disputed because-clause.",
+      "sufficiency_for_causality": "insufficient",
+      "contains_exact_clause": false,
+      "contains_because": false,
+      "sufficient_to_justify_causality": false
+    },
+    {
+      "id": "SRC006157",
+      "canonical_id": "SRC006157",
+      "exact_text": "He has not changed his style.",
+      "gate_request_text": "He has not changed his style.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1055.2,
+        "end_seconds": 1056.0
+      },
+      "local_context": [
+        {
+          "id": "SRC006154",
+          "text": "It is an abuse to your person.",
+          "start_seconds": 1050.0,
+          "end_seconds": 1052.0,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006155",
+          "text": "And the devil",
+          "start_seconds": 1053.42,
+          "end_seconds": 1053.98,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006156",
+          "text": "has used it since.",
+          "start_seconds": 1053.98,
+          "end_seconds": 1055.12,
+          "is_target": false,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006157",
+          "text": "He has not changed his style.",
+          "start_seconds": 1055.2,
+          "end_seconds": 1056.0,
+          "is_target": true,
+          "in_authorized_p3_handles": true
+        },
+        {
+          "id": "SRC006158",
+          "text": "Amen.",
+          "start_seconds": 1060.02,
+          "end_seconds": 1060.28,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006159",
+          "text": "If I were you,",
+          "start_seconds": 1061.34,
+          "end_seconds": 1062.08,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        },
+        {
+          "id": "SRC006160",
+          "text": "I would pray for that.",
+          "start_seconds": 1062.54,
+          "end_seconds": 1063.72,
+          "is_target": false,
+          "in_authorized_p3_handles": false
+        }
+      ],
+      "relation_with_paragraph": "Attests that the devil has not changed his style. Unchanged style is not the same as 'it still works wherever it is not resisted by truth'.",
+      "relation_with_causal_clause": "Does not explicitly affirm or entail the disputed because-clause.",
+      "sufficiency_for_causality": "insufficient",
+      "contains_exact_clause": false,
+      "contains_because": false,
+      "sufficient_to_justify_causality": false
+    }
+  ],
+  "references": [],
+  "neighboring_canonical_src_not_in_gate_request": [
+    {
+      "id": "SRC006150",
+      "text": "No.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1045.68,
+        "end_seconds": 1046.08
+      },
+      "chars": 3,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "not_used_to_complete_p3": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to the provider. Not used to complete missing support from outside the historical case."
+    },
+    {
+      "id": "SRC006151",
+      "text": "No, no.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1046.08,
+        "end_seconds": 1046.84
+      },
+      "chars": 7,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "not_used_to_complete_p3": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to the provider. Not used to complete missing support from outside the historical case."
+    },
+    {
+      "id": "SRC006153",
+      "text": "to live.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1049.78,
+        "end_seconds": 1049.98
+      },
+      "chars": 8,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "not_used_to_complete_p3": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to the provider. Not used to complete missing support from outside the historical case."
+    },
+    {
+      "id": "SRC006158",
+      "text": "Amen.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1060.02,
+        "end_seconds": 1060.28
+      },
+      "chars": 5,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "not_used_to_complete_p3": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to the provider. Not used to complete missing support from outside the historical case."
+    },
+    {
+      "id": "SRC006159",
+      "text": "If I were you,",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1061.34,
+        "end_seconds": 1062.08
+      },
+      "chars": 14,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "not_used_to_complete_p3": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to the provider. Not used to complete missing support from outside the historical case."
+    }
+  ],
+  "allowed_handles_in_request": [
+    "IDEA225",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157"
+  ],
+  "present_ids": [
+    "IDEA225",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157"
+  ],
+  "missing_required_handles": [],
+  "h01_handles_injected": [],
+  "complete": true,
+  "other_cases_excluded": true,
+  "h01_evidence_not_used": true,
+  "external_religious_knowledge_used": false,
+  "summaries_not_substituted_for_src": true,
+  "canonical_hashes": {
+    "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+  },
+  "secrets_included": false
+}

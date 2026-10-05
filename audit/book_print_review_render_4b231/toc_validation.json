@@ -1,0 +1,106 @@
+{
+  "phase": "4B.2.31",
+  "status": "PASS",
+  "updated": true,
+  "entries": [
+    {
+      "title": "Unlearning What Was Handed Down",
+      "page": 1,
+      "raw": "Unlearning What Was Handed Down\t1"
+    },
+    {
+      "title": "Flesh and Bone: The Resurrection You Inherit",
+      "page": 5,
+      "raw": "Flesh and Bone: The Resurrection You Inherit\t5"
+    },
+    {
+      "title": "Hebrews 2: Death Already Destroyed",
+      "page": 9,
+      "raw": "Hebrews 2: Death Already Destroyed\t9"
+    },
+    {
+      "title": "Priest, Prophet, King",
+      "page": 13,
+      "raw": "Priest, Prophet, King\t13"
+    },
+    {
+      "title": "Access, Not Achievement",
+      "page": 17,
+      "raw": "Access, Not Achievement\t17"
+    },
+    {
+      "title": "That They May Be One",
+      "page": 23,
+      "raw": "That They May Be One\t23"
+    },
+    {
+      "title": "Loved Exactly as Jesus Is Loved",
+      "page": 31,
+      "raw": "Loved Exactly as Jesus Is Loved\t31"
+    },
+    {
+      "title": "Set Your Mind Above",
+      "page": 33,
+      "raw": "Set Your Mind Above\t33"
+    },
+    {
+      "title": "Laws You Gave Yourself",
+      "page": 37,
+      "raw": "Laws You Gave Yourself\t37"
+    },
+    {
+      "title": "Spirit, Soul and Body",
+      "page": 41,
+      "raw": "Spirit, Soul and Body\t41"
+    },
+    {
+      "title": "Reasonings and Strongholds",
+      "page": 45,
+      "raw": "Reasonings and Strongholds\t45"
+    },
+    {
+      "title": "Prayer Corrected",
+      "page": 49,
+      "raw": "Prayer Corrected\t49"
+    },
+    {
+      "title": "The Renewed Mind and the Hidden Faculty",
+      "page": 53,
+      "raw": "The Renewed Mind and the Hidden Faculty\t53"
+    },
+    {
+      "title": "Operating What You Have",
+      "page": 57,
+      "raw": "Operating What You Have\t57"
+    },
+    {
+      "title": "Grace Barely Touched",
+      "page": 61,
+      "raw": "Grace Barely Touched\t61"
+    },
+    {
+      "title": "Death as Gain",
+      "page": 65,
+      "raw": "Death as Gain\t65"
+    },
+    {
+      "title": "Nothing by Chance",
+      "page": 67,
+      "raw": "Nothing by Chance\t67"
+    },
+    {
+      "title": "Testimonies of Resurrection",
+      "page": 71,
+      "raw": "Testimonies of Resurrection\t71"
+    },
+    {
+      "title": "Out of the Eater",
+      "page": 75,
+      "raw": "Out of the Eater\t75"
+    }
+  ],
+  "page_alignment": true,
+  "verification": "real_word_render",
+  "human_required": false,
+  "secrets_included": false
+}

@@ -1,0 +1,98 @@
+{
+  "phase": "4B.2.9",
+  "handle": "h11",
+  "historical_status": "PARTIAL",
+  "historical_status_unchanged": true,
+  "historical_terra_response_not_converted": true,
+  "false_rejection_not_declared_corrected": true,
+  "not_terra": true,
+  "paragraph_chars": 357,
+  "unit_count": 5,
+  "coverage_ok": true,
+  "offsets_stable": true,
+  "units": [
+    {
+      "unit_id": "u00",
+      "start_offset": 0,
+      "end_offset": 46,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "But this is not a matter of mental technique. "
+    },
+    {
+      "unit_id": "u01",
+      "start_offset": 46,
+      "end_offset": 141,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "It is not mind over matter, not a trick of positive thinking applied to a frightening subject. "
+    },
+    {
+      "unit_id": "u02",
+      "start_offset": 141,
+      "end_offset": 180,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "Death as gain must become your reality "
+    },
+    {
+      "unit_id": "u03",
+      "start_offset": 180,
+      "end_offset": 294,
+      "boundary_type": "EM_DASH",
+      "boundary_ambiguity": true,
+      "text": "— not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending, "
+    },
+    {
+      "unit_id": "u04",
+      "start_offset": 294,
+      "end_offset": 357,
+      "boundary_type": "IMPLICATIVE_CONNECTIVE",
+      "boundary_ambiguity": false,
+      "text": "which means that every believer is guaranteed a fearless death."
+    }
+  ],
+  "preserved_propositions": [
+    {
+      "label": "universal_guarantee",
+      "start": 294,
+      "end": 356,
+      "preserved_in_one_unit": true,
+      "unit_id": "u04",
+      "unit_text": "which means that every believer is guaranteed a fearless death.",
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    }
+  ],
+  "context_preserved": true,
+  "human_label_absent_from_request": true,
+  "anomalies_representable": true,
+  "orchestration": [
+    {
+      "scenario": "universal_guarantee",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": true,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "invented_implication",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": true,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "abusive_non_substantive",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": true,
+      "coverage_ok": true
+    }
+  ],
+  "historical_label": "UNSUPPORTED",
+  "historical_label_not_injected": true,
+  "secrets_included": false
+}

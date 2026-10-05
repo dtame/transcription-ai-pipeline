@@ -595,6 +595,36 @@ class TestOpenAIProvider:
         assert appel["messages"][1] == {"role": "user", "content": "p"}
         assert appel["temperature"] == 0.4
         assert appel["max_tokens"] == 900
+        assert "max_completion_tokens" not in appel
+
+    def test_terra_uses_max_completion_tokens(self):
+        engine = OpenAIEngine(client=FakeOpenAIClient(), retry_policy=_policy())
+        payload = engine.build_payload(
+            AIRequest(
+                prompt="p",
+                model="gpt-5.6-terra",
+                temperature=None,
+                max_output_tokens=8192,
+                response_schema={"type": "object"},
+            ),
+            "gpt-5.6-terra",
+        )
+        assert payload["max_completion_tokens"] == 8192
+        assert "max_tokens" not in payload
+        assert "temperature" not in payload
+
+    def test_terra_rejects_explicit_temperature(self):
+        engine = OpenAIEngine(client=FakeOpenAIClient(), retry_policy=_policy())
+        with pytest.raises(AIConfigurationError, match="temperature"):
+            engine.build_payload(
+                AIRequest(
+                    prompt="p",
+                    model="gpt-5.6-terra",
+                    temperature=0.2,
+                    max_output_tokens=16,
+                ),
+                "gpt-5.6-terra",
+            )
 
     def test_metadonnees_jamais_transmises(self):
         client = FakeOpenAIClient()

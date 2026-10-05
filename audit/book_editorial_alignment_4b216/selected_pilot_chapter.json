@@ -1,0 +1,205 @@
+{
+  "phase": "4B.2.16",
+  "chapter_id": "CH012",
+  "working_title": "Prayer Corrected",
+  "purpose": "Reform prayer practice: tongues rightly used, correction received, hunger as the condition.",
+  "language": "en",
+  "sections": [
+    {
+      "section_id": "SEC047",
+      "working_title": "Bavardage Is Not Prayer",
+      "idea_ids": [
+        "IDEA179",
+        "IDEA182",
+        "IDEA186"
+      ],
+      "example_ids": [],
+      "reference_ids": [],
+      "uncertainty_ids": [],
+      "audio_sources": [
+        "AUDIO003"
+      ],
+      "transcript_index_span": 77,
+      "cross_recording": false
+    },
+    {
+      "section_id": "SEC048",
+      "working_title": "The Refreshing",
+      "idea_ids": [
+        "IDEA180",
+        "IDEA181",
+        "IDEA237"
+      ],
+      "example_ids": [],
+      "reference_ids": [
+        "REF036",
+        "REF044",
+        "REF047",
+        "REF037",
+        "REF038"
+      ],
+      "uncertainty_ids": [
+        "UNC029"
+      ],
+      "audio_sources": [
+        "AUDIO003",
+        "AUDIO004"
+      ],
+      "transcript_index_span": 1601,
+      "cross_recording": true
+    },
+    {
+      "section_id": "SEC049",
+      "working_title": "He Told Me I Was Tired",
+      "idea_ids": [
+        "IDEA184",
+        "IDEA185",
+        "IDEA238"
+      ],
+      "example_ids": [
+        "EX030"
+      ],
+      "reference_ids": [],
+      "uncertainty_ids": [],
+      "audio_sources": [
+        "AUDIO003",
+        "AUDIO004"
+      ],
+      "transcript_index_span": 1537,
+      "cross_recording": true
+    },
+    {
+      "section_id": "SEC050",
+      "working_title": "Pouring on the Thirsty",
+      "idea_ids": [
+        "IDEA212",
+        "IDEA213"
+      ],
+      "example_ids": [],
+      "reference_ids": [
+        "REF042",
+        "REF043"
+      ],
+      "uncertainty_ids": [],
+      "audio_sources": [
+        "AUDIO004"
+      ],
+      "transcript_index_span": 32,
+      "cross_recording": false
+    }
+  ],
+  "section_count": 4,
+  "idea_count": 11,
+  "idea_ids": [
+    "IDEA179",
+    "IDEA182",
+    "IDEA186",
+    "IDEA180",
+    "IDEA181",
+    "IDEA237",
+    "IDEA184",
+    "IDEA185",
+    "IDEA238",
+    "IDEA212",
+    "IDEA213"
+  ],
+  "reference_ids": [
+    "REF036",
+    "REF037",
+    "REF038",
+    "REF042",
+    "REF043",
+    "REF044",
+    "REF047"
+  ],
+  "example_ids": [
+    "EX030"
+  ],
+  "uncertainty_ids": [
+    "UNC029"
+  ],
+  "audio_sources": [
+    "AUDIO003",
+    "AUDIO004"
+  ],
+  "src_ref_count": 55,
+  "evidence_chars": 13644,
+  "hydrated_src_chars": 1414,
+  "risks": [
+    {
+      "code": "THEMATIC_REGROUP_ACROSS_RECORDINGS",
+      "severity": "observation",
+      "authorized": true,
+      "not_an_error": true,
+      "detail": "Ideas in this chapter cite more than one recording. Grouping them is allowed when they treat the same subject. Proximity must not be written as causality.",
+      "audio_sources": [
+        "AUDIO003",
+        "AUDIO004"
+      ]
+    },
+    {
+      "code": "RESERVATION_WITHOUT_SECTION_SRC_OVERLAP",
+      "severity": "elevated",
+      "count": 1,
+      "not_concluded_as_error": true
+    },
+    {
+      "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+      "severity": "elevated",
+      "count": 3,
+      "not_concluded_as_error": true
+    }
+  ],
+  "detached_examples": [],
+  "separated_uncertainties": [
+    {
+      "uncertainty_id": "UNC029",
+      "section_id": "SEC048",
+      "kind": "ambiguous_meaning",
+      "severity": "medium",
+      "description": "Isaiah chapter 26 versus 28 reference is confused mid-speech, unclear which chapter verse 3 belongs to.",
+      "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+    }
+  ],
+  "reference_tensions": [
+    {
+      "reference_id": "REF044",
+      "section_id": "SEC048",
+      "kind": "biblical",
+      "completeness": "complete",
+      "raw_reference": "Isaiah 28:11",
+      "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+    },
+    {
+      "reference_id": "REF047",
+      "section_id": "SEC048",
+      "kind": "biblical",
+      "completeness": "complete",
+      "raw_reference": "1 Corinthians chapter 14, verse 21",
+      "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+    },
+    {
+      "reference_id": "REF037",
+      "section_id": "SEC048",
+      "kind": "biblical",
+      "completeness": "partial",
+      "raw_reference": "Jude vers 20",
+      "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+    }
+  ],
+  "why_selected": "The chapter is neither CH001 nor CH016. It has a manageable idea count, four defined sections, hydrated SRC evidence, a modest bundle, and identifiable risks: material from two recordings is already grouped, at least one reservation does not share SRC with its section ideas, and at least one reference does not share SRC with its section ideas.",
+  "generation_executed": false,
+  "stop_conditions": [
+    "Human review of phase 4B.2.16 has not been recorded.",
+    "The requested chapter id is not the selected pilot.",
+    "A second chapter, CH016, or the full book is requested.",
+    "Canonical SourceMap, EditorialPlan, or transcript hash changes.",
+    "Any provider retry or fallback is requested.",
+    "Projected generator or Semantic Gate spend exceeds the high band of this estimate.",
+    "Phase 5, Word, or PDF is requested.",
+    "book.json publication or production-cache acceptance is requested.",
+    "The faithful prompt or coverage control is treated as already activated."
+  ],
+  "ready_to_generate": false,
+  "secrets_included": false
+}

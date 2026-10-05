@@ -1,0 +1,9 @@
+{
+  "phase": "4B.2.27",
+  "chapter_id": "CH007",
+  "title": "Loved Exactly as Jesus Is Loved",
+  "model": "anthropic/claude-sonnet-5",
+  "prompt_version": "book-generator-faithful-restatement-1.1-candidate",
+  "blocked": false,
+  "block_reason": null
+}

@@ -1,0 +1,9 @@
+{
+  "phase": "4B.2.29",
+  "authorization_scope": "BOOK_PRINT_REVIEW_CANONICAL_4B229_PROVISIONAL_BOOK_JSON_ONLY",
+  "offline": true,
+  "provider_calls": 0,
+  "canonical_hashes_ok": true,
+  "real_generation_authorized": false,
+  "secrets_included": false
+}

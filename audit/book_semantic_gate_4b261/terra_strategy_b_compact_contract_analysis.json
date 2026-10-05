@@ -1,0 +1,39 @@
+{
+  "phase": "4B.2.6.1",
+  "name": "B",
+  "title": "Compact output contract; keep 10-case request",
+  "candidate_prompt_version": "book-semantic-validator-1.1-candidate",
+  "candidate_transport_version": "book-semantic-validation-transport-1.1-candidate",
+  "promoted": false,
+  "keeps": [
+    "case/paragraph identifiers",
+    "decision",
+    "substantive claims via spans",
+    "exact offsets",
+    "evidence references",
+    "reason codes",
+    "short reservations when needed"
+  ],
+  "limits": [
+    "copied claim text t",
+    "free-form explanation x",
+    "confidence essays"
+  ],
+  "does_not_remove_fidelity_requirements": true,
+  "estimated_min_json_tokens_historical": 1308,
+  "estimated_detailed_json_tokens_historical": 3591,
+  "estimated_min_json_tokens_candidate": 336,
+  "estimated": true,
+  "compatibility_with_4b26_evidence": "Addresses confirmed output verbosity. Does not by itself prove that hidden reasoning will stop consuming the budget.",
+  "technical_complexity": "MEDIUM — new candidate versions, local decoder",
+  "truncation_risk": "MEDIUM — smaller visible JSON, unknown reasoning",
+  "resume_capability": "NONE if still one 10-case call",
+  "proposition_level_control": "PRESERVED",
+  "nineteen_chapter_fit": "BETTER visible-output density; reasoning still unknown",
+  "version_changes": "candidate 1.1 only; 1.0 frozen",
+  "remaining_uncertainties": [
+    "Terra may still reason silently before emitting compact JSON",
+    "json_object semantic production still unproven"
+  ],
+  "secrets_included": false
+}

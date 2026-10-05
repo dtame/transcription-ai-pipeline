@@ -1,0 +1,331 @@
+{
+  "phase": "4B.2.12",
+  "source": "FAKEAI_SIMULATED",
+  "not_terra": true,
+  "not_a_terra_validation": true,
+  "does_not_claim_terra_can_detect_these_errors": true,
+  "scenario_count": 20,
+  "scenarios": [
+    {
+      "scenario": "invented_causality",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "invented_implication",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "universal_guarantee",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "unjustified_strengthening",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "unsupported_attribution",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "invented_example",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "legitimate_paraphrase",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "PASS",
+      "expected": "PASS",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "faithful_reference",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "PASS",
+      "expected": "PASS",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "reference_completed_without_proof",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "unknown_reason_code",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": false,
+      "errors": [
+        "pr[0].u[0].r[0]:unknown_reason_code:MADE_UP_CODE",
+        "pr[0].u[0].r:reasons_required_for_UNSUPPORTED"
+      ],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "unknown_evidence_handle",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": false,
+      "errors": [
+        "pr[0].u[0].ev[0]:unknown_evidence_handle:SRC999999"
+      ],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "missing_unit",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": false,
+      "errors": [
+        "missing_units:u04"
+      ],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "duplicate_unit",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": false,
+      "errors": [
+        "pr[0].u[5].id:duplicate:u00"
+      ],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "invalid_classification",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": false,
+      "errors": [
+        "pr[0].u[0].k:invalid:'MAYBE'"
+      ],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "operational_value_in_semantic_field",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": false,
+      "errors": [
+        "pr[0].u[0].k:operational_value_in_semantic_field:PASS",
+        "pr[0].u[0].k:not_silently_converted"
+      ],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "invalid_json",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "RAW_INVALID",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": false,
+      "errors": [
+        "invalid_json"
+      ],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "truncated_response",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "RAW_INVALID",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": false,
+      "errors": [
+        "invalid_json"
+      ],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "questionable",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "REVIEW",
+      "expected": "REVIEW",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "abusive_non_substantive",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": true,
+      "errors": [],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    },
+    {
+      "scenario": "lowercase_classification",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "contract_ok": false,
+      "errors": [
+        "pr[0].u[0].k:invalid_case:'supported'",
+        "pr[0].u[0].k:not_silently_converted"
+      ],
+      "match": true,
+      "does_not_prove_terra_detection": true
+    }
+  ],
+  "no_silent_normalization": [
+    {
+      "scenario": "historical_201_shape_not_accepted_as_202",
+      "blocked": true,
+      "errors": [
+        "$:unexpected_fields:rr,sc,uh,v",
+        "$:operational_or_derived_field_forbidden:v",
+        "$:operational_or_derived_field_forbidden:sc",
+        "$:operational_or_derived_field_forbidden:uh",
+        "$:operational_or_derived_field_forbidden:rr",
+        "pr[0]:unexpected_fields:v",
+        "pr[0].v:forbidden_model_field",
+        "pr[0].v:operational_value_in_semantic_context:PASS",
+        "pr[0].v:not_silently_converted"
+      ],
+      "not_terra": true,
+      "raw_preserved": "{\"ch\": \"CH016\", \"v\": \"PASS\", \"pr\": [{\"h\": \"h01\", \"v\": \"PASS\", \"u\": [{\"id\": \"u00\""
+    },
+    {
+      "scenario": "pass_not_converted_to_supported",
+      "blocked": true,
+      "errors": [
+        "pr[0].u[0].k:operational_value_in_semantic_field:PASS",
+        "pr[0].u[0].k:not_silently_converted"
+      ],
+      "not_terra": true,
+      "raw_preserved": "{\"ch\": \"CH016\", \"pr\": [{\"h\": \"h01\", \"u\": [{\"id\": \"u00\", \"k\": \"PASS\", \"ev\": [\"IDE"
+    },
+    {
+      "scenario": "lowercase_not_converted_to_uppercase",
+      "blocked": true,
+      "errors": [
+        "pr[0].u[0].k:invalid_case:'supported'",
+        "pr[0].u[0].k:not_silently_converted"
+      ],
+      "not_terra": true,
+      "raw_preserved": "{\"ch\": \"CH016\", \"pr\": [{\"h\": \"h01\", \"u\": [{\"id\": \"u00\", \"k\": \"supported\", \"ev\": "
+    },
+    {
+      "scenario": "empty",
+      "blocked": true,
+      "errors": [
+        "empty_response"
+      ],
+      "not_terra": true,
+      "raw_preserved": true
+    },
+    {
+      "scenario": "truncated",
+      "blocked": true,
+      "errors": [
+        "invalid_json"
+      ],
+      "not_terra": true,
+      "raw_preserved": true
+    }
+  ],
+  "passed": true,
+  "does_not_silently_repair": true,
+  "secrets_included": false
+}

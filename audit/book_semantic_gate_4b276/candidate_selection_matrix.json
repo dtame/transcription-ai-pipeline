@@ -1,0 +1,182 @@
+{
+  "phase": "4B.2.7.6",
+  "criteria": [
+    "independence_from_h01",
+    "independence_from_h02",
+    "mixed_supported_and_problematic",
+    "clear_canonical_evidence",
+    "low_interpretive_ambiguity",
+    "different_error_family_from_invented_causality",
+    "not_already_used_as_terra_canary",
+    "cost_control",
+    "contract_1_1_3_expressible"
+  ],
+  "rows": [
+    {
+      "case_id_audit_only": "4b22_p2_supported",
+      "opaque_handle": "h01",
+      "independent_of_h01_h02": false,
+      "mixed_supported_and_problematic": false,
+      "clear_evidence": true,
+      "low_ambiguity": true,
+      "different_error_family_from_h02": true,
+      "unused_as_real_terra_canary": false,
+      "cost_comparable": true,
+      "eligible": false,
+      "notes": "Already used as real Terra canary h01 (PARTIAL false reject)."
+    },
+    {
+      "case_id_audit_only": "4b22_p3_new_causal",
+      "opaque_handle": "h02",
+      "independent_of_h01_h02": false,
+      "mixed_supported_and_problematic": true,
+      "clear_evidence": true,
+      "low_ambiguity": false,
+      "different_error_family_from_h02": false,
+      "unused_as_real_terra_canary": false,
+      "cost_comparable": true,
+      "eligible": false,
+      "notes": "Already used as real Terra canary h02 (PARTIAL mixed result)."
+    },
+    {
+      "case_id_audit_only": "4b22_p4_supported",
+      "opaque_handle": "h03",
+      "independent_of_h01_h02": true,
+      "mixed_supported_and_problematic": false,
+      "clear_evidence": true,
+      "low_ambiguity": true,
+      "different_error_family_from_h02": true,
+      "unused_as_real_terra_canary": true,
+      "cost_comparable": true,
+      "eligible": false,
+      "notes": "Historical positive. No problematic proposition. Reusing it would reproduce a paraphrase-only test close to h01."
+    },
+    {
+      "case_id_audit_only": "4b22_p5_supported",
+      "opaque_handle": "h04",
+      "independent_of_h01_h02": true,
+      "mixed_supported_and_problematic": false,
+      "clear_evidence": true,
+      "low_ambiguity": true,
+      "different_error_family_from_h02": true,
+      "unused_as_real_terra_canary": true,
+      "cost_comparable": true,
+      "eligible": false,
+      "notes": "Historical positive. No problematic proposition to refuse."
+    },
+    {
+      "case_id_audit_only": "4b22_p6_supported",
+      "opaque_handle": "h05",
+      "independent_of_h01_h02": true,
+      "mixed_supported_and_problematic": false,
+      "clear_evidence": true,
+      "low_ambiguity": true,
+      "different_error_family_from_h02": true,
+      "unused_as_real_terra_canary": true,
+      "cost_comparable": true,
+      "eligible": false,
+      "notes": "Historical positive. No problematic proposition to refuse."
+    },
+    {
+      "case_id_audit_only": "4b22_p7_supported",
+      "opaque_handle": "h06",
+      "independent_of_h01_h02": true,
+      "mixed_supported_and_problematic": false,
+      "clear_evidence": true,
+      "low_ambiguity": true,
+      "different_error_family_from_h02": true,
+      "unused_as_real_terra_canary": true,
+      "cost_comparable": true,
+      "eligible": false,
+      "notes": "Historical positive. No problematic proposition to refuse."
+    },
+    {
+      "case_id_audit_only": "4b22_p8_reference_completion",
+      "opaque_handle": "h07",
+      "independent_of_h01_h02": true,
+      "mixed_supported_and_problematic": true,
+      "clear_evidence": true,
+      "low_ambiguity": false,
+      "different_error_family_from_h02": true,
+      "unused_as_real_terra_canary": true,
+      "cost_comparable": true,
+      "eligible": false,
+      "notes": "REFERENCE_COMPLETION family is independent of h02. REF050 is partial and SRC006788 only attests 'on 1 Corinthians 15'. Neighboring clauses (admired argument, lived into, gain we practice) are also unattested, so a Terra extra-reject would be hard to interpret — similar to h02's neighboring false rejects."
+    },
+    {
+      "case_id_audit_only": "4b2_p2_supported",
+      "opaque_handle": "h08",
+      "independent_of_h01_h02": true,
+      "mixed_supported_and_problematic": false,
+      "clear_evidence": true,
+      "low_ambiguity": true,
+      "different_error_family_from_h02": true,
+      "unused_as_real_terra_canary": true,
+      "cost_comparable": true,
+      "eligible": false,
+      "notes": "Historical positive. No problematic proposition to refuse."
+    },
+    {
+      "case_id_audit_only": "4b2_p8_invented_funeral",
+      "opaque_handle": "h09",
+      "independent_of_h01_h02": true,
+      "mixed_supported_and_problematic": true,
+      "clear_evidence": true,
+      "low_ambiguity": false,
+      "different_error_family_from_h02": true,
+      "unused_as_real_terra_canary": true,
+      "cost_comparable": true,
+      "eligible": false,
+      "notes": "INVENTED_EXAMPLE family is independent. Mind-over-matter and must-be-reality are attested. 'This is exactly why' introduces a causal-framing confound with h02. Not selected."
+    },
+    {
+      "case_id_audit_only": "4b2_p13_unsupported_connective",
+      "opaque_handle": "h10",
+      "independent_of_h01_h02": true,
+      "mixed_supported_and_problematic": false,
+      "clear_evidence": false,
+      "low_ambiguity": true,
+      "different_error_family_from_h02": true,
+      "unused_as_real_terra_canary": true,
+      "cost_comparable": true,
+      "eligible": false,
+      "notes": "No authorized evidence and no supported proposition. Tests wholesale rejection, not discrimination."
+    },
+    {
+      "case_id_audit_only": "4b276_p4_new_implication",
+      "opaque_handle": "h11",
+      "independent_of_h01_h02": true,
+      "mixed_supported_and_problematic": true,
+      "clear_evidence": true,
+      "low_ambiguity": true,
+      "different_error_family_from_h02": true,
+      "unused_as_real_terra_canary": true,
+      "cost_comparable": true,
+      "eligible": true,
+      "notes": "Controlled synthetic from canonical 4b22_p4_supported. Keeps the attested paraphrase and adds one which-means guarantee. Evidence unchanged. Not an authentic citation."
+    }
+  ],
+  "selected": {
+    "case_id": "4b276_p4_new_implication",
+    "handle": "h11",
+    "origin": "SYNTHETIC_VARIANT_OF_4B22_P4_SUPPORTED",
+    "failure_family": "NEW_IMPLICATION_AND_UNCERTAINTY_STRENGTHENED",
+    "why": [
+      "Existing unused negatives were either wholesale (CONNECTIVE), causally confounded (FUNERAL 'exactly why'), or too editorially overloaded (P8 sting plus other unattested clauses).",
+      "Historical positives have no problematic proposition.",
+      "A controlled synthetic built on a clearly supported p4 extract yields one identifiable unsupported addition without inventing speaker evidence.",
+      "Contract 1.1.3 explicitly defines new implication and unsupported strengthening."
+    ]
+  },
+  "rejected_existing_best_alternatives": {
+    "4b22_p8_reference_completion": "Independent family but overloaded unattested clauses.",
+    "4b2_p8_invented_funeral": "Independent family but 'exactly why' causal confound.",
+    "4b2_p13_unsupported_connective": "No supported proposition and no evidence.",
+    "historical_positives": "No problematic proposition.",
+    "h01_h02": "Already used; statuses remain PARTIAL."
+  },
+  "historical_handles_not_reused_as_request_handle": true,
+  "h01_handle": "h01",
+  "h02_handle": "h02",
+  "secrets_included": false
+}

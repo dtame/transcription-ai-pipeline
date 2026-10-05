@@ -1,0 +1,43 @@
+{
+  "phase": "4B.2.23",
+  "chapter_id": "CH004",
+  "overall_classification": "POTENTIAL_SUBSTANTIVE_ISSUE",
+  "readability": "20 paragraphs across 5 sections. Offline readability only.",
+  "section_organization": [
+    "The Shadow and the Reality",
+    "Three Sacred Offices",
+    "Recognizing Who Stands Before You",
+    "Malachi's Warning to the Priests",
+    "Let No One Despise the Calling"
+  ],
+  "authorial_voice": {
+    "first_person_observed": true,
+    "second_person_observed": true,
+    "conference_report_frames": [],
+    "classification": "NO_ISSUE_DETECTED"
+  },
+  "testimonies": "UNDETERMINED",
+  "references": "UNDETERMINED",
+  "transitions": "NO_ISSUE_DETECTED",
+  "repetitions": "UNDETERMINED",
+  "observations": [
+    {
+      "code": "STRENGTHENED_CLAIM",
+      "classification": "POTENTIAL_SUBSTANTIVE_ISSUE",
+      "detail": "Absolute wording may strengthen a source claim."
+    }
+  ],
+  "potential_substantive_issues": [
+    {
+      "code": "STRENGTHENED_CLAIM",
+      "classification": "POTENTIAL_SUBSTANTIVE_ISSUE",
+      "detail": "Absolute wording may strengthen a source claim."
+    }
+  ],
+  "blocking_substantive_issue_established": false,
+  "semantic_certification": "NOT PERFORMED",
+  "automatic_correction": false,
+  "terra_used": false,
+  "human_acceptance": "PENDING",
+  "secrets_included": false
+}

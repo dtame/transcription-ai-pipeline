@@ -1,0 +1,53 @@
+{
+  "phase": "4B.2.9",
+  "connected": false,
+  "enabled_by_default": false,
+  "entry_point": "After Book Generator materialize_chapter / validate_chapter_candidate and before ChapterCache.remember, Book Validator, and book.json publication.",
+  "inputs": {
+    "chapter_candidate": "app.book_generation.models.ChapterCandidate",
+    "paragraph_id": "canonical P000001-style identifiers assigned locally",
+    "paragraph_text": "generated paragraph, unmodified",
+    "evidence_handles": "declared canonical SRC/IDEA/EX/REF handles",
+    "chapter_handle": "editorial chapter id such as CH016 identity, not regeneration",
+    "transport": "explicit FakeAI or future authorized provider; never implicit"
+  },
+  "outputs": {
+    "decision": "PASS | BLOCK | REVIEW",
+    "prepared_units": "stable unit_id + offsets",
+    "verdicts": "per unit_id",
+    "diagnostics": "raw response preserved on BLOCK/REVIEW"
+  },
+  "errors": {
+    "coverage": "BLOCK",
+    "contract": "BLOCK",
+    "missing_unit": "BLOCK",
+    "remote_without_authorization": "BLOCK"
+  },
+  "cache": {
+    "production_cache": "UNCHANGED",
+    "acceptance": false,
+    "REVIEW_does_not_accept": true,
+    "signature_would_need_gate_version": "A future connected gate would add book-semantic-validator-2.0-candidate / book-semantic-validation-transport-2.0-candidate to ChapterSignatureInputs. Not done in this phase."
+  },
+  "versioning": {
+    "generator_prompt": "book-generator-1.0.1",
+    "generator_validator": "book-generation-validator-1.0.1",
+    "semantic_contract_candidate": "book-semantic-validator-2.0-candidate",
+    "semantic_transport_candidate": "book-semantic-validation-transport-2.0-candidate",
+    "book_filename": "book.json"
+  },
+  "audit": "audit/book_semantic_gate_4b29/ plus per-paragraph diagnostics",
+  "resume": "Would resume from last structurally valid chapter; semantic REVIEW is not a cache hit.",
+  "cost": "No provider spend in 4B.2.9. Future Terra cost remains unmeasured.",
+  "structural_validation": "Book Generator validator remains first.",
+  "semantic_validation": "Semantic Gate 2.0 candidate, isolated.",
+  "acceptance_conditions": {
+    "PASS": "local preparation + contract + all substantive SUPPORTED",
+    "BLOCK": "UNSUPPORTED / invalid contract / coverage / evidence",
+    "REVIEW": "QUESTIONABLE / ambiguous boundary / human reservation"
+  },
+  "does_not_replace_book_validator": true,
+  "production_pipeline_modified": false,
+  "module": "app.book_semantic_gate_4b29.integration.SemanticGate20IntegrationCandidate",
+  "secrets_included": false
+}

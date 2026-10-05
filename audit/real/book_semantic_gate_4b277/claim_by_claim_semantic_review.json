@@ -1,0 +1,704 @@
+{
+  "phase": "4B.2.7.7",
+  "case_id_audit_only": "4b276_p4_new_implication",
+  "handle": "h11",
+  "human_verdict_audit_only": "UNSUPPORTED",
+  "human_accepted_classes_audit_only": [
+    "QUESTIONABLE",
+    "UNSUPPORTED"
+  ],
+  "human_verdict_not_transmitted": true,
+  "human_label_unmodified": true,
+  "disputed_clause": "which means that every believer is guaranteed a fearless death",
+  "clause_offsets": {
+    "start": 294,
+    "end": 356,
+    "expected_start": 294,
+    "expected_end": 356,
+    "match": true
+  },
+  "terra_global_verdict": "UNSUPPORTED",
+  "global_verdict_blocks_acceptance": true,
+  "global_questionable_is_not_semantic_pass_alone": true,
+  "universal_guarantee_verdict": "UNSUPPORTED",
+  "universal_guarantee_reason_codes": [
+    "NEW_CONCLUSION"
+  ],
+  "universal_guarantee_reason_code": "NEW_CONCLUSION",
+  "reason_code_relevant": false,
+  "reason_code_acceptable": true,
+  "clause_identified": true,
+  "clause_flagged_questionable_or_unsupported": true,
+  "clause_accepted_as_supported": false,
+  "clause_omitted": false,
+  "clause_isolated": true,
+  "discrimination": true,
+  "all_claims_questionable": false,
+  "wrong_target": false,
+  "overlapping_claims": [
+    {
+      "index": 6,
+      "class": "UNSUPPORTED",
+      "start": 291,
+      "end": 353,
+      "recovered_text": "g, which means that every believer is guaranteed a fearless de",
+      "evidence": [],
+      "reasons": [
+        "NEW_CONCLUSION"
+      ],
+      "unknown_reasons": [],
+      "note": "A guaranteed fearless death for every believer is not established.",
+      "span_valid": true,
+      "overlaps_disputed_clause": true,
+      "contains_which_means": true,
+      "contains_guaranteed": true,
+      "contains_every_believer": true,
+      "contains_clause_text": false
+    }
+  ],
+  "claims": [
+    {
+      "index": 0,
+      "class": "QUESTIONABLE",
+      "start": 0,
+      "end": 44,
+      "recovered_text": "But this is not a matter of mental technique",
+      "evidence": [
+        "SRC006192"
+      ],
+      "reasons": [
+        "EVIDENCE_MISMATCH"
+      ],
+      "unknown_reasons": [],
+      "note": "The source rejects mind over matter but does not establish the broader mental-technique framing.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 1,
+      "class": "SUPPORTED",
+      "start": 46,
+      "end": 72,
+      "recovered_text": "It is not mind over matter",
+      "evidence": [
+        "SRC006192"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 2,
+      "class": "UNSUPPORTED",
+      "start": 74,
+      "end": 137,
+      "recovered_text": "not a trick of positive thinking applied to a frightening subje",
+      "evidence": [],
+      "reasons": [
+        "NEW_FACT"
+      ],
+      "unknown_reasons": [],
+      "note": "The positive-thinking characterization is not supplied.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 3,
+      "class": "SUPPORTED",
+      "start": 139,
+      "end": 177,
+      "recovered_text": ". Death as gain must become your reali",
+      "evidence": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 4,
+      "class": "UNSUPPORTED",
+      "start": 180,
+      "end": 232,
+      "recovered_text": "— not an idea you agree with in a sermon and set asi",
+      "evidence": [
+        "IDEA226"
+      ],
+      "reasons": [
+        "INVENTED_EXAMPLE"
+      ],
+      "unknown_reasons": [],
+      "note": "The sermon-setting illustration is not in the evidence.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 5,
+      "class": "SUPPORTED",
+      "start": 234,
+      "end": 289,
+      "recovered_text": ", but the actual substance of how you face your own end",
+      "evidence": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 6,
+      "class": "UNSUPPORTED",
+      "start": 291,
+      "end": 353,
+      "recovered_text": "g, which means that every believer is guaranteed a fearless de",
+      "evidence": [],
+      "reasons": [
+        "NEW_CONCLUSION"
+      ],
+      "unknown_reasons": [],
+      "note": "A guaranteed fearless death for every believer is not established.",
+      "span_valid": true,
+      "overlaps_disputed_clause": true,
+      "contains_which_means": true,
+      "contains_guaranteed": true,
+      "contains_every_believer": true,
+      "contains_clause_text": false
+    }
+  ],
+  "claim_by_claim": [
+    {
+      "id": "p1_mental_technique",
+      "text": "But this is not a matter of mental technique",
+      "offsets": [
+        0,
+        44
+      ],
+      "found": true,
+      "family": "supported_prefix",
+      "terra_verdict": "QUESTIONABLE",
+      "terra_reason_codes": [
+        "EVIDENCE_MISMATCH"
+      ],
+      "terra_evidence_handles": [
+        "SRC006192"
+      ],
+      "relevant_evidence_available": [
+        "IDEA226",
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "human_verdict_audit_only": "SUPPORTED",
+      "human_analysis": "Stylistic restatement of the mind-over-matter refusal. Historically accepted inside 4b22_p4_supported.",
+      "agreement": false,
+      "agreement_note": "Disagree: historically supported prefix was rejected.",
+      "terra_note": "The source rejects mind over matter but does not establish the broader mental-technique framing."
+    },
+    {
+      "id": "p2_mind_over_matter",
+      "text": "It is not mind over matter",
+      "offsets": [
+        46,
+        72
+      ],
+      "found": true,
+      "family": "supported_prefix",
+      "terra_verdict": "SUPPORTED",
+      "terra_reason_codes": [],
+      "terra_evidence_handles": [
+        "SRC006192"
+      ],
+      "relevant_evidence_available": [
+        "SRC006192",
+        "IDEA226"
+      ],
+      "human_verdict_audit_only": "SUPPORTED",
+      "human_analysis": "Direct paraphrase of SRC006192.",
+      "agreement": true,
+      "agreement_note": "Agree: supported prefix kept as SUPPORTED.",
+      "terra_note": ""
+    },
+    {
+      "id": "p3_positive_thinking",
+      "text": "not a trick of positive thinking applied to a frightening subject",
+      "offsets": [
+        74,
+        139
+      ],
+      "found": true,
+      "family": "supported_prefix",
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NEW_FACT"
+      ],
+      "terra_evidence_handles": [],
+      "relevant_evidence_available": [
+        "SRC006192",
+        "IDEA226"
+      ],
+      "human_verdict_audit_only": "SUPPORTED",
+      "human_analysis": "Editorial expansion of 'not mind over matter' without a new relation.",
+      "agreement": false,
+      "agreement_note": "Disagree: historically supported prefix was rejected.",
+      "terra_note": "The positive-thinking characterization is not supplied."
+    },
+    {
+      "id": "p4_lived_reality",
+      "text": "Death as gain must become your reality",
+      "offsets": [
+        141,
+        179
+      ],
+      "found": true,
+      "family": "supported_prefix",
+      "terra_verdict": "SUPPORTED",
+      "terra_reason_codes": [],
+      "terra_evidence_handles": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "relevant_evidence_available": [
+        "IDEA226",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "human_verdict_audit_only": "SUPPORTED",
+      "human_analysis": "Attested by IDEA226 and SRC006193/SRC006195.",
+      "agreement": true,
+      "agreement_note": "Agree: supported prefix kept as SUPPORTED.",
+      "terra_note": ""
+    },
+    {
+      "id": "p5_not_sermon_idea",
+      "text": "not an idea you agree with in a sermon and set aside",
+      "offsets": [
+        182,
+        234
+      ],
+      "found": true,
+      "family": "supported_prefix",
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "INVENTED_EXAMPLE"
+      ],
+      "terra_evidence_handles": [
+        "IDEA226"
+      ],
+      "relevant_evidence_available": [
+        "IDEA226"
+      ],
+      "human_verdict_audit_only": "SUPPORTED",
+      "human_analysis": "Paraphrase of IDEA226: lived reality, not merely an intellectual idea.",
+      "agreement": false,
+      "agreement_note": "Disagree: historically supported prefix was rejected.",
+      "terra_note": "The sermon-setting illustration is not in the evidence."
+    },
+    {
+      "id": "p6_substance_of_ending",
+      "text": "the actual substance of how you face your own ending",
+      "offsets": [
+        240,
+        292
+      ],
+      "found": true,
+      "family": "supported_prefix",
+      "terra_verdict": "SUPPORTED",
+      "terra_reason_codes": [],
+      "terra_evidence_handles": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "relevant_evidence_available": [
+        "IDEA226",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "human_verdict_audit_only": "SUPPORTED",
+      "human_analysis": "Lived-reality restatement, historically supported.",
+      "agreement": true,
+      "agreement_note": "Agree: supported prefix kept as SUPPORTED.",
+      "terra_note": ""
+    },
+    {
+      "id": "p7_universal_guarantee",
+      "text": "which means that every believer is guaranteed a fearless death",
+      "offsets": [
+        294,
+        356
+      ],
+      "found": true,
+      "family": "universal_guarantee",
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NEW_CONCLUSION"
+      ],
+      "terra_evidence_handles": [],
+      "relevant_evidence_available": [],
+      "human_verdict_audit_only": "UNSUPPORTED",
+      "human_analysis": "New universal guarantee. Evidence requires lived reality of death as gain; it does not entail that every believer is guaranteed a fearless death.",
+      "agreement": true,
+      "agreement_note": "Agree: universal guarantee is blocked.",
+      "terra_note": "A guaranteed fearless death for every believer is not established."
+    }
+  ],
+  "guarantee_row": {
+    "id": "p7_universal_guarantee",
+    "text": "which means that every believer is guaranteed a fearless death",
+    "offsets": [
+      294,
+      356
+    ],
+    "found": true,
+    "family": "universal_guarantee",
+    "terra_verdict": "UNSUPPORTED",
+    "terra_reason_codes": [
+      "NEW_CONCLUSION"
+    ],
+    "terra_evidence_handles": [],
+    "relevant_evidence_available": [],
+    "human_verdict_audit_only": "UNSUPPORTED",
+    "human_analysis": "New universal guarantee. Evidence requires lived reality of death as gain; it does not entail that every believer is guaranteed a fearless death.",
+    "agreement": true,
+    "agreement_note": "Agree: universal guarantee is blocked.",
+    "terra_note": "A guaranteed fearless death for every believer is not established."
+  },
+  "supported_prefix_agreements": 3,
+  "supported_prefix_disagreements": 3,
+  "cited_evidence": [
+    "IDEA226",
+    "SRC006192",
+    "SRC006193"
+  ],
+  "invalid_evidence_references": [],
+  "unknown_reason_codes": [],
+  "notes": [
+    "The source rejects mind over matter but does not establish the broader mental-technique framing.",
+    "The positive-thinking characterization is not supplied.",
+    "The sermon-setting illustration is not in the evidence.",
+    "A guaranteed fearless death for every believer is not established."
+  ],
+  "local_propositions": [
+    {
+      "id": "p1_mental_technique",
+      "text": "But this is not a matter of mental technique",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_prefix",
+      "relevant_evidence": [
+        "IDEA226",
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "human_analysis": "Stylistic restatement of the mind-over-matter refusal. Historically accepted inside 4b22_p4_supported.",
+      "found": true,
+      "start": 0,
+      "end": 44,
+      "exact_match": true
+    },
+    {
+      "id": "p2_mind_over_matter",
+      "text": "It is not mind over matter",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_prefix",
+      "relevant_evidence": [
+        "SRC006192",
+        "IDEA226"
+      ],
+      "human_analysis": "Direct paraphrase of SRC006192.",
+      "found": true,
+      "start": 46,
+      "end": 72,
+      "exact_match": true
+    },
+    {
+      "id": "p3_positive_thinking",
+      "text": "not a trick of positive thinking applied to a frightening subject",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_prefix",
+      "relevant_evidence": [
+        "SRC006192",
+        "IDEA226"
+      ],
+      "human_analysis": "Editorial expansion of 'not mind over matter' without a new relation.",
+      "found": true,
+      "start": 74,
+      "end": 139,
+      "exact_match": true
+    },
+    {
+      "id": "p4_lived_reality",
+      "text": "Death as gain must become your reality",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_prefix",
+      "relevant_evidence": [
+        "IDEA226",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "human_analysis": "Attested by IDEA226 and SRC006193/SRC006195.",
+      "found": true,
+      "start": 141,
+      "end": 179,
+      "exact_match": true
+    },
+    {
+      "id": "p5_not_sermon_idea",
+      "text": "not an idea you agree with in a sermon and set aside",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_prefix",
+      "relevant_evidence": [
+        "IDEA226"
+      ],
+      "human_analysis": "Paraphrase of IDEA226: lived reality, not merely an intellectual idea.",
+      "found": true,
+      "start": 182,
+      "end": 234,
+      "exact_match": true
+    },
+    {
+      "id": "p6_substance_of_ending",
+      "text": "the actual substance of how you face your own ending",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_prefix",
+      "relevant_evidence": [
+        "IDEA226",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "human_analysis": "Lived-reality restatement, historically supported.",
+      "found": true,
+      "start": 240,
+      "end": 292,
+      "exact_match": true
+    },
+    {
+      "id": "p7_universal_guarantee",
+      "text": "which means that every believer is guaranteed a fearless death",
+      "human_verdict": "UNSUPPORTED",
+      "family": "universal_guarantee",
+      "relevant_evidence": [],
+      "human_analysis": "New universal guarantee. Evidence requires lived reality of death as gain; it does not entail that every believer is guaranteed a fearless death.",
+      "found": true,
+      "start": 294,
+      "end": 356,
+      "exact_match": true
+    }
+  ],
+  "supported_claims_review": "PARTIAL",
+  "supported_claims": [
+    {
+      "index": 1,
+      "class": "SUPPORTED",
+      "start": 46,
+      "end": 72,
+      "recovered_text": "It is not mind over matter",
+      "evidence": [
+        "SRC006192"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 3,
+      "class": "SUPPORTED",
+      "start": 139,
+      "end": 177,
+      "recovered_text": ". Death as gain must become your reali",
+      "evidence": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 5,
+      "class": "SUPPORTED",
+      "start": 234,
+      "end": 289,
+      "recovered_text": ", but the actual substance of how you face your own end",
+      "evidence": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    }
+  ],
+  "other_flagged_claims": [
+    {
+      "index": 0,
+      "class": "QUESTIONABLE",
+      "start": 0,
+      "end": 44,
+      "recovered_text": "But this is not a matter of mental technique",
+      "evidence": [
+        "SRC006192"
+      ],
+      "reasons": [
+        "EVIDENCE_MISMATCH"
+      ],
+      "unknown_reasons": [],
+      "note": "The source rejects mind over matter but does not establish the broader mental-technique framing.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 2,
+      "class": "UNSUPPORTED",
+      "start": 74,
+      "end": 137,
+      "recovered_text": "not a trick of positive thinking applied to a frightening subje",
+      "evidence": [],
+      "reasons": [
+        "NEW_FACT"
+      ],
+      "unknown_reasons": [],
+      "note": "The positive-thinking characterization is not supplied.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 4,
+      "class": "UNSUPPORTED",
+      "start": 180,
+      "end": 232,
+      "recovered_text": "— not an idea you agree with in a sermon and set asi",
+      "evidence": [
+        "IDEA226"
+      ],
+      "reasons": [
+        "INVENTED_EXAMPLE"
+      ],
+      "unknown_reasons": [],
+      "note": "The sermon-setting illustration is not in the evidence.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_which_means": false,
+      "contains_guaranteed": false,
+      "contains_every_believer": false,
+      "contains_clause_text": false
+    }
+  ],
+  "unjustified_other_rejections": [],
+  "coverage_ok": false,
+  "spans_ok": true,
+  "contract_status": "FAIL",
+  "semantic_core_pass": false,
+  "technical_ok": false,
+  "semantic_fail_reasons": [],
+  "semantic_partial_reasons": [
+    "guarantee_reason_code_neighbor_not_primary",
+    "supported_claims_false_rejection",
+    "contract_invalid_independent_of_semantics",
+    "coverage_incomplete"
+  ],
+  "semantic_status": "PARTIAL",
+  "review_status": "PARTIAL",
+  "human_reference_comparison": {
+    "phase": "4B.2.7.7",
+    "human_label_audit_only": "UNSUPPORTED",
+    "human_accepted_classes_audit_only": [
+      "QUESTIONABLE",
+      "UNSUPPORTED"
+    ],
+    "human_label_not_transmitted": true,
+    "human_label_unmodified": true,
+    "target_failure_family_audit_only": "NEW_IMPLICATION_AND_UNCERTAINTY_STRENGTHENED",
+    "expected_paragraph_verdict": "UNSUPPORTED",
+    "expected_global_verdicts": [
+      "REVIEW",
+      "FAIL"
+    ],
+    "terra_paragraph_or_global": "UNSUPPORTED",
+    "terra_blocks_acceptance": true,
+    "universal_guarantee_verdict": "UNSUPPORTED",
+    "universal_guarantee_reason_codes": [
+      "NEW_CONCLUSION"
+    ],
+    "agreement_on_guarantee": true,
+    "agreement_on_supported_prefix": false,
+    "global_block_alone_is_not_pass": true,
+    "acceptance_criteria": [
+      "Supported prefix is classified SUPPORTED or is not rejected as a new assertion.",
+      "The disputed 'which means' span is QUESTIONABLE or UNSUPPORTED.",
+      "The reservation targets the disputed span, not the mind-over-matter or lived-reality clauses.",
+      "At least one catalog reason code from the acceptable set is used.",
+      "Global verdict is REVIEW or FAIL and therefore blocks production acceptance.",
+      "Cited evidence handles are a subset of IDEA226, SRC006192, SRC006193, SRC006195."
+    ],
+    "rejection_criteria": [
+      "The implication clause is accepted as SUPPORTED.",
+      "A significant supported prefix clause is rejected as a new assertion.",
+      "The reservation is attached to the wrong span.",
+      "A reason code outside the closed catalog is emitted.",
+      "A substantive proposition is omitted from coverage.",
+      "An evidence handle not in the authorized set is invented.",
+      "Justification relies on world knowledge rather than supplied evidence.",
+      "JSON is unusable or truncated."
+    ],
+    "secrets_included": false
+  },
+  "secrets_included": false
+}

@@ -1,0 +1,241 @@
+{
+  "phase": "4B.2.17",
+  "contract": "source-coverage-control-4b216-candidate",
+  "activated_in_production": false,
+  "not_a_terra_verdict": true,
+  "units": [
+    {
+      "id": "IDEA179",
+      "kind": "idea",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "IDEA182",
+      "kind": "idea",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "IDEA186",
+      "kind": "idea",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "IDEA180",
+      "kind": "idea",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "IDEA181",
+      "kind": "idea",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "IDEA237",
+      "kind": "idea",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "IDEA184",
+      "kind": "idea",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "IDEA185",
+      "kind": "idea",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "IDEA238",
+      "kind": "idea",
+      "status": "IDENTIFIER_ONLY",
+      "content_represented": false,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "IDEA212",
+      "kind": "idea",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "IDEA213",
+      "kind": "idea",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "EX030",
+      "kind": "example",
+      "status": "NOT_COVERED",
+      "content_represented": false,
+      "identifier_listed_in_metadata": false,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "REF036",
+      "kind": "reference",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": false,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "REF044",
+      "kind": "reference",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": false,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "REF047",
+      "kind": "reference",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": false,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "REF037",
+      "kind": "reference",
+      "status": "NOT_COVERED",
+      "content_represented": false,
+      "identifier_listed_in_metadata": false,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "REF038",
+      "kind": "reference",
+      "status": "NOT_COVERED",
+      "content_represented": false,
+      "identifier_listed_in_metadata": false,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "REF042",
+      "kind": "reference",
+      "status": "COVERED",
+      "content_represented": true,
+      "identifier_listed_in_metadata": false,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "REF043",
+      "kind": "reference",
+      "status": "NOT_COVERED",
+      "content_represented": false,
+      "identifier_listed_in_metadata": false,
+      "identifier_alone_is_not_coverage": true
+    },
+    {
+      "id": "UNC029",
+      "kind": "reservation",
+      "status": "IDENTIFIER_ONLY",
+      "content_represented": false,
+      "identifier_listed_in_metadata": true,
+      "identifier_alone_is_not_coverage": true
+    }
+  ],
+  "by_kind": {
+    "idea": {
+      "required": 11,
+      "covered": 10,
+      "identifier_only": 1,
+      "not_covered": 0
+    },
+    "reasoning": {
+      "required": 0,
+      "covered": 0,
+      "identifier_only": 0,
+      "not_covered": 0
+    },
+    "example": {
+      "required": 1,
+      "covered": 0,
+      "identifier_only": 0,
+      "not_covered": 1
+    },
+    "reference": {
+      "required": 7,
+      "covered": 4,
+      "identifier_only": 0,
+      "not_covered": 3
+    },
+    "reservation": {
+      "required": 1,
+      "covered": 0,
+      "identifier_only": 1,
+      "not_covered": 0
+    }
+  },
+  "important_missing": [
+    "IDEA238",
+    "EX030",
+    "REF037",
+    "REF038",
+    "REF043",
+    "UNC029"
+  ],
+  "pass": false,
+  "chapter_id": "CH012",
+  "identifier_coverage": {
+    "ideas_listed": [
+      "IDEA179",
+      "IDEA182",
+      "IDEA186",
+      "IDEA180",
+      "IDEA181",
+      "IDEA237",
+      "IDEA184",
+      "IDEA185",
+      "IDEA238",
+      "IDEA212",
+      "IDEA213"
+    ],
+    "ideas_in_metadata": [
+      "IDEA179",
+      "IDEA182",
+      "IDEA186",
+      "IDEA180",
+      "IDEA181",
+      "IDEA237",
+      "IDEA184",
+      "IDEA185",
+      "IDEA238",
+      "IDEA212",
+      "IDEA213"
+    ]
+  },
+  "content_coverage_is_heuristic": true,
+  "semantic_coverage_certified": false,
+  "secrets_included": false
+}

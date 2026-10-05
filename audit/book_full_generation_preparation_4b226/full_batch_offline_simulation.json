@@ -1,0 +1,197 @@
+{
+  "phase": "4B.2.26",
+  "status": "PASS",
+  "provider_calls": 0,
+  "anthropic_http": 0,
+  "openai_http": 0,
+  "simulated_control_units": 13,
+  "real_reservations": 0,
+  "chapters_generated": 0,
+  "journal": [
+    {
+      "chapter_id": "CH005",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH006",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH007",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH008",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH009",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH010",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH011",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH013",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH014",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH015",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH016",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH017",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    },
+    {
+      "chapter_id": "CH019",
+      "status": "SIMULATED_VALIDATED",
+      "provider_call": false,
+      "real_reservation": false,
+      "pending_human_acceptance": true,
+      "published": false
+    }
+  ],
+  "stop_reason": "SIMULATION_COMPLETED_WITHOUT_PROVIDER",
+  "resume": {
+    "chapter_id": null,
+    "blocked": false,
+    "ready": false,
+    "reason": "no_pending_chapter",
+    "skipped": [
+      {
+        "chapter_id": "CH005",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH006",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH007",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH008",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH009",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH010",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH011",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH013",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH014",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH015",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH016",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH017",
+        "reason": "already_validated"
+      },
+      {
+        "chapter_id": "CH019",
+        "reason": "already_validated"
+      }
+    ]
+  },
+  "checks": {
+    "thirteen_chapters_in_plan": true,
+    "accepted_six_not_in_queue": true,
+    "order_deterministic": true,
+    "contexts_hydratable": true,
+    "budgets_calculable": true,
+    "future_authorization_inactive": true,
+    "provider_calls": true,
+    "no_publication": true,
+    "locks_function": true,
+    "blocking_error_stops_execution": true,
+    "resume_does_not_duplicate": true,
+    "precall_cannot_exceed_budget_voluntarily": true,
+    "uncertain_never_replayed": true,
+    "normalization_does_not_hide_substantial_error": true,
+    "no_chapter_published_without_approval": true
+  },
+  "plan_executed": false,
+  "book_json_published": false,
+  "secrets_included": false
+}

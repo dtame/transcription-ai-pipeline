@@ -1,0 +1,22 @@
+{
+  "phase": "4B.2.14",
+  "version": "book-single-chapter-mode-4b214-candidate",
+  "enabled_by_default": false,
+  "real_providers_enabled": false,
+  "requires_explicit_chapter_id": true,
+  "does_not_walk_other_chapters": true,
+  "does_not_trigger_global_generation": true,
+  "does_not_assemble_book": true,
+  "does_not_run_phase5": true,
+  "does_not_emit_word_pdf": true,
+  "does_not_fallback": true,
+  "does_not_retry_provider_automatically": true,
+  "tested_with_fakeai_only": true,
+  "secrets_included": false,
+  "locked_chapter_id": "SYN-CH001",
+  "locked_decision": "PASS",
+  "other_chapters_blocked": true,
+  "book_assembled": false,
+  "phase5_executed": false,
+  "ok": true
+}

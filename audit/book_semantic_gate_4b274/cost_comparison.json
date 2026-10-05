@@ -1,0 +1,96 @@
+{
+  "phase": "4B.2.7.4",
+  "provider_cost_in_this_phase": 0,
+  "observed": {
+    "h01": {
+      "input_tokens": 1654,
+      "completion_tokens": 1292,
+      "reasoning_tokens": 985,
+      "cost_usd": 0.018812,
+      "chapter_verdict": "REVIEW",
+      "paragraph_verdict": "QUESTIONABLE",
+      "claim_count": 7,
+      "reservation_count": 1,
+      "supported_count": 6,
+      "questionable_count": 1,
+      "unsupported_count": 0,
+      "evidence_handles_cited": [
+        "IDEA224",
+        "SRC006149",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "evidence_handle_count": 5,
+      "reason_codes": [],
+      "compact_json_chars": 890
+    },
+    "h02": {
+      "input_tokens": 1692,
+      "completion_tokens": 5221,
+      "reasoning_tokens": 4595,
+      "cost_usd": 0.066036,
+      "chapter_verdict": "FAIL",
+      "paragraph_verdict": "UNSUPPORTED",
+      "claim_count": 11,
+      "reservation_count": 7,
+      "supported_count": 4,
+      "questionable_count": 3,
+      "unsupported_count": 4,
+      "evidence_handles_cited": [
+        "IDEA225",
+        "SRC006152",
+        "SRC006154",
+        "SRC006155",
+        "SRC006156",
+        "SRC006157"
+      ],
+      "evidence_handle_count": 6,
+      "reason_codes": [
+        "INVENTED_CAUSAL_LINK",
+        "NO_EVIDENCE",
+        "PARTIAL_REFERENCE_EXPANSION",
+        "UNJUSTIFIED_STRENGTHENING",
+        "UNSUPPORTED_IMPLICATION"
+      ],
+      "compact_json_chars": 1878
+    }
+  },
+  "deltas": {
+    "input_tokens": 38,
+    "completion_tokens": 3929,
+    "reasoning_tokens": 3610,
+    "cost_usd": 0.047224,
+    "claim_count": 4,
+    "reservation_count": 6
+  },
+  "prompt_bytes": {
+    "1.1-candidate": 4235,
+    "1.1.1-candidate": 4956,
+    "1.1.2-candidate": 8202
+  },
+  "observable_differences": [
+    "h02 compact JSON is larger and enumerates more claims.",
+    "h02 has more reservations than h01.",
+    "h02 input tokens are only slightly higher than h01.",
+    "h02 completion and reasoning tokens are substantially higher.",
+    "1.1.2 prompt is larger than 1.1.1 because the catalog is listed."
+  ],
+  "not_claimed": [
+    "Terra internal reasoning mechanisms are not known.",
+    "Cost increase is not attributed to a single proven factor."
+  ],
+  "prudent_future_canary_band_usd": {
+    "lower_observed_like_h01": 0.02,
+    "upper_observed_like_h02": 0.07,
+    "if_8192_output_exhausted_approx": 0.11,
+    "input_tokens_planning_range": [
+      1700,
+      2300
+    ],
+    "unknown_reasoning_tokens_remain": true,
+    "not_a_guarantee": true
+  },
+  "no_provider_cost_here": true,
+  "secrets_included": false
+}

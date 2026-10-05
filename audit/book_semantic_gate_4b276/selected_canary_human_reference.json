@@ -1,0 +1,118 @@
+{
+  "phase": "4B.2.7.6",
+  "canary_id": "4b276_p4_new_implication",
+  "opaque_handle": "h11",
+  "origin": "SYNTHETIC_VARIANT_OF_4B22_P4_SUPPORTED",
+  "synthetic": true,
+  "presented_as_authentic_citation": false,
+  "historical_source_unmodified": true,
+  "present_in_provider_request": false,
+  "paragraph_verdict_expected": "UNSUPPORTED",
+  "accepted_paragraph_verdicts": [
+    "QUESTIONABLE",
+    "UNSUPPORTED"
+  ],
+  "global_verdict_expected": "FAIL",
+  "accepted_global_verdicts": [
+    "REVIEW",
+    "FAIL"
+  ],
+  "target_failure_family": "NEW_IMPLICATION_AND_UNCERTAINTY_STRENGTHENED",
+  "claims": [
+    {
+      "i": 0,
+      "span": [
+        0,
+        292
+      ],
+      "text": "But this is not a matter of mental technique. It is not mind over matter, not a trick of positive thinking applied to a frightening subject. Death as gain must become your reality — not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending",
+      "verdict": "SUPPORTED",
+      "reason_codes": [],
+      "evidence_handles": [
+        "IDEA226",
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "justification": "Editorial paraphrase of IDEA226 plus SRC006192/SRC006193/SRC006195. Historically labeled SUPPORTED as 4b22_p4_supported. Mind-over-matter and lived-reality content is attested. Stylistic expansions (mental technique, positive thinking, sermon, substance of one's ending) remain inside the historical positive reading and do not add a new relation.",
+      "supported": true
+    },
+    {
+      "i": 1,
+      "span": [
+        294,
+        356
+      ],
+      "text": "which means that every believer is guaranteed a fearless death",
+      "verdict": "UNSUPPORTED",
+      "accepted_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "reason_codes": [
+        "NEW_IMPLICATION",
+        "UNCERTAINTY_STRENGTHENED"
+      ],
+      "acceptable_reason_codes": [
+        "NEW_IMPLICATION",
+        "UNCERTAINTY_STRENGTHENED",
+        "NEW_CONCLUSION",
+        "NEW_DOCTRINAL_CLAIM"
+      ],
+      "evidence_handles": [],
+      "justification": "The 'which means' clause adds a universal guarantee of a fearless death. Authorized evidence says death as gain must become one's lived reality and that this is not mind over matter. It does not entail that every believer is guaranteed a fearless death. This is a new implication and an unsupported strengthening, not a paraphrase of the source sentences.",
+      "supported": false
+    }
+  ],
+  "supported_portions": [
+    "But this is not a matter of mental technique. It is not mind over matter, not a trick of positive thinking applied to a frightening subject. Death as gain must become your reality — not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending"
+  ],
+  "unsupported_portions": [
+    "which means that every believer is guaranteed a fearless death"
+  ],
+  "admissible_uncovered": {
+    "comma_before_clause": ", ",
+    "sentence_final_period": "."
+  },
+  "acceptance_criteria": [
+    "Supported prefix is classified SUPPORTED or is not rejected as a new assertion.",
+    "The disputed 'which means' span is QUESTIONABLE or UNSUPPORTED.",
+    "The reservation targets the disputed span, not the mind-over-matter or lived-reality clauses.",
+    "At least one catalog reason code from the acceptable set is used.",
+    "Global verdict is REVIEW or FAIL and therefore blocks production acceptance.",
+    "Cited evidence handles are a subset of IDEA226, SRC006192, SRC006193, SRC006195."
+  ],
+  "rejection_criteria": [
+    "The implication clause is accepted as SUPPORTED.",
+    "A significant supported prefix clause is rejected as a new assertion.",
+    "The reservation is attached to the wrong span.",
+    "A reason code outside the closed catalog is emitted.",
+    "A substantive proposition is omitted from coverage.",
+    "An evidence handle not in the authorized set is invented.",
+    "Justification relies on world knowledge rather than supplied evidence.",
+    "JSON is unusable or truncated."
+  ],
+  "clause_offsets": {
+    "found": true,
+    "start": 294,
+    "end": 356,
+    "recovered": "which means that every believer is guaranteed a fearless death",
+    "exact_match": true,
+    "interval": "half_open",
+    "python_slice": "text[294:356]",
+    "preceding": "stance of how you face your own ending, ",
+    "following": "."
+  },
+  "source_paragraph": "But this is not a matter of mental technique. It is not mind over matter, not a trick of positive thinking applied to a frightening subject. Death as gain must become your reality — not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending.",
+  "synthetic_paragraph": "But this is not a matter of mental technique. It is not mind over matter, not a trick of positive thinking applied to a frightening subject. Death as gain must become your reality — not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending, which means that every believer is guaranteed a fearless death.",
+  "modifications": [
+    {
+      "type": "append_implication_clause",
+      "source_ending": ".",
+      "removed": ".",
+      "added": ", which means that every believer is guaranteed a fearless death.",
+      "authentic_citation": false
+    }
+  ],
+  "secrets_included": false
+}

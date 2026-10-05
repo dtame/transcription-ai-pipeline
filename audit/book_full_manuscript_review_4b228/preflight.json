@@ -1,0 +1,9 @@
+{
+  "phase": "4B.2.28",
+  "authorization_scope": "BOOK_FULL_MANUSCRIPT_EDITORIAL_REVIEW_4B228_CONSOLIDATION_ONLY",
+  "offline": true,
+  "provider_calls": 0,
+  "canonical_hashes_ok": true,
+  "real_generation_authorized": false,
+  "secrets_included": false
+}

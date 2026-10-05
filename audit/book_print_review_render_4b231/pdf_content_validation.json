@@ -1,0 +1,19 @@
+{
+  "phase": "4B.2.31",
+  "status": "PASS",
+  "extracted_characters": 92010,
+  "folded_characters": 71381,
+  "paragraphs_found": 335,
+  "paragraphs_expected": 335,
+  "chapters_found": 19,
+  "sections_found": 72,
+  "missing_paragraphs": [],
+  "missing_paragraph_count": 0,
+  "missing_chapters": [],
+  "missing_sections": [],
+  "draft_notice_present": true,
+  "extractor": "stdlib_pdf_stream",
+  "match_rule": "folded_alphanumerics_or_head_tail",
+  "verification": "automatic",
+  "secrets_included": false
+}

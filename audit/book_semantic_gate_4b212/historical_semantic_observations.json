@@ -1,0 +1,84 @@
+{
+  "phase": "4B.2.12",
+  "replay": "B_semantic_observations",
+  "provider_calls": 0,
+  "raw_unmodified": true,
+  "historical_canary_not_declared_pass": true,
+  "historical_4b211_status": "PARTIAL",
+  "five_classifications": [
+    {
+      "unit_id": "u00",
+      "terra_k": "SUPPORTED",
+      "human_k_audit_only": "SUPPORTED",
+      "evidence": [
+        "SRC006149"
+      ],
+      "false_rejection": false
+    },
+    {
+      "unit_id": "u01",
+      "terra_k": "SUPPORTED",
+      "human_k_audit_only": "SUPPORTED",
+      "evidence": [
+        "IDEA224"
+      ],
+      "false_rejection": false
+    },
+    {
+      "unit_id": "u02",
+      "terra_k": "SUPPORTED",
+      "human_k_audit_only": "SUPPORTED",
+      "evidence": [
+        "IDEA224",
+        "SRC006180",
+        "SRC006182"
+      ],
+      "false_rejection": false
+    },
+    {
+      "unit_id": "u03",
+      "terra_k": "SUPPORTED",
+      "human_k_audit_only": "SUPPORTED",
+      "evidence": [
+        "IDEA224",
+        "SRC006187"
+      ],
+      "false_rejection": false
+    },
+    {
+      "unit_id": "u04",
+      "terra_k": "SUPPORTED",
+      "human_k_audit_only": "SUPPORTED",
+      "evidence": [
+        "IDEA224",
+        "SRC006183"
+      ],
+      "false_rejection": false
+    }
+  ],
+  "all_five_supported": true,
+  "target_unit_id": "u01",
+  "target_paraphrase": "SUPPORTED",
+  "target_recognized": true,
+  "evidence_handles": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "invalid_evidence": [],
+  "false_rejections": [],
+  "no_false_rejection_observed": true,
+  "ambiguities": [
+    "u02 evidence is looser than IDEA224 alone but stays inside the supplied set.",
+    "Contract failure still blocks historical PASS.",
+    "h02 and h11 were not re-evaluated by Terra under 2.0.1 or 2.0.2."
+  ],
+  "finding": "TARGET_RECOGNIZED_WITH_CONTRACT_OR_COVERAGE_ISSUES",
+  "semantic_status": "PARTIAL",
+  "human_labels_unmodified": true,
+  "human_labels_not_transmitted": true,
+  "secrets_included": false
+}

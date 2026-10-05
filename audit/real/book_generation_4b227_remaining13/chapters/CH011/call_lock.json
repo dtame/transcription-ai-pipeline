@@ -1,0 +1,43 @@
+{
+  "phase": "4B.2.27",
+  "lock_version": "remaining-13-call-lock-4b227-1.0",
+  "authorization_scope": "BOOK_GENERATION_REMAINING_13_CHAPTERS_ONE_SHOT",
+  "chapter_id": "CH011",
+  "lock_id": "REMAINING-13 / CH011",
+  "state": "RESPONSE_VALIDATED",
+  "consumed": true,
+  "reusable": false,
+  "fallback": "forbidden",
+  "retry": "forbidden",
+  "openai": "forbidden",
+  "terra": "forbidden",
+  "accepted_chapters": "forbidden",
+  "production_writes": "forbidden",
+  "request_sha256": "a8f863372bfb64c22b2e477ab2784ca0516c524bcc3347738dc9cea74ea9070c",
+  "created_at": "2026-10-04T15:49:43+00:00",
+  "updated_at": "2026-10-04T15:54:08+00:00",
+  "history": [
+    {
+      "state": "PREFLIGHT_VALIDATED",
+      "updated_at": "2026-10-04T15:49:43+00:00"
+    },
+    {
+      "state": "PREFLIGHT_VALIDATED",
+      "updated_at": "2026-10-04T15:51:04+00:00"
+    },
+    {
+      "state": "CALL_RESERVED",
+      "updated_at": "2026-10-04T15:53:48+00:00"
+    },
+    {
+      "state": "CALL_MAY_HAVE_BEEN_SENT",
+      "updated_at": "2026-10-04T15:53:48+00:00"
+    },
+    {
+      "state": "RESPONSE_RECEIVED",
+      "updated_at": "2026-10-04T15:54:08+00:00"
+    }
+  ],
+  "note": "Response structurally validated.",
+  "secrets_included": false
+}

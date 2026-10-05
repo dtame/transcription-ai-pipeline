@@ -1,0 +1,17 @@
+{
+  "READY_FOR_ARCHITECTURE_HUMAN_REVIEW": true,
+  "READY_FOR_NEW_REMOTE_TERRA_CALL": false,
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "production_pipeline": "UNCHANGED",
+  "candidate_promoted": false,
+  "contract_20_activated": false,
+  "human_label_modified": false,
+  "historical_contracts_modified": false,
+  "why": "Offline comparative forensics and an isolated segmentation prototype are complete. A later Terra call still needs a distinct human authorization. 2.0 is a proposal only.",
+  "phase": "4B.2.8",
+  "secrets_included": false
+}

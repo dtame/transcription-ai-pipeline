@@ -1,0 +1,27 @@
+{
+  "phase": "4B.2.7.6",
+  "first_sha256": "b3cc1574858acdd5bdd0e223aa136d5058c4eb1deb1495cd9ad312d332e8c30f",
+  "second_sha256": "b3cc1574858acdd5bdd0e223aa136d5058c4eb1deb1495cd9ad312d332e8c30f",
+  "sha256": "b3cc1574858acdd5bdd0e223aa136d5058c4eb1deb1495cd9ad312d332e8c30f",
+  "determinism": true,
+  "repeat_payload_identical": true,
+  "serialization": {
+    "canonical": "json.dumps(payload, ensure_ascii=False, sort_keys=True)",
+    "encoding": "utf-8",
+    "algorithm": "sha256",
+    "non_deterministic_keys_stripped": [
+      "timeout",
+      "request_id",
+      "created",
+      "timestamp",
+      "id"
+    ]
+  },
+  "differs_from_h01": true,
+  "differs_from_h02": true,
+  "historical_h01_sha256": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+  "historical_h02_sha256": "5ace261296d808437910f8f9efe247a80daebbb2237bc8af46bda56bf98d7897",
+  "utf8": true,
+  "invented_before_construction": false,
+  "secrets_included": false
+}

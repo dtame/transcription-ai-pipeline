@@ -1,0 +1,608 @@
+{
+  "phase": "4B.2.15",
+  "authorization_scope": "BOOK_SEMANTIC_GATE_4B215_ONE_REAL_TERRA_SEMANTIC_GATE_202_H11_NEGATIVE_CANARY_ONLY",
+  "blocked_precall": false,
+  "block_reasons": [],
+  "block_reason": null,
+  "status": "LOCAL_PREFLIGHT_PASS",
+  "checks": {
+    "canonical_python": "PASS",
+    "runtime": "PASS",
+    "sdk": "PASS",
+    "credentials": "PASS",
+    "provider_initialization": "PASS",
+    "canonical_hashes": "PASS",
+    "unit_integrity": "PASS",
+    "label_leakage": 0,
+    "request_determinism": "PASS",
+    "sdk_serialization": "PASS",
+    "no_retry_enforcement": "PASS",
+    "budget": "PASS",
+    "one_shot_authorization": "AVAILABLE",
+    "retries": 0,
+    "fallbacks": 0,
+    "second_endpoint": false,
+    "sonnet_calls": 0,
+    "other_terra_cases": 0
+  },
+  "interpreter": {
+    "expected": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "actual": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "match": true,
+    "normalized_expected": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "normalized_actual": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "python_version": [
+      3,
+      11,
+      9
+    ],
+    "expected_python_version": [
+      3,
+      11,
+      9
+    ],
+    "python_version_match": true,
+    "canonical_environment": ".venv"
+  },
+  "runtime": {
+    "phase": "4B.2.15",
+    "expected_interpreter": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "actual_interpreter": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "interpreter_match": true,
+    "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_version_info": [
+      3,
+      11,
+      9
+    ],
+    "python_version_match": true,
+    "openai_sdk_version": "2.43.0",
+    "expected_openai_sdk_version": "2.43.0",
+    "openai_sdk_version_match": true,
+    "openai_sdk_constraint": "openai>=1.0.0,<3",
+    "credential_available": "YES",
+    "environment_type": ".venv",
+    "environment": {
+      "canonical_environment": ".venv",
+      "canonical_executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+      "current_is_canonical_venv": true,
+      "venv_present": true,
+      "pipenv": false,
+      "poetry": false,
+      "setup_py": false,
+      "setup_cfg": false,
+      "requirements_txt": true,
+      "requirements_dev_txt": true,
+      "dependency_mechanism": "requirements.txt"
+    },
+    "interpreter": {
+      "executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+      "version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "version_info": [
+        3,
+        11,
+        9
+      ],
+      "prefix": "C:\\TranscriptionAI\\.venv",
+      "base_prefix": "C:\\Program Files\\Python311",
+      "in_virtualenv": true
+    },
+    "sdk": {
+      "import": "PASS",
+      "version": "2.43.0",
+      "supported": true,
+      "from_openai_import_OpenAI": "PASS"
+    },
+    "env_ignored_by_git": {
+      "path": ".env",
+      "exists": true,
+      "ignored": true,
+      "gitignore_lists_env": true,
+      "secrets_included": false,
+      "note": "API key is never printed, hashed, or persisted."
+    },
+    "secrets_included": false
+  },
+  "provider_readiness": {
+    "ready": true,
+    "primary_reason": null,
+    "reasons": [],
+    "provider": "openai",
+    "provider_registered": true,
+    "SDK_IMPORT": "PASS",
+    "sdk_version": "2.43.0",
+    "sdk_supported": "PASS",
+    "CREDENTIAL_AVAILABLE": "YES",
+    "CLIENT_CONSTRUCTION": "PASS",
+    "PROVIDER_INITIALIZATION": "PASS",
+    "MODEL_RESOLUTION": "PASS",
+    "REQUEST_CONSTRUCTION": "PASS",
+    "output_mode_supported": "PASS",
+    "ENDPOINT_SELECTED": "PASS",
+    "token_parameter": "max_completion_tokens",
+    "token_parameter_supported": "PASS",
+    "REQUEST_SERIALIZABLE": "PASS",
+    "unsupported_optional_parameters": "PASS",
+    "readiness_class": "READY_WITH_SERVER_UNVERIFIED_FIELDS",
+    "NETWORK_CALLS": 0,
+    "remote_invocations": 0,
+    "http_requests": 0,
+    "secrets_included": false,
+    "details": {
+      "engine_class": "OpenAIEngine",
+      "sdk": {
+        "status": "PASS",
+        "module": "openai",
+        "importable": true,
+        "version": "2.43.0",
+        "symbol_present": true,
+        "supported": true,
+        "required_symbol": "OpenAI",
+        "min_major": 1,
+        "uses_official_sdk": true
+      },
+      "model": "gpt-5.6-terra",
+      "endpoint": "chat.completions",
+      "compatibility": {
+        "endpoint": "chat.completions",
+        "endpoint_selected": "PASS",
+        "token_parameter": "max_completion_tokens",
+        "token_parameter_supported": "PASS",
+        "token_parameter_confidence": "CONFIRMED",
+        "token_parameter_server_acceptance": "UNKNOWN",
+        "request_serializable": "PASS",
+        "unsupported_optional_parameters": "PASS",
+        "output_mode_server_acceptance": "UNKNOWN",
+        "unknown_server_fields": [
+          "json_object_server_acceptance",
+          "max_completion_tokens_server_acceptance",
+          "temperature_server_behavior",
+          "reasoning_or_thinking_server_behavior"
+        ],
+        "payload_keys": [
+          "max_completion_tokens",
+          "messages",
+          "model",
+          "response_format"
+        ],
+        "reasons": [],
+        "output_mode_local": "PASS"
+      },
+      "client": {
+        "client_type": "OpenAI",
+        "remote_methods_blocked": null,
+        "http_client": null
+      }
+    }
+  },
+  "identities_before": {
+    "project_name": "pastoral_retreat_v2_validation",
+    "source_map": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+      "exists": true,
+      "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "bytes": 202398
+    },
+    "editorial_plan": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+      "exists": true,
+      "sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "bytes": 234637
+    },
+    "clean_transcript": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+      "exists": true,
+      "sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+      "bytes": 1487812
+    },
+    "historical_4b2_raw_response_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/book_generator_4b2_raw_structured_response.json",
+      "exists": true,
+      "sha256": "06e885eb0b7909446b736d7dfcd631422f632aa7dd679e64c7960ee0f086232f",
+      "bytes": 12201
+    },
+    "historical_4b2_raw_provider_text": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/book_generator_4b2_raw_provider_text.txt",
+      "exists": true,
+      "sha256": "04eb5d4bbc4f0820adc489fe08d8fab86d2f93d647cceca8c5a8d13edf6b625d",
+      "bytes": 5151
+    },
+    "historical_4b2_candidate_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/chapter_CH016_candidate.json",
+      "exists": true,
+      "sha256": "6b1a1f2308a88576d38211c32ec569d9a94441cc27936fd0d4c0f3cb7b3d8e76",
+      "bytes": 12182
+    },
+    "historical_4b22_raw_response_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b22/book_generator_4b22_raw_structured_response.json",
+      "exists": true,
+      "sha256": "1488a2492fa2722899a6f9649f86ef71b74a7b5759215bb4a01d4792f29f6b75",
+      "bytes": 9015
+    },
+    "historical_4b22_candidate_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b22/chapter_CH016_candidate.json",
+      "exists": true,
+      "sha256": "5e64dd949f8458356ef93d7f53819951c770641e2164b78e2715932e662343ba",
+      "bytes": 9462
+    },
+    "source_map_unchanged": true,
+    "editorial_plan_unchanged": true,
+    "clean_transcript_unchanged": true,
+    "raw_4b2_unchanged": true,
+    "candidate_4b2_unchanged": true,
+    "candidate_4b22_unchanged": true,
+    "historical_4b21_audits_present": true,
+    "candidate_4b2_canonical_sha256": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+    "candidate_4b2_file_sha256": "6b1a1f2308a88576d38211c32ec569d9a94441cc27936fd0d4c0f3cb7b3d8e76",
+    "candidate_4b22_canonical_sha256": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c",
+    "candidate_4b22_file_sha256": "5e64dd949f8458356ef93d7f53819951c770641e2164b78e2715932e662343ba",
+    "raw_4b2_inner_sha256": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749",
+    "expected": {
+      "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+      "raw_4b2": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749",
+      "candidate_4b2": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+      "candidate_4b22": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c"
+    }
+  },
+  "identities_after": {
+    "project_name": "pastoral_retreat_v2_validation",
+    "source_map": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+      "exists": true,
+      "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "bytes": 202398
+    },
+    "editorial_plan": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+      "exists": true,
+      "sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "bytes": 234637
+    },
+    "clean_transcript": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+      "exists": true,
+      "sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+      "bytes": 1487812
+    },
+    "historical_4b2_raw_response_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/book_generator_4b2_raw_structured_response.json",
+      "exists": true,
+      "sha256": "06e885eb0b7909446b736d7dfcd631422f632aa7dd679e64c7960ee0f086232f",
+      "bytes": 12201
+    },
+    "historical_4b2_raw_provider_text": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/book_generator_4b2_raw_provider_text.txt",
+      "exists": true,
+      "sha256": "04eb5d4bbc4f0820adc489fe08d8fab86d2f93d647cceca8c5a8d13edf6b625d",
+      "bytes": 5151
+    },
+    "historical_4b2_candidate_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b2/chapter_CH016_candidate.json",
+      "exists": true,
+      "sha256": "6b1a1f2308a88576d38211c32ec569d9a94441cc27936fd0d4c0f3cb7b3d8e76",
+      "bytes": 12182
+    },
+    "historical_4b22_raw_response_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b22/book_generator_4b22_raw_structured_response.json",
+      "exists": true,
+      "sha256": "1488a2492fa2722899a6f9649f86ef71b74a7b5759215bb4a01d4792f29f6b75",
+      "bytes": 9015
+    },
+    "historical_4b22_candidate_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_generator_4b22/chapter_CH016_candidate.json",
+      "exists": true,
+      "sha256": "5e64dd949f8458356ef93d7f53819951c770641e2164b78e2715932e662343ba",
+      "bytes": 9462
+    },
+    "source_map_unchanged": true,
+    "editorial_plan_unchanged": true,
+    "clean_transcript_unchanged": true,
+    "raw_4b2_unchanged": true,
+    "candidate_4b2_unchanged": true,
+    "candidate_4b22_unchanged": true,
+    "historical_4b21_audits_present": true,
+    "candidate_4b2_canonical_sha256": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+    "candidate_4b2_file_sha256": "6b1a1f2308a88576d38211c32ec569d9a94441cc27936fd0d4c0f3cb7b3d8e76",
+    "candidate_4b22_canonical_sha256": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c",
+    "candidate_4b22_file_sha256": "5e64dd949f8458356ef93d7f53819951c770641e2164b78e2715932e662343ba",
+    "raw_4b2_inner_sha256": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749",
+    "expected": {
+      "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+      "raw_4b2": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749",
+      "candidate_4b2": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+      "candidate_4b22": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c"
+    }
+  },
+  "canonical_hashes": {
+    "source_map_pre": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan_pre": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript_pre": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "source_map_post": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan_post": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript_post": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "expected_source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "expected_editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "expected_clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "match": true
+  },
+  "units": {
+    "unit_ids": [
+      "u00",
+      "u01",
+      "u02",
+      "u03",
+      "u04"
+    ],
+    "coverage_ok": true,
+    "target_unit_id": "u04",
+    "target_clause": "which means that every believer is guaranteed a fearless death",
+    "clause_in_target_unit": true,
+    "guarantee_independently_evaluable": true,
+    "merged_with_other_unit": false,
+    "paragraph_unchanged": true
+  },
+  "h11_identity": {
+    "handle": "h11",
+    "case_id_audit_only": "4b276_p4_new_implication",
+    "human_label_not_transmitted": true
+  },
+  "evidence": {
+    "allowed_handles": [
+      "IDEA226",
+      "SRC006192",
+      "SRC006193",
+      "SRC006195"
+    ],
+    "expected_handles": [
+      "IDEA226",
+      "SRC006192",
+      "SRC006193",
+      "SRC006195"
+    ],
+    "match": true
+  },
+  "request": {
+    "sha256": "a02867c0ab31c3ff4bf791dfe6472103c1cb9919a7b01b1101c4ae6f2343a2f1",
+    "sha256_repeat": "a02867c0ab31c3ff4bf791dfe6472103c1cb9919a7b01b1101c4ae6f2343a2f1",
+    "frozen_artifact_sha256": "a02867c0ab31c3ff4bf791dfe6472103c1cb9919a7b01b1101c4ae6f2343a2f1",
+    "expected_sha256": "a02867c0ab31c3ff4bf791dfe6472103c1cb9919a7b01b1101c4ae6f2343a2f1",
+    "identity_match": true,
+    "deterministic": true,
+    "model": "gpt-5.6-terra",
+    "max_completion_tokens": 7766,
+    "max_tokens_absent": true,
+    "temperature_present": false,
+    "thinking_present": false,
+    "response_format": {
+      "type": "json_object"
+    },
+    "exactly_one_case": true,
+    "label_leakage": 0,
+    "label_leak_pass": true
+  },
+  "sdk_serialization": {
+    "phase": "4B.2.15",
+    "intercepted": true,
+    "prepared_without_send": true,
+    "prepared_via": "OpenAI._build_request",
+    "network_calls": 0,
+    "http_requests": 0,
+    "remote_invocations": 0,
+    "provider_responses": 0,
+    "method": "POST",
+    "url_path": "/v1/chat/completions",
+    "body_non_secret_fields": {
+      "model": "gpt-5.6-terra",
+      "max_completion_tokens": 7766,
+      "response_format": {
+        "type": "json_object"
+      },
+      "temperature_present": false,
+      "max_tokens_present": false,
+      "message_roles": [
+        "system",
+        "user"
+      ]
+    },
+    "headers_redacted": {
+      "host": "api.openai.com",
+      "accept-encoding": "gzip, deflate",
+      "connection": "keep-alive",
+      "authorization": "REDACTED",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "user-agent": "OpenAI/Python 2.43.0",
+      "x-stainless-lang": "python",
+      "x-stainless-package-version": "2.43.0",
+      "x-stainless-os": "Windows",
+      "x-stainless-arch": "other:amd64",
+      "x-stainless-runtime": "CPython",
+      "x-stainless-runtime-version": "3.11.9",
+      "x-stainless-async": "false",
+      "x-stainless-retry-count": "0",
+      "x-stainless-read-timeout": "600",
+      "content-length": "7064"
+    },
+    "checks": {
+      "exactly_one_paragraph": true,
+      "contract_202": true,
+      "transport_20": true,
+      "instruction_present": true,
+      "no_operational_request": true,
+      "max_completion_tokens": true,
+      "max_tokens_absent": true,
+      "temperature_absent": true,
+      "reasoning_params_absent": true,
+      "json_object": true,
+      "model": true,
+      "endpoint": "chat.completions",
+      "sdk_method": "client.chat.completions.create",
+      "token_field": "max_completion_tokens",
+      "future_retries_disabled": true,
+      "label_leak_absent": true,
+      "no_fallback": true,
+      "no_retry": true,
+      "no_h01": true,
+      "no_h02": true
+    },
+    "serialization_pass": true,
+    "label_leakage": 0,
+    "case_leak_hits": [],
+    "sdk_max_retries_for_future_invocation": 0,
+    "fallbacks": 0,
+    "retries": 0,
+    "provider": "openai",
+    "secrets_included": false
+  },
+  "no_retry": {
+    "sdk_import": true,
+    "probe_max_retries": 0,
+    "default_max_retries": 2,
+    "enforced_max_retries": 0,
+    "pass": true,
+    "note": "Default SDK retries are disabled for this invocation. Local client construction is not a remote call.",
+    "secrets_included": false
+  },
+  "budget_reservation": {
+    "phase": "4B.2.15",
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "maximum_remote_calls": 1,
+    "budget_cap_usd": 0.1,
+    "budget_cap_display": "0.10 USD",
+    "pricing": {
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "verified": true,
+      "effective_date": "2026-09-18",
+      "source": "OpenAI official pricing/model documentation",
+      "input_cost_per_1m_tokens": 2.0,
+      "output_cost_per_1m_tokens": 12.0,
+      "status": "base_estimate",
+      "unmodeled_regimes": "long_context_not_modeled",
+      "notes": "Base standard pricing. Long-context pricing rules may differ and are not modeled by Phase 2B.",
+      "counted_as_zero": false
+    },
+    "pricing_effective_date": "2026-09-18",
+    "pricing_are_configured_project_rates": true,
+    "not_live_provider_prices": true,
+    "historical_rates_are_not_a_current_invoice_guarantee": true,
+    "rates_established_with_sufficient_certainty": true,
+    "long_context_regime": "NOT APPLICABLE",
+    "input_estimate": {
+      "phase": "4B.2.15",
+      "method_primary": "heuristic_chars_per_token",
+      "method_pessimistic": "historical_4b24_chars_per_token_1.9365",
+      "documented_local_methods": [
+        "heuristic_chars_per_token",
+        "historical_4b24_chars_per_token_1.9365"
+      ],
+      "estimated": true,
+      "primary_tokens": 1646,
+      "pessimistic_tokens": 3399,
+      "chosen_tokens": 3399,
+      "chosen_is_max_of_local_methods": true,
+      "request_chars": 6581,
+      "system_chars": 2434,
+      "user_chars": 4146,
+      "unknown_is_not_zero": true,
+      "secrets_included": false
+    },
+    "output_cap": {
+      "ok": true,
+      "reason": null,
+      "max_completion_tokens": 7766,
+      "max_affordable_output_tokens": 7766,
+      "min_usable_output_tokens": 5221,
+      "historical_conservative_output": 8192,
+      "theoretical_max_usd": 0.09999,
+      "usable": true,
+      "over_budget": false,
+      "did_not_arbitrarily_squeeze_below_usable": true,
+      "reasoning_included_in_completion_cap": true,
+      "8192_exceeds_budget": true
+    },
+    "max_completion_tokens": 7766,
+    "catalog_estimate": {
+      "input_tokens": 3399,
+      "output_tokens": 7766,
+      "reasoning_tokens": "UNKNOWN",
+      "input_cost_usd": 0.006798,
+      "output_cost_usd": 0.093192,
+      "total_cost_usd": 0.09999,
+      "status": "base_estimate",
+      "unknown_or_incomplete": true,
+      "counted_as_zero": false,
+      "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+    },
+    "if_8192_exhausted": {
+      "input_tokens": 3399,
+      "output_tokens": 8192,
+      "reasoning_tokens": "UNKNOWN",
+      "input_cost_usd": 0.006798,
+      "output_cost_usd": 0.098304,
+      "total_cost_usd": 0.105102,
+      "status": "base_estimate",
+      "unknown_or_incomplete": true,
+      "counted_as_zero": false,
+      "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+    },
+    "theoretical_maximum_usd": 0.09999,
+    "within_budget": true,
+    "unknown_is_not_zero": true,
+    "reasoning_tokens": "UNKNOWN_INCLUDED_IN_COMPLETION_CAP",
+    "reasoning_not_double_counted": true,
+    "not_a_provider_invoice": true,
+    "reservation_is_not_an_invoice": true,
+    "blocked": false,
+    "block_reason": null,
+    "secrets_included": false
+  },
+  "label_leak": {
+    "phase": "4B.2.15",
+    "label_leakage": 0,
+    "hits": [],
+    "case_leak_hits": [],
+    "pass": true,
+    "human_labels_sent": false,
+    "case_id_in_request": false,
+    "human_label_authority_absent": true,
+    "catalog_verdicts_allowed_in_system": true,
+    "expected_result_in_user": false,
+    "opaque_handle_h11_is_paragraph_id": true,
+    "human_reference_absent_from_request": true,
+    "target_clause_present_as_generated_text": true,
+    "secrets_included": false
+  },
+  "server_only_unknowns": [
+    {
+      "field": "json_object_server_capability",
+      "status": "UNKNOWN",
+      "note": "Local serialization of response_format=json_object is PASS. Whether gpt-5.6-terra will emit a usable JSON object for this 2.0.2 h11 request remains UNKNOWN_SERVER_SIDE."
+    },
+    {
+      "field": "reasoning_or_thinking_server_behavior",
+      "status": "UNKNOWN",
+      "note": "Thinking is omitted. Server reasoning remains UNKNOWN."
+    },
+    {
+      "field": "actual_cost",
+      "status": "UNKNOWN",
+      "note": "Estimates are not a guarantee. Unknown is not zero."
+    }
+  ],
+  "credential_available": true,
+  "production_book_absent": true,
+  "lock_available": true,
+  "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "token_field": "max_completion_tokens",
+  "endpoint": "chat.completions",
+  "http_sent": false,
+  "remote_invocations": 0,
+  "json_object_server_capability": "UNKNOWN",
+  "secrets_included": false
+}

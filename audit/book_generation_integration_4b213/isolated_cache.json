@@ -1,0 +1,17 @@
+{
+  "phase": "4B.2.13",
+  "isolated": true,
+  "production_cache_acceptance": false,
+  "production_writes": 0,
+  "states_observed": [
+    "VALIDATION_BLOCK",
+    "VALIDATION_PASS",
+    "VALIDATION_REVIEW"
+  ],
+  "record_count": 9,
+  "pass_only_acceptance_candidate": true,
+  "review_never_validated": true,
+  "block_never_validated": true,
+  "historical_partial_never_converted_to_pass": true,
+  "secrets_included": false
+}

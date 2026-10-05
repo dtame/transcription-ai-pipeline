@@ -1,0 +1,3340 @@
+{
+  "phase": "4B.2.16",
+  "read_only": true,
+  "plan_modified": false,
+  "source_map_modified": false,
+  "language": "en",
+  "selected_title": "The Life You Already Inherited",
+  "structural_assignment": {
+    "source_map_idea_count": 286,
+    "assigned_idea_count": 286,
+    "assigned_ids": 286,
+    "coverage_records": 286,
+    "dispositions": [
+      "ASSIGNED"
+    ],
+    "missing_idea_ids": [],
+    "unknown_idea_ids": [],
+    "duplicate_section_assignments": [],
+    "chapter_section_mismatches": [],
+    "deferred_idea_count": 0,
+    "excluded_idea_count": 0,
+    "chapter_count": 19,
+    "section_count": 72,
+    "structurally_complete": true,
+    "semantic_fitness_proven": false,
+    "note": "Every SourceMap idea has one ASSIGNED disposition and appears in exactly one section. That shows identifier integrity. It does not prove that each thematic grouping is the only faithful reading."
+  },
+  "limits_of_the_evidence": {
+    "idea_relation_count": 0,
+    "rule_b_checked_from_relation_graph": false,
+    "rule_b_note": "The SourceMap contains no idea-to-idea relations, so a qualifies or explains link cannot be checked from that graph. Absence of relations is not proof that conditions are safe.",
+    "repetition_count": 0,
+    "rule_e_checked_from_repetition_records": false,
+    "rule_e_note": "The SourceMap repetition collection is empty. Accidental, pedagogical, rhetorical, and nuance-bearing repetitions cannot be separated from those records.",
+    "speaker_labels_present": false,
+    "recording_count": 4,
+    "recording_ids": [
+      "AUDIO001",
+      "AUDIO002",
+      "AUDIO003",
+      "AUDIO004"
+    ],
+    "rule_f_note": "Clean-transcript segments have no speaker field. Four recording identifiers are present. They are not treated as four proven speakers.",
+    "unassigned_uncertainty_count": 16,
+    "unassigned_uncertainties_are_listed": true,
+    "unassigned_uncertainty_ids": [
+      "UNC002",
+      "UNC008",
+      "UNC013",
+      "UNC014",
+      "UNC015",
+      "UNC019",
+      "UNC020",
+      "UNC021",
+      "UNC026",
+      "UNC027",
+      "UNC028",
+      "UNC031",
+      "UNC032",
+      "UNC033",
+      "UNC034",
+      "UNC035"
+    ]
+  },
+  "chapters": [
+    {
+      "chapter_id": "CH001",
+      "working_title": "Unlearning What Was Handed Down",
+      "purpose": "Open with the diagnosis: inherited custom and secondhand information replacing direct hearing from God.",
+      "section_count": 4,
+      "sections": [
+        {
+          "section_id": "SEC001",
+          "working_title": "Hearing Him Directly",
+          "idea_ids": [
+            "IDEA001",
+            "IDEA005"
+          ],
+          "idea_count": 2,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Cultural food habits and health",
+            "Faith versus tradition and works"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 144,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC002",
+          "working_title": "Body, Food and Inherited Habit",
+          "idea_ids": [
+            "IDEA002",
+            "IDEA003",
+            "IDEA004",
+            "IDEA006"
+          ],
+          "idea_count": 4,
+          "example_ids": [
+            "EX001",
+            "EX002"
+          ],
+          "reference_ids": [
+            "REF001"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Retreat exercise and physical discipline",
+            "Cultural food habits and health",
+            "Elders' wisdom and traditional cooking"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 126,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC003",
+          "working_title": "Tradition Cannot Be Accepted",
+          "idea_ids": [
+            "IDEA022",
+            "IDEA023",
+            "IDEA024"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [
+            "REF003"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Faith versus tradition and works"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 71,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC004",
+          "working_title": "The Question of Long Life",
+          "idea_ids": [
+            "IDEA007",
+            "IDEA008",
+            "IDEA020"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Longevity, immortality and the tree of life"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 349,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 12,
+      "idea_ids": [
+        "IDEA001",
+        "IDEA005",
+        "IDEA002",
+        "IDEA003",
+        "IDEA004",
+        "IDEA006",
+        "IDEA022",
+        "IDEA023",
+        "IDEA024",
+        "IDEA007",
+        "IDEA008",
+        "IDEA020"
+      ],
+      "audio_sources": [
+        "AUDIO001"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 584,
+      "evidence_chars": 13298,
+      "hydrated_src_chars": 1519,
+      "src_ref_count": 55,
+      "example_count": 2,
+      "reference_count": 2,
+      "uncertainty_count": 0,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [],
+      "risks": [
+        {
+          "code": "NO_STRUCTURAL_TENSION_DETECTED",
+          "severity": "low",
+          "not_an_error": true,
+          "detail": "No cross-recording group, detached example, separated reservation, or unlinked reference was detected from identifiers. This is not a proof that every sentence is thematically pure."
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH002",
+      "working_title": "Flesh and Bone: The Resurrection You Inherit",
+      "purpose": "Lay the central doctrinal correction about physical resurrection and restored sonship.",
+      "section_count": 4,
+      "sections": [
+        {
+          "section_id": "SEC005",
+          "working_title": "Spirits Have No Flesh and Bone",
+          "idea_ids": [
+            "IDEA009",
+            "IDEA010",
+            "IDEA011",
+            "IDEA012"
+          ],
+          "idea_count": 4,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [
+            "UNC001"
+          ],
+          "topic_labels": [
+            "Physical resurrection and flesh/bone identity of Christ",
+            "Faith versus tradition and works"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 55,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC006",
+          "working_title": "From Sons of Men to Sons of God",
+          "idea_ids": [
+            "IDEA013",
+            "IDEA014",
+            "IDEA019",
+            "IDEA021"
+          ],
+          "idea_count": 4,
+          "example_ids": [],
+          "reference_ids": [
+            "REF002"
+          ],
+          "uncertainty_ids": [
+            "UNC003"
+          ],
+          "topic_labels": [
+            "Sons of men becoming sons of God",
+            "Longevity, immortality and the tree of life"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 481,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC007",
+          "working_title": "The Silence of Adam, the Prayer of Christ",
+          "idea_ids": [
+            "IDEA015",
+            "IDEA016",
+            "IDEA017",
+            "IDEA018"
+          ],
+          "idea_count": 4,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Adam and Eve's fall and the man's failure to intercede"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 58,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC008",
+          "working_title": "Life Older, Better, Everlasting",
+          "idea_ids": [
+            "IDEA036",
+            "IDEA037",
+            "IDEA039"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Longevity, immortality and the tree of life",
+            "Hebrews 2 exposition: Christ destroying the devil and death",
+            "Believer's inherited eternal life"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 171,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 15,
+      "idea_ids": [
+        "IDEA009",
+        "IDEA010",
+        "IDEA011",
+        "IDEA012",
+        "IDEA013",
+        "IDEA014",
+        "IDEA019",
+        "IDEA021",
+        "IDEA015",
+        "IDEA016",
+        "IDEA017",
+        "IDEA018",
+        "IDEA036",
+        "IDEA037",
+        "IDEA039"
+      ],
+      "audio_sources": [
+        "AUDIO001"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 998,
+      "evidence_chars": 15019,
+      "hydrated_src_chars": 1725,
+      "src_ref_count": 61,
+      "example_count": 0,
+      "reference_count": 1,
+      "uncertainty_count": 2,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [
+        {
+          "reference_id": "REF002",
+          "section_id": "SEC006",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "Genesis chapter 5",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH003",
+      "working_title": "Hebrews 2: Death Already Destroyed",
+      "purpose": "Work the group exposition of Hebrews 2 and its consequences for preaching and fear.",
+      "section_count": 4,
+      "sections": [
+        {
+          "section_id": "SEC009",
+          "working_title": "Reading the Text Together",
+          "idea_ids": [
+            "IDEA032",
+            "IDEA033",
+            "IDEA035"
+          ],
+          "idea_count": 3,
+          "example_ids": [
+            "EX004"
+          ],
+          "reference_ids": [
+            "REF007",
+            "REF008"
+          ],
+          "uncertainty_ids": [
+            "UNC005"
+          ],
+          "topic_labels": [
+            "Hebrews 2 exposition: Christ destroying the devil and death"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 156,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC010",
+          "working_title": "The Devil Men Still Boast Of",
+          "idea_ids": [
+            "IDEA030",
+            "IDEA031",
+            "IDEA034"
+          ],
+          "idea_count": 3,
+          "example_ids": [
+            "EX003",
+            "EX005"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [
+            "UNC004"
+          ],
+          "topic_labels": [
+            "Devil's real presence in African context vs. global gospel"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 270,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC011",
+          "working_title": "The Power Is Already Inside",
+          "idea_ids": [
+            "IDEA025",
+            "IDEA026",
+            "IDEA027",
+            "IDEA028",
+            "IDEA029"
+          ],
+          "idea_count": 5,
+          "example_ids": [],
+          "reference_ids": [
+            "REF005",
+            "REF004"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Faith versus tradition and works",
+            "Hebrews 2 exposition: Christ destroying the devil and death"
+          ],
+          "audio_sources": [
+            "AUDIO001"
+          ],
+          "transcript_index_span": 153,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC012",
+          "working_title": "Which Gospel Will You Preach?",
+          "idea_ids": [
+            "IDEA038",
+            "IDEA098",
+            "IDEA099"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Faith versus tradition and works",
+            "Believer's inherited eternal life",
+            "Knowledge and confidence over the enemy"
+          ],
+          "audio_sources": [
+            "AUDIO001",
+            "AUDIO002"
+          ],
+          "transcript_index_span": 1616,
+          "cross_recording": true
+        }
+      ],
+      "idea_count": 14,
+      "idea_ids": [
+        "IDEA032",
+        "IDEA033",
+        "IDEA035",
+        "IDEA030",
+        "IDEA031",
+        "IDEA034",
+        "IDEA025",
+        "IDEA026",
+        "IDEA027",
+        "IDEA028",
+        "IDEA029",
+        "IDEA038",
+        "IDEA098",
+        "IDEA099"
+      ],
+      "audio_sources": [
+        "AUDIO001",
+        "AUDIO002"
+      ],
+      "cross_recording": true,
+      "transcript_index_span": 2179,
+      "evidence_chars": 17742,
+      "hydrated_src_chars": 2237,
+      "src_ref_count": 76,
+      "example_count": 3,
+      "reference_count": 4,
+      "uncertainty_count": 2,
+      "detached_examples": [],
+      "separated_uncertainties": [
+        {
+          "uncertainty_id": "UNC004",
+          "section_id": "SEC010",
+          "kind": "incomplete_reference",
+          "severity": "low",
+          "description": "Segment concerning the president giving land and the stone-throwing ritual is recounted secondhand ('he told me') with unclear identity of 'he' and incomplete narrative details.",
+          "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+        }
+      ],
+      "reference_tensions": [
+        {
+          "reference_id": "REF007",
+          "section_id": "SEC009",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "Hebrews chapter 2",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF008",
+          "section_id": "SEC009",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "1 John chapter 3 verse 8",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF004",
+          "section_id": "SEC011",
+          "kind": "biblical",
+          "completeness": "vague",
+          "raw_reference": "Romans chapter 10 (about verse 7)",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "THEMATIC_REGROUP_ACROSS_RECORDINGS",
+          "severity": "observation",
+          "authorized": true,
+          "not_an_error": true,
+          "detail": "Ideas in this chapter cite more than one recording. Grouping them is allowed when they treat the same subject. Proximity must not be written as causality.",
+          "audio_sources": [
+            "AUDIO001",
+            "AUDIO002"
+          ]
+        },
+        {
+          "code": "RESERVATION_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        },
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 3,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH004",
+      "working_title": "Priest, Prophet, King",
+      "purpose": "Set out the sacred offices, the ordered priesthood, and the warnings attached to it.",
+      "section_count": 5,
+      "sections": [
+        {
+          "section_id": "SEC013",
+          "working_title": "The Shadow and the Reality",
+          "idea_ids": [
+            "IDEA041",
+            "IDEA042",
+            "IDEA043"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Old Testament as shadow of the New"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 46,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC014",
+          "working_title": "Three Sacred Offices",
+          "idea_ids": [
+            "IDEA044",
+            "IDEA045",
+            "IDEA046",
+            "IDEA047",
+            "IDEA055"
+          ],
+          "idea_count": 5,
+          "example_ids": [],
+          "reference_ids": [
+            "REF013"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Sacred offices: priest, prophet, king",
+            "Universal priesthood vs. ordained order",
+            "Malachi's warning to priests"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 294,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC015",
+          "working_title": "Recognizing Who Stands Before You",
+          "idea_ids": [
+            "IDEA048",
+            "IDEA049",
+            "IDEA050"
+          ],
+          "idea_count": 3,
+          "example_ids": [
+            "EX006"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Melchizedek and recognizing spiritual authority"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 46,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC016",
+          "working_title": "Malachi's Warning to the Priests",
+          "idea_ids": [
+            "IDEA051",
+            "IDEA052",
+            "IDEA053",
+            "IDEA054"
+          ],
+          "idea_count": 4,
+          "example_ids": [],
+          "reference_ids": [
+            "REF012"
+          ],
+          "uncertainty_ids": [
+            "UNC006"
+          ],
+          "topic_labels": [
+            "Malachi's warning to priests"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 109,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC017",
+          "working_title": "Let No One Despise the Calling",
+          "idea_ids": [
+            "IDEA056",
+            "IDEA057",
+            "IDEA058",
+            "IDEA059"
+          ],
+          "idea_count": 4,
+          "example_ids": [
+            "EX007"
+          ],
+          "reference_ids": [
+            "REF011"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Anointing and calling not to be despised",
+            "Finding God brings people to you"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 53,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 19,
+      "idea_ids": [
+        "IDEA041",
+        "IDEA042",
+        "IDEA043",
+        "IDEA044",
+        "IDEA045",
+        "IDEA046",
+        "IDEA047",
+        "IDEA055",
+        "IDEA048",
+        "IDEA049",
+        "IDEA050",
+        "IDEA051",
+        "IDEA052",
+        "IDEA053",
+        "IDEA054",
+        "IDEA056",
+        "IDEA057",
+        "IDEA058",
+        "IDEA059"
+      ],
+      "audio_sources": [
+        "AUDIO002"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 416,
+      "evidence_chars": 16437,
+      "hydrated_src_chars": 1552,
+      "src_ref_count": 72,
+      "example_count": 2,
+      "reference_count": 3,
+      "uncertainty_count": 1,
+      "detached_examples": [
+        {
+          "example_id": "EX006",
+          "section_id": "SEC015",
+          "supports_idea_refs": [
+            "IDEA045"
+          ],
+          "support_locations": [
+            {
+              "idea_id": "IDEA045",
+              "location": "CH004/SEC014"
+            }
+          ],
+          "summary": "Melchizedek meeting Abraham with no prior prophecy, yet Abraham inwardly recognized him as different and submitted.",
+          "conclusion": "Provenance tension. The example is listed on this section, and its supports_idea_refs name ideas placed elsewhere. This is not, by itself, proof that the idea assignment is wrong."
+        }
+      ],
+      "separated_uncertainties": [
+        {
+          "uncertainty_id": "UNC006",
+          "section_id": "SEC016",
+          "kind": "ambiguous_meaning",
+          "severity": "low",
+          "description": "Speaker references 'verse 5' and 'verse 7' of Malachi 2 out of sequence and with overlapping repeated readings, making exact verse mapping unclear.",
+          "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+        }
+      ],
+      "reference_tensions": [
+        {
+          "reference_id": "REF013",
+          "section_id": "SEC014",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "Isaiah chapter 2",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF012",
+          "section_id": "SEC016",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "Malachi chapter 2",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF011",
+          "section_id": "SEC017",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "2 Timothy chapter 1",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "EXAMPLE_SUPPORT_OUTSIDE_SECTION",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        },
+        {
+          "code": "RESERVATION_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        },
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 3,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH005",
+      "working_title": "Access, Not Achievement",
+      "purpose": "Dismantle condition-based access to God: anointing, offering, worship, fasting.",
+      "section_count": 5,
+      "sections": [
+        {
+          "section_id": "SEC018",
+          "working_title": "Anointed but Not Activated",
+          "idea_ids": [
+            "IDEA060",
+            "IDEA061",
+            "IDEA062"
+          ],
+          "idea_count": 3,
+          "example_ids": [
+            "EX008"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [
+            "UNC007"
+          ],
+          "topic_labels": [
+            "Accessing and activating the anointing",
+            "Purpose and limits of fasting"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 129,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC019",
+          "working_title": "The Heart Behind the Offering",
+          "idea_ids": [
+            "IDEA063",
+            "IDEA064"
+          ],
+          "idea_count": 2,
+          "example_ids": [],
+          "reference_ids": [
+            "REF014",
+            "REF048"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Sacrifice, offering, and heart attitude"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 26,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC020",
+          "working_title": "Worship as Fellowship",
+          "idea_ids": [
+            "IDEA065",
+            "IDEA066",
+            "IDEA067",
+            "IDEA068"
+          ],
+          "idea_count": 4,
+          "example_ids": [
+            "EX009"
+          ],
+          "reference_ids": [
+            "REF015"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "True worship vs. performative worship"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 49,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC021",
+          "working_title": "Nothing Added to What He Said",
+          "idea_ids": [
+            "IDEA069",
+            "IDEA070",
+            "IDEA071",
+            "IDEA072",
+            "IDEA073"
+          ],
+          "idea_count": 5,
+          "example_ids": [
+            "EX010"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [
+            "UNC009"
+          ],
+          "topic_labels": [
+            "Simplicity of receiving power vs. manufactured suffering doctrines"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 145,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC022",
+          "working_title": "What Fasting Is Actually For",
+          "idea_ids": [
+            "IDEA074",
+            "IDEA075",
+            "IDEA076",
+            "IDEA077"
+          ],
+          "idea_count": 4,
+          "example_ids": [
+            "EX011",
+            "EX012"
+          ],
+          "reference_ids": [
+            "REF018",
+            "REF019"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Purpose and limits of fasting"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 90,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 18,
+      "idea_ids": [
+        "IDEA060",
+        "IDEA061",
+        "IDEA062",
+        "IDEA063",
+        "IDEA064",
+        "IDEA065",
+        "IDEA066",
+        "IDEA067",
+        "IDEA068",
+        "IDEA069",
+        "IDEA070",
+        "IDEA071",
+        "IDEA072",
+        "IDEA073",
+        "IDEA074",
+        "IDEA075",
+        "IDEA076",
+        "IDEA077"
+      ],
+      "audio_sources": [
+        "AUDIO002"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 573,
+      "evidence_chars": 18907,
+      "hydrated_src_chars": 2367,
+      "src_ref_count": 77,
+      "example_count": 5,
+      "reference_count": 5,
+      "uncertainty_count": 2,
+      "detached_examples": [],
+      "separated_uncertainties": [
+        {
+          "uncertainty_id": "UNC007",
+          "section_id": "SEC018",
+          "kind": "uncertain_attribution",
+          "severity": "low",
+          "description": "The anecdote about the struggling man of God sent to an elder minister lacks a named source or clear conclusion on whether it is testimony or parable.",
+          "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+        },
+        {
+          "uncertainty_id": "UNC009",
+          "section_id": "SEC021",
+          "kind": "uncertain_attribution",
+          "severity": "medium",
+          "description": "The identity and specific teaching of 'one apostle' referenced regarding 'secret of midnight prayer' is not named, leaving attribution vague.",
+          "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+        }
+      ],
+      "reference_tensions": [
+        {
+          "reference_id": "REF014",
+          "section_id": "SEC019",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "2 Corinthians chapter 9",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF048",
+          "section_id": "SEC019",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "Ecclesiastes chapter 5, verse 4",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF015",
+          "section_id": "SEC020",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "Isaiah 42",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF018",
+          "section_id": "SEC022",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "Isaiah 58",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF019",
+          "section_id": "SEC022",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "Genesis chapter 49",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "RESERVATION_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 2,
+          "not_concluded_as_error": true
+        },
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 5,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH006",
+      "working_title": "That They May Be One",
+      "purpose": "Make John 17 the structural spine: union, glory, preservation, and the critique of rapture-centered focus.",
+      "section_count": 8,
+      "sections": [
+        {
+          "section_id": "SEC023",
+          "working_title": "The Prayer of Dependence",
+          "idea_ids": [
+            "IDEA078",
+            "IDEA079",
+            "IDEA080",
+            "IDEA089",
+            "IDEA090"
+          ],
+          "idea_count": 5,
+          "example_ids": [],
+          "reference_ids": [
+            "REF009",
+            "REF020"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Jesus' prayer of unity with the Father (John 17)",
+            "John 17 - Jesus' prayer for unity and preservation",
+            "Unity of believers with the Father and Son"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 178,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC024",
+          "working_title": "The Same Glory",
+          "idea_ids": [
+            "IDEA091",
+            "IDEA092",
+            "IDEA093",
+            "IDEA094"
+          ],
+          "idea_count": 4,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Unity of believers with the Father and Son",
+            "Glory given to believers"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 98,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC025",
+          "working_title": "Be Factual About Where You Stand",
+          "idea_ids": [
+            "IDEA095",
+            "IDEA096",
+            "IDEA097"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Glory given to believers"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 55,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC026",
+          "working_title": "Not Waiting, Working",
+          "idea_ids": [
+            "IDEA081",
+            "IDEA082",
+            "IDEA083",
+            "IDEA084",
+            "IDEA085",
+            "IDEA086",
+            "IDEA087",
+            "IDEA088"
+          ],
+          "idea_count": 8,
+          "example_ids": [],
+          "reference_ids": [
+            "REF021",
+            "REF022"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Critique of rapture-centered eschatology",
+            "Unity of believers with the Father and Son"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 82,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC027",
+          "working_title": "Speech from Overflow",
+          "idea_ids": [
+            "IDEA105",
+            "IDEA106",
+            "IDEA107",
+            "IDEA108"
+          ],
+          "idea_count": 4,
+          "example_ids": [
+            "EX016"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Unity of believers with the Father and Son",
+            "Setting the mind on heavenly realities (Colossians 3 / Philippians 4)"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 101,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC028",
+          "working_title": "Knowing the Spirit, Not Only the Gifts",
+          "idea_ids": [
+            "IDEA109",
+            "IDEA110",
+            "IDEA111",
+            "IDEA112",
+            "IDEA113"
+          ],
+          "idea_count": 5,
+          "example_ids": [],
+          "reference_ids": [
+            "REF023"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Unity of believers with the Father and Son"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 48,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC029",
+          "working_title": "The Key of Life",
+          "idea_ids": [
+            "IDEA124",
+            "IDEA125",
+            "IDEA126",
+            "IDEA127"
+          ],
+          "idea_count": 4,
+          "example_ids": [],
+          "reference_ids": [
+            "REF024"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "John 17 - Jesus' prayer for unity and preservation",
+            "Imperfect biblical figures used mightily by God",
+            "Setting the mind on heavenly realities (Colossians 3 / Philippians 4)"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 110,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC030",
+          "working_title": "Knowing Where People Are",
+          "idea_ids": [
+            "IDEA100",
+            "IDEA101",
+            "IDEA102",
+            "IDEA103",
+            "IDEA104"
+          ],
+          "idea_count": 5,
+          "example_ids": [
+            "EX013",
+            "EX014",
+            "EX015"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [
+            "UNC010"
+          ],
+          "topic_labels": [
+            "Knowledge and confidence over the enemy",
+            "Sensitivity to spiritual levels among people"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 123,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 38,
+      "idea_ids": [
+        "IDEA078",
+        "IDEA079",
+        "IDEA080",
+        "IDEA089",
+        "IDEA090",
+        "IDEA091",
+        "IDEA092",
+        "IDEA093",
+        "IDEA094",
+        "IDEA095",
+        "IDEA096",
+        "IDEA097",
+        "IDEA081",
+        "IDEA082",
+        "IDEA083",
+        "IDEA084",
+        "IDEA085",
+        "IDEA086",
+        "IDEA087",
+        "IDEA088",
+        "IDEA105",
+        "IDEA106",
+        "IDEA107",
+        "IDEA108",
+        "IDEA109",
+        "IDEA110",
+        "IDEA111",
+        "IDEA112",
+        "IDEA113",
+        "IDEA124",
+        "IDEA125",
+        "IDEA126",
+        "IDEA127",
+        "IDEA100",
+        "IDEA101",
+        "IDEA102",
+        "IDEA103",
+        "IDEA104"
+      ],
+      "audio_sources": [
+        "AUDIO002"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 941,
+      "evidence_chars": 45177,
+      "hydrated_src_chars": 7878,
+      "src_ref_count": 273,
+      "example_count": 4,
+      "reference_count": 6,
+      "uncertainty_count": 1,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [
+        {
+          "reference_id": "REF009",
+          "section_id": "SEC023",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "John chapter 17",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF022",
+          "section_id": "SEC026",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "Acts 17",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF023",
+          "section_id": "SEC028",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "Galatians chapter 4",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF024",
+          "section_id": "SEC029",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "John chapter 14, verse 19 and surrounding chapters (13-17)",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 4,
+          "not_concluded_as_error": true
+        },
+        {
+          "code": "LARGE_IDEA_COUNT",
+          "severity": "scale",
+          "count": 38,
+          "not_an_error": true,
+          "detail": "Manageable for a later chapter, not for the first pilot."
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH007",
+      "working_title": "Loved Exactly as Jesus Is Loved",
+      "purpose": "Hold the unconditional love text against conditions preachers add, then show God's use of flawed people.",
+      "section_count": 2,
+      "sections": [
+        {
+          "section_id": "SEC031",
+          "working_title": "No Condition in the Text",
+          "idea_ids": [
+            "IDEA114",
+            "IDEA115",
+            "IDEA116"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "God's unconditional love modeled on Jesus"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 47,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC032",
+          "working_title": "Flawed and Still Used",
+          "idea_ids": [
+            "IDEA117",
+            "IDEA118",
+            "IDEA119",
+            "IDEA120",
+            "IDEA121",
+            "IDEA122",
+            "IDEA123"
+          ],
+          "idea_count": 7,
+          "example_ids": [
+            "EX017",
+            "EX018",
+            "EX019"
+          ],
+          "reference_ids": [
+            "REF025"
+          ],
+          "uncertainty_ids": [
+            "UNC011",
+            "UNC012"
+          ],
+          "topic_labels": [
+            "Imperfect biblical figures used mightily by God"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 106,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 10,
+      "idea_ids": [
+        "IDEA114",
+        "IDEA115",
+        "IDEA116",
+        "IDEA117",
+        "IDEA118",
+        "IDEA119",
+        "IDEA120",
+        "IDEA121",
+        "IDEA122",
+        "IDEA123"
+      ],
+      "audio_sources": [
+        "AUDIO002"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 156,
+      "evidence_chars": 16298,
+      "hydrated_src_chars": 2107,
+      "src_ref_count": 76,
+      "example_count": 3,
+      "reference_count": 2,
+      "uncertainty_count": 2,
+      "detached_examples": [
+        {
+          "example_id": "EX017",
+          "section_id": "SEC032",
+          "supports_idea_refs": [
+            "IDEA164"
+          ],
+          "support_locations": [
+            {
+              "idea_id": "IDEA164",
+              "location": "CH010/SEC041"
+            }
+          ],
+          "summary": "The image of Moses smashing the stone tablets in anger and later being barred from the Promised Land as a concrete case of a flawed leader still greatly used by God.",
+          "conclusion": "Provenance tension. The example is listed on this section, and its supports_idea_refs name ideas placed elsewhere. This is not, by itself, proof that the idea assignment is wrong."
+        },
+        {
+          "example_id": "EX018",
+          "section_id": "SEC032",
+          "supports_idea_refs": [
+            "IDEA161"
+          ],
+          "support_locations": [
+            {
+              "idea_id": "IDEA161",
+              "location": "CH010/SEC040"
+            }
+          ],
+          "summary": "Elisha cursing mocking children resulting in bears mauling them, presented as the disturbing first fruit of his double-portion anointing.",
+          "conclusion": "Provenance tension. The example is listed on this section, and its supports_idea_refs name ideas placed elsewhere. This is not, by itself, proof that the idea assignment is wrong."
+        },
+        {
+          "example_id": "EX019",
+          "section_id": "SEC032",
+          "supports_idea_refs": [
+            "IDEA161"
+          ],
+          "support_locations": [
+            {
+              "idea_id": "IDEA161",
+              "location": "CH010/SEC040"
+            }
+          ],
+          "summary": "Elisha making an iron axe head float and multiplying bread, cited as evidence of extraordinary supernatural power carried despite personal flaws.",
+          "conclusion": "Provenance tension. The example is listed on this section, and its supports_idea_refs name ideas placed elsewhere. This is not, by itself, proof that the idea assignment is wrong."
+        }
+      ],
+      "separated_uncertainties": [
+        {
+          "uncertainty_id": "UNC011",
+          "section_id": "SEC032",
+          "kind": "possible_wrong_word",
+          "severity": "medium",
+          "description": "Passage about 'Chove, chove, chove' and turning to 'command nature' is unclear in reference and possibly a mistranscribed word or name.",
+          "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+        }
+      ],
+      "reference_tensions": [],
+      "risks": [
+        {
+          "code": "EXAMPLE_SUPPORT_OUTSIDE_SECTION",
+          "severity": "elevated",
+          "count": 3,
+          "not_concluded_as_error": true
+        },
+        {
+          "code": "RESERVATION_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH008",
+      "working_title": "Set Your Mind Above",
+      "purpose": "Move from doctrine to the first practical discipline: fixing the mind on heavenly reality.",
+      "section_count": 3,
+      "sections": [
+        {
+          "section_id": "SEC033",
+          "working_title": "Fixing the Affections",
+          "idea_ids": [
+            "IDEA128",
+            "IDEA129",
+            "IDEA130",
+            "IDEA131",
+            "IDEA132"
+          ],
+          "idea_count": 5,
+          "example_ids": [
+            "EX020"
+          ],
+          "reference_ids": [
+            "REF026",
+            "REF027"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Setting the mind on heavenly realities (Colossians 3 / Philippians 4)"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 161,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC034",
+          "working_title": "Selecting Your Thoughts",
+          "idea_ids": [
+            "IDEA133",
+            "IDEA134",
+            "IDEA135"
+          ],
+          "idea_count": 3,
+          "example_ids": [
+            "EX021"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Setting the mind on heavenly realities (Colossians 3 / Philippians 4)",
+            "Mind as battlefield"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 38,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC035",
+          "working_title": "Complete in the Head",
+          "idea_ids": [
+            "IDEA136",
+            "IDEA137",
+            "IDEA138"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [
+            "REF028",
+            "REF029"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Headship and completeness in Christ"
+          ],
+          "audio_sources": [
+            "AUDIO002"
+          ],
+          "transcript_index_span": 67,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 11,
+      "idea_ids": [
+        "IDEA128",
+        "IDEA129",
+        "IDEA130",
+        "IDEA131",
+        "IDEA132",
+        "IDEA133",
+        "IDEA134",
+        "IDEA135",
+        "IDEA136",
+        "IDEA137",
+        "IDEA138"
+      ],
+      "audio_sources": [
+        "AUDIO002"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 317,
+      "evidence_chars": 17587,
+      "hydrated_src_chars": 2447,
+      "src_ref_count": 96,
+      "example_count": 2,
+      "reference_count": 4,
+      "uncertainty_count": 0,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [
+        {
+          "reference_id": "REF028",
+          "section_id": "SEC035",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "Colossians 2:9-10",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH009",
+      "working_title": "Laws You Gave Yourself",
+      "purpose": "Expose self-imposed legalism from imitation and recover personal uniqueness before God.",
+      "section_count": 3,
+      "sections": [
+        {
+          "section_id": "SEC036",
+          "working_title": "When Admiration Becomes Law",
+          "idea_ids": [
+            "IDEA139",
+            "IDEA140",
+            "IDEA141",
+            "IDEA142"
+          ],
+          "idea_count": 4,
+          "example_ids": [
+            "EX022"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Self-imposed laws from imitation"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 94,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC037",
+          "working_title": "He Knows How He Made You",
+          "idea_ids": [
+            "IDEA143",
+            "IDEA144",
+            "IDEA145",
+            "IDEA151",
+            "IDEA152"
+          ],
+          "idea_count": 5,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Self-imposed laws from imitation"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 282,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC038",
+          "working_title": "The Real Cost of the Doctrine",
+          "idea_ids": [
+            "IDEA146",
+            "IDEA147",
+            "IDEA148",
+            "IDEA149",
+            "IDEA150"
+          ],
+          "idea_count": 5,
+          "example_ids": [
+            "EX023",
+            "EX024",
+            "EX025",
+            "EX026"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Cost of following Jesus historically",
+            "Church coercion versus modern freedom of worship"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 131,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 14,
+      "idea_ids": [
+        "IDEA139",
+        "IDEA140",
+        "IDEA141",
+        "IDEA142",
+        "IDEA143",
+        "IDEA144",
+        "IDEA145",
+        "IDEA151",
+        "IDEA152",
+        "IDEA146",
+        "IDEA147",
+        "IDEA148",
+        "IDEA149",
+        "IDEA150"
+      ],
+      "audio_sources": [
+        "AUDIO003"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 391,
+      "evidence_chars": 17635,
+      "hydrated_src_chars": 2620,
+      "src_ref_count": 91,
+      "example_count": 5,
+      "reference_count": 0,
+      "uncertainty_count": 0,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [],
+      "risks": [
+        {
+          "code": "NO_STRUCTURAL_TENSION_DETECTED",
+          "severity": "low",
+          "not_an_error": true,
+          "detail": "No cross-recording group, detached example, separated reservation, or unlinked reference was detected from identifiers. This is not a proof that every sentence is thematically pure."
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH010",
+      "working_title": "Spirit, Soul and Body",
+      "purpose": "Give the anatomy that the practice chapters depend on.",
+      "section_count": 4,
+      "sections": [
+        {
+          "section_id": "SEC039",
+          "working_title": "The Three-Part Man",
+          "idea_ids": [
+            "IDEA153",
+            "IDEA155",
+            "IDEA156",
+            "IDEA157",
+            "IDEA158"
+          ],
+          "idea_count": 5,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [
+            "UNC016"
+          ],
+          "topic_labels": [
+            "Spirit, soul and body structure"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 149,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC040",
+          "working_title": "In Dying You Shall Die",
+          "idea_ids": [
+            "IDEA154",
+            "IDEA159",
+            "IDEA160",
+            "IDEA161",
+            "IDEA162"
+          ],
+          "idea_count": 5,
+          "example_ids": [],
+          "reference_ids": [
+            "REF030"
+          ],
+          "uncertainty_ids": [
+            "UNC017"
+          ],
+          "topic_labels": [
+            "Death and spiritual corruption after the Fall"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 210,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC041",
+          "working_title": "Fighting What Does Not Exist",
+          "idea_ids": [
+            "IDEA163",
+            "IDEA164",
+            "IDEA165"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [
+            "REF031"
+          ],
+          "uncertainty_ids": [
+            "UNC018"
+          ],
+          "topic_labels": [
+            "Death and spiritual corruption after the Fall"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 40,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC042",
+          "working_title": "Heart, Soul and Mind",
+          "idea_ids": [
+            "IDEA166",
+            "IDEA183",
+            "IDEA187"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [
+            "REF032"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Spirit, soul and body structure",
+            "Loving God with heart, soul and mind",
+            "Renewal of the mind",
+            "Mind-spirit connection with God"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 468,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 16,
+      "idea_ids": [
+        "IDEA153",
+        "IDEA155",
+        "IDEA156",
+        "IDEA157",
+        "IDEA158",
+        "IDEA154",
+        "IDEA159",
+        "IDEA160",
+        "IDEA161",
+        "IDEA162",
+        "IDEA163",
+        "IDEA164",
+        "IDEA165",
+        "IDEA166",
+        "IDEA183",
+        "IDEA187"
+      ],
+      "audio_sources": [
+        "AUDIO003"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 782,
+      "evidence_chars": 21740,
+      "hydrated_src_chars": 3255,
+      "src_ref_count": 121,
+      "example_count": 3,
+      "reference_count": 3,
+      "uncertainty_count": 3,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [],
+      "risks": [
+        {
+          "code": "NO_STRUCTURAL_TENSION_DETECTED",
+          "severity": "low",
+          "not_an_error": true,
+          "detail": "No cross-recording group, detached example, separated reservation, or unlinked reference was detected from identifiers. This is not a proof that every sentence is thematically pure."
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH011",
+      "working_title": "Reasonings and Strongholds",
+      "purpose": "Distinguish natural knowledge from revelation and define the believer's real combat.",
+      "section_count": 4,
+      "sections": [
+        {
+          "section_id": "SEC043",
+          "working_title": "The Simplicity That Is in Christ",
+          "idea_ids": [
+            "IDEA167",
+            "IDEA168",
+            "IDEA169"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [
+            "REF033",
+            "REF034"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Flesh and blood revelation versus spiritual revelation"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 100,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC044",
+          "working_title": "Flesh-and-Blood Knowledge",
+          "idea_ids": [
+            "IDEA170",
+            "IDEA171",
+            "IDEA172"
+          ],
+          "idea_count": 3,
+          "example_ids": [
+            "EX027",
+            "EX028"
+          ],
+          "reference_ids": [
+            "REF035"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Flesh and blood revelation versus spiritual revelation"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 104,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC045",
+          "working_title": "Feed Them Afterward",
+          "idea_ids": [
+            "IDEA173",
+            "IDEA174"
+          ],
+          "idea_count": 2,
+          "example_ids": [
+            "EX029"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Flesh and blood revelation versus spiritual revelation"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 18,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC046",
+          "working_title": "Bringing Every Thought Captive",
+          "idea_ids": [
+            "IDEA175",
+            "IDEA176",
+            "IDEA177",
+            "IDEA178"
+          ],
+          "idea_count": 4,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [
+            "UNC022"
+          ],
+          "topic_labels": [
+            "Flesh and blood revelation versus spiritual revelation",
+            "Spiritual warfare and strongholds of reasoning"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 78,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 12,
+      "idea_ids": [
+        "IDEA167",
+        "IDEA168",
+        "IDEA169",
+        "IDEA170",
+        "IDEA171",
+        "IDEA172",
+        "IDEA173",
+        "IDEA174",
+        "IDEA175",
+        "IDEA176",
+        "IDEA177",
+        "IDEA178"
+      ],
+      "audio_sources": [
+        "AUDIO003"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 329,
+      "evidence_chars": 16558,
+      "hydrated_src_chars": 2220,
+      "src_ref_count": 75,
+      "example_count": 3,
+      "reference_count": 3,
+      "uncertainty_count": 1,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [],
+      "risks": [
+        {
+          "code": "NO_STRUCTURAL_TENSION_DETECTED",
+          "severity": "low",
+          "not_an_error": true,
+          "detail": "No cross-recording group, detached example, separated reservation, or unlinked reference was detected from identifiers. This is not a proof that every sentence is thematically pure."
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH012",
+      "working_title": "Prayer Corrected",
+      "purpose": "Reform prayer practice: tongues rightly used, correction received, hunger as the condition.",
+      "section_count": 4,
+      "sections": [
+        {
+          "section_id": "SEC047",
+          "working_title": "Bavardage Is Not Prayer",
+          "idea_ids": [
+            "IDEA179",
+            "IDEA182",
+            "IDEA186"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Praying in tongues and refreshment"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 77,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC048",
+          "working_title": "The Refreshing",
+          "idea_ids": [
+            "IDEA180",
+            "IDEA181",
+            "IDEA237"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [
+            "REF036",
+            "REF044",
+            "REF047",
+            "REF037",
+            "REF038"
+          ],
+          "uncertainty_ids": [
+            "UNC029"
+          ],
+          "topic_labels": [
+            "Praying in tongues and refreshment",
+            "Prayer, tongues, and meditation practice"
+          ],
+          "audio_sources": [
+            "AUDIO003",
+            "AUDIO004"
+          ],
+          "transcript_index_span": 1601,
+          "cross_recording": true
+        },
+        {
+          "section_id": "SEC049",
+          "working_title": "He Told Me I Was Tired",
+          "idea_ids": [
+            "IDEA184",
+            "IDEA185",
+            "IDEA238"
+          ],
+          "idea_count": 3,
+          "example_ids": [
+            "EX030"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Praying in tongues and refreshment",
+            "Prayer, tongues, and meditation practice"
+          ],
+          "audio_sources": [
+            "AUDIO003",
+            "AUDIO004"
+          ],
+          "transcript_index_span": 1537,
+          "cross_recording": true
+        },
+        {
+          "section_id": "SEC050",
+          "working_title": "Pouring on the Thirsty",
+          "idea_ids": [
+            "IDEA212",
+            "IDEA213"
+          ],
+          "idea_count": 2,
+          "example_ids": [],
+          "reference_ids": [
+            "REF042",
+            "REF043"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Praying in tongues and refreshment"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 32,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 11,
+      "idea_ids": [
+        "IDEA179",
+        "IDEA182",
+        "IDEA186",
+        "IDEA180",
+        "IDEA181",
+        "IDEA237",
+        "IDEA184",
+        "IDEA185",
+        "IDEA238",
+        "IDEA212",
+        "IDEA213"
+      ],
+      "audio_sources": [
+        "AUDIO003",
+        "AUDIO004"
+      ],
+      "cross_recording": true,
+      "transcript_index_span": 1609,
+      "evidence_chars": 13644,
+      "hydrated_src_chars": 1414,
+      "src_ref_count": 55,
+      "example_count": 1,
+      "reference_count": 7,
+      "uncertainty_count": 1,
+      "detached_examples": [],
+      "separated_uncertainties": [
+        {
+          "uncertainty_id": "UNC029",
+          "section_id": "SEC048",
+          "kind": "ambiguous_meaning",
+          "severity": "medium",
+          "description": "Isaiah chapter 26 versus 28 reference is confused mid-speech, unclear which chapter verse 3 belongs to.",
+          "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+        }
+      ],
+      "reference_tensions": [
+        {
+          "reference_id": "REF044",
+          "section_id": "SEC048",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "Isaiah 28:11",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF047",
+          "section_id": "SEC048",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "1 Corinthians chapter 14, verse 21",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF037",
+          "section_id": "SEC048",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "Jude vers 20",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "THEMATIC_REGROUP_ACROSS_RECORDINGS",
+          "severity": "observation",
+          "authorized": true,
+          "not_an_error": true,
+          "detail": "Ideas in this chapter cite more than one recording. Grouping them is allowed when they treat the same subject. Proximity must not be written as causality.",
+          "audio_sources": [
+            "AUDIO003",
+            "AUDIO004"
+          ]
+        },
+        {
+          "code": "RESERVATION_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        },
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 3,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH013",
+      "working_title": "The Renewed Mind and the Hidden Faculty",
+      "purpose": "Teach renewal of the mind and imagination as the method of lasting communion.",
+      "section_count": 4,
+      "sections": [
+        {
+          "section_id": "SEC051",
+          "working_title": "Renewal Is Not Force",
+          "idea_ids": [
+            "IDEA188",
+            "IDEA189",
+            "IDEA190"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [
+            "REF039"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Renewal of the mind"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 31,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC052",
+          "working_title": "The Power the Church Did Not Teach",
+          "idea_ids": [
+            "IDEA191",
+            "IDEA192",
+            "IDEA193",
+            "IDEA194",
+            "IDEA197",
+            "IDEA198",
+            "IDEA199"
+          ],
+          "idea_count": 7,
+          "example_ids": [
+            "EX031"
+          ],
+          "reference_ids": [
+            "REF040"
+          ],
+          "uncertainty_ids": [
+            "UNC023"
+          ],
+          "topic_labels": [
+            "Imagination as spiritual faculty"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 117,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC053",
+          "working_title": "Bring Jesus Into the Thought",
+          "idea_ids": [
+            "IDEA195",
+            "IDEA196",
+            "IDEA200",
+            "IDEA201",
+            "IDEA202",
+            "IDEA203",
+            "IDEA204",
+            "IDEA205",
+            "IDEA206"
+          ],
+          "idea_count": 9,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Imagination as spiritual faculty",
+            "Renewal of the mind",
+            "Mind-spirit connection with God"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 203,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC054",
+          "working_title": "Training the Wandering Mind",
+          "idea_ids": [
+            "IDEA239",
+            "IDEA240",
+            "IDEA241",
+            "IDEA242",
+            "IDEA245"
+          ],
+          "idea_count": 5,
+          "example_ids": [
+            "EX038",
+            "EX040"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Prayer, tongues, and meditation practice"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 371,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 24,
+      "idea_ids": [
+        "IDEA188",
+        "IDEA189",
+        "IDEA190",
+        "IDEA191",
+        "IDEA192",
+        "IDEA193",
+        "IDEA194",
+        "IDEA197",
+        "IDEA198",
+        "IDEA199",
+        "IDEA195",
+        "IDEA196",
+        "IDEA200",
+        "IDEA201",
+        "IDEA202",
+        "IDEA203",
+        "IDEA204",
+        "IDEA205",
+        "IDEA206",
+        "IDEA239",
+        "IDEA240",
+        "IDEA241",
+        "IDEA242",
+        "IDEA245"
+      ],
+      "audio_sources": [
+        "AUDIO003",
+        "AUDIO004"
+      ],
+      "cross_recording": true,
+      "transcript_index_span": 1905,
+      "evidence_chars": 21918,
+      "hydrated_src_chars": 2761,
+      "src_ref_count": 106,
+      "example_count": 3,
+      "reference_count": 2,
+      "uncertainty_count": 1,
+      "detached_examples": [],
+      "separated_uncertainties": [
+        {
+          "uncertainty_id": "UNC023",
+          "section_id": "SEC052",
+          "kind": "ambiguous_meaning",
+          "severity": "low",
+          "description": "Passage referencing 'girafe avec la tête d'un être humain' and other imagination imagery is unclear whether intended literally or as absurdist illustration of poor imagination.",
+          "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+        }
+      ],
+      "reference_tensions": [],
+      "risks": [
+        {
+          "code": "THEMATIC_REGROUP_ACROSS_RECORDINGS",
+          "severity": "observation",
+          "authorized": true,
+          "not_an_error": true,
+          "detail": "Ideas in this chapter cite more than one recording. Grouping them is allowed when they treat the same subject. Proximity must not be written as causality.",
+          "audio_sources": [
+            "AUDIO003",
+            "AUDIO004"
+          ]
+        },
+        {
+          "code": "RESERVATION_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH014",
+      "working_title": "Operating What You Have",
+      "purpose": "Move into the exercise of power: abnormal faith, short prayer, hands, holiness, effortless gifts.",
+      "section_count": 4,
+      "sections": [
+        {
+          "section_id": "SEC055",
+          "working_title": "Abnormal Faith, Short Prayers",
+          "idea_ids": [
+            "IDEA207",
+            "IDEA208",
+            "IDEA209",
+            "IDEA210",
+            "IDEA211"
+          ],
+          "idea_count": 5,
+          "example_ids": [
+            "EX032",
+            "EX033",
+            "EX034"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [
+            "UNC024"
+          ],
+          "topic_labels": [
+            "Testimonies of raising the dead",
+            "Short, faith-filled prayer versus long prayers"
+          ],
+          "audio_sources": [
+            "AUDIO003"
+          ],
+          "transcript_index_span": 390,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC056",
+          "working_title": "Hands as Doorways",
+          "idea_ids": [
+            "IDEA214",
+            "IDEA215",
+            "IDEA216"
+          ],
+          "idea_count": 3,
+          "example_ids": [
+            "EX035",
+            "EX036"
+          ],
+          "reference_ids": [
+            "REF017"
+          ],
+          "uncertainty_ids": [
+            "UNC025"
+          ],
+          "topic_labels": [
+            "Hands as doorways of the Spirit"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 115,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC057",
+          "working_title": "A Holy Man Lacks Nothing",
+          "idea_ids": [
+            "IDEA217",
+            "IDEA218",
+            "IDEA219"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Holiness and inner purity"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 36,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC058",
+          "working_title": "Without Struggle",
+          "idea_ids": [
+            "IDEA220",
+            "IDEA221",
+            "IDEA222",
+            "IDEA223"
+          ],
+          "idea_count": 4,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Gifts and manifestation of the Holy Ghost"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 34,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 15,
+      "idea_ids": [
+        "IDEA207",
+        "IDEA208",
+        "IDEA209",
+        "IDEA210",
+        "IDEA211",
+        "IDEA214",
+        "IDEA215",
+        "IDEA216",
+        "IDEA217",
+        "IDEA218",
+        "IDEA219",
+        "IDEA220",
+        "IDEA221",
+        "IDEA222",
+        "IDEA223"
+      ],
+      "audio_sources": [
+        "AUDIO003",
+        "AUDIO004"
+      ],
+      "cross_recording": true,
+      "transcript_index_span": 787,
+      "evidence_chars": 17941,
+      "hydrated_src_chars": 2292,
+      "src_ref_count": 82,
+      "example_count": 5,
+      "reference_count": 1,
+      "uncertainty_count": 2,
+      "detached_examples": [],
+      "separated_uncertainties": [
+        {
+          "uncertainty_id": "UNC024",
+          "section_id": "SEC055",
+          "kind": "apparent_contradiction",
+          "severity": "medium",
+          "description": "Speaker's account of the resurrection testimony is told twice with near-duplicate wording (Reverend John/Brother Samson), possibly reflecting a repeated take or transcription dupli",
+          "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+        },
+        {
+          "uncertainty_id": "UNC025",
+          "section_id": "SEC056",
+          "kind": "uncertain_attribution",
+          "severity": "medium",
+          "description": "Attribution unclear as to which speaker specifically claims the vision of hands as doors ('masters'/'veil' discussion) — dialogue between multiple people makes exact speaker attrib",
+          "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+        }
+      ],
+      "reference_tensions": [
+        {
+          "reference_id": "REF017",
+          "section_id": "SEC056",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "Hebrew chapter 10",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "THEMATIC_REGROUP_ACROSS_RECORDINGS",
+          "severity": "observation",
+          "authorized": true,
+          "not_an_error": true,
+          "detail": "Ideas in this chapter cite more than one recording. Grouping them is allowed when they treat the same subject. Proximity must not be written as causality.",
+          "audio_sources": [
+            "AUDIO003",
+            "AUDIO004"
+          ]
+        },
+        {
+          "code": "RESERVATION_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 2,
+          "not_concluded_as_error": true
+        },
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH015",
+      "working_title": "Grace Barely Touched",
+      "purpose": "Show how much is already given and how believers testify to discovering it.",
+      "section_count": 4,
+      "sections": [
+        {
+          "section_id": "SEC059",
+          "working_title": "More Than We Have Used",
+          "idea_ids": [
+            "IDEA231",
+            "IDEA232",
+            "IDEA233",
+            "IDEA234",
+            "IDEA235",
+            "IDEA236"
+          ],
+          "idea_count": 6,
+          "example_ids": [],
+          "reference_ids": [
+            "REF045",
+            "REF046"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Grace versus law",
+            "Testimonies of personal transformation"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 68,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC060",
+          "working_title": "What Changed in Them",
+          "idea_ids": [
+            "IDEA227",
+            "IDEA228",
+            "IDEA229",
+            "IDEA230"
+          ],
+          "idea_count": 4,
+          "example_ids": [
+            "EX037"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Testimonies of personal transformation"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 56,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC061",
+          "working_title": "Healing Already Accomplished",
+          "idea_ids": [
+            "IDEA243",
+            "IDEA244"
+          ],
+          "idea_count": 2,
+          "example_ids": [
+            "EX039"
+          ],
+          "reference_ids": [
+            "REF049"
+          ],
+          "uncertainty_ids": [
+            "UNC030"
+          ],
+          "topic_labels": [
+            "Healing already accomplished",
+            "Grace versus law"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 134,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC062",
+          "working_title": "The Sower in One Man",
+          "idea_ids": [
+            "IDEA246",
+            "IDEA247",
+            "IDEA248",
+            "IDEA249"
+          ],
+          "idea_count": 4,
+          "example_ids": [
+            "EX041",
+            "EX042"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Parable of the sower applied to one man's growth"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 160,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 16,
+      "idea_ids": [
+        "IDEA231",
+        "IDEA232",
+        "IDEA233",
+        "IDEA234",
+        "IDEA235",
+        "IDEA236",
+        "IDEA227",
+        "IDEA228",
+        "IDEA229",
+        "IDEA230",
+        "IDEA243",
+        "IDEA244",
+        "IDEA246",
+        "IDEA247",
+        "IDEA248",
+        "IDEA249"
+      ],
+      "audio_sources": [
+        "AUDIO004"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 805,
+      "evidence_chars": 18346,
+      "hydrated_src_chars": 3376,
+      "src_ref_count": 79,
+      "example_count": 4,
+      "reference_count": 3,
+      "uncertainty_count": 1,
+      "detached_examples": [],
+      "separated_uncertainties": [
+        {
+          "uncertainty_id": "UNC030",
+          "section_id": "SEC061",
+          "kind": "uncertain_attribution",
+          "severity": "low",
+          "description": "Reference to 'Dadi' insisting on preaching return to a text is unclear whether it names a specific person or role.",
+          "conclusion": "The reservation does not share an SRC with the ideas listed on this section. It may be read apart from the wording it qualifies. Not concluded as an assignment error."
+        }
+      ],
+      "reference_tensions": [
+        {
+          "reference_id": "REF045",
+          "section_id": "SEC059",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "John chapter 1",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF046",
+          "section_id": "SEC059",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "Exodus chapter 33",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "RESERVATION_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        },
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 2,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH016",
+      "working_title": "Death as Gain",
+      "purpose": "Resolve the fear-of-death thread opened in the resurrection chapters.",
+      "section_count": 1,
+      "sections": [
+        {
+          "section_id": "SEC063",
+          "working_title": "To Live Is Christ",
+          "idea_ids": [
+            "IDEA224",
+            "IDEA225",
+            "IDEA226",
+            "IDEA250",
+            "IDEA251",
+            "IDEA252"
+          ],
+          "idea_count": 6,
+          "example_ids": [],
+          "reference_ids": [
+            "REF050",
+            "REF051",
+            "REF056"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Attitude toward death and heaven",
+            "Grace versus law"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 1014,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 6,
+      "idea_ids": [
+        "IDEA224",
+        "IDEA225",
+        "IDEA226",
+        "IDEA250",
+        "IDEA251",
+        "IDEA252"
+      ],
+      "audio_sources": [
+        "AUDIO004"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 1014,
+      "evidence_chars": 8967,
+      "hydrated_src_chars": 1177,
+      "src_ref_count": 35,
+      "example_count": 0,
+      "reference_count": 3,
+      "uncertainty_count": 0,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [
+        {
+          "reference_id": "REF050",
+          "section_id": "SEC063",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "1 Corinthians 15",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF051",
+          "section_id": "SEC063",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "Philippians chapter 1, verse 21",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF056",
+          "section_id": "SEC063",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "'To live is Christ' (Philippians reference)",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 3,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH017",
+      "working_title": "Nothing by Chance",
+      "purpose": "Make intentionality the organizing practice: speech, protection, and the responsibility of choice.",
+      "section_count": 3,
+      "sections": [
+        {
+          "section_id": "SEC064",
+          "working_title": "Practice, Not Accident",
+          "idea_ids": [
+            "IDEA040",
+            "IDEA253",
+            "IDEA254",
+            "IDEA255",
+            "IDEA267",
+            "IDEA268"
+          ],
+          "idea_count": 6,
+          "example_ids": [
+            "EX043",
+            "EX045"
+          ],
+          "reference_ids": [
+            "REF057"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Practicing what is preached",
+            "Practicing intentional faith",
+            "Divine protection and preservation of life",
+            "Speech correction and self-monitoring"
+          ],
+          "audio_sources": [
+            "AUDIO001",
+            "AUDIO004"
+          ],
+          "transcript_index_span": 6332,
+          "cross_recording": true
+        },
+        {
+          "section_id": "SEC065",
+          "working_title": "God Did Not Make Anyone Poor",
+          "idea_ids": [
+            "IDEA256",
+            "IDEA257",
+            "IDEA258",
+            "IDEA259",
+            "IDEA260",
+            "IDEA261",
+            "IDEA262",
+            "IDEA263",
+            "IDEA264",
+            "IDEA265"
+          ],
+          "idea_count": 10,
+          "example_ids": [
+            "EX044"
+          ],
+          "reference_ids": [
+            "REF053",
+            "REF054"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Choice, poverty and blessing"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 232,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC066",
+          "working_title": "The A Part and the B Part",
+          "idea_ids": [
+            "IDEA266"
+          ],
+          "idea_count": 1,
+          "example_ids": [],
+          "reference_ids": [
+            "REF055",
+            "REF052"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Practicing intentional faith",
+            "Choice, poverty and blessing"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 9,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 17,
+      "idea_ids": [
+        "IDEA040",
+        "IDEA253",
+        "IDEA254",
+        "IDEA255",
+        "IDEA267",
+        "IDEA268",
+        "IDEA256",
+        "IDEA257",
+        "IDEA258",
+        "IDEA259",
+        "IDEA260",
+        "IDEA261",
+        "IDEA262",
+        "IDEA263",
+        "IDEA264",
+        "IDEA265",
+        "IDEA266"
+      ],
+      "audio_sources": [
+        "AUDIO001",
+        "AUDIO004"
+      ],
+      "cross_recording": true,
+      "transcript_index_span": 6332,
+      "evidence_chars": 19161,
+      "hydrated_src_chars": 2597,
+      "src_ref_count": 92,
+      "example_count": 3,
+      "reference_count": 6,
+      "uncertainty_count": 1,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [
+        {
+          "reference_id": "REF053",
+          "section_id": "SEC065",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "Proverbs chapter 19, verse 1",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF055",
+          "section_id": "SEC066",
+          "kind": "biblical",
+          "completeness": "complete",
+          "raw_reference": "Deuteronomy 30:19 (choice of life)",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        },
+        {
+          "reference_id": "REF052",
+          "section_id": "SEC066",
+          "kind": "biblical",
+          "completeness": "partial",
+          "raw_reference": "Deuteronome 13",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "THEMATIC_REGROUP_ACROSS_RECORDINGS",
+          "severity": "observation",
+          "authorized": true,
+          "not_an_error": true,
+          "detail": "Ideas in this chapter cite more than one recording. Grouping them is allowed when they treat the same subject. Proximity must not be written as causality.",
+          "audio_sources": [
+            "AUDIO001",
+            "AUDIO004"
+          ]
+        },
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 3,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH018",
+      "working_title": "Testimonies of Resurrection",
+      "purpose": "Demonstrate the doctrine through resurrection accounts and the humility that must accompany them.",
+      "section_count": 4,
+      "sections": [
+        {
+          "section_id": "SEC067",
+          "working_title": "The Word That Could Not Fail",
+          "idea_ids": [
+            "IDEA269",
+            "IDEA270",
+            "IDEA271",
+            "IDEA272"
+          ],
+          "idea_count": 4,
+          "example_ids": [
+            "EX046"
+          ],
+          "reference_ids": [
+            "REF041"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Testimonies of resurrection from the dead",
+            "Divine protection and preservation of life"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 50,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC068",
+          "working_title": "Activation, Not Persuasion",
+          "idea_ids": [
+            "IDEA273",
+            "IDEA274",
+            "IDEA275"
+          ],
+          "idea_count": 3,
+          "example_ids": [],
+          "reference_ids": [
+            "REF058"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Testimonies of resurrection from the dead",
+            "Practicing intentional faith"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 112,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC069",
+          "working_title": "When It Does Not Happen",
+          "idea_ids": [
+            "IDEA276",
+            "IDEA277"
+          ],
+          "idea_count": 2,
+          "example_ids": [
+            "EX047",
+            "EX048"
+          ],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Testimonies of resurrection from the dead",
+            "Ministry humility versus performance"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 263,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC070",
+          "working_title": "The Vessel, Not the Name",
+          "idea_ids": [
+            "IDEA278",
+            "IDEA279"
+          ],
+          "idea_count": 2,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Ministry humility versus performance"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 33,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 11,
+      "idea_ids": [
+        "IDEA269",
+        "IDEA270",
+        "IDEA271",
+        "IDEA272",
+        "IDEA273",
+        "IDEA274",
+        "IDEA275",
+        "IDEA276",
+        "IDEA277",
+        "IDEA278",
+        "IDEA279"
+      ],
+      "audio_sources": [
+        "AUDIO004"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 508,
+      "evidence_chars": 16057,
+      "hydrated_src_chars": 1933,
+      "src_ref_count": 79,
+      "example_count": 3,
+      "reference_count": 2,
+      "uncertainty_count": 0,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [
+        {
+          "reference_id": "REF041",
+          "section_id": "SEC067",
+          "kind": "other",
+          "completeness": "vague",
+          "raw_reference": "Tribune newspaper account of resurrection testimony",
+          "conclusion": "The reference is listed on this section, and its SRC do not intersect the section's idea SRC. Association must be preserved by the generator. Not concluded as an assignment error."
+        }
+      ],
+      "risks": [
+        {
+          "code": "REFERENCE_WITHOUT_SECTION_SRC_OVERLAP",
+          "severity": "elevated",
+          "count": 1,
+          "not_concluded_as_error": true
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH019",
+      "working_title": "Out of the Eater",
+      "purpose": "End with providence that reverses harm and the prophetic vision for the nation.",
+      "section_count": 2,
+      "sections": [
+        {
+          "section_id": "SEC071",
+          "working_title": "Meant for Evil",
+          "idea_ids": [
+            "IDEA280",
+            "IDEA281",
+            "IDEA282"
+          ],
+          "idea_count": 3,
+          "example_ids": [
+            "EX049"
+          ],
+          "reference_ids": [
+            "REF059"
+          ],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Turning evil into blessing / testimony of transformation",
+            "Choice, poverty and blessing"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 103,
+          "cross_recording": false
+        },
+        {
+          "section_id": "SEC072",
+          "working_title": "Angels Over the Nation",
+          "idea_ids": [
+            "IDEA283",
+            "IDEA284",
+            "IDEA285",
+            "IDEA286"
+          ],
+          "idea_count": 4,
+          "example_ids": [],
+          "reference_ids": [],
+          "uncertainty_ids": [],
+          "topic_labels": [
+            "Turning evil into blessing / testimony of transformation",
+            "Prophetic vision for the nation",
+            "Practicing intentional faith"
+          ],
+          "audio_sources": [
+            "AUDIO004"
+          ],
+          "transcript_index_span": 86,
+          "cross_recording": false
+        }
+      ],
+      "idea_count": 7,
+      "idea_ids": [
+        "IDEA280",
+        "IDEA281",
+        "IDEA282",
+        "IDEA283",
+        "IDEA284",
+        "IDEA285",
+        "IDEA286"
+      ],
+      "audio_sources": [
+        "AUDIO004"
+      ],
+      "cross_recording": false,
+      "transcript_index_span": 191,
+      "evidence_chars": 10976,
+      "hydrated_src_chars": 1202,
+      "src_ref_count": 45,
+      "example_count": 1,
+      "reference_count": 1,
+      "uncertainty_count": 1,
+      "detached_examples": [],
+      "separated_uncertainties": [],
+      "reference_tensions": [],
+      "risks": [
+        {
+          "code": "NO_STRUCTURAL_TENSION_DETECTED",
+          "severity": "low",
+          "not_an_error": true,
+          "detail": "No cross-recording group, detached example, separated reservation, or unlinked reference was detected from identifiers. This is not a proof that every sentence is thematically pure."
+        }
+      ]
+    }
+  ],
+  "secrets_included": false
+}

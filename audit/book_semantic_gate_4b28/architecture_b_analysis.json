@@ -1,0 +1,48 @@
+{
+  "phase": "4B.2.8",
+  "id": "B",
+  "name": "Deterministic presegmentation",
+  "status": "EXPERIMENTAL_PROTOTYPE_ONLY",
+  "model_responsibilities": [
+    "Evaluate fidelity of pre-identified units",
+    "Associate authorized evidence",
+    "Emit verdicts and catalog reason codes"
+  ],
+  "local_responsibilities": [
+    "Offsets",
+    "Coverage",
+    "Stable identifiers",
+    "Structural compliance",
+    "Conservative segmentation"
+  ],
+  "advantages": [
+    "Removes offset arithmetic from the model.",
+    "Makes coverage a local invariant.",
+    "Can isolate a because-clause or which-means clause as a unit."
+  ],
+  "limits": [
+    "A better split does not prove better semantic understanding.",
+    "Not tested with real Terra.",
+    "False rejections of paraphrase may persist."
+  ],
+  "risks": [
+    "Bad segmentation",
+    "Detached negation",
+    "Detached condition",
+    "Causality split across units",
+    "Insufficient context if the model ignores context",
+    "False sense of precision"
+  ],
+  "mitigations_in_prototype": [
+    "Do not split 'not because'.",
+    "Keep connectives with the following clause.",
+    "Retain full paragraph as context.",
+    "Ambiguity flag and conservative whole-paragraph fallback."
+  ],
+  "complexity": "Adds a local linguistic component. Reduces prompt structural instructions.",
+  "cost": "Hypothetical only. Output JSON can omit s/e/t copies. Reasoning tokens are unknown.",
+  "terra_validated_for_this_phase": false,
+  "evidence_level": "HYPOTHESIS",
+  "offline_prototype_evidence_level": "DETERMINISTICALLY_VERIFIED",
+  "secrets_included": false
+}

@@ -1,0 +1,12 @@
+{
+  "READY_FOR_ONE_NEW_EXPLICITLY_AUTHORIZED_TERRA_CANARY": true,
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "terra_executed": false,
+  "readiness_class": "READY_WITH_SERVER_UNVERIFIED_FIELDS",
+  "cannot_claim_server_acceptance": true,
+  "why": "Local compatibility gates passed. Remaining server-only uncertainties are documented. A new explicit human authorization is required before any Terra call."
+}

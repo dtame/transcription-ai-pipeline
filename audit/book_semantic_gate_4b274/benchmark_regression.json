@@ -1,0 +1,16 @@
+{
+  "phase": "4B.2.7.4",
+  "positives_accepted": 6,
+  "negatives_blocked": 4,
+  "protected": {
+    "4b2_p8_invented_funeral": true,
+    "4b2_p13_unsupported_connective": true,
+    "4b22_p3_new_causal": true,
+    "4b22_p8_reference_completion": true
+  },
+  "validator_1_1_2_status": "PASS",
+  "fakeai_not_terra_quality": true,
+  "labels_unmodified": true,
+  "historical_ten_cases_preserved": true,
+  "secrets_included": false
+}

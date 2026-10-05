@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "source_paragraph_count": 335,
+  "book_paragraph_count": 335,
+  "markdown_paragraph_count": 335,
+  "prose_added": 0,
+  "prose_removed": 0,
+  "prose_modified": 0,
+  "markdown_mismatches": 0,
+  "binary_identity_not_required": true,
+  "editorial_content_identity": true,
+  "punctuation_normalized": false,
+  "internal_spaces_normalized": false,
+  "secrets_included": false
+}

@@ -1,0 +1,162 @@
+{
+  "phase": "4B.2.6.2",
+  "prompt_version": "book-semantic-validator-1.1-candidate",
+  "transport_version": "book-semantic-validation-transport-1.1-candidate",
+  "historical_prompt_version": "book-semantic-validator-1.0",
+  "historical_transport_version": "book-semantic-validation-transport-1.0",
+  "promoted": false,
+  "deterministic": true,
+  "prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+  "system_sha256": "9380de399875ca7b803c1b6443d9ac53e261a39c43f357a062218771ca168f51",
+  "instructions_sha256": "0152479843d97327b7010ccde342e3b3c6dbc0e6c23076c748895e484c9b2e4b",
+  "schema_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+  "identical_to_historical": false,
+  "inventory": {
+    "phase": "4B.2.6.2",
+    "implemented": {
+      "book-semantic-validator-1.0": {
+        "status": "IMPLEMENTED_FROZEN",
+        "module": "app.book_semantic_gate_4b23.prompt",
+        "sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc"
+      },
+      "book-semantic-validation-transport-1.0": {
+        "status": "IMPLEMENTED_FROZEN",
+        "module": "app.book_semantic_gate_4b23.schema",
+        "title": "book-semantic-validation-transport-1.0",
+        "sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689"
+      },
+      "book-semantic-validator-1.1-candidate": {
+        "status": "IMPLEMENTED_CANDIDATE_FINALIZED_HERE",
+        "module": "app.book_semantic_gate_4b261.candidates",
+        "sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+        "promoted": false
+      },
+      "book-semantic-validation-transport-1.1-candidate": {
+        "status": "IMPLEMENTED_CANDIDATE_FINALIZED_HERE",
+        "module": "app.book_semantic_gate_4b261.candidates",
+        "sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+        "promoted": false
+      },
+      "ten_historical_benchmark_cases": {
+        "status": "IMPLEMENTED_FROZEN",
+        "module": "app.book_semantic_gate_4b23.benchmark"
+      },
+      "fakeai_and_deterministic_validation": {
+        "status": "IMPLEMENTED",
+        "modules": [
+          "app.book_semantic_gate_4b23.fakeai",
+          "app.book_semantic_gate_4b24.validate"
+        ]
+      },
+      "openai_adapter": {
+        "status": "IMPLEMENTED",
+        "module": "app.ai.providers.openai_engine"
+      }
+    },
+    "proposal_only_before_this_phase": {
+      "single_case_h01_canary_request": "PROPOSAL_IN_4B261_NOW_FROZEN_HERE",
+      "reasoning_token_telemetry_fix": "GAP_IN_4B261_NOW_IMPLEMENTED",
+      "preflight_for_single_case_compact_request": "NOW_IMPLEMENTED_OFFLINE"
+    },
+    "not_recreated": [
+      "historical 1.0 prompt and schema",
+      "4B.2.6.1 candidate prompt text",
+      "frozen human labels",
+      "OpenAI chat.completions adapter"
+    ],
+    "historical_1_0_unchanged": true,
+    "candidate_1_1_promoted": false
+  },
+  "kept_minimum": {
+    "case_identifier": "opaque paragraph handle h",
+    "paragraph_identifier": "pr[].h",
+    "global_verdict": "v in {PASS, REVIEW, FAIL}",
+    "proposition_coverage": "pr[].c[] spans must cover the paragraph",
+    "spans": "pr[].c[].s / pr[].c[].e",
+    "canonical_evidence_references": "pr[].c[].ev and pr[].ev",
+    "reason_codes": "pr[].c[].r closed list",
+    "short_justification": "pr[].c[].n only when QUESTIONABLE or UNSUPPORTED"
+  },
+  "avoided": {
+    "full_claim_text_copy": "t dropped; recovered from offsets",
+    "long_explanations": "x dropped",
+    "narrative_reformulations": true,
+    "copied_evidence_text": true,
+    "redundant_confidence": "cf dropped"
+  },
+  "offset_convention": {
+    "indexing": "python3_str_unicode_code_points",
+    "interval": "half_open",
+    "start_inclusive": true,
+    "end_exclusive": true,
+    "not_utf8_bytes": true,
+    "not_utf16_code_units": true,
+    "combining_characters_are_separate_code_points": true,
+    "empty_span_invalid": true,
+    "inconsistent_span_invalid": true,
+    "out_of_bounds_invalid": true,
+    "valid_offset_is_not_semantic_support": true,
+    "recovery": "paragraph_text[start:end]",
+    "documentation": "Offsets are Python 3 str indices. text[s:e] recovers the evaluated span. A well-formed span identifies the evaluated passage; it does not prove the passage is supported by canonical evidence."
+  },
+  "required_claim_fields": [
+    "i",
+    "s",
+    "e",
+    "k",
+    "ev",
+    "r"
+  ],
+  "required_paragraph_fields": [
+    "h",
+    "v",
+    "c",
+    "ev",
+    "r"
+  ],
+  "required_top_fields": [
+    "ch",
+    "v",
+    "pr",
+    "sc",
+    "uh",
+    "rr"
+  ],
+  "dropped_required_claim_fields": [
+    "t",
+    "x"
+  ],
+  "optional_reservation_field": "n",
+  "verdicts": [
+    "SUPPORTED",
+    "QUESTIONABLE",
+    "UNSUPPORTED",
+    "NON_SUBSTANTIVE"
+  ],
+  "chapter_verdicts": [
+    "PASS",
+    "REVIEW",
+    "FAIL"
+  ],
+  "reason_codes": [
+    "NEW_FACT",
+    "NEW_CAUSAL_LINK",
+    "NEW_ARGUMENT",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM",
+    "NEW_IMPLICATION",
+    "INVENTED_EXAMPLE",
+    "INVENTED_ANECDOTE",
+    "INVENTED_HYPOTHETICAL",
+    "REFERENCE_COMPLETION",
+    "REFERENCE_EXPANSION",
+    "QUOTE_EXPANSION",
+    "UNCERTAINTY_STRENGTHENED",
+    "SOURCE_MEANING_DISTORTED",
+    "EVIDENCE_MISMATCH",
+    "OTHER"
+  ],
+  "json_object_server_capability": "UNKNOWN_SERVER_SIDE",
+  "native_json_schema_sent": false,
+  "secrets_included": false
+}

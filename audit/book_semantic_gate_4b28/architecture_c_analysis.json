@@ -1,0 +1,41 @@
+{
+  "phase": "4B.2.8",
+  "id": "C",
+  "name": "Hybrid two-level validation",
+  "status": "PROPOSED_TARGET_NOT_ACTIVATED",
+  "level_1_deterministic": [
+    "Integrity and schema",
+    "Identifiers",
+    "Coverage from local units",
+    "Evidence handle membership",
+    "Unknown reason codes",
+    "Missing codes on reservations",
+    "Structural anomalies"
+  ],
+  "level_2_model": [
+    "Paraphrase",
+    "Implication",
+    "Causality",
+    "Strengthening",
+    "Generalization",
+    "Source fidelity"
+  ],
+  "final_decision": "Blocking rules remain: QUESTIONABLE/UNSUPPORTED block production PASS. Unknown codes FAIL. Coverage FAIL is local and does not require the model to recount characters.",
+  "presegmentation_in_c": "Relevant. Architecture C can consume B's units so the model never emits offsets.",
+  "does_not_automatically_fix_false_rejections": true,
+  "advantages": [
+    "Separates what code can guarantee from what only a model can judge.",
+    "Preserves observed true positives as model tasks.",
+    "Makes h11-style word-ending gaps locally impossible on new calls."
+  ],
+  "limits": [
+    "Semantic false rejections remain untested under C.",
+    "Two-level design can still over-trust isolated units.",
+    "Migration requires a new contract and a later authorized Terra canary."
+  ],
+  "complexity": "Highest local complexity; lowest model structural load.",
+  "cost": "Hypothetical. Fewer output fields; unknown reasoning-token effect.",
+  "terra_validated_for_this_phase": false,
+  "evidence_level": "HYPOTHESIS",
+  "secrets_included": false
+}

@@ -1,0 +1,48 @@
+{
+  "phase": "4B.2.6.1",
+  "historical_prompt_version": "book-semantic-validator-1.0",
+  "candidate_prompt_version": "book-semantic-validator-1.1-candidate",
+  "historical_transport_version": "book-semantic-validation-transport-1.0",
+  "candidate_transport_version": "book-semantic-validation-transport-1.1-candidate",
+  "candidate_is_not_historical_4b26_request": true,
+  "prompt": {
+    "historical_system_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+    "candidate_system_sha256": "9380de399875ca7b803c1b6443d9ac53e261a39c43f357a062218771ca168f51",
+    "historical_instructions_sha256": "4747261db399a1b934221c455502e9b55f54498bab4f31ae29dff9ef6e6e8ccc",
+    "candidate_instructions_sha256": "0152479843d97327b7010ccde342e3b3c6dbc0e6c23076c748895e484c9b2e4b",
+    "system_identical": false,
+    "instructions_identical": false,
+    "system_char_delta": 139,
+    "instruction_char_delta": 66
+  },
+  "schema": {
+    "historical_sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689",
+    "candidate_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+    "identical": false,
+    "historical_bytes": 3261,
+    "candidate_bytes": 2371
+  },
+  "semantic_invariants_kept": [
+    "four verdicts",
+    "claim-level spans",
+    "reason codes",
+    "evidence handles",
+    "QUESTIONABLE/UNSUPPORTED block acceptance",
+    "no external knowledge",
+    "no label leakage tokens"
+  ],
+  "promoted": false,
+  "secrets_included": false,
+  "request_identities": {
+    "historical_4b26_sha256": "8a92848e412763f0e67468245f9c007ee9537ffa4f2f5469af9a6934d9ebeb31",
+    "candidate_10_case_sha256": "dbddc388ba33b14034d494190265b2685c5d633f749d2d374c2aa5c1c415fb5d",
+    "candidate_1_case_sha256": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+    "candidate_10_differs_from_historical": true,
+    "candidate_1_differs_from_historical": true,
+    "candidate_10_network_calls": 0,
+    "candidate_1_network_calls": 0,
+    "label_leak_10": 0,
+    "label_leak_1": 0,
+    "never_present_as_identical_to_4b26": true
+  }
+}

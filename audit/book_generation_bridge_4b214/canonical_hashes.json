@@ -1,0 +1,28 @@
+{
+  "phase": "4B.2.14",
+  "pre": {
+    "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "candidate_4b2": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+    "candidate_4b22": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c",
+    "raw_4b2": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749"
+  },
+  "post": {
+    "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "candidate_4b2": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+    "candidate_4b22": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c",
+    "raw_4b2": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749"
+  },
+  "expected": {
+    "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+  },
+  "match": true,
+  "historical_contracts_unmodified": true,
+  "historical_labels_unmodified": true,
+  "secrets_included": false
+}

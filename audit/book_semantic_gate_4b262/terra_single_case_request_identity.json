@@ -1,0 +1,68 @@
+{
+  "phase": "4B.2.6.2",
+  "serialization": {
+    "canonical": "json.dumps(payload, ensure_ascii=False, sort_keys=True)",
+    "encoding": "utf-8",
+    "algorithm": "sha256",
+    "non_deterministic_keys_stripped": [
+      "timeout",
+      "request_id",
+      "created",
+      "timestamp",
+      "id"
+    ]
+  },
+  "first_sha256": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+  "second_sha256": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+  "sha256": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+  "determinism": true,
+  "differs_from_4b26": true,
+  "historical_4b26_sha256": "8a92848e412763f0e67468245f9c007ee9537ffa4f2f5469af9a6934d9ebeb31",
+  "model": "gpt-5.6-terra",
+  "model_identity": true,
+  "provider": "openai",
+  "prompt_version": "book-semantic-validator-1.1-candidate",
+  "prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+  "transport_version": "book-semantic-validation-transport-1.1-candidate",
+  "transport_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+  "selected_handle": "h01",
+  "selected_case_id_audit_only": "4b22_p2_supported",
+  "handles_in_request": [
+    "h01"
+  ],
+  "exactly_one_case": true,
+  "label_leakage": 0,
+  "label_leak_pass": true,
+  "human_labels_sent": false,
+  "dynamic_fields_present": [],
+  "dynamic_fields_absent": true,
+  "repeat_payload_identical": true,
+  "secrets_included": false,
+  "sdk": {
+    "serialization_pass": true,
+    "network_calls": 0,
+    "checks": {
+      "exactly_one_case": true,
+      "compact_contract": true,
+      "compact_instruction_present": true,
+      "evidence_present": true,
+      "max_completion_tokens": true,
+      "max_tokens_absent": true,
+      "temperature_absent": true,
+      "reasoning_params_absent": true,
+      "json_object": true,
+      "model": true,
+      "endpoint": "chat.completions",
+      "sdk_method": "client.chat.completions.create",
+      "token_field": "max_completion_tokens"
+    }
+  },
+  "local_compat": {
+    "max_completion_tokens": 8192,
+    "max_tokens_absent": true,
+    "temperature_absent": true,
+    "thinking_absent": true,
+    "json_object": true
+  },
+  "payload_omitted_from_this_view": true
+}

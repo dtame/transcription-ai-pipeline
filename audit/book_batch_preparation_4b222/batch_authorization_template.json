@@ -1,0 +1,52 @@
+{
+  "phase": "4B.2.22",
+  "template_version": "batch-authorization-template-4b222-1.0",
+  "not_granted_now": true,
+  "authorized_now_usd": 0.0,
+  "this_estimate_is_not_an_authorization": true,
+  "required_human_token": {
+    "authorization_scope": "BOOK_GENERATION_LATER_PHASE_BATCH_01_CH001_CH002_CH003_CH004_ONE_SHOT_EACH_ONLY",
+    "batch_id": "BATCH-01",
+    "chapter_ids": [
+      "CH001",
+      "CH002",
+      "CH003",
+      "CH004"
+    ],
+    "provider": "anthropic",
+    "model": "claude-sonnet-5",
+    "prompt_version": "book-generator-faithful-restatement-1.1-candidate",
+    "prompt_activation": "isolated_explicit_option_only",
+    "global_cap_usd": 0.654744,
+    "calculable_maximum_usd": 0.569342,
+    "per_chapter_cap_usd": {
+      "CH001": 0.135502,
+      "CH002": 0.162226,
+      "CH003": 0.157226,
+      "CH004": 0.19979
+    },
+    "maximum_remote_calls": 4,
+    "maximum_remote_calls_per_chapter": 1,
+    "retries": 0,
+    "fallbacks": 0,
+    "retry_policy": "forbidden",
+    "fallback_policy": "forbidden",
+    "central_estimate_must_not_be_the_cap": true,
+    "precall_verification": true,
+    "stop_if_cost_unknown": true,
+    "stop_if_cap_exceeded": true,
+    "stop_if_idea_handles_missing_or_invented": true,
+    "stop_if_src_invalid": true,
+    "stop_if_truncated": true,
+    "stop_if_uncertain_lock": true,
+    "stop_if_prompt_or_model_changes": true,
+    "isolated_audit_directory_required": true,
+    "one_chapter_per_provider_call": true,
+    "publication": false,
+    "ch012_regeneration": false,
+    "ch018_regeneration": false,
+    "seventeen_chapter_run": false
+  },
+  "prepared_by_phase": "4B.2.22",
+  "secrets_included": false
+}

@@ -1,0 +1,79 @@
+{
+  "pytest": {
+    "returncode": 0,
+    "summary": "9 passed in 2.34s",
+    "passed": 9,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_book_full_generation_preparation_4b226.py"
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "phase": "4B.2.26",
+    "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+  },
+  "scenarios": {
+    "phase": "4B.2.26",
+    "passed": 10,
+    "failed": 0,
+    "rows": [
+      {
+        "name": "offline_only",
+        "ok": true,
+        "detail": "provider calls remain unauthorized"
+      },
+      {
+        "name": "remaining_order",
+        "ok": true,
+        "detail": "remaining 13 follow the required order"
+      },
+      {
+        "name": "accepted_excluded",
+        "ok": true,
+        "detail": "accepted six are absent from the remaining queue"
+      },
+      {
+        "name": "canonical_match",
+        "ok": true,
+        "detail": "canonical hashes match"
+      },
+      {
+        "name": "six_immutable",
+        "ok": true,
+        "detail": "six accepted hashes match"
+      },
+      {
+        "name": "book_json_absent",
+        "ok": true,
+        "detail": "book.json unpublished"
+      },
+      {
+        "name": "unknown_not_zero",
+        "ok": true,
+        "detail": "UNKNOWN remaining observed costs are not replaced by zero"
+      },
+      {
+        "name": "central_not_cap",
+        "ok": true,
+        "detail": "central estimate is not the safety cap"
+      },
+      {
+        "name": "simulation_pass",
+        "ok": true,
+        "detail": "offline simulation generated no chapters"
+      },
+      {
+        "name": "resume_safety",
+        "ok": true,
+        "detail": "resume refuses uncertain replay"
+      }
+    ],
+    "secrets_included": false
+  },
+  "normalizer": {
+    "passed": 30,
+    "failed": 0
+  }
+}

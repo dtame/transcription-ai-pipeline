@@ -1,0 +1,28 @@
+{
+  "phase": "4B.2.22",
+  "record_version": "ch018-editorial-acceptance-4b222-1.0",
+  "chapter_id": "CH018",
+  "chapter_title": "Testimonies of Resurrection",
+  "accepted_artifact_paths": {
+    "markdown": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.md",
+    "json": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.json"
+  },
+  "accepted_markdown_sha256": "3f8e0590567d431af18812505e2a5f5fa454e1648d06f2b895ceae30278df1cb",
+  "accepted_json_sha256": "e4902da92b05dbe0875222a41d59eb99f7b3e669b685f50f36b06864a327d38b",
+  "recording_date": "2026-10-04",
+  "decision_source": "explicit_user_approval",
+  "decision_source_detail": "The user explicitly approved CH018 at audit/real/book_generation_4b221_ch018/chapter_candidate.md, including general reading quality, chapter structure, authorial narrative voice, testimony restatement, the formulations flagged in the 4B.2.21 report, and the editorial content as a whole.",
+  "scope": "editorial_acceptance",
+  "narrative_voice": "accepted",
+  "testimonies": "accepted",
+  "previously_flagged_formulations": "accepted",
+  "semantic_certification": "not_performed",
+  "automated_source_coverage_certification": "not_performed",
+  "publication_authorization": "not_granted",
+  "not_a_digital_signature": true,
+  "not_a_legal_or_cryptographic_user_approval": true,
+  "not_a_semantic_certificate": true,
+  "chapter_must_not_be_regenerated": true,
+  "chapter_prose_must_not_be_modified": true,
+  "secrets_included": false
+}

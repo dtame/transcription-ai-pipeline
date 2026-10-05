@@ -1,0 +1,11 @@
+{
+  "READY_FOR_SEMANTIC_GATE_COMPARATIVE_REVIEW": false,
+  "READY_FOR_NEW_REMOTE_TERRA_CALL": false,
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "candidate_promoted": false,
+  "why": "PARTIAL. Terra isolated and blocked the disputed because-clause (406-465, UNSUPPORTED) but used non-catalog reason codes, left punctuation uncovered, and flagged some nearby clauses that 4B.2.7.2 treated as supported. No retry. No new Terra call is authorized."
+}

@@ -1,0 +1,18 @@
+{
+  "phase": "4B.2.7.2",
+  "estimated_input_tokens": 1818,
+  "estimated": true,
+  "method": "heuristic_chars_per_token",
+  "max_completion_tokens": 8192,
+  "do_not_confuse_budget_with_consumed_tokens": true,
+  "minimal_json_tokens_estimate": 80,
+  "plausible_detailed_json_tokens_estimate": 500,
+  "model_context_window": 1050000,
+  "usable_context": 735000,
+  "usable_input_context": 607000,
+  "remaining_input_budget_estimate": 605182,
+  "context_safe": true,
+  "long_context_regime": "NOT APPLICABLE",
+  "request_sha256": "5ace261296d808437910f8f9efe247a80daebbb2237bc8af46bda56bf98d7897",
+  "secrets_included": false
+}

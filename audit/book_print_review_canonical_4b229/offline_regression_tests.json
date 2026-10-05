@@ -1,0 +1,207 @@
+{
+  "pytest": {
+    "returncode": 0,
+    "summary": "11 passed in 1.55s",
+    "passed": 11,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_book_print_review_canonical_4b229.py"
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "phase": "4B.2.29",
+    "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+  },
+  "scenarios": {
+    "phase": "4B.2.29",
+    "passed": 36,
+    "failed": 0,
+    "failed_names": [],
+    "rows": [
+      {
+        "name": "canonical_sources_loaded",
+        "ok": true,
+        "detail": "SourceMap/EditorialPlan/transcript"
+      },
+      {
+        "name": "canonical_hashes",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "manuscript_4b228_loaded",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "manuscript_hash",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "six_accepted_resolved",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "thirteen_candidates_resolved",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "ch002_recovered_used",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "ch012_authorial_v2_used",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "ch018_accepted_used",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "nineteen_chapter_order",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "seventy_two_sections",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "two_hundred_eighty_six_ideas",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "paragraph_integrity",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "identifier_integrity",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "human_statuses_preserved",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "structural_statuses_preserved",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_prose_added",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_prose_removed",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_prose_modified",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "markdown_correspondence",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "schema_valid",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "construction_reproducible",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "overwrite_protection_ready",
+        "ok": true,
+        "detail": "publisher refuses protected or foreign book.json"
+      },
+      {
+        "name": "publication_atomic",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "editorial_observations_preserved",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "word_contract_ready",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_anthropic",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_openai",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_terra",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_docx",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_pdf",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "historical_sources_not_altered",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "book_title",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "book_status_not_human_accepted",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "book_version",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "existing_canonical_inspected",
+        "ok": true,
+        "detail": ""
+      }
+    ],
+    "provider_calls": 0,
+    "secrets_included": false
+  }
+}

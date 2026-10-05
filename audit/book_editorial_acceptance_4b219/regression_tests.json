@@ -1,0 +1,145 @@
+{
+  "phase": "4B.2.19",
+  "focused_tests": {
+    "returncode": 0,
+    "summary": "38 passed, 1 deselected in 3.09s",
+    "passed": 38,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_book_editorial_acceptance_4b219.py",
+      "app/tests/test_book_authorial_voice_4b218.py",
+      "app/tests/test_book_editorial_alignment_4b216.py",
+      "app/tests/test_book_generation_4b217.py"
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "phase": "4B.2.19",
+    "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+  },
+  "offline_scenarios": {
+    "phase": "4B.2.19",
+    "scenario_count": 21,
+    "passed": 21,
+    "failed": 0,
+    "failed_ids": [],
+    "scenarios": [
+      {
+        "name": "canonical_hashes_match",
+        "ok": true,
+        "detail": "SourceMap, EditorialPlan, and transcript match expected SHA-256"
+      },
+      {
+        "name": "original_chapter_preserved",
+        "ok": true,
+        "detail": "4B.2.17 JSON, Markdown, and lock hashes match"
+      },
+      {
+        "name": "accepted_chapter_preserved",
+        "ok": true,
+        "detail": "4B.2.18 accepted pair hashes match"
+      },
+      {
+        "name": "provider_lock_preserved",
+        "ok": true,
+        "detail": "ch012_real_call.lock present and hashed"
+      },
+      {
+        "name": "markdown_json_consistent",
+        "ok": true,
+        "detail": "mismatches=[]"
+      },
+      {
+        "name": "fourteen_paragraphs",
+        "ok": true,
+        "detail": "count=14"
+      },
+      {
+        "name": "four_sections_intact",
+        "ok": true,
+        "detail": "SEC047,SEC048,SEC049,SEC050"
+      },
+      {
+        "name": "human_acceptance_not_semantic_certificate",
+        "ok": true,
+        "detail": "acceptance scope is editorial only"
+      },
+      {
+        "name": "hash_freeze_uses_accepted_sha256",
+        "ok": true,
+        "detail": "8f135ac5f1df8b2e077e9cc767518d1a05e2fc22d80f5d66494cf5a8364e7fc5"
+      },
+      {
+        "name": "idea_traceability_eleven",
+        "ok": true,
+        "detail": "chapter idea_refs=11"
+      },
+      {
+        "name": "src_overlap_alone_rejected",
+        "ok": true,
+        "detail": "shared SRC without content markers is not CONTENT_SUPPORTED"
+      },
+      {
+        "name": "content_supported_requires_markers",
+        "ok": true,
+        "detail": "markers present => CONTENT_SUPPORTED"
+      },
+      {
+        "name": "unc029_preserved",
+        "ok": true,
+        "detail": "paragraphs=['P000004']"
+      },
+      {
+        "name": "paras_e_not_written",
+        "ok": true,
+        "detail": "accepted paragraph IDEA handles remain empty"
+      },
+      {
+        "name": "no_provider_call",
+        "ok": true,
+        "detail": "zero provider authorizations"
+      },
+      {
+        "name": "no_publication",
+        "ok": true,
+        "detail": "book.json absent and publication closed"
+      },
+      {
+        "name": "consumed_authorizations_rejected",
+        "ok": true,
+        "detail": "ok"
+      },
+      {
+        "name": "offline_guard",
+        "ok": true,
+        "detail": "assert_offline_only passed"
+      },
+      {
+        "name": "prompt_1_1_not_registered",
+        "ok": true,
+        "detail": "book-generator-faithful-restatement-1.1-candidate"
+      },
+      {
+        "name": "original_artifacts_present",
+        "ok": true,
+        "detail": "CH012"
+      },
+      {
+        "name": "idempotent_consistency",
+        "ok": true,
+        "detail": "second compare matches first"
+      }
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "not_a_terra_validation": true,
+    "secrets_included": false
+  },
+  "idempotent": true,
+  "accepted_paragraph_count": 14,
+  "accepted_section_count": 4,
+  "historical_4b217_lock_absence_scenario": "Skipped. The 4B.2.17 real lock is consumed by design. The historical test was not modified.",
+  "secrets_included": false
+}

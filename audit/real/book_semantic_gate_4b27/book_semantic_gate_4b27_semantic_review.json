@@ -1,0 +1,133 @@
+{
+  "phase": "4B.2.7",
+  "case_id_audit_only": "4b22_p2_supported",
+  "handle": "h01",
+  "human_verdict_audit_only": "SUPPORTED",
+  "human_verdict_not_transmitted": true,
+  "terra_verdict": "QUESTIONABLE",
+  "matches_human_label": false,
+  "supported_alone_is_not_semantic_pass": true,
+  "claims": [
+    {
+      "index": 0,
+      "class": "SUPPORTED",
+      "start": 0,
+      "end": 31,
+      "recovered_text": "Do not ever be afraid of death.",
+      "evidence": [
+        "SRC006149"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true
+    },
+    {
+      "index": 1,
+      "class": "SUPPORTED",
+      "start": 32,
+      "end": 64,
+      "recovered_text": "There is no fixed hour appointed",
+      "evidence": [
+        "IDEA224"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true
+    },
+    {
+      "index": 2,
+      "class": "QUESTIONABLE",
+      "start": 65,
+      "end": 105,
+      "recovered_text": "that fear can calculate or bargain with,",
+      "evidence": [
+        "IDEA224"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "Calculation is implied, but bargaining is not supplied.",
+      "span_valid": true
+    },
+    {
+      "index": 3,
+      "class": "SUPPORTED",
+      "start": 106,
+      "end": 140,
+      "recovered_text": "and so fear itself is out of place",
+      "evidence": [
+        "IDEA224",
+        "SRC006149",
+        "SRC006182"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true
+    },
+    {
+      "index": 4,
+      "class": "SUPPORTED",
+      "start": 142,
+      "end": 173,
+      "recovered_text": "If somebody has gone to heaven,",
+      "evidence": [
+        "SRC006187"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true
+    },
+    {
+      "index": 5,
+      "class": "SUPPORTED",
+      "start": 174,
+      "end": 209,
+      "recovered_text": "that should not produce dread in us",
+      "evidence": [
+        "IDEA224"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true
+    },
+    {
+      "index": 6,
+      "class": "SUPPORTED",
+      "start": 211,
+      "end": 232,
+      "recovered_text": "It should be our joy.",
+      "evidence": [
+        "SRC006183"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true
+    }
+  ],
+  "cited_evidence": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "invalid_evidence_references": [],
+  "notes": [
+    "Calculation is implied, but bargaining is not supplied."
+  ],
+  "invention_flags": [],
+  "added_causal_relation_flags": [],
+  "external_knowledge_flags": [],
+  "coverage_ok": false,
+  "spans_ok": true,
+  "justification_compatible_with_supplied_evidence": false,
+  "semantic_status": "POTENTIAL_FALSE_REJECTION",
+  "review_status": "PARTIAL",
+  "human_label_unmodified": true,
+  "secrets_included": false
+}

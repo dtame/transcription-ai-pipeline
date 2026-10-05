@@ -1,0 +1,18 @@
+{
+  "READY_FOR_ONE_REAL_CANARY_HUMAN_REVIEW": true,
+  "READY_FOR_NEW_REMOTE_TERRA_CALL": false,
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "terra_executed": false,
+  "candidate_promoted": false,
+  "historical_contracts_modified": false,
+  "historical_benchmark_modified": false,
+  "why": "Offline independent discriminating canary freeze completed. A new explicit human authorization is required before any Terra call. 1.1.3-candidate is not production.",
+  "phase_result": "PASS",
+  "selected_case": "h11 / 4b276_p4_new_implication",
+  "request_sha256": "b3cc1574858acdd5bdd0e223aa136d5058c4eb1deb1495cd9ad312d332e8c30f",
+  "secrets_included": false
+}

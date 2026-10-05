@@ -1,0 +1,13 @@
+{
+  "policy_mode": "STRICT",
+  "default": true,
+  "experimental_submission_enabled": false,
+  "requires_verified_maximum_cost_usd": true,
+  "unknown_verified_maximum_reason": "billing_ceiling_not_guaranteed",
+  "accepts_unbounded_provider_cost": false,
+  "experimental_approval_flags_are_ignored": true,
+  "automatic_retry": false,
+  "automatic_fallback": false,
+  "prior_phase_budget_is_authorization": false,
+  "api_key_is_authorization": false
+}

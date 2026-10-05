@@ -1,0 +1,27 @@
+{
+  "phase": "4B.2.23",
+  "authorization_scope": "BOOK_GENERATION_BATCH_01_CH001_CH004_ONE_SHOT_PER_CHAPTER",
+  "batch_id": "BATCH-01",
+  "chapter_id": "CH003",
+  "lock_id": "BATCH-01 / CH003",
+  "state": "PREFLIGHT_VALIDATED",
+  "consumed": false,
+  "reusable": false,
+  "fallback": "forbidden",
+  "retry": "forbidden",
+  "openai": "forbidden",
+  "terra": "forbidden",
+  "other_chapters": "forbidden",
+  "production_writes": "forbidden",
+  "request_sha256": null,
+  "created_at": "2026-10-04T04:52:35+00:00",
+  "updated_at": "2026-10-04T04:53:12+00:00",
+  "history": [
+    {
+      "state": "PREFLIGHT_VALIDATED",
+      "updated_at": "2026-10-04T04:52:35+00:00"
+    }
+  ],
+  "note": "Preflight validated. No remote call.",
+  "secrets_included": false
+}

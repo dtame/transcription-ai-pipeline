@@ -1,0 +1,129 @@
+{
+  "passed": 24,
+  "failed": 0,
+  "failed_names": [],
+  "live_provider_calls": 0,
+  "paid_cost_usd": 0,
+  "cases": [
+    {
+      "name": "01_valid_resolution",
+      "passed": true,
+      "detail": "1632x2448 accepted"
+    },
+    {
+      "name": "02_invalid_resolution",
+      "passed": true,
+      "detail": "below_minimum_edge"
+    },
+    {
+      "name": "03_pixel_cap_exceeded",
+      "passed": true,
+      "detail": "1664x2496 and 2048x2048 refused"
+    },
+    {
+      "name": "04_not_multiple_of_16",
+      "passed": true,
+      "detail": "not_multiple_of_16"
+    },
+    {
+      "name": "05_portrait_ratio",
+      "passed": true,
+      "detail": "portrait required"
+    },
+    {
+      "name": "06_megapixel_calculation",
+      "passed": true,
+      "detail": "3.995136 decimal MP"
+    },
+    {
+      "name": "07_cost_calculation",
+      "passed": true,
+      "detail": "official maximum unknown; fixture schedule 0.075"
+    },
+    {
+      "name": "08_billing_rounding",
+      "passed": true,
+      "detail": "1920x1080 charges 3 MP; truncation to 2 is rejected"
+    },
+    {
+      "name": "09_unknown_maximum_cost",
+      "passed": true,
+      "detail": "user cap does not replace an unknown provider maximum"
+    },
+    {
+      "name": "10_unverified_pricing",
+      "passed": true,
+      "detail": "BLOCKED_PRICING"
+    },
+    {
+      "name": "11_authorization_absent",
+      "passed": true,
+      "detail": "explicit_authorization_missing"
+    },
+    {
+      "name": "12_authorization_disabled",
+      "passed": true,
+      "detail": "authorization_disabled"
+    },
+    {
+      "name": "13_insufficient_budget",
+      "passed": true,
+      "detail": "estimated_cost_exceeds_cap"
+    },
+    {
+      "name": "14_image_count_exceeded",
+      "passed": true,
+      "detail": "image_count_exceeds_authorization"
+    },
+    {
+      "name": "15_persistent_reservation",
+      "passed": true,
+      "detail": "reservation persisted"
+    },
+    {
+      "name": "16_concurrency",
+      "passed": true,
+      "detail": "one reservation, one submission"
+    },
+    {
+      "name": "17_api_key_absent",
+      "passed": true,
+      "detail": "api_key_missing"
+    },
+    {
+      "name": "18_dry_run",
+      "passed": true,
+      "detail": "dry_run"
+    },
+    {
+      "name": "19_no_generation_call",
+      "passed": true,
+      "detail": "urllib sealed"
+    },
+    {
+      "name": "20_no_image_download",
+      "passed": true,
+      "detail": "no download"
+    },
+    {
+      "name": "21_no_cover_docx_pdf",
+      "passed": true,
+      "detail": "docx and pdf refused"
+    },
+    {
+      "name": "22_canonical_unchanged",
+      "passed": true,
+      "detail": "book.json matches"
+    },
+    {
+      "name": "23_interior_unchanged",
+      "passed": true,
+      "detail": "interior matches"
+    },
+    {
+      "name": "24_previous_tests_no_regression",
+      "passed": true,
+      "detail": "36 previous cases passed"
+    }
+  ]
+}

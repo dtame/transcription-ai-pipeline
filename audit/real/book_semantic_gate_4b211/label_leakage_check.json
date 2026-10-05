@@ -1,0 +1,28 @@
+{
+  "phase": "4B.2.10",
+  "method": [
+    "Canonical JSON of the provider payload.",
+    "4b24 audit_label_leak token list, minus closed-catalog false positives.",
+    "Case-specific tokens: selected case id, historical case id, role, expected labels.",
+    "Contract catalog verdicts (SUPPORTED/QUESTIONABLE/UNSUPPORTED/NON_SUBSTANTIVE) are allowed.",
+    "Opaque paragraph handle h01 is the historical identifier, not a human verdict.",
+    "Human label remains in local audits only."
+  ],
+  "label_leakage": 0,
+  "hits": [],
+  "case_leak_hits": [],
+  "pass": true,
+  "human_labels_sent": false,
+  "case_id_in_request": false,
+  "historical_case_id_in_request": false,
+  "human_label_authority_absent": true,
+  "catalog_verdicts_allowed_in_system": true,
+  "expected_result_in_user": false,
+  "opaque_handle_h01_is_paragraph_id": true,
+  "human_reference_absent_from_request": true,
+  "catalog_false_positives_filtered": [
+    "new_causal",
+    "reference_completion"
+  ],
+  "secrets_included": false
+}

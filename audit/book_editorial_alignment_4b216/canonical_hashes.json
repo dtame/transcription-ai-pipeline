@@ -1,0 +1,134 @@
+{
+  "phase": "4B.2.16",
+  "before": {
+    "phase": "4B.2.16",
+    "canonical": {
+      "source_map": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+        "exists": true,
+        "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+        "bytes": 202398
+      },
+      "editorial_plan": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+        "exists": true,
+        "sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+        "bytes": 234637
+      },
+      "clean_transcript": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+        "exists": true,
+        "sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+        "bytes": 1487812
+      },
+      "book_json": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+        "exists": false,
+        "sha256": "",
+        "bytes": 0
+      }
+    },
+    "historical_modules": {
+      "book_generator_1_0": {
+        "path": "C:/TranscriptionAI/app/book_generation/prompt.py",
+        "exists": true,
+        "sha256": "2ec4d4038d950ff760b92c1dd4f0cdda4f0aeb83fc1db00b7a0471a0e06b7294",
+        "bytes": 6284
+      },
+      "book_generator_1_0_1": {
+        "path": "C:/TranscriptionAI/app/book_generation/prompt_v101.py",
+        "exists": true,
+        "sha256": "d569c3acfe76c5de06bd810c9914edb93e3fb30eb53f10e9a54e546004f61601",
+        "bytes": 4046
+      },
+      "semantic_contract_2_0_2": {
+        "path": "C:/TranscriptionAI/app/book_semantic_gate_4b212/contract.py",
+        "exists": true,
+        "sha256": "ad8066db4452737c0e10b652648d4f40edbdf233ea495e7be7634573b21a1dda",
+        "bytes": 15624
+      },
+      "production_pipeline": {
+        "path": "C:/TranscriptionAI/app/book_generation/pipeline.py",
+        "exists": true,
+        "sha256": "8a390926ffcbd8f8de5173831f2df4876d039baa31492a13c3587b99857a9b88",
+        "bytes": 6738
+      },
+      "production_cache": {
+        "path": "C:/TranscriptionAI/app/book_generation/cache.py",
+        "exists": true,
+        "sha256": "fa228d5f053b850c2ba2228d1c7b53d1410a7de1befde07798f4c115e38fc981",
+        "bytes": 5496
+      }
+    },
+    "canonical_match_expected": true,
+    "book_json_published_by_this_phase": false,
+    "secrets_included": false
+  },
+  "after": {
+    "phase": "4B.2.16",
+    "canonical": {
+      "source_map": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+        "exists": true,
+        "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+        "bytes": 202398
+      },
+      "editorial_plan": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+        "exists": true,
+        "sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+        "bytes": 234637
+      },
+      "clean_transcript": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+        "exists": true,
+        "sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+        "bytes": 1487812
+      },
+      "book_json": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+        "exists": false,
+        "sha256": "",
+        "bytes": 0
+      }
+    },
+    "historical_modules": {
+      "book_generator_1_0": {
+        "path": "C:/TranscriptionAI/app/book_generation/prompt.py",
+        "exists": true,
+        "sha256": "2ec4d4038d950ff760b92c1dd4f0cdda4f0aeb83fc1db00b7a0471a0e06b7294",
+        "bytes": 6284
+      },
+      "book_generator_1_0_1": {
+        "path": "C:/TranscriptionAI/app/book_generation/prompt_v101.py",
+        "exists": true,
+        "sha256": "d569c3acfe76c5de06bd810c9914edb93e3fb30eb53f10e9a54e546004f61601",
+        "bytes": 4046
+      },
+      "semantic_contract_2_0_2": {
+        "path": "C:/TranscriptionAI/app/book_semantic_gate_4b212/contract.py",
+        "exists": true,
+        "sha256": "ad8066db4452737c0e10b652648d4f40edbdf233ea495e7be7634573b21a1dda",
+        "bytes": 15624
+      },
+      "production_pipeline": {
+        "path": "C:/TranscriptionAI/app/book_generation/pipeline.py",
+        "exists": true,
+        "sha256": "8a390926ffcbd8f8de5173831f2df4876d039baa31492a13c3587b99857a9b88",
+        "bytes": 6738
+      },
+      "production_cache": {
+        "path": "C:/TranscriptionAI/app/book_generation/cache.py",
+        "exists": true,
+        "sha256": "fa228d5f053b850c2ba2228d1c7b53d1410a7de1befde07798f4c115e38fc981",
+        "bytes": 5496
+      }
+    },
+    "canonical_match_expected": true,
+    "book_json_published_by_this_phase": false,
+    "secrets_included": false
+  },
+  "unchanged": true,
+  "expected_matched": true,
+  "secrets_included": false
+}

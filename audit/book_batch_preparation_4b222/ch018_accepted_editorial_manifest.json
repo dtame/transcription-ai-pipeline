@@ -1,0 +1,47 @@
+{
+  "phase": "4B.2.22",
+  "manifest_version": "ch018-accepted-editorial-manifest-4b222-1.0",
+  "chapter_id": "CH018",
+  "chapter_title": "Testimonies of Resurrection",
+  "immutable_by_hash": true,
+  "historical_files_copied": false,
+  "historical_files_moved": false,
+  "historical_files_overwritten": false,
+  "freeze_allowed": true,
+  "freeze_status": "FROZEN",
+  "accepted_artifacts": {
+    "markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.md",
+    "markdown_sha256": "3f8e0590567d431af18812505e2a5f5fa454e1648d06f2b895ceae30278df1cb",
+    "json_path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.json",
+    "json_sha256": "e4902da92b05dbe0875222a41d59eb99f7b3e669b685f50f36b06864a327d38b",
+    "provider_lock_path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/call_lock.json",
+    "provider_lock_sha256": "d912a44e720e5c625dfcb5910259e6fd32afa8d1a92898b2994d1c418a50bc56"
+  },
+  "canonical_dependencies": {
+    "source_map_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+    "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+    "editorial_plan_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+    "clean_transcript_sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+  },
+  "applicable_editorial_policy": "faithful-teaching-book-editorial-policy-1.0-candidate",
+  "applicable_narrative_voice_contract": "authorial-voice-preservation-1.0-candidate",
+  "human_acceptance": {
+    "status": "accepted",
+    "scope": "editorial_acceptance",
+    "decision_source": "explicit_user_approval",
+    "recording_date": "2026-10-04",
+    "narrative_voice": "accepted",
+    "testimonies": "accepted",
+    "previously_flagged_formulations": "accepted",
+    "not_a_digital_signature": true,
+    "not_a_legal_or_cryptographic_user_approval": true
+  },
+  "future_controls_must_reference_this_manifest": true,
+  "semantic_certification": "not_performed",
+  "publication_authorization": "not_granted",
+  "accepted_chapter_must_not_be_altered": true,
+  "content_must_not_be_duplicated": true,
+  "secrets_included": false
+}

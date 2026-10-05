@@ -157,6 +157,7 @@ def request_identity_from_payload(payload: Mapping[str, Any]) -> dict[str, Any]:
         "thinking_present": "thinking" in payload,
         "response_format": payload.get("response_format"),
         "max_tokens": payload.get("max_tokens"),
+        "max_completion_tokens": payload.get("max_completion_tokens"),
     }
 
 

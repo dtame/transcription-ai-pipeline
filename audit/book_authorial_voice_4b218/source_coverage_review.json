@@ -1,0 +1,299 @@
+{
+  "phase": "4B.2.18",
+  "chapter_id": "CH012",
+  "contract": "source-coverage-control-4b216-candidate",
+  "activated_in_production": false,
+  "not_a_terra_verdict": true,
+  "semantic_coverage_certified": false,
+  "prose_was_not_changed_to_satisfy_the_heuristic": true,
+  "heuristic": {
+    "phase": "4B.2.16",
+    "contract": "source-coverage-control-4b216-candidate",
+    "activated_in_production": false,
+    "not_a_terra_verdict": true,
+    "units": [
+      {
+        "id": "IDEA179",
+        "kind": "idea",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "IDEA182",
+        "kind": "idea",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "IDEA186",
+        "kind": "idea",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "IDEA180",
+        "kind": "idea",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "IDEA181",
+        "kind": "idea",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "IDEA237",
+        "kind": "idea",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "IDEA184",
+        "kind": "idea",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "IDEA185",
+        "kind": "idea",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "IDEA238",
+        "kind": "idea",
+        "status": "IDENTIFIER_ONLY",
+        "content_represented": false,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "IDEA212",
+        "kind": "idea",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "IDEA213",
+        "kind": "idea",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "EX030",
+        "kind": "example",
+        "status": "NOT_COVERED",
+        "content_represented": false,
+        "identifier_listed_in_metadata": false,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "REF036",
+        "kind": "reference",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": false,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "REF044",
+        "kind": "reference",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": false,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "REF047",
+        "kind": "reference",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": false,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "REF037",
+        "kind": "reference",
+        "status": "NOT_COVERED",
+        "content_represented": false,
+        "identifier_listed_in_metadata": false,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "REF038",
+        "kind": "reference",
+        "status": "NOT_COVERED",
+        "content_represented": false,
+        "identifier_listed_in_metadata": false,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "REF042",
+        "kind": "reference",
+        "status": "COVERED",
+        "content_represented": true,
+        "identifier_listed_in_metadata": false,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "REF043",
+        "kind": "reference",
+        "status": "NOT_COVERED",
+        "content_represented": false,
+        "identifier_listed_in_metadata": false,
+        "identifier_alone_is_not_coverage": true
+      },
+      {
+        "id": "UNC029",
+        "kind": "reservation",
+        "status": "IDENTIFIER_ONLY",
+        "content_represented": false,
+        "identifier_listed_in_metadata": true,
+        "identifier_alone_is_not_coverage": true
+      }
+    ],
+    "by_kind": {
+      "idea": {
+        "required": 11,
+        "covered": 10,
+        "identifier_only": 1,
+        "not_covered": 0
+      },
+      "reasoning": {
+        "required": 0,
+        "covered": 0,
+        "identifier_only": 0,
+        "not_covered": 0
+      },
+      "example": {
+        "required": 1,
+        "covered": 0,
+        "identifier_only": 0,
+        "not_covered": 1
+      },
+      "reference": {
+        "required": 7,
+        "covered": 4,
+        "identifier_only": 0,
+        "not_covered": 3
+      },
+      "reservation": {
+        "required": 1,
+        "covered": 0,
+        "identifier_only": 1,
+        "not_covered": 0
+      }
+    },
+    "important_missing": [
+      "IDEA238",
+      "EX030",
+      "REF037",
+      "REF038",
+      "REF043",
+      "UNC029"
+    ],
+    "pass": false
+  },
+  "flagged_from_4b217": [
+    {
+      "id": "IDEA238",
+      "heuristic_status": "IDENTIFIER_ONLY",
+      "content_represented_heuristic": false,
+      "identifier_listed_in_metadata": true,
+      "source_text": "Doing spiritual practices sincerely but incorrectly still needs correction to reach true rest.",
+      "present_in_prose_review": "POSSIBLE_FALSE_NEGATIVE",
+      "note": "P000011 quotes 'you're sincere' / 'you're not doing it well' and keeps correction plus rest. The heuristic summary uses tokens such as spiritual/practices/incorrectly that the prose does not repeat. Identifier is already in section metadata.",
+      "heuristic_recomputed": false
+    },
+    {
+      "id": "EX030",
+      "heuristic_status": "NOT_COVERED",
+      "content_represented_heuristic": false,
+      "identifier_listed_in_metadata": false,
+      "source_text": "Speaker describes losing strength, voice broken from intense long prayer, until God told him directly he was tired and needed correction.",
+      "present_in_prose_review": "POSSIBLE_FALSE_NEGATIVE",
+      "note": "P000008 now keeps the ground / broken voice / someone-saw testimony. The example summary also mentions losing strength, which sits in neighboring SRC004892/894 not cited on the paragraph. The heuristic can miss a present testimony.",
+      "heuristic_recomputed": false
+    },
+    {
+      "id": "REF037",
+      "heuristic_status": "NOT_COVERED",
+      "content_represented_heuristic": false,
+      "identifier_listed_in_metadata": false,
+      "source_text": "Jude vers 20",
+      "present_in_prose_review": "POSSIBLE_FALSE_NEGATIVE",
+      "note": "P000005 names Jude and verse 20. The SourceMap raw form is 'Jude vers 20'. French vers versus English verse can fail the token ratio. Completeness remains partial; do not complete it.",
+      "heuristic_recomputed": false
+    },
+    {
+      "id": "REF038",
+      "heuristic_status": "NOT_COVERED",
+      "content_represented_heuristic": false,
+      "identifier_listed_in_metadata": false,
+      "source_text": "1 Corinthiens 14",
+      "present_in_prose_review": "POSSIBLE_FALSE_NEGATIVE",
+      "note": "P000004 names 1 Corinthians 14. The SourceMap raw form is '1 Corinthiens 14'. French/English spelling can fail the heuristic. Completeness remains partial.",
+      "heuristic_recomputed": false
+    },
+    {
+      "id": "REF043",
+      "heuristic_status": "NOT_COVERED",
+      "content_represented_heuristic": false,
+      "identifier_listed_in_metadata": false,
+      "source_text": "Beatitude on hungering and thirsting for righteousness",
+      "present_in_prose_review": "POSSIBLE_FALSE_NEGATIVE",
+      "note": "P000013 quotes the beatitude on hunger and thirst for righteousness. The raw label uses hungering/thirsting, which may not match hunger/thirst. Completeness remains partial.",
+      "heuristic_recomputed": false
+    },
+    {
+      "id": "UNC029",
+      "heuristic_status": "IDENTIFIER_ONLY",
+      "content_represented_heuristic": false,
+      "identifier_listed_in_metadata": true,
+      "source_text": "Isaiah chapter 26 versus 28 reference is confused mid-speech, unclear which chapter verse 3 belongs to.",
+      "present_in_prose_review": "POSSIBLE_FALSE_NEGATIVE",
+      "note": "P000004 still states Isaiah 26 verse 3 versus Isaiah 28 and keeps the connection unclear. UNC029 remains on the paragraph uncertainty field. The description tokens confused/speech/belongs need not appear for the reservation to be preserved.",
+      "heuristic_recomputed": false
+    }
+  ],
+  "unc029_cited_on_paragraphs": [
+    "P000004"
+  ],
+  "unc029_preserved": true,
+  "planned_ideas": [
+    "IDEA179",
+    "IDEA182",
+    "IDEA186",
+    "IDEA180",
+    "IDEA181",
+    "IDEA237",
+    "IDEA184",
+    "IDEA185",
+    "IDEA238",
+    "IDEA212",
+    "IDEA213"
+  ],
+  "editorial_chapter_id": "CH012",
+  "secrets_included": false
+}

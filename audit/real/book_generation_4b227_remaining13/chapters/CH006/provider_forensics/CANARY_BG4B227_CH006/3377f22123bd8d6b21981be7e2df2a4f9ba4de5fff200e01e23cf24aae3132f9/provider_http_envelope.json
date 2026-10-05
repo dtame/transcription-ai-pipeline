@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "kind": "PROVIDER_HTTP_ENVELOPE",
+  "window_id": "CANARY_BG4B227_CH006",
+  "analysis_signature": "3377f22123bd8d6b21981be7e2df2a4f9ba4de5fff200e01e23cf24aae3132f9",
+  "provider": "Anthropic",
+  "model": "claude-sonnet-5",
+  "post_attempted": true,
+  "response_received": true,
+  "http_success": true,
+  "http_status": 200,
+  "headers_subset": {
+    "content-type": "application/json",
+    "request-id": "req_011CfhTspg7PsaxKm4GwqQBq"
+  },
+  "request_id": "req_011CfhTspg7PsaxKm4GwqQBq",
+  "raw_sha256": "85a4d26adc3eb4f010e0265c9ea0232e3cc9fe3c7e850adc6037634c3552b080",
+  "raw_size": 19284,
+  "text_encoding": "utf-8",
+  "text_decode_ok": true,
+  "json_decode_ok": true,
+  "json_top_level_type": "dict",
+  "usage": {
+    "input_tokens": 23590,
+    "output_tokens": 6689,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "input_tokens": 23590,
+  "output_tokens": 6689,
+  "finish_reason": "end_turn",
+  "content_metadata": {
+    "content_present": true,
+    "content_type": "list",
+    "block_count": 1,
+    "block_types": [
+      "text"
+    ],
+    "text_block_count": 1,
+    "text_lengths": [
+      17400
+    ]
+  },
+  "elapsed_ms": 51922,
+  "classification": null,
+  "provider_envelope_valid": true,
+  "airesponse_created": true,
+  "structured_parse_passed": false,
+  "secrets_included": false,
+  "raw_content": {
+    "sha256": "85a4d26adc3eb4f010e0265c9ea0232e3cc9fe3c7e850adc6037634c3552b080",
+    "size": 19284,
+    "persisted": true,
+    "encoding": "utf-8",
+    "text_decode_ok": true,
+    "policy": "persist bytes locally under provider_forensics, never logs/console, no JSON repair"
+  },
+  "transport_written": false,
+  "result_written": false,
+  "retry": false,
+  "artifact_paths": {
+    "envelope_json": "C:\\TranscriptionAI\\audit\\real\\book_generation_4b227_remaining13\\chapters\\CH006\\provider_forensics\\CANARY_BG4B227_CH006\\3377f22123bd8d6b21981be7e2df2a4f9ba4de5fff200e01e23cf24aae3132f9\\provider_http_envelope.json",
+    "raw_body": "C:\\TranscriptionAI\\audit\\real\\book_generation_4b227_remaining13\\chapters\\CH006\\provider_forensics\\CANARY_BG4B227_CH006\\3377f22123bd8d6b21981be7e2df2a4f9ba4de5fff200e01e23cf24aae3132f9\\provider_raw_response.bin"
+  }
+}

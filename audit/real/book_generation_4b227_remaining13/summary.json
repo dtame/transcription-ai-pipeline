@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "chapters_generated": [
+    "CH005",
+    "CH006",
+    "CH007",
+    "CH008",
+    "CH009",
+    "CH010",
+    "CH011",
+    "CH013",
+    "CH014",
+    "CH015",
+    "CH016",
+    "CH017",
+    "CH019"
+  ],
+  "chapters_failed": [],
+  "chapters_not_started": [],
+  "provider_calls": 13,
+  "anthropic_http": 13,
+  "actual_total_cost": 0.656778,
+  "stop_reason": "REMAINING_13_COMPLETED"
+}

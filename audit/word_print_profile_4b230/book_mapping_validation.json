@@ -1,0 +1,59 @@
+{
+  "phase": "4B.2.30",
+  "status": "PASS",
+  "title": "The Life You Already Inherited",
+  "chapter_count": 19,
+  "section_count": 72,
+  "paragraph_count": 335,
+  "human_accepted_chapters": [
+    "CH001",
+    "CH002",
+    "CH003",
+    "CH004",
+    "CH012",
+    "CH018"
+  ],
+  "structural_chapters": [
+    "CH005",
+    "CH006",
+    "CH007",
+    "CH008",
+    "CH009",
+    "CH010",
+    "CH011",
+    "CH013",
+    "CH014",
+    "CH015",
+    "CH016",
+    "CH017",
+    "CH019"
+  ],
+  "technical_leaks": [],
+  "visible_metadata": {
+    "title": "The Life You Already Inherited",
+    "subtitle": "Resurrection life, union with God, and the practice of spiritual authority",
+    "author": null,
+    "publisher": null,
+    "isbn": null,
+    "copyright": null,
+    "publication_date": null,
+    "logo": null
+  },
+  "checks": {
+    "title": true,
+    "version": true,
+    "status": true,
+    "chapters": true,
+    "sections": true,
+    "paragraphs_unmodified": true,
+    "human_accepted": true,
+    "structural": true,
+    "no_technical_ids": true,
+    "no_invented_author": true,
+    "no_invented_isbn": true,
+    "idea_coverage": true,
+    "orders_used": true,
+    "titles_not_prefixed": true
+  },
+  "secrets_included": false
+}

@@ -1,0 +1,21 @@
+{
+  "READY_FOR_CONTROLLED_INTEGRATION_PREFLIGHT": true,
+  "READY_FOR_NEW_REMOTE_TERRA_CALL": false,
+  "READY_FOR_REAL_CHAPTER_GENERATION": false,
+  "READY_FOR_FULL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "production_pipeline": "UNCHANGED",
+  "candidate_promoted": false,
+  "contract_20_activated": false,
+  "contract_201_activated": false,
+  "contract_202_activated": false,
+  "human_label_modified": false,
+  "historical_contracts_modified": false,
+  "historical_raw_response_modified": false,
+  "states_are_not_equivalent": true,
+  "why": "Offline consolidation is complete enough for a human to inspect a controlled integration design. It is not authorization for a Terra call, a real chapter, or the full book.",
+  "phase": "4B.2.12",
+  "secrets_included": false
+}

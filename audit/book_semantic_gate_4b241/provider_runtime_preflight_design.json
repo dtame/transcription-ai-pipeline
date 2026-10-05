@@ -1,0 +1,54 @@
+{
+  "phase": "4B.2.4.1",
+  "purpose": "Catch missing SDK / credential / client construction before a one-shot execution authorization is consumed.",
+  "function": "app.ai.provider_preflight.check_provider_runtime_readiness",
+  "lock_gate": "app.ai.provider_preflight.assert_provider_ready_for_authorization",
+  "checks": [
+    "provider registered",
+    "required SDK importable",
+    "supported SDK version if applicable",
+    "credential available",
+    "client constructible",
+    "model configured",
+    "request constructible",
+    "required output mode supported locally"
+  ],
+  "generic_providers": [
+    "openai",
+    "anthropic",
+    "ollama",
+    "lmstudio",
+    "fake"
+  ],
+  "provider_specific_adapters": true,
+  "network_calls": 0,
+  "never_invoke": [
+    "responses.create",
+    "chat.completions.create",
+    "models.list",
+    "requests.post to a provider"
+  ],
+  "call_accounting": {
+    "do_not_redefine_historical_4b24_metrics": true,
+    "historical_4b24_attempt_2": {
+      "recorded_actual_terra_calls": 1,
+      "authorized_calls": 1,
+      "execution_attempts": 1,
+      "remote_invocations": 0,
+      "http_requests": 0,
+      "provider_responses": 0,
+      "note": "Historical ACTUAL TERRA CALLS = 1 because the one-shot lock and OneShotCallGuard were consumed. HTTP never left the machine. Future phases should count that as EXECUTION_ATTEMPT, not REMOTE_PROVIDER_INVOCATION."
+    },
+    "future_counters": {
+      "authorized_calls": "Human-authorized remote slots for the phase.",
+      "execution_attempts": "Local generate/_invoke entries after preflight PASS.",
+      "remote_invocations": "SDK create / HTTP execute crossed the provider boundary.",
+      "http_requests": "Actual HTTP requests observed.",
+      "provider_responses": "Provider HTTP responses received."
+    },
+    "preflight_before_execution_authorization": true,
+    "missing_sdk_must_not_consume_lock": true
+  },
+  "historical_4b24_unchanged": true,
+  "secrets_included": false
+}

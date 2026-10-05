@@ -1,0 +1,28 @@
+{
+  "phase": "4B.2.17",
+  "chapter_id": "CH012",
+  "flags": [
+    {
+      "code": "COVERAGE_HEURISTIC_GAP",
+      "severity": "review",
+      "detail": "Offline heuristic did not represent: IDEA238,EX030,REF037,REF038,REF043,UNC029",
+      "ids": [
+        "IDEA238",
+        "EX030",
+        "REF037",
+        "REF038",
+        "REF043",
+        "UNC029"
+      ]
+    },
+    {
+      "code": "THEMATIC_REGROUP_ACROSS_RECORDINGS",
+      "severity": "observation",
+      "authorized": true,
+      "detail": "AUDIO003 and AUDIO004 material is grouped by the EditorialPlan."
+    }
+  ],
+  "semantic_fidelity_validated": false,
+  "not_a_terra_verdict": true,
+  "secrets_included": false
+}

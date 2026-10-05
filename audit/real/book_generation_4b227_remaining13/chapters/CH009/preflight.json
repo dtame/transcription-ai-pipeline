@@ -1,0 +1,9 @@
+{
+  "phase": "4B.2.27",
+  "chapter_id": "CH009",
+  "title": "Laws You Gave Yourself",
+  "model": "anthropic/claude-sonnet-5",
+  "prompt_version": "book-generator-faithful-restatement-1.1-candidate",
+  "blocked": false,
+  "block_reason": null
+}

@@ -1,0 +1,16 @@
+{
+  "billing_known": false,
+  "cost_reconciliation_status": "COST_RECONCILIATION_PENDING",
+  "documented_estimate_is_invoice": false,
+  "documented_estimate_is_provider_ceiling": false,
+  "documented_estimate_is_total_request_cost": false,
+  "documented_image_output_estimate_usd": "0.041",
+  "estimated_cost_usd": null,
+  "note": "0.041 USD is the published image-output cell for medium 1024x1536. Text input tokens are not included. No invoice amount was invented.",
+  "observed_cost_usd": null,
+  "planning_budget_is_provider_cap": false,
+  "planning_budget_usd": "0.10",
+  "usage_is_an_invoice": false,
+  "usage_token_counts": null,
+  "verified_maximum_cost_usd": null
+}

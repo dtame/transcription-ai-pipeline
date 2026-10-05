@@ -1,0 +1,30 @@
+{
+  "required": false,
+  "status": "OPTIONAL",
+  "front_cover": {
+    "optional": true,
+    "role": "first_of_cover_or_interior_optional_image",
+    "trim_width_inches": 6.0,
+    "trim_height_inches": 9.0,
+    "accepted_when_absent": true
+  },
+  "back_cover": {
+    "optional": true,
+    "role": "fourth_cover_optional_image",
+    "trim_width_inches": 6.0,
+    "trim_height_inches": 9.0,
+    "accepted_when_absent": true
+  },
+  "spine": {
+    "computed": false,
+    "reason": "Full wraparound cover width depends on the printed page count and the printer's spine formula. Those values are unknown until Phase 4B.2.31 renders the interior."
+  },
+  "interior_docx_requires_cover": false,
+  "image_generation": false,
+  "fictitious_cover_forbidden": true,
+  "existing_cover_hooks": {
+    "publication_docx_engine_cover_png": "optional_workshop_cover",
+    "docx_export_service_image_cover": "optional_publication_cover"
+  },
+  "notes": "The illustrated wraparound cover is out of scope for this phase. The interior renderer must proceed without a cover image."
+}

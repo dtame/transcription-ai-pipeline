@@ -1,0 +1,69 @@
+{
+  "phase": "4B.2.7.5",
+  "transport_classifications_unchanged": [
+    "SUPPORTED",
+    "QUESTIONABLE",
+    "UNSUPPORTED",
+    "NON_SUBSTANTIVE"
+  ],
+  "no_incompatible_category_introduced": true,
+  "operational_definitions": {
+    "SUPPORTED": {
+      "blocks_production_acceptance": false,
+      "definition": "A proposition is SUPPORTED when its substantial content is explicitly present in the supplied evidence, or is semantically implied by that evidence without adding a new assertion.",
+      "paraphrase_rule": "A lexical rephrasing is not automatically an invention. A legitimate stylistic paraphrase may be SUPPORTED.",
+      "not_automatic_unsupported": [
+        "different verb restating attested content",
+        "stylistic intensifier that adds no agent, relation, condition, or quantity"
+      ],
+      "requires_reason_codes": false,
+      "compatible_reason_codes": []
+    },
+    "QUESTIONABLE": {
+      "blocks_production_acceptance": true,
+      "definition": "A proposition is QUESTIONABLE when available evidence does not confirm the whole claim; a plausible inference is not actually implied; a strengthening or substantial nuance remains uncertain; or the link to evidence is ambiguous.",
+      "requires_reason_codes": true,
+      "compatible_reason_codes": "closed_catalog"
+    },
+    "UNSUPPORTED": {
+      "blocks_production_acceptance": true,
+      "definition": "A proposition is UNSUPPORTED when it contains a substantial assertion not supported by the supplied evidence.",
+      "includes": [
+        "invented example",
+        "new causal relation",
+        "new consequence",
+        "new doctrinal implication",
+        "unsupported attribution",
+        "reference completed from external knowledge"
+      ],
+      "requires_reason_codes": true,
+      "compatible_reason_codes": "closed_catalog"
+    },
+    "NON_SUBSTANTIVE": {
+      "blocks_production_acceptance": false,
+      "definition": "A proposition is NON_SUBSTANTIVE when it is a purely rhetorical or structural marker that carries no meaning-bearing assertion.",
+      "historical_treatment_preserved": true,
+      "must_not_mask_meaning_bearing_claims": true,
+      "not_automatic": "An editorial transition is not automatically NON_SUBSTANTIVE.",
+      "requires_reason_codes": false,
+      "compatible_reason_codes": [],
+      "not_a_hiding_place": true
+    }
+  },
+  "human_review_only": {
+    "INDETERMINATE": {
+      "provider_verdict": false,
+      "transport_enum": false,
+      "definition": "A human-review category used when authorized evidence does not uniquely force SUPPORTED, QUESTIONABLE, UNSUPPORTED, or NON_SUBSTANTIVE. It is not a provider or transport value.",
+      "must_not_force_conclusion": true
+    }
+  },
+  "paraphrase_may_be_supported": true,
+  "plausible_is_not_entailed": true,
+  "questionable_and_unsupported_block_acceptance": true,
+  "non_substantive_cannot_mask_meaning": true,
+  "rhetorical_not_automatically_new_assertion": true,
+  "editorial_transition_not_automatically_non_substantive": true,
+  "coherence": "PASS",
+  "secrets_included": false
+}

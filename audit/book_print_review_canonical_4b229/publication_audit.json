@@ -1,0 +1,30 @@
+{
+  "phase": "4B.2.29",
+  "action": "replace_same_phase_draft",
+  "atomic": true,
+  "destination": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+  "audit_copy": "C:/TranscriptionAI/audit/book_print_review_canonical_4b229/book.json",
+  "sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+  "bytes": 502104,
+  "existing_before": {
+    "exists": true,
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+    "sha256": "ac310ece79a8269ef55b8aa24ecff10e82f6cd2c86ced25b344c68f9f893a0ef",
+    "bytes": 502104,
+    "version": "print-review-v1",
+    "status": "DRAFT_FOR_PRINT_REVIEW",
+    "protected": false,
+    "phase": "4B.2.29",
+    "protection": {
+      "protected": false,
+      "kind": "provisional_print_review_draft",
+      "overwrite": "same_phase_print-review-v1_only",
+      "final_publication": false
+    }
+  },
+  "canonical_used_by_next_steps": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+  "audit_copy_is_not_the_runtime_canonical": true,
+  "docx_generated": false,
+  "pdf_generated": false,
+  "secrets_included": false
+}

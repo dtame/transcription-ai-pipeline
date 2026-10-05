@@ -1,0 +1,46 @@
+{
+  "phase": "4B.2.6.2",
+  "selected_handle": "h01",
+  "selected_case_id": "4b22_p2_supported",
+  "selected_case_role": "positive",
+  "human_label_audit_only": {
+    "expected_class": "SUPPORTED",
+    "accepted_classes": [
+      "SUPPORTED"
+    ],
+    "role": "positive",
+    "present_in_provider_request": false,
+    "authority": "frozen human benchmark label"
+  },
+  "human_label_not_transmitted": true,
+  "text": "Do not ever be afraid of death. There is no fixed hour appointed that fear can calculate or bargain with, and so fear itself is out of place. If somebody has gone to heaven, that should not produce dread in us. It should be our joy.",
+  "size": {
+    "chars": 232,
+    "utf8_bytes": 232,
+    "unicode_code_points": 232,
+    "estimated_tokens": 58,
+    "estimated": true,
+    "method": "heuristic_chars_per_token"
+  },
+  "kind": "substantive",
+  "section": "SEC063",
+  "source_phase": "4B.2.2",
+  "compatibility_with_compact_contract": {
+    "has_stable_handle": true,
+    "has_paragraph_text": true,
+    "has_canonical_evidence": true,
+    "offsets_applicable": true,
+    "claim_coverage_possible": true,
+    "ok": true
+  },
+  "why_appropriate": "4B.2.6.1 proposed h01 as the smallest isolation of whether Terra can emit usable JSON under the compact 1.1-candidate contract. h01 is a historical positive case. A technical success would demonstrate structured JSON emission and acceptance of supported content. It would not demonstrate blocking power on FUNERAL, CONNECTIVE, P3, or P8. The case was not changed silently.",
+  "success_would_show": "Primarily structured-response capability and acceptance of supported content. Not a ten-case validation. Not a first observation of semantic blocking.",
+  "if_negative_would_also_show_blocking": false,
+  "case_changed": false,
+  "alternate_case_proposed": null,
+  "human_review_required_before_changing_case": true,
+  "problem": null,
+  "selected": true,
+  "fourb261_proposal_honored": true,
+  "secrets_included": false
+}

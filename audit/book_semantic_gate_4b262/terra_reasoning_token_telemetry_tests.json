@@ -1,0 +1,259 @@
+{
+  "phase": "4B.2.6.2",
+  "cases": [
+    {
+      "name": "reasoning_tokens_present",
+      "telemetry": {
+        "input_tokens": 1200,
+        "completion_tokens": 400,
+        "reasoning_tokens": 320,
+        "visible_output_tokens": "UNKNOWN",
+        "unknown_tokens": [
+          "visible_output_tokens"
+        ],
+        "reasoning_source": "completion_tokens_details.reasoning_tokens",
+        "completion_tokens_details_present": true,
+        "did_not_subtract_reasoning_from_completion": true,
+        "did_not_infer_from_max_completion_tokens": true,
+        "did_not_infer_cause_from_finish_reason": true,
+        "explicit_zero_is_zero": false,
+        "absent_is_unknown": false
+      },
+      "extracted_thinking_or_reasoning": 320,
+      "persisted_usage": {
+        "prompt_tokens": 1200,
+        "completion_tokens": 400,
+        "total_tokens": 1600,
+        "completion_tokens_details": {
+          "reasoning_tokens": 320
+        }
+      }
+    },
+    {
+      "name": "reasoning_tokens_absent",
+      "telemetry": {
+        "input_tokens": 1200,
+        "completion_tokens": 400,
+        "reasoning_tokens": "UNKNOWN",
+        "visible_output_tokens": "UNKNOWN",
+        "unknown_tokens": [
+          "reasoning_tokens",
+          "visible_output_tokens"
+        ],
+        "reasoning_source": "absent",
+        "completion_tokens_details_present": false,
+        "did_not_subtract_reasoning_from_completion": true,
+        "did_not_infer_from_max_completion_tokens": true,
+        "did_not_infer_cause_from_finish_reason": true,
+        "explicit_zero_is_zero": false,
+        "absent_is_unknown": true
+      },
+      "extracted_thinking_or_reasoning": null,
+      "persisted_usage": {
+        "prompt_tokens": 1200,
+        "completion_tokens": 400,
+        "total_tokens": 1600
+      }
+    },
+    {
+      "name": "reasoning_tokens_explicit_zero",
+      "telemetry": {
+        "input_tokens": 10,
+        "completion_tokens": 8,
+        "reasoning_tokens": 0,
+        "visible_output_tokens": "UNKNOWN",
+        "unknown_tokens": [
+          "visible_output_tokens"
+        ],
+        "reasoning_source": "completion_tokens_details.reasoning_tokens",
+        "completion_tokens_details_present": true,
+        "did_not_subtract_reasoning_from_completion": true,
+        "did_not_infer_from_max_completion_tokens": true,
+        "did_not_infer_cause_from_finish_reason": true,
+        "explicit_zero_is_zero": true,
+        "absent_is_unknown": false
+      },
+      "extracted_thinking_or_reasoning": 0,
+      "persisted_usage": {
+        "prompt_tokens": 10,
+        "completion_tokens": 8,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "completion_tokens_details_absent",
+      "telemetry": {
+        "input_tokens": 10,
+        "completion_tokens": 8,
+        "reasoning_tokens": "UNKNOWN",
+        "visible_output_tokens": "UNKNOWN",
+        "unknown_tokens": [
+          "reasoning_tokens",
+          "visible_output_tokens"
+        ],
+        "reasoning_source": "absent",
+        "completion_tokens_details_present": false,
+        "did_not_subtract_reasoning_from_completion": true,
+        "did_not_infer_from_max_completion_tokens": true,
+        "did_not_infer_cause_from_finish_reason": true,
+        "explicit_zero_is_zero": false,
+        "absent_is_unknown": true
+      },
+      "extracted_thinking_or_reasoning": null,
+      "persisted_usage": {
+        "prompt_tokens": 10,
+        "completion_tokens": 8,
+        "total_tokens": 18
+      }
+    },
+    {
+      "name": "historical_thinking_tokens_still_read",
+      "telemetry": {
+        "input_tokens": 10,
+        "completion_tokens": 20,
+        "reasoning_tokens": 7,
+        "visible_output_tokens": "UNKNOWN",
+        "unknown_tokens": [
+          "visible_output_tokens"
+        ],
+        "reasoning_source": "output_tokens_details.thinking_tokens",
+        "completion_tokens_details_present": false,
+        "did_not_subtract_reasoning_from_completion": true,
+        "did_not_infer_from_max_completion_tokens": true,
+        "did_not_infer_cause_from_finish_reason": true,
+        "explicit_zero_is_zero": false,
+        "absent_is_unknown": false
+      },
+      "extracted_thinking_or_reasoning": 7,
+      "persisted_usage": {
+        "input_tokens": 10,
+        "output_tokens": 20,
+        "output_tokens_details": {
+          "thinking_tokens": 7
+        }
+      }
+    },
+    {
+      "name": "sdk_object_with_completion_details",
+      "telemetry": {
+        "input_tokens": 40,
+        "completion_tokens": 90,
+        "reasoning_tokens": 55,
+        "visible_output_tokens": "UNKNOWN",
+        "unknown_tokens": [
+          "visible_output_tokens"
+        ],
+        "reasoning_source": "completion_tokens_details.reasoning_tokens",
+        "completion_tokens_details_present": true,
+        "did_not_subtract_reasoning_from_completion": true,
+        "did_not_infer_from_max_completion_tokens": true,
+        "did_not_infer_cause_from_finish_reason": true,
+        "explicit_zero_is_zero": false,
+        "absent_is_unknown": false
+      },
+      "extracted_thinking_or_reasoning": 55,
+      "persisted_usage": {
+        "prompt_tokens": 40,
+        "completion_tokens": 90,
+        "total_tokens": 130,
+        "completion_tokens_details": {
+          "reasoning_tokens": 55
+        }
+      }
+    },
+    {
+      "name": "empty_content",
+      "content": "",
+      "parse": "AIStructuredOutputError",
+      "kind": "empty"
+    },
+    {
+      "name": "finish_reason_length",
+      "finish_reason": "length",
+      "does_not_classify_missing_cases": true,
+      "does_not_prove_reasoning_cause": true,
+      "validation": {
+        "json_parse": "FAIL",
+        "transport_decode": "PASS",
+        "transport_error": null,
+        "case_coverage": "FAIL",
+        "required_handles": [
+          "h01"
+        ],
+        "returned_handles": [],
+        "missing_cases": [
+          "h01"
+        ],
+        "unknown_cases": [],
+        "duplicate_results": [],
+        "span_validation": "PASS",
+        "span_errors": [],
+        "unknown_handles": [],
+        "unknown_handle_count": 0,
+        "acceptance": {
+          "verdict": "FAIL",
+          "cache_acceptance": false,
+          "review_required": true,
+          "errors": [
+            "transport inattendu : NoneType"
+          ],
+          "summary_counts": {
+            "supported": 0,
+            "questionable": 0,
+            "unsupported": 0,
+            "non_substantive": 0
+          }
+        },
+        "canonical": {
+          "errors": [
+            "transport inattendu : NoneType"
+          ],
+          "reason": "transport_decode_fail"
+        },
+        "decoded": null,
+        "paragraph_results": [],
+        "structural_pass": false,
+        "structural_ok_including_policy": false,
+        "errors": []
+      }
+    },
+    {
+      "name": "valid_json",
+      "parsed": {
+        "ch": "CH016",
+        "v": "PASS",
+        "pr": [],
+        "sc": {},
+        "uh": [],
+        "rr": false
+      }
+    },
+    {
+      "name": "truncated_json",
+      "parse": "AIStructuredOutputError",
+      "kind": "json_decode"
+    }
+  ],
+  "assertions": {
+    "present_is_320": true,
+    "absent_is_unknown": true,
+    "absent_is_not_zero": true,
+    "explicit_zero_is_zero": true,
+    "details_absent_unknown": true,
+    "historical_thinking_preserved": true,
+    "sdk_object_reasoning_persisted": true,
+    "visible_not_inferred_by_subtraction": true,
+    "empty_content_not_accepted": true,
+    "length_missing_h01": true,
+    "valid_json_parses": true,
+    "truncated_json_fails": true,
+    "did_not_infer_from_max_completion_tokens": true,
+    "did_not_infer_cause_from_finish_reason": true
+  },
+  "passed": true,
+  "failed": [],
+  "network_calls": 0,
+  "secrets_included": false
+}

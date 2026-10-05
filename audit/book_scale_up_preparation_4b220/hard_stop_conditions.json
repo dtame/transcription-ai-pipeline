@@ -1,0 +1,94 @@
+{
+  "phase": "4B.2.20",
+  "conditions": [
+    {
+      "id": "missing_authorization",
+      "action": "STOP",
+      "probe": "reject_missing_authorization"
+    },
+    {
+      "id": "cost_unknown",
+      "action": "STOP",
+      "probe": "reject_unknown_cost"
+    },
+    {
+      "id": "cost_cap_exceeded",
+      "action": "STOP",
+      "probe": "reject_cap_exceeded"
+    },
+    {
+      "id": "automatic_paid_retry",
+      "action": "STOP",
+      "probe": "reject_automatic_paid_retry"
+    },
+    {
+      "id": "prompt_1_1_unavailable_no_fallback",
+      "action": "STOP",
+      "probe": "reject_prompt_fallback"
+    },
+    {
+      "id": "mandatory_source_missing",
+      "action": "STOP",
+      "probe": "missing_sources_block_context"
+    },
+    {
+      "id": "idea_handles_missing_from_paragraph_evidence",
+      "action": "STOP",
+      "probe": "detect_missing_idea_handles"
+    },
+    {
+      "id": "invented_idea_handles",
+      "action": "STOP",
+      "probe": "detect_invented_idea_handles"
+    },
+    {
+      "id": "invalid_src",
+      "action": "STOP",
+      "probe": "detect_invalid_src"
+    },
+    {
+      "id": "invalid_or_truncated_json",
+      "action": "STOP",
+      "probe": "detect_invalid_or_truncated"
+    },
+    {
+      "id": "ch012_or_canonical_mutation",
+      "action": "STOP",
+      "probe": "hash_guards"
+    },
+    {
+      "id": "publication",
+      "action": "STOP",
+      "probe": "publication_forbidden"
+    }
+  ],
+  "probes": {
+    "missing_authorization": {
+      "raised": true,
+      "message": "No remaining-chapter generation authorization exists. STOP."
+    },
+    "cost_unknown": {
+      "raised": true,
+      "message": "COST_MAXIMUM_UNKNOWN. Unknown cost is never treated as zero."
+    },
+    "cost_cap_exceeded": {
+      "raised": true,
+      "message": "COST_MAXIMUM_EXCEEDS_CAP. The theoretical maximum exceeds the authorized cap."
+    },
+    "automatic_paid_retry": {
+      "raised": true,
+      "message": "Automatic paid retry is forbidden. A human decision is required."
+    },
+    "prompt_fallback_forbidden": {
+      "raised": true,
+      "message": "Prompt 'book-generator-faithful-restatement-1.1-candidate' is unavailable. Fallback to 'book-generator-1.0.1' is forbidden."
+    },
+    "activation_blocked_this_phase": {
+      "raised": true,
+      "message": "Prompt 1.1 activation for generation is disabled in this phase."
+    }
+  },
+  "operational": true,
+  "no_additional_call_after_stop": true,
+  "secrets_included": false
+}

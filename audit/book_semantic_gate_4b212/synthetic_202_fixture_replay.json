@@ -1,0 +1,95 @@
+{
+  "phase": "4B.2.12",
+  "replay": "C_synthetic_202",
+  "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+  "not_a_terra_response": true,
+  "provider_calls": 0,
+  "contract": "book-semantic-validator-2.0.2-candidate",
+  "contract_ok": true,
+  "technical_conformance": "VALID",
+  "acceptance_policy": "PASS",
+  "derived_paragraph_classification": "SUPPORTED",
+  "derived_counts": {
+    "SUPPORTED": 5,
+    "QUESTIONABLE": 0,
+    "UNSUPPORTED": 0,
+    "NON_SUBSTANTIVE": 0
+  },
+  "unit_kinds": [
+    "SUPPORTED",
+    "SUPPORTED",
+    "SUPPORTED",
+    "SUPPORTED",
+    "SUPPORTED"
+  ],
+  "errors": [],
+  "pass": true,
+  "fixture": {
+    "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+    "not_a_terra_response": true,
+    "not_a_new_terra_call": true,
+    "source_phase": "4B.2.11",
+    "source_raw_sha256": "ef45c2d4262c5bb86a6ff891fb2a03b79189342c25c8cd9e5c261742992f7fe5",
+    "preserves_observed_classifications": true,
+    "does_not_map_pass_to_supported": true,
+    "does_not_copy_paragraph_v": true,
+    "does_not_copy_sc": true,
+    "payload": {
+      "ch": "CH016",
+      "pr": [
+        {
+          "h": "h01",
+          "u": [
+            {
+              "id": "u00",
+              "k": "SUPPORTED",
+              "ev": [
+                "SRC006149"
+              ],
+              "r": []
+            },
+            {
+              "id": "u01",
+              "k": "SUPPORTED",
+              "ev": [
+                "IDEA224"
+              ],
+              "r": []
+            },
+            {
+              "id": "u02",
+              "k": "SUPPORTED",
+              "ev": [
+                "IDEA224",
+                "SRC006180",
+                "SRC006182"
+              ],
+              "r": []
+            },
+            {
+              "id": "u03",
+              "k": "SUPPORTED",
+              "ev": [
+                "IDEA224",
+                "SRC006187"
+              ],
+              "r": []
+            },
+            {
+              "id": "u04",
+              "k": "SUPPORTED",
+              "ev": [
+                "IDEA224",
+                "SRC006183"
+              ],
+              "r": []
+            }
+          ]
+        }
+      ]
+    },
+    "secrets_included": false
+  },
+  "historical_raw_not_used_as_202_without_rebuild": true,
+  "secrets_included": false
+}

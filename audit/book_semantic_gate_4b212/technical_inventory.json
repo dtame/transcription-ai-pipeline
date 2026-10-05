@@ -1,0 +1,152 @@
+{
+  "phase": "4B.2.12",
+  "examined_reports": {
+    "4b29": true,
+    "4b210": true,
+    "4b211": true
+  },
+  "examined_packages": {
+    "app/book_semantic_gate_4b29": true,
+    "app/book_semantic_gate_4b210": true,
+    "app/book_semantic_gate_4b211": true,
+    "audit/book_semantic_gate_4b29": true,
+    "audit/book_semantic_gate_4b210": true,
+    "audit/real/book_semantic_gate_4b211": true
+  },
+  "project_structure": {
+    "semantic_gate_packages": [
+      "book_semantic_gate_4b210",
+      "book_semantic_gate_4b211",
+      "book_semantic_gate_4b212",
+      "book_semantic_gate_4b23",
+      "book_semantic_gate_4b24",
+      "book_semantic_gate_4b241",
+      "book_semantic_gate_4b25",
+      "book_semantic_gate_4b251",
+      "book_semantic_gate_4b26",
+      "book_semantic_gate_4b261",
+      "book_semantic_gate_4b262",
+      "book_semantic_gate_4b27",
+      "book_semantic_gate_4b271",
+      "book_semantic_gate_4b272",
+      "book_semantic_gate_4b273",
+      "book_semantic_gate_4b274",
+      "book_semantic_gate_4b275",
+      "book_semantic_gate_4b276",
+      "book_semantic_gate_4b277",
+      "book_semantic_gate_4b28",
+      "book_semantic_gate_4b29"
+    ],
+    "candidate_4b29": "app/book_semantic_gate_4b29",
+    "hardening_4b210": "app/book_semantic_gate_4b210",
+    "real_canary_4b211": "app/book_semantic_gate_4b211",
+    "consolidation_4b212": "app/book_semantic_gate_4b212",
+    "book_generator": "app/book_generation"
+  },
+  "contracts": {
+    "2.0_candidate": "book-semantic-validator-2.0-candidate",
+    "2.0.1_candidate": "book-semantic-validator-2.0.1-candidate",
+    "2.0.2_candidate": "book-semantic-validator-2.0.2-candidate",
+    "exact_contract_used_in_4b211": "book-semantic-validator-2.0.1-candidate",
+    "historical_unmodified": true,
+    "2_0_candidate_unmodified": true,
+    "2_0_1_candidate_unmodified": true,
+    "does_not_overwrite_historical_contracts": true
+  },
+  "schema": {
+    "transport_20_candidate": "app/book_semantic_gate_4b29/transport.py",
+    "transport_version": "book-semantic-validation-transport-2.0-candidate",
+    "production_structured_output": "json_object",
+    "strict_json_schema": "not_activated"
+  },
+  "validator": {
+    "historical_20": "app/book_semantic_gate_4b29/validator.py",
+    "used_in_4b211": "app/book_semantic_gate_4b211/validation.py -> validate_response_20",
+    "consolidated_202": "app/book_semantic_gate_4b212/validator.py",
+    "silent_normalization": false
+  },
+  "transport": {
+    "version": "book-semantic-validation-transport-2.0-candidate",
+    "activated": false,
+    "production_endpoint": "chat.completions"
+  },
+  "real_4b211_response": {
+    "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b211/provider_response_raw.json",
+    "exists": true,
+    "identity": {
+      "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b211/provider_response_raw.json",
+      "exists": true,
+      "sha256": "64ac94969e37ac03607ec09497381d6f532d7273d9d76535452a082f9ca54320",
+      "bytes": 2146
+    },
+    "contract_validation_artifact": {
+      "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b211/contract_validation.json",
+      "exists": true,
+      "sha256": "9f1d1a916f5a942a6cb9f48137c2c70cf1728b62051233c6dbad5b10087e9616",
+      "bytes": 2661
+    },
+    "not_modified": true
+  },
+  "existing_tests": [
+    "test_book_semantic_gate_4b210.py",
+    "test_book_semantic_gate_4b211.py",
+    "test_book_semantic_gate_4b212.py",
+    "test_book_semantic_gate_4b23.py",
+    "test_book_semantic_gate_4b24.py",
+    "test_book_semantic_gate_4b241.py",
+    "test_book_semantic_gate_4b25.py",
+    "test_book_semantic_gate_4b251.py",
+    "test_book_semantic_gate_4b26.py",
+    "test_book_semantic_gate_4b261.py",
+    "test_book_semantic_gate_4b262.py",
+    "test_book_semantic_gate_4b27.py",
+    "test_book_semantic_gate_4b271.py",
+    "test_book_semantic_gate_4b272.py",
+    "test_book_semantic_gate_4b273.py",
+    "test_book_semantic_gate_4b274.py",
+    "test_book_semantic_gate_4b275.py",
+    "test_book_semantic_gate_4b276.py",
+    "test_book_semantic_gate_4b277.py",
+    "test_book_semantic_gate_4b28.py",
+    "test_book_semantic_gate_4b29.py"
+  ],
+  "acceptance_policy": {
+    "historical": "app/book_semantic_gate_4b29/policy.py",
+    "4b211": "app/book_semantic_gate_4b211/validation.py apply_policy",
+    "consolidated_202": "app/book_semantic_gate_4b212/policy.py",
+    "fail_closed": true
+  },
+  "historical_responses": {
+    "h01": {
+      "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_raw_structured_response.json",
+      "exists": true,
+      "sha256": "43e74198ebed8eddc619762b1a62ac3d311d4164d26b0a8b5891d23ca51627f0",
+      "bytes": 3134
+    },
+    "h02": {
+      "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_raw_structured_response.json",
+      "exists": true,
+      "sha256": "78ef2ba6abb23c78cc9f2f3798d6e8b0aeae1544af681bffa9260a740ba17301",
+      "bytes": 5925
+    },
+    "h11": {
+      "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277/provider_response_raw.json",
+      "exists": true,
+      "sha256": "e38fe2d8012f1bd670a1804a3b938646e6f84402406f70c4ef44283177210fda",
+      "bytes": 4085
+    },
+    "4b211": {
+      "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b211/provider_response_raw.json",
+      "exists": true,
+      "sha256": "64ac94969e37ac03607ec09497381d6f532d7273d9d76535452a082f9ca54320",
+      "bytes": 2146
+    },
+    "not_modified": true
+  },
+  "production": {
+    "pipeline_hook": false,
+    "cache_acceptance": false,
+    "semantic_gate_20_enabled": false
+  },
+  "secrets_included": false
+}

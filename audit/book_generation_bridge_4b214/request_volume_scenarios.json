@@ -1,0 +1,50 @@
+{
+  "phase": "4B.2.14",
+  "known": {
+    "chapters": 19,
+    "sections": 72,
+    "ideas": 286
+  },
+  "unknown": {
+    "generated_paragraphs": "UNKNOWN",
+    "semantic_units": "UNKNOWN",
+    "counted_as_zero": false
+  },
+  "assumptions": {
+    "paragraphs_per_section_low": 2,
+    "paragraphs_per_section_central": 4,
+    "paragraphs_per_section_high": 7,
+    "units_per_paragraph_low": 2,
+    "units_per_paragraph_central": 4,
+    "units_per_paragraph_high": 8,
+    "source": "ASSUMPTION_NOT_MEASURED",
+    "why": "No generated manuscript exists for the 19 chapters. h01 used 5 units in one short paragraph and is not a book-wide rate."
+  },
+  "strategy_a": {
+    "name": "A_ONE_REQUEST_PER_PARAGRAPH",
+    "requests_low": 144,
+    "requests_central": 288,
+    "requests_high": 504,
+    "units_are_not_requests": true,
+    "compatible_with_current_validator": true,
+    "single_chapter_low": null,
+    "note": "Request count equals generated paragraph count, which remains UNKNOWN."
+  },
+  "strategy_b": {
+    "name": "B_PARAGRAPH_GROUPING",
+    "requests": "UNKNOWN_AND_NOT_CURRENTLY_COMPATIBLE",
+    "compatible_with_current_validator": false,
+    "schema_pr_is_array": true,
+    "validator_requires_single_paragraph": true,
+    "declared_compatible_without_verification": false
+  },
+  "strategy_c": {
+    "name": "C_ONE_REQUEST_PER_CHAPTER",
+    "requests": 19,
+    "compatible_with_current_validator": false,
+    "truncation_risk": "high_historical_terra_incomplete_outputs"
+  },
+  "candidate": "A_ONE_REQUEST_PER_PARAGRAPH",
+  "validator_constraint": "pr:expected_single_paragraph",
+  "secrets_included": false
+}

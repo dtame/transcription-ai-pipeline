@@ -1,0 +1,13 @@
+{
+  "phase": "4B.2.7.2",
+  "label_leakage": 0,
+  "hits": [],
+  "independence_hits": [],
+  "pass": true,
+  "human_labels_sent": false,
+  "case_id_in_request": false,
+  "reason_codes_as_target_in_request": false,
+  "general_semantic_categories_allowed_in_prompt": true,
+  "p3_specific_answer_not_taught": true,
+  "secrets_included": false
+}

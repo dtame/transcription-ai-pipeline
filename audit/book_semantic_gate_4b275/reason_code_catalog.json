@@ -1,0 +1,348 @@
+{
+  "phase": "4B.2.7.5",
+  "catalog_closed": true,
+  "codes": [
+    "NEW_FACT",
+    "NEW_CAUSAL_LINK",
+    "NEW_ARGUMENT",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM",
+    "NEW_IMPLICATION",
+    "INVENTED_EXAMPLE",
+    "INVENTED_ANECDOTE",
+    "INVENTED_HYPOTHETICAL",
+    "REFERENCE_COMPLETION",
+    "REFERENCE_EXPANSION",
+    "QUOTE_EXPANSION",
+    "UNCERTAINTY_STRENGTHENED",
+    "SOURCE_MEANING_DISTORTED",
+    "EVIDENCE_MISMATCH",
+    "OTHER"
+  ],
+  "entries": [
+    {
+      "id": "NEW_FACT",
+      "definition": "A factual assertion absent from supplied canonical evidence.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "insufficient_or_absent_evidence",
+      "expected_evidence": "No supplied IDEA/SRC/REF attests the asserted fact.",
+      "generic_example": "A named event, group, or quantity appears in the claim but not in evidence.",
+      "confusion_risks": [
+        "EVIDENCE_MISMATCH",
+        "OTHER"
+      ]
+    },
+    {
+      "id": "NEW_CAUSAL_LINK",
+      "definition": "A because/therefore/as-a-result relation that the evidence does not support, even if the related facts separately exist.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "new_causality",
+      "expected_evidence": "Related facts may exist; the because/therefore link does not.",
+      "generic_example": "Two attested facts are joined by because/therefore without support.",
+      "confusion_risks": [
+        "NEW_IMPLICATION",
+        "NEW_ARGUMENT"
+      ]
+    },
+    {
+      "id": "NEW_ARGUMENT",
+      "definition": "An argumentative step not present in the supplied evidence.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "new_argumentative_step",
+      "expected_evidence": "The argumentative step is absent from supplied evidence.",
+      "generic_example": "A new inferential step is inserted between attested points.",
+      "confusion_risks": [
+        "NEW_CONCLUSION",
+        "NEW_IMPLICATION"
+      ]
+    },
+    {
+      "id": "NEW_CONCLUSION",
+      "definition": "A conclusion stronger than, or absent from, the evidence.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "new_or_stronger_conclusion",
+      "expected_evidence": "The conclusion is stronger than, or absent from, the evidence.",
+      "generic_example": "The claim closes with a stronger takeaway than the evidence.",
+      "confusion_risks": [
+        "NEW_ARGUMENT",
+        "NEW_DOCTRINAL_CLAIM"
+      ]
+    },
+    {
+      "id": "NEW_DOCTRINAL_CLAIM",
+      "definition": "A doctrinal assertion not entailed by supplied evidence.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "new_doctrinal_implication",
+      "expected_evidence": "The doctrinal assertion is not entailed by supplied evidence.",
+      "generic_example": "A teaching is stated as doctrine without evidential entailment.",
+      "confusion_risks": [
+        "NEW_IMPLICATION",
+        "NEW_CONCLUSION"
+      ]
+    },
+    {
+      "id": "NEW_IMPLICATION",
+      "definition": "An implication, meaning, or 'which means' extension not supported by the supplied evidence.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "new_implication",
+      "expected_evidence": "The implied meaning or origin is not forced by the evidence.",
+      "generic_example": "The claim adds 'which means' content the evidence does not force.",
+      "confusion_risks": [
+        "NEW_CAUSAL_LINK",
+        "NEW_CONCLUSION"
+      ]
+    },
+    {
+      "id": "INVENTED_EXAMPLE",
+      "definition": "An illustrative scene, case, or example not present in EX/SRC/IDEA.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "invented_example",
+      "expected_evidence": "No EX/SRC/IDEA contains the illustrative case.",
+      "generic_example": "An illustrative scene is added that no EX/SRC/IDEA contains.",
+      "confusion_risks": [
+        "INVENTED_ANECDOTE",
+        "INVENTED_HYPOTHETICAL"
+      ]
+    },
+    {
+      "id": "INVENTED_ANECDOTE",
+      "definition": "A personal or narrative anecdote not in the evidence.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "invented_narrative",
+      "expected_evidence": "No supplied narrative attests the anecdote.",
+      "generic_example": "A personal story is added from outside the evidence.",
+      "confusion_risks": [
+        "INVENTED_EXAMPLE",
+        "INVENTED_HYPOTHETICAL"
+      ]
+    },
+    {
+      "id": "INVENTED_HYPOTHETICAL",
+      "definition": "A hypothetical scenario added from model knowledge.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "invented_hypothetical",
+      "expected_evidence": "The hypothetical is added from model knowledge.",
+      "generic_example": "A what-if scenario is introduced from model knowledge.",
+      "confusion_risks": [
+        "INVENTED_EXAMPLE",
+        "INVENTED_ANECDOTE"
+      ]
+    },
+    {
+      "id": "REFERENCE_COMPLETION",
+      "definition": "Completion of a partial REF/citation using omitted remainder from model knowledge. Applies to scripture, books, law, science, history, quotations, and named authorities — not Bible-specific.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "reference_completed_from_external_knowledge",
+      "expected_evidence": "The REF/SRC fragment does not contain the completed remainder.",
+      "generic_example": "A partial citation is finished from memory.",
+      "confusion_risks": [
+        "REFERENCE_EXPANSION",
+        "QUOTE_EXPANSION"
+      ]
+    },
+    {
+      "id": "REFERENCE_EXPANSION",
+      "definition": "Expansion of a supplied reference beyond what the REF/SRC actually contains.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "reference_expanded_beyond_supplied_text",
+      "expected_evidence": "The REF/SRC contains less than the expanded reference.",
+      "generic_example": "A supplied reference is broadened beyond its actual text.",
+      "confusion_risks": [
+        "REFERENCE_COMPLETION",
+        "QUOTE_EXPANSION"
+      ]
+    },
+    {
+      "id": "QUOTE_EXPANSION",
+      "definition": "A quotation or quoted wording not supported by supplied canonical wording, even if the reference identity is correct.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "quoted_wording_not_supplied",
+      "expected_evidence": "Supplied wording does not contain the quoted expansion.",
+      "generic_example": "Quoted words are added that the source fragment does not contain.",
+      "confusion_risks": [
+        "REFERENCE_COMPLETION",
+        "REFERENCE_EXPANSION"
+      ]
+    },
+    {
+      "id": "UNCERTAINTY_STRENGTHENED",
+      "definition": "Canonical uncertainty, possibility, or partiality raised to certainty, universality, or completeness.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "unjustified_strengthening",
+      "expected_evidence": "Canonical modality is weaker than the generated claim.",
+      "generic_example": "A possibility or partial statement is raised to certainty.",
+      "confusion_risks": [
+        "SOURCE_MEANING_DISTORTED",
+        "NEW_CONCLUSION"
+      ]
+    },
+    {
+      "id": "SOURCE_MEANING_DISTORTED",
+      "definition": "Paraphrase or synthesis that changes the meaning of supplied evidence.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "meaning_changed_under_paraphrase",
+      "expected_evidence": "Supplied evidence means something else than the claim.",
+      "generic_example": "A paraphrase changes who did what, or under which condition.",
+      "confusion_risks": [
+        "UNCERTAINTY_STRENGTHENED",
+        "EVIDENCE_MISMATCH"
+      ]
+    },
+    {
+      "id": "EVIDENCE_MISMATCH",
+      "definition": "Declared or used evidence does not actually support the claim.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "cited_evidence_does_not_support_claim",
+      "expected_evidence": "Cited handles exist but do not support this assertion.",
+      "generic_example": "The claim cites a handle whose text does not actually support it.",
+      "confusion_risks": [
+        "NEW_FACT",
+        "OTHER"
+      ]
+    },
+    {
+      "id": "OTHER",
+      "definition": "Unsupported semantic extension not covered by a more specific code.",
+      "compatible_verdicts": [
+        "QUESTIONABLE",
+        "UNSUPPORTED"
+      ],
+      "incompatible_verdicts": [
+        "SUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "problem_type": "unsupported_extension_without_more_specific_code",
+      "expected_evidence": "A residual unsupported extension after more specific codes are ruled out.",
+      "generic_example": "An unsupported extension that no more specific catalog code names.",
+      "confusion_risks": [
+        "NEW_FACT",
+        "EVIDENCE_MISMATCH"
+      ]
+    }
+  ],
+  "other_is_only_fallback": true,
+  "no_code_invented": true,
+  "no_historical_code_removed": true,
+  "observed_h02_codes_remain_outside_catalog": [
+    "INVENTED_CAUSAL_LINK",
+    "NO_EVIDENCE",
+    "UNJUSTIFIED_STRENGTHENING",
+    "UNSUPPORTED_IMPLICATION",
+    "PARTIAL_REFERENCE_EXPANSION"
+  ],
+  "diagnostic_candidates_are_not_aliases": {
+    "INVENTED_CAUSAL_LINK": "NEW_CAUSAL_LINK",
+    "NO_EVIDENCE": "NEW_FACT",
+    "UNJUSTIFIED_STRENGTHENING": "UNCERTAINTY_STRENGTHENED",
+    "UNSUPPORTED_IMPLICATION": "NEW_IMPLICATION",
+    "PARTIAL_REFERENCE_EXPANSION": "REFERENCE_EXPANSION"
+  },
+  "supported_and_non_substantive_must_have_empty_reasons": true,
+  "questionable_and_unsupported_require_at_least_one_catalog_code": true,
+  "secrets_included": false
+}

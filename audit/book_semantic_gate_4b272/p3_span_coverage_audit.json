@@ -1,0 +1,302 @@
+{
+  "phase": "4B.2.7.2",
+  "handle": "h02",
+  "offset_convention": {
+    "indexing": "python3_str_unicode_code_points",
+    "interval": "half_open",
+    "start_inclusive": true,
+    "end_exclusive": true,
+    "not_utf8_bytes": true,
+    "not_utf16_code_units": true,
+    "combining_characters_are_separate_code_points": true,
+    "empty_span_invalid": true,
+    "inconsistent_span_invalid": true,
+    "out_of_bounds_invalid": true,
+    "valid_offset_is_not_semantic_support": true,
+    "recovery": "paragraph_text[start:end]",
+    "documentation": "Offsets are Python 3 str indices. text[s:e] recovers the evaluated span. A well-formed span identifies the evaluated passage; it does not prove the passage is supported by canonical evidence."
+  },
+  "paragraph_length_codepoints": 466,
+  "propositions": [
+    {
+      "kind": "other_substantive",
+      "s": 0,
+      "e": 67,
+      "text": "Yet we can see fear operating in believers, and this is not normal.",
+      "contains_causal_clause": false,
+      "contains_negation": true
+    },
+    {
+      "kind": "other_substantive",
+      "s": 68,
+      "e": 180,
+      "text": "Fear of death is an abuse — an abuse to your very person, a diminishment of what you were made and remade to be.",
+      "contains_causal_clause": false,
+      "contains_negation": false
+    },
+    {
+      "kind": "other_substantive",
+      "s": 181,
+      "e": 228,
+      "text": "It is worth naming where this abuse comes from.",
+      "contains_causal_clause": false,
+      "contains_negation": false
+    },
+    {
+      "kind": "other_substantive",
+      "s": 229,
+      "e": 301,
+      "text": "The devil has used it since the beginning; he has not changed his style.",
+      "contains_causal_clause": false,
+      "contains_negation": true
+    },
+    {
+      "kind": "pre_causal_same_sentence",
+      "s": 302,
+      "e": 406,
+      "text": "The same old strategy that first weaponized death against humanity is still being run today, unchanged, ",
+      "contains_causal_clause": false,
+      "contains_negation": false
+    },
+    {
+      "kind": "disputed_causal_clause",
+      "s": 406,
+      "e": 465,
+      "text": "because it still works wherever it is not resisted by truth",
+      "contains_causal_clause": true,
+      "contains_because": true,
+      "contains_negation": true
+    },
+    {
+      "kind": "sentence_terminator_after_clause",
+      "s": 465,
+      "e": 466,
+      "text": ".",
+      "contains_causal_clause": false,
+      "admissible_terminator": true
+    }
+  ],
+  "claims": [
+    {
+      "i": 0,
+      "s": 0,
+      "e": 67,
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA225"
+      ],
+      "r": []
+    },
+    {
+      "i": 1,
+      "s": 68,
+      "e": 180,
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA225"
+      ],
+      "r": []
+    },
+    {
+      "i": 2,
+      "s": 181,
+      "e": 228,
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA225"
+      ],
+      "r": []
+    },
+    {
+      "i": 3,
+      "s": 229,
+      "e": 301,
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA225"
+      ],
+      "r": []
+    },
+    {
+      "i": 4,
+      "s": 302,
+      "e": 406,
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA225"
+      ],
+      "r": []
+    },
+    {
+      "i": 5,
+      "s": 406,
+      "e": 465,
+      "k": "QUESTIONABLE",
+      "ev": [],
+      "r": [
+        "NEW_CAUSAL_LINK"
+      ],
+      "n": "Because-clause is not in authorized evidence."
+    }
+  ],
+  "classified_uncovered_gaps": [
+    {
+      "start": 67,
+      "end": 68,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "isspace_flags": [
+        true
+      ],
+      "kind": "whitespace",
+      "python_slice": "text[67:68]",
+      "interval": "half_open"
+    },
+    {
+      "start": 180,
+      "end": 181,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "isspace_flags": [
+        true
+      ],
+      "kind": "whitespace",
+      "python_slice": "text[180:181]",
+      "interval": "half_open"
+    },
+    {
+      "start": 228,
+      "end": 229,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "isspace_flags": [
+        true
+      ],
+      "kind": "whitespace",
+      "python_slice": "text[228:229]",
+      "interval": "half_open"
+    },
+    {
+      "start": 301,
+      "end": 302,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "isspace_flags": [
+        true
+      ],
+      "kind": "whitespace",
+      "python_slice": "text[301:302]",
+      "interval": "half_open"
+    },
+    {
+      "start": 465,
+      "end": 466,
+      "text": ".",
+      "codepoints": [
+        46
+      ],
+      "isspace_flags": [
+        false
+      ],
+      "kind": "sentence_terminator",
+      "python_slice": "text[465:466]",
+      "interval": "half_open"
+    }
+  ],
+  "significant_gaps": [],
+  "span_checks": [
+    {
+      "valid": true,
+      "errors": [],
+      "recovered_text": "Yet we can see fear operating in believers, and this is not normal.",
+      "empty": false,
+      "start": 0,
+      "end": 67,
+      "text_code_points": 466,
+      "span_code_points": 67,
+      "convention": "python3_str_unicode_code_points",
+      "valid_offset_is_not_semantic_support": true
+    },
+    {
+      "valid": true,
+      "errors": [],
+      "recovered_text": "Fear of death is an abuse — an abuse to your very person, a diminishment of what you were made and remade to be.",
+      "empty": false,
+      "start": 68,
+      "end": 180,
+      "text_code_points": 466,
+      "span_code_points": 112,
+      "convention": "python3_str_unicode_code_points",
+      "valid_offset_is_not_semantic_support": true
+    },
+    {
+      "valid": true,
+      "errors": [],
+      "recovered_text": "It is worth naming where this abuse comes from.",
+      "empty": false,
+      "start": 181,
+      "end": 228,
+      "text_code_points": 466,
+      "span_code_points": 47,
+      "convention": "python3_str_unicode_code_points",
+      "valid_offset_is_not_semantic_support": true
+    },
+    {
+      "valid": true,
+      "errors": [],
+      "recovered_text": "The devil has used it since the beginning; he has not changed his style.",
+      "empty": false,
+      "start": 229,
+      "end": 301,
+      "text_code_points": 466,
+      "span_code_points": 72,
+      "convention": "python3_str_unicode_code_points",
+      "valid_offset_is_not_semantic_support": true
+    },
+    {
+      "valid": true,
+      "errors": [],
+      "recovered_text": "The same old strategy that first weaponized death against humanity is still being run today, unchanged, ",
+      "empty": false,
+      "start": 302,
+      "end": 406,
+      "text_code_points": 466,
+      "span_code_points": 104,
+      "convention": "python3_str_unicode_code_points",
+      "valid_offset_is_not_semantic_support": true
+    },
+    {
+      "valid": true,
+      "errors": [],
+      "recovered_text": "because it still works wherever it is not resisted by truth",
+      "empty": false,
+      "start": 406,
+      "end": 465,
+      "text_code_points": 466,
+      "span_code_points": 59,
+      "convention": "python3_str_unicode_code_points",
+      "valid_offset_is_not_semantic_support": true
+    }
+  ],
+  "non_empty_spans": true,
+  "valid_offsets": true,
+  "exact_text_recovery": true,
+  "inconsistent_overlap": false,
+  "causal_clause_covered": true,
+  "causal_connector_because_covered": true,
+  "negation_in_causal_clause_covered": true,
+  "omitting_causal_clause_fails": true,
+  "local_111_status": "PASS",
+  "h01_period_correction_applied": true,
+  "admissible_terminators_deterministic": true,
+  "coverage_complete": true,
+  "secrets_included": false
+}

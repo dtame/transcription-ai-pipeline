@@ -1,0 +1,23 @@
+{
+  "added_fields": [
+    "max_completion_tokens"
+  ],
+  "removed_fields": [
+    "max_tokens"
+  ],
+  "changed_fields": [],
+  "unexpected_field_changes": [],
+  "semantic_content_identical": true,
+  "only_api_compatibility_fields_changed": true,
+  "blocker": false,
+  "historical_token_fields": [
+    "max_tokens"
+  ],
+  "corrected_token_fields": [
+    "max_completion_tokens"
+  ],
+  "historical_max_tokens": 8192,
+  "corrected_max_tokens": null,
+  "historical_max_completion_tokens": null,
+  "corrected_max_completion_tokens": 8192
+}

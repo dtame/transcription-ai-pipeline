@@ -1,0 +1,22 @@
+{
+  "default_paid_provider": null,
+  "paid_calls_authorized": false,
+  "automatic_retries": false,
+  "secrets": {
+    "storage": "environment_variable_reference_only",
+    "values_written_to_repository": false,
+    "values_written_to_cover_record": false
+  },
+  "required_before_a_paid_call": [
+    "explicit_authorization",
+    "authorized_provider",
+    "authorized_model",
+    "authorized_image_count",
+    "defined_budget_cap",
+    "known_estimate_at_or_below_cap",
+    "network_calls_allowed"
+  ],
+  "prior_phase_unspent_budget_is_authorization": false,
+  "failure_policy": "stop_without_automatic_paid_retry",
+  "cost_history": []
+}

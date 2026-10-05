@@ -1,0 +1,88 @@
+{
+  "model_id": "gpt-image-2",
+  "billing_unit": "tokens",
+  "rates_per_million_tokens_beside_gpt_image_2": {
+    "text_input": "2.50",
+    "cached_text_input": "0.625",
+    "image_input": "4.00",
+    "cached_image_input": "1.00",
+    "image_output": "15.00"
+  },
+  "conflicting_higher_output_rate_stated_for_gpt_image_2_5": "30.00",
+  "rate_conflict_blocks_a_guaranteed_ceiling": true,
+  "cached_rates_apply_to_direct_images_api": false,
+  "partial_image_extra_output_tokens_if_streaming": 100,
+  "streaming_used": false,
+  "reference_images_used": false,
+  "rows": [
+    {
+      "size": "1024x1024",
+      "width": 1024,
+      "height": 1024,
+      "image_output_estimate_usd": {
+        "low": "0.006",
+        "medium": "0.053",
+        "high": "0.211"
+      },
+      "full_request_estimate_usd": null,
+      "verified_maximum_cost_usd": null,
+      "estimate_is_a_billing_guarantee": false
+    },
+    {
+      "size": "1024x1536",
+      "width": 1024,
+      "height": 1536,
+      "image_output_estimate_usd": {
+        "low": "0.005",
+        "medium": "0.041",
+        "high": "0.165"
+      },
+      "full_request_estimate_usd": null,
+      "verified_maximum_cost_usd": null,
+      "estimate_is_a_billing_guarantee": false
+    },
+    {
+      "size": "1536x1024",
+      "width": 1536,
+      "height": 1024,
+      "image_output_estimate_usd": {
+        "low": "0.005",
+        "medium": "0.041",
+        "high": "0.165"
+      },
+      "full_request_estimate_usd": null,
+      "verified_maximum_cost_usd": null,
+      "estimate_is_a_billing_guarantee": false
+    },
+    {
+      "size": "1536x2304",
+      "width": 1536,
+      "height": 2304,
+      "image_output_estimate_usd": {
+        "low": null,
+        "medium": null,
+        "high": null
+      },
+      "full_request_estimate_usd": null,
+      "verified_maximum_cost_usd": null,
+      "estimate_is_a_billing_guarantee": false
+    },
+    {
+      "size": "2160x3840",
+      "width": 2160,
+      "height": 3840,
+      "image_output_estimate_usd": {
+        "low": null,
+        "medium": null,
+        "high": null
+      },
+      "full_request_estimate_usd": null,
+      "verified_maximum_cost_usd": null,
+      "estimate_is_a_billing_guarantee": false
+    }
+  ],
+  "sources": [
+    "https://developers.openai.com/api/docs/pricing",
+    "https://developers.openai.com/api/docs/guides/image-generation"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "phase": "4B.2.13",
+  "algorithm_version": "book-semantic-preparation-4b28-conservative-via-4b29",
+  "prototype_source": "app.book_semantic_gate_4b28.segmentation via app.book_semantic_gate_4b29.preparation",
+  "offset_convention": "python3_str_unicode_code_points_half_open",
+  "offset_convention_notes": {
+    "python3_str": "Offsets are Python 3 str indices: Unicode code points, half-open [start, end). paragraph[start:end] == unit text.",
+    "utf8_bytes": "UTF-8 byte offsets are not used. 'é' is 1 Python index and 2 UTF-8 bytes; mixing them would shift every later unit.",
+    "utf16_code_units": "UTF-16 code-unit offsets are not used. Supplementary-plane characters such as '😀' are 1 Python index and 2 UTF-16 code units.",
+    "must_not_mix": true
+  },
+  "paragraphs": [
+    {
+      "paragraph_id": "SYN-CH001-P000001",
+      "unit_count": 1,
+      "coverage_ok": true,
+      "reconstructed_equals_paragraph": true,
+      "offset_convention": "python3_str_unicode_code_points_half_open",
+      "stable_ids": [
+        "u00"
+      ],
+      "preservation": [],
+      "does_not_ask_model_for_offsets": true
+    },
+    {
+      "paragraph_id": "SYN-CH001-P000002",
+      "unit_count": 2,
+      "coverage_ok": true,
+      "reconstructed_equals_paragraph": true,
+      "offset_convention": "python3_str_unicode_code_points_half_open",
+      "stable_ids": [
+        "u00",
+        "u01"
+      ],
+      "preservation": [
+        {
+          "label": "because",
+          "start": 28,
+          "end": 35,
+          "preserved_in_one_unit": true,
+          "unit_id": "u01",
+          "unit_text": "because it still works wherever it is not resisted by truth.",
+          "evidence_level": "DETERMINISTICALLY_VERIFIED"
+        },
+        {
+          "label": "not",
+          "start": 66,
+          "end": 69,
+          "preserved_in_one_unit": true,
+          "unit_id": "u01",
+          "unit_text": "because it still works wherever it is not resisted by truth.",
+          "evidence_level": "DETERMINISTICALLY_VERIFIED"
+        }
+      ],
+      "does_not_ask_model_for_offsets": true
+    }
+  ],
+  "complete_coverage": true,
+  "words_connectors_negations_conditions_causality_context_preserved": true,
+  "ok": true,
+  "sample_texts_used": {
+    "invented_causality": "Fear still governs the room because it still works wherever it is not resisted by truth.",
+    "invented_implication": "The silence of the congregation which means that every doubt has already been answered in advance.",
+    "universal_guarantee": "Every believer is guaranteed a fearless death under this teaching."
+  },
+  "secrets_included": false
+}

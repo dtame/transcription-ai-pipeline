@@ -78,6 +78,13 @@ from app.ai.pricing import (
     PricingCatalog,
     build_default_catalog,
 )
+from app.ai.provider_preflight import (
+    ProviderCallAccounting,
+    ProviderNotReadyError,
+    ProviderReadiness,
+    assert_provider_ready_for_authorization,
+    check_provider_runtime_readiness,
+)
 from app.ai.providers import (
     AnthropicEngine,
     BaseAIEngine,
@@ -127,6 +134,11 @@ __all__ = [
     "get_engine_for_stage",
     "register_ai_engine",
     "unregister_ai_engine",
+    "ProviderCallAccounting",
+    "ProviderNotReadyError",
+    "ProviderReadiness",
+    "assert_provider_ready_for_authorization",
+    "check_provider_runtime_readiness",
     # Capacités et budget de contexte
     "ModelCapabilities",
     "resolve_capabilities",

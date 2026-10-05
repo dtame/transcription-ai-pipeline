@@ -1,0 +1,50 @@
+{
+  "phase": "4B.2.12",
+  "document": {
+    "phase": "4B.2.12",
+    "pass": [
+      "contract VALID",
+      "coverage complete",
+      "evidence valid",
+      "all substantive propositions SUPPORTED",
+      "no QUESTIONABLE",
+      "no UNSUPPORTED",
+      "NON_SUBSTANTIVE does not mask a real claim"
+    ],
+    "review": [
+      "contract VALID",
+      "one or more QUESTIONABLE",
+      "no UNSUPPORTED",
+      "no other technical block",
+      "REVIEW does not accept the production cache"
+    ],
+    "block": [
+      "contract INVALID",
+      "coverage invalid",
+      "evidence invalid",
+      "UNSUPPORTED proposition",
+      "invalid reason code",
+      "missing unit",
+      "duplicate unit",
+      "critical technical anomaly",
+      "abusive NON_SUBSTANTIVE"
+    ],
+    "non_substantive_control": "A unit classified NON_SUBSTANTIVE is blocked when its text still contains a substantial assertion.",
+    "review_does_not_authorize_publication": true,
+    "review_does_not_accept_production_cache": true,
+    "states": [
+      "PASS",
+      "BLOCK",
+      "REVIEW"
+    ],
+    "unambiguous": true,
+    "secrets_included": false
+  },
+  "synthetic_decision": "PASS",
+  "synthetic_contract_ok": true,
+  "review_does_not_accept_cache": true,
+  "production_cache_acceptance": false,
+  "pass_requires_all_substantive_supported": true,
+  "passed": true,
+  "secrets_included": false
+}

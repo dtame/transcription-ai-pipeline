@@ -1,0 +1,111 @@
+{
+  "phase": "4B.2.14",
+  "generation_inputs": {
+    "EditorialPlan": "app.editorial_planning.models.EditorialPlan",
+    "EditorialChapter": "app.editorial_planning.models.EditorialChapter",
+    "EditorialSection": "app.editorial_planning.models.EditorialSection",
+    "SourceMap": "app.source_analysis.models.SourceMap",
+    "BookIdentity": "app.book_generation.models.BookIdentity",
+    "loader": "app.book_generation.identity.load_production_inputs"
+  },
+  "chapter_objects": {
+    "ChapterCandidate": "app.book_generation.models.ChapterCandidate",
+    "BookChapter": "app.book_generation.models.BookChapter",
+    "fields": [
+      "chapter_id",
+      "title",
+      "sections",
+      "idea_refs",
+      "source_refs",
+      "provider_raw_sha256",
+      "cache_signature"
+    ]
+  },
+  "paragraph_objects": {
+    "BookParagraph": "app.book_generation.models.BookParagraph",
+    "BookSection": "app.book_generation.models.BookSection",
+    "fields": [
+      "text",
+      "kind",
+      "evidence_handles",
+      "source_refs",
+      "idea_refs",
+      "example_refs",
+      "reference_refs",
+      "uncertainty_refs",
+      "paragraph_id",
+      "provider_handle"
+    ],
+    "paragraph_id_rule": "Canonical paragraph_id is empty on ChapterCandidate and assigned by app.book_generation.pipeline.assign_paragraph_ids during assemble_book as P000001."
+  },
+  "source_references": {
+    "BookParagraph.source_refs": "tuple[str, ...]",
+    "BookParagraph.evidence_handles": "tuple[str, ...]",
+    "BookParagraph.idea_refs": "tuple[str, ...]",
+    "resolve_src_for_handles": "app.book_generation.evidence.resolve_src_for_handles",
+    "classify_handle": "app.book_generation.evidence.classify_handle"
+  },
+  "evidence_bundles": {
+    "build_chapter_evidence": "app.book_generation.evidence.build_chapter_evidence",
+    "evidence_metrics": "app.book_generation.evidence.evidence_metrics",
+    "hydrate_src_ids": "app.book_generation.hydrate.hydrate_src_ids"
+  },
+  "validators": {
+    "structural": "app.book_generation.validator.validate_chapter_candidate",
+    "semantic_202": "app.book_semantic_gate_4b212.validator.validate_response_202",
+    "coverage": "app.book_semantic_gate_4b29.coverage.validate_prepared_coverage",
+    "policy_202": "app.book_semantic_gate_4b212.policy.apply_acceptance_policy_202"
+  },
+  "transports": {
+    "generator_version": "book-generation-transport-1.0",
+    "semantic_request_builder": "app.book_semantic_gate_4b29.request.build_model_request",
+    "integration_request_builder": "app.book_generation_integration_4b213.request.build_semantic_request",
+    "fake_generator": "app.book_generation_integration_4b213.fakeai.FakeGeneratorTransport",
+    "fake_semantic": "app.book_generation_integration_4b213.fakeai.FakeSemanticTransport"
+  },
+  "caches": {
+    "production": "app.book_generation.cache.ChapterCache",
+    "isolated_4b213": "app.book_generation_integration_4b213.cache.IsolatedChapterCache",
+    "production_writes_this_phase": false
+  },
+  "resume_states": {
+    "GenerationState": "app.book_generation.cache.GenerationState",
+    "isolated_states": "app.book_generation_integration_4b213.cache.ISOLATED_CACHE_STATES"
+  },
+  "extension_points": {
+    "materialize_chapter": "app.book_generation.pipeline.materialize_chapter",
+    "remember_chapter": "app.book_generation.pipeline.remember_chapter",
+    "assemble_book": "app.book_generation.pipeline.assemble_book",
+    "orchestrate_chapter_isolated": "app.book_generation_integration_4b213.orchestrator.orchestrate_chapter",
+    "semantic_gate_hook": "app.book_semantic_gate_4b29.integration.SemanticGate20IntegrationCandidate",
+    "semantic_gate_enabled": false,
+    "prepare_paragraph_units": "app.book_semantic_gate_4b29.preparation.prepare_paragraph_units"
+  },
+  "activation_controls": {
+    "bridge_enabled": false,
+    "production_pipeline_hook": false,
+    "semantic_gate_20_enabled": false,
+    "publication_authorized": false
+  },
+  "side_effect_risks": [
+    "Hooking materialize_chapter or remember_chapter would write production cache.",
+    "Calling assemble_book would assign canonical P IDs across the book.",
+    "write_book would publish book.json if PUBLICATION_AUTHORIZED were flipped.",
+    "A live OpenAIEngine/AnthropicEngine generate() would leave this phase."
+  ],
+  "versions": {
+    "book_schema": "1.0",
+    "generator_prompt": "book-generator-1.0.1",
+    "generator_transport": "book-generation-transport-1.0",
+    "generator_validator": "book-generation-validator-1.0.1",
+    "generation_unit": "CHAPTER",
+    "strategy": "one_chapter_per_call",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5",
+    "frozen_settings_provider": "anthropic",
+    "frozen_settings_model": "claude-sonnet-5"
+  },
+  "book_model": "app.book_generation.models.Book",
+  "does_not_invent_function_names": true,
+  "secrets_included": false
+}

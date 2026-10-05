@@ -1,0 +1,644 @@
+{
+  "phase": "4B.2.23",
+  "chapter_id": "CH014",
+  "items": [
+    {
+      "kind": "EX",
+      "id": "EX032",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "EX",
+      "id": "EX033",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "EX",
+      "id": "EX034",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "EX",
+      "id": "EX035",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "EX",
+      "id": "EX036",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "REF",
+      "id": "REF017",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "UNC",
+      "id": "UNC024",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "UNC",
+      "id": "UNC025",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005338",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005340",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005342",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005346",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005357",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005358",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005361",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005362",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005447",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005449",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005451",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005648",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005649",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005657",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005659",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005728",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005732",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005734",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005736",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005737",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005845",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005846",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005876",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005878",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005879",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005852",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005853",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005862",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005869",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005886",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005953",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005956",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005958",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005960",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006058",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006059",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006061",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006062",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006076",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006080",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006084",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006086",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006087",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006090",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006091",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006093",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006094",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006100",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006101",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006103",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006107",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006108",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006109",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006134",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006113",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006114",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006115",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006117",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006119",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC006121",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005256",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005260",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005349",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005416",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005422",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005460",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005463",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005605",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005617",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005661",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005677",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005683",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005684",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005686",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005860",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005868",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC002194",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC002197",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005607",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005900",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005918",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "SRC",
+      "id": "SRC005935",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    }
+  ],
+  "example_absence_is_not_automatic_omission": true,
+  "ch018_lesson_applied": true,
+  "provenance_invented": false,
+  "provider_response_modified": false,
+  "blocking_substantive_omission_established": false,
+  "semantic_certification": "NOT PERFORMED",
+  "note": "A missing EX/REF handle is not treated as a content omission. CH018 showed EX046 could be present in prose without a handle.",
+  "secrets_included": false
+}

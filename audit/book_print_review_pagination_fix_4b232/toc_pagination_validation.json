@@ -1,0 +1,223 @@
+{
+  "phase": "4B.2.32",
+  "status": "PASS",
+  "updated": true,
+  "page_alignment": true,
+  "titles_ok": true,
+  "real_pages": true,
+  "entries": [
+    {
+      "title": "Unlearning What Was Handed Down",
+      "page": 1,
+      "raw": "Unlearning What Was Handed Down\t1"
+    },
+    {
+      "title": "Flesh and Bone: The Resurrection You Inherit",
+      "page": 4,
+      "raw": "Flesh and Bone: The Resurrection You Inherit\t4"
+    },
+    {
+      "title": "Hebrews 2: Death Already Destroyed",
+      "page": 7,
+      "raw": "Hebrews 2: Death Already Destroyed\t7"
+    },
+    {
+      "title": "Priest, Prophet, King",
+      "page": 10,
+      "raw": "Priest, Prophet, King\t10"
+    },
+    {
+      "title": "Access, Not Achievement",
+      "page": 14,
+      "raw": "Access, Not Achievement\t14"
+    },
+    {
+      "title": "That They May Be One",
+      "page": 19,
+      "raw": "That They May Be One\t19"
+    },
+    {
+      "title": "Loved Exactly as Jesus Is Loved",
+      "page": 26,
+      "raw": "Loved Exactly as Jesus Is Loved\t26"
+    },
+    {
+      "title": "Set Your Mind Above",
+      "page": 28,
+      "raw": "Set Your Mind Above\t28"
+    },
+    {
+      "title": "Laws You Gave Yourself",
+      "page": 31,
+      "raw": "Laws You Gave Yourself\t31"
+    },
+    {
+      "title": "Spirit, Soul and Body",
+      "page": 34,
+      "raw": "Spirit, Soul and Body\t34"
+    },
+    {
+      "title": "Reasonings and Strongholds",
+      "page": 37,
+      "raw": "Reasonings and Strongholds\t37"
+    },
+    {
+      "title": "Prayer Corrected",
+      "page": 40,
+      "raw": "Prayer Corrected\t40"
+    },
+    {
+      "title": "The Renewed Mind and the Hidden Faculty",
+      "page": 43,
+      "raw": "The Renewed Mind and the Hidden Faculty\t43"
+    },
+    {
+      "title": "Operating What You Have",
+      "page": 47,
+      "raw": "Operating What You Have\t47"
+    },
+    {
+      "title": "Grace Barely Touched",
+      "page": 50,
+      "raw": "Grace Barely Touched\t50"
+    },
+    {
+      "title": "Death as Gain",
+      "page": 53,
+      "raw": "Death as Gain\t53"
+    },
+    {
+      "title": "Nothing by Chance",
+      "page": 55,
+      "raw": "Nothing by Chance\t55"
+    },
+    {
+      "title": "Testimonies of Resurrection",
+      "page": 59,
+      "raw": "Testimonies of Resurrection\t59"
+    },
+    {
+      "title": "Out of the Eater",
+      "page": 62,
+      "raw": "Out of the Eater\t62"
+    }
+  ],
+  "chapter_starts": [
+    {
+      "title": "Unlearning What Was Handed Down",
+      "page": 5,
+      "page_adjusted": 1,
+      "odd": true
+    },
+    {
+      "title": "Flesh and Bone: The Resurrection You Inherit",
+      "page": 8,
+      "page_adjusted": 4,
+      "odd": false
+    },
+    {
+      "title": "Hebrews 2: Death Already Destroyed",
+      "page": 11,
+      "page_adjusted": 7,
+      "odd": true
+    },
+    {
+      "title": "Priest, Prophet, King",
+      "page": 14,
+      "page_adjusted": 10,
+      "odd": false
+    },
+    {
+      "title": "Access, Not Achievement",
+      "page": 18,
+      "page_adjusted": 14,
+      "odd": false
+    },
+    {
+      "title": "That They May Be One",
+      "page": 23,
+      "page_adjusted": 19,
+      "odd": true
+    },
+    {
+      "title": "Loved Exactly as Jesus Is Loved",
+      "page": 30,
+      "page_adjusted": 26,
+      "odd": false
+    },
+    {
+      "title": "Set Your Mind Above",
+      "page": 32,
+      "page_adjusted": 28,
+      "odd": false
+    },
+    {
+      "title": "Laws You Gave Yourself",
+      "page": 35,
+      "page_adjusted": 31,
+      "odd": true
+    },
+    {
+      "title": "Spirit, Soul and Body",
+      "page": 38,
+      "page_adjusted": 34,
+      "odd": false
+    },
+    {
+      "title": "Reasonings and Strongholds",
+      "page": 41,
+      "page_adjusted": 37,
+      "odd": true
+    },
+    {
+      "title": "Prayer Corrected",
+      "page": 44,
+      "page_adjusted": 40,
+      "odd": false
+    },
+    {
+      "title": "The Renewed Mind and the Hidden Faculty",
+      "page": 47,
+      "page_adjusted": 43,
+      "odd": true
+    },
+    {
+      "title": "Operating What You Have",
+      "page": 51,
+      "page_adjusted": 47,
+      "odd": true
+    },
+    {
+      "title": "Grace Barely Touched",
+      "page": 54,
+      "page_adjusted": 50,
+      "odd": false
+    },
+    {
+      "title": "Death as Gain",
+      "page": 57,
+      "page_adjusted": 53,
+      "odd": true
+    },
+    {
+      "title": "Nothing by Chance",
+      "page": 59,
+      "page_adjusted": 55,
+      "odd": true
+    },
+    {
+      "title": "Testimonies of Resurrection",
+      "page": 63,
+      "page_adjusted": 59,
+      "odd": true
+    },
+    {
+      "title": "Out of the Eater",
+      "page": 66,
+      "page_adjusted": 62,
+      "odd": false
+    }
+  ],
+  "verification": "real_word_render",
+  "secrets_included": false
+}

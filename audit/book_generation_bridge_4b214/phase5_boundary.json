@@ -1,0 +1,88 @@
+{
+  "phase": "4B.2.14",
+  "version": "book-validator-phase5-interface-4b214-candidate",
+  "implemented": false,
+  "executed": false,
+  "independent": true,
+  "semantic_gate_pass_does_not_make_book_publishable": true,
+  "semantic_gate_does_not_replace_phase5": true,
+  "required_inputs": [
+    "chapter",
+    "text",
+    "structure",
+    "sources",
+    "evidence_handles",
+    "semantic_gate_results",
+    "human_review",
+    "versions",
+    "hashes",
+    "decisions",
+    "anomalies",
+    "traceability",
+    "budget_unknowns"
+  ],
+  "contracts": {
+    "book_schema": "1.0",
+    "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+    "independent_validator": "not_implemented"
+  },
+  "hashes_required": [
+    "source_map_sha256",
+    "editorial_plan_sha256",
+    "transcript_sha256",
+    "generated_text_sha256",
+    "evidence_bundle_sha256"
+  ],
+  "human_review_elements": [
+    "machine_decision",
+    "human_action",
+    "human_decision",
+    "original_raw_preserved"
+  ],
+  "cost": {
+    "status": "UNKNOWN",
+    "counted_as_zero": false
+  },
+  "trigger_conditions": [
+    "All intended chapters have isolated Semantic Gate decisions.",
+    "Human review of REVIEW/BLOCK is complete.",
+    "Independent Book Validator implementation exists.",
+    "Explicit human authorization for Phase 5 is issued.",
+    "Phase 5 budget is no longer UNKNOWN or is explicitly accepted as unknown-with-cap."
+  ],
+  "sample": {
+    "interface_version": "book-validator-phase5-interface-4b213-candidate",
+    "executed": false,
+    "independent": true,
+    "must_not_accept_semantic_gate_verdict_alone": true,
+    "chapter_id": null,
+    "title": null,
+    "text": [],
+    "structure": null,
+    "sources": [],
+    "evidence_handles": [],
+    "semantic_gate_results": {
+      "decision": null,
+      "paragraph_decisions": []
+    },
+    "versions": null,
+    "hashes": {
+      "generated_text_sha256": null,
+      "validation_key": null,
+      "source_map_sha256": null,
+      "editorial_plan_sha256": null
+    },
+    "decisions": {
+      "chapter": null,
+      "isolated_acceptance_candidate": null
+    },
+    "anomalies": [],
+    "traceability": [],
+    "production_cache_acceptance": false,
+    "phase5_not_started": true,
+    "secrets_included": false
+  },
+  "production_cache_acceptance": false,
+  "word_pdf": "not_authorized",
+  "secrets_included": false
+}

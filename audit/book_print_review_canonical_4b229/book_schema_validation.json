@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "book_from_dict_ok": true,
+  "precheck_status": "PASS",
+  "schema_version": "1.0",
+  "compatible_with_book_1_0": true,
+  "secrets_included": false
+}

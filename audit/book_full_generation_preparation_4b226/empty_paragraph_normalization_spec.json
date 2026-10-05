@@ -1,0 +1,40 @@
+{
+  "phase": "4B.2.26",
+  "name": "strip_strictly_empty_unprovenanced_paragraphs",
+  "version": "empty-unprovenanced-paragraph-normalizer-4b226-1.0",
+  "authorized_in_this_phase": true,
+  "integration_point": "After durable save of the raw provider response and after materialization of the derived candidate, before the existing production structural validator runs.",
+  "does_not_modify_production_validator": true,
+  "does_not_modify_raw_provider_response": true,
+  "does_not_modify_accepted_chapters": true,
+  "idempotent": true,
+  "applies_only_when": [
+    "text is empty or whitespace-only",
+    "no IDEA identifier",
+    "no SRC identifier",
+    "no EX identifier",
+    "no REF identifier",
+    "no UNC identifier",
+    "no attribution, citation, or other significant editorial metadata",
+    "no other object depends on the paragraph identifier",
+    "removal does not modify remaining paragraphs",
+    "full structural validation succeeds afterwards"
+  ],
+  "never": [
+    "modify the raw provider response",
+    "delete a paragraph that contains an idea",
+    "delete a paragraph that contains evidence",
+    "delete a paragraph with significant metadata",
+    "renumber existing identifiers",
+    "rewrite prose",
+    "fabricate provenance",
+    "convert a semantic failure into a structural success"
+  ],
+  "after_strip": [
+    "run the existing production structural validator",
+    "keep the original response immutable",
+    "label the result OFFLINE_DERIVED_ARTIFACT / NOT_PROVIDER_ORIGINAL",
+    "reject the candidate if the validator fails"
+  ],
+  "secrets_included": false
+}

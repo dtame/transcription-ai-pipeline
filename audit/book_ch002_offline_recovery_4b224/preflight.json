@@ -1,0 +1,14 @@
+{
+  "phase": "4B.2.24",
+  "authorization_scope": "BOOK_CH002_OFFLINE_RECOVERY_4B224_CH002_RECOVERY_AND_CH001_REVIEW_ONLY",
+  "canonical_hashes_ok": true,
+  "ch012_present": true,
+  "ch018_present": true,
+  "ch002_originals_present": true,
+  "offline_only": true,
+  "provider_calls_authorized": 0,
+  "authorized_spend_usd": 0,
+  "production_book_absent": true,
+  "consumed_batch01_authorization": "BOOK_GENERATION_BATCH_01_CH001_CH004_ONE_SHOT_PER_CHAPTER",
+  "secrets_included": false
+}

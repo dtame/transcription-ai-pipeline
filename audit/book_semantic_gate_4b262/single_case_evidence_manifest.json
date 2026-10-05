@@ -1,0 +1,71 @@
+{
+  "phase": "4B.2.6.2",
+  "handle": "h01",
+  "case_id_audit_only": "4b22_p2_supported",
+  "declared_handles": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "historical_benchmark_handles_audit_only": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "src_text": [
+    {
+      "id": "SRC006149",
+      "chars": 30,
+      "present": true
+    },
+    {
+      "id": "SRC006180",
+      "chars": 20,
+      "present": true
+    },
+    {
+      "id": "SRC006182",
+      "chars": 16,
+      "present": true
+    },
+    {
+      "id": "SRC006183",
+      "chars": 21,
+      "present": true
+    },
+    {
+      "id": "SRC006187",
+      "chars": 34,
+      "present": true
+    }
+  ],
+  "ideas": [
+    {
+      "id": "IDEA224",
+      "chars": 106,
+      "present": true
+    }
+  ],
+  "references": [],
+  "present_ids": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "missing_required_handles": [],
+  "complete": true,
+  "summaries_not_substituted": true,
+  "canonical_evidence_only": true,
+  "other_cases_excluded": true,
+  "batching_did_not_drop_required_context": true,
+  "secrets_included": false
+}

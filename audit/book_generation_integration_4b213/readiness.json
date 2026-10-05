@@ -1,0 +1,14 @@
+{
+  "READY_FOR_CONTROLLED_INTEGRATION_HUMAN_REVIEW": true,
+  "READY_FOR_ONE_REAL_CHAPTER_EXPERIMENT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "production_pipeline": "UNCHANGED",
+  "candidate_promoted": false,
+  "historical_contracts_modified": false,
+  "historical_labels_modified": false,
+  "phase": "4B.2.13",
+  "secrets_included": false
+}

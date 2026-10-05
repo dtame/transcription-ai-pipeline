@@ -1,0 +1,123 @@
+{
+  "phase": "4B.2.7.5",
+  "versions": {
+    "book-semantic-validator-1.0": {
+      "status": "FROZEN",
+      "location": "app.book_semantic_gate_4b23.prompt",
+      "transport": "book-semantic-validation-transport-1.0",
+      "transport_location": "app.book_semantic_gate_4b23.schema",
+      "system_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+      "instructions_sha256": "4747261db399a1b934221c455502e9b55f54498bab4f31ae29dff9ef6e6e8ccc",
+      "prompt_sha256": "6bc72002b50f77613f71c0241cde133fdc04527c37d6b630bf5794641a443bbf",
+      "matches_frozen_expected": true,
+      "immutable": true,
+      "modified_this_phase": false,
+      "compatible_with_local_validator": true
+    },
+    "book-semantic-validator-1.1-candidate": {
+      "status": "FROZEN_CANDIDATE_NOT_PROMOTED",
+      "location": "app.book_semantic_gate_4b261.candidates",
+      "transport": "book-semantic-validation-transport-1.1-candidate",
+      "transport_location": "app.book_semantic_gate_4b261.candidates.build_candidate_schema",
+      "prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+      "matches_frozen_expected": true,
+      "immutable": true,
+      "modified_this_phase": false,
+      "promoted": false,
+      "compatible_with_local_validator": true
+    },
+    "book-semantic-validator-1.1.1-candidate": {
+      "status": "FROZEN_CANDIDATE_NOT_PROMOTED",
+      "location": "app.book_semantic_gate_4b271.calibration",
+      "transport": null,
+      "prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+      "matches_frozen_expected": true,
+      "immutable": true,
+      "modified_this_phase": false,
+      "promoted": false,
+      "compatible_with_local_validator": true,
+      "depends_on": [
+        "book-semantic-validator-1.1-candidate",
+        "book-semantic-validation-transport-1.1-candidate"
+      ]
+    },
+    "book-semantic-validator-1.1.2-candidate": {
+      "status": "FROZEN_CANDIDATE_NOT_PROMOTED",
+      "location": "app.book_semantic_gate_4b274.contract",
+      "transport": null,
+      "prompt_sha256": "88a89e792ffd6a6f3766c0218f7cb25f0d996ba373e13232179b390f77da3ba0",
+      "system_sha256": "752810ca4f7da365c4516219a2105c105fd6ee89011fbca0474bd5fa2d3872ab",
+      "instructions_sha256": "a408fbc8a883f597668aff701658623a1e6e6b76bf60179673300b8c0c891899",
+      "matches_frozen_expected": true,
+      "immutable": true,
+      "modified_this_phase": false,
+      "promoted": false,
+      "compatible_with_local_validator": true,
+      "depends_on": [
+        "book-semantic-validator-1.1.1-candidate",
+        "book-semantic-validation-transport-1.1-candidate",
+        "coverage-validator-1.1.2-candidate"
+      ]
+    },
+    "book-semantic-validator-1.1.3-candidate": {
+      "status": "PROPOSAL_ONLY_NOT_PROMOTED",
+      "location": "app.book_semantic_gate_4b275.contract",
+      "transport": null,
+      "prompt_sha256": "9febdcdda08a31179081564ac33842b434dcc8bcb95ca9d96f386b63addb3059",
+      "system_sha256": "f440711527a399f6c257740e8ae9ca7cd161b2f29b8c9d7a259856ed66bde4d8",
+      "instructions_sha256": "89fff628ae9df58fb33224aac103d0995bb87eff3506192bfc096364334dc23c",
+      "matches_frozen_expected": true,
+      "identical_to_1_1_2": false,
+      "immutable_historical": false,
+      "modified_this_phase": true,
+      "promoted": false,
+      "compatible_with_local_validator": true,
+      "depends_on": [
+        "book-semantic-validator-1.1.2-candidate",
+        "book-semantic-validation-transport-1.1-candidate",
+        "coverage-validator-1.1.2-candidate"
+      ]
+    },
+    "book-semantic-validation-transport-1.1-candidate": {
+      "status": "FROZEN_CANDIDATE_NOT_PROMOTED",
+      "location": "app.book_semantic_gate_4b261.candidates.build_candidate_schema",
+      "schema_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+      "matches_frozen_expected": true,
+      "immutable": true,
+      "modified_this_phase": false,
+      "promoted": false,
+      "required_top_fields": [
+        "ch",
+        "v",
+        "pr",
+        "sc",
+        "uh",
+        "rr"
+      ],
+      "required_paragraph_fields": [
+        "h",
+        "v",
+        "c",
+        "ev",
+        "r"
+      ],
+      "required_claim_fields": [
+        "i",
+        "s",
+        "e",
+        "k",
+        "ev",
+        "r"
+      ],
+      "optional_reservation_field": "n",
+      "historical_1_0_schema_sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689"
+    }
+  },
+  "historical_contracts_modified": false,
+  "silent_1_1_2_modification": false,
+  "new_transport_created": false,
+  "candidate_promoted": false,
+  "local_validator_compatible": true,
+  "compact_spec_preserved": true,
+  "secrets_included": false
+}

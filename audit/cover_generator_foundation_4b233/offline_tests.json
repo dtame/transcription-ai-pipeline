@@ -1,0 +1,186 @@
+{
+  "phase": "4B.2.33",
+  "provider_calls": 0,
+  "scenarios": {
+    "passed": 32,
+    "failed": 0,
+    "cases": [
+      {
+        "name": "author_profile_created",
+        "passed": true,
+        "detail": "author_000001"
+      },
+      {
+        "name": "profile_without_biography",
+        "passed": true,
+        "detail": "MISSING_OPTIONAL"
+      },
+      {
+        "name": "incomplete_profile",
+        "passed": true,
+        "detail": "approved_facts_only"
+      },
+      {
+        "name": "author_reused_across_books",
+        "passed": true,
+        "detail": "book_a,book_b"
+      },
+      {
+        "name": "private_data_separated",
+        "passed": true,
+        "detail": "separated"
+      },
+      {
+        "name": "depositor_is_not_author",
+        "passed": true,
+        "detail": "not_implied"
+      },
+      {
+        "name": "approved_biography_snapshot",
+        "passed": true,
+        "detail": "APPROVED"
+      },
+      {
+        "name": "cover_survives_profile_edit",
+        "passed": true,
+        "detail": "preserved"
+      },
+      {
+        "name": "description_stays_draft",
+        "passed": true,
+        "detail": "draft_not_approved"
+      },
+      {
+        "name": "biography_optional",
+        "passed": true,
+        "detail": "optional"
+      },
+      {
+        "name": "no_invented_biography",
+        "passed": true,
+        "detail": "not_invented"
+      },
+      {
+        "name": "canonical_title",
+        "passed": true,
+        "detail": "The Life You Already Inherited"
+      },
+      {
+        "name": "canonical_subtitle",
+        "passed": true,
+        "detail": "Resurrection life, union with God, and the practice of spiritual authority"
+      },
+      {
+        "name": "two_independent_faces",
+        "passed": true,
+        "detail": "TWO_SEPARATE_PAGES"
+      },
+      {
+        "name": "format_6x9",
+        "passed": true,
+        "detail": "6x9"
+      },
+      {
+        "name": "configurable_bleed",
+        "passed": true,
+        "detail": "5"
+      },
+      {
+        "name": "safety_zone",
+        "passed": true,
+        "detail": "inside_trim"
+      },
+      {
+        "name": "draft_image_optional",
+        "passed": true,
+        "detail": "optional"
+      },
+      {
+        "name": "solid_back_cover",
+        "passed": true,
+        "detail": "solid"
+      },
+      {
+        "name": "image_provider_interface",
+        "passed": true,
+        "detail": "interface_refused_generation"
+      },
+      {
+        "name": "unknown_cost_blocks_paid_call",
+        "passed": true,
+        "detail": "blocked"
+      },
+      {
+        "name": "missing_authorization_blocks_paid_call",
+        "passed": true,
+        "detail": "blocked"
+      },
+      {
+        "name": "hardware_diagnostic_shape",
+        "passed": true,
+        "detail": "Intel(R) Iris(R) Xe Graphics"
+      },
+      {
+        "name": "gpu_absent",
+        "passed": true,
+        "detail": "NOT_RECOMMENDED"
+      },
+      {
+        "name": "vram_insufficient",
+        "passed": true,
+        "detail": "not_recommended"
+      },
+      {
+        "name": "hardware_incomplete",
+        "passed": true,
+        "detail": "insufficient"
+      },
+      {
+        "name": "no_download",
+        "passed": true,
+        "detail": "no_download"
+      },
+      {
+        "name": "no_network",
+        "passed": true,
+        "detail": "no_network"
+      },
+      {
+        "name": "no_cover_docx",
+        "passed": true,
+        "detail": "not_written"
+      },
+      {
+        "name": "no_cover_pdf",
+        "passed": true,
+        "detail": "not_written"
+      },
+      {
+        "name": "canonical_book_unchanged",
+        "passed": true,
+        "detail": "match"
+      },
+      {
+        "name": "interior_unchanged",
+        "passed": true,
+        "detail": "match"
+      }
+    ],
+    "provider_calls": 0,
+    "downloads": 0,
+    "network_calls": 0
+  },
+  "pytest": {
+    "returncode": 0,
+    "summary": "42 passed in 6.18s",
+    "passed": 42,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_cover_generator_foundation_4b233.py"
+    ],
+    "real_provider_calls": 0
+  },
+  "forbidden_imports": [],
+  "cover_binaries": []
+}

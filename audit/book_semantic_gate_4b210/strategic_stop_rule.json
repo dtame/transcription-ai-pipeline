@@ -1,0 +1,15 @@
+{
+  "phase": "4B.2.10",
+  "rule": "If the future real canary still shows substantial false rejections, poor paraphrase recognition, insufficient detection of additions, or an inability to respect the simplified contract, do not automatically launch another series of paid corrections and tests. The next action must be a human review of the validator's role in the architecture.",
+  "options_for_human_review_only": [
+    "Targeted semantic validation of high-risk propositions",
+    "Chapter-level validation with human review",
+    "Reduced granularity",
+    "Different model or verification strategy",
+    "More conservative acceptance policy",
+    "Different split between automatic checks and human review"
+  ],
+  "none_of_these_options_activated": true,
+  "no_automatic_paid_retry_series": true,
+  "secrets_included": false
+}

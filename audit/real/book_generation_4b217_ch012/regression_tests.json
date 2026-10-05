@@ -1,0 +1,17 @@
+{
+  "returncode": 0,
+  "summary": "40 passed in 2.35s",
+  "passed": 40,
+  "failed": 0,
+  "stderr_tail": "",
+  "suites": [
+    "app/tests/test_book_generation_4b217.py",
+    "app/tests/test_book_editorial_alignment_4b216.py",
+    "app/tests/test_book_generation_4b1.py"
+  ],
+  "real_provider_calls": 0,
+  "openai_http_requests": 0,
+  "anthropic_http_requests": 0,
+  "phase": "4B.2.17",
+  "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+}

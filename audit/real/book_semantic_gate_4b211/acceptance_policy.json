@@ -1,0 +1,35 @@
+{
+  "phase": "4B.2.11",
+  "decision": "BLOCK",
+  "reasons": [
+    "sc:unexpected_fields:NON_SUBSTANTIVE,QUESTIONABLE,SUPPORTED,UNSUPPORTED",
+    "sc.non_substantive:not_integer",
+    "sc.supported:not_integer",
+    "sc.questionable:not_integer",
+    "sc.unsupported:not_integer",
+    "pr[0].v:invalid"
+  ],
+  "substantive_units_supported": true,
+  "abusive_non_substantive": [],
+  "questionable": false,
+  "ambiguous_boundary": false,
+  "reservations": [],
+  "production_cache_acceptance": false,
+  "publication_authorized": false,
+  "review_does_not_accept_cache": true,
+  "production_cache_policy": false,
+  "unambiguous_states": true,
+  "secrets_included": false,
+  "preparation_ok": true,
+  "contract_ok": false,
+  "unit_kinds": [
+    "SUPPORTED",
+    "SUPPORTED",
+    "SUPPORTED",
+    "SUPPORTED",
+    "SUPPORTED"
+  ],
+  "unsupported_present": false,
+  "questionable_present": false,
+  "all_supported": true
+}

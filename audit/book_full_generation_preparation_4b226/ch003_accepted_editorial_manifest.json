@@ -1,0 +1,53 @@
+{
+  "phase": "4B.2.26",
+  "manifest_version": "accepted-editorial-manifest-4b226-1.0",
+  "chapter_id": "CH003",
+  "approval_origin": "explicit_user_approval",
+  "approval_origin_detail": "explicit_user_decision",
+  "approved_artifact_paths": {
+    "json": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.json",
+    "markdown": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.md"
+  },
+  "json_sha256": "3ddc2f1298b3db9eb8646161e794b7289f4e9004f274bc1cbc427d7befc37f19",
+  "markdown_sha256": "7f87e86927bd0c60a7b3d5d64ba5c3fa0d8c1e8119fa26c285614a9b8999aae5",
+  "model_id": "anthropic/claude-sonnet-5",
+  "prompt_id": "book-generator-faithful-restatement-1.1-candidate",
+  "prompt_sha256": "e39084dc9ed3b048bfdaa2e112b380d15957085eeb613dd74c97a32b880cec50",
+  "existing_structural_validation": "PASS",
+  "validator_version": "book-generation-validator-1.0.1",
+  "idea_coverage": {
+    "expected": 14,
+    "found": 14,
+    "missing": []
+  },
+  "src_ex_ref_unc_state": {
+    "src_invalid": [],
+    "EX005": {
+      "status": "undetermined_handle_absent_is_not_omission",
+      "traced": false,
+      "in_allowed_handles": true,
+      "observation": "EX005 handle is absent from the candidate. Handle absence is not treated as a content omission. The current formulation is preserved. It does not trigger an automatic rewrite of the accepted chapter."
+    }
+  },
+  "status": "HUMAN_EDITORIALLY_ACCEPTED",
+  "automated_semantic_certification": "not_performed",
+  "recording_date": "2026-10-04",
+  "recorded_at": "2026-10-04T15:28:34+00:00",
+  "publication_authorization": "not_granted",
+  "chapter_copied": false,
+  "chapter_modified": false,
+  "automatic_rewrite_forbidden": true,
+  "canonical_dependencies": {
+    "source_map_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+    "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+    "editorial_plan_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+    "clean_transcript_sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+  },
+  "applicable_editorial_policy": "faithful-teaching-book-editorial-policy-1.0-candidate",
+  "applicable_narrative_voice_contract": "authorial-voice-preservation-1.0-candidate",
+  "secrets_included": false,
+  "approved_version": "4b225_generated_candidate",
+  "documented_observations_do_not_trigger_rewrite": true
+}

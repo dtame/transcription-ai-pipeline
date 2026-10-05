@@ -1,0 +1,23 @@
+{
+  "phase": "4B.2.28",
+  "allowed_markdown_adjustments": [
+    "book_title_heading",
+    "editorial_plan_subtitle",
+    "technical_assembly_note",
+    "table_of_contents",
+    "chapter_heading_level_h2",
+    "section_heading_level_h3",
+    "chapter_separators"
+  ],
+  "forbidden": [
+    "rewrite_prose",
+    "add_preface",
+    "add_conclusion",
+    "add_transition",
+    "insert_idea_src_handles_in_body",
+    "invent_book_title",
+    "change_chapter_titles"
+  ],
+  "separator": "---",
+  "secrets_included": false
+}

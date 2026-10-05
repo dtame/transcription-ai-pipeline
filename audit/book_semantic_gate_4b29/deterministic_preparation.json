@@ -1,0 +1,59 @@
+{
+  "phase": "4B.2.9",
+  "offset_convention": "python3_str_unicode_code_points_half_open",
+  "reuses_4b28": true,
+  "h01": {
+    "unit_count": 5,
+    "paragraph_unchanged": true,
+    "does_not_copy_paragraph_onto_each_unit": true,
+    "units": [
+      {
+        "unit_id": "u00",
+        "paragraph_id": "h01",
+        "text": "Do not ever be afraid of death. ",
+        "start_offset": 0,
+        "end_offset": 32,
+        "boundary_type": "SENTENCE",
+        "boundary_ambiguity": false
+      },
+      {
+        "unit_id": "u01",
+        "paragraph_id": "h01",
+        "text": "There is no fixed hour appointed that fear can calculate or bargain with, ",
+        "start_offset": 32,
+        "end_offset": 106,
+        "boundary_type": "SENTENCE",
+        "boundary_ambiguity": false
+      },
+      {
+        "unit_id": "u02",
+        "paragraph_id": "h01",
+        "text": "and so fear itself is out of place. ",
+        "start_offset": 106,
+        "end_offset": 142,
+        "boundary_type": "RESULT_CONNECTIVE",
+        "boundary_ambiguity": false
+      },
+      {
+        "unit_id": "u03",
+        "paragraph_id": "h01",
+        "text": "If somebody has gone to heaven, that should not produce dread in us. ",
+        "start_offset": 142,
+        "end_offset": 211,
+        "boundary_type": "SENTENCE",
+        "boundary_ambiguity": false
+      },
+      {
+        "unit_id": "u04",
+        "paragraph_id": "h01",
+        "text": "It should be our joy.",
+        "start_offset": 211,
+        "end_offset": 232,
+        "boundary_type": "SENTENCE",
+        "boundary_ambiguity": false
+      }
+    ]
+  },
+  "does_not_judge_fidelity": true,
+  "secrets_included": false
+}

@@ -1,0 +1,48 @@
+{
+  "phase": "4B.2.4",
+  "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b23/book_semantic_gate_4b23_historical_benchmark.json",
+  "exists": true,
+  "sha256": "3888806c68eeff7dc363790d4e0ffcf063e099c3f295e684b80b3c9e8167af82",
+  "bytes": 13293,
+  "dataset_sha256": "c247aa88c46ee4e563a00b777dd24f9e49bc4475b60b55e1463f7f60be9e10a8",
+  "artifact_case_count": 11,
+  "scored_case_count": 10,
+  "positive_count": 6,
+  "negative_count": 4,
+  "positive_case_ids": [
+    "4b22_p2_supported",
+    "4b22_p4_supported",
+    "4b22_p5_supported",
+    "4b22_p6_supported",
+    "4b22_p7_supported",
+    "4b2_p2_supported"
+  ],
+  "negative_case_ids": [
+    "4b22_p3_new_causal",
+    "4b22_p8_reference_completion",
+    "4b2_p8_invented_funeral",
+    "4b2_p13_unsupported_connective"
+  ],
+  "excluded_case_ids": [
+    "4b22_p1_connective"
+  ],
+  "p9b": {
+    "status": "DETERMINISTIC_VALIDATOR_BLOCK",
+    "semantic_benchmark_case": false,
+    "raw_present": true,
+    "reason": "Empty paragraph is deterministic BookGenerationValidator territory. It is blocked before the semantic gate and is not a semantic PASS/FAIL label."
+  },
+  "human_labels_are_ground_truth": true,
+  "original_candidates_modified": false,
+  "terra_called_in_artifact": false,
+  "expected": {
+    "sha256": "3888806c68eeff7dc363790d4e0ffcf063e099c3f295e684b80b3c9e8167af82",
+    "bytes": 13293,
+    "dataset_sha256": "c247aa88c46ee4e563a00b777dd24f9e49bc4475b60b55e1463f7f60be9e10a8",
+    "artifact_cases": 11,
+    "scored_cases": 10,
+    "positives": 6,
+    "negatives": 4
+  },
+  "identity_match": true
+}

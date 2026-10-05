@@ -1,0 +1,47 @@
+{
+  "phase": "4B.2.7.6",
+  "catalog_closed": true,
+  "catalog_codes": [
+    "NEW_FACT",
+    "NEW_CAUSAL_LINK",
+    "NEW_ARGUMENT",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM",
+    "NEW_IMPLICATION",
+    "INVENTED_EXAMPLE",
+    "INVENTED_ANECDOTE",
+    "INVENTED_HYPOTHETICAL",
+    "REFERENCE_COMPLETION",
+    "REFERENCE_EXPANSION",
+    "QUOTE_EXPANSION",
+    "UNCERTAINTY_STRENGTHENED",
+    "SOURCE_MEANING_DISTORTED",
+    "EVIDENCE_MISMATCH",
+    "OTHER"
+  ],
+  "target_failure_family": "NEW_IMPLICATION_AND_UNCERTAINTY_STRENGTHENED",
+  "expected_codes_audit_only": [
+    "NEW_IMPLICATION",
+    "UNCERTAINTY_STRENGTHENED"
+  ],
+  "acceptable_codes_audit_only": [
+    "NEW_IMPLICATION",
+    "UNCERTAINTY_STRENGTHENED",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM"
+  ],
+  "codes_in_catalog": true,
+  "missing_from_catalog": [],
+  "no_code_invented_for_this_canary": true,
+  "definitions": {
+    "NEW_IMPLICATION": "An implication, meaning, or 'which means' extension not supported by the supplied evidence.",
+    "UNCERTAINTY_STRENGTHENED": "Canonical uncertainty, possibility, or partiality raised to certainty, universality, or completeness.",
+    "NEW_CONCLUSION": "A conclusion stronger than, or absent from, the evidence.",
+    "NEW_DOCTRINAL_CLAIM": "A doctrinal assertion not entailed by supplied evidence."
+  },
+  "why_primary_new_implication": "1.1.3 defines new implication as a meaning or 'which means' extension that the evidence does not support. The synthetic clause is exactly that construction.",
+  "why_uncertainty_strengthened": "every/guaranteed raises a pastoral exhortation into a universal certainty the sources do not state.",
+  "not_placed_as_case_hint_in_request": true,
+  "general_catalog_visible_in_contract": true,
+  "secrets_included": false
+}

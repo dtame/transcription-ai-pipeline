@@ -1,0 +1,47 @@
+{
+  "phase": "4B.2.14",
+  "pricing_source": "app.config.AI_PRICING_ENTRIES",
+  "pricing_effective_date": "2026-09-18",
+  "tariffs_are_not_necessarily_current": true,
+  "no_network_rate_lookup": true,
+  "terra": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "input_cost_per_1m_tokens": 2.0,
+    "output_cost_per_1m_tokens": 12.0,
+    "unmodeled_regimes": "long_context_not_modeled",
+    "status": "base_estimate"
+  },
+  "sonnet": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-5",
+    "input_cost_per_1m_tokens": 2.0,
+    "output_cost_per_1m_tokens": 10.0,
+    "status": "estimated"
+  },
+  "h01_canary_measured_once": {
+    "input_tokens": 1247,
+    "completion_tokens": 316,
+    "reasoning_tokens": 136,
+    "recorded_cost_usd": "0.0062860 USD",
+    "implied_input_plus_completion_usd": 0.006286,
+    "reasoning_separately_billed": "UNKNOWN",
+    "scope": "one paragraph / five units / one Terra call",
+    "not_a_19_chapter_estimate": true,
+    "not_a_generated_book_paragraph": true
+  },
+  "future_paragraphs": {
+    "average_paragraphs_per_section": "ASSUMPTION 2 / 4 / 7",
+    "average_units_per_paragraph": "ASSUMPTION 2 / 4 / 8; h01 had 5",
+    "average_tokens_per_paragraph": "UNKNOWN; h01 used as a small analog only",
+    "average_evidence_tokens_per_paragraph": "UNKNOWN",
+    "output_tokens_per_unit": "UNKNOWN",
+    "reasoning_tokens": "UNKNOWN",
+    "counted_as_zero": false
+  },
+  "old_4b23_chapter_call_envelope": {
+    "reused_as_primary_semantic_gate_estimate": false,
+    "reason": "That envelope assumed one call per chapter. Current validator requires one paragraph per response."
+  },
+  "secrets_included": false
+}

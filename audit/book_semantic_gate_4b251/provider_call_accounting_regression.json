@@ -1,0 +1,36 @@
+{
+  "phase": "4B.2.5.1",
+  "this_phase": {
+    "authorized_calls": 0,
+    "execution_attempts": 0,
+    "remote_invocations": 0,
+    "http_requests": 0,
+    "provider_responses": 0,
+    "openai_http": 0,
+    "anthropic_http": 0
+  },
+  "do_not_reuse_4b25_slot": true,
+  "historical_4b25_consumed_one_remote_invocation": true,
+  "contract": {
+    "do_not_redefine_historical_4b24_metrics": true,
+    "historical_4b24_attempt_2": {
+      "recorded_actual_terra_calls": 1,
+      "authorized_calls": 1,
+      "execution_attempts": 1,
+      "remote_invocations": 0,
+      "http_requests": 0,
+      "provider_responses": 0,
+      "note": "Historical ACTUAL TERRA CALLS = 1 because the one-shot lock and OneShotCallGuard were consumed. HTTP never left the machine. Future phases should count that as EXECUTION_ATTEMPT, not REMOTE_PROVIDER_INVOCATION."
+    },
+    "future_counters": {
+      "authorized_calls": "Human-authorized remote slots for the phase.",
+      "execution_attempts": "Local generate/_invoke entries after preflight PASS.",
+      "remote_invocations": "SDK create / HTTP execute crossed the provider boundary.",
+      "http_requests": "Actual HTTP requests observed.",
+      "provider_responses": "Provider HTTP responses received."
+    },
+    "preflight_before_execution_authorization": true,
+    "missing_sdk_must_not_consume_lock": true
+  },
+  "secrets_included": false
+}

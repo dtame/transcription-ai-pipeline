@@ -1,0 +1,164 @@
+{
+  "phase": "4B.2.20",
+  "matrix_version": "generation-contract-matrix-4b220-1.0",
+  "transport_version": "book-generation-transport-1.0",
+  "validator_version": "book-generation-validator-1.0.1",
+  "prompt_version": "book-generator-faithful-restatement-1.1-candidate",
+  "json_fields": {
+    "top_level_required": [
+      "sections"
+    ],
+    "top_level_properties": [
+      "sections"
+    ],
+    "section_required": [
+      "sid",
+      "paras"
+    ],
+    "section_properties": [
+      "paras",
+      "sid"
+    ],
+    "paragraph_required": [
+      "k",
+      "t"
+    ],
+    "paragraph_properties": [
+      "e",
+      "h",
+      "k",
+      "t",
+      "u"
+    ],
+    "paragraph_kind_field": "k",
+    "paragraph_text_field": "t",
+    "paragraph_handle_field": "h",
+    "paragraph_evidence_field": "e",
+    "paragraph_uncertainty_field": "u",
+    "chapter_id_assigned_locally": true,
+    "section_id_field": "sid",
+    "paragraph_id_assigned_at_assembly": true,
+    "handle_kinds": [
+      "SRC",
+      "IDEA",
+      "EX",
+      "REF",
+      "UNC"
+    ]
+  },
+  "schema_notes": {
+    "paras_e_optional_in_schema": true,
+    "paras_e_required_by_prompt_for_substantive": true,
+    "paras_e_required_by_validator_for_substantive": true,
+    "voice_has_no_json_field": true
+  },
+  "validator_contract": {
+    "version": "book-generation-validator-1.0.1",
+    "scope": [
+      "generation-unit structure",
+      "section identity/order",
+      "IDEA accountability",
+      "evidence handles",
+      "SRC validity",
+      "language",
+      "uncertainty metadata",
+      "paragraph provenance",
+      "determinism of reconstruction"
+    ],
+    "non_scope": [
+      "unsupported semantic claims",
+      "subtle contradictions",
+      "doctrinal distortion",
+      "whole-book redundancy",
+      "whole-book narrative quality"
+    ],
+    "phase_5": "Book Validator owns whole-book semantic validation",
+    "limitation": "Paragraph-level reference presence does not prove every sentence is supported.",
+    "silent_idea_omission": "FAIL",
+    "extra_idea": "FAIL",
+    "missing_section": "FAIL",
+    "extra_section": "FAIL",
+    "wrong_section_order": "FAIL",
+    "unsourced_substantive": "FAIL",
+    "empty_paragraph": "FAIL",
+    "whitespace_only_paragraph": "FAIL",
+    "empty_paragraph_never_dropped": true,
+    "connective_without_source": "ALLOWED",
+    "connective_new_claim": "SEMANTIC_NOT_DETERMINISTIC",
+    "invented_example": "SEMANTIC_NOT_DETERMINISTIC",
+    "invented_illustration": "SEMANTIC_NOT_DETERMINISTIC",
+    "invented_hypothetical": "SEMANTIC_NOT_DETERMINISTIC",
+    "deferred_or_excluded_in_manuscript": "FAIL",
+    "unknown_handle": "FAIL"
+  },
+  "idea_accountability": {
+    "version": "book-idea-accountability-1.0",
+    "assigned_must_appear": true,
+    "verbatim_not_required": true,
+    "silent_omission": "FAIL",
+    "unknown_idea": "FAIL",
+    "deferred_must_not_enter": true,
+    "excluded_must_not_enter": true,
+    "representation": "An IDEA is represented when at least one substantive paragraph in an allowed section cites its canonical IDEA handle.",
+    "limitation": "Handle presence does not prove every sentence is supported. Phase 5 Book Validator owns unsupported-claim detection."
+  },
+  "rows": [
+    {
+      "requirement": "Couverture IDEA",
+      "prompt_1_1": true,
+      "prompt_notes": "Content must appear in prose; justified IDEA handles go in paras[].e. These obligations are distinct.",
+      "json_contract_field": "paras[].e",
+      "json_required": false,
+      "validator_control": "idea_ids_from_paragraphs(evidence_handles/idea_refs); missing planned IDEAs = FAIL; unknown/unassigned IDEAs = FAIL",
+      "status": "Compatible",
+      "detects_4b217_empty_paragraph_handles": true
+    },
+    {
+      "requirement": "Provenance SRC",
+      "prompt_1_1": true,
+      "prompt_notes": "Substantive paragraphs must cite supplied evidence handles.",
+      "json_contract_field": "paras[].e",
+      "json_required": false,
+      "validator_control": "resolve_src_for_handles; substantive paragraph without SRC = FAIL; unknown handle = FAIL",
+      "status": "Compatible",
+      "detects_4b217_empty_paragraph_handles": true
+    },
+    {
+      "requirement": "Sections",
+      "prompt_1_1": true,
+      "prompt_notes": "Exact supplied section order. No add/remove/merge/split.",
+      "json_contract_field": "sections[].sid",
+      "json_required": true,
+      "validator_control": "got_ids != planned_ids → missing/extra/wrong-order = FAIL",
+      "status": "Compatible",
+      "detects_4b217_empty_paragraph_handles": false
+    },
+    {
+      "requirement": "Voix narrative",
+      "prompt_1_1": true,
+      "prompt_notes": "First person for established author testimony; second person for address; third person for other people; prudence if uncertain.",
+      "json_contract_field": null,
+      "json_required": false,
+      "validator_control": "No structural voice field. Editorial/human review only. Not a semantic-equivalence proof.",
+      "status": "Compatible_with_editorial_gap",
+      "detects_4b217_empty_paragraph_handles": false
+    },
+    {
+      "requirement": "Références",
+      "prompt_1_1": true,
+      "prompt_notes": "Keep references as the source gave them. Do not complete from memory.",
+      "json_contract_field": "paras[].e",
+      "json_required": false,
+      "validator_control": "REF handles must be known and allowed. Content correctness is not semantically certified by the structural validator.",
+      "status": "Compatible",
+      "detects_4b217_empty_paragraph_handles": false
+    }
+  ],
+  "compatible": true,
+  "blocking_incompatibilities": [],
+  "historical_4b217_problem": "11 IDEA in section metadata, zero IDEA handles in paragraph evidence.",
+  "historical_4b217_detection": "validate_chapter_candidate reports missing planned IDEAs when paras[].e contains no IDEA handles. This is a hard stop after the first real remaining-chapter call.",
+  "must_not_backfill_paras_e": true,
+  "structural_check_is_not_semantic_equivalence": true,
+  "secrets_included": false
+}

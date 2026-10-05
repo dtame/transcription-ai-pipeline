@@ -1,0 +1,53 @@
+{
+  "interface": "CoverImageProvider",
+  "implementation": "OpenAIImageProvider",
+  "provider_id": "openai",
+  "model_id": "gpt-image-2",
+  "endpoint": "https://api.openai.com/v1/images/generations",
+  "authentication": "Authorization: Bearer $OPENAI_API_KEY",
+  "key_environment_variable": "OPENAI_API_KEY",
+  "key_written_to_repository": false,
+  "production_fake_provider": false,
+  "mocks_allowed_in": "tests_only",
+  "methods": [
+    "check_availability",
+    "get_capabilities",
+    "estimate_cost",
+    "generate"
+  ],
+  "request_controls": [
+    "provider_id",
+    "model_id",
+    "prompt",
+    "quality",
+    "width",
+    "height",
+    "output_format",
+    "image_count",
+    "estimated_cost_usd"
+  ],
+  "result_controls": [
+    "observed_cost_usd",
+    "generation_status",
+    "output_path",
+    "image_sha256",
+    "provider_metadata"
+  ],
+  "generated_only_after_png_validation": true,
+  "automatic_paid_retry": false,
+  "default_authorization": {
+    "enabled": false,
+    "explicit": false,
+    "provider_id": "openai",
+    "model_name": "gpt-image-2",
+    "max_images": 0,
+    "max_budget_usd": 0,
+    "max_total_cost_usd": 0,
+    "allow_paid_calls": false,
+    "network_calls_allowed": false,
+    "dry_run": true,
+    "prior_phase_unspent_budget_usd": null,
+    "scope": "COVER_GPT_IMAGE_2_4B2342_OFFLINE_ONLY"
+  },
+  "live_http_client": false
+}

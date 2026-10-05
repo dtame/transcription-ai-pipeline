@@ -1,0 +1,62 @@
+{
+  "phase": "4B.2.7.1",
+  "architectural_principle": "high stylistic freedom, low semantic freedom",
+  "categories": {
+    "A_legitimate_reformulation": {
+      "criterion": "Different wording preserves attested meaning. Lexical substitution, personification, or doublet that restates an absence, prohibition, or unavailability.",
+      "evidence_needed": "The attested meaning in supplied IDEA/SRC/REF text.",
+      "expected_decision": "SUPPORTED",
+      "false_rejection_risk": "High if the validator requires the same verb.",
+      "false_support_risk": "Low if new relations are still blocked.",
+      "h01_bargain_fits": true
+    },
+    "B_legitimate_synthesis": {
+      "criterion": "Combine multiple supplied items without a new conclusion beyond their joint support.",
+      "evidence_needed": "Each combined element present in supplied evidence.",
+      "expected_decision": "SUPPORTED",
+      "false_rejection_risk": "Medium if items are judged in isolation.",
+      "false_support_risk": "Medium if synthesis smuggles a new inference."
+    },
+    "C_new_implication": {
+      "criterion": "A consequence that does not follow from the evidence.",
+      "evidence_needed": "The implication itself must be attested or entailed.",
+      "expected_decision": "QUESTIONABLE or UNSUPPORTED with NEW_IMPLICATION.",
+      "false_rejection_risk": "Medium on close paraphrases.",
+      "false_support_risk": "High if 'plausible' is treated as supported.",
+      "protected_case": "CONNECTIVE / P3-adjacent implications"
+    },
+    "D_new_causality": {
+      "criterion": "because/therefore/as a result without canonical basis.",
+      "evidence_needed": "The causal relation, not merely the two facts.",
+      "expected_decision": "QUESTIONABLE or UNSUPPORTED with NEW_CAUSAL_LINK.",
+      "false_rejection_risk": "Low if markers are inspected without keyword worship.",
+      "false_support_risk": "High if facts-in-isolation are accepted as cause.",
+      "protected_case": "P3"
+    },
+    "E_invented_example": {
+      "criterion": "Illustration, scene, or anecdote not in EX/SRC/IDEA.",
+      "evidence_needed": "The example itself in canonical evidence.",
+      "expected_decision": "UNSUPPORTED with INVENTED_EXAMPLE.",
+      "false_rejection_risk": "Low.",
+      "false_support_risk": "High if stylistic color is confused with examples.",
+      "protected_case": "FUNERAL"
+    },
+    "F_external_completion": {
+      "criterion": "Partial reference completed from model memory.",
+      "evidence_needed": "Only the supplied REF/SRC remainder.",
+      "expected_decision": "QUESTIONABLE or UNSUPPORTED with REFERENCE_COMPLETION.",
+      "false_rejection_risk": "Low.",
+      "false_support_risk": "High if identity of the reference licenses a remembered quote.",
+      "protected_case": "P8"
+    }
+  },
+  "must_not_relax": [
+    "E_invented_example",
+    "D_new_causality",
+    "F_external_completion",
+    "C_new_implication"
+  ],
+  "must_not_use_rule": "Accept every plausible paraphrase.",
+  "acceptable_paraphrase": "semantically grounded in supplied evidence",
+  "secrets_included": false
+}

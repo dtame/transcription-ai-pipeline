@@ -1,0 +1,80 @@
+{
+  "phase": "4B.2.7.6",
+  "canary_id": "4b276_p4_new_implication",
+  "opaque_handle": "h11",
+  "origin": "SYNTHETIC_VARIANT_OF_4B22_P4_SUPPORTED",
+  "synthetic": true,
+  "presented_as_authentic_citation": false,
+  "historical_benchmark_modified": false,
+  "source_case_id_audit_only": "4b22_p4_supported",
+  "source_opaque_handle_audit_only": "h03",
+  "source_role_audit_only": "positive",
+  "source_human_label_audit_only": "SUPPORTED",
+  "source_paragraph": "But this is not a matter of mental technique. It is not mind over matter, not a trick of positive thinking applied to a frightening subject. Death as gain must become your reality — not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending.",
+  "synthetic_paragraph": "But this is not a matter of mental technique. It is not mind over matter, not a trick of positive thinking applied to a frightening subject. Death as gain must become your reality — not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending, which means that every believer is guaranteed a fearless death.",
+  "source_chars": 293,
+  "synthetic_chars": 357,
+  "utf8_bytes": 359,
+  "source_matches_gate": true,
+  "source_matches_benchmark": true,
+  "benchmark_unmodified": true,
+  "modifications": [
+    {
+      "description": "The historical 4b22_p4_supported paragraph is kept intact except that the final period is replaced by a synthetic 'which means' implication clause.",
+      "added_suffix": ", which means that every believer is guaranteed a fearless death.",
+      "disputed_clause": "which means that every believer is guaranteed a fearless death",
+      "evidence_unchanged": true,
+      "no_fabricated_evidence": true
+    }
+  ],
+  "difference_from_h01": {
+    "text": "h01 tested a legitimate paraphrase of IDEA224, including the disputed 'bargain with' clause. This canary uses IDEA226 and does not contain that paraphrase.",
+    "evidence": "IDEA226/SRC006192/193/195 versus IDEA224/SRC006149/180/182/183/187.",
+    "error_family": "New implication and strengthening, not false rejection of paraphrase.",
+    "paragraph_structure": "Supported p4 sentences plus one appended which-means clause.",
+    "validator_task": "Accept the attested lived-reality paraphrase and refuse only the new implication."
+  },
+  "difference_from_h02": {
+    "text": "h02 used an invented because-clause about a strategy that still works wherever it is not resisted by truth. This canary has no because-clause and no devil-strategy content.",
+    "evidence": "IDEA226 cluster versus IDEA225/SRC006152-157.",
+    "error_family": "NEW_IMPLICATION/UNCERTAINTY_STRENGTHENED, not NEW_CAUSAL_LINK.",
+    "paragraph_structure": "No causal because/therefore connector on the disputed span.",
+    "validator_task": "Detect a 'which means' guarantee that the sources do not force."
+  },
+  "phenomenon_tested": "NEW_IMPLICATION_AND_UNCERTAINTY_STRENGTHENED",
+  "selection_reasons": [
+    "Existing unused negatives were either wholesale (CONNECTIVE), causally confounded (FUNERAL 'exactly why'), or too editorially overloaded (P8 sting plus other unattested clauses).",
+    "Historical positives have no problematic proposition.",
+    "A controlled synthetic built on a clearly supported p4 extract yields one identifiable unsupported addition without inventing speaker evidence.",
+    "Contract 1.1.3 explicitly defines new implication and unsupported strengthening."
+  ],
+  "independence": {
+    "text": true,
+    "evidence": true,
+    "error_family": true,
+    "paragraph_structure": true,
+    "validator_reasoning": true,
+    "chapter_theme_overlap_not_case_reuse": true
+  },
+  "clause_offsets": {
+    "found": true,
+    "start": 294,
+    "end": 356,
+    "recovered": "which means that every believer is guaranteed a fearless death",
+    "exact_match": true,
+    "interval": "half_open",
+    "python_slice": "text[294:356]",
+    "preceding": "stance of how you face your own ending, ",
+    "following": "."
+  },
+  "human_label_audit_only": {
+    "expected_class": "UNSUPPORTED",
+    "accepted_classes": [
+      "QUESTIONABLE",
+      "UNSUPPORTED"
+    ],
+    "role": "synthetic_negative",
+    "present_in_provider_request": false
+  },
+  "secrets_included": false
+}

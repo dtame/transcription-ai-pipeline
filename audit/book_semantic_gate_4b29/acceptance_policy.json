@@ -1,0 +1,36 @@
+{
+  "phase": "4B.2.9",
+  "pass": [
+    "preparation valid",
+    "response conforms to contract 2.0",
+    "all substantive units SUPPORTED",
+    "NON_SUBSTANTIVE does not mask substantive content",
+    "no blocking reservation",
+    "no evidence error",
+    "no coverage problem"
+  ],
+  "block": [
+    "at least one UNSUPPORTED unit",
+    "invalid contract",
+    "missing unit",
+    "unknown reason code",
+    "invalid evidence",
+    "coverage error",
+    "abusive NON_SUBSTANTIVE"
+  ],
+  "review": [
+    "QUESTIONABLE unit",
+    "ambiguous semantic boundary",
+    "reservation requiring human analysis",
+    "structurally valid but insufficient for automatic acceptance"
+  ],
+  "review_does_not_authorize_publication": true,
+  "review_does_not_accept_production_cache": true,
+  "states": [
+    "PASS",
+    "BLOCK",
+    "REVIEW"
+  ],
+  "unambiguous": true,
+  "secrets_included": false
+}

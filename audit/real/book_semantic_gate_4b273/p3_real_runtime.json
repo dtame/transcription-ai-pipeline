@@ -1,0 +1,131 @@
+{
+  "phase": "4B.2.7.3",
+  "expected_interpreter": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "actual_interpreter": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "interpreter_match": true,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "python_version_info": [
+    3,
+    11,
+    9
+  ],
+  "python_version_match": true,
+  "openai_sdk_version": "2.43.0",
+  "expected_openai_sdk_version": "2.43.0",
+  "openai_sdk_version_match": true,
+  "openai_sdk_constraint": "openai>=1.0.0,<3",
+  "credential_available": "YES",
+  "environment_type": ".venv",
+  "environment": {
+    "canonical_environment": ".venv",
+    "canonical_executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "current_is_canonical_venv": true,
+    "venv_present": true,
+    "pipenv": false,
+    "poetry": false,
+    "setup_py": false,
+    "setup_cfg": false,
+    "requirements_txt": true,
+    "requirements_dev_txt": true,
+    "dependency_mechanism": "requirements.txt"
+  },
+  "interpreter": {
+    "executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "version_info": [
+      3,
+      11,
+      9
+    ],
+    "prefix": "C:\\TranscriptionAI\\.venv",
+    "base_prefix": "C:\\Program Files\\Python311",
+    "in_virtualenv": true
+  },
+  "sdk": {
+    "import": "PASS",
+    "version": "2.43.0",
+    "supported": true,
+    "from_openai_import_OpenAI": "PASS"
+  },
+  "env_ignored_by_git": {
+    "path": ".env",
+    "exists": true,
+    "ignored": true,
+    "gitignore_lists_env": true,
+    "secrets_included": false,
+    "note": "API key is never printed, hashed, or persisted."
+  },
+  "secrets_included": false,
+  "live_readiness": {
+    "ready": true,
+    "primary_reason": null,
+    "reasons": [],
+    "provider": "openai",
+    "provider_registered": true,
+    "SDK_IMPORT": "PASS",
+    "sdk_version": "2.43.0",
+    "sdk_supported": "PASS",
+    "CREDENTIAL_AVAILABLE": "YES",
+    "CLIENT_CONSTRUCTION": "PASS",
+    "PROVIDER_INITIALIZATION": "PASS",
+    "MODEL_RESOLUTION": "PASS",
+    "REQUEST_CONSTRUCTION": "PASS",
+    "output_mode_supported": "PASS",
+    "ENDPOINT_SELECTED": "PASS",
+    "token_parameter": "max_completion_tokens",
+    "token_parameter_supported": "PASS",
+    "REQUEST_SERIALIZABLE": "PASS",
+    "unsupported_optional_parameters": "PASS",
+    "readiness_class": "READY_WITH_SERVER_UNVERIFIED_FIELDS",
+    "NETWORK_CALLS": 0,
+    "remote_invocations": 0,
+    "http_requests": 0,
+    "secrets_included": false,
+    "details": {
+      "engine_class": "NoRetryAccountingOpenAIEngine",
+      "sdk": {
+        "status": "PASS",
+        "module": "openai",
+        "importable": true,
+        "version": "2.43.0",
+        "symbol_present": true,
+        "supported": true,
+        "required_symbol": "OpenAI",
+        "min_major": 1,
+        "uses_official_sdk": true
+      },
+      "model": "gpt-5.6-terra",
+      "endpoint": "chat.completions",
+      "compatibility": {
+        "endpoint": "chat.completions",
+        "endpoint_selected": "PASS",
+        "token_parameter": "max_completion_tokens",
+        "token_parameter_supported": "PASS",
+        "token_parameter_confidence": "CONFIRMED",
+        "token_parameter_server_acceptance": "UNKNOWN",
+        "request_serializable": "PASS",
+        "unsupported_optional_parameters": "PASS",
+        "output_mode_server_acceptance": "UNKNOWN",
+        "unknown_server_fields": [
+          "json_object_server_acceptance",
+          "max_completion_tokens_server_acceptance",
+          "temperature_server_behavior",
+          "reasoning_or_thinking_server_behavior"
+        ],
+        "payload_keys": [
+          "max_completion_tokens",
+          "messages",
+          "model",
+          "response_format"
+        ],
+        "reasons": [],
+        "output_mode_local": "PASS"
+      },
+      "client": {
+        "client_type": "OpenAI",
+        "remote_methods_blocked": null,
+        "http_client": null
+      }
+    }
+  }
+}

@@ -1,0 +1,564 @@
+{
+  "phase": "4B.2.7.3",
+  "case_id_audit_only": "4b22_p3_new_causal",
+  "handle": "h02",
+  "human_verdict_audit_only": "QUESTIONABLE",
+  "human_accepted_classes_audit_only": [
+    "QUESTIONABLE",
+    "UNSUPPORTED"
+  ],
+  "human_verdict_not_transmitted": true,
+  "human_label_unmodified": true,
+  "disputed_causal_clause": "because it still works wherever it is not resisted by truth",
+  "clause_offsets": {
+    "start": 406,
+    "end": 465,
+    "expected_start": 406,
+    "expected_end": 465,
+    "match": true
+  },
+  "terra_global_verdict": "UNSUPPORTED",
+  "global_verdict_blocks_acceptance": true,
+  "global_questionable_is_not_semantic_pass_alone": true,
+  "disputed_causal_clause_verdict": "UNSUPPORTED",
+  "disputed_causal_clause_reason_codes": [
+    "INVENTED_CAUSAL_LINK"
+  ],
+  "disputed_causal_clause_reason_code": "INVENTED_CAUSAL_LINK",
+  "reason_code_relevant": false,
+  "clause_identified": true,
+  "clause_flagged_questionable_or_unsupported": true,
+  "clause_accepted_as_supported": false,
+  "clause_omitted": false,
+  "clause_isolated": true,
+  "discrimination": true,
+  "all_claims_questionable": false,
+  "wrong_target": false,
+  "overlapping_claims": [
+    {
+      "index": 10,
+      "class": "UNSUPPORTED",
+      "start": 406,
+      "end": 465,
+      "recovered_text": "because it still works wherever it is not resisted by truth",
+      "evidence": [],
+      "reasons": [
+        "INVENTED_CAUSAL_LINK"
+      ],
+      "unknown_reasons": [
+        "INVENTED_CAUSAL_LINK"
+      ],
+      "note": "Effectiveness and resistance by truth are not attested.",
+      "span_valid": true,
+      "overlaps_disputed_clause": true,
+      "contains_because": true,
+      "contains_clause_text": true
+    }
+  ],
+  "claims": [
+    {
+      "index": 0,
+      "class": "UNSUPPORTED",
+      "start": 0,
+      "end": 66,
+      "recovered_text": "Yet we can see fear operating in believers, and this is not normal",
+      "evidence": [],
+      "reasons": [
+        "NO_EVIDENCE"
+      ],
+      "unknown_reasons": [
+        "NO_EVIDENCE"
+      ],
+      "note": "Believers and abnormality are not attested.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 1,
+      "class": "SUPPORTED",
+      "start": 68,
+      "end": 93,
+      "recovered_text": "Fear of death is an abuse",
+      "evidence": [
+        "IDEA225",
+        "SRC006152"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 2,
+      "class": "QUESTIONABLE",
+      "start": 96,
+      "end": 124,
+      "recovered_text": "an abuse to your very person",
+      "evidence": [
+        "SRC006154"
+      ],
+      "reasons": [
+        "UNJUSTIFIED_STRENGTHENING"
+      ],
+      "unknown_reasons": [
+        "UNJUSTIFIED_STRENGTHENING"
+      ],
+      "note": "The intensifier exceeds the supplied wording.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 3,
+      "class": "UNSUPPORTED",
+      "start": 126,
+      "end": 179,
+      "recovered_text": "a diminishment of what you were made and remade to be",
+      "evidence": [],
+      "reasons": [
+        "NO_EVIDENCE"
+      ],
+      "unknown_reasons": [
+        "NO_EVIDENCE"
+      ],
+      "note": "Diminishment and remaking are not attested.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 4,
+      "class": "QUESTIONABLE",
+      "start": 181,
+      "end": 227,
+      "recovered_text": "It is worth naming where this abuse comes from",
+      "evidence": [
+        "SRC006152",
+        "SRC006155",
+        "SRC006156"
+      ],
+      "reasons": [
+        "UNSUPPORTED_IMPLICATION"
+      ],
+      "unknown_reasons": [
+        "UNSUPPORTED_IMPLICATION"
+      ],
+      "note": "The evidence says the devil used it, not that it establishes the abuse's origin.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 5,
+      "class": "QUESTIONABLE",
+      "start": 229,
+      "end": 270,
+      "recovered_text": "The devil has used it since the beginning",
+      "evidence": [
+        "SRC006155",
+        "SRC006156"
+      ],
+      "reasons": [
+        "PARTIAL_REFERENCE_EXPANSION"
+      ],
+      "unknown_reasons": [
+        "PARTIAL_REFERENCE_EXPANSION"
+      ],
+      "note": "The supplied fragment does not specify 'the beginning.'",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 6,
+      "class": "SUPPORTED",
+      "start": 272,
+      "end": 300,
+      "recovered_text": "he has not changed his style",
+      "evidence": [
+        "SRC006157"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 7,
+      "class": "SUPPORTED",
+      "start": 302,
+      "end": 323,
+      "recovered_text": "The same old strategy",
+      "evidence": [
+        "SRC006156",
+        "SRC006157"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 8,
+      "class": "UNSUPPORTED",
+      "start": 324,
+      "end": 368,
+      "recovered_text": "that first weaponized death against humanity",
+      "evidence": [],
+      "reasons": [
+        "NO_EVIDENCE"
+      ],
+      "unknown_reasons": [
+        "NO_EVIDENCE"
+      ],
+      "note": "Weaponizing death against humanity is not supplied.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 9,
+      "class": "SUPPORTED",
+      "start": 369,
+      "end": 404,
+      "recovered_text": "is still being run today, unchanged",
+      "evidence": [
+        "SRC006156",
+        "SRC006157"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 10,
+      "class": "UNSUPPORTED",
+      "start": 406,
+      "end": 465,
+      "recovered_text": "because it still works wherever it is not resisted by truth",
+      "evidence": [],
+      "reasons": [
+        "INVENTED_CAUSAL_LINK"
+      ],
+      "unknown_reasons": [
+        "INVENTED_CAUSAL_LINK"
+      ],
+      "note": "Effectiveness and resistance by truth are not attested.",
+      "span_valid": true,
+      "overlaps_disputed_clause": true,
+      "contains_because": true,
+      "contains_clause_text": true
+    }
+  ],
+  "cited_evidence": [
+    "IDEA225",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157"
+  ],
+  "invalid_evidence_references": [],
+  "notes": [
+    "Believers and abnormality are not attested.",
+    "The intensifier exceeds the supplied wording.",
+    "Diminishment and remaking are not attested.",
+    "The evidence says the devil used it, not that it establishes the abuse's origin.",
+    "The supplied fragment does not specify 'the beginning.'",
+    "Weaponizing death against humanity is not supplied.",
+    "Effectiveness and resistance by truth are not attested."
+  ],
+  "local_propositions": [
+    {
+      "kind": "other_substantive",
+      "s": 0,
+      "e": 67,
+      "text": "Yet we can see fear operating in believers, and this is not normal.",
+      "contains_causal_clause": false,
+      "contains_negation": true
+    },
+    {
+      "kind": "other_substantive",
+      "s": 68,
+      "e": 180,
+      "text": "Fear of death is an abuse — an abuse to your very person, a diminishment of what you were made and remade to be.",
+      "contains_causal_clause": false,
+      "contains_negation": false
+    },
+    {
+      "kind": "other_substantive",
+      "s": 181,
+      "e": 228,
+      "text": "It is worth naming where this abuse comes from.",
+      "contains_causal_clause": false,
+      "contains_negation": false
+    },
+    {
+      "kind": "other_substantive",
+      "s": 229,
+      "e": 301,
+      "text": "The devil has used it since the beginning; he has not changed his style.",
+      "contains_causal_clause": false,
+      "contains_negation": true
+    },
+    {
+      "kind": "pre_causal_same_sentence",
+      "s": 302,
+      "e": 406,
+      "text": "The same old strategy that first weaponized death against humanity is still being run today, unchanged, ",
+      "contains_causal_clause": false,
+      "contains_negation": false
+    },
+    {
+      "kind": "disputed_causal_clause",
+      "s": 406,
+      "e": 465,
+      "text": "because it still works wherever it is not resisted by truth",
+      "contains_causal_clause": true,
+      "contains_because": true,
+      "contains_negation": true
+    },
+    {
+      "kind": "sentence_terminator_after_clause",
+      "s": 465,
+      "e": 466,
+      "text": ".",
+      "contains_causal_clause": false,
+      "admissible_terminator": true
+    }
+  ],
+  "supported_claims_review": "PARTIAL",
+  "supported_claims": [
+    {
+      "index": 1,
+      "class": "SUPPORTED",
+      "start": 68,
+      "end": 93,
+      "recovered_text": "Fear of death is an abuse",
+      "evidence": [
+        "IDEA225",
+        "SRC006152"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 6,
+      "class": "SUPPORTED",
+      "start": 272,
+      "end": 300,
+      "recovered_text": "he has not changed his style",
+      "evidence": [
+        "SRC006157"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 7,
+      "class": "SUPPORTED",
+      "start": 302,
+      "end": 323,
+      "recovered_text": "The same old strategy",
+      "evidence": [
+        "SRC006156",
+        "SRC006157"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 9,
+      "class": "SUPPORTED",
+      "start": 369,
+      "end": 404,
+      "recovered_text": "is still being run today, unchanged",
+      "evidence": [
+        "SRC006156",
+        "SRC006157"
+      ],
+      "reasons": [],
+      "unknown_reasons": [],
+      "note": "",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    }
+  ],
+  "other_flagged_claims": [
+    {
+      "index": 0,
+      "class": "UNSUPPORTED",
+      "start": 0,
+      "end": 66,
+      "recovered_text": "Yet we can see fear operating in believers, and this is not normal",
+      "evidence": [],
+      "reasons": [
+        "NO_EVIDENCE"
+      ],
+      "unknown_reasons": [
+        "NO_EVIDENCE"
+      ],
+      "note": "Believers and abnormality are not attested.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 2,
+      "class": "QUESTIONABLE",
+      "start": 96,
+      "end": 124,
+      "recovered_text": "an abuse to your very person",
+      "evidence": [
+        "SRC006154"
+      ],
+      "reasons": [
+        "UNJUSTIFIED_STRENGTHENING"
+      ],
+      "unknown_reasons": [
+        "UNJUSTIFIED_STRENGTHENING"
+      ],
+      "note": "The intensifier exceeds the supplied wording.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 3,
+      "class": "UNSUPPORTED",
+      "start": 126,
+      "end": 179,
+      "recovered_text": "a diminishment of what you were made and remade to be",
+      "evidence": [],
+      "reasons": [
+        "NO_EVIDENCE"
+      ],
+      "unknown_reasons": [
+        "NO_EVIDENCE"
+      ],
+      "note": "Diminishment and remaking are not attested.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 4,
+      "class": "QUESTIONABLE",
+      "start": 181,
+      "end": 227,
+      "recovered_text": "It is worth naming where this abuse comes from",
+      "evidence": [
+        "SRC006152",
+        "SRC006155",
+        "SRC006156"
+      ],
+      "reasons": [
+        "UNSUPPORTED_IMPLICATION"
+      ],
+      "unknown_reasons": [
+        "UNSUPPORTED_IMPLICATION"
+      ],
+      "note": "The evidence says the devil used it, not that it establishes the abuse's origin.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 5,
+      "class": "QUESTIONABLE",
+      "start": 229,
+      "end": 270,
+      "recovered_text": "The devil has used it since the beginning",
+      "evidence": [
+        "SRC006155",
+        "SRC006156"
+      ],
+      "reasons": [
+        "PARTIAL_REFERENCE_EXPANSION"
+      ],
+      "unknown_reasons": [
+        "PARTIAL_REFERENCE_EXPANSION"
+      ],
+      "note": "The supplied fragment does not specify 'the beginning.'",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    },
+    {
+      "index": 8,
+      "class": "UNSUPPORTED",
+      "start": 324,
+      "end": 368,
+      "recovered_text": "that first weaponized death against humanity",
+      "evidence": [],
+      "reasons": [
+        "NO_EVIDENCE"
+      ],
+      "unknown_reasons": [
+        "NO_EVIDENCE"
+      ],
+      "note": "Weaponizing death against humanity is not supplied.",
+      "span_valid": true,
+      "overlaps_disputed_clause": false,
+      "contains_because": false,
+      "contains_clause_text": false
+    }
+  ],
+  "unjustified_other_rejections": [],
+  "coverage_ok": false,
+  "spans_ok": true,
+  "contract_status": "FAIL",
+  "semantic_core_pass": false,
+  "technical_ok": false,
+  "semantic_fail_reasons": [],
+  "semantic_partial_reasons": [
+    "causal_reason_code_not_primary",
+    "contract_invalid_independent_of_semantics",
+    "coverage_incomplete"
+  ],
+  "semantic_status": "PARTIAL",
+  "review_status": "PARTIAL",
+  "secrets_included": false
+}

@@ -1,0 +1,46 @@
+{
+  "phase": "4B.2.13",
+  "module": "app.book_generation_integration_4b213",
+  "connected": false,
+  "proposed_strategy_from_4b212": "C_HYBRID_SUPERVISED_CANDIDATE_FOR_HUMAN_REVIEW",
+  "activated": false,
+  "steps": [
+    "Receive a generated chapter (FakeGeneratorTransport).",
+    "Validate structure (structure.validate_chapter_structure).",
+    "Prepare paragraphs (iter_paragraphs).",
+    "Build deterministic units (prepare_paragraph_units from 4B.2.9 / 4B.2.8).",
+    "Associate evidence (evidence.validate_paragraph_evidence; missing => BLOCK).",
+    "Build Semantic Gate 2.0.2 requests (request.build_semantic_request).",
+    "Obtain injected FakeSemanticTransport responses.",
+    "Validate with validate_response_202.",
+    "Compute paragraph PASS/BLOCK/REVIEW (apply_acceptance_policy_202).",
+    "Aggregate chapter decision (apply_chapter_policy).",
+    "Store in IsolatedChapterCache; PASS only may be a future-acceptance candidate.",
+    "Expose Phase 5 interface payload (not executed)."
+  ],
+  "real_functions_reused": {
+    "prepare_paragraph_units": "app.book_semantic_gate_4b29.preparation.prepare_paragraph_units",
+    "validate_prepared_coverage": "app.book_semantic_gate_4b29.coverage.validate_prepared_coverage",
+    "validate_response_202": "app.book_semantic_gate_4b212.validator.validate_response_202",
+    "apply_acceptance_policy_202": "app.book_semantic_gate_4b212.policy.apply_acceptance_policy_202",
+    "materialize_chapter": "app.book_generation.pipeline.materialize_chapter (inspected, not invoked for real generation)",
+    "ChapterCache": "app.book_generation.cache.ChapterCache (not written)"
+  },
+  "isolated_functions": {
+    "orchestrate_chapter": "app.book_generation_integration_4b213.orchestrator.orchestrate_chapter",
+    "FakeGeneratorTransport": "app.book_generation_integration_4b213.fakeai.FakeGeneratorTransport",
+    "FakeSemanticTransport": "app.book_generation_integration_4b213.fakeai.FakeSemanticTransport",
+    "IsolatedChapterCache": "app.book_generation_integration_4b213.cache.IsolatedChapterCache"
+  },
+  "versions": {
+    "integration_contract": "book-generator-semantic-gate-integration-4b213-candidate",
+    "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+    "semantic_transport": "book-semantic-validation-transport-2.0-candidate",
+    "preparation": "book-semantic-preparation-4b28-conservative-via-4b29",
+    "validator": "app.book_semantic_gate_4b212.validator.validate_response_202",
+    "phase5_interface": "book-validator-phase5-interface-4b213-candidate"
+  },
+  "generator_and_validator_not_mixed": true,
+  "production_pipeline_modified": false,
+  "secrets_included": false
+}

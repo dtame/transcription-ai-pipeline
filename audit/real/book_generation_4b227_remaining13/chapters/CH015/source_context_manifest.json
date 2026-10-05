@@ -1,0 +1,775 @@
+{
+  "phase": "4B.2.27",
+  "chapter_id": "CH015",
+  "working_title": "Grace Barely Touched",
+  "language": "en",
+  "expected_sources": {
+    "idea_ids": [
+      "IDEA231",
+      "IDEA232",
+      "IDEA233",
+      "IDEA234",
+      "IDEA235",
+      "IDEA236",
+      "IDEA227",
+      "IDEA228",
+      "IDEA229",
+      "IDEA230",
+      "IDEA243",
+      "IDEA244",
+      "IDEA246",
+      "IDEA247",
+      "IDEA248",
+      "IDEA249"
+    ],
+    "example_ids": [
+      "EX037",
+      "EX039",
+      "EX041",
+      "EX042"
+    ],
+    "reference_ids": [
+      "REF045",
+      "REF046",
+      "REF049"
+    ],
+    "uncertainty_ids": [
+      "UNC030"
+    ],
+    "src_ids": [
+      "SRC006309",
+      "SRC006310",
+      "SRC006311",
+      "SRC006385",
+      "SRC006386",
+      "SRC006312",
+      "SRC006315",
+      "SRC006325",
+      "SRC006326",
+      "SRC006328",
+      "SRC006329",
+      "SRC006331",
+      "SRC006332",
+      "SRC006339",
+      "SRC006344",
+      "SRC006351",
+      "SRC006355",
+      "SRC006369",
+      "SRC006373",
+      "SRC006377",
+      "SRC006379",
+      "SRC006381",
+      "SRC006383",
+      "SRC006236",
+      "SRC006237",
+      "SRC006238",
+      "SRC006239",
+      "SRC006240",
+      "SRC006241",
+      "SRC006260",
+      "SRC006282",
+      "SRC006285",
+      "SRC006286",
+      "SRC006288",
+      "SRC006290",
+      "SRC006291",
+      "SRC006292",
+      "SRC006701",
+      "SRC006706",
+      "SRC006710",
+      "SRC006715",
+      "SRC006723",
+      "SRC006826",
+      "SRC006834",
+      "SRC006835",
+      "SRC006917",
+      "SRC006920",
+      "SRC006931",
+      "SRC006936",
+      "SRC006961",
+      "SRC006971",
+      "SRC006990",
+      "SRC006944",
+      "SRC006952",
+      "SRC006957",
+      "SRC006964",
+      "SRC006970",
+      "SRC006988",
+      "SRC007007",
+      "SRC007009",
+      "SRC007018",
+      "SRC007020",
+      "SRC007029",
+      "SRC007036",
+      "SRC007069",
+      "SRC007076",
+      "SRC007077",
+      "SRC006271",
+      "SRC006275",
+      "SRC006744",
+      "SRC006763",
+      "SRC006799",
+      "SRC006804",
+      "SRC006933",
+      "SRC007034",
+      "SRC006324",
+      "SRC006356",
+      "SRC006775",
+      "SRC006782"
+    ],
+    "section_ids": [
+      "SEC059",
+      "SEC060",
+      "SEC061",
+      "SEC062"
+    ]
+  },
+  "resolved_sources": {
+    "hydrated_src_ids": [
+      "SRC006236",
+      "SRC006237",
+      "SRC006238",
+      "SRC006239",
+      "SRC006240",
+      "SRC006241",
+      "SRC006260",
+      "SRC006271",
+      "SRC006275",
+      "SRC006282",
+      "SRC006285",
+      "SRC006286",
+      "SRC006288",
+      "SRC006290",
+      "SRC006291",
+      "SRC006292",
+      "SRC006309",
+      "SRC006310",
+      "SRC006311",
+      "SRC006312",
+      "SRC006315",
+      "SRC006324",
+      "SRC006325",
+      "SRC006326",
+      "SRC006328",
+      "SRC006329",
+      "SRC006331",
+      "SRC006332",
+      "SRC006339",
+      "SRC006344",
+      "SRC006351",
+      "SRC006355",
+      "SRC006356",
+      "SRC006369",
+      "SRC006373",
+      "SRC006377",
+      "SRC006379",
+      "SRC006381",
+      "SRC006383",
+      "SRC006385",
+      "SRC006386",
+      "SRC006701",
+      "SRC006706",
+      "SRC006710",
+      "SRC006715",
+      "SRC006723",
+      "SRC006744",
+      "SRC006763",
+      "SRC006775",
+      "SRC006782",
+      "SRC006799",
+      "SRC006804",
+      "SRC006826",
+      "SRC006834",
+      "SRC006835",
+      "SRC006917",
+      "SRC006920",
+      "SRC006931",
+      "SRC006933",
+      "SRC006936",
+      "SRC006944",
+      "SRC006952",
+      "SRC006957",
+      "SRC006961",
+      "SRC006964",
+      "SRC006970",
+      "SRC006971",
+      "SRC006988",
+      "SRC006990",
+      "SRC007007",
+      "SRC007009",
+      "SRC007018",
+      "SRC007020",
+      "SRC007029",
+      "SRC007034",
+      "SRC007036",
+      "SRC007069",
+      "SRC007076",
+      "SRC007077"
+    ],
+    "hydrated_count": 79,
+    "hydrated_details": [
+      {
+        "id": "SRC006236",
+        "chars": 161,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006237",
+        "chars": 137,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006238",
+        "chars": 74,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006239",
+        "chars": 108,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006240",
+        "chars": 112,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006241",
+        "chars": 91,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006260",
+        "chars": 91,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006271",
+        "chars": 50,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006275",
+        "chars": 46,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006282",
+        "chars": 113,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006285",
+        "chars": 47,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006286",
+        "chars": 71,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006288",
+        "chars": 78,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006290",
+        "chars": 81,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006291",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006292",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006309",
+        "chars": 144,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006310",
+        "chars": 80,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006311",
+        "chars": 81,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006312",
+        "chars": 106,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006315",
+        "chars": 101,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006324",
+        "chars": 45,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006325",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006326",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006328",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006329",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006331",
+        "chars": 47,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006332",
+        "chars": 47,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006339",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006344",
+        "chars": 43,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006351",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006355",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006356",
+        "chars": 58,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006369",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006373",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006377",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006379",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006381",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006383",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006385",
+        "chars": 51,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006386",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006701",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006706",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006710",
+        "chars": 11,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006715",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006723",
+        "chars": 41,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006744",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006763",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006775",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006782",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006799",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006804",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006826",
+        "chars": 3,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006834",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006835",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006917",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006920",
+        "chars": 17,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006931",
+        "chars": 7,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006933",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006936",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006944",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006952",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006957",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006961",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006964",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006970",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006971",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006988",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006990",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007007",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007009",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007018",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007020",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007029",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007034",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007036",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007069",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007076",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007077",
+        "chars": 60,
+        "kind": "SRC"
+      }
+    ]
+  },
+  "missing_sources": [],
+  "context_size": {
+    "chars": 18346,
+    "utf8_bytes": 18429,
+    "section_count": 4,
+    "idea_count": 16,
+    "example_count": 4,
+    "reference_count": 3,
+    "uncertainty_count": 1,
+    "src_ref_count": 79,
+    "hydrated_segment_count": 79,
+    "idea_summary_chars": 1651,
+    "hydrated_src_chars": 3376,
+    "sha256": "f5d446ee1a0ab34b7dfdb7fc445fbea5e9af9c306032d0fb97fde67aabe21b8b"
+  },
+  "potentially_truncated": [],
+  "coverage_risks": [
+    "Targeted hydration can omit neighboring spoken detail that the plan did not attach.",
+    "A resolved SRC is not proof that every idea in that SRC is restated."
+  ],
+  "whole_transcript_injected": false,
+  "whole_transcript_words": 38313,
+  "hydrated_src_words": 634,
+  "raw_transcript_used_as_silent_fallback": false,
+  "sources_dropped_to_reduce_cost": false,
+  "blocked_if_mandatory_source_missing": true,
+  "generation_blocked": false,
+  "planned_ideas": [
+    "IDEA231",
+    "IDEA232",
+    "IDEA233",
+    "IDEA234",
+    "IDEA235",
+    "IDEA236",
+    "IDEA227",
+    "IDEA228",
+    "IDEA229",
+    "IDEA230",
+    "IDEA243",
+    "IDEA244",
+    "IDEA246",
+    "IDEA247",
+    "IDEA248",
+    "IDEA249"
+  ],
+  "allowed_handles": [
+    "IDEA231",
+    "IDEA232",
+    "IDEA233",
+    "IDEA234",
+    "IDEA235",
+    "IDEA236",
+    "IDEA227",
+    "IDEA228",
+    "IDEA229",
+    "IDEA230",
+    "IDEA243",
+    "IDEA244",
+    "IDEA246",
+    "IDEA247",
+    "IDEA248",
+    "IDEA249",
+    "EX037",
+    "EX039",
+    "EX041",
+    "EX042",
+    "REF045",
+    "REF046",
+    "REF049",
+    "UNC030",
+    "SRC006309",
+    "SRC006310",
+    "SRC006311",
+    "SRC006385",
+    "SRC006386",
+    "SRC006312",
+    "SRC006315",
+    "SRC006325",
+    "SRC006326",
+    "SRC006328",
+    "SRC006329",
+    "SRC006331",
+    "SRC006332",
+    "SRC006339",
+    "SRC006344",
+    "SRC006351",
+    "SRC006355",
+    "SRC006369",
+    "SRC006373",
+    "SRC006377",
+    "SRC006379",
+    "SRC006381",
+    "SRC006383",
+    "SRC006236",
+    "SRC006237",
+    "SRC006238",
+    "SRC006239",
+    "SRC006240",
+    "SRC006241",
+    "SRC006260",
+    "SRC006282",
+    "SRC006285",
+    "SRC006286",
+    "SRC006288",
+    "SRC006290",
+    "SRC006291",
+    "SRC006292",
+    "SRC006701",
+    "SRC006706",
+    "SRC006710",
+    "SRC006715",
+    "SRC006723",
+    "SRC006826",
+    "SRC006834",
+    "SRC006835",
+    "SRC006917",
+    "SRC006920",
+    "SRC006931",
+    "SRC006936",
+    "SRC006961",
+    "SRC006971",
+    "SRC006990",
+    "SRC006944",
+    "SRC006952",
+    "SRC006957",
+    "SRC006964",
+    "SRC006970",
+    "SRC006988",
+    "SRC007007",
+    "SRC007009",
+    "SRC007018",
+    "SRC007020",
+    "SRC007029",
+    "SRC007036",
+    "SRC007069",
+    "SRC007076",
+    "SRC007077",
+    "SRC006271",
+    "SRC006275",
+    "SRC006744",
+    "SRC006763",
+    "SRC006799",
+    "SRC006804",
+    "SRC006933",
+    "SRC007034",
+    "SRC006324",
+    "SRC006356",
+    "SRC006775",
+    "SRC006782"
+  ],
+  "blocked_handles": [],
+  "ready": true,
+  "secrets_included": false,
+  "expected_title": "Grace Barely Touched",
+  "expected_section_count": 4,
+  "expected_idea_count": 16,
+  "expected_example_count": 4,
+  "expected_reference_count": 3,
+  "expected_uncertainty_count": 1,
+  "expected_hydrated_src_count": 79,
+  "context_hash": "f5d446ee1a0ab34b7dfdb7fc445fbea5e9af9c306032d0fb97fde67aabe21b8b",
+  "other_chapters_excluded": true,
+  "accepted_chapters_excluded": true,
+  "external_sources_added": false,
+  "internet_lookup": false,
+  "bible_completed_from_memory": false,
+  "context_truncated": false
+}

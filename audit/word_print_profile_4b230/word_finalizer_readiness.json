@@ -1,0 +1,61 @@
+{
+  "component": "Word Finalizer",
+  "exists_in_repository": false,
+  "status": "PARTIAL",
+  "executed": false,
+  "prepared_contract": true,
+  "requires_microsoft_word_or_equivalent": true,
+  "python_docx_can": [
+    "write_section_geometry",
+    "write_styles",
+    "write_toc_field",
+    "write_styleref_field",
+    "write_page_field",
+    "write_odd_page_section_breaks",
+    "write_mirror_margins_and_gutter"
+  ],
+  "python_docx_cannot": [
+    "compute_final_page_numbers",
+    "refresh_toc_entries",
+    "materialize_blank_pages_for_odd_starts",
+    "stabilize_pagination_after_reflow",
+    "export_print_accurate_pdf"
+  ],
+  "planned_operations": [
+    {
+      "id": "open_docx",
+      "description": "Open the generated DOCX in Microsoft Word.",
+      "requires_real_renderer": true
+    },
+    {
+      "id": "update_fields",
+      "description": "Update PAGE, STYLEREF, and other fields.",
+      "requires_real_renderer": true
+    },
+    {
+      "id": "update_toc",
+      "description": "Refresh the TOC field after pagination settles.",
+      "requires_real_renderer": true
+    },
+    {
+      "id": "stabilize_pagination",
+      "description": "Repaginate until page numbers stop changing.",
+      "requires_real_renderer": true
+    },
+    {
+      "id": "verify_sections",
+      "description": "Confirm 6x9 geometry, mirror margins, and chapter starts.",
+      "requires_real_renderer": true
+    },
+    {
+      "id": "export_pdf",
+      "description": "Export a print PDF from the refreshed DOCX.",
+      "requires_real_renderer": true,
+      "authorized_in_this_phase": false
+    }
+  ],
+  "windows_automation_reserved": "win32com / Word COM is reserved for Phase 4B.2.31+",
+  "pagination_validated": false,
+  "pdf_export_authorized": false,
+  "notes": "This phase only prepares the contract. python-docx writes fields but cannot refresh them. Page numbers shown only after a real Word pass must not be treated as validated here."
+}

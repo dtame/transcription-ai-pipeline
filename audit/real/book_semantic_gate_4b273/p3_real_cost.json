@@ -1,0 +1,122 @@
+{
+  "phase": "4B.2.7.3",
+  "estimate": {
+    "phase": "4B.2.7.2",
+    "pricing": {
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "verified": true,
+      "effective_date": "2026-09-18",
+      "source": "OpenAI official pricing/model documentation",
+      "input_cost_per_1m_tokens": 2.0,
+      "output_cost_per_1m_tokens": 12.0,
+      "status": "base_estimate",
+      "unmodeled_regimes": "long_context_not_modeled",
+      "notes": "Base standard pricing. Long-context pricing rules may differ and are not modeled by Phase 2B.",
+      "counted_as_zero": false
+    },
+    "pricing_effective_date": "2026-09-18",
+    "input_tokens_estimate": 1818,
+    "estimated": true,
+    "short_json": {
+      "input_tokens": 1818,
+      "output_tokens": 80,
+      "reasoning_tokens": "UNKNOWN",
+      "input_cost_usd": 0.003636,
+      "output_cost_usd": 0.00096,
+      "total_cost_usd": 0.004596,
+      "status": "base_estimate",
+      "unknown_or_incomplete": true,
+      "counted_as_zero": false,
+      "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+    },
+    "detailed_json": {
+      "input_tokens": 1818,
+      "output_tokens": 500,
+      "reasoning_tokens": "UNKNOWN",
+      "input_cost_usd": 0.003636,
+      "output_cost_usd": 0.006,
+      "total_cost_usd": 0.009636,
+      "status": "base_estimate",
+      "unknown_or_incomplete": true,
+      "counted_as_zero": false,
+      "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+    },
+    "if_8192_exhausted": {
+      "input_tokens": 1818,
+      "output_tokens": 8192,
+      "reasoning_tokens": "UNKNOWN",
+      "input_cost_usd": 0.003636,
+      "output_cost_usd": 0.098304,
+      "total_cost_usd": 0.10194,
+      "status": "base_estimate",
+      "unknown_or_incomplete": true,
+      "counted_as_zero": false,
+      "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+    },
+    "observed_h01_4b27": {
+      "input_tokens": 1654,
+      "completion_tokens": 1292,
+      "reasoning_tokens": 985,
+      "total_cost_usd": 0.018812
+    },
+    "reasoning_token_uncertainty": {
+      "reasoning_tokens": "UNKNOWN",
+      "visible_output_may_be_less_than_completion": true,
+      "cost_not_linear_with_max_completion_tokens": true,
+      "unknown_is_not_zero": true,
+      "reasoning_tokens_can_change_actual_cost": true
+    },
+    "not_a_guarantee": true,
+    "no_provider_cost_in_this_phase": true,
+    "secrets_included": false
+  },
+  "actual": {
+    "status": "base_estimate",
+    "currency": "USD",
+    "input_cost": 0.003384,
+    "output_cost": 0.062652,
+    "total_cost": 0.066036,
+    "compute_cost_tracked": true,
+    "pricing_source": "OpenAI official pricing/model documentation",
+    "effective_date": "2026-09-18",
+    "verified": true,
+    "notes": "Actual 4B.2.7.3 Terra P3 negative canary cost. Unknown actual cost is not reported as zero. Not a completed production chapter validation.",
+    "unmodeled_regimes": "long_context_not_modeled",
+    "display": "0.0660360 USD",
+    "stage": "book_semantic_validation_canary_4b24",
+    "production_chapter_validation": false,
+    "call_record": {
+      "call_id": "CALL000001",
+      "stage": "book_semantic_validation_canary_4b273",
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "status": "completed",
+      "input_tokens": 1692,
+      "output_tokens": 5221,
+      "total_tokens": 6913,
+      "usage_source": "provider",
+      "unit": "tokens",
+      "unit_count": null,
+      "latency_ms": 57796,
+      "finish_reason": "stop",
+      "request_id": "chatcmpl-EUCihGV3ieTmTgW7x2tUtbWx7nH0a",
+      "error_type": null,
+      "recorded_at": "2026-10-01T11:11:36",
+      "cost": {
+        "status": "base_estimate",
+        "currency": "USD",
+        "input_cost": 0.003384,
+        "output_cost": 0.062652,
+        "total_cost": 0.066036,
+        "compute_cost_tracked": true,
+        "pricing_source": "OpenAI official pricing/model documentation",
+        "effective_date": "2026-09-18",
+        "verified": true,
+        "notes": "Base standard pricing. Long-context pricing rules may differ and are not modeled by Phase 2B.",
+        "unmodeled_regimes": "long_context_not_modeled"
+      }
+    }
+  },
+  "unknown_must_not_be_reported_as_zero": true
+}

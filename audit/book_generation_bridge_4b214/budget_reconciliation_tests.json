@@ -1,0 +1,588 @@
+{
+  "phase": "4B.2.14",
+  "ok": true,
+  "cases": {
+    "full_known": {
+      "reconciled": {
+        "ok": true,
+        "reservation_id": "f0bd1606-bcf7-435c-b67e-7f363b65f6a7",
+        "operation_id": "op-full_known",
+        "state": "committed",
+        "outcome": "full_known",
+        "observed_usd": 0.006286,
+        "unknown_held_usd": null,
+        "double_debit": false,
+        "not_treated_as_free": false,
+        "counted_as_zero": false,
+        "not_an_invoice": true
+      },
+      "replay": {
+        "ok": true,
+        "idempotent": true,
+        "reservation_id": "f0bd1606-bcf7-435c-b67e-7f363b65f6a7",
+        "state": "committed",
+        "double_debit": false,
+        "counted_as_zero": false
+      },
+      "snapshot": {
+        "phase": "4B.2.14",
+        "version": "book-execution-budget-4b214-candidate",
+        "ledgers": {
+          "book_generator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "semantic_gate": {
+            "ceiling_usd": 0.05,
+            "estimated_usd": null,
+            "observed_usd": 0.006286,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.006286,
+            "unknown_held_usd": 0.0,
+            "available_usd": 0.043714,
+            "unknown_not_treated_as_zero": true
+          },
+          "book_validator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "global": {
+            "ceiling_usd": 0.08,
+            "estimated_usd": null,
+            "observed_usd": 0.006286,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.006286,
+            "unknown_held_usd": 0.0,
+            "available_usd": 0.073714,
+            "unknown_not_treated_as_zero": true
+          }
+        },
+        "unknown_never_becomes_zero": true,
+        "control_is_before_call": true,
+        "secrets_included": false
+      }
+    },
+    "partial_known": {
+      "reconciled": {
+        "ok": true,
+        "reservation_id": "8b5f65c5-ce5a-4337-82a1-e98b4b7f27f8",
+        "operation_id": "op-partial_known",
+        "state": "UNKNOWN",
+        "outcome": "partial_known",
+        "observed_usd": null,
+        "unknown_held_usd": 0.015118,
+        "double_debit": false,
+        "not_treated_as_free": false,
+        "counted_as_zero": false,
+        "not_an_invoice": true
+      },
+      "replay": {
+        "ok": true,
+        "idempotent": true,
+        "reservation_id": "8b5f65c5-ce5a-4337-82a1-e98b4b7f27f8",
+        "state": "UNKNOWN",
+        "double_debit": false,
+        "counted_as_zero": false
+      },
+      "snapshot": {
+        "phase": "4B.2.14",
+        "version": "book-execution-budget-4b214-candidate",
+        "ledgers": {
+          "book_generator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "semantic_gate": {
+            "ceiling_usd": 0.05,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.034883,
+            "unknown_not_treated_as_zero": true
+          },
+          "book_validator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "global": {
+            "ceiling_usd": 0.08,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.064883,
+            "unknown_not_treated_as_zero": true
+          }
+        },
+        "unknown_never_becomes_zero": true,
+        "control_is_before_call": true,
+        "secrets_included": false
+      }
+    },
+    "usage_absent": {
+      "reconciled": {
+        "ok": true,
+        "reservation_id": "ea5629aa-46b7-4ee7-b133-693d6474e190",
+        "operation_id": "op-usage_absent",
+        "state": "UNKNOWN",
+        "outcome": "usage_absent",
+        "observed_usd": null,
+        "unknown_held_usd": 0.015118,
+        "double_debit": false,
+        "not_treated_as_free": true,
+        "counted_as_zero": false,
+        "not_an_invoice": true
+      },
+      "replay": {
+        "ok": true,
+        "idempotent": true,
+        "reservation_id": "ea5629aa-46b7-4ee7-b133-693d6474e190",
+        "state": "UNKNOWN",
+        "double_debit": false,
+        "counted_as_zero": false
+      },
+      "snapshot": {
+        "phase": "4B.2.14",
+        "version": "book-execution-budget-4b214-candidate",
+        "ledgers": {
+          "book_generator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "semantic_gate": {
+            "ceiling_usd": 0.05,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.034883,
+            "unknown_not_treated_as_zero": true
+          },
+          "book_validator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "global": {
+            "ceiling_usd": 0.08,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.064883,
+            "unknown_not_treated_as_zero": true
+          }
+        },
+        "unknown_never_becomes_zero": true,
+        "control_is_before_call": true,
+        "secrets_included": false
+      }
+    },
+    "empty_response": {
+      "reconciled": {
+        "ok": true,
+        "reservation_id": "f1b31db3-f5c9-4ad0-ac87-86dd7a93c2f0",
+        "operation_id": "op-empty_response",
+        "state": "committed",
+        "outcome": "empty_response",
+        "observed_usd": 0.002494,
+        "unknown_held_usd": null,
+        "double_debit": false,
+        "not_treated_as_free": false,
+        "counted_as_zero": false,
+        "not_an_invoice": true
+      },
+      "replay": {
+        "ok": true,
+        "idempotent": true,
+        "reservation_id": "f1b31db3-f5c9-4ad0-ac87-86dd7a93c2f0",
+        "state": "committed",
+        "double_debit": false,
+        "counted_as_zero": false
+      },
+      "snapshot": {
+        "phase": "4B.2.14",
+        "version": "book-execution-budget-4b214-candidate",
+        "ledgers": {
+          "book_generator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "semantic_gate": {
+            "ceiling_usd": 0.05,
+            "estimated_usd": null,
+            "observed_usd": 0.002494,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.002494,
+            "unknown_held_usd": 0.0,
+            "available_usd": 0.047506,
+            "unknown_not_treated_as_zero": true
+          },
+          "book_validator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "global": {
+            "ceiling_usd": 0.08,
+            "estimated_usd": null,
+            "observed_usd": 0.002494,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.002494,
+            "unknown_held_usd": 0.0,
+            "available_usd": 0.077506,
+            "unknown_not_treated_as_zero": true
+          }
+        },
+        "unknown_never_becomes_zero": true,
+        "control_is_before_call": true,
+        "secrets_included": false
+      }
+    },
+    "truncated": {
+      "reconciled": {
+        "ok": true,
+        "reservation_id": "0eff3870-f3cd-48b4-bfcb-57e02a15b6b8",
+        "operation_id": "op-truncated",
+        "state": "UNKNOWN",
+        "outcome": "truncated",
+        "observed_usd": null,
+        "unknown_held_usd": 0.015118,
+        "double_debit": false,
+        "not_treated_as_free": true,
+        "counted_as_zero": false,
+        "not_an_invoice": true
+      },
+      "replay": {
+        "ok": true,
+        "idempotent": true,
+        "reservation_id": "0eff3870-f3cd-48b4-bfcb-57e02a15b6b8",
+        "state": "UNKNOWN",
+        "double_debit": false,
+        "counted_as_zero": false
+      },
+      "snapshot": {
+        "phase": "4B.2.14",
+        "version": "book-execution-budget-4b214-candidate",
+        "ledgers": {
+          "book_generator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "semantic_gate": {
+            "ceiling_usd": 0.05,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.034883,
+            "unknown_not_treated_as_zero": true
+          },
+          "book_validator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "global": {
+            "ceiling_usd": 0.08,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.064883,
+            "unknown_not_treated_as_zero": true
+          }
+        },
+        "unknown_never_becomes_zero": true,
+        "control_is_before_call": true,
+        "secrets_included": false
+      }
+    },
+    "provider_error": {
+      "reconciled": {
+        "ok": true,
+        "reservation_id": "899c0805-4fd0-4229-ae05-dbc0d867322c",
+        "operation_id": "op-provider_error",
+        "state": "UNKNOWN",
+        "outcome": "provider_error",
+        "observed_usd": null,
+        "unknown_held_usd": 0.015118,
+        "double_debit": false,
+        "not_treated_as_free": true,
+        "counted_as_zero": false,
+        "not_an_invoice": true
+      },
+      "replay": {
+        "ok": true,
+        "idempotent": true,
+        "reservation_id": "899c0805-4fd0-4229-ae05-dbc0d867322c",
+        "state": "UNKNOWN",
+        "double_debit": false,
+        "counted_as_zero": false
+      },
+      "snapshot": {
+        "phase": "4B.2.14",
+        "version": "book-execution-budget-4b214-candidate",
+        "ledgers": {
+          "book_generator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "semantic_gate": {
+            "ceiling_usd": 0.05,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.034883,
+            "unknown_not_treated_as_zero": true
+          },
+          "book_validator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "global": {
+            "ceiling_usd": 0.08,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.064883,
+            "unknown_not_treated_as_zero": true
+          }
+        },
+        "unknown_never_becomes_zero": true,
+        "control_is_before_call": true,
+        "secrets_included": false
+      }
+    },
+    "timeout": {
+      "reconciled": {
+        "ok": true,
+        "reservation_id": "7d2f09eb-af68-4ed3-9285-6388321c05dc",
+        "operation_id": "op-timeout",
+        "state": "UNKNOWN",
+        "outcome": "timeout",
+        "observed_usd": null,
+        "unknown_held_usd": 0.015118,
+        "double_debit": false,
+        "not_treated_as_free": true,
+        "counted_as_zero": false,
+        "not_an_invoice": true
+      },
+      "replay": {
+        "ok": true,
+        "idempotent": true,
+        "reservation_id": "7d2f09eb-af68-4ed3-9285-6388321c05dc",
+        "state": "UNKNOWN",
+        "double_debit": false,
+        "counted_as_zero": false
+      },
+      "snapshot": {
+        "phase": "4B.2.14",
+        "version": "book-execution-budget-4b214-candidate",
+        "ledgers": {
+          "book_generator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "semantic_gate": {
+            "ceiling_usd": 0.05,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.034883,
+            "unknown_not_treated_as_zero": true
+          },
+          "book_validator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "global": {
+            "ceiling_usd": 0.08,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.064883,
+            "unknown_not_treated_as_zero": true
+          }
+        },
+        "unknown_never_becomes_zero": true,
+        "control_is_before_call": true,
+        "secrets_included": false
+      }
+    },
+    "interrupt_after_send": {
+      "reconciled": {
+        "ok": true,
+        "reservation_id": "0e2d88da-dad1-45d3-afa5-23d4a7d74890",
+        "operation_id": "op-interrupt_after_send",
+        "state": "UNKNOWN",
+        "outcome": "interrupt_after_send",
+        "observed_usd": null,
+        "unknown_held_usd": 0.015118,
+        "double_debit": false,
+        "not_treated_as_free": true,
+        "counted_as_zero": false,
+        "not_an_invoice": true
+      },
+      "replay": {
+        "ok": true,
+        "idempotent": true,
+        "reservation_id": "0e2d88da-dad1-45d3-afa5-23d4a7d74890",
+        "state": "UNKNOWN",
+        "double_debit": false,
+        "counted_as_zero": false
+      },
+      "snapshot": {
+        "phase": "4B.2.14",
+        "version": "book-execution-budget-4b214-candidate",
+        "ledgers": {
+          "book_generator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "semantic_gate": {
+            "ceiling_usd": 0.05,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.034883,
+            "unknown_not_treated_as_zero": true
+          },
+          "book_validator": {
+            "ceiling_usd": null,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.0,
+            "available_usd": null,
+            "unknown_not_treated_as_zero": true
+          },
+          "global": {
+            "ceiling_usd": 0.08,
+            "estimated_usd": null,
+            "observed_usd": 0.0,
+            "reserved_usd": 0.0,
+            "committed_usd": 0.0,
+            "unknown_held_usd": 0.015118,
+            "available_usd": 0.064883,
+            "unknown_not_treated_as_zero": true
+          }
+        },
+        "unknown_never_becomes_zero": true,
+        "control_is_before_call": true,
+        "secrets_included": false
+      }
+    }
+  },
+  "unknown_status": "UNKNOWN",
+  "unknown_never_zero": true,
+  "no_double_debit": true,
+  "interrupt_after_send_not_free": true,
+  "no_invented_provider_invoice": true,
+  "secrets_included": false
+}

@@ -1,0 +1,23 @@
+{
+  "phase": "4B.2.32",
+  "action": "replace_v11_draft",
+  "atomic": true,
+  "publication_status": "PRINT_REVIEW_ONLY",
+  "book_status": "DRAFT_FOR_PRINT_REVIEW",
+  "source_version": "print-review-v1",
+  "output_version": "print-review-v1.1",
+  "destination_docx": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1_1/The_Life_You_Already_Inherited_print_review_v1_1.docx",
+  "docx_sha256": "3a52ab4381a5e9c374782fb826342a4466f42f6fccde165acf9cba21b61fe0ef",
+  "docx_bytes": 84553,
+  "pdf": {
+    "generated": true,
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1_1/The_Life_You_Already_Inherited_print_review_v1_1.pdf",
+    "sha256": "78cc119c2473d10bd599c5d396d8abdab002c62cd5c5f413d8c6b29e9a72d36e",
+    "bytes": 350891,
+    "action": "replace_v11_draft"
+  },
+  "official_docx_default": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1_1/The_Life_You_Already_Inherited_print_review_v1_1.docx",
+  "official_pdf_default": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1_1/The_Life_You_Already_Inherited_print_review_v1_1.pdf",
+  "overwrote_v1": false,
+  "secrets_included": false
+}

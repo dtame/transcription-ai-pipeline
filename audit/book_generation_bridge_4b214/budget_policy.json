@@ -1,0 +1,28 @@
+{
+  "phase": "4B.2.14",
+  "version": "book-execution-budget-4b214-candidate",
+  "ledgers": [
+    "book_generator",
+    "semantic_gate",
+    "book_validator",
+    "global"
+  ],
+  "cost_states": [
+    "estimated",
+    "observed",
+    "reserved",
+    "committed",
+    "UNKNOWN"
+  ],
+  "unknown_never_becomes_zero": true,
+  "unknown_blocks_or_requires_human_authorization": true,
+  "control_before_call": true,
+  "reservation_is_not_an_invoice": true,
+  "interrupt_after_send_is_not_free": true,
+  "no_automatic_retry_after_uncertain_send": true,
+  "book_validator_cost": "UNKNOWN",
+  "phase5_cost": "UNKNOWN",
+  "pricing_effective_date": "2026-09-18",
+  "tariffs_are_configured_local_rates_not_necessarily_current": true,
+  "secrets_included": false
+}

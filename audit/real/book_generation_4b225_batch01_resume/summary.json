@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "chapters_generated": [
+    "CH003",
+    "CH004"
+  ],
+  "chapters_not_generated": [],
+  "provider_calls": 2,
+  "anthropic_http": 2,
+  "actual_total_cost": 0.093278,
+  "stop_reason": "RESUME_COMPLETED"
+}

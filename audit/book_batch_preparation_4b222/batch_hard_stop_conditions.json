@@ -1,0 +1,103 @@
+{
+  "phase": "4B.2.22",
+  "conditions": [
+    {
+      "id": "missing_authorization",
+      "action": "STOP"
+    },
+    {
+      "id": "cost_unknown",
+      "action": "STOP"
+    },
+    {
+      "id": "cost_cap_exceeded",
+      "action": "STOP"
+    },
+    {
+      "id": "automatic_paid_retry",
+      "action": "STOP"
+    },
+    {
+      "id": "automatic_fallback",
+      "action": "STOP"
+    },
+    {
+      "id": "prompt_or_model_change",
+      "action": "STOP"
+    },
+    {
+      "id": "invalid_or_truncated_json",
+      "action": "STOP"
+    },
+    {
+      "id": "idea_handles_missing_or_invented",
+      "action": "STOP"
+    },
+    {
+      "id": "invalid_src",
+      "action": "STOP"
+    },
+    {
+      "id": "consumed_lock",
+      "action": "STOP"
+    },
+    {
+      "id": "uncertain_lock",
+      "action": "STOP"
+    },
+    {
+      "id": "multi_chapter_provider_call",
+      "action": "STOP"
+    },
+    {
+      "id": "ch012_or_ch018_or_canonical_mutation",
+      "action": "STOP"
+    },
+    {
+      "id": "publication",
+      "action": "STOP"
+    }
+  ],
+  "probes": {
+    "missing_authorization": {
+      "raised": true,
+      "message": "No remaining-chapter batch authorization exists. STOP."
+    },
+    "cost_unknown": {
+      "raised": true,
+      "message": "COST_MAXIMUM_UNKNOWN. Unknown cost is never treated as zero."
+    },
+    "cost_cap_exceeded": {
+      "raised": true,
+      "message": "COST_MAXIMUM_EXCEEDS_CAP. The theoretical maximum exceeds the authorized cap."
+    },
+    "automatic_paid_retry": {
+      "raised": true,
+      "message": "Automatic paid retry is forbidden. A human decision is required."
+    },
+    "prompt_fallback_forbidden": {
+      "raised": true,
+      "message": "Prompt 'book-generator-faithful-restatement-1.1-candidate' is unavailable. Fallback to 'book-generator-1.0.1' is forbidden."
+    },
+    "consumed_lock": {
+      "raised": true,
+      "message": "Call lock already consumed. Authorization is not reusable. NO RETRY."
+    },
+    "uncertain_lock": {
+      "raised": true,
+      "message": "Call lock is UNCERTAIN. Do not repeat the paid call automatically."
+    },
+    "multi_chapter_call": {
+      "raised": true,
+      "message": "A provider call may contain exactly one chapter. Multi-chapter calls are forbidden."
+    },
+    "activation_blocked_this_phase": {
+      "raised": true,
+      "message": "Prompt 1.1 activation for generation is disabled in this phase."
+    }
+  },
+  "operational": true,
+  "no_additional_call_after_stop": true,
+  "no_automatic_paid_retry": true,
+  "secrets_included": false
+}

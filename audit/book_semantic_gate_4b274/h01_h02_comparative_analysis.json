@@ -1,0 +1,124 @@
+{
+  "phase": "4B.2.7.4",
+  "h01": {
+    "status": "PARTIAL",
+    "human_label_audit_only": "SUPPORTED",
+    "finding_4b271": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+    "disputed": "that fear can calculate or bargain with",
+    "chapter_verdict": "REVIEW",
+    "paragraph_verdict": "QUESTIONABLE",
+    "claim_count": 7,
+    "reservation_count": 1,
+    "reason_codes": [],
+    "paragraph_chars": 232,
+    "spans": [
+      [
+        0,
+        31
+      ],
+      [
+        32,
+        64
+      ],
+      [
+        65,
+        105
+      ],
+      [
+        106,
+        140
+      ],
+      [
+        142,
+        173
+      ],
+      [
+        174,
+        209
+      ],
+      [
+        211,
+        232
+      ]
+    ]
+  },
+  "h02": {
+    "status": "PARTIAL",
+    "not_pass": true,
+    "human_label_audit_only": "QUESTIONABLE",
+    "causal_clause_correctly_blocked": true,
+    "contract_failed": true,
+    "coverage_failed_historically": true,
+    "chapter_verdict": "FAIL",
+    "paragraph_verdict": "UNSUPPORTED",
+    "claim_count": 11,
+    "reservation_count": 7,
+    "reason_codes": [
+      "INVENTED_CAUSAL_LINK",
+      "NO_EVIDENCE",
+      "PARTIAL_REFERENCE_EXPANSION",
+      "UNJUSTIFIED_STRENGTHENING",
+      "UNSUPPORTED_IMPLICATION"
+    ],
+    "paragraph_chars": 466,
+    "spans": [
+      [
+        0,
+        66
+      ],
+      [
+        68,
+        93
+      ],
+      [
+        96,
+        124
+      ],
+      [
+        126,
+        179
+      ],
+      [
+        181,
+        227
+      ],
+      [
+        229,
+        270
+      ],
+      [
+        272,
+        300
+      ],
+      [
+        302,
+        323
+      ],
+      [
+        324,
+        368
+      ],
+      [
+        369,
+        404
+      ],
+      [
+        406,
+        465
+      ]
+    ]
+  },
+  "shared": {
+    "model": "gpt-5.6-terra",
+    "transport": "book-semantic-validation-transport-1.1-candidate",
+    "historical_labels_unmodified": true,
+    "historical_raw_unmodified": true
+  },
+  "lessons": [
+    "Supported paraphrase must not be rejected for missing source verbs or intensifiers.",
+    "New causality must still be isolated and blocked.",
+    "Reason codes must come from the closed catalog.",
+    "Coverage must require words and connectives, not every separator glyph."
+  ],
+  "secrets_included": false
+}

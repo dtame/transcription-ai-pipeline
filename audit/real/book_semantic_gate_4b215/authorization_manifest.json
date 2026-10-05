@@ -1,0 +1,19 @@
+{
+  "phase": "4B.2.15",
+  "case_id": "4b276_p4_new_implication",
+  "model": "gpt-5.6-terra",
+  "maximum_remote_calls": 1,
+  "maximum_budget": "0.10 USD",
+  "contract": "book-semantic-validator-2.0.2-candidate",
+  "granularity": "one paragraph",
+  "retry": 0,
+  "fallback": "forbidden",
+  "sonnet": "forbidden",
+  "production_writes": "forbidden",
+  "reusable": false,
+  "consumed": true,
+  "one_shot": true,
+  "authorization_scope": "BOOK_SEMANTIC_GATE_4B215_ONE_REAL_TERRA_SEMANTIC_GATE_202_H11_NEGATIVE_CANARY_ONLY",
+  "request_sha256": "a02867c0ab31c3ff4bf791dfe6472103c1cb9919a7b01b1101c4ae6f2343a2f1",
+  "secrets_included": false
+}

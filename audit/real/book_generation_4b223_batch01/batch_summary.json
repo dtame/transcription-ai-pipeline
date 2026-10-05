@@ -1,0 +1,15 @@
+{
+  "result": "PARTIAL",
+  "chapters_generated": [
+    "CH001"
+  ],
+  "chapters_not_generated": [
+    "CH002",
+    "CH003",
+    "CH004"
+  ],
+  "provider_calls": 2,
+  "anthropic_http": 2,
+  "actual_total_cost": 0.075284,
+  "stop_reason": "INVALID_CONTRACT"
+}

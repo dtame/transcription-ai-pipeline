@@ -1,0 +1,115 @@
+{
+  "phase": "4B.2.7.4",
+  "canonical_catalog": [
+    "NEW_FACT",
+    "NEW_CAUSAL_LINK",
+    "NEW_ARGUMENT",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM",
+    "NEW_IMPLICATION",
+    "INVENTED_EXAMPLE",
+    "INVENTED_ANECDOTE",
+    "INVENTED_HYPOTHETICAL",
+    "REFERENCE_COMPLETION",
+    "REFERENCE_EXPANSION",
+    "QUOTE_EXPANSION",
+    "UNCERTAINTY_STRENGTHENED",
+    "SOURCE_MEANING_DISTORTED",
+    "EVIDENCE_MISMATCH",
+    "OTHER"
+  ],
+  "canonical_definitions": {
+    "NEW_FACT": "A factual assertion absent from supplied canonical evidence.",
+    "NEW_CAUSAL_LINK": "A because/therefore/as-a-result relation that the evidence does not support, even if the related facts separately exist.",
+    "NEW_ARGUMENT": "An argumentative step not present in the supplied evidence.",
+    "NEW_CONCLUSION": "A conclusion stronger than, or absent from, the evidence.",
+    "NEW_DOCTRINAL_CLAIM": "A doctrinal assertion not entailed by supplied evidence.",
+    "NEW_IMPLICATION": "An implication, meaning, or 'which means' extension not supported by the supplied evidence.",
+    "INVENTED_EXAMPLE": "An illustrative scene, case, or example not present in EX/SRC/IDEA.",
+    "INVENTED_ANECDOTE": "A personal or narrative anecdote not in the evidence.",
+    "INVENTED_HYPOTHETICAL": "A hypothetical scenario added from model knowledge.",
+    "REFERENCE_COMPLETION": "Completion of a partial REF/citation using omitted remainder from model knowledge. Applies to scripture, books, law, science, history, quotations, and named authorities — not Bible-specific.",
+    "REFERENCE_EXPANSION": "Expansion of a supplied reference beyond what the REF/SRC actually contains.",
+    "QUOTE_EXPANSION": "A quotation or quoted wording not supported by supplied canonical wording, even if the reference identity is correct.",
+    "UNCERTAINTY_STRENGTHENED": "Canonical uncertainty, possibility, or partiality raised to certainty, universality, or completeness.",
+    "SOURCE_MEANING_DISTORTED": "Paraphrase or synthesis that changes the meaning of supplied evidence.",
+    "EVIDENCE_MISMATCH": "Declared or used evidence does not actually support the claim.",
+    "OTHER": "Unsupported semantic extension not covered by a more specific code."
+  },
+  "observed_codes": [
+    "INVENTED_CAUSAL_LINK",
+    "NO_EVIDENCE",
+    "UNJUSTIFIED_STRENGTHENING",
+    "UNSUPPORTED_IMPLICATION",
+    "PARTIAL_REFERENCE_EXPANSION"
+  ],
+  "matrix": [
+    {
+      "returned_code": "INVENTED_CAUSAL_LINK",
+      "in_canonical_catalog": false,
+      "canonical_definition": null,
+      "implicit_definition": "A because/therefore relation that the evidence does not support.",
+      "canonical_candidate": "NEW_CAUSAL_LINK",
+      "semantic_compatibility": "HIGH",
+      "information_loss_risk": "LOW",
+      "recommended_decision": "KEEP_CATALOG_CLOSED_DIAGNOSE_AS_NEW_CAUSAL_LINK",
+      "notes": "Closest catalog match. Do not add INVENTED_CAUSAL_LINK as an alias. Do not silently rewrite the historical code."
+    },
+    {
+      "returned_code": "NO_EVIDENCE",
+      "in_canonical_catalog": false,
+      "canonical_definition": null,
+      "implicit_definition": "The claim has no supplied support, or the cited evidence does not attest the assertion.",
+      "canonical_candidate": "NEW_FACT",
+      "semantic_compatibility": "PARTIAL",
+      "information_loss_risk": "MEDIUM",
+      "recommended_decision": "NO_EXACT_MATCH_USE_NEW_FACT_OR_OTHER_WHEN_GENERATING",
+      "notes": "No catalog code named NO_EVIDENCE. NEW_FACT fits absent assertions. OTHER remains the closed-list fallback. EVIDENCE_MISMATCH fits cited handles that do not actually support the claim. Mapping is ambiguous."
+    },
+    {
+      "returned_code": "UNJUSTIFIED_STRENGTHENING",
+      "in_canonical_catalog": false,
+      "canonical_definition": null,
+      "implicit_definition": "Wording that intensifies or exceeds the supplied evidence.",
+      "canonical_candidate": "UNCERTAINTY_STRENGTHENED",
+      "semantic_compatibility": "PARTIAL",
+      "information_loss_risk": "MEDIUM",
+      "recommended_decision": "NO_EXACT_MATCH_UNCERTAINTY_STRENGTHENED_IS_NARROWER",
+      "notes": "UNCERTAINTY_STRENGTHENED covers possibility→certainty, not every stylistic intensifier. A mere intensifier of an attested phrase is not automatically strengthening."
+    },
+    {
+      "returned_code": "UNSUPPORTED_IMPLICATION",
+      "in_canonical_catalog": false,
+      "canonical_definition": null,
+      "implicit_definition": "An implication or origin/meaning extension not supported by evidence.",
+      "canonical_candidate": "NEW_IMPLICATION",
+      "semantic_compatibility": "HIGH",
+      "information_loss_risk": "LOW",
+      "recommended_decision": "KEEP_CATALOG_CLOSED_DIAGNOSE_AS_NEW_IMPLICATION",
+      "notes": "Closest catalog match. Do not add an alias."
+    },
+    {
+      "returned_code": "PARTIAL_REFERENCE_EXPANSION",
+      "in_canonical_catalog": false,
+      "canonical_definition": null,
+      "implicit_definition": "A supplied fragment is completed beyond what the text actually contains.",
+      "canonical_candidate": "REFERENCE_EXPANSION",
+      "semantic_compatibility": "HIGH",
+      "information_loss_risk": "LOW",
+      "recommended_decision": "KEEP_CATALOG_CLOSED_DIAGNOSE_AS_REFERENCE_EXPANSION",
+      "notes": "PREFIX 'PARTIAL' is a lexical variant. Truncated spoken SRC is not automatically a REF completion."
+    }
+  ],
+  "unknown_codes": [
+    "INVENTED_CAUSAL_LINK",
+    "NO_EVIDENCE",
+    "UNJUSTIFIED_STRENGTHENING",
+    "UNSUPPORTED_IMPLICATION",
+    "PARTIAL_REFERENCE_EXPANSION"
+  ],
+  "all_observed_in_catalog": false,
+  "new_causal_link_in_catalog": true,
+  "new_implication_in_catalog": true,
+  "exact_correspondence_not_assumed": true,
+  "secrets_included": false
+}

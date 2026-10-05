@@ -1,0 +1,8 @@
+4B.2.15
+BOOK_SEMANTIC_GATE_4B215_ONE_REAL_TERRA_SEMANTIC_GATE_202_H11_NEGATIVE_CANARY_ONLY
+consumed=1
+boundary=remote_invocation
+reusable=0
+fallback=forbidden
+sonnet=forbidden
+production_writes=forbidden

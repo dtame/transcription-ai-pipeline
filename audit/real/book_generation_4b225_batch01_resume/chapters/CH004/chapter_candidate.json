@@ -1,0 +1,742 @@
+{
+  "chapter_id": "CH004",
+  "title": "Priest, Prophet, King",
+  "sections": [
+    {
+      "section_id": "SEC013",
+      "title": "The Shadow and the Reality",
+      "paragraphs": [
+        {
+          "text": "The encounters recorded in the Old Testament were not ends in themselves. They existed for the purpose of foreshadowing something that had not yet come. Each one was a shadow, pointing forward to a reality that would later be revealed.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA041",
+            "SRC001250",
+            "SRC001251",
+            "SRC001254"
+          ],
+          "source_refs": [
+            "SRC001250",
+            "SRC001251",
+            "SRC001254"
+          ],
+          "idea_refs": [
+            "IDEA041"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000001",
+          "provider_handle": "p1"
+        },
+        {
+          "text": "God does not change his mind the way we imagine. What looks like a shift in how he deals with people is not a change in his nature, because he does not change. His purpose in all of this has been consistent: to teach generations still to come how to serve him.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA042",
+            "SRC001266",
+            "SRC001274",
+            "SRC001283"
+          ],
+          "source_refs": [
+            "SRC001266",
+            "SRC001274",
+            "SRC001283"
+          ],
+          "idea_refs": [
+            "IDEA042"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000002",
+          "provider_handle": "p2"
+        },
+        {
+          "text": "There is nothing new under the sun. Human beings repeat the same patterns because human nature itself repeats. Knowing what has already happened in these patterns equips you to manage what comes before you now.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA043",
+            "SRC001291",
+            "SRC001293",
+            "SRC001296"
+          ],
+          "source_refs": [
+            "SRC001291",
+            "SRC001293",
+            "SRC001296"
+          ],
+          "idea_refs": [
+            "IDEA043"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000003",
+          "provider_handle": "p3"
+        }
+      ],
+      "idea_refs": [
+        "IDEA041",
+        "IDEA042",
+        "IDEA043"
+      ],
+      "source_refs": [
+        "SRC001250",
+        "SRC001251",
+        "SRC001254",
+        "SRC001266",
+        "SRC001274",
+        "SRC001283",
+        "SRC001291",
+        "SRC001293",
+        "SRC001296"
+      ]
+    },
+    {
+      "section_id": "SEC014",
+      "title": "Three Sacred Offices",
+      "paragraphs": [
+        {
+          "text": "In the society of the Old Testament, three people mattered above the rest. They were set apart, consecrated, and anointed with oil: the priest, the prophet, and the king.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA044",
+            "SRC001299",
+            "SRC001306",
+            "SRC001312"
+          ],
+          "source_refs": [
+            "SRC001299",
+            "SRC001306",
+            "SRC001312"
+          ],
+          "idea_refs": [
+            "IDEA044"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000004",
+          "provider_handle": "p4"
+        },
+        {
+          "text": "These three offices remain sacred. They have not changed, even though their outward form has evolved. What was once confined to a nation has now become something God has extended into a universal commonwealth.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA045",
+            "SRC001319",
+            "SRC001322",
+            "SRC001326"
+          ],
+          "source_refs": [
+            "SRC001319",
+            "SRC001322",
+            "SRC001326"
+          ],
+          "idea_refs": [
+            "IDEA045"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000005",
+          "provider_handle": "p5"
+        },
+        {
+          "text": "There is a common priesthood that all believers share by experience. But there is also an ordered priesthood, distinct from that common experience, set apart in a particular order of things. We are not all priests in that ordered sense.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA046",
+            "SRC001330",
+            "SRC001338",
+            "SRC001348",
+            "SRC001380"
+          ],
+          "source_refs": [
+            "SRC001330",
+            "SRC001338",
+            "SRC001348",
+            "SRC001380"
+          ],
+          "idea_refs": [
+            "IDEA046"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000006",
+          "provider_handle": "p6"
+        },
+        {
+          "text": "It is carelessness to claim total equivalence between every believer and those specifically called and ordered to ministry. That kind of leveling misses the order God himself established.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA047",
+            "SRC001373",
+            "SRC001376"
+          ],
+          "source_refs": [
+            "SRC001373",
+            "SRC001376",
+            "SRC001380"
+          ],
+          "idea_refs": [
+            "IDEA047"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000007",
+          "provider_handle": "p7"
+        },
+        {
+          "text": "The priesthood was the first to carry out the function of teaching, of being a kind of school for the people. This finds its fulfillment in what Isaiah describes: all nations coming up to the house of the Lord to be taught his ways. Isaiah chapter 2 speaks of this, of the purpose for which the nations come to that house.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA055",
+            "SRC001563",
+            "SRC001569",
+            "SRC001593",
+            "SRC001565",
+            "SRC001574",
+            "SRC001596"
+          ],
+          "source_refs": [
+            "SRC001563",
+            "SRC001569",
+            "SRC001593",
+            "SRC001565",
+            "SRC001574",
+            "SRC001596"
+          ],
+          "idea_refs": [
+            "IDEA055"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000008",
+          "provider_handle": "p8"
+        }
+      ],
+      "idea_refs": [
+        "IDEA044",
+        "IDEA045",
+        "IDEA046",
+        "IDEA047",
+        "IDEA055"
+      ],
+      "source_refs": [
+        "SRC001299",
+        "SRC001306",
+        "SRC001312",
+        "SRC001319",
+        "SRC001322",
+        "SRC001326",
+        "SRC001330",
+        "SRC001338",
+        "SRC001348",
+        "SRC001380",
+        "SRC001373",
+        "SRC001376",
+        "SRC001563",
+        "SRC001569",
+        "SRC001593",
+        "SRC001565",
+        "SRC001574",
+        "SRC001596"
+      ]
+    },
+    {
+      "section_id": "SEC015",
+      "title": "Recognizing Who Stands Before You",
+      "paragraphs": [
+        {
+          "text": "When Melchizedek met Abraham, there was no prior prophecy about him. Scripture gives no prophetic announcement preparing Abraham for that encounter.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA048",
+            "SRC001393",
+            "SRC001394",
+            "SRC001402",
+            "SRC001387"
+          ],
+          "source_refs": [
+            "SRC001393",
+            "SRC001394",
+            "SRC001402",
+            "SRC001387",
+            "SRC001407"
+          ],
+          "idea_refs": [
+            "IDEA048"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000009",
+          "provider_handle": "p9"
+        },
+        {
+          "text": "Yet when Abraham met him, Abraham recognized that he was different, and Abraham submitted to him. Nothing external told Abraham who this man was. It was the witness of the Spirit of God that revealed Melchizedek's higher spiritual authority, not according to age or outward stature, so that Abraham would recognize what he was dealing with.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA049",
+            "EX006",
+            "SRC001407",
+            "SRC001408",
+            "SRC001413",
+            "SRC001418",
+            "SRC001426"
+          ],
+          "source_refs": [
+            "SRC001407",
+            "SRC001408",
+            "SRC001413",
+            "SRC001418",
+            "SRC001426",
+            "SRC001387",
+            "SRC001394"
+          ],
+          "idea_refs": [
+            "IDEA049"
+          ],
+          "example_refs": [
+            "EX006"
+          ],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000010",
+          "provider_handle": "p10"
+        },
+        {
+          "text": "This is why vigilance matters. We must always remain alert to recognize a higher spiritual presence when God places it before us, because wherever God has led us, a wrong attitude can cause us to miss what he has set in our path.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA050",
+            "SRC001432",
+            "SRC001435",
+            "SRC001439"
+          ],
+          "source_refs": [
+            "SRC001432",
+            "SRC001435",
+            "SRC001439"
+          ],
+          "idea_refs": [
+            "IDEA050"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000011",
+          "provider_handle": "p11"
+        }
+      ],
+      "idea_refs": [
+        "IDEA048",
+        "IDEA049",
+        "IDEA050"
+      ],
+      "source_refs": [
+        "SRC001393",
+        "SRC001394",
+        "SRC001402",
+        "SRC001387",
+        "SRC001407",
+        "SRC001408",
+        "SRC001413",
+        "SRC001418",
+        "SRC001426",
+        "SRC001432",
+        "SRC001435",
+        "SRC001439"
+      ]
+    },
+    {
+      "section_id": "SEC016",
+      "title": "Malachi's Warning to the Priests",
+      "paragraphs": [
+        {
+          "text": "Malachi, in chapter 2, records a warning to the priests. If they will not hear, if they do not take it to heart to give glory to God's name, he says he will send a curse upon them, and he will curse their blessing.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA051",
+            "SRC001441",
+            "SRC001452",
+            "SRC001458",
+            "SRC001461"
+          ],
+          "source_refs": [
+            "SRC001441",
+            "SRC001452",
+            "SRC001458",
+            "SRC001461"
+          ],
+          "idea_refs": [
+            "IDEA051"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000012",
+          "provider_handle": "p12"
+        },
+        {
+          "text": "God's covenant with Levi was a covenant of life and peace. He gave that covenant so that Levi would fear him, and Levi did fear him and stood in awe of his name.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA052",
+            "SRC001477",
+            "SRC001483",
+            "SRC001495",
+            "SRC001499"
+          ],
+          "source_refs": [
+            "SRC001477",
+            "SRC001483",
+            "SRC001495",
+            "SRC001499",
+            "SRC001504",
+            "SRC001524",
+            "SRC001536"
+          ],
+          "idea_refs": [
+            "IDEA052"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [
+            "UNC006"
+          ],
+          "paragraph_id": "P000013",
+          "provider_handle": "p13"
+        },
+        {
+          "text": "The lips of the priest must guard knowledge, and people should seek instruction from his mouth, for he is the messenger of the Lord of hosts. The exact placement of this statement within verse 5 and verse 7 of the chapter was read more than once and is not entirely certain in its verse order, but the teaching itself is clear: the priest's lips carry the law because he speaks as a messenger sent from God.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA053",
+            "SRC001504",
+            "SRC001524",
+            "SRC001527",
+            "SRC001532",
+            "SRC001536",
+            "SRC001542"
+          ],
+          "source_refs": [
+            "SRC001504",
+            "SRC001524",
+            "SRC001527",
+            "SRC001532",
+            "SRC001536",
+            "SRC001542"
+          ],
+          "idea_refs": [
+            "IDEA053"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [
+            "UNC006"
+          ],
+          "paragraph_id": "P000014",
+          "provider_handle": "p14"
+        },
+        {
+          "text": "Those who walk closely with God, so close that what they carry becomes recognized by others, end up establishing something more than personal conviction. What they establish is received by others as principles, and those principles become, in time, authoritative laws for how people live.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA054",
+            "SRC001545",
+            "SRC001552",
+            "SRC001561"
+          ],
+          "source_refs": [
+            "SRC001545",
+            "SRC001552",
+            "SRC001561"
+          ],
+          "idea_refs": [
+            "IDEA054"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000015",
+          "provider_handle": "p15"
+        }
+      ],
+      "idea_refs": [
+        "IDEA051",
+        "IDEA052",
+        "IDEA053",
+        "IDEA054"
+      ],
+      "source_refs": [
+        "SRC001441",
+        "SRC001452",
+        "SRC001458",
+        "SRC001461",
+        "SRC001477",
+        "SRC001483",
+        "SRC001495",
+        "SRC001499",
+        "SRC001504",
+        "SRC001524",
+        "SRC001536",
+        "SRC001527",
+        "SRC001532",
+        "SRC001542",
+        "SRC001545",
+        "SRC001552",
+        "SRC001561"
+      ]
+    },
+    {
+      "section_id": "SEC017",
+      "title": "Let No One Despise the Calling",
+      "paragraphs": [
+        {
+          "text": "It is not humility for a minister to pretend he is just like everyone else when he has been called of God. We are not the same. Denying a genuine calling in the name of modesty is a false humility, not a true one.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA056",
+            "SRC001613",
+            "SRC001618",
+            "SRC001620"
+          ],
+          "source_refs": [
+            "SRC001613",
+            "SRC001618",
+            "SRC001620"
+          ],
+          "idea_refs": [
+            "IDEA056"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000016",
+          "provider_handle": "p16"
+        },
+        {
+          "text": "The work of ministry is heavy. It demands full commitment, without arrogance, and also without false modesty that holds back from the weight of the calling. Commit yourself to it, neither boasting over it nor shrinking from it.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA057",
+            "SRC001623",
+            "SRC001625",
+            "SRC001630"
+          ],
+          "source_refs": [
+            "SRC001623",
+            "SRC001625",
+            "SRC001630"
+          ],
+          "idea_refs": [
+            "IDEA057"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000017",
+          "provider_handle": "p17"
+        },
+        {
+          "text": "Paul's charge to Timothy, found in 2 Timothy chapter 1, not to let anyone despise his youth, is not an instruction to confront people or to assert himself in anyone's face. It concerns something inward: a settled confidence in the calling he carried, not an outward posture of defiance.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA058",
+            "SRC001638",
+            "SRC001640",
+            "SRC001642",
+            "SRC001031"
+          ],
+          "source_refs": [
+            "SRC001638",
+            "SRC001640",
+            "SRC001642",
+            "SRC001031"
+          ],
+          "idea_refs": [
+            "IDEA058"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000018",
+          "provider_handle": "p18"
+        },
+        {
+          "text": "When someone truly finds God, others come looking for that person; there is no need to strain after recognition or chase an audience. I have never had to look for people in that sense; rather, people had to look for me, the day they found what was genuine.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA059",
+            "SRC001650",
+            "SRC001658",
+            "SRC001666"
+          ],
+          "source_refs": [
+            "SRC001650",
+            "SRC001658",
+            "SRC001666"
+          ],
+          "idea_refs": [
+            "IDEA059"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000019",
+          "provider_handle": "p19"
+        },
+        {
+          "text": "It is like a woman looking for a good hairdresser: if she has to cross seven mountains and seven valleys to find one who is genuinely gifted, she will cross them and enter the lobby, because what is authentic draws people to seek it out.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "EX007",
+            "SRC001675",
+            "SRC001687",
+            "SRC001699"
+          ],
+          "source_refs": [
+            "SRC001675",
+            "SRC001687",
+            "SRC001699"
+          ],
+          "idea_refs": [],
+          "example_refs": [
+            "EX007"
+          ],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000020",
+          "provider_handle": "p20"
+        }
+      ],
+      "idea_refs": [
+        "IDEA056",
+        "IDEA057",
+        "IDEA058",
+        "IDEA059"
+      ],
+      "source_refs": [
+        "SRC001613",
+        "SRC001618",
+        "SRC001620",
+        "SRC001623",
+        "SRC001625",
+        "SRC001630",
+        "SRC001638",
+        "SRC001640",
+        "SRC001642",
+        "SRC001031",
+        "SRC001650",
+        "SRC001658",
+        "SRC001666",
+        "SRC001675",
+        "SRC001687",
+        "SRC001699"
+      ]
+    }
+  ],
+  "idea_refs": [
+    "IDEA041",
+    "IDEA042",
+    "IDEA043",
+    "IDEA044",
+    "IDEA045",
+    "IDEA046",
+    "IDEA047",
+    "IDEA055",
+    "IDEA048",
+    "IDEA049",
+    "IDEA050",
+    "IDEA051",
+    "IDEA052",
+    "IDEA053",
+    "IDEA054",
+    "IDEA056",
+    "IDEA057",
+    "IDEA058",
+    "IDEA059"
+  ],
+  "source_refs": [
+    "SRC001250",
+    "SRC001251",
+    "SRC001254",
+    "SRC001266",
+    "SRC001274",
+    "SRC001283",
+    "SRC001291",
+    "SRC001293",
+    "SRC001296",
+    "SRC001299",
+    "SRC001306",
+    "SRC001312",
+    "SRC001319",
+    "SRC001322",
+    "SRC001326",
+    "SRC001330",
+    "SRC001338",
+    "SRC001348",
+    "SRC001380",
+    "SRC001373",
+    "SRC001376",
+    "SRC001563",
+    "SRC001569",
+    "SRC001593",
+    "SRC001565",
+    "SRC001574",
+    "SRC001596",
+    "SRC001393",
+    "SRC001394",
+    "SRC001402",
+    "SRC001387",
+    "SRC001407",
+    "SRC001408",
+    "SRC001413",
+    "SRC001418",
+    "SRC001426",
+    "SRC001432",
+    "SRC001435",
+    "SRC001439",
+    "SRC001441",
+    "SRC001452",
+    "SRC001458",
+    "SRC001461",
+    "SRC001477",
+    "SRC001483",
+    "SRC001495",
+    "SRC001499",
+    "SRC001504",
+    "SRC001524",
+    "SRC001536",
+    "SRC001527",
+    "SRC001532",
+    "SRC001542",
+    "SRC001545",
+    "SRC001552",
+    "SRC001561",
+    "SRC001613",
+    "SRC001618",
+    "SRC001620",
+    "SRC001623",
+    "SRC001625",
+    "SRC001630",
+    "SRC001638",
+    "SRC001640",
+    "SRC001642",
+    "SRC001031",
+    "SRC001650",
+    "SRC001658",
+    "SRC001666",
+    "SRC001675",
+    "SRC001687",
+    "SRC001699"
+  ],
+  "provider_raw_sha256": "97767399872a58ab25e67edf981dea436848540eab4f696539ae529e6d2ae963",
+  "cache_signature": ""
+}

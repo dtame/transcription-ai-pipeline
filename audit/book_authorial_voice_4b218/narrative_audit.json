@@ -1,0 +1,336 @@
+{
+  "phase": "4B.2.18",
+  "chapter_id": "CH012",
+  "paragraphs_audited": 14,
+  "classifications": [
+    {
+      "paragraph_id": "P000001",
+      "section_id": "SEC047",
+      "section_title": "Bavardage Is Not Prayer",
+      "classification": "ATTRIBUTION_UNCERTAIN",
+      "point_of_view": "second-person quotation plus third-person frame",
+      "external_author_reference": true,
+      "person_shift": "source uses tu/nous; prose uses 'one speaker' / 'him'",
+      "quotes_present": true,
+      "source_refs": [
+        "SRC004846",
+        "SRC004850",
+        "SRC004851"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [
+        "One speaker"
+      ],
+      "detector_alone_establishes_identity": false,
+      "note": "SRC004846 is second-person address. Neighboring SRC004847-851 use tu/on/nous. The addressee of 'Tu viens juste d'exercer le bavardage' is not proven. Do not convert to I was told.",
+      "text": "Praying all night in tongues, by itself, is not proof of effective prayer. It can become mere bavardage — fatiguing talk without discernment — rather than prayer that accomplishes anything. One speaker was told plainly: \"You just exercised bavardage,\" after a night spent praying in tongues that left him and others simply exhausted."
+    },
+    {
+      "paragraph_id": "P000002",
+      "section_id": "SEC047",
+      "section_title": "Bavardage Is Not Prayer",
+      "classification": "AUTHORIAL_VOICE_OK",
+      "point_of_view": "inclusive we plus mild reportage of a question",
+      "external_author_reference": false,
+      "person_shift": "source 'nous' is kept as 'us'",
+      "quotes_present": false,
+      "source_refs": [
+        "SRC004880",
+        "SRC004881",
+        "SRC004882"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "The question 'Pourquoi ça ne marche pas avec nous?' is kept. Source 'ce qu'il a dit' is Scripture/God, not the author.",
+      "text": "The honest question was raised: why does this not work for us? The answer given was direct — it does not work because believers do not do what Scripture actually instructs concerning tongues. The failure was not in the gift itself but in the gap between what was practiced and what had been taught."
+    },
+    {
+      "paragraph_id": "P000003",
+      "section_id": "SEC047",
+      "section_title": "Bavardage Is Not Prayer",
+      "classification": "EXTERNAL_NARRATOR_CONFIRMED",
+      "point_of_view": "source first-person plural rewritten as those/they",
+      "external_author_reference": true,
+      "person_shift": "nous/we became those/they/their",
+      "quotes_present": false,
+      "source_refs": [
+        "SRC004918",
+        "SRC004920",
+        "SRC004921",
+        "SRC004923"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "SRC004918/920/921/923 say 'Nous étions sincères' and 'nous ne savions pas'. The prose reports that group as others.",
+      "text": "Those who prayed this way were sincere, even very sincere. But sincerity was not the issue. The real problem was that they did not know — their manner of praying rested on ignorance rather than on correct knowledge of what the practice was for."
+    },
+    {
+      "paragraph_id": "P000004",
+      "section_id": "SEC048",
+      "section_title": "The Refreshing",
+      "classification": "EXTERNAL_NARRATOR_CONFIRMED",
+      "point_of_view": "conference-report frame around a teaching citation",
+      "external_author_reference": true,
+      "person_shift": "'the speaker' / 'as taught here' / 'in the delivery'",
+      "quotes_present": false,
+      "source_refs": [
+        "SRC004854",
+        "SRC004856",
+        "SRC004877",
+        "SRC004879",
+        "SRC006457",
+        "SRC006458",
+        "SRC006459"
+      ],
+      "uncertainty_refs": [
+        "UNC029"
+      ],
+      "idea_refs": [],
+      "detector_candidates": [
+        "as taught here",
+        "The speaker",
+        "in the delivery"
+      ],
+      "detector_alone_establishes_identity": false,
+      "note": "SRC006459 'he says in verse 3' refers to Isaiah, not a proven external preacher. Neutralize the conference-report frame. Do not invent 'I referred'.",
+      "text": "One of the primary purposes of praying in tongues, as taught here, is to cool or refresh oneself. This is grounded in Isaiah 28 and in 1 Corinthians 14. The speaker also referred to an earlier passage, Isaiah chapter 26, locating a related statement in verse 3, though the connection between chapter 26 and chapter 28 at this point in the teaching remained unclear in the delivery."
+    },
+    {
+      "paragraph_id": "P000005",
+      "section_id": "SEC048",
+      "section_title": "The Refreshing",
+      "classification": "THIRD_PERSON_LEGITIMATE",
+      "point_of_view": "citation of Isaiah, 1 Corinthians, and Jude",
+      "external_author_reference": false,
+      "person_shift": null,
+      "quotes_present": false,
+      "source_refs": [
+        "SRC006318",
+        "SRC006319",
+        "SRC006421",
+        "SRC006427",
+        "SRC006428",
+        "SRC004861",
+        "SRC004862"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "Jude and the biblical books are third-person referents.",
+      "text": "Isaiah 28:11 is cited as the specific verse, and its fulfillment is located in 1 Corinthians chapter 14, verse 21. Jude is also noted as having spoken of this courageously, in verse 20."
+    },
+    {
+      "paragraph_id": "P000006",
+      "section_id": "SEC048",
+      "section_title": "The Refreshing",
+      "classification": "AUTHORIAL_VOICE_OK",
+      "point_of_view": "second-person counsel preserved",
+      "external_author_reference": false,
+      "person_shift": null,
+      "quotes_present": false,
+      "source_refs": [
+        "SRC004859",
+        "SRC004860"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "Source 'Quand vous êtes fatigué, priez en langue pour 5 minutes.'",
+      "text": "Because refreshment, not exhaustion, is the purpose, the practical counsel given was short rather than prolonged: when fatigued, pray in tongues for about five minutes. This brief season brings refreshment, in contrast to all-night sessions that only produce fatigue."
+    },
+    {
+      "paragraph_id": "P000007",
+      "section_id": "SEC048",
+      "section_title": "The Refreshing",
+      "classification": "AUTHORIAL_VOICE_OK",
+      "point_of_view": "second-person teaching with mild 'the teaching states'",
+      "external_author_reference": false,
+      "person_shift": null,
+      "quotes_present": false,
+      "source_refs": [
+        "SRC006407",
+        "SRC006466",
+        "SRC006469",
+        "SRC006474",
+        "SRC006476"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "Source already uses you. No author-as-external-speaker.",
+      "text": "Praying in tongues is also described as bringing peace. The teaching states that when a person prays in the Holy Ghost, peace begins — and this is described as the Spirit of God praying through the believer."
+    },
+    {
+      "paragraph_id": "P000008",
+      "section_id": "SEC049",
+      "section_title": "He Told Me I Was Tired",
+      "classification": "EXTERNAL_NARRATOR_CONFIRMED",
+      "point_of_view": "first-person testimony rewritten as 'the speaker' / he",
+      "external_author_reference": true,
+      "person_shift": "j'ai / j'étais / ma voix became he / his",
+      "quotes_present": false,
+      "source_refs": [
+        "SRC004891",
+        "SRC004893",
+        "SRC004895"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [
+        "The speaker recounted",
+        "The speaker",
+        "He had prayed",
+        "he had prayed"
+      ],
+      "detector_alone_establishes_identity": false,
+      "note": "SRC004891 'Il a vu comment j'ai prié', SRC004893 'J'étais au sol', SRC004895 'Ma voix était cassée'. The witness 'Il' stays third person.",
+      "text": "The speaker recounted a personal experience of this correction. He had prayed so intensely that he ended up on the ground, his voice broken from the effort. Someone saw the manner in which he had prayed."
+    },
+    {
+      "paragraph_id": "P000009",
+      "section_id": "SEC049",
+      "section_title": "He Told Me I Was Tired",
+      "classification": "EXTERNAL_NARRATOR_CONFIRMED",
+      "point_of_view": "author as recipient of God's speech, rewritten as him",
+      "external_author_reference": true,
+      "person_shift": "il m'a dit / tu es fatigué became him / he",
+      "quotes_present": true,
+      "source_refs": [
+        "SRC004898",
+        "SRC004899",
+        "SRC004905",
+        "SRC004906"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "SRC004898 'il m'a dit mon fils'. God remains third person. The recipient is first person in the source.",
+      "text": "In that state, God spoke to him directly, calling him \"my son\" and telling him he was tired. God further said that if He left him in that condition without correction, he would go on to preach a wrong doctrine."
+    },
+    {
+      "paragraph_id": "P000010",
+      "section_id": "SEC049",
+      "section_title": "He Told Me I Was Tired",
+      "classification": "THIRD_PERSON_LEGITIMATE",
+      "point_of_view": "God speaking in the first person; prayer addressed as you",
+      "external_author_reference": false,
+      "person_shift": null,
+      "quotes_present": true,
+      "source_refs": [
+        "SRC004909",
+        "SRC004910",
+        "SRC004915",
+        "SRC004917"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "SRC004909/910 are God's 'Je'. SRC004915/917 address 'ta prière' / 'te'.",
+      "text": "Alongside this, the teaching addresses a mistaken assumption about God's location or availability in prayer. God said He had never come from somewhere else, and that He had never gone elsewhere — meaning He was not absent, waiting to be reached from a distance. The real question was whether the prayer could touch or reach Him at all, described here as reaching \"the ceiling.\" If a prayer cannot touch God, it was asked, how can it change the one who prays it?"
+    },
+    {
+      "paragraph_id": "P000011",
+      "section_id": "SEC049",
+      "section_title": "He Told Me I Was Tired",
+      "classification": "AUTHORIAL_VOICE_OK",
+      "point_of_view": "quoted second-person correction",
+      "external_author_reference": false,
+      "person_shift": null,
+      "quotes_present": true,
+      "source_refs": [
+        "SRC006452",
+        "SRC006454",
+        "SRC006456"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "Quoted words match SRC006452/454. Mild reportage left in place.",
+      "text": "The correction given was not a rejection of sincerity. It was acknowledged: \"It's ok, you're sincere. But you're not doing it well.\" The promise attached to correction was that when it is done well, true rest follows."
+    },
+    {
+      "paragraph_id": "P000012",
+      "section_id": "SEC050",
+      "section_title": "Pouring on the Thirsty",
+      "classification": "THIRD_PERSON_LEGITIMATE",
+      "point_of_view": "Isaiah 44:3 quoted as God's speech",
+      "external_author_reference": false,
+      "person_shift": null,
+      "quotes_present": true,
+      "source_refs": [
+        "SRC005748",
+        "SRC005750",
+        "SRC005754"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "First-person 'I will pour' is God's biblical voice.",
+      "text": "God's disposition has always been to pour out His Spirit and blessing on the thirsty and on their descendants. This is stated in Isaiah 44:3, where God says, \"I will pour water on him... I will pour my spirit.\""
+    },
+    {
+      "paragraph_id": "P000013",
+      "section_id": "SEC050",
+      "section_title": "Pouring on the Thirsty",
+      "classification": "THIRD_PERSON_LEGITIMATE",
+      "point_of_view": "Jesus' beatitude quoted",
+      "external_author_reference": false,
+      "person_shift": null,
+      "quotes_present": true,
+      "source_refs": [
+        "SRC005762",
+        "SRC005763",
+        "SRC005766"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "Third person names Jesus. Quoted you is the beatitude.",
+      "text": "This same disposition is fulfilled in the beatitude of Jesus concerning those who hunger and thirst for righteousness: \"blessed are you... for you shall be satisfied.\""
+    },
+    {
+      "paragraph_id": "P000014",
+      "section_id": "SEC050",
+      "section_title": "Pouring on the Thirsty",
+      "classification": "AUTHORIAL_VOICE_OK",
+      "point_of_view": "general teaching about God",
+      "external_author_reference": false,
+      "person_shift": null,
+      "quotes_present": false,
+      "source_refs": [
+        "SRC005771",
+        "SRC005775",
+        "SRC005778",
+        "SRC005780"
+      ],
+      "uncertainty_refs": [],
+      "idea_refs": [],
+      "detector_candidates": [],
+      "detector_alone_establishes_identity": false,
+      "note": "God as he is legitimate. Mild 'the teaching anchors' left in place.",
+      "text": "The teaching anchors the reception of more of God in one single condition: spiritual hunger. God is no respecter of persons; he wants to reveal himself and to be discovered by all who hunger for him."
+    }
+  ],
+  "counts": {
+    "AUTHORIAL_VOICE_OK": 5,
+    "EXTERNAL_NARRATOR_CONFIRMED": 4,
+    "POSSIBLE_EXTERNAL_NARRATOR": 0,
+    "ATTRIBUTION_UNCERTAIN": 1,
+    "THIRD_PERSON_LEGITIMATE": 4
+  },
+  "every_he_she_they_is_not_an_anomaly": true,
+  "secrets_included": false
+}

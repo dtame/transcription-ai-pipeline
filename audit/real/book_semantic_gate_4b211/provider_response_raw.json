@@ -1,0 +1,77 @@
+{
+  "parsed": {
+    "ch": "CH016",
+    "v": "PASS",
+    "pr": [
+      {
+        "h": "h01",
+        "v": "PASS",
+        "u": [
+          {
+            "id": "u00",
+            "k": "SUPPORTED",
+            "ev": [
+              "SRC006149"
+            ],
+            "r": []
+          },
+          {
+            "id": "u01",
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224"
+            ],
+            "r": []
+          },
+          {
+            "id": "u02",
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224",
+              "SRC006180",
+              "SRC006182"
+            ],
+            "r": []
+          },
+          {
+            "id": "u03",
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224",
+              "SRC006187"
+            ],
+            "r": []
+          },
+          {
+            "id": "u04",
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224",
+              "SRC006183"
+            ],
+            "r": []
+          }
+        ]
+      }
+    ],
+    "sc": {
+      "SUPPORTED": 5,
+      "QUESTIONABLE": 0,
+      "UNSUPPORTED": 0,
+      "NON_SUBSTANTIVE": 0
+    },
+    "uh": [],
+    "rr": false
+  },
+  "text": "{\"ch\":\"CH016\",\"v\":\"PASS\",\"pr\":[{\"h\":\"h01\",\"v\":\"PASS\",\"u\":[{\"id\":\"u00\",\"k\":\"SUPPORTED\",\"ev\":[\"SRC006149\"],\"r\":[]},{\"id\":\"u01\",\"k\":\"SUPPORTED\",\"ev\":[\"IDEA224\"],\"r\":[]},{\"id\":\"u02\",\"k\":\"SUPPORTED\",\"ev\":[\"IDEA224\",\"SRC006180\",\"SRC006182\"],\"r\":[]},{\"id\":\"u03\",\"k\":\"SUPPORTED\",\"ev\":[\"IDEA224\",\"SRC006187\"],\"r\":[]},{\"id\":\"u04\",\"k\":\"SUPPORTED\",\"ev\":[\"IDEA224\",\"SRC006183\"],\"r\":[]}]}],\"sc\":{\"SUPPORTED\":5,\"QUESTIONABLE\":0,\"UNSUPPORTED\":0,\"NON_SUBSTANTIVE\":0},\"uh\":[],\"rr\":false}",
+  "sha256": "ef45c2d4262c5bb86a6ff891fb2a03b79189342c25c8cd9e5c261742992f7fe5",
+  "repaired": false,
+  "truncated": false,
+  "manually_edited": false,
+  "immutable": true,
+  "refusal": null,
+  "returned_model": "gpt-5.6-terra",
+  "request_id": "chatcmpl-EUGuL9XabEFUAtaVFvVC0SBJwGvr7",
+  "finish_reason": "stop",
+  "http_status": "UNKNOWN"
+}

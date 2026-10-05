@@ -1,0 +1,40 @@
+{
+  "phase": "4B.2.10",
+  "selected_handle": "h01",
+  "PASS": [
+    "Response is complete",
+    "JSON is valid",
+    "Contract 2.0.1 is respected",
+    "All units are covered",
+    "Evidence handles are valid",
+    "Reason codes are from the closed catalog",
+    "Supported propositions are accepted",
+    "Unsupported semantic additions are blocked",
+    "No substantial false rejection is observed",
+    "No unsupported semantic addition is accepted"
+  ],
+  "PARTIAL": [
+    "The targeted phenomenon is correctly detected",
+    "But false rejections appear",
+    "Or contract problems remain",
+    "Or compliance is insufficient for promotion"
+  ],
+  "FAIL": [
+    "An important invention is accepted",
+    "A targeted error is not detected",
+    "The response is unusable",
+    "The output is truncated",
+    "The model does not respect fundamental constraints"
+  ],
+  "BLOCKED_PRECALL": [
+    "Canonical hashes do not match",
+    "Request is not deterministic",
+    "A label leak is detected",
+    "SDK serialization fails",
+    "Provider configuration is incompatible"
+  ],
+  "http_failure_after_send_is_not_blocked_precall": true,
+  "not_executed": true,
+  "fakeai_is_not_terra_proof": true,
+  "secrets_included": false
+}

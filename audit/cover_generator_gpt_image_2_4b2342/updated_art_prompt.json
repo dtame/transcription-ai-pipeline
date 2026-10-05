@@ -1,0 +1,38 @@
+{
+  "art_direction": "The Door Already Open",
+  "source_direction_name": "The door already open",
+  "source_phase": "4B.2.34",
+  "provider_id": "openai",
+  "model_id": "gpt-image-2",
+  "prompt_text_changed": false,
+  "prompt": "Editorial photograph for a book cover, vertical two-to-three ratio. A plain domestic doorway already standing open, warm dawn light already inside the room, a small oil lamp already burning on a walnut table. Upper third is an even plaster wall in exact color #E7D7C1 with no objects and no texture that resembles writing. Flame in #E0A15A, shadows in #3E4A3A. Photographed, calm, sharp, no people. no words, no letters, no numerals, no title, no subtitle, no author name, no logo, no barcode, no ISBN, no watermark, no signature, no cross, no crucifix, no stained glass, no halo, no angel, no church interior, no crowd, no celebrity face, no skeleton, no open tomb.",
+  "prompt_sha256": "82f92129ec2d67666f288491c5d1b225272c46e6ec30f4f0daadaeef06cc3194",
+  "prompt_characters": 666,
+  "language": "en",
+  "negative_prompt_transmitted": false,
+  "embed_text": false,
+  "rendered_text_forbidden": [
+    "title",
+    "subtitle",
+    "author name",
+    "logo",
+    "watermark",
+    "ISBN",
+    "barcode"
+  ],
+  "title_space": "Upper third, low detail, #E7D7C1, dark type to be added by the renderer.",
+  "width": 1024,
+  "height": 1536,
+  "quality": "medium",
+  "output_format": "png",
+  "background": "opaque",
+  "reference_images": [],
+  "technical_adjustments": [
+    "The approved pictorial prompt is unchanged.",
+    "Width, height, quality, format, and background are Images API fields.",
+    "disable_pup is a Black Forest Labs field and is not sent.",
+    "No reference image is attached.",
+    "The Cover Renderer adds the title later."
+  ],
+  "image_generated": false
+}

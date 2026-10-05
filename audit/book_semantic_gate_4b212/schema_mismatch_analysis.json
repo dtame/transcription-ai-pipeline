@@ -1,0 +1,72 @@
+{
+  "phase": "4B.2.12",
+  "contract_analyzed": "book-semantic-validator-2.0.1-candidate",
+  "transport_analyzed": "book-semantic-validation-transport-2.0-candidate",
+  "historical_response_unmodified": true,
+  "validator_unmodified_for_this_analysis": true,
+  "anomaly_a": {
+    "id": "sc_uppercase_keys",
+    "sc_is_count_dictionary": true,
+    "expected_keys_are_lowercase_count_labels": true,
+    "expected_keys_are_not_the_k_verdicts": true,
+    "k_verdicts_are_uppercase": [
+      "SUPPORTED",
+      "QUESTIONABLE",
+      "UNSUPPORTED",
+      "NON_SUBSTANTIVE"
+    ],
+    "contract_states_sc_case_explicitly": false,
+    "instructions_text": "sc = counts of k values",
+    "schema_keys": [
+      "non_substantive",
+      "questionable",
+      "supported",
+      "unsupported"
+    ],
+    "schema_requires_lowercase": true,
+    "example_json_in_prompt": false,
+    "example_coherent_with_schema": false,
+    "validator_rejects_uppercase_as_unexpected_fields": true,
+    "validator_imposes_undocumented_case": true,
+    "root_cause": "The 2.0.1 instructions tell the model to emit counts of k values. k values are uppercase classifications. The JSON schema and validator require lowercase keys supported/questionable/unsupported/non_substantive, but neither the system prompt nor the instructions state that case, and no example JSON is given. Terra used the classification names as keys. This is a contract ambiguity, not a silent-validator bug and not a semantic error.",
+    "silent_normalization_applied": false
+  },
+  "anomaly_b": {
+    "id": "paragraph_v_pass",
+    "received": "PASS",
+    "unit_k_documented": "SUPPORTED | QUESTIONABLE | UNSUPPORTED | NON_SUBSTANTIVE",
+    "top_level_v_documented": "PASS, REVIEW, or FAIL",
+    "paragraph_v_documented_as_classification": true,
+    "paragraph_v_schema_enum": [
+      "SUPPORTED",
+      "QUESTIONABLE",
+      "UNSUPPORTED",
+      "NON_SUBSTANTIVE"
+    ],
+    "paragraph_v_schema_description": "Worst-class paragraph verdict.",
+    "example_uses_pass_at_paragraph": false,
+    "instructions_mix_semantic_and_operational": true,
+    "field_documentation_insufficient": true,
+    "root_cause": "Instructions define unit k as a semantic classification and top-level v as PASS/REVIEW/FAIL. Paragraph results are described only as 'pr[] = paragraph results with h, v, and unit rows u[]'. The schema expects paragraph v to be a classification. Terra copied the operational top-level PASS onto pr[0].v. This is instruction/schema mixing, not a semantic misclassification of u01.",
+    "silent_pass_to_supported_applied": false
+  },
+  "historical_validation_errors": [
+    "sc:unexpected_fields:NON_SUBSTANTIVE,QUESTIONABLE,SUPPORTED,UNSUPPORTED",
+    "sc.non_substantive:not_integer",
+    "sc.unsupported:not_integer",
+    "sc.questionable:not_integer",
+    "sc.supported:not_integer",
+    "pr[0].v:invalid"
+  ],
+  "historical_contract_ok": false,
+  "forbidden_model_fields_in_202": [
+    "v",
+    "sc",
+    "uh",
+    "rr"
+  ],
+  "system_sha256": "6d1745bc88a745ade757350b4250f03d954edff569659dc63c58e5691b96b4a3",
+  "instructions_sha256": "d880b81c5e2eac00c148ad09c02c77ebead2fc6aed82034f9b38e2e97d11611a",
+  "sc_keys_named_lowercase_in_instructions": false,
+  "secrets_included": false
+}

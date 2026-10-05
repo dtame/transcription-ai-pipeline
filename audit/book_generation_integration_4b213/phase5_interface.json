@@ -1,0 +1,54 @@
+{
+  "phase": "4B.2.13",
+  "version": "book-validator-phase5-interface-4b213-candidate",
+  "implemented": false,
+  "executed": false,
+  "independent": true,
+  "semantic_gate_does_not_replace_phase5": true,
+  "required_inputs": [
+    "chapter",
+    "text",
+    "structure",
+    "sources",
+    "evidence_handles",
+    "semantic_gate_results",
+    "versions",
+    "hashes",
+    "decisions",
+    "anomalies",
+    "traceability"
+  ],
+  "sample": {
+    "interface_version": "book-validator-phase5-interface-4b213-candidate",
+    "executed": false,
+    "independent": true,
+    "must_not_accept_semantic_gate_verdict_alone": true,
+    "chapter_id": null,
+    "title": null,
+    "text": [],
+    "structure": null,
+    "sources": [],
+    "evidence_handles": [],
+    "semantic_gate_results": {
+      "decision": null,
+      "paragraph_decisions": []
+    },
+    "versions": null,
+    "hashes": {
+      "generated_text_sha256": null,
+      "validation_key": null,
+      "source_map_sha256": null,
+      "editorial_plan_sha256": null
+    },
+    "decisions": {
+      "chapter": null,
+      "isolated_acceptance_candidate": null
+    },
+    "anomalies": [],
+    "traceability": [],
+    "production_cache_acceptance": false,
+    "phase5_not_started": true,
+    "secrets_included": false
+  },
+  "secrets_included": false
+}

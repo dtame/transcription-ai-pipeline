@@ -1,0 +1,37 @@
+{
+  "policy_mode": "EXPERIMENTAL_AUTHORIZED",
+  "default": false,
+  "experimental_submission_enabled": false,
+  "waives_only": [
+    "billing_ceiling_not_guaranteed",
+    "estimated_cost_unknown"
+  ],
+  "does_not_waive": [
+    "provider_match",
+    "model_match",
+    "resolution_match",
+    "quality_match",
+    "output_format_match",
+    "prompt_sha256",
+    "image_count",
+    "explicit_user_approval",
+    "billing_uncertainty_acceptance",
+    "planning_budget",
+    "documented_component_estimate",
+    "one_time_use",
+    "expiry",
+    "dry_run",
+    "api_key",
+    "phase_lock",
+    "automatic_retry",
+    "automatic_fallback"
+  ],
+  "mode_selection_is_consent": false,
+  "api_key_is_authorization": false,
+  "prior_approval_is_reusable": false,
+  "planning_budget_is_provider_cap": false,
+  "documented_image_output_cell_usd": "0.041",
+  "documented_cell_is_verified_maximum": false,
+  "full_request_estimate_usd": null,
+  "verified_maximum_cost_usd": null
+}

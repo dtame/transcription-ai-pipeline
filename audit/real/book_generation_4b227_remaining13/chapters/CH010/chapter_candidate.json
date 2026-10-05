@@ -1,0 +1,789 @@
+{
+  "chapter_id": "CH010",
+  "title": "Spirit, Soul and Body",
+  "sections": [
+    {
+      "section_id": "SEC039",
+      "title": "The Three-Part Man",
+      "paragraphs": [
+        {
+          "text": "Man is made of an inside and an outside. The outside is the body, the covering we see. The inside holds two parts: the soul and the spirit. The spirit is directly linked to God; it is the part of us that connects to him without mediation. The soul carries our personality, our mind, our memory. The body is the physical covering that houses both. This is the three-part man: spirit, soul, and body.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA153",
+            "SRC004149",
+            "SRC004161",
+            "SRC004164",
+            "SRC004166",
+            "SRC004170",
+            "SRC004172",
+            "SRC004173"
+          ],
+          "source_refs": [
+            "SRC004149",
+            "SRC004161",
+            "SRC004164",
+            "SRC004166",
+            "SRC004170",
+            "SRC004172",
+            "SRC004173"
+          ],
+          "idea_refs": [
+            "IDEA153"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000001",
+          "provider_handle": "p1"
+        },
+        {
+          "text": "Each spirit has one thing that identifies it and distinguishes it from other spiritual entities: conscience. It is the conscience that marks out the human spirit as what it is.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA155",
+            "SRC004198",
+            "SRC004199",
+            "SRC004202",
+            "SRC004205"
+          ],
+          "source_refs": [
+            "SRC004198",
+            "SRC004199",
+            "SRC004202",
+            "SRC004205"
+          ],
+          "idea_refs": [
+            "IDEA155"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000002",
+          "provider_handle": "p2"
+        },
+        {
+          "text": "The soul becomes the center, the place where information passes between the eternal spirit and the physical body that deals with the external world. I have searched for the right word for this — a database, a communication center, call centers — and have not settled on one term, but the function is clear: the soul is the hub through which what comes from the spirit and what comes from the body meet and are processed.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA156",
+            "SRC004215",
+            "SRC004221",
+            "SRC004251",
+            "SRC004257",
+            "SRC004276",
+            "SRC004278",
+            "SRC004217",
+            "SRC004218",
+            "SRC004245",
+            "SRC004250"
+          ],
+          "source_refs": [
+            "SRC004215",
+            "SRC004221",
+            "SRC004251",
+            "SRC004257",
+            "SRC004276",
+            "SRC004278",
+            "SRC004217",
+            "SRC004218",
+            "SRC004245",
+            "SRC004250"
+          ],
+          "idea_refs": [
+            "IDEA156"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [
+            "UNC016"
+          ],
+          "paragraph_id": "P000003",
+          "provider_handle": "p3"
+        },
+        {
+          "text": "The spirit carries eternal information. It has no age, because it came from God and is complete in him. Unlike the soul and body, which are tied to a lifespan, the spirit knows no age.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA157",
+            "SRC004265",
+            "SRC004268",
+            "SRC004269",
+            "SRC004270",
+            "SRC004271",
+            "SRC004272"
+          ],
+          "source_refs": [
+            "SRC004265",
+            "SRC004268",
+            "SRC004269",
+            "SRC004270",
+            "SRC004271",
+            "SRC004272"
+          ],
+          "idea_refs": [
+            "IDEA157"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000004",
+          "provider_handle": "p4"
+        },
+        {
+          "text": "What you do in your body permeates your soul just as quickly. This is why sexual union outside marriage is not merely a physical act: you do not just exchange bodies, you exchange soul. The body and the soul are not separate compartments; what happens in one immediately affects the other.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA158",
+            "SRC004292",
+            "SRC004293",
+            "SRC004297",
+            "SRC004298"
+          ],
+          "source_refs": [
+            "SRC004292",
+            "SRC004293",
+            "SRC004297",
+            "SRC004298"
+          ],
+          "idea_refs": [
+            "IDEA158"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000005",
+          "provider_handle": "p5"
+        }
+      ],
+      "idea_refs": [
+        "IDEA153",
+        "IDEA155",
+        "IDEA156",
+        "IDEA157",
+        "IDEA158"
+      ],
+      "source_refs": [
+        "SRC004149",
+        "SRC004161",
+        "SRC004164",
+        "SRC004166",
+        "SRC004170",
+        "SRC004172",
+        "SRC004173",
+        "SRC004198",
+        "SRC004199",
+        "SRC004202",
+        "SRC004205",
+        "SRC004215",
+        "SRC004221",
+        "SRC004251",
+        "SRC004257",
+        "SRC004276",
+        "SRC004278",
+        "SRC004217",
+        "SRC004218",
+        "SRC004245",
+        "SRC004250",
+        "SRC004265",
+        "SRC004268",
+        "SRC004269",
+        "SRC004270",
+        "SRC004271",
+        "SRC004272",
+        "SRC004292",
+        "SRC004293",
+        "SRC004297",
+        "SRC004298"
+      ]
+    },
+    {
+      "section_id": "SEC040",
+      "title": "In Dying You Shall Die",
+      "paragraphs": [
+        {
+          "text": "Having laid out the anatomy of spirit, soul and body, we turn to how that spirit came to its present condition.",
+          "kind": "connective",
+          "evidence_handles": [],
+          "source_refs": [],
+          "idea_refs": [],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000006",
+          "provider_handle": "p6"
+        },
+        {
+          "text": "The body was never inherently bad. There was no time when the body itself was the problem. It was sin, not the body, that corrupted man.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA154",
+            "SRC004177",
+            "SRC004178",
+            "SRC004180",
+            "SRC004183",
+            "SRC004184"
+          ],
+          "source_refs": [
+            "SRC004177",
+            "SRC004178",
+            "SRC004180",
+            "SRC004183",
+            "SRC004184"
+          ],
+          "idea_refs": [
+            "IDEA154"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000007",
+          "provider_handle": "p7"
+        },
+        {
+          "text": "At the Fall, life was cut off from man. He was stopped from even experiencing it, cut off from the tree of life, away from life itself. So his spirit began to die.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA159",
+            "SRC004322",
+            "SRC004325",
+            "SRC004338",
+            "SRC004340",
+            "SRC004341",
+            "SRC004344",
+            "SRC004345"
+          ],
+          "source_refs": [
+            "SRC004322",
+            "SRC004325",
+            "SRC004338",
+            "SRC004340",
+            "SRC004341",
+            "SRC004344",
+            "SRC004345"
+          ],
+          "idea_refs": [
+            "IDEA159"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000008",
+          "provider_handle": "p8"
+        },
+        {
+          "text": "God's warning concerning the tree was not that Adam would die instantly on the day he ate of it. In what concerns death, he said: you will die — you will begin to die. It was the start of a dying process, not an immediate end.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA160",
+            "SRC004352",
+            "SRC004353",
+            "SRC004356",
+            "SRC004358",
+            "SRC004359",
+            "SRC004360",
+            "SRC004361"
+          ],
+          "source_refs": [
+            "SRC004352",
+            "SRC004353",
+            "SRC004356",
+            "SRC004358",
+            "SRC004359",
+            "SRC004360",
+            "SRC004361"
+          ],
+          "idea_refs": [
+            "IDEA160"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [
+            "UNC017"
+          ],
+          "paragraph_id": "P000009",
+          "provider_handle": "p9"
+        },
+        {
+          "text": "In Christ, you begin as a baby, and then you grow to be a son. This is the process John speaks of in John chapter 1, verse 12: as many as received him, he gave them power to become — to become sons of God. It is not an instant status but a process of growth, from spiritual infancy into sonship.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA161",
+            "SRC004368",
+            "SRC004369",
+            "SRC004371",
+            "SRC004372",
+            "SRC004373",
+            "SRC004375",
+            "SRC004376"
+          ],
+          "source_refs": [
+            "SRC004368",
+            "SRC004369",
+            "SRC004371",
+            "SRC004372",
+            "SRC004373",
+            "SRC004375",
+            "SRC004376"
+          ],
+          "idea_refs": [
+            "IDEA161"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000010",
+          "provider_handle": "p10"
+        },
+        {
+          "text": "Nobody teaches a child how to lie; nobody teaches man how to connive. It comes out naturally. This is the fallen nature inherited from that cutting-off — corruption that needs no instruction.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA162",
+            "SRC004381",
+            "SRC004382",
+            "SRC004385",
+            "SRC004387"
+          ],
+          "source_refs": [
+            "SRC004381",
+            "SRC004382",
+            "SRC004385",
+            "SRC004387"
+          ],
+          "idea_refs": [
+            "IDEA162"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000011",
+          "provider_handle": "p11"
+        }
+      ],
+      "idea_refs": [
+        "IDEA154",
+        "IDEA159",
+        "IDEA160",
+        "IDEA161",
+        "IDEA162"
+      ],
+      "source_refs": [
+        "SRC004177",
+        "SRC004178",
+        "SRC004180",
+        "SRC004183",
+        "SRC004184",
+        "SRC004322",
+        "SRC004325",
+        "SRC004338",
+        "SRC004340",
+        "SRC004341",
+        "SRC004344",
+        "SRC004345",
+        "SRC004352",
+        "SRC004353",
+        "SRC004356",
+        "SRC004358",
+        "SRC004359",
+        "SRC004360",
+        "SRC004361",
+        "SRC004368",
+        "SRC004369",
+        "SRC004371",
+        "SRC004372",
+        "SRC004373",
+        "SRC004375",
+        "SRC004376",
+        "SRC004381",
+        "SRC004382",
+        "SRC004385",
+        "SRC004387"
+      ]
+    },
+    {
+      "section_id": "SEC041",
+      "title": "Fighting What Does Not Exist",
+      "paragraphs": [
+        {
+          "text": "Jesus said something in John chapter 8, speaking to the Jews: you are like your father, the devil. He was a murderer from the beginning; he was a liar from the beginning. When he lies, it is from his nature. When he does evil, it is natural to him — intrinsic, not incidental.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA163",
+            "SRC004388",
+            "SRC004389",
+            "SRC004391",
+            "SRC004393",
+            "SRC004394",
+            "SRC004397",
+            "SRC004398",
+            "SRC004401",
+            "SRC004402"
+          ],
+          "source_refs": [
+            "SRC004388",
+            "SRC004389",
+            "SRC004391",
+            "SRC004393",
+            "SRC004394",
+            "SRC004397",
+            "SRC004398",
+            "SRC004401",
+            "SRC004402"
+          ],
+          "idea_refs": [
+            "IDEA163"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000012",
+          "provider_handle": "p12"
+        },
+        {
+          "text": "Know this: Lucifer is not the devil. Lucifer cannot be the devil, because Lucifer did not keep from the beginning — he is not a liar from the beginning, and he is not a murderer from the beginning. When next we meet, I will give you the doctrine of the devil.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA164",
+            "SRC004404",
+            "SRC004405",
+            "SRC004408",
+            "SRC004409",
+            "SRC004414",
+            "SRC004415",
+            "SRC004416",
+            "SRC004417",
+            "SRC004420"
+          ],
+          "source_refs": [
+            "SRC004404",
+            "SRC004405",
+            "SRC004408",
+            "SRC004409",
+            "SRC004414",
+            "SRC004415",
+            "SRC004416",
+            "SRC004417",
+            "SRC004420"
+          ],
+          "idea_refs": [
+            "IDEA164"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [
+            "UNC018"
+          ],
+          "paragraph_id": "P000013",
+          "provider_handle": "p13"
+        },
+        {
+          "text": "Many of you do not know devil and do not know Lucifer — you treat all of them as the same thing, and then you put Satan inside as well. That is why some of your spiritual warfare does not go anywhere: you are fighting something that doesn't exist.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA165",
+            "SRC004424",
+            "SRC004425",
+            "SRC004426",
+            "SRC004427",
+            "SRC004428",
+            "SRC004429"
+          ],
+          "source_refs": [
+            "SRC004424",
+            "SRC004425",
+            "SRC004426",
+            "SRC004427",
+            "SRC004428",
+            "SRC004429"
+          ],
+          "idea_refs": [
+            "IDEA165"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000014",
+          "provider_handle": "p14"
+        }
+      ],
+      "idea_refs": [
+        "IDEA163",
+        "IDEA164",
+        "IDEA165"
+      ],
+      "source_refs": [
+        "SRC004388",
+        "SRC004389",
+        "SRC004391",
+        "SRC004393",
+        "SRC004394",
+        "SRC004397",
+        "SRC004398",
+        "SRC004401",
+        "SRC004402",
+        "SRC004404",
+        "SRC004405",
+        "SRC004408",
+        "SRC004409",
+        "SRC004414",
+        "SRC004415",
+        "SRC004416",
+        "SRC004417",
+        "SRC004420",
+        "SRC004424",
+        "SRC004425",
+        "SRC004426",
+        "SRC004427",
+        "SRC004428",
+        "SRC004429"
+      ]
+    },
+    {
+      "section_id": "SEC042",
+      "title": "Heart, Soul and Mind",
+      "paragraphs": [
+        {
+          "text": "In Matthew 22, verse 37, Jesus said: you will love the Lord your God with all your heart, and with all your soul, and with all your mind. He specifically distinguished heart, soul, and mind. But my mind is inside my soul — so why did Jesus distinguish that? This is the key to spiritual breakthrough, the alpha breakthrough.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA166",
+            "REF032",
+            "SRC004442",
+            "SRC004458",
+            "SRC004461",
+            "SRC004463",
+            "SRC004469",
+            "SRC004471",
+            "SRC004473",
+            "SRC004474",
+            "SRC004477",
+            "SRC004481",
+            "SRC004489"
+          ],
+          "source_refs": [
+            "SRC004442",
+            "SRC004458",
+            "SRC004461",
+            "SRC004463",
+            "SRC004469",
+            "SRC004471",
+            "SRC004473",
+            "SRC004474",
+            "SRC004477",
+            "SRC004481",
+            "SRC004489"
+          ],
+          "idea_refs": [
+            "IDEA166"
+          ],
+          "example_refs": [],
+          "reference_refs": [
+            "REF032"
+          ],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000015",
+          "provider_handle": "p15"
+        },
+        {
+          "text": "The love of God is in your heart. With all your heart, with all your soul, and with all your mind — love for God must engage heart, soul, and mind together. It is not merely emotion.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA183",
+            "SRC004883",
+            "SRC004886",
+            "SRC004887"
+          ],
+          "source_refs": [
+            "SRC004883",
+            "SRC004886",
+            "SRC004887"
+          ],
+          "idea_refs": [
+            "IDEA183"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000016",
+          "provider_handle": "p16"
+        },
+        {
+          "text": "The first place to develop is your soul. Your spirit is already complete; it is not the spirit that a Christian must develop, since the spirit is already complete in him. The work of growth belongs to the soul.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA187",
+            "SRC004924",
+            "SRC004927",
+            "SRC004930",
+            "SRC004931"
+          ],
+          "source_refs": [
+            "SRC004924",
+            "SRC004927",
+            "SRC004930",
+            "SRC004931"
+          ],
+          "idea_refs": [
+            "IDEA187"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000017",
+          "provider_handle": "p17"
+        }
+      ],
+      "idea_refs": [
+        "IDEA166",
+        "IDEA183",
+        "IDEA187"
+      ],
+      "source_refs": [
+        "SRC004442",
+        "SRC004458",
+        "SRC004461",
+        "SRC004463",
+        "SRC004469",
+        "SRC004471",
+        "SRC004473",
+        "SRC004474",
+        "SRC004477",
+        "SRC004481",
+        "SRC004489",
+        "SRC004883",
+        "SRC004886",
+        "SRC004887",
+        "SRC004924",
+        "SRC004927",
+        "SRC004930",
+        "SRC004931"
+      ]
+    }
+  ],
+  "idea_refs": [
+    "IDEA153",
+    "IDEA155",
+    "IDEA156",
+    "IDEA157",
+    "IDEA158",
+    "IDEA154",
+    "IDEA159",
+    "IDEA160",
+    "IDEA161",
+    "IDEA162",
+    "IDEA163",
+    "IDEA164",
+    "IDEA165",
+    "IDEA166",
+    "IDEA183",
+    "IDEA187"
+  ],
+  "source_refs": [
+    "SRC004149",
+    "SRC004161",
+    "SRC004164",
+    "SRC004166",
+    "SRC004170",
+    "SRC004172",
+    "SRC004173",
+    "SRC004198",
+    "SRC004199",
+    "SRC004202",
+    "SRC004205",
+    "SRC004215",
+    "SRC004221",
+    "SRC004251",
+    "SRC004257",
+    "SRC004276",
+    "SRC004278",
+    "SRC004217",
+    "SRC004218",
+    "SRC004245",
+    "SRC004250",
+    "SRC004265",
+    "SRC004268",
+    "SRC004269",
+    "SRC004270",
+    "SRC004271",
+    "SRC004272",
+    "SRC004292",
+    "SRC004293",
+    "SRC004297",
+    "SRC004298",
+    "SRC004177",
+    "SRC004178",
+    "SRC004180",
+    "SRC004183",
+    "SRC004184",
+    "SRC004322",
+    "SRC004325",
+    "SRC004338",
+    "SRC004340",
+    "SRC004341",
+    "SRC004344",
+    "SRC004345",
+    "SRC004352",
+    "SRC004353",
+    "SRC004356",
+    "SRC004358",
+    "SRC004359",
+    "SRC004360",
+    "SRC004361",
+    "SRC004368",
+    "SRC004369",
+    "SRC004371",
+    "SRC004372",
+    "SRC004373",
+    "SRC004375",
+    "SRC004376",
+    "SRC004381",
+    "SRC004382",
+    "SRC004385",
+    "SRC004387",
+    "SRC004388",
+    "SRC004389",
+    "SRC004391",
+    "SRC004393",
+    "SRC004394",
+    "SRC004397",
+    "SRC004398",
+    "SRC004401",
+    "SRC004402",
+    "SRC004404",
+    "SRC004405",
+    "SRC004408",
+    "SRC004409",
+    "SRC004414",
+    "SRC004415",
+    "SRC004416",
+    "SRC004417",
+    "SRC004420",
+    "SRC004424",
+    "SRC004425",
+    "SRC004426",
+    "SRC004427",
+    "SRC004428",
+    "SRC004429",
+    "SRC004442",
+    "SRC004458",
+    "SRC004461",
+    "SRC004463",
+    "SRC004469",
+    "SRC004471",
+    "SRC004473",
+    "SRC004474",
+    "SRC004477",
+    "SRC004481",
+    "SRC004489",
+    "SRC004883",
+    "SRC004886",
+    "SRC004887",
+    "SRC004924",
+    "SRC004927",
+    "SRC004930",
+    "SRC004931"
+  ],
+  "provider_raw_sha256": "035ef5f407ad763e019126c18eb7440d0ba97c1411ff10a32e18bb9f02b76e1e",
+  "cache_signature": ""
+}

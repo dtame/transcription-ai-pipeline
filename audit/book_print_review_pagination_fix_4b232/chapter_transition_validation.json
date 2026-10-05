@@ -1,0 +1,196 @@
+{
+  "phase": "4B.2.32",
+  "status": "PASS",
+  "transitions_checked": "18 / 18",
+  "transitions_checked_count": 18,
+  "expected_transitions": 18,
+  "chapter_count": 19,
+  "expected_chapters": 19,
+  "titles_match": true,
+  "unnecessary_interchapter_blank_pages": [],
+  "unnecessary_blank_count": 0,
+  "transitions": [
+    {
+      "transition": 1,
+      "previous_title": "Unlearning What Was Handed Down",
+      "next_title": "Flesh and Bone: The Resurrection You Inherit",
+      "previous_last_page": 7,
+      "next_first_page": 8,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 2,
+      "previous_title": "Flesh and Bone: The Resurrection You Inherit",
+      "next_title": "Hebrews 2: Death Already Destroyed",
+      "previous_last_page": 10,
+      "next_first_page": 11,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 3,
+      "previous_title": "Hebrews 2: Death Already Destroyed",
+      "next_title": "Priest, Prophet, King",
+      "previous_last_page": 13,
+      "next_first_page": 14,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 4,
+      "previous_title": "Priest, Prophet, King",
+      "next_title": "Access, Not Achievement",
+      "previous_last_page": 17,
+      "next_first_page": 18,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 5,
+      "previous_title": "Access, Not Achievement",
+      "next_title": "That They May Be One",
+      "previous_last_page": 22,
+      "next_first_page": 23,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 6,
+      "previous_title": "That They May Be One",
+      "next_title": "Loved Exactly as Jesus Is Loved",
+      "previous_last_page": 29,
+      "next_first_page": 30,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 7,
+      "previous_title": "Loved Exactly as Jesus Is Loved",
+      "next_title": "Set Your Mind Above",
+      "previous_last_page": 31,
+      "next_first_page": 32,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 8,
+      "previous_title": "Set Your Mind Above",
+      "next_title": "Laws You Gave Yourself",
+      "previous_last_page": 34,
+      "next_first_page": 35,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 9,
+      "previous_title": "Laws You Gave Yourself",
+      "next_title": "Spirit, Soul and Body",
+      "previous_last_page": 37,
+      "next_first_page": 38,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 10,
+      "previous_title": "Spirit, Soul and Body",
+      "next_title": "Reasonings and Strongholds",
+      "previous_last_page": 40,
+      "next_first_page": 41,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 11,
+      "previous_title": "Reasonings and Strongholds",
+      "next_title": "Prayer Corrected",
+      "previous_last_page": 43,
+      "next_first_page": 44,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 12,
+      "previous_title": "Prayer Corrected",
+      "next_title": "The Renewed Mind and the Hidden Faculty",
+      "previous_last_page": 46,
+      "next_first_page": 47,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 13,
+      "previous_title": "The Renewed Mind and the Hidden Faculty",
+      "next_title": "Operating What You Have",
+      "previous_last_page": 50,
+      "next_first_page": 51,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 14,
+      "previous_title": "Operating What You Have",
+      "next_title": "Grace Barely Touched",
+      "previous_last_page": 53,
+      "next_first_page": 54,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 15,
+      "previous_title": "Grace Barely Touched",
+      "next_title": "Death as Gain",
+      "previous_last_page": 56,
+      "next_first_page": 57,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 16,
+      "previous_title": "Death as Gain",
+      "next_title": "Nothing by Chance",
+      "previous_last_page": 58,
+      "next_first_page": 59,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 17,
+      "previous_title": "Nothing by Chance",
+      "next_title": "Testimonies of Resurrection",
+      "previous_last_page": 62,
+      "next_first_page": 63,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    },
+    {
+      "transition": 18,
+      "previous_title": "Testimonies of Resurrection",
+      "next_title": "Out of the Eater",
+      "previous_last_page": 65,
+      "next_first_page": 66,
+      "intermediate_blank_pages": [],
+      "unnecessary_parity_blank": false,
+      "result": "PASS"
+    }
+  ],
+  "verification": "not_verified",
+  "secrets_included": false
+}

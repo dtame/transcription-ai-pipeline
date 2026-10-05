@@ -1,0 +1,618 @@
+{
+  "phase": "4B.2.23",
+  "chapter_id": "CH002",
+  "working_title": "Flesh and Bone: The Resurrection You Inherit",
+  "language": "en",
+  "expected_sources": {
+    "idea_ids": [
+      "IDEA009",
+      "IDEA010",
+      "IDEA011",
+      "IDEA012",
+      "IDEA013",
+      "IDEA014",
+      "IDEA019",
+      "IDEA021",
+      "IDEA015",
+      "IDEA016",
+      "IDEA017",
+      "IDEA018",
+      "IDEA036",
+      "IDEA037",
+      "IDEA039"
+    ],
+    "example_ids": [],
+    "reference_ids": [
+      "REF002"
+    ],
+    "uncertainty_ids": [
+      "UNC001",
+      "UNC003"
+    ],
+    "src_ids": [
+      "SRC000194",
+      "SRC000196",
+      "SRC000203",
+      "SRC000209",
+      "SRC000216",
+      "SRC000219",
+      "SRC000220",
+      "SRC000221",
+      "SRC000223",
+      "SRC000225",
+      "SRC000227",
+      "SRC000244",
+      "SRC000238",
+      "SRC000247",
+      "SRC000249",
+      "SRC000256",
+      "SRC000258",
+      "SRC000261",
+      "SRC000737",
+      "SRC000264",
+      "SRC000266",
+      "SRC000270",
+      "SRC000274",
+      "SRC000504",
+      "SRC000507",
+      "SRC000509",
+      "SRC000512",
+      "SRC000523",
+      "SRC000525",
+      "SRC000527",
+      "SRC000432",
+      "SRC000446",
+      "SRC000448",
+      "SRC000450",
+      "SRC000437",
+      "SRC000439",
+      "SRC000440",
+      "SRC000443",
+      "SRC000451",
+      "SRC000456",
+      "SRC000466",
+      "SRC000471",
+      "SRC000477",
+      "SRC000480",
+      "SRC000484",
+      "SRC000490",
+      "SRC001024",
+      "SRC001133",
+      "SRC001134",
+      "SRC001137",
+      "SRC001083",
+      "SRC001093",
+      "SRC001098",
+      "SRC001100",
+      "SRC001180",
+      "SRC001186",
+      "SRC001188",
+      "SRC001198",
+      "SRC000273",
+      "SRC000233",
+      "SRC000236"
+    ],
+    "section_ids": [
+      "SEC005",
+      "SEC006",
+      "SEC007",
+      "SEC008"
+    ]
+  },
+  "resolved_sources": {
+    "hydrated_src_ids": [
+      "SRC000194",
+      "SRC000196",
+      "SRC000203",
+      "SRC000209",
+      "SRC000216",
+      "SRC000219",
+      "SRC000220",
+      "SRC000221",
+      "SRC000223",
+      "SRC000225",
+      "SRC000227",
+      "SRC000233",
+      "SRC000236",
+      "SRC000238",
+      "SRC000244",
+      "SRC000247",
+      "SRC000249",
+      "SRC000256",
+      "SRC000258",
+      "SRC000261",
+      "SRC000264",
+      "SRC000266",
+      "SRC000270",
+      "SRC000273",
+      "SRC000274",
+      "SRC000432",
+      "SRC000437",
+      "SRC000439",
+      "SRC000440",
+      "SRC000443",
+      "SRC000446",
+      "SRC000448",
+      "SRC000450",
+      "SRC000451",
+      "SRC000456",
+      "SRC000466",
+      "SRC000471",
+      "SRC000477",
+      "SRC000480",
+      "SRC000484",
+      "SRC000490",
+      "SRC000504",
+      "SRC000507",
+      "SRC000509",
+      "SRC000512",
+      "SRC000523",
+      "SRC000525",
+      "SRC000527",
+      "SRC000737",
+      "SRC001024",
+      "SRC001083",
+      "SRC001093",
+      "SRC001098",
+      "SRC001100",
+      "SRC001133",
+      "SRC001134",
+      "SRC001137",
+      "SRC001180",
+      "SRC001186",
+      "SRC001188",
+      "SRC001198"
+    ],
+    "hydrated_count": 61,
+    "hydrated_details": [
+      {
+        "id": "SRC000194",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000196",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000203",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000209",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000216",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000219",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000220",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000221",
+        "chars": 12,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000223",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000225",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000227",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000233",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000236",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000238",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000244",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000247",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000249",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000256",
+        "chars": 52,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000258",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000261",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000264",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000266",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000270",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000273",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000274",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000432",
+        "chars": 42,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000437",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000439",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000440",
+        "chars": 49,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000443",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000446",
+        "chars": 17,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000448",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000450",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000451",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000456",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000466",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000471",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000477",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000480",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000484",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000490",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000504",
+        "chars": 5,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000507",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000509",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000512",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000523",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000525",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000527",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000737",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001024",
+        "chars": 49,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001083",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001093",
+        "chars": 38,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001098",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001100",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001133",
+        "chars": 54,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001134",
+        "chars": 44,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001137",
+        "chars": 48,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001180",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001186",
+        "chars": 43,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001188",
+        "chars": 7,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001198",
+        "chars": 22,
+        "kind": "SRC"
+      }
+    ]
+  },
+  "missing_sources": [],
+  "context_size": {
+    "chars": 15019,
+    "utf8_bytes": 15044,
+    "section_count": 4,
+    "idea_count": 15,
+    "example_count": 0,
+    "reference_count": 1,
+    "uncertainty_count": 2,
+    "src_ref_count": 61,
+    "hydrated_segment_count": 61,
+    "idea_summary_chars": 2270,
+    "hydrated_src_chars": 1725,
+    "sha256": "c43eed396fafc8d72fa1f2d6e00ff211402c61aefdf8aae0777f2f5ed9f107dc"
+  },
+  "potentially_truncated": [],
+  "coverage_risks": [
+    "Targeted hydration can omit neighboring spoken detail that the plan did not attach.",
+    "A resolved SRC is not proof that every idea in that SRC is restated."
+  ],
+  "whole_transcript_injected": false,
+  "whole_transcript_words": 38313,
+  "hydrated_src_words": 330,
+  "raw_transcript_used_as_silent_fallback": false,
+  "sources_dropped_to_reduce_cost": false,
+  "blocked_if_mandatory_source_missing": true,
+  "generation_blocked": false,
+  "planned_ideas": [
+    "IDEA009",
+    "IDEA010",
+    "IDEA011",
+    "IDEA012",
+    "IDEA013",
+    "IDEA014",
+    "IDEA019",
+    "IDEA021",
+    "IDEA015",
+    "IDEA016",
+    "IDEA017",
+    "IDEA018",
+    "IDEA036",
+    "IDEA037",
+    "IDEA039"
+  ],
+  "allowed_handles": [
+    "IDEA009",
+    "IDEA010",
+    "IDEA011",
+    "IDEA012",
+    "IDEA013",
+    "IDEA014",
+    "IDEA019",
+    "IDEA021",
+    "IDEA015",
+    "IDEA016",
+    "IDEA017",
+    "IDEA018",
+    "IDEA036",
+    "IDEA037",
+    "IDEA039",
+    "REF002",
+    "UNC001",
+    "UNC003",
+    "SRC000194",
+    "SRC000196",
+    "SRC000203",
+    "SRC000209",
+    "SRC000216",
+    "SRC000219",
+    "SRC000220",
+    "SRC000221",
+    "SRC000223",
+    "SRC000225",
+    "SRC000227",
+    "SRC000244",
+    "SRC000238",
+    "SRC000247",
+    "SRC000249",
+    "SRC000256",
+    "SRC000258",
+    "SRC000261",
+    "SRC000737",
+    "SRC000264",
+    "SRC000266",
+    "SRC000270",
+    "SRC000274",
+    "SRC000504",
+    "SRC000507",
+    "SRC000509",
+    "SRC000512",
+    "SRC000523",
+    "SRC000525",
+    "SRC000527",
+    "SRC000432",
+    "SRC000446",
+    "SRC000448",
+    "SRC000450",
+    "SRC000437",
+    "SRC000439",
+    "SRC000440",
+    "SRC000443",
+    "SRC000451",
+    "SRC000456",
+    "SRC000466",
+    "SRC000471",
+    "SRC000477",
+    "SRC000480",
+    "SRC000484",
+    "SRC000490",
+    "SRC001024",
+    "SRC001133",
+    "SRC001134",
+    "SRC001137",
+    "SRC001083",
+    "SRC001093",
+    "SRC001098",
+    "SRC001100",
+    "SRC001180",
+    "SRC001186",
+    "SRC001188",
+    "SRC001198",
+    "SRC000273",
+    "SRC000233",
+    "SRC000236"
+  ],
+  "blocked_handles": [],
+  "ready": true,
+  "secrets_included": false,
+  "expected_title": "Flesh and Bone: The Resurrection You Inherit",
+  "expected_section_count": 4,
+  "expected_idea_count": 15,
+  "expected_example_count": 0,
+  "expected_reference_count": 1,
+  "expected_uncertainty_count": 2,
+  "expected_hydrated_src_count": 61,
+  "context_hash": "c43eed396fafc8d72fa1f2d6e00ff211402c61aefdf8aae0777f2f5ed9f107dc",
+  "other_chapters_excluded": true,
+  "ch012_excluded": true,
+  "ch018_excluded": true,
+  "external_sources_added": false,
+  "internet_lookup": false,
+  "bible_completed_from_memory": false,
+  "context_truncated": false
+}

@@ -1,0 +1,533 @@
+{
+  "chapter_id": "CH001",
+  "title": "Unlearning What Was Handed Down",
+  "sections": [
+    {
+      "section_id": "SEC001",
+      "title": "Hearing Him Directly",
+      "paragraphs": [
+        {
+          "text": "The problem we have as God's people often comes from outside. We rely on information that comes to us secondhand rather than hearing from God directly. We do not hear from God the way we should, and yet God himself will teach us how to do things, if we let him.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA001",
+            "SRC000018",
+            "SRC000020",
+            "SRC000023",
+            "SRC000025"
+          ],
+          "source_refs": [
+            "SRC000018",
+            "SRC000020",
+            "SRC000023",
+            "SRC000025"
+          ],
+          "idea_refs": [
+            "IDEA001"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000001",
+          "provider_handle": "p1"
+        },
+        {
+          "text": "Now that knowledge has increased in our time, we must learn better ways. We cannot keep holding on to inherited customs simply because they are familiar. What was handed down to us is not necessarily the best that God has for us.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA005",
+            "SRC000116",
+            "SRC000117",
+            "SRC000160",
+            "SRC000162"
+          ],
+          "source_refs": [
+            "SRC000116",
+            "SRC000117",
+            "SRC000160",
+            "SRC000162"
+          ],
+          "idea_refs": [
+            "IDEA005"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000002",
+          "provider_handle": "p2"
+        }
+      ],
+      "idea_refs": [
+        "IDEA001",
+        "IDEA005"
+      ],
+      "source_refs": [
+        "SRC000018",
+        "SRC000020",
+        "SRC000023",
+        "SRC000025",
+        "SRC000116",
+        "SRC000117",
+        "SRC000160",
+        "SRC000162"
+      ]
+    },
+    {
+      "section_id": "SEC002",
+      "title": "Body, Food and Inherited Habit",
+      "paragraphs": [
+        {
+          "text": "Physical exercise is spiritually endorsed. First Timothy 4:8 tells us that physical exercise profits us. That is why bodily discipline belongs in a retreat setting; it is not something to set aside as though it had nothing to do with godliness.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA002",
+            "REF001",
+            "SRC000027",
+            "SRC000028",
+            "SRC000029"
+          ],
+          "source_refs": [
+            "SRC000027",
+            "SRC000028",
+            "SRC000029"
+          ],
+          "idea_refs": [
+            "IDEA002"
+          ],
+          "example_refs": [],
+          "reference_refs": [
+            "REF001"
+          ],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000003",
+          "provider_handle": "p3"
+        },
+        {
+          "text": "I do not eat too much at night. That is a pattern many of us grew up with, eating heavily at night, and that is why some of us have had stomach trouble. Food was treated as something for the night, something that had to be heavy at that hour, and skipping breakfast became normal. That pattern is cultural, and it contributed to poor health.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA003",
+            "SRC000033",
+            "SRC000036",
+            "SRC000060",
+            "SRC000069"
+          ],
+          "source_refs": [
+            "SRC000033",
+            "SRC000036",
+            "SRC000060",
+            "SRC000069"
+          ],
+          "idea_refs": [
+            "IDEA003"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000004",
+          "provider_handle": "p4"
+        },
+        {
+          "text": "The other day I was eating, and my daughter was surprised that I was not eating meat. For her, meat is food. I told her, my daughter, this shows how what one generation treats as essential, another generation sees differently.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA003",
+            "EX001",
+            "SRC000078",
+            "SRC000081",
+            "SRC000084",
+            "SRC000095"
+          ],
+          "source_refs": [
+            "SRC000078",
+            "SRC000081",
+            "SRC000084",
+            "SRC000095",
+            "SRC000033",
+            "SRC000036",
+            "SRC000060",
+            "SRC000069"
+          ],
+          "idea_refs": [
+            "IDEA003"
+          ],
+          "example_refs": [
+            "EX001"
+          ],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000005",
+          "provider_handle": "p5"
+        },
+        {
+          "text": "Children were told, if you touch me, the last thing you eat is meat. Meat was kept from children until everyone else had eaten. Those parents who did that were not being wicked; they were following tradition. But is it the best? Not necessarily.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA004",
+            "SRC000098",
+            "SRC000102",
+            "SRC000109",
+            "SRC000115"
+          ],
+          "source_refs": [
+            "SRC000098",
+            "SRC000102",
+            "SRC000109",
+            "SRC000115"
+          ],
+          "idea_refs": [
+            "IDEA004"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000006",
+          "provider_handle": "p6"
+        },
+        {
+          "text": "My grandmother, who was above eighty, never cooked in an iron pot. She never cooked in an aluminum pot either. For her it had to be a clay pot, and her soup had to be fresh, cooked fresh each day. She had no formal education, yet she learned something of the nature of things, and I see God in that.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA006",
+            "EX002",
+            "SRC000121",
+            "SRC000123",
+            "SRC000135",
+            "SRC000137",
+            "SRC000140",
+            "SRC000143",
+            "SRC000149",
+            "SRC000153"
+          ],
+          "source_refs": [
+            "SRC000121",
+            "SRC000123",
+            "SRC000135",
+            "SRC000137",
+            "SRC000140",
+            "SRC000143",
+            "SRC000149",
+            "SRC000153"
+          ],
+          "idea_refs": [
+            "IDEA006"
+          ],
+          "example_refs": [
+            "EX002"
+          ],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000007",
+          "provider_handle": "p7"
+        }
+      ],
+      "idea_refs": [
+        "IDEA002",
+        "IDEA003",
+        "IDEA004",
+        "IDEA006"
+      ],
+      "source_refs": [
+        "SRC000027",
+        "SRC000028",
+        "SRC000029",
+        "SRC000033",
+        "SRC000036",
+        "SRC000060",
+        "SRC000069",
+        "SRC000078",
+        "SRC000081",
+        "SRC000084",
+        "SRC000095",
+        "SRC000098",
+        "SRC000102",
+        "SRC000109",
+        "SRC000115",
+        "SRC000121",
+        "SRC000123",
+        "SRC000135",
+        "SRC000137",
+        "SRC000140",
+        "SRC000143",
+        "SRC000149",
+        "SRC000153"
+      ]
+    },
+    {
+      "section_id": "SEC003",
+      "title": "Tradition Cannot Be Accepted",
+      "paragraphs": [
+        {
+          "text": "If you insist that it must be forty days of fasting before God moves in your life, that is the tree of the knowledge of good and bad. That is not the condition for the move of God.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA022",
+            "SRC000531",
+            "SRC000532",
+            "SRC000534",
+            "SRC000602"
+          ],
+          "source_refs": [
+            "SRC000531",
+            "SRC000532",
+            "SRC000534",
+            "SRC000602"
+          ],
+          "idea_refs": [
+            "IDEA022"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000008",
+          "provider_handle": "p8"
+        },
+        {
+          "text": "Faith is everything. Without faith it is impossible to please God. Romans chapter 14:23 says that whatever is not of faith is sin, including how we eat. Faith, not tradition or ritual observance, is the foundation of walking with God.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA023",
+            "REF003",
+            "SRC000546",
+            "SRC000548",
+            "SRC000553",
+            "SRC000556"
+          ],
+          "source_refs": [
+            "SRC000546",
+            "SRC000548",
+            "SRC000553",
+            "SRC000556"
+          ],
+          "idea_refs": [
+            "IDEA023"
+          ],
+          "example_refs": [],
+          "reference_refs": [
+            "REF003"
+          ],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000009",
+          "provider_handle": "p9"
+        },
+        {
+          "text": "Your tradition is not evil in itself, but it is vile in the sense that it cannot be accepted in the presence of God, no matter who started it or how intelligent they were. You only did not accept it there. The only thing accepted in the presence of God is Christ.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA024",
+            "SRC000561",
+            "SRC000566",
+            "SRC000572",
+            "SRC000573"
+          ],
+          "source_refs": [
+            "SRC000561",
+            "SRC000566",
+            "SRC000572",
+            "SRC000573"
+          ],
+          "idea_refs": [
+            "IDEA024"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000010",
+          "provider_handle": "p10"
+        }
+      ],
+      "idea_refs": [
+        "IDEA022",
+        "IDEA023",
+        "IDEA024"
+      ],
+      "source_refs": [
+        "SRC000531",
+        "SRC000532",
+        "SRC000534",
+        "SRC000602",
+        "SRC000546",
+        "SRC000548",
+        "SRC000553",
+        "SRC000556",
+        "SRC000561",
+        "SRC000566",
+        "SRC000572",
+        "SRC000573"
+      ]
+    },
+    {
+      "section_id": "SEC004",
+      "title": "The Question of Long Life",
+      "paragraphs": [
+        {
+          "text": "I have an ambition. If it takes three hundred years for me to fulfill what God has shown me, why not? If it takes a thousand years, why not?",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA007",
+            "SRC000171",
+            "SRC000174",
+            "SRC000180",
+            "SRC000181"
+          ],
+          "source_refs": [
+            "SRC000171",
+            "SRC000174",
+            "SRC000180",
+            "SRC000181"
+          ],
+          "idea_refs": [
+            "IDEA007"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000011",
+          "provider_handle": "p11"
+        },
+        {
+          "text": "Yet long life was granted even to sinners in Scripture, men in whom righteousness was not living. The reason we are not harvesting long life today is that we have not planted it, and you cannot harvest what you have not planted.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA008",
+            "SRC000183",
+            "SRC000186",
+            "SRC000190",
+            "SRC000192"
+          ],
+          "source_refs": [
+            "SRC000183",
+            "SRC000186",
+            "SRC000190",
+            "SRC000192"
+          ],
+          "idea_refs": [
+            "IDEA008"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000012",
+          "provider_handle": "p12"
+        },
+        {
+          "text": "After the fall, God said, if I leave him like this, make sure he does not partake of the tree of life. So God barred Adam from it and left him in the choice he had made, so that he would not eat of the tree of life and live forever in that fallen state.",
+          "kind": "substantive",
+          "evidence_handles": [
+            "IDEA020",
+            "SRC000515",
+            "SRC000517",
+            "SRC000519",
+            "SRC000520"
+          ],
+          "source_refs": [
+            "SRC000515",
+            "SRC000517",
+            "SRC000519",
+            "SRC000520"
+          ],
+          "idea_refs": [
+            "IDEA020"
+          ],
+          "example_refs": [],
+          "reference_refs": [],
+          "uncertainty_refs": [],
+          "paragraph_id": "P000013",
+          "provider_handle": "p13"
+        }
+      ],
+      "idea_refs": [
+        "IDEA007",
+        "IDEA008",
+        "IDEA020"
+      ],
+      "source_refs": [
+        "SRC000171",
+        "SRC000174",
+        "SRC000180",
+        "SRC000181",
+        "SRC000183",
+        "SRC000186",
+        "SRC000190",
+        "SRC000192",
+        "SRC000515",
+        "SRC000517",
+        "SRC000519",
+        "SRC000520"
+      ]
+    }
+  ],
+  "idea_refs": [
+    "IDEA001",
+    "IDEA005",
+    "IDEA002",
+    "IDEA003",
+    "IDEA004",
+    "IDEA006",
+    "IDEA022",
+    "IDEA023",
+    "IDEA024",
+    "IDEA007",
+    "IDEA008",
+    "IDEA020"
+  ],
+  "source_refs": [
+    "SRC000018",
+    "SRC000020",
+    "SRC000023",
+    "SRC000025",
+    "SRC000116",
+    "SRC000117",
+    "SRC000160",
+    "SRC000162",
+    "SRC000027",
+    "SRC000028",
+    "SRC000029",
+    "SRC000033",
+    "SRC000036",
+    "SRC000060",
+    "SRC000069",
+    "SRC000078",
+    "SRC000081",
+    "SRC000084",
+    "SRC000095",
+    "SRC000098",
+    "SRC000102",
+    "SRC000109",
+    "SRC000115",
+    "SRC000121",
+    "SRC000123",
+    "SRC000135",
+    "SRC000137",
+    "SRC000140",
+    "SRC000143",
+    "SRC000149",
+    "SRC000153",
+    "SRC000531",
+    "SRC000532",
+    "SRC000534",
+    "SRC000602",
+    "SRC000546",
+    "SRC000548",
+    "SRC000553",
+    "SRC000556",
+    "SRC000561",
+    "SRC000566",
+    "SRC000572",
+    "SRC000573",
+    "SRC000171",
+    "SRC000174",
+    "SRC000180",
+    "SRC000181",
+    "SRC000183",
+    "SRC000186",
+    "SRC000190",
+    "SRC000192",
+    "SRC000515",
+    "SRC000517",
+    "SRC000519",
+    "SRC000520"
+  ],
+  "provider_raw_sha256": "457a15405eae0615ade55769139cd93013f66d3810014c3bc01484c3c4cdf539",
+  "cache_signature": ""
+}

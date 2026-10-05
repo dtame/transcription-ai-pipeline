@@ -1,0 +1,529 @@
+{
+  "phase": "4B.2.19",
+  "table_version": "ch012-idea-content-mapping-4b219-1.0",
+  "chapter_id": "CH012",
+  "ideas_planned": [
+    "IDEA179",
+    "IDEA182",
+    "IDEA186",
+    "IDEA180",
+    "IDEA181",
+    "IDEA237",
+    "IDEA184",
+    "IDEA185",
+    "IDEA238",
+    "IDEA212",
+    "IDEA213"
+  ],
+  "ideas_expected": 11,
+  "planned_ids_match": true,
+  "counts": {
+    "CONTENT_SUPPORTED": 11,
+    "PARTIALLY_SUPPORTED": 0,
+    "NOT_SUPPORTED": 0,
+    "UNDETERMINED": 0
+  },
+  "content_supported": [
+    "IDEA179",
+    "IDEA182",
+    "IDEA186",
+    "IDEA180",
+    "IDEA181",
+    "IDEA237",
+    "IDEA184",
+    "IDEA185",
+    "IDEA238",
+    "IDEA212",
+    "IDEA213"
+  ],
+  "partially_supported": [],
+  "not_supported": [],
+  "undetermined": [],
+  "mappings": [
+    {
+      "idea_id": "IDEA179",
+      "source_map_summary": "Praying all night in tongues without discernment can become mere fatigue-inducing 'bavardage' rather than purposeful prayer.",
+      "source_map_src": [
+        "SRC004846",
+        "SRC004850",
+        "SRC004851"
+      ],
+      "editorial_section": "SEC047",
+      "proposed_paragraphs": [
+        "P000001"
+      ],
+      "additional_supporting_paragraphs": [],
+      "split_across_paragraphs": false,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "bavardage",
+        "tongues",
+        "all night",
+        "fatiguing"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000001",
+          "section_id": "SEC047",
+          "shared_src": [
+            "SRC004846",
+            "SRC004850",
+            "SRC004851"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "Praying all night in tongues, by itself, is not proof of effective prayer. It can become mere bavardage — fatiguing talk without discernment — rather than prayer that accomplishes anything. One speaker was told plainly: \"You just exercised bavardage,\" after a night spent praying in tongues that left him and others simply exhausted."
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['bavardage', 'tongues', 'all night', 'fatiguing']. P000001 restates all-night tongues as bavardage and fatigue rather than effective prayer. Classification uses those claims, not the shared SRC004846/850/851 identifiers."
+    },
+    {
+      "idea_id": "IDEA182",
+      "source_map_summary": "Tongues fail to produce results when believers do not practice what Scripture actually instructs about them.",
+      "source_map_src": [
+        "SRC004880",
+        "SRC004881",
+        "SRC004882"
+      ],
+      "editorial_section": "SEC047",
+      "proposed_paragraphs": [
+        "P000002"
+      ],
+      "additional_supporting_paragraphs": [],
+      "split_across_paragraphs": false,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "scripture",
+        "tongues",
+        "does not work"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000002",
+          "section_id": "SEC047",
+          "shared_src": [
+            "SRC004880",
+            "SRC004881",
+            "SRC004882"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "The honest question was raised: why does this not work for us? The answer given was direct — it does not work because believers do not do what Scripture actually instructs concerning tongues. The failure was not in the gift itself but in the gap between what was practiced and what had been taught."
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['scripture', 'tongues', 'does not work']. P000002 restates that tongues do not work because believers do not do what Scripture instructs. The extra gloss that the failure was not in the gift itself is a fidelity note, not the basis of the correspondence."
+    },
+    {
+      "idea_id": "IDEA186",
+      "source_map_summary": "Sincerity alone was not enough; the previous manner of praying was based on ignorance, not correct knowledge.",
+      "source_map_src": [
+        "SRC004918",
+        "SRC004920",
+        "SRC004921",
+        "SRC004923"
+      ],
+      "editorial_section": "SEC047",
+      "proposed_paragraphs": [
+        "P000003"
+      ],
+      "additional_supporting_paragraphs": [],
+      "split_across_paragraphs": false,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "sincere",
+        "ignorance",
+        "did not know"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000003",
+          "section_id": "SEC047",
+          "shared_src": [
+            "SRC004918",
+            "SRC004920",
+            "SRC004921",
+            "SRC004923"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "We were sincere, even very sincere. But sincerity was not the issue. The real problem was that we did not know — our manner of praying rested on ignorance rather than on correct knowledge of what the practice was for."
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['sincere', 'ignorance', 'did not know']. P000003 restates sincerity, ignorance, and the lack of correct knowledge. First-person we is the accepted 4B.2.18 voice, not a new idea."
+    },
+    {
+      "idea_id": "IDEA180",
+      "source_map_summary": "One of the primary benefits of praying in tongues is to cool/refresh oneself, grounded in Isaiah 28 and 1 Corinthians 14.",
+      "source_map_src": [
+        "SRC004854",
+        "SRC004856",
+        "SRC004877",
+        "SRC004879"
+      ],
+      "editorial_section": "SEC048",
+      "proposed_paragraphs": [
+        "P000004"
+      ],
+      "additional_supporting_paragraphs": [],
+      "split_across_paragraphs": false,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "isaiah 28",
+        "1 corinthians 14",
+        "cool"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000004",
+          "section_id": "SEC048",
+          "shared_src": [
+            "SRC004854",
+            "SRC004856",
+            "SRC004877",
+            "SRC004879"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "One of the primary purposes of praying in tongues is to cool or refresh oneself. This is grounded in Isaiah 28 and in 1 Corinthians 14. An earlier passage, Isaiah chapter 26, locating a related statement in verse 3, though the connection between chapter 26 and chapter 28 at this point in the teaching remained unclear."
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['isaiah 28', '1 corinthians 14', 'cool']. P000004 states cooling/refreshing as a primary purpose and names Isaiah 28 and 1 Corinthians 14. UNC029 sits on the same paragraph and does not remove that support."
+    },
+    {
+      "idea_id": "IDEA181",
+      "source_map_summary": "When fatigued, a short five-minute season of praying in tongues brings refreshment rather than exhausting all-night sessions.",
+      "source_map_src": [
+        "SRC004859",
+        "SRC004860"
+      ],
+      "editorial_section": "SEC048",
+      "proposed_paragraphs": [
+        "P000006"
+      ],
+      "additional_supporting_paragraphs": [],
+      "split_across_paragraphs": false,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "five minutes",
+        "fatigued",
+        "refresh"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000006",
+          "section_id": "SEC048",
+          "shared_src": [
+            "SRC004859",
+            "SRC004860"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "Because refreshment, not exhaustion, is the purpose, the practical counsel given was short rather than prolonged: when fatigued, pray in tongues for about five minutes. This brief season brings refreshment, in contrast to all-night sessions that only produce fatigue."
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['five minutes', 'fatigued', 'refresh']. P000006 states the five-minute counsel when fatigued and contrasts it with all-night fatigue."
+    },
+    {
+      "idea_id": "IDEA237",
+      "source_map_summary": "Praying in tongues brings peace, described as the Spirit of God praying through the believer.",
+      "source_map_src": [
+        "SRC006407",
+        "SRC006466",
+        "SRC006469",
+        "SRC006474",
+        "SRC006476"
+      ],
+      "editorial_section": "SEC048",
+      "proposed_paragraphs": [
+        "P000007"
+      ],
+      "additional_supporting_paragraphs": [],
+      "split_across_paragraphs": false,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "peace",
+        "spirit of god praying"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000007",
+          "section_id": "SEC048",
+          "shared_src": [
+            "SRC006407",
+            "SRC006466",
+            "SRC006469",
+            "SRC006474",
+            "SRC006476"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "Praying in tongues is also described as bringing peace. The teaching states that when a person prays in the Holy Ghost, peace begins — and this is described as the Spirit of God praying through the believer."
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['peace', 'spirit of god praying']. P000007 states that praying in tongues brings peace and that this is the Spirit of God praying through the believer."
+    },
+    {
+      "idea_id": "IDEA184",
+      "source_map_summary": "A personal revelation: God told the speaker directly that he was 'tired' and that continuing without correction would lead him to preach a wrong doctrine.",
+      "source_map_src": [
+        "SRC004898",
+        "SRC004899",
+        "SRC004905",
+        "SRC004906"
+      ],
+      "editorial_section": "SEC049",
+      "proposed_paragraphs": [
+        "P000009"
+      ],
+      "additional_supporting_paragraphs": [
+        "P000008"
+      ],
+      "split_across_paragraphs": false,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "tired",
+        "wrong doctrine"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000009",
+          "section_id": "SEC049",
+          "shared_src": [
+            "SRC004898",
+            "SRC004899",
+            "SRC004905",
+            "SRC004906"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "In that state, God spoke to me directly, calling me \"my son\" and telling me I was tired. God further said that if He left me in that condition without correction, I would go on to preach a wrong doctrine."
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['tired', 'wrong doctrine']. P000009 states that God said the speaker was tired and that continuing without correction would lead to a wrong doctrine. P000008 is adjacent testimony (EX030), not required for this idea."
+    },
+    {
+      "idea_id": "IDEA185",
+      "source_map_summary": "God was not absent or waiting somewhere else to hear prayer — He is present, and the issue is whether the prayer touches/reaches Him ('the ceiling').",
+      "source_map_src": [
+        "SRC004909",
+        "SRC004910",
+        "SRC004915",
+        "SRC004917"
+      ],
+      "editorial_section": "SEC049",
+      "proposed_paragraphs": [
+        "P000010"
+      ],
+      "additional_supporting_paragraphs": [],
+      "split_across_paragraphs": false,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "ceiling",
+        "never come",
+        "touch"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000010",
+          "section_id": "SEC049",
+          "shared_src": [
+            "SRC004909",
+            "SRC004910",
+            "SRC004915",
+            "SRC004917"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "Alongside this, the teaching addresses a mistaken assumption about God's location or availability in prayer. God said He had never come from somewhere else, and that He had never gone elsewhere — meaning He was not absent, waiting to be reached from a distance. The real question was whether the prayer could touch or reach Him at all, described here as reaching \"the ceiling.\" If a prayer cannot touch God, it was asked, how can it change the one who prays it?"
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['ceiling', 'never come', 'touch']. P000010 keeps God as never having come or gone elsewhere and keeps the ceiling / touch-or-reach question. The gloss 'meaning He was not absent' is a fidelity note."
+    },
+    {
+      "idea_id": "IDEA238",
+      "source_map_summary": "Doing spiritual practices sincerely but incorrectly still needs correction to reach true rest.",
+      "source_map_src": [
+        "SRC006452",
+        "SRC006454",
+        "SRC006456"
+      ],
+      "editorial_section": "SEC049",
+      "proposed_paragraphs": [
+        "P000011"
+      ],
+      "additional_supporting_paragraphs": [],
+      "split_across_paragraphs": false,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "sincere",
+        "rest",
+        "not doing it well"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000011",
+          "section_id": "SEC049",
+          "shared_src": [
+            "SRC006452",
+            "SRC006454",
+            "SRC006456"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "The correction given was not a rejection of sincerity. It was acknowledged: \"It's ok, you're sincere. But you're not doing it well.\" The promise attached to correction was that when it is done well, true rest follows."
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['sincere', 'rest', 'not doing it well']. P000011 quotes sincerity, 'not doing it well', correction, and true rest. The 4B.2.16 heuristic called this IDENTIFIER_ONLY because summary tokens such as spiritual/practices/incorrectly are absent. This review uses the accepted claims, not SRC006452."
+    },
+    {
+      "idea_id": "IDEA212",
+      "source_map_summary": "God's disposition has always been to pour His Spirit and blessing on the thirsty and their descendants, as shown in Isaiah 44:3, fulfilled in Jesus' beatitude on hungering and thirsting for righteousness.",
+      "source_map_src": [
+        "SRC005748",
+        "SRC005750",
+        "SRC005754",
+        "SRC005763",
+        "SRC005766"
+      ],
+      "editorial_section": "SEC050",
+      "proposed_paragraphs": [
+        "P000012",
+        "P000013"
+      ],
+      "additional_supporting_paragraphs": [],
+      "split_across_paragraphs": true,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "isaiah 44:3",
+        "thirst",
+        "pour",
+        "beatitude"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000012",
+          "section_id": "SEC050",
+          "shared_src": [
+            "SRC005748",
+            "SRC005750",
+            "SRC005754"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "God's disposition has always been to pour out His Spirit and blessing on the thirsty and on their descendants. This is stated in Isaiah 44:3, where God says, \"I will pour water on him... I will pour my spirit.\""
+        },
+        {
+          "paragraph_id": "P000013",
+          "section_id": "SEC050",
+          "shared_src": [
+            "SRC005763",
+            "SRC005766"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "This same disposition is fulfilled in the beatitude of Jesus concerning those who hunger and thirst for righteousness: \"blessed are you... for you shall be satisfied.\""
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['isaiah 44:3', 'thirst', 'pour', 'beatitude']. The SourceMap idea already joins Isaiah 44:3 with the beatitude. P000012 carries the pouring on the thirsty; P000013 carries the beatitude. Split coverage is allowed and is not SRC-only."
+    },
+    {
+      "idea_id": "IDEA213",
+      "source_map_summary": "Spiritual hunger is the anchor condition for receiving more of God; God is no respecter of persons and desires to be discovered by all who hunger.",
+      "source_map_src": [
+        "SRC005771",
+        "SRC005775",
+        "SRC005778",
+        "SRC005780"
+      ],
+      "editorial_section": "SEC050",
+      "proposed_paragraphs": [
+        "P000014"
+      ],
+      "additional_supporting_paragraphs": [],
+      "split_across_paragraphs": false,
+      "status": "CONTENT_SUPPORTED",
+      "content_markers_present": [
+        "spiritual hunger",
+        "no respecter of persons",
+        "reveal"
+      ],
+      "content_markers_missing": [],
+      "src_overlap_recorded": true,
+      "confirmed_on_src_overlap_alone": false,
+      "applied_to_accepted_chapter": false,
+      "written_into_paragraph_evidence": false,
+      "semantic_certificate": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000014",
+          "section_id": "SEC050",
+          "shared_src": [
+            "SRC005771",
+            "SRC005775",
+            "SRC005778",
+            "SRC005780"
+          ],
+          "src_overlap_alone_is_not_support": true,
+          "accepted_text": "The teaching anchors the reception of more of God in one single condition: spiritual hunger. God is no respecter of persons; he wants to reveal himself and to be discovered by all who hunger for him."
+        }
+      ],
+      "justification": "CONTENT_SUPPORTED. Markers=['spiritual hunger', 'no respecter of persons', 'reveal']. P000014 states spiritual hunger as the single condition, that God is no respecter of persons, and that He wants to be discovered by those who hunger."
+    }
+  ],
+  "many_to_many_preserved": true,
+  "src_overlap_alone_rejected": true,
+  "written_into_paragraph_evidence": false,
+  "accepted_chapter_modified": false,
+  "not_a_semantic_certificate": true,
+  "future_production_projection_must_keep_this_table": true,
+  "secrets_included": false
+}

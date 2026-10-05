@@ -1,0 +1,86 @@
+{
+  "phase": "4B.2.17",
+  "validator_version": "book-generation-validator-1.0.1",
+  "status": "FAIL",
+  "json_valid": true,
+  "chapter_contract_valid": false,
+  "checks": {
+    "json_valid": true,
+    "chapter_contract_valid": false,
+    "chapter_id_correct": true,
+    "sections_expected": [
+      "SEC047",
+      "SEC048",
+      "SEC049",
+      "SEC050"
+    ],
+    "sections_generated": [
+      "SEC047",
+      "SEC048",
+      "SEC049",
+      "SEC050"
+    ],
+    "sections_match": true,
+    "paragraph_ids": [
+      "P000001",
+      "P000002",
+      "P000003",
+      "P000004",
+      "P000005",
+      "P000006",
+      "P000007",
+      "P000008",
+      "P000009",
+      "P000010",
+      "P000011",
+      "P000012",
+      "P000013",
+      "P000014"
+    ],
+    "paragraph_ids_unique": true,
+    "empty_paragraphs": 0,
+    "ideas_expected": [
+      "IDEA179",
+      "IDEA182",
+      "IDEA186",
+      "IDEA180",
+      "IDEA181",
+      "IDEA237",
+      "IDEA184",
+      "IDEA185",
+      "IDEA238",
+      "IDEA212",
+      "IDEA213"
+    ],
+    "ideas_referenced": [],
+    "ideas_expected_count": 11,
+    "ideas_referenced_count": 0,
+    "ideas_missing_from_metadata": [
+      "IDEA179",
+      "IDEA182",
+      "IDEA186",
+      "IDEA180",
+      "IDEA181",
+      "IDEA237",
+      "IDEA184",
+      "IDEA185",
+      "IDEA238",
+      "IDEA212",
+      "IDEA213"
+    ],
+    "unknown_identifiers": [],
+    "invalid_src": [],
+    "unc029_present": true,
+    "unc029_resolved_arbitrarily": false,
+    "other_chapter_contamination": [],
+    "paragraphs_generated": 14,
+    "semantic_fidelity_validated": false
+  },
+  "errors": [
+    "missing planned IDEAs: ['IDEA179', 'IDEA180', 'IDEA181', 'IDEA182', 'IDEA184', 'IDEA185', 'IDEA186', 'IDEA212', 'IDEA213', 'IDEA237', 'IDEA238']",
+    "ideas not referenced: IDEA179,IDEA182,IDEA186,IDEA180,IDEA181,IDEA237,IDEA184,IDEA185,IDEA238,IDEA212,IDEA213"
+  ],
+  "warnings": [],
+  "semantic_fidelity_validated": false,
+  "secrets_included": false
+}

@@ -1,0 +1,126 @@
+{
+  "cases": 10,
+  "positive_cases": 6,
+  "negative_cases": 4,
+  "present": 0,
+  "positive_accepted": 0,
+  "positive_false_rejections": 0,
+  "positive_false_questionable": 0,
+  "positive_false_unsupported": 0,
+  "negative_blocked": 0,
+  "negative_false_negatives": 0,
+  "verdict_accuracy": 0.0,
+  "negative_recall": 0.0,
+  "positive_specificity": 0.0,
+  "reason_code_compatible": 0,
+  "reason_code_compatible_of": 4,
+  "small_sample_warning": "10 cases are an engineering canary, not a statistical model-quality benchmark.",
+  "positive_case_ids": [
+    "4b22_p2_supported",
+    "4b22_p4_supported",
+    "4b22_p5_supported",
+    "4b22_p6_supported",
+    "4b22_p7_supported",
+    "4b2_p2_supported"
+  ],
+  "negative_case_ids": [
+    "4b22_p3_new_causal",
+    "4b22_p8_reference_completion",
+    "4b2_p8_invented_funeral",
+    "4b2_p13_unsupported_connective"
+  ],
+  "funeral": {
+    "case_id": "4b2_p8_invented_funeral",
+    "role": "negative",
+    "opaque_handle": null,
+    "expected_class": "UNSUPPORTED",
+    "accepted_classes": [
+      "UNSUPPORTED"
+    ],
+    "expected_reason_codes": [
+      "INVENTED_EXAMPLE"
+    ],
+    "terra_class": null,
+    "terra_reasons": [],
+    "terra_explanations": [],
+    "present": false,
+    "blocked": false,
+    "verdict_compatible": false,
+    "reason_compatible": false,
+    "false_rejection": false,
+    "false_negative": false,
+    "partial_clause_detected": null
+  },
+  "connective": {
+    "case_id": "4b2_p13_unsupported_connective",
+    "role": "negative",
+    "opaque_handle": null,
+    "expected_class": "UNSUPPORTED",
+    "accepted_classes": [
+      "UNSUPPORTED"
+    ],
+    "expected_reason_codes": [
+      "NEW_ARGUMENT",
+      "NEW_CONCLUSION",
+      "NEW_IMPLICATION"
+    ],
+    "terra_class": null,
+    "terra_reasons": [],
+    "terra_explanations": [],
+    "present": false,
+    "blocked": false,
+    "verdict_compatible": false,
+    "reason_compatible": false,
+    "false_rejection": false,
+    "false_negative": false,
+    "partial_clause_detected": null
+  },
+  "p3": {
+    "case_id": "4b22_p3_new_causal",
+    "role": "negative",
+    "opaque_handle": null,
+    "expected_class": "QUESTIONABLE",
+    "accepted_classes": [
+      "QUESTIONABLE",
+      "UNSUPPORTED"
+    ],
+    "expected_reason_codes": [
+      "NEW_CAUSAL_LINK",
+      "NEW_IMPLICATION"
+    ],
+    "terra_class": null,
+    "terra_reasons": [],
+    "terra_explanations": [],
+    "present": false,
+    "blocked": false,
+    "verdict_compatible": false,
+    "reason_compatible": false,
+    "false_rejection": false,
+    "false_negative": false,
+    "partial_clause_detected": null
+  },
+  "p8": {
+    "case_id": "4b22_p8_reference_completion",
+    "role": "negative",
+    "opaque_handle": null,
+    "expected_class": "QUESTIONABLE",
+    "accepted_classes": [
+      "QUESTIONABLE",
+      "UNSUPPORTED"
+    ],
+    "expected_reason_codes": [
+      "REFERENCE_COMPLETION",
+      "REFERENCE_EXPANSION"
+    ],
+    "terra_class": null,
+    "terra_reasons": [],
+    "terra_explanations": [],
+    "present": false,
+    "blocked": false,
+    "verdict_compatible": false,
+    "reason_compatible": false,
+    "false_rejection": false,
+    "false_negative": false,
+    "partial_clause_detected": null
+  }
+}

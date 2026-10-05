@@ -16,6 +16,11 @@ from typing import Any, Mapping
 
 from app.ai.cost import CostTracker
 from app.ai.errors import AIError, AIStructuredOutputError
+from app.ai.provider_preflight import (
+    ProviderNotReadyError,
+    assert_provider_ready_for_authorization,
+    check_provider_runtime_readiness,
+)
 from app.ai.provider_forensics import (
     current_http_envelope,
     persist_error_forensics,
@@ -36,6 +41,7 @@ from app.book_semantic_gate_4b24.constants import (
     HISTORICAL_4B2_STATUS,
     MAX_ENGINE_GENERATE,
     MODEL,
+    OUTPUT_MODE,
     PHASE,
     PROJECT_NAME,
     PROVIDER,
@@ -464,6 +470,32 @@ def run_canary(
     forensic_dir.mkdir(parents=True, exist_ok=True)
     guard = OneShotCallGuard(max_calls=MAX_ENGINE_GENERATE)
     identity_hash = str((identity.get("request") or {}).get("sha256") or PHASE)
+    readiness = check_provider_runtime_readiness(
+        PROVIDER,
+        model=MODEL,
+        request=request,
+        output_mode=OUTPUT_MODE,
+        engine=engine,
+    )
+    try:
+        assert_provider_ready_for_authorization(readiness)
+    except ProviderNotReadyError as exc:
+        result.accepted = False
+        result.error = exc.reason
+        result.mode = "BLOCKED_PRECALL"
+        bundle = _offline_bundle(
+            identity,
+            tests=tests,
+            verdict="BLOCKED_PRECALL",
+            notes=exc.reason,
+        )
+        if write_artifacts:
+            from app.book_semantic_gate_4b24.writer import write_canary_artifacts
+
+            write_canary_artifacts(bundle, root=root)
+        result.bundle = bundle
+        return result
+
     if isinstance(engine, CountingOpenAIEngine):
         _consume_lock(root=root)
 

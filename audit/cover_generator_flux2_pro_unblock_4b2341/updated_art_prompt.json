@@ -1,0 +1,29 @@
+{
+  "art_direction": "The Door Already Open",
+  "source_direction_name": "The door already open",
+  "source_phase": "4B.2.34",
+  "prompt_text_changed": false,
+  "prompt": "Editorial photograph for a book cover, vertical two-to-three ratio. A plain domestic doorway already standing open, warm dawn light already inside the room, a small oil lamp already burning on a walnut table. Upper third is an even plaster wall in exact color #E7D7C1 with no objects and no texture that resembles writing. Flame in #E0A15A, shadows in #3E4A3A. Photographed, calm, sharp, no people. no words, no letters, no numerals, no title, no subtitle, no author name, no logo, no barcode, no ISBN, no watermark, no signature, no cross, no crucifix, no stained glass, no halo, no angel, no church interior, no crowd, no celebrity face, no skeleton, no open tomb.",
+  "negative_prompt_editorial_note": "text, letters, numbers, title, subtitle, author name, logo, barcode, ISBN, watermark, signature, cross, stained glass, halo, angel, church, crowd, skeleton, tomb, lion",
+  "negative_prompt_transmitted": false,
+  "themes": [
+    "The Life You Already Inherited",
+    "Resurrection life, union with God, and the practice of spiritual authority",
+    "Access, Not Achievement",
+    "The Power Is Already Inside",
+    "Operating What You Have"
+  ],
+  "title_space": "Upper third, low detail, #E7D7C1, dark type to be added by the renderer.",
+  "width": 1632,
+  "height": 2448,
+  "output_format": "png",
+  "disable_pup": true,
+  "embed_text": false,
+  "technical_adjustments": [
+    "The approved prompt already asks for a vertical two-to-three ratio. 1632×2448 is exactly 2:3, so the picture language stays.",
+    "Width and height are request fields. They are not added to the prompt.",
+    "disable_pup stays true so the written prompt is not rewritten by the provider.",
+    "The image stays text-free. The Cover Renderer adds the title later."
+  ],
+  "image_generated": false
+}

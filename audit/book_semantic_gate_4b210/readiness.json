@@ -1,0 +1,19 @@
+{
+  "READY_FOR_SEMANTIC_GATE_20_HUMAN_REVIEW": true,
+  "READY_FOR_ONE_REAL_TERRA_CANARY": true,
+  "REAL_TERRA_CANARY_AUTHORIZED": false,
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "production_pipeline": "UNCHANGED",
+  "candidate_promoted": false,
+  "contract_20_activated": false,
+  "contract_201_activated": false,
+  "human_label_modified": false,
+  "historical_contracts_modified": false,
+  "why": "Offline contract hardening and a frozen 2.0.1 request are complete. A later Terra call still needs a distinct human authorization. 2.0 and 2.0.1 remain inactive in production.",
+  "phase": "4B.2.10",
+  "secrets_included": false
+}

@@ -1,0 +1,107 @@
+{
+  "historical_request_sha256": "09d6472e544bc60231c77908e6608ff7ee7b6fd4746317f206301082e21eab53",
+  "new_canonical_request_sha256": "8a92848e412763f0e67468245f9c007ee9537ffa4f2f5469af9a6934d9ebeb31",
+  "new_canonical_request_sha256_repeat": "8a92848e412763f0e67468245f9c007ee9537ffa4f2f5469af9a6934d9ebeb31",
+  "exact_changed_fields": [
+    "max_tokens -> removed",
+    "max_completion_tokens=8192 -> added"
+  ],
+  "prompt_identity": {
+    "version": "book-semantic-validator-1.0",
+    "system_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+    "instructions_sha256": "4747261db399a1b934221c455502e9b55f54498bab4f31ae29dff9ef6e6e8ccc",
+    "prompt_sha256": "6bc72002b50f77613f71c0241cde133fdc04527c37d6b630bf5794641a443bbf",
+    "role": "evidence-bounded semantic auditor",
+    "no_chain_of_thought": true,
+    "no_manuscript_rewrite": true
+  },
+  "transport_identity": {
+    "version": "book-semantic-validation-transport-1.0",
+    "top_level": [
+      "ch",
+      "pr",
+      "rr",
+      "sc",
+      "uh",
+      "v"
+    ],
+    "paragraph_fields": [
+      "c",
+      "ev",
+      "h",
+      "r",
+      "v"
+    ],
+    "claim_fields": [
+      "cf",
+      "e",
+      "ev",
+      "i",
+      "k",
+      "r",
+      "s",
+      "t",
+      "x"
+    ],
+    "canonical_ids_from_provider": false,
+    "engine_decode": "local_only",
+    "no_service_json_loads_of_http": true
+  },
+  "schema_identity": {
+    "transport_version": "book-semantic-validation-transport-1.0",
+    "raw_schema_sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689",
+    "raw_schema_bytes": 3261,
+    "engine_mode": "json_object",
+    "native_json_schema_response_format": false,
+    "openai_engine_compatible": true,
+    "temperature_in_schema": false,
+    "thinking_in_schema": false,
+    "additional_properties_closed": false,
+    "note": "OpenAIEngine currently sends response_format=json_object. This schema is the local contract and prompt identity, not an unverified native json_schema API feature."
+  },
+  "benchmark_identity": {
+    "identity_match": true,
+    "sha256": "3888806c68eeff7dc363790d4e0ffcf063e099c3f295e684b80b3c9e8167af82"
+  },
+  "case_count": 10,
+  "label_leakage": 0,
+  "context_budget": {
+    "status": "ESTIMATED",
+    "stage": "book_semantic_validation_canary_4b24",
+    "production_chapter_validation": false,
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "pricing_verified": true,
+    "local_input_tokens": {
+      "tokens": 3893,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "request_chars": 15569,
+    "provider_adjusted_mid": 6228,
+    "provider_adjusted_pessimistic": 8040,
+    "output_tokens_conservative": 8192,
+    "max_output_tokens": 8192,
+    "context_window": 1050000,
+    "usable_input_tokens": 726808,
+    "context_utilization_pessimistic": 0.011062,
+    "context_safe": true,
+    "long_context_regime": "NOT APPLICABLE",
+    "long_context_threshold_modeled": false,
+    "long_context_assumed_applied": false,
+    "input_cost_usd": 0.01608,
+    "output_cost_usd": 0.098304,
+    "total_cost_usd": 0.114384,
+    "total_cost_display": "0.114384 USD",
+    "cost_status": "base_estimate",
+    "unknown_or_incomplete": true,
+    "unmodeled_regimes": "long_context_not_modeled",
+    "note": "Single semantic-validation canary estimate. Not a completed production chapter validation. Long-context pricing threshold is not modeled; current request is a small fraction of the 1,050,000-token context window.",
+    "cost_status_is_not_known": true
+  },
+  "estimated_cost": "0.114384 USD",
+  "deterministic": true,
+  "differs_from_historical": true,
+  "http_sent": false,
+  "secrets_included": false
+}

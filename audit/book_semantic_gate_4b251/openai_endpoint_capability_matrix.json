@@ -1,0 +1,71 @@
+{
+  "production_endpoint": "chat.completions",
+  "production_sdk_method": "client.chat.completions.create",
+  "responses_api_used": false,
+  "do_not_assume_max_completion_tokens_for_all_models": true,
+  "do_not_map_provider_max_output_tokens_to_responses_field": true,
+  "endpoints": {
+    "chat.completions": {
+      "sdk_method": "client.chat.completions.create",
+      "supported_token_parameters": [
+        "max_tokens",
+        "max_completion_tokens"
+      ],
+      "notes": "Parameter name is model-specific. o-series / Terra reject max_tokens. Legacy chat models still use max_tokens in this adapter."
+    },
+    "responses": {
+      "sdk_method": "client.responses.create",
+      "supported_token_parameters": [
+        "max_output_tokens"
+      ],
+      "used_by_production_openai_engine": false,
+      "notes": "Not the production endpoint. AIRequest.max_output_tokens must not be forwarded here from OpenAIEngine."
+    }
+  },
+  "models": {
+    "gpt-5.6-terra": {
+      "endpoint": "chat.completions",
+      "model": "gpt-5.6-terra",
+      "parameter": "max_completion_tokens",
+      "do_not_send": [
+        "max_tokens",
+        "max_output_tokens"
+      ],
+      "confidence": "CONFIRMED",
+      "server_acceptance": "UNKNOWN",
+      "evidence": "4B.2.5 HTTP 400 invalid_request_error unsupported_parameter max_tokens. Server message: Use 'max_completion_tokens' instead. A successful Terra response with max_completion_tokens has not been observed; acceptance remains UNKNOWN.",
+      "source": "audit/real/book_semantic_gate_4b25/book_semantic_gate_4b25_provider_evidence.json"
+    },
+    "unlisted_openai_chat_completions_default": {
+      "endpoint": "chat.completions",
+      "model": "gpt-4o-mini",
+      "parameter": "max_tokens",
+      "do_not_send": [
+        "max_completion_tokens",
+        "max_output_tokens"
+      ],
+      "confidence": "LOCALLY_VERIFIED",
+      "server_acceptance": "UNKNOWN",
+      "evidence": "Unlisted OpenAI chat.completions model. Adapter keeps the legacy max_tokens field used by existing local OpenAI tests. This is not a claim that every future model accepts max_tokens.",
+      "source": "app/ai/openai_compat.py default chat.completions contract"
+    }
+  },
+  "json_object": {
+    "local_serialization": "LOCALLY_VERIFIED",
+    "server_acceptance": "UNKNOWN",
+    "note": "4B.2.5 was rejected on max_tokens before json_object server acceptance could be observed."
+  },
+  "temperature": {
+    "gpt-5.6-terra": {
+      "policy": "omit",
+      "supports_temperature": false,
+      "server_acceptance": "UNKNOWN"
+    }
+  },
+  "thinking": {
+    "gpt-5.6-terra": {
+      "policy": "provider_default_omitted",
+      "server_behavior": "UNKNOWN"
+    }
+  }
+}

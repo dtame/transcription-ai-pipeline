@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "kind": "PROVIDER_RESPONSE_FORENSICS",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "stage": "book_semantic_validation_canary_4b26",
+  "window_id": "book-semantic-gate-4b26",
+  "analysis_signature": "8a92848e412763f0e67468245f9c007ee9537ffa4f2f5469af9a6934d9ebeb31",
+  "http_status": null,
+  "http_status_available": false,
+  "usage": {
+    "source": "provider",
+    "input_tokens": 4076,
+    "output_tokens": 8192,
+    "total_tokens": 12268
+  },
+  "finish_reason": "length",
+  "request_id": "chatcmpl-EU9Ip28ayYHuhTrVYGY0CPP4JGEH5",
+  "parse_error": {
+    "error_type": "AIStructuredOutputError",
+    "parse_failure_kind": "empty",
+    "message": "Sortie structurée demandée mais la réponse du modèle est vide.",
+    "json_decode_msg": null,
+    "json_decode_lineno": null,
+    "json_decode_colno": null
+  },
+  "raw_content": {
+    "raw_text_sha256": null,
+    "raw_text_bytes": 0,
+    "raw_text_chars": 0,
+    "raw_text_present": false,
+    "persisted": false,
+    "persist_requested": true,
+    "policy": "persist locally under structured_output_forensics, never logs/console, no JSON repair"
+  },
+  "transport_written": false,
+  "result_written": false,
+  "retry": false,
+  "secrets_included": false
+}

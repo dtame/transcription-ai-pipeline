@@ -1,0 +1,57 @@
+{
+  "phase": "4B.2.18",
+  "chapter_id": "CH012",
+  "provider_response_modified": false,
+  "ideas_expected": 11,
+  "ideas_in_section_metadata": [
+    "IDEA179",
+    "IDEA180",
+    "IDEA181",
+    "IDEA182",
+    "IDEA184",
+    "IDEA185",
+    "IDEA186",
+    "IDEA212",
+    "IDEA213",
+    "IDEA237",
+    "IDEA238"
+  ],
+  "ideas_in_section_metadata_count": 11,
+  "ideas_in_paragraph_idea_refs": [],
+  "ideas_in_paragraph_evidence": [],
+  "paragraph_evidence_kinds": {
+    "SRC": 55
+  },
+  "possible_causes": [
+    {
+      "id": "prompt_1_0_candidate",
+      "likely": true,
+      "detail": "book-generator-faithful-restatement-1.0-candidate asked for IDEA content in the prose 'not merely by its identifier in metadata' and did not require IDEA handles in paras[].e. book-generator-1.0.1 required each assigned IDEA to appear via its IDEA handle."
+    },
+    {
+      "id": "schema_e_accepts_src",
+      "likely": true,
+      "detail": "paras[].e accepts any allowed handle. SRC handles satisfy the schema and resolve to source_refs. Reconstruct copies IDEA refs only from IDEA-classified handles in e."
+    },
+    {
+      "id": "context_preparation",
+      "likely": false,
+      "detail": "The 4B.2.17 evidence bundle included the 11 IDEA ids in allowed handles and in section metadata. Preparation did not omit IDEA identifiers."
+    },
+    {
+      "id": "model_compliance_with_1_0",
+      "likely": true,
+      "detail": "The model cited SRC handles and preserved UNC029. That matches the 1.0-candidate wording more than the historical validator contract."
+    },
+    {
+      "id": "contract_incompatibility",
+      "likely": true,
+      "detail": "The production validator still requires planned IDEA handles on paragraphs. The 1.0-candidate prompt de-emphasized those handles. The 4B.2.17 FAIL on 11/0 ideas is that incompatibility, not a missing SourceMap idea."
+    }
+  ],
+  "primary_diagnosis": "Prompt-validator incompatibility: 1.0-candidate asked for content representation; the historical output contract still accounts ideas by handle in paras[].e.",
+  "correction_in_1_1": "book-generator-faithful-restatement-1.1-candidate asks for IDEA handles in paras[].e when the correspondence is clear, and forbids invented mappings.",
+  "automatic_injection_forbidden": true,
+  "identifier_alone_is_not_coverage": true,
+  "secrets_included": false
+}

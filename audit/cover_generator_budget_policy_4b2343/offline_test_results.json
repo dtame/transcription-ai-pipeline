@@ -1,0 +1,199 @@
+{
+  "passed": 38,
+  "failed": 0,
+  "failed_names": [],
+  "live_provider_calls": 0,
+  "paid_cost_usd": 0,
+  "cases": [
+    {
+      "name": "01_strict_default",
+      "passed": true,
+      "detail": "strict is the default and the plan is not a grant"
+    },
+    {
+      "name": "02_strict_unknown_maximum",
+      "passed": true,
+      "detail": "strict still refuses an unknown ceiling"
+    },
+    {
+      "name": "03_experimental_disabled",
+      "passed": true,
+      "detail": "the submission switch stays off"
+    },
+    {
+      "name": "04_experimental_without_approval",
+      "passed": true,
+      "detail": "mode selection is not consent"
+    },
+    {
+      "name": "05_experimental_without_risk_acceptance",
+      "passed": true,
+      "detail": "billing uncertainty must be accepted"
+    },
+    {
+      "name": "06_different_provider",
+      "passed": true,
+      "detail": "provider_mismatch"
+    },
+    {
+      "name": "07_different_model",
+      "passed": true,
+      "detail": "model_mismatch"
+    },
+    {
+      "name": "08_different_resolution",
+      "passed": true,
+      "detail": "resolution_mismatch"
+    },
+    {
+      "name": "09_different_quality",
+      "passed": true,
+      "detail": "quality_mismatch"
+    },
+    {
+      "name": "10_different_format",
+      "passed": true,
+      "detail": "output_format_mismatch"
+    },
+    {
+      "name": "11_different_prompt_hash",
+      "passed": true,
+      "detail": "prompt_sha256_mismatch"
+    },
+    {
+      "name": "12_different_image_count",
+      "passed": true,
+      "detail": "image_count_mismatch"
+    },
+    {
+      "name": "13_authorization_expired",
+      "passed": true,
+      "detail": "expired grant cannot be submitted"
+    },
+    {
+      "name": "14_authorization_cancelled",
+      "passed": true,
+      "detail": "cancelled grant cannot be submitted"
+    },
+    {
+      "name": "15_authorization_consumed",
+      "passed": true,
+      "detail": "a consumed grant cannot be reused"
+    },
+    {
+      "name": "16_atomic_reservation",
+      "passed": true,
+      "detail": "one atomic reservation"
+    },
+    {
+      "name": "17_concurrent_processes",
+      "passed": true,
+      "detail": "two processes, one submission"
+    },
+    {
+      "name": "18_interrupt_before_submission",
+      "passed": true,
+      "detail": "a reserved grant is not submitted again"
+    },
+    {
+      "name": "19_interrupt_during_submission",
+      "passed": true,
+      "detail": "a started submission is not repeated"
+    },
+    {
+      "name": "20_timeout",
+      "passed": true,
+      "detail": "timeout becomes OUTCOME_UNKNOWN"
+    },
+    {
+      "name": "21_ambiguous_response",
+      "passed": true,
+      "detail": "ambiguous response kept for manual reconciliation"
+    },
+    {
+      "name": "22_no_automatic_retry",
+      "passed": true,
+      "detail": "no second paid attempt"
+    },
+    {
+      "name": "23_no_automatic_fallback",
+      "passed": true,
+      "detail": "no automatic fallback"
+    },
+    {
+      "name": "24_api_key_missing",
+      "passed": true,
+      "detail": "a missing key still blocks"
+    },
+    {
+      "name": "25_dry_run",
+      "passed": true,
+      "detail": "dry-run still blocks"
+    },
+    {
+      "name": "26_estimate_missing",
+      "passed": true,
+      "detail": "a documented estimate is required"
+    },
+    {
+      "name": "27_planning_budget_missing",
+      "passed": true,
+      "detail": "a planning budget is required"
+    },
+    {
+      "name": "28_unbounded_cost_explicitly_accepted",
+      "passed": true,
+      "detail": "unknown ceiling accepted once, 0.041 is not a maximum"
+    },
+    {
+      "name": "29_observed_cost_absent",
+      "passed": true,
+      "detail": "no invented observed cost"
+    },
+    {
+      "name": "30_reconciliation_pending",
+      "passed": true,
+      "detail": "reconciliation stays pending"
+    },
+    {
+      "name": "31_no_key_leak",
+      "passed": true,
+      "detail": "fixture key stayed in the mock header only"
+    },
+    {
+      "name": "32_no_real_provider_call",
+      "passed": true,
+      "detail": "live http sealed"
+    },
+    {
+      "name": "33_no_image_generated",
+      "passed": true,
+      "detail": "no cover image written"
+    },
+    {
+      "name": "34_no_cover_docx_pdf",
+      "passed": true,
+      "detail": "no cover docx or pdf"
+    },
+    {
+      "name": "35_canonical_unchanged",
+      "passed": true,
+      "detail": "book.json matches"
+    },
+    {
+      "name": "36_interior_unchanged",
+      "passed": true,
+      "detail": "interior matches"
+    },
+    {
+      "name": "37_previous_tests_no_regression",
+      "passed": true,
+      "detail": "34 previous cases passed"
+    },
+    {
+      "name": "38_parameter_locks",
+      "passed": true,
+      "detail": "parameter locks are explicit"
+    }
+  ]
+}

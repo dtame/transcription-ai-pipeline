@@ -1,0 +1,37 @@
+{
+  "phase": "4B.2.7.7",
+  "provider_calls": 0,
+  "first_parse": "PASS",
+  "second_parse": "PASS",
+  "first_status": "FAIL",
+  "second_status": "FAIL",
+  "first_sha256": "54417d073e38cde8d663e120a7b7cddeb9bcb48c2b3893b2477b1916cd1ac35e",
+  "second_sha256": "54417d073e38cde8d663e120a7b7cddeb9bcb48c2b3893b2477b1916cd1ac35e",
+  "identical": true,
+  "pass": true,
+  "repaired": false,
+  "contract_candidate": "book-semantic-validator-1.1.3-candidate",
+  "first": {
+    "json_parse": "PASS",
+    "status": "FAIL",
+    "errors": [
+      "h11: significant_coverage_gap_[(137, 139), (177, 179), (232, 234), (289, 291), (353, 357)]"
+    ],
+    "missing_handles": [],
+    "coverage_errors": [
+      "h11: significant_coverage_gap_[(137, 139), (177, 179), (232, 234), (289, 291), (353, 357)]"
+    ]
+  },
+  "second": {
+    "json_parse": "PASS",
+    "status": "FAIL",
+    "errors": [
+      "h11: significant_coverage_gap_[(137, 139), (177, 179), (232, 234), (289, 291), (353, 357)]"
+    ],
+    "missing_handles": [],
+    "coverage_errors": [
+      "h11: significant_coverage_gap_[(137, 139), (177, 179), (232, 234), (289, 291), (353, 357)]"
+    ]
+  },
+  "secrets_included": false
+}

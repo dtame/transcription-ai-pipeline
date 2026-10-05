@@ -1,0 +1,326 @@
+{
+  "phase": "4B.2.7.6",
+  "historical_ten_cases_unmodified": true,
+  "h01_status_preserved": "PARTIAL",
+  "h02_status_preserved": "PARTIAL",
+  "candidates": [
+    {
+      "opaque_handle": "h01",
+      "case_id_audit_only": "4b22_p2_supported",
+      "role_audit_only": "positive",
+      "expected_class_audit_only": "SUPPORTED",
+      "expected_reason_codes_audit_only": [],
+      "clause_audit_only": null,
+      "evidence_handles": [
+        "IDEA224",
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "chars": 232,
+      "already_used_as_real_terra_canary": true,
+      "used_as": "h01",
+      "score": {
+        "independent_of_h01_h02": false,
+        "mixed_supported_and_problematic": false,
+        "clear_evidence": true,
+        "low_ambiguity": true,
+        "different_error_family_from_h02": true,
+        "unused_as_real_terra_canary": false,
+        "cost_comparable": true,
+        "eligible": false,
+        "notes": "Already used as real Terra canary h01 (PARTIAL false reject)."
+      }
+    },
+    {
+      "opaque_handle": "h02",
+      "case_id_audit_only": "4b22_p3_new_causal",
+      "role_audit_only": "negative",
+      "expected_class_audit_only": "QUESTIONABLE",
+      "expected_reason_codes_audit_only": [
+        "NEW_CAUSAL_LINK",
+        "NEW_IMPLICATION"
+      ],
+      "clause_audit_only": "because it still works wherever it is not resisted by truth",
+      "evidence_handles": [
+        "IDEA225",
+        "SRC006152",
+        "SRC006154",
+        "SRC006155",
+        "SRC006156",
+        "SRC006157"
+      ],
+      "chars": 466,
+      "already_used_as_real_terra_canary": true,
+      "used_as": "h02",
+      "score": {
+        "independent_of_h01_h02": false,
+        "mixed_supported_and_problematic": true,
+        "clear_evidence": true,
+        "low_ambiguity": false,
+        "different_error_family_from_h02": false,
+        "unused_as_real_terra_canary": false,
+        "cost_comparable": true,
+        "eligible": false,
+        "notes": "Already used as real Terra canary h02 (PARTIAL mixed result)."
+      }
+    },
+    {
+      "opaque_handle": "h03",
+      "case_id_audit_only": "4b22_p4_supported",
+      "role_audit_only": "positive",
+      "expected_class_audit_only": "SUPPORTED",
+      "expected_reason_codes_audit_only": [],
+      "clause_audit_only": null,
+      "evidence_handles": [
+        "IDEA226",
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "chars": 293,
+      "already_used_as_real_terra_canary": false,
+      "used_as": null,
+      "score": {
+        "independent_of_h01_h02": true,
+        "mixed_supported_and_problematic": false,
+        "clear_evidence": true,
+        "low_ambiguity": true,
+        "different_error_family_from_h02": true,
+        "unused_as_real_terra_canary": true,
+        "cost_comparable": true,
+        "eligible": false,
+        "notes": "Historical positive. No problematic proposition. Reusing it would reproduce a paraphrase-only test close to h01."
+      }
+    },
+    {
+      "opaque_handle": "h04",
+      "case_id_audit_only": "4b22_p5_supported",
+      "role_audit_only": "positive",
+      "expected_class_audit_only": "SUPPORTED",
+      "expected_reason_codes_audit_only": [],
+      "clause_audit_only": null,
+      "evidence_handles": [
+        "IDEA250",
+        "SRC007115",
+        "SRC007116",
+        "SRC007117",
+        "SRC007118"
+      ],
+      "chars": 550,
+      "already_used_as_real_terra_canary": false,
+      "used_as": null,
+      "score": {
+        "independent_of_h01_h02": true,
+        "mixed_supported_and_problematic": false,
+        "clear_evidence": true,
+        "low_ambiguity": true,
+        "different_error_family_from_h02": true,
+        "unused_as_real_terra_canary": true,
+        "cost_comparable": true,
+        "eligible": false,
+        "notes": "Historical positive. No problematic proposition to refuse."
+      }
+    },
+    {
+      "opaque_handle": "h05",
+      "case_id_audit_only": "4b22_p6_supported",
+      "role_audit_only": "positive",
+      "expected_class_audit_only": "SUPPORTED",
+      "expected_reason_codes_audit_only": [],
+      "clause_audit_only": null,
+      "evidence_handles": [
+        "IDEA251",
+        "REF051",
+        "REF056",
+        "SRC007151",
+        "SRC007152",
+        "SRC007155",
+        "SRC007156",
+        "SRC007158",
+        "SRC007161",
+        "SRC007162",
+        "SRC007559",
+        "SRC007560"
+      ],
+      "chars": 490,
+      "already_used_as_real_terra_canary": false,
+      "used_as": null,
+      "score": {
+        "independent_of_h01_h02": true,
+        "mixed_supported_and_problematic": false,
+        "clear_evidence": true,
+        "low_ambiguity": true,
+        "different_error_family_from_h02": true,
+        "unused_as_real_terra_canary": true,
+        "cost_comparable": true,
+        "eligible": false,
+        "notes": "Historical positive. No problematic proposition to refuse."
+      }
+    },
+    {
+      "opaque_handle": "h06",
+      "case_id_audit_only": "4b22_p7_supported",
+      "role_audit_only": "positive",
+      "expected_class_audit_only": "SUPPORTED",
+      "expected_reason_codes_audit_only": [],
+      "clause_audit_only": null,
+      "evidence_handles": [
+        "IDEA252",
+        "SRC007193",
+        "SRC007197",
+        "SRC007199",
+        "SRC007201",
+        "SRC007204"
+      ],
+      "chars": 384,
+      "already_used_as_real_terra_canary": false,
+      "used_as": null,
+      "score": {
+        "independent_of_h01_h02": true,
+        "mixed_supported_and_problematic": false,
+        "clear_evidence": true,
+        "low_ambiguity": true,
+        "different_error_family_from_h02": true,
+        "unused_as_real_terra_canary": true,
+        "cost_comparable": true,
+        "eligible": false,
+        "notes": "Historical positive. No problematic proposition to refuse."
+      }
+    },
+    {
+      "opaque_handle": "h07",
+      "case_id_audit_only": "4b22_p8_reference_completion",
+      "role_audit_only": "negative",
+      "expected_class_audit_only": "QUESTIONABLE",
+      "expected_reason_codes_audit_only": [
+        "REFERENCE_COMPLETION",
+        "REFERENCE_EXPANSION"
+      ],
+      "clause_audit_only": "the sting long since removed from death",
+      "evidence_handles": [
+        "REF050",
+        "SRC006788"
+      ],
+      "chars": 259,
+      "already_used_as_real_terra_canary": false,
+      "used_as": null,
+      "score": {
+        "independent_of_h01_h02": true,
+        "mixed_supported_and_problematic": true,
+        "clear_evidence": true,
+        "low_ambiguity": false,
+        "different_error_family_from_h02": true,
+        "unused_as_real_terra_canary": true,
+        "cost_comparable": true,
+        "eligible": false,
+        "notes": "REFERENCE_COMPLETION family is independent of h02. REF050 is partial and SRC006788 only attests 'on 1 Corinthians 15'. Neighboring clauses (admired argument, lived into, gain we practice) are also unattested, so a Terra extra-reject would be hard to interpret — similar to h02's neighboring false rejects."
+      }
+    },
+    {
+      "opaque_handle": "h08",
+      "case_id_audit_only": "4b2_p2_supported",
+      "role_audit_only": "positive",
+      "expected_class_audit_only": "SUPPORTED",
+      "expected_reason_codes_audit_only": [],
+      "clause_audit_only": null,
+      "evidence_handles": [
+        "IDEA224"
+      ],
+      "chars": 274,
+      "already_used_as_real_terra_canary": false,
+      "used_as": null,
+      "score": {
+        "independent_of_h01_h02": true,
+        "mixed_supported_and_problematic": false,
+        "clear_evidence": true,
+        "low_ambiguity": true,
+        "different_error_family_from_h02": true,
+        "unused_as_real_terra_canary": true,
+        "cost_comparable": true,
+        "eligible": false,
+        "notes": "Historical positive. No problematic proposition to refuse."
+      }
+    },
+    {
+      "opaque_handle": "h09",
+      "case_id_audit_only": "4b2_p8_invented_funeral",
+      "role_audit_only": "negative",
+      "expected_class_audit_only": "UNSUPPORTED",
+      "expected_reason_codes_audit_only": [
+        "INVENTED_EXAMPLE"
+      ],
+      "clause_audit_only": "not a verse quoted at funerals",
+      "evidence_handles": [
+        "IDEA226"
+      ],
+      "chars": 387,
+      "already_used_as_real_terra_canary": false,
+      "used_as": null,
+      "score": {
+        "independent_of_h01_h02": true,
+        "mixed_supported_and_problematic": true,
+        "clear_evidence": true,
+        "low_ambiguity": false,
+        "different_error_family_from_h02": true,
+        "unused_as_real_terra_canary": true,
+        "cost_comparable": true,
+        "eligible": false,
+        "notes": "INVENTED_EXAMPLE family is independent. Mind-over-matter and must-be-reality are attested. 'This is exactly why' introduces a causal-framing confound with h02. Not selected."
+      }
+    },
+    {
+      "opaque_handle": "h10",
+      "case_id_audit_only": "4b2_p13_unsupported_connective",
+      "role_audit_only": "negative",
+      "expected_class_audit_only": "UNSUPPORTED",
+      "expected_reason_codes_audit_only": [
+        "NEW_ARGUMENT",
+        "NEW_CONCLUSION",
+        "NEW_IMPLICATION"
+      ],
+      "clause_audit_only": "The difference was not the amount of doctrine known, but the amount of Christ practiced.",
+      "evidence_handles": [],
+      "chars": 270,
+      "already_used_as_real_terra_canary": false,
+      "used_as": null,
+      "score": {
+        "independent_of_h01_h02": true,
+        "mixed_supported_and_problematic": false,
+        "clear_evidence": false,
+        "low_ambiguity": true,
+        "different_error_family_from_h02": true,
+        "unused_as_real_terra_canary": true,
+        "cost_comparable": true,
+        "eligible": false,
+        "notes": "No authorized evidence and no supported proposition. Tests wholesale rejection, not discrimination."
+      }
+    },
+    {
+      "opaque_handle": "h11",
+      "case_id_audit_only": "4b276_p4_new_implication",
+      "role_audit_only": "synthetic_negative",
+      "origin": "SYNTHETIC_VARIANT_OF_4B22_P4_SUPPORTED",
+      "source_case_id_audit_only": "4b22_p4_supported",
+      "already_used_as_real_terra_canary": false,
+      "score": {
+        "independent_of_h01_h02": true,
+        "mixed_supported_and_problematic": true,
+        "clear_evidence": true,
+        "low_ambiguity": true,
+        "different_error_family_from_h02": true,
+        "unused_as_real_terra_canary": true,
+        "cost_comparable": true,
+        "eligible": true,
+        "notes": "Controlled synthetic from canonical 4b22_p4_supported. Keeps the attested paraphrase and adds one which-means guarantee. Evidence unchanged. Not an authentic citation."
+      }
+    }
+  ],
+  "eligible_candidates": [
+    "4b276_p4_new_implication"
+  ],
+  "selected": "4b276_p4_new_implication",
+  "secrets_included": false
+}

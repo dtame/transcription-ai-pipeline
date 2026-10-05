@@ -1,0 +1,212 @@
+{
+  "returncode": 0,
+  "summary": "124 passed in 6.61s",
+  "passed": 124,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b275.py",
+    "app/tests/test_book_semantic_gate_4b274.py",
+    "app/tests/test_book_semantic_gate_4b273.py",
+    "app/tests/test_book_semantic_gate_4b272.py",
+    "app/tests/test_book_semantic_gate_4b271.py",
+    "app/tests/test_book_semantic_gate_4b262.py",
+    "app/tests/test_book_semantic_gate_4b23.py"
+  ],
+  "real_provider_calls": 0,
+  "phase": "4B.2.7.5",
+  "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "offline_fixtures": {
+    "phase": "4B.2.7.5",
+    "reason_codes": {
+      "phase": "4B.2.7.4",
+      "cases": [
+        {
+          "name": "canonical_valid",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "unknown_code",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "empty_on_questionable",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "empty_on_unsupported",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "unexpected_on_supported",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "multiple_valid_compatible",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "valid_code_other_category",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "close_but_absent",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "invented",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "wrong_case",
+          "ok": true,
+          "status": "FAIL"
+        }
+      ],
+      "passed": true,
+      "unknown_never_silently_accepted": true,
+      "empty_questionable_fails_112": true,
+      "payload_unknown_errors": [
+        "hX: unknown_reason_INVENTED_CAUSAL_LINK"
+      ],
+      "normalization_not_applied": true
+    },
+    "additional": {
+      "phase": "4B.2.7.5",
+      "cases": [
+        {
+          "name": "rhetorical_non_substantive",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "rhetorical_containing_assertion",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "legitimate_editorial_transition",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "transition_introducing_new_conclusion",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "unsupported_origin",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "implicit_attribution",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "unknown_reason_code",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "valid_but_inconsistent_reason_code",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "missing_reason_code",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "valid_but_incomplete_span",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "admissible_punctuation",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "omitted_logical_connective",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "partially_exploitable_json",
+          "ok": true,
+          "acceptance": "FAIL"
+        },
+        {
+          "name": "diagnostic_retained_on_compliance_fail",
+          "ok": true,
+          "acceptance": "FAIL"
+        },
+        {
+          "name": "production_cache_unmodified",
+          "ok": true,
+          "absent": true
+        }
+      ],
+      "passed": true,
+      "fakeai_not_terra_quality": true
+    },
+    "historical": {
+      "phase": "4B.2.7.4",
+      "positives_accepted": 6,
+      "negatives_blocked": 4,
+      "funeral_blocked": true,
+      "connective_blocked": true,
+      "p3_blocked": true,
+      "p8_blocked": true,
+      "negative_ids": [
+        "4b22_p3_new_causal",
+        "4b22_p8_reference_completion",
+        "4b2_p8_invented_funeral",
+        "4b2_p13_unsupported_connective"
+      ],
+      "positive_ids": [
+        "4b22_p2_supported",
+        "4b22_p4_supported",
+        "4b22_p5_supported",
+        "4b22_p6_supported",
+        "4b22_p7_supported",
+        "4b2_p2_supported"
+      ],
+      "protected": {
+        "4b2_p8_invented_funeral": true,
+        "4b2_p13_unsupported_connective": true,
+        "4b22_p3_new_causal": true,
+        "4b22_p8_reference_completion": true
+      },
+      "validator_1_1_2_status": "PASS",
+      "historical_catalog_passed": true,
+      "calibration_1_1_1_still_passes": true,
+      "fakeai_not_terra_quality": true,
+      "labels_unmodified": true
+    },
+    "fakeai_positives": 6,
+    "fakeai_negatives": 4,
+    "passed": true,
+    "fakeai_not_terra_quality": true
+  },
+  "frozen_1_0_prompt_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+  "frozen_1_1_prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+  "frozen_1_1_1_prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+  "frozen_1_1_2_prompt_sha256": "88a89e792ffd6a6f3766c0218f7cb25f0d996ba373e13232179b390f77da3ba0",
+  "candidate_1_1_3_prompt_sha256": "9febdcdda08a31179081564ac33842b434dcc8bcb95ca9d96f386b63addb3059",
+  "fakeai_not_terra_quality": true
+}

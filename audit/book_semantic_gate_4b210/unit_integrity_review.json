@@ -1,0 +1,268 @@
+{
+  "phase": "4B.2.10",
+  "offset_convention": "python3_str_unicode_code_points_half_open",
+  "offsets_owned_by_python": true,
+  "model_must_not_emit_offsets": true,
+  "h01": {
+    "handle": "h01",
+    "paragraph_chars": 232,
+    "unit_count": 5,
+    "unit_ids": [
+      "u00",
+      "u01",
+      "u02",
+      "u03",
+      "u04"
+    ],
+    "coverage_ok": true,
+    "complete_chars": true,
+    "complete_words": true,
+    "reconstructed_equals_paragraph": true,
+    "separators_retained": true,
+    "connector_split": [],
+    "offset_convention": "python3_str_unicode_code_points_half_open",
+    "paragraph_unchanged": true,
+    "does_not_copy_paragraph_onto_each_unit": true,
+    "context_paragraph_once": true,
+    "preserved_propositions": [
+      {
+        "label": "bargain_clause",
+        "start": 65,
+        "end": 104,
+        "preserved_in_one_unit": true,
+        "unit_id": "u01",
+        "unit_text": "There is no fixed hour appointed that fear can calculate or bargain with, ",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      }
+    ],
+    "flags": {
+      "negation_present": true,
+      "condition_present": true,
+      "causal_present": false,
+      "reference_present": false
+    },
+    "errors": [],
+    "units": [
+      {
+        "unit_id": "u00",
+        "start_offset": 0,
+        "end_offset": 32,
+        "text": "Do not ever be afraid of death. ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u01",
+        "start_offset": 32,
+        "end_offset": 106,
+        "text": "There is no fixed hour appointed that fear can calculate or bargain with, ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u02",
+        "start_offset": 106,
+        "end_offset": 142,
+        "text": "and so fear itself is out of place. ",
+        "boundary_type": "RESULT_CONNECTIVE"
+      },
+      {
+        "unit_id": "u03",
+        "start_offset": 142,
+        "end_offset": 211,
+        "text": "If somebody has gone to heaven, that should not produce dread in us. ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u04",
+        "start_offset": 211,
+        "end_offset": 232,
+        "text": "It should be our joy.",
+        "boundary_type": "SENTENCE"
+      }
+    ]
+  },
+  "h02": {
+    "handle": "h02",
+    "paragraph_chars": 466,
+    "unit_count": 8,
+    "unit_ids": [
+      "u00",
+      "u01",
+      "u02",
+      "u03",
+      "u04",
+      "u05",
+      "u06",
+      "u07"
+    ],
+    "coverage_ok": true,
+    "complete_chars": true,
+    "complete_words": true,
+    "reconstructed_equals_paragraph": true,
+    "separators_retained": true,
+    "connector_split": [],
+    "offset_convention": "python3_str_unicode_code_points_half_open",
+    "paragraph_unchanged": true,
+    "does_not_copy_paragraph_onto_each_unit": true,
+    "context_paragraph_once": true,
+    "preserved_propositions": [
+      {
+        "label": "because_clause",
+        "start": 406,
+        "end": 465,
+        "preserved_in_one_unit": true,
+        "unit_id": "u07",
+        "unit_text": "because it still works wherever it is not resisted by truth.",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      }
+    ],
+    "flags": {
+      "negation_present": true,
+      "condition_present": false,
+      "causal_present": true,
+      "reference_present": false
+    },
+    "errors": [],
+    "units": [
+      {
+        "unit_id": "u00",
+        "start_offset": 0,
+        "end_offset": 68,
+        "text": "Yet we can see fear operating in believers, and this is not normal. ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u01",
+        "start_offset": 68,
+        "end_offset": 94,
+        "text": "Fear of death is an abuse ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u02",
+        "start_offset": 94,
+        "end_offset": 181,
+        "text": "— an abuse to your very person, a diminishment of what you were made and remade to be. ",
+        "boundary_type": "EM_DASH"
+      },
+      {
+        "unit_id": "u03",
+        "start_offset": 181,
+        "end_offset": 229,
+        "text": "It is worth naming where this abuse comes from. ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u04",
+        "start_offset": 229,
+        "end_offset": 272,
+        "text": "The devil has used it since the beginning; ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u05",
+        "start_offset": 272,
+        "end_offset": 302,
+        "text": "he has not changed his style. ",
+        "boundary_type": "SEMICOLON"
+      },
+      {
+        "unit_id": "u06",
+        "start_offset": 302,
+        "end_offset": 406,
+        "text": "The same old strategy that first weaponized death against humanity is still being run today, unchanged, ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u07",
+        "start_offset": 406,
+        "end_offset": 466,
+        "text": "because it still works wherever it is not resisted by truth.",
+        "boundary_type": "CAUSAL_CONNECTIVE"
+      }
+    ]
+  },
+  "h11": {
+    "handle": "h11",
+    "paragraph_chars": 357,
+    "unit_count": 5,
+    "unit_ids": [
+      "u00",
+      "u01",
+      "u02",
+      "u03",
+      "u04"
+    ],
+    "coverage_ok": true,
+    "complete_chars": true,
+    "complete_words": true,
+    "reconstructed_equals_paragraph": true,
+    "separators_retained": true,
+    "connector_split": [],
+    "offset_convention": "python3_str_unicode_code_points_half_open",
+    "paragraph_unchanged": true,
+    "does_not_copy_paragraph_onto_each_unit": true,
+    "context_paragraph_once": true,
+    "preserved_propositions": [
+      {
+        "label": "universal_guarantee",
+        "start": 294,
+        "end": 356,
+        "preserved_in_one_unit": true,
+        "unit_id": "u04",
+        "unit_text": "which means that every believer is guaranteed a fearless death.",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      }
+    ],
+    "flags": {
+      "negation_present": true,
+      "condition_present": false,
+      "causal_present": false,
+      "reference_present": false
+    },
+    "errors": [],
+    "units": [
+      {
+        "unit_id": "u00",
+        "start_offset": 0,
+        "end_offset": 46,
+        "text": "But this is not a matter of mental technique. ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u01",
+        "start_offset": 46,
+        "end_offset": 141,
+        "text": "It is not mind over matter, not a trick of positive thinking applied to a frightening subject. ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u02",
+        "start_offset": 141,
+        "end_offset": 180,
+        "text": "Death as gain must become your reality ",
+        "boundary_type": "SENTENCE"
+      },
+      {
+        "unit_id": "u03",
+        "start_offset": 180,
+        "end_offset": 294,
+        "text": "— not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending, ",
+        "boundary_type": "EM_DASH"
+      },
+      {
+        "unit_id": "u04",
+        "start_offset": 294,
+        "end_offset": 357,
+        "text": "which means that every believer is guaranteed a fearless death.",
+        "boundary_type": "IMPLICATIVE_CONNECTIVE"
+      }
+    ]
+  },
+  "selected_handle": "h01",
+  "selected_coverage_ok": true,
+  "words_not_lost": true,
+  "connectors_preserved": true,
+  "context_preservation": "PARAGRAPH_ONCE_PLUS_UNIT_TEXTS",
+  "ok": true,
+  "secrets_included": false
+}

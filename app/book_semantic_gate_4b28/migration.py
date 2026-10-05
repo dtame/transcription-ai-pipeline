@@ -1,0 +1,91 @@
+"""Migration plan with stop points. No future step is executed automatically."""
+
+from __future__ import annotations
+
+from typing import Any
+
+from app.book_semantic_gate_4b28.constants import (
+    PHASE,
+    PROMPT_VERSION_20_PROPOSAL,
+    TARGET_ARCHITECTURE,
+)
+
+
+def migration_plan() -> dict[str, Any]:
+    return {
+        "phase": PHASE,
+        "proposed_target": TARGET_ARCHITECTURE,
+        "automatic_execution_forbidden": True,
+        "steps": [
+            {
+                "id": 1,
+                "name": "Deterministic prototype",
+                "status": "DONE_IN_4B28",
+                "action": "prepare_semantic_validation_units and offline replay.",
+                "stop": "Human review of segmentation limits.",
+            },
+            {
+                "id": 2,
+                "name": "New contract candidate",
+                "status": "PROPOSED_NOT_ACTIVATED",
+                "action": f"Keep {PROMPT_VERSION_20_PROPOSAL} as a proposal until authorization.",
+                "stop": "Do not replace 1.1.3-candidate or transport 1.1.",
+            },
+            {
+                "id": 3,
+                "name": "Offline validation",
+                "status": "PARTIAL_IN_4B28",
+                "action": "Structural tests and FakeAI fixtures. Expand fixtures after review.",
+                "stop": "FakeAI is not Terra quality.",
+            },
+            {
+                "id": 4,
+                "name": "Targeted real canary",
+                "status": "NOT_STARTED",
+                "action": "One authorized Terra call on a frozen request using contract 2.0.",
+                "stop": "Requires a new human authorization. READY_FOR_NEW_REMOTE_TERRA_CALL remains NO.",
+            },
+            {
+                "id": 5,
+                "name": "Comparative evaluation",
+                "status": "NOT_STARTED",
+                "action": "Compare new results to historical h01, h02, and h11 without rewriting them.",
+                "stop": "Do not convert historical PARTIAL to PASS.",
+            },
+            {
+                "id": 6,
+                "name": "Promotion decision",
+                "status": "NOT_STARTED",
+                "action": "Promote only after human review and explicit criteria.",
+                "stop": "No silent pipeline connection. No cache acceptance. No book.json.",
+            },
+        ],
+        "risks": [
+            "Connecting the prototype to production before a Terra canary.",
+            "Treating FakeAI as Terra validation.",
+            "Assuming presegmentation fixes paraphrase false rejections.",
+            "Detached negation or split causality in later paragraphs.",
+            "Cost regressions if reasoning tokens remain high.",
+        ],
+        "stop_points": [
+            "After this phase: HUMAN REVIEW.",
+            "Before any Terra call: new explicit authorization.",
+            "Before promotion: comparative PASS criteria published and met.",
+            "Before production: cache and book.json remain blocked.",
+        ],
+        "not_executed_now": [
+            "Terra call",
+            "Sonnet call",
+            "CH016 regeneration",
+            "19-chapter generation",
+            "Contract promotion",
+            "Transport replacement",
+            "Phase 5",
+            "Word/PDF",
+        ],
+        "evidence_level": "HYPOTHESIS",
+        "secrets_included": False,
+    }
+
+
+__all__ = ["migration_plan"]

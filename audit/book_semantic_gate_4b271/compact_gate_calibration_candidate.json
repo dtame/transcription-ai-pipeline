@@ -1,0 +1,39 @@
+{
+  "phase": "4B.2.7.1",
+  "calibration_required": true,
+  "candidate_prompt_version": "book-semantic-validator-1.1.1-candidate",
+  "candidate_transport_version": null,
+  "transport_1_1_1_created": false,
+  "why_no_new_transport": "The compact JSON fields are unchanged. Local coverage policy and reason-code presence are validator-side. Frozen 1.1-candidate transport remains the schema.",
+  "historical_1_0_unmodified": true,
+  "candidate_1_1_unmodified": true,
+  "promoted": false,
+  "prompt": {
+    "system_sha256": "b4c634400bcfa9f643377ced3926a6c97a4d0eb23b8280cda117159cf39a0629",
+    "instructions_sha256": "2b0aa0ff0017ca10df960c47f661906a1c749c56022debde45a580cad966279a",
+    "prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+    "system_bytes": 3317,
+    "instructions_bytes": 1639
+  },
+  "frozen_1_1_prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+  "changes": [
+    "semantic entailment vs lexical match made operational",
+    "stylistic restatement of attested absence is not invention",
+    "nearby theme is still not proof",
+    "invented examples, new causality, new implications, and partial-reference completion remain rejected",
+    "QUESTIONABLE/UNSUPPORTED require a reason code",
+    "coverage may omit sentence-final .?! that do not carry a claim",
+    "words, numbers, negations, connectives, and clauses remain mandatory"
+  ],
+  "not_in_prompt": {
+    "bargaining": true,
+    "h01": true,
+    "IDEA224": true,
+    "benchmark_answers": true
+  },
+  "schema_unchanged_from_1_1": true,
+  "reason_codes_unchanged": true,
+  "proposition_coverage_preserved": true,
+  "compact_format_preserved": true,
+  "secrets_included": false
+}

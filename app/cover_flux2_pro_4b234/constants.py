@@ -1,0 +1,40 @@
+"""Phase 4B.2.34 constants. Offline. Zero USD. No image."""
+
+from __future__ import annotations
+
+from app.cover_generator_foundation_4b233.constants import (
+    AUTHORIZATION_SCOPE as CONSUMED_4B233_SCOPE,
+    BOOK_TITLE,
+    EXPECTED_BOOK_SHA256,
+    EXPECTED_INTERIOR_DOCX_SHA256,
+    EXPECTED_INTERIOR_PDF_SHA256,
+    INTERIOR_VERSION,
+    PROJECT_NAME,
+)
+
+PHASE = "4B.2.34"
+PHASE_NAME = "FLUX2_PRO_INTEGRATION"
+AUTHORIZATION_SCOPE = "COVER_FLUX2_PRO_4B234_OFFLINE_ONLY"
+AUDIT_DIRNAME = "cover_generator_flux2_pro_4b234"
+REPORT_NAME = "PHASE_4B234_FLUX2_PRO_INTEGRATION_REPORT.md"
+
+assert PROJECT_NAME == "pastoral_retreat_v2_validation"
+assert BOOK_TITLE == "The Life You Already Inherited"
+assert INTERIOR_VERSION == "print-review-v1.1"
+assert EXPECTED_BOOK_SHA256 == (
+    "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550"
+)
+assert CONSUMED_4B233_SCOPE == "COVER_GENERATOR_FOUNDATION_4B233_ARCHITECTURE_ONLY"
+
+__all__ = [
+    "AUDIT_DIRNAME",
+    "AUTHORIZATION_SCOPE",
+    "BOOK_TITLE",
+    "EXPECTED_BOOK_SHA256",
+    "EXPECTED_INTERIOR_DOCX_SHA256",
+    "EXPECTED_INTERIOR_PDF_SHA256",
+    "INTERIOR_VERSION",
+    "PHASE",
+    "PROJECT_NAME",
+    "REPORT_NAME",
+]

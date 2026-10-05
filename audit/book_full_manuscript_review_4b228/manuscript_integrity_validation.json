@@ -1,0 +1,145 @@
+{
+  "phase": "4B.2.28",
+  "status": "PASS",
+  "paragraph_integrity": "PASS",
+  "provenance_integrity": "PASS",
+  "chapters_assembled": "19 / 19",
+  "sections_assembled": "72 / 72",
+  "idea_coverage": "286 / 286",
+  "checks": [
+    {
+      "name": "nineteen_chapters_present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no_duplicate_chapters",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no_missing_chapters",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "order_matches_editorial_plan",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "seventy_two_sections",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "two_hundred_eighty_six_ideas",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "toc_has_nineteen_titles",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ch002_recovered_used",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ch012_authorial_v2_used",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ch018_accepted_used",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no_invented_chapter_titles",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no_empty_unplanned_section",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no_paragraph_added",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no_paragraph_removed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no_paragraph_rewritten",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "every_paragraph_traced",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no_wrong_historical_version",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "paragraph_integrity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "provenance_integrity",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "failed_checks": [],
+  "unmatched_paragraphs": [],
+  "toc_titles": [
+    "Unlearning What Was Handed Down",
+    "Flesh and Bone: The Resurrection You Inherit",
+    "Hebrews 2: Death Already Destroyed",
+    "Priest, Prophet, King",
+    "Access, Not Achievement",
+    "That They May Be One",
+    "Loved Exactly as Jesus Is Loved",
+    "Set Your Mind Above",
+    "Laws You Gave Yourself",
+    "Spirit, Soul and Body",
+    "Reasonings and Strongholds",
+    "Prayer Corrected",
+    "The Renewed Mind and the Hidden Faculty",
+    "Operating What You Have",
+    "Grace Barely Touched",
+    "Death as Gain",
+    "Nothing by Chance",
+    "Testimonies of Resurrection",
+    "Out of the Eater"
+  ],
+  "allowed_differences": [
+    "book_title_and_subtitle_from_editorial_plan",
+    "technical_assembly_note",
+    "table_of_contents",
+    "heading_level_adjustment",
+    "chapter_separators"
+  ],
+  "manuscript_sha256": "a9a5696ea4072c0c414eb406237d265b2a95a302d1ddafd1c3e39e8140e5f8fb",
+  "manuscript_word_count": 16364,
+  "chapter_prose_word_count": 15697,
+  "reproducible_proof": {
+    "source_paragraph_count": 335,
+    "assembled_paragraph_count": 335,
+    "all_paragraphs_linked": true
+  },
+  "secrets_included": false
+}

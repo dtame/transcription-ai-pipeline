@@ -270,22 +270,118 @@ def is_historical_thinking_default(
     )
 
 
+def _optional_int(value: Any) -> int | None:
+    if value is None:
+        return None
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return None
+
+
 def extract_thinking_tokens_from_usage(usage: Any) -> int | None:
-    """Unknown != 0. Absent → None."""
+    """Unknown != 0. Absent → None.
+
+    Preserved sources (first match wins):
+    - output_tokens_details.thinking_tokens (Anthropic / historical)
+    - usage.thinking_tokens
+
+    Added OpenAI chat.completions sources:
+    - completion_tokens_details.reasoning_tokens
+    - usage.reasoning_tokens
+    """
     if not isinstance(usage, Mapping):
         return None
     details = usage.get("output_tokens_details")
     if isinstance(details, Mapping) and details.get("thinking_tokens") is not None:
-        try:
-            return int(details["thinking_tokens"])
-        except (TypeError, ValueError):
-            return None
+        parsed = _optional_int(details.get("thinking_tokens"))
+        if parsed is not None:
+            return parsed
     if usage.get("thinking_tokens") is not None:
-        try:
-            return int(usage["thinking_tokens"])
-        except (TypeError, ValueError):
-            return None
+        parsed = _optional_int(usage.get("thinking_tokens"))
+        if parsed is not None:
+            return parsed
+    completion_details = usage.get("completion_tokens_details")
+    if (
+        isinstance(completion_details, Mapping)
+        and completion_details.get("reasoning_tokens") is not None
+    ):
+        parsed = _optional_int(completion_details.get("reasoning_tokens"))
+        if parsed is not None:
+            return parsed
+    if usage.get("reasoning_tokens") is not None:
+        return _optional_int(usage.get("reasoning_tokens"))
     return None
+
+
+UNKNOWN_TOKEN_COUNT = "UNKNOWN"
+
+
+def extract_openai_usage_telemetry(usage: Any) -> dict[str, Any]:
+    """
+    Distinguish input, completion, reasoning, and visible output tokens.
+
+    Absent field = UNKNOWN, never 0. Do not subtract reasoning from
+    completion to invent a visible-output count.
+    """
+    mapping = usage if isinstance(usage, Mapping) else {}
+    completion_details = mapping.get("completion_tokens_details")
+    if not isinstance(completion_details, Mapping):
+        completion_details = {}
+    output_details = mapping.get("output_tokens_details")
+    if not isinstance(output_details, Mapping):
+        output_details = {}
+
+    input_tokens = _optional_int(
+        mapping.get("prompt_tokens", mapping.get("input_tokens"))
+    )
+    completion_tokens = _optional_int(
+        mapping.get("completion_tokens", mapping.get("output_tokens"))
+    )
+    reasoning_tokens = extract_thinking_tokens_from_usage(mapping)
+    visible_explicit = _optional_int(
+        completion_details.get("text_tokens", completion_details.get("visible_tokens"))
+    )
+
+    reasoning_source = "absent"
+    if isinstance(output_details, Mapping) and output_details.get("thinking_tokens") is not None:
+        reasoning_source = "output_tokens_details.thinking_tokens"
+    elif mapping.get("thinking_tokens") is not None:
+        reasoning_source = "usage.thinking_tokens"
+    elif completion_details.get("reasoning_tokens") is not None:
+        reasoning_source = "completion_tokens_details.reasoning_tokens"
+    elif mapping.get("reasoning_tokens") is not None:
+        reasoning_source = "usage.reasoning_tokens"
+
+    return {
+        "input_tokens": input_tokens if input_tokens is not None else UNKNOWN_TOKEN_COUNT,
+        "completion_tokens": (
+            completion_tokens if completion_tokens is not None else UNKNOWN_TOKEN_COUNT
+        ),
+        "reasoning_tokens": (
+            reasoning_tokens if reasoning_tokens is not None else UNKNOWN_TOKEN_COUNT
+        ),
+        "visible_output_tokens": (
+            visible_explicit if visible_explicit is not None else UNKNOWN_TOKEN_COUNT
+        ),
+        "unknown_tokens": [
+            name
+            for name, value in (
+                ("input_tokens", input_tokens),
+                ("completion_tokens", completion_tokens),
+                ("reasoning_tokens", reasoning_tokens),
+                ("visible_output_tokens", visible_explicit),
+            )
+            if value is None
+        ],
+        "reasoning_source": reasoning_source,
+        "completion_tokens_details_present": bool(completion_details),
+        "did_not_subtract_reasoning_from_completion": True,
+        "did_not_infer_from_max_completion_tokens": True,
+        "did_not_infer_cause_from_finish_reason": True,
+        "explicit_zero_is_zero": reasoning_tokens == 0,
+        "absent_is_unknown": reasoning_tokens is None,
+    }
 
 
 def conceptual_json_budget(*, max_output: int, thinking_disabled: bool) -> dict[str, Any]:
@@ -336,6 +432,8 @@ __all__ = [
     "THINKING_MODE_PROVIDER_DEFAULT",
     "ThinkingCapabilities",
     "conceptual_json_budget",
+    "UNKNOWN_TOKEN_COUNT",
+    "extract_openai_usage_telemetry",
     "extract_thinking_tokens_from_usage",
     "is_historical_thinking_default",
     "normalize_effort",

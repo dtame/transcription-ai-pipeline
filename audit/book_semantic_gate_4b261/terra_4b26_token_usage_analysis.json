@@ -1,0 +1,68 @@
+{
+  "phase": "4B.2.6.1",
+  "usage_fields_available": {
+    "prompt_tokens_or_input_tokens": 4076,
+    "completion_tokens_or_output_tokens": 8192,
+    "total_tokens": 12268,
+    "completion_tokens_details": null,
+    "reasoning_tokens": "UNKNOWN",
+    "thinking_tokens": "UNKNOWN",
+    "finish_reason": "length"
+  },
+  "provider_reported": {
+    "input_tokens": 4076,
+    "output_tokens": 8192,
+    "thinking_tokens": null,
+    "usage_source": "provider",
+    "forensics_usage": {
+      "source": "provider",
+      "input_tokens": 4076,
+      "output_tokens": 8192,
+      "total_tokens": 12268
+    },
+    "cost_thinking_tokens_status": "unknown"
+  },
+  "reasoning_tokens": "UNKNOWN",
+  "visible_output_tokens": "UNKNOWN",
+  "do_not_infer_reasoning_from_completion_tokens": true,
+  "why_reasoning_is_unknown": [
+    "Preserved 4B.2.6 artifacts do not contain completion_tokens_details.",
+    "Preserved artifacts do not contain reasoning_tokens.",
+    "thinking_tokens is null / unknown, not zero.",
+    "Visible message.content is empty, so visible output tokens cannot be counted from text.",
+    "completion_tokens=8192 must not be treated as a reasoning count."
+  ],
+  "local_extraction_gap": {
+    "confidence": "LOCALLY_VERIFIED",
+    "extract_thinking_tokens_from_usage_reads": [
+      "output_tokens_details.thinking_tokens",
+      "usage.thinking_tokens"
+    ],
+    "does_not_read": [
+      "completion_tokens_details.reasoning_tokens"
+    ],
+    "usage_as_dict_fallback_keys": [
+      "prompt_tokens",
+      "completion_tokens",
+      "total_tokens"
+    ],
+    "note": "Even if the server sent OpenAI completion_tokens_details, the persisted 4B.2.6 audits do not contain that object. Missing persistence is not proof the server omitted it."
+  },
+  "inventory": {
+    "completion_tokens_details_hits": [],
+    "reasoning_tokens_hits": [],
+    "non_null_thinking_token_hits": [],
+    "extracted_thinking_tokens": null
+  },
+  "observed_cost_usd": 0.106456,
+  "budget_exhausted": true,
+  "visible_json_bytes": 0,
+  "confidence": {
+    "input_tokens": "CONFIRMED",
+    "completion_tokens": "CONFIRMED",
+    "finish_reason_length": "CONFIRMED",
+    "reasoning_tokens": "UNKNOWN_SERVER_SIDE",
+    "hidden_reasoning_consumed_budget": "HYPOTHESIS"
+  },
+  "secrets_included": false
+}

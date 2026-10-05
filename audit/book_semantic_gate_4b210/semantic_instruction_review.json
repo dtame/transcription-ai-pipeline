@@ -1,0 +1,36 @@
+{
+  "phase": "4B.2.10",
+  "contract_20": {
+    "version": "book-semantic-validator-2.0-candidate",
+    "sha256": "2ff43da1e33115e289467933c22b1528adea2da849e661ef58b7cbf341f66b3e",
+    "paraphrase_allowed": true,
+    "entailment_not_lexical": true
+  },
+  "contract_201": {
+    "version": "book-semantic-validator-2.0.1-candidate",
+    "sha256": "39902f16bbfd6195081432a8cc6418fe00eb193e977f21b9ed0a995211fccda2",
+    "activated": false,
+    "checks": {
+      "do_not_require_same_words": true,
+      "evaluate_complete_meaning": true,
+      "consider_evidence_in_context": true,
+      "accept_faithful_reformulation": true,
+      "style_vs_fact": true,
+      "uncertainty_not_certainty": true,
+      "no_plausible_causality": true,
+      "no_reasonable_implication": true,
+      "supported_defined": true,
+      "questionable_defined": true,
+      "unsupported_defined": true,
+      "non_substantive_does_not_mask": true,
+      "rhetorical_may_assert": true,
+      "attribution_may_be_substantial": true,
+      "overfit_absent": true,
+      "human_labels_absent": true
+    },
+    "all_hardening_checks": true
+  },
+  "does_not_claim_terra_correction": true,
+  "historical_observations_not_injected_as_labels": true,
+  "secrets_included": false
+}

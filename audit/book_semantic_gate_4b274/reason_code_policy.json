@@ -1,0 +1,65 @@
+{
+  "phase": "4B.2.7.4",
+  "catalog_closed": true,
+  "catalog": [
+    "NEW_FACT",
+    "NEW_CAUSAL_LINK",
+    "NEW_ARGUMENT",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM",
+    "NEW_IMPLICATION",
+    "INVENTED_EXAMPLE",
+    "INVENTED_ANECDOTE",
+    "INVENTED_HYPOTHETICAL",
+    "REFERENCE_COMPLETION",
+    "REFERENCE_EXPANSION",
+    "QUOTE_EXPANSION",
+    "UNCERTAINTY_STRENGTHENED",
+    "SOURCE_MEANING_DISTORTED",
+    "EVIDENCE_MISMATCH",
+    "OTHER"
+  ],
+  "normalization_version": "reason-code-normalization-1.1.2-audit-only",
+  "layers": {
+    "A_strict_compliance": {
+      "rule": "A reason code absent from the closed catalog is a compliance failure. The payload is structurally invalid.",
+      "unknown_code": "FAIL",
+      "empty_on_QUESTIONABLE": "FAIL",
+      "empty_on_UNSUPPORTED": "FAIL",
+      "unexpected_on_SUPPORTED": "FAIL",
+      "unexpected_on_NON_SUBSTANTIVE": "FAIL",
+      "wrong_case": "FAIL",
+      "invented_code": "FAIL",
+      "semantically_close_but_absent": "FAIL",
+      "multiple_valid_codes": "PASS_STRUCTURALLY",
+      "valid_code_wrong_semantic_category": "PASS_STRUCTURALLY_DIAGNOSTIC_ONLY"
+    },
+    "B_analytical_diagnosis": {
+      "rule": "An unknown code may be interpreted in an offline audit to understand model intent. Diagnosis does not validate the code.",
+      "applies_to_historical_h02": true,
+      "does_not_rewrite_raw_response": true
+    },
+    "C_optional_normalization": {
+      "rule": "Any normalization must be explicit, versioned, justified, and tested. It is audit-only in 4B.2.7.4.",
+      "applied_by_validator": false,
+      "applied_to_historical_raw_json": false,
+      "converts_blocking_reservation_to_acceptance": false,
+      "silent_remap_forbidden": true,
+      "version": "reason-code-normalization-1.1.2-audit-only",
+      "diagnostic_map": {
+        "INVENTED_CAUSAL_LINK": "NEW_CAUSAL_LINK",
+        "NO_EVIDENCE": "NEW_FACT",
+        "UNJUSTIFIED_STRENGTHENING": "UNCERTAINTY_STRENGTHENED",
+        "UNSUPPORTED_IMPLICATION": "NEW_IMPLICATION",
+        "PARTIAL_REFERENCE_EXPANSION": "REFERENCE_EXPANSION"
+      }
+    }
+  },
+  "unknown_codes_handling": "COMPLIANCE_FAIL_NO_SILENT_ACCEPTANCE",
+  "never_silently_transform_unknown_into_valid": true,
+  "never_convert_blocking_reservation_into_acceptance": true,
+  "prefer_closed_catalog_with_clear_definitions": true,
+  "other_is_the_only_fallback": true,
+  "questionable_and_unsupported_require_at_least_one_catalog_code": true,
+  "secrets_included": false
+}

@@ -1,0 +1,780 @@
+{
+  "phase": "4B.2.18",
+  "chapter_id": "CH012",
+  "speaker_field_present_on_segments": false,
+  "segment_fields": [
+    "src_id",
+    "source_id",
+    "start",
+    "end",
+    "text",
+    "source_order"
+  ],
+  "recording_ids_are_not_speakers": true,
+  "recording_ids": [
+    "AUDIO001",
+    "AUDIO002",
+    "AUDIO003",
+    "AUDIO004"
+  ],
+  "paragraphs": [
+    {
+      "paragraph_id": "P000001",
+      "section_id": "SEC047",
+      "source_refs": [
+        "SRC004846",
+        "SRC004850",
+        "SRC004851"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC004846",
+          "recording_id": "AUDIO003",
+          "text": "Tu viens juste d'exercer le bavardage.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004850",
+          "recording_id": "AUDIO003",
+          "text": "Nous sommes tellement fatigués.",
+          "speaker_field": null,
+          "first_person_fr": [
+            "nous"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004851",
+          "recording_id": "AUDIO003",
+          "text": "Nous prions toute la nuit en langue.",
+          "speaker_field": null,
+          "first_person_fr": [
+            "nous"
+          ],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO003"
+      ]
+    },
+    {
+      "paragraph_id": "P000002",
+      "section_id": "SEC047",
+      "source_refs": [
+        "SRC004880",
+        "SRC004881",
+        "SRC004882"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC004880",
+          "recording_id": "AUDIO003",
+          "text": "Pourquoi ça ne marche pas avec nous?",
+          "speaker_field": null,
+          "first_person_fr": [
+            "nous"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004881",
+          "recording_id": "AUDIO003",
+          "text": "Parce que nous ne faisons pas",
+          "speaker_field": null,
+          "first_person_fr": [
+            "nous"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004882",
+          "recording_id": "AUDIO003",
+          "text": "ce qu'il a dit.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO003"
+      ]
+    },
+    {
+      "paragraph_id": "P000003",
+      "section_id": "SEC047",
+      "source_refs": [
+        "SRC004918",
+        "SRC004920",
+        "SRC004921",
+        "SRC004923"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC004918",
+          "recording_id": "AUDIO003",
+          "text": "Nous étions sincères,",
+          "speaker_field": null,
+          "first_person_fr": [
+            "nous"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004920",
+          "recording_id": "AUDIO003",
+          "text": "nous étions très sincères.",
+          "speaker_field": null,
+          "first_person_fr": [
+            "nous"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004921",
+          "recording_id": "AUDIO003",
+          "text": "C'est parce que nous ne savions pas.",
+          "speaker_field": null,
+          "first_person_fr": [
+            "nous"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004923",
+          "recording_id": "AUDIO003",
+          "text": "nous ne connaissons pas.",
+          "speaker_field": null,
+          "first_person_fr": [
+            "nous"
+          ],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO003"
+      ]
+    },
+    {
+      "paragraph_id": "P000004",
+      "section_id": "SEC048",
+      "source_refs": [
+        "SRC004854",
+        "SRC004856",
+        "SRC004877",
+        "SRC004879",
+        "SRC006457",
+        "SRC006458",
+        "SRC006459"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC004854",
+          "recording_id": "AUDIO003",
+          "text": "C'est de refroidir",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004856",
+          "recording_id": "AUDIO003",
+          "text": "Isaiah 28 est dans votre Bible.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004877",
+          "recording_id": "AUDIO003",
+          "text": "Isaiah 28, c'est là",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004879",
+          "recording_id": "AUDIO003",
+          "text": "dans 1 Corinthiens 14.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006457",
+          "recording_id": "AUDIO004",
+          "text": "before chapter 28, chapter 26",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006458",
+          "recording_id": "AUDIO004",
+          "text": "of Isaiah",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006459",
+          "recording_id": "AUDIO004",
+          "text": "he says in verse 3",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO003",
+        "AUDIO004"
+      ]
+    },
+    {
+      "paragraph_id": "P000005",
+      "section_id": "SEC048",
+      "source_refs": [
+        "SRC006318",
+        "SRC006319",
+        "SRC006421",
+        "SRC006427",
+        "SRC006428",
+        "SRC004861",
+        "SRC004862"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC006318",
+          "recording_id": "AUDIO004",
+          "text": "Isaiah 28.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006319",
+          "recording_id": "AUDIO004",
+          "text": "Isaiah 28.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006421",
+          "recording_id": "AUDIO004",
+          "text": "Isaiah 28, verset 11.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006427",
+          "recording_id": "AUDIO004",
+          "text": "You see in 1 Corinthians chapter 14, verse 21.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006428",
+          "recording_id": "AUDIO004",
+          "text": "L'accomplissement de cette prophétie est dans 1 Corinthians 14, verset 21.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004861",
+          "recording_id": "AUDIO003",
+          "text": "Jude l'a dit courageusement.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004862",
+          "recording_id": "AUDIO003",
+          "text": "Vers 20.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO003",
+        "AUDIO004"
+      ]
+    },
+    {
+      "paragraph_id": "P000006",
+      "section_id": "SEC048",
+      "source_refs": [
+        "SRC004859",
+        "SRC004860"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC004859",
+          "recording_id": "AUDIO003",
+          "text": "Quand vous êtes fatigué,",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004860",
+          "recording_id": "AUDIO003",
+          "text": "priez en langue pour 5 minutes.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO003"
+      ]
+    },
+    {
+      "paragraph_id": "P000007",
+      "section_id": "SEC048",
+      "source_refs": [
+        "SRC006407",
+        "SRC006466",
+        "SRC006469",
+        "SRC006474",
+        "SRC006476"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC006407",
+          "recording_id": "AUDIO004",
+          "text": "When you pray in the Holy Ghost.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006466",
+          "recording_id": "AUDIO004",
+          "text": "you are peaceful",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006469",
+          "recording_id": "AUDIO004",
+          "text": "Peace begins",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006474",
+          "recording_id": "AUDIO004",
+          "text": "You know what that says?",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006476",
+          "recording_id": "AUDIO004",
+          "text": "It says it's the spirit of God praying through you.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO004"
+      ]
+    },
+    {
+      "paragraph_id": "P000008",
+      "section_id": "SEC049",
+      "source_refs": [
+        "SRC004891",
+        "SRC004893",
+        "SRC004895"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC004891",
+          "recording_id": "AUDIO003",
+          "text": "Il a vu comment j'ai prié,",
+          "speaker_field": null,
+          "first_person_fr": [
+            "j'"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004893",
+          "recording_id": "AUDIO003",
+          "text": "J'étais au sol,",
+          "speaker_field": null,
+          "first_person_fr": [
+            "j'"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004895",
+          "recording_id": "AUDIO003",
+          "text": "Ma voix était cassée.",
+          "speaker_field": null,
+          "first_person_fr": [
+            "ma"
+          ],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO003"
+      ]
+    },
+    {
+      "paragraph_id": "P000009",
+      "section_id": "SEC049",
+      "source_refs": [
+        "SRC004898",
+        "SRC004899",
+        "SRC004905",
+        "SRC004906"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC004898",
+          "recording_id": "AUDIO003",
+          "text": "il m'a dit mon fils,",
+          "speaker_field": null,
+          "first_person_fr": [
+            "mon"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004899",
+          "recording_id": "AUDIO003",
+          "text": "tu es fatigué.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004905",
+          "recording_id": "AUDIO003",
+          "text": "Parce que si je te laisse ainsi,",
+          "speaker_field": null,
+          "first_person_fr": [
+            "je"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004906",
+          "recording_id": "AUDIO003",
+          "text": "tu vas prêcher une mauvaise doctrine.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO003"
+      ]
+    },
+    {
+      "paragraph_id": "P000010",
+      "section_id": "SEC049",
+      "source_refs": [
+        "SRC004909",
+        "SRC004910",
+        "SRC004915",
+        "SRC004917"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC004909",
+          "recording_id": "AUDIO003",
+          "text": "Je ne suis jamais venu.",
+          "speaker_field": null,
+          "first_person_fr": [
+            "je"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004910",
+          "recording_id": "AUDIO003",
+          "text": "Je n'étais jamais allé ailleurs.",
+          "speaker_field": null,
+          "first_person_fr": [
+            "je"
+          ],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004915",
+          "recording_id": "AUDIO003",
+          "text": "Si ta prière ne peut pas toucher",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC004917",
+          "recording_id": "AUDIO003",
+          "text": "comment peut-elle te changer?",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO003"
+      ]
+    },
+    {
+      "paragraph_id": "P000011",
+      "section_id": "SEC049",
+      "source_refs": [
+        "SRC006452",
+        "SRC006454",
+        "SRC006456"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC006452",
+          "recording_id": "AUDIO004",
+          "text": "It's ok, you're sincere.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006454",
+          "recording_id": "AUDIO004",
+          "text": "But you're not doing it well.",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC006456",
+          "recording_id": "AUDIO004",
+          "text": "When you do it well",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO004"
+      ]
+    },
+    {
+      "paragraph_id": "P000012",
+      "section_id": "SEC050",
+      "source_refs": [
+        "SRC005748",
+        "SRC005750",
+        "SRC005754"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC005748",
+          "recording_id": "AUDIO004",
+          "text": "in verse number 3 of Isaiah 44",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC005750",
+          "recording_id": "AUDIO004",
+          "text": "I will pour water on him",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": [
+            "i"
+          ]
+        },
+        {
+          "src_id": "SRC005754",
+          "recording_id": "AUDIO004",
+          "text": "I will pour my spirit",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": [
+            "i",
+            "my"
+          ]
+        }
+      ],
+      "recording_ids": [
+        "AUDIO004"
+      ]
+    },
+    {
+      "paragraph_id": "P000013",
+      "section_id": "SEC050",
+      "source_refs": [
+        "SRC005762",
+        "SRC005763",
+        "SRC005766"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC005762",
+          "recording_id": "AUDIO004",
+          "text": "when Jesus said",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC005763",
+          "recording_id": "AUDIO004",
+          "text": "blessed are you",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC005766",
+          "recording_id": "AUDIO004",
+          "text": "for you shall be satisfied",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO004"
+      ]
+    },
+    {
+      "paragraph_id": "P000014",
+      "section_id": "SEC050",
+      "source_refs": [
+        "SRC005771",
+        "SRC005775",
+        "SRC005778",
+        "SRC005780"
+      ],
+      "segments": [
+        {
+          "src_id": "SRC005771",
+          "recording_id": "AUDIO004",
+          "text": "is anchored in one thing",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC005775",
+          "recording_id": "AUDIO004",
+          "text": "God is no respecter of persons",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC005778",
+          "recording_id": "AUDIO004",
+          "text": "he wants to reveal himself",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        },
+        {
+          "src_id": "SRC005780",
+          "recording_id": "AUDIO004",
+          "text": "he wants to be discovered",
+          "speaker_field": null,
+          "first_person_fr": [],
+          "first_person_en": []
+        }
+      ],
+      "recording_ids": [
+        "AUDIO004"
+      ]
+    }
+  ],
+  "supporting_units": {
+    "IDEA184": {
+      "id": "IDEA184",
+      "summary": "A personal revelation: God told the speaker directly that he was 'tired' and that continuing without correction would lead him to preach a wrong doctrine.",
+      "source_refs": [
+        "SRC004898",
+        "SRC004899",
+        "SRC004905",
+        "SRC004906"
+      ]
+    },
+    "IDEA186": {
+      "id": "IDEA186",
+      "summary": "Sincerity alone was not enough; the previous manner of praying was based on ignorance, not correct knowledge.",
+      "source_refs": [
+        "SRC004918",
+        "SRC004920",
+        "SRC004921",
+        "SRC004923"
+      ]
+    },
+    "IDEA238": {
+      "id": "IDEA238",
+      "summary": "Doing spiritual practices sincerely but incorrectly still needs correction to reach true rest.",
+      "source_refs": [
+        "SRC006452",
+        "SRC006454",
+        "SRC006456"
+      ]
+    },
+    "EX030": {
+      "id": "EX030",
+      "summary": "Speaker describes losing strength, voice broken from intense long prayer, until God told him directly he was tired and needed correction.",
+      "kind": "testimony",
+      "supports_idea_refs": [
+        "IDEA184"
+      ],
+      "source_refs": [
+        "SRC004891",
+        "SRC004893",
+        "SRC004895",
+        "SRC004898"
+      ]
+    }
+  },
+  "established_authorial_first_person": {
+    "P000003": [
+      "SRC004918 Nous étions sincères",
+      "SRC004920 nous étions très sincères",
+      "SRC004921 C'est parce que nous ne savions pas",
+      "SRC004923 nous ne connaissons pas"
+    ],
+    "P000008": [
+      "SRC004891 Il a vu comment j'ai prié",
+      "SRC004893 J'étais au sol",
+      "SRC004895 Ma voix était cassée"
+    ],
+    "P000009": [
+      "SRC004898 il m'a dit mon fils",
+      "SRC004899 tu es fatigué",
+      "SRC004905 Parce que si je te laisse ainsi",
+      "SRC004906 tu vas prêcher une mauvaise doctrine"
+    ]
+  },
+  "uncertain_attribution": {
+    "P000001": [
+      "SRC004846 Tu viens juste d'exercer le bavardage",
+      "SRC004850 Nous sommes tellement fatigués",
+      "SRC004851 Nous prions toute la nuit en langue"
+    ]
+  },
+  "secrets_included": false
+}

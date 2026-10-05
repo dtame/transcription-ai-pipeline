@@ -1,0 +1,41 @@
+{
+  "phase": "4B.2.30",
+  "status": "PASS",
+  "body": {
+    "different_first_page": true,
+    "first_page_header_empty": true,
+    "even_header_texts": [
+      "A Different Synthetic Book"
+    ],
+    "odd_header_fields": [
+      "STYLEREF \"BookChapterTitle\""
+    ],
+    "footer_fields": [
+      "PAGE"
+    ],
+    "first_footer_fields": [
+      "PAGE"
+    ],
+    "even_footer_fields": [
+      "PAGE"
+    ]
+  },
+  "front_matter": {
+    "different_first_page": true,
+    "first_page_header_empty": true,
+    "even_header_texts": [],
+    "odd_header_fields": [],
+    "footer_fields": [],
+    "first_footer_fields": [],
+    "even_footer_fields": []
+  },
+  "checks": {
+    "even_header_has_title": true,
+    "odd_header_has_styleref": true,
+    "body_page_field": true,
+    "first_page_header_empty": true,
+    "title_page_has_no_page_field_on_first": true
+  },
+  "limitation": "python-docx writes first-page header suppression and STYLEREF. Rendered even/odd pages are confirmed only after Microsoft Word refreshes fields.",
+  "secrets_included": false
+}

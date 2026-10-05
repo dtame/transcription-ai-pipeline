@@ -1,0 +1,150 @@
+{
+  "phase": "4B.2.15",
+  "contract": "book-semantic-validator-2.0.2-candidate",
+  "transport": "book-semantic-validation-transport-2.0-candidate",
+  "json_parse": "PASS",
+  "parse_error": null,
+  "ok": true,
+  "status": "PASS",
+  "technical_conformance": "VALID",
+  "errors": [],
+  "parsed": {
+    "ch": "CH016",
+    "pr": [
+      {
+        "h": "h11",
+        "u": [
+          {
+            "id": "u00",
+            "k": "SUPPORTED",
+            "ev": [
+              "SRC006192"
+            ],
+            "r": []
+          },
+          {
+            "id": "u01",
+            "k": "UNSUPPORTED",
+            "ev": [
+              "SRC006192"
+            ],
+            "r": [
+              "NEW_ARGUMENT",
+              "EVIDENCE_MISMATCH"
+            ],
+            "n": "Evidence says only that it is not mind over matter; it does not characterize it as positive-thinking technique."
+          },
+          {
+            "id": "u02",
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA226",
+              "SRC006193"
+            ],
+            "r": []
+          },
+          {
+            "id": "u03",
+            "k": "UNSUPPORTED",
+            "ev": [
+              "IDEA226"
+            ],
+            "r": [
+              "INVENTED_EXAMPLE",
+              "REFERENCE_EXPANSION"
+            ],
+            "n": "Evidence contrasts lived reality with intellectual idea but does not supply the sermon example or this expanded description of facing one's ending."
+          },
+          {
+            "id": "u04",
+            "k": "UNSUPPORTED",
+            "ev": [
+              "IDEA226"
+            ],
+            "r": [
+              "NEW_CONCLUSION",
+              "UNCERTAINTY_STRENGTHENED"
+            ],
+            "n": "The evidence does not guarantee that every believer will have a fearless death."
+          }
+        ]
+      }
+    ]
+  },
+  "verdicts": [
+    {
+      "unit_id": "u00",
+      "k": "SUPPORTED",
+      "ev": [
+        "SRC006192"
+      ],
+      "r": [],
+      "n": ""
+    },
+    {
+      "unit_id": "u01",
+      "k": "UNSUPPORTED",
+      "ev": [
+        "SRC006192"
+      ],
+      "r": [
+        "NEW_ARGUMENT",
+        "EVIDENCE_MISMATCH"
+      ],
+      "n": "Evidence says only that it is not mind over matter; it does not characterize it as positive-thinking technique."
+    },
+    {
+      "unit_id": "u02",
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "r": [],
+      "n": ""
+    },
+    {
+      "unit_id": "u03",
+      "k": "UNSUPPORTED",
+      "ev": [
+        "IDEA226"
+      ],
+      "r": [
+        "INVENTED_EXAMPLE",
+        "REFERENCE_EXPANSION"
+      ],
+      "n": "Evidence contrasts lived reality with intellectual idea but does not supply the sermon example or this expanded description of facing one's ending."
+    },
+    {
+      "unit_id": "u04",
+      "k": "UNSUPPORTED",
+      "ev": [
+        "IDEA226"
+      ],
+      "r": [
+        "NEW_CONCLUSION",
+        "UNCERTAINTY_STRENGTHENED"
+      ],
+      "n": "The evidence does not guarantee that every believer will have a fearless death."
+    }
+  ],
+  "required_unit_ids": [
+    "u00",
+    "u01",
+    "u02",
+    "u03",
+    "u04"
+  ],
+  "derived_paragraph_classification": "UNSUPPORTED",
+  "derived_counts": {
+    "SUPPORTED": 2,
+    "QUESTIONABLE": 0,
+    "UNSUPPORTED": 3,
+    "NON_SUBSTANTIVE": 0
+  },
+  "does_not_complete_missing_units": true,
+  "does_not_repair_reason_codes": true,
+  "does_not_rewrite_model_response": true,
+  "repaired": false,
+  "secrets_included": false
+}

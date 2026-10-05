@@ -1,0 +1,106 @@
+{
+  "phase": "4B.2.9",
+  "project_structure": {
+    "semantic_gate_packages": [
+      "book_semantic_gate_4b23",
+      "book_semantic_gate_4b24",
+      "book_semantic_gate_4b241",
+      "book_semantic_gate_4b25",
+      "book_semantic_gate_4b251",
+      "book_semantic_gate_4b26",
+      "book_semantic_gate_4b261",
+      "book_semantic_gate_4b262",
+      "book_semantic_gate_4b27",
+      "book_semantic_gate_4b271",
+      "book_semantic_gate_4b272",
+      "book_semantic_gate_4b273",
+      "book_semantic_gate_4b274",
+      "book_semantic_gate_4b275",
+      "book_semantic_gate_4b276",
+      "book_semantic_gate_4b277",
+      "book_semantic_gate_4b28",
+      "book_semantic_gate_4b29"
+    ],
+    "latest_production_like_gate": "app/book_semantic_gate_4b23",
+    "prototype_4b28": "app/book_semantic_gate_4b28",
+    "candidate_4b29": "app/book_semantic_gate_4b29",
+    "book_generator": "app/book_generation"
+  },
+  "existing_semantic_gate": {
+    "independent_gate": "app/book_semantic_gate_4b23",
+    "production_helpers": "app/book_generation/semantic_review.py",
+    "not_replaced": true
+  },
+  "contracts": {
+    "1.0": "book-semantic-validator-1.0",
+    "1.1": "book-semantic-validator-1.1-candidate",
+    "1.1.2": "book-semantic-validator-1.1.2-candidate",
+    "1.1.3": "book-semantic-validator-1.1.3-candidate",
+    "2.0_proposal": "book-semantic-validator-2.0-proposal",
+    "2.0_candidate": "book-semantic-validator-2.0-candidate",
+    "historical_unmodified": true
+  },
+  "transports": {
+    "1.0": "book-semantic-validation-transport-1.0",
+    "1.1": "book-semantic-validation-transport-1.1-candidate",
+    "2.0_proposal": "book-semantic-validation-transport-2.0-proposal",
+    "2.0_candidate": "book-semantic-validation-transport-2.0-candidate",
+    "historical_unmodified": true
+  },
+  "local_validators": [
+    "app/book_semantic_gate_4b23/transport.py",
+    "app/book_semantic_gate_4b23/accept.py",
+    "app/book_semantic_gate_4b262/contract.py",
+    "app/book_semantic_gate_4b274/coverage.py",
+    "app/book_semantic_gate_4b29/validator.py",
+    "app/book_semantic_gate_4b29/coverage.py",
+    "app/book_semantic_gate_4b29/policy.py"
+  ],
+  "cache": {
+    "module": "app/book_generation/cache.py",
+    "production_rules_unmodified": true,
+    "4b29_does_not_write_cache": true
+  },
+  "tests": [
+    "test_book_semantic_gate_4b23.py",
+    "test_book_semantic_gate_4b24.py",
+    "test_book_semantic_gate_4b241.py",
+    "test_book_semantic_gate_4b25.py",
+    "test_book_semantic_gate_4b251.py",
+    "test_book_semantic_gate_4b26.py",
+    "test_book_semantic_gate_4b261.py",
+    "test_book_semantic_gate_4b262.py",
+    "test_book_semantic_gate_4b27.py",
+    "test_book_semantic_gate_4b271.py",
+    "test_book_semantic_gate_4b272.py",
+    "test_book_semantic_gate_4b273.py",
+    "test_book_semantic_gate_4b274.py",
+    "test_book_semantic_gate_4b275.py",
+    "test_book_semantic_gate_4b276.py",
+    "test_book_semantic_gate_4b277.py",
+    "test_book_semantic_gate_4b28.py",
+    "test_book_semantic_gate_4b29.py"
+  ],
+  "prototype_4b28": {
+    "present": true,
+    "reused": true
+  },
+  "historical_audits": {
+    "h01": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_raw_structured_response.json",
+    "h02": "True",
+    "h11": "True"
+  },
+  "versioning_conventions": {
+    "phases": "4B.2.N packages as app/book_semantic_gate_4b2N",
+    "contracts": "book-semantic-validator-X.Y[-candidate]",
+    "transports": "book-semantic-validation-transport-X.Y[-candidate]",
+    "audits": "audit/book_semantic_gate_4b2N plus PHASE_4B2N_*.md"
+  },
+  "reuse": [
+    "4b28 prepare_semantic_validation_units",
+    "4b23 reason catalog and classifications",
+    "4b28 historical canary loaders",
+    "4b24 frozen ten-case benchmark"
+  ],
+  "secrets_included": false
+}

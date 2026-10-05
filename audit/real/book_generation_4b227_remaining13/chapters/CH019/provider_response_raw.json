@@ -1,0 +1,155 @@
+{
+  "phase": "4B.2.27",
+  "chapter_id": "CH019",
+  "http_success": true,
+  "finish_reason": "end_turn",
+  "parsed": {
+    "sections": [
+      {
+        "sid": "SEC071",
+        "paras": [
+          {
+            "h": "p1",
+            "k": "sub",
+            "t": "Thieves broke into Apostle Kalita's house. They forced the door and took what they wanted, and among the things they carried away was his old Bible, the one worn and marked up from years of personal use.",
+            "e": [
+              "EX049",
+              "IDEA280",
+              "SRC008212",
+              "SRC008216",
+              "SRC008222",
+              "SRC008208"
+            ]
+          },
+          {
+            "h": "p2",
+            "k": "sub",
+            "t": "Years later, that same Bible surfaced again, now in the hands of a man who had become known as a powerful healer, someone God was using to minister to the sick. That man admitted openly, \"I was a thief.\" He was the very one who had broken into the house and stolen the Bible, and he had gone on to use it, mark it further, and build a ministry around it, all without ever knowing whose Bible it had originally been.",
+            "e": [
+              "EX049",
+              "IDEA280",
+              "SRC008230",
+              "SRC008234",
+              "SRC008249"
+            ]
+          },
+          {
+            "h": "p3",
+            "k": "sub",
+            "t": "When the connection was discovered, he turned to Kalita's wife. The church around them was moved to tears at the realization of what had happened. Yet the counsel given was restraint: don't say anything bad, don't tell the man at all what had truly happened. The providence of it was left to stand on its own rather than being turned into an occasion for exposure or confrontation.",
+            "e": [
+              "EX049",
+              "IDEA280",
+              "SRC008251",
+              "SRC008263",
+              "SRC008267"
+            ]
+          },
+          {
+            "h": "p4",
+            "k": "sub",
+            "t": "This is the lesson drawn from it: sometimes you will lose some things. Money, possessions, even something as personal as a marked Bible, can be taken from you. When that happens, the response matters more than the loss itself. Don't say anything bad about it. Instead, make it a divine investment. Make it a seed.",
+            "e": [
+              "IDEA281",
+              "SRC008271",
+              "SRC008273",
+              "SRC008288"
+            ]
+          },
+          {
+            "h": "p5",
+            "k": "sub",
+            "t": "If your money makes somebody rich, if what was taken from you ends up blessing someone else, the person will remember it. There is no need for bitterness over what has already happened. It is already happened, so the only remaining choice is what you do with your response to it.",
+            "e": [
+              "IDEA281",
+              "SRC008279",
+              "SRC008282",
+              "SRC008291"
+            ]
+          },
+          {
+            "h": "p6",
+            "k": "sub",
+            "t": "What others meant for evil, God can convert and turn around. They meant it for evil, but good will come out of this. Samson said it this way: out of the eater came something sweet. What looked like loss, theft, or harm becomes, in God's hands, the very thing that turns into your promotion.",
+            "e": [
+              "IDEA282",
+              "REF059",
+              "SRC008301",
+              "SRC008304",
+              "SRC008306",
+              "SRC008308",
+              "SRC008309",
+              "SRC008312",
+              "SRC008315"
+            ]
+          }
+        ]
+      },
+      {
+        "sid": "SEC072",
+        "paras": [
+          {
+            "h": "p7",
+            "k": "sub",
+            "t": "Your ministry is about to experience a growth coming that is already activated. Say it is activated already. This is declared not as a promise still to be earned but as something already set in motion, and it will come with a great testimony attached to it.",
+            "e": [
+              "IDEA283",
+              "SRC008317",
+              "SRC008320",
+              "SRC008327",
+              "SRC008329",
+              "SRC008331"
+            ]
+          },
+          {
+            "h": "p8",
+            "k": "sub",
+            "t": "Because God told me, and literally I saw it, I saw angels dancing over the nation. I saw that Cameroon has a destiny attached to it, and that vision is what grounds the conviction that there is a beautiful Cameroon coming.",
+            "e": [
+              "IDEA285",
+              "SRC008367",
+              "SRC008369",
+              "SRC008371",
+              "SRC008373",
+              "SRC008374",
+              "SRC008376"
+            ]
+          },
+          {
+            "h": "p9",
+            "k": "sub",
+            "t": "I know there is a beautiful Cameroon ahead, one in which the destiny of this nation is fulfilled: you will not need a visa to go to anywhere, you will be the jealousy of many nations, and in the church you will not find somebody sick there, because sickness will be banished from the church.",
+            "e": [
+              "IDEA284",
+              "SRC008376",
+              "SRC008380",
+              "SRC008384",
+              "SRC008388",
+              "SRC008392",
+              "SRC008393"
+            ]
+          },
+          {
+            "h": "p10",
+            "k": "con",
+            "t": "To release this, hold the hand of somebody near you and pray earnestly with that person.",
+            "e": [
+              "IDEA286",
+              "SRC008399",
+              "SRC008401"
+            ],
+            "u": [
+              "UNC035"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "raw_sha256": "ebd06ef5f047c3b6526da2c3617310de6f96ace48b0a3efe455cda9cef61703c",
+  "raw_chars": 3802,
+  "error": null,
+  "invented_response": false,
+  "raw_response_kept_intact": true,
+  "secrets_included": false
+}

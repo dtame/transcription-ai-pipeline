@@ -1,0 +1,73 @@
+{
+  "phase": "4B.2.26",
+  "normalizer_version": "empty-unprovenanced-paragraph-normalizer-4b226-1.0",
+  "chapter_id": "CH007",
+  "accepted_chapter_protected": false,
+  "changed": false,
+  "removed_paragraph_ids": [],
+  "removed": [],
+  "refused": [],
+  "original_paragraph_ids": [
+    "P000001",
+    "P000002",
+    "P000003",
+    "P000004",
+    "P000005",
+    "P000006",
+    "P000007",
+    "P000008",
+    "P000009",
+    "P000010"
+  ],
+  "derived_paragraph_ids": [
+    "P000001",
+    "P000002",
+    "P000003",
+    "P000004",
+    "P000005",
+    "P000006",
+    "P000007",
+    "P000008",
+    "P000009",
+    "P000010"
+  ],
+  "ids_renumbered": false,
+  "other_paragraph_ids_unchanged": true,
+  "other_paragraphs_modified": false,
+  "prose_rewritten": false,
+  "provenance_fabricated": false,
+  "ideas_before": [
+    "IDEA114",
+    "IDEA115",
+    "IDEA116",
+    "IDEA117",
+    "IDEA118",
+    "IDEA119",
+    "IDEA120",
+    "IDEA121",
+    "IDEA122",
+    "IDEA123"
+  ],
+  "ideas_after": [
+    "IDEA114",
+    "IDEA115",
+    "IDEA116",
+    "IDEA117",
+    "IDEA118",
+    "IDEA119",
+    "IDEA120",
+    "IDEA121",
+    "IDEA122",
+    "IDEA123"
+  ],
+  "idea_coverage_unchanged": true,
+  "raw_response_unchanged": true,
+  "artifact_kind": "OFFLINE_DERIVED_ARTIFACT",
+  "not_provider_original": true,
+  "secrets_included": false,
+  "idempotent": true,
+  "second_pass": {
+    "changed": false,
+    "removed_paragraph_ids": []
+  }
+}

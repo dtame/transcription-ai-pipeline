@@ -1,0 +1,18 @@
+{
+  "phase": "4B.2.32",
+  "status": "PASS",
+  "front_matter_unchanged": "YES",
+  "original_page_count": 0,
+  "updated_page_count": 0,
+  "page_count_match": true,
+  "expected_front_matter_pages": 4,
+  "first_chapter_physical_page_original": 5,
+  "first_chapter_physical_page_updated": 5,
+  "fallback_first_chapter_page": true,
+  "pages": [],
+  "original_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1/The_Life_You_Already_Inherited_print_review_v1.docx",
+  "updated_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1_1/The_Life_You_Already_Inherited_print_review_v1_1.docx",
+  "verification": "not_verified",
+  "secrets_included": false,
+  "normalized_sample": ""
+}

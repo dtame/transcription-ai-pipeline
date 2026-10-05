@@ -1,0 +1,406 @@
+{
+  "phase": "4B.2.13",
+  "source": "FAKEAI_SIMULATED",
+  "passed": true,
+  "scenarios": [
+    {
+      "scenario": "fully_supported",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "PASS",
+      "decision": "PASS",
+      "state": "VALIDATION_PASS",
+      "match": true,
+      "isolated_acceptance_candidate": true,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    },
+    {
+      "scenario": "invented_causality",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "state": "VALIDATION_BLOCK",
+      "match": true,
+      "isolated_acceptance_candidate": false,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    },
+    {
+      "scenario": "invented_implication",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "state": "VALIDATION_BLOCK",
+      "match": true,
+      "isolated_acceptance_candidate": false,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    },
+    {
+      "scenario": "universal_guarantee",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "state": "VALIDATION_BLOCK",
+      "match": true,
+      "isolated_acceptance_candidate": false,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    },
+    {
+      "scenario": "unsupported_reference",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "state": "VALIDATION_BLOCK",
+      "match": true,
+      "isolated_acceptance_candidate": false,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    },
+    {
+      "scenario": "legitimate_paraphrase",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "PASS",
+      "decision": "PASS",
+      "state": "VALIDATION_PASS",
+      "match": true,
+      "isolated_acceptance_candidate": true,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    },
+    {
+      "scenario": "questionable",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "REVIEW",
+      "decision": "REVIEW",
+      "state": "VALIDATION_REVIEW",
+      "match": true,
+      "isolated_acceptance_candidate": false,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    },
+    {
+      "scenario": "invalid_json",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "state": "VALIDATION_BLOCK",
+      "match": true,
+      "isolated_acceptance_candidate": false,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    },
+    {
+      "scenario": "missing_response",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "state": "VALIDATION_BLOCK",
+      "match": true,
+      "isolated_acceptance_candidate": false,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    },
+    {
+      "scenario": "invalid_evidence_handle",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "state": "VALIDATION_BLOCK",
+      "match": true,
+      "isolated_acceptance_candidate": false,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    },
+    {
+      "scenario": "missing_evidence",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "not_sonnet": true,
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "state": "VALIDATION_BLOCK",
+      "match": true,
+      "isolated_acceptance_candidate": false,
+      "presented_as_validated_chapter": false,
+      "production_cache_write": false,
+      "coverage_ok_when_required": true
+    }
+  ],
+  "counts": {
+    "PASS": 2,
+    "REVIEW": 1,
+    "BLOCK": 8
+  },
+  "policy": {
+    "phase": "4B.2.13",
+    "pass": [
+      "all substantive units SUPPORTED",
+      "contract 2.0.2 VALID",
+      "evidence valid",
+      "coverage complete",
+      "no blocking anomaly",
+      "no missing response"
+    ],
+    "review": [
+      "at least one QUESTIONABLE proposition",
+      "no UNSUPPORTED",
+      "no technical blocking anomaly",
+      "REVIEW is never a validated chapter"
+    ],
+    "block": [
+      "at least one UNSUPPORTED",
+      "invalid contract",
+      "invalid evidence",
+      "invalid coverage",
+      "critical technical anomaly",
+      "missing response"
+    ],
+    "missing_response_never_pass": true,
+    "production_cache_acceptance": false,
+    "secrets_included": false
+  },
+  "cache": {
+    "phase": "4B.2.13",
+    "isolated": true,
+    "production_cache_acceptance": false,
+    "production_writes": 0,
+    "states_observed": [
+      "VALIDATION_BLOCK",
+      "VALIDATION_PASS",
+      "VALIDATION_REVIEW"
+    ],
+    "record_count": 9,
+    "pass_only_acceptance_candidate": true,
+    "review_never_validated": true,
+    "block_never_validated": true,
+    "historical_partial_never_converted_to_pass": true,
+    "secrets_included": false
+  },
+  "cache_document": {
+    "phase": "4B.2.13",
+    "isolated": true,
+    "states": [
+      "GENERATION_OBTAINED",
+      "VALIDATION_PENDING",
+      "VALIDATION_PASS",
+      "VALIDATION_REVIEW",
+      "VALIDATION_BLOCK",
+      "TECHNICAL_ERROR",
+      "INTERRUPTED"
+    ],
+    "acceptance_rule": "Only VALIDATION_PASS may become a future-acceptance candidate.",
+    "review_and_block_never_validated": true,
+    "production_cache": "UNCHANGED",
+    "key_dependencies": [
+      "generated_text_sha256",
+      "chapter_id",
+      "paragraph_ids",
+      "source_map_sha256",
+      "editorial_plan_sha256",
+      "evidence_bundle_sha256",
+      "semantic_contract_version",
+      "semantic_transport_version",
+      "preparation_algorithm_version",
+      "validator_implementation_version",
+      "integration_contract_version",
+      "code_version"
+    ],
+    "historical_partial_never_pass": true,
+    "secrets_included": false
+  },
+  "phase5_sample": {
+    "phase": "4B.2.13",
+    "version": "book-validator-phase5-interface-4b213-candidate",
+    "implemented": false,
+    "executed": false,
+    "independent": true,
+    "semantic_gate_does_not_replace_phase5": true,
+    "required_inputs": [
+      "chapter",
+      "text",
+      "structure",
+      "sources",
+      "evidence_handles",
+      "semantic_gate_results",
+      "versions",
+      "hashes",
+      "decisions",
+      "anomalies",
+      "traceability"
+    ],
+    "sample": {
+      "interface_version": "book-validator-phase5-interface-4b213-candidate",
+      "executed": false,
+      "independent": true,
+      "must_not_accept_semantic_gate_verdict_alone": true,
+      "chapter_id": "SYN-CH001",
+      "title": "Synthetic offline chapter",
+      "text": [
+        {
+          "paragraph_id": "SYN-CH001-P000001",
+          "section_id": "SYN-CH001-SEC001",
+          "text": "The next movement of the book now turns to this subject.",
+          "kind": "connective"
+        },
+        {
+          "paragraph_id": "SYN-CH001-P000002",
+          "section_id": "SYN-CH001-SEC001",
+          "text": "The teaching already given is that fear does not calculate or bargain with the person who belongs to the truth.",
+          "kind": "substantive"
+        }
+      ],
+      "structure": {
+        "phase": "4B.2.13",
+        "ok": true,
+        "status": "PASS",
+        "errors": [],
+        "chapter_id": "SYN-CH001",
+        "paragraph_count": 2,
+        "section_count": 1,
+        "allowed_evidence_handles": [
+          "SYN-IDEA001",
+          "SYN-SRC001"
+        ],
+        "does_not_invent_evidence": true,
+        "secrets_included": false
+      },
+      "sources": [
+        "SYN-SRC001"
+      ],
+      "evidence_handles": [
+        "SYN-IDEA001",
+        "SYN-SRC001"
+      ],
+      "semantic_gate_results": {
+        "decision": "PASS",
+        "paragraph_decisions": [
+          {
+            "paragraph_id": "SYN-CH001-P000001",
+            "decision": "PASS",
+            "validation_ok": true,
+            "verdicts": [
+              {
+                "unit_id": "u00",
+                "k": "SUPPORTED",
+                "ev": [],
+                "r": [],
+                "n": ""
+              }
+            ]
+          },
+          {
+            "paragraph_id": "SYN-CH001-P000002",
+            "decision": "PASS",
+            "validation_ok": true,
+            "verdicts": [
+              {
+                "unit_id": "u00",
+                "k": "SUPPORTED",
+                "ev": [
+                  "SYN-IDEA001"
+                ],
+                "r": [],
+                "n": ""
+              }
+            ]
+          }
+        ]
+      },
+      "versions": {
+        "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+        "semantic_transport": "book-semantic-validation-transport-2.0-candidate",
+        "preparation": "book-semantic-preparation-4b28-conservative-via-4b29",
+        "validator": "app.book_semantic_gate_4b212.validator.validate_response_202",
+        "integration": "book-generator-semantic-gate-integration-4b213-candidate",
+        "code": "app.book_generation_integration_4b213"
+      },
+      "hashes": {
+        "generated_text_sha256": "8c279f76f064d6187911741554564c641da7242305912cc92ecdfd1b01466417",
+        "validation_key": "610e3dd1fa38c62d564db903c552710eb1af1096804aec7fc0a96492e6c78e70",
+        "source_map_sha256": "SYNTHETIC_OFFLINE_FIXTURE",
+        "editorial_plan_sha256": "SYNTHETIC_OFFLINE_FIXTURE"
+      },
+      "decisions": {
+        "chapter": "PASS",
+        "isolated_acceptance_candidate": true
+      },
+      "anomalies": [],
+      "traceability": [
+        {
+          "chapter_id": "SYN-CH001",
+          "section_id": "SYN-CH001-SEC001",
+          "paragraph_id": "SYN-CH001-P000001",
+          "unit_ids": [
+            "u00"
+          ],
+          "evidence_handles": []
+        },
+        {
+          "chapter_id": "SYN-CH001",
+          "section_id": "SYN-CH001-SEC001",
+          "paragraph_id": "SYN-CH001-P000002",
+          "unit_ids": [
+            "u00"
+          ],
+          "evidence_handles": [
+            "SYN-IDEA001",
+            "SYN-SRC001"
+          ]
+        }
+      ],
+      "production_cache_acceptance": false,
+      "phase5_not_started": true,
+      "secrets_included": false
+    },
+    "secrets_included": false
+  },
+  "pass_review_block_covered": true,
+  "semantic_map": {
+    "fully_supported": "legitimate_paraphrase",
+    "invented_causality": "invented_causality",
+    "invented_implication": "invented_implication",
+    "universal_guarantee": "universal_guarantee",
+    "unsupported_reference": "reference_completed_without_proof",
+    "legitimate_paraphrase": "legitimate_paraphrase",
+    "questionable": "questionable",
+    "invalid_json": "invalid_json",
+    "missing_response": "missing_response",
+    "interruption": "legitimate_paraphrase",
+    "invalid_evidence_handle": "unknown_evidence_handle",
+    "missing_evidence": "missing_unit"
+  },
+  "sample_pass_not_production": true,
+  "secrets_included": false
+}

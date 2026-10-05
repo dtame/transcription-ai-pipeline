@@ -1,0 +1,295 @@
+{
+  "phase": "4B.2.27",
+  "chapter_id": "CH014",
+  "http_success": true,
+  "finish_reason": "end_turn",
+  "parsed": {
+    "sections": [
+      {
+        "sid": "SEC055",
+        "paras": [
+          {
+            "h": "p1",
+            "k": "sub",
+            "t": "Ordinary behavior draws no attention. Only those who do abnormal things, who act in a faith that goes beyond the normal, cause people to take notice. Nobody pays attention to normal people doing normal things; it is the abnormal act of faith that marks a person and carries impact.",
+            "e": [
+              "IDEA207",
+              "SRC005338",
+              "SRC005340",
+              "SRC005342",
+              "SRC005346"
+            ]
+          },
+          {
+            "h": "p2",
+            "k": "sub",
+            "t": "God told me not to pray long prayers when seeking a miracle. He told me to pray a short prayer, and I want us to follow the model of Jesus in this.",
+            "e": [
+              "IDEA208",
+              "SRC005357",
+              "SRC005358",
+              "SRC005361",
+              "SRC005362"
+            ]
+          },
+          {
+            "h": "p3",
+            "k": "sub",
+            "t": "Often, acting in faith means moving forward without knowing what the outcome will be. You do not know; you just know that you are acting in obedience, and that step of obedience is what is asked of you, nothing more.",
+            "e": [
+              "IDEA209",
+              "SRC005447",
+              "SRC005449",
+              "SRC005451"
+            ]
+          },
+          {
+            "h": "p4",
+            "k": "sub",
+            "t": "There is a testimony of a young woman who had been prophesied to live, yet she died and was buried. The Lord told me to go, and before I came back she had already been buried. The grave was opened at that place, decomposed as it was, and a short prayer was prayed over it. She came out alive, sitting up, and this was later recognized and reported in the Tribune newspaper.",
+            "e": [
+              "IDEA209",
+              "EX032",
+              "SRC005256",
+              "SRC005260",
+              "SRC005349",
+              "SRC005416",
+              "SRC005422"
+            ],
+            "u": [
+              "UNC024"
+            ]
+          },
+          {
+            "h": "p5",
+            "k": "sub",
+            "t": "The same account returns in the telling: they had buried her, the grave was opened, and the sister was found sitting up alive. The names given in this retelling are Reverend John and Brother Samson, and the details repeat closely enough that it is not fully clear whether this is one event told twice or two distinct occurrences.",
+            "e": [
+              "EX033",
+              "SRC005460",
+              "SRC005463",
+              "SRC005605",
+              "SRC005617",
+              "SRC005661"
+            ],
+            "u": [
+              "UNC024"
+            ]
+          },
+          {
+            "h": "p6",
+            "k": "con",
+            "t": "These are not distant stories from the past. A white preacher connected to such an account is still alive and still preaching in Nigeria; anyone can go to the internet and find him there today.",
+            "e": [
+              "EX034",
+              "SRC005677",
+              "SRC005683",
+              "SRC005684",
+              "SRC005686"
+            ]
+          },
+          {
+            "h": "p7",
+            "k": "sub",
+            "t": "Even in such a moment, doubt can assail the mind. The thought comes, what if it doesn't work, and the brain keeps working against the step being taken. The minister in this account closed his eyes so as not to see the disappointment, should it come, and proceeded anyway.",
+            "e": [
+              "IDEA210",
+              "SRC005648",
+              "SRC005649",
+              "SRC005657",
+              "SRC005659"
+            ]
+          },
+          {
+            "h": "p8",
+            "k": "sub",
+            "t": "I never preach a doctrine I do not know. Do not be foolish and claim to know everything; God is too great for anyone to know everything about him. But whatever you do know, it must work for you.",
+            "e": [
+              "IDEA211",
+              "SRC005728",
+              "SRC005732",
+              "SRC005734",
+              "SRC005736",
+              "SRC005737"
+            ]
+          }
+        ]
+      },
+      {
+        "sid": "SEC056",
+        "paras": [
+          {
+            "h": "p9",
+            "k": "sub",
+            "t": "We were speaking of the stripes of Jesus, and how those stripes were the veil. The veil of his flesh was torn, and through that tearing we have access in. It is through that same opening that heaven is released outward, through the hands.",
+            "e": [
+              "IDEA214",
+              "SRC005845",
+              "SRC005846",
+              "SRC005876",
+              "SRC005878",
+              "SRC005879"
+            ],
+            "u": [
+              "UNC025"
+            ]
+          },
+          {
+            "h": "p10",
+            "k": "con",
+            "t": "Hebrews chapter 10 was referenced in connection with this access through the torn veil.",
+            "e": [
+              "REF017",
+              "SRC002194",
+              "SRC002197"
+            ]
+          },
+          {
+            "h": "p11",
+            "k": "sub",
+            "t": "It was said that our hands are doors, through which the light flows. During a time of fellowship within a twenty-one day fast, I saw doors in the hands of the singer standing to the side. The door was open, and I saw something like the color of the sky.",
+            "e": [
+              "IDEA215",
+              "EX035",
+              "SRC005852",
+              "SRC005853",
+              "SRC005860",
+              "SRC005862",
+              "SRC005868",
+              "SRC005869",
+              "SRC005886",
+              "SRC005900"
+            ],
+            "u": [
+              "UNC025"
+            ]
+          },
+          {
+            "h": "p12",
+            "k": "con",
+            "t": "It was not entirely clear in the exchange who among those present was recounting this, since several voices spoke together about the hands and the veil.",
+            "e": [
+              "SRC005918",
+              "SRC005935"
+            ],
+            "u": [
+              "UNC025"
+            ]
+          },
+          {
+            "h": "p13",
+            "k": "sub",
+            "t": "A second, separate testimony tells of someone who, in his tent, saw a white dust and an opening, a door, colored like the sky. This confirms the same teaching already given, that the hands serve as spiritual doorways.",
+            "e": [
+              "IDEA216",
+              "EX036",
+              "SRC005953",
+              "SRC005956",
+              "SRC005958",
+              "SRC005960"
+            ]
+          }
+        ]
+      },
+      {
+        "sid": "SEC057",
+        "paras": [
+          {
+            "h": "p14",
+            "k": "sub",
+            "t": "If God can do one thing, he can do another. If he can forgive my sins, why would I not believe that he can also heal every disease? Keep it simple.",
+            "e": [
+              "IDEA217",
+              "SRC006058",
+              "SRC006059",
+              "SRC006061",
+              "SRC006062"
+            ]
+          },
+          {
+            "h": "p15",
+            "k": "sub",
+            "t": "A holy man is a powerful person. To be holy means there is nothing missing in you; nothing is lacking. Heaven agrees with you, and the earth agrees with you.",
+            "e": [
+              "IDEA218",
+              "SRC006076",
+              "SRC006080",
+              "SRC006084",
+              "SRC006086",
+              "SRC006087"
+            ]
+          },
+          {
+            "h": "p16",
+            "k": "sub",
+            "t": "The powers of darkness do not want to come near a holy man; instead of what holiness carries, they see a cloud of darkness when a soul is unclean. Because the soul is clouded, that darkness repels what holiness would otherwise draw near.",
+            "e": [
+              "IDEA218",
+              "IDEA219",
+              "SRC006090",
+              "SRC006091",
+              "SRC006093",
+              "SRC006094"
+            ]
+          }
+        ]
+      },
+      {
+        "sid": "SEC058",
+        "paras": [
+          {
+            "h": "p17",
+            "k": "sub",
+            "t": "As you grow, you will begin to discover that the gift of the Holy Ghost is powerful, yet it comes without struggle. There is no effort required for its manifestation.",
+            "e": [
+              "IDEA220",
+              "SRC006100",
+              "SRC006101",
+              "SRC006103",
+              "SRC006107"
+            ]
+          },
+          {
+            "h": "p18",
+            "k": "sub",
+            "t": "You will see somebody coming toward you and see his life as though it were a television; you go past the person into his tomorrow, see it, and come back to tell him.",
+            "e": [
+              "IDEA221",
+              "SRC006108",
+              "SRC006109",
+              "SRC006134"
+            ]
+          },
+          {
+            "h": "p19",
+            "k": "sub",
+            "t": "You begin to live your life out of that overflow once you are in communion with the Spirit; it becomes simply a way of life.",
+            "e": [
+              "IDEA222",
+              "SRC006113",
+              "SRC006114"
+            ]
+          },
+          {
+            "h": "p20",
+            "k": "sub",
+            "t": "If you stay in communion, you will never lack for a word of knowledge. Stay in communion with the spirit of wisdom, and you will never lack for a word of wisdom.",
+            "e": [
+              "IDEA223",
+              "SRC006115",
+              "SRC006117",
+              "SRC006119",
+              "SRC006121"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "raw_sha256": "c5032b30caa254f7a68eaf0a8989ea42e138a60a41e978d63241b3f94cb75e1a",
+  "raw_chars": 6187,
+  "error": null,
+  "invented_response": false,
+  "raw_response_kept_intact": true,
+  "secrets_included": false
+}

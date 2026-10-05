@@ -1,0 +1,76 @@
+{
+  "parsed": {
+    "ch": "CH016",
+    "pr": [
+      {
+        "h": "h11",
+        "u": [
+          {
+            "id": "u00",
+            "k": "SUPPORTED",
+            "ev": [
+              "SRC006192"
+            ],
+            "r": []
+          },
+          {
+            "id": "u01",
+            "k": "UNSUPPORTED",
+            "ev": [
+              "SRC006192"
+            ],
+            "r": [
+              "NEW_ARGUMENT",
+              "EVIDENCE_MISMATCH"
+            ],
+            "n": "Evidence says only that it is not mind over matter; it does not characterize it as positive-thinking technique."
+          },
+          {
+            "id": "u02",
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA226",
+              "SRC006193"
+            ],
+            "r": []
+          },
+          {
+            "id": "u03",
+            "k": "UNSUPPORTED",
+            "ev": [
+              "IDEA226"
+            ],
+            "r": [
+              "INVENTED_EXAMPLE",
+              "REFERENCE_EXPANSION"
+            ],
+            "n": "Evidence contrasts lived reality with intellectual idea but does not supply the sermon example or this expanded description of facing one's ending."
+          },
+          {
+            "id": "u04",
+            "k": "UNSUPPORTED",
+            "ev": [
+              "IDEA226"
+            ],
+            "r": [
+              "NEW_CONCLUSION",
+              "UNCERTAINTY_STRENGTHENED"
+            ],
+            "n": "The evidence does not guarantee that every believer will have a fearless death."
+          }
+        ]
+      }
+    ]
+  },
+  "text": "{\"ch\":\"CH016\",\"pr\":[{\"h\":\"h11\",\"u\":[{\"id\":\"u00\",\"k\":\"SUPPORTED\",\"ev\":[\"SRC006192\"],\"r\":[]},{\"id\":\"u01\",\"k\":\"UNSUPPORTED\",\"ev\":[\"SRC006192\"],\"r\":[\"NEW_ARGUMENT\",\"EVIDENCE_MISMATCH\"],\"n\":\"Evidence says only that it is not mind over matter; it does not characterize it as positive-thinking technique.\"},{\"id\":\"u02\",\"k\":\"SUPPORTED\",\"ev\":[\"IDEA226\",\"SRC006193\"],\"r\":[]},{\"id\":\"u03\",\"k\":\"UNSUPPORTED\",\"ev\":[\"IDEA226\"],\"r\":[\"INVENTED_EXAMPLE\",\"REFERENCE_EXPANSION\"],\"n\":\"Evidence contrasts lived reality with intellectual idea but does not supply the sermon example or this expanded description of facing one's ending.\"},{\"id\":\"u04\",\"k\":\"UNSUPPORTED\",\"ev\":[\"IDEA226\"],\"r\":[\"NEW_CONCLUSION\",\"UNCERTAINTY_STRENGTHENED\"],\"n\":\"The evidence does not guarantee that every believer will have a fearless death.\"}]}]}",
+  "sha256": "03fb2b19184f5dca9de80b5d350039421dc90d213e4969881bdc9812a4631fd3",
+  "repaired": false,
+  "truncated": false,
+  "manually_edited": false,
+  "immutable": true,
+  "refusal": null,
+  "returned_model": "gpt-5.6-terra",
+  "request_id": "chatcmpl-EUJ1xPQzkp0LGawdf56i4mf7314dJ",
+  "finish_reason": "stop",
+  "http_status": "UNKNOWN"
+}

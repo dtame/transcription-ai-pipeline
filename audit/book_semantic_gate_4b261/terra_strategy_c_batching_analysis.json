@@ -1,0 +1,309 @@
+{
+  "phase": "4B.2.6.1",
+  "name": "C",
+  "title": "Split the ten-case benchmark into smaller batches",
+  "batches": [
+    {
+      "batch_size": 1,
+      "calls": 10,
+      "repeated_full_evidence": false,
+      "evidence_trimmed_to_batch": true,
+      "orchestration_complexity": "MEDIUM",
+      "truncation_risk": "LOWER_PER_CALL",
+      "resume_capability": "YES",
+      "traceability": "YES — one result object per call",
+      "quality_not_automatically_better": true,
+      "calls_detail": [
+        {
+          "handles": [
+            "h01"
+          ],
+          "candidate_payload_sha256": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1698,
+          "estimated_input_chars_historical_slice": 6586,
+          "estimated_input_chars_candidate_slice": 6791,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h02"
+          ],
+          "candidate_payload_sha256": "c3decdfd67235c21703a9c221a5dba8615390e151914bd9dd0c76d093d05fad9",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1746,
+          "estimated_input_chars_historical_slice": 6778,
+          "estimated_input_chars_candidate_slice": 6983,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h03"
+          ],
+          "candidate_payload_sha256": "d95a4c46119c5a5683c564afa869043db7a36cd83a849738ef8b822235a0e2da",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1658,
+          "estimated_input_chars_historical_slice": 6425,
+          "estimated_input_chars_candidate_slice": 6630,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h04"
+          ],
+          "candidate_payload_sha256": "2f695e864a79930dc166ef562825e6608539b391a0bacfeca5e6908b001745bf",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1838,
+          "estimated_input_chars_historical_slice": 7143,
+          "estimated_input_chars_candidate_slice": 7348,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h05"
+          ],
+          "candidate_payload_sha256": "fef0f2f3604a1a4e4ab9ccefe607a77e9c2adbac44d9aae2598e31a57d0fd47b",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 2022,
+          "estimated_input_chars_historical_slice": 7882,
+          "estimated_input_chars_candidate_slice": 8087,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h06"
+          ],
+          "candidate_payload_sha256": "88a115d113cc56f76b9ce9d30f1b92ac51dff243da14ed8c5759e8c747326411",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1720,
+          "estimated_input_chars_historical_slice": 6673,
+          "estimated_input_chars_candidate_slice": 6878,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h07"
+          ],
+          "candidate_payload_sha256": "68452bf49d816f84933334a2a7fc20ae8e58509f2513e82dbda0c969c02359cb",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1587,
+          "estimated_input_chars_historical_slice": 6139,
+          "estimated_input_chars_candidate_slice": 6344,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h08"
+          ],
+          "candidate_payload_sha256": "9148157e97bcb310ecb44befc74d139b3e0792c59bd6382fcbc3efa076612fc9",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1694,
+          "estimated_input_chars_historical_slice": 6568,
+          "estimated_input_chars_candidate_slice": 6773,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h09"
+          ],
+          "candidate_payload_sha256": "225bc9164dbc60e50586e9f14ecd87a6e2ca0acd5fe9c427f0217069830de27f",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1673,
+          "estimated_input_chars_historical_slice": 6483,
+          "estimated_input_chars_candidate_slice": 6688,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h10"
+          ],
+          "candidate_payload_sha256": "6100036703f74973f49653cec3a5d81b58f266435daf9150d4e2a0be6834de27",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1533,
+          "estimated_input_chars_historical_slice": 5925,
+          "estimated_input_chars_candidate_slice": 6130,
+          "label_leakage": 0,
+          "estimated": true
+        }
+      ]
+    },
+    {
+      "batch_size": 2,
+      "calls": 5,
+      "repeated_full_evidence": false,
+      "evidence_trimmed_to_batch": true,
+      "orchestration_complexity": "MEDIUM",
+      "truncation_risk": "LOWER_PER_CALL",
+      "resume_capability": "YES",
+      "traceability": "YES — one result object per call",
+      "quality_not_automatically_better": true,
+      "calls_detail": [
+        {
+          "handles": [
+            "h01",
+            "h02"
+          ],
+          "candidate_payload_sha256": "9d32d88371042c81fe4726b7005450de267ab3c3b1dc4961add3fb4fea2837da",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 2002,
+          "estimated_input_chars_historical_slice": 7800,
+          "estimated_input_chars_candidate_slice": 8005,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h03",
+            "h04"
+          ],
+          "candidate_payload_sha256": "d0790e35e78cfe61431c20f3563a0bc75f57bad948ae2c53083fc5e56217276b",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 2053,
+          "estimated_input_chars_historical_slice": 8004,
+          "estimated_input_chars_candidate_slice": 8209,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h05",
+            "h06"
+          ],
+          "candidate_payload_sha256": "0090496e57e8e97ffb05d4b63c658ecf7bef029c4b4924bf65336e3a22054cd2",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 2300,
+          "estimated_input_chars_historical_slice": 8991,
+          "estimated_input_chars_candidate_slice": 9196,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h07",
+            "h08"
+          ],
+          "candidate_payload_sha256": "467c4b5564b0da750052fa7acb9a1513573bc33deedfe367d57fcbf32b9d93b8",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1837,
+          "estimated_input_chars_historical_slice": 7142,
+          "estimated_input_chars_candidate_slice": 7347,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h09",
+            "h10"
+          ],
+          "candidate_payload_sha256": "f47a9524afab6e0b42525365f0b4b8adbaf002c676b4869ccb633680619dc2c3",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 1762,
+          "estimated_input_chars_historical_slice": 6841,
+          "estimated_input_chars_candidate_slice": 7046,
+          "label_leakage": 0,
+          "estimated": true
+        }
+      ]
+    },
+    {
+      "batch_size": 5,
+      "calls": 2,
+      "repeated_full_evidence": false,
+      "evidence_trimmed_to_batch": true,
+      "orchestration_complexity": "MEDIUM",
+      "truncation_risk": "LOWER_PER_CALL",
+      "resume_capability": "YES",
+      "traceability": "YES — one result object per call",
+      "quality_not_automatically_better": true,
+      "calls_detail": [
+        {
+          "handles": [
+            "h01",
+            "h02",
+            "h03",
+            "h04",
+            "h05"
+          ],
+          "candidate_payload_sha256": "474ae6389954a7954751852f50dadf8897977698301c098ef26ccf181adac057",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 3191,
+          "estimated_input_chars_historical_slice": 12558,
+          "estimated_input_chars_candidate_slice": 12763,
+          "label_leakage": 0,
+          "estimated": true
+        },
+        {
+          "handles": [
+            "h06",
+            "h07",
+            "h08",
+            "h09",
+            "h10"
+          ],
+          "candidate_payload_sha256": "7024ce6a71b4a69917df359d8b0149eab2b9c12f703fc0cfccf8e61b0754d4ae",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 2434,
+          "estimated_input_chars_historical_slice": 9528,
+          "estimated_input_chars_candidate_slice": 9733,
+          "label_leakage": 0,
+          "estimated": true
+        }
+      ]
+    },
+    {
+      "batch_size": 10,
+      "calls": 1,
+      "repeated_full_evidence": false,
+      "evidence_trimmed_to_batch": true,
+      "orchestration_complexity": "LOW",
+      "truncation_risk": "SAME_AS_4B26_SHAPE",
+      "resume_capability": "NONE",
+      "traceability": "YES — one result object per call",
+      "quality_not_automatically_better": true,
+      "calls_detail": [
+        {
+          "handles": [
+            "h01",
+            "h02",
+            "h03",
+            "h04",
+            "h05",
+            "h06",
+            "h07",
+            "h08",
+            "h09",
+            "h10"
+          ],
+          "candidate_payload_sha256": "ddff86fbd489e4ba94d5b2cd9cd4f96037baa2898067e2f329164472fd36e566",
+          "differs_from_4b26": true,
+          "estimated_input_tokens_candidate": 3944,
+          "estimated_input_chars_historical_slice": 15569,
+          "estimated_input_chars_candidate_slice": 15774,
+          "label_leakage": 0,
+          "estimated": true
+        }
+      ]
+    }
+  ],
+  "compatibility_with_4b26_evidence": "If hidden reasoning scales with prompt/output complexity, smaller batches are the only locally justified way to isolate whether Terra can emit JSON at all. Smaller batches do not automatically improve semantic quality.",
+  "technical_complexity": "MEDIUM — orchestration, accounting, resume",
+  "truncation_risk": "LOWER per call; more calls if each exhausts budget",
+  "resume_capability": "HIGH for 1-2 case batches",
+  "proposition_level_control": "PRESERVED if each batch still claim-covers its paragraphs",
+  "nineteen_chapter_fit": "NATURAL — production already wants per-chapter calls",
+  "version_changes": "orchestration only if historical 1.0 is kept; 1.1 if combined with B",
+  "remaining_uncertainties": [
+    "One small batch may still exhaust 8192 with empty content",
+    "More calls increase accounting and lock complexity"
+  ],
+  "secrets_included": false
+}

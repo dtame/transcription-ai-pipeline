@@ -1,0 +1,33 @@
+{
+  "phase": "4B.2.10",
+  "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "actual_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "interpreter_match": true,
+  "openai_sdk_version": "2.43.0",
+  "historical_openai_sdk_version": "2.43.0",
+  "openai_sdk_version_match": true,
+  "do_not_assume_historical_version": true,
+  "token_contract": {
+    "endpoint": "chat.completions",
+    "model": "gpt-5.6-terra",
+    "parameter": "max_completion_tokens",
+    "do_not_send": [
+      "max_tokens",
+      "max_output_tokens"
+    ],
+    "confidence": "CONFIRMED",
+    "server_acceptance": "UNKNOWN",
+    "evidence": "4B.2.5 HTTP 400 invalid_request_error unsupported_parameter max_tokens. Server message: Use 'max_completion_tokens' instead. A successful Terra response with max_completion_tokens has not been observed; acceptance remains UNKNOWN.",
+    "source": "audit/real/book_semantic_gate_4b25/book_semantic_gate_4b25_provider_evidence.json"
+  },
+  "json_object_local_serialization": "LOCALLY_VERIFIED",
+  "json_object_server_acceptance": "UNKNOWN",
+  "max_tokens_forbidden_for_terra": true,
+  "temperature_omitted": true,
+  "reasoning_effort_omitted": true,
+  "sdk_import": "PASS",
+  "from_openai_import_OpenAI": "PASS",
+  "no_real_api_key_used": true,
+  "client_not_used_to_send": true,
+  "secrets_included": false
+}

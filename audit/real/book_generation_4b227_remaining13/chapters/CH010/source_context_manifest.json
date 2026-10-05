@@ -1,0 +1,1113 @@
+{
+  "phase": "4B.2.27",
+  "chapter_id": "CH010",
+  "working_title": "Spirit, Soul and Body",
+  "language": "en",
+  "expected_sources": {
+    "idea_ids": [
+      "IDEA153",
+      "IDEA155",
+      "IDEA156",
+      "IDEA157",
+      "IDEA158",
+      "IDEA154",
+      "IDEA159",
+      "IDEA160",
+      "IDEA161",
+      "IDEA162",
+      "IDEA163",
+      "IDEA164",
+      "IDEA165",
+      "IDEA166",
+      "IDEA183",
+      "IDEA187"
+    ],
+    "example_ids": [
+      "EX017",
+      "EX018",
+      "EX019"
+    ],
+    "reference_ids": [
+      "REF030",
+      "REF031",
+      "REF032"
+    ],
+    "uncertainty_ids": [
+      "UNC016",
+      "UNC017",
+      "UNC018"
+    ],
+    "src_ids": [
+      "SRC004149",
+      "SRC004161",
+      "SRC004164",
+      "SRC004166",
+      "SRC004170",
+      "SRC004172",
+      "SRC004173",
+      "SRC004198",
+      "SRC004199",
+      "SRC004202",
+      "SRC004205",
+      "SRC004215",
+      "SRC004221",
+      "SRC004251",
+      "SRC004257",
+      "SRC004276",
+      "SRC004278",
+      "SRC004265",
+      "SRC004268",
+      "SRC004269",
+      "SRC004270",
+      "SRC004271",
+      "SRC004272",
+      "SRC004292",
+      "SRC004293",
+      "SRC004297",
+      "SRC004298",
+      "SRC004177",
+      "SRC004178",
+      "SRC004180",
+      "SRC004183",
+      "SRC004184",
+      "SRC004322",
+      "SRC004325",
+      "SRC004338",
+      "SRC004340",
+      "SRC004341",
+      "SRC004344",
+      "SRC004345",
+      "SRC004352",
+      "SRC004353",
+      "SRC004356",
+      "SRC004358",
+      "SRC004359",
+      "SRC004360",
+      "SRC004361",
+      "SRC004368",
+      "SRC004369",
+      "SRC004372",
+      "SRC004373",
+      "SRC004375",
+      "SRC004376",
+      "SRC004381",
+      "SRC004382",
+      "SRC004385",
+      "SRC004387",
+      "SRC004389",
+      "SRC004391",
+      "SRC004393",
+      "SRC004394",
+      "SRC004397",
+      "SRC004398",
+      "SRC004401",
+      "SRC004402",
+      "SRC004404",
+      "SRC004405",
+      "SRC004408",
+      "SRC004409",
+      "SRC004414",
+      "SRC004415",
+      "SRC004416",
+      "SRC004424",
+      "SRC004425",
+      "SRC004426",
+      "SRC004427",
+      "SRC004428",
+      "SRC004429",
+      "SRC004463",
+      "SRC004469",
+      "SRC004471",
+      "SRC004473",
+      "SRC004474",
+      "SRC004477",
+      "SRC004481",
+      "SRC004489",
+      "SRC004883",
+      "SRC004886",
+      "SRC004887",
+      "SRC004924",
+      "SRC004927",
+      "SRC004930",
+      "SRC004931",
+      "SRC003164",
+      "SRC003167",
+      "SRC003168",
+      "SRC003170",
+      "SRC003172",
+      "SRC003173",
+      "SRC003196",
+      "SRC003197",
+      "SRC003201",
+      "SRC003202",
+      "SRC003204",
+      "SRC003210",
+      "SRC003211",
+      "SRC003212",
+      "SRC003226",
+      "SRC003230",
+      "SRC003232",
+      "SRC003234",
+      "SRC004371",
+      "SRC004388",
+      "SRC004442",
+      "SRC004458",
+      "SRC004461",
+      "SRC004217",
+      "SRC004218",
+      "SRC004245",
+      "SRC004250",
+      "SRC004417",
+      "SRC004420"
+    ],
+    "section_ids": [
+      "SEC039",
+      "SEC040",
+      "SEC041",
+      "SEC042"
+    ]
+  },
+  "resolved_sources": {
+    "hydrated_src_ids": [
+      "SRC003164",
+      "SRC003167",
+      "SRC003168",
+      "SRC003170",
+      "SRC003172",
+      "SRC003173",
+      "SRC003196",
+      "SRC003197",
+      "SRC003201",
+      "SRC003202",
+      "SRC003204",
+      "SRC003210",
+      "SRC003211",
+      "SRC003212",
+      "SRC003226",
+      "SRC003230",
+      "SRC003232",
+      "SRC003234",
+      "SRC004149",
+      "SRC004161",
+      "SRC004164",
+      "SRC004166",
+      "SRC004170",
+      "SRC004172",
+      "SRC004173",
+      "SRC004177",
+      "SRC004178",
+      "SRC004180",
+      "SRC004183",
+      "SRC004184",
+      "SRC004198",
+      "SRC004199",
+      "SRC004202",
+      "SRC004205",
+      "SRC004215",
+      "SRC004217",
+      "SRC004218",
+      "SRC004221",
+      "SRC004245",
+      "SRC004250",
+      "SRC004251",
+      "SRC004257",
+      "SRC004265",
+      "SRC004268",
+      "SRC004269",
+      "SRC004270",
+      "SRC004271",
+      "SRC004272",
+      "SRC004276",
+      "SRC004278",
+      "SRC004292",
+      "SRC004293",
+      "SRC004297",
+      "SRC004298",
+      "SRC004322",
+      "SRC004325",
+      "SRC004338",
+      "SRC004340",
+      "SRC004341",
+      "SRC004344",
+      "SRC004345",
+      "SRC004352",
+      "SRC004353",
+      "SRC004356",
+      "SRC004358",
+      "SRC004359",
+      "SRC004360",
+      "SRC004361",
+      "SRC004368",
+      "SRC004369",
+      "SRC004371",
+      "SRC004372",
+      "SRC004373",
+      "SRC004375",
+      "SRC004376",
+      "SRC004381",
+      "SRC004382",
+      "SRC004385",
+      "SRC004387",
+      "SRC004388",
+      "SRC004389",
+      "SRC004391",
+      "SRC004393",
+      "SRC004394",
+      "SRC004397",
+      "SRC004398",
+      "SRC004401",
+      "SRC004402",
+      "SRC004404",
+      "SRC004405",
+      "SRC004408",
+      "SRC004409",
+      "SRC004414",
+      "SRC004415",
+      "SRC004416",
+      "SRC004417",
+      "SRC004420",
+      "SRC004424",
+      "SRC004425",
+      "SRC004426",
+      "SRC004427",
+      "SRC004428",
+      "SRC004429",
+      "SRC004442",
+      "SRC004458",
+      "SRC004461",
+      "SRC004463",
+      "SRC004469",
+      "SRC004471",
+      "SRC004473",
+      "SRC004474",
+      "SRC004477",
+      "SRC004481",
+      "SRC004489",
+      "SRC004883",
+      "SRC004886",
+      "SRC004887",
+      "SRC004924",
+      "SRC004927",
+      "SRC004930",
+      "SRC004931"
+    ],
+    "hydrated_count": 121,
+    "hydrated_details": [
+      {
+        "id": "SRC003164",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003167",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003168",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003170",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003172",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003173",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003196",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003197",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003201",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003202",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003204",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003210",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003211",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003212",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003226",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003230",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003232",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC003234",
+        "chars": 38,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004149",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004161",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004164",
+        "chars": 8,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004166",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004170",
+        "chars": 10,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004172",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004173",
+        "chars": 8,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004177",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004178",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004180",
+        "chars": 8,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004183",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004184",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004198",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004199",
+        "chars": 11,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004202",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004205",
+        "chars": 47,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004215",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004217",
+        "chars": 9,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004218",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004221",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004245",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004250",
+        "chars": 11,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004251",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004257",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004265",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004268",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004269",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004270",
+        "chars": 17,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004271",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004272",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004276",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004278",
+        "chars": 43,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004292",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004293",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004297",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004298",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004322",
+        "chars": 17,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004325",
+        "chars": 41,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004338",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004340",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004341",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004344",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004345",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004352",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004353",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004356",
+        "chars": 9,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004358",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004359",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004360",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004361",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004368",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004369",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004371",
+        "chars": 41,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004372",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004373",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004375",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004376",
+        "chars": 12,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004381",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004382",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004385",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004387",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004388",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004389",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004391",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004393",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004394",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004397",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004398",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004401",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004402",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004404",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004405",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004408",
+        "chars": 38,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004409",
+        "chars": 43,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004414",
+        "chars": 47,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004415",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004416",
+        "chars": 40,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004417",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004420",
+        "chars": 42,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004424",
+        "chars": 48,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004425",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004426",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004427",
+        "chars": 51,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004428",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004429",
+        "chars": 54,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004442",
+        "chars": 11,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004458",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004461",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004463",
+        "chars": 52,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004469",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004471",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004473",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004474",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004477",
+        "chars": 42,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004481",
+        "chars": 54,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004489",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004883",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004886",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004887",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004924",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004927",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004930",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC004931",
+        "chars": 23,
+        "kind": "SRC"
+      }
+    ]
+  },
+  "missing_sources": [],
+  "context_size": {
+    "chars": 21740,
+    "utf8_bytes": 21766,
+    "section_count": 4,
+    "idea_count": 16,
+    "example_count": 3,
+    "reference_count": 3,
+    "uncertainty_count": 3,
+    "src_ref_count": 121,
+    "hydrated_segment_count": 121,
+    "idea_summary_chars": 1867,
+    "hydrated_src_chars": 3255,
+    "sha256": "6f5dabc85c3ea0ade572c6a178885fa8305a7c72376d73d4d69729d964b737f2"
+  },
+  "potentially_truncated": [],
+  "coverage_risks": [
+    "Targeted hydration can omit neighboring spoken detail that the plan did not attach.",
+    "A resolved SRC is not proof that every idea in that SRC is restated."
+  ],
+  "whole_transcript_injected": false,
+  "whole_transcript_words": 38313,
+  "hydrated_src_words": 648,
+  "raw_transcript_used_as_silent_fallback": false,
+  "sources_dropped_to_reduce_cost": false,
+  "blocked_if_mandatory_source_missing": true,
+  "generation_blocked": false,
+  "planned_ideas": [
+    "IDEA153",
+    "IDEA155",
+    "IDEA156",
+    "IDEA157",
+    "IDEA158",
+    "IDEA154",
+    "IDEA159",
+    "IDEA160",
+    "IDEA161",
+    "IDEA162",
+    "IDEA163",
+    "IDEA164",
+    "IDEA165",
+    "IDEA166",
+    "IDEA183",
+    "IDEA187"
+  ],
+  "allowed_handles": [
+    "IDEA153",
+    "IDEA155",
+    "IDEA156",
+    "IDEA157",
+    "IDEA158",
+    "IDEA154",
+    "IDEA159",
+    "IDEA160",
+    "IDEA161",
+    "IDEA162",
+    "IDEA163",
+    "IDEA164",
+    "IDEA165",
+    "IDEA166",
+    "IDEA183",
+    "IDEA187",
+    "EX017",
+    "EX018",
+    "EX019",
+    "REF030",
+    "REF031",
+    "REF032",
+    "UNC016",
+    "UNC017",
+    "UNC018",
+    "SRC004149",
+    "SRC004161",
+    "SRC004164",
+    "SRC004166",
+    "SRC004170",
+    "SRC004172",
+    "SRC004173",
+    "SRC004198",
+    "SRC004199",
+    "SRC004202",
+    "SRC004205",
+    "SRC004215",
+    "SRC004221",
+    "SRC004251",
+    "SRC004257",
+    "SRC004276",
+    "SRC004278",
+    "SRC004265",
+    "SRC004268",
+    "SRC004269",
+    "SRC004270",
+    "SRC004271",
+    "SRC004272",
+    "SRC004292",
+    "SRC004293",
+    "SRC004297",
+    "SRC004298",
+    "SRC004177",
+    "SRC004178",
+    "SRC004180",
+    "SRC004183",
+    "SRC004184",
+    "SRC004322",
+    "SRC004325",
+    "SRC004338",
+    "SRC004340",
+    "SRC004341",
+    "SRC004344",
+    "SRC004345",
+    "SRC004352",
+    "SRC004353",
+    "SRC004356",
+    "SRC004358",
+    "SRC004359",
+    "SRC004360",
+    "SRC004361",
+    "SRC004368",
+    "SRC004369",
+    "SRC004372",
+    "SRC004373",
+    "SRC004375",
+    "SRC004376",
+    "SRC004381",
+    "SRC004382",
+    "SRC004385",
+    "SRC004387",
+    "SRC004389",
+    "SRC004391",
+    "SRC004393",
+    "SRC004394",
+    "SRC004397",
+    "SRC004398",
+    "SRC004401",
+    "SRC004402",
+    "SRC004404",
+    "SRC004405",
+    "SRC004408",
+    "SRC004409",
+    "SRC004414",
+    "SRC004415",
+    "SRC004416",
+    "SRC004424",
+    "SRC004425",
+    "SRC004426",
+    "SRC004427",
+    "SRC004428",
+    "SRC004429",
+    "SRC004463",
+    "SRC004469",
+    "SRC004471",
+    "SRC004473",
+    "SRC004474",
+    "SRC004477",
+    "SRC004481",
+    "SRC004489",
+    "SRC004883",
+    "SRC004886",
+    "SRC004887",
+    "SRC004924",
+    "SRC004927",
+    "SRC004930",
+    "SRC004931",
+    "SRC003164",
+    "SRC003167",
+    "SRC003168",
+    "SRC003170",
+    "SRC003172",
+    "SRC003173",
+    "SRC003196",
+    "SRC003197",
+    "SRC003201",
+    "SRC003202",
+    "SRC003204",
+    "SRC003210",
+    "SRC003211",
+    "SRC003212",
+    "SRC003226",
+    "SRC003230",
+    "SRC003232",
+    "SRC003234",
+    "SRC004371",
+    "SRC004388",
+    "SRC004442",
+    "SRC004458",
+    "SRC004461",
+    "SRC004217",
+    "SRC004218",
+    "SRC004245",
+    "SRC004250",
+    "SRC004417",
+    "SRC004420"
+  ],
+  "blocked_handles": [],
+  "ready": true,
+  "secrets_included": false,
+  "expected_title": "Spirit, Soul and Body",
+  "expected_section_count": 4,
+  "expected_idea_count": 16,
+  "expected_example_count": 3,
+  "expected_reference_count": 3,
+  "expected_uncertainty_count": 3,
+  "expected_hydrated_src_count": 121,
+  "context_hash": "6f5dabc85c3ea0ade572c6a178885fa8305a7c72376d73d4d69729d964b737f2",
+  "other_chapters_excluded": true,
+  "accepted_chapters_excluded": true,
+  "external_sources_added": false,
+  "internet_lookup": false,
+  "bible_completed_from_memory": false,
+  "context_truncated": false
+}

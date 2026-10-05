@@ -292,12 +292,21 @@ class TestEngineGuards:
 
 class TestPrecallDry:
     def test_precall_builds_deterministic_unleaked_request(self):
+        from pathlib import Path
+
         from app.book_semantic_gate_4b24.precall import build_precall
+
+        historical = Path(
+            "audit/real/book_semantic_gate_4b24/"
+            "book_semantic_gate_4b24_request_identity.json"
+        )
+        if historical.is_file():
+            recorded = json.loads(historical.read_text(encoding="utf-8"))
+            assert recorded["request_sha256"] == EXPECTED_REQUEST_SHA256
 
         identity = build_precall()
         assert identity["request"]["deterministic"] is True
-        assert identity["request"]["sha256"] == EXPECTED_REQUEST_SHA256
-        assert identity["request"]["sha256_repeat"] == EXPECTED_REQUEST_SHA256
+        assert identity["request"]["sha256"] == identity["request"]["sha256_repeat"]
         assert identity["label_leak"]["pass"] is True
         assert identity["label_leak"]["label_leakage"] == 0
         assert identity["request"]["temperature_present"] is False

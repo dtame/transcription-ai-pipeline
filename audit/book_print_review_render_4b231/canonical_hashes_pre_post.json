@@ -1,0 +1,846 @@
+{
+  "phase": "4B.2.31",
+  "pre": {
+    "phase": "4B.2.31",
+    "canonical": {
+      "source_map": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+        "exists": true,
+        "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+        "bytes": 202398
+      },
+      "editorial_plan": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+        "exists": true,
+        "sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+        "bytes": 234637
+      },
+      "clean_transcript": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+        "exists": true,
+        "sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+        "bytes": 1487812
+      },
+      "book_json": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+        "exists": true,
+        "sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+        "bytes": 502104
+      }
+    },
+    "historical_modules": {
+      "book_generator_1_0": {
+        "path": "C:/TranscriptionAI/app/book_generation/prompt.py",
+        "exists": true,
+        "sha256": "2ec4d4038d950ff760b92c1dd4f0cdda4f0aeb83fc1db00b7a0471a0e06b7294",
+        "bytes": 6284
+      },
+      "book_generator_1_0_1": {
+        "path": "C:/TranscriptionAI/app/book_generation/prompt_v101.py",
+        "exists": true,
+        "sha256": "d569c3acfe76c5de06bd810c9914edb93e3fb30eb53f10e9a54e546004f61601",
+        "bytes": 4046
+      },
+      "prompt_select": {
+        "path": "C:/TranscriptionAI/app/book_generation/prompt_select.py",
+        "exists": true,
+        "sha256": "62661bf2b3c50c9f3e3bff54e25c5229bea93503bfe09a6628f50b74cd900325",
+        "bytes": 773
+      },
+      "faithful_prompt_1_0_candidate": {
+        "path": "C:/TranscriptionAI/app/book_editorial_alignment_4b216/prompt_candidate.py",
+        "exists": true,
+        "sha256": "cb6ec3a998084850344bf9e6d7d3d470cfb8e2e6d2a7504dfb34e46607ce4f90",
+        "bytes": 7141
+      },
+      "semantic_contract_2_0_2": {
+        "path": "C:/TranscriptionAI/app/book_semantic_gate_4b212/contract.py",
+        "exists": true,
+        "sha256": "ad8066db4452737c0e10b652648d4f40edbdf233ea495e7be7634573b21a1dda",
+        "bytes": 15624
+      },
+      "production_pipeline": {
+        "path": "C:/TranscriptionAI/app/book_generation/pipeline.py",
+        "exists": true,
+        "sha256": "8a390926ffcbd8f8de5173831f2df4876d039baa31492a13c3587b99857a9b88",
+        "bytes": 6738
+      },
+      "production_cache": {
+        "path": "C:/TranscriptionAI/app/book_generation/cache.py",
+        "exists": true,
+        "sha256": "fa228d5f053b850c2ba2228d1c7b53d1410a7de1befde07798f4c115e38fc981",
+        "bytes": 5496
+      },
+      "faithful_prompt_1_1_candidate": {
+        "path": "C:/TranscriptionAI/app/book_authorial_voice_4b218/prompt_candidate.py",
+        "exists": true,
+        "sha256": "53818816a1c2f64b285358702edef1b84e348dea4e60665c4a0cbd6069f3c8c6",
+        "bytes": 10900
+      }
+    },
+    "accepted_chapters": {
+      "CH001": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.json",
+          "exists": true,
+          "sha256": "2daf7dc3aa610429a7433e0c51350587519bd32b40074dbe1c7886402ab29fec",
+          "bytes": 14987
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.md",
+          "exists": true,
+          "sha256": "f97904f6b703713d0e4549823ffe9f578c24e25679ec79a250a245f942fb3f41",
+          "bytes": 3326
+        }
+      },
+      "CH002": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.json",
+          "exists": true,
+          "sha256": "d738b4dbbcf13212d4ae68ce00be1effbf4f64ef815bfbfe40c74262a78a08b7",
+          "bytes": 17120
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.md",
+          "exists": true,
+          "sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+          "bytes": 3539
+        },
+        "original_json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/chapter_candidate.json",
+          "exists": true,
+          "sha256": "baa6b55ad523b9d2f904428ba6e921471cfd50a4260e26353a11a2f2bde0e756",
+          "bytes": 17452
+        },
+        "original_markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/chapter_candidate.md",
+          "exists": true,
+          "sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+          "bytes": 3539
+        }
+      },
+      "CH003": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.json",
+          "exists": true,
+          "sha256": "3ddc2f1298b3db9eb8646161e794b7289f4e9004f274bc1cbc427d7befc37f19",
+          "bytes": 20573
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.md",
+          "exists": true,
+          "sha256": "7f87e86927bd0c60a7b3d5d64ba5c3fa0d8c1e8119fa26c285614a9b8999aae5",
+          "bytes": 4752
+        }
+      },
+      "CH004": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH004/chapter_candidate.json",
+          "exists": true,
+          "sha256": "eceb00dfb019d3e6a247607143447436c7568cb230575211d4128b421ec5b012",
+          "bytes": 21437
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH004/chapter_candidate.md",
+          "exists": true,
+          "sha256": "37154ea2d01c0beadc9d4cada1600f7e0f0b9a3c6012bcce7e792e4a8ee95580",
+          "bytes": 5065
+        }
+      },
+      "CH012": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.json",
+          "exists": true,
+          "sha256": "8f135ac5f1df8b2e077e9cc767518d1a05e2fc22d80f5d66494cf5a8364e7fc5",
+          "bytes": 14562
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.md",
+          "exists": true,
+          "sha256": "79d0ab2254e1a972e0fb5ddcbb7901425255ce887ee817fc39b001838b889919",
+          "bytes": 3579
+        },
+        "original_json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b217_ch012/chapter_candidate.json",
+          "exists": true,
+          "sha256": "7a3eaa2da75a3d68c6bac3873d088a704d7a9cf68da303f8b6fc2c20b85b26e5",
+          "bytes": 14725
+        },
+        "original_markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b217_ch012/chapter_candidate.md",
+          "exists": true,
+          "sha256": "9cae24f35f7f41256b77849a8ca2396386a2dfa1de7f45a86da3def1331d4704",
+          "bytes": 3742
+        },
+        "provider_lock": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b217_ch012/ch012_real_call.lock",
+          "exists": true,
+          "sha256": "4820e703a49360572962d0288b394a16861cbb8280b64323ddfe3310723c2efb",
+          "bytes": 236
+        }
+      },
+      "CH018": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.json",
+          "exists": true,
+          "sha256": "e4902da92b05dbe0875222a41d59eb99f7b3e669b685f50f36b06864a327d38b",
+          "bytes": 18450
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.md",
+          "exists": true,
+          "sha256": "3f8e0590567d431af18812505e2a5f5fa454e1648d06f2b895ceae30278df1cb",
+          "bytes": 3691
+        }
+      }
+    },
+    "production_cache": {
+      "module": {
+        "path": "C:/TranscriptionAI/app/book_generation/cache.py",
+        "exists": true,
+        "sha256": "fa228d5f053b850c2ba2228d1c7b53d1410a7de1befde07798f4c115e38fc981",
+        "bytes": 5496
+      }
+    },
+    "canonical_match_expected": true,
+    "ch001_unchanged": true,
+    "ch002_unchanged": true,
+    "ch003_unchanged": true,
+    "ch004_unchanged": true,
+    "ch012_unchanged": true,
+    "ch018_unchanged": true,
+    "six_accepted_immutable": true,
+    "book_json_published_by_this_phase": false,
+    "production_cache_written_by_this_phase": false,
+    "secrets_included": false,
+    "remaining_chapters": {
+      "CH005": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH005/chapter_candidate.json",
+          "exists": true,
+          "sha256": "e39e7f0ae252735792efa38968f1907c85bb938b4bd055bf6394fd36647541ee",
+          "bytes": 26070
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH005/chapter_candidate.md",
+          "exists": true,
+          "sha256": "49aabe0e5d7bab57d3368682d2d5fff5e77ff508780f7262f5c32900b2ba5650",
+          "bytes": 7162
+        }
+      },
+      "CH006": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH006/chapter_candidate.json",
+          "exists": true,
+          "sha256": "2d1543de8f11511a5c10b9e42aa0ec86cdf088d7257a2f3ecb42a59efe679c57",
+          "bytes": 55575
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH006/chapter_candidate.md",
+          "exists": true,
+          "sha256": "8856aabd8442ac5cdfa479c953aaef6e50dc0b3db48650c38fc780ae456fda9f",
+          "bytes": 12418
+        }
+      },
+      "CH007": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH007/chapter_candidate.json",
+          "exists": true,
+          "sha256": "249b8917fa961c1b6894cef80ed36006ca99aa1413ddddd7ae31c60276210979",
+          "bytes": 14835
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH007/chapter_candidate.md",
+          "exists": true,
+          "sha256": "f11e8ae4988973d2510f82aea730ab6008c387d890c6734e402a0fa8c16678ff",
+          "bytes": 3089
+        }
+      },
+      "CH008": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH008/chapter_candidate.json",
+          "exists": true,
+          "sha256": "73bc1f2349911436526b5876849daccc3333932f6cbc7b52aea64b4572bd5b4a",
+          "bytes": 19312
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH008/chapter_candidate.md",
+          "exists": true,
+          "sha256": "a7b6992714b6de4b1780fee96fb4f239f5ea66f2eca3c1f01306ca80c97d4a76",
+          "bytes": 3327
+        }
+      },
+      "CH009": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH009/chapter_candidate.json",
+          "exists": true,
+          "sha256": "a72864ea3580422257674a5000d81d46c2952492a347255bf3107f0ae066e61c",
+          "bytes": 23143
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH009/chapter_candidate.md",
+          "exists": true,
+          "sha256": "b4e28abf7888b8ee98cab57bdf5d69f1eb97513c1a23ca94873b9039ddfe2e83",
+          "bytes": 5147
+        }
+      },
+      "CH010": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH010/chapter_candidate.json",
+          "exists": true,
+          "sha256": "e8a52d7700bc1bdc6505836d8b897edba48c6da36f2a07ed1e9b359324d17e6a",
+          "bytes": 21687
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH010/chapter_candidate.md",
+          "exists": true,
+          "sha256": "df689d260b121e843dbd06aacc67c2500b327bc14747e3f3b099d3cde81bc953",
+          "bytes": 4273
+        }
+      },
+      "CH011": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH011/chapter_candidate.json",
+          "exists": true,
+          "sha256": "6a6a21c287c78548420efdb920a6cbee63203dd2f1c4bd630588c4ea2af274fb",
+          "bytes": 18902
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH011/chapter_candidate.md",
+          "exists": true,
+          "sha256": "0f390632bdb73559c8ea639b2e9d789116ec550ed83f298b4a31bc59699b79c5",
+          "bytes": 4727
+        }
+      },
+      "CH013": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH013/chapter_candidate.json",
+          "exists": true,
+          "sha256": "229c500de627a202baf155a673eb0b7d5779810e2df3c975b606523c977b2ce1",
+          "bytes": 27715
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH013/chapter_candidate.md",
+          "exists": true,
+          "sha256": "8ee06dc6c222b1827aca04753ee333d9c814a265f441ad9648af5ce11e41b732",
+          "bytes": 6203
+        }
+      },
+      "CH014": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH014/chapter_candidate.json",
+          "exists": true,
+          "sha256": "d5d22c3c546bafeacc60379481e65e35a0617d480da5be83c9f443c8e5ec5f86",
+          "bytes": 21681
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH014/chapter_candidate.md",
+          "exists": true,
+          "sha256": "6df53e5864e6b7961e3a211583ee82494a93cef1258663898487d204ea1d415c",
+          "bytes": 4280
+        }
+      },
+      "CH015": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH015/chapter_candidate.json",
+          "exists": true,
+          "sha256": "619e21a1bfe8eadbe2fa7545dc9098840bab1382ed564419d172d7ee56916a17",
+          "bytes": 20287
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH015/chapter_candidate.md",
+          "exists": true,
+          "sha256": "9777d8bfe678e19ca631a78cc445922c1ce5b55d96268a4124ce01127fca2553",
+          "bytes": 4468
+        }
+      },
+      "CH016": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH016/chapter_candidate.json",
+          "exists": true,
+          "sha256": "eda44414f526fc1299e23ee59d9d6fa40b194d78dada64696bb3963539bd4fb2",
+          "bytes": 8434
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH016/chapter_candidate.md",
+          "exists": true,
+          "sha256": "ddc4c9989c3aef5e0ea322fcd2cba0f73f5c58758d3927fd5ac1504eea9d2481",
+          "bytes": 1709
+        }
+      },
+      "CH017": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH017/chapter_candidate.json",
+          "exists": true,
+          "sha256": "54f092a17f761f8c14fbfb894abee6171d9360572a0b8700990ceb3956b150fb",
+          "bytes": 25018
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH017/chapter_candidate.md",
+          "exists": true,
+          "sha256": "df61a4b03479913c5dc331cb38b24a544a8f8806fbe8f25b37fbb067fc3b005e",
+          "bytes": 5388
+        }
+      },
+      "CH019": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH019/chapter_candidate.json",
+          "exists": true,
+          "sha256": "05487c1153c81f865efc0310f2ccf614f083308167735887fa20808f57459c2c",
+          "bytes": 12525
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH019/chapter_candidate.md",
+          "exists": true,
+          "sha256": "49e0795a62ef1e59ec350cd4237c38a186c89dbafc94b467119b0c003542609a",
+          "bytes": 2824
+        }
+      }
+    },
+    "thirteen_candidates_present": true,
+    "manuscript": {
+      "path": "C:/TranscriptionAI/audit/book_full_manuscript_review_4b228/manuscript_reading_draft.md",
+      "exists": true,
+      "sha256": "a9a5696ea4072c0c414eb406237d265b2a95a302d1ddafd1c3e39e8140e5f8fb",
+      "bytes": 90127
+    },
+    "manuscript_match_expected": true,
+    "book_json": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+      "exists": true,
+      "sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+      "bytes": 502104
+    },
+    "book_json_match_expected": true
+  },
+  "post": {
+    "phase": "4B.2.31",
+    "canonical": {
+      "source_map": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+        "exists": true,
+        "sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+        "bytes": 202398
+      },
+      "editorial_plan": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+        "exists": true,
+        "sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+        "bytes": 234637
+      },
+      "clean_transcript": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+        "exists": true,
+        "sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+        "bytes": 1487812
+      },
+      "book_json": {
+        "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+        "exists": true,
+        "sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+        "bytes": 502104
+      }
+    },
+    "historical_modules": {
+      "book_generator_1_0": {
+        "path": "C:/TranscriptionAI/app/book_generation/prompt.py",
+        "exists": true,
+        "sha256": "2ec4d4038d950ff760b92c1dd4f0cdda4f0aeb83fc1db00b7a0471a0e06b7294",
+        "bytes": 6284
+      },
+      "book_generator_1_0_1": {
+        "path": "C:/TranscriptionAI/app/book_generation/prompt_v101.py",
+        "exists": true,
+        "sha256": "d569c3acfe76c5de06bd810c9914edb93e3fb30eb53f10e9a54e546004f61601",
+        "bytes": 4046
+      },
+      "prompt_select": {
+        "path": "C:/TranscriptionAI/app/book_generation/prompt_select.py",
+        "exists": true,
+        "sha256": "62661bf2b3c50c9f3e3bff54e25c5229bea93503bfe09a6628f50b74cd900325",
+        "bytes": 773
+      },
+      "faithful_prompt_1_0_candidate": {
+        "path": "C:/TranscriptionAI/app/book_editorial_alignment_4b216/prompt_candidate.py",
+        "exists": true,
+        "sha256": "cb6ec3a998084850344bf9e6d7d3d470cfb8e2e6d2a7504dfb34e46607ce4f90",
+        "bytes": 7141
+      },
+      "semantic_contract_2_0_2": {
+        "path": "C:/TranscriptionAI/app/book_semantic_gate_4b212/contract.py",
+        "exists": true,
+        "sha256": "ad8066db4452737c0e10b652648d4f40edbdf233ea495e7be7634573b21a1dda",
+        "bytes": 15624
+      },
+      "production_pipeline": {
+        "path": "C:/TranscriptionAI/app/book_generation/pipeline.py",
+        "exists": true,
+        "sha256": "8a390926ffcbd8f8de5173831f2df4876d039baa31492a13c3587b99857a9b88",
+        "bytes": 6738
+      },
+      "production_cache": {
+        "path": "C:/TranscriptionAI/app/book_generation/cache.py",
+        "exists": true,
+        "sha256": "fa228d5f053b850c2ba2228d1c7b53d1410a7de1befde07798f4c115e38fc981",
+        "bytes": 5496
+      },
+      "faithful_prompt_1_1_candidate": {
+        "path": "C:/TranscriptionAI/app/book_authorial_voice_4b218/prompt_candidate.py",
+        "exists": true,
+        "sha256": "53818816a1c2f64b285358702edef1b84e348dea4e60665c4a0cbd6069f3c8c6",
+        "bytes": 10900
+      }
+    },
+    "accepted_chapters": {
+      "CH001": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.json",
+          "exists": true,
+          "sha256": "2daf7dc3aa610429a7433e0c51350587519bd32b40074dbe1c7886402ab29fec",
+          "bytes": 14987
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.md",
+          "exists": true,
+          "sha256": "f97904f6b703713d0e4549823ffe9f578c24e25679ec79a250a245f942fb3f41",
+          "bytes": 3326
+        }
+      },
+      "CH002": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.json",
+          "exists": true,
+          "sha256": "d738b4dbbcf13212d4ae68ce00be1effbf4f64ef815bfbfe40c74262a78a08b7",
+          "bytes": 17120
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.md",
+          "exists": true,
+          "sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+          "bytes": 3539
+        },
+        "original_json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/chapter_candidate.json",
+          "exists": true,
+          "sha256": "baa6b55ad523b9d2f904428ba6e921471cfd50a4260e26353a11a2f2bde0e756",
+          "bytes": 17452
+        },
+        "original_markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/chapter_candidate.md",
+          "exists": true,
+          "sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+          "bytes": 3539
+        }
+      },
+      "CH003": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.json",
+          "exists": true,
+          "sha256": "3ddc2f1298b3db9eb8646161e794b7289f4e9004f274bc1cbc427d7befc37f19",
+          "bytes": 20573
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.md",
+          "exists": true,
+          "sha256": "7f87e86927bd0c60a7b3d5d64ba5c3fa0d8c1e8119fa26c285614a9b8999aae5",
+          "bytes": 4752
+        }
+      },
+      "CH004": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH004/chapter_candidate.json",
+          "exists": true,
+          "sha256": "eceb00dfb019d3e6a247607143447436c7568cb230575211d4128b421ec5b012",
+          "bytes": 21437
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH004/chapter_candidate.md",
+          "exists": true,
+          "sha256": "37154ea2d01c0beadc9d4cada1600f7e0f0b9a3c6012bcce7e792e4a8ee95580",
+          "bytes": 5065
+        }
+      },
+      "CH012": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.json",
+          "exists": true,
+          "sha256": "8f135ac5f1df8b2e077e9cc767518d1a05e2fc22d80f5d66494cf5a8364e7fc5",
+          "bytes": 14562
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.md",
+          "exists": true,
+          "sha256": "79d0ab2254e1a972e0fb5ddcbb7901425255ce887ee817fc39b001838b889919",
+          "bytes": 3579
+        },
+        "original_json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b217_ch012/chapter_candidate.json",
+          "exists": true,
+          "sha256": "7a3eaa2da75a3d68c6bac3873d088a704d7a9cf68da303f8b6fc2c20b85b26e5",
+          "bytes": 14725
+        },
+        "original_markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b217_ch012/chapter_candidate.md",
+          "exists": true,
+          "sha256": "9cae24f35f7f41256b77849a8ca2396386a2dfa1de7f45a86da3def1331d4704",
+          "bytes": 3742
+        },
+        "provider_lock": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b217_ch012/ch012_real_call.lock",
+          "exists": true,
+          "sha256": "4820e703a49360572962d0288b394a16861cbb8280b64323ddfe3310723c2efb",
+          "bytes": 236
+        }
+      },
+      "CH018": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.json",
+          "exists": true,
+          "sha256": "e4902da92b05dbe0875222a41d59eb99f7b3e669b685f50f36b06864a327d38b",
+          "bytes": 18450
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.md",
+          "exists": true,
+          "sha256": "3f8e0590567d431af18812505e2a5f5fa454e1648d06f2b895ceae30278df1cb",
+          "bytes": 3691
+        }
+      }
+    },
+    "production_cache": {
+      "module": {
+        "path": "C:/TranscriptionAI/app/book_generation/cache.py",
+        "exists": true,
+        "sha256": "fa228d5f053b850c2ba2228d1c7b53d1410a7de1befde07798f4c115e38fc981",
+        "bytes": 5496
+      }
+    },
+    "canonical_match_expected": true,
+    "ch001_unchanged": true,
+    "ch002_unchanged": true,
+    "ch003_unchanged": true,
+    "ch004_unchanged": true,
+    "ch012_unchanged": true,
+    "ch018_unchanged": true,
+    "six_accepted_immutable": true,
+    "book_json_published_by_this_phase": false,
+    "production_cache_written_by_this_phase": false,
+    "secrets_included": false,
+    "remaining_chapters": {
+      "CH005": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH005/chapter_candidate.json",
+          "exists": true,
+          "sha256": "e39e7f0ae252735792efa38968f1907c85bb938b4bd055bf6394fd36647541ee",
+          "bytes": 26070
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH005/chapter_candidate.md",
+          "exists": true,
+          "sha256": "49aabe0e5d7bab57d3368682d2d5fff5e77ff508780f7262f5c32900b2ba5650",
+          "bytes": 7162
+        }
+      },
+      "CH006": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH006/chapter_candidate.json",
+          "exists": true,
+          "sha256": "2d1543de8f11511a5c10b9e42aa0ec86cdf088d7257a2f3ecb42a59efe679c57",
+          "bytes": 55575
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH006/chapter_candidate.md",
+          "exists": true,
+          "sha256": "8856aabd8442ac5cdfa479c953aaef6e50dc0b3db48650c38fc780ae456fda9f",
+          "bytes": 12418
+        }
+      },
+      "CH007": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH007/chapter_candidate.json",
+          "exists": true,
+          "sha256": "249b8917fa961c1b6894cef80ed36006ca99aa1413ddddd7ae31c60276210979",
+          "bytes": 14835
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH007/chapter_candidate.md",
+          "exists": true,
+          "sha256": "f11e8ae4988973d2510f82aea730ab6008c387d890c6734e402a0fa8c16678ff",
+          "bytes": 3089
+        }
+      },
+      "CH008": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH008/chapter_candidate.json",
+          "exists": true,
+          "sha256": "73bc1f2349911436526b5876849daccc3333932f6cbc7b52aea64b4572bd5b4a",
+          "bytes": 19312
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH008/chapter_candidate.md",
+          "exists": true,
+          "sha256": "a7b6992714b6de4b1780fee96fb4f239f5ea66f2eca3c1f01306ca80c97d4a76",
+          "bytes": 3327
+        }
+      },
+      "CH009": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH009/chapter_candidate.json",
+          "exists": true,
+          "sha256": "a72864ea3580422257674a5000d81d46c2952492a347255bf3107f0ae066e61c",
+          "bytes": 23143
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH009/chapter_candidate.md",
+          "exists": true,
+          "sha256": "b4e28abf7888b8ee98cab57bdf5d69f1eb97513c1a23ca94873b9039ddfe2e83",
+          "bytes": 5147
+        }
+      },
+      "CH010": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH010/chapter_candidate.json",
+          "exists": true,
+          "sha256": "e8a52d7700bc1bdc6505836d8b897edba48c6da36f2a07ed1e9b359324d17e6a",
+          "bytes": 21687
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH010/chapter_candidate.md",
+          "exists": true,
+          "sha256": "df689d260b121e843dbd06aacc67c2500b327bc14747e3f3b099d3cde81bc953",
+          "bytes": 4273
+        }
+      },
+      "CH011": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH011/chapter_candidate.json",
+          "exists": true,
+          "sha256": "6a6a21c287c78548420efdb920a6cbee63203dd2f1c4bd630588c4ea2af274fb",
+          "bytes": 18902
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH011/chapter_candidate.md",
+          "exists": true,
+          "sha256": "0f390632bdb73559c8ea639b2e9d789116ec550ed83f298b4a31bc59699b79c5",
+          "bytes": 4727
+        }
+      },
+      "CH013": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH013/chapter_candidate.json",
+          "exists": true,
+          "sha256": "229c500de627a202baf155a673eb0b7d5779810e2df3c975b606523c977b2ce1",
+          "bytes": 27715
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH013/chapter_candidate.md",
+          "exists": true,
+          "sha256": "8ee06dc6c222b1827aca04753ee333d9c814a265f441ad9648af5ce11e41b732",
+          "bytes": 6203
+        }
+      },
+      "CH014": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH014/chapter_candidate.json",
+          "exists": true,
+          "sha256": "d5d22c3c546bafeacc60379481e65e35a0617d480da5be83c9f443c8e5ec5f86",
+          "bytes": 21681
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH014/chapter_candidate.md",
+          "exists": true,
+          "sha256": "6df53e5864e6b7961e3a211583ee82494a93cef1258663898487d204ea1d415c",
+          "bytes": 4280
+        }
+      },
+      "CH015": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH015/chapter_candidate.json",
+          "exists": true,
+          "sha256": "619e21a1bfe8eadbe2fa7545dc9098840bab1382ed564419d172d7ee56916a17",
+          "bytes": 20287
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH015/chapter_candidate.md",
+          "exists": true,
+          "sha256": "9777d8bfe678e19ca631a78cc445922c1ce5b55d96268a4124ce01127fca2553",
+          "bytes": 4468
+        }
+      },
+      "CH016": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH016/chapter_candidate.json",
+          "exists": true,
+          "sha256": "eda44414f526fc1299e23ee59d9d6fa40b194d78dada64696bb3963539bd4fb2",
+          "bytes": 8434
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH016/chapter_candidate.md",
+          "exists": true,
+          "sha256": "ddc4c9989c3aef5e0ea322fcd2cba0f73f5c58758d3927fd5ac1504eea9d2481",
+          "bytes": 1709
+        }
+      },
+      "CH017": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH017/chapter_candidate.json",
+          "exists": true,
+          "sha256": "54f092a17f761f8c14fbfb894abee6171d9360572a0b8700990ceb3956b150fb",
+          "bytes": 25018
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH017/chapter_candidate.md",
+          "exists": true,
+          "sha256": "df61a4b03479913c5dc331cb38b24a544a8f8806fbe8f25b37fbb067fc3b005e",
+          "bytes": 5388
+        }
+      },
+      "CH019": {
+        "json": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH019/chapter_candidate.json",
+          "exists": true,
+          "sha256": "05487c1153c81f865efc0310f2ccf614f083308167735887fa20808f57459c2c",
+          "bytes": 12525
+        },
+        "markdown": {
+          "path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH019/chapter_candidate.md",
+          "exists": true,
+          "sha256": "49e0795a62ef1e59ec350cd4237c38a186c89dbafc94b467119b0c003542609a",
+          "bytes": 2824
+        }
+      }
+    },
+    "thirteen_candidates_present": true,
+    "manuscript": {
+      "path": "C:/TranscriptionAI/audit/book_full_manuscript_review_4b228/manuscript_reading_draft.md",
+      "exists": true,
+      "sha256": "a9a5696ea4072c0c414eb406237d265b2a95a302d1ddafd1c3e39e8140e5f8fb",
+      "bytes": 90127
+    },
+    "manuscript_match_expected": true,
+    "book_json": {
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+      "exists": true,
+      "sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+      "bytes": 502104
+    },
+    "book_json_match_expected": true
+  },
+  "match": true,
+  "status": "MATCH",
+  "book_json_pre": {
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+    "exists": true,
+    "sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+    "bytes": 502104
+  },
+  "book_json_post": {
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+    "exists": true,
+    "sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+    "bytes": 502104
+  },
+  "expected_book_sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+  "source_chapters_immutable": true,
+  "secrets_included": false
+}

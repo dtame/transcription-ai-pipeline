@@ -1,0 +1,216 @@
+{
+  "phase": "4B.2.9",
+  "source": "FAKEAI_SIMULATED",
+  "not_terra": true,
+  "catalog": {
+    "phase": "4B.2.9",
+    "source": "FAKEAI_SIMULATED",
+    "not_terra": true,
+    "not_a_terra_validation": true,
+    "scenario_count": 15,
+    "scenarios": [
+      {
+        "scenario": "all_supported",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "legitimate_paraphrase",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "invented_causality",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "invented_implication",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "universal_guarantee",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "missing_unit",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "duplicate_unit",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "unknown_unit",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "unknown_reason_code",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "unknown_evidence_handle",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "incoherent_global_verdict",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "invalid_json",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "str"
+      },
+      {
+        "scenario": "truncated_response",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "str"
+      },
+      {
+        "scenario": "questionable",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      },
+      {
+        "scenario": "abusive_non_substantive",
+        "source": "FAKEAI_SIMULATED",
+        "not_terra": true,
+        "payload_type": "dict"
+      }
+    ],
+    "request_omits_human_labels": true,
+    "passed": true,
+    "secrets_included": false
+  },
+  "engine_rows": [
+    {
+      "scenario": "all_supported",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "PASS",
+      "validation_ok": true
+    },
+    {
+      "scenario": "legitimate_paraphrase",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "PASS",
+      "validation_ok": true
+    },
+    {
+      "scenario": "invented_causality",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": true
+    },
+    {
+      "scenario": "invented_implication",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": true
+    },
+    {
+      "scenario": "universal_guarantee",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": true
+    },
+    {
+      "scenario": "missing_unit",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": false
+    },
+    {
+      "scenario": "duplicate_unit",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": false
+    },
+    {
+      "scenario": "unknown_unit",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": false
+    },
+    {
+      "scenario": "unknown_reason_code",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": false
+    },
+    {
+      "scenario": "unknown_evidence_handle",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": false
+    },
+    {
+      "scenario": "incoherent_global_verdict",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": false
+    },
+    {
+      "scenario": "invalid_json",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": false
+    },
+    {
+      "scenario": "truncated_response",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": false
+    },
+    {
+      "scenario": "questionable",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "REVIEW",
+      "validation_ok": true
+    },
+    {
+      "scenario": "abusive_non_substantive",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": true
+    }
+  ],
+  "passed": true,
+  "secrets_included": false
+}

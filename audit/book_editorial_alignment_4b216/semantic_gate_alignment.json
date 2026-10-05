@@ -1,0 +1,37 @@
+{
+  "phase": "4B.2.16",
+  "contract": "book-semantic-validator-2.0.2-candidate",
+  "contract_modified": false,
+  "contract_activated": false,
+  "semantic_gate_enabled": false,
+  "candidate_sha256": "254be9dce6b1dd01441411bbdde33af92bbb8eb5338f2b51a16a3c61117d9d16",
+  "historical_4b215_status": "PARTIAL",
+  "historical_h11_status": "PARTIAL",
+  "historical_h11_human_label": "UNSUPPORTED",
+  "historical_h11_human_label_modified": false,
+  "historical_results_requalified": false,
+  "what_the_gate_continues_to_seek": [
+    "invented assertions",
+    "invented causalities",
+    "new implications",
+    "unsupported guarantees",
+    "distortions",
+    "changes of certainty",
+    "incorrect attributions"
+  ],
+  "omissions_are_a_complementary_coverage_control": true,
+  "omissions_are_not_silently_relabeled_by_this_phase": true,
+  "automatic_unsupported_to_supported": false,
+  "automatic_block_to_pass": false,
+  "false_rejection_resolution": "traceable human resolution; Terra response stays immutable",
+  "historical_h11_false_rejections_remain_documented": {
+    "status": "PARTIAL",
+    "human_label": "UNSUPPORTED",
+    "pattern": "4B.2.8 recorded historically supported clauses rejected at claim indexes 0, 2, and 4, while the universal guarantee was rightly rejected. This phase does not change those labels and does not convert the PARTIAL result into PASS.",
+    "not_converted_to_pass": true
+  },
+  "publication_still_requires_independent_validation": true,
+  "interpretation_only": true,
+  "prompt_hash_if_present": "",
+  "secrets_included": false
+}

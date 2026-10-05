@@ -1,0 +1,32 @@
+{
+  "word_progid_present": true,
+  "winword_process_running": true,
+  "win32com_available": false,
+  "powershell_available": true,
+  "backend": "powershell_com",
+  "windows": true,
+  "word_available": true,
+  "assumed_from_windows_only": false,
+  "probe_executed": true,
+  "capabilities": {
+    "open_save": "PASS",
+    "update_fields": "PASS",
+    "update_toc": "PASS",
+    "export_pdf": "PASS"
+  },
+  "error": "",
+  "verification": "automatic",
+  "secrets_included": false,
+  "backend_ready": true,
+  "probe": {
+    "ok": true,
+    "capabilities": {
+      "open_save": "PASS",
+      "update_fields": "PASS",
+      "update_toc": "PASS",
+      "export_pdf": "PASS"
+    },
+    "error": "",
+    "status": "PASS"
+  }
+}

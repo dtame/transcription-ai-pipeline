@@ -1,0 +1,41 @@
+{
+  "phase": "4B.2.21",
+  "chapter_id": "CH018",
+  "overall_classification": "POTENTIAL_SUBSTANTIVE_ISSUE",
+  "readability": "14 paragraphs across 4 sections. Offline readability only.",
+  "section_organization": [
+    "The Word That Could Not Fail",
+    "Activation, Not Persuasion",
+    "When It Does Not Happen",
+    "The Vessel, Not the Name"
+  ],
+  "authorial_voice": {
+    "first_person_observed": true,
+    "second_person_observed": true,
+    "conference_report_frames": [],
+    "classification": "NO_ISSUE_DETECTED"
+  },
+  "testimonies": "UNDETERMINED",
+  "references": "UNDETERMINED",
+  "transitions": "NO_ISSUE_DETECTED",
+  "repetitions": "UNDETERMINED",
+  "observations": [
+    {
+      "code": "STRENGTHENED_CLAIM",
+      "classification": "POTENTIAL_SUBSTANTIVE_ISSUE",
+      "detail": "Absolute wording may strengthen a source claim."
+    }
+  ],
+  "potential_substantive_issues": [
+    {
+      "code": "STRENGTHENED_CLAIM",
+      "classification": "POTENTIAL_SUBSTANTIVE_ISSUE",
+      "detail": "Absolute wording may strengthen a source claim."
+    }
+  ],
+  "semantic_certification": "NOT PERFORMED",
+  "automatic_correction": false,
+  "terra_used": false,
+  "human_acceptance": "PENDING",
+  "secrets_included": false
+}

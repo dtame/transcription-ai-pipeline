@@ -1,0 +1,567 @@
+{
+  "phase": "4B.2.7.1",
+  "handle": "h01",
+  "case_id_audit_only": "4b22_p2_supported",
+  "paragraph": {
+    "handle": "h01",
+    "exact_text": "Do not ever be afraid of death. There is no fixed hour appointed that fear can calculate or bargain with, and so fear itself is out of place. If somebody has gone to heaven, that should not produce dread in us. It should be our joy.",
+    "chars": 232,
+    "unicode_codepoints": 232,
+    "utf8_bytes": 232,
+    "source": "frozen 4B.2.2 candidate / compact 4B.2.7 request"
+  },
+  "ideas": [
+    {
+      "id": "IDEA224",
+      "exact_text": "Believers should not fear death since there is no set time and going to heaven should bring joy, not fear.",
+      "kind": "",
+      "importance": "central",
+      "topic_refs": [
+        "TOP054"
+      ],
+      "relations": [],
+      "source_refs": [
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "gate_request_text": "Believers should not fear death since there is no set time and going to heaven should bring joy, not fear.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "analysis/source_map.json",
+        "field": "ideas[].summary",
+        "note": "SourceMap idea records contain a summary, not a longer body. No additional IDEA224 prose exists."
+      },
+      "editorial_assignment": {
+        "chapter_id": "CH016",
+        "section_id": "SEC063",
+        "purpose": "Convert the doctrine of destroyed death into lived attitude.",
+        "idea_refs": [
+          "IDEA224",
+          "IDEA225",
+          "IDEA226",
+          "IDEA250",
+          "IDEA251",
+          "IDEA252"
+        ]
+      },
+      "relation_with_disputed_clause": "The summary attests that believers should not fear death because there is no set time. It does not contain the verbs calculate or bargain."
+    }
+  ],
+  "src": [
+    {
+      "id": "SRC006149",
+      "exact_text": "Don't ever be afraid of death.",
+      "gate_request_text": "Don't ever be afraid of death.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1041.76,
+        "end_seconds": 1043.78
+      },
+      "local_context": [
+        {
+          "id": "SRC006146",
+          "text": "If you have to live here,",
+          "start_seconds": 1030.44,
+          "end_seconds": 1034.0,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006147",
+          "text": "walk into life.",
+          "start_seconds": 1035.58,
+          "end_seconds": 1036.5,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006148",
+          "text": "Walk into life.",
+          "start_seconds": 1039.14,
+          "end_seconds": 1040.46,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006149",
+          "text": "Don't ever be afraid of death.",
+          "start_seconds": 1041.76,
+          "end_seconds": 1043.78,
+          "is_target": true,
+          "in_gate_request": true
+        },
+        {
+          "id": "SRC006150",
+          "text": "No.",
+          "start_seconds": 1045.68,
+          "end_seconds": 1046.08,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006151",
+          "text": "No, no.",
+          "start_seconds": 1046.08,
+          "end_seconds": 1046.84,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006152",
+          "text": "It is an abuse",
+          "start_seconds": 1048.08,
+          "end_seconds": 1049.78,
+          "is_target": false,
+          "in_gate_request": false
+        }
+      ],
+      "relation_with_IDEA224": "Listed in IDEA224.source_refs. Hydrated SRC wording is primary wording evidence; the IDEA summary is a compact canonical restatement, not a substitute for SRC text.",
+      "relation_with_disputed_clause": "Supports the opening prohibition of fear of death. No calculate or bargain wording."
+    },
+    {
+      "id": "SRC006180",
+      "exact_text": "But you can see fear",
+      "gate_request_text": "But you can see fear",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1101.0,
+        "end_seconds": 1102.2
+      },
+      "local_context": [
+        {
+          "id": "SRC006177",
+          "text": "It's normal.",
+          "start_seconds": 1095.84,
+          "end_seconds": 1096.7,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006178",
+          "text": "Fellowship,",
+          "start_seconds": 1097.32,
+          "end_seconds": 1097.94,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006179",
+          "text": "and all of that.",
+          "start_seconds": 1098.04,
+          "end_seconds": 1099.34,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006180",
+          "text": "But you can see fear",
+          "start_seconds": 1101.0,
+          "end_seconds": 1102.2,
+          "is_target": true,
+          "in_gate_request": true
+        },
+        {
+          "id": "SRC006181",
+          "text": "in the eyes of some people.",
+          "start_seconds": 1102.2,
+          "end_seconds": 1106.24,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006182",
+          "text": "It's not normal.",
+          "start_seconds": 1106.62,
+          "end_seconds": 1107.84,
+          "is_target": false,
+          "in_gate_request": true
+        },
+        {
+          "id": "SRC006183",
+          "text": "It should be our joy.",
+          "start_seconds": 1109.84,
+          "end_seconds": 1111.38,
+          "is_target": false,
+          "in_gate_request": true
+        }
+      ],
+      "relation_with_IDEA224": "Listed in IDEA224.source_refs. Hydrated SRC wording is primary wording evidence; the IDEA summary is a compact canonical restatement, not a substitute for SRC text.",
+      "relation_with_disputed_clause": "Attests that fear is observable. No calculate or bargain wording. Does not itself support or refute the no-set-time claim."
+    },
+    {
+      "id": "SRC006182",
+      "exact_text": "It's not normal.",
+      "gate_request_text": "It's not normal.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1106.62,
+        "end_seconds": 1107.84
+      },
+      "local_context": [
+        {
+          "id": "SRC006179",
+          "text": "and all of that.",
+          "start_seconds": 1098.04,
+          "end_seconds": 1099.34,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006180",
+          "text": "But you can see fear",
+          "start_seconds": 1101.0,
+          "end_seconds": 1102.2,
+          "is_target": false,
+          "in_gate_request": true
+        },
+        {
+          "id": "SRC006181",
+          "text": "in the eyes of some people.",
+          "start_seconds": 1102.2,
+          "end_seconds": 1106.24,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006182",
+          "text": "It's not normal.",
+          "start_seconds": 1106.62,
+          "end_seconds": 1107.84,
+          "is_target": true,
+          "in_gate_request": true
+        },
+        {
+          "id": "SRC006183",
+          "text": "It should be our joy.",
+          "start_seconds": 1109.84,
+          "end_seconds": 1111.38,
+          "is_target": false,
+          "in_gate_request": true
+        },
+        {
+          "id": "SRC006184",
+          "text": "We want to go to heaven now, right?",
+          "start_seconds": 1113.8,
+          "end_seconds": 1115.7,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006185",
+          "text": "We want to go to heaven, right?",
+          "start_seconds": 1115.7,
+          "end_seconds": 1117.7,
+          "is_target": false,
+          "in_gate_request": false
+        }
+      ],
+      "relation_with_IDEA224": "Listed in IDEA224.source_refs. Hydrated SRC wording is primary wording evidence; the IDEA summary is a compact canonical restatement, not a substitute for SRC text.",
+      "relation_with_disputed_clause": "Attests that the observed fear is not normal. No calculate or bargain wording."
+    },
+    {
+      "id": "SRC006183",
+      "exact_text": "It should be our joy.",
+      "gate_request_text": "It should be our joy.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1109.84,
+        "end_seconds": 1111.38
+      },
+      "local_context": [
+        {
+          "id": "SRC006180",
+          "text": "But you can see fear",
+          "start_seconds": 1101.0,
+          "end_seconds": 1102.2,
+          "is_target": false,
+          "in_gate_request": true
+        },
+        {
+          "id": "SRC006181",
+          "text": "in the eyes of some people.",
+          "start_seconds": 1102.2,
+          "end_seconds": 1106.24,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006182",
+          "text": "It's not normal.",
+          "start_seconds": 1106.62,
+          "end_seconds": 1107.84,
+          "is_target": false,
+          "in_gate_request": true
+        },
+        {
+          "id": "SRC006183",
+          "text": "It should be our joy.",
+          "start_seconds": 1109.84,
+          "end_seconds": 1111.38,
+          "is_target": true,
+          "in_gate_request": true
+        },
+        {
+          "id": "SRC006184",
+          "text": "We want to go to heaven now, right?",
+          "start_seconds": 1113.8,
+          "end_seconds": 1115.7,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006185",
+          "text": "We want to go to heaven, right?",
+          "start_seconds": 1115.7,
+          "end_seconds": 1117.7,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006186",
+          "text": "There is no time set.",
+          "start_seconds": 1119.32,
+          "end_seconds": 1121.7,
+          "is_target": false,
+          "in_gate_request": false
+        }
+      ],
+      "relation_with_IDEA224": "Listed in IDEA224.source_refs. Hydrated SRC wording is primary wording evidence; the IDEA summary is a compact canonical restatement, not a substitute for SRC text.",
+      "relation_with_disputed_clause": "Supports 'It should be our joy.' No calculate or bargain wording."
+    },
+    {
+      "id": "SRC006187",
+      "exact_text": "So if somebody has gone to heaven,",
+      "gate_request_text": "So if somebody has gone to heaven,",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1123.64,
+        "end_seconds": 1125.7
+      },
+      "local_context": [
+        {
+          "id": "SRC006184",
+          "text": "We want to go to heaven now, right?",
+          "start_seconds": 1113.8,
+          "end_seconds": 1115.7,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006185",
+          "text": "We want to go to heaven, right?",
+          "start_seconds": 1115.7,
+          "end_seconds": 1117.7,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006186",
+          "text": "There is no time set.",
+          "start_seconds": 1119.32,
+          "end_seconds": 1121.7,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006187",
+          "text": "So if somebody has gone to heaven,",
+          "start_seconds": 1123.64,
+          "end_seconds": 1125.7,
+          "is_target": true,
+          "in_gate_request": true
+        },
+        {
+          "id": "SRC006188",
+          "text": "at least with that alone,",
+          "start_seconds": 1127.18,
+          "end_seconds": 1128.74,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006189",
+          "text": "you'll be happy.",
+          "start_seconds": 1128.84,
+          "end_seconds": 1129.7,
+          "is_target": false,
+          "in_gate_request": false
+        },
+        {
+          "id": "SRC006190",
+          "text": "That we did not lose this one.",
+          "start_seconds": 1130.98,
+          "end_seconds": 1132.7,
+          "is_target": false,
+          "in_gate_request": false
+        }
+      ],
+      "relation_with_IDEA224": "Listed in IDEA224.source_refs. Hydrated SRC wording is primary wording evidence; the IDEA summary is a compact canonical restatement, not a substitute for SRC text.",
+      "relation_with_disputed_clause": "Supports the 'if somebody has gone to heaven' opening. No calculate or bargain wording."
+    }
+  ],
+  "topic": {
+    "topic_id": "TOP054",
+    "label": "Attitude toward death and heaven",
+    "summary": "Attitude toward death and heaven",
+    "source_refs": [
+      "SRC006148",
+      "SRC006152",
+      "SRC006183",
+      "SRC006192",
+      "SRC007101"
+    ]
+  },
+  "neighboring_canonical_src_not_in_gate_request": [
+    {
+      "id": "SRC006181",
+      "text": "in the eyes of some people.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1102.2,
+        "end_seconds": 1106.24
+      },
+      "chars": 27,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to Terra. Not used to complete missing support from outside the gate request."
+    },
+    {
+      "id": "SRC006184",
+      "text": "We want to go to heaven now, right?",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1113.8,
+        "end_seconds": 1115.7
+      },
+      "chars": 35,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to Terra. Not used to complete missing support from outside the gate request."
+    },
+    {
+      "id": "SRC006185",
+      "text": "We want to go to heaven, right?",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1115.7,
+        "end_seconds": 1117.7
+      },
+      "chars": 31,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to Terra. Not used to complete missing support from outside the gate request."
+    },
+    {
+      "id": "SRC006186",
+      "text": "There is no time set.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1119.32,
+        "end_seconds": 1121.7
+      },
+      "chars": 21,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to Terra. Not used to complete missing support from outside the gate request."
+    },
+    {
+      "id": "SRC006188",
+      "text": "at least with that alone,",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1127.18,
+        "end_seconds": 1128.74
+      },
+      "chars": 25,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to Terra. Not used to complete missing support from outside the gate request."
+    },
+    {
+      "id": "SRC006189",
+      "text": "you'll be happy.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1128.84,
+        "end_seconds": 1129.7
+      },
+      "chars": 16,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to Terra. Not used to complete missing support from outside the gate request."
+    }
+  ],
+  "allowed_handles_in_request": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "external_religious_knowledge_used": false,
+  "summaries_not_substituted_for_src": true,
+  "canonical_hashes": {
+    "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+  },
+  "secrets_included": false
+}

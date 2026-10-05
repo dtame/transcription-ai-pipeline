@@ -1,0 +1,132 @@
+{
+  "phase": "4B.2.7.2",
+  "status": "LOCAL_PREFLIGHT_PASS",
+  "blocked_precall": false,
+  "blockers": [],
+  "remote_authorization_consumed": false,
+  "provider_calls": 0,
+  "openai_http": 0,
+  "anthropic_http": 0,
+  "selected_case": "h02",
+  "checks": {
+    "canonical_runtime": {
+      "expected": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+      "actual": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+      "match": true,
+      "normalized_expected": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+      "normalized_actual": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+      "python_version": [
+        3,
+        11,
+        9
+      ],
+      "expected_python_version": [
+        3,
+        11,
+        9
+      ],
+      "python_version_match": true,
+      "canonical_environment": ".venv"
+    },
+    "sdk_available": {
+      "version": "2.43.0",
+      "expected": "2.43.0",
+      "python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+      "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+    },
+    "provider_configuration": {
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "endpoint": "chat.completions",
+      "token_field": "max_completion_tokens",
+      "contract_parameter": "max_completion_tokens",
+      "output_mode": "json_object"
+    },
+    "artifact_identity": {
+      "before": {
+        "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+        "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+        "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+        "candidate_4b2": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+        "candidate_4b22": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c",
+        "raw_4b2": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749"
+      },
+      "after": {
+        "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+        "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+        "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+        "candidate_4b2": "51635cedf7fee34b34fd80466c2361968494e2e98c15d861682401bddd2aaad5",
+        "candidate_4b22": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c",
+        "raw_4b2": "3a291c879d852daec8a00d0bf9f18e3e1c902643658f9e6f3aaa5066206e9749"
+      }
+    },
+    "candidate_contract": {
+      "prompt": "book-semantic-validator-1.1.1-candidate",
+      "transport": "book-semantic-validation-transport-1.1-candidate"
+    },
+    "evidence_complete": true,
+    "benchmark_evidence_conflict": false,
+    "human_labels_absent": true,
+    "sdk_serialization": true,
+    "request_sha256": "5ace261296d808437910f8f9efe247a80daebbb2237bc8af46bda56bf98d7897",
+    "request_determinism": true,
+    "historical_h01_sha256": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+    "context_budget": true,
+    "cost_estimate_documented": true
+  },
+  "server_only_unknowns": [
+    {
+      "field": "json_object_server_capability",
+      "status": "UNKNOWN",
+      "note": "Local serialization of response_format=json_object is PASS. Whether gpt-5.6-terra will emit a usable JSON object for P3 remains UNKNOWN_SERVER_SIDE."
+    },
+    {
+      "field": "reasoning_or_thinking_server_behavior",
+      "status": "UNKNOWN",
+      "note": "Thinking is omitted. Server reasoning remains UNKNOWN."
+    },
+    {
+      "field": "actual_cost",
+      "status": "UNKNOWN",
+      "note": "Estimates are not a guarantee. Unknown is not zero."
+    }
+  ],
+  "future_canary_criteria": {
+    "technical_pass": [
+      "API accepts the request",
+      "Non-empty response",
+      "Valid JSON",
+      "finish_reason compatible with a complete response",
+      "Compact contract respected",
+      "P3 identified",
+      "Every substantive proposition covered",
+      "Valid spans and evidence handles",
+      "Reason codes present when required",
+      "Deterministic replay"
+    ],
+    "semantic_pass": [
+      "The unjustified causal relation is identified",
+      "The corresponding proposition is QUESTIONABLE or UNSUPPORTED",
+      "A relevant reason code is supplied",
+      "Other supported propositions are not rejected without reason",
+      "The global verdict blocks paragraph acceptance",
+      "Justification rests on the available evidence"
+    ],
+    "partial": "Technically usable response with semantic disagreement or uncertainty",
+    "fail": [
+      "API error",
+      "Empty response",
+      "Invalid JSON",
+      "Incomplete contract",
+      "Unevaluated substantive clause",
+      "Invalid evidence",
+      "Unjustified acceptance of the causal relation"
+    ],
+    "blocked_precall": "Any local check failure before invocation",
+    "not_executed": true
+  },
+  "json_object_server_capability": "UNKNOWN",
+  "READY_FOR_P3_REAL_CANARY_HUMAN_REVIEW": true,
+  "READY_FOR_NEW_REMOTE_TERRA_CALL": false,
+  "secrets_included": false
+}

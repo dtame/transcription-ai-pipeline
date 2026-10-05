@@ -1,0 +1,375 @@
+{
+  "phase": "4B.2.20",
+  "manifest_version": "scale-up-progress-manifest-4b220-1.0",
+  "kind": "preparation_manifest",
+  "authorized_spend_usd": 0.0,
+  "any_authorized_false": true,
+  "chapters": [
+    {
+      "chapter_id": "CH012",
+      "status": "ACCEPTED",
+      "generation_status": "ACCEPTED",
+      "validation_status": "EDITORIAL_ACCEPTED_NOT_SEMANTICALLY_CERTIFIED",
+      "content_duplicated": false,
+      "accepted_manifest": "C:/TranscriptionAI/audit/book_editorial_acceptance_4b219/ch012_accepted_editorial_manifest.json",
+      "accepted_md_sha256": "79d0ab2254e1a972e0fb5ddcbb7901425255ce887ee817fc39b001838b889919",
+      "accepted_json_sha256": "8f135ac5f1df8b2e077e9cc767518d1a05e2fc22d80f5d66494cf5a8364e7fc5",
+      "attempt": null
+    },
+    {
+      "chapter_id": "CH001",
+      "working_title": "Unlearning What Was Handed Down",
+      "book_order": 1,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH002",
+      "working_title": "Flesh and Bone: The Resurrection You Inherit",
+      "book_order": 2,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH003",
+      "working_title": "Hebrews 2: Death Already Destroyed",
+      "book_order": 3,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH004",
+      "working_title": "Priest, Prophet, King",
+      "book_order": 4,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH005",
+      "working_title": "Access, Not Achievement",
+      "book_order": 5,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH006",
+      "working_title": "That They May Be One",
+      "book_order": 6,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH007",
+      "working_title": "Loved Exactly as Jesus Is Loved",
+      "book_order": 7,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH008",
+      "working_title": "Set Your Mind Above",
+      "book_order": 8,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH009",
+      "working_title": "Laws You Gave Yourself",
+      "book_order": 9,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH010",
+      "working_title": "Spirit, Soul and Body",
+      "book_order": 10,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH011",
+      "working_title": "Reasonings and Strongholds",
+      "book_order": 11,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH013",
+      "working_title": "The Renewed Mind and the Hidden Faculty",
+      "book_order": 13,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH014",
+      "working_title": "Operating What You Have",
+      "book_order": 14,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH015",
+      "working_title": "Grace Barely Touched",
+      "book_order": 15,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH016",
+      "working_title": "Death as Gain",
+      "book_order": 16,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH017",
+      "working_title": "Nothing by Chance",
+      "book_order": 17,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH018",
+      "working_title": "Testimonies of Resurrection",
+      "book_order": 18,
+      "status": "READY",
+      "generation_status": "READY",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    },
+    {
+      "chapter_id": "CH019",
+      "working_title": "Out of the Eater",
+      "book_order": 19,
+      "status": "PENDING",
+      "generation_status": "PENDING",
+      "validation_status": "NOT_STARTED",
+      "authorized": false,
+      "attempt": null,
+      "required_attempt_fields_when_generated": [
+        "attempt_id",
+        "model",
+        "prompt_version",
+        "context_sha256",
+        "response_sha256",
+        "actual_cost_usd",
+        "errors"
+      ]
+    }
+  ],
+  "resume_policy": {
+    "identify_attempts_by_unique_id": true,
+    "keep_model_and_prompt": true,
+    "keep_context_hash": true,
+    "keep_response_hash": true,
+    "keep_actual_cost": true,
+    "keep_errors": true,
+    "no_paid_repeat_after_ambiguous_interruption": true,
+    "human_decision_required_if_attempt_uncertain": true
+  },
+  "ch012_content_not_duplicated": true,
+  "book_json_published": false,
+  "secrets_included": false
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "author-library-v1",
+  "storage": "data/author_library",
+  "separated_from_project_files": true,
+  "profile": {
+    "author_id": "author_000001",
+    "display_name": null,
+    "biography_reference": null,
+    "professional_background": [],
+    "areas_of_expertise": [],
+    "public_roles": [],
+    "public_website": null,
+    "author_photo_path": null,
+    "name_publication_authorized": false,
+    "photo_publication_authorized": false,
+    "personal_details_publication_authorized": false,
+    "verification_status": "UNVERIFIED",
+    "created_at": null,
+    "updated_at": null
+  },
+  "fact": {
+    "provenance": [
+      "PROVIDED"
+    ],
+    "verification_status": [
+      "UNVERIFIED",
+      "PROVIDED",
+      "VERIFIED"
+    ],
+    "publication_status": [
+      "NOT_APPROVED",
+      "APPROVED_FOR_PUBLICATION"
+    ],
+    "unverified_cannot_be_approved": true
+  },
+  "private_contact": {
+    "stored_in": "data/author_library/private",
+    "fields": [
+      "email",
+      "phone",
+      "management_contact"
+    ],
+    "copied_to_back_cover": false
+  },
+  "roles": [
+    "BOOK_AUTHOR",
+    "RECORDED_SPEAKER",
+    "COMMISSIONING_CLIENT",
+    "PROJECT_OWNER",
+    "DEPOSITOR"
+  ],
+  "depositor_implies_author": false,
+  "project_link_copies_profile": false,
+  "published_cover_stores": "biography_snapshot",
+  "central_profile_edits_rewrite_existing_covers": false,
+  "production_profiles_seeded": false
+}

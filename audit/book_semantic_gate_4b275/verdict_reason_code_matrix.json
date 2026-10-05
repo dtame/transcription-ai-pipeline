@@ -1,0 +1,530 @@
+{
+  "phase": "4B.2.7.5",
+  "structural_cases": [
+    {
+      "name": "supported_with_blocking_reason",
+      "classification": "SUPPORTED",
+      "codes": [
+        "NEW_FACT"
+      ],
+      "layer": "structural_compliance",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "ok": true,
+      "errors": [
+        "reasons_forbidden_for_SUPPORTED"
+      ],
+      "note": null,
+      "silently_accepted_unknown": false
+    },
+    {
+      "name": "questionable_without_reason",
+      "classification": "QUESTIONABLE",
+      "codes": [],
+      "layer": "structural_compliance",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "ok": true,
+      "errors": [
+        "reason_code_missing"
+      ],
+      "note": null,
+      "silently_accepted_unknown": false
+    },
+    {
+      "name": "unsupported_without_reason",
+      "classification": "UNSUPPORTED",
+      "codes": [],
+      "layer": "structural_compliance",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "ok": true,
+      "errors": [
+        "reason_code_missing"
+      ],
+      "note": null,
+      "silently_accepted_unknown": false
+    },
+    {
+      "name": "unknown_code",
+      "classification": "UNSUPPORTED",
+      "codes": [
+        "INVENTED_CAUSAL_LINK"
+      ],
+      "layer": "structural_compliance",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "ok": true,
+      "errors": [
+        "unknown_reason_INVENTED_CAUSAL_LINK"
+      ],
+      "note": null,
+      "silently_accepted_unknown": false
+    },
+    {
+      "name": "misspelled_code",
+      "classification": "QUESTIONABLE",
+      "codes": [
+        "NEW_CAUSAL_LIK"
+      ],
+      "layer": "structural_compliance",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "ok": true,
+      "errors": [
+        "unknown_reason_NEW_CAUSAL_LIK"
+      ],
+      "note": null,
+      "silently_accepted_unknown": false
+    },
+    {
+      "name": "wrong_case",
+      "classification": "QUESTIONABLE",
+      "codes": [
+        "new_causal_link"
+      ],
+      "layer": "structural_compliance",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "ok": true,
+      "errors": [
+        "unknown_reason_new_causal_link"
+      ],
+      "note": null,
+      "silently_accepted_unknown": false
+    },
+    {
+      "name": "valid_code_structurally_ok",
+      "classification": "UNSUPPORTED",
+      "codes": [
+        "NEW_CAUSAL_LINK"
+      ],
+      "layer": "structural_compliance",
+      "expected": "PASS",
+      "observed": "PASS",
+      "ok": true,
+      "errors": [],
+      "note": null,
+      "silently_accepted_unknown": false
+    },
+    {
+      "name": "valid_code_semantically_inconsistent",
+      "classification": "QUESTIONABLE",
+      "codes": [
+        "INVENTED_EXAMPLE"
+      ],
+      "layer": "semantic_coherence_diagnostic_only",
+      "expected": "PASS",
+      "observed": "PASS",
+      "ok": true,
+      "errors": [],
+      "note": "A catalog code on a reservation is structurally valid even when the named problem type does not fit the claim. Semantic fit is not treated as a deterministic FAIL.",
+      "silently_accepted_unknown": false
+    }
+  ],
+  "structural_passed": true,
+  "compatibility": [
+    {
+      "verdict": "SUPPORTED",
+      "code": "NEW_FACT",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "NEW_CAUSAL_LINK",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "NEW_ARGUMENT",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "NEW_CONCLUSION",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "NEW_DOCTRINAL_CLAIM",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "NEW_IMPLICATION",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "INVENTED_EXAMPLE",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "INVENTED_ANECDOTE",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "INVENTED_HYPOTHETICAL",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "REFERENCE_COMPLETION",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "REFERENCE_EXPANSION",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "QUOTE_EXPANSION",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "UNCERTAINTY_STRENGTHENED",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "SOURCE_MEANING_DISTORTED",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "EVIDENCE_MISMATCH",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "SUPPORTED",
+      "code": "OTHER",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "NEW_FACT",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "NEW_CAUSAL_LINK",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "NEW_ARGUMENT",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "NEW_CONCLUSION",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "NEW_DOCTRINAL_CLAIM",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "NEW_IMPLICATION",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "INVENTED_EXAMPLE",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "INVENTED_ANECDOTE",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "INVENTED_HYPOTHETICAL",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "REFERENCE_COMPLETION",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "REFERENCE_EXPANSION",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "QUOTE_EXPANSION",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "UNCERTAINTY_STRENGTHENED",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "SOURCE_MEANING_DISTORTED",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "EVIDENCE_MISMATCH",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "QUESTIONABLE",
+      "code": "OTHER",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "NEW_FACT",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "NEW_CAUSAL_LINK",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "NEW_ARGUMENT",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "NEW_CONCLUSION",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "NEW_DOCTRINAL_CLAIM",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "NEW_IMPLICATION",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "INVENTED_EXAMPLE",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "INVENTED_ANECDOTE",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "INVENTED_HYPOTHETICAL",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "REFERENCE_COMPLETION",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "REFERENCE_EXPANSION",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "QUOTE_EXPANSION",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "UNCERTAINTY_STRENGTHENED",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "SOURCE_MEANING_DISTORTED",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "EVIDENCE_MISMATCH",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "UNSUPPORTED",
+      "code": "OTHER",
+      "structural": "PASS_IF_CATALOG_MEMBER",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "NEW_FACT",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "NEW_CAUSAL_LINK",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "NEW_ARGUMENT",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "NEW_CONCLUSION",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "NEW_DOCTRINAL_CLAIM",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "NEW_IMPLICATION",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "INVENTED_EXAMPLE",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "INVENTED_ANECDOTE",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "INVENTED_HYPOTHETICAL",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "REFERENCE_COMPLETION",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "REFERENCE_EXPANSION",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "QUOTE_EXPANSION",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "UNCERTAINTY_STRENGTHENED",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "SOURCE_MEANING_DISTORTED",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "EVIDENCE_MISMATCH",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    },
+    {
+      "verdict": "NON_SUBSTANTIVE",
+      "code": "OTHER",
+      "structural": "FAIL_REASONS_FORBIDDEN",
+      "semantic_fit": "DIAGNOSTIC_NOT_DETERMINISTIC"
+    }
+  ],
+  "layers": {
+    "structural_compliance": "Unknown, missing, forbidden, misspelled, or wrong-case codes FAIL acceptance. Deterministic.",
+    "semantic_coherence": "A catalog code whose named problem type does not fit the claim is structurally valid. Fit requires human or model interpretation and is diagnostic-only."
+  },
+  "semantic_fit_heuristics": {
+    "NEW_CAUSAL_LINK": "claim asserts a because/therefore/as-a-result relation",
+    "NEW_IMPLICATION": "claim asserts a meaning, origin, or 'which means' extension",
+    "INVENTED_EXAMPLE": "claim contains an illustrative case or scene",
+    "REFERENCE_COMPLETION": "claim completes a partial REF/citation",
+    "REFERENCE_EXPANSION": "claim expands a supplied reference",
+    "UNCERTAINTY_STRENGTHENED": "claim raises modality, quantity, or completeness",
+    "NEW_FACT": "claim asserts a fact absent from evidence",
+    "EVIDENCE_MISMATCH": "cited handles do not actually support the claim"
+  },
+  "causal_code_on_non_causal_reservation": "PASS_STRUCTURALLY_DIAGNOSTIC_ONLY",
+  "reference_code_without_reference": "PASS_STRUCTURALLY_DIAGNOSTIC_ONLY",
+  "invented_example_code_without_example": "PASS_STRUCTURALLY_DIAGNOSTIC_ONLY",
+  "secrets_included": false
+}

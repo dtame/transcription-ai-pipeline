@@ -1,0 +1,24 @@
+{
+  "phase": "4B.2.7.4",
+  "function": "validate_coverage(paragraph, claims)",
+  "pure": true,
+  "deterministic": true,
+  "testable": true,
+  "inputs": [
+    "original paragraph",
+    "model spans"
+  ],
+  "steps": [
+    "validate offsets",
+    "detect overlaps without shifting spans",
+    "identify uncovered intervals",
+    "classify each character by identity and immediate context",
+    "accept only admissible separators and terminators",
+    "refuse substantive intervals",
+    "emit a detailed audit"
+  ],
+  "does_not_infer_omitted_words_are_covered": true,
+  "admissible_punctuation_is_not_a_bypass": true,
+  "historical_uncovered_spans_unmodified": true,
+  "secrets_included": false
+}

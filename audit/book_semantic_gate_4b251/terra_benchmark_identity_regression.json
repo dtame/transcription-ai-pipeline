@@ -1,0 +1,111 @@
+{
+  "identity": {
+    "phase": "4B.2.4",
+    "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b23/book_semantic_gate_4b23_historical_benchmark.json",
+    "exists": true,
+    "sha256": "3888806c68eeff7dc363790d4e0ffcf063e099c3f295e684b80b3c9e8167af82",
+    "bytes": 13293,
+    "dataset_sha256": "c247aa88c46ee4e563a00b777dd24f9e49bc4475b60b55e1463f7f60be9e10a8",
+    "artifact_case_count": 11,
+    "scored_case_count": 10,
+    "positive_count": 6,
+    "negative_count": 4,
+    "positive_case_ids": [
+      "4b22_p2_supported",
+      "4b22_p4_supported",
+      "4b22_p5_supported",
+      "4b22_p6_supported",
+      "4b22_p7_supported",
+      "4b2_p2_supported"
+    ],
+    "negative_case_ids": [
+      "4b22_p3_new_causal",
+      "4b22_p8_reference_completion",
+      "4b2_p8_invented_funeral",
+      "4b2_p13_unsupported_connective"
+    ],
+    "excluded_case_ids": [
+      "4b22_p1_connective"
+    ],
+    "p9b": {
+      "status": "DETERMINISTIC_VALIDATOR_BLOCK",
+      "semantic_benchmark_case": false,
+      "raw_present": true,
+      "reason": "Empty paragraph is deterministic BookGenerationValidator territory. It is blocked before the semantic gate and is not a semantic PASS/FAIL label."
+    },
+    "human_labels_are_ground_truth": true,
+    "original_candidates_modified": false,
+    "terra_called_in_artifact": false,
+    "expected": {
+      "sha256": "3888806c68eeff7dc363790d4e0ffcf063e099c3f295e684b80b3c9e8167af82",
+      "bytes": 13293,
+      "dataset_sha256": "c247aa88c46ee4e563a00b777dd24f9e49bc4475b60b55e1463f7f60be9e10a8",
+      "artifact_cases": 11,
+      "scored_cases": 10,
+      "positives": 6,
+      "negatives": 4
+    },
+    "identity_match": true
+  },
+  "case_count": 10,
+  "label_leakage": 0,
+  "contracts": {
+    "prompt": {
+      "version": "book-semantic-validator-1.0",
+      "system_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+      "instructions_sha256": "4747261db399a1b934221c455502e9b55f54498bab4f31ae29dff9ef6e6e8ccc",
+      "prompt_sha256": "6bc72002b50f77613f71c0241cde133fdc04527c37d6b630bf5794641a443bbf",
+      "role": "evidence-bounded semantic auditor",
+      "no_chain_of_thought": true,
+      "no_manuscript_rewrite": true
+    },
+    "schema": {
+      "transport_version": "book-semantic-validation-transport-1.0",
+      "raw_schema_sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689",
+      "raw_schema_bytes": 3261,
+      "engine_mode": "json_object",
+      "native_json_schema_response_format": false,
+      "openai_engine_compatible": true,
+      "temperature_in_schema": false,
+      "thinking_in_schema": false,
+      "additional_properties_closed": false,
+      "note": "OpenAIEngine currently sends response_format=json_object. This schema is the local contract and prompt identity, not an unverified native json_schema API feature."
+    },
+    "transport": {
+      "version": "book-semantic-validation-transport-1.0",
+      "top_level": [
+        "ch",
+        "pr",
+        "rr",
+        "sc",
+        "uh",
+        "v"
+      ],
+      "paragraph_fields": [
+        "c",
+        "ev",
+        "h",
+        "r",
+        "v"
+      ],
+      "claim_fields": [
+        "cf",
+        "e",
+        "ev",
+        "i",
+        "k",
+        "r",
+        "s",
+        "t",
+        "x"
+      ],
+      "canonical_ids_from_provider": false,
+      "engine_decode": "local_only",
+      "no_service_json_loads_of_http": true
+    },
+    "prompt_match": true,
+    "schema_match": true,
+    "transport_match": true,
+    "contract_match": true
+  }
+}

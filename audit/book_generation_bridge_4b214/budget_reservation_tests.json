@@ -1,0 +1,118 @@
+{
+  "phase": "4B.2.14",
+  "ok": true,
+  "sufficient": {
+    "ok": true,
+    "authorized": true,
+    "reservation_id": "586f2cdf-7c4b-49be-bb9f-444dad8e94c0",
+    "operation_id": "op-sufficient",
+    "state": "reserved",
+    "reserved_usd": 0.015118,
+    "status": "reserved",
+    "counted_as_zero": false,
+    "not_an_invoice": true
+  },
+  "insufficient": {
+    "ok": false,
+    "authorized": false,
+    "reason": "per_operation_ceiling_exceeded",
+    "reservation_id": null,
+    "operation_id": "op-insufficient",
+    "estimate": {
+      "status": "estimated",
+      "usd": 1.55,
+      "base_usd": 1.24,
+      "safety_factor": "1.25",
+      "counted_as_zero": false,
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "chapter_id": "CH001",
+      "operation": "semantic_gate_paragraph",
+      "ledger": "semantic_gate",
+      "input_tokens": 500000,
+      "output_token_cap": 20000,
+      "pricing_effective_date": "2026-09-18",
+      "not_a_provider_invoice": true,
+      "unmodeled_regimes": "long_context_not_modeled"
+    },
+    "counted_as_zero": false
+  },
+  "unknown": {
+    "ok": false,
+    "authorized": false,
+    "reason": "cost_unknown_blocks_execution",
+    "reservation_id": null,
+    "operation_id": "op-unknown",
+    "estimate": {
+      "status": "UNKNOWN",
+      "usd": null,
+      "counted_as_zero": false,
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "chapter_id": "CH001",
+      "operation": "semantic_gate_paragraph",
+      "ledger": "semantic_gate",
+      "reason": "insufficient token estimate; execution blocked or needs human authorization"
+    },
+    "human_unknown_override_required": true,
+    "counted_as_zero": false
+  },
+  "phase5_unknown_or_unbounded_blocked": {
+    "ok": false,
+    "authorized": false,
+    "reason": "ledger_ceiling_unknown_blocks_execution",
+    "reservation_id": null,
+    "operation_id": "op-phase5",
+    "ledger": "book_validator",
+    "estimate": {
+      "status": "estimated",
+      "usd": 0.0175,
+      "base_usd": 0.014,
+      "safety_factor": "1.25",
+      "counted_as_zero": false,
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "chapter_id": "CH001",
+      "operation": "phase5",
+      "ledger": "book_validator",
+      "input_tokens": 1000,
+      "output_token_cap": 1000,
+      "pricing_effective_date": "2026-09-18",
+      "not_a_provider_invoice": true,
+      "unmodeled_regimes": "long_context_not_modeled"
+    },
+    "counted_as_zero": false
+  },
+  "policy": {
+    "phase": "4B.2.14",
+    "version": "book-execution-budget-4b214-candidate",
+    "ledgers": [
+      "book_generator",
+      "semantic_gate",
+      "book_validator",
+      "global"
+    ],
+    "cost_states": [
+      "estimated",
+      "observed",
+      "reserved",
+      "committed",
+      "UNKNOWN"
+    ],
+    "unknown_never_becomes_zero": true,
+    "unknown_blocks_or_requires_human_authorization": true,
+    "control_before_call": true,
+    "reservation_is_not_an_invoice": true,
+    "interrupt_after_send_is_not_free": true,
+    "no_automatic_retry_after_uncertain_send": true,
+    "book_validator_cost": "UNKNOWN",
+    "phase5_cost": "UNKNOWN",
+    "pricing_effective_date": "2026-09-18",
+    "tariffs_are_configured_local_rates_not_necessarily_current": true,
+    "secrets_included": false
+  },
+  "unknown_never_zero": true,
+  "control_before_call": true,
+  "reservation_is_not_invoice": true,
+  "secrets_included": false
+}

@@ -1,0 +1,18 @@
+{
+  "returncode": 0,
+  "summary": "160 passed in 22.18s",
+  "passed": 160,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b215.py",
+    "app/tests/test_book_semantic_gate_4b212.py",
+    "app/tests/test_book_semantic_gate_4b29.py",
+    "app/tests/test_ai_providers.py"
+  ],
+  "real_provider_calls": 0,
+  "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "phase": "4B.2.15"
+}

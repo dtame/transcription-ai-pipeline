@@ -1,0 +1,40 @@
+{
+  "phase": "4B.2.21",
+  "authorization_scope": "BOOK_GENERATION_LATER_PHASE_CH018_FIRST_REMAINING_CHAPTER_ONE_SHOT_ONLY",
+  "state": "RESPONSE_VALIDATED",
+  "consumed": true,
+  "reusable": false,
+  "fallback": "forbidden",
+  "retry": "forbidden",
+  "openai": "forbidden",
+  "terra": "forbidden",
+  "other_chapters": "forbidden",
+  "production_writes": "forbidden",
+  "request_sha256": "4f762ecdefce6c235bf183b08a010f24b1a6dcdf0120a6a3eed01345436339b5",
+  "created_at": "2026-10-04T04:20:06+00:00",
+  "updated_at": "2026-10-04T04:21:08+00:00",
+  "history": [
+    {
+      "state": "PREPARATION_NO_CALL",
+      "updated_at": "2026-10-04T04:20:06+00:00"
+    },
+    {
+      "state": "PREPARATION_NO_CALL",
+      "updated_at": "2026-10-04T04:20:49+00:00"
+    },
+    {
+      "state": "CALL_RESERVED",
+      "updated_at": "2026-10-04T04:20:49+00:00"
+    },
+    {
+      "state": "CALL_POSSIBLY_SENT",
+      "updated_at": "2026-10-04T04:20:49+00:00"
+    },
+    {
+      "state": "RESPONSE_RECEIVED",
+      "updated_at": "2026-10-04T04:21:08+00:00"
+    }
+  ],
+  "note": "Response structurally validated.",
+  "secrets_included": false
+}

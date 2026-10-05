@@ -1,0 +1,70 @@
+{
+  "phase": "4B.2.10",
+  "intercepted": true,
+  "prepared_without_send": true,
+  "prepared_via": "OpenAI._build_request",
+  "network_calls": 0,
+  "http_requests": 0,
+  "remote_invocations": 0,
+  "provider_responses": 0,
+  "method": "POST",
+  "url_path": "/v1/chat/completions",
+  "body_non_secret_fields": {
+    "model": "gpt-5.6-terra",
+    "max_completion_tokens": 8192,
+    "response_format": {
+      "type": "json_object"
+    },
+    "temperature_present": false,
+    "max_tokens_present": false,
+    "message_roles": [
+      "system",
+      "user"
+    ]
+  },
+  "headers_redacted": {
+    "host": "api.openai.com",
+    "accept-encoding": "gzip, deflate",
+    "connection": "keep-alive",
+    "authorization": "REDACTED",
+    "accept": "application/json",
+    "content-type": "application/json",
+    "user-agent": "OpenAI/Python 2.43.0",
+    "x-stainless-lang": "python",
+    "x-stainless-package-version": "2.43.0",
+    "x-stainless-os": "Windows",
+    "x-stainless-arch": "other:amd64",
+    "x-stainless-runtime": "CPython",
+    "x-stainless-runtime-version": "3.11.9",
+    "x-stainless-async": "false",
+    "x-stainless-retry-count": "0",
+    "x-stainless-read-timeout": "600",
+    "content-length": "5630"
+  },
+  "checks": {
+    "exactly_one_paragraph": true,
+    "contract_201": true,
+    "transport_20": true,
+    "instruction_present": true,
+    "max_completion_tokens": true,
+    "max_tokens_absent": true,
+    "temperature_absent": true,
+    "reasoning_params_absent": true,
+    "json_object": true,
+    "model": true,
+    "endpoint": "chat.completions",
+    "sdk_method": "client.chat.completions.create",
+    "token_field": "max_completion_tokens",
+    "future_retries_disabled": true,
+    "label_leak_absent": true,
+    "no_fallback": true,
+    "no_retry": true
+  },
+  "serialization_pass": true,
+  "label_leakage": 0,
+  "case_leak_hits": [],
+  "sdk_max_retries_for_future_invocation": 0,
+  "fallbacks": 0,
+  "retries": 0,
+  "secrets_included": false
+}

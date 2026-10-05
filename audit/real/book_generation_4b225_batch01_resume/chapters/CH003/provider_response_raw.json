@@ -1,0 +1,269 @@
+{
+  "phase": "4B.2.25",
+  "chapter_id": "CH003",
+  "http_success": true,
+  "finish_reason": "end_turn",
+  "parsed": {
+    "sections": [
+      {
+        "sid": "SEC009",
+        "paras": [
+          {
+            "h": "p1",
+            "k": "sub",
+            "t": "We turned together to Hebrews chapter 2, reading it as a group, some in English and some in French. The text declares that Jesus was made a little lower than the angels, and that for the suffering of death we see him crowned with glory and honor. He suffered death for everyone.",
+            "e": [
+              "IDEA032",
+              "SRC000852",
+              "SRC000856",
+              "SRC000859",
+              "SRC000861",
+              "REF007",
+              "SRC000655",
+              "SRC000658",
+              "SRC000695",
+              "EX004"
+            ]
+          },
+          {
+            "h": "p2",
+            "k": "sub",
+            "t": "The passage goes further. Because the children share in flesh and blood, Christ himself likewise shared in the same, so that through death he might destroy the one who holds the power of death, that is, the devil. In French the text was read as saying he passed through death himself in order to act against the one who held that power.",
+            "e": [
+              "IDEA033",
+              "SRC000936",
+              "SRC000946",
+              "SRC000952",
+              "SRC001011",
+              "REF007"
+            ]
+          },
+          {
+            "h": "p3",
+            "k": "sub",
+            "t": "At that point a dispute broke out over the French rendering. The word in question was 'néanti.' One person read it as meaning that the devil was annulled, brought to nothing, destroyed. Another objected that this made it sound as though the devil had only negotiated, retaining some form of power. A third insisted the text says plainly that he was destroyed, and pointed back to the Bible itself as the source of that wording.",
+            "e": [
+              "IDEA035",
+              "SRC000963",
+              "SRC000967",
+              "SRC000970",
+              "SRC000972"
+            ],
+            "u": [
+              "UNC005"
+            ]
+          },
+          {
+            "h": "p4",
+            "k": "con",
+            "t": "That disagreement over the precise force of the French word was not settled in the room, and I leave it exactly as it stood.",
+            "e": [
+              "UNC005"
+            ]
+          },
+          {
+            "h": "p5",
+            "k": "sub",
+            "t": "We also noted 1 John chapter 3 verse 8 alongside this reading in Hebrews, since both texts speak to the same reality concerning the works of the devil and the purpose of Christ's coming.",
+            "e": [
+              "REF008",
+              "SRC000674"
+            ]
+          }
+        ]
+      },
+      {
+        "sid": "SEC010",
+        "paras": [
+          {
+            "h": "p6",
+            "k": "sub",
+            "t": "On the Mambila plateau, missionaries went to reach a hill community. The land was given to them by local authority through a ritual involving the throwing of a stone. This part of the account was told to me, and I was not myself present for every detail of how it unfolded.",
+            "e": [
+              "EX003",
+              "SRC000790",
+              "SRC000806",
+              "SRC000751",
+              "SRC000753",
+              "SRC000761",
+              "SRC000767"
+            ],
+            "u": [
+              "UNC004"
+            ]
+          },
+          {
+            "h": "p7",
+            "k": "sub",
+            "t": "After the gospel was preached there, villagers were told to go and take scorpions, and were told that the scorpions would not harm them. They did, and the scorpions did them no harm.",
+            "e": [
+              "IDEA030",
+              "SRC000811",
+              "SRC000814",
+              "SRC000820"
+            ]
+          },
+          {
+            "h": "p8",
+            "k": "sub",
+            "t": "I was told something else striking: that it is often the preachers themselves, the very ones who carry the power of God in their life and in their mouth, who end up dodging or trying to escape from exercising that power rather than using it.",
+            "e": [
+              "IDEA031",
+              "SRC000824",
+              "SRC000826",
+              "SRC000828"
+            ]
+          },
+          {
+            "h": "p9",
+            "k": "sub",
+            "t": "There is a contrast worth naming. If you go to the body of Christ globally, many acknowledge that what they experience of the demonic is comparatively muted. But go to Africa, and you will hear it said that the devils there are real, that the devil in our village is terrible. There is almost a pride taken in how intense the local demonic reality is said to be, set against a global church that speaks of it with far less weight.",
+            "e": [
+              "IDEA034",
+              "SRC000958",
+              "SRC001044",
+              "SRC001058",
+              "SRC001060",
+              "SRC001063"
+            ]
+          }
+        ]
+      },
+      {
+        "sid": "SEC011",
+        "paras": [
+          {
+            "h": "p10",
+            "k": "sub",
+            "t": "Many believers carry in their heads an image of a powerful Christ, the one who walked on top of the water. That picture stays fixed as something to admire from a distance, an image of someone else's power rather than something they themselves share in.",
+            "e": [
+              "IDEA025",
+              "SRC000582",
+              "SRC000585",
+              "SRC000592"
+            ]
+          },
+          {
+            "h": "p11",
+            "k": "sub",
+            "t": "But that power is already inside of you. You do not need to go to any mountain to find it. Greater is he who is in you. The condition is not an external pilgrimage or an extreme discipline; it is already present within.",
+            "e": [
+              "IDEA026",
+              "SRC000597",
+              "SRC000600",
+              "SRC000603",
+              "SRC000605"
+            ]
+          },
+          {
+            "h": "p12",
+            "k": "sub",
+            "t": "Romans chapter 12, verses 1 and 2, instructs that believers are to be presented as a living sacrifice, not conformed to this world but transformed by the renewing of the mind. The battle is fought there, in the mind, and pastors are charged with that renewal rather than with conformity to worldly patterns.",
+            "e": [
+              "IDEA027",
+              "SRC000619",
+              "SRC000620",
+              "SRC000622",
+              "SRC000631",
+              "SRC000639",
+              "REF005"
+            ]
+          },
+          {
+            "h": "p13",
+            "k": "sub",
+            "t": "Churches are not to keep handing people another revelation. Teach the same thing. Teach Jesus and him glorified. Do not change.",
+            "e": [
+              "IDEA028",
+              "SRC000646",
+              "SRC000649",
+              "SRC000650",
+              "SRC000651"
+            ]
+          },
+          {
+            "h": "p14",
+            "k": "sub",
+            "t": "You deserve glory. Many resist this and say no, you don't deserve glory, because that is what they were taught. But that refusal is itself antichrist thinking, a false modesty that denies what belongs to the believer the way it belonged to Christ.",
+            "e": [
+              "IDEA029",
+              "SRC000716",
+              "SRC000722",
+              "SRC000730",
+              "SRC000735"
+            ]
+          },
+          {
+            "h": "p15",
+            "k": "con",
+            "t": "One reference was raised in passing, Romans chapter 10, somewhere around verse 7, though the precise point intended there was not fully developed in what was said.",
+            "e": [
+              "REF004",
+              "SRC000563",
+              "SRC000564"
+            ]
+          }
+        ]
+      },
+      {
+        "sid": "SEC012",
+        "paras": [
+          {
+            "h": "p16",
+            "k": "sub",
+            "t": "The question was put directly: what are you going to be teaching from today? The apostles could each say, my gospel which I brought to you. So what will be your gospel, going forward, now that this has been read and heard?",
+            "e": [
+              "IDEA038",
+              "SRC001148",
+              "SRC001154",
+              "SRC001159",
+              "SRC001166"
+            ]
+          },
+          {
+            "h": "p17",
+            "k": "sub",
+            "t": "When you have discovered that the devil has been destroyed, and that death is destroyed, imagine what your prayer will be tonight. Discovering this changes the very content and boldness of what you bring before God.",
+            "e": [
+              "IDEA098",
+              "SRC002760",
+              "SRC002762",
+              "SRC002764"
+            ]
+          },
+          {
+            "h": "p18",
+            "k": "sub",
+            "t": "A demon can walk into your house and you will not even bother, because you know what that thing is. If the master is destroyed, what is this one? There is a confidence that comes with knowledge. When you know this thing, everybody can run from you. But I know who you are: you are a paper tiger, a bulldog without teeth.",
+            "e": [
+              "IDEA099",
+              "SRC002783",
+              "SRC002785",
+              "SRC002786",
+              "SRC002788",
+              "SRC002791",
+              "SRC002792",
+              "SRC002793",
+              "SRC002794",
+              "SRC002795",
+              "SRC002796"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "raw_sha256": "0a3307eeb237c31ea4232ac45f4e8620249d2716788a540d2c426bf7c95067b4",
+  "raw_chars": 6396,
+  "error": null,
+  "invented_response": false,
+  "empty_paragraph_diagnostic": {
+    "empty_paragraphs": 0,
+    "present": false,
+    "normalization_installed": false,
+    "retry_issued": false,
+    "raw_response_kept_intact": true,
+    "note": "No empty paragraph detected."
+  },
+  "secrets_included": false
+}

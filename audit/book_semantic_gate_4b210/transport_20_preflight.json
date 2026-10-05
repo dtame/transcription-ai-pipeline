@@ -1,0 +1,46 @@
+{
+  "phase": "4B.2.10",
+  "transport_version": "book-semantic-validation-transport-2.0-candidate",
+  "transport_activated": false,
+  "schema_sha256": "6ced6be3c7aaa191508c2acb23319956ecc6c9f5f080d6057faf4d15244ada4e",
+  "model_must_not_emit_offsets": true,
+  "model_must_not_copy_unit_text": true,
+  "output_fields": [
+    "ch",
+    "v",
+    "pr.h",
+    "pr.v",
+    "pr.u.id",
+    "pr.u.k",
+    "pr.u.ev",
+    "pr.u.r",
+    "pr.u.n",
+    "sc",
+    "uh",
+    "rr"
+  ],
+  "errors_not_repaired": "reported by local validator, not repaired",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "endpoint": "chat.completions",
+  "token_field": "max_completion_tokens",
+  "token_parameter": "max_completion_tokens",
+  "do_not_send": [
+    "max_tokens",
+    "max_output_tokens"
+  ],
+  "max_completion_tokens": 8192,
+  "response_format": {
+    "type": "json_object"
+  },
+  "temperature": "omit",
+  "reasoning_effort": "omit",
+  "retries": 0,
+  "fallbacks": 0,
+  "sdk_max_retries": 0,
+  "finish_reason_capture_planned": true,
+  "usage_capture_planned": true,
+  "reasoning_tokens_capture_planned_when_available": true,
+  "real_transport_not_activated": true,
+  "secrets_included": false
+}

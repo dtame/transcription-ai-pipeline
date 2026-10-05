@@ -1,0 +1,13 @@
+{
+  "phase": "4B.2.17",
+  "algorithm": "sha256",
+  "request_sha256": "c392b4d4ce2b6c82455d65bbd4cddf6fac961d08ef728d204abd0194876f63c9",
+  "request_sha256_repeat": "c392b4d4ce2b6c82455d65bbd4cddf6fac961d08ef728d204abd0194876f63c9",
+  "deterministic": true,
+  "model": "claude-sonnet-5",
+  "max_tokens": 8906,
+  "prompt_version": "book-generator-faithful-restatement-1.0-candidate",
+  "chapter_id": "CH012",
+  "http_sent": true,
+  "secrets_included": false
+}

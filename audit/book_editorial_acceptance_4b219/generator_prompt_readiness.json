@@ -1,0 +1,40 @@
+{
+  "phase": "4B.2.19",
+  "version": "book-generator-faithful-restatement-1.1-candidate",
+  "activated": false,
+  "registered_in_prompt_select": false,
+  "replaces_historical_prompt": false,
+  "replaces_faithful_prompt_1_0_candidate": false,
+  "historical_versions_left_in_place": [
+    "book-generator-1.0",
+    "book-generator-1.0.1",
+    "book-generator-faithful-restatement-1.0-candidate",
+    "book-semantic-validator-2.0.2-candidate"
+  ],
+  "checks": {
+    "strict_content_fidelity": true,
+    "controlled_thematic_reorganization": true,
+    "authorial_voice_preservation": true,
+    "prudent_attribution": true,
+    "nuance_preservation": true,
+    "example_preservation": true,
+    "reference_preservation": true,
+    "idea_traceability_requirement": true,
+    "validator_compatible_output_contract": true
+  },
+  "blocking_gaps": [],
+  "operational_risks_not_textual_gaps": [
+    "Prompt 1.1 has never been used in a real provider call.",
+    "CH012 was generated with 1.0-candidate and has empty paragraph IDEA handles.",
+    "The historical validator still accounts ideas by handle in paras[].e.",
+    "A future isolated execution must stop if IDEA handles are invented or sprayed."
+  ],
+  "untested_in_real_call": true,
+  "ready_as_reference_candidate": true,
+  "ready_for_production": false,
+  "automatically_promoted": false,
+  "prompt_sha256": "e39084dc9ed3b048bfdaa2e112b380d15957085eeb613dd74c97a32b880cec50",
+  "system_sha256": "f1ba90063e8dd54ad45924924361ff3f7409132983185b2b6d974df03706f901",
+  "instructions_sha256": "aad6cddbf6418fda0092b90c8295e3801f8413dce79234b97e652e0b7f6f41ed",
+  "secrets_included": false
+}

@@ -1,0 +1,158 @@
+{
+  "phase": "4B.2.26",
+  "passed": 30,
+  "failed": 0,
+  "rows": [
+    {
+      "name": "empty_without_provenance_removed",
+      "ok": true,
+      "detail": "strict empty unprovenanced paragraph deleted"
+    },
+    {
+      "name": "whitespace_without_provenance_removed",
+      "ok": true,
+      "detail": "whitespace-only unprovenanced paragraph deleted"
+    },
+    {
+      "name": "empty_with_idea_kept",
+      "ok": true,
+      "detail": "empty paragraph with IDEA conserved"
+    },
+    {
+      "name": "empty_with_src_kept",
+      "ok": true,
+      "detail": "empty paragraph with SRC conserved"
+    },
+    {
+      "name": "empty_with_ex_kept",
+      "ok": true,
+      "detail": "empty paragraph with EX conserved"
+    },
+    {
+      "name": "empty_with_ref_kept",
+      "ok": true,
+      "detail": "empty paragraph with REF conserved"
+    },
+    {
+      "name": "empty_with_unc_kept",
+      "ok": true,
+      "detail": "empty paragraph with UNC conserved"
+    },
+    {
+      "name": "empty_with_attribution_kept",
+      "ok": true,
+      "detail": "empty paragraph with attribution conserved"
+    },
+    {
+      "name": "empty_with_unknown_metadata_kept",
+      "ok": true,
+      "detail": "empty paragraph with unknown metadata conserved by default"
+    },
+    {
+      "name": "referenced_paragraph_kept",
+      "ok": true,
+      "detail": "empty paragraph referenced elsewhere conserved"
+    },
+    {
+      "name": "empty_with_citation_kept",
+      "ok": true,
+      "detail": "empty paragraph with citation conserved"
+    },
+    {
+      "name": "multiple_independent_empties_removed",
+      "ok": true,
+      "detail": "independent empty paragraphs removed without touching others"
+    },
+    {
+      "name": "non_empty_paragraphs_unchanged",
+      "ok": true,
+      "detail": "non-empty paragraphs were not rewritten"
+    },
+    {
+      "name": "identifiers_not_renumbered",
+      "ok": true,
+      "detail": "remaining identifiers were not renumbered"
+    },
+    {
+      "name": "idempotent",
+      "ok": true,
+      "detail": "second pass removes nothing"
+    },
+    {
+      "name": "raw_response_unchanged",
+      "ok": true,
+      "detail": "raw provider payload was not mutated"
+    },
+    {
+      "name": "ch002_historical_equivalent_to_4b224",
+      "ok": true,
+      "detail": "historical CH002 derived result matches 4B.2.24 recovery identifiers"
+    },
+    {
+      "name": "structural_validation_after_normalization",
+      "ok": true,
+      "detail": "existing validator ran after normalization and passed recovered CH002"
+    },
+    {
+      "name": "validator_failure_rejects_candidate",
+      "ok": true,
+      "detail": "validator failure rejects the derived candidate"
+    },
+    {
+      "name": "idea_coverage_unchanged",
+      "ok": true,
+      "detail": "IDEA coverage is unchanged by empty-paragraph removal"
+    },
+    {
+      "name": "ch001_unchanged",
+      "ok": true,
+      "detail": "CH001 accepted artifact was not rewritten"
+    },
+    {
+      "name": "ch003_unchanged",
+      "ok": true,
+      "detail": "CH003 accepted artifact was not rewritten"
+    },
+    {
+      "name": "ch004_unchanged",
+      "ok": true,
+      "detail": "CH004 accepted artifact was not rewritten"
+    },
+    {
+      "name": "ch012_unchanged",
+      "ok": true,
+      "detail": "CH012 accepted artifact was not rewritten"
+    },
+    {
+      "name": "ch018_unchanged",
+      "ok": true,
+      "detail": "CH018 accepted artifact was not rewritten"
+    },
+    {
+      "name": "ch002_unchanged",
+      "ok": true,
+      "detail": "CH002 accepted artifact was not rewritten"
+    },
+    {
+      "name": "canonical_sources_unchanged",
+      "ok": true,
+      "detail": "canonical SourceMap / EditorialPlan / transcript hashes match"
+    },
+    {
+      "name": "no_http_calls",
+      "ok": true,
+      "detail": "no HTTP authorization exists in this phase"
+    },
+    {
+      "name": "no_generation_calls",
+      "ok": true,
+      "detail": "no chapter generation and no book.json"
+    },
+    {
+      "name": "empty_with_idea_not_admissible",
+      "ok": true,
+      "detail": "admissibility refuses empty IDEA paragraphs"
+    }
+  ],
+  "secrets_included": false
+}

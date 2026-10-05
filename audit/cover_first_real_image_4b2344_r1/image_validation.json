@@ -1,0 +1,34 @@
+{
+  "alpha": false,
+  "bit_depth": 8,
+  "bytes": 1864614,
+  "color_mode": "rgb",
+  "color_type": 2,
+  "decode_error": null,
+  "decoded": true,
+  "dimensions_match": true,
+  "empty": false,
+  "exists": true,
+  "expected_height": 1536,
+  "expected_width": 1024,
+  "height": 1536,
+  "metadata": {
+    "chunks": [
+      "IHDR",
+      "caBX",
+      "IDAT",
+      "IEND"
+    ],
+    "exif_bytes": 0,
+    "exif_present": false,
+    "pixels_per_unit": null,
+    "text": []
+  },
+  "output_dimension_status": null,
+  "path": "C:\\TranscriptionAI\\sortie\\pastoral_retreat_v2_validation\\publication\\covers\\generated\\front_the_door_already_open_spiritual_gpt_image_2_r1.png",
+  "png_signature": true,
+  "reasonable_size": true,
+  "sha256": "8d392f09532e104dd8d8820cb3a1ff5706a445ebe77b3993422442bd02370dc6",
+  "technical_validation": "PASS",
+  "width": 1024
+}

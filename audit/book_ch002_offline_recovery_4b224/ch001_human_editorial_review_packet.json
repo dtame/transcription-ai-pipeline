@@ -1,0 +1,359 @@
+{
+  "phase": "4B.2.24",
+  "chapter_id": "CH001",
+  "status": "GENERATED — HUMAN_REVIEW_PENDING",
+  "title": "Unlearning What Was Handed Down",
+  "sections": [
+    {
+      "section_id": "SEC001",
+      "title": "Hearing Him Directly",
+      "paragraph_count": 2
+    },
+    {
+      "section_id": "SEC002",
+      "title": "Body, Food and Inherited Habit",
+      "paragraph_count": 5
+    },
+    {
+      "section_id": "SEC003",
+      "title": "Tradition Cannot Be Accepted",
+      "paragraph_count": 3
+    },
+    {
+      "section_id": "SEC004",
+      "title": "The Question of Long Life",
+      "paragraph_count": 3
+    }
+  ],
+  "section_ids_expected": [
+    "SEC001",
+    "SEC002",
+    "SEC003",
+    "SEC004"
+  ],
+  "paragraph_count": 13,
+  "ideas_expected": [
+    "IDEA001",
+    "IDEA005",
+    "IDEA002",
+    "IDEA003",
+    "IDEA004",
+    "IDEA006",
+    "IDEA022",
+    "IDEA023",
+    "IDEA024",
+    "IDEA007",
+    "IDEA008",
+    "IDEA020"
+  ],
+  "ideas_expected_count": 12,
+  "ideas_traced": [
+    "IDEA001",
+    "IDEA002",
+    "IDEA003",
+    "IDEA004",
+    "IDEA005",
+    "IDEA006",
+    "IDEA007",
+    "IDEA008",
+    "IDEA020",
+    "IDEA022",
+    "IDEA023",
+    "IDEA024"
+  ],
+  "ideas_traced_count": 12,
+  "examples": [
+    {
+      "kind": "EX",
+      "id": "EX001",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "EX",
+      "id": "EX002",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    }
+  ],
+  "references": [
+    {
+      "kind": "REF",
+      "id": "REF001",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    },
+    {
+      "kind": "REF",
+      "id": "REF003",
+      "status": "present_and_traced",
+      "traced": true,
+      "in_allowed_handles": true
+    }
+  ],
+  "narrative_voice": {
+    "first_person_observed": true,
+    "second_person_observed": true,
+    "prior_classification": "NO_ISSUE_DETECTED",
+    "conference_report_frames": [],
+    "assessment": "First-person testimony (night eating, daughter and meat, grandmother and clay pot) and second-person address are present. Voice is generally satisfactory for human review."
+  },
+  "structural_status": "PASS",
+  "editorial_observations": [
+    "JSON is structurally valid. 12/12 IDEA handles are traced.",
+    "EX001, EX002, REF001 and REF003 are present and traced.",
+    "Identifier coverage is not a semantic certificate.",
+    {
+      "sentence": "You only did not accept it there.",
+      "paragraph_id": "P000010",
+      "section_id": "SEC003",
+      "surrounding_text": "Your tradition is not evil in itself, but it is vile in the sense that it cannot be accepted in the presence of God, no matter who started it or how intelligent they were. You only did not accept it there. The only thing accepted in the presence of God is Christ.",
+      "grammatically_awkward": true,
+      "ambiguous": true,
+      "changes_source_sense": false,
+      "can_be_corrected_without_changing_sense": true,
+      "automatic_correction_applied": false,
+      "idea_refs": [
+        "IDEA024"
+      ],
+      "idea024_summary": "Cultural traditions, no matter their origin or the intelligence of those who started them, cannot attain acceptance before God; only Christ is accepted.",
+      "supporting_src": [
+        {
+          "id": "SRC000561",
+          "text": "Your tradition is not evil.",
+          "found": true
+        },
+        {
+          "id": "SRC000566",
+          "text": "Is vile.",
+          "found": true
+        },
+        {
+          "id": "SRC000572",
+          "text": "You only didn't accept it in the presence of God.",
+          "found": true
+        },
+        {
+          "id": "SRC000573",
+          "text": "The only thing accepted in the presence of God is Christ.",
+          "found": true
+        }
+      ],
+      "closest_source": {
+        "id": "SRC000572",
+        "text": "You only didn't accept it in the presence of God.",
+        "note": "The generated sentence compresses that location into 'there'. It does not invert or invent the claim."
+      },
+      "observations": [
+        "The sentence is grammatically awkward and reads like oral residue.",
+        "SRC000572 is 'You only didn't accept it in the presence of God.'",
+        "The generated 'there' points back to 'in the presence of God' in the same paragraph.",
+        "A human may expand 'there' to the source location. This phase does not apply that correction."
+      ],
+      "proposed_reformulations": [
+        {
+          "id": "R1",
+          "proposed": "You only did not accept it in the presence of God.",
+          "preserves_sense_if": "the human wants to keep the oral 'you only did not accept it' and restore the location from SRC000572",
+          "source_refs": [
+            "SRC000561",
+            "SRC000566",
+            "SRC000572",
+            "SRC000573"
+          ],
+          "closest_src": "SRC000572",
+          "applied": false
+        },
+        {
+          "id": "R2",
+          "proposed": "You only didn't accept it in the presence of God.",
+          "preserves_sense_if": "the human prefers the exact oral contraction from SRC000572",
+          "source_refs": [
+            "SRC000561",
+            "SRC000566",
+            "SRC000572",
+            "SRC000573"
+          ],
+          "closest_src": "SRC000572",
+          "applied": false
+        }
+      ]
+    },
+    {
+      "code": "POTENTIAL_ABSOLUTE_FORMULATIONS",
+      "items": [
+        {
+          "paragraph_id": "P000007",
+          "phrase": "never cooked in an iron pot / never cooked in an aluminum pot",
+          "source_refs": [
+            "SRC000121",
+            "SRC000123",
+            "SRC000135",
+            "SRC000137",
+            "SRC000140",
+            "SRC000143",
+            "SRC000149",
+            "SRC000153"
+          ],
+          "src_texts": [
+            {
+              "id": "SRC000121",
+              "text": "And she was above 80,",
+              "found": true
+            },
+            {
+              "id": "SRC000123",
+              "text": "But particularly with her,",
+              "found": true
+            },
+            {
+              "id": "SRC000135",
+              "text": "she will never cook in iron pot.",
+              "found": true
+            },
+            {
+              "id": "SRC000137",
+              "text": "she never cooked in an aluminum mammoth.",
+              "found": true
+            },
+            {
+              "id": "SRC000140",
+              "text": "It is clay pot.",
+              "found": true
+            },
+            {
+              "id": "SRC000143",
+              "text": "Her soup is fresh.",
+              "found": true
+            },
+            {
+              "id": "SRC000149",
+              "text": "She learned the nature",
+              "found": true
+            },
+            {
+              "id": "SRC000153",
+              "text": "I see God in that.",
+              "found": true
+            }
+          ],
+          "classification": "POTENTIAL_ABSOLUTE_FORMULATION",
+          "incorrect_without_source_proof": false,
+          "note": "Anecdotal 'never' about the grandmother's pots. Not treated as a theological strengthening."
+        },
+        {
+          "paragraph_id": "P000009",
+          "phrase": "Faith is everything.",
+          "source_refs": [
+            "SRC000546",
+            "SRC000548",
+            "SRC000553",
+            "SRC000556"
+          ],
+          "src_texts": [
+            {
+              "id": "SRC000546",
+              "text": "Faith is everything.",
+              "found": true
+            },
+            {
+              "id": "SRC000548",
+              "text": "Without faith it's impossible to please God.",
+              "found": true
+            },
+            {
+              "id": "SRC000553",
+              "text": "Romans chapter 14 23 says.",
+              "found": true
+            },
+            {
+              "id": "SRC000556",
+              "text": "It is a sin.",
+              "found": true
+            }
+          ],
+          "classification": "POTENTIAL_ABSOLUTE_FORMULATION",
+          "incorrect_without_source_proof": false,
+          "source_supported": true,
+          "note": "Absolute wording, but SRC000546 is exactly 'Faith is everything.' Do not treat this as a strengthening."
+        },
+        {
+          "paragraph_id": "P000010",
+          "phrase": "The only thing accepted in the presence of God is Christ.",
+          "source_refs": [
+            "SRC000561",
+            "SRC000566",
+            "SRC000572",
+            "SRC000573"
+          ],
+          "src_texts": [
+            {
+              "id": "SRC000561",
+              "text": "Your tradition is not evil.",
+              "found": true
+            },
+            {
+              "id": "SRC000566",
+              "text": "Is vile.",
+              "found": true
+            },
+            {
+              "id": "SRC000572",
+              "text": "You only didn't accept it in the presence of God.",
+              "found": true
+            },
+            {
+              "id": "SRC000573",
+              "text": "The only thing accepted in the presence of God is Christ.",
+              "found": true
+            }
+          ],
+          "classification": "POTENTIAL_ABSOLUTE_FORMULATION",
+          "incorrect_without_source_proof": false,
+          "source_supported": true,
+          "note": "Exclusive wording, but SRC000573 is exactly 'The only thing accepted in the presence of God is Christ.'"
+        }
+      ],
+      "do_not_declare_incorrect_without_source_proof": true
+    }
+  ],
+  "passages_requiring_attention": [
+    {
+      "paragraph_id": "P000010",
+      "text": "Your tradition is not evil in itself, but it is vile in the sense that it cannot be accepted in the presence of God, no matter who started it or how intelligent they were. You only did not accept it there. The only thing accepted in the presence of God is Christ.",
+      "reason": "Awkward oral residue plus exclusive Christ-acceptance claim.",
+      "supporting_src": [
+        {
+          "id": "SRC000561",
+          "text": "Your tradition is not evil.",
+          "found": true
+        },
+        {
+          "id": "SRC000566",
+          "text": "Is vile.",
+          "found": true
+        },
+        {
+          "id": "SRC000572",
+          "text": "You only didn't accept it in the presence of God.",
+          "found": true
+        },
+        {
+          "id": "SRC000573",
+          "text": "The only thing accepted in the presence of God is Christ.",
+          "found": true
+        }
+      ]
+    }
+  ],
+  "human_decision_required": true,
+  "automatic_editorial_correction": false,
+  "human_acceptance": "PENDING",
+  "semantic_certification": "NOT PERFORMED",
+  "markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.md",
+  "markdown_preview_chars": 3326,
+  "secrets_included": false
+}

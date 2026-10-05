@@ -1,0 +1,13 @@
+{
+  "phase": "4B.2.4",
+  "attempt": 2,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b24.py",
+    "app/tests/test_book_semantic_gate_4b23.py"
+  ],
+  "returncode": 0,
+  "summary": "36 passed in 0.79s",
+  "passed": 36,
+  "new_failures": 0
+}

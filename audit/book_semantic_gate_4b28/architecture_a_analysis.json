@@ -1,0 +1,44 @@
+{
+  "phase": "4B.2.8",
+  "id": "A",
+  "name": "Current Semantic Gate",
+  "status": "DEPLOYED_AS_CANDIDATE_NOT_PRODUCTION_PROMOTED",
+  "contract": "book-semantic-validator-1.1.3-candidate",
+  "transport": "book-semantic-validation-transport-1.1-candidate",
+  "model_responsibilities": [
+    "Segment the paragraph",
+    "Identify spans and offsets",
+    "Associate evidence handles",
+    "Judge propositions",
+    "Emit verdicts and reason codes",
+    "Cover the paragraph",
+    "Respect the JSON contract"
+  ],
+  "local_responsibilities": [
+    "Validate JSON",
+    "Validate catalog membership",
+    "Validate spans and coverage",
+    "Block acceptance on FAIL/REVIEW"
+  ],
+  "advantages": [
+    "Single call, no extra local linguistic component.",
+    "Model sees the paragraph as a whole, which can preserve distributed causality.",
+    "Observed true positives: h02 invented causality; h11 universal guarantee."
+  ],
+  "observed_limits": [
+    "h01 false rejection of supported paraphrase.",
+    "h02 two false rejections plus unknown reason codes.",
+    "h11 three supported-prefix false rejections.",
+    "h11 coverage gaps are word endings, not separators.",
+    "Offsets and coverage are a structural burden on the model."
+  ],
+  "complexity": "High prompt complexity; mixed structural and semantic tasks.",
+  "cost_observed": "See cost_comparison.json. Not projected here as a prediction.",
+  "risks": [
+    "Structural errors fail an otherwise useful semantic judgment.",
+    "Prompt growth (1.1 → 1.1.3) increases input tokens without proving fewer false rejections."
+  ],
+  "terra_validated_for_this_phase": false,
+  "evidence_level": "OBSERVED",
+  "secrets_included": false
+}

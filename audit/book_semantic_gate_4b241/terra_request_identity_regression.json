@@ -1,0 +1,16 @@
+{
+  "request_sha256": "09d6472e544bc60231c77908e6608ff7ee7b6fd4746317f206301082e21eab53",
+  "request_sha256_repeat": "09d6472e544bc60231c77908e6608ff7ee7b6fd4746317f206301082e21eab53",
+  "expected_sha256": "09d6472e544bc60231c77908e6608ff7ee7b6fd4746317f206301082e21eab53",
+  "identity": "MATCH",
+  "deterministic": true,
+  "model": "gpt-5.6-terra",
+  "response_format": {
+    "type": "json_object"
+  },
+  "temperature_present": false,
+  "thinking_present": false,
+  "historical_4b24_request_unchanged": true,
+  "http_sent": false,
+  "secrets_included": false
+}

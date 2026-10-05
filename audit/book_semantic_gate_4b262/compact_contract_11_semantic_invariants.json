@@ -1,0 +1,28 @@
+{
+  "phase": "4B.2.6.2",
+  "proposition_level_control_preserved": true,
+  "do_not_drop_claim_coverage_to_save_tokens": true,
+  "classifications": {
+    "SUPPORTED": "accepted for a substantive claim",
+    "QUESTIONABLE": "blocks paragraph acceptance",
+    "UNSUPPORTED": "blocks paragraph acceptance",
+    "NON_SUBSTANTIVE": "forbidden as an escape hatch for a substantive claim that was not evaluated"
+  },
+  "unevaluated_substantive_claim_blocks_acceptance": true,
+  "valid_offset_is_not_semantic_support": true,
+  "canonical_reference_authorizes_only_supplied_text": true,
+  "biblical_reference_identity_does_not_license_completion": true,
+  "external_model_knowledge_is_not_evidence": true,
+  "human_labels_never_enter_provider_request": true,
+  "negative_cases_remain_detectable": {
+    "FUNERAL": "invented example",
+    "CONNECTIVE": "new argument, conclusion, or implication",
+    "P3": "added causal relation in a secondary clause",
+    "P8": "abusive completion of a partial 1 Corinthians 15 reference"
+  },
+  "compact_contract_must_identify_a_problematic_clause_inside_an_otherwise_supported_paragraph": true,
+  "historical_labels_unmodified": true,
+  "historical_1_0_unmodified": true,
+  "candidate_not_promoted": true,
+  "secrets_included": false
+}

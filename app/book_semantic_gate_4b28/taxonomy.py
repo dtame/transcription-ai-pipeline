@@ -1,0 +1,256 @@
+"""Failure taxonomy grounded in observed canary anomalies."""
+
+from __future__ import annotations
+
+from typing import Any
+
+from app.book_semantic_gate_4b28.constants import PHASE
+from app.book_semantic_gate_4b28.forensics import (
+    h01_claim_forensics,
+    h02_claim_forensics,
+    h11_claim_forensics,
+)
+
+
+def failure_taxonomy(*, root=None) -> dict[str, Any]:
+    h01 = h01_claim_forensics(root=root)
+    h02 = h02_claim_forensics(root=root)
+    h11 = h11_claim_forensics(root=root)
+    anomalies = [
+        {
+            "id": "h01_false_rejection_bargain",
+            "category": "Paraphrase insuffisamment reconnue",
+            "also": "Faux rejet sémantique",
+            "canary": "h01",
+            "symptom_observed": (
+                "Terra classified the supported paraphrase "
+                "'that fear can calculate or bargain with' as QUESTIONABLE."
+            ),
+            "demonstrated_cause": (
+                "Visible reservation requires the verb 'bargain' in supplied "
+                "evidence. Human review treats the clause as a stylistic "
+                "restatement of IDEA224 'no set time'."
+            ),
+            "undemonstrated_causes": [
+                "Unobservable internal Terra scoring of lexical overlap."
+            ],
+            "responsibility": "model_judgment",
+            "deterministic_correction_possible": False,
+            "deterministic_correction_limits": (
+                "Local code can require a reason code on QUESTIONABLE. It cannot "
+                "prove that Terra will accept the paraphrase."
+            ),
+            "evidence_level_symptom": "OBSERVED",
+            "evidence_level_cause": "HUMAN_ASSESSED",
+        },
+        {
+            "id": "h01_missing_reason_code",
+            "category": "Reason code incohérent",
+            "canary": "h01",
+            "symptom_observed": "QUESTIONABLE claim has empty r[].",
+            "demonstrated_cause": "Contract 1.1 allowed optional reservation notes without codes.",
+            "undemonstrated_causes": [],
+            "responsibility": "contract_and_model",
+            "deterministic_correction_possible": True,
+            "deterministic_correction_limits": (
+                "Local validation can FAIL missing codes. It cannot invent the correct code."
+            ),
+            "evidence_level_symptom": "OBSERVED",
+            "evidence_level_cause": "OBSERVED",
+        },
+        {
+            "id": "h01_period_gaps",
+            "category": "Couverture incomplète",
+            "canary": "h01",
+            "symptom_observed": "Gaps (140,141) and (209,210) are sentence-final periods.",
+            "demonstrated_cause": "Model omitted terminators; 1.1.1 later allowed them.",
+            "undemonstrated_causes": [],
+            "responsibility": "model_offsets_plus_historical_policy",
+            "deterministic_correction_possible": True,
+            "deterministic_correction_limits": (
+                "Admissible-separator policy can ignore periods. Local offsets "
+                "would not leave them to the model."
+            ),
+            "evidence_level_symptom": "DETERMINISTICALLY_VERIFIED",
+            "evidence_level_cause": "OBSERVED",
+        },
+        {
+            "id": "h02_invented_causality_detected",
+            "category": None,
+            "note": "Not a failure of detection; included as a true positive.",
+            "canary": "h02",
+            "symptom_observed": "Because-clause isolated and blocked as UNSUPPORTED.",
+            "demonstrated_cause": "Effectiveness and resistance-by-truth are absent from evidence.",
+            "undemonstrated_causes": [],
+            "responsibility": "model_judgment_correct",
+            "deterministic_correction_possible": False,
+            "deterministic_correction_limits": "Semantic detection remains a model task.",
+            "evidence_level_symptom": "OBSERVED",
+            "evidence_level_cause": "HUMAN_ASSESSED",
+        },
+        {
+            "id": "h02_false_rejection_very_person",
+            "category": "Faux rejet sémantique",
+            "canary": "h02",
+            "symptom_observed": "'an abuse to your very person' QUESTIONABLE.",
+            "demonstrated_cause": "Visible note treats intensifier 'very' as strengthening.",
+            "undemonstrated_causes": [],
+            "responsibility": "model_judgment",
+            "deterministic_correction_possible": False,
+            "deterministic_correction_limits": (
+                "Presegmentation can isolate the phrase. It cannot decide stylistic freedom."
+            ),
+            "evidence_level_symptom": "OBSERVED",
+            "evidence_level_cause": "HUMAN_ASSESSED",
+        },
+        {
+            "id": "h02_false_rejection_since_beginning",
+            "category": "Paraphrase insuffisamment reconnue",
+            "canary": "h02",
+            "symptom_observed": "'since the beginning' QUESTIONABLE with PARTIAL_REFERENCE_EXPANSION.",
+            "demonstrated_cause": "Terra treated truncated 'since.' as an incomplete reference.",
+            "undemonstrated_causes": [
+                "Whether Terra mapped 'beginning' onto a biblical creation sense."
+            ],
+            "responsibility": "model_judgment",
+            "deterministic_correction_possible": False,
+            "deterministic_correction_limits": "Catalog membership of the code is locally checkable; meaning is not.",
+            "evidence_level_symptom": "OBSERVED",
+            "evidence_level_cause": "HUMAN_ASSESSED",
+        },
+        {
+            "id": "h02_unknown_reason_codes",
+            "category": "Reason code inconnu",
+            "canary": "h02",
+            "symptom_observed": (
+                "NO_EVIDENCE, UNJUSTIFIED_STRENGTHENING, UNSUPPORTED_IMPLICATION, "
+                "PARTIAL_REFERENCE_EXPANSION, INVENTED_CAUSAL_LINK."
+            ),
+            "demonstrated_cause": "Codes are absent from the closed catalog.",
+            "undemonstrated_causes": [
+                "Why Terra invented near-synonyms instead of catalog codes."
+            ],
+            "responsibility": "model_output_vs_local_catalog",
+            "deterministic_correction_possible": True,
+            "deterministic_correction_limits": (
+                "Local code already FAILs unknown codes and must not silently normalize them. "
+                "It cannot force Terra to emit catalog codes."
+            ),
+            "evidence_level_symptom": "DETERMINISTICALLY_VERIFIED",
+            "evidence_level_cause": "OBSERVED",
+        },
+        {
+            "id": "h02_indeterminate_origin",
+            "category": "Cas humainement indéterminé",
+            "canary": "h02",
+            "symptom_observed": "'where this abuse comes from' QUESTIONABLE.",
+            "demonstrated_cause": None,
+            "undemonstrated_causes": [
+                "Whether origin-framing is a new implication or editorial staging."
+            ],
+            "responsibility": "human_review_category",
+            "deterministic_correction_possible": False,
+            "deterministic_correction_limits": "Deterministic rules cannot resolve a close implication.",
+            "evidence_level_symptom": "OBSERVED",
+            "evidence_level_cause": "HUMAN_ASSESSED",
+        },
+        {
+            "id": "h11_false_rejection_supported_prefix",
+            "category": "Faux rejet sémantique",
+            "canary": "h11",
+            "symptom_observed": "Three historically supported prefix clauses rejected.",
+            "demonstrated_cause": (
+                "Visible notes treat mental-technique, positive-thinking, and sermon "
+                "illustration as new facts or invented examples."
+            ),
+            "undemonstrated_causes": [],
+            "responsibility": "model_judgment",
+            "deterministic_correction_possible": False,
+            "deterministic_correction_limits": (
+                "Isolating prefix units reduces mixing with the guarantee. It does not "
+                "prove Terra will accept the prefixes."
+            ),
+            "evidence_level_symptom": "OBSERVED",
+            "evidence_level_cause": "HUMAN_ASSESSED",
+        },
+        {
+            "id": "h11_word_ending_coverage_gaps",
+            "category": "Couverture incomplète",
+            "also": "Span incorrect",
+            "canary": "h11",
+            "symptom_observed": (
+                "Gaps (137,139), (177,179), (232,234), (289,291), (353,357) contain "
+                "letters from subject/reality/aside/ending/death."
+            ),
+            "demonstrated_cause": (
+                "Terra spans are valid half-open intervals that end two characters "
+                "short of the words they cover. These are not separators."
+            ),
+            "undemonstrated_causes": [
+                "Why offsets repeatedly stopped two characters early."
+            ],
+            "responsibility": "model_offset_arithmetic",
+            "deterministic_correction_possible": True,
+            "deterministic_correction_limits": (
+                "Local presegmentation can own offsets. It cannot reconstruct omitted "
+                "letters into Terra's historical JSON, which must stay unmodified."
+            ),
+            "evidence_level_symptom": "DETERMINISTICALLY_VERIFIED",
+            "evidence_level_cause": "OBSERVED",
+        },
+        {
+            "id": "h11_new_conclusion_neighbor",
+            "category": "Reason code incohérent",
+            "canary": "h11",
+            "symptom_observed": "Guarantee blocked with NEW_CONCLUSION, not NEW_IMPLICATION.",
+            "demonstrated_cause": "NEW_CONCLUSION is in the closed catalog.",
+            "undemonstrated_causes": [
+                "Why the primary pair was not chosen."
+            ],
+            "responsibility": "model_code_selection",
+            "deterministic_correction_possible": False,
+            "deterministic_correction_limits": "Neighbor codes cannot be rewritten by local policy without changing the catalog.",
+            "evidence_level_symptom": "OBSERVED",
+            "evidence_level_cause": "OBSERVED",
+        },
+    ]
+    categories_present = sorted(
+        {
+            item["category"]
+            for item in anomalies
+            if item.get("category")
+        }
+    )
+    return {
+        "phase": PHASE,
+        "evidence_level": "OBSERVED",
+        "categories_used": categories_present,
+        "categories_not_observed_in_three_canaries": [
+            "Fausse acceptation sémantique",
+            "JSON invalide",
+            "Réponse tronquée",
+            "Mauvais evidence handle",
+        ],
+        "no_false_acceptance_observed": True,
+        "no_invalid_json_observed": True,
+        "no_truncated_response_observed": True,
+        "json_parse_all_three": "PASS",
+        "hypotheses_not_presented_as_causes": True,
+        "anomalies": anomalies,
+        "counts": {
+            "h01_false_rejections": 1,
+            "h02_false_rejections": h02.get("false_rejection_count"),
+            "h02_justified_reservations": h02.get("justified_reservation_count"),
+            "h02_indeterminate": h02.get("indeterminate_count"),
+            "h11_false_rejections": 3,
+            "h11_true_positive_guarantee": 1,
+            "h11_true_positive_supported": 3,
+        },
+        "h01_status": h01.get("historical_status"),
+        "h02_status": h02.get("historical_status"),
+        "h11_status": h11.get("historical_status"),
+        "secrets_included": False,
+    }
+
+
+__all__ = ["failure_taxonomy"]

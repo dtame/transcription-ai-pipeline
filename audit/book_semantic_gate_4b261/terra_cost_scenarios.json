@@ -1,0 +1,378 @@
+{
+  "phase": "4B.2.6.1",
+  "pricing": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "verified": true,
+    "effective_date": "2026-09-18",
+    "source": "OpenAI official pricing/model documentation",
+    "input_cost_per_1m_tokens": 2.0,
+    "output_cost_per_1m_tokens": 12.0,
+    "status": "base_estimate",
+    "unmodeled_regimes": "long_context_not_modeled",
+    "notes": "Base standard pricing. Long-context pricing rules may differ and are not modeled by Phase 2B.",
+    "counted_as_zero": false
+  },
+  "observed_4b26": {
+    "observed_total_usd": 0.106456,
+    "recomputed_from_usage": {
+      "input_tokens": 4076,
+      "output_tokens": 8192,
+      "reasoning_tokens": "UNKNOWN",
+      "input_cost_usd": 0.008152,
+      "output_cost_usd": 0.098304,
+      "total_cost_usd": 0.106456,
+      "status": "base_estimate",
+      "unknown_or_incomplete": true,
+      "counted_as_zero": false,
+      "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+    },
+    "matches_recompute": true,
+    "input_tokens": 4076,
+    "output_tokens": 8192,
+    "reasoning_tokens": "UNKNOWN",
+    "calls": 1
+  },
+  "strategy_a": [
+    {
+      "budget": 12288,
+      "if_budget_fully_consumed": {
+        "input_tokens": 4076,
+        "output_tokens": 12288,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.008152,
+        "output_cost_usd": 0.147456,
+        "total_cost_usd": 0.155608,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_same_usage_as_4b26": {
+        "input_tokens": 4076,
+        "output_tokens": 8192,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.008152,
+        "output_cost_usd": 0.098304,
+        "total_cost_usd": 0.106456,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "not_a_linear_guarantee": true,
+      "risk": "The model may again consume the entire budget without JSON."
+    },
+    {
+      "budget": 16384,
+      "if_budget_fully_consumed": {
+        "input_tokens": 4076,
+        "output_tokens": 16384,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.008152,
+        "output_cost_usd": 0.196608,
+        "total_cost_usd": 0.20476,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_same_usage_as_4b26": {
+        "input_tokens": 4076,
+        "output_tokens": 8192,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.008152,
+        "output_cost_usd": 0.098304,
+        "total_cost_usd": 0.106456,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "not_a_linear_guarantee": true,
+      "risk": "The model may again consume the entire budget without JSON."
+    },
+    {
+      "budget": 24576,
+      "if_budget_fully_consumed": {
+        "input_tokens": 4076,
+        "output_tokens": 24576,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.008152,
+        "output_cost_usd": 0.294912,
+        "total_cost_usd": 0.303064,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_same_usage_as_4b26": {
+        "input_tokens": 4076,
+        "output_tokens": 8192,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.008152,
+        "output_cost_usd": 0.098304,
+        "total_cost_usd": 0.106456,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "not_a_linear_guarantee": true,
+      "risk": "The model may again consume the entire budget without JSON."
+    }
+  ],
+  "strategy_b": {
+    "ten_cases_compact_if_min_json": {
+      "input_tokens": 3227,
+      "output_tokens": 336,
+      "reasoning_tokens": "UNKNOWN",
+      "input_cost_usd": 0.006454,
+      "output_cost_usd": 0.004032,
+      "total_cost_usd": 0.010486,
+      "status": "base_estimate",
+      "unknown_or_incomplete": true,
+      "counted_as_zero": false,
+      "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+    },
+    "ten_cases_compact_if_budget_exhausted": {
+      "input_tokens": 3227,
+      "output_tokens": 8192,
+      "reasoning_tokens": "UNKNOWN",
+      "input_cost_usd": 0.006454,
+      "output_cost_usd": 0.098304,
+      "total_cost_usd": 0.104758,
+      "status": "base_estimate",
+      "unknown_or_incomplete": true,
+      "counted_as_zero": false,
+      "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+    },
+    "note": "Min-JSON cost is an estimate of visible payload only."
+  },
+  "strategy_c": [
+    {
+      "batch_size": 1,
+      "calls": 10,
+      "per_call_input_tokens_estimate": 1698,
+      "if_one_call_returns_min_json": {
+        "input_tokens": 1698,
+        "output_tokens": 80,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.003396,
+        "output_cost_usd": 0.00096,
+        "total_cost_usd": 0.004356,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_one_call_exhausts_8192": {
+        "input_tokens": 1698,
+        "output_tokens": 8192,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.003396,
+        "output_cost_usd": 0.098304,
+        "total_cost_usd": 0.1017,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_full_benchmark_min_json": {
+        "input_tokens": 16980,
+        "output_tokens": 800,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.03396,
+        "output_cost_usd": 0.0096,
+        "total_cost_usd": 0.04356,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+        "calls": 10
+      },
+      "if_full_benchmark_each_call_exhausts_8192": {
+        "input_tokens": 16980,
+        "output_tokens": 81920,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.03396,
+        "output_cost_usd": 0.98304,
+        "total_cost_usd": 1.017,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+        "calls": 10
+      }
+    },
+    {
+      "batch_size": 2,
+      "calls": 5,
+      "per_call_input_tokens_estimate": 3286,
+      "if_one_call_returns_min_json": {
+        "input_tokens": 3286,
+        "output_tokens": 160,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.006572,
+        "output_cost_usd": 0.00192,
+        "total_cost_usd": 0.008492,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_one_call_exhausts_8192": {
+        "input_tokens": 3286,
+        "output_tokens": 8192,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.006572,
+        "output_cost_usd": 0.098304,
+        "total_cost_usd": 0.104876,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_full_benchmark_min_json": {
+        "input_tokens": 16430,
+        "output_tokens": 800,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.03286,
+        "output_cost_usd": 0.0096,
+        "total_cost_usd": 0.04246,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+        "calls": 5
+      },
+      "if_full_benchmark_each_call_exhausts_8192": {
+        "input_tokens": 16430,
+        "output_tokens": 40960,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.03286,
+        "output_cost_usd": 0.49152,
+        "total_cost_usd": 0.52438,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+        "calls": 5
+      }
+    },
+    {
+      "batch_size": 5,
+      "calls": 2,
+      "per_call_input_tokens_estimate": 7616,
+      "if_one_call_returns_min_json": {
+        "input_tokens": 7616,
+        "output_tokens": 400,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.015232,
+        "output_cost_usd": 0.0048,
+        "total_cost_usd": 0.020032,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_one_call_exhausts_8192": {
+        "input_tokens": 7616,
+        "output_tokens": 8192,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.015232,
+        "output_cost_usd": 0.098304,
+        "total_cost_usd": 0.113536,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_full_benchmark_min_json": {
+        "input_tokens": 15232,
+        "output_tokens": 800,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.030464,
+        "output_cost_usd": 0.0096,
+        "total_cost_usd": 0.040064,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+        "calls": 2
+      },
+      "if_full_benchmark_each_call_exhausts_8192": {
+        "input_tokens": 15232,
+        "output_tokens": 16384,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.030464,
+        "output_cost_usd": 0.196608,
+        "total_cost_usd": 0.227072,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+        "calls": 2
+      }
+    },
+    {
+      "batch_size": 10,
+      "calls": 1,
+      "per_call_input_tokens_estimate": 3227,
+      "if_one_call_returns_min_json": {
+        "input_tokens": 3227,
+        "output_tokens": 800,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.006454,
+        "output_cost_usd": 0.0096,
+        "total_cost_usd": 0.016054,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_one_call_exhausts_8192": {
+        "input_tokens": 3227,
+        "output_tokens": 8192,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.006454,
+        "output_cost_usd": 0.098304,
+        "total_cost_usd": 0.104758,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "if_full_benchmark_min_json": {
+        "input_tokens": 3227,
+        "output_tokens": 800,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.006454,
+        "output_cost_usd": 0.0096,
+        "total_cost_usd": 0.016054,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+        "calls": 1
+      },
+      "if_full_benchmark_each_call_exhausts_8192": {
+        "input_tokens": 3227,
+        "output_tokens": 8192,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.006454,
+        "output_cost_usd": 0.098304,
+        "total_cost_usd": 0.104758,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+        "calls": 1
+      }
+    }
+  ],
+  "do_not_assume_all_completion_tokens_are_visible": true,
+  "do_not_assume_cost_scales_with_max_budget": true,
+  "unknown_is_not_zero": true,
+  "secrets_included": false
+}

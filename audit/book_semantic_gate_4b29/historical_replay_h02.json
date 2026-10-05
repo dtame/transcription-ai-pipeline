@@ -1,0 +1,122 @@
+{
+  "phase": "4B.2.9",
+  "handle": "h02",
+  "historical_status": "PARTIAL",
+  "historical_status_unchanged": true,
+  "historical_terra_response_not_converted": true,
+  "false_rejection_not_declared_corrected": true,
+  "not_terra": true,
+  "paragraph_chars": 466,
+  "unit_count": 8,
+  "coverage_ok": true,
+  "offsets_stable": true,
+  "units": [
+    {
+      "unit_id": "u00",
+      "start_offset": 0,
+      "end_offset": 68,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "Yet we can see fear operating in believers, and this is not normal. "
+    },
+    {
+      "unit_id": "u01",
+      "start_offset": 68,
+      "end_offset": 94,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "Fear of death is an abuse "
+    },
+    {
+      "unit_id": "u02",
+      "start_offset": 94,
+      "end_offset": 181,
+      "boundary_type": "EM_DASH",
+      "boundary_ambiguity": false,
+      "text": "— an abuse to your very person, a diminishment of what you were made and remade to be. "
+    },
+    {
+      "unit_id": "u03",
+      "start_offset": 181,
+      "end_offset": 229,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "It is worth naming where this abuse comes from. "
+    },
+    {
+      "unit_id": "u04",
+      "start_offset": 229,
+      "end_offset": 272,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "The devil has used it since the beginning; "
+    },
+    {
+      "unit_id": "u05",
+      "start_offset": 272,
+      "end_offset": 302,
+      "boundary_type": "SEMICOLON",
+      "boundary_ambiguity": false,
+      "text": "he has not changed his style. "
+    },
+    {
+      "unit_id": "u06",
+      "start_offset": 302,
+      "end_offset": 406,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": true,
+      "text": "The same old strategy that first weaponized death against humanity is still being run today, unchanged, "
+    },
+    {
+      "unit_id": "u07",
+      "start_offset": 406,
+      "end_offset": 466,
+      "boundary_type": "CAUSAL_CONNECTIVE",
+      "boundary_ambiguity": false,
+      "text": "because it still works wherever it is not resisted by truth."
+    }
+  ],
+  "preserved_propositions": [
+    {
+      "label": "because_clause",
+      "start": 406,
+      "end": 465,
+      "preserved_in_one_unit": true,
+      "unit_id": "u07",
+      "unit_text": "because it still works wherever it is not resisted by truth.",
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    }
+  ],
+  "context_preserved": true,
+  "human_label_absent_from_request": true,
+  "anomalies_representable": true,
+  "orchestration": [
+    {
+      "scenario": "invented_causality",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": true,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "unknown_reason_code",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": false,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "all_supported",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "REVIEW",
+      "validation_ok": true,
+      "coverage_ok": true
+    }
+  ],
+  "historical_label": "QUESTIONABLE",
+  "historical_label_not_injected": true,
+  "secrets_included": false
+}

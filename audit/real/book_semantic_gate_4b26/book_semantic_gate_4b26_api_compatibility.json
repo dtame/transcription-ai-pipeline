@@ -1,0 +1,116 @@
+{
+  "phase": "4B.2.6",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "endpoint": "chat.completions",
+  "sdk_method": "client.chat.completions.create",
+  "token_contract": {
+    "endpoint": "chat.completions",
+    "model": "gpt-5.6-terra",
+    "parameter": "max_completion_tokens",
+    "do_not_send": [
+      "max_tokens",
+      "max_output_tokens"
+    ],
+    "confidence": "CONFIRMED",
+    "server_acceptance": "UNKNOWN",
+    "evidence": "4B.2.5 HTTP 400 invalid_request_error unsupported_parameter max_tokens. Server message: Use 'max_completion_tokens' instead. A successful Terra response with max_completion_tokens has not been observed; acceptance remains UNKNOWN.",
+    "source": "audit/real/book_semantic_gate_4b25/book_semantic_gate_4b25_provider_evidence.json"
+  },
+  "local_checks": {
+    "token_field": "max_completion_tokens",
+    "max_completion_tokens": 8192,
+    "max_tokens_absent": true,
+    "temperature_absent": true,
+    "thinking_absent": true,
+    "json_object_local": true,
+    "messages_present": true,
+    "endpoint": "chat.completions",
+    "model": "gpt-5.6-terra",
+    "sdk_serialization": true,
+    "token_parameter_local": "PASS",
+    "json_object_server_acceptance": "UNKNOWN",
+    "max_completion_tokens_server_acceptance": "UNKNOWN",
+    "unknown_is_not_pass": true
+  },
+  "local_checkable_pass": true,
+  "local_failures": [],
+  "server_only_unknowns": [
+    {
+      "field": "json_object_server_acceptance",
+      "status": "UNKNOWN",
+      "note": "Local serialization of response_format=json_object is PASS. Whether gpt-5.6-terra chat.completions accepts json_object has not been observed. 4B.2.5 failed on max_tokens before a JSON body was returned. UNKNOWN is not PASS."
+    },
+    {
+      "field": "max_completion_tokens_server_acceptance",
+      "status": "UNKNOWN",
+      "note": "Local mapping to max_completion_tokens=8192 is PASS. Whether the server accepts that field and budget for Terra has not been observed. UNKNOWN is not PASS."
+    },
+    {
+      "field": "temperature_server_behavior",
+      "status": "UNKNOWN",
+      "note": "Temperature is omitted locally. Server default remains UNKNOWN."
+    },
+    {
+      "field": "reasoning_or_thinking_server_behavior",
+      "status": "UNKNOWN",
+      "note": "Thinking is provider_default / omitted. No explicit thinking field is sent. Server reasoning behavior remains UNKNOWN."
+    },
+    {
+      "field": "actual_cost",
+      "status": "UNKNOWN",
+      "note": "Pre-call estimate is approximately 0.114384 USD and is not a guarantee. Unknown actual cost must not be reported as zero."
+    }
+  ],
+  "server_only_unknown_fields": [
+    "json_object_server_acceptance",
+    "max_completion_tokens_server_acceptance",
+    "temperature_server_behavior",
+    "reasoning_or_thinking_server_behavior",
+    "actual_cost"
+  ],
+  "unknown_is_not_pass": true,
+  "no_live_probe_authorized": true,
+  "readiness_class": "READY_WITH_SERVER_UNVERIFIED_FIELDS",
+  "cannot_claim_server_acceptance": true,
+  "sdk_capture": {
+    "serialization_pass": true,
+    "max_completion_tokens": 8192,
+    "max_tokens_absent": true,
+    "temperature_absent": true,
+    "thinking_absent": true,
+    "json_object": true,
+    "network_calls": 0,
+    "prepared_without_send": true
+  },
+  "compatibility": {
+    "endpoint": "chat.completions",
+    "endpoint_selected": "PASS",
+    "token_parameter": "max_completion_tokens",
+    "token_parameter_supported": "PASS",
+    "token_parameter_confidence": "CONFIRMED",
+    "token_parameter_server_acceptance": "UNKNOWN",
+    "request_serializable": "PASS",
+    "unsupported_optional_parameters": "PASS",
+    "output_mode_server_acceptance": "UNKNOWN",
+    "unknown_server_fields": [
+      "json_object_server_acceptance",
+      "max_completion_tokens_server_acceptance",
+      "temperature_server_behavior",
+      "reasoning_or_thinking_server_behavior"
+    ],
+    "payload_keys": [
+      "max_completion_tokens",
+      "messages",
+      "model",
+      "response_format"
+    ],
+    "reasons": [],
+    "output_mode_local": "PASS"
+  },
+  "historical_4b25_request_sha256": "09d6472e544bc60231c77908e6608ff7ee7b6fd4746317f206301082e21eab53",
+  "corrected_request_sha256": "8a92848e412763f0e67468245f9c007ee9537ffa4f2f5469af9a6934d9ebeb31",
+  "secrets_included": false,
+  "http_sent": false,
+  "remote_invocations": 0
+}

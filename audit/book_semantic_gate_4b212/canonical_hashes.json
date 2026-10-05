@@ -1,0 +1,36 @@
+{
+  "phase": "4B.2.12",
+  "pre": {
+    "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "raw_4b211_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b211/provider_response_raw.json",
+      "exists": true,
+      "sha256": "64ac94969e37ac03607ec09497381d6f532d7273d9d76535452a082f9ca54320",
+      "bytes": 2146
+    }
+  },
+  "post": {
+    "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "raw_4b211_file": {
+      "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b211/provider_response_raw.json",
+      "exists": true,
+      "sha256": "64ac94969e37ac03607ec09497381d6f532d7273d9d76535452a082f9ca54320",
+      "bytes": 2146
+    }
+  },
+  "expected": {
+    "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "raw_4b211_text": "ef45c2d4262c5bb86a6ff891fb2a03b79189342c25c8cd9e5c261742992f7fe5"
+  },
+  "match": true,
+  "historical_contracts_unmodified": true,
+  "historical_labels_unmodified": true,
+  "historical_raw_unmodified": true,
+  "secrets_included": false
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "cover-generator-v1",
+  "stored_apart_from_book_json": true,
+  "manuscript_keys_forbidden": [
+    "chapters",
+    "paragraphs",
+    "transcript"
+  ],
+  "record": {
+    "cover_id": null,
+    "project_id": null,
+    "book_version": "print-review-v1.1",
+    "source_document_version": "print-review-v1",
+    "cover_version": "draft-v1",
+    "status": "DRAFT",
+    "cover_mode": "TWO_SEPARATE_PAGES",
+    "wraparound": false,
+    "spine_computed": false,
+    "format": {
+      "width_in": 6,
+      "height_in": 9,
+      "bleed_mm": 3,
+      "safety_in": 0.25,
+      "dpi": 300
+    },
+    "front": {
+      "background_image_path": null,
+      "image_generation_id": null,
+      "title": "resolved_from_book.title",
+      "subtitle": "resolved_from_book.subtitle",
+      "author_display_name": null,
+      "text_baked_into_image": false
+    },
+    "back": {
+      "background_mode": "SOLID_COLOR",
+      "background_color": null,
+      "book_description": null,
+      "author_biography": null
+    },
+    "author_id": null,
+    "biography_snapshot": null,
+    "content_statuses": [
+      "NOT_STARTED",
+      "DRAFT",
+      "PENDING_HUMAN_REVIEW",
+      "APPROVED",
+      "MISSING_OPTIONAL"
+    ],
+    "export": {
+      "front_docx": null,
+      "front_pdf": null,
+      "back_docx": null,
+      "back_pdf": null
+    }
+  }
+}

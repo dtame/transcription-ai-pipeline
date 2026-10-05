@@ -1,0 +1,180 @@
+{
+  "phase": "4B.2.12",
+  "source_file": {
+    "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b211/provider_response_raw.json",
+    "exists": true,
+    "sha256": "64ac94969e37ac03607ec09497381d6f532d7273d9d76535452a082f9ca54320",
+    "bytes": 2146
+  },
+  "immutable": true,
+  "manually_edited": false,
+  "repaired": false,
+  "text_sha256": "ef45c2d4262c5bb86a6ff891fb2a03b79189342c25c8cd9e5c261742992f7fe5",
+  "expected_text_sha256": "ef45c2d4262c5bb86a6ff891fb2a03b79189342c25c8cd9e5c261742992f7fe5",
+  "text_sha256_match": true,
+  "finish_reason": "stop",
+  "truncated": false,
+  "returned_model": "gpt-5.6-terra",
+  "fields_received": [
+    "ch",
+    "pr",
+    "rr",
+    "sc",
+    "uh",
+    "v"
+  ],
+  "fields_expected_by_201": [
+    "ch",
+    "v",
+    "pr",
+    "sc",
+    "uh",
+    "rr"
+  ],
+  "values_received": {
+    "ch": "CH016",
+    "v": "PASS",
+    "pr[0].h": "h01",
+    "pr[0].v": "PASS",
+    "sc": {
+      "SUPPORTED": 5,
+      "QUESTIONABLE": 0,
+      "UNSUPPORTED": 0,
+      "NON_SUBSTANTIVE": 0
+    },
+    "uh": [],
+    "rr": false,
+    "units": [
+      {
+        "id": "u00",
+        "k_received": "SUPPORTED",
+        "ev_received": [
+          "SRC006149"
+        ],
+        "r_received": [],
+        "n_received": null,
+        "n_omitted": true
+      },
+      {
+        "id": "u01",
+        "k_received": "SUPPORTED",
+        "ev_received": [
+          "IDEA224"
+        ],
+        "r_received": [],
+        "n_received": null,
+        "n_omitted": true
+      },
+      {
+        "id": "u02",
+        "k_received": "SUPPORTED",
+        "ev_received": [
+          "IDEA224",
+          "SRC006180",
+          "SRC006182"
+        ],
+        "r_received": [],
+        "n_received": null,
+        "n_omitted": true
+      },
+      {
+        "id": "u03",
+        "k_received": "SUPPORTED",
+        "ev_received": [
+          "IDEA224",
+          "SRC006187"
+        ],
+        "r_received": [],
+        "n_received": null,
+        "n_omitted": true
+      },
+      {
+        "id": "u04",
+        "k_received": "SUPPORTED",
+        "ev_received": [
+          "IDEA224",
+          "SRC006183"
+        ],
+        "r_received": [],
+        "n_received": null,
+        "n_omitted": true
+      }
+    ]
+  },
+  "values_expected_by_201": {
+    "ch": "CH016",
+    "v": "PASS | REVIEW | FAIL",
+    "pr[0].h": "h01",
+    "pr[0].v": "SUPPORTED | QUESTIONABLE | UNSUPPORTED | NON_SUBSTANTIVE",
+    "sc_keys": [
+      "supported",
+      "questionable",
+      "unsupported",
+      "non_substantive"
+    ],
+    "unit.k": [
+      "SUPPORTED",
+      "QUESTIONABLE",
+      "UNSUPPORTED",
+      "NON_SUBSTANTIVE"
+    ],
+    "unit.id": [
+      "u00",
+      "u01",
+      "u02",
+      "u03",
+      "u04"
+    ]
+  },
+  "units_concerned": [
+    "u00",
+    "u01",
+    "u02",
+    "u03",
+    "u04"
+  ],
+  "target_unit": "u01",
+  "semantic_elements_correct": {
+    "all_five_units_present": true,
+    "all_k_supported": true,
+    "target_paraphrase_supported": true,
+    "evidence_handles_from_supplied_set": true,
+    "reason_codes_empty_for_supported": true
+  },
+  "contract_violations": [
+    {
+      "id": "anomaly_a_sc_uppercase_keys",
+      "path": "sc",
+      "received": [
+        "SUPPORTED",
+        "QUESTIONABLE",
+        "UNSUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "expected": [
+        "supported",
+        "questionable",
+        "unsupported",
+        "non_substantive"
+      ]
+    },
+    {
+      "id": "anomaly_b_paragraph_v_pass",
+      "path": "pr[0].v",
+      "received": "PASS",
+      "expected": [
+        "SUPPORTED",
+        "QUESTIONABLE",
+        "UNSUPPORTED",
+        "NON_SUBSTANTIVE"
+      ]
+    }
+  ],
+  "indeterminate": [
+    "Whether Terra would emit lowercase sc keys if an example JSON were supplied.",
+    "Whether Terra would classify h02/h11 correctly. Those cases were not replayed remotely.",
+    "Whether json_schema strict mode would have prevented the two anomalies. Remote compatibility is UNVERIFIED."
+  ],
+  "historical_canary_not_declared_pass": true,
+  "secrets_included": false
+}

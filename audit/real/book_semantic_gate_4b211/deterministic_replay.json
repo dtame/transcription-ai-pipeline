@@ -1,0 +1,43 @@
+{
+  "phase": "4B.2.11",
+  "provider_calls": 0,
+  "first_parse": "PASS",
+  "second_parse": "PASS",
+  "first_status": "FAIL",
+  "second_status": "FAIL",
+  "first_decision": "BLOCK",
+  "second_decision": "BLOCK",
+  "first_sha256": "841b79b1c9d8ce08c12ee0673f49e36960d53fabd7c9ce22f691db6495ffbe93",
+  "second_sha256": "841b79b1c9d8ce08c12ee0673f49e36960d53fabd7c9ce22f691db6495ffbe93",
+  "identical": true,
+  "pass": true,
+  "repaired": false,
+  "contract_candidate": "book-semantic-validator-2.0.1-candidate",
+  "first": {
+    "json_parse": "PASS",
+    "status": "FAIL",
+    "errors": [
+      "sc:unexpected_fields:NON_SUBSTANTIVE,QUESTIONABLE,SUPPORTED,UNSUPPORTED",
+      "sc.non_substantive:not_integer",
+      "sc.supported:not_integer",
+      "sc.questionable:not_integer",
+      "sc.unsupported:not_integer",
+      "pr[0].v:invalid"
+    ],
+    "decision": "BLOCK"
+  },
+  "second": {
+    "json_parse": "PASS",
+    "status": "FAIL",
+    "errors": [
+      "sc:unexpected_fields:NON_SUBSTANTIVE,QUESTIONABLE,SUPPORTED,UNSUPPORTED",
+      "sc.non_substantive:not_integer",
+      "sc.supported:not_integer",
+      "sc.questionable:not_integer",
+      "sc.unsupported:not_integer",
+      "pr[0].v:invalid"
+    ],
+    "decision": "BLOCK"
+  },
+  "secrets_included": false
+}

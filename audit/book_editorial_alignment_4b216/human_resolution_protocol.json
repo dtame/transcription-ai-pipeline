@@ -1,0 +1,42 @@
+{
+  "phase": "4B.2.16",
+  "version": "human-resolution-protocol-4b216-candidate",
+  "graphical_interface_built": false,
+  "terra_response_immutable": true,
+  "human_decision_authorizes_publication": false,
+  "independent_validation_still_required": true,
+  "does_not_rewrite_historical_labels": true,
+  "historical_h11_status": "PARTIAL",
+  "historical_h11_human_label": "UNSUPPORTED",
+  "historical_h11_human_label_unmodified": true,
+  "automatic_unsupported_to_supported": false,
+  "automatic_block_to_pass": false,
+  "required_fields": [
+    "exact_text",
+    "unit_id",
+    "terra_verdict",
+    "reasons",
+    "evidence",
+    "sources",
+    "contract_version",
+    "hashes",
+    "human_decision",
+    "justification"
+  ],
+  "decisions": [
+    {
+      "id": "CONFIRM_INVENTION_AND_REQUEST_CORRECTION",
+      "label": "Confirm the invention and request a correction."
+    },
+    {
+      "id": "CONFIRM_FALSE_REJECTION",
+      "label": "Confirm a false rejection with a justification grounded in the sources."
+    },
+    {
+      "id": "MAINTAIN_BLOCK",
+      "label": "Maintain the block when the case remains uncertain."
+    }
+  ],
+  "contract_version_expected": "book-semantic-validator-2.0.2-candidate",
+  "secrets_included": false
+}

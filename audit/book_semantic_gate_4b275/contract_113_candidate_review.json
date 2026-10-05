@@ -1,0 +1,52 @@
+{
+  "phase": "4B.2.7.5",
+  "justified": true,
+  "why_created": "1.1.2 left SUPPORTED/QUESTIONABLE/UNSUPPORTED/NON_SUBSTANTIVE thinly specified and did not state both sides of the rhetorical-versus-assertion boundary. 1.1.3 adds operational verdict definitions, origin/attribution as a claim type, and an anti-masking rule for NON_SUBSTANTIVE, without naming canaries or changing the closed catalog, coverage rules, or transport.",
+  "candidate_prompt_version": "book-semantic-validator-1.1.3-candidate",
+  "candidate_transport_version": null,
+  "transport_1_1_3_created": false,
+  "why_no_new_transport": "Existing 1.1-candidate fields already carry claim-level assessment, exact spans, evidence handles, reason codes, global verdict, short reservations, and compact JSON. INDETERMINATE is a human-review category, not a provider verdict.",
+  "historical_1_0_unmodified": true,
+  "candidate_1_1_unmodified": true,
+  "candidate_1_1_1_unmodified": true,
+  "candidate_1_1_2_unmodified": true,
+  "promoted": false,
+  "prompt": {
+    "system_sha256": "f440711527a399f6c257740e8ae9ca7cd161b2f29b8c9d7a259856ed66bde4d8",
+    "instructions_sha256": "89fff628ae9df58fb33224aac103d0995bb87eff3506192bfc096364334dc23c",
+    "prompt_sha256": "9febdcdda08a31179081564ac33842b434dcc8bcb95ca9d96f386b63addb3059",
+    "system_bytes": 7364,
+    "instructions_bytes": 2278
+  },
+  "frozen_1_1_2_prompt_sha256": "88a89e792ffd6a6f3766c0218f7cb25f0d996ba373e13232179b390f77da3ba0",
+  "changes": [
+    "operational definitions of SUPPORTED, QUESTIONABLE, UNSUPPORTED, NON_SUBSTANTIVE",
+    "legitimate paraphrase may be SUPPORTED; lexical difference is not invention",
+    "QUESTIONABLE and UNSUPPORTED block production acceptance",
+    "origin and attribution treated as claims when asserted",
+    "editorial transition is not automatically NON_SUBSTANTIVE",
+    "rhetorical sentence is not automatically a new assertion",
+    "NON_SUBSTANTIVE must not mask a meaning-bearing claim",
+    "closed catalog, coverage, and compact JSON unchanged"
+  ],
+  "not_in_prompt": {
+    "overfit_tokens_absent": true,
+    "human_labels_absent": true,
+    "benchmark_answers_absent": true,
+    "h01_absent": true,
+    "h02_absent": true
+  },
+  "schema_unchanged_from_1_1": true,
+  "reason_codes_catalog_unchanged": true,
+  "reason_codes_listed_in_prompt": true,
+  "proposition_coverage_preserved": true,
+  "compact_format_preserved": true,
+  "general_not_canary_specific": true,
+  "remaining_validation_limits": [
+    "A listed catalog does not prove Terra will emit only catalog codes.",
+    "Operational verdict text does not prove Terra will apply it.",
+    "Offline FakeAI does not prove future Terra behavior.",
+    "Borderline origin/framing claims may remain human-indeterminate."
+  ],
+  "secrets_included": false
+}

@@ -1,0 +1,28 @@
+{
+  "automatic_fallback": false,
+  "automatic_retry": false,
+  "body": {
+    "background": "opaque",
+    "model": "gpt-image-2",
+    "n": 1,
+    "output_format": "png",
+    "prompt": "Editorial photograph for a book cover, vertical two-to-three ratio. A plain domestic doorway already standing open, warm dawn light already inside the room, a small oil lamp already burning on a walnut table. Upper third is an even plaster wall in exact color #E7D7C1 with no objects and no texture that resembles writing. Flame in #E0A15A, shadows in #3E4A3A. Photographed, calm, sharp, no people. no words, no letters, no numerals, no title, no subtitle, no author name, no logo, no barcode, no ISBN, no watermark, no signature, no cross, no crucifix, no stained glass, no halo, no angel, no church interior, no crowd, no celebrity face, no skeleton, no open tomb.",
+    "quality": "medium",
+    "size": "1024x1536"
+  },
+  "completed_at": "2026-10-05T04:15:48.293632+00:00",
+  "exchange_count": 1,
+  "fallback_provider": null,
+  "http_status": null,
+  "model_snapshot_recorded": "gpt-image-2-2026-04-21",
+  "model_snapshot_sent": false,
+  "prompt_sha256": "82f92129ec2d67666f288491c5d1b225272c46e6ec30f4f0daadaeef06cc3194",
+  "provider_request_id": null,
+  "response_summary": {},
+  "http_request_transmitted": false,
+  "local_refusal": "NetworkSealed before urlopen",
+  "sent": true,
+  "socket_opened": false,
+  "started_at": "2026-10-05T04:15:48.209596+00:00",
+  "submitted_at": "2026-10-05T04:15:48.216968+00:00"
+}

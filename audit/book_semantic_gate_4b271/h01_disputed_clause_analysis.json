@@ -1,0 +1,80 @@
+{
+  "phase": "4B.2.7.1",
+  "clause": "that fear can calculate or bargain with",
+  "paragraph_context": "Do not ever be afraid of death. There is no fixed hour appointed that fear can calculate or bargain with, and so fear itself is out of place. If somebody has gone to heaven, that should not produce dread in us. It should be our joy.",
+  "supplied_evidence_texts": {
+    "IDEA224": "Believers should not fear death since there is no set time and going to heaven should bring joy, not fear.",
+    "SRC006149": "Don't ever be afraid of death.",
+    "SRC006180": "But you can see fear",
+    "SRC006182": "It's not normal.",
+    "SRC006183": "It should be our joy.",
+    "SRC006187": "So if somebody has gone to heaven,"
+  },
+  "lexical_scan": {
+    "bargain_or_negotiate_or_deal_in_supplied_text": false,
+    "calculate_in_supplied_text": false,
+    "no_set_time_in_IDEA224": true,
+    "lexical_absence_is_not_invention": true,
+    "thematic_proximity_is_not_proof": true
+  },
+  "bargain_with_senses_in_this_sentence": {
+    "negotiate_with": "possible dictionary sense; not an attested event",
+    "seek_an_arrangement_with": "possible dictionary sense; not an attested event",
+    "haggle_with": "possible dictionary sense; not an attested event",
+    "relevant_in_clause": "The clause says there is no appointed hour available to fear's management. The verbs name modes of management that have no object because the hour is not set."
+  },
+  "components": {
+    "fear": {
+      "classification": "EXPLICITLY_SUPPORTED",
+      "evidence": [
+        "SRC006149",
+        "IDEA224",
+        "SRC006180"
+      ],
+      "rationale": "SRC006149: 'Don't ever be afraid of death.' IDEA224: believers should not fear death. SRC006180: 'But you can see fear'."
+    },
+    "calculate": {
+      "classification": "SEMANTICALLY_ENTAILED",
+      "evidence": [
+        "IDEA224"
+      ],
+      "rationale": "IDEA224 states there is no set time. A time that is not set cannot be calculated. The paragraph does not add a new computational event; it restates the unavailability of an appointed hour."
+    },
+    "bargain with": {
+      "classification": "SEMANTICALLY_ENTAILED",
+      "evidence": [
+        "IDEA224"
+      ],
+      "lexical_present_in_supplied_evidence": false,
+      "rationale": "No supplied SRC or IDEA sentence contains bargain, negotiate, or deal. In the full clause the verb does not assert that fear actually bargains. It characterizes the absent appointed hour as something fear has no hold on. That is a stylistic co-predicate of the attested absence 'no set time', not a new negotiation event, causal link, example, or completed reference.",
+      "alternative_considered": {
+        "classification": "PLAUSIBLE_BUT_NOT_ENTAILED",
+        "why_rejected_as_primary": "Treating bargain as a distinct agency claim would convert a lexical gap into a new fact. The contract already forbids keyword matching as the final judgment and allows paraphrase of attested meaning."
+      }
+    },
+    "relation": {
+      "classification": "SEMANTICALLY_ENTAILED",
+      "rationale": "Fear is personified as the would-be calculator/bargainer of an hour that is not appointed. The architectural rule is high stylistic freedom and low semantic freedom. The personification does not introduce a new cause or example."
+    },
+    "full_clause": {
+      "text_user": "that fear can calculate or bargain with",
+      "text_in_paragraph": "that fear can calculate or bargain with,",
+      "classification": "SEMANTICALLY_ENTAILED",
+      "offsets_in_terra_claim": {
+        "s": 65,
+        "e": 105
+      },
+      "recovered_if_offsets_applied": "that fear can calculate or bargain with,"
+    }
+  },
+  "neighboring_SRC006186_not_in_request": {
+    "id": "SRC006186",
+    "text": "There is no time set.",
+    "used_to_justify_terra_or_complete_evidence": false,
+    "note": "Canonical neighbor of SRC006183/SRC006187. Terra did not receive it. IDEA224.summary already carries 'no set time', so the no-set-time claim is inside the supplied evidence."
+  },
+  "external_knowledge_used": false,
+  "finding_code": "A",
+  "finding": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+  "secrets_included": false
+}

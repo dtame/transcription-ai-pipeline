@@ -1,0 +1,20 @@
+{
+  "phase": "4B.2.24",
+  "chapter_id": "CH002",
+  "json": {
+    "removed_paragraph_ids": [
+      "P000008"
+    ],
+    "added_paragraph_ids": [],
+    "renumbered": false,
+    "other_paragraph_content_changes": [],
+    "only_p000008_removed": true
+  },
+  "markdown": {
+    "original_omitted_empty_paragraph": true,
+    "recovered_identical_to_original_markdown": true,
+    "mechanical_render_only": true
+  },
+  "unauthorized_editorial_changes": false,
+  "secrets_included": false
+}

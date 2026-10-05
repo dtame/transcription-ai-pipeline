@@ -1,0 +1,119 @@
+{
+  "phase": "4B.2.19",
+  "chapter_id": "CH012",
+  "contract": "source-coverage-control-4b216-candidate",
+  "activated_in_production": false,
+  "not_a_terra_verdict": true,
+  "semantic_coverage_certified": false,
+  "automated_source_coverage_certification": "not_performed",
+  "heuristic_is_not_semantic_proof": true,
+  "accepted_chapter_modified": false,
+  "flagged_units": [
+    {
+      "id": "IDEA238",
+      "kind": "idea",
+      "source_text": "Doing spiritual practices sincerely but incorrectly still needs correction to reach true rest.",
+      "examined_paragraphs": [
+        "P000011"
+      ],
+      "presence": "plausible_equivalent_paraphrase",
+      "substantial": false,
+      "separate_human_decision": false,
+      "heuristic_status_4b218": "IDENTIFIER_ONLY",
+      "note": "P000011 quotes sincerity, incorrect practice, correction, and true rest. The SourceMap summary uses spiritual/practices/incorrectly, which the prose does not repeat. This is a plausible equivalent paraphrase, not a Terra certificate."
+    },
+    {
+      "id": "EX030",
+      "kind": "example",
+      "source_text": "Speaker describes losing strength, voice broken from intense long prayer, until God told him directly he was tired and needed correction.",
+      "examined_paragraphs": [
+        "P000008",
+        "P000009"
+      ],
+      "presence": "partial_coverage",
+      "substantial": false,
+      "separate_human_decision": true,
+      "heuristic_status_4b218": "NOT_COVERED",
+      "losing_strength_in_accepted_prose": false,
+      "physical_testimony_in_p000008": true,
+      "divine_correction_in_p000009": true,
+      "note": "P000008 keeps the ground / broken-voice testimony. P000009 keeps God saying the speaker was tired and needed correction. The example summary also mentions losing strength, which sits on neighboring SRC not cited on these paragraphs. That detail is a possible minor omission, not a rewrite of the accepted chapter. A separate human decision is required only if that neighboring detail is judged essential."
+    },
+    {
+      "id": "REF037",
+      "kind": "reference",
+      "source_text": "Jude vers 20",
+      "completeness": "partial",
+      "examined_paragraphs": [
+        "P000005"
+      ],
+      "presence": "textual_presence_verifiable",
+      "substantial": false,
+      "separate_human_decision": false,
+      "heuristic_status_4b218": "NOT_COVERED",
+      "note": "P000005 names Jude and verse 20. The SourceMap raw form is 'Jude vers 20'. Completeness remains partial. Do not complete it."
+    },
+    {
+      "id": "REF038",
+      "kind": "reference",
+      "source_text": "1 Corinthiens 14",
+      "completeness": "partial",
+      "examined_paragraphs": [
+        "P000004"
+      ],
+      "presence": "textual_presence_verifiable",
+      "substantial": false,
+      "separate_human_decision": false,
+      "heuristic_status_4b218": "NOT_COVERED",
+      "note": "P000004 names 1 Corinthians 14. The SourceMap raw form is '1 Corinthiens 14'. Completeness remains partial."
+    },
+    {
+      "id": "REF043",
+      "kind": "reference",
+      "source_text": "Beatitude on hungering and thirsting for righteousness",
+      "completeness": "partial",
+      "examined_paragraphs": [
+        "P000013"
+      ],
+      "presence": "plausible_equivalent_paraphrase",
+      "substantial": false,
+      "separate_human_decision": false,
+      "heuristic_status_4b218": "NOT_COVERED",
+      "note": "P000013 quotes the beatitude on hunger and thirst for righteousness. The raw label uses hungering/thirsting. Completeness remains partial."
+    },
+    {
+      "id": "UNC029",
+      "kind": "reservation",
+      "source_text": "Isaiah chapter 26 versus 28 reference is confused mid-speech, unclear which chapter verse 3 belongs to.",
+      "examined_paragraphs": [
+        "P000004"
+      ],
+      "presence": "uncertainty_preserved",
+      "substantial": false,
+      "separate_human_decision": false,
+      "heuristic_status_4b218": "IDENTIFIER_ONLY",
+      "identifier_on_paragraphs": [
+        "P000004"
+      ],
+      "note": "P000004 still states Isaiah 26 verse 3 versus Isaiah 28 and keeps the connection unclear. UNC029 remains on the paragraph uncertainty field. The reservation is preserved, not resolved."
+    }
+  ],
+  "flagged_ids": [
+    "IDEA238",
+    "EX030",
+    "REF037",
+    "REF038",
+    "REF043",
+    "UNC029"
+  ],
+  "unc029_cited_on_paragraphs": [
+    "P000004"
+  ],
+  "unc029_preserved": true,
+  "substantial_omissions": [],
+  "separate_human_decision_recommended": [
+    "EX030"
+  ],
+  "overall_status": "OFFLINE CONTENT REVIEW — NOT CERTIFIED; no substantial omission requiring a rewrite of the accepted chapter",
+  "secrets_included": false
+}

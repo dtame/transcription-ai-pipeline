@@ -1,0 +1,190 @@
+{
+  "phase": "4B.2.15",
+  "case_id_audit_only": "4b276_p4_new_implication",
+  "handle": "h11",
+  "human_verdict_audit_only": "UNSUPPORTED",
+  "human_verdict_not_transmitted": true,
+  "human_label_unmodified": true,
+  "terra_global_verdict": null,
+  "target_unit_id": "u04",
+  "target_clause": "which means that every believer is guaranteed a fearless death",
+  "universal_guarantee_classification": "UNSUPPORTED",
+  "universal_guarantee_unsupported": true,
+  "universal_guarantee_detected": true,
+  "universal_guarantee_accepted": false,
+  "other_supported_false_rejections": [
+    "u01",
+    "u03"
+  ],
+  "supported_claims_review": "FALSE_REJECTION",
+  "python_decision": "BLOCK",
+  "units": [
+    {
+      "unit_id": "u00",
+      "text": "But this is not a matter of mental technique. ",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_prefix",
+      "target": false,
+      "relevant_evidence": [
+        "IDEA226",
+        "SRC006192"
+      ],
+      "human_analysis": "Editorial restatement of the historically supported p4 prefix. Mental-technique wording stays inside the attested 'not mind over matter / not mere intellect' reading.",
+      "prepared_text": "But this is not a matter of mental technique. ",
+      "terra_verdict": "SUPPORTED",
+      "terra_evidence": [
+        "SRC006192"
+      ],
+      "terra_reasons": [],
+      "terra_note": "",
+      "unknown_reasons": [],
+      "matches_human_label": true,
+      "false_rejection": false,
+      "present": true,
+      "acceptable_reason_overlap": []
+    },
+    {
+      "unit_id": "u01",
+      "text": "It is not mind over matter, not a trick of positive thinking applied to a frightening subject. ",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_prefix",
+      "target": false,
+      "relevant_evidence": [
+        "SRC006192",
+        "IDEA226"
+      ],
+      "human_analysis": "Directly attested by SRC006192. Positive-thinking wording is a faithful expansion of 'not mind over matter', historically accepted in the p4 supported reading.",
+      "prepared_text": "It is not mind over matter, not a trick of positive thinking applied to a frightening subject. ",
+      "terra_verdict": "UNSUPPORTED",
+      "terra_evidence": [
+        "SRC006192"
+      ],
+      "terra_reasons": [
+        "NEW_ARGUMENT",
+        "EVIDENCE_MISMATCH"
+      ],
+      "terra_note": "Evidence says only that it is not mind over matter; it does not characterize it as positive-thinking technique.",
+      "unknown_reasons": [],
+      "matches_human_label": false,
+      "false_rejection": true,
+      "present": true,
+      "acceptable_reason_overlap": []
+    },
+    {
+      "unit_id": "u02",
+      "text": "Death as gain must become your reality ",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_direct",
+      "target": false,
+      "relevant_evidence": [
+        "IDEA226",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "human_analysis": "Direct restatement of IDEA226 and SRC006193/SRC006195.",
+      "prepared_text": "Death as gain must become your reality ",
+      "terra_verdict": "SUPPORTED",
+      "terra_evidence": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "terra_reasons": [],
+      "terra_note": "",
+      "unknown_reasons": [],
+      "matches_human_label": true,
+      "false_rejection": false,
+      "present": true,
+      "acceptable_reason_overlap": []
+    },
+    {
+      "unit_id": "u03",
+      "text": "— not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending, ",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_prefix",
+      "target": false,
+      "relevant_evidence": [
+        "IDEA226",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "human_analysis": "Faithful paraphrase of 'not merely an intellectual idea' / 'must be your reality'. Sermon wording is stylistic, not a new doctrinal example.",
+      "prepared_text": "— not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending, ",
+      "terra_verdict": "UNSUPPORTED",
+      "terra_evidence": [
+        "IDEA226"
+      ],
+      "terra_reasons": [
+        "INVENTED_EXAMPLE",
+        "REFERENCE_EXPANSION"
+      ],
+      "terra_note": "Evidence contrasts lived reality with intellectual idea but does not supply the sermon example or this expanded description of facing one's ending.",
+      "unknown_reasons": [],
+      "matches_human_label": false,
+      "false_rejection": true,
+      "present": true,
+      "acceptable_reason_overlap": []
+    },
+    {
+      "unit_id": "u04",
+      "text": "which means that every believer is guaranteed a fearless death.",
+      "human_verdict": "UNSUPPORTED",
+      "family": "target_universal_guarantee",
+      "target": true,
+      "clause": "which means that every believer is guaranteed a fearless death",
+      "relevant_evidence": [],
+      "human_analysis": "Synthetic implication. Authorized evidence says death as gain must become lived reality. It does not entail that every believer is guaranteed a fearless death.",
+      "prepared_text": "which means that every believer is guaranteed a fearless death.",
+      "terra_verdict": "UNSUPPORTED",
+      "terra_evidence": [
+        "IDEA226"
+      ],
+      "terra_reasons": [
+        "NEW_CONCLUSION",
+        "UNCERTAINTY_STRENGTHENED"
+      ],
+      "terra_note": "The evidence does not guarantee that every believer will have a fearless death.",
+      "unknown_reasons": [],
+      "matches_human_label": true,
+      "false_rejection": false,
+      "present": true,
+      "acceptable_reason_overlap": [
+        "NEW_CONCLUSION",
+        "UNCERTAINTY_STRENGTHENED"
+      ]
+    }
+  ],
+  "cited_evidence": [
+    "IDEA226",
+    "SRC006192",
+    "SRC006193"
+  ],
+  "invalid_evidence_references": [],
+  "unknown_reason_codes": [],
+  "notes": [
+    "Evidence says only that it is not mind over matter; it does not characterize it as positive-thinking technique.",
+    "Evidence contrasts lived reality with intellectual idea but does not supply the sermon example or this expanded description of facing one's ending.",
+    "The evidence does not guarantee that every believer will have a fearless death."
+  ],
+  "expected_handles": [
+    "IDEA226",
+    "SRC006192",
+    "SRC006193",
+    "SRC006195"
+  ],
+  "coverage_ok": true,
+  "evidence_ok": true,
+  "contract_status": "PASS",
+  "full_paragraph_available_to_model": true,
+  "finding": "GUARANTEE_DETECTED_WITH_SUPPORTED_FALSE_REJECTIONS",
+  "questions": {
+    "terra_blocks_universal_guarantee": true,
+    "terra_accepts_supported_prefix": false,
+    "faithful_paraphrases_rejected": true,
+    "evidence_handles_relevant": true,
+    "questionable_without_sufficient_justification": false,
+    "editorial_implication_confused_with_attested_teaching": false
+  },
+  "semantic_status": "PARTIAL",
+  "review_status": "PARTIAL",
+  "secrets_included": false
+}

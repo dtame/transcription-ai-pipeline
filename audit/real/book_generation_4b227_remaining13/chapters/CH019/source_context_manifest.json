@@ -1,0 +1,464 @@
+{
+  "phase": "4B.2.27",
+  "chapter_id": "CH019",
+  "working_title": "Out of the Eater",
+  "language": "en",
+  "expected_sources": {
+    "idea_ids": [
+      "IDEA280",
+      "IDEA281",
+      "IDEA282",
+      "IDEA283",
+      "IDEA284",
+      "IDEA285",
+      "IDEA286"
+    ],
+    "example_ids": [
+      "EX049"
+    ],
+    "reference_ids": [
+      "REF059"
+    ],
+    "uncertainty_ids": [
+      "UNC035"
+    ],
+    "src_ids": [
+      "SRC008212",
+      "SRC008216",
+      "SRC008222",
+      "SRC008230",
+      "SRC008234",
+      "SRC008249",
+      "SRC008251",
+      "SRC008271",
+      "SRC008273",
+      "SRC008279",
+      "SRC008282",
+      "SRC008288",
+      "SRC008296",
+      "SRC008291",
+      "SRC008301",
+      "SRC008304",
+      "SRC008306",
+      "SRC008309",
+      "SRC008312",
+      "SRC008315",
+      "SRC008317",
+      "SRC008320",
+      "SRC008327",
+      "SRC008329",
+      "SRC008331",
+      "SRC008367",
+      "SRC008373",
+      "SRC008376",
+      "SRC008380",
+      "SRC008384",
+      "SRC008388",
+      "SRC008392",
+      "SRC008393",
+      "SRC008369",
+      "SRC008371",
+      "SRC008374",
+      "SRC008399",
+      "SRC008401",
+      "SRC008403",
+      "SRC008208",
+      "SRC008263",
+      "SRC008267",
+      "SRC008308",
+      "SRC008407",
+      "SRC008414"
+    ],
+    "section_ids": [
+      "SEC071",
+      "SEC072"
+    ]
+  },
+  "resolved_sources": {
+    "hydrated_src_ids": [
+      "SRC008208",
+      "SRC008212",
+      "SRC008216",
+      "SRC008222",
+      "SRC008230",
+      "SRC008234",
+      "SRC008249",
+      "SRC008251",
+      "SRC008263",
+      "SRC008267",
+      "SRC008271",
+      "SRC008273",
+      "SRC008279",
+      "SRC008282",
+      "SRC008288",
+      "SRC008291",
+      "SRC008296",
+      "SRC008301",
+      "SRC008304",
+      "SRC008306",
+      "SRC008308",
+      "SRC008309",
+      "SRC008312",
+      "SRC008315",
+      "SRC008317",
+      "SRC008320",
+      "SRC008327",
+      "SRC008329",
+      "SRC008331",
+      "SRC008367",
+      "SRC008369",
+      "SRC008371",
+      "SRC008373",
+      "SRC008374",
+      "SRC008376",
+      "SRC008380",
+      "SRC008384",
+      "SRC008388",
+      "SRC008392",
+      "SRC008393",
+      "SRC008399",
+      "SRC008401",
+      "SRC008403",
+      "SRC008407",
+      "SRC008414"
+    ],
+    "hydrated_count": 45,
+    "hydrated_details": [
+      {
+        "id": "SRC008208",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008212",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008216",
+        "chars": 17,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008222",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008230",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008234",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008249",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008251",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008263",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008267",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008271",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008273",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008279",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008282",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008288",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008291",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008296",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008301",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008304",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008306",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008308",
+        "chars": 11,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008309",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008312",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008315",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008317",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008320",
+        "chars": 43,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008327",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008329",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008331",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008367",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008369",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008371",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008373",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008374",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008376",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008380",
+        "chars": 42,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008384",
+        "chars": 40,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008388",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008392",
+        "chars": 41,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008393",
+        "chars": 41,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008399",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008401",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008403",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008407",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC008414",
+        "chars": 35,
+        "kind": "SRC"
+      }
+    ]
+  },
+  "missing_sources": [],
+  "context_size": {
+    "chars": 10976,
+    "utf8_bytes": 10996,
+    "section_count": 2,
+    "idea_count": 7,
+    "example_count": 1,
+    "reference_count": 1,
+    "uncertainty_count": 1,
+    "src_ref_count": 45,
+    "hydrated_segment_count": 45,
+    "idea_summary_chars": 996,
+    "hydrated_src_chars": 1202,
+    "sha256": "fb154c968c4d6734c1dc847d5cd246c7bb276893dfced5a8a92a3cf8cbebf8e9"
+  },
+  "potentially_truncated": [],
+  "coverage_risks": [
+    "Targeted hydration can omit neighboring spoken detail that the plan did not attach.",
+    "A resolved SRC is not proof that every idea in that SRC is restated."
+  ],
+  "whole_transcript_injected": false,
+  "whole_transcript_words": 38313,
+  "hydrated_src_words": 235,
+  "raw_transcript_used_as_silent_fallback": false,
+  "sources_dropped_to_reduce_cost": false,
+  "blocked_if_mandatory_source_missing": true,
+  "generation_blocked": false,
+  "planned_ideas": [
+    "IDEA280",
+    "IDEA281",
+    "IDEA282",
+    "IDEA283",
+    "IDEA284",
+    "IDEA285",
+    "IDEA286"
+  ],
+  "allowed_handles": [
+    "IDEA280",
+    "IDEA281",
+    "IDEA282",
+    "IDEA283",
+    "IDEA284",
+    "IDEA285",
+    "IDEA286",
+    "EX049",
+    "REF059",
+    "UNC035",
+    "SRC008212",
+    "SRC008216",
+    "SRC008222",
+    "SRC008230",
+    "SRC008234",
+    "SRC008249",
+    "SRC008251",
+    "SRC008271",
+    "SRC008273",
+    "SRC008279",
+    "SRC008282",
+    "SRC008288",
+    "SRC008296",
+    "SRC008291",
+    "SRC008301",
+    "SRC008304",
+    "SRC008306",
+    "SRC008309",
+    "SRC008312",
+    "SRC008315",
+    "SRC008317",
+    "SRC008320",
+    "SRC008327",
+    "SRC008329",
+    "SRC008331",
+    "SRC008367",
+    "SRC008373",
+    "SRC008376",
+    "SRC008380",
+    "SRC008384",
+    "SRC008388",
+    "SRC008392",
+    "SRC008393",
+    "SRC008369",
+    "SRC008371",
+    "SRC008374",
+    "SRC008399",
+    "SRC008401",
+    "SRC008403",
+    "SRC008208",
+    "SRC008263",
+    "SRC008267",
+    "SRC008308",
+    "SRC008407",
+    "SRC008414"
+  ],
+  "blocked_handles": [],
+  "ready": true,
+  "secrets_included": false,
+  "expected_title": "Out of the Eater",
+  "expected_section_count": 2,
+  "expected_idea_count": 7,
+  "expected_example_count": 1,
+  "expected_reference_count": 1,
+  "expected_uncertainty_count": 1,
+  "expected_hydrated_src_count": 45,
+  "context_hash": "fb154c968c4d6734c1dc847d5cd246c7bb276893dfced5a8a92a3cf8cbebf8e9",
+  "other_chapters_excluded": true,
+  "accepted_chapters_excluded": true,
+  "external_sources_added": false,
+  "internet_lookup": false,
+  "bible_completed_from_memory": false,
+  "context_truncated": false
+}

@@ -1,0 +1,111 @@
+{
+  "pytest": {
+    "returncode": 0,
+    "summary": "8 passed in 2.59s",
+    "passed": 8,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_book_full_manuscript_review_4b228.py"
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "phase": "4B.2.28",
+    "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+  },
+  "scenarios": {
+    "phase": "4B.2.28",
+    "passed": 21,
+    "failed": 0,
+    "failed_names": [],
+    "rows": [
+      {
+        "name": "inventory_has_19_chapters",
+        "ok": true
+      },
+      {
+        "name": "canonical_order",
+        "ok": true
+      },
+      {
+        "name": "no_duplicates",
+        "ok": true
+      },
+      {
+        "name": "seventy_two_sections",
+        "ok": true
+      },
+      {
+        "name": "two_hundred_eighty_six_ideas",
+        "ok": true
+      },
+      {
+        "name": "six_acceptance_manifests_resolved",
+        "ok": true
+      },
+      {
+        "name": "ch002_recovered_used",
+        "ok": true
+      },
+      {
+        "name": "ch012_corrected_used",
+        "ok": true
+      },
+      {
+        "name": "ch018_approved_used",
+        "ok": true
+      },
+      {
+        "name": "no_prose_added",
+        "ok": true
+      },
+      {
+        "name": "no_prose_removed",
+        "ok": true
+      },
+      {
+        "name": "no_prose_rewritten",
+        "ok": true
+      },
+      {
+        "name": "toc_integrity",
+        "ok": true
+      },
+      {
+        "name": "paragraph_traceability",
+        "ok": true
+      },
+      {
+        "name": "historical_observations_preserved",
+        "ok": true
+      },
+      {
+        "name": "approved_vs_candidate_distinction",
+        "ok": true
+      },
+      {
+        "name": "no_publication",
+        "ok": true
+      },
+      {
+        "name": "no_http_authorization",
+        "ok": true
+      },
+      {
+        "name": "no_docx",
+        "ok": true
+      },
+      {
+        "name": "no_pdf",
+        "ok": true
+      },
+      {
+        "name": "assembly_reproducible",
+        "ok": true
+      }
+    ],
+    "provider_calls": 0,
+    "secrets_included": false
+  }
+}

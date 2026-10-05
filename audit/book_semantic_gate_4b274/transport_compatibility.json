@@ -1,0 +1,23 @@
+{
+  "phase": "4B.2.7.4",
+  "reuse_transport": "book-semantic-validation-transport-1.1-candidate",
+  "new_transport_created": false,
+  "transport_1_1_2": null,
+  "field_meanings_unchanged": true,
+  "preserved": [
+    "claim-level assessment",
+    "exact spans",
+    "evidence handles",
+    "reason codes",
+    "global verdict",
+    "short reservations",
+    "compact JSON"
+  ],
+  "schema_1_1_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+  "schema_1_0_sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689",
+  "expected_schema_1_1_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+  "matches_frozen_1_1_schema": true,
+  "reason_enum_unchanged": true,
+  "silent_field_redefinition": false,
+  "secrets_included": false
+}

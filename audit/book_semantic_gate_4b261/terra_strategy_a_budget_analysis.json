@@ -1,0 +1,86 @@
+{
+  "phase": "4B.2.6.1",
+  "name": "A",
+  "title": "Keep historical contract; raise completion budget",
+  "compatibility_with_4b26_evidence": "Compatible as a follow-up experiment, but 4B.2.6 already exhausted 8192 tokens with zero visible JSON. A larger budget may repeat the same failure at higher cost.",
+  "technical_complexity": "LOW",
+  "truncation_risk": "HIGH_IF_REASONING_DOMINATES",
+  "resume_capability": "NONE — still one 10-case shot",
+  "proposition_level_control": "UNCHANGED",
+  "nineteen_chapter_fit": "POOR if every chapter repeats budget exhaustion",
+  "version_changes": "none",
+  "remaining_uncertainties": [
+    "reasoning_tokens UNKNOWN",
+    "whether extra budget becomes visible JSON"
+  ],
+  "budgets": [
+    {
+      "candidate_budget": 12288,
+      "authorized": false,
+      "analysis_only": true,
+      "known_local_model_max_output": 128000,
+      "project_hard_max_historical": 16384,
+      "if_fully_consumed": {
+        "input_tokens": 4076,
+        "output_tokens": 12288,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.008152,
+        "output_cost_usd": 0.147456,
+        "total_cost_usd": 0.155608,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "truncation_risk": "HIGH if hidden tokens again consume the entire budget before JSON emission",
+      "does_not_change_output_contract": true,
+      "does_not_prove_json_emission": true
+    },
+    {
+      "candidate_budget": 16384,
+      "authorized": false,
+      "analysis_only": true,
+      "known_local_model_max_output": 128000,
+      "project_hard_max_historical": 16384,
+      "if_fully_consumed": {
+        "input_tokens": 4076,
+        "output_tokens": 16384,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.008152,
+        "output_cost_usd": 0.196608,
+        "total_cost_usd": 0.20476,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "truncation_risk": "HIGH if hidden tokens again consume the entire budget before JSON emission",
+      "does_not_change_output_contract": true,
+      "does_not_prove_json_emission": true
+    },
+    {
+      "candidate_budget": 24576,
+      "authorized": false,
+      "analysis_only": true,
+      "known_local_model_max_output": 128000,
+      "project_hard_max_historical": 16384,
+      "if_fully_consumed": {
+        "input_tokens": 4076,
+        "output_tokens": 24576,
+        "reasoning_tokens": "UNKNOWN",
+        "input_cost_usd": 0.008152,
+        "output_cost_usd": 0.294912,
+        "total_cost_usd": 0.303064,
+        "status": "base_estimate",
+        "unknown_or_incomplete": true,
+        "counted_as_zero": false,
+        "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+      },
+      "truncation_risk": "HIGH if hidden tokens again consume the entire budget before JSON emission",
+      "does_not_change_output_contract": true,
+      "does_not_prove_json_emission": true
+    }
+  ],
+  "recommendation_alone": false,
+  "secrets_included": false
+}

@@ -1,0 +1,164 @@
+{
+  "offset_convention": {
+    "indexing": "python3_str_unicode_code_points",
+    "interval": "half_open",
+    "start_inclusive": true,
+    "end_exclusive": true,
+    "not_utf8_bytes": true,
+    "not_utf16_code_units": true,
+    "combining_characters_are_separate_code_points": true,
+    "empty_span_invalid": true,
+    "inconsistent_span_invalid": true,
+    "out_of_bounds_invalid": true,
+    "valid_offset_is_not_semantic_support": true,
+    "recovery": "paragraph_text[start:end]",
+    "documentation": "Offsets are Python 3 str indices. text[s:e] recovers the evaluated span. A well-formed span identifies the evaluated passage; it does not prove the passage is supported by canonical evidence."
+  },
+  "paragraph_length_codepoints": 232,
+  "frozen_1_0_and_1_1_uncovered_spans": [
+    [
+      140,
+      141
+    ],
+    [
+      209,
+      210
+    ]
+  ],
+  "classified_raw_gaps": [
+    {
+      "start": 31,
+      "end": 32,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "isspace_flags": [
+        true
+      ],
+      "kind": "whitespace",
+      "python_slice": "text[31:32]",
+      "interval": "half_open"
+    },
+    {
+      "start": 64,
+      "end": 65,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "isspace_flags": [
+        true
+      ],
+      "kind": "whitespace",
+      "python_slice": "text[64:65]",
+      "interval": "half_open"
+    },
+    {
+      "start": 105,
+      "end": 106,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "isspace_flags": [
+        true
+      ],
+      "kind": "whitespace",
+      "python_slice": "text[105:106]",
+      "interval": "half_open"
+    },
+    {
+      "start": 140,
+      "end": 142,
+      "text": ". ",
+      "codepoints": [
+        46,
+        32
+      ],
+      "isspace_flags": [
+        false,
+        true
+      ],
+      "kind": "sentence_terminator",
+      "python_slice": "text[140:142]",
+      "interval": "half_open"
+    },
+    {
+      "start": 173,
+      "end": 174,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "isspace_flags": [
+        true
+      ],
+      "kind": "whitespace",
+      "python_slice": "text[173:174]",
+      "interval": "half_open"
+    },
+    {
+      "start": 209,
+      "end": 211,
+      "text": ". ",
+      "codepoints": [
+        46,
+        32
+      ],
+      "isspace_flags": [
+        false,
+        true
+      ],
+      "kind": "sentence_terminator",
+      "python_slice": "text[209:211]",
+      "interval": "half_open"
+    }
+  ],
+  "significant_gaps": [],
+  "whitespace_already_ignored_by_uncovered_spans": true,
+  "4b27_reported_as_spaces": false,
+  "4b27_actual_gap_characters": [
+    {
+      "start": 140,
+      "end": 142,
+      "repr": "'. '",
+      "codepoints": [
+        46,
+        32
+      ],
+      "kind": "sentence_terminator"
+    },
+    {
+      "start": 209,
+      "end": 211,
+      "repr": "'. '",
+      "codepoints": [
+        46,
+        32
+      ],
+      "kind": "sentence_terminator"
+    }
+  ],
+  "finding": "The recorded 4B.2.7 intervals 140-141 and 209-210 are the sentence-final periods after already-covered clauses, not the following spaces. uncovered_spans() already ignores whitespace. It does not ignore those periods.",
+  "correction_safe_if": "Only sentence-final .?! immediately after a covered span and followed by whitespace, another covered span, or end of text.",
+  "never_ignore": [
+    "word",
+    "number",
+    "negation",
+    "logical connective",
+    "clause",
+    "comma_or_colon_that_can_change_meaning",
+    "decimal_point_followed_by_digit"
+  ],
+  "secrets_included": false,
+  "tests": {
+    "simple_space_ignored_by_1_0": true,
+    "period_not_ignored_by_1_0": true,
+    "period_allowed_by_1_1_1_when_sentence_final": true,
+    "word_never_allowed": true,
+    "negation_never_allowed": true,
+    "connective_never_allowed": true,
+    "benchmark_offsets_not_rewritten": true
+  }
+}

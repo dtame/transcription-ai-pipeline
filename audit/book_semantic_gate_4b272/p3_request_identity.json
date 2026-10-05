@@ -1,0 +1,84 @@
+{
+  "phase": "4B.2.7.2",
+  "serialization": {
+    "canonical": "json.dumps(payload, ensure_ascii=False, sort_keys=True)",
+    "encoding": "utf-8",
+    "algorithm": "sha256",
+    "non_deterministic_keys_stripped": [
+      "timeout",
+      "request_id",
+      "created",
+      "timestamp",
+      "id"
+    ]
+  },
+  "first_sha256": "5ace261296d808437910f8f9efe247a80daebbb2237bc8af46bda56bf98d7897",
+  "second_sha256": "5ace261296d808437910f8f9efe247a80daebbb2237bc8af46bda56bf98d7897",
+  "sha256": "5ace261296d808437910f8f9efe247a80daebbb2237bc8af46bda56bf98d7897",
+  "determinism": true,
+  "differs_from_h01": true,
+  "historical_h01_sha256": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+  "model": "gpt-5.6-terra",
+  "model_identity": true,
+  "provider": "openai",
+  "prompt_version": "book-semantic-validator-1.1.1-candidate",
+  "prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+  "transport_version": "book-semantic-validation-transport-1.1-candidate",
+  "transport_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+  "selected_handle": "h02",
+  "selected_case_id_audit_only": "4b22_p3_new_causal",
+  "handles_in_request": [
+    "h02"
+  ],
+  "exactly_one_case": true,
+  "evidence_in_request": [
+    "IDEA225",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157"
+  ],
+  "p3_evidence_only": true,
+  "label_leakage": 0,
+  "label_leak_pass": true,
+  "human_labels_sent": false,
+  "independence_hits": [],
+  "independent_of_h01": true,
+  "dynamic_fields_present": [],
+  "dynamic_fields_absent": true,
+  "sdk_max_retries_for_future_invocation": 0,
+  "repeat_payload_identical": true,
+  "secrets_included": false,
+  "sdk": {
+    "serialization_pass": true,
+    "network_calls": 0,
+    "checks": {
+      "exactly_one_case": true,
+      "compact_instruction_present": true,
+      "prompt_111": true,
+      "evidence_present": true,
+      "max_completion_tokens": true,
+      "max_tokens_absent": true,
+      "temperature_absent": true,
+      "reasoning_params_absent": true,
+      "json_object": true,
+      "model": true,
+      "endpoint": "chat.completions",
+      "sdk_method": "client.chat.completions.create",
+      "token_field": "max_completion_tokens",
+      "future_retries_disabled": true,
+      "independent_of_h01": true,
+      "label_leak_absent": true,
+      "p3_answer_not_in_prompt": true
+    }
+  },
+  "local_compat": {
+    "max_completion_tokens": 8192,
+    "max_tokens_absent": true,
+    "temperature_absent": true,
+    "thinking_absent": true,
+    "json_object": true
+  },
+  "payload_omitted_from_this_view": true
+}

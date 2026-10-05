@@ -10,6 +10,10 @@ from app.book_generation.hydrate import load_clean_transcript_index
 from app.book_generation.language import resolve_canonical_language
 from app.book_generation.writer import production_book_absent
 from app.book_semantic_gate_4b23.budget import measure_chapter_budget
+from app.ai.provider_preflight import (
+    REASON_PROVIDER_CREDENTIAL_NOT_READY,
+    check_provider_runtime_readiness,
+)
 from app.book_semantic_gate_4b24.constants import (
     AUTHORIZATION_SCOPE,
     CONSERVATIVE_MAX_OUTPUT_TOKENS,
@@ -18,8 +22,11 @@ from app.book_semantic_gate_4b24.constants import (
     EXPECTED_POSITIVE_CASES,
     EXPECTED_REQUEST_SHA256,
     EXPECTED_SCORED_CASES,
+    MODEL,
+    OUTPUT_MODE,
     PHASE,
     PROJECT_NAME,
+    PROVIDER,
     SCORED_CASE_ORDER,
     TARGET_CHAPTER_ID,
 )
@@ -158,6 +165,19 @@ def build_precall(*, root: Path | None = None) -> dict[str, Any]:
         blockers.append("context_safety")
     if not credential_available():
         blockers.append("openai_credential")
+    runtime = check_provider_runtime_readiness(
+        PROVIDER,
+        model=MODEL,
+        request=request,
+        output_mode=OUTPUT_MODE,
+        construct_client=True,
+    )
+    if not runtime.ready:
+        if runtime.primary_reason == REASON_PROVIDER_CREDENTIAL_NOT_READY:
+            if "openai_credential" not in blockers:
+                blockers.append("openai_credential")
+        else:
+            blockers.append("openai_runtime")
 
     budget = measure_chapter_budget(
         evidence=evidence,
@@ -203,6 +223,7 @@ def build_precall(*, root: Path | None = None) -> dict[str, Any]:
             "thinking_present": twice["first"]["thinking_present"],
             "response_format": twice["first"]["response_format"],
             "max_tokens": twice["first"]["max_tokens"],
+            "max_completion_tokens": twice["first"].get("max_completion_tokens"),
             "model": twice["first"]["model"],
             "gate_input_sha256": twice["gate_input_sha256"],
         },
@@ -219,6 +240,7 @@ def build_precall(*, root: Path | None = None) -> dict[str, Any]:
             ),
         },
         "credential_available": credential_available(),
+        "provider_runtime": runtime.to_dict(),
         "production_book_absent": not production_book_path().is_file(),
         "allowed_handles": list(evidence.get("allowed") or []),
         "scored_cases": scored,

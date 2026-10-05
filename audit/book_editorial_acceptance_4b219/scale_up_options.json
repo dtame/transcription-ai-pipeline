@@ -1,0 +1,265 @@
+{
+  "phase": "4B.2.19",
+  "provider_calls_this_phase": 0,
+  "this_estimate_is_not_an_authorization": true,
+  "remaining_chapter_count": 18,
+  "total_chapter_count": 19,
+  "accepted_chapter_excluded": "CH012",
+  "remaining_chapters": [
+    {
+      "chapter_id": "CH001",
+      "working_title": "Unlearning What Was Handed Down",
+      "section_count": 4,
+      "idea_count": 12
+    },
+    {
+      "chapter_id": "CH002",
+      "working_title": "Flesh and Bone: The Resurrection You Inherit",
+      "section_count": 4,
+      "idea_count": 15
+    },
+    {
+      "chapter_id": "CH003",
+      "working_title": "Hebrews 2: Death Already Destroyed",
+      "section_count": 4,
+      "idea_count": 14
+    },
+    {
+      "chapter_id": "CH004",
+      "working_title": "Priest, Prophet, King",
+      "section_count": 5,
+      "idea_count": 19
+    },
+    {
+      "chapter_id": "CH005",
+      "working_title": "Access, Not Achievement",
+      "section_count": 5,
+      "idea_count": 18
+    },
+    {
+      "chapter_id": "CH006",
+      "working_title": "That They May Be One",
+      "section_count": 8,
+      "idea_count": 38
+    },
+    {
+      "chapter_id": "CH007",
+      "working_title": "Loved Exactly as Jesus Is Loved",
+      "section_count": 2,
+      "idea_count": 10
+    },
+    {
+      "chapter_id": "CH008",
+      "working_title": "Set Your Mind Above",
+      "section_count": 3,
+      "idea_count": 11
+    },
+    {
+      "chapter_id": "CH009",
+      "working_title": "Laws You Gave Yourself",
+      "section_count": 3,
+      "idea_count": 14
+    },
+    {
+      "chapter_id": "CH010",
+      "working_title": "Spirit, Soul and Body",
+      "section_count": 4,
+      "idea_count": 16
+    },
+    {
+      "chapter_id": "CH011",
+      "working_title": "Reasonings and Strongholds",
+      "section_count": 4,
+      "idea_count": 12
+    },
+    {
+      "chapter_id": "CH013",
+      "working_title": "The Renewed Mind and the Hidden Faculty",
+      "section_count": 4,
+      "idea_count": 24
+    },
+    {
+      "chapter_id": "CH014",
+      "working_title": "Operating What You Have",
+      "section_count": 4,
+      "idea_count": 15
+    },
+    {
+      "chapter_id": "CH015",
+      "working_title": "Grace Barely Touched",
+      "section_count": 4,
+      "idea_count": 16
+    },
+    {
+      "chapter_id": "CH016",
+      "working_title": "Death as Gain",
+      "section_count": 1,
+      "idea_count": 6
+    },
+    {
+      "chapter_id": "CH017",
+      "working_title": "Nothing by Chance",
+      "section_count": 3,
+      "idea_count": 17
+    },
+    {
+      "chapter_id": "CH018",
+      "working_title": "Testimonies of Resurrection",
+      "section_count": 4,
+      "idea_count": 11
+    },
+    {
+      "chapter_id": "CH019",
+      "working_title": "Out of the Eater",
+      "section_count": 2,
+      "idea_count": 7
+    }
+  ],
+  "recommended_option": "C",
+  "options": {
+    "A": {
+      "name": "Additional semantic validation of CH012",
+      "choose_only_if": "A substantial unresolved risk really justifies a new provider call.",
+      "benefits": [
+        "Would inspect new claims, causality, testimony, and references with Terra.",
+        "Would produce a paragraph-level semantic dossier for the accepted chapter."
+      ],
+      "risks": [
+        "The current Semantic Gate can false-reject preserved reservations and restatement.",
+        "Empty IDEA handles in paras[].e can fail the historical validator without a missing teaching.",
+        "A FAIL could pressure a rewrite of an already accepted chapter.",
+        "Spends a provider call without changing the editorial acceptance already recorded."
+      ],
+      "forecast_cost_usd": {
+        "terra_h01_analog_14_paragraphs": 0.088004,
+        "reasoning_token_billing": "UNKNOWN",
+        "long_context_pricing": "UNKNOWN",
+        "complete_cost": "UNKNOWN",
+        "counted_as_zero": false
+      },
+      "prerequisites": [
+        "A new explicit Terra authorization.",
+        "A rule that a false rejection must go to human review, not automatic rewrite.",
+        "The accepted chapter pair remains frozen."
+      ],
+      "schedule_impact": "Adds one validation cycle before any remaining chapter can be prepared.",
+      "justified_now": false,
+      "why_not_chosen": "The remaining CH012 questions are editorial glosses and a possible minor EX030 neighboring detail. They do not constitute a substantial unresolved risk that requires a provider call before recording acceptance."
+    },
+    "B": {
+      "name": "Second pilot chapter",
+      "choose_if": "A second sample is required to test narrative voice and IDEA-handle robustness.",
+      "benefits": [
+        "Would be the first real call of prompt 1.1.",
+        "Would test whether IDEA handles appear in paras[].e without invention.",
+        "Would sample a harder remaining chapter before a wider queue."
+      ],
+      "risks": [
+        "Multiplies pilots and consumes another one-shot authorization.",
+        "CH012 already demonstrated voice, section order, and readable restatement.",
+        "A second isolated pilot still would not authorize the other 17 chapters.",
+        "Harder remaining chapters (CH006, CH013, CH001, CH016) would still need their own controls."
+      ],
+      "forecast_cost_usd": {
+        "generator_historical_central": 0.042496,
+        "generator_ch012_actual_analog": 0.036152,
+        "semantic_gate": "UNKNOWN",
+        "complete_cost": "UNKNOWN",
+        "counted_as_zero": false,
+        "note": "CH012 actual spend was 0.036152 USD. Remaining chapters are not the same size. CH006 has 38 ideas and 8 sections."
+      },
+      "prerequisites": [
+        "A new explicit one-chapter Sonnet authorization.",
+        "Prompt 1.1 used only as an isolated candidate.",
+        "A hard stop if IDEA handles are invented or missing after a clear correspondence."
+      ],
+      "schedule_impact": "Inserts another full pilot cycle before controlled remaining-chapter preparation.",
+      "justified_now": false,
+      "why_not_chosen": "Voice and four-section restatement are already accepted on CH012. The untested 1.1 handle instruction can be controlled by a first remaining-chapter hard stop rather than by multiplying dedicated pilots."
+    },
+    "C": {
+      "name": "Preparation of controlled generation of the remaining 18 chapters",
+      "prefer_if": "Remaining risks can be mastered without multiplying dedicated pilots.",
+      "benefits": [
+        "Closes the CH012 editorial review and moves the pipeline to a queue design.",
+        "Keeps generation chapter-by-chapter with per-chapter authorization and caps.",
+        "Can use prompt 1.1 as the reference candidate without promoting it.",
+        "Can place the first remaining chapter under a hard IDEA-handle stop."
+      ],
+      "risks": [
+        "Prompt 1.1 is untested in a real call.",
+        "Chapter sizes vary sharply; CH006, CH013, CH001, and CH016 are harder.",
+        "Semantic certification of CH012 has not been performed.",
+        "A queue without per-chapter stops could become an unauthorized 18-call run."
+      ],
+      "forecast_cost_usd": {
+        "this_preparation_phase": 0.0,
+        "later_18_chapter_generator_historical_central_envelope": 0.764928,
+        "later_18_chapter_generator_ch012_actual_analog": 0.650736,
+        "later_semantic_gate": "UNKNOWN",
+        "phase5": "UNKNOWN",
+        "complete_cost": "UNKNOWN",
+        "counted_as_zero": false,
+        "not_an_authorization": true
+      },
+      "prerequisites": [
+        "Human decision to open a controlled-generation preparation phase.",
+        "Per-chapter authorization, cost cap, and stop conditions.",
+        "Prompt 1.1 remains a candidate until a later explicit promotion.",
+        "No publication and no production-cache write.",
+        "No global 18-chapter authorization in a single token."
+      ],
+      "schedule_impact": "The next operational phase is offline preparation, then a later human-authorized first remaining chapter. No generation occurs now.",
+      "justified_now": true,
+      "why_chosen": "CH012 is editorially accepted, frozen by hash, internally consistent, and the 11 planned ideas are content-supported in the accepted prose. Remaining risks — untested 1.1 handles, harder chapters, no semantic certificate — can be mastered by per-chapter controls rather than by another dedicated CH012-style pilot or a Terra call on the accepted text."
+    }
+  },
+  "harder_remaining_chapters": [
+    {
+      "chapter_id": "CH001",
+      "working_title": "Unlearning What Was Handed Down",
+      "section_count": 4,
+      "idea_count": 12
+    },
+    {
+      "chapter_id": "CH004",
+      "working_title": "Priest, Prophet, King",
+      "section_count": 5,
+      "idea_count": 19
+    },
+    {
+      "chapter_id": "CH005",
+      "working_title": "Access, Not Achievement",
+      "section_count": 5,
+      "idea_count": 18
+    },
+    {
+      "chapter_id": "CH006",
+      "working_title": "That They May Be One",
+      "section_count": 8,
+      "idea_count": 38
+    },
+    {
+      "chapter_id": "CH013",
+      "working_title": "The Renewed Mind and the Hidden Faculty",
+      "section_count": 4,
+      "idea_count": 24
+    },
+    {
+      "chapter_id": "CH016",
+      "working_title": "Death as Gain",
+      "section_count": 1,
+      "idea_count": 6
+    },
+    {
+      "chapter_id": "CH017",
+      "working_title": "Nothing by Chance",
+      "section_count": 3,
+      "idea_count": 17
+    }
+  ],
+  "ready_for_controlled_scale_up": false,
+  "ready_for_full_real_book_generation": false,
+  "why_not_ready_to_execute": "Preparation is recommended. Execution is not authorized. Prompt 1.1 is inactive and unregistered. No remaining-chapter authorization exists. Semantic certification has not been performed. book.json stays unpublished.",
+  "secrets_included": false
+}

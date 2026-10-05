@@ -1,0 +1,285 @@
+{
+  "phase": "4B.2.24",
+  "chapter_id": "CH002",
+  "target": {
+    "section_id": "SEC006",
+    "paragraph_id": "P000008",
+    "provider_handle": "p8"
+  },
+  "files": {
+    "raw_response": {
+      "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/provider_response_raw.json",
+      "exists": true,
+      "sha256": "dff61499135341af3fee507c98d4ad9c01eb5c8d7c7bb76a9294cc7908b01780",
+      "bytes": 8284
+    },
+    "candidate_json": {
+      "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/chapter_candidate.json",
+      "exists": true,
+      "sha256": "baa6b55ad523b9d2f904428ba6e921471cfd50a4260e26353a11a2f2bde0e756",
+      "bytes": 17452
+    },
+    "candidate_md": {
+      "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/chapter_candidate.md",
+      "exists": true,
+      "sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+      "bytes": 3539
+    },
+    "structural_validation": {
+      "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/structural_validation.json",
+      "exists": true,
+      "sha256": "c71d1948c4641f0f2be79575d5acc56a6ab260b6022bf9dfc5b94b83023538d6",
+      "bytes": 3101
+    },
+    "call_lock": {
+      "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/call_lock.json",
+      "exists": true,
+      "sha256": "b448364399adeaf9b3eb296cfc32928eec95115d993ffd2f7469361ccbd3e1ed",
+      "bytes": 1173
+    },
+    "source_context_manifest": {
+      "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/source_context_manifest.json",
+      "exists": true,
+      "sha256": "8ca47acc4a184d127bcd39a812f2c6e9c8d057f820a30ea743abc3d86c2b72d9",
+      "bytes": 11573
+    },
+    "batch_summary": {
+      "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/batch_summary.json",
+      "exists": true,
+      "sha256": "66d0b1211925a21d0b49c7177398aafc7a0ebf9d9c7e7655d503715b58d2dcca",
+      "bytes": 258
+    },
+    "batch_dir": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01"
+  },
+  "raw_response": {
+    "http_success": true,
+    "finish_reason": "end_turn",
+    "json_valid": true,
+    "section_ids": [
+      "SEC005",
+      "SEC006",
+      "SEC007",
+      "SEC008"
+    ],
+    "paragraph_handles": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "p8",
+      "p9",
+      "p10",
+      "p11",
+      "p12",
+      "p13",
+      "p14",
+      "p15",
+      "p16",
+      "p17"
+    ],
+    "target": {
+      "exists": true,
+      "text": null,
+      "text_repr": "''",
+      "text_length": 0,
+      "whitespace_only": false,
+      "empty": true,
+      "kind": null,
+      "paragraph_id": null,
+      "provider_handle": "p8",
+      "handles": {
+        "evidence_handles": [],
+        "source_refs": [],
+        "idea_refs": [],
+        "example_refs": [],
+        "reference_refs": [],
+        "uncertainty_refs": []
+      },
+      "classified_handle_kinds": [],
+      "has_editorial_content": false,
+      "has_indispensable_provenance": false,
+      "contains_idea": false,
+      "contains_src": false,
+      "contains_ex": false,
+      "contains_ref": false,
+      "contains_unc": false,
+      "contains_metadata_keys": [
+        "e",
+        "h",
+        "k"
+      ],
+      "section_id": "SEC006",
+      "section_index": 3,
+      "raw_object": {
+        "h": "p8",
+        "k": "con",
+        "t": "",
+        "e": [],
+        "u": []
+      }
+    }
+  },
+  "candidate": {
+    "chapter_id": "CH002",
+    "title": "Flesh and Bone: The Resurrection You Inherit",
+    "section_ids": [
+      "SEC005",
+      "SEC006",
+      "SEC007",
+      "SEC008"
+    ],
+    "paragraph_ids": [
+      "P000001",
+      "P000002",
+      "P000003",
+      "P000004",
+      "P000005",
+      "P000006",
+      "P000007",
+      "P000008",
+      "P000009",
+      "P000010",
+      "P000011",
+      "P000012",
+      "P000013",
+      "P000014",
+      "P000015",
+      "P000016",
+      "P000017"
+    ],
+    "target": {
+      "exists": true,
+      "text": "",
+      "text_repr": "''",
+      "text_length": 0,
+      "whitespace_only": false,
+      "empty": true,
+      "kind": "connective",
+      "paragraph_id": "P000008",
+      "provider_handle": "p8",
+      "handles": {
+        "evidence_handles": [],
+        "source_refs": [],
+        "idea_refs": [],
+        "example_refs": [],
+        "reference_refs": [],
+        "uncertainty_refs": []
+      },
+      "classified_handle_kinds": [],
+      "has_editorial_content": false,
+      "has_indispensable_provenance": false,
+      "contains_idea": false,
+      "contains_src": false,
+      "contains_ex": false,
+      "contains_ref": false,
+      "contains_unc": false,
+      "contains_metadata_keys": [
+        "evidence_handles",
+        "example_refs",
+        "idea_refs",
+        "kind",
+        "paragraph_id",
+        "provider_handle",
+        "reference_refs",
+        "source_refs",
+        "uncertainty_refs"
+      ],
+      "section_id": "SEC006",
+      "section_index": 3,
+      "candidate_object": {
+        "paragraph_id": "P000008",
+        "provider_handle": "p8",
+        "kind": "connective",
+        "text": "",
+        "evidence_handles": [],
+        "source_refs": [],
+        "idea_refs": [],
+        "example_refs": [],
+        "reference_refs": [],
+        "uncertainty_refs": []
+      }
+    }
+  },
+  "structural_validation": {
+    "status": "FAIL",
+    "chapter_contract_valid": false,
+    "errors": [
+      "SEC006.p4: empty text",
+      "1 empty paragraph(s)"
+    ],
+    "empty_paragraphs": 1,
+    "ideas_found_in_paras_e": 15,
+    "ideas_expected_count": 15,
+    "additional_contract_errors": []
+  },
+  "provenance": {
+    "provider_raw_sha256": "5daab5a05cb6297a62f68a8eef3280ea8fc555feccea853a71e562b5b2a39345",
+    "usage_raw_sha256": "5daab5a05cb6297a62f68a8eef3280ea8fc555feccea853a71e562b5b2a39345",
+    "lock_state": "FAILED",
+    "lock_consumed": true,
+    "lock_reusable": false,
+    "source_context_chapter_id": "CH002",
+    "batch_result": "PARTIAL",
+    "classified_target_handles": []
+  },
+  "raw_bin": {
+    "files": [
+      {
+        "path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH002/provider_forensics/CANARY_BG4B223_CH002/f82e6bd1c9b86b00266335cf3272bd38fb0c74166c079e27d202a5a2b85f35a6/provider_raw_response.bin",
+        "bytes": 5914,
+        "handle_found": true,
+        "empty_t_near_handle": false,
+        "sha256": "3849332c7397800ef872c3d254f807c6cd8766439141f34c777af963b5d1257d"
+      }
+    ],
+    "handle_found": true,
+    "empty_text_token_found": false
+  },
+  "questions": {
+    "1_exists_in_raw_response": true,
+    "2_exact_content": {
+      "h": "p8",
+      "k": "con",
+      "t": "",
+      "e": [],
+      "u": []
+    },
+    "3_empty_or_whitespace_only": true,
+    "4_contains_metadata": true,
+    "5_contains_idea_handles": false,
+    "6_contains_src_handles": false,
+    "7_contains_ex_ref_unc": false,
+    "8_id_referenced_elsewhere": [],
+    "9_removal_changes_other_paragraph_order": false,
+    "10_removal_affects_markdown_render": false,
+    "11_other_paragraph_anomalies": [],
+    "12_other_contract_violations": []
+  },
+  "introduction": {
+    "present_in_raw_parsed_json": true,
+    "present_in_candidate_json": true,
+    "present_in_raw_bin_search": true,
+    "raw_text_empty": true,
+    "candidate_text_empty": true,
+    "introduced_by_model": true,
+    "introduced_by_parsing": false,
+    "introduced_by_normalization": false,
+    "introduced_by_rendering": false,
+    "contract_defect": false,
+    "validation_defect": false,
+    "validator_correctly_failed": true,
+    "markdown_omits_empty_paragraph": true,
+    "rationale": "The Anthropic parsed JSON already contains SEC006 handle p8 with t=\"\" and e=[]. The materialized candidate preserves that object as P000008. The markdown renderer strips empty text, so the readable file hides the defect. The existing validator reported SEC006.p4: empty text and 1 empty paragraph(s)."
+  },
+  "other_raw_anomalies": [],
+  "other_candidate_anomalies": [],
+  "referenced_elsewhere": [],
+  "markdown_contains_visible_empty_block": false,
+  "recovery_admissible_from_forensics": true,
+  "recovery_block_reasons": [],
+  "originals_must_remain_immutable": true,
+  "secrets_included": false
+}

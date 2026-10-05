@@ -1,0 +1,1456 @@
+{
+  "phase": "4B.2.7.4",
+  "handle": "h02",
+  "case_id_audit_only": "4b22_p3_new_causal",
+  "human_label_audit_only": "QUESTIONABLE",
+  "human_label_unmodified": true,
+  "historical_h02_not_pass": true,
+  "paragraph_exact_text": "Yet we can see fear operating in believers, and this is not normal. Fear of death is an abuse — an abuse to your very person, a diminishment of what you were made and remade to be. It is worth naming where this abuse comes from. The devil has used it since the beginning; he has not changed his style. The same old strategy that first weaponized death against humanity is still being run today, unchanged, because it still works wherever it is not resisted by truth.",
+  "authorized_handles": [
+    "IDEA225",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157"
+  ],
+  "authorized_evidence_texts": {
+    "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+    "SRC006152": "It is an abuse",
+    "SRC006154": "It is an abuse to your person.",
+    "SRC006155": "And the devil",
+    "SRC006156": "has used it since.",
+    "SRC006157": "He has not changed his style."
+  },
+  "combined_authorized_text": "Living is abused when death is feared; fear of death is the devil's old strategy.\nIt is an abuse\nIt is an abuse to your person.\nAnd the devil\nhas used it since.\nHe has not changed his style.",
+  "h01_evidence_not_used": true,
+  "causal_clause_offsets": {
+    "found": true,
+    "start": 406,
+    "end": 465,
+    "recovered": "because it still works wherever it is not resisted by truth",
+    "exact_match": true,
+    "interval": "half_open",
+    "python_slice": "text[406:465]",
+    "preceding": "ty is still being run today, unchanged, ",
+    "following": "."
+  },
+  "causal_clause_examined_independently": true,
+  "claims": [
+    {
+      "index": 0,
+      "exact_text": "Yet we can see fear operating in believers, and this is not normal",
+      "offsets": {
+        "start": 0,
+        "end": 66,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "NO_EVIDENCE"
+        ],
+        "unknown": [
+          "NO_EVIDENCE"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_NO_EVIDENCE"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Believers and abnormality are not attested.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "Authorized P3 evidence does not mention believers, visible operation of fear in that group, or abnormality. IDEA225 attests that living is abused when death is feared. That is not the same assertion. H01 SRC006180/SRC006182 are not authorized for h02 and were not used.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 1,
+      "exact_text": "Fear of death is an abuse",
+      "offsets": {
+        "start": 68,
+        "end": 93,
+        "interval": "half_open"
+      },
+      "terra_verdict": "SUPPORTED",
+      "terra_reason_codes": [],
+      "terra_reason_in_catalog": true,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "SUPPORTED",
+        "codes": [],
+        "unknown": [],
+        "empty": true,
+        "in_catalog": [],
+        "status": "PASS",
+        "errors": [],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "",
+      "cited_evidence": [
+        "IDEA225",
+        "SRC006152"
+      ],
+      "cited_evidence_texts": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse"
+      },
+      "uncited_authorized_evidence_examined": {
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": true,
+      "semantically_entailed": true,
+      "adds_new_assertion": false,
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "disagreement_conclusion": null,
+      "rationale": "SRC006152 'It is an abuse' and IDEA225 'Living is abused when death is feared' directly support 'Fear of death is an abuse'.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 2,
+      "exact_text": "an abuse to your very person",
+      "offsets": {
+        "start": 96,
+        "end": 124,
+        "interval": "half_open"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "terra_reason_codes": [
+        "UNJUSTIFIED_STRENGTHENING"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "QUESTIONABLE",
+        "codes": [
+          "UNJUSTIFIED_STRENGTHENING"
+        ],
+        "unknown": [
+          "UNJUSTIFIED_STRENGTHENING"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_UNJUSTIFIED_STRENGTHENING"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "The intensifier exceeds the supplied wording.",
+      "cited_evidence": [
+        "SRC006154"
+      ],
+      "cited_evidence_texts": {
+        "SRC006154": "It is an abuse to your person."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": true,
+      "adds_new_assertion": false,
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "disagreement_conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "SRC006154 states 'It is an abuse to your person.' The generated span adds the intensifier 'very'. High stylistic freedom permits that restatement; it does not add a new person, a new abuse, or a new relation. Lexical absence of 'very' is not a new claim. Terra's UNJUSTIFIED_STRENGTHENING over-reads a stylistic intensifier.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 3,
+      "exact_text": "a diminishment of what you were made and remade to be",
+      "offsets": {
+        "start": 126,
+        "end": 179,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "NO_EVIDENCE"
+        ],
+        "unknown": [
+          "NO_EVIDENCE"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_NO_EVIDENCE"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Diminishment and remaking are not attested.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "Diminishment, being made, and being remade are absent from authorized IDEA225/SRC texts. SRC006153 'to live.' is neighboring canonical speech but is not an authorized P3 handle and was not used as support.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 4,
+      "exact_text": "It is worth naming where this abuse comes from",
+      "offsets": {
+        "start": 181,
+        "end": 227,
+        "interval": "half_open"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "terra_reason_codes": [
+        "UNSUPPORTED_IMPLICATION"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "QUESTIONABLE",
+        "codes": [
+          "UNSUPPORTED_IMPLICATION"
+        ],
+        "unknown": [
+          "UNSUPPORTED_IMPLICATION"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_UNSUPPORTED_IMPLICATION"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "The evidence says the devil used it, not that it establishes the abuse's origin.",
+      "cited_evidence": [
+        "SRC006152",
+        "SRC006155",
+        "SRC006156"
+      ],
+      "cited_evidence_texts": {
+        "SRC006152": "It is an abuse",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "PLAUSIBLE_BUT_NOT_ENTAILED",
+      "disagreement_conclusion": "INDETERMINATE",
+      "rationale": "SRC006155+SRC006156 attribute use of the abuse to the devil. The generated sentence additionally frames an origin ('where this abuse comes from') and an editorial evaluation ('worth naming'). Origin is a close implication, not a strict entailment. Terra's reservation is conservative rather than clearly false.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 5,
+      "exact_text": "The devil has used it since the beginning",
+      "offsets": {
+        "start": 229,
+        "end": 270,
+        "interval": "half_open"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "terra_reason_codes": [
+        "PARTIAL_REFERENCE_EXPANSION"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "QUESTIONABLE",
+        "codes": [
+          "PARTIAL_REFERENCE_EXPANSION"
+        ],
+        "unknown": [
+          "PARTIAL_REFERENCE_EXPANSION"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_PARTIAL_REFERENCE_EXPANSION"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "The supplied fragment does not specify 'the beginning.'",
+      "cited_evidence": [
+        "SRC006155",
+        "SRC006156"
+      ],
+      "cited_evidence_texts": {
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": true,
+      "adds_new_assertion": false,
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "disagreement_conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "SRC006155+SRC006156 read together: 'And the devil has used it since.' IDEA225 calls it 'the devil's old strategy.' Completing the truncated spoken 'since.' as 'since the beginning' restates attested continuity of an old strategy. It is not a biblical reference completion. Residual specificity of 'the beginning' remains a documented limit, but the offline 4B.2.7.2 inventory already treated this nearby clause as supported by SRC006156.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 6,
+      "exact_text": "he has not changed his style",
+      "offsets": {
+        "start": 272,
+        "end": 300,
+        "interval": "half_open"
+      },
+      "terra_verdict": "SUPPORTED",
+      "terra_reason_codes": [],
+      "terra_reason_in_catalog": true,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "SUPPORTED",
+        "codes": [],
+        "unknown": [],
+        "empty": true,
+        "in_catalog": [],
+        "status": "PASS",
+        "errors": [],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "",
+      "cited_evidence": [
+        "SRC006157"
+      ],
+      "cited_evidence_texts": {
+        "SRC006157": "He has not changed his style."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since."
+      },
+      "explicitly_supported": true,
+      "semantically_entailed": true,
+      "adds_new_assertion": false,
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "disagreement_conclusion": null,
+      "rationale": "SRC006157 is 'He has not changed his style.'",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 7,
+      "exact_text": "The same old strategy",
+      "offsets": {
+        "start": 302,
+        "end": 323,
+        "interval": "half_open"
+      },
+      "terra_verdict": "SUPPORTED",
+      "terra_reason_codes": [],
+      "terra_reason_in_catalog": true,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "SUPPORTED",
+        "codes": [],
+        "unknown": [],
+        "empty": true,
+        "in_catalog": [],
+        "status": "PASS",
+        "errors": [],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "",
+      "cited_evidence": [
+        "SRC006156",
+        "SRC006157"
+      ],
+      "cited_evidence_texts": {
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil"
+      },
+      "explicitly_supported": true,
+      "semantically_entailed": true,
+      "adds_new_assertion": false,
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "disagreement_conclusion": null,
+      "rationale": "IDEA225 attests 'the devil's old strategy.'",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 8,
+      "exact_text": "that first weaponized death against humanity",
+      "offsets": {
+        "start": 324,
+        "end": 368,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "NO_EVIDENCE"
+        ],
+        "unknown": [
+          "NO_EVIDENCE"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_NO_EVIDENCE"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Weaponizing death against humanity is not supplied.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "Weaponizing death against humanity is not in authorized evidence. Old strategy and unchanged style do not entail that first-use weaponization claim.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 9,
+      "exact_text": "is still being run today, unchanged",
+      "offsets": {
+        "start": 369,
+        "end": 404,
+        "interval": "half_open"
+      },
+      "terra_verdict": "SUPPORTED",
+      "terra_reason_codes": [],
+      "terra_reason_in_catalog": true,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "SUPPORTED",
+        "codes": [],
+        "unknown": [],
+        "empty": true,
+        "in_catalog": [],
+        "status": "PASS",
+        "errors": [],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "",
+      "cited_evidence": [
+        "SRC006156",
+        "SRC006157"
+      ],
+      "cited_evidence_texts": {
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil"
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": true,
+      "adds_new_assertion": false,
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "disagreement_conclusion": null,
+      "rationale": "SRC006157 'He has not changed his style' plus 'old strategy' and 'has used it since' entail present unchanged continuation. This is not the disputed because-clause.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 10,
+      "exact_text": "because it still works wherever it is not resisted by truth",
+      "offsets": {
+        "start": 406,
+        "end": 465,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "INVENTED_CAUSAL_LINK"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "INVENTED_CAUSAL_LINK"
+        ],
+        "unknown": [
+          "INVENTED_CAUSAL_LINK"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_INVENTED_CAUSAL_LINK"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Effectiveness and resistance by truth are not attested.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "The causal clause is examined independently. Authorized evidence attests abuse, the devil as agent, use since, and unchanged style. It does not affirm or entail that the strategy is still run because it still works wherever it is not resisted by truth. Effectiveness and resistance-by-truth are new. Terra correctly isolated offsets 406-465 and blocked acceptance. The produced code INVENTED_CAUSAL_LINK is outside the catalog; the matching catalog codes are NEW_CAUSAL_LINK and NEW_IMPLICATION. h02 is not a PASS.",
+      "overlaps_causal_clause": true,
+      "is_disputed_causal_clause": true,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    }
+  ],
+  "claims_reviewed": 11,
+  "flagged_neighbor_reviews": [
+    {
+      "index": 0,
+      "exact_text": "Yet we can see fear operating in believers, and this is not normal",
+      "offsets": {
+        "start": 0,
+        "end": 66,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "NO_EVIDENCE"
+        ],
+        "unknown": [
+          "NO_EVIDENCE"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_NO_EVIDENCE"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Believers and abnormality are not attested.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "Authorized P3 evidence does not mention believers, visible operation of fear in that group, or abnormality. IDEA225 attests that living is abused when death is feared. That is not the same assertion. H01 SRC006180/SRC006182 are not authorized for h02 and were not used.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 2,
+      "exact_text": "an abuse to your very person",
+      "offsets": {
+        "start": 96,
+        "end": 124,
+        "interval": "half_open"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "terra_reason_codes": [
+        "UNJUSTIFIED_STRENGTHENING"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "QUESTIONABLE",
+        "codes": [
+          "UNJUSTIFIED_STRENGTHENING"
+        ],
+        "unknown": [
+          "UNJUSTIFIED_STRENGTHENING"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_UNJUSTIFIED_STRENGTHENING"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "The intensifier exceeds the supplied wording.",
+      "cited_evidence": [
+        "SRC006154"
+      ],
+      "cited_evidence_texts": {
+        "SRC006154": "It is an abuse to your person."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": true,
+      "adds_new_assertion": false,
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "disagreement_conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "SRC006154 states 'It is an abuse to your person.' The generated span adds the intensifier 'very'. High stylistic freedom permits that restatement; it does not add a new person, a new abuse, or a new relation. Lexical absence of 'very' is not a new claim. Terra's UNJUSTIFIED_STRENGTHENING over-reads a stylistic intensifier.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 3,
+      "exact_text": "a diminishment of what you were made and remade to be",
+      "offsets": {
+        "start": 126,
+        "end": 179,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "NO_EVIDENCE"
+        ],
+        "unknown": [
+          "NO_EVIDENCE"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_NO_EVIDENCE"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Diminishment and remaking are not attested.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "Diminishment, being made, and being remade are absent from authorized IDEA225/SRC texts. SRC006153 'to live.' is neighboring canonical speech but is not an authorized P3 handle and was not used as support.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 4,
+      "exact_text": "It is worth naming where this abuse comes from",
+      "offsets": {
+        "start": 181,
+        "end": 227,
+        "interval": "half_open"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "terra_reason_codes": [
+        "UNSUPPORTED_IMPLICATION"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "QUESTIONABLE",
+        "codes": [
+          "UNSUPPORTED_IMPLICATION"
+        ],
+        "unknown": [
+          "UNSUPPORTED_IMPLICATION"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_UNSUPPORTED_IMPLICATION"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "The evidence says the devil used it, not that it establishes the abuse's origin.",
+      "cited_evidence": [
+        "SRC006152",
+        "SRC006155",
+        "SRC006156"
+      ],
+      "cited_evidence_texts": {
+        "SRC006152": "It is an abuse",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "PLAUSIBLE_BUT_NOT_ENTAILED",
+      "disagreement_conclusion": "INDETERMINATE",
+      "rationale": "SRC006155+SRC006156 attribute use of the abuse to the devil. The generated sentence additionally frames an origin ('where this abuse comes from') and an editorial evaluation ('worth naming'). Origin is a close implication, not a strict entailment. Terra's reservation is conservative rather than clearly false.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 5,
+      "exact_text": "The devil has used it since the beginning",
+      "offsets": {
+        "start": 229,
+        "end": 270,
+        "interval": "half_open"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "terra_reason_codes": [
+        "PARTIAL_REFERENCE_EXPANSION"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "QUESTIONABLE",
+        "codes": [
+          "PARTIAL_REFERENCE_EXPANSION"
+        ],
+        "unknown": [
+          "PARTIAL_REFERENCE_EXPANSION"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_PARTIAL_REFERENCE_EXPANSION"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "The supplied fragment does not specify 'the beginning.'",
+      "cited_evidence": [
+        "SRC006155",
+        "SRC006156"
+      ],
+      "cited_evidence_texts": {
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": true,
+      "adds_new_assertion": false,
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "disagreement_conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "SRC006155+SRC006156 read together: 'And the devil has used it since.' IDEA225 calls it 'the devil's old strategy.' Completing the truncated spoken 'since.' as 'since the beginning' restates attested continuity of an old strategy. It is not a biblical reference completion. Residual specificity of 'the beginning' remains a documented limit, but the offline 4B.2.7.2 inventory already treated this nearby clause as supported by SRC006156.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 8,
+      "exact_text": "that first weaponized death against humanity",
+      "offsets": {
+        "start": 324,
+        "end": 368,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "NO_EVIDENCE"
+        ],
+        "unknown": [
+          "NO_EVIDENCE"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_NO_EVIDENCE"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Weaponizing death against humanity is not supplied.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "Weaponizing death against humanity is not in authorized evidence. Old strategy and unchanged style do not entail that first-use weaponization claim.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 10,
+      "exact_text": "because it still works wherever it is not resisted by truth",
+      "offsets": {
+        "start": 406,
+        "end": 465,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "INVENTED_CAUSAL_LINK"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "INVENTED_CAUSAL_LINK"
+        ],
+        "unknown": [
+          "INVENTED_CAUSAL_LINK"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_INVENTED_CAUSAL_LINK"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Effectiveness and resistance by truth are not attested.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "The causal clause is examined independently. Authorized evidence attests abuse, the devil as agent, use since, and unchanged style. It does not affirm or entail that the strategy is still run because it still works wherever it is not resisted by truth. Effectiveness and resistance-by-truth are new. Terra correctly isolated offsets 406-465 and blocked acceptance. The produced code INVENTED_CAUSAL_LINK is outside the catalog; the matching catalog codes are NEW_CAUSAL_LINK and NEW_IMPLICATION. h02 is not a PASS.",
+      "overlaps_causal_clause": true,
+      "is_disputed_causal_clause": true,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    }
+  ],
+  "false_rejections": [
+    {
+      "index": 2,
+      "exact_text": "an abuse to your very person",
+      "offsets": {
+        "start": 96,
+        "end": 124,
+        "interval": "half_open"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "terra_reason_codes": [
+        "UNJUSTIFIED_STRENGTHENING"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "QUESTIONABLE",
+        "codes": [
+          "UNJUSTIFIED_STRENGTHENING"
+        ],
+        "unknown": [
+          "UNJUSTIFIED_STRENGTHENING"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_UNJUSTIFIED_STRENGTHENING"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "The intensifier exceeds the supplied wording.",
+      "cited_evidence": [
+        "SRC006154"
+      ],
+      "cited_evidence_texts": {
+        "SRC006154": "It is an abuse to your person."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": true,
+      "adds_new_assertion": false,
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "disagreement_conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "SRC006154 states 'It is an abuse to your person.' The generated span adds the intensifier 'very'. High stylistic freedom permits that restatement; it does not add a new person, a new abuse, or a new relation. Lexical absence of 'very' is not a new claim. Terra's UNJUSTIFIED_STRENGTHENING over-reads a stylistic intensifier.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 5,
+      "exact_text": "The devil has used it since the beginning",
+      "offsets": {
+        "start": 229,
+        "end": 270,
+        "interval": "half_open"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "terra_reason_codes": [
+        "PARTIAL_REFERENCE_EXPANSION"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "QUESTIONABLE",
+        "codes": [
+          "PARTIAL_REFERENCE_EXPANSION"
+        ],
+        "unknown": [
+          "PARTIAL_REFERENCE_EXPANSION"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_PARTIAL_REFERENCE_EXPANSION"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "The supplied fragment does not specify 'the beginning.'",
+      "cited_evidence": [
+        "SRC006155",
+        "SRC006156"
+      ],
+      "cited_evidence_texts": {
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": true,
+      "adds_new_assertion": false,
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "disagreement_conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "SRC006155+SRC006156 read together: 'And the devil has used it since.' IDEA225 calls it 'the devil's old strategy.' Completing the truncated spoken 'since.' as 'since the beginning' restates attested continuity of an old strategy. It is not a biblical reference completion. Residual specificity of 'the beginning' remains a documented limit, but the offline 4B.2.7.2 inventory already treated this nearby clause as supported by SRC006156.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    }
+  ],
+  "justified_reservations": [
+    {
+      "index": 0,
+      "exact_text": "Yet we can see fear operating in believers, and this is not normal",
+      "offsets": {
+        "start": 0,
+        "end": 66,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "NO_EVIDENCE"
+        ],
+        "unknown": [
+          "NO_EVIDENCE"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_NO_EVIDENCE"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Believers and abnormality are not attested.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "Authorized P3 evidence does not mention believers, visible operation of fear in that group, or abnormality. IDEA225 attests that living is abused when death is feared. That is not the same assertion. H01 SRC006180/SRC006182 are not authorized for h02 and were not used.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 3,
+      "exact_text": "a diminishment of what you were made and remade to be",
+      "offsets": {
+        "start": 126,
+        "end": 179,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "NO_EVIDENCE"
+        ],
+        "unknown": [
+          "NO_EVIDENCE"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_NO_EVIDENCE"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Diminishment and remaking are not attested.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "Diminishment, being made, and being remade are absent from authorized IDEA225/SRC texts. SRC006153 'to live.' is neighboring canonical speech but is not an authorized P3 handle and was not used as support.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 8,
+      "exact_text": "that first weaponized death against humanity",
+      "offsets": {
+        "start": 324,
+        "end": 368,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "NO_EVIDENCE"
+        ],
+        "unknown": [
+          "NO_EVIDENCE"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_NO_EVIDENCE"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Weaponizing death against humanity is not supplied.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "Weaponizing death against humanity is not in authorized evidence. Old strategy and unchanged style do not entail that first-use weaponization claim.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    },
+    {
+      "index": 10,
+      "exact_text": "because it still works wherever it is not resisted by truth",
+      "offsets": {
+        "start": 406,
+        "end": 465,
+        "interval": "half_open"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "terra_reason_codes": [
+        "INVENTED_CAUSAL_LINK"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "UNSUPPORTED",
+        "codes": [
+          "INVENTED_CAUSAL_LINK"
+        ],
+        "unknown": [
+          "INVENTED_CAUSAL_LINK"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_INVENTED_CAUSAL_LINK"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "Effectiveness and resistance by truth are not attested.",
+      "cited_evidence": [],
+      "cited_evidence_texts": {},
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006152": "It is an abuse",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "UNSUPPORTED",
+      "disagreement_conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "rationale": "The causal clause is examined independently. Authorized evidence attests abuse, the devil as agent, use since, and unchanged style. It does not affirm or entail that the strategy is still run because it still works wherever it is not resisted by truth. Effectiveness and resistance-by-truth are new. Terra correctly isolated offsets 406-465 and blocked acceptance. The produced code INVENTED_CAUSAL_LINK is outside the catalog; the matching catalog codes are NEW_CAUSAL_LINK and NEW_IMPLICATION. h02 is not a PASS.",
+      "overlaps_causal_clause": true,
+      "is_disputed_causal_clause": true,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    }
+  ],
+  "indeterminate_claims": [
+    {
+      "index": 4,
+      "exact_text": "It is worth naming where this abuse comes from",
+      "offsets": {
+        "start": 181,
+        "end": 227,
+        "interval": "half_open"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "terra_reason_codes": [
+        "UNSUPPORTED_IMPLICATION"
+      ],
+      "terra_reason_in_catalog": false,
+      "terra_reason_catalog_defs": [],
+      "reason_compliance": {
+        "classification": "QUESTIONABLE",
+        "codes": [
+          "UNSUPPORTED_IMPLICATION"
+        ],
+        "unknown": [
+          "UNSUPPORTED_IMPLICATION"
+        ],
+        "empty": false,
+        "in_catalog": [],
+        "status": "FAIL",
+        "errors": [
+          "unknown_reason_UNSUPPORTED_IMPLICATION"
+        ],
+        "silently_accepted_unknown": false,
+        "normalized": false,
+        "normalization_applied": false
+      },
+      "terra_note": "The evidence says the devil used it, not that it establishes the abuse's origin.",
+      "cited_evidence": [
+        "SRC006152",
+        "SRC006155",
+        "SRC006156"
+      ],
+      "cited_evidence_texts": {
+        "SRC006152": "It is an abuse",
+        "SRC006155": "And the devil",
+        "SRC006156": "has used it since."
+      },
+      "uncited_authorized_evidence_examined": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "adds_new_assertion": true,
+      "offline_category": "PLAUSIBLE_BUT_NOT_ENTAILED",
+      "disagreement_conclusion": "INDETERMINATE",
+      "rationale": "SRC006155+SRC006156 attribute use of the abuse to the devil. The generated sentence additionally frames an origin ('where this abuse comes from') and an editorial evaluation ('worth naming'). Origin is a close implication, not a strict entailment. Terra's reservation is conservative rather than clearly false.",
+      "overlaps_causal_clause": false,
+      "is_disputed_causal_clause": false,
+      "different_vocabulary_not_automatic_unsupported": true,
+      "plausible_not_automatic_supported": true
+    }
+  ],
+  "false_rejection_count": 2,
+  "justified_reservation_count": 4,
+  "indeterminate_count": 1,
+  "causal_clause": {
+    "text": "because it still works wherever it is not resisted by truth",
+    "offsets": {
+      "start": 406,
+      "end": 465,
+      "interval": "half_open"
+    },
+    "terra_verdict": "UNSUPPORTED",
+    "terra_reason_codes": [
+      "INVENTED_CAUSAL_LINK"
+    ],
+    "offline_category": "UNSUPPORTED",
+    "correctly_isolated": true,
+    "correctly_blocked": true,
+    "catalog_codes_that_would_fit": [
+      "NEW_CAUSAL_LINK",
+      "NEW_IMPLICATION"
+    ],
+    "produced_code_outside_catalog": true
+  },
+  "analysis_categories": [
+    "EXPLICITLY_SUPPORTED",
+    "SEMANTICALLY_ENTAILED",
+    "PLAUSIBLE_BUT_NOT_ENTAILED",
+    "UNSUPPORTED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "disagreement_conclusions": [
+    "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+    "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+    "HUMAN_LABEL_REVIEW_RECOMMENDED",
+    "INDETERMINATE"
+  ],
+  "secrets_included": false
+}

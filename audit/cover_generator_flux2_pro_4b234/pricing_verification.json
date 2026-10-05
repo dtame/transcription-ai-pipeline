@@ -1,0 +1,29 @@
+{
+  "known": false,
+  "estimated_cost_usd": null,
+  "actual_cost_usd": null,
+  "currency": "USD",
+  "credit_usd": 0.01,
+  "published_text_to_image_floor_usd": 0.03,
+  "published_editing_floor_usd": 0.045,
+  "floor_used_as_estimate": false,
+  "resolution_schedule": "UNVERIFIED",
+  "terms_fee_url": "https://bfl.ai/pricing/api/",
+  "terms_fee_url_status": "HTTP_404_ON_VERIFICATION_DATE",
+  "source": "https://docs.bfl.ai/quick_start/pricing",
+  "blocks_paid_call": true,
+  "status": "PARTIAL",
+  "verified": [
+    "1 credit = 0.01 USD",
+    "FLUX.2 [pro] text-to-image is listed from 0.03 USD",
+    "FLUX.2 [pro] image editing is listed from 0.045 USD",
+    "price varies with output resolution",
+    "submit response may include cost in credits, and the field may be null"
+  ],
+  "unverified": [
+    "exact USD for a 1664×2496 image",
+    "whether a megapixel is 1_000_000 pixels or 1024×1024",
+    "the pricing calculator result",
+    "https://bfl.ai/pricing/api/ returned 404 on the verification date"
+  ]
+}

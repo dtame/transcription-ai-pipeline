@@ -1,0 +1,68 @@
+{
+  "phase": "4B.2.12",
+  "concepts": {
+    "A_semantic_classification": {
+      "name": "semantic_classification",
+      "values": [
+        "SUPPORTED",
+        "QUESTIONABLE",
+        "UNSUPPORTED",
+        "NON_SUBSTANTIVE"
+      ],
+      "owner": "model",
+      "describes": "Relation between a proposition and the supplied evidence.",
+      "fields": [
+        "pr[].u[].k"
+      ],
+      "definitions": {
+        "SUPPORTED": "Directly attested by supplied evidence, or a faithful paraphrase.",
+        "QUESTIONABLE": "Supplied evidence is not sufficient to conclude with confidence.",
+        "UNSUPPORTED": "Adds substantial unsupported content, or contradicts the evidence.",
+        "NON_SUBSTANTIVE": "Purely editorial element with no new assertion. Must never hide a claim."
+      }
+    },
+    "B_operational_decision": {
+      "name": "operational_decision",
+      "values": [
+        "PASS",
+        "BLOCK",
+        "REVIEW"
+      ],
+      "owner": "python",
+      "describes": "What the system must do after validation.",
+      "fields": [],
+      "not_emitted_by_model": true,
+      "definitions": {
+        "PASS": "Contract valid, coverage complete, all substantive units SUPPORTED.",
+        "REVIEW": "Contract valid, one or more QUESTIONABLE units, no UNSUPPORTED, no technical block. Does not accept the production cache.",
+        "BLOCK": "Invalid contract, coverage, evidence, UNSUPPORTED, or critical anomaly."
+      }
+    },
+    "C_technical_conformance": {
+      "name": "technical_conformance",
+      "values": [
+        "VALID",
+        "INVALID"
+      ],
+      "owner": "validator",
+      "describes": "Whether the response respects the contract.",
+      "fields": [],
+      "not_emitted_by_model": true,
+      "definitions": {
+        "VALID": "Payload matches the contract exactly.",
+        "INVALID": "Missing, unknown, mistyped, or incoherent contract content."
+      }
+    }
+  },
+  "mixing_forbidden": true,
+  "model_must_not_emit_operational_values": true,
+  "python_computes_operational_decision": true,
+  "validator_owns_technical_conformance": true,
+  "historical_confusion": {
+    "top_level_v": "2.0.1 asked the model for PASS/REVIEW/FAIL.",
+    "paragraph_v": "2.0.1 schema required a semantic classification, but the instructions did not say so. Terra emitted PASS.",
+    "sc_keys": "2.0.1 schema required lowercase count keys. Instructions said counts of k values, which are uppercase."
+  },
+  "consolidated_rule": "The model emits only semantic classifications and required justifications. Python computes PASS/BLOCK/REVIEW. The validator reports VALID/INVALID. No silent conversion between these spaces.",
+  "secrets_included": false
+}

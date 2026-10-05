@@ -1,0 +1,33 @@
+{
+  "phase": "4B.2.9",
+  "target": "C_HYBRID_TWO_LEVEL_WITH_CONSERVATIVE_PRESEGMENTATION",
+  "module": "app.book_semantic_gate_4b29",
+  "production_connected": false,
+  "flow": [
+    "Generated paragraph",
+    "Deterministic preparation",
+    "Validation units + compact context + evidence",
+    "Semantic model interface (injected transport)",
+    "Model verdicts by unit_id",
+    "Deterministic contract validation",
+    "Semantic acceptance policy",
+    "PASS / BLOCK / REVIEW"
+  ],
+  "components": {
+    "A_preparation": "app.book_semantic_gate_4b29.preparation (reuses 4b28 segmentation)",
+    "coverage": "app.book_semantic_gate_4b29.coverage",
+    "B_interface": "app.book_semantic_gate_4b29.interface + fakeai",
+    "contract": "book-semantic-validator-2.0-candidate",
+    "transport": "book-semantic-validation-transport-2.0-candidate",
+    "C_validator": "app.book_semantic_gate_4b29.validator",
+    "policy": "app.book_semantic_gate_4b29.policy",
+    "engine": "app.book_semantic_gate_4b29.engine"
+  },
+  "independence": true,
+  "each_step_testable": true,
+  "provider_requires_explicit_injection": true,
+  "offset_convention": "python3_str_unicode_code_points_half_open",
+  "model_does_not_own_offsets": true,
+  "book_validator_not_replaced": true,
+  "secrets_included": false
+}

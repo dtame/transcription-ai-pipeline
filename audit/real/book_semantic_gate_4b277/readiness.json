@@ -1,0 +1,11 @@
+{
+  "READY_FOR_SEMANTIC_GATE_COMPARATIVE_REVIEW": false,
+  "READY_FOR_NEW_REMOTE_TERRA_CALL": false,
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "candidate_promoted": false,
+  "why": "Not a full PASS. Analyze saved evidence. No retry. No new Terra call is authorized."
+}

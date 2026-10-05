@@ -1,0 +1,637 @@
+{
+  "phase": "4B.2.16",
+  "excluded_without_scoring": [
+    "CH001",
+    "CH016"
+  ],
+  "eligible_ranking": [
+    "CH012",
+    "CH003",
+    "CH014",
+    "CH015",
+    "CH018",
+    "CH008",
+    "CH002",
+    "CH011",
+    "CH009",
+    "CH010"
+  ],
+  "candidates": [
+    {
+      "chapter_id": "CH001",
+      "working_title": "Unlearning What Was Handed Down",
+      "section_count": 4,
+      "section_ids": [
+        "SEC001",
+        "SEC002",
+        "SEC003",
+        "SEC004"
+      ],
+      "idea_count": 12,
+      "audio_sources": [
+        "AUDIO001"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 13298,
+      "hydrated_src_chars": 1519,
+      "src_ref_count": 55,
+      "example_count": 2,
+      "reference_count": 2,
+      "uncertainty_count": 0,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 0,
+      "eligible": false,
+      "ineligible_reasons": [
+        "excluded_by_phase_rule"
+      ],
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "chapter_id": "CH002",
+      "working_title": "Flesh and Bone: The Resurrection You Inherit",
+      "section_count": 4,
+      "section_ids": [
+        "SEC005",
+        "SEC006",
+        "SEC007",
+        "SEC008"
+      ],
+      "idea_count": 15,
+      "audio_sources": [
+        "AUDIO001"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 15019,
+      "hydrated_src_chars": 1725,
+      "src_ref_count": 61,
+      "example_count": 0,
+      "reference_count": 1,
+      "uncertainty_count": 2,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 1,
+      "eligible": true,
+      "ineligible_reasons": [],
+      "score": 23,
+      "score_reasons": [
+        "reference_association_risk_is_identifiable",
+        "evidence_bundle_is_modest"
+      ]
+    },
+    {
+      "chapter_id": "CH003",
+      "working_title": "Hebrews 2: Death Already Destroyed",
+      "section_count": 4,
+      "section_ids": [
+        "SEC009",
+        "SEC010",
+        "SEC011",
+        "SEC012"
+      ],
+      "idea_count": 14,
+      "audio_sources": [
+        "AUDIO001",
+        "AUDIO002"
+      ],
+      "cross_recording": true,
+      "evidence_chars": 17742,
+      "hydrated_src_chars": 2237,
+      "src_ref_count": 76,
+      "example_count": 3,
+      "reference_count": 4,
+      "uncertainty_count": 2,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 1,
+      "reference_tension_count": 3,
+      "eligible": true,
+      "ineligible_reasons": [],
+      "score": 88,
+      "score_reasons": [
+        "cross_recording_regrouping_is_observable",
+        "reservation_separation_risk_is_identifiable",
+        "reference_association_risk_is_identifiable",
+        "examples_are_present_for_coverage"
+      ]
+    },
+    {
+      "chapter_id": "CH004",
+      "working_title": "Priest, Prophet, King",
+      "section_count": 5,
+      "section_ids": [
+        "SEC013",
+        "SEC014",
+        "SEC015",
+        "SEC016",
+        "SEC017"
+      ],
+      "idea_count": 19,
+      "audio_sources": [
+        "AUDIO002"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 16437,
+      "hydrated_src_chars": 1552,
+      "src_ref_count": 72,
+      "example_count": 2,
+      "reference_count": 3,
+      "uncertainty_count": 1,
+      "detached_example_count": 1,
+      "separated_uncertainty_count": 1,
+      "reference_tension_count": 3,
+      "eligible": false,
+      "ineligible_reasons": [
+        "idea_count_outside_8_to_16",
+        "detached_example_would_confound_a_first_pilot"
+      ],
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "chapter_id": "CH005",
+      "working_title": "Access, Not Achievement",
+      "section_count": 5,
+      "section_ids": [
+        "SEC018",
+        "SEC019",
+        "SEC020",
+        "SEC021",
+        "SEC022"
+      ],
+      "idea_count": 18,
+      "audio_sources": [
+        "AUDIO002"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 18907,
+      "hydrated_src_chars": 2367,
+      "src_ref_count": 77,
+      "example_count": 5,
+      "reference_count": 5,
+      "uncertainty_count": 2,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 2,
+      "reference_tension_count": 5,
+      "eligible": false,
+      "ineligible_reasons": [
+        "idea_count_outside_8_to_16"
+      ],
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "chapter_id": "CH006",
+      "working_title": "That They May Be One",
+      "section_count": 8,
+      "section_ids": [
+        "SEC023",
+        "SEC024",
+        "SEC025",
+        "SEC026",
+        "SEC027",
+        "SEC028",
+        "SEC029",
+        "SEC030"
+      ],
+      "idea_count": 38,
+      "audio_sources": [
+        "AUDIO002"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 45177,
+      "hydrated_src_chars": 7878,
+      "src_ref_count": 273,
+      "example_count": 4,
+      "reference_count": 6,
+      "uncertainty_count": 1,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 4,
+      "eligible": false,
+      "ineligible_reasons": [
+        "idea_count_outside_8_to_16",
+        "section_count_outside_3_to_5"
+      ],
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "chapter_id": "CH007",
+      "working_title": "Loved Exactly as Jesus Is Loved",
+      "section_count": 2,
+      "section_ids": [
+        "SEC031",
+        "SEC032"
+      ],
+      "idea_count": 10,
+      "audio_sources": [
+        "AUDIO002"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 16298,
+      "hydrated_src_chars": 2107,
+      "src_ref_count": 76,
+      "example_count": 3,
+      "reference_count": 2,
+      "uncertainty_count": 2,
+      "detached_example_count": 3,
+      "separated_uncertainty_count": 1,
+      "reference_tension_count": 0,
+      "eligible": false,
+      "ineligible_reasons": [
+        "section_count_outside_3_to_5",
+        "detached_example_would_confound_a_first_pilot"
+      ],
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "chapter_id": "CH008",
+      "working_title": "Set Your Mind Above",
+      "section_count": 3,
+      "section_ids": [
+        "SEC033",
+        "SEC034",
+        "SEC035"
+      ],
+      "idea_count": 11,
+      "audio_sources": [
+        "AUDIO002"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 17587,
+      "hydrated_src_chars": 2447,
+      "src_ref_count": 96,
+      "example_count": 2,
+      "reference_count": 4,
+      "uncertainty_count": 0,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 1,
+      "eligible": true,
+      "ineligible_reasons": [],
+      "score": 35,
+      "score_reasons": [
+        "reference_association_risk_is_identifiable",
+        "examples_are_present_for_coverage",
+        "idea_count_is_in_the_preferred_band"
+      ]
+    },
+    {
+      "chapter_id": "CH009",
+      "working_title": "Laws You Gave Yourself",
+      "section_count": 3,
+      "section_ids": [
+        "SEC036",
+        "SEC037",
+        "SEC038"
+      ],
+      "idea_count": 14,
+      "audio_sources": [
+        "AUDIO003"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 17635,
+      "hydrated_src_chars": 2620,
+      "src_ref_count": 91,
+      "example_count": 5,
+      "reference_count": 0,
+      "uncertainty_count": 0,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 0,
+      "eligible": true,
+      "ineligible_reasons": [],
+      "score": 8,
+      "score_reasons": [
+        "examples_are_present_for_coverage"
+      ]
+    },
+    {
+      "chapter_id": "CH010",
+      "working_title": "Spirit, Soul and Body",
+      "section_count": 4,
+      "section_ids": [
+        "SEC039",
+        "SEC040",
+        "SEC041",
+        "SEC042"
+      ],
+      "idea_count": 16,
+      "audio_sources": [
+        "AUDIO003"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 21740,
+      "hydrated_src_chars": 3255,
+      "src_ref_count": 121,
+      "example_count": 3,
+      "reference_count": 3,
+      "uncertainty_count": 3,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 0,
+      "eligible": true,
+      "ineligible_reasons": [],
+      "score": 8,
+      "score_reasons": [
+        "examples_are_present_for_coverage"
+      ]
+    },
+    {
+      "chapter_id": "CH011",
+      "working_title": "Reasonings and Strongholds",
+      "section_count": 4,
+      "section_ids": [
+        "SEC043",
+        "SEC044",
+        "SEC045",
+        "SEC046"
+      ],
+      "idea_count": 12,
+      "audio_sources": [
+        "AUDIO003"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 16558,
+      "hydrated_src_chars": 2220,
+      "src_ref_count": 75,
+      "example_count": 3,
+      "reference_count": 3,
+      "uncertainty_count": 1,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 0,
+      "eligible": true,
+      "ineligible_reasons": [],
+      "score": 20,
+      "score_reasons": [
+        "examples_are_present_for_coverage",
+        "idea_count_is_in_the_preferred_band"
+      ]
+    },
+    {
+      "chapter_id": "CH012",
+      "working_title": "Prayer Corrected",
+      "section_count": 4,
+      "section_ids": [
+        "SEC047",
+        "SEC048",
+        "SEC049",
+        "SEC050"
+      ],
+      "idea_count": 11,
+      "audio_sources": [
+        "AUDIO003",
+        "AUDIO004"
+      ],
+      "cross_recording": true,
+      "evidence_chars": 13644,
+      "hydrated_src_chars": 1414,
+      "src_ref_count": 55,
+      "example_count": 1,
+      "reference_count": 7,
+      "uncertainty_count": 1,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 1,
+      "reference_tension_count": 3,
+      "eligible": true,
+      "ineligible_reasons": [],
+      "score": 108,
+      "score_reasons": [
+        "cross_recording_regrouping_is_observable",
+        "reservation_separation_risk_is_identifiable",
+        "reference_association_risk_is_identifiable",
+        "examples_are_present_for_coverage",
+        "idea_count_is_in_the_preferred_band",
+        "evidence_bundle_is_modest"
+      ]
+    },
+    {
+      "chapter_id": "CH013",
+      "working_title": "The Renewed Mind and the Hidden Faculty",
+      "section_count": 4,
+      "section_ids": [
+        "SEC051",
+        "SEC052",
+        "SEC053",
+        "SEC054"
+      ],
+      "idea_count": 24,
+      "audio_sources": [
+        "AUDIO003",
+        "AUDIO004"
+      ],
+      "cross_recording": true,
+      "evidence_chars": 21918,
+      "hydrated_src_chars": 2761,
+      "src_ref_count": 106,
+      "example_count": 3,
+      "reference_count": 2,
+      "uncertainty_count": 1,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 1,
+      "reference_tension_count": 0,
+      "eligible": false,
+      "ineligible_reasons": [
+        "idea_count_outside_8_to_16"
+      ],
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "chapter_id": "CH014",
+      "working_title": "Operating What You Have",
+      "section_count": 4,
+      "section_ids": [
+        "SEC055",
+        "SEC056",
+        "SEC057",
+        "SEC058"
+      ],
+      "idea_count": 15,
+      "audio_sources": [
+        "AUDIO003",
+        "AUDIO004"
+      ],
+      "cross_recording": true,
+      "evidence_chars": 17941,
+      "hydrated_src_chars": 2292,
+      "src_ref_count": 82,
+      "example_count": 5,
+      "reference_count": 1,
+      "uncertainty_count": 2,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 2,
+      "reference_tension_count": 1,
+      "eligible": true,
+      "ineligible_reasons": [],
+      "score": 88,
+      "score_reasons": [
+        "cross_recording_regrouping_is_observable",
+        "reservation_separation_risk_is_identifiable",
+        "reference_association_risk_is_identifiable",
+        "examples_are_present_for_coverage"
+      ]
+    },
+    {
+      "chapter_id": "CH015",
+      "working_title": "Grace Barely Touched",
+      "section_count": 4,
+      "section_ids": [
+        "SEC059",
+        "SEC060",
+        "SEC061",
+        "SEC062"
+      ],
+      "idea_count": 16,
+      "audio_sources": [
+        "AUDIO004"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 18346,
+      "hydrated_src_chars": 3376,
+      "src_ref_count": 79,
+      "example_count": 4,
+      "reference_count": 3,
+      "uncertainty_count": 1,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 1,
+      "reference_tension_count": 2,
+      "eligible": true,
+      "ineligible_reasons": [],
+      "score": 48,
+      "score_reasons": [
+        "reservation_separation_risk_is_identifiable",
+        "reference_association_risk_is_identifiable",
+        "examples_are_present_for_coverage"
+      ]
+    },
+    {
+      "chapter_id": "CH016",
+      "working_title": "Death as Gain",
+      "section_count": 1,
+      "section_ids": [
+        "SEC063"
+      ],
+      "idea_count": 6,
+      "audio_sources": [
+        "AUDIO004"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 8967,
+      "hydrated_src_chars": 1177,
+      "src_ref_count": 35,
+      "example_count": 0,
+      "reference_count": 3,
+      "uncertainty_count": 0,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 3,
+      "eligible": false,
+      "ineligible_reasons": [
+        "excluded_by_phase_rule",
+        "idea_count_outside_8_to_16",
+        "section_count_outside_3_to_5"
+      ],
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "chapter_id": "CH017",
+      "working_title": "Nothing by Chance",
+      "section_count": 3,
+      "section_ids": [
+        "SEC064",
+        "SEC065",
+        "SEC066"
+      ],
+      "idea_count": 17,
+      "audio_sources": [
+        "AUDIO001",
+        "AUDIO004"
+      ],
+      "cross_recording": true,
+      "evidence_chars": 19161,
+      "hydrated_src_chars": 2597,
+      "src_ref_count": 92,
+      "example_count": 3,
+      "reference_count": 6,
+      "uncertainty_count": 1,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 3,
+      "eligible": false,
+      "ineligible_reasons": [
+        "idea_count_outside_8_to_16"
+      ],
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "chapter_id": "CH018",
+      "working_title": "Testimonies of Resurrection",
+      "section_count": 4,
+      "section_ids": [
+        "SEC067",
+        "SEC068",
+        "SEC069",
+        "SEC070"
+      ],
+      "idea_count": 11,
+      "audio_sources": [
+        "AUDIO004"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 16057,
+      "hydrated_src_chars": 1933,
+      "src_ref_count": 79,
+      "example_count": 3,
+      "reference_count": 2,
+      "uncertainty_count": 0,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 1,
+      "eligible": true,
+      "ineligible_reasons": [],
+      "score": 35,
+      "score_reasons": [
+        "reference_association_risk_is_identifiable",
+        "examples_are_present_for_coverage",
+        "idea_count_is_in_the_preferred_band"
+      ]
+    },
+    {
+      "chapter_id": "CH019",
+      "working_title": "Out of the Eater",
+      "section_count": 2,
+      "section_ids": [
+        "SEC071",
+        "SEC072"
+      ],
+      "idea_count": 7,
+      "audio_sources": [
+        "AUDIO004"
+      ],
+      "cross_recording": false,
+      "evidence_chars": 10976,
+      "hydrated_src_chars": 1202,
+      "src_ref_count": 45,
+      "example_count": 1,
+      "reference_count": 1,
+      "uncertainty_count": 1,
+      "detached_example_count": 0,
+      "separated_uncertainty_count": 0,
+      "reference_tension_count": 0,
+      "eligible": false,
+      "ineligible_reasons": [
+        "idea_count_outside_8_to_16",
+        "section_count_outside_3_to_5"
+      ],
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "secrets_included": false
+}

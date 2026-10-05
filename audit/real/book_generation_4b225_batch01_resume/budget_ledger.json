@@ -1,0 +1,40 @@
+{
+  "phase": "4B.2.25",
+  "batch_id": "BATCH-01",
+  "authorized_cap_usd": 0.32,
+  "accumulated_actual_usd": 0.093278,
+  "reserved_or_uncertain_usd": 0.0,
+  "remaining_budget_usd": 0.226722,
+  "unknown_treated_as_zero": false,
+  "unspent_is_not_new_authorization": true,
+  "historical_remaining_budget_usd": 0.584716,
+  "historical_remaining_is_not_this_authorization": true,
+  "chapters": {
+    "CH003": {
+      "chapter_id": "CH003",
+      "status": "RESPONSE_VALIDATED",
+      "theoretical_maximum_usd": 0.140364,
+      "actual_cost_usd": 0.046162,
+      "reserved_or_uncertain_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "thinking_tokens": 0,
+      "cost_status": "known",
+      "theoretical_maximum_raw": 0.140364
+    },
+    "CH004": {
+      "chapter_id": "CH004",
+      "status": "RESPONSE_VALIDATED",
+      "theoretical_maximum_usd": 0.17737,
+      "actual_cost_usd": 0.047116,
+      "reserved_or_uncertain_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "thinking_tokens": 0,
+      "cost_status": "known",
+      "theoretical_maximum_raw": 0.17737
+    }
+  },
+  "secrets_included": false,
+  "remaining_budget_decimal": "0.226722"
+}

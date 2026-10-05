@@ -1,0 +1,138 @@
+{
+  "phase": "4B.2.13",
+  "ok": true,
+  "cases": [
+    {
+      "interrupt_at": "after_generation",
+      "scenario": "fully_supported",
+      "interrupted_state": "GENERATION_OBTAINED",
+      "interrupted_decision": null,
+      "accepted_without_validation": false,
+      "invalid_reused_as_pass": false,
+      "resume_decision": "PASS",
+      "resume_state": "VALIDATION_PASS",
+      "versions_preserved": {
+        "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+        "semantic_transport": "book-semantic-validation-transport-2.0-candidate",
+        "preparation": "book-semantic-preparation-4b28-conservative-via-4b29",
+        "validator": "app.book_semantic_gate_4b212.validator.validate_response_202",
+        "integration": "book-generator-semantic-gate-integration-4b213-candidate",
+        "code": "app.book_generation_integration_4b213"
+      },
+      "evidence_preserved": true,
+      "real_provider_calls": 0,
+      "source": "FAKEAI_SIMULATED"
+    },
+    {
+      "interrupt_at": "before_validation",
+      "scenario": "fully_supported",
+      "interrupted_state": "VALIDATION_PENDING",
+      "interrupted_decision": null,
+      "accepted_without_validation": false,
+      "invalid_reused_as_pass": false,
+      "resume_decision": "PASS",
+      "resume_state": "VALIDATION_PASS",
+      "versions_preserved": {
+        "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+        "semantic_transport": "book-semantic-validation-transport-2.0-candidate",
+        "preparation": "book-semantic-preparation-4b28-conservative-via-4b29",
+        "validator": "app.book_semantic_gate_4b212.validator.validate_response_202",
+        "integration": "book-generator-semantic-gate-integration-4b213-candidate",
+        "code": "app.book_generation_integration_4b213"
+      },
+      "evidence_preserved": true,
+      "real_provider_calls": 0,
+      "source": "FAKEAI_SIMULATED"
+    },
+    {
+      "interrupt_at": "during_validation",
+      "scenario": "fully_supported",
+      "interrupted_state": "INTERRUPTED",
+      "interrupted_decision": "BLOCK",
+      "accepted_without_validation": false,
+      "invalid_reused_as_pass": false,
+      "resume_decision": "PASS",
+      "resume_state": "VALIDATION_PASS",
+      "versions_preserved": {
+        "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+        "semantic_transport": "book-semantic-validation-transport-2.0-candidate",
+        "preparation": "book-semantic-preparation-4b28-conservative-via-4b29",
+        "validator": "app.book_semantic_gate_4b212.validator.validate_response_202",
+        "integration": "book-generator-semantic-gate-integration-4b213-candidate",
+        "code": "app.book_generation_integration_4b213"
+      },
+      "evidence_preserved": true,
+      "real_provider_calls": 0,
+      "source": "FAKEAI_SIMULATED"
+    },
+    {
+      "interrupt_at": "after_pass",
+      "scenario": "fully_supported",
+      "interrupted_state": "INTERRUPTED",
+      "interrupted_decision": "PASS",
+      "accepted_without_validation": false,
+      "invalid_reused_as_pass": false,
+      "resume_decision": "PASS",
+      "resume_state": "VALIDATION_PASS",
+      "versions_preserved": {
+        "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+        "semantic_transport": "book-semantic-validation-transport-2.0-candidate",
+        "preparation": "book-semantic-preparation-4b28-conservative-via-4b29",
+        "validator": "app.book_semantic_gate_4b212.validator.validate_response_202",
+        "integration": "book-generator-semantic-gate-integration-4b213-candidate",
+        "code": "app.book_generation_integration_4b213"
+      },
+      "evidence_preserved": true,
+      "real_provider_calls": 0,
+      "source": "FAKEAI_SIMULATED"
+    },
+    {
+      "interrupt_at": "after_review",
+      "scenario": "questionable",
+      "interrupted_state": "INTERRUPTED",
+      "interrupted_decision": "REVIEW",
+      "accepted_without_validation": false,
+      "invalid_reused_as_pass": false,
+      "resume_decision": "REVIEW",
+      "resume_state": "VALIDATION_REVIEW",
+      "versions_preserved": {
+        "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+        "semantic_transport": "book-semantic-validation-transport-2.0-candidate",
+        "preparation": "book-semantic-preparation-4b28-conservative-via-4b29",
+        "validator": "app.book_semantic_gate_4b212.validator.validate_response_202",
+        "integration": "book-generator-semantic-gate-integration-4b213-candidate",
+        "code": "app.book_generation_integration_4b213"
+      },
+      "evidence_preserved": true,
+      "real_provider_calls": 0,
+      "source": "FAKEAI_SIMULATED"
+    },
+    {
+      "interrupt_at": "after_block",
+      "scenario": "invented_causality",
+      "interrupted_state": "INTERRUPTED",
+      "interrupted_decision": "BLOCK",
+      "accepted_without_validation": false,
+      "invalid_reused_as_pass": false,
+      "resume_decision": "BLOCK",
+      "resume_state": "VALIDATION_BLOCK",
+      "versions_preserved": {
+        "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+        "semantic_transport": "book-semantic-validation-transport-2.0-candidate",
+        "preparation": "book-semantic-preparation-4b28-conservative-via-4b29",
+        "validator": "app.book_semantic_gate_4b212.validator.validate_response_202",
+        "integration": "book-generator-semantic-gate-integration-4b213-candidate",
+        "code": "app.book_generation_integration_4b213"
+      },
+      "evidence_preserved": true,
+      "real_provider_calls": 0,
+      "source": "FAKEAI_SIMULATED"
+    }
+  ],
+  "no_chapter_accepted_without_validation": true,
+  "no_invalid_result_reused_as_pass": true,
+  "deterministic_resume": true,
+  "no_unjustified_duplication": true,
+  "no_real_calls": true,
+  "secrets_included": false
+}

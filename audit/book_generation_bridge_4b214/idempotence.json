@@ -1,0 +1,30 @@
+{
+  "phase": "4B.2.14",
+  "ok": true,
+  "same_inputs_same_key": true,
+  "pass_reusable_in_isolated_cache_only": true,
+  "double_accept": false,
+  "double_debit": false,
+  "old_pass_incompatible_contract_not_reused": true,
+  "cache_invalidation": {
+    "phase": "4B.2.13",
+    "original_key": "610e3dd1fa38c62d564db903c552710eb1af1096804aec7fc0a96492e6c78e70",
+    "same_inputs_same_key": true,
+    "text_change_invalidates": true,
+    "contract_change_invalidates": true,
+    "evidence_change_invalidates": true,
+    "historical_partial_not_converted_to_pass": true,
+    "historical_h01": "PARTIAL",
+    "historical_4b211": "PARTIAL",
+    "old_contract": "book-semantic-validator-2.0.1-candidate",
+    "new_contract": "book-semantic-validator-2.0.2-candidate",
+    "do_not_reuse_historical_validation_under_new_contract": true,
+    "ok": true,
+    "secrets_included": false
+  },
+  "observed_usd_after_two_chapter_runs": 0.012572,
+  "reservation_idempotent_reuse": true,
+  "evidence_and_versions_preserved": true,
+  "production_cache_write": false,
+  "secrets_included": false
+}

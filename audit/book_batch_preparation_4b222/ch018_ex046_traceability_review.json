@@ -1,0 +1,112 @@
+{
+  "phase": "4B.2.22",
+  "review_version": "ch018-ex046-traceability-review-4b222-1.0",
+  "chapter_id": "CH018",
+  "example_id": "EX046",
+  "source_map_example": {
+    "kind": "testimony",
+    "summary": "A girl who was prophesied to live died and was buried; on the third day the minister came, prayed a short prayer, and she awoke alive in the coffin, later reported in Tribune newspaper.",
+    "supports_idea_refs": [
+      "IDEA269"
+    ],
+    "source_refs": [
+      "SRC007690",
+      "SRC007696",
+      "SRC007714",
+      "SRC007717",
+      "SRC007766",
+      "SRC007779",
+      "SRC007782",
+      "SRC007787"
+    ]
+  },
+  "paras_e_contains_ex046": false,
+  "accepted_json_modified": false,
+  "provider_response_modified": false,
+  "correspondence_established": true,
+  "matching_paragraphs": [
+    {
+      "paragraph_id": "P000001",
+      "section_id": "SEC067",
+      "provider_handle": "p1",
+      "ex046_in_paras_e": false,
+      "supporting_src_overlap": [
+        "SRC007690",
+        "SRC007696"
+      ],
+      "supporting_idea_overlap": [
+        "IDEA269"
+      ],
+      "summary_token_overlap": [
+        "died",
+        "live"
+      ],
+      "text_excerpt": "I remember prophesying to a young lady that she would not die, that she would live. Afterward the lady died. God cannot lie, and I held to what had been spoken over her even when the natural outcome seemed to contradict "
+    },
+    {
+      "paragraph_id": "P000002",
+      "section_id": "SEC067",
+      "provider_handle": "p2",
+      "ex046_in_paras_e": false,
+      "supporting_src_overlap": [
+        "SRC007714",
+        "SRC007717"
+      ],
+      "supporting_idea_overlap": [],
+      "summary_token_overlap": [
+        "buried",
+        "newspaper",
+        "tribune"
+      ],
+      "text_excerpt": "They buried her, and they started digging the grave. Somehow, without any flyer, any hand bill, any radio announcement, a crowd gathered, and the Tribune newspaper was there as well. I don't know how news travels at time"
+    },
+    {
+      "paragraph_id": "P000004",
+      "section_id": "SEC067",
+      "provider_handle": "p4",
+      "ex046_in_paras_e": false,
+      "supporting_src_overlap": [
+        "SRC007766",
+        "SRC007779",
+        "SRC007782",
+        "SRC007787"
+      ],
+      "supporting_idea_overlap": [],
+      "summary_token_overlap": [
+        "came",
+        "later",
+        "newspaper",
+        "prayed",
+        "prayer",
+        "reported",
+        "short",
+        "tribune"
+      ],
+      "text_excerpt": "I had learned how to pray for miracles: don't pray long prayers. Say a short prayer and stop. I was simply following the model of Jesus. So at that grave I prayed briefly, asking that her life return, and she came back l"
+    }
+  ],
+  "supporting_src": [
+    "SRC007690",
+    "SRC007696",
+    "SRC007714",
+    "SRC007717",
+    "SRC007766",
+    "SRC007779",
+    "SRC007782",
+    "SRC007787"
+  ],
+  "future_production_projection": {
+    "allowed_later": true,
+    "must_not_rewrite_accepted_chapter": true,
+    "must_not_backfill_provider_response": true,
+    "proposed_action": "When a later controlled projection writes a production contract, add EX046 to paras[].e of the matching graveside-testimony paragraphs if those paragraphs still restate this testimony. Do not invent the correspondence. Do not treat this review as that projection.",
+    "candidate_paragraph_ids": [
+      "P000001",
+      "P000002",
+      "P000004"
+    ]
+  },
+  "anomaly_class": "technical_traceability",
+  "not_a_rewrite_request": true,
+  "secrets_included": false
+}

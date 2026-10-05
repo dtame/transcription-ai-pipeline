@@ -1,0 +1,15 @@
+{
+  "returncode": 0,
+  "summary": "52 passed in 3.13s",
+  "passed": 52,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b241.py",
+    "app/tests/test_book_semantic_gate_4b23.py",
+    "app/tests/test_book_semantic_gate_4b24.py"
+  ],
+  "real_provider_calls": 0
+}

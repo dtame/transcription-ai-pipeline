@@ -1,0 +1,303 @@
+{
+  "phase": "4B.2.28",
+  "order": [
+    "CH001",
+    "CH002",
+    "CH003",
+    "CH004",
+    "CH005",
+    "CH006",
+    "CH007",
+    "CH008",
+    "CH009",
+    "CH010",
+    "CH011",
+    "CH012",
+    "CH013",
+    "CH014",
+    "CH015",
+    "CH016",
+    "CH017",
+    "CH018",
+    "CH019"
+  ],
+  "titles": [
+    "Unlearning What Was Handed Down",
+    "Flesh and Bone: The Resurrection You Inherit",
+    "Hebrews 2: Death Already Destroyed",
+    "Priest, Prophet, King",
+    "Access, Not Achievement",
+    "That They May Be One",
+    "Loved Exactly as Jesus Is Loved",
+    "Set Your Mind Above",
+    "Laws You Gave Yourself",
+    "Spirit, Soul and Body",
+    "Reasonings and Strongholds",
+    "Prayer Corrected",
+    "The Renewed Mind and the Hidden Faculty",
+    "Operating What You Have",
+    "Grace Barely Touched",
+    "Death as Gain",
+    "Nothing by Chance",
+    "Testimonies of Resurrection",
+    "Out of the Eater"
+  ],
+  "theme_succession": [
+    {
+      "book_order": 1,
+      "chapter_id": "CH001",
+      "title": "Unlearning What Was Handed Down",
+      "purpose": "Open with the diagnosis: inherited custom and secondhand information replacing direct hearing from God.",
+      "summary": "Direct hearing, bodily discipline, cultural food habits, tradition versus faith, ambition for long life."
+    },
+    {
+      "book_order": 2,
+      "chapter_id": "CH002",
+      "title": "Flesh and Bone: The Resurrection You Inherit",
+      "purpose": "Lay the central doctrinal correction about physical resurrection and restored sonship.",
+      "summary": "Flesh and bone inheritance, sons of men becoming sons of God, Adam's failure and Christ's intercession, life already possessed."
+    },
+    {
+      "book_order": 3,
+      "chapter_id": "CH003",
+      "title": "Hebrews 2: Death Already Destroyed",
+      "purpose": "Work the group exposition of Hebrews 2 and its consequences for preaching and fear.",
+      "summary": "Live reading of Hebrews 2, translation dispute, African demonic emphasis, power already indwelling, accountability for the gospel preached."
+    },
+    {
+      "book_order": 4,
+      "chapter_id": "CH004",
+      "title": "Priest, Prophet, King",
+      "purpose": "Set out the sacred offices, the ordered priesthood, and the warnings attached to it.",
+      "summary": "Shadow and fulfillment, three offices, universal versus ordered priesthood, Melchizedek, Malachi's warning, not despising the calling."
+    },
+    {
+      "book_order": 5,
+      "chapter_id": "CH005",
+      "title": "Access, Not Achievement",
+      "purpose": "Dismantle condition-based access to God: anointing, offering, worship, fasting.",
+      "summary": "Activating the anointing, heart behind sacrifice, worship as fellowship, simplicity of receiving power, purpose and limits of fasting."
+    },
+    {
+      "book_order": 6,
+      "chapter_id": "CH006",
+      "title": "That They May Be One",
+      "purpose": "Make John 17 the structural spine: union, glory, preservation, and the critique of rapture-centered focus.",
+      "summary": "Jesus' prayer, sanctification, unity and glory, honesty about one's stand, rapture critique, overflow of communion, the Holy Spirit as person, the promised dimension, sensitivity to spiritual levels."
+    },
+    {
+      "book_order": 7,
+      "chapter_id": "CH007",
+      "title": "Loved Exactly as Jesus Is Loved",
+      "purpose": "Hold the unconditional love text against conditions preachers add, then show God's use of flawed people.",
+      "summary": "John 17:23 on divine love, illegitimate conditions, goodness producing purity, imperfect biblical figures carrying great power."
+    },
+    {
+      "book_order": 8,
+      "chapter_id": "CH008",
+      "title": "Set Your Mind Above",
+      "purpose": "Move from doctrine to the first practical discipline: fixing the mind on heavenly reality.",
+      "summary": "Colossians 3 practice, Philippians 4:8 in ordinary life, mind as battlefield, completeness under the Head."
+    },
+    {
+      "book_order": 9,
+      "chapter_id": "CH009",
+      "title": "Laws You Gave Yourself",
+      "purpose": "Expose self-imposed legalism from imitation and recover personal uniqueness before God.",
+      "summary": "Imitation-born rules, individuality of spiritual experience, God's intimate knowledge, long process behind testimonies, historical cost of discipleship and coerced religion."
+    },
+    {
+      "book_order": 10,
+      "chapter_id": "CH010",
+      "title": "Spirit, Soul and Body",
+      "purpose": "Give the anatomy that the practice chapters depend on.",
+      "summary": "Tripartite man, conscience, soul as hub, the dying that began at the Fall, growth into sonship, the devil's nature and contested identifications."
+    },
+    {
+      "book_order": 11,
+      "chapter_id": "CH011",
+      "title": "Reasonings and Strongholds",
+      "purpose": "Distinguish natural knowledge from revelation and define the believer's real combat.",
+      "summary": "Simplicity in Christ, flesh-and-blood knowledge, relevance to one's society, pastoral discernment in miracle settings, weapons and captive thoughts."
+    },
+    {
+      "book_order": 12,
+      "chapter_id": "CH012",
+      "title": "Prayer Corrected",
+      "purpose": "Reform prayer practice: tongues rightly used, correction received, hunger as the condition.",
+      "summary": "Misused tongues, refreshment through tongues, the speaker's correction, sincerity without knowledge, hunger and thirst as anchor."
+    },
+    {
+      "book_order": 13,
+      "chapter_id": "CH013",
+      "title": "The Renewed Mind and the Hidden Faculty",
+      "purpose": "Teach renewal of the mind and imagination as the method of lasting communion.",
+      "summary": "Living sacrifice through renewal, the brain as instrument, imagination as God-given faculty, bringing Jesus into thought, trained meditation."
+    },
+    {
+      "book_order": 14,
+      "chapter_id": "CH014",
+      "title": "Operating What You Have",
+      "purpose": "Move into the exercise of power: abnormal faith, short prayer, hands, holiness, effortless gifts.",
+      "summary": "Abnormal acts and short prayers, humility about untested doctrine, hands as doorways, holiness and simple faith, gifts flowing without struggle."
+    },
+    {
+      "book_order": 15,
+      "chapter_id": "CH015",
+      "title": "Grace Barely Touched",
+      "purpose": "Show how much is already given and how believers testify to discovering it.",
+      "summary": "Grace exceeding imagination, Moses contrasted with indwelling, retreat testimonies, healing already accomplished, progressive understanding, the sower as stages of one life."
+    },
+    {
+      "book_order": 16,
+      "chapter_id": "CH016",
+      "title": "Death as Gain",
+      "purpose": "Resolve the fear-of-death thread opened in the resurrection chapters.",
+      "summary": "No fear of death, fear as the devil's old strategy, death as gain lived rather than recited, peaceful departures."
+    },
+    {
+      "book_order": 17,
+      "chapter_id": "CH017",
+      "title": "Nothing by Chance",
+      "purpose": "Make intentionality the organizing practice: speech, protection, and the responsibility of choice.",
+      "summary": "Deliberate daily practice, aura of protection, speech correction, poverty as choice not design, balancing warning and promise."
+    },
+    {
+      "book_order": 18,
+      "chapter_id": "CH018",
+      "title": "Testimonies of Resurrection",
+      "purpose": "Demonstrate the doctrine through resurrection accounts and the humility that must accompany them.",
+      "summary": "The buried girl raised, activation of what God ordained, the young man raised, a prayer that did not succeed, the vessel's role."
+    },
+    {
+      "book_order": 19,
+      "chapter_id": "CH019",
+      "title": "Out of the Eater",
+      "purpose": "End with providence that reverses harm and the prophetic vision for the nation.",
+      "summary": "Stolen Bible turned redemptive, loss treated as seed, declared exponential growth, vision of a transformed nation and a call to pray together."
+    }
+  ],
+  "observations": [
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH002",
+      "chapter_to": "CH003",
+      "from_title": "Flesh and Bone: The Resurrection You Inherit",
+      "to_title": "Hebrews 2: Death Already Destroyed",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH003",
+      "chapter_to": "CH004",
+      "from_title": "Hebrews 2: Death Already Destroyed",
+      "to_title": "Priest, Prophet, King",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH004",
+      "chapter_to": "CH005",
+      "from_title": "Priest, Prophet, King",
+      "to_title": "Access, Not Achievement",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH007",
+      "chapter_to": "CH008",
+      "from_title": "Loved Exactly as Jesus Is Loved",
+      "to_title": "Set Your Mind Above",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH008",
+      "chapter_to": "CH009",
+      "from_title": "Set Your Mind Above",
+      "to_title": "Laws You Gave Yourself",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH009",
+      "chapter_to": "CH010",
+      "from_title": "Laws You Gave Yourself",
+      "to_title": "Spirit, Soul and Body",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH010",
+      "chapter_to": "CH011",
+      "from_title": "Spirit, Soul and Body",
+      "to_title": "Reasonings and Strongholds",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH012",
+      "chapter_to": "CH013",
+      "from_title": "Prayer Corrected",
+      "to_title": "The Renewed Mind and the Hidden Faculty",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH013",
+      "chapter_to": "CH014",
+      "from_title": "The Renewed Mind and the Hidden Faculty",
+      "to_title": "Operating What You Have",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH015",
+      "chapter_to": "CH016",
+      "from_title": "Grace Barely Touched",
+      "to_title": "Death as Gain",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH016",
+      "chapter_to": "CH017",
+      "from_title": "Death as Gain",
+      "to_title": "Nothing by Chance",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH017",
+      "chapter_to": "CH018",
+      "from_title": "Nothing by Chance",
+      "to_title": "Testimonies of Resurrection",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    },
+    {
+      "code": "POSSIBLE_ABRUPT_TRANSITION",
+      "chapter_from": "CH018",
+      "chapter_to": "CH019",
+      "from_title": "Testimonies of Resurrection",
+      "to_title": "Out of the Eater",
+      "detail": "No shared content word of length ≥ 4 between the last paragraph of the previous chapter and the first paragraph of the next chapter.",
+      "automatic_correction": false
+    }
+  ],
+  "observation_count": 13,
+  "semantic_certification": "NOT PERFORMED",
+  "automatic_correction": false,
+  "secrets_included": false
+}

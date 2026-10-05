@@ -37,6 +37,11 @@ from app.ai.errors import (
     AIServerError,
     AITimeoutError,
 )
+from app.ai.openai_compat import (
+    apply_chat_completions_output_tokens,
+    apply_openai_chat_temperature,
+    reject_unsupported_openai_optional_fields,
+)
 from app.ai.providers.base import BaseAIEngine, ProviderResult
 from app.ai.providers.lmstudio import extract_openai_usage
 from app.ai.settings import ENV_OPENAI_API_KEY, require_api_key
@@ -156,13 +161,19 @@ class OpenAIEngine(BaseAIEngine):
 
         payload: dict[str, Any] = {"model": model, "messages": messages}
 
-        temperature = self.resolve_temperature(request)
-        if temperature is not None:
-            payload["temperature"] = temperature
+        reject_unsupported_openai_optional_fields(request, model)
 
-        max_output = self.resolve_max_output_tokens(request)
-        if max_output is not None:
-            payload["max_tokens"] = max_output
+        apply_openai_chat_temperature(
+            payload,
+            request=request,
+            temperature=self.resolve_temperature(request),
+            model=model,
+        )
+        apply_chat_completions_output_tokens(
+            payload,
+            model=model,
+            max_output_tokens=self.resolve_max_output_tokens(request),
+        )
 
         if request.wants_structured_output:
             payload["response_format"] = {"type": "json_object"}
@@ -221,8 +232,46 @@ class OpenAIEngine(BaseAIEngine):
         )
 
 
+_USAGE_SCALAR_KEYS = (
+    "prompt_tokens",
+    "completion_tokens",
+    "total_tokens",
+    "reasoning_tokens",
+    "thinking_tokens",
+)
+_USAGE_NESTED_KEYS = (
+    "completion_tokens_details",
+    "output_tokens_details",
+    "prompt_tokens_details",
+)
+_USAGE_DETAIL_KEYS = (
+    "reasoning_tokens",
+    "thinking_tokens",
+    "text_tokens",
+    "visible_tokens",
+    "accepted_prediction_tokens",
+    "rejected_prediction_tokens",
+    "audio_tokens",
+)
+
+
+def _nested_usage_dict(value: Any) -> dict:
+    if isinstance(value, dict):
+        return dict(value)
+    nested: dict[str, Any] = {}
+    for key in _USAGE_DETAIL_KEYS:
+        inner = getattr(value, key, None)
+        if inner is not None:
+            nested[key] = inner
+    return nested
+
+
 def _usage_as_dict(usage: Any) -> dict:
-    """Normalise le bloc usage du SDK (objet pydantic ou dict) en dict."""
+    """Normalise le bloc usage du SDK (objet pydantic ou dict) en dict.
+
+    Persists completion_tokens_details / reasoning_tokens when the SDK
+    object exposes them. Absent fields stay absent — never coerced to 0.
+    """
     if usage is None:
         return {}
 
@@ -234,12 +283,22 @@ def _usage_as_dict(usage: Any) -> dict:
 
         if callable(method):
             try:
-                return dict(method())
+                dumped = method()
+                if isinstance(dumped, dict):
+                    return dict(dumped)
             except Exception:
                 continue
 
-    return {
-        key: getattr(usage, key)
-        for key in ("prompt_tokens", "completion_tokens", "total_tokens")
-        if getattr(usage, key, None) is not None
-    }
+    out: dict[str, Any] = {}
+    for key in _USAGE_SCALAR_KEYS:
+        value = getattr(usage, key, None)
+        if value is not None:
+            out[key] = value
+    for key in _USAGE_NESTED_KEYS:
+        value = getattr(usage, key, None)
+        if value is None:
+            continue
+        nested = _nested_usage_dict(value)
+        if nested:
+            out[key] = nested
+    return out

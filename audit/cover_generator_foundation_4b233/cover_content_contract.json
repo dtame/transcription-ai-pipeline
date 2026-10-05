@@ -1,0 +1,40 @@
+{
+  "fields": [
+    "book_description",
+    "author_biography"
+  ],
+  "description": {
+    "source": "manuscript_only",
+    "word_min": 130,
+    "word_max": 180,
+    "configurable": true,
+    "auto_approved": false,
+    "llm_in_this_phase": false,
+    "must_not_invent": [
+      "testimonial",
+      "expert_endorsement",
+      "award",
+      "barcode",
+      "isbn",
+      "invented_quotation",
+      "invented_result",
+      "invented_promise"
+    ]
+  },
+  "biography": {
+    "optional": true,
+    "missing_status": "MISSING_OPTIONAL",
+    "missing_value": null,
+    "invented_biography_allowed": false,
+    "auto_approved": false,
+    "uses_only_approved_facts": true
+  },
+  "statuses": [
+    "NOT_STARTED",
+    "DRAFT",
+    "PENDING_HUMAN_REVIEW",
+    "APPROVED",
+    "MISSING_OPTIONAL"
+  ],
+  "phase": "contracts_and_validation_only"
+}

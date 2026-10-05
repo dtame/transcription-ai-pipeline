@@ -1,0 +1,26 @@
+{
+  "authorized_remote_invocations": 1,
+  "execution_attempts": 1,
+  "remote_invocations": 1,
+  "http_requests": 1,
+  "provider_responses": 1,
+  "successful_payloads": 1,
+  "retries": 0,
+  "fallbacks": 0,
+  "sonnet_calls": 0,
+  "lock_consumed": true,
+  "boundary_crossed": true,
+  "phase": "4B.2.7",
+  "historical_4b24_unchanged": true,
+  "historical_4b25_unchanged": true,
+  "historical_4b26_unchanged": true,
+  "contract": {
+    "authorized_calls": "Human-authorized remote slots for the phase.",
+    "execution_attempts": "Local generate/_invoke entries after preflight PASS.",
+    "remote_invocations": "SDK create / HTTP execute crossed the provider boundary.",
+    "http_requests": "Actual HTTP requests observed.",
+    "provider_responses": "Provider HTTP responses received."
+  },
+  "secrets_included": false,
+  "note": "A local precall failure is not a remote invocation. A remote SDK invocation counts against the authorized slot even if it returns HTTP 400 or no usable content."
+}

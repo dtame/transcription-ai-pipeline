@@ -1,0 +1,98 @@
+{
+  "phase": "4B.2.9",
+  "handle": "h01",
+  "historical_status": "PARTIAL",
+  "historical_status_unchanged": true,
+  "historical_terra_response_not_converted": true,
+  "false_rejection_not_declared_corrected": true,
+  "not_terra": true,
+  "paragraph_chars": 232,
+  "unit_count": 5,
+  "coverage_ok": true,
+  "offsets_stable": true,
+  "units": [
+    {
+      "unit_id": "u00",
+      "start_offset": 0,
+      "end_offset": 32,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "Do not ever be afraid of death. "
+    },
+    {
+      "unit_id": "u01",
+      "start_offset": 32,
+      "end_offset": 106,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "There is no fixed hour appointed that fear can calculate or bargain with, "
+    },
+    {
+      "unit_id": "u02",
+      "start_offset": 106,
+      "end_offset": 142,
+      "boundary_type": "RESULT_CONNECTIVE",
+      "boundary_ambiguity": false,
+      "text": "and so fear itself is out of place. "
+    },
+    {
+      "unit_id": "u03",
+      "start_offset": 142,
+      "end_offset": 211,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "If somebody has gone to heaven, that should not produce dread in us. "
+    },
+    {
+      "unit_id": "u04",
+      "start_offset": 211,
+      "end_offset": 232,
+      "boundary_type": "SENTENCE",
+      "boundary_ambiguity": false,
+      "text": "It should be our joy."
+    }
+  ],
+  "preserved_propositions": [
+    {
+      "label": "bargain_clause",
+      "start": 65,
+      "end": 104,
+      "preserved_in_one_unit": true,
+      "unit_id": "u01",
+      "unit_text": "There is no fixed hour appointed that fear can calculate or bargain with, ",
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    }
+  ],
+  "context_preserved": true,
+  "human_label_absent_from_request": true,
+  "anomalies_representable": true,
+  "orchestration": [
+    {
+      "scenario": "all_supported",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "PASS",
+      "validation_ok": true,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "questionable",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "REVIEW",
+      "validation_ok": true,
+      "coverage_ok": true
+    },
+    {
+      "scenario": "missing_unit",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "validation_ok": false,
+      "coverage_ok": true
+    }
+  ],
+  "historical_label": "SUPPORTED",
+  "historical_label_not_injected": true,
+  "secrets_included": false
+}

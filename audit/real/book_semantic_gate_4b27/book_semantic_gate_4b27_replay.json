@@ -1,0 +1,30 @@
+{
+  "phase": "4B.2.7",
+  "provider_calls": 0,
+  "first_parse": "PASS",
+  "second_parse": "PASS",
+  "first_status": "FAIL",
+  "second_status": "FAIL",
+  "first_sha256": "757901d0bb93328acd2d37f1af8735fbe7287608a77968b0d4bfd616350d0c34",
+  "second_sha256": "757901d0bb93328acd2d37f1af8735fbe7287608a77968b0d4bfd616350d0c34",
+  "identical": true,
+  "pass": true,
+  "repaired": false,
+  "first": {
+    "json_parse": "PASS",
+    "status": "FAIL",
+    "errors": [
+      "h01: coverage_gap_[(140, 141), (209, 210)]"
+    ],
+    "missing_handles": []
+  },
+  "second": {
+    "json_parse": "PASS",
+    "status": "FAIL",
+    "errors": [
+      "h01: coverage_gap_[(140, 141), (209, 210)]"
+    ],
+    "missing_handles": []
+  },
+  "secrets_included": false
+}

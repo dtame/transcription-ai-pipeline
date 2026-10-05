@@ -1,0 +1,11 @@
+{
+  "READY_FOR_ONE_REAL_CHAPTER_EXPERIMENT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "READY_FOR_NEW_REMOTE_TERRA_CALL": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "production_pipeline": "UNCHANGED",
+  "candidate_promoted": false,
+  "why": "Analyze saved evidence. No retry. No new Terra call is authorized."
+}

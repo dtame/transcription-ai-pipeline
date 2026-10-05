@@ -1,0 +1,184 @@
+{
+  "phase": "4B.2.6.1",
+  "endpoint": {
+    "production": "chat.completions",
+    "sdk_method": "client.chat.completions.create",
+    "responses_api_used": false,
+    "invoke_uses_chat_completions": true,
+    "confidence": "CONFIRMED"
+  },
+  "json_object": {
+    "local_serialization": true,
+    "engine_sets_response_format": true,
+    "request_not_http_400": true,
+    "usable_json_returned": false,
+    "semantic_acceptance": "UNKNOWN_SERVER_SIDE",
+    "note": "The request was not rejected for json_object. That is not semantic acceptance. No JSON body was returned."
+  },
+  "explicit_json_instruction": {
+    "present": true,
+    "system_clause": "Respond only through the requested JSON object.",
+    "user_clause": "Output one object:",
+    "confidence": "CONFIRMED"
+  },
+  "expected_schema_constraints": {
+    "required_top": [
+      "ch",
+      "v",
+      "pr",
+      "sc",
+      "uh",
+      "rr"
+    ],
+    "claim_required": [
+      "i",
+      "t",
+      "s",
+      "e",
+      "k",
+      "ev",
+      "r",
+      "x"
+    ],
+    "paragraph_required": [
+      "h",
+      "v",
+      "c",
+      "ev",
+      "r"
+    ],
+    "native_json_schema_sent": false,
+    "engine_mode": "json_object",
+    "confidence": "CONFIRMED"
+  },
+  "reasoning_policy": {
+    "local": "provider_default / omitted",
+    "explicit_thinking_fields_sent": false,
+    "prompt_forbids_hidden_cot": true,
+    "server_behavior": "UNKNOWN_SERVER_SIDE"
+  },
+  "completion_budget": {
+    "field": "max_completion_tokens",
+    "value": 8192,
+    "max_tokens_absent": true,
+    "server_accepted_field": true,
+    "server_exhausted_budget": true,
+    "confidence_field_accepted": "CONFIRMED",
+    "confidence_budget_sufficient": "HYPOTHESIS"
+  },
+  "parsing": {
+    "entry": "parse_structured_output -> parse_json_payload",
+    "empty_content_raises": {
+      "empty": true,
+      "error_type": "AIStructuredOutputError",
+      "message": "Sortie structurée demandée mais la réponse du modèle est vide.",
+      "parse_failure_kind": "empty"
+    },
+    "no_json_repair": true,
+    "no_second_model_call": true,
+    "confidence": "LOCALLY_VERIFIED"
+  },
+  "finish_reason_length": {
+    "persisted": true,
+    "marks_truncated": true,
+    "does_not_classify_missing_cases": true,
+    "local_validation": {
+      "json_parse": "FAIL",
+      "case_coverage": "FAIL",
+      "missing_cases": [
+        "h01",
+        "h02",
+        "h03",
+        "h04",
+        "h05",
+        "h06",
+        "h07",
+        "h08",
+        "h09",
+        "h10"
+      ]
+    },
+    "confidence": "LOCALLY_VERIFIED"
+  },
+  "empty_message_content": {
+    "normalize_none_raises_ai_response_error": true,
+    "empty_string_reaches_structured_parser": true,
+    "4b26_error": "AIStructuredOutputError empty",
+    "transport_on_none": "transport inattendu : NoneType",
+    "confidence": "CONFIRMED"
+  },
+  "confirmed": [
+    {
+      "fact": "Production endpoint is chat.completions.create",
+      "confidence": "CONFIRMED",
+      "evidence": "OpenAIEngine._invoke"
+    },
+    {
+      "fact": "4B.2.6 sent response_format=json_object and was not HTTP 400",
+      "confidence": "CONFIRMED",
+      "evidence": "request identity + provider evidence"
+    },
+    {
+      "fact": "finish_reason=length and visible content empty",
+      "confidence": "CONFIRMED",
+      "evidence": "provider evidence + raw structured response"
+    },
+    {
+      "fact": "Missing cases are not classified; 0/10 is absence of decisions",
+      "confidence": "CONFIRMED",
+      "evidence": "case results + validate_semantic_response(None)"
+    }
+  ],
+  "locally_verified": [
+    {
+      "fact": "json_object serializes locally on SDK 2.43.0",
+      "confidence": "LOCALLY_VERIFIED",
+      "evidence": "OpenAI._build_request capture"
+    },
+    {
+      "fact": "Empty text raises AIStructuredOutputError parse_failure_kind=empty",
+      "confidence": "LOCALLY_VERIFIED",
+      "evidence": "parse_json_payload('')"
+    },
+    {
+      "fact": "None transport is refused and does not accept missing cases",
+      "confidence": "LOCALLY_VERIFIED",
+      "evidence": "decode_transport / apply_acceptance"
+    }
+  ],
+  "unknown_server_side": [
+    {
+      "fact": "json_object semantic production by gpt-5.6-terra",
+      "confidence": "UNKNOWN_SERVER_SIDE",
+      "evidence": "No JSON body observed"
+    },
+    {
+      "fact": "Whether hidden reasoning consumed the 8192-token budget",
+      "confidence": "UNKNOWN_SERVER_SIDE",
+      "evidence": "reasoning_tokens not persisted"
+    },
+    {
+      "fact": "Whether a larger budget would emit JSON",
+      "confidence": "UNKNOWN_SERVER_SIDE",
+      "evidence": "No second observation"
+    }
+  ],
+  "hypotheses": [
+    {
+      "fact": "Hidden reasoning or non-emitted tokens exhausted max_completion_tokens before JSON",
+      "confidence": "HYPOTHESIS",
+      "evidence": "length + empty content + 8192 completion tokens"
+    },
+    {
+      "fact": "Ten-case verbose JSON contract increased planning cost enough to starve visible output",
+      "confidence": "HYPOTHESIS",
+      "evidence": "full claim-text copies + explanations + 10 paragraphs"
+    }
+  ],
+  "cannot_claim": [
+    "json_object is semantically accepted because the API did not return HTTP 400",
+    "reasoning_tokens = 8192 because completion_tokens = 8192",
+    "increasing the budget will necessarily produce JSON"
+  ],
+  "secrets_included": false
+}

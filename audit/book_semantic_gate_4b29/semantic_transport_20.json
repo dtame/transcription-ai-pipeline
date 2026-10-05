@@ -1,0 +1,241 @@
+{
+  "phase": "4B.2.9",
+  "transport_version": "book-semantic-validation-transport-2.0-candidate",
+  "transport_activated": false,
+  "historical_1_0_unmodified": "book-semantic-validation-transport-1.0",
+  "historical_1_1_unmodified": "book-semantic-validation-transport-1.1-candidate",
+  "does_not_modify_historical_transport": true,
+  "offset_convention": "python3_str_unicode_code_points_half_open",
+  "input_fields": [
+    "ch",
+    "contract",
+    "transport",
+    "offset_convention",
+    "pr.h",
+    "pr.t",
+    "pr.ev",
+    "pr.u.id",
+    "pr.u.t"
+  ],
+  "output_fields": [
+    "ch",
+    "v",
+    "pr.h",
+    "pr.v",
+    "pr.u.id",
+    "pr.u.k",
+    "pr.u.ev",
+    "pr.u.r",
+    "pr.u.n",
+    "sc",
+    "uh",
+    "rr"
+  ],
+  "unit_identifiers": "pre-established u00, u01, ...",
+  "verdicts": [
+    "SUPPORTED",
+    "QUESTIONABLE",
+    "UNSUPPORTED",
+    "NON_SUBSTANTIVE"
+  ],
+  "reason_codes": [
+    "NEW_FACT",
+    "NEW_CAUSAL_LINK",
+    "NEW_ARGUMENT",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM",
+    "NEW_IMPLICATION",
+    "INVENTED_EXAMPLE",
+    "INVENTED_ANECDOTE",
+    "INVENTED_HYPOTHETICAL",
+    "REFERENCE_COMPLETION",
+    "REFERENCE_EXPANSION",
+    "QUOTE_EXPANSION",
+    "UNCERTAINTY_STRENGTHENED",
+    "SOURCE_MEANING_DISTORTED",
+    "EVIDENCE_MISMATCH",
+    "OTHER"
+  ],
+  "evidence_handles": "subset of supplied canonical handles",
+  "global_verdict": [
+    "PASS",
+    "REVIEW",
+    "FAIL"
+  ],
+  "errors": "reported by local validator, not repaired",
+  "audit_metadata": "stored locally beside the raw response",
+  "model_must_not_emit_offsets": true,
+  "model_must_not_copy_unit_text": true,
+  "compact": true,
+  "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "book-semantic-validation-transport-2.0-candidate",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "ch",
+      "v",
+      "pr",
+      "sc",
+      "uh",
+      "rr"
+    ],
+    "properties": {
+      "ch": {
+        "type": "string",
+        "description": "Chapter handle."
+      },
+      "v": {
+        "type": "string",
+        "enum": [
+          "PASS",
+          "REVIEW",
+          "FAIL"
+        ],
+        "description": "Model global verdict. FAIL is mapped to BLOCK by local policy."
+      },
+      "pr": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/paragraph"
+        }
+      },
+      "sc": {
+        "$ref": "#/$defs/counts"
+      },
+      "uh": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Unknown unit or paragraph handles."
+      },
+      "rr": {
+        "type": "boolean",
+        "description": "Human review required."
+      }
+    },
+    "$defs": {
+      "unit": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Pre-established unit identifier."
+          },
+          "k": {
+            "type": "string",
+            "enum": [
+              "SUPPORTED",
+              "QUESTIONABLE",
+              "UNSUPPORTED",
+              "NON_SUBSTANTIVE"
+            ],
+            "description": "Semantic verdict for the supplied unit."
+          },
+          "ev": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Evidence handles actually used."
+          },
+          "r": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "NEW_FACT",
+                "NEW_CAUSAL_LINK",
+                "NEW_ARGUMENT",
+                "NEW_CONCLUSION",
+                "NEW_DOCTRINAL_CLAIM",
+                "NEW_IMPLICATION",
+                "INVENTED_EXAMPLE",
+                "INVENTED_ANECDOTE",
+                "INVENTED_HYPOTHETICAL",
+                "REFERENCE_COMPLETION",
+                "REFERENCE_EXPANSION",
+                "QUOTE_EXPANSION",
+                "UNCERTAINTY_STRENGTHENED",
+                "SOURCE_MEANING_DISTORTED",
+                "EVIDENCE_MISMATCH",
+                "OTHER"
+              ]
+            },
+            "description": "Closed reason catalog. Empty if SUPPORTED or NON_SUBSTANTIVE."
+          },
+          "n": {
+            "type": "string",
+            "description": "Short reservation when QUESTIONABLE or UNSUPPORTED."
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "k",
+          "ev",
+          "r"
+        ]
+      },
+      "paragraph": {
+        "type": "object",
+        "properties": {
+          "h": {
+            "type": "string",
+            "description": "Paragraph handle."
+          },
+          "v": {
+            "type": "string",
+            "enum": [
+              "SUPPORTED",
+              "QUESTIONABLE",
+              "UNSUPPORTED",
+              "NON_SUBSTANTIVE"
+            ],
+            "description": "Worst-class paragraph verdict."
+          },
+          "u": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/unit"
+            },
+            "description": "One row per supplied unit identifier."
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "h",
+          "v",
+          "u"
+        ]
+      },
+      "counts": {
+        "type": "object",
+        "properties": {
+          "supported": {
+            "type": "integer"
+          },
+          "questionable": {
+            "type": "integer"
+          },
+          "unsupported": {
+            "type": "integer"
+          },
+          "non_substantive": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "supported",
+          "questionable",
+          "unsupported",
+          "non_substantive"
+        ]
+      }
+    }
+  },
+  "schema_sha256": "6ced6be3c7aaa191508c2acb23319956ecc6c9f5f080d6057faf4d15244ada4e",
+  "secrets_included": false
+}

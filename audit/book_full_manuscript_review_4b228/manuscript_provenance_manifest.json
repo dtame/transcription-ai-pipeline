@@ -1,0 +1,1760 @@
+{
+  "phase": "4B.2.28",
+  "manifest_version": "manuscript-provenance-manifest-4b228-1.0",
+  "book_title": "The Life You Already Inherited",
+  "book_title_source": "EditorialPlan.selected_title",
+  "book_title_invented": false,
+  "chapters": [
+    {
+      "chapter_id": "CH001",
+      "book_order": 1,
+      "title": "Unlearning What Was Handed Down",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.json",
+      "source_markdown_sha256": "f97904f6b703713d0e4549823ffe9f578c24e25679ec79a250a245f942fb3f41",
+      "source_json_sha256": "2daf7dc3aa610429a7433e0c51350587519bd32b40074dbe1c7886402ab29fec",
+      "manifest_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/ch001_accepted_editorial_manifest.json",
+      "approved_version": "4b223_generated_candidate",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC001",
+        "SEC002",
+        "SEC003",
+        "SEC004"
+      ],
+      "section_titles": [
+        "Hearing Him Directly",
+        "Body, Food and Inherited Habit",
+        "Tradition Cannot Be Accepted",
+        "The Question of Long Life"
+      ],
+      "sections": [
+        {
+          "title": "Hearing Him Directly",
+          "paragraph_ids": [
+            "P000001",
+            "P000002"
+          ]
+        },
+        {
+          "title": "Body, Food and Inherited Habit",
+          "paragraph_ids": [
+            "P000003",
+            "P000004",
+            "P000005",
+            "P000006",
+            "P000007"
+          ]
+        },
+        {
+          "title": "Tradition Cannot Be Accepted",
+          "paragraph_ids": [
+            "P000008",
+            "P000009",
+            "P000010"
+          ]
+        },
+        {
+          "title": "The Question of Long Life",
+          "paragraph_ids": [
+            "P000011",
+            "P000012",
+            "P000013"
+          ]
+        }
+      ],
+      "paragraph_count": 13,
+      "idea_expected_count": 12,
+      "idea_covered_count": 12,
+      "provenance_ids": {
+        "chapter_id": "CH001",
+        "section_ids": [
+          "SEC001",
+          "SEC002",
+          "SEC003",
+          "SEC004"
+        ],
+        "idea_ids": [
+          "IDEA001",
+          "IDEA002",
+          "IDEA003",
+          "IDEA004",
+          "IDEA005",
+          "IDEA006",
+          "IDEA007",
+          "IDEA008",
+          "IDEA020",
+          "IDEA022",
+          "IDEA023",
+          "IDEA024"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH002",
+      "book_order": 2,
+      "title": "Flesh and Bone: The Resurrection You Inherit",
+      "source_markdown_path": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.md",
+      "source_json_path": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.json",
+      "source_markdown_sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+      "source_json_sha256": "d738b4dbbcf13212d4ae68ce00be1effbf4f64ef815bfbfe40c74262a78a08b7",
+      "manifest_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/ch002_accepted_editorial_manifest.json",
+      "approved_version": "offline_derived_recovered",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "VERIFIED_AGAINST_PLAN",
+      "section_ids": [
+        "SEC005",
+        "SEC006",
+        "SEC007",
+        "SEC008"
+      ],
+      "section_titles": [
+        "Spirits Have No Flesh and Bone",
+        "From Sons of Men to Sons of God",
+        "The Silence of Adam, the Prayer of Christ",
+        "Life Older, Better, Everlasting"
+      ],
+      "sections": [
+        {
+          "title": "Spirits Have No Flesh and Bone",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004"
+          ]
+        },
+        {
+          "title": "From Sons of Men to Sons of God",
+          "paragraph_ids": [
+            "P000005",
+            "P000006",
+            "P000007",
+            "P000009",
+            "P000010"
+          ]
+        },
+        {
+          "title": "The Silence of Adam, the Prayer of Christ",
+          "paragraph_ids": [
+            "P000011",
+            "P000012",
+            "P000013",
+            "P000014"
+          ]
+        },
+        {
+          "title": "Life Older, Better, Everlasting",
+          "paragraph_ids": [
+            "P000015",
+            "P000016",
+            "P000017"
+          ]
+        }
+      ],
+      "paragraph_count": 16,
+      "idea_expected_count": 15,
+      "idea_covered_count": 15,
+      "provenance_ids": {
+        "chapter_id": "CH002",
+        "section_ids": [
+          "SEC005",
+          "SEC006",
+          "SEC007",
+          "SEC008"
+        ],
+        "idea_ids": [
+          "IDEA009",
+          "IDEA010",
+          "IDEA011",
+          "IDEA012",
+          "IDEA013",
+          "IDEA014",
+          "IDEA015",
+          "IDEA016",
+          "IDEA017",
+          "IDEA018",
+          "IDEA019",
+          "IDEA021",
+          "IDEA036",
+          "IDEA037",
+          "IDEA039"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH003",
+      "book_order": 3,
+      "title": "Hebrews 2: Death Already Destroyed",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.json",
+      "source_markdown_sha256": "7f87e86927bd0c60a7b3d5d64ba5c3fa0d8c1e8119fa26c285614a9b8999aae5",
+      "source_json_sha256": "3ddc2f1298b3db9eb8646161e794b7289f4e9004f274bc1cbc427d7befc37f19",
+      "manifest_path": "C:/TranscriptionAI/audit/book_full_generation_preparation_4b226/ch003_accepted_editorial_manifest.json",
+      "approved_version": "4b225_generated_candidate",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC009",
+        "SEC010",
+        "SEC011",
+        "SEC012"
+      ],
+      "section_titles": [
+        "Reading the Text Together",
+        "The Devil Men Still Boast Of",
+        "The Power Is Already Inside",
+        "Which Gospel Will You Preach?"
+      ],
+      "sections": [
+        {
+          "title": "Reading the Text Together",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004",
+            "P000005"
+          ]
+        },
+        {
+          "title": "The Devil Men Still Boast Of",
+          "paragraph_ids": [
+            "P000006",
+            "P000007",
+            "P000008",
+            "P000009"
+          ]
+        },
+        {
+          "title": "The Power Is Already Inside",
+          "paragraph_ids": [
+            "P000010",
+            "P000011",
+            "P000012",
+            "P000013",
+            "P000014",
+            "P000015"
+          ]
+        },
+        {
+          "title": "Which Gospel Will You Preach?",
+          "paragraph_ids": [
+            "P000016",
+            "P000017",
+            "P000018"
+          ]
+        }
+      ],
+      "paragraph_count": 18,
+      "idea_expected_count": 14,
+      "idea_covered_count": 14,
+      "provenance_ids": {
+        "chapter_id": "CH003",
+        "section_ids": [
+          "SEC009",
+          "SEC010",
+          "SEC011",
+          "SEC012"
+        ],
+        "idea_ids": [
+          "IDEA025",
+          "IDEA026",
+          "IDEA027",
+          "IDEA028",
+          "IDEA029",
+          "IDEA030",
+          "IDEA031",
+          "IDEA032",
+          "IDEA033",
+          "IDEA034",
+          "IDEA035",
+          "IDEA038",
+          "IDEA098",
+          "IDEA099"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH004",
+      "book_order": 4,
+      "title": "Priest, Prophet, King",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH004/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH004/chapter_candidate.json",
+      "source_markdown_sha256": "37154ea2d01c0beadc9d4cada1600f7e0f0b9a3c6012bcce7e792e4a8ee95580",
+      "source_json_sha256": "eceb00dfb019d3e6a247607143447436c7568cb230575211d4128b421ec5b012",
+      "manifest_path": "C:/TranscriptionAI/audit/book_full_generation_preparation_4b226/ch004_accepted_editorial_manifest.json",
+      "approved_version": "4b225_generated_candidate",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC013",
+        "SEC014",
+        "SEC015",
+        "SEC016",
+        "SEC017"
+      ],
+      "section_titles": [
+        "The Shadow and the Reality",
+        "Three Sacred Offices",
+        "Recognizing Who Stands Before You",
+        "Malachi's Warning to the Priests",
+        "Let No One Despise the Calling"
+      ],
+      "sections": [
+        {
+          "title": "The Shadow and the Reality",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003"
+          ]
+        },
+        {
+          "title": "Three Sacred Offices",
+          "paragraph_ids": [
+            "P000004",
+            "P000005",
+            "P000006",
+            "P000007",
+            "P000008"
+          ]
+        },
+        {
+          "title": "Recognizing Who Stands Before You",
+          "paragraph_ids": [
+            "P000009",
+            "P000010",
+            "P000011"
+          ]
+        },
+        {
+          "title": "Malachi's Warning to the Priests",
+          "paragraph_ids": [
+            "P000012",
+            "P000013",
+            "P000014",
+            "P000015"
+          ]
+        },
+        {
+          "title": "Let No One Despise the Calling",
+          "paragraph_ids": [
+            "P000016",
+            "P000017",
+            "P000018",
+            "P000019",
+            "P000020"
+          ]
+        }
+      ],
+      "paragraph_count": 20,
+      "idea_expected_count": 19,
+      "idea_covered_count": 19,
+      "provenance_ids": {
+        "chapter_id": "CH004",
+        "section_ids": [
+          "SEC013",
+          "SEC014",
+          "SEC015",
+          "SEC016",
+          "SEC017"
+        ],
+        "idea_ids": [
+          "IDEA041",
+          "IDEA042",
+          "IDEA043",
+          "IDEA044",
+          "IDEA045",
+          "IDEA046",
+          "IDEA047",
+          "IDEA048",
+          "IDEA049",
+          "IDEA050",
+          "IDEA051",
+          "IDEA052",
+          "IDEA053",
+          "IDEA054",
+          "IDEA055",
+          "IDEA056",
+          "IDEA057",
+          "IDEA058",
+          "IDEA059"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH005",
+      "book_order": 5,
+      "title": "Access, Not Achievement",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH005/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH005/chapter_candidate.json",
+      "source_markdown_sha256": "49aabe0e5d7bab57d3368682d2d5fff5e77ff508780f7262f5c32900b2ba5650",
+      "source_json_sha256": "e39e7f0ae252735792efa38968f1907c85bb938b4bd055bf6394fd36647541ee",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC018",
+        "SEC019",
+        "SEC020",
+        "SEC021",
+        "SEC022"
+      ],
+      "section_titles": [
+        "Anointed but Not Activated",
+        "The Heart Behind the Offering",
+        "Worship as Fellowship",
+        "Nothing Added to What He Said",
+        "What Fasting Is Actually For"
+      ],
+      "sections": [
+        {
+          "title": "Anointed but Not Activated",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004",
+            "P000005"
+          ]
+        },
+        {
+          "title": "The Heart Behind the Offering",
+          "paragraph_ids": [
+            "P000006",
+            "P000007",
+            "P000008"
+          ]
+        },
+        {
+          "title": "Worship as Fellowship",
+          "paragraph_ids": [
+            "P000009",
+            "P000010",
+            "P000011",
+            "P000012",
+            "P000013"
+          ]
+        },
+        {
+          "title": "Nothing Added to What He Said",
+          "paragraph_ids": [
+            "P000014",
+            "P000015",
+            "P000016",
+            "P000017",
+            "P000018",
+            "P000019"
+          ]
+        },
+        {
+          "title": "What Fasting Is Actually For",
+          "paragraph_ids": [
+            "P000020",
+            "P000021",
+            "P000022",
+            "P000023",
+            "P000024"
+          ]
+        }
+      ],
+      "paragraph_count": 24,
+      "idea_expected_count": 18,
+      "idea_covered_count": 18,
+      "provenance_ids": {
+        "chapter_id": "CH005",
+        "section_ids": [
+          "SEC018",
+          "SEC019",
+          "SEC020",
+          "SEC021",
+          "SEC022"
+        ],
+        "idea_ids": [
+          "IDEA060",
+          "IDEA061",
+          "IDEA062",
+          "IDEA063",
+          "IDEA064",
+          "IDEA065",
+          "IDEA066",
+          "IDEA067",
+          "IDEA068",
+          "IDEA069",
+          "IDEA070",
+          "IDEA071",
+          "IDEA072",
+          "IDEA073",
+          "IDEA074",
+          "IDEA075",
+          "IDEA076",
+          "IDEA077"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH006",
+      "book_order": 6,
+      "title": "That They May Be One",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH006/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH006/chapter_candidate.json",
+      "source_markdown_sha256": "8856aabd8442ac5cdfa479c953aaef6e50dc0b3db48650c38fc780ae456fda9f",
+      "source_json_sha256": "2d1543de8f11511a5c10b9e42aa0ec86cdf088d7257a2f3ecb42a59efe679c57",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC023",
+        "SEC024",
+        "SEC025",
+        "SEC026",
+        "SEC027",
+        "SEC028",
+        "SEC029",
+        "SEC030"
+      ],
+      "section_titles": [
+        "The Prayer of Dependence",
+        "The Same Glory",
+        "Be Factual About Where You Stand",
+        "Not Waiting, Working",
+        "Speech from Overflow",
+        "Knowing the Spirit, Not Only the Gifts",
+        "The Key of Life",
+        "Knowing Where People Are"
+      ],
+      "sections": [
+        {
+          "title": "The Prayer of Dependence",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004",
+            "P000005"
+          ]
+        },
+        {
+          "title": "The Same Glory",
+          "paragraph_ids": [
+            "P000006",
+            "P000007",
+            "P000008",
+            "P000009"
+          ]
+        },
+        {
+          "title": "Be Factual About Where You Stand",
+          "paragraph_ids": [
+            "P000010",
+            "P000011",
+            "P000012"
+          ]
+        },
+        {
+          "title": "Not Waiting, Working",
+          "paragraph_ids": [
+            "P000013",
+            "P000014",
+            "P000015",
+            "P000016",
+            "P000017",
+            "P000018",
+            "P000019",
+            "P000020"
+          ]
+        },
+        {
+          "title": "Speech from Overflow",
+          "paragraph_ids": [
+            "P000021",
+            "P000022",
+            "P000023",
+            "P000024"
+          ]
+        },
+        {
+          "title": "Knowing the Spirit, Not Only the Gifts",
+          "paragraph_ids": [
+            "P000025",
+            "P000026",
+            "P000027",
+            "P000028",
+            "P000029"
+          ]
+        },
+        {
+          "title": "The Key of Life",
+          "paragraph_ids": [
+            "P000030",
+            "P000031",
+            "P000032",
+            "P000033",
+            "P000034"
+          ]
+        },
+        {
+          "title": "Knowing Where People Are",
+          "paragraph_ids": [
+            "P000035",
+            "P000036",
+            "P000037",
+            "P000038",
+            "P000039",
+            "P000040"
+          ]
+        }
+      ],
+      "paragraph_count": 40,
+      "idea_expected_count": 38,
+      "idea_covered_count": 38,
+      "provenance_ids": {
+        "chapter_id": "CH006",
+        "section_ids": [
+          "SEC023",
+          "SEC024",
+          "SEC025",
+          "SEC026",
+          "SEC027",
+          "SEC028",
+          "SEC029",
+          "SEC030"
+        ],
+        "idea_ids": [
+          "IDEA078",
+          "IDEA079",
+          "IDEA080",
+          "IDEA081",
+          "IDEA082",
+          "IDEA083",
+          "IDEA084",
+          "IDEA085",
+          "IDEA086",
+          "IDEA087",
+          "IDEA088",
+          "IDEA089",
+          "IDEA090",
+          "IDEA091",
+          "IDEA092",
+          "IDEA093",
+          "IDEA094",
+          "IDEA095",
+          "IDEA096",
+          "IDEA097",
+          "IDEA100",
+          "IDEA101",
+          "IDEA102",
+          "IDEA103",
+          "IDEA104",
+          "IDEA105",
+          "IDEA106",
+          "IDEA107",
+          "IDEA108",
+          "IDEA109",
+          "IDEA110",
+          "IDEA111",
+          "IDEA112",
+          "IDEA113",
+          "IDEA124",
+          "IDEA125",
+          "IDEA126",
+          "IDEA127"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH007",
+      "book_order": 7,
+      "title": "Loved Exactly as Jesus Is Loved",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH007/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH007/chapter_candidate.json",
+      "source_markdown_sha256": "f11e8ae4988973d2510f82aea730ab6008c387d890c6734e402a0fa8c16678ff",
+      "source_json_sha256": "249b8917fa961c1b6894cef80ed36006ca99aa1413ddddd7ae31c60276210979",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC031",
+        "SEC032"
+      ],
+      "section_titles": [
+        "No Condition in the Text",
+        "Flawed and Still Used"
+      ],
+      "sections": [
+        {
+          "title": "No Condition in the Text",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003"
+          ]
+        },
+        {
+          "title": "Flawed and Still Used",
+          "paragraph_ids": [
+            "P000004",
+            "P000005",
+            "P000006",
+            "P000007",
+            "P000008",
+            "P000009",
+            "P000010"
+          ]
+        }
+      ],
+      "paragraph_count": 10,
+      "idea_expected_count": 10,
+      "idea_covered_count": 10,
+      "provenance_ids": {
+        "chapter_id": "CH007",
+        "section_ids": [
+          "SEC031",
+          "SEC032"
+        ],
+        "idea_ids": [
+          "IDEA114",
+          "IDEA115",
+          "IDEA116",
+          "IDEA117",
+          "IDEA118",
+          "IDEA119",
+          "IDEA120",
+          "IDEA121",
+          "IDEA122",
+          "IDEA123"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH008",
+      "book_order": 8,
+      "title": "Set Your Mind Above",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH008/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH008/chapter_candidate.json",
+      "source_markdown_sha256": "a7b6992714b6de4b1780fee96fb4f239f5ea66f2eca3c1f01306ca80c97d4a76",
+      "source_json_sha256": "73bc1f2349911436526b5876849daccc3333932f6cbc7b52aea64b4572bd5b4a",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC033",
+        "SEC034",
+        "SEC035"
+      ],
+      "section_titles": [
+        "Fixing the Affections",
+        "Selecting Your Thoughts",
+        "Complete in the Head"
+      ],
+      "sections": [
+        {
+          "title": "Fixing the Affections",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004",
+            "P000005",
+            "P000006"
+          ]
+        },
+        {
+          "title": "Selecting Your Thoughts",
+          "paragraph_ids": [
+            "P000007",
+            "P000008",
+            "P000009",
+            "P000010"
+          ]
+        },
+        {
+          "title": "Complete in the Head",
+          "paragraph_ids": [
+            "P000011",
+            "P000012",
+            "P000013"
+          ]
+        }
+      ],
+      "paragraph_count": 13,
+      "idea_expected_count": 11,
+      "idea_covered_count": 11,
+      "provenance_ids": {
+        "chapter_id": "CH008",
+        "section_ids": [
+          "SEC033",
+          "SEC034",
+          "SEC035"
+        ],
+        "idea_ids": [
+          "IDEA128",
+          "IDEA129",
+          "IDEA130",
+          "IDEA131",
+          "IDEA132",
+          "IDEA133",
+          "IDEA134",
+          "IDEA135",
+          "IDEA136",
+          "IDEA137",
+          "IDEA138"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH009",
+      "book_order": 9,
+      "title": "Laws You Gave Yourself",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH009/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH009/chapter_candidate.json",
+      "source_markdown_sha256": "b4e28abf7888b8ee98cab57bdf5d69f1eb97513c1a23ca94873b9039ddfe2e83",
+      "source_json_sha256": "a72864ea3580422257674a5000d81d46c2952492a347255bf3107f0ae066e61c",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC036",
+        "SEC037",
+        "SEC038"
+      ],
+      "section_titles": [
+        "When Admiration Becomes Law",
+        "He Knows How He Made You",
+        "The Real Cost of the Doctrine"
+      ],
+      "sections": [
+        {
+          "title": "When Admiration Becomes Law",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004"
+          ]
+        },
+        {
+          "title": "He Knows How He Made You",
+          "paragraph_ids": [
+            "P000005",
+            "P000006",
+            "P000007",
+            "P000008",
+            "P000009",
+            "P000010"
+          ]
+        },
+        {
+          "title": "The Real Cost of the Doctrine",
+          "paragraph_ids": [
+            "P000011",
+            "P000012",
+            "P000013",
+            "P000014",
+            "P000015",
+            "P000016",
+            "P000017",
+            "P000018",
+            "P000019"
+          ]
+        }
+      ],
+      "paragraph_count": 19,
+      "idea_expected_count": 14,
+      "idea_covered_count": 14,
+      "provenance_ids": {
+        "chapter_id": "CH009",
+        "section_ids": [
+          "SEC036",
+          "SEC037",
+          "SEC038"
+        ],
+        "idea_ids": [
+          "IDEA139",
+          "IDEA140",
+          "IDEA141",
+          "IDEA142",
+          "IDEA143",
+          "IDEA144",
+          "IDEA145",
+          "IDEA146",
+          "IDEA147",
+          "IDEA148",
+          "IDEA149",
+          "IDEA150",
+          "IDEA151",
+          "IDEA152"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH010",
+      "book_order": 10,
+      "title": "Spirit, Soul and Body",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH010/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH010/chapter_candidate.json",
+      "source_markdown_sha256": "df689d260b121e843dbd06aacc67c2500b327bc14747e3f3b099d3cde81bc953",
+      "source_json_sha256": "e8a52d7700bc1bdc6505836d8b897edba48c6da36f2a07ed1e9b359324d17e6a",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC039",
+        "SEC040",
+        "SEC041",
+        "SEC042"
+      ],
+      "section_titles": [
+        "The Three-Part Man",
+        "In Dying You Shall Die",
+        "Fighting What Does Not Exist",
+        "Heart, Soul and Mind"
+      ],
+      "sections": [
+        {
+          "title": "The Three-Part Man",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004",
+            "P000005"
+          ]
+        },
+        {
+          "title": "In Dying You Shall Die",
+          "paragraph_ids": [
+            "P000006",
+            "P000007",
+            "P000008",
+            "P000009",
+            "P000010",
+            "P000011"
+          ]
+        },
+        {
+          "title": "Fighting What Does Not Exist",
+          "paragraph_ids": [
+            "P000012",
+            "P000013",
+            "P000014"
+          ]
+        },
+        {
+          "title": "Heart, Soul and Mind",
+          "paragraph_ids": [
+            "P000015",
+            "P000016",
+            "P000017"
+          ]
+        }
+      ],
+      "paragraph_count": 17,
+      "idea_expected_count": 16,
+      "idea_covered_count": 16,
+      "provenance_ids": {
+        "chapter_id": "CH010",
+        "section_ids": [
+          "SEC039",
+          "SEC040",
+          "SEC041",
+          "SEC042"
+        ],
+        "idea_ids": [
+          "IDEA153",
+          "IDEA154",
+          "IDEA155",
+          "IDEA156",
+          "IDEA157",
+          "IDEA158",
+          "IDEA159",
+          "IDEA160",
+          "IDEA161",
+          "IDEA162",
+          "IDEA163",
+          "IDEA164",
+          "IDEA165",
+          "IDEA166",
+          "IDEA183",
+          "IDEA187"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH011",
+      "book_order": 11,
+      "title": "Reasonings and Strongholds",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH011/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH011/chapter_candidate.json",
+      "source_markdown_sha256": "0f390632bdb73559c8ea639b2e9d789116ec550ed83f298b4a31bc59699b79c5",
+      "source_json_sha256": "6a6a21c287c78548420efdb920a6cbee63203dd2f1c4bd630588c4ea2af274fb",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC043",
+        "SEC044",
+        "SEC045",
+        "SEC046"
+      ],
+      "section_titles": [
+        "The Simplicity That Is in Christ",
+        "Flesh-and-Blood Knowledge",
+        "Feed Them Afterward",
+        "Bringing Every Thought Captive"
+      ],
+      "sections": [
+        {
+          "title": "The Simplicity That Is in Christ",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004"
+          ]
+        },
+        {
+          "title": "Flesh-and-Blood Knowledge",
+          "paragraph_ids": [
+            "P000005",
+            "P000006",
+            "P000007",
+            "P000008"
+          ]
+        },
+        {
+          "title": "Feed Them Afterward",
+          "paragraph_ids": [
+            "P000009",
+            "P000010"
+          ]
+        },
+        {
+          "title": "Bringing Every Thought Captive",
+          "paragraph_ids": [
+            "P000011",
+            "P000012",
+            "P000013",
+            "P000014"
+          ]
+        }
+      ],
+      "paragraph_count": 14,
+      "idea_expected_count": 12,
+      "idea_covered_count": 12,
+      "provenance_ids": {
+        "chapter_id": "CH011",
+        "section_ids": [
+          "SEC043",
+          "SEC044",
+          "SEC045",
+          "SEC046"
+        ],
+        "idea_ids": [
+          "IDEA167",
+          "IDEA168",
+          "IDEA169",
+          "IDEA170",
+          "IDEA171",
+          "IDEA172",
+          "IDEA173",
+          "IDEA174",
+          "IDEA175",
+          "IDEA176",
+          "IDEA177",
+          "IDEA178"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH012",
+      "book_order": 12,
+      "title": "Prayer Corrected",
+      "source_markdown_path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.md",
+      "source_json_path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.json",
+      "source_markdown_sha256": "79d0ab2254e1a972e0fb5ddcbb7901425255ce887ee817fc39b001838b889919",
+      "source_json_sha256": "8f135ac5f1df8b2e077e9cc767518d1a05e2fc22d80f5d66494cf5a8364e7fc5",
+      "manifest_path": "C:/TranscriptionAI/audit/book_editorial_acceptance_4b219/ch012_accepted_editorial_manifest.json",
+      "approved_version": "chapter_candidate_authorial_v2",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "VERIFIED_AGAINST_PLAN",
+      "section_ids": [
+        "SEC047",
+        "SEC048",
+        "SEC049",
+        "SEC050"
+      ],
+      "section_titles": [
+        "Bavardage Is Not Prayer",
+        "The Refreshing",
+        "He Told Me I Was Tired",
+        "Pouring on the Thirsty"
+      ],
+      "sections": [
+        {
+          "title": "Bavardage Is Not Prayer",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003"
+          ]
+        },
+        {
+          "title": "The Refreshing",
+          "paragraph_ids": [
+            "P000004",
+            "P000005",
+            "P000006",
+            "P000007"
+          ]
+        },
+        {
+          "title": "He Told Me I Was Tired",
+          "paragraph_ids": [
+            "P000008",
+            "P000009",
+            "P000010",
+            "P000011"
+          ]
+        },
+        {
+          "title": "Pouring on the Thirsty",
+          "paragraph_ids": [
+            "P000012",
+            "P000013",
+            "P000014"
+          ]
+        }
+      ],
+      "paragraph_count": 14,
+      "idea_expected_count": 11,
+      "idea_covered_count": 11,
+      "provenance_ids": {
+        "chapter_id": "CH012",
+        "section_ids": [
+          "SEC047",
+          "SEC048",
+          "SEC049",
+          "SEC050"
+        ],
+        "idea_ids": [
+          "IDEA179",
+          "IDEA182",
+          "IDEA186",
+          "IDEA180",
+          "IDEA181",
+          "IDEA237",
+          "IDEA184",
+          "IDEA185",
+          "IDEA238",
+          "IDEA212",
+          "IDEA213"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH013",
+      "book_order": 13,
+      "title": "The Renewed Mind and the Hidden Faculty",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH013/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH013/chapter_candidate.json",
+      "source_markdown_sha256": "8ee06dc6c222b1827aca04753ee333d9c814a265f441ad9648af5ce11e41b732",
+      "source_json_sha256": "229c500de627a202baf155a673eb0b7d5779810e2df3c975b606523c977b2ce1",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC051",
+        "SEC052",
+        "SEC053",
+        "SEC054"
+      ],
+      "section_titles": [
+        "Renewal Is Not Force",
+        "The Power the Church Did Not Teach",
+        "Bring Jesus Into the Thought",
+        "Training the Wandering Mind"
+      ],
+      "sections": [
+        {
+          "title": "Renewal Is Not Force",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003"
+          ]
+        },
+        {
+          "title": "The Power the Church Did Not Teach",
+          "paragraph_ids": [
+            "P000004",
+            "P000005",
+            "P000006",
+            "P000007",
+            "P000008",
+            "P000009",
+            "P000010"
+          ]
+        },
+        {
+          "title": "Bring Jesus Into the Thought",
+          "paragraph_ids": [
+            "P000011",
+            "P000012",
+            "P000013",
+            "P000014",
+            "P000015",
+            "P000016",
+            "P000017",
+            "P000018",
+            "P000019"
+          ]
+        },
+        {
+          "title": "Training the Wandering Mind",
+          "paragraph_ids": [
+            "P000020",
+            "P000021",
+            "P000022",
+            "P000023",
+            "P000024",
+            "P000025"
+          ]
+        }
+      ],
+      "paragraph_count": 25,
+      "idea_expected_count": 24,
+      "idea_covered_count": 24,
+      "provenance_ids": {
+        "chapter_id": "CH013",
+        "section_ids": [
+          "SEC051",
+          "SEC052",
+          "SEC053",
+          "SEC054"
+        ],
+        "idea_ids": [
+          "IDEA188",
+          "IDEA189",
+          "IDEA190",
+          "IDEA191",
+          "IDEA192",
+          "IDEA193",
+          "IDEA194",
+          "IDEA195",
+          "IDEA196",
+          "IDEA197",
+          "IDEA198",
+          "IDEA199",
+          "IDEA200",
+          "IDEA201",
+          "IDEA202",
+          "IDEA203",
+          "IDEA204",
+          "IDEA205",
+          "IDEA206",
+          "IDEA239",
+          "IDEA240",
+          "IDEA241",
+          "IDEA242",
+          "IDEA245"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH014",
+      "book_order": 14,
+      "title": "Operating What You Have",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH014/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH014/chapter_candidate.json",
+      "source_markdown_sha256": "6df53e5864e6b7961e3a211583ee82494a93cef1258663898487d204ea1d415c",
+      "source_json_sha256": "d5d22c3c546bafeacc60379481e65e35a0617d480da5be83c9f443c8e5ec5f86",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC055",
+        "SEC056",
+        "SEC057",
+        "SEC058"
+      ],
+      "section_titles": [
+        "Abnormal Faith, Short Prayers",
+        "Hands as Doorways",
+        "A Holy Man Lacks Nothing",
+        "Without Struggle"
+      ],
+      "sections": [
+        {
+          "title": "Abnormal Faith, Short Prayers",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004",
+            "P000005",
+            "P000006",
+            "P000007",
+            "P000008"
+          ]
+        },
+        {
+          "title": "Hands as Doorways",
+          "paragraph_ids": [
+            "P000009",
+            "P000010",
+            "P000011",
+            "P000012",
+            "P000013"
+          ]
+        },
+        {
+          "title": "A Holy Man Lacks Nothing",
+          "paragraph_ids": [
+            "P000014",
+            "P000015",
+            "P000016"
+          ]
+        },
+        {
+          "title": "Without Struggle",
+          "paragraph_ids": [
+            "P000017",
+            "P000018",
+            "P000019",
+            "P000020"
+          ]
+        }
+      ],
+      "paragraph_count": 20,
+      "idea_expected_count": 15,
+      "idea_covered_count": 15,
+      "provenance_ids": {
+        "chapter_id": "CH014",
+        "section_ids": [
+          "SEC055",
+          "SEC056",
+          "SEC057",
+          "SEC058"
+        ],
+        "idea_ids": [
+          "IDEA207",
+          "IDEA208",
+          "IDEA209",
+          "IDEA210",
+          "IDEA211",
+          "IDEA214",
+          "IDEA215",
+          "IDEA216",
+          "IDEA217",
+          "IDEA218",
+          "IDEA219",
+          "IDEA220",
+          "IDEA221",
+          "IDEA222",
+          "IDEA223"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH015",
+      "book_order": 15,
+      "title": "Grace Barely Touched",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH015/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH015/chapter_candidate.json",
+      "source_markdown_sha256": "9777d8bfe678e19ca631a78cc445922c1ce5b55d96268a4124ce01127fca2553",
+      "source_json_sha256": "619e21a1bfe8eadbe2fa7545dc9098840bab1382ed564419d172d7ee56916a17",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC059",
+        "SEC060",
+        "SEC061",
+        "SEC062"
+      ],
+      "section_titles": [
+        "More Than We Have Used",
+        "What Changed in Them",
+        "Healing Already Accomplished",
+        "The Sower in One Man"
+      ],
+      "sections": [
+        {
+          "title": "More Than We Have Used",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004"
+          ]
+        },
+        {
+          "title": "What Changed in Them",
+          "paragraph_ids": [
+            "P000005",
+            "P000006",
+            "P000007",
+            "P000008",
+            "P000009"
+          ]
+        },
+        {
+          "title": "Healing Already Accomplished",
+          "paragraph_ids": [
+            "P000010",
+            "P000011",
+            "P000012"
+          ]
+        },
+        {
+          "title": "The Sower in One Man",
+          "paragraph_ids": [
+            "P000013",
+            "P000014",
+            "P000015",
+            "P000016",
+            "P000017"
+          ]
+        }
+      ],
+      "paragraph_count": 17,
+      "idea_expected_count": 16,
+      "idea_covered_count": 16,
+      "provenance_ids": {
+        "chapter_id": "CH015",
+        "section_ids": [
+          "SEC059",
+          "SEC060",
+          "SEC061",
+          "SEC062"
+        ],
+        "idea_ids": [
+          "IDEA227",
+          "IDEA228",
+          "IDEA229",
+          "IDEA230",
+          "IDEA231",
+          "IDEA232",
+          "IDEA233",
+          "IDEA234",
+          "IDEA235",
+          "IDEA236",
+          "IDEA243",
+          "IDEA244",
+          "IDEA246",
+          "IDEA247",
+          "IDEA248",
+          "IDEA249"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH016",
+      "book_order": 16,
+      "title": "Death as Gain",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH016/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH016/chapter_candidate.json",
+      "source_markdown_sha256": "ddc4c9989c3aef5e0ea322fcd2cba0f73f5c58758d3927fd5ac1504eea9d2481",
+      "source_json_sha256": "eda44414f526fc1299e23ee59d9d6fa40b194d78dada64696bb3963539bd4fb2",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC063"
+      ],
+      "section_titles": [
+        "To Live Is Christ"
+      ],
+      "sections": [
+        {
+          "title": "To Live Is Christ",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004",
+            "P000005",
+            "P000006",
+            "P000007"
+          ]
+        }
+      ],
+      "paragraph_count": 7,
+      "idea_expected_count": 6,
+      "idea_covered_count": 6,
+      "provenance_ids": {
+        "chapter_id": "CH016",
+        "section_ids": [
+          "SEC063"
+        ],
+        "idea_ids": [
+          "IDEA224",
+          "IDEA225",
+          "IDEA226",
+          "IDEA250",
+          "IDEA251",
+          "IDEA252"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH017",
+      "book_order": 17,
+      "title": "Nothing by Chance",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH017/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH017/chapter_candidate.json",
+      "source_markdown_sha256": "df61a4b03479913c5dc331cb38b24a544a8f8806fbe8f25b37fbb067fc3b005e",
+      "source_json_sha256": "54f092a17f761f8c14fbfb894abee6171d9360572a0b8700990ceb3956b150fb",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC064",
+        "SEC065",
+        "SEC066"
+      ],
+      "section_titles": [
+        "Practice, Not Accident",
+        "God Did Not Make Anyone Poor",
+        "The A Part and the B Part"
+      ],
+      "sections": [
+        {
+          "title": "Practice, Not Accident",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004",
+            "P000005",
+            "P000006",
+            "P000007",
+            "P000008",
+            "P000009"
+          ]
+        },
+        {
+          "title": "God Did Not Make Anyone Poor",
+          "paragraph_ids": [
+            "P000010",
+            "P000011",
+            "P000012",
+            "P000013",
+            "P000014",
+            "P000015",
+            "P000016",
+            "P000017",
+            "P000018",
+            "P000019",
+            "P000020",
+            "P000021",
+            "P000022"
+          ]
+        },
+        {
+          "title": "The A Part and the B Part",
+          "paragraph_ids": [
+            "P000023",
+            "P000024"
+          ]
+        }
+      ],
+      "paragraph_count": 24,
+      "idea_expected_count": 17,
+      "idea_covered_count": 17,
+      "provenance_ids": {
+        "chapter_id": "CH017",
+        "section_ids": [
+          "SEC064",
+          "SEC065",
+          "SEC066"
+        ],
+        "idea_ids": [
+          "IDEA040",
+          "IDEA253",
+          "IDEA254",
+          "IDEA255",
+          "IDEA256",
+          "IDEA257",
+          "IDEA258",
+          "IDEA259",
+          "IDEA260",
+          "IDEA261",
+          "IDEA262",
+          "IDEA263",
+          "IDEA264",
+          "IDEA265",
+          "IDEA266",
+          "IDEA267",
+          "IDEA268"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH018",
+      "book_order": 18,
+      "title": "Testimonies of Resurrection",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.json",
+      "source_markdown_sha256": "3f8e0590567d431af18812505e2a5f5fa454e1648d06f2b895ceae30278df1cb",
+      "source_json_sha256": "e4902da92b05dbe0875222a41d59eb99f7b3e669b685f50f36b06864a327d38b",
+      "manifest_path": "C:/TranscriptionAI/audit/book_batch_preparation_4b222/ch018_accepted_editorial_manifest.json",
+      "approved_version": "4b221_generated_candidate",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC067",
+        "SEC068",
+        "SEC069",
+        "SEC070"
+      ],
+      "section_titles": [
+        "The Word That Could Not Fail",
+        "Activation, Not Persuasion",
+        "When It Does Not Happen",
+        "The Vessel, Not the Name"
+      ],
+      "sections": [
+        {
+          "title": "The Word That Could Not Fail",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004"
+          ]
+        },
+        {
+          "title": "Activation, Not Persuasion",
+          "paragraph_ids": [
+            "P000005",
+            "P000006",
+            "P000007",
+            "P000008"
+          ]
+        },
+        {
+          "title": "When It Does Not Happen",
+          "paragraph_ids": [
+            "P000009",
+            "P000010",
+            "P000011"
+          ]
+        },
+        {
+          "title": "The Vessel, Not the Name",
+          "paragraph_ids": [
+            "P000012",
+            "P000013",
+            "P000014"
+          ]
+        }
+      ],
+      "paragraph_count": 14,
+      "idea_expected_count": 11,
+      "idea_covered_count": 11,
+      "provenance_ids": {
+        "chapter_id": "CH018",
+        "section_ids": [
+          "SEC067",
+          "SEC068",
+          "SEC069",
+          "SEC070"
+        ],
+        "idea_ids": [
+          "IDEA269",
+          "IDEA270",
+          "IDEA271",
+          "IDEA272",
+          "IDEA273",
+          "IDEA274",
+          "IDEA275",
+          "IDEA276",
+          "IDEA277",
+          "IDEA278",
+          "IDEA279"
+        ]
+      }
+    },
+    {
+      "chapter_id": "CH019",
+      "book_order": 19,
+      "title": "Out of the Eater",
+      "source_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH019/chapter_candidate.md",
+      "source_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b227_remaining13/chapters/CH019/chapter_candidate.json",
+      "source_markdown_sha256": "49e0795a62ef1e59ec350cd4237c38a186c89dbafc94b467119b0c003542609a",
+      "source_json_sha256": "05487c1153c81f865efc0310f2ccf614f083308167735887fa20808f57459c2c",
+      "manifest_path": "",
+      "approved_version": "4b227_generated_candidate",
+      "editorial_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "PASS",
+      "section_ids": [
+        "SEC071",
+        "SEC072"
+      ],
+      "section_titles": [
+        "Meant for Evil",
+        "Angels Over the Nation"
+      ],
+      "sections": [
+        {
+          "title": "Meant for Evil",
+          "paragraph_ids": [
+            "P000001",
+            "P000002",
+            "P000003",
+            "P000004",
+            "P000005",
+            "P000006"
+          ]
+        },
+        {
+          "title": "Angels Over the Nation",
+          "paragraph_ids": [
+            "P000007",
+            "P000008",
+            "P000009",
+            "P000010"
+          ]
+        }
+      ],
+      "paragraph_count": 10,
+      "idea_expected_count": 7,
+      "idea_covered_count": 7,
+      "provenance_ids": {
+        "chapter_id": "CH019",
+        "section_ids": [
+          "SEC071",
+          "SEC072"
+        ],
+        "idea_ids": [
+          "IDEA280",
+          "IDEA281",
+          "IDEA282",
+          "IDEA283",
+          "IDEA284",
+          "IDEA285",
+          "IDEA286"
+        ]
+      }
+    }
+  ],
+  "reproducible": true,
+  "prose_modified": false,
+  "secrets_included": false
+}

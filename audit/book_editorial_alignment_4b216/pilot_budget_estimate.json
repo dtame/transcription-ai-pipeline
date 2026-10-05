@@ -1,0 +1,156 @@
+{
+  "phase": "4B.2.16",
+  "provider_calls": 0,
+  "spent": false,
+  "chapter_id": "CH012",
+  "pricing_effective_date": "2026-09-18",
+  "tariffs_are_local_configuration_not_a_live_lookup": true,
+  "historical_full_book_4b214": {
+    "classification": "hypothesis_reused_not_remeasured",
+    "source": "audit/book_generation_bridge_4b214/cost_estimates.json",
+    "book_generator": {
+      "low_usd": 0.93209,
+      "central_usd": 1.553484,
+      "high_usd": 3.106968,
+      "low_factor": "0.6",
+      "high_factor": "2.0",
+      "factors_are_assumptions_not_measured": true,
+      "counted_as_zero": false,
+      "status": "estimated",
+      "source": "audit/book_generator_4b1/book_generator_4b1_cost_estimate.json",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "pricing_verified": true,
+      "pricing_effective_date": "2026-09-18",
+      "estimated_production_calls": 19,
+      "unknown_or_incomplete": false,
+      "note": "4B.1 documented 19-chapter envelope. Bands 0.6x/2.0x are assumptions, not measured 19-chapter spend."
+    },
+    "semantic_gate": {
+      "status": "hypothesis",
+      "granularity": "A_ONE_REQUEST_PER_PARAGRAPH",
+      "source": "h01 analog * assumed paragraph counts under strategy A",
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "pricing_effective_date": "2026-09-18",
+      "per_call_usd_h01_analog": 0.006286,
+      "requests_low": 144,
+      "requests_central": 288,
+      "requests_high": 504,
+      "low_usd": 0.905184,
+      "central_usd": 1.810368,
+      "high_usd": 3.168144,
+      "limited_resume_central_usd": 1.991405,
+      "significant_resume_high_usd": 4.752216,
+      "counted_as_zero": false,
+      "unknown_or_incomplete": true,
+      "not_measured_on_generated_book_paragraphs": true,
+      "h01_not_extrapolated_as_fact": true,
+      "old_4b23_chapter_call_envelope_not_reused_as_primary": {
+        "central_usd": 1.708446,
+        "status": "base_estimate",
+        "reused": false
+      },
+      "reasoning_token_billing": "UNKNOWN",
+      "long_context_pricing": "UNKNOWN"
+    },
+    "phase5": {
+      "status": "UNKNOWN",
+      "low_usd": null,
+      "central_usd": null,
+      "high_usd": null,
+      "counted_as_zero": false,
+      "reason": "Independent Book Validator is not implemented. No measured token use."
+    },
+    "partial_sum_generator_plus_strategy_a_gate": {
+      "low_usd": 1.837274,
+      "central_usd": 3.363852,
+      "high_usd": 6.275112,
+      "excludes": [
+        "phase5",
+        "generated_paragraph_count",
+        "generated_unit_count",
+        "actual_tokens_per_generated_paragraph",
+        "terra_reasoning_billing",
+        "terra_long_context_pricing",
+        "real_resume_cost"
+      ],
+      "complete_total": "UNKNOWN",
+      "counted_as_zero": false
+    },
+    "complete_total": "UNKNOWN",
+    "unknown_not_treated_as_zero": true
+  },
+  "pilot_book_generator": {
+    "classification": "historical_estimate",
+    "status": "historical_4b1_estimate",
+    "source": "audit/book_generator_4b1/book_generator_4b1_real_corpus_budget.json",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5",
+    "input_tokens_pessimistic": 9223,
+    "expected_output_tokens": 2405,
+    "output_tokens_are_a_formula_not_a_measurement": true,
+    "observed_spend_usd": "UNKNOWN",
+    "central_usd": "0.042496",
+    "low_usd": "0.025498",
+    "high_usd": "0.084992",
+    "band_factors": "0.6 and 2.0 reused from 4B.2.14; assumptions, not measured spend",
+    "counted_as_zero": false
+  },
+  "pilot_semantic_gate": {
+    "classification": "hypothesis",
+    "status": "hypothesis",
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "granularity": "A_ONE_REQUEST_PER_PARAGRAPH",
+    "per_call_usd_h01_analog": "0.006286",
+    "h01_analog_scope": "one historical paragraph call; not a generated book paragraph",
+    "paragraphs_per_section_assumption": "2 / 4 / 7 reused from 4B.2.14",
+    "assumption_not_measurement": true,
+    "section_count": 4,
+    "requests_low": 8,
+    "requests_central": 16,
+    "requests_high": 28,
+    "low_usd": "0.050288",
+    "central_usd": "0.100576",
+    "high_usd": "0.176008",
+    "actual_paragraph_count": "UNKNOWN",
+    "actual_paragraph_count_counted_as_zero": false,
+    "reasoning_token_billing": "UNKNOWN",
+    "long_context_pricing": "UNKNOWN",
+    "counted_as_zero": false
+  },
+  "possible_reprise": {
+    "classification": "hypothesis",
+    "status": "UNKNOWN",
+    "whether_a_reprise_is_required": "UNKNOWN",
+    "counted_as_zero": false,
+    "modeled_sensitivity_only": {
+      "one_extra_generator_call_at_central_usd": "0.042496",
+      "gate_central_plus_10_percent_usd": "0.110634",
+      "gate_high_plus_50_percent_usd": "0.264012",
+      "factors_are_assumptions": true
+    }
+  },
+  "phase5": {
+    "classification": "UNKNOWN",
+    "status": "UNKNOWN",
+    "low_usd": null,
+    "central_usd": null,
+    "high_usd": null,
+    "counted_as_zero": false,
+    "reason": "The independent Book Validator is not implemented. No measured token use."
+  },
+  "pilot_partial_generator_plus_gate_hypothesis": {
+    "central_usd": "0.143072",
+    "complete_total_including_phase5": "UNKNOWN",
+    "unknown_not_treated_as_zero": true
+  },
+  "stop_if_high_band_exceeded": {
+    "generator_high_usd": "0.084992",
+    "semantic_gate_high_usd": "0.176008",
+    "does_not_authorize_spend": true,
+    "phase5_not_included_so_ceiling_is_incomplete": true
+  },
+  "secrets_included": false
+}

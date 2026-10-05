@@ -1,0 +1,20 @@
+{
+  "returncode": 0,
+  "summary": "217 passed in 8.26s",
+  "passed": 217,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b27.py",
+    "app/tests/test_book_semantic_gate_4b262.py",
+    "app/tests/test_book_semantic_gate_4b261.py",
+    "app/tests/test_book_semantic_gate_4b26.py",
+    "app/tests/test_book_semantic_gate_4b251.py",
+    "app/tests/test_book_semantic_gate_4b23.py",
+    "app/tests/test_ai_providers.py",
+    "app/tests/test_ai_thinking_contract.py"
+  ],
+  "real_provider_calls": 0
+}

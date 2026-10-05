@@ -1,0 +1,211 @@
+{
+  "pytest": {
+    "returncode": 0,
+    "summary": "12 passed in 1.20s",
+    "passed": 12,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_word_print_profile_4b230.py"
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "phase": "4B.2.30",
+    "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+  },
+  "scenarios": {
+    "phase": "4B.2.30",
+    "passed": 37,
+    "failed": 0,
+    "rows": [
+      {
+        "name": "load_book_json",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "book_sha256",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "load_print_profile",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "page_dimensions",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "portrait",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "mirror_margins",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "gutter_not_duplicated",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "style_book_body",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "style_book_body_first",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "style_book_chapter_title",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "style_book_section_title",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "chapter_page_breaks",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "titles_keep_with_next",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "widow_orphan_control",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "front_matter_structure",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_invented_author",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_invented_isbn",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "toc_field",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "toc_compatible_styles",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "body_pagination_configured",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "even_odd_headers",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "chapter_first_page_no_header",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_printed_technical_ids",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "paragraphs_unmodified",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "nineteen_chapters",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "seventy_two_sections",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "profile_reused_on_other_book",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "cover_optional",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_published_docx",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_published_pdf",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_anthropic_calls",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_openai_calls",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_terra_calls",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "book_json_unchanged",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "chapter_sources_unchanged",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "publish_guard",
+        "ok": true,
+        "detail": "blocked"
+      },
+      {
+        "name": "generic_profile_has_no_book_title",
+        "ok": true,
+        "detail": ""
+      }
+    ],
+    "failed_names": [],
+    "secrets_included": false
+  }
+}

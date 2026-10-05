@@ -1,0 +1,116 @@
+{
+  "phase": "4B.2.16",
+  "historical_prompts_modified": false,
+  "book_generator_1_0": {
+    "version": "book-generator-1.0",
+    "system_sha256": "fc5a9721ed5f72641e5d782d7a7f24f380ae3b4a38180aa1e7f6373e0e1aec87",
+    "instructions_sha256": "95c95d825f615443715513c19b0ca60b724bff4c2478958d0cfee55c0b7fb0b8",
+    "prompt_sha256": "af5eafa92cb4335a1c67cccecd3f105b3f1cb4234ab4adcb0de8e30675aba46d",
+    "matches_frozen_system": true,
+    "matches_frozen_instructions": true,
+    "matches_frozen_prompt": true
+  },
+  "book_generator_1_0_1": {
+    "version": "book-generator-1.0.1",
+    "system_sha256": "7dd9e38c39b6988472e7f5f97101a91cc95f21218d1504e3398329df0a22e532",
+    "instructions_sha256": "1ac3ebf03dce1b489ffcc0a76d5ffe5efe657a819c9e6ab06f098c46be2efbcc",
+    "prompt_sha256": "ba1981e2c54e50b13f769b58db482ce60df247c24582d2dc56287243d327b947",
+    "historical_prompt_mutated": false
+  },
+  "editorial_planner": {
+    "version": "editorial-planner-1.0",
+    "organizes_and_does_not_write_manuscript": true,
+    "does_not_invent_substantive_content": true,
+    "responsibility_left_in_place": true
+  },
+  "findings": [
+    {
+      "prompt": "book-generator-1.0",
+      "clause": "High stylistic freedom, low semantic freedom.",
+      "risk": "literary_rewrite",
+      "note": "Low semantic freedom is protective. High stylistic freedom can still be read as a license to recast a clear sentence into more impressive prose.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0",
+      "clause": "Write a book, not a cleaned transcript.",
+      "risk": "literary_rewrite",
+      "note": "This pushes the model away from the spoken teaching and toward a literary object. The candidate prompt does not use this sentence.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0",
+      "clause": "improve transitions",
+      "risk": "interpretive_transition",
+      "note": "Improving transitions is allowed only when the transition stays neutral. The historical sentence does not state that limit.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0",
+      "clause": "combine compatible source statements",
+      "risk": "excessive_fusion",
+      "note": "Compatible fusion is narrower than fusion of distinct reasonings. The word compatible is not defined in the prompt.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0",
+      "clause": "paraphrase/synthesis is",
+      "risk": "unsupported_development",
+      "note": "Synthesis can become a new conclusion. The candidate prompt requires the content of each assigned idea to remain represented.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0",
+      "clause": "Remove oral-language artifacts, unnecessary spoken repetition",
+      "risk": "nuance_loss",
+      "note": "Unnecessary is undefined. Pedagogical, rhetorical, and nuance-bearing repetitions can be removed under that wording.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0.1",
+      "clause": "Stylistic expansion is allowed. Semantic expansion is not.",
+      "risk": "literary_rewrite",
+      "note": "The second sentence is protective. The first sentence still authorizes expansion, which can add connective claims.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0",
+      "clause": "You do not add new substantive content.",
+      "risk": "protective",
+      "note": "Already forbids invention. Retained as a constraint, not a defect.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0",
+      "clause": "Do not invent arguments, facts, examples",
+      "risk": "protective",
+      "note": "Already forbids invented examples and arguments.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0.1",
+      "clause": "Do not create new examples, illustrations, anecdotes",
+      "risk": "protective",
+      "note": "Already forbids invented illustrations.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0",
+      "clause": "EditorialPlan controls WHERE material belongs.",
+      "risk": "protective",
+      "note": "Structure remains the Editorial Planner's responsibility. This phase does not move that responsibility into the generator.",
+      "clause_found_in_historical_prompt": true
+    },
+    {
+      "prompt": "book-generator-1.0",
+      "clause": "Do not automatically write repetitive chapter conclusions.",
+      "risk": "protective",
+      "note": "Already resists a synthetic closing. The candidate keeps that limit.",
+      "clause_found_in_historical_prompt": true
+    }
+  ],
+  "clauses_not_found": [],
+  "review_complete": true,
+  "candidate_does_not_overwrite_these_prompts": true,
+  "secrets_included": false
+}

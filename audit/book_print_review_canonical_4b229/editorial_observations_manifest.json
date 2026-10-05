@@ -1,0 +1,40 @@
+{
+  "phase": "4B.2.29",
+  "preserved": true,
+  "interpreted_as_confirmed_errors": false,
+  "texts_modified_to_resolve_them": false,
+  "strengthened_formulations": {
+    "count": 8,
+    "chapter_ids": [
+      "CH005",
+      "CH006",
+      "CH008",
+      "CH009",
+      "CH010",
+      "CH013",
+      "CH014",
+      "CH017"
+    ],
+    "path": "C:/TranscriptionAI/audit/book_full_manuscript_review_4b228/strengthened_claims_review.json"
+  },
+  "references_and_examples": {
+    "count": 19,
+    "historical_count": 6,
+    "similar_count": 13,
+    "path": "C:/TranscriptionAI/audit/book_full_manuscript_review_4b228/references_examples_review.json"
+  },
+  "continuity": {
+    "count": 13,
+    "path": "C:/TranscriptionAI/audit/book_full_manuscript_review_4b228/continuity_review.json"
+  },
+  "audit_links": [
+    "C:/TranscriptionAI/audit/book_full_manuscript_review_4b228/strengthened_claims_review.json",
+    "C:/TranscriptionAI/audit/book_full_manuscript_review_4b228/references_examples_review.json",
+    "C:/TranscriptionAI/audit/book_full_manuscript_review_4b228/continuity_review.json",
+    "C:/TranscriptionAI/audit/book_full_manuscript_review_4b228/editorial_global_review.json",
+    "C:/TranscriptionAI/audit/PHASE_4B228_FULL_MANUSCRIPT_EDITORIAL_REVIEW_REPORT.md"
+  ],
+  "editorial_summary_path": "C:/TranscriptionAI/audit/book_full_manuscript_review_4b228/editorial_global_review.json",
+  "phase_4b228_report_path": "C:/TranscriptionAI/audit/PHASE_4B228_FULL_MANUSCRIPT_EDITORIAL_REVIEW_REPORT.md",
+  "secrets_included": false
+}

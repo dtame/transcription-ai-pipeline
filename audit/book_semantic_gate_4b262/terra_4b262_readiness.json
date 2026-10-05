@@ -1,0 +1,15 @@
+{
+  "READY_FOR_SINGLE_CASE_CANARY_HUMAN_REVIEW": true,
+  "READY_FOR_NEW_REMOTE_TERRA_CALL": false,
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "terra_executed": false,
+  "candidate_promoted": false,
+  "why": "Offline compact single-case freeze completed. A new explicit human authorization is required before any Terra call. Candidate 1.1 contracts are not production.",
+  "phase_result": "PASS",
+  "selected_case": "h01 / 4b22_p2_supported",
+  "request_sha256": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af"
+}

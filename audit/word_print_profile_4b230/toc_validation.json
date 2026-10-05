@@ -1,0 +1,17 @@
+{
+  "phase": "4B.2.30",
+  "status": "PASS",
+  "fields": [
+    "TOC \\o \"1-1\" \\h \\z \\u"
+  ],
+  "default_levels": "1-1",
+  "include_sections_option": true,
+  "requires_word_refresh": true,
+  "checks": {
+    "toc_field_present": true,
+    "no_estimated_page_numbers": true,
+    "chapter_style_toc_compatible": true,
+    "section_style_toc_compatible": true
+  },
+  "secrets_included": false
+}

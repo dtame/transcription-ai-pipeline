@@ -1,0 +1,489 @@
+{
+  "phase": "4B.2.6.1",
+  "prompt_version": "book-semantic-validator-1.0",
+  "transport_version": "book-semantic-validation-transport-1.0",
+  "sizes": {
+    "system_prompt": {
+      "chars": 2661,
+      "bytes": 2675,
+      "estimated_tokens": 666,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "validation_instructions": {
+      "chars": 1355,
+      "bytes": 1355,
+      "estimated_tokens": 339,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "evidence_src_text": {
+      "chars": 2227,
+      "bytes": 2227,
+      "estimated_tokens": 557,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "ideas": {
+      "chars": 1441,
+      "bytes": 1441,
+      "estimated_tokens": 361,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "references": {
+      "chars": 526,
+      "bytes": 526,
+      "estimated_tokens": 132,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "paragraphs_total": {
+      "chars": 3614,
+      "bytes": 3626,
+      "estimated_tokens": 904,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "full_user_message": {
+      "chars": 12908,
+      "bytes": 12920,
+      "estimated_tokens": 3227,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "output_schema_local": {
+      "chars": 3261,
+      "bytes": 3261,
+      "estimated_tokens": 816,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "full_request_payload": {
+      "chars": 17126,
+      "bytes": 17152,
+      "estimated_tokens": 4282,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    }
+  },
+  "paragraphs": [
+    {
+      "handle": "h01",
+      "kind": "substantive",
+      "text": "Do not ever be afraid of death. There is no fixed hour appointed that fear can calculate or bargain with, and so fear itself is out of place. If somebody has gone to heaven, that should not produce dread in us. It should be our joy.",
+      "chars": 232,
+      "estimated_tokens": 58,
+      "estimated": true,
+      "evidence_handles": [
+        "IDEA224",
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "src": [
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "ref": [],
+      "idea": [
+        "IDEA224"
+      ]
+    },
+    {
+      "handle": "h02",
+      "kind": "substantive",
+      "text": "Yet we can see fear operating in believers, and this is not normal. Fear of death is an abuse — an abuse to your very person, a diminishment of what you were made and remade to be. It is worth naming where this abuse comes from. The devil has used it since the beginning; he has not changed his style. The same old strategy that first weaponized death against humanity is still being run today, unchanged, because it still works wherever it is not resisted by truth.",
+      "chars": 466,
+      "estimated_tokens": 117,
+      "estimated": true,
+      "evidence_handles": [
+        "IDEA225",
+        "SRC006152",
+        "SRC006154",
+        "SRC006155",
+        "SRC006156",
+        "SRC006157"
+      ],
+      "src": [
+        "SRC006152",
+        "SRC006154",
+        "SRC006155",
+        "SRC006156",
+        "SRC006157"
+      ],
+      "ref": [],
+      "idea": [
+        "IDEA225"
+      ]
+    },
+    {
+      "handle": "h03",
+      "kind": "substantive",
+      "text": "But this is not a matter of mental technique. It is not mind over matter, not a trick of positive thinking applied to a frightening subject. Death as gain must become your reality — not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending.",
+      "chars": 293,
+      "estimated_tokens": 74,
+      "estimated": true,
+      "evidence_handles": [
+        "IDEA226",
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "src": [
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "ref": [],
+      "idea": [
+        "IDEA226"
+      ]
+    },
+    {
+      "handle": "h04",
+      "kind": "substantive",
+      "text": "And this is exactly where the trouble shows itself. Of recent, there has been word of the death of many supposed children of God who did not embrace death as gain. Whenever I hear that a child of God has gone and given account to God, my first question is: how were the last hours? Too often the answer that comes back is that he died saying, I don't want to die now, or she died saying the same. I am sincerely worried and troubled by this, because I do not know whether it means the church has not been filled enough with what it claims to believe.",
+      "chars": 550,
+      "estimated_tokens": 138,
+      "estimated": true,
+      "evidence_handles": [
+        "IDEA250",
+        "SRC007115",
+        "SRC007116",
+        "SRC007117",
+        "SRC007118"
+      ],
+      "src": [
+        "SRC007115",
+        "SRC007116",
+        "SRC007117",
+        "SRC007118"
+      ],
+      "ref": [],
+      "idea": [
+        "IDEA250"
+      ]
+    },
+    {
+      "handle": "h05",
+      "kind": "substantive",
+      "text": "The question underneath all of this is answered in Philippians chapter 1, verse 21: to live is Christ, and to die is gain. Christ is my life. To live is Christ — whatever that life might consist of, whatever it might mean to live, it is Christ. But if you do not practice Christ, death will be difficult for you. You have to practice Christ. If you are not practicing life now, death will be heavy when it comes, because what you have not lived you cannot suddenly possess at the threshold.",
+      "chars": 490,
+      "estimated_tokens": 123,
+      "estimated": true,
+      "evidence_handles": [
+        "IDEA251",
+        "REF051",
+        "REF056",
+        "SRC007151",
+        "SRC007152",
+        "SRC007155",
+        "SRC007156",
+        "SRC007158",
+        "SRC007161",
+        "SRC007162",
+        "SRC007559",
+        "SRC007560"
+      ],
+      "src": [
+        "SRC007151",
+        "SRC007152",
+        "SRC007155",
+        "SRC007156",
+        "SRC007158",
+        "SRC007161",
+        "SRC007162",
+        "SRC007559",
+        "SRC007560",
+        "SRC007129",
+        "SRC007132",
+        "SRC007149"
+      ],
+      "ref": [
+        "REF051",
+        "REF056"
+      ],
+      "idea": [
+        "IDEA251"
+      ]
+    },
+    {
+      "handle": "h06",
+      "kind": "substantive",
+      "text": "There is another side to this, and it is worth holding up as evidence that the reality is attainable, not theoretical. I know at least two men who foreknew the exact hour, the exact date, of their own death, and met it without distress — one of them telling those around him, so you better come, I'll go to heaven, as calmly as a man announcing a journey already planned and welcomed.",
+      "chars": 384,
+      "estimated_tokens": 96,
+      "estimated": true,
+      "evidence_handles": [
+        "IDEA252",
+        "SRC007193",
+        "SRC007197",
+        "SRC007199",
+        "SRC007201",
+        "SRC007204"
+      ],
+      "src": [
+        "SRC007193",
+        "SRC007197",
+        "SRC007199",
+        "SRC007201",
+        "SRC007204"
+      ],
+      "ref": [],
+      "idea": [
+        "IDEA252"
+      ]
+    },
+    {
+      "handle": "h07",
+      "kind": "substantive",
+      "text": "This is the ground on which 1 Corinthians 15 stands — not as a chapter to be admired for its argument, but as a reality meant to be lived into, so that the sting long since removed from death is not merely a doctrine we recite but a gain we actually practice.",
+      "chars": 259,
+      "estimated_tokens": 65,
+      "estimated": true,
+      "evidence_handles": [
+        "REF050",
+        "SRC006788"
+      ],
+      "src": [
+        "SRC006788"
+      ],
+      "ref": [
+        "REF050"
+      ],
+      "idea": []
+    },
+    {
+      "handle": "h08",
+      "kind": "substantive",
+      "text": "Here is the plain instruction underneath everything else that will be said in this chapter: do not ever be afraid of death. That single line is not a slogan to be repeated comfortably; it is a command addressed to people who, if they are honest, still flinch at the subject.",
+      "chars": 274,
+      "estimated_tokens": 69,
+      "estimated": true,
+      "evidence_handles": [
+        "IDEA224"
+      ],
+      "src": [
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "ref": [],
+      "idea": [
+        "IDEA224"
+      ]
+    },
+    {
+      "handle": "h09",
+      "kind": "substantive",
+      "text": "This is exactly why death as gain cannot remain an idea admired from a safe intellectual distance. It is not mind over matter — it is not a technique of positive thinking applied at the last moment to overpower natural terror. It must be your reality. Not a doctrine filed away for later, not a verse quoted at funerals, but the actual ground a person is standing on when the hour comes.",
+      "chars": 387,
+      "estimated_tokens": 97,
+      "estimated": true,
+      "evidence_handles": [
+        "IDEA226"
+      ],
+      "src": [
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "ref": [],
+      "idea": [
+        "IDEA226"
+      ]
+    },
+    {
+      "handle": "h10",
+      "kind": "connective",
+      "text": "The contrast could not be sharper: on one side, believers startled at the threshold, still asking not to die; on the other, believers who named the hour and walked into it in peace. The difference was not the amount of doctrine known, but the amount of Christ practiced.",
+      "chars": 270,
+      "estimated_tokens": 68,
+      "estimated": true,
+      "evidence_handles": [],
+      "src": [],
+      "ref": [],
+      "idea": []
+    }
+  ],
+  "cases": [
+    {
+      "handle": "h01",
+      "case_id": "4b22_p2_supported",
+      "role": "positive",
+      "chars": 232,
+      "estimated_tokens": 58,
+      "estimated": true,
+      "critical": false
+    },
+    {
+      "handle": "h02",
+      "case_id": "4b22_p3_new_causal",
+      "role": "negative",
+      "chars": 466,
+      "estimated_tokens": 117,
+      "estimated": true,
+      "critical": true
+    },
+    {
+      "handle": "h03",
+      "case_id": "4b22_p4_supported",
+      "role": "positive",
+      "chars": 293,
+      "estimated_tokens": 74,
+      "estimated": true,
+      "critical": false
+    },
+    {
+      "handle": "h04",
+      "case_id": "4b22_p5_supported",
+      "role": "positive",
+      "chars": 550,
+      "estimated_tokens": 138,
+      "estimated": true,
+      "critical": false
+    },
+    {
+      "handle": "h05",
+      "case_id": "4b22_p6_supported",
+      "role": "positive",
+      "chars": 490,
+      "estimated_tokens": 123,
+      "estimated": true,
+      "critical": false
+    },
+    {
+      "handle": "h06",
+      "case_id": "4b22_p7_supported",
+      "role": "positive",
+      "chars": 384,
+      "estimated_tokens": 96,
+      "estimated": true,
+      "critical": false
+    },
+    {
+      "handle": "h07",
+      "case_id": "4b22_p8_reference_completion",
+      "role": "negative",
+      "chars": 259,
+      "estimated_tokens": 65,
+      "estimated": true,
+      "critical": true
+    },
+    {
+      "handle": "h08",
+      "case_id": "4b2_p2_supported",
+      "role": "positive",
+      "chars": 274,
+      "estimated_tokens": 69,
+      "estimated": true,
+      "critical": false
+    },
+    {
+      "handle": "h09",
+      "case_id": "4b2_p8_invented_funeral",
+      "role": "negative",
+      "chars": 387,
+      "estimated_tokens": 97,
+      "estimated": true,
+      "critical": true
+    },
+    {
+      "handle": "h10",
+      "case_id": "4b2_p13_unsupported_connective",
+      "role": "negative",
+      "chars": 270,
+      "estimated_tokens": 68,
+      "estimated": true,
+      "critical": true
+    }
+  ],
+  "case_count": 10,
+  "positive_cases": [
+    "4b22_p2_supported",
+    "4b22_p4_supported",
+    "4b22_p5_supported",
+    "4b22_p6_supported",
+    "4b22_p7_supported",
+    "4b2_p2_supported"
+  ],
+  "negative_cases": [
+    "4b22_p3_new_causal",
+    "4b22_p8_reference_completion",
+    "4b2_p8_invented_funeral",
+    "4b2_p13_unsupported_connective"
+  ],
+  "critical_negatives": {
+    "FUNERAL": "4b2_p8_invented_funeral",
+    "CONNECTIVE": "4b2_p13_unsupported_connective",
+    "P3": "4b22_p3_new_causal",
+    "P8": "4b22_p8_reference_completion"
+  },
+  "human_labels_not_modified": true,
+  "coverage_obligations": {
+    "every_paragraph_requires_pr_row": true,
+    "claims_must_cover_full_paragraph_except_whitespace": true,
+    "subordinate_clauses_must_not_be_skipped": true,
+    "exact_offsets_required": true
+  },
+  "justification_obligations": {
+    "claim_text_copied_in_t": true,
+    "free_text_explanation_x_required": true,
+    "reason_codes_required_if_not_supported": true,
+    "confidence_optional_but_prompted": true
+  },
+  "verbosity_assessment": {
+    "encourages_long_explanations": true,
+    "duplicates_paragraph_text_in_claim_t": true,
+    "repeats_evidence_handles_at_claim_and_paragraph": true,
+    "essential_fidelity_requirements_must_remain": [
+      "claim-level coverage",
+      "exact spans",
+      "reason codes",
+      "evidence handles actually used",
+      "SUPPORTED/QUESTIONABLE/UNSUPPORTED/NON_SUBSTANTIVE",
+      "QUESTIONABLE and UNSUPPORTED block acceptance",
+      "unevaluated substantive claims are never accepted"
+    ],
+    "safe_to_compact": [
+      "copied claim text t (recoverable from s/e)",
+      "free-form x when a reason code already names the defect",
+      "confidence cf"
+    ]
+  },
+  "output_size_estimates": {
+    "minimal_valid_historical_json": {
+      "chars": 5229,
+      "bytes": 5241,
+      "estimated_tokens": 1308,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "detailed_valid_historical_json": {
+      "chars": 14363,
+      "bytes": 14375,
+      "estimated_tokens": 3591,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "minimal_valid_candidate_json": {
+      "chars": 1344,
+      "bytes": 1344,
+      "estimated_tokens": 336,
+      "estimated": true,
+      "method": "heuristic_chars_per_token"
+    },
+    "note": "Estimates only. They describe local serialization size, not Terra reasoning tokens or billed completion tokens."
+  },
+  "observed_4b26_visible_json_bytes": 0,
+  "observed_4b26_completion_tokens": 8192,
+  "secrets_included": false
+}

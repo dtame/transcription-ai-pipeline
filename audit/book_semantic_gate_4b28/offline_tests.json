@@ -1,0 +1,229 @@
+{
+  "returncode": 0,
+  "summary": "107 passed in 6.01s",
+  "passed": 107,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b28.py",
+    "app/tests/test_book_semantic_gate_4b277.py",
+    "app/tests/test_book_semantic_gate_4b276.py",
+    "app/tests/test_book_semantic_gate_4b275.py",
+    "app/tests/test_book_semantic_gate_4b274.py",
+    "app/tests/test_book_semantic_gate_4b23.py"
+  ],
+  "real_provider_calls": 0,
+  "phase": "4B.2.8",
+  "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "offline_fixtures": {
+    "phase": "4B.2.8",
+    "segmentation": {
+      "phase": "4B.2.8",
+      "passed": true,
+      "cases": [
+        {
+          "name": "simple_sentence",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "multi_sentence",
+          "unit_count": 2,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "causal_clause",
+          "unit_count": 2,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "negation",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "condition",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "adversative",
+          "unit_count": 2,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "citation",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "biblical_reference",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "complex_punctuation",
+          "unit_count": 3,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "em_dash",
+          "unit_count": 2,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "typographic_apostrophe",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "unicode",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "abbreviation",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "rhetorical",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "very_long",
+          "unit_count": 2,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "no_punctuation",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": true,
+          "passed": true,
+          "errors": []
+        },
+        {
+          "name": "ambiguous_boundary",
+          "unit_count": 1,
+          "complete_chars": true,
+          "deterministic": true,
+          "conservative_fallback": false,
+          "passed": true,
+          "errors": []
+        }
+      ],
+      "does_not_judge_fidelity": true
+    },
+    "historical": {
+      "phase": "4B.2.8",
+      "positives_accepted": 6,
+      "negatives_blocked": 4,
+      "funeral_blocked": true,
+      "connective_blocked": true,
+      "p3_blocked": true,
+      "p8_blocked": true,
+      "negative_ids": [
+        "4b22_p3_new_causal",
+        "4b22_p8_reference_completion",
+        "4b2_p8_invented_funeral",
+        "4b2_p13_unsupported_connective"
+      ],
+      "positive_ids": [
+        "4b22_p2_supported",
+        "4b22_p4_supported",
+        "4b22_p5_supported",
+        "4b22_p6_supported",
+        "4b22_p7_supported",
+        "4b2_p2_supported"
+      ],
+      "protected": {
+        "4b2_p8_invented_funeral": true,
+        "4b2_p13_unsupported_connective": true,
+        "4b22_p3_new_causal": true,
+        "4b22_p8_reference_completion": true
+      },
+      "labels_unmodified": true,
+      "historical_ten_cases_preserved": true,
+      "validator_1_1_2_status": "PASS",
+      "historical_catalog_passed": true,
+      "calibration_1_1_1_still_passes": true,
+      "fakeai_not_terra_quality": true
+    },
+    "fakeai_positives": 6,
+    "fakeai_negatives": 4,
+    "passed": true,
+    "fakeai_not_terra_quality": true,
+    "fakeai_is_not_terra_validation": true
+  },
+  "frozen_1_0_prompt_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+  "frozen_1_1_prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+  "frozen_1_1_1_prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+  "frozen_1_1_2_prompt_sha256": "88a89e792ffd6a6f3766c0218f7cb25f0d996ba373e13232179b390f77da3ba0",
+  "frozen_1_1_3_prompt_sha256": "9febdcdda08a31179081564ac33842b434dcc8bcb95ca9d96f386b63addb3059",
+  "fakeai_not_terra_quality": true
+}

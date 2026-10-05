@@ -1,0 +1,130 @@
+{
+  "inspected": true,
+  "existing_services_replaced": false,
+  "second_publication_engine_created": false,
+  "decision": "Add app/cover as an independent print-cover module. Leave the workshop image and typographic cover stack in place.",
+  "components": [
+    {
+      "path": "app/image_engine/image_provider_base.py",
+      "exists": true,
+      "role": "Local image provider ABC and a test fake that writes a PNG.",
+      "decision": "Keep. The new CoverImageProvider adds cost, capabilities, and an authorization gate. This phase does not call it.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/image_engine/image_service.py",
+      "exists": true,
+      "role": "SDXL/fake cover generation into sortie/<project>/images/.",
+      "decision": "Keep. Generation and weight download stay outside this phase.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/image_engine/sdxl_provider.py",
+      "exists": true,
+      "role": "Stable Diffusion XL via diffusers. First use downloads weights.",
+      "decision": "Keep. Not selected and not invoked.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/cover_engine.py",
+      "exists": true,
+      "role": "Workshop engines for SD WebUI, DALL-E, and a typographic fallback.",
+      "decision": "Keep. Paid and local generation paths are not the print-cover contract.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/cover_image_engine.py",
+      "exists": true,
+      "role": "Optional cover image modes, including a local WebUI.",
+      "decision": "Keep. It writes project publication state.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/cover_generation_service.py",
+      "exists": true,
+      "role": "Cover strategy, cache, and project_state updates.",
+      "decision": "Keep. The new cover record is not project_state and not book.json.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/cover_builder.py",
+      "exists": true,
+      "role": "Offline typographic cover orchestrator.",
+      "decision": "Keep. It renders a single cover PDF/PNG and is not the two-page print contract.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/cover_renderer.py",
+      "exists": true,
+      "role": "ReportLab/Pillow typographic cover renderer.",
+      "decision": "Keep. The new CoverRenderer is a separate export contract and does not call it.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/cover_layout.py",
+      "exists": true,
+      "role": "Eight-zone typographic grid.",
+      "decision": "Keep. Print bleed and safety are calculated in app/cover/renderer/geometry.py.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/cover_layout_service.py",
+      "exists": true,
+      "role": "Trim pixel table. 6×9 at 300 dpi is 1800×2700, without bleed.",
+      "decision": "Reference only. Bleed is recalculated independently.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/cover_composition.py",
+      "exists": true,
+      "role": "Typographic composition balance.",
+      "decision": "Keep. Not used for the print-review cover.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/cover_theme.py",
+      "exists": true,
+      "role": "Typographic palettes and textures.",
+      "decision": "Keep. Back-cover color stays unset until a later visual decision.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/word_renderer/cover.py",
+      "exists": true,
+      "role": "Interior profile hook. Cover image is optional and a spine is not computed.",
+      "decision": "Keep. The interior renderer does not gain a cover export.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/word_renderer/document.py",
+      "exists": true,
+      "role": "Interior 6×9 DOCX builder.",
+      "decision": "Keep unchanged. Cover files stay independent of the interior DOCX.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/publication_docx_engine.py",
+      "exists": true,
+      "role": "Workshop DOCX publication with an optional cover page.",
+      "decision": "Keep. Print covers are not inserted into the interior document.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/publication_pdf_engine.py",
+      "exists": true,
+      "role": "Workshop PDF publication.",
+      "decision": "Keep. No second publication engine is introduced.",
+      "modified_in_this_phase": false
+    },
+    {
+      "path": "app/config.py",
+      "exists": true,
+      "role": "COVER_PROVIDER defaults to sdxl_local and can name an OpenAI image provider.",
+      "decision": "Keep. The new module does not read a paid provider as selected.",
+      "modified_in_this_phase": false
+    }
+  ],
+  "new_package": "app/cover",
+  "components_present": 17,
+  "components_missing": []
+}

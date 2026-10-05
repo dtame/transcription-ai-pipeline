@@ -1,0 +1,430 @@
+{
+  "phase": "4B.2.7.6",
+  "handle": "h11",
+  "case_id_audit_only": "4b276_p4_new_implication",
+  "source_handle_audit_only": "h03",
+  "paragraph": {
+    "handle": "h11",
+    "source_text": "But this is not a matter of mental technique. It is not mind over matter, not a trick of positive thinking applied to a frightening subject. Death as gain must become your reality — not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending.",
+    "synthetic_text": "But this is not a matter of mental technique. It is not mind over matter, not a trick of positive thinking applied to a frightening subject. Death as gain must become your reality — not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending, which means that every believer is guaranteed a fearless death.",
+    "chars": 357,
+    "unicode_codepoints": 357,
+    "utf8_bytes": 359,
+    "source": "synthetic variant of frozen 4B.2.3 benchmark / 4B.2.6 gate slice h03",
+    "synthetic": true,
+    "presented_as_authentic_citation": false
+  },
+  "ideas": [
+    {
+      "id": "IDEA226",
+      "canonical_id": "IDEA226",
+      "exact_text": "Death as gain must become one's lived reality, not merely an intellectual idea.",
+      "kind": "",
+      "importance": "central",
+      "topic_refs": [
+        "TOP054"
+      ],
+      "relations": [],
+      "source_refs": [
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "gate_request_text": "Death as gain must become one's lived reality, not merely an intellectual idea.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "analysis/source_map.json",
+        "field": "ideas[].summary",
+        "note": "SourceMap idea records contain a summary, not a longer body. No additional IDEA226 prose exists."
+      },
+      "editorial_assignment": {
+        "chapter_id": "CH016",
+        "section_id": "SEC063",
+        "purpose": "Convert the doctrine of destroyed death into lived attitude.",
+        "idea_refs": [
+          "IDEA224",
+          "IDEA225",
+          "IDEA226",
+          "IDEA250",
+          "IDEA251",
+          "IDEA252"
+        ]
+      },
+      "relation_with_paragraph": "Canonical restatement that death as gain must become one's lived reality, not merely an intellectual idea.",
+      "relation_with_disputed_clause": "Does not say every believer is guaranteed a fearless death.",
+      "contains_exact_clause": false,
+      "sufficient_to_justify_implication": false,
+      "sufficiency_for_implication": "insufficient"
+    }
+  ],
+  "src": [
+    {
+      "id": "SRC006192",
+      "canonical_id": "SRC006192",
+      "exact_text": "It's not mind over matter.",
+      "gate_request_text": "It's not mind over matter.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1137.2,
+        "end_seconds": 1138.46
+      },
+      "local_context": [
+        {
+          "id": "SRC006189",
+          "text": "you'll be happy.",
+          "start_seconds": 1128.84,
+          "end_seconds": 1129.7,
+          "is_target": false,
+          "in_authorized_handles": false
+        },
+        {
+          "id": "SRC006190",
+          "text": "That we did not lose this one.",
+          "start_seconds": 1130.98,
+          "end_seconds": 1132.7,
+          "is_target": false,
+          "in_authorized_handles": false
+        },
+        {
+          "id": "SRC006191",
+          "text": "Do you understand that?",
+          "start_seconds": 1135.22,
+          "end_seconds": 1136.78,
+          "is_target": false,
+          "in_authorized_handles": false
+        },
+        {
+          "id": "SRC006192",
+          "text": "It's not mind over matter.",
+          "start_seconds": 1137.2,
+          "end_seconds": 1138.46,
+          "is_target": true,
+          "in_authorized_handles": true
+        },
+        {
+          "id": "SRC006193",
+          "text": "It must be your reality.",
+          "start_seconds": 1138.56,
+          "end_seconds": 1139.46,
+          "is_target": false,
+          "in_authorized_handles": true
+        },
+        {
+          "id": "SRC006194",
+          "text": "It's not just a story of reason.",
+          "start_seconds": 1139.84,
+          "end_seconds": 1141.5,
+          "is_target": false,
+          "in_authorized_handles": false
+        },
+        {
+          "id": "SRC006195",
+          "text": "It must be your reality.",
+          "start_seconds": 1141.6,
+          "end_seconds": 1142.66,
+          "is_target": false,
+          "in_authorized_handles": true
+        }
+      ],
+      "relation_with_paragraph": "Supports 'It is not mind over matter'. Does not guarantee a fearless death for every believer.",
+      "relation_with_disputed_clause": "Does not explicitly affirm or entail the synthetic which-means clause.",
+      "sufficiency_for_implication": "insufficient",
+      "contains_exact_clause": false,
+      "sufficient_to_justify_implication": false
+    },
+    {
+      "id": "SRC006193",
+      "canonical_id": "SRC006193",
+      "exact_text": "It must be your reality.",
+      "gate_request_text": "It must be your reality.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1138.56,
+        "end_seconds": 1139.46
+      },
+      "local_context": [
+        {
+          "id": "SRC006190",
+          "text": "That we did not lose this one.",
+          "start_seconds": 1130.98,
+          "end_seconds": 1132.7,
+          "is_target": false,
+          "in_authorized_handles": false
+        },
+        {
+          "id": "SRC006191",
+          "text": "Do you understand that?",
+          "start_seconds": 1135.22,
+          "end_seconds": 1136.78,
+          "is_target": false,
+          "in_authorized_handles": false
+        },
+        {
+          "id": "SRC006192",
+          "text": "It's not mind over matter.",
+          "start_seconds": 1137.2,
+          "end_seconds": 1138.46,
+          "is_target": false,
+          "in_authorized_handles": true
+        },
+        {
+          "id": "SRC006193",
+          "text": "It must be your reality.",
+          "start_seconds": 1138.56,
+          "end_seconds": 1139.46,
+          "is_target": true,
+          "in_authorized_handles": true
+        },
+        {
+          "id": "SRC006194",
+          "text": "It's not just a story of reason.",
+          "start_seconds": 1139.84,
+          "end_seconds": 1141.5,
+          "is_target": false,
+          "in_authorized_handles": false
+        },
+        {
+          "id": "SRC006195",
+          "text": "It must be your reality.",
+          "start_seconds": 1141.6,
+          "end_seconds": 1142.66,
+          "is_target": false,
+          "in_authorized_handles": true
+        },
+        {
+          "id": "SRC006196",
+          "text": "Yeah, yeah.",
+          "start_seconds": 1142.76,
+          "end_seconds": 1143.18,
+          "is_target": false,
+          "in_authorized_handles": false
+        }
+      ],
+      "relation_with_paragraph": "Supports 'It must be your reality'. Lived reality is not a universal guarantee of a fearless death.",
+      "relation_with_disputed_clause": "Does not explicitly affirm or entail the synthetic which-means clause.",
+      "sufficiency_for_implication": "insufficient",
+      "contains_exact_clause": false,
+      "sufficient_to_justify_implication": false
+    },
+    {
+      "id": "SRC006195",
+      "canonical_id": "SRC006195",
+      "exact_text": "It must be your reality.",
+      "gate_request_text": "It must be your reality.",
+      "gate_text_matches_canonical": true,
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4,
+        "source_map_ref_via_idea": true
+      },
+      "temporal_position": {
+        "start_seconds": 1141.6,
+        "end_seconds": 1142.66
+      },
+      "local_context": [
+        {
+          "id": "SRC006192",
+          "text": "It's not mind over matter.",
+          "start_seconds": 1137.2,
+          "end_seconds": 1138.46,
+          "is_target": false,
+          "in_authorized_handles": true
+        },
+        {
+          "id": "SRC006193",
+          "text": "It must be your reality.",
+          "start_seconds": 1138.56,
+          "end_seconds": 1139.46,
+          "is_target": false,
+          "in_authorized_handles": true
+        },
+        {
+          "id": "SRC006194",
+          "text": "It's not just a story of reason.",
+          "start_seconds": 1139.84,
+          "end_seconds": 1141.5,
+          "is_target": false,
+          "in_authorized_handles": false
+        },
+        {
+          "id": "SRC006195",
+          "text": "It must be your reality.",
+          "start_seconds": 1141.6,
+          "end_seconds": 1142.66,
+          "is_target": true,
+          "in_authorized_handles": true
+        },
+        {
+          "id": "SRC006196",
+          "text": "Yeah, yeah.",
+          "start_seconds": 1142.76,
+          "end_seconds": 1143.18,
+          "is_target": false,
+          "in_authorized_handles": false
+        },
+        {
+          "id": "SRC006197",
+          "text": "Yeah.",
+          "start_seconds": 1144.14,
+          "end_seconds": 1144.38,
+          "is_target": false,
+          "in_authorized_handles": false
+        },
+        {
+          "id": "SRC006198",
+          "text": "Thank you, thank you.",
+          "start_seconds": 1145.4,
+          "end_seconds": 1146.3,
+          "is_target": false,
+          "in_authorized_handles": false
+        }
+      ],
+      "relation_with_paragraph": "Repeats 'It must be your reality'. Same limit as SRC006193.",
+      "relation_with_disputed_clause": "Does not explicitly affirm or entail the synthetic which-means clause.",
+      "sufficiency_for_implication": "insufficient",
+      "contains_exact_clause": false,
+      "sufficient_to_justify_implication": false
+    }
+  ],
+  "references": [],
+  "neighboring_canonical_src_not_in_gate_request": [
+    {
+      "id": "SRC006190",
+      "text": "That we did not lose this one.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1130.98,
+        "end_seconds": 1132.7
+      },
+      "chars": 30,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "not_used_to_complete_synthetic": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to the provider. Not used to complete missing support from outside the historical p4 case."
+    },
+    {
+      "id": "SRC006191",
+      "text": "Do you understand that?",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1135.22,
+        "end_seconds": 1136.78
+      },
+      "chars": 23,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "not_used_to_complete_synthetic": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to the provider. Not used to complete missing support from outside the historical p4 case."
+    },
+    {
+      "id": "SRC006194",
+      "text": "It's not just a story of reason.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1139.84,
+        "end_seconds": 1141.5
+      },
+      "chars": 32,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "not_used_to_complete_synthetic": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to the provider. Not used to complete missing support from outside the historical p4 case."
+    },
+    {
+      "id": "SRC006196",
+      "text": "Yeah, yeah.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1142.76,
+        "end_seconds": 1143.18
+      },
+      "chars": 11,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "not_used_to_complete_synthetic": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to the provider. Not used to complete missing support from outside the historical p4 case."
+    },
+    {
+      "id": "SRC006197",
+      "text": "Yeah.",
+      "provenance": {
+        "artifact": "transcripts/clean/transcript_data.json",
+        "source_id": "AUDIO004",
+        "source_order": 4
+      },
+      "temporal_position": {
+        "start_seconds": 1144.14,
+        "end_seconds": 1144.38
+      },
+      "chars": 5,
+      "in_gate_request": false,
+      "not_used_as_additional_terra_evidence": true,
+      "not_used_to_complete_synthetic": true,
+      "why_recorded": "Local canonical context around assigned SRC IDs. Not supplied to the provider. Not used to complete missing support from outside the historical p4 case."
+    }
+  ],
+  "allowed_handles_in_request": [
+    "IDEA226",
+    "SRC006192",
+    "SRC006193",
+    "SRC006195"
+  ],
+  "present_ids": [
+    "IDEA226",
+    "SRC006192",
+    "SRC006193",
+    "SRC006195"
+  ],
+  "missing_required_handles": [],
+  "historical_declared_handles": [
+    "IDEA226",
+    "SRC006192",
+    "SRC006193",
+    "SRC006195"
+  ],
+  "declared_matches_authorized": true,
+  "h01_handles_injected": [],
+  "h02_handles_injected": [],
+  "complete": true,
+  "other_cases_excluded": true,
+  "h01_evidence_not_used": true,
+  "h02_evidence_not_used": true,
+  "fabricated_evidence_added": false,
+  "external_religious_knowledge_used": false,
+  "summaries_not_substituted_for_src": true,
+  "canonical_hashes": {
+    "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+  },
+  "secrets_included": false
+}

@@ -1,0 +1,173 @@
+{
+  "parsed": {
+    "ch": "CH016",
+    "v": "FAIL",
+    "pr": [
+      {
+        "h": "h02",
+        "v": "UNSUPPORTED",
+        "c": [
+          {
+            "i": 0,
+            "s": 0,
+            "e": 66,
+            "k": "UNSUPPORTED",
+            "ev": [],
+            "r": [
+              "NO_EVIDENCE"
+            ],
+            "n": "Believers and abnormality are not attested."
+          },
+          {
+            "i": 1,
+            "s": 68,
+            "e": 93,
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA225",
+              "SRC006152"
+            ],
+            "r": []
+          },
+          {
+            "i": 2,
+            "s": 96,
+            "e": 124,
+            "k": "QUESTIONABLE",
+            "ev": [
+              "SRC006154"
+            ],
+            "r": [
+              "UNJUSTIFIED_STRENGTHENING"
+            ],
+            "n": "The intensifier exceeds the supplied wording."
+          },
+          {
+            "i": 3,
+            "s": 126,
+            "e": 179,
+            "k": "UNSUPPORTED",
+            "ev": [],
+            "r": [
+              "NO_EVIDENCE"
+            ],
+            "n": "Diminishment and remaking are not attested."
+          },
+          {
+            "i": 4,
+            "s": 181,
+            "e": 227,
+            "k": "QUESTIONABLE",
+            "ev": [
+              "SRC006152",
+              "SRC006155",
+              "SRC006156"
+            ],
+            "r": [
+              "UNSUPPORTED_IMPLICATION"
+            ],
+            "n": "The evidence says the devil used it, not that it establishes the abuse's origin."
+          },
+          {
+            "i": 5,
+            "s": 229,
+            "e": 270,
+            "k": "QUESTIONABLE",
+            "ev": [
+              "SRC006155",
+              "SRC006156"
+            ],
+            "r": [
+              "PARTIAL_REFERENCE_EXPANSION"
+            ],
+            "n": "The supplied fragment does not specify 'the beginning.'"
+          },
+          {
+            "i": 6,
+            "s": 272,
+            "e": 300,
+            "k": "SUPPORTED",
+            "ev": [
+              "SRC006157"
+            ],
+            "r": []
+          },
+          {
+            "i": 7,
+            "s": 302,
+            "e": 323,
+            "k": "SUPPORTED",
+            "ev": [
+              "SRC006156",
+              "SRC006157"
+            ],
+            "r": []
+          },
+          {
+            "i": 8,
+            "s": 324,
+            "e": 368,
+            "k": "UNSUPPORTED",
+            "ev": [],
+            "r": [
+              "NO_EVIDENCE"
+            ],
+            "n": "Weaponizing death against humanity is not supplied."
+          },
+          {
+            "i": 9,
+            "s": 369,
+            "e": 404,
+            "k": "SUPPORTED",
+            "ev": [
+              "SRC006156",
+              "SRC006157"
+            ],
+            "r": []
+          },
+          {
+            "i": 10,
+            "s": 406,
+            "e": 465,
+            "k": "UNSUPPORTED",
+            "ev": [],
+            "r": [
+              "INVENTED_CAUSAL_LINK"
+            ],
+            "n": "Effectiveness and resistance by truth are not attested."
+          }
+        ],
+        "ev": [
+          "IDEA225",
+          "SRC006152",
+          "SRC006154",
+          "SRC006155",
+          "SRC006156",
+          "SRC006157"
+        ],
+        "r": [
+          "NO_EVIDENCE",
+          "UNJUSTIFIED_STRENGTHENING",
+          "UNSUPPORTED_IMPLICATION",
+          "PARTIAL_REFERENCE_EXPANSION",
+          "INVENTED_CAUSAL_LINK"
+        ]
+      }
+    ],
+    "sc": {
+      "SUPPORTED": 4,
+      "QUESTIONABLE": 3,
+      "UNSUPPORTED": 4,
+      "NON_SUBSTANTIVE": 0
+    },
+    "uh": [],
+    "rr": true
+  },
+  "text": "{\"ch\":\"CH016\",\"v\":\"FAIL\",\"pr\":[{\"h\":\"h02\",\"v\":\"UNSUPPORTED\",\"c\":[{\"i\":0,\"s\":0,\"e\":66,\"k\":\"UNSUPPORTED\",\"ev\":[],\"r\":[\"NO_EVIDENCE\"],\"n\":\"Believers and abnormality are not attested.\"},{\"i\":1,\"s\":68,\"e\":93,\"k\":\"SUPPORTED\",\"ev\":[\"IDEA225\",\"SRC006152\"],\"r\":[]},{\"i\":2,\"s\":96,\"e\":124,\"k\":\"QUESTIONABLE\",\"ev\":[\"SRC006154\"],\"r\":[\"UNJUSTIFIED_STRENGTHENING\"],\"n\":\"The intensifier exceeds the supplied wording.\"},{\"i\":3,\"s\":126,\"e\":179,\"k\":\"UNSUPPORTED\",\"ev\":[],\"r\":[\"NO_EVIDENCE\"],\"n\":\"Diminishment and remaking are not attested.\"},{\"i\":4,\"s\":181,\"e\":227,\"k\":\"QUESTIONABLE\",\"ev\":[\"SRC006152\",\"SRC006155\",\"SRC006156\"],\"r\":[\"UNSUPPORTED_IMPLICATION\"],\"n\":\"The evidence says the devil used it, not that it establishes the abuse's origin.\"},{\"i\":5,\"s\":229,\"e\":270,\"k\":\"QUESTIONABLE\",\"ev\":[\"SRC006155\",\"SRC006156\"],\"r\":[\"PARTIAL_REFERENCE_EXPANSION\"],\"n\":\"The supplied fragment does not specify 'the beginning.'\"},{\"i\":6,\"s\":272,\"e\":300,\"k\":\"SUPPORTED\",\"ev\":[\"SRC006157\"],\"r\":[]},{\"i\":7,\"s\":302,\"e\":323,\"k\":\"SUPPORTED\",\"ev\":[\"SRC006156\",\"SRC006157\"],\"r\":[]},{\"i\":8,\"s\":324,\"e\":368,\"k\":\"UNSUPPORTED\",\"ev\":[],\"r\":[\"NO_EVIDENCE\"],\"n\":\"Weaponizing death against humanity is not supplied.\"},{\"i\":9,\"s\":369,\"e\":404,\"k\":\"SUPPORTED\",\"ev\":[\"SRC006156\",\"SRC006157\"],\"r\":[]},{\"i\":10,\"s\":406,\"e\":465,\"k\":\"UNSUPPORTED\",\"ev\":[],\"r\":[\"INVENTED_CAUSAL_LINK\"],\"n\":\"Effectiveness and resistance by truth are not attested.\"}],\"ev\":[\"IDEA225\",\"SRC006152\",\"SRC006154\",\"SRC006155\",\"SRC006156\",\"SRC006157\"],\"r\":[\"NO_EVIDENCE\",\"UNJUSTIFIED_STRENGTHENING\",\"UNSUPPORTED_IMPLICATION\",\"PARTIAL_REFERENCE_EXPANSION\",\"INVENTED_CAUSAL_LINK\"]}],\"sc\":{\"SUPPORTED\":4,\"QUESTIONABLE\":3,\"UNSUPPORTED\":4,\"NON_SUBSTANTIVE\":0},\"uh\":[],\"rr\":true}",
+  "sha256": "078aea01c649ad2e9043c2c50cfe665be32491894634b7447f2945a8190b797b",
+  "repaired": false,
+  "truncated": false,
+  "manually_edited": false,
+  "immutable": true,
+  "refusal": null
+}

@@ -1,0 +1,43 @@
+{
+  "phase": "4B.2.23",
+  "authorization_scope": "BOOK_GENERATION_BATCH_01_CH001_CH004_ONE_SHOT_PER_CHAPTER",
+  "batch_id": "BATCH-01",
+  "chapter_id": "CH001",
+  "lock_id": "BATCH-01 / CH001",
+  "state": "RESPONSE_VALIDATED",
+  "consumed": true,
+  "reusable": false,
+  "fallback": "forbidden",
+  "retry": "forbidden",
+  "openai": "forbidden",
+  "terra": "forbidden",
+  "other_chapters": "forbidden",
+  "production_writes": "forbidden",
+  "request_sha256": "b68382a1bfa555b65bd53cb8591b76125163974f8cd44521cfdc9be33039f112",
+  "created_at": "2026-10-04T04:52:35+00:00",
+  "updated_at": "2026-10-04T04:53:29+00:00",
+  "history": [
+    {
+      "state": "PREFLIGHT_VALIDATED",
+      "updated_at": "2026-10-04T04:52:35+00:00"
+    },
+    {
+      "state": "PREFLIGHT_VALIDATED",
+      "updated_at": "2026-10-04T04:53:12+00:00"
+    },
+    {
+      "state": "CALL_RESERVED",
+      "updated_at": "2026-10-04T04:53:12+00:00"
+    },
+    {
+      "state": "CALL_MAY_HAVE_BEEN_SENT",
+      "updated_at": "2026-10-04T04:53:13+00:00"
+    },
+    {
+      "state": "RESPONSE_RECEIVED",
+      "updated_at": "2026-10-04T04:53:28+00:00"
+    }
+  ],
+  "note": "Response structurally validated.",
+  "secrets_included": false
+}

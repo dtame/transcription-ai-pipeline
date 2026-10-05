@@ -1,0 +1,32 @@
+{
+  "phase": "4B.2.8",
+  "prototype": "prepare_semantic_validation_units",
+  "strategy": "hybrid_conservative",
+  "sentence_segmentation": true,
+  "clause_segmentation": "Only on em dash, semicolon, and selected clause-initial connectives (because, which means, unless, although, and so).",
+  "not_split": [
+    "every comma",
+    "coordinating and/or",
+    "relative that-clauses",
+    "not because",
+    "negation particles"
+  ],
+  "context": "Each unit retains the full paragraph as context.",
+  "stable_ids": "u00, u01, ... in left-to-right order",
+  "unicode_offsets": "python3_str_half_open",
+  "full_coverage_required": true,
+  "punctuation_retained": true,
+  "connectives_retained_with_following_clause": true,
+  "negations_not_detached": true,
+  "ambiguity_status": "Units may be marked ambiguous; unsafe paragraphs fall back to one unit.",
+  "not_a_perfect_semantic_analysis": true,
+  "does_not_judge_fidelity": true,
+  "risks": [
+    "Bad split of distributed causality",
+    "False precision if units look like gold claims",
+    "Insufficient context if the model ignores the context field"
+  ],
+  "evidence_level": "HYPOTHESIS",
+  "feasibility_offline": "DETERMINISTICALLY_VERIFIED",
+  "secrets_included": false
+}

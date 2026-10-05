@@ -1,0 +1,68 @@
+{
+  "phase": "4B.2.7.1",
+  "historical_verdict": "SUPPORTED",
+  "historical_verdict_unmodified": true,
+  "benchmark_unmodified": true,
+  "terra_verdict_is_not_ground_truth": true,
+  "independent_evidence_result": "PARAGRAPH_SUPPORTED_BY_CANONICAL_EVIDENCE",
+  "uncertainty": "bargain is not lexically present. Support is entailment of the attested absence of a set time, not a quoted verb.",
+  "HUMAN_LABEL_REVIEW_RECOMMENDED": false,
+  "why_not_recommended": "The assigned IDEA224 summary and SRC set support the paragraph. The disputed clause does not invent an example, add a causal mechanism, or complete a partial reference.",
+  "clause_analysis_finding": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+  "paragraph": "Do not ever be afraid of death. There is no fixed hour appointed that fear can calculate or bargain with, and so fear itself is out of place. If somebody has gone to heaven, that should not produce dread in us. It should be our joy.",
+  "sentence_review": {
+    "Do not ever be afraid of death.": {
+      "class": "EXPLICITLY_SUPPORTED",
+      "evidence": [
+        "SRC006149",
+        "IDEA224"
+      ]
+    },
+    "There is no fixed hour appointed": {
+      "class": "SEMANTICALLY_ENTAILED",
+      "evidence": [
+        "IDEA224"
+      ],
+      "note": "Paraphrase of 'there is no set time'."
+    },
+    "that fear can calculate or bargain with": {
+      "class": "SEMANTICALLY_ENTAILED",
+      "evidence": [
+        "IDEA224"
+      ]
+    },
+    "and so fear itself is out of place": {
+      "class": "SEMANTICALLY_ENTAILED",
+      "evidence": [
+        "IDEA224",
+        "SRC006149",
+        "SRC006182"
+      ],
+      "note": "Consequence of the prohibition and of fear being not normal. Not a new causal mechanism."
+    },
+    "If somebody has gone to heaven,": {
+      "class": "EXPLICITLY_SUPPORTED",
+      "evidence": [
+        "SRC006187"
+      ]
+    },
+    "that should not produce dread in us": {
+      "class": "SEMANTICALLY_ENTAILED",
+      "evidence": [
+        "IDEA224"
+      ]
+    },
+    "It should be our joy.": {
+      "class": "EXPLICITLY_SUPPORTED",
+      "evidence": [
+        "SRC006183",
+        "IDEA224"
+      ]
+    }
+  },
+  "human_4b22_notes_preserved": [
+    "Direct written transformation of IDEA224 and its SRC set.",
+    "No-set-time claim is in the IDEA summary; remaining clauses match SRC006149/183/187."
+  ],
+  "secrets_included": false
+}

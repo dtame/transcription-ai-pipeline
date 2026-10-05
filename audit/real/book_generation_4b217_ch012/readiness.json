@@ -1,0 +1,9 @@
+{
+  "READY_FOR_HUMAN_CHAPTER_REVIEW": true,
+  "READY_FOR_TERRA_VALIDATION": false,
+  "READY_FOR_FULL_BOOK_GENERATION": false,
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "why": "ONE_REAL_CALL_COMPLETED"
+}

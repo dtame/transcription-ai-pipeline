@@ -1,0 +1,283 @@
+{
+  "phase": "4B.2.27",
+  "chapter_id": "CH010",
+  "http_success": true,
+  "finish_reason": "end_turn",
+  "parsed": {
+    "sections": [
+      {
+        "sid": "SEC039",
+        "paras": [
+          {
+            "h": "p1",
+            "k": "sub",
+            "t": "Man is made of an inside and an outside. The outside is the body, the covering we see. The inside holds two parts: the soul and the spirit. The spirit is directly linked to God; it is the part of us that connects to him without mediation. The soul carries our personality, our mind, our memory. The body is the physical covering that houses both. This is the three-part man: spirit, soul, and body.",
+            "e": [
+              "IDEA153",
+              "SRC004149",
+              "SRC004161",
+              "SRC004164",
+              "SRC004166",
+              "SRC004170",
+              "SRC004172",
+              "SRC004173"
+            ]
+          },
+          {
+            "h": "p2",
+            "k": "sub",
+            "t": "Each spirit has one thing that identifies it and distinguishes it from other spiritual entities: conscience. It is the conscience that marks out the human spirit as what it is.",
+            "e": [
+              "IDEA155",
+              "SRC004198",
+              "SRC004199",
+              "SRC004202",
+              "SRC004205"
+            ]
+          },
+          {
+            "h": "p3",
+            "k": "sub",
+            "t": "The soul becomes the center, the place where information passes between the eternal spirit and the physical body that deals with the external world. I have searched for the right word for this — a database, a communication center, call centers — and have not settled on one term, but the function is clear: the soul is the hub through which what comes from the spirit and what comes from the body meet and are processed.",
+            "e": [
+              "IDEA156",
+              "SRC004215",
+              "SRC004221",
+              "SRC004251",
+              "SRC004257",
+              "SRC004276",
+              "SRC004278",
+              "SRC004217",
+              "SRC004218",
+              "SRC004245",
+              "SRC004250"
+            ],
+            "u": [
+              "UNC016"
+            ]
+          },
+          {
+            "h": "p4",
+            "k": "sub",
+            "t": "The spirit carries eternal information. It has no age, because it came from God and is complete in him. Unlike the soul and body, which are tied to a lifespan, the spirit knows no age.",
+            "e": [
+              "IDEA157",
+              "SRC004265",
+              "SRC004268",
+              "SRC004269",
+              "SRC004270",
+              "SRC004271",
+              "SRC004272"
+            ]
+          },
+          {
+            "h": "p5",
+            "k": "sub",
+            "t": "What you do in your body permeates your soul just as quickly. This is why sexual union outside marriage is not merely a physical act: you do not just exchange bodies, you exchange soul. The body and the soul are not separate compartments; what happens in one immediately affects the other.",
+            "e": [
+              "IDEA158",
+              "SRC004292",
+              "SRC004293",
+              "SRC004297",
+              "SRC004298"
+            ]
+          }
+        ]
+      },
+      {
+        "sid": "SEC040",
+        "paras": [
+          {
+            "h": "p6",
+            "k": "con",
+            "t": "Having laid out the anatomy of spirit, soul and body, we turn to how that spirit came to its present condition.",
+            "e": []
+          },
+          {
+            "h": "p7",
+            "k": "sub",
+            "t": "The body was never inherently bad. There was no time when the body itself was the problem. It was sin, not the body, that corrupted man.",
+            "e": [
+              "IDEA154",
+              "SRC004177",
+              "SRC004178",
+              "SRC004180",
+              "SRC004183",
+              "SRC004184"
+            ]
+          },
+          {
+            "h": "p8",
+            "k": "sub",
+            "t": "At the Fall, life was cut off from man. He was stopped from even experiencing it, cut off from the tree of life, away from life itself. So his spirit began to die.",
+            "e": [
+              "IDEA159",
+              "SRC004322",
+              "SRC004325",
+              "SRC004338",
+              "SRC004340",
+              "SRC004341",
+              "SRC004344",
+              "SRC004345"
+            ]
+          },
+          {
+            "h": "p9",
+            "k": "sub",
+            "t": "God's warning concerning the tree was not that Adam would die instantly on the day he ate of it. In what concerns death, he said: you will die — you will begin to die. It was the start of a dying process, not an immediate end.",
+            "e": [
+              "IDEA160",
+              "SRC004352",
+              "SRC004353",
+              "SRC004356",
+              "SRC004358",
+              "SRC004359",
+              "SRC004360",
+              "SRC004361"
+            ],
+            "u": [
+              "UNC017"
+            ]
+          },
+          {
+            "h": "p10",
+            "k": "sub",
+            "t": "In Christ, you begin as a baby, and then you grow to be a son. This is the process John speaks of in John chapter 1, verse 12: as many as received him, he gave them power to become — to become sons of God. It is not an instant status but a process of growth, from spiritual infancy into sonship.",
+            "e": [
+              "IDEA161",
+              "SRC004368",
+              "SRC004369",
+              "SRC004371",
+              "SRC004372",
+              "SRC004373",
+              "SRC004375",
+              "SRC004376"
+            ]
+          },
+          {
+            "h": "p11",
+            "k": "sub",
+            "t": "Nobody teaches a child how to lie; nobody teaches man how to connive. It comes out naturally. This is the fallen nature inherited from that cutting-off — corruption that needs no instruction.",
+            "e": [
+              "IDEA162",
+              "SRC004381",
+              "SRC004382",
+              "SRC004385",
+              "SRC004387"
+            ]
+          }
+        ]
+      },
+      {
+        "sid": "SEC041",
+        "paras": [
+          {
+            "h": "p12",
+            "k": "sub",
+            "t": "Jesus said something in John chapter 8, speaking to the Jews: you are like your father, the devil. He was a murderer from the beginning; he was a liar from the beginning. When he lies, it is from his nature. When he does evil, it is natural to him — intrinsic, not incidental.",
+            "e": [
+              "IDEA163",
+              "SRC004388",
+              "SRC004389",
+              "SRC004391",
+              "SRC004393",
+              "SRC004394",
+              "SRC004397",
+              "SRC004398",
+              "SRC004401",
+              "SRC004402"
+            ]
+          },
+          {
+            "h": "p13",
+            "k": "sub",
+            "t": "Know this: Lucifer is not the devil. Lucifer cannot be the devil, because Lucifer did not keep from the beginning — he is not a liar from the beginning, and he is not a murderer from the beginning. When next we meet, I will give you the doctrine of the devil.",
+            "e": [
+              "IDEA164",
+              "SRC004404",
+              "SRC004405",
+              "SRC004408",
+              "SRC004409",
+              "SRC004414",
+              "SRC004415",
+              "SRC004416",
+              "SRC004417",
+              "SRC004420"
+            ],
+            "u": [
+              "UNC018"
+            ]
+          },
+          {
+            "h": "p14",
+            "k": "sub",
+            "t": "Many of you do not know devil and do not know Lucifer — you treat all of them as the same thing, and then you put Satan inside as well. That is why some of your spiritual warfare does not go anywhere: you are fighting something that doesn't exist.",
+            "e": [
+              "IDEA165",
+              "SRC004424",
+              "SRC004425",
+              "SRC004426",
+              "SRC004427",
+              "SRC004428",
+              "SRC004429"
+            ]
+          }
+        ]
+      },
+      {
+        "sid": "SEC042",
+        "paras": [
+          {
+            "h": "p15",
+            "k": "sub",
+            "t": "In Matthew 22, verse 37, Jesus said: you will love the Lord your God with all your heart, and with all your soul, and with all your mind. He specifically distinguished heart, soul, and mind. But my mind is inside my soul — so why did Jesus distinguish that? This is the key to spiritual breakthrough, the alpha breakthrough.",
+            "e": [
+              "IDEA166",
+              "REF032",
+              "SRC004442",
+              "SRC004458",
+              "SRC004461",
+              "SRC004463",
+              "SRC004469",
+              "SRC004471",
+              "SRC004473",
+              "SRC004474",
+              "SRC004477",
+              "SRC004481",
+              "SRC004489"
+            ]
+          },
+          {
+            "h": "p16",
+            "k": "sub",
+            "t": "The love of God is in your heart. With all your heart, with all your soul, and with all your mind — love for God must engage heart, soul, and mind together. It is not merely emotion.",
+            "e": [
+              "IDEA183",
+              "SRC004883",
+              "SRC004886",
+              "SRC004887"
+            ]
+          },
+          {
+            "h": "p17",
+            "k": "sub",
+            "t": "The first place to develop is your soul. Your spirit is already complete; it is not the spirit that a Christian must develop, since the spirit is already complete in him. The work of growth belongs to the soul.",
+            "e": [
+              "IDEA187",
+              "SRC004924",
+              "SRC004927",
+              "SRC004930",
+              "SRC004931"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "raw_sha256": "035ef5f407ad763e019126c18eb7440d0ba97c1411ff10a32e18bb9f02b76e1e",
+  "raw_chars": 6246,
+  "error": null,
+  "invented_response": false,
+  "raw_response_kept_intact": true,
+  "secrets_included": false
+}

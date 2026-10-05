@@ -1,0 +1,111 @@
+{
+  "phase": "4B.2.8",
+  "does_not_claim_false_rejections_corrected": true,
+  "does_not_issue_new_terra_verdicts": true,
+  "better_segmentation_is_not_better_understanding": true,
+  "h01": {
+    "false_rejection": "that fear can calculate or bargain with",
+    "unit": {
+      "label": "bargain_clause",
+      "start": 65,
+      "end": 104,
+      "preserved_in_one_unit": true,
+      "unit_id": "u01",
+      "unit_text": "There is no fixed hour appointed that fear can calculate or bargain with, ",
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    },
+    "evidence_available": "IDEA224 no set time remains the relevant support.",
+    "context_preserved": true,
+    "presegmentation_effect": "The relative clause stays inside its sentence. Local units do not isolate 'bargain with' as its own proposition.",
+    "false_rejection_risk_remaining": "High. The disagreement is lexical vs entailment, not offset ownership.",
+    "structural_load_reduced": false,
+    "semantic_load_unchanged": true,
+    "evidence_level": "HYPOTHESIS",
+    "observed_unit_preservation_level": "DETERMINISTICALLY_VERIFIED"
+  },
+  "h02": {
+    "false_rejections": [
+      "an abuse to your very person",
+      "The devil has used it since the beginning"
+    ],
+    "invented_causality_unit": {
+      "label": "because_clause",
+      "start": 406,
+      "end": 465,
+      "preserved_in_one_unit": true,
+      "unit_id": "u07",
+      "unit_text": "because it still works wherever it is not resisted by truth.",
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    },
+    "very_person_unit": {
+      "label": "very_person",
+      "start": 96,
+      "end": 124,
+      "preserved_in_one_unit": true,
+      "unit_id": "u02",
+      "unit_text": "— an abuse to your very person, a diminishment of what you were made and remade to be. ",
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    },
+    "since_beginning_unit": {
+      "label": "since_the_beginning",
+      "start": 229,
+      "end": 270,
+      "preserved_in_one_unit": true,
+      "unit_id": "u04",
+      "unit_text": "The devil has used it since the beginning; ",
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    },
+    "context_preserved": true,
+    "presegmentation_effect": "The because-clause can be a local unit, reducing the chance that causality is mixed into a neighboring span. Stylistic intensifiers and continuity paraphrases still require model judgment.",
+    "false_rejection_risk_remaining": "Remaining. Isolation is not acceptance.",
+    "structural_load_reduced": true,
+    "semantic_load_unchanged": true,
+    "evidence_level": "HYPOTHESIS",
+    "observed_unit_preservation_level": "DETERMINISTICALLY_VERIFIED"
+  },
+  "h11": {
+    "false_rejections": [
+      "mental technique",
+      "positive thinking",
+      "sermon illustration"
+    ],
+    "guarantee_unit": {
+      "label": "universal_guarantee",
+      "start": 294,
+      "end": 356,
+      "preserved_in_one_unit": true,
+      "unit_id": "u04",
+      "unit_text": "which means that every believer is guaranteed a fearless death.",
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    },
+    "mind_over_matter_unit": {
+      "label": "mind_over_matter",
+      "start": 46,
+      "end": 72,
+      "preserved_in_one_unit": true,
+      "unit_id": "u01",
+      "unit_text": "It is not mind over matter, not a trick of positive thinking applied to a frightening subject. ",
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    },
+    "positive_thinking_unit": {
+      "label": "positive_thinking",
+      "start": 74,
+      "end": 139,
+      "preserved_in_one_unit": true,
+      "unit_id": "u01",
+      "unit_text": "It is not mind over matter, not a trick of positive thinking applied to a frightening subject. ",
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    },
+    "context_preserved": true,
+    "presegmentation_effect": "Local offsets would cover 'subject', 'reality', 'aside', 'ending', and 'death.' fully. The guarantee can be a local implicative unit. Prefix false rejections remain a semantic question.",
+    "coverage_gaps_would_be_locally_owned": true,
+    "false_rejection_risk_remaining": "Remaining for the three supported-prefix disagreements.",
+    "structural_load_reduced": true,
+    "semantic_load_unchanged": true,
+    "evidence_level": "HYPOTHESIS",
+    "observed_unit_preservation_level": "DETERMINISTICALLY_VERIFIED"
+  },
+  "summary": "Presegmentation can reduce structural load (offsets, coverage, identifiers). It has not been shown to reduce semantic false rejections. Architecture C must not be described as a Terra-validated fix.",
+  "evidence_level": "HYPOTHESIS",
+  "secrets_included": false
+}

@@ -1,0 +1,61 @@
+{
+  "phase": "4B.2.14",
+  "distinctions": {
+    "chapter": "Editorial / generated chapter object (CH001…CH019).",
+    "section": "Editorial / generated section object.",
+    "paragraph": "Generated manuscript paragraph. Unknown before generation.",
+    "unit": "Conservative semantic unit inside a paragraph. A paragraph may contain several units.",
+    "provider_request": "One HTTP/SDK invocation. Not equal to one unit."
+  },
+  "current_builders": {
+    "build_model_request": "app.book_semantic_gate_4b29.request.build_model_request",
+    "build_semantic_request": "app.book_generation_integration_4b213.request.build_semantic_request",
+    "emits_pr_array_with_one_paragraph": true,
+    "validate_response_202": "app.book_semantic_gate_4b212.validator.validate_response_202",
+    "validator_rejects_multiple_paragraphs": true,
+    "validator_error": "pr:expected_single_paragraph",
+    "transport_schema_pr_is_array": true,
+    "transport_version": "book-semantic-validation-transport-2.0-candidate"
+  },
+  "strategy_a": {
+    "name": "A_ONE_REQUEST_PER_PARAGRAPH",
+    "description": "One Semantic Gate request per generated paragraph. Units stay inside that request.",
+    "compatible_with_current_4b213_request_builder": true,
+    "compatible_with_validate_response_202": true,
+    "compatible_with_transport_schema": true,
+    "truncation_risk": "Lower than chapter-scale; still unknown for very long paragraphs.",
+    "resume_granularity": "paragraph",
+    "evidence_mixing_risk": "Low: evidence_handles stay on one paragraph.",
+    "remotely_validated": false
+  },
+  "strategy_b": {
+    "name": "B_PARAGRAPH_GROUPING",
+    "description": "Group several paragraphs in one request (pr array length > 1).",
+    "transport_json_schema_allows_pr_array": true,
+    "current_request_builders_emit_one_paragraph": true,
+    "validate_response_202_requires_single_paragraph": true,
+    "compatible_with_current_validator_without_change": false,
+    "compatible_declared_without_verification": false,
+    "evidence_mixing_risk": "High if grouped paragraphs share a response without per-paragraph allowed_evidence isolation.",
+    "resume_complexity": "High: a failed group would need partial replay rules that do not exist.",
+    "response_size_risk": "Higher; historical Terra outputs have been incomplete.",
+    "remotely_validated": false
+  },
+  "strategy_c": {
+    "name": "C_ONE_REQUEST_PER_CHAPTER",
+    "description": "One Semantic Gate request per chapter.",
+    "compatible_with_validate_response_202": false,
+    "historical_terra_incomplete_output_risk": "High. 4B.2.11 and earlier Terra canaries showed contract/output issues; do not assume a chapter-scale JSON object will complete.",
+    "token_volume": "Largest per call. Long-context Terra pricing is unmodeled.",
+    "validation_granularity": "Too coarse: a single truncated response blocks the whole chapter.",
+    "resume_granularity": "chapter only",
+    "remotely_validated": false
+  },
+  "candidate": {
+    "strategy": "A_ONE_REQUEST_PER_PARAGRAPH",
+    "reason": "validate_response_202 currently errors with pr:expected_single_paragraph. 4B.2.13 build_semantic_request and 4B.2.9 build_model_request both emit pr=[one paragraph]. Strategy A is the only granularity compatible with the frozen 2.0.2 validator without changing historical contracts. This is not a real Terra validation.",
+    "validated_on_terra": false,
+    "validated_on_sonnet": false
+  },
+  "secrets_included": false
+}

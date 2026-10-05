@@ -1,0 +1,120 @@
+{
+  "returncode": 0,
+  "summary": "199 passed in 6.29s",
+  "passed": 199,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b262.py",
+    "app/tests/test_book_semantic_gate_4b261.py",
+    "app/tests/test_book_semantic_gate_4b26.py",
+    "app/tests/test_book_semantic_gate_4b251.py",
+    "app/tests/test_book_semantic_gate_4b23.py",
+    "app/tests/test_ai_providers.py",
+    "app/tests/test_ai_thinking_contract.py"
+  ],
+  "real_provider_calls": 0,
+  "ten_case_compact": {
+    "positives_accepted": 6,
+    "negatives_blocked": 4,
+    "negative_false_negatives": 0,
+    "funeral_blocked": true,
+    "connective_blocked": true,
+    "p3_blocked": true,
+    "p8_blocked": true
+  },
+  "single_case_compact": {
+    "status": "PASS",
+    "json_parse": "PASS",
+    "errors": [],
+    "span_errors": [],
+    "coverage_errors": [],
+    "claim_errors": [],
+    "missing_handles": [],
+    "returned_handles": [
+      "h01"
+    ],
+    "historical_validation": {
+      "json_parse": "PASS",
+      "case_coverage": "PASS",
+      "span_validation": "PASS",
+      "acceptance_blocked": false
+    },
+    "proposition_level_control_preserved": true,
+    "acceptance_blocked_if_fail": false,
+    "offset_convention": {
+      "indexing": "python3_str_unicode_code_points",
+      "interval": "half_open",
+      "start_inclusive": true,
+      "end_exclusive": true,
+      "not_utf8_bytes": true,
+      "not_utf16_code_units": true,
+      "combining_characters_are_separate_code_points": true,
+      "empty_span_invalid": true,
+      "inconsistent_span_invalid": true,
+      "out_of_bounds_invalid": true,
+      "valid_offset_is_not_semantic_support": true,
+      "recovery": "paragraph_text[start:end]",
+      "documentation": "Offsets are Python 3 str indices. text[s:e] recovers the evaluated span. A well-formed span identifies the evaluated passage; it does not prove the passage is supported by canonical evidence."
+    }
+  },
+  "fakeai": {
+    "historical_fakeai_passed": true,
+    "historical_fakeai_count": 8,
+    "reason_expectations_frozen": {
+      "P3": [
+        "NEW_CAUSAL_LINK",
+        "NEW_IMPLICATION"
+      ],
+      "P8": [
+        "REFERENCE_COMPLETION",
+        "REFERENCE_EXPANSION"
+      ],
+      "FUNERAL": [
+        "INVENTED_EXAMPLE"
+      ],
+      "CONNECTIVE": [
+        "NEW_ARGUMENT",
+        "NEW_CONCLUSION",
+        "NEW_IMPLICATION"
+      ]
+    },
+    "negative_ids": [
+      "4b22_p3_new_causal",
+      "4b22_p8_reference_completion",
+      "4b2_p8_invented_funeral",
+      "4b2_p13_unsupported_connective"
+    ],
+    "positive_ids": [
+      "4b22_p2_supported",
+      "4b22_p4_supported",
+      "4b22_p5_supported",
+      "4b22_p6_supported",
+      "4b22_p7_supported",
+      "4b2_p2_supported"
+    ],
+    "historical_catalog_passed": true,
+    "empty_recorded": {
+      "json_parse": "FAIL",
+      "case_coverage": "FAIL",
+      "missing_cases": [
+        "h01",
+        "h02",
+        "h03",
+        "h04",
+        "h05",
+        "h06",
+        "h07",
+        "h08",
+        "h09",
+        "h10"
+      ],
+      "classifications_issued": 0,
+      "cache_acceptance": false,
+      "missing_is_not_misclassification": true
+    }
+  },
+  "benchmark_identity_match": true
+}

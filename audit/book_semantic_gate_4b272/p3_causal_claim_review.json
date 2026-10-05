@@ -1,0 +1,83 @@
+{
+  "phase": "4B.2.7.2",
+  "handle": "h02",
+  "case_id_audit_only": "4b22_p3_new_causal",
+  "disputed_causal_clause": "because it still works wherever it is not resisted by truth",
+  "clause_position": {
+    "found": true,
+    "start": 406,
+    "end": 465,
+    "recovered": "because it still works wherever it is not resisted by truth",
+    "exact_match": true,
+    "interval": "half_open",
+    "python_slice": "text[406:465]",
+    "preceding": "ty is still being run today, unchanged, ",
+    "following": "."
+  },
+  "human_label_audit_only": "QUESTIONABLE",
+  "human_reason_codes_audit_only": [
+    "NEW_CAUSAL_LINK",
+    "NEW_IMPLICATION"
+  ],
+  "evidence_items": [
+    {
+      "id": "IDEA225",
+      "exact_text": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+      "explicit_causal_relation": false,
+      "entailed_causal_relation": false,
+      "sufficient_to_justify_causality": false
+    },
+    {
+      "id": "SRC006152",
+      "exact_text": "It is an abuse",
+      "explicit_causal_relation": false,
+      "entailed_causal_relation": false,
+      "sufficient_to_justify_causality": false
+    },
+    {
+      "id": "SRC006154",
+      "exact_text": "It is an abuse to your person.",
+      "explicit_causal_relation": false,
+      "entailed_causal_relation": false,
+      "sufficient_to_justify_causality": false
+    },
+    {
+      "id": "SRC006155",
+      "exact_text": "And the devil",
+      "explicit_causal_relation": false,
+      "entailed_causal_relation": false,
+      "sufficient_to_justify_causality": false
+    },
+    {
+      "id": "SRC006156",
+      "exact_text": "has used it since.",
+      "explicit_causal_relation": false,
+      "entailed_causal_relation": false,
+      "sufficient_to_justify_causality": false
+    },
+    {
+      "id": "SRC006157",
+      "exact_text": "He has not changed his style.",
+      "explicit_causal_relation": false,
+      "entailed_causal_relation": false,
+      "sufficient_to_justify_causality": false
+    }
+  ],
+  "combined_authorized_text": "Living is abused when death is feared; fear of death is the devil's old strategy.\nIt is an abuse\nIt is an abuse to your person.\nAnd the devil\nhas used it since.\nHe has not changed his style.",
+  "exact_clause_in_authorized_evidence": false,
+  "causal_markers_in_authorized_evidence": [],
+  "clause_content_markers_in_authorized_evidence": [],
+  "core_without_because_attested": true,
+  "causal_relation_explicitly_affirmed": false,
+  "causal_relation_really_implied": false,
+  "sufficient_to_justify_causality": false,
+  "lexical_absence_is_not_the_test": true,
+  "nearby_theme_is_not_proof": true,
+  "h01_evidence_not_consulted_as_support": true,
+  "external_knowledge_used": false,
+  "finding": "The authorized IDEA225/SRC texts attest abuse, the devil as agent, use since the beginning, and an unchanged style. They do not explicitly affirm or entail that the strategy is still being run because it still works wherever it is not resisted by truth. Lexical absence of the clause is not the reason; the causal relation itself is missing.",
+  "BENCHMARK_EVIDENCE_CONFLICT": false,
+  "negative_canary_still_justified": true,
+  "historical_label_unmodified": true,
+  "secrets_included": false
+}

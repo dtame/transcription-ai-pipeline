@@ -1,0 +1,79 @@
+{
+  "phase": "4B.2.31",
+  "status": "PASS",
+  "page_count": 80,
+  "expected_width_pt": 432.0,
+  "expected_height_pt": 648.0,
+  "page_size": "6 × 9 inches",
+  "page_sizes": [
+    {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 432.0,
+      "y1": 648.0,
+      "width_pt": 432.0,
+      "height_pt": 648.0
+    },
+    {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 432.0,
+      "y1": 648.0,
+      "width_pt": 432.0,
+      "height_pt": 648.0
+    },
+    {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 432.0,
+      "y1": 648.0,
+      "width_pt": 432.0,
+      "height_pt": 648.0
+    },
+    {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 432.0,
+      "y1": 648.0,
+      "width_pt": 432.0,
+      "height_pt": 648.0
+    },
+    {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 432.0,
+      "y1": 648.0,
+      "width_pt": 432.0,
+      "height_pt": 648.0
+    },
+    {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 432.0,
+      "y1": 648.0,
+      "width_pt": 432.0,
+      "height_pt": 648.0
+    },
+    {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 432.0,
+      "y1": 648.0,
+      "width_pt": 432.0,
+      "height_pt": 648.0
+    },
+    {
+      "x0": 0.0,
+      "y0": 0.0,
+      "x1": 432.0,
+      "y1": 648.0,
+      "width_pt": 432.0,
+      "height_pt": 648.0
+    }
+  ],
+  "all_6x9": true,
+  "all_portrait": true,
+  "error": "",
+  "verification": "automatic",
+  "secrets_included": false
+}

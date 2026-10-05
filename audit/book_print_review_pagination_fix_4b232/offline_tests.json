@@ -1,0 +1,134 @@
+{
+  "pytest": {
+    "returncode": 0,
+    "summary": "14 passed in 3.53s",
+    "passed": 14,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_book_print_review_pagination_fix_4b232.py"
+    ],
+    "real_provider_calls": 0,
+    "phase": "4B.2.32",
+    "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+  },
+  "scenarios": {
+    "phase": "4B.2.32",
+    "passed": 22,
+    "failed": 0,
+    "rows": [
+      {
+        "name": "canonical_unchanged",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "profile_loaded",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "next_page_policy",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "front_matter_unchanged",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_interchapter_odd_page",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_double_page_break",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "chapters",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "sections",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "paragraphs",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "styles_unchanged",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "margins_unchanged",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "headers_preserved",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "footers_preserved",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "pagination_continuous",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "toc_updated",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "pdf_valid",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_interchapter_blank",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "original_preserved",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_provider_calls",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "no_editorial_change",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "transitions_count",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "v1_write_guard",
+        "ok": true,
+        "detail": "blocked write into print-review-v1"
+      }
+    ],
+    "failed_names": [],
+    "secrets_included": false
+  }
+}

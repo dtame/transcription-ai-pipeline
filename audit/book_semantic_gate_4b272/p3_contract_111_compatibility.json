@@ -1,0 +1,53 @@
+{
+  "phase": "4B.2.7.2",
+  "contract": "book-semantic-validator-1.1.1-candidate",
+  "prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+  "system_sha256": "b4c634400bcfa9f643377ced3926a6c97a4d0eb23b8280cda117159cf39a0629",
+  "instructions_sha256": "2b0aa0ff0017ca10df960c47f661906a1c749c56022debde45a580cad966279a",
+  "matches_4b271_frozen_candidate": true,
+  "promoted": false,
+  "historical_1_0_unmodified": true,
+  "candidate_1_1_unmodified": true,
+  "schema_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+  "schema_unchanged_from_1_1": true,
+  "protections": {
+    "accepts_supported_paraphrase": true,
+    "does_not_require_lexical_match": true,
+    "blocks_unsupported_causal_relations": true,
+    "blocks_new_implications": true,
+    "blocks_invented_examples": true,
+    "blocks_reference_completion": true,
+    "requires_reason_code_for_questionable_unsupported": true,
+    "preserves_exact_spans": true,
+    "preserves_evidence_handles": true,
+    "covers_all_substantive_propositions": true,
+    "no_external_knowledge": true,
+    "no_p3_answer_in_prompt": true,
+    "no_h01_overfit": true
+  },
+  "p3_specific_instruction_in_prompt": [],
+  "calibration_from_4b271": {
+    "transport_1_1_1_created": false,
+    "why_no_new_transport": "The compact JSON fields are unchanged. Local coverage policy and reason-code presence are validator-side. Frozen 1.1-candidate transport remains the schema."
+  },
+  "comparison": {
+    "prompt": "book-semantic-validator-1.1.1-candidate",
+    "transport": null,
+    "status": "PROPOSAL_ONLY_NOT_PROMOTED",
+    "system_sha256": "b4c634400bcfa9f643377ced3926a6c97a4d0eb23b8280cda117159cf39a0629",
+    "instructions_sha256": "2b0aa0ff0017ca10df960c47f661906a1c749c56022debde45a580cad966279a",
+    "prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+    "schema": "reuses 1.1-candidate transport",
+    "prompt_bytes": 4956,
+    "identical_to_1_1": false,
+    "false_rejection_risk": "Lower on stylistic restatement of attested absence.",
+    "false_support_risk": "Unchanged for examples, causality, implications, and reference completion if those rules are followed.",
+    "blocking_capacity_preserved": true,
+    "proposition_coverage_preserved": true,
+    "transport_compatible_with_1_1": true
+  },
+  "anomaly": null,
+  "blocker": null,
+  "distinct_candidate_proposed": null,
+  "secrets_included": false
+}

@@ -1,0 +1,17 @@
+# Death as Gain
+
+## To Live Is Christ
+
+Don't ever be afraid of death. Fear of death is not normal for a believer. Nobody knows the set time appointed for their departure, and because that hour is not fixed in our own hands, there is no ground for living in dread of it. If somebody has gone to heaven, that should be our joy, not our sorrow.
+
+To fear death is an abuse — an abuse to your own person. The devil has used that fear since the beginning, and he has not changed his style. It remains one of his oldest strategies against the children of God.
+
+This teaching on 1 Corinthians 15 about death as gain is not a matter of mind over matter. It is not enough to hold the idea in the mind as a concept to be admired. It must become your reality, something lived and not merely something known.
+
+Of recent, I've heard about the death of many supposed children of God who didn't embrace death as gain. Any time I hear that a child of God has gone and given to God, my first question is, how were the last hours? And I usually hear that he died saying, I don't want to die now, or she died saying, I don't want to die now. I am sincerely worried and troubled by this, because I don't know if it's that the church has not been filled enough with this reality.
+
+This is the question raised in Philippians chapter 1, verse 21.
+
+Christ is my life. To live is Christ. But if you don't practice Christ, death will be difficult for you. You have to practice Christ. If you're not practicing life, death will be heavy.
+
+I know at least two men who foreknew the exact hour and the exact date of their departure. One of them said, so you better come, I'll go to heaven — and departed in peace at the appointed time.

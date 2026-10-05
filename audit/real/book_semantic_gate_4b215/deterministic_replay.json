@@ -1,0 +1,30 @@
+{
+  "phase": "4B.2.15",
+  "provider_calls": 0,
+  "first_parse": "PASS",
+  "second_parse": "PASS",
+  "first_status": "PASS",
+  "second_status": "PASS",
+  "first_decision": "BLOCK",
+  "second_decision": "BLOCK",
+  "first_sha256": "71de4719d384ce4eab933135ba98f9257f2f07a435b4334e110a36e5a9e33e67",
+  "second_sha256": "71de4719d384ce4eab933135ba98f9257f2f07a435b4334e110a36e5a9e33e67",
+  "identical": true,
+  "pass": true,
+  "repaired": false,
+  "raw_unmodified": true,
+  "contract_candidate": "book-semantic-validator-2.0.2-candidate",
+  "first": {
+    "json_parse": "PASS",
+    "status": "PASS",
+    "errors": [],
+    "decision": "BLOCK"
+  },
+  "second": {
+    "json_parse": "PASS",
+    "status": "PASS",
+    "errors": [],
+    "decision": "BLOCK"
+  },
+  "secrets_included": false
+}

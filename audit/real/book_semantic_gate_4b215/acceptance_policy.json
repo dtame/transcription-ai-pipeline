@@ -1,0 +1,36 @@
+{
+  "phase": "4B.2.15",
+  "decision": "BLOCK",
+  "reasons": [
+    "unsupported_unit"
+  ],
+  "substantive_units_supported": false,
+  "abusive_non_substantive": [],
+  "questionable": false,
+  "ambiguous_boundary": true,
+  "reservations": [
+    "Evidence says only that it is not mind over matter; it does not characterize it as positive-thinking technique.",
+    "Evidence contrasts lived reality with intellectual idea but does not supply the sermon example or this expanded description of facing one's ending.",
+    "The evidence does not guarantee that every believer will have a fearless death."
+  ],
+  "production_cache_acceptance": false,
+  "publication_authorized": false,
+  "review_does_not_accept_cache": true,
+  "production_cache_policy": false,
+  "operational_decision_computed_by_python": true,
+  "model_operational_fields_ignored": true,
+  "unambiguous_states": true,
+  "secrets_included": false,
+  "preparation_ok": true,
+  "contract_ok": true,
+  "unit_kinds": [
+    "SUPPORTED",
+    "UNSUPPORTED",
+    "SUPPORTED",
+    "UNSUPPORTED",
+    "UNSUPPORTED"
+  ],
+  "unsupported_present": true,
+  "questionable_present": false,
+  "derived_paragraph_classification": "UNSUPPORTED"
+}

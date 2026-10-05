@@ -1,0 +1,131 @@
+"""
+Phase 4B.2.33 — cover generator foundation.
+
+STRICTLY OFFLINE. Zero provider calls. Zero USD.
+No image, DOCX, or PDF cover is produced. book.json stays immutable.
+"""
+
+from __future__ import annotations
+
+from app.book_print_review_canonical_4b229.constants import (
+    AUTHORIZATION_SCOPE as CONSUMED_4B229_SCOPE,
+    BOOK_STATUS,
+    BOOK_TITLE,
+    BOOK_VERSION,
+)
+from app.book_print_review_pagination_fix_4b232.constants import (
+    AUTHORIZATION_SCOPE as CONSUMED_4B232_SCOPE,
+    DOCX_FILENAME,
+    EXPECTED_BOOK_SHA256,
+    OUTPUT_VERSION,
+    PDF_FILENAME,
+    PROJECT_NAME,
+)
+from app.book_print_review_render_4b231.constants import (
+    AUTHORIZATION_SCOPE as CONSUMED_4B231_SCOPE,
+)
+from app.book_semantic_gate_4b26.constants import CANONICAL_PYTHON_EXECUTABLE
+from app.word_print_profile_4b230.constants import (
+    AUTHORIZATION_SCOPE as CONSUMED_4B230_SCOPE,
+)
+
+PHASE = "4B.2.33"
+PHASE_NAME = "COVER_GENERATOR_FOUNDATION"
+AUTHORIZATION_SCOPE = "COVER_GENERATOR_FOUNDATION_4B233_ARCHITECTURE_ONLY"
+
+assert PROJECT_NAME == "pastoral_retreat_v2_validation"
+assert BOOK_TITLE == "The Life You Already Inherited"
+assert BOOK_STATUS == "DRAFT_FOR_PRINT_REVIEW"
+assert BOOK_VERSION == "print-review-v1"
+assert OUTPUT_VERSION == "print-review-v1.1"
+assert EXPECTED_BOOK_SHA256 == (
+    "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550"
+)
+
+INTERIOR_VERSION = OUTPUT_VERSION
+INTERIOR_PDF_PAGES = 67
+COVER_FORMAT = "6 × 9 inches"
+COVER_MODE = "TWO_SEPARATE_PAGES"
+
+EXPECTED_INTERIOR_DOCX_SHA256 = (
+    "3a52ab4381a5e9c374782fb826342a4466f42f6fccde165acf9cba21b61fe0ef"
+)
+EXPECTED_INTERIOR_PDF_SHA256 = (
+    "78cc119c2473d10bd599c5d396d8abdab002c62cd5c5f413d8c6b29e9a72d36e"
+)
+
+AUTHORIZED_ANTHROPIC_CALLS = 0
+AUTHORIZED_OPENAI_CALLS = 0
+AUTHORIZED_TERRA_CALLS = 0
+AUTHORIZED_SONNET_CALLS = 0
+MAX_HTTP_REQUESTS = 0
+PROVIDER_BUDGET_USD = 0
+
+IMAGE_GENERATION_AUTHORIZED = False
+DOCX_GENERATION_AUTHORIZED = False
+PDF_GENERATION_AUTHORIZED = False
+COVER_GENERATION_AUTHORIZED = False
+MODEL_DOWNLOAD_AUTHORIZED = False
+BOOK_JSON_MUTATION_AUTHORIZED = False
+FINAL_PUBLICATION_AUTHORIZED = False
+
+CANONICAL_PYTHON = CANONICAL_PYTHON_EXECUTABLE
+CODE_VERSION = "app.cover_generator_foundation_4b233"
+AUDIT_DIRNAME = "cover_generator_foundation_4b233"
+REPORT_NAME = "PHASE_4B233_COVER_GENERATOR_FOUNDATION_REPORT.md"
+COVER_RECORD_NAME = "cover_record.json"
+
+AUDIT_INVENTORY = "existing_architecture_inventory.json"
+AUDIT_DECISIONS = "cover_architecture_decisions.md"
+AUDIT_AUTHOR_SCHEMA = "author_library_schema.json"
+AUDIT_COVER_SCHEMA = "cover_schema.json"
+AUDIT_CONTENT = "cover_content_contract.json"
+AUDIT_IMAGE = "image_provider_contract.json"
+AUDIT_HARDWARE = "hardware_diagnostic.json"
+AUDIT_MODELS = "local_model_compatibility.json"
+AUDIT_PAID = "paid_provider_policy.json"
+AUDIT_RENDERER = "cover_renderer_contract.json"
+AUDIT_TESTS = "offline_tests.json"
+AUDIT_HASHES = "canonical_hashes_pre_post.json"
+AUDIT_READINESS = "readiness.json"
+
+NEXT_ACTION_PASS = (
+    "STOP. DO NOT DOWNLOAD A MODEL. DO NOT GENERATE AN IMAGE. "
+    "DO NOT CALL AN API. DO NOT PRODUCE A COVER DOCX OR PDF. "
+    "DO NOT MODIFY book.json OR THE INTERIOR. WAIT FOR THE IMAGE-MODEL DECISION."
+)
+NEXT_ACTION_FAIL = (
+    "STOP. DO NOT GENERATE A COVER. DO NOT MODIFY book.json OR THE INTERIOR."
+)
+
+assert AUTHORIZED_ANTHROPIC_CALLS == 0
+assert AUTHORIZED_OPENAI_CALLS == 0
+assert COVER_GENERATION_AUTHORIZED is False
+assert DOCX_GENERATION_AUTHORIZED is False
+assert PDF_GENERATION_AUTHORIZED is False
+assert MODEL_DOWNLOAD_AUTHORIZED is False
+assert BOOK_JSON_MUTATION_AUTHORIZED is False
+assert CONSUMED_4B229_SCOPE.startswith("BOOK_PRINT_REVIEW_CANONICAL_4B229_")
+assert CONSUMED_4B230_SCOPE.startswith("BOOK_WORD_PRINT_PROFILE_4B230_")
+assert CONSUMED_4B231_SCOPE.startswith("BOOK_PRINT_REVIEW_RENDER_4B231_")
+assert CONSUMED_4B232_SCOPE.startswith("BOOK_PRINT_REVIEW_PAGINATION_FIX_4B232_")
+
+__all__ = [
+    "AUDIT_DIRNAME",
+    "AUTHORIZATION_SCOPE",
+    "BOOK_STATUS",
+    "BOOK_TITLE",
+    "BOOK_VERSION",
+    "COVER_FORMAT",
+    "COVER_MODE",
+    "DOCX_FILENAME",
+    "EXPECTED_BOOK_SHA256",
+    "EXPECTED_INTERIOR_DOCX_SHA256",
+    "EXPECTED_INTERIOR_PDF_SHA256",
+    "INTERIOR_PDF_PAGES",
+    "INTERIOR_VERSION",
+    "PDF_FILENAME",
+    "PHASE",
+    "PROJECT_NAME",
+    "REPORT_NAME",
+]

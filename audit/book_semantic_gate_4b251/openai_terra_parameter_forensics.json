@@ -1,0 +1,234 @@
+{
+  "phase": "4B.2.5.1",
+  "historical_4b25": "FAIL",
+  "historical_request_sha256": "09d6472e544bc60231c77908e6608ff7ee7b6fd4746317f206301082e21eab53",
+  "python_executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "canonical_python_executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "interpreter_match": true,
+  "openai_sdk_version": "2.43.0",
+  "expected_openai_sdk_version": "2.43.0",
+  "actual_endpoint": "chat.completions",
+  "actual_sdk_method": "client.chat.completions.create",
+  "responses_api_used": false,
+  "root_cause": {
+    "summary": "OpenAIEngine.build_payload mapped AIRequest.max_output_tokens onto chat.completions max_tokens for every OpenAI model. gpt-5.6-terra rejects max_tokens and requires max_completion_tokens. Provider-level max_output_tokens is a semantic budget, not the Responses API field.",
+    "entry_point": "app.ai.providers.openai_engine.OpenAIEngine.build_payload",
+    "invoke_site": "OpenAIEngine._invoke -> client.chat.completions.create",
+    "historical_field": "max_tokens",
+    "historical_value": 8192,
+    "server_required_field": "max_completion_tokens",
+    "confirmed_by": "4B.2.5 HTTP 400 unsupported_parameter"
+  },
+  "confirmed": [
+    {
+      "fact": "Production endpoint is chat.completions.create",
+      "confidence": "CONFIRMED",
+      "evidence": "OpenAIEngine._invoke calls client.chat.completions.create"
+    },
+    {
+      "fact": "4B.2.5 sent max_tokens=8192 and was rejected",
+      "confidence": "CONFIRMED",
+      "evidence": "historical request SHA 09d6472e... and provider evidence"
+    },
+    {
+      "fact": "Server named max_completion_tokens as the replacement",
+      "confidence": "CONFIRMED",
+      "evidence": "invalid_request_error param=max_tokens"
+    }
+  ],
+  "locally_verified": [
+    {
+      "fact": "SDK 2.43.0 chat.completions.create accepts both token fields",
+      "confidence": "LOCALLY_VERIFIED",
+      "evidence": {
+        "status": "PASS",
+        "has_max_tokens": true,
+        "has_max_completion_tokens": true,
+        "has_max_output_tokens": true,
+        "parameter_names": [
+          "self",
+          "messages",
+          "model",
+          "audio",
+          "frequency_penalty",
+          "function_call",
+          "functions",
+          "logit_bias",
+          "logprobs",
+          "max_completion_tokens",
+          "max_tokens",
+          "metadata",
+          "modalities",
+          "moderation",
+          "n",
+          "parallel_tool_calls",
+          "prediction",
+          "presence_penalty",
+          "prompt_cache_key",
+          "prompt_cache_retention",
+          "reasoning_effort",
+          "response_format",
+          "safety_identifier",
+          "seed",
+          "service_tier",
+          "stop",
+          "store",
+          "stream",
+          "stream_options",
+          "temperature",
+          "tool_choice",
+          "tools",
+          "top_logprobs",
+          "top_p",
+          "user",
+          "verbosity",
+          "web_search_options",
+          "extra_headers",
+          "extra_query",
+          "extra_body",
+          "timeout"
+        ],
+        "signature_contains_both_token_fields": true
+      }
+    },
+    {
+      "fact": "Legacy unlisted OpenAI models still serialize max_tokens",
+      "confidence": "LOCALLY_VERIFIED",
+      "evidence": "existing test_ai_providers payload test"
+    }
+  ],
+  "unknown_server_only": [
+    {
+      "fact": "Server acceptance of max_completion_tokens=8192",
+      "confidence": "UNKNOWN",
+      "reason": "No successful Terra response after the parameter change"
+    },
+    {
+      "fact": "json_object server acceptance for Terra",
+      "confidence": "UNKNOWN",
+      "reason": "4B.2.5 failed before a JSON body was returned"
+    },
+    {
+      "fact": "Terra temperature / reasoning / thinking server behavior",
+      "confidence": "UNKNOWN",
+      "reason": "Not observed; omitted locally"
+    }
+  ],
+  "build_payload_maps_max_output_tokens": true,
+  "historical_mapping_was_max_tokens": true,
+  "corrected_mapping": {
+    "endpoint": "chat.completions",
+    "model": "gpt-5.6-terra",
+    "parameter": "max_completion_tokens",
+    "do_not_send": [
+      "max_tokens",
+      "max_output_tokens"
+    ],
+    "confidence": "CONFIRMED",
+    "server_acceptance": "UNKNOWN",
+    "evidence": "4B.2.5 HTTP 400 invalid_request_error unsupported_parameter max_tokens. Server message: Use 'max_completion_tokens' instead. A successful Terra response with max_completion_tokens has not been observed; acceptance remains UNKNOWN.",
+    "source": "audit/real/book_semantic_gate_4b25/book_semantic_gate_4b25_provider_evidence.json"
+  },
+  "sdk_create_parameters": {
+    "status": "PASS",
+    "has_max_tokens": true,
+    "has_max_completion_tokens": true,
+    "has_max_output_tokens": true,
+    "parameter_names": [
+      "self",
+      "messages",
+      "model",
+      "audio",
+      "frequency_penalty",
+      "function_call",
+      "functions",
+      "logit_bias",
+      "logprobs",
+      "max_completion_tokens",
+      "max_tokens",
+      "metadata",
+      "modalities",
+      "moderation",
+      "n",
+      "parallel_tool_calls",
+      "prediction",
+      "presence_penalty",
+      "prompt_cache_key",
+      "prompt_cache_retention",
+      "reasoning_effort",
+      "response_format",
+      "safety_identifier",
+      "seed",
+      "service_tier",
+      "stop",
+      "store",
+      "stream",
+      "stream_options",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_logprobs",
+      "top_p",
+      "user",
+      "verbosity",
+      "web_search_options",
+      "extra_headers",
+      "extra_query",
+      "extra_body",
+      "timeout"
+    ],
+    "signature_contains_both_token_fields": true
+  },
+  "invoke_uses_chat_completions": true,
+  "build_payload_source_mentions_compat": true,
+  "runtime": {
+    "phase": "4B.2.5",
+    "expected_interpreter": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "actual_interpreter": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "interpreter_match": true,
+    "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_version_info": [
+      3,
+      11,
+      9
+    ],
+    "openai_sdk_version": "2.43.0",
+    "expected_openai_sdk_version": "2.43.0",
+    "openai_sdk_constraint": "openai>=1.0.0,<3",
+    "credential_available": "YES",
+    "environment_type": ".venv",
+    "environment": {
+      "canonical_environment": ".venv",
+      "canonical_executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+      "current_is_canonical_venv": true,
+      "venv_present": true,
+      "pipenv": false,
+      "poetry": false,
+      "setup_py": false,
+      "setup_cfg": false,
+      "requirements_txt": true,
+      "requirements_dev_txt": true,
+      "dependency_mechanism": "requirements.txt"
+    },
+    "interpreter": {
+      "executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+      "version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "version_info": [
+        3,
+        11,
+        9
+      ],
+      "prefix": "C:\\TranscriptionAI\\.venv",
+      "base_prefix": "C:\\Program Files\\Python311",
+      "in_virtualenv": true
+    },
+    "sdk": {
+      "import": "PASS",
+      "version": "2.43.0",
+      "supported": true,
+      "from_openai_import_OpenAI": "PASS"
+    },
+    "secrets_included": false
+  },
+  "secrets_included": false
+}

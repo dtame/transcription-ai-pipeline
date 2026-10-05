@@ -1,0 +1,51 @@
+{
+  "phase": "4B.2.7.3",
+  "provider_calls": 0,
+  "first_parse": "PASS",
+  "second_parse": "PASS",
+  "first_status": "FAIL",
+  "second_status": "FAIL",
+  "first_sha256": "756254807db99c71d1b8284996b8a3b88ab7983e40797d7a7d7f8daa0059e41f",
+  "second_sha256": "756254807db99c71d1b8284996b8a3b88ab7983e40797d7a7d7f8daa0059e41f",
+  "identical": true,
+  "pass": true,
+  "repaired": false,
+  "contract_candidate": "book-semantic-validator-1.1.1-candidate",
+  "first": {
+    "json_parse": "PASS",
+    "status": "FAIL",
+    "errors": [
+      "h02: unknown_reason_NO_EVIDENCE",
+      "h02: unknown_reason_UNJUSTIFIED_STRENGTHENING",
+      "h02: unknown_reason_NO_EVIDENCE",
+      "h02: unknown_reason_UNSUPPORTED_IMPLICATION",
+      "h02: unknown_reason_PARTIAL_REFERENCE_EXPANSION",
+      "h02: unknown_reason_NO_EVIDENCE",
+      "h02: unknown_reason_INVENTED_CAUSAL_LINK",
+      "h02: significant_coverage_gap_[(93, 96), (124, 126), (270, 272), (404, 406)]"
+    ],
+    "missing_handles": [],
+    "coverage_errors": [
+      "h02: significant_coverage_gap_[(93, 96), (124, 126), (270, 272), (404, 406)]"
+    ]
+  },
+  "second": {
+    "json_parse": "PASS",
+    "status": "FAIL",
+    "errors": [
+      "h02: unknown_reason_NO_EVIDENCE",
+      "h02: unknown_reason_UNJUSTIFIED_STRENGTHENING",
+      "h02: unknown_reason_NO_EVIDENCE",
+      "h02: unknown_reason_UNSUPPORTED_IMPLICATION",
+      "h02: unknown_reason_PARTIAL_REFERENCE_EXPANSION",
+      "h02: unknown_reason_NO_EVIDENCE",
+      "h02: unknown_reason_INVENTED_CAUSAL_LINK",
+      "h02: significant_coverage_gap_[(93, 96), (124, 126), (270, 272), (404, 406)]"
+    ],
+    "missing_handles": [],
+    "coverage_errors": [
+      "h02: significant_coverage_gap_[(93, 96), (124, 126), (270, 272), (404, 406)]"
+    ]
+  },
+  "secrets_included": false
+}

@@ -1,0 +1,29 @@
+{
+  "returncode": 0,
+  "summary": "94 passed in 75.16s (0:01:15)",
+  "passed": 94,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b212.py",
+    "app/tests/test_book_semantic_gate_4b211.py",
+    "app/tests/test_book_semantic_gate_4b210.py",
+    "app/tests/test_book_semantic_gate_4b29.py"
+  ],
+  "real_provider_calls": 0,
+  "openai_http_requests": 0,
+  "anthropic_http_requests": 0,
+  "phase": "4B.2.12",
+  "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "fakeai_not_terra_quality": true,
+  "frozen_1_0_prompt_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+  "frozen_1_1_prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+  "frozen_1_1_1_prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+  "frozen_1_1_2_prompt_sha256": "88a89e792ffd6a6f3766c0218f7cb25f0d996ba373e13232179b390f77da3ba0",
+  "frozen_1_1_3_prompt_sha256": "9febdcdda08a31179081564ac33842b434dcc8bcb95ca9d96f386b63addb3059",
+  "frozen_2_0_prompt_sha256": "2ff43da1e33115e289467933c22b1528adea2da849e661ef58b7cbf341f66b3e",
+  "frozen_2_0_1_prompt_sha256": "39902f16bbfd6195081432a8cc6418fe00eb193e977f21b9ed0a995211fccda2",
+  "candidate_2_0_2_prompt_sha256": "254be9dce6b1dd01441411bbdde33af92bbb8eb5338f2b51a16a3c61117d9d16"
+}

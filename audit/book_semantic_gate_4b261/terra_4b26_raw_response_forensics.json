@@ -1,0 +1,70 @@
+{
+  "phase": "4B.2.6.1",
+  "historical_4b26": "FAIL",
+  "request_sha256": "8a92848e412763f0e67468245f9c007ee9537ffa4f2f5469af9a6934d9ebeb31",
+  "request_id": "chatcmpl-EU9Ip28ayYHuhTrVYGY0CPP4JGEH5",
+  "model": "gpt-5.6-terra",
+  "endpoint": "chat.completions",
+  "http_status": {
+    "value": null,
+    "available": false,
+    "forensics_http_status_available": false,
+    "confidence": "CONFIRMED",
+    "note": "SDK completion was persisted; raw HTTP status was not."
+  },
+  "finish_reason": {
+    "value": "length",
+    "expected": "length",
+    "confidence": "CONFIRMED"
+  },
+  "elapsed_ms": {
+    "value": 77328,
+    "confidence": "CONFIRMED"
+  },
+  "message_content": {
+    "visible_text": "",
+    "visible_chars": 0,
+    "visible_bytes": 0,
+    "persisted_file_bytes": 0,
+    "persisted_is_whitespace_only": false,
+    "raw_text_present": false,
+    "structured_text": "",
+    "structured_parsed": null,
+    "structured_truncated": true,
+    "forensics_raw_text_present": false,
+    "confidence": "CONFIRMED"
+  },
+  "message_refusal": {
+    "value": null,
+    "hits": [],
+    "persisted": false,
+    "status": "UNKNOWN",
+    "confidence": "UNKNOWN_SERVER_SIDE",
+    "note": "No message.refusal field was persisted in the 4B.2.6 audits. Absence from artifacts is not proof the server omitted it."
+  },
+  "other_output_fields": {
+    "provider_metadata": {},
+    "content_hits": [],
+    "parse_error": {
+      "error_type": "AIStructuredOutputError",
+      "parse_failure_kind": "empty",
+      "message": "Sortie structurée demandée mais la réponse du modèle est vide.",
+      "json_decode_msg": null,
+      "json_decode_lineno": null,
+      "json_decode_colno": null
+    }
+  },
+  "request_metadata": {
+    "max_completion_tokens": 8192,
+    "max_tokens_absent": true,
+    "temperature_present": false,
+    "thinking_present": false,
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "json_usable": false,
+  "cases_classified": 0,
+  "missing_decisions_are_not_misclassifications": true,
+  "secrets_included": false
+}

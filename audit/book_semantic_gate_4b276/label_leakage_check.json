@@ -1,0 +1,19 @@
+{
+  "phase": "4B.2.7.6",
+  "label_leakage": 0,
+  "hits": [],
+  "independence_hits": [],
+  "pass": true,
+  "human_labels_sent": false,
+  "case_id_in_request": false,
+  "source_case_id_in_request": false,
+  "reason_codes_as_target_in_user": false,
+  "general_catalog_allowed_in_system": true,
+  "disputed_clause_in_paragraph_only": true,
+  "human_reference_absent_from_request": true,
+  "catalog_false_positives_filtered": [
+    "new_causal",
+    "reference_completion"
+  ],
+  "secrets_included": false
+}

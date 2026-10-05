@@ -1,0 +1,69 @@
+{
+  "phase": "4B.2.19",
+  "chapter_id": "CH012",
+  "terra_calls_this_phase": 0,
+  "semantic_certification": "not_performed",
+  "semantic_gate_promoted": false,
+  "historical_contract_left_in_place": "book-semantic-validator-2.0.2-candidate",
+  "historical_verdicts_not_modified": true,
+  "actual_paragraph_count": 14,
+  "expected_paragraph_count": 14,
+  "substantive_paragraphs": 14,
+  "connective_paragraphs": 0,
+  "validation_strategy": {
+    "id": "proportionate_paragraph_review_if_authorized_later",
+    "granularity": "A_ONE_REQUEST_PER_PARAGRAPH",
+    "units": [
+      "new_claims",
+      "strengthened_claims",
+      "unsupported_causal_relations",
+      "personal_testimonies",
+      "biblical_references",
+      "speaker_attribution",
+      "nuances",
+      "reservations",
+      "idea_coverage",
+      "example_preservation"
+    ],
+    "not_executed_in_this_phase": true,
+    "current_gate_can_false_reject": true
+  },
+  "estimated_terra_calls": 14,
+  "estimated_terra_cost_usd": 0.088004,
+  "estimated_terra_cost_is_hypothesis": true,
+  "h01_analog_usd": "0.006286",
+  "h01_is_not_a_generated_book_paragraph": true,
+  "reasoning_token_billing": "UNKNOWN",
+  "long_context_pricing": "UNKNOWN",
+  "unknown_not_treated_as_zero": true,
+  "complete_cost": "UNKNOWN",
+  "false_positive_and_false_rejection_risks": [
+    "UNC029 Isaiah 26 versus 28 must stay unresolved and can look like error.",
+    "French/English biblical labels (Jude vers 20, 1 Corinthiens 14) can fail token match.",
+    "Thematic grouping of AUDIO003 and AUDIO004 may look like new causality.",
+    "Faithful restatement may be scored as invention if distinctive tokens differ.",
+    "P000002 'the failure was not in the gift itself' may be read as a new claim.",
+    "P000010 'meaning He was not absent' may be read as interpretive gloss.",
+    "P000011 'the promise attached to correction' may be read as strengthening.",
+    "P000012 'has always been' and P000013 'this same disposition is fulfilled' may be read as new causality even though IDEA212 already states fulfillment.",
+    "Empty paras[].e IDEA handles can produce a historical-validator FAIL that is not a missing teaching."
+  ],
+  "block_conditions": [
+    "No new authorization exists for a Terra call.",
+    "Canonical SourceMap, EditorialPlan, or transcript hash changes.",
+    "The accepted CH012 pair hash changes.",
+    "A request is made to rewrite the accepted chapter to satisfy the gate.",
+    "Publication, book.json, or production-cache write is requested.",
+    "The historical Semantic Gate contract is treated as promoted."
+  ],
+  "human_review_conditions": [
+    "Any future Terra FAIL on a reservation that the accepted prose preserves.",
+    "Any future Terra FAIL based only on missing IDEA handles in paras[].e.",
+    "Any alleged new causality in P000002, P000010, P000011, P000012, or P000013.",
+    "Any request to complete REF037, REF038, or REF043 from memory.",
+    "Any request to add the EX030 'losing strength' neighboring detail."
+  ],
+  "authorization_required_before_any_terra_call": true,
+  "this_estimate_is_not_an_authorization": true,
+  "secrets_included": false
+}

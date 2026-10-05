@@ -1,0 +1,18 @@
+{
+  "phase": "4B.2.23",
+  "batch_id": "BATCH-01",
+  "authorization_scope": "BOOK_GENERATION_BATCH_01_CH001_CH004_ONE_SHOT_PER_CHAPTER",
+  "chapters": [
+    "CH001",
+    "CH002",
+    "CH003",
+    "CH004"
+  ],
+  "model": "anthropic/claude-sonnet-5",
+  "prompt": "book-generator-faithful-restatement-1.1-candidate",
+  "max_calls": 4,
+  "max_calls_per_chapter": 1,
+  "retries": 0,
+  "fallbacks": 0,
+  "publication": false
+}

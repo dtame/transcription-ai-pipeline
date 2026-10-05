@@ -1,0 +1,57 @@
+{
+  "phase": "4B.2.7.1",
+  "versions": {
+    "1.0": {
+      "prompt": "book-semantic-validator-1.0",
+      "transport": "book-semantic-validation-transport-1.0",
+      "status": "FROZEN",
+      "system_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+      "instructions_sha256": "4747261db399a1b934221c455502e9b55f54498bab4f31ae29dff9ef6e6e8ccc",
+      "prompt_sha256": "6bc72002b50f77613f71c0241cde133fdc04527c37d6b630bf5794641a443bbf",
+      "schema_sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689",
+      "expected_system_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+      "expected_instructions_sha256": "4747261db399a1b934221c455502e9b55f54498bab4f31ae29dff9ef6e6e8ccc",
+      "expected_schema_sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689",
+      "matches_frozen_expected": true,
+      "prompt_bytes": 4030,
+      "requires_claim_text_and_explanation": true
+    },
+    "1.1-candidate": {
+      "prompt": "book-semantic-validator-1.1-candidate",
+      "transport": "book-semantic-validation-transport-1.1-candidate",
+      "status": "FROZEN_CANDIDATE_NOT_PROMOTED",
+      "system_sha256": "9380de399875ca7b803c1b6443d9ac53e261a39c43f357a062218771ca168f51",
+      "instructions_sha256": "0152479843d97327b7010ccde342e3b3c6dbc0e6c23076c748895e484c9b2e4b",
+      "prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+      "schema_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+      "expected_system_sha256": "9380de399875ca7b803c1b6443d9ac53e261a39c43f357a062218771ca168f51",
+      "expected_instructions_sha256": "0152479843d97327b7010ccde342e3b3c6dbc0e6c23076c748895e484c9b2e4b",
+      "expected_prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+      "expected_schema_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+      "matches_frozen_expected": true,
+      "prompt_bytes": 4235,
+      "compact": true,
+      "paraphrase_allowed_already": true,
+      "ambiguity": "Paraphrase/entailment is stated but not operationalized against lexical verb-matching. Coverage says 'except whitespace' while Terra also skipped sentence-final periods."
+    },
+    "1.1.1-candidate": {
+      "prompt": "book-semantic-validator-1.1.1-candidate",
+      "transport": null,
+      "status": "PROPOSAL_ONLY_NOT_PROMOTED",
+      "system_sha256": "b4c634400bcfa9f643377ced3926a6c97a4d0eb23b8280cda117159cf39a0629",
+      "instructions_sha256": "2b0aa0ff0017ca10df960c47f661906a1c749c56022debde45a580cad966279a",
+      "prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+      "schema": "reuses 1.1-candidate transport",
+      "prompt_bytes": 4956,
+      "identical_to_1_1": false,
+      "false_rejection_risk": "Lower on stylistic restatement of attested absence.",
+      "false_support_risk": "Unchanged for examples, causality, implications, and reference completion if those rules are followed.",
+      "blocking_capacity_preserved": true,
+      "proposition_coverage_preserved": true,
+      "transport_compatible_with_1_1": true
+    }
+  },
+  "not_promoted": true,
+  "historical_contracts_modified": false,
+  "secrets_included": false
+}

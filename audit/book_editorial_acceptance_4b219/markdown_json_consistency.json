@@ -1,0 +1,171 @@
+{
+  "phase": "4B.2.19",
+  "chapter_id": "CH012",
+  "consistent": true,
+  "freeze_blocked": false,
+  "json_chapter_id": "CH012",
+  "markdown_title": "Prayer Corrected",
+  "json_sections": [
+    "SEC047",
+    "SEC048",
+    "SEC049",
+    "SEC050"
+  ],
+  "expected_sections": [
+    "SEC047",
+    "SEC048",
+    "SEC049",
+    "SEC050"
+  ],
+  "json_paragraph_ids": [
+    "P000001",
+    "P000002",
+    "P000003",
+    "P000004",
+    "P000005",
+    "P000006",
+    "P000007",
+    "P000008",
+    "P000009",
+    "P000010",
+    "P000011",
+    "P000012",
+    "P000013",
+    "P000014"
+  ],
+  "expected_paragraph_ids": [
+    "P000001",
+    "P000002",
+    "P000003",
+    "P000004",
+    "P000005",
+    "P000006",
+    "P000007",
+    "P000008",
+    "P000009",
+    "P000010",
+    "P000011",
+    "P000012",
+    "P000013",
+    "P000014"
+  ],
+  "json_paragraph_count": 14,
+  "markdown_paragraph_count": 14,
+  "expected_paragraph_count": 14,
+  "section_order_match": true,
+  "paragraph_order_match": true,
+  "section_titles_match": true,
+  "prose_pairs": [
+    {
+      "paragraph_id": "P000001",
+      "json_chars": 333,
+      "markdown_chars": 333,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000002",
+      "json_chars": 298,
+      "markdown_chars": 298,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000003",
+      "json_chars": 217,
+      "markdown_chars": 217,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000004",
+      "json_chars": 319,
+      "markdown_chars": 319,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000005",
+      "json_chars": 185,
+      "markdown_chars": 185,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000006",
+      "json_chars": 267,
+      "markdown_chars": 267,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000007",
+      "json_chars": 207,
+      "markdown_chars": 207,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000008",
+      "json_chars": 135,
+      "markdown_chars": 135,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000009",
+      "json_chars": 204,
+      "markdown_chars": 204,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000010",
+      "json_chars": 461,
+      "markdown_chars": 461,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000011",
+      "json_chars": 217,
+      "markdown_chars": 217,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000012",
+      "json_chars": 210,
+      "markdown_chars": 210,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000013",
+      "json_chars": 167,
+      "markdown_chars": 167,
+      "prose_match": true
+    },
+    {
+      "paragraph_id": "P000014",
+      "json_chars": 199,
+      "markdown_chars": 199,
+      "prose_match": true
+    }
+  ],
+  "prose_mismatches": [],
+  "references_conserved_in_json": true,
+  "unc029_on_paragraphs": [
+    "P000004"
+  ],
+  "unc029_in_prose": true,
+  "extra_json_paragraphs": 0,
+  "extra_markdown_paragraphs": 0,
+  "presentation_only": {
+    "markdown_chapter_title": "Prayer Corrected",
+    "markdown_section_titles": [
+      "Bavardage Is Not Prayer",
+      "The Refreshing",
+      "He Told Me I Was Tired",
+      "Pouring on the Thirsty"
+    ],
+    "json_section_titles": [
+      "Bavardage Is Not Prayer",
+      "The Refreshing",
+      "He Told Me I Was Tired",
+      "Pouring on the Thirsty"
+    ],
+    "technical_ids_absent_from_markdown_prose": true,
+    "not_counted_as_prose_divergence": true
+  },
+  "rewritten": false,
+  "secrets_included": false
+}

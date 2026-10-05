@@ -1,0 +1,8 @@
+{
+  "authorization_prompt_sha256": "1bd5d406aa00f4f93d2b7f37b000280dc642a456838cf601a9d3047b84d034a6",
+  "matches_authorization": true,
+  "matches_prepared_prompt": true,
+  "previous_prompt_reused": false,
+  "previous_prompt_sha256": "82f92129ec2d67666f288491c5d1b225272c46e6ec30f4f0daadaeef06cc3194",
+  "prompt_sha256": "1bd5d406aa00f4f93d2b7f37b000280dc642a456838cf601a9d3047b84d034a6"
+}

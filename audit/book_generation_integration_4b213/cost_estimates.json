@@ -1,0 +1,99 @@
+{
+  "phase": "4B.2.13",
+  "spent": false,
+  "provider_calls": 0,
+  "book_generator": {
+    "low_usd": 0.93209,
+    "central_usd": 1.553484,
+    "high_usd": 3.106968,
+    "low_factor": "0.6",
+    "high_factor": "2.0",
+    "factors_are_assumptions_not_measured": true,
+    "counted_as_zero": false,
+    "status": "estimated",
+    "source": "audit/book_generator_4b1/book_generator_4b1_cost_estimate.json",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5",
+    "pricing_verified": true,
+    "pricing_effective_date": "2026-09-18",
+    "input_tokens_pessimistic": 218697,
+    "output_tokens_conservative": 111609,
+    "estimated_production_calls": 19,
+    "low_assumption": "If actual tokens are about 60% of the 4B.1 pessimistic/conservative envelope. NOT MEASURED.",
+    "high_assumption": "If section fallback effectively doubles generation work. NOT MEASURED. Retries remain 0.",
+    "unknown_or_incomplete": false
+  },
+  "semantic_gate": {
+    "low_usd": 1.025068,
+    "central_usd": 1.708446,
+    "high_usd": 3.416892,
+    "low_factor": "0.6",
+    "high_factor": "2.0",
+    "factors_are_assumptions_not_measured": true,
+    "counted_as_zero": false,
+    "status": "base_estimate",
+    "source": "audit/book_semantic_gate_4b23/book_semantic_gate_4b23_cost_estimate.json",
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "pricing_verified": true,
+    "granularity": "one_call_per_chapter_as_documented_in_4b23",
+    "unmodeled_regimes": "long_context_not_modeled",
+    "unknown_or_incomplete": true,
+    "low_assumption": "If actual chapter-call tokens are about 60% of the 4B.2.3 envelope. NOT MEASURED.",
+    "high_assumption": "If output/thinking exceeds the conservative envelope. NOT MEASURED. Long-context regime remains unmodeled.",
+    "per_paragraph_scale": "UNKNOWN",
+    "h01_canary_limit": {
+      "historical_4b211_cost": "0.0062860 USD",
+      "input_tokens": 1247,
+      "completion_tokens": 316,
+      "reasoning_tokens": 136,
+      "scope": "one paragraph / five units / one Terra call",
+      "not_a_19_chapter_estimate": true,
+      "do_not_extrapolate_without_paragraph_count": true
+    }
+  },
+  "phase5": {
+    "status": "UNKNOWN",
+    "low_usd": null,
+    "central_usd": null,
+    "high_usd": null,
+    "counted_as_zero": false,
+    "reason": "Phase 5 Book Validator is not implemented. No measured token use."
+  },
+  "resumption": {
+    "status": "UNKNOWN",
+    "low_usd": null,
+    "central_usd": null,
+    "high_usd": null,
+    "counted_as_zero": false,
+    "reason": "Resume cost depends on interrupted chapters. No real resume was executed."
+  },
+  "unknown_items": [
+    "phase5",
+    "resumption",
+    "per_paragraph_semantic_gate_scale"
+  ],
+  "unknown_not_treated_as_zero": true,
+  "partial_sum_generator_plus_chapter_gate": {
+    "low_usd": 1.957158,
+    "central_usd": 3.26193,
+    "high_usd": 6.52386,
+    "excludes": [
+      "phase5",
+      "resumption",
+      "per_paragraph_semantic_gate_scale"
+    ],
+    "complete_total": "UNKNOWN",
+    "counted_as_zero": false
+  },
+  "total_complete_usd": null,
+  "total_complete_status": "UNKNOWN",
+  "risks_of_overrun": [
+    "Section fallback on Book Generator.",
+    "Per-paragraph Semantic Gate instead of one call per chapter.",
+    "Unmodeled Terra long-context pricing.",
+    "Human-review loops that authorize extra bounded rewrites.",
+    "Phase 5 cost unknown."
+  ],
+  "secrets_included": false
+}

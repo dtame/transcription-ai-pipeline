@@ -1,0 +1,74 @@
+{
+  "phase": "4B.2.13",
+  "version": "book-generator-semantic-gate-integration-4b213-candidate",
+  "activated": false,
+  "code_version": "app.book_generation_integration_4b213",
+  "does_not_invent_absent_references": true,
+  "missing_required_evidence": "BLOCK",
+  "does_not_generate_artificial_evidence": true,
+  "required_paragraph_association": [
+    "chapter_id",
+    "section_id",
+    "paragraph_id",
+    "text",
+    "kind",
+    "source_refs",
+    "evidence_handles",
+    "source_map_sha256",
+    "editorial_plan_sha256",
+    "generator_prompt_version",
+    "semantic_contract_version",
+    "semantic_transport_version"
+  ],
+  "existing_production_fields": {
+    "chapter_id": "app.book_generation.models.ChapterCandidate.chapter_id / BookChapter.chapter_id",
+    "section_id": "app.book_generation.models.BookSection.section_id",
+    "paragraph_id": "app.book_generation.models.BookParagraph.paragraph_id (empty on ChapterCandidate; assigned by pipeline.assign_paragraph_ids as P000001)",
+    "text": "app.book_generation.models.BookParagraph.text",
+    "kind": "app.book_generation.models.BookParagraph.kind (substantive|connective)",
+    "source_refs": "app.book_generation.models.BookParagraph.source_refs",
+    "evidence_handles": "app.book_generation.models.BookParagraph.evidence_handles",
+    "idea_refs": "app.book_generation.models.BookParagraph.idea_refs",
+    "source_map_sha256": "app.book_generation.models.BookIdentity.source_map_sha256",
+    "editorial_plan_sha256": "app.book_generation.models.BookIdentity.editorial_plan_sha256",
+    "generator_prompt_version": "app.book_generation.constants.BOOK_GENERATOR_PROMPT_VERSION",
+    "generator_transport_version": "app.book_generation.constants.BOOK_GENERATION_TRANSPORT_VERSION",
+    "semantic_contract_version": "not stored on production ChapterCandidate; supplied by this isolated contract",
+    "semantic_transport_version": "not stored on production ChapterCandidate; supplied by this isolated contract"
+  },
+  "fields_absent_from_production_chapter_candidate": [
+    "semantic_contract_version",
+    "semantic_transport_version",
+    "preparation_algorithm_version",
+    "validator_implementation_version",
+    "integration_contract_version"
+  ],
+  "how_absent_fields_are_supplied": "This isolated layer attaches semantic contract, transport, preparation, and validator versions onto the integration envelope. They are not written into production ChapterCache.",
+  "paragraph_id_rule": "Production candidates may have empty paragraph_id. Isolated fixtures assign SYN-CH001-P000001 style identifiers. Canonical P000001 IDs are assigned only during assemble_book, which this phase does not run.",
+  "synthetic_handle_rule": "Synthetic fixtures use the SYN- prefix. They are never presented as SourceMap SRC/IDEA identifiers.",
+  "real_models": {
+    "ChapterCandidate": "app.book_generation.models",
+    "BookSection": "app.book_generation.models",
+    "BookParagraph": "app.book_generation.models"
+  },
+  "kinds": [
+    "substantive",
+    "connective"
+  ],
+  "versions": {
+    "book_schema": "1.0",
+    "generator_prompt": "book-generator-1.0.1",
+    "generator_transport": "book-generation-transport-1.0",
+    "generator_validator": "book-generation-validator-1.0.1",
+    "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+    "semantic_transport": "book-semantic-validation-transport-2.0-candidate",
+    "preparation_algorithm": "book-semantic-preparation-4b28-conservative-via-4b29",
+    "validator_implementation": "app.book_semantic_gate_4b212.validator.validate_response_202",
+    "phase5_interface": "book-validator-phase5-interface-4b213-candidate",
+    "offset_convention": "python3_str_unicode_code_points_half_open"
+  },
+  "production_pipeline_hook": false,
+  "production_cache_acceptance": false,
+  "book_validator_independent": true,
+  "secrets_included": false
+}

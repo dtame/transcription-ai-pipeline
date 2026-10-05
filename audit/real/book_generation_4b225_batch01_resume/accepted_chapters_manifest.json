@@ -1,0 +1,79 @@
+{
+  "phase": "4B.2.25",
+  "CH001_HUMAN_ACCEPTANCE": "HUMAN_EDITORIALLY_ACCEPTED",
+  "CH002_HUMAN_ACCEPTANCE": "HUMAN_EDITORIALLY_ACCEPTED",
+  "ch001": {
+    "phase": "4B.2.25",
+    "chapter_id": "CH001",
+    "approved_artifact_paths": {
+      "json": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.json",
+      "markdown": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.md"
+    },
+    "json_sha256": "2daf7dc3aa610429a7433e0c51350587519bd32b40074dbe1c7886402ab29fec",
+    "markdown_sha256": "f97904f6b703713d0e4549823ffe9f578c24e25679ec79a250a245f942fb3f41",
+    "recording_date": "2026-10-04",
+    "recorded_at": "2026-10-04T05:43:06+00:00",
+    "approval_origin": "explicit_user_approval",
+    "existing_structural_validation": "PASS",
+    "status": "HUMAN_EDITORIALLY_ACCEPTED",
+    "automated_semantic_certification": "not_performed",
+    "publication_authorization": "not_granted",
+    "chapter_copied": false,
+    "chapter_modified": false,
+    "canonical_dependencies": {
+      "source_map_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+      "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "editorial_plan_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+      "editorial_plan_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "clean_transcript_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+      "clean_transcript_sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+    },
+    "applicable_editorial_policy": "faithful-teaching-book-editorial-policy-1.0-candidate",
+    "applicable_narrative_voice_contract": "authorial-voice-preservation-1.0-candidate",
+    "secrets_included": false,
+    "preserved_sentence": "You only did not accept it there.",
+    "preserved_sentence_present": true,
+    "approved_version": "4b223_generated_candidate"
+  },
+  "ch002": {
+    "phase": "4B.2.25",
+    "chapter_id": "CH002",
+    "approved_artifact_paths": {
+      "json": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.json",
+      "markdown": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.md"
+    },
+    "json_sha256": "d738b4dbbcf13212d4ae68ce00be1effbf4f64ef815bfbfe40c74262a78a08b7",
+    "markdown_sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+    "recording_date": "2026-10-04",
+    "recorded_at": "2026-10-04T05:43:06+00:00",
+    "approval_origin": "explicit_user_approval",
+    "existing_structural_validation": "PASS",
+    "status": "HUMAN_EDITORIALLY_ACCEPTED",
+    "automated_semantic_certification": "not_performed",
+    "publication_authorization": "not_granted",
+    "chapter_copied": false,
+    "chapter_modified": false,
+    "canonical_dependencies": {
+      "source_map_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+      "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "editorial_plan_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+      "editorial_plan_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "clean_transcript_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+      "clean_transcript_sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+    },
+    "applicable_editorial_policy": "faithful-teaching-book-editorial-policy-1.0-candidate",
+    "applicable_narrative_voice_contract": "authorial-voice-preservation-1.0-candidate",
+    "secrets_included": false,
+    "approved_version": "offline_derived_recovered",
+    "empty_paragraph_p000008_restored": false,
+    "original_anthropic_response_unmodified": true,
+    "consumed_lock_reset": false,
+    "4b224_inmemory_dump_sha256": "0b4dda95ab88bd05591da5da9c86718c2e4019a509d0c1af0f7907bfab6dcc88",
+    "on_disk_file_sha256_is_the_accepted_hash": true
+  },
+  "post_record_hash_verification": "PASS",
+  "chapters_copied": false,
+  "chapters_modified": false,
+  "publication": false,
+  "secrets_included": false
+}

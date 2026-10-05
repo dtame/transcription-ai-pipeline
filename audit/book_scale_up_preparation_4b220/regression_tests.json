@@ -1,0 +1,303 @@
+{
+  "phase": "4B.2.20",
+  "focused_tests": {
+    "returncode": 0,
+    "summary": "22 passed, 3 deselected in 1.10s",
+    "passed": 22,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_book_scale_up_preparation_4b220.py",
+      "app/tests/test_book_editorial_acceptance_4b219.py",
+      "app/tests/test_book_authorial_voice_4b218.py"
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "phase": "4B.2.20",
+    "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+  },
+  "offline_scenarios": {
+    "phase": "4B.2.20",
+    "passed": 34,
+    "failed": 0,
+    "failed_ids": [],
+    "rows": [
+      {
+        "name": "inventory_has_exactly_18_chapters",
+        "ok": true,
+        "detail": "18 remaining chapters"
+      },
+      {
+        "name": "ch012_excluded",
+        "ok": true,
+        "detail": "CH012 excluded from generation queue"
+      },
+      {
+        "name": "book_order_preserved",
+        "ok": true,
+        "detail": "Remaining chapters stay in EditorialPlan order"
+      },
+      {
+        "name": "first_chapter_deterministic",
+        "ok": true,
+        "detail": "Selected CH018"
+      },
+      {
+        "name": "source_resolution",
+        "ok": true,
+        "detail": "First-chapter sources resolved by targeted hydration"
+      },
+      {
+        "name": "missing_sources_block",
+        "ok": true,
+        "detail": "Missing mandatory sources block generation"
+      },
+      {
+        "name": "idea_in_one_paragraph",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "idea_split_across_two_paragraphs",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "multiple_ideas_in_one_paragraph",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "idea_handle_without_content",
+        "ok": true,
+        "detail": "FAIL"
+      },
+      {
+        "name": "paraphrase_without_idea_handle",
+        "ok": true,
+        "detail": "FAIL"
+      },
+      {
+        "name": "biblical_reference_attributed",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "personal_experience_first_person",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "uncertain_personal_attribution",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "covering_transport_structural",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "invented_idea_detected",
+        "ok": [
+          "IDEA999"
+        ],
+        "detail": "FAIL"
+      },
+      {
+        "name": "missing_idea_handles_detected",
+        "ok": [
+          "IDEA001",
+          "IDEA002"
+        ],
+        "detail": "FAIL"
+      },
+      {
+        "name": "invalid_src_detected",
+        "ok": true,
+        "detail": "FAIL"
+      },
+      {
+        "name": "invalid_json_rejected",
+        "ok": true,
+        "detail": "FAIL"
+      },
+      {
+        "name": "truncated_output_rejected",
+        "ok": true,
+        "detail": "FAIL"
+      },
+      {
+        "name": "no_historical_prompt_fallback",
+        "ok": true,
+        "detail": "Historical prompts are not served by the isolated selector"
+      },
+      {
+        "name": "no_global_activation",
+        "ok": true,
+        "detail": "Prompt 1.1 remains an isolated inactive candidate"
+      },
+      {
+        "name": "unknown_cost_blocks",
+        "ok": true,
+        "detail": "UNKNOWN cost is not treated as zero"
+      },
+      {
+        "name": "cap_exceeded_blocks",
+        "ok": true,
+        "detail": "Theoretical maximum above cap blocks the call"
+      },
+      {
+        "name": "missing_authorization_blocks",
+        "ok": true,
+        "detail": "No remaining-chapter authorization"
+      },
+      {
+        "name": "no_automatic_paid_retry",
+        "ok": true,
+        "detail": "Automatic paid retry is forbidden"
+      },
+      {
+        "name": "ch012_artifacts_preserved",
+        "ok": true,
+        "detail": "Accepted and original CH012 hashes match"
+      },
+      {
+        "name": "canonical_hashes_preserved",
+        "ok": true,
+        "detail": "SourceMap, EditorialPlan, transcript unchanged"
+      },
+      {
+        "name": "idempotent_resume_policy",
+        "ok": true,
+        "detail": "Progress manifest forbids paid repeat after ambiguous interruption"
+      },
+      {
+        "name": "no_publication",
+        "ok": true,
+        "detail": "book.json unpublished"
+      },
+      {
+        "name": "no_provider_call",
+        "ok": true,
+        "detail": "Zero provider authorization"
+      },
+      {
+        "name": "consumed_scopes_rejected",
+        "ok": true,
+        "detail": "Historical authorizations cannot be reused"
+      },
+      {
+        "name": "offline_guards",
+        "ok": true,
+        "detail": "Offline guards hold"
+      },
+      {
+        "name": "contract_compatible",
+        "ok": true,
+        "detail": "Generation contract matrix has no blocking incompatibility"
+      }
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "not_a_semantic_certificate": true,
+    "secrets_included": false
+  },
+  "hard_stops": {
+    "phase": "4B.2.20",
+    "conditions": [
+      {
+        "id": "missing_authorization",
+        "action": "STOP",
+        "probe": "reject_missing_authorization"
+      },
+      {
+        "id": "cost_unknown",
+        "action": "STOP",
+        "probe": "reject_unknown_cost"
+      },
+      {
+        "id": "cost_cap_exceeded",
+        "action": "STOP",
+        "probe": "reject_cap_exceeded"
+      },
+      {
+        "id": "automatic_paid_retry",
+        "action": "STOP",
+        "probe": "reject_automatic_paid_retry"
+      },
+      {
+        "id": "prompt_1_1_unavailable_no_fallback",
+        "action": "STOP",
+        "probe": "reject_prompt_fallback"
+      },
+      {
+        "id": "mandatory_source_missing",
+        "action": "STOP",
+        "probe": "missing_sources_block_context"
+      },
+      {
+        "id": "idea_handles_missing_from_paragraph_evidence",
+        "action": "STOP",
+        "probe": "detect_missing_idea_handles"
+      },
+      {
+        "id": "invented_idea_handles",
+        "action": "STOP",
+        "probe": "detect_invented_idea_handles"
+      },
+      {
+        "id": "invalid_src",
+        "action": "STOP",
+        "probe": "detect_invalid_src"
+      },
+      {
+        "id": "invalid_or_truncated_json",
+        "action": "STOP",
+        "probe": "detect_invalid_or_truncated"
+      },
+      {
+        "id": "ch012_or_canonical_mutation",
+        "action": "STOP",
+        "probe": "hash_guards"
+      },
+      {
+        "id": "publication",
+        "action": "STOP",
+        "probe": "publication_forbidden"
+      }
+    ],
+    "probes": {
+      "missing_authorization": {
+        "raised": true,
+        "message": "No remaining-chapter generation authorization exists. STOP."
+      },
+      "cost_unknown": {
+        "raised": true,
+        "message": "COST_MAXIMUM_UNKNOWN. Unknown cost is never treated as zero."
+      },
+      "cost_cap_exceeded": {
+        "raised": true,
+        "message": "COST_MAXIMUM_EXCEEDS_CAP. The theoretical maximum exceeds the authorized cap."
+      },
+      "automatic_paid_retry": {
+        "raised": true,
+        "message": "Automatic paid retry is forbidden. A human decision is required."
+      },
+      "prompt_fallback_forbidden": {
+        "raised": true,
+        "message": "Prompt 'book-generator-faithful-restatement-1.1-candidate' is unavailable. Fallback to 'book-generator-1.0.1' is forbidden."
+      },
+      "activation_blocked_this_phase": {
+        "raised": true,
+        "message": "Prompt 1.1 activation for generation is disabled in this phase."
+      }
+    },
+    "operational": true,
+    "no_additional_call_after_stop": true,
+    "secrets_included": false
+  },
+  "secrets_included": false
+}

@@ -1,0 +1,179 @@
+{
+  "phase": "4B.2.29",
+  "book_status": "DRAFT_FOR_PRINT_REVIEW",
+  "book_status_is_not_human_acceptance": true,
+  "chapters": [
+    {
+      "chapter_id": "CH001",
+      "order": 1,
+      "title": "Unlearning What Was Handed Down",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "human_acceptance_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "PASS",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH002",
+      "order": 2,
+      "title": "Flesh and Bone: The Resurrection You Inherit",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "human_acceptance_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "VERIFIED_AGAINST_PLAN",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH003",
+      "order": 3,
+      "title": "Hebrews 2: Death Already Destroyed",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "human_acceptance_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "PASS",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH004",
+      "order": 4,
+      "title": "Priest, Prophet, King",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "human_acceptance_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "PASS",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH005",
+      "order": 5,
+      "title": "Access, Not Achievement",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH006",
+      "order": 6,
+      "title": "That They May Be One",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH007",
+      "order": 7,
+      "title": "Loved Exactly as Jesus Is Loved",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH008",
+      "order": 8,
+      "title": "Set Your Mind Above",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH009",
+      "order": 9,
+      "title": "Laws You Gave Yourself",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH010",
+      "order": 10,
+      "title": "Spirit, Soul and Body",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH011",
+      "order": 11,
+      "title": "Reasonings and Strongholds",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH012",
+      "order": 12,
+      "title": "Prayer Corrected",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "human_acceptance_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "VERIFIED_AGAINST_PLAN",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH013",
+      "order": 13,
+      "title": "The Renewed Mind and the Hidden Faculty",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH014",
+      "order": 14,
+      "title": "Operating What You Have",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH015",
+      "order": 15,
+      "title": "Grace Barely Touched",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH016",
+      "order": 16,
+      "title": "Death as Gain",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH017",
+      "order": 17,
+      "title": "Nothing by Chance",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH018",
+      "order": 18,
+      "title": "Testimonies of Resurrection",
+      "editorial_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "human_acceptance_status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "structural_status": "PASS",
+      "book_status_does_not_override": true
+    },
+    {
+      "chapter_id": "CH019",
+      "order": 19,
+      "title": "Out of the Eater",
+      "editorial_status": "GENERATED_STRUCTURALLY_VALID",
+      "human_acceptance_status": "HUMAN_REVIEW_PENDING",
+      "structural_status": "GENERATED_STRUCTURALLY_VALID",
+      "book_status_does_not_override": true
+    }
+  ],
+  "secrets_included": false
+}

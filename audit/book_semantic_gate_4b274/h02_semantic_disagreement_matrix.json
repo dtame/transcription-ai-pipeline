@@ -1,0 +1,205 @@
+{
+  "phase": "4B.2.7.4",
+  "handle": "h02",
+  "human_label_unmodified": true,
+  "rows": [
+    {
+      "index": 0,
+      "text": "Yet we can see fear operating in believers, and this is not normal",
+      "terra_verdict": "UNSUPPORTED",
+      "offline_category": "UNSUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ]
+    },
+    {
+      "index": 1,
+      "text": "Fear of death is an abuse",
+      "terra_verdict": "SUPPORTED",
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": null,
+      "terra_reason_codes": []
+    },
+    {
+      "index": 2,
+      "text": "an abuse to your very person",
+      "terra_verdict": "QUESTIONABLE",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "neighbor_disagreement": true,
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "UNJUSTIFIED_STRENGTHENING"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "a diminishment of what you were made and remade to be",
+      "terra_verdict": "UNSUPPORTED",
+      "offline_category": "UNSUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ]
+    },
+    {
+      "index": 4,
+      "text": "It is worth naming where this abuse comes from",
+      "terra_verdict": "QUESTIONABLE",
+      "offline_category": "PLAUSIBLE_BUT_NOT_ENTAILED",
+      "neighbor_disagreement": false,
+      "conclusion": "INDETERMINATE",
+      "terra_reason_codes": [
+        "UNSUPPORTED_IMPLICATION"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The devil has used it since the beginning",
+      "terra_verdict": "QUESTIONABLE",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "neighbor_disagreement": true,
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "PARTIAL_REFERENCE_EXPANSION"
+      ]
+    },
+    {
+      "index": 6,
+      "text": "he has not changed his style",
+      "terra_verdict": "SUPPORTED",
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": null,
+      "terra_reason_codes": []
+    },
+    {
+      "index": 7,
+      "text": "The same old strategy",
+      "terra_verdict": "SUPPORTED",
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": null,
+      "terra_reason_codes": []
+    },
+    {
+      "index": 8,
+      "text": "that first weaponized death against humanity",
+      "terra_verdict": "UNSUPPORTED",
+      "offline_category": "UNSUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ]
+    },
+    {
+      "index": 9,
+      "text": "is still being run today, unchanged",
+      "terra_verdict": "SUPPORTED",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "neighbor_disagreement": false,
+      "conclusion": null,
+      "terra_reason_codes": []
+    },
+    {
+      "index": 10,
+      "text": "because it still works wherever it is not resisted by truth",
+      "terra_verdict": "UNSUPPORTED",
+      "offline_category": "UNSUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "INVENTED_CAUSAL_LINK"
+      ]
+    }
+  ],
+  "false_rejections": [
+    {
+      "index": 2,
+      "text": "an abuse to your very person",
+      "terra_verdict": "QUESTIONABLE",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "neighbor_disagreement": true,
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "UNJUSTIFIED_STRENGTHENING"
+      ]
+    },
+    {
+      "index": 5,
+      "text": "The devil has used it since the beginning",
+      "terra_verdict": "QUESTIONABLE",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "neighbor_disagreement": true,
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "PARTIAL_REFERENCE_EXPANSION"
+      ]
+    }
+  ],
+  "justified_reservations": [
+    {
+      "index": 0,
+      "text": "Yet we can see fear operating in believers, and this is not normal",
+      "terra_verdict": "UNSUPPORTED",
+      "offline_category": "UNSUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ]
+    },
+    {
+      "index": 3,
+      "text": "a diminishment of what you were made and remade to be",
+      "terra_verdict": "UNSUPPORTED",
+      "offline_category": "UNSUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ]
+    },
+    {
+      "index": 8,
+      "text": "that first weaponized death against humanity",
+      "terra_verdict": "UNSUPPORTED",
+      "offline_category": "UNSUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "NO_EVIDENCE"
+      ]
+    },
+    {
+      "index": 10,
+      "text": "because it still works wherever it is not resisted by truth",
+      "terra_verdict": "UNSUPPORTED",
+      "offline_category": "UNSUPPORTED",
+      "neighbor_disagreement": false,
+      "conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "terra_reason_codes": [
+        "INVENTED_CAUSAL_LINK"
+      ]
+    }
+  ],
+  "indeterminate": [
+    {
+      "index": 4,
+      "text": "It is worth naming where this abuse comes from",
+      "terra_verdict": "QUESTIONABLE",
+      "offline_category": "PLAUSIBLE_BUT_NOT_ENTAILED",
+      "neighbor_disagreement": false,
+      "conclusion": "INDETERMINATE",
+      "terra_reason_codes": [
+        "UNSUPPORTED_IMPLICATION"
+      ]
+    }
+  ],
+  "causal_clause_independent": true,
+  "secrets_included": false
+}

@@ -1,0 +1,40 @@
+{
+  "phase": "4B.2.27",
+  "authorization_scope": "BOOK_GENERATION_REMAINING_13_CHAPTERS_ONE_SHOT",
+  "state": "PASS",
+  "chapters_completed": 13,
+  "chapters_remaining": 0,
+  "chapter_in_progress": null,
+  "calls_consumed": 13,
+  "calls_uncertain": 0,
+  "actual_spend_usd": 0.656778,
+  "reserved_or_uncertain_usd": 0.0,
+  "remaining_budget_usd": 1.583222,
+  "last_validation": "PASS",
+  "last_error": "REMAINING_13_COMPLETED",
+  "resume_state": {
+    "ignore_already_validated": true,
+    "never_replay_consumed": true,
+    "never_replay_uncertain": true,
+    "same_authorization_scope": true
+  },
+  "chapters": {
+    "CH005": "GENERATED_STRUCTURALLY_VALID",
+    "CH006": "GENERATED_STRUCTURALLY_VALID",
+    "CH007": "GENERATED_STRUCTURALLY_VALID",
+    "CH008": "GENERATED_STRUCTURALLY_VALID",
+    "CH009": "GENERATED_STRUCTURALLY_VALID",
+    "CH010": "GENERATED_STRUCTURALLY_VALID",
+    "CH011": "GENERATED_STRUCTURALLY_VALID",
+    "CH013": "GENERATED_STRUCTURALLY_VALID",
+    "CH014": "GENERATED_STRUCTURALLY_VALID",
+    "CH015": "GENERATED_STRUCTURALLY_VALID",
+    "CH016": "GENERATED_STRUCTURALLY_VALID",
+    "CH017": "GENERATED_STRUCTURALLY_VALID",
+    "CH019": "GENERATED_STRUCTURALLY_VALID"
+  },
+  "failed": [],
+  "remaining": [],
+  "stop_reason": "REMAINING_13_COMPLETED",
+  "secrets_included": false
+}

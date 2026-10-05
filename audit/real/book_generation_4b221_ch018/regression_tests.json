@@ -1,0 +1,16 @@
+{
+  "returncode": 0,
+  "summary": "15 passed in 3.51s",
+  "passed": 15,
+  "failed": 0,
+  "stderr_tail": "",
+  "suites": [
+    "app/tests/test_book_generation_4b221.py",
+    "app/tests/test_book_scale_up_preparation_4b220.py"
+  ],
+  "real_provider_calls": 0,
+  "openai_http_requests": 0,
+  "anthropic_http_requests": 0,
+  "phase": "4B.2.21",
+  "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+}

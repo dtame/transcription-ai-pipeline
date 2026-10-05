@@ -1,0 +1,195 @@
+{
+  "phase": "4B.2.18",
+  "focused_tests": {
+    "returncode": 0,
+    "summary": "28 passed, 1 deselected in 2.67s",
+    "passed": 28,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_book_authorial_voice_4b218.py",
+      "app/tests/test_book_editorial_alignment_4b216.py",
+      "app/tests/test_book_generation_4b217.py"
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "phase": "4B.2.18",
+    "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+  },
+  "offline_scenarios": {
+    "phase": "4B.2.18",
+    "scenario_count": 31,
+    "passed": 31,
+    "failed": 0,
+    "failed_ids": [],
+    "scenarios": [
+      {
+        "name": "clear_personal_testimony_first_person",
+        "ok": true,
+        "detail": "P000008 source is j'ai / j'étais / ma voix"
+      },
+      {
+        "name": "incorrect_external_narration_detected",
+        "ok": true,
+        "detail": "detector flags the speaker recounted"
+      },
+      {
+        "name": "third_person_legitimate_kept",
+        "ok": true,
+        "detail": "God remains a third-person actor"
+      },
+      {
+        "name": "other_speaker_not_converted",
+        "ok": true,
+        "detail": "P000001 tu-address is not converted to I was told"
+      },
+      {
+        "name": "biblical_quotation_kept",
+        "ok": true,
+        "detail": "biblical / divine first person stays quoted"
+      },
+      {
+        "name": "participant_question_not_forced",
+        "ok": true,
+        "detail": "question/you-address is not rewritten into author autobiography"
+      },
+      {
+        "name": "interpreter_not_inferred_from_audio",
+        "ok": true,
+        "detail": "AUDIO ids are not speakers"
+      },
+      {
+        "name": "ambiguous_attribution_not_applied",
+        "ok": true,
+        "detail": "uncertain proposal exists and is not applied"
+      },
+      {
+        "name": "speaker_field_absent_documented",
+        "ok": true,
+        "detail": "no speaker field"
+      },
+      {
+        "name": "src_preserved_on_applied_corrections",
+        "ok": true,
+        "detail": "each applied correction cites SRC"
+      },
+      {
+        "name": "ideas_not_injected",
+        "ok": true,
+        "detail": "fixture idea_refs stay empty"
+      },
+      {
+        "name": "paragraph_ids_preserved",
+        "ok": true,
+        "detail": "paragraph IDs unchanged"
+      },
+      {
+        "name": "sections_preserved",
+        "ok": true,
+        "detail": "section IDs unchanged"
+      },
+      {
+        "name": "no_global_rewrite",
+        "ok": true,
+        "detail": "changed=['P000003', 'P000004', 'P000008']"
+      },
+      {
+        "name": "no_new_claim",
+        "ok": true,
+        "detail": "no new autobiographical claim"
+      },
+      {
+        "name": "diff_limited_to_justified_corrections",
+        "ok": true,
+        "detail": "changed=['P000003', 'P000004', 'P000008']"
+      },
+      {
+        "name": "uncertain_not_applied",
+        "ok": true,
+        "detail": "P000001 unchanged"
+      },
+      {
+        "name": "unc029_preserved",
+        "ok": true,
+        "detail": "UNC029 remains"
+      },
+      {
+        "name": "no_canonical_write",
+        "ok": true,
+        "detail": "canonical hashes match and book.json absent"
+      },
+      {
+        "name": "no_production_write",
+        "ok": true,
+        "detail": "production closed"
+      },
+      {
+        "name": "no_provider_call_and_4b217_not_reused",
+        "ok": true,
+        "detail": "consumed scope rejected"
+      },
+      {
+        "name": "idea_traceability_named_in_1_1",
+        "ok": true,
+        "detail": "book-generator-faithful-restatement-1.1-candidate"
+      },
+      {
+        "name": "no_artificial_coverage",
+        "ok": true,
+        "detail": "no invented coverage"
+      },
+      {
+        "name": "idempotent_replay",
+        "ok": true,
+        "detail": "second apply matches first"
+      },
+      {
+        "name": "historical_prompts_unregistered_1_1",
+        "ok": true,
+        "detail": "book-generator-faithful-restatement-1.1-candidate"
+      },
+      {
+        "name": "prompt_1_1_not_in_prompt_select",
+        "ok": true,
+        "detail": "unregistered"
+      },
+      {
+        "name": "historical_versions_named",
+        "ok": true,
+        "detail": "1.0 / 1.0.1 / 1.0-candidate preserved"
+      },
+      {
+        "name": "authorizations_zero",
+        "ok": true,
+        "detail": "zero provider authorizations"
+      },
+      {
+        "name": "offline_guard",
+        "ok": true,
+        "detail": "assert_offline_only passed"
+      },
+      {
+        "name": "original_artifacts_present",
+        "ok": true,
+        "detail": "4B.2.17 chapter and lock exist"
+      },
+      {
+        "name": "expected_ids_stable",
+        "ok": true,
+        "detail": "CH012"
+      }
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "not_a_terra_validation": true,
+    "secrets_included": false
+  },
+  "idempotent": true,
+  "original_paragraph_count": 14,
+  "revised_paragraph_count": 14,
+  "applied_status": "APPLIED",
+  "historical_4b217_lock_absence_scenario": "Skipped. The 4B.2.17 real lock is consumed by design. The historical test was not modified.",
+  "secrets_included": false
+}

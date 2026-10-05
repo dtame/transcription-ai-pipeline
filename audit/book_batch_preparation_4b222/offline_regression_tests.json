@@ -1,0 +1,577 @@
+{
+  "phase": "4B.2.22",
+  "focused_tests": {
+    "returncode": 0,
+    "summary": "20 passed, 3 deselected in 1.54s",
+    "passed": 20,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_book_batch_preparation_4b222.py",
+      "app/tests/test_book_scale_up_preparation_4b220.py",
+      "app/tests/test_book_editorial_acceptance_4b219.py"
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "phase": "4B.2.22",
+    "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+  },
+  "offline_scenarios": {
+    "phase": "4B.2.22",
+    "passed": 47,
+    "failed": 0,
+    "failed_ids": [],
+    "rows": [
+      {
+        "name": "ch012_excluded",
+        "ok": true,
+        "detail": "CH012 excluded from remaining queue"
+      },
+      {
+        "name": "ch018_excluded",
+        "ok": true,
+        "detail": "CH018 excluded from remaining queue"
+      },
+      {
+        "name": "exactly_17_remaining",
+        "ok": true,
+        "detail": "17 remaining chapters"
+      },
+      {
+        "name": "editorial_order_correct",
+        "ok": true,
+        "detail": "Remaining chapters stay in EditorialPlan order"
+      },
+      {
+        "name": "lots_without_duplicates",
+        "ok": true,
+        "detail": "Batch chapter IDs are unique and complete"
+      },
+      {
+        "name": "no_forgotten_chapter",
+        "ok": true,
+        "detail": "No remaining chapter omitted"
+      },
+      {
+        "name": "per_chapter_caps",
+        "ok": true,
+        "detail": "Each remaining chapter has a proposed cap and authorized 0"
+      },
+      {
+        "name": "per_lot_caps",
+        "ok": true,
+        "detail": "Each lot has a proposed cap and authorized 0"
+      },
+      {
+        "name": "global_cap",
+        "ok": true,
+        "detail": "Global authorized cap is 0; complete cost remains UNKNOWN"
+      },
+      {
+        "name": "unknown_cost_blocks",
+        "ok": true,
+        "detail": "UNKNOWN cost is not treated as zero"
+      },
+      {
+        "name": "missing_authorization_blocks",
+        "ok": true,
+        "detail": "No batch authorization"
+      },
+      {
+        "name": "structural_failure_stops",
+        "ok": true,
+        "detail": "Invalid JSON stops the lot"
+      },
+      {
+        "name": "truncated_response_stops",
+        "ok": true,
+        "detail": "Truncated output stops the lot"
+      },
+      {
+        "name": "invalid_idea_handle_stops",
+        "ok": true,
+        "detail": "Invalid IDEA handle stops the lot"
+      },
+      {
+        "name": "invalid_src_stops",
+        "ok": true,
+        "detail": "Invalid SRC stops the lot"
+      },
+      {
+        "name": "no_automatic_paid_retry",
+        "ok": true,
+        "detail": "Automatic paid retry is forbidden"
+      },
+      {
+        "name": "no_fallback",
+        "ok": true,
+        "detail": "Automatic fallback is forbidden"
+      },
+      {
+        "name": "consumed_lock_blocks",
+        "ok": true,
+        "detail": "Consumed lock cannot be reused"
+      },
+      {
+        "name": "uncertain_lock_blocks",
+        "ok": true,
+        "detail": "Uncertain lock blocks another call"
+      },
+      {
+        "name": "idempotent_resume",
+        "ok": true,
+        "detail": "Resume skips accepted and already generated chapters"
+      },
+      {
+        "name": "preserves_generated_chapters",
+        "ok": true,
+        "detail": "Generated chapters are conserved"
+      },
+      {
+        "name": "preserves_accepted_chapters",
+        "ok": true,
+        "detail": "Accepted chapters remain referenced, not copied"
+      },
+      {
+        "name": "canonical_hashes_preserved",
+        "ok": true,
+        "detail": "SourceMap, EditorialPlan, transcript unchanged"
+      },
+      {
+        "name": "ch012_artifacts_preserved",
+        "ok": true,
+        "detail": "CH012 accepted and original hashes match"
+      },
+      {
+        "name": "ch018_artifacts_preserved",
+        "ok": true,
+        "detail": "CH018 accepted hashes match"
+      },
+      {
+        "name": "no_provider_call",
+        "ok": true,
+        "detail": "Zero provider authorization"
+      },
+      {
+        "name": "no_publication",
+        "ok": true,
+        "detail": "book.json unpublished"
+      },
+      {
+        "name": "no_global_activation",
+        "ok": true,
+        "detail": "Prompt 1.1 remains an isolated inactive candidate with matching hash"
+      },
+      {
+        "name": "consumed_scopes_rejected",
+        "ok": true,
+        "detail": "Historical authorizations cannot be reused"
+      },
+      {
+        "name": "offline_guards",
+        "ok": true,
+        "detail": "Offline guards hold"
+      },
+      {
+        "name": "nineteen_chapters_total",
+        "ok": true,
+        "detail": "EditorialPlan still has 19 chapters"
+      },
+      {
+        "name": "lot_stops_after_structural_failure",
+        "ok": true,
+        "detail": "Lot stops after the first structural failure"
+      },
+      {
+        "name": "uncertain_resume_blocked",
+        "ok": true,
+        "detail": "Uncertain attempt is not repeated"
+      },
+      {
+        "name": "fixture_idea_in_one_paragraph",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "fixture_idea_split_across_two_paragraphs",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "fixture_multiple_ideas_in_one_paragraph",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "fixture_idea_handle_without_content",
+        "ok": true,
+        "detail": "FAIL"
+      },
+      {
+        "name": "fixture_paraphrase_without_idea_handle",
+        "ok": true,
+        "detail": "FAIL"
+      },
+      {
+        "name": "fixture_biblical_reference_attributed",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "fixture_personal_experience_first_person",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "fixture_uncertain_personal_attribution",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "fixture_covering_transport_structural",
+        "ok": true,
+        "detail": "PASS"
+      },
+      {
+        "name": "fixture_invented_idea_detected",
+        "ok": [
+          "IDEA999"
+        ],
+        "detail": "FAIL"
+      },
+      {
+        "name": "fixture_missing_idea_handles_detected",
+        "ok": [
+          "IDEA001",
+          "IDEA002"
+        ],
+        "detail": "FAIL"
+      },
+      {
+        "name": "fixture_invalid_src_detected",
+        "ok": true,
+        "detail": "FAIL"
+      },
+      {
+        "name": "fixture_invalid_json_rejected",
+        "ok": true,
+        "detail": "FAIL"
+      },
+      {
+        "name": "fixture_truncated_output_rejected",
+        "ok": true,
+        "detail": "FAIL"
+      }
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "not_a_semantic_certificate": true,
+    "secrets_included": false
+  },
+  "hard_stops": {
+    "phase": "4B.2.22",
+    "conditions": [
+      {
+        "id": "missing_authorization",
+        "action": "STOP"
+      },
+      {
+        "id": "cost_unknown",
+        "action": "STOP"
+      },
+      {
+        "id": "cost_cap_exceeded",
+        "action": "STOP"
+      },
+      {
+        "id": "automatic_paid_retry",
+        "action": "STOP"
+      },
+      {
+        "id": "automatic_fallback",
+        "action": "STOP"
+      },
+      {
+        "id": "prompt_or_model_change",
+        "action": "STOP"
+      },
+      {
+        "id": "invalid_or_truncated_json",
+        "action": "STOP"
+      },
+      {
+        "id": "idea_handles_missing_or_invented",
+        "action": "STOP"
+      },
+      {
+        "id": "invalid_src",
+        "action": "STOP"
+      },
+      {
+        "id": "consumed_lock",
+        "action": "STOP"
+      },
+      {
+        "id": "uncertain_lock",
+        "action": "STOP"
+      },
+      {
+        "id": "multi_chapter_provider_call",
+        "action": "STOP"
+      },
+      {
+        "id": "ch012_or_ch018_or_canonical_mutation",
+        "action": "STOP"
+      },
+      {
+        "id": "publication",
+        "action": "STOP"
+      }
+    ],
+    "probes": {
+      "missing_authorization": {
+        "raised": true,
+        "message": "No remaining-chapter batch authorization exists. STOP."
+      },
+      "cost_unknown": {
+        "raised": true,
+        "message": "COST_MAXIMUM_UNKNOWN. Unknown cost is never treated as zero."
+      },
+      "cost_cap_exceeded": {
+        "raised": true,
+        "message": "COST_MAXIMUM_EXCEEDS_CAP. The theoretical maximum exceeds the authorized cap."
+      },
+      "automatic_paid_retry": {
+        "raised": true,
+        "message": "Automatic paid retry is forbidden. A human decision is required."
+      },
+      "prompt_fallback_forbidden": {
+        "raised": true,
+        "message": "Prompt 'book-generator-faithful-restatement-1.1-candidate' is unavailable. Fallback to 'book-generator-1.0.1' is forbidden."
+      },
+      "consumed_lock": {
+        "raised": true,
+        "message": "Call lock already consumed. Authorization is not reusable. NO RETRY."
+      },
+      "uncertain_lock": {
+        "raised": true,
+        "message": "Call lock is UNCERTAIN. Do not repeat the paid call automatically."
+      },
+      "multi_chapter_call": {
+        "raised": true,
+        "message": "A provider call may contain exactly one chapter. Multi-chapter calls are forbidden."
+      },
+      "activation_blocked_this_phase": {
+        "raised": true,
+        "message": "Prompt 1.1 activation for generation is disabled in this phase."
+      }
+    },
+    "operational": true,
+    "no_additional_call_after_stop": true,
+    "no_automatic_paid_retry": true,
+    "secrets_included": false
+  },
+  "ch018_integrity": {
+    "phase": "4B.2.22",
+    "files_present": true,
+    "integrity_ok": true,
+    "chapter_id_exact": true,
+    "sections": [
+      "SEC067",
+      "SEC068",
+      "SEC069",
+      "SEC070"
+    ],
+    "expected_sections": [
+      "SEC067",
+      "SEC068",
+      "SEC069",
+      "SEC070"
+    ],
+    "sections_exact": true,
+    "ideas_expected": [
+      "IDEA269",
+      "IDEA270",
+      "IDEA271",
+      "IDEA272",
+      "IDEA273",
+      "IDEA274",
+      "IDEA275",
+      "IDEA276",
+      "IDEA277",
+      "IDEA278",
+      "IDEA279"
+    ],
+    "ideas_found": [
+      "IDEA269",
+      "IDEA270",
+      "IDEA271",
+      "IDEA272",
+      "IDEA273",
+      "IDEA274",
+      "IDEA275",
+      "IDEA276",
+      "IDEA277",
+      "IDEA278",
+      "IDEA279"
+    ],
+    "ideas_expected_count": 11,
+    "ideas_found_count": 11,
+    "ideas_missing": [],
+    "ideas_extra": [],
+    "ideas_traced": true,
+    "examples_in_paras_e": [
+      "EX047",
+      "EX048"
+    ],
+    "ex046_in_paras_e": false,
+    "markdown_json_consistency": {
+      "phase": "4B.2.22",
+      "chapter_id": "CH018",
+      "consistent": true,
+      "json_chapter_id": "CH018",
+      "markdown_title": "Testimonies of Resurrection",
+      "json_sections": [
+        "SEC067",
+        "SEC068",
+        "SEC069",
+        "SEC070"
+      ],
+      "expected_sections": [
+        "SEC067",
+        "SEC068",
+        "SEC069",
+        "SEC070"
+      ],
+      "json_paragraph_ids": [
+        "P000001",
+        "P000002",
+        "P000003",
+        "P000004",
+        "P000005",
+        "P000006",
+        "P000007",
+        "P000008",
+        "P000009",
+        "P000010",
+        "P000011",
+        "P000012",
+        "P000013",
+        "P000014"
+      ],
+      "json_paragraph_count": 14,
+      "markdown_paragraph_count": 14,
+      "section_titles_match": true,
+      "prose_pairs": [
+        {
+          "paragraph_id": "P000001",
+          "json_chars": 232,
+          "markdown_chars": 232,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000002",
+          "json_chars": 377,
+          "markdown_chars": 377,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000003",
+          "json_chars": 289,
+          "markdown_chars": 289,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000004",
+          "json_chars": 302,
+          "markdown_chars": 302,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000005",
+          "json_chars": 396,
+          "markdown_chars": 396,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000006",
+          "json_chars": 62,
+          "markdown_chars": 62,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000007",
+          "json_chars": 255,
+          "markdown_chars": 255,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000008",
+          "json_chars": 364,
+          "markdown_chars": 364,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000009",
+          "json_chars": 270,
+          "markdown_chars": 270,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000010",
+          "json_chars": 228,
+          "markdown_chars": 228,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000011",
+          "json_chars": 185,
+          "markdown_chars": 185,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000012",
+          "json_chars": 229,
+          "markdown_chars": 229,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000013",
+          "json_chars": 244,
+          "markdown_chars": 244,
+          "prose_match": true
+        },
+        {
+          "paragraph_id": "P000014",
+          "json_chars": 73,
+          "markdown_chars": 73,
+          "prose_match": true
+        }
+      ],
+      "prose_mismatches": [],
+      "rewritten": false,
+      "secrets_included": false
+    },
+    "lock": {
+      "phase": "4B.2.22",
+      "path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/call_lock.json",
+      "exists": true,
+      "state": "RESPONSE_VALIDATED",
+      "consumed": true,
+      "reusable": false,
+      "authorization_scope": "BOOK_GENERATION_LATER_PHASE_CH018_FIRST_REMAINING_CHAPTER_ONE_SHOT_ONLY",
+      "validated": true,
+      "reusable_blocked": true,
+      "secrets_included": false
+    },
+    "json_sha256": "e4902da92b05dbe0875222a41d59eb99f7b3e669b685f50f36b06864a327d38b",
+    "markdown_sha256": "3f8e0590567d431af18812505e2a5f5fa454e1648d06f2b895ceae30278df1cb",
+    "lock_sha256": "d912a44e720e5c625dfcb5910259e6fd32afa8d1a92898b2994d1c418a50bc56",
+    "unchanged_since_generation": true,
+    "prose_modified": false,
+    "secrets_included": false
+  },
+  "secrets_included": false
+}

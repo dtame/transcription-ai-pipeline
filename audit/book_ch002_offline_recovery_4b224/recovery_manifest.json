@@ -1,0 +1,22 @@
+{
+  "phase": "4B.2.24",
+  "chapter_id": "CH002",
+  "raw_json_sha256": "dff61499135341af3fee507c98d4ad9c01eb5c8d7c7bb76a9294cc7908b01780",
+  "original_candidate_json_sha256": "baa6b55ad523b9d2f904428ba6e921471cfd50a4260e26353a11a2f2bde0e756",
+  "recovered_json_sha256": "0b4dda95ab88bd05591da5da9c86718c2e4019a509d0c1af0f7907bfab6dcc88",
+  "original_markdown_sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+  "recovered_markdown_sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+  "removed_paragraph_id": "P000008",
+  "justification": "P000008 is a model-emitted empty connective with no editorial text and no IDEA/SRC/EX/REF/UNC provenance. Removing the object does not renumber remaining paragraphs and does not change chapter meaning.",
+  "exact_modifications": [
+    "delete SEC006 paragraph object P000008"
+  ],
+  "validation_status": "PASS",
+  "artifact_kind": "OFFLINE_DERIVED_ARTIFACT",
+  "not_provider_original": "NOT_PROVIDER_ORIGINAL",
+  "additional_provider_calls": 0,
+  "human_acceptance": "PENDING",
+  "recovery_status": "RECOVERED_STRUCTURALLY_VALID — HUMAN_REVIEW_PENDING",
+  "originals_immutable": true,
+  "secrets_included": false
+}

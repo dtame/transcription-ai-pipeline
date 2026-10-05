@@ -1,0 +1,266 @@
+{
+  "phase": "4B.2.26",
+  "CH003_HUMAN_ACCEPTANCE": "HUMAN_EDITORIALLY_ACCEPTED",
+  "CH004_HUMAN_ACCEPTANCE": "HUMAN_EDITORIALLY_ACCEPTED",
+  "ch003": {
+    "phase": "4B.2.26",
+    "manifest_version": "accepted-editorial-manifest-4b226-1.0",
+    "chapter_id": "CH003",
+    "approval_origin": "explicit_user_approval",
+    "approval_origin_detail": "explicit_user_decision",
+    "approved_artifact_paths": {
+      "json": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.json",
+      "markdown": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.md"
+    },
+    "json_sha256": "3ddc2f1298b3db9eb8646161e794b7289f4e9004f274bc1cbc427d7befc37f19",
+    "markdown_sha256": "7f87e86927bd0c60a7b3d5d64ba5c3fa0d8c1e8119fa26c285614a9b8999aae5",
+    "model_id": "anthropic/claude-sonnet-5",
+    "prompt_id": "book-generator-faithful-restatement-1.1-candidate",
+    "prompt_sha256": "e39084dc9ed3b048bfdaa2e112b380d15957085eeb613dd74c97a32b880cec50",
+    "existing_structural_validation": "PASS",
+    "validator_version": "book-generation-validator-1.0.1",
+    "idea_coverage": {
+      "expected": 14,
+      "found": 14,
+      "missing": []
+    },
+    "src_ex_ref_unc_state": {
+      "src_invalid": [],
+      "EX005": {
+        "status": "undetermined_handle_absent_is_not_omission",
+        "traced": false,
+        "in_allowed_handles": true,
+        "observation": "EX005 handle is absent from the candidate. Handle absence is not treated as a content omission. The current formulation is preserved. It does not trigger an automatic rewrite of the accepted chapter."
+      }
+    },
+    "status": "HUMAN_EDITORIALLY_ACCEPTED",
+    "automated_semantic_certification": "not_performed",
+    "recording_date": "2026-10-04",
+    "recorded_at": "2026-10-04T15:51:03+00:00",
+    "publication_authorization": "not_granted",
+    "chapter_copied": false,
+    "chapter_modified": false,
+    "automatic_rewrite_forbidden": true,
+    "canonical_dependencies": {
+      "source_map_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+      "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "editorial_plan_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+      "editorial_plan_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "clean_transcript_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+      "clean_transcript_sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+    },
+    "applicable_editorial_policy": "faithful-teaching-book-editorial-policy-1.0-candidate",
+    "applicable_narrative_voice_contract": "authorial-voice-preservation-1.0-candidate",
+    "secrets_included": false,
+    "approved_version": "4b225_generated_candidate",
+    "documented_observations_do_not_trigger_rewrite": true
+  },
+  "ch004": {
+    "phase": "4B.2.26",
+    "manifest_version": "accepted-editorial-manifest-4b226-1.0",
+    "chapter_id": "CH004",
+    "approval_origin": "explicit_user_approval",
+    "approval_origin_detail": "explicit_user_decision",
+    "approved_artifact_paths": {
+      "json": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH004/chapter_candidate.json",
+      "markdown": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH004/chapter_candidate.md"
+    },
+    "json_sha256": "eceb00dfb019d3e6a247607143447436c7568cb230575211d4128b421ec5b012",
+    "markdown_sha256": "37154ea2d01c0beadc9d4cada1600f7e0f0b9a3c6012bcce7e792e4a8ee95580",
+    "model_id": "anthropic/claude-sonnet-5",
+    "prompt_id": "book-generator-faithful-restatement-1.1-candidate",
+    "prompt_sha256": "e39084dc9ed3b048bfdaa2e112b380d15957085eeb613dd74c97a32b880cec50",
+    "existing_structural_validation": "PASS",
+    "validator_version": "book-generation-validator-1.0.1",
+    "idea_coverage": {
+      "expected": 19,
+      "found": 19,
+      "missing": []
+    },
+    "src_ex_ref_unc_state": {
+      "src_invalid": [],
+      "REF011": {
+        "status": "undetermined_handle_absent_is_not_omission",
+        "traced": false,
+        "in_allowed_handles": true
+      },
+      "REF012": {
+        "status": "undetermined_handle_absent_is_not_omission",
+        "traced": false,
+        "in_allowed_handles": true
+      },
+      "REF013": {
+        "status": "undetermined_handle_absent_is_not_omission",
+        "traced": false,
+        "in_allowed_handles": true
+      },
+      "always_never_formulations": {
+        "always": "We must always remain alert",
+        "never": "I have never had to look for people",
+        "preserved": true,
+        "strengthened_claim_detail": "Absolute wording may strengthen a source claim.",
+        "observation": "REF011, REF012, and REF013 handles are absent. Handle absence is not treated as a content omission. The formulations always / never are preserved exactly. These observations remain documented and do not trigger an automatic rewrite of the accepted chapter."
+      }
+    },
+    "status": "HUMAN_EDITORIALLY_ACCEPTED",
+    "automated_semantic_certification": "not_performed",
+    "recording_date": "2026-10-04",
+    "recorded_at": "2026-10-04T15:51:03+00:00",
+    "publication_authorization": "not_granted",
+    "chapter_copied": false,
+    "chapter_modified": false,
+    "automatic_rewrite_forbidden": true,
+    "canonical_dependencies": {
+      "source_map_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+      "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+      "editorial_plan_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+      "editorial_plan_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+      "clean_transcript_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+      "clean_transcript_sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+    },
+    "applicable_editorial_policy": "faithful-teaching-book-editorial-policy-1.0-candidate",
+    "applicable_narrative_voice_contract": "authorial-voice-preservation-1.0-candidate",
+    "secrets_included": false,
+    "approved_version": "4b225_generated_candidate",
+    "always_formulation_present": true,
+    "never_formulation_present": true,
+    "always_formulation": "We must always remain alert",
+    "never_formulation": "I have never had to look for people",
+    "documented_observations_do_not_trigger_rewrite": true
+  },
+  "existing_manifests": {
+    "CH001": {
+      "chapter_id": "CH001",
+      "manifest_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/ch001_accepted_editorial_manifest.json",
+      "manifest_exists": true,
+      "status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "json_sha256": "2daf7dc3aa610429a7433e0c51350587519bd32b40074dbe1c7886402ab29fec",
+      "markdown_sha256": "f97904f6b703713d0e4549823ffe9f578c24e25679ec79a250a245f942fb3f41",
+      "json_path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.json",
+      "markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.md",
+      "unchanged": true
+    },
+    "CH002": {
+      "chapter_id": "CH002",
+      "manifest_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/ch002_accepted_editorial_manifest.json",
+      "manifest_exists": true,
+      "status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "json_sha256": "d738b4dbbcf13212d4ae68ce00be1effbf4f64ef815bfbfe40c74262a78a08b7",
+      "markdown_sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+      "json_path": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.json",
+      "markdown_path": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.md",
+      "unchanged": true
+    },
+    "CH012": {
+      "chapter_id": "CH012",
+      "manifest_path": "C:/TranscriptionAI/audit/book_editorial_acceptance_4b219/ch012_accepted_editorial_manifest.json",
+      "manifest_exists": true,
+      "status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "json_sha256": "8f135ac5f1df8b2e077e9cc767518d1a05e2fc22d80f5d66494cf5a8364e7fc5",
+      "markdown_sha256": "79d0ab2254e1a972e0fb5ddcbb7901425255ce887ee817fc39b001838b889919",
+      "json_path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.json",
+      "markdown_path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.md",
+      "unchanged": true
+    },
+    "CH018": {
+      "chapter_id": "CH018",
+      "manifest_path": "C:/TranscriptionAI/audit/book_batch_preparation_4b222/ch018_accepted_editorial_manifest.json",
+      "manifest_exists": true,
+      "status": "HUMAN_EDITORIALLY_ACCEPTED",
+      "json_sha256": "e4902da92b05dbe0875222a41d59eb99f7b3e669b685f50f36b06864a327d38b",
+      "markdown_sha256": "3f8e0590567d431af18812505e2a5f5fa454e1648d06f2b895ceae30278df1cb",
+      "json_path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.json",
+      "markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.md",
+      "unchanged": true
+    }
+  },
+  "accepted_chapters_inventory": {
+    "phase": "4B.2.26",
+    "accepted_chapter_ids": [
+      "CH001",
+      "CH002",
+      "CH003",
+      "CH004",
+      "CH012",
+      "CH018"
+    ],
+    "accepted_chapter_count": 6,
+    "all_protected": true,
+    "must_not_be_regenerated": true,
+    "must_not_be_rewritten": true,
+    "semantic_certification": "not_performed",
+    "publication_authorization": "not_granted",
+    "chapters": [
+      {
+        "chapter_id": "CH001",
+        "status": "HUMAN_EDITORIALLY_ACCEPTED",
+        "approved_version": "4b223_generated_candidate",
+        "json_path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.json",
+        "markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b223_batch01/chapters/CH001/chapter_candidate.md",
+        "json_sha256": "2daf7dc3aa610429a7433e0c51350587519bd32b40074dbe1c7886402ab29fec",
+        "markdown_sha256": "f97904f6b703713d0e4549823ffe9f578c24e25679ec79a250a245f942fb3f41",
+        "manifest_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/ch001_accepted_editorial_manifest.json",
+        "protected": true
+      },
+      {
+        "chapter_id": "CH002",
+        "status": "HUMAN_EDITORIALLY_ACCEPTED",
+        "approved_version": "offline_derived_recovered",
+        "json_path": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.json",
+        "markdown_path": "C:/TranscriptionAI/audit/book_ch002_offline_recovery_4b224/chapter_candidate_recovered.md",
+        "json_sha256": "d738b4dbbcf13212d4ae68ce00be1effbf4f64ef815bfbfe40c74262a78a08b7",
+        "markdown_sha256": "2a456e2a9924b72168b78c437c4f4c19613de95d01c6bf80c512fe1af7f54142",
+        "manifest_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/ch002_accepted_editorial_manifest.json",
+        "protected": true
+      },
+      {
+        "chapter_id": "CH003",
+        "status": "HUMAN_EDITORIALLY_ACCEPTED",
+        "approved_version": "4b225_generated_candidate",
+        "json_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.json",
+        "markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH003/chapter_candidate.md",
+        "json_sha256": "3ddc2f1298b3db9eb8646161e794b7289f4e9004f274bc1cbc427d7befc37f19",
+        "markdown_sha256": "7f87e86927bd0c60a7b3d5d64ba5c3fa0d8c1e8119fa26c285614a9b8999aae5",
+        "protected": true
+      },
+      {
+        "chapter_id": "CH004",
+        "status": "HUMAN_EDITORIALLY_ACCEPTED",
+        "approved_version": "4b225_generated_candidate",
+        "json_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH004/chapter_candidate.json",
+        "markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b225_batch01_resume/chapters/CH004/chapter_candidate.md",
+        "json_sha256": "eceb00dfb019d3e6a247607143447436c7568cb230575211d4128b421ec5b012",
+        "markdown_sha256": "37154ea2d01c0beadc9d4cada1600f7e0f0b9a3c6012bcce7e792e4a8ee95580",
+        "protected": true
+      },
+      {
+        "chapter_id": "CH012",
+        "status": "HUMAN_EDITORIALLY_ACCEPTED",
+        "approved_version": "chapter_candidate_authorial_v2",
+        "json_path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.json",
+        "markdown_path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.md",
+        "json_sha256": "8f135ac5f1df8b2e077e9cc767518d1a05e2fc22d80f5d66494cf5a8364e7fc5",
+        "markdown_sha256": "79d0ab2254e1a972e0fb5ddcbb7901425255ce887ee817fc39b001838b889919",
+        "manifest_path": "C:/TranscriptionAI/audit/book_editorial_acceptance_4b219/ch012_accepted_editorial_manifest.json",
+        "protected": true
+      },
+      {
+        "chapter_id": "CH018",
+        "status": "HUMAN_EDITORIALLY_ACCEPTED",
+        "approved_version": "4b221_generated_candidate",
+        "json_path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.json",
+        "markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b221_ch018/chapter_candidate.md",
+        "json_sha256": "e4902da92b05dbe0875222a41d59eb99f7b3e669b685f50f36b06864a327d38b",
+        "markdown_sha256": "3f8e0590567d431af18812505e2a5f5fa454e1648d06f2b895ceae30278df1cb",
+        "manifest_path": "C:/TranscriptionAI/audit/book_batch_preparation_4b222/ch018_accepted_editorial_manifest.json",
+        "protected": true
+      }
+    ],
+    "secrets_included": false
+  },
+  "post_record_hash_verification": "PASS",
+  "chapters_copied": false,
+  "chapters_modified": false,
+  "publication": false,
+  "secrets_included": false
+}

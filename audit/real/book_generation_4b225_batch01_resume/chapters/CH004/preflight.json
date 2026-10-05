@@ -1,0 +1,9 @@
+{
+  "phase": "4B.2.25",
+  "chapter_id": "CH004",
+  "title": "Priest, Prophet, King",
+  "model": "anthropic/claude-sonnet-5",
+  "prompt_version": "book-generator-faithful-restatement-1.1-candidate",
+  "blocked": false,
+  "block_reason": null
+}

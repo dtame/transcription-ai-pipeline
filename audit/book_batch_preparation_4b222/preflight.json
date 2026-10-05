@@ -1,0 +1,30 @@
+{
+  "phase": "4B.2.22",
+  "authorization_scope": "BOOK_BATCH_PREPARATION_4B222_CH018_EDITORIAL_ACCEPTANCE_AND_17_CHAPTER_BATCH_GENERATION_READINESS_ONLY",
+  "canonical_hashes_ok": true,
+  "ch012_present": true,
+  "ch018_present": true,
+  "offline_only": true,
+  "provider_calls_authorized": 0,
+  "production_book_absent": true,
+  "faithful_prompt_1_1_registered": false,
+  "consumed_ch018_authorization": "BOOK_GENERATION_LATER_PHASE_CH018_FIRST_REMAINING_CHAPTER_ONE_SHOT_ONLY",
+  "historical_statuses": {
+    "h01": "PARTIAL",
+    "h02": "PARTIAL",
+    "h11": "PARTIAL",
+    "4B.2.10": "PASS",
+    "4B.2.11": "PARTIAL",
+    "4B.2.12": "PASS",
+    "4B.2.13": "PASS",
+    "4B.2.14": "PASS",
+    "4B.2.15": "PARTIAL",
+    "4B.2.16": "PASS",
+    "4B.2.17": "PARTIAL",
+    "4B.2.18": "PASS",
+    "4B.2.19": "PASS",
+    "4B.2.20": "PASS",
+    "4B.2.21": "PASS"
+  },
+  "secrets_included": false
+}

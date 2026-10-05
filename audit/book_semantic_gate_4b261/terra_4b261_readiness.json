@@ -1,0 +1,13 @@
+{
+  "READY_FOR_NEXT_TERRA_CANARY_DESIGN_REVIEW": true,
+  "READY_FOR_NEW_REMOTE_TERRA_CALL": false,
+  "READY_FOR_BOOK_GENERATOR_PRODUCTION_PREFLIGHT": false,
+  "READY_FOR_FULL_REAL_BOOK_GENERATION": false,
+  "NEXT_ACTION": "HUMAN REVIEW",
+  "book_json": "NOT PUBLISHED",
+  "production_cache": "UNCHANGED",
+  "terra_executed": false,
+  "candidate_promoted": false,
+  "why": "Offline forensics completed. A new explicit human authorization is required before any Terra call. Candidate 1.1 contracts are not production.",
+  "phase_result": "PASS"
+}

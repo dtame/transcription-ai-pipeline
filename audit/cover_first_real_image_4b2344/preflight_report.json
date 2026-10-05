@@ -1,0 +1,53 @@
+{
+  "adapter": {
+    "automatic_fallback": false,
+    "automatic_retry": false,
+    "black_forest_labs_provider_present": true,
+    "black_forest_labs_used": false,
+    "instance_experimental_submission_enabled_for_this_execution": true,
+    "instance_phase_lock": false,
+    "instance_transport_gate_allow_mock_submission": true,
+    "mock_used_for_paid_call": false,
+    "module_experimental_submission_enabled": false,
+    "note": "phase_lock is false and allow_mock_submission is true only on this instance. Those switches are required by the existing gate, which does not waive paid_calls_disabled or network_transport_sealed. The paid exchange uses UrllibTransport. The names are historical.",
+    "openai_provider": "OpenAIImageProvider",
+    "openai_provider_available": true,
+    "paid_call_transport": "UrllibTransport"
+  },
+  "automatic_retries_enabled": false,
+  "background": "opaque",
+  "block_reasons_before_socket": [],
+  "configuration_problems": [],
+  "experimental_submission_module_constant": false,
+  "global_paid_calls_authorized": false,
+  "image_count": 1,
+  "live_http_enabled_at_start": false,
+  "model": "gpt-image-2",
+  "output_format": "png",
+  "prompt_phrases": {
+    "already standing open": true,
+    "no ISBN": true,
+    "no author name": true,
+    "no barcode": true,
+    "no letters": true,
+    "no logo": true,
+    "no people": true,
+    "no subtitle": true,
+    "no title": true,
+    "no watermark": true,
+    "no words": true
+  },
+  "prompt_text_changed": false,
+  "provider": "openai",
+  "quality": "medium",
+  "rehearsal": {
+    "live_http_enabled": false,
+    "mock_calls": 1,
+    "openai_contacted": false,
+    "passed": true
+  },
+  "size": "1024x1536",
+  "title_embedded_in_prompt": false,
+  "typography_covered_by": "no letters, no words, no title, no subtitle",
+  "typography_explicit_word": false
+}

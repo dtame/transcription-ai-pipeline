@@ -1,0 +1,22 @@
+{
+  "phase": "4B.2.32",
+  "before": {
+    "chapter.start": "odd_page",
+    "word_constant": "WD_SECTION.ODD_PAGE",
+    "blank_pages": "word_odd_page_section_break_only",
+    "source_version": "print-review-v1",
+    "phase": "4B.2.31"
+  },
+  "after": {
+    "chapter.start": "next_page",
+    "pagination.body.chapter_start": "next_page",
+    "pagination.front_matter.section_start": "keep_existing",
+    "word_constant": "WD_SECTION.NEW_PAGE",
+    "blank_pages": "none_for_parity",
+    "output_version": "print-review-v1.1",
+    "phase": "4B.2.32"
+  },
+  "front_matter_policy_unchanged": true,
+  "interchapter_policy": "next_page",
+  "secrets_included": false
+}

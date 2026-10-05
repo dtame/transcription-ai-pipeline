@@ -1,0 +1,174 @@
+{
+  "phase": "4B.2.11",
+  "case_id_audit_only": "4b210_h01",
+  "handle": "h01",
+  "human_verdict_audit_only": "SUPPORTED",
+  "human_verdict_not_transmitted": true,
+  "human_label_unmodified": true,
+  "terra_global_verdict": "PASS",
+  "target_unit_id": "u01",
+  "target_clause": "that fear can calculate or bargain with",
+  "target_paraphrase_verdict": "SUPPORTED",
+  "target_paraphrase_recognized": true,
+  "still_requires_same_words": false,
+  "lexical_match_flags": [],
+  "unjustified_reservations": [],
+  "other_supported_false_rejections": [],
+  "supported_claims_review": "PASS",
+  "units": [
+    {
+      "unit_id": "u00",
+      "text": "Do not ever be afraid of death. ",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_direct",
+      "target": false,
+      "relevant_evidence": [
+        "SRC006149",
+        "IDEA224"
+      ],
+      "human_analysis": "Direct restatement of SRC006149. Historically accepted.",
+      "prepared_text": "Do not ever be afraid of death. ",
+      "terra_verdict": "SUPPORTED",
+      "terra_evidence": [
+        "SRC006149"
+      ],
+      "terra_reasons": [],
+      "terra_note": "",
+      "unknown_reasons": [],
+      "matches_human_label": true,
+      "false_rejection": false,
+      "present": true
+    },
+    {
+      "unit_id": "u01",
+      "text": "There is no fixed hour appointed that fear can calculate or bargain with, ",
+      "human_verdict": "SUPPORTED",
+      "family": "target_faithful_paraphrase",
+      "target": true,
+      "clause": "that fear can calculate or bargain with",
+      "relevant_evidence": [
+        "IDEA224"
+      ],
+      "human_analysis": "Faithful paraphrase of IDEA224 'no set time'. The verbs calculate and bargain personify the unavailability of an appointed hour. The old Semantic Gate rejected this clause for lacking those verbs in the evidence. Human reference remains SUPPORTED.",
+      "prepared_text": "There is no fixed hour appointed that fear can calculate or bargain with, ",
+      "terra_verdict": "SUPPORTED",
+      "terra_evidence": [
+        "IDEA224"
+      ],
+      "terra_reasons": [],
+      "terra_note": "",
+      "unknown_reasons": [],
+      "matches_human_label": true,
+      "false_rejection": false,
+      "present": true
+    },
+    {
+      "unit_id": "u02",
+      "text": "and so fear itself is out of place. ",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_connective",
+      "target": false,
+      "relevant_evidence": [
+        "IDEA224",
+        "SRC006149"
+      ],
+      "human_analysis": "Result connective of the attested 'do not fear' / 'no set time' claim. Historically accepted as SUPPORTED.",
+      "prepared_text": "and so fear itself is out of place. ",
+      "terra_verdict": "SUPPORTED",
+      "terra_evidence": [
+        "IDEA224",
+        "SRC006180",
+        "SRC006182"
+      ],
+      "terra_reasons": [],
+      "terra_note": "",
+      "unknown_reasons": [],
+      "matches_human_label": true,
+      "false_rejection": false,
+      "present": true
+    },
+    {
+      "unit_id": "u03",
+      "text": "If somebody has gone to heaven, that should not produce dread in us. ",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_direct",
+      "target": false,
+      "relevant_evidence": [
+        "SRC006187",
+        "IDEA224"
+      ],
+      "human_analysis": "Attested by SRC006187 and IDEA224.",
+      "prepared_text": "If somebody has gone to heaven, that should not produce dread in us. ",
+      "terra_verdict": "SUPPORTED",
+      "terra_evidence": [
+        "IDEA224",
+        "SRC006187"
+      ],
+      "terra_reasons": [],
+      "terra_note": "",
+      "unknown_reasons": [],
+      "matches_human_label": true,
+      "false_rejection": false,
+      "present": true
+    },
+    {
+      "unit_id": "u04",
+      "text": "It should be our joy.",
+      "human_verdict": "SUPPORTED",
+      "family": "supported_direct",
+      "target": false,
+      "relevant_evidence": [
+        "SRC006183",
+        "IDEA224"
+      ],
+      "human_analysis": "Direct attestation in SRC006183.",
+      "prepared_text": "It should be our joy.",
+      "terra_verdict": "SUPPORTED",
+      "terra_evidence": [
+        "IDEA224",
+        "SRC006183"
+      ],
+      "terra_reasons": [],
+      "terra_note": "",
+      "unknown_reasons": [],
+      "matches_human_label": true,
+      "false_rejection": false,
+      "present": true
+    }
+  ],
+  "cited_evidence": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "invalid_evidence_references": [],
+  "unknown_reason_codes": [],
+  "notes": [],
+  "expected_handles": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "coverage_ok": true,
+  "evidence_ok": true,
+  "contract_status": "FAIL",
+  "full_paragraph_available_to_model": true,
+  "finding": "TARGET_RECOGNIZED_WITH_CONTRACT_OR_COVERAGE_ISSUES",
+  "questions": {
+    "terra_recognizes_paraphrase_as_faithful": true,
+    "still_requires_same_words_as_evidence": false,
+    "introduces_unjustified_reservations": false,
+    "rejects_other_supported_propositions": false,
+    "uses_evidence_coherently": true,
+    "respects_full_paragraph_context": true
+  },
+  "semantic_status": "PARTIAL",
+  "review_status": "PARTIAL",
+  "secrets_included": false
+}

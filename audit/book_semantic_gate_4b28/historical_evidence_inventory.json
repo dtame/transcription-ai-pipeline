@@ -1,0 +1,523 @@
+{
+  "phase": "4B.2.8",
+  "evidence_level": "OBSERVED",
+  "invented_missing_data": false,
+  "MISSING_HISTORICAL_EVIDENCE": [],
+  "historical_status_preserved": {
+    "h01": "PARTIAL",
+    "h02": "PARTIAL",
+    "h11": "PARTIAL",
+    "not_converted_to_pass": true,
+    "evidence_level": "OBSERVED"
+  },
+  "canaries": {
+    "h01": {
+      "handle": "h01",
+      "case_id": "4b22_p2_supported",
+      "human_label_audit_only": "SUPPORTED",
+      "request_sha256": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+      "paragraph_chars": 232,
+      "claim_count": 7,
+      "global_verdict": "REVIEW",
+      "paragraph_verdict": "QUESTIONABLE",
+      "raw_preserved": true
+    },
+    "h02": {
+      "handle": "h02",
+      "case_id": "4b22_p3_new_causal",
+      "human_label_audit_only": "QUESTIONABLE",
+      "request_sha256": "5ace261296d808437910f8f9efe247a80daebbb2237bc8af46bda56bf98d7897",
+      "paragraph_chars": 466,
+      "claim_count": 11,
+      "global_verdict": "FAIL",
+      "paragraph_verdict": "UNSUPPORTED",
+      "raw_preserved": true
+    },
+    "h11": {
+      "handle": "h11",
+      "case_id": "4b276_p4_new_implication",
+      "human_label_audit_only": "UNSUPPORTED",
+      "request_sha256": "b3cc1574858acdd5bdd0e223aa136d5058c4eb1deb1495cd9ad312d332e8c30f",
+      "paragraph_chars": 357,
+      "claim_count": 7,
+      "global_verdict": "FAIL",
+      "paragraph_verdict": "UNSUPPORTED",
+      "contract": "book-semantic-validator-1.1.3-candidate",
+      "transport": "book-semantic-validation-transport-1.1-candidate",
+      "raw_preserved": true
+    }
+  },
+  "directories": {
+    "h01_real": {
+      "directory": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27",
+      "exists": true,
+      "expected_files": [
+        {
+          "name": "book_semantic_gate_4b27_raw_structured_response.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_raw_structured_response.json",
+          "exists": true,
+          "sha256": "43e74198ebed8eddc619762b1a62ac3d311d4164d26b0a8b5891d23ca51627f0",
+          "bytes": 3134
+        },
+        {
+          "name": "book_semantic_gate_4b27_raw_provider_text.txt",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_raw_provider_text.txt",
+          "exists": true,
+          "sha256": "772190c16640e07a572a086fe24fe8917dc65edbfc540d324ab6dceb98bcfe95",
+          "bytes": 773
+        },
+        {
+          "name": "book_semantic_gate_4b27_request_identity.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_request_identity.json",
+          "exists": true,
+          "sha256": "f20ee5b17eae0097f308f80165b5922d4346e5e60f1048dd208a64538fdabdf5",
+          "bytes": 8267
+        },
+        {
+          "name": "book_semantic_gate_4b27_cost.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_cost.json",
+          "exists": true,
+          "sha256": "ba0ec9a135978a2bcbb2549f89991594178855ccd8efef6e20069753187378f4",
+          "bytes": 4462
+        },
+        {
+          "name": "book_semantic_gate_4b27_semantic_review.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_semantic_review.json",
+          "exists": true,
+          "sha256": "583d781010ee8204e0908d5e839c698135e3298fca1cadda40c84e4e6c405a39",
+          "bytes": 3053
+        },
+        {
+          "name": "book_semantic_gate_4b27_replay.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_replay.json",
+          "exists": true,
+          "sha256": "bd92020db19ca46a15b4155073a4772a7609b9187e98b322872867cdc1aabf0e",
+          "bytes": 744
+        },
+        {
+          "name": "book_semantic_gate_4b27_response_validation.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_response_validation.json",
+          "exists": true,
+          "sha256": "12bf7593f0bc4ce3bc0164c265a2301677b16af25e5b9df5e83b2144f5646686",
+          "bytes": 583
+        }
+      ],
+      "missing_expected": [],
+      "present_files_observed": [
+        "book_semantic_gate_4b27_call_accounting.json",
+        "book_semantic_gate_4b27_cost.json",
+        "book_semantic_gate_4b27_index.json",
+        "book_semantic_gate_4b27_precall.json",
+        "book_semantic_gate_4b27_provider_evidence.json",
+        "book_semantic_gate_4b27_raw_provider_text.txt",
+        "book_semantic_gate_4b27_raw_structured_response.json",
+        "book_semantic_gate_4b27_readiness.json",
+        "book_semantic_gate_4b27_real_call.lock",
+        "book_semantic_gate_4b27_replay.json",
+        "book_semantic_gate_4b27_request_identity.json",
+        "book_semantic_gate_4b27_response_validation.json",
+        "book_semantic_gate_4b27_runtime.json",
+        "book_semantic_gate_4b27_sdk_serialization.json",
+        "book_semantic_gate_4b27_semantic_review.json",
+        "book_semantic_gate_4b27_tests.json",
+        "book_semantic_gate_4b27_token_usage.json"
+      ],
+      "evidence_level": "OBSERVED"
+    },
+    "h02_real": {
+      "directory": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273",
+      "exists": true,
+      "expected_files": [
+        {
+          "name": "p3_real_raw_structured_response.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_raw_structured_response.json",
+          "exists": true,
+          "sha256": "78ef2ba6abb23c78cc9f2f3798d6e8b0aeae1544af681bffa9260a740ba17301",
+          "bytes": 5925
+        },
+        {
+          "name": "p3_real_raw_provider_text.txt",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_raw_provider_text.txt",
+          "exists": true,
+          "sha256": "f36d41caefc4148bd1355470cf78d7605cbe2cd385599f987527cbcdba2dbc53",
+          "bytes": 1692
+        },
+        {
+          "name": "p3_real_request_identity.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_request_identity.json",
+          "exists": true,
+          "sha256": "316665c979a4f79cc76c8881fc35e766e12f46a869dec06b2b3b573c353e9c4c",
+          "bytes": 8766
+        },
+        {
+          "name": "p3_real_cost.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_cost.json",
+          "exists": true,
+          "sha256": "d10dd80a88e9a69b716deac13635ef27bd6451cb1b32a1f6060c3d4deea8fda1",
+          "bytes": 4630
+        },
+        {
+          "name": "p3_real_token_usage.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_token_usage.json",
+          "exists": true,
+          "sha256": "a48940d82ef9eb1b5259a3ad71d9ffb21b19ed73eb29ca6aeaa1a12f49af3606",
+          "bytes": 1322
+        },
+        {
+          "name": "p3_real_semantic_review.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_semantic_review.json",
+          "exists": true,
+          "sha256": "78cb44d5276efda85f5ae40a053b7f85cafdd0ac64cb30693329699a300ea39e",
+          "bytes": 15100
+        },
+        {
+          "name": "p3_real_replay.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_replay.json",
+          "exists": true,
+          "sha256": "e2da00dc0fc390f1ec9c168af79ec7ed45eff5981f9b0f3ec510119dc3207c7a",
+          "bytes": 1791
+        },
+        {
+          "name": "p3_real_response_validation.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_response_validation.json",
+          "exists": true,
+          "sha256": "4418bd6af20365f52feafdb92cf1762ac2cd176aa2261a4e5ad1a60a1767238b",
+          "bytes": 3559
+        }
+      ],
+      "missing_expected": [],
+      "present_files_observed": [
+        "p3_real_call.lock",
+        "p3_real_call_accounting.json",
+        "p3_real_cost.json",
+        "p3_real_index.json",
+        "p3_real_precall.json",
+        "p3_real_provider_evidence.json",
+        "p3_real_raw_provider_text.txt",
+        "p3_real_raw_structured_response.json",
+        "p3_real_readiness.json",
+        "p3_real_replay.json",
+        "p3_real_request_identity.json",
+        "p3_real_response_validation.json",
+        "p3_real_runtime.json",
+        "p3_real_sdk_serialization.json",
+        "p3_real_semantic_review.json",
+        "p3_real_tests.json",
+        "p3_real_token_usage.json"
+      ],
+      "evidence_level": "OBSERVED"
+    },
+    "h11_real": {
+      "directory": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277",
+      "exists": true,
+      "expected_files": [
+        {
+          "name": "provider_response_raw.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277/provider_response_raw.json",
+          "exists": true,
+          "sha256": "e38fe2d8012f1bd670a1804a3b938646e6f84402406f70c4ef44283177210fda",
+          "bytes": 4085
+        },
+        {
+          "name": "provider_response_text.txt",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277/provider_response_text.txt",
+          "exists": true,
+          "sha256": "218c0d0c2f22e142f48b609298123e2cd8be36394d9d97b7a2f20424a826751a",
+          "bytes": 1099
+        },
+        {
+          "name": "frozen_request_verification.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277/frozen_request_verification.json",
+          "exists": true,
+          "sha256": "e52f2d01c8f69261c7a1561b310dbcafb778d4c6f875e3894ba90b31732b2186",
+          "bytes": 13288
+        },
+        {
+          "name": "cost_accounting.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277/cost_accounting.json",
+          "exists": true,
+          "sha256": "7dd4832a1e5510559de2a3dc158800919a6bdb539f504cc73a91c770116199cf",
+          "bytes": 6317
+        },
+        {
+          "name": "provider_usage.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277/provider_usage.json",
+          "exists": true,
+          "sha256": "c825440f7bb6bc14e2a3a856302b6240be5d3f98a402d7562cddd1c7cb180f57",
+          "bytes": 1391
+        },
+        {
+          "name": "claim_by_claim_semantic_review.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277/claim_by_claim_semantic_review.json",
+          "exists": true,
+          "sha256": "ca4e6e13871b73dbb226250191cc5bd13fc34688c73e73a2599250a6cb0ad69a",
+          "bytes": 21551
+        },
+        {
+          "name": "offline_replay.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277/offline_replay.json",
+          "exists": true,
+          "sha256": "bcc179ad646791474388862c9bc36e6a5d5045fd475a86389e46cfae5ec01bc5",
+          "bytes": 1171
+        },
+        {
+          "name": "structural_validation.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277/structural_validation.json",
+          "exists": true,
+          "sha256": "5925245783e804ce70965f800da0f652b6367b423d9e3e4178ca78322fa06e30",
+          "bytes": 2946
+        },
+        {
+          "name": "human_reference_comparison.json",
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b277/human_reference_comparison.json",
+          "exists": true,
+          "sha256": "02cd23d68c2447efe325cea4c551319e984edeec83d338af075b001b42770d9f",
+          "bytes": 1815
+        }
+      ],
+      "missing_expected": [],
+      "present_files_observed": [
+        "book_semantic_gate_4b277_index.json",
+        "claim_by_claim_semantic_review.json",
+        "cost_accounting.json",
+        "frozen_request_verification.json",
+        "h11_real_call.lock",
+        "human_reference_comparison.json",
+        "label_leakage_verification.json",
+        "offline_replay.json",
+        "preflight_integrity.json",
+        "provider_invocation.json",
+        "provider_response_raw.json",
+        "provider_response_text.txt",
+        "provider_usage.json",
+        "readiness.json",
+        "regression_tests.json",
+        "sdk_serialization_verification.json",
+        "structural_validation.json"
+      ],
+      "evidence_level": "OBSERVED"
+    },
+    "offline_4b271": {
+      "directory": "C:/TranscriptionAI/audit/book_semantic_gate_4b271",
+      "exists": true,
+      "expected_files": [
+        {
+          "name": "h01_terra_response_forensics.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b271/h01_terra_response_forensics.json",
+          "exists": true,
+          "sha256": "96892b8533650abb696d61305ef15b64bc2dfc05750afa1e8cc8f1a88498b5cd",
+          "bytes": 3818
+        },
+        {
+          "name": "h01_disputed_clause_analysis.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b271/h01_disputed_clause_analysis.json",
+          "exists": true,
+          "sha256": "f61b0c2c7566461481599bde163d62ea5ad99220a5377c34b5c3dae92a4c445f",
+          "bytes": 4188
+        },
+        {
+          "name": "h01_human_label_review.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b271/h01_human_label_review.json",
+          "exists": true,
+          "sha256": "55555d0ede7f45f7695cda35fda625a285932e42445ace08169e909f614965e8",
+          "bytes": 2393
+        },
+        {
+          "name": "h01_canonical_evidence_inventory.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b271/h01_canonical_evidence_inventory.json",
+          "exists": true,
+          "sha256": "16df13fc8a9a2920fdb1623b3ef0ad68cb1d6b983612c8c5ce836fc631821356",
+          "bytes": 18576
+        }
+      ],
+      "missing_expected": [],
+      "present_files_observed": [
+        "book_semantic_gate_4b271_index.json",
+        "compact_gate_4b271_offline_tests.json",
+        "compact_gate_4b271_readiness.json",
+        "compact_gate_calibration_candidate.json",
+        "compact_gate_contract_comparison.json",
+        "h01_canonical_evidence_inventory.json",
+        "h01_disputed_clause_analysis.json",
+        "h01_human_label_review.json",
+        "h01_span_separator_analysis.json",
+        "h01_src006180_evidence_review.json",
+        "h01_terra_response_forensics.json",
+        "semantic_paraphrase_boundary_matrix.json"
+      ],
+      "evidence_level": "OBSERVED"
+    },
+    "offline_4b274": {
+      "directory": "C:/TranscriptionAI/audit/book_semantic_gate_4b274",
+      "exists": true,
+      "expected_files": [
+        {
+          "name": "h02_claim_by_claim_review.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b274/h02_claim_by_claim_review.json",
+          "exists": true,
+          "sha256": "c81c32349f314d237660c4aaecb71f0145de77189d122bfbd0787c03eda9fca1",
+          "bytes": 55266
+        },
+        {
+          "name": "h01_h02_comparative_analysis.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b274/h01_h02_comparative_analysis.json",
+          "exists": true,
+          "sha256": "d3dcf10b9c3fa89bb60ad78ea8d1540f651547fabedace126d62d58da7b00b12",
+          "bytes": 2278
+        },
+        {
+          "name": "historical_canary_inventory.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b274/historical_canary_inventory.json",
+          "exists": true,
+          "sha256": "20d772a31db9ba3cf6ce640a2b4df94c6b9bbb3aff186ed7d44773e814f61858",
+          "bytes": 11068
+        },
+        {
+          "name": "punctuation_coverage_inventory.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b274/punctuation_coverage_inventory.json",
+          "exists": true,
+          "sha256": "d5568f310f07d6fa170157fe1305c0b110b5bb0b9247dc4efd0d3b61664ad19a",
+          "bytes": 23217
+        }
+      ],
+      "missing_expected": [],
+      "present_files_observed": [
+        "benchmark_regression.json",
+        "book_semantic_gate_4b274_index.json",
+        "contract_112_candidate_review.json",
+        "cost_comparison.json",
+        "coverage_validator_design.json",
+        "h01_h02_comparative_analysis.json",
+        "h02_claim_by_claim_review.json",
+        "h02_semantic_disagreement_matrix.json",
+        "historical_canary_inventory.json",
+        "historical_response_replays.json",
+        "offline_tests.json",
+        "punctuation_coverage_inventory.json",
+        "readiness.json",
+        "reason_code_catalog_audit.json",
+        "reason_code_policy.json",
+        "transport_compatibility.json"
+      ],
+      "evidence_level": "OBSERVED"
+    },
+    "offline_4b275": {
+      "directory": "C:/TranscriptionAI/audit/book_semantic_gate_4b275",
+      "exists": true,
+      "expected_files": [
+        {
+          "name": "h02_indeterminate_claim_review.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b275/h02_indeterminate_claim_review.json",
+          "exists": true,
+          "sha256": "a78489330fe48b1aac89ecf187c7430bd4dfd565e5486072e395cfb4fdee7ace",
+          "bytes": 4946
+        },
+        {
+          "name": "reason_code_catalog.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b275/reason_code_catalog.json",
+          "exists": true,
+          "sha256": "dea7ba1a8716c2089edc5370721a6921c7219348f601640c3812b5908d981b7b",
+          "bytes": 11552
+        },
+        {
+          "name": "coverage_policy_review.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b275/coverage_policy_review.json",
+          "exists": true,
+          "sha256": "8f7af5914818bcf65f4929d797ba4291fb67b00a0030ece956f2cf0fd35ec61a",
+          "bytes": 26939
+        },
+        {
+          "name": "contract_113_candidate_review.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b275/contract_113_candidate_review.json",
+          "exists": true,
+          "sha256": "5cf270780297cb8bff6adb51fd8a09622e71d9768569a56e9f44be02b0188312",
+          "bytes": 2786
+        }
+      ],
+      "missing_expected": [],
+      "present_files_observed": [
+        "benchmark_regression.json",
+        "book_semantic_gate_4b275_index.json",
+        "contract_113_candidate_review.json",
+        "contract_inventory.json",
+        "coverage_policy_review.json",
+        "diagnostic_failure_behavior.json",
+        "future_canary_selection_criteria.json",
+        "h01_h02_replays.json",
+        "h02_indeterminate_claim_review.json",
+        "offline_tests.json",
+        "readiness.json",
+        "reason_code_catalog.json",
+        "transport_compatibility.json",
+        "unknown_reason_code_policy.json",
+        "verdict_definitions_review.json",
+        "verdict_reason_code_matrix.json"
+      ],
+      "evidence_level": "OBSERVED"
+    },
+    "offline_4b276": {
+      "directory": "C:/TranscriptionAI/audit/book_semantic_gate_4b276",
+      "exists": true,
+      "expected_files": [
+        {
+          "name": "selected_canary_paragraph.txt",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b276/selected_canary_paragraph.txt",
+          "exists": true,
+          "sha256": "6415e41361049aa1452e89269762d4bba740550651ae87fcb299dc2e897893ca",
+          "bytes": 360
+        },
+        {
+          "name": "selected_canary_evidence.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b276/selected_canary_evidence.json",
+          "exists": true,
+          "sha256": "c137838a38e5aeacc603d47a9ac9ff07dd979cc775ca85adeaf9c32fc87abe99",
+          "bytes": 14708
+        },
+        {
+          "name": "selected_canary_human_reference.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b276/selected_canary_human_reference.json",
+          "exists": true,
+          "sha256": "17ee634cecbfaca579d79645e7973fdd66c9f61a70753f631e1478cf3bf7ffc4",
+          "bytes": 5446
+        },
+        {
+          "name": "selected_canary_provider_request.json",
+          "path": "C:/TranscriptionAI/audit/book_semantic_gate_4b276/selected_canary_provider_request.json",
+          "exists": true,
+          "sha256": "744da94a6da90c6e944f64f29bdcd2aa998e66a011df722cdcb24055e885184b",
+          "bytes": 12306
+        }
+      ],
+      "missing_expected": [],
+      "present_files_observed": [
+        "book_semantic_gate_4b276_index.json",
+        "candidate_inventory.json",
+        "candidate_selection_matrix.json",
+        "contract_113_compatibility.json",
+        "cost_estimation.json",
+        "future_canary_success_criteria.json",
+        "label_leakage_check.json",
+        "offline_tests.json",
+        "readiness.json",
+        "reason_code_compatibility.json",
+        "request_determinism.json",
+        "sdk_serialization_preflight.json",
+        "selected_canary_evidence.json",
+        "selected_canary_human_reference.json",
+        "selected_canary_paragraph.txt",
+        "selected_canary_provenance.json",
+        "selected_canary_provider_request.json"
+      ],
+      "evidence_level": "OBSERVED"
+    }
+  },
+  "human_labels_unmodified": true,
+  "historical_contracts_unmodified": true,
+  "historical_raw_unmodified": true,
+  "distinction": {
+    "observed": "Files, hashes, saved JSON, token counts, and Terra verdicts.",
+    "historical_diagnostics": "Prior offline reviews (4B.2.7.1–4B.2.7.7).",
+    "new_hypotheses": "Architecture comparison and cost projections in this phase."
+  },
+  "secrets_included": false
+}

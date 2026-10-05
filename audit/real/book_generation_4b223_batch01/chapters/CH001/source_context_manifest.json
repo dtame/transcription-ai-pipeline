@@ -1,0 +1,563 @@
+{
+  "phase": "4B.2.23",
+  "chapter_id": "CH001",
+  "working_title": "Unlearning What Was Handed Down",
+  "language": "en",
+  "expected_sources": {
+    "idea_ids": [
+      "IDEA001",
+      "IDEA005",
+      "IDEA002",
+      "IDEA003",
+      "IDEA004",
+      "IDEA006",
+      "IDEA022",
+      "IDEA023",
+      "IDEA024",
+      "IDEA007",
+      "IDEA008",
+      "IDEA020"
+    ],
+    "example_ids": [
+      "EX001",
+      "EX002"
+    ],
+    "reference_ids": [
+      "REF001",
+      "REF003"
+    ],
+    "uncertainty_ids": [],
+    "src_ids": [
+      "SRC000018",
+      "SRC000020",
+      "SRC000023",
+      "SRC000025",
+      "SRC000116",
+      "SRC000117",
+      "SRC000160",
+      "SRC000162",
+      "SRC000027",
+      "SRC000028",
+      "SRC000029",
+      "SRC000033",
+      "SRC000036",
+      "SRC000060",
+      "SRC000069",
+      "SRC000098",
+      "SRC000102",
+      "SRC000109",
+      "SRC000115",
+      "SRC000121",
+      "SRC000140",
+      "SRC000149",
+      "SRC000153",
+      "SRC000531",
+      "SRC000532",
+      "SRC000534",
+      "SRC000602",
+      "SRC000546",
+      "SRC000548",
+      "SRC000553",
+      "SRC000556",
+      "SRC000561",
+      "SRC000566",
+      "SRC000572",
+      "SRC000573",
+      "SRC000171",
+      "SRC000174",
+      "SRC000180",
+      "SRC000181",
+      "SRC000183",
+      "SRC000186",
+      "SRC000190",
+      "SRC000192",
+      "SRC000515",
+      "SRC000517",
+      "SRC000519",
+      "SRC000520",
+      "SRC000078",
+      "SRC000081",
+      "SRC000084",
+      "SRC000095",
+      "SRC000123",
+      "SRC000135",
+      "SRC000137",
+      "SRC000143"
+    ],
+    "section_ids": [
+      "SEC001",
+      "SEC002",
+      "SEC003",
+      "SEC004"
+    ]
+  },
+  "resolved_sources": {
+    "hydrated_src_ids": [
+      "SRC000018",
+      "SRC000020",
+      "SRC000023",
+      "SRC000025",
+      "SRC000027",
+      "SRC000028",
+      "SRC000029",
+      "SRC000033",
+      "SRC000036",
+      "SRC000060",
+      "SRC000069",
+      "SRC000078",
+      "SRC000081",
+      "SRC000084",
+      "SRC000095",
+      "SRC000098",
+      "SRC000102",
+      "SRC000109",
+      "SRC000115",
+      "SRC000116",
+      "SRC000117",
+      "SRC000121",
+      "SRC000123",
+      "SRC000135",
+      "SRC000137",
+      "SRC000140",
+      "SRC000143",
+      "SRC000149",
+      "SRC000153",
+      "SRC000160",
+      "SRC000162",
+      "SRC000171",
+      "SRC000174",
+      "SRC000180",
+      "SRC000181",
+      "SRC000183",
+      "SRC000186",
+      "SRC000190",
+      "SRC000192",
+      "SRC000515",
+      "SRC000517",
+      "SRC000519",
+      "SRC000520",
+      "SRC000531",
+      "SRC000532",
+      "SRC000534",
+      "SRC000546",
+      "SRC000548",
+      "SRC000553",
+      "SRC000556",
+      "SRC000561",
+      "SRC000566",
+      "SRC000572",
+      "SRC000573",
+      "SRC000602"
+    ],
+    "hydrated_count": 55,
+    "hydrated_details": [
+      {
+        "id": "SRC000018",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000020",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000023",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000025",
+        "chars": 42,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000027",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000028",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000029",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000033",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000036",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000060",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000069",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000078",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000081",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000084",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000095",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000098",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000102",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000109",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000115",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000116",
+        "chars": 38,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000117",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000121",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000123",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000135",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000137",
+        "chars": 40,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000140",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000143",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000149",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000153",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000160",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000162",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000171",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000174",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000180",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000181",
+        "chars": 8,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000183",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000186",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000190",
+        "chars": 40,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000192",
+        "chars": 48,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000515",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000517",
+        "chars": 52,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000519",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000520",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000531",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000532",
+        "chars": 45,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000534",
+        "chars": 41,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000546",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000548",
+        "chars": 44,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000553",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000556",
+        "chars": 12,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000561",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000566",
+        "chars": 8,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000572",
+        "chars": 49,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000573",
+        "chars": 57,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000602",
+        "chars": 25,
+        "kind": "SRC"
+      }
+    ]
+  },
+  "missing_sources": [],
+  "context_size": {
+    "chars": 13298,
+    "utf8_bytes": 13318,
+    "section_count": 4,
+    "idea_count": 12,
+    "example_count": 2,
+    "reference_count": 2,
+    "uncertainty_count": 0,
+    "src_ref_count": 55,
+    "hydrated_segment_count": 55,
+    "idea_summary_chars": 1725,
+    "hydrated_src_chars": 1519,
+    "sha256": "0072a0259871b052b222045d4cb479b31ded4371f75221c70d8fdde440c4595e"
+  },
+  "potentially_truncated": [],
+  "coverage_risks": [
+    "Targeted hydration can omit neighboring spoken detail that the plan did not attach.",
+    "A resolved SRC is not proof that every idea in that SRC is restated."
+  ],
+  "whole_transcript_injected": false,
+  "whole_transcript_words": 38313,
+  "hydrated_src_words": 315,
+  "raw_transcript_used_as_silent_fallback": false,
+  "sources_dropped_to_reduce_cost": false,
+  "blocked_if_mandatory_source_missing": true,
+  "generation_blocked": false,
+  "planned_ideas": [
+    "IDEA001",
+    "IDEA005",
+    "IDEA002",
+    "IDEA003",
+    "IDEA004",
+    "IDEA006",
+    "IDEA022",
+    "IDEA023",
+    "IDEA024",
+    "IDEA007",
+    "IDEA008",
+    "IDEA020"
+  ],
+  "allowed_handles": [
+    "IDEA001",
+    "IDEA005",
+    "IDEA002",
+    "IDEA003",
+    "IDEA004",
+    "IDEA006",
+    "IDEA022",
+    "IDEA023",
+    "IDEA024",
+    "IDEA007",
+    "IDEA008",
+    "IDEA020",
+    "EX001",
+    "EX002",
+    "REF001",
+    "REF003",
+    "SRC000018",
+    "SRC000020",
+    "SRC000023",
+    "SRC000025",
+    "SRC000116",
+    "SRC000117",
+    "SRC000160",
+    "SRC000162",
+    "SRC000027",
+    "SRC000028",
+    "SRC000029",
+    "SRC000033",
+    "SRC000036",
+    "SRC000060",
+    "SRC000069",
+    "SRC000098",
+    "SRC000102",
+    "SRC000109",
+    "SRC000115",
+    "SRC000121",
+    "SRC000140",
+    "SRC000149",
+    "SRC000153",
+    "SRC000531",
+    "SRC000532",
+    "SRC000534",
+    "SRC000602",
+    "SRC000546",
+    "SRC000548",
+    "SRC000553",
+    "SRC000556",
+    "SRC000561",
+    "SRC000566",
+    "SRC000572",
+    "SRC000573",
+    "SRC000171",
+    "SRC000174",
+    "SRC000180",
+    "SRC000181",
+    "SRC000183",
+    "SRC000186",
+    "SRC000190",
+    "SRC000192",
+    "SRC000515",
+    "SRC000517",
+    "SRC000519",
+    "SRC000520",
+    "SRC000078",
+    "SRC000081",
+    "SRC000084",
+    "SRC000095",
+    "SRC000123",
+    "SRC000135",
+    "SRC000137",
+    "SRC000143"
+  ],
+  "blocked_handles": [],
+  "ready": true,
+  "secrets_included": false,
+  "expected_title": "Unlearning What Was Handed Down",
+  "expected_section_count": 4,
+  "expected_idea_count": 12,
+  "expected_example_count": 2,
+  "expected_reference_count": 2,
+  "expected_uncertainty_count": 0,
+  "expected_hydrated_src_count": 55,
+  "context_hash": "0072a0259871b052b222045d4cb479b31ded4371f75221c70d8fdde440c4595e",
+  "other_chapters_excluded": true,
+  "ch012_excluded": true,
+  "ch018_excluded": true,
+  "external_sources_added": false,
+  "internet_lookup": false,
+  "bible_completed_from_memory": false,
+  "context_truncated": false
+}

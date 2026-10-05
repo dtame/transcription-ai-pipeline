@@ -1,0 +1,17 @@
+{
+  "enabled_after_import_reaches_urllib": true,
+  "flag_after": false,
+  "flag_at_start": false,
+  "passed": true,
+  "provider_contacted": false,
+  "sealed_path_refused_before_urllib": true,
+  "single_use_copies_flag_at_init": false,
+  "single_use_reads_module_attribute": true,
+  "socket_opened_to_openai": false,
+  "source_assigns_live_http_enabled_false": true,
+  "source_assigns_live_http_enabled_true": false,
+  "urllib_captures_flag_as_default_argument": false,
+  "urllib_enabled_after_import_reaches_opener": true,
+  "urllib_reads_module_global_at_exchange": true,
+  "urllib_sealed_path_does_not_open": true
+}

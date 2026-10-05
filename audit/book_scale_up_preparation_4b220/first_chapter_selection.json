@@ -1,0 +1,115 @@
+{
+  "phase": "4B.2.20",
+  "selected_chapter_id": "CH018",
+  "working_title": "Testimonies of Resurrection",
+  "book_order": 18,
+  "section_count": 4,
+  "section_ids": [
+    "SEC067",
+    "SEC068",
+    "SEC069",
+    "SEC070"
+  ],
+  "idea_count": 11,
+  "idea_ids": [
+    "IDEA269",
+    "IDEA270",
+    "IDEA271",
+    "IDEA272",
+    "IDEA273",
+    "IDEA274",
+    "IDEA275",
+    "IDEA276",
+    "IDEA277",
+    "IDEA278",
+    "IDEA279"
+  ],
+  "example_count": 3,
+  "reference_count": 2,
+  "uncertainty_count": 0,
+  "src_count": 79,
+  "estimated_source_context": {
+    "hydrated_src_words": 377,
+    "hydrated_src_chars": 1933,
+    "whole_transcript_words_not_injected": 38313,
+    "targeted_hydration_only": true
+  },
+  "estimated_output_tokens": {
+    "expected": 2405,
+    "conservative": 4453
+  },
+  "editorial_complexity": "LOW",
+  "coverage_risks": [
+    "planned_presence_is_not_generated_coverage",
+    "section_or_idea_appearance_in_plan_is_not_proof_of_restatement",
+    "cross_recording_thematic_grouping"
+  ],
+  "narrative_attribution_risks": [
+    "testimony_attribution"
+  ],
+  "anticipated_difficulties": [
+    "Prompt 1.1 has never been used in a real provider call.",
+    "The 4B.2.17 failure mode — IDEA handles in section metadata but not in paras[].e — must be detected immediately.",
+    "Three testimony examples require first-person vs third-person attribution discipline.",
+    "No UNC is assigned to this chapter; uncertainty preservation must be re-checked on a later chapter.",
+    "Semantic equivalence is not proved by structural validation."
+  ],
+  "success_criteria": [
+    "Valid transport JSON and reconstructed chapter candidate.",
+    "Exact planned sections in EditorialPlan order.",
+    "Every assigned IDEA represented by content in the prose.",
+    "Justified IDEA handles in paras[].e when correspondence is clear; no invented handles.",
+    "SRC, EX, and REF handles drawn only from the supplied allowed set.",
+    "No post-hoc invention of paras[].e to satisfy the validator.",
+    "No truncation, no publication, budget respected."
+  ],
+  "stop_conditions": [
+    "Invalid or truncated JSON.",
+    "Missing or extra sections.",
+    "Missing planned IDEA content or invented IDEA handles.",
+    "IDEA handles present in metadata only, absent from paragraph evidence.",
+    "Invalid SRC, EX, REF, or UNC handles.",
+    "Unknown cost or theoretical maximum above the distinct future cap.",
+    "Missing human authorization for this chapter.",
+    "Any automatic paid retry."
+  ],
+  "reasons": [
+    "CH018 has 4 sections and 11 planned IDEA units, matching the accepted CH012 scale without being the shortest remaining chapter.",
+    "The chapter carries 3 EX and 2 REF units, which lets the first real call test the evidence-handle contract.",
+    "Example kinds include testimony.",
+    "Targeted source context is 377 hydrated SRC words. The 38 313-word transcript is not injected.",
+    "CH001 was not auto-selected. The shortest chapters were not preferred."
+  ],
+  "selection_scores": {
+    "CH001": 108,
+    "CH002": 94,
+    "CH003": 116,
+    "CH004": 74,
+    "CH005": 92,
+    "CH006": 12,
+    "CH007": 74,
+    "CH008": 114,
+    "CH009": 100,
+    "CH010": 64,
+    "CH011": 116,
+    "CH013": 46,
+    "CH014": 134,
+    "CH015": 94,
+    "CH016": -38,
+    "CH017": 92,
+    "CH018": 144,
+    "CH019": 42
+  },
+  "rejected_automatic_ch001": true,
+  "rejected_shortest_only": true,
+  "rejected_shortest_chapter_ids": [
+    "CH016",
+    "CH019"
+  ],
+  "not_ch012": true,
+  "expected_chapter_id": "CH018",
+  "matches_expected_on_this_corpus": true,
+  "authorized": false,
+  "generation_status": "READY",
+  "secrets_included": false
+}

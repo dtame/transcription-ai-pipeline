@@ -1,0 +1,42 @@
+{
+  "provider_class": "BlackForestLabsImageProvider",
+  "provider_id": "black_forest_labs",
+  "official_model_id": "flux-2-pro",
+  "preview_model_id_not_selected": "flux-2-pro-preview",
+  "submit_url": "https://api.bfl.ai/v1/flux-2-pro",
+  "auth_header": "x-key",
+  "auth_env": "BFL_API_KEY",
+  "methods": [
+    "check_availability",
+    "get_capabilities",
+    "estimate_cost",
+    "generate",
+    "poll",
+    "download"
+  ],
+  "stages": [
+    "submit",
+    "poll",
+    "download"
+  ],
+  "negative_prompt_transmitted": false,
+  "output_format_requested": "png",
+  "disable_pup": true,
+  "live_http_enabled": false,
+  "default_authorization": {
+    "enabled": false,
+    "explicit": false,
+    "provider_id": "black_forest_labs",
+    "model_name": "flux-2-pro",
+    "max_images": 0,
+    "max_budget_usd": 0,
+    "max_total_cost_usd": 0,
+    "allow_paid_calls": false,
+    "network_calls_allowed": false,
+    "dry_run": true,
+    "prior_phase_unspent_budget_usd": null
+  },
+  "one_post_one_image": true,
+  "automatic_paid_retry": false,
+  "observed_cost": "credits times 0.01 only when the response includes a numeric cost; otherwise null"
+}

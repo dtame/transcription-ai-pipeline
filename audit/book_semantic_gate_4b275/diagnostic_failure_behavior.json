@@ -1,0 +1,32 @@
+{
+  "phase": "4B.2.7.5",
+  "outputs": {
+    "A_acceptance": {
+      "values": [
+        "PASS",
+        "FAIL"
+      ],
+      "contract_or_coverage_failure_blocks": true
+    },
+    "B_diagnostic": {
+      "retained_on_fail": [
+        "analyzable propositions",
+        "valid spans",
+        "cited evidence",
+        "raw reason codes",
+        "unknown reason codes",
+        "identifiable semantic reservations",
+        "coverage errors",
+        "missing fields",
+        "unevaluable elements"
+      ],
+      "never_converted_to_acceptance": true,
+      "never_replaces_raw_data": true
+    }
+  },
+  "structural_versus_semantic": {
+    "structural_compliance": "deterministic local FAIL/PASS",
+    "semantic_fidelity": "not claimed fully deterministic when interpretation is required"
+  },
+  "secrets_included": false
+}

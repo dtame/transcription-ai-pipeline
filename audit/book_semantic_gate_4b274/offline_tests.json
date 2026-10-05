@@ -1,0 +1,350 @@
+{
+  "returncode": 0,
+  "summary": "109 passed in 5.87s",
+  "passed": 109,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b274.py",
+    "app/tests/test_book_semantic_gate_4b273.py",
+    "app/tests/test_book_semantic_gate_4b272.py",
+    "app/tests/test_book_semantic_gate_4b271.py",
+    "app/tests/test_book_semantic_gate_4b262.py",
+    "app/tests/test_book_semantic_gate_4b23.py"
+  ],
+  "real_provider_calls": 0,
+  "phase": "4B.2.7.4",
+  "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "offline_fixtures": {
+    "phase": "4B.2.7.4",
+    "reason_codes": {
+      "phase": "4B.2.7.4",
+      "cases": [
+        {
+          "name": "canonical_valid",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "unknown_code",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "empty_on_questionable",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "empty_on_unsupported",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "unexpected_on_supported",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "multiple_valid_compatible",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "valid_code_other_category",
+          "ok": true,
+          "status": "PASS"
+        },
+        {
+          "name": "close_but_absent",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "invented",
+          "ok": true,
+          "status": "FAIL"
+        },
+        {
+          "name": "wrong_case",
+          "ok": true,
+          "status": "FAIL"
+        }
+      ],
+      "passed": true,
+      "unknown_never_silently_accepted": true,
+      "empty_questionable_fails_112": true,
+      "payload_unknown_errors": [
+        "hX: unknown_reason_INVENTED_CAUSAL_LINK"
+      ],
+      "normalization_not_applied": true
+    },
+    "coverage": {
+      "phase": "4B.2.7.4",
+      "cases": [
+        {
+          "name": "terminal_period",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "separator_comma",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "separator_semicolon",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "em_dash",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "colon",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "parentheses",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "quotes",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "apostrophe_internal_gap",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "ellipsis",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "unicode_space",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "omitted_word",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              6,
+              13
+            ]
+          ]
+        },
+        {
+          "name": "omitted_negation",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              3,
+              6
+            ],
+            [
+              7,
+              10
+            ]
+          ]
+        },
+        {
+          "name": "omitted_because",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              5,
+              12
+            ]
+          ]
+        },
+        {
+          "name": "omitted_unless",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              5,
+              11
+            ]
+          ]
+        },
+        {
+          "name": "omitted_however",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              4,
+              11
+            ]
+          ]
+        },
+        {
+          "name": "omitted_only_if",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              3,
+              7
+            ],
+            [
+              8,
+              10
+            ]
+          ]
+        },
+        {
+          "name": "omitted_clause",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              16,
+              22
+            ],
+            [
+              23,
+              31
+            ],
+            [
+              32,
+              38
+            ]
+          ]
+        },
+        {
+          "name": "inverted_span",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "name": "out_of_bounds",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "name": "empty_span",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "name": "overlaps",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "discontinuous",
+          "ok": true,
+          "status": "FAIL",
+          "significant": [
+            [
+              6,
+              10
+            ]
+          ]
+        },
+        {
+          "name": "adjacent_propositions",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        },
+        {
+          "name": "multiline",
+          "ok": true,
+          "status": "PASS",
+          "significant": []
+        }
+      ],
+      "passed": true,
+      "punctuation_not_a_bypass_for_propositions": true
+    },
+    "historical": {
+      "phase": "4B.2.7.4",
+      "positives_accepted": 6,
+      "negatives_blocked": 4,
+      "funeral_blocked": true,
+      "connective_blocked": true,
+      "p3_blocked": true,
+      "p8_blocked": true,
+      "negative_ids": [
+        "4b22_p3_new_causal",
+        "4b22_p8_reference_completion",
+        "4b2_p8_invented_funeral",
+        "4b2_p13_unsupported_connective"
+      ],
+      "positive_ids": [
+        "4b22_p2_supported",
+        "4b22_p4_supported",
+        "4b22_p5_supported",
+        "4b22_p6_supported",
+        "4b22_p7_supported",
+        "4b2_p2_supported"
+      ],
+      "protected": {
+        "4b2_p8_invented_funeral": true,
+        "4b2_p13_unsupported_connective": true,
+        "4b22_p3_new_causal": true,
+        "4b22_p8_reference_completion": true
+      },
+      "validator_1_1_2_status": "PASS",
+      "historical_catalog_passed": true,
+      "calibration_1_1_1_still_passes": true,
+      "fakeai_not_terra_quality": true,
+      "labels_unmodified": true
+    },
+    "fakeai_positives": 6,
+    "fakeai_negatives": 4,
+    "passed": true,
+    "fakeai_not_terra_quality": true
+  },
+  "frozen_1_0_prompt_sha256": "32bdc59fc717863f805ddd4dd2cc794be6d488ce45c87fd88880146d418811cc",
+  "frozen_1_1_prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+  "frozen_1_1_1_prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+  "candidate_1_1_2_prompt_sha256": "88a89e792ffd6a6f3766c0218f7cb25f0d996ba373e13232179b390f77da3ba0",
+  "fakeai_not_terra_quality": true
+}

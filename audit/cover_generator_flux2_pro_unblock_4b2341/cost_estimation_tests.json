@@ -1,0 +1,71 @@
+{
+  "official_pro_text_to_image": {
+    "width_px": 1632,
+    "height_px": 2448,
+    "pixels": 3995136,
+    "decimal_megapixels": "3.995136",
+    "billed_megapixels_ceiling": 4,
+    "binary_megapixels_1024_squared": "3.81005859375",
+    "rounding": "ceiling_to_next_decimal_megapixel",
+    "rounding_source": "https://help.bfl.ai/articles/7986977817-what-are-the-costs-associated-with-using-your-models",
+    "known": false,
+    "max_cost_usd": null,
+    "estimated_cost_usd": null,
+    "blocks_paid_call": true,
+    "reason": "published_floor_is_not_a_maximum",
+    "schedule_status": "UNVERIFIED_MAXIMUM"
+  },
+  "official_rounding_example_1920x1080": {
+    "width_px": 1920,
+    "height_px": 1080,
+    "pixels": 2073600,
+    "decimal_megapixels": "2.0736",
+    "billed_megapixels_ceiling": 3,
+    "binary_megapixels_1024_squared": "1.9775390625",
+    "rounding": "ceiling_to_next_decimal_megapixel",
+    "rounding_source": "https://help.bfl.ai/articles/7986977817-what-are-the-costs-associated-with-using-your-models"
+  },
+  "selected_image": {
+    "width_px": 1632,
+    "height_px": 2448,
+    "pixels": 3995136,
+    "decimal_megapixels": "3.995136",
+    "billed_megapixels_ceiling": 4,
+    "binary_megapixels_1024_squared": "3.81005859375",
+    "rounding": "ceiling_to_next_decimal_megapixel",
+    "rounding_source": "https://help.bfl.ai/articles/7986977817-what-are-the-costs-associated-with-using-your-models"
+  },
+  "square_label_1024": {
+    "width_px": 1024,
+    "height_px": 1024,
+    "pixels": 1048576,
+    "decimal_megapixels": "1.048576",
+    "billed_megapixels_ceiling": 2,
+    "binary_megapixels_1024_squared": "1",
+    "rounding": "ceiling_to_next_decimal_megapixel",
+    "rounding_source": "https://help.bfl.ai/articles/7986977817-what-are-the-costs-associated-with-using-your-models"
+  },
+  "square_label_conflict": "The help center calls 1024×1024 one megapixel. Decimal ceiling of 1.048576 is 2. The ceiling is kept because the 2.07MP example is charged as 3MP, and truncation would under-count that example.",
+  "test_only_schedule_is_not_official": {
+    "width_px": 1632,
+    "height_px": 2448,
+    "pixels": 3995136,
+    "decimal_megapixels": "3.995136",
+    "billed_megapixels_ceiling": 4,
+    "binary_megapixels_1024_squared": "3.81005859375",
+    "rounding": "ceiling_to_next_decimal_megapixel",
+    "rounding_source": "https://help.bfl.ai/articles/7986977817-what-are-the-costs-associated-with-using-your-models",
+    "known": true,
+    "max_cost_usd": "0.075",
+    "estimated_cost_usd": "0.075",
+    "blocks_paid_call": false,
+    "reason": "verified_schedule",
+    "schedule_status": "VERIFIED_MAXIMUM"
+  },
+  "floor_times_billed_megapixels_not_used": {
+    "expression": "0.03 * 4",
+    "value_usd": "0.12",
+    "used_as_maximum": false
+  },
+  "user_budget_is_a_provider_cap": false
+}

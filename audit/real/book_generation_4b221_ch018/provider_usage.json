@@ -1,0 +1,52 @@
+{
+  "phase": "4B.2.21",
+  "provider": "anthropic",
+  "model": "anthropic/claude-sonnet-5",
+  "http_success": true,
+  "http_status": 200,
+  "finish_reason": "end_turn",
+  "input_tokens": 10400,
+  "output_tokens": 2070,
+  "thinking_tokens": null,
+  "request_id": "req_011CfgZCVM7yp23mp5LaUFJZ",
+  "elapsed_ms": 18936,
+  "raw_sha256": "642a958f39f2fa1ab43de4896231f93205f4eae480a803f2e27e29c7bdd4c0c9",
+  "cost": {
+    "status": "known",
+    "currency": "USD",
+    "input_cost": 0.0208,
+    "output_cost": 0.0207,
+    "total_cost": 0.0415,
+    "compute_cost_tracked": true,
+    "pricing_source": "Anthropic official pricing/model documentation",
+    "effective_date": "2026-09-18",
+    "verified": true,
+    "notes": "",
+    "unmodeled_regimes": "",
+    "display": "0.041500 USD",
+    "total_cost_usd": 0.0415,
+    "not_a_provider_invoice": true,
+    "thinking_tokens": 0
+  },
+  "error": null,
+  "engine": {
+    "class_name": "CountingAnthropicEngine",
+    "provider": "anthropic",
+    "retry_max_attempts": 1,
+    "is_anthropic": true,
+    "is_openai": false,
+    "is_fake": false,
+    "generate_attempts": 1,
+    "post_attempts": 1,
+    "connect_timeout_seconds": 30.0,
+    "read_timeout_seconds": 1800.0
+  },
+  "usage": {
+    "input_tokens": 10400,
+    "output_tokens": 2070,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "secrets_included": false
+}

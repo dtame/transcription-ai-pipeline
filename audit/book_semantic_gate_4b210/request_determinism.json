@@ -1,0 +1,17 @@
+{
+  "phase": "4B.2.10",
+  "first_sha256": "d62ee35106f89d34170fb93364ce202b021fd0c60c582248c241cb296008c484",
+  "second_sha256": "d62ee35106f89d34170fb93364ce202b021fd0c60c582248c241cb296008c484",
+  "sha256": "d62ee35106f89d34170fb93364ce202b021fd0c60c582248c241cb296008c484",
+  "determinism": true,
+  "repeat_payload_identical": true,
+  "unit_order_stable": true,
+  "evidence_order_stable": true,
+  "parameters_stable": true,
+  "contract_version": "book-semantic-validator-2.0.1-candidate",
+  "transport_version": "book-semantic-validation-transport-2.0-candidate",
+  "dynamic_fields_absent": true,
+  "audit_timestamps_separated": true,
+  "result": "PASS",
+  "secrets_included": false
+}

@@ -1,0 +1,24 @@
+{
+  "phase": "4B.2.11",
+  "allowed_handles": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "cited_handles": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "invalid_evidence_references": [],
+  "errors": [],
+  "ok": true,
+  "status": "PASS",
+  "secrets_included": false
+}

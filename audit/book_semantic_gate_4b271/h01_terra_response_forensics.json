@@ -1,0 +1,152 @@
+{
+  "phase": "4B.2.7.1",
+  "immutable_saved_response": true,
+  "chapter_verdict": "REVIEW",
+  "paragraph_verdict": "QUESTIONABLE",
+  "human_label_audit_only": "SUPPORTED",
+  "claims": [
+    {
+      "i": 0,
+      "s": 0,
+      "e": 31,
+      "k": "SUPPORTED",
+      "ev": [
+        "SRC006149"
+      ],
+      "r": [],
+      "n": "",
+      "recovered_text": "Do not ever be afraid of death.",
+      "reason_codes_valid": true
+    },
+    {
+      "i": 1,
+      "s": 32,
+      "e": 64,
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA224"
+      ],
+      "r": [],
+      "n": "",
+      "recovered_text": "There is no fixed hour appointed",
+      "reason_codes_valid": true
+    },
+    {
+      "i": 2,
+      "s": 65,
+      "e": 105,
+      "k": "QUESTIONABLE",
+      "ev": [
+        "IDEA224"
+      ],
+      "r": [],
+      "n": "Calculation is implied, but bargaining is not supplied.",
+      "recovered_text": "that fear can calculate or bargain with,",
+      "reason_codes_valid": true
+    },
+    {
+      "i": 3,
+      "s": 106,
+      "e": 140,
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA224",
+        "SRC006149",
+        "SRC006182"
+      ],
+      "r": [],
+      "n": "",
+      "recovered_text": "and so fear itself is out of place",
+      "reason_codes_valid": true
+    },
+    {
+      "i": 4,
+      "s": 142,
+      "e": 173,
+      "k": "SUPPORTED",
+      "ev": [
+        "SRC006187"
+      ],
+      "r": [],
+      "n": "",
+      "recovered_text": "If somebody has gone to heaven,",
+      "reason_codes_valid": true
+    },
+    {
+      "i": 5,
+      "s": 174,
+      "e": 209,
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA224"
+      ],
+      "r": [],
+      "n": "",
+      "recovered_text": "that should not produce dread in us",
+      "reason_codes_valid": true
+    },
+    {
+      "i": 6,
+      "s": 211,
+      "e": 232,
+      "k": "SUPPORTED",
+      "ev": [
+        "SRC006183"
+      ],
+      "r": [],
+      "n": "",
+      "recovered_text": "It should be our joy.",
+      "reason_codes_valid": true
+    }
+  ],
+  "disputed_claim": {
+    "i": 2,
+    "s": 65,
+    "e": 105,
+    "k": "QUESTIONABLE",
+    "ev": [
+      "IDEA224"
+    ],
+    "r": [],
+    "n": "Calculation is implied, but bargaining is not supplied.",
+    "recovered_text": "that fear can calculate or bargain with,",
+    "reason_codes_valid": true
+  },
+  "reservation": "Calculation is implied, but bargaining is not supplied.",
+  "reason_codes_on_disputed_claim": [],
+  "reason_codes_missing_on_questionable": true,
+  "cited_evidence": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "src006180_cited": false,
+  "visible_justification_only": true,
+  "no_hidden_chain_of_thought_attributed": true,
+  "assessment": {
+    "excessive_lexical_match": true,
+    "requires_explicit_verb_where_paraphrase_allowed": true,
+    "detects_real_addition": false,
+    "misses_multi_evidence_relation": false,
+    "SRC006180_would_not_have_supplied_bargain": true,
+    "confidence_field_absent_as_designed": true,
+    "reservation_is_undecidable_from_visible_text": false,
+    "reservation_visible": "Calculation is implied, but bargaining is not supplied."
+  },
+  "compact_1_1_already_said": [
+    "Paraphrase is allowed. Judge semantic entailment, not lexical equality.",
+    "Do not rely on keyword matching as the final judgment."
+  ],
+  "frozen_1_1_validation": {
+    "status": "FAIL",
+    "coverage_errors": [
+      "h01: coverage_gap_[(140, 141), (209, 210)]"
+    ],
+    "span_errors": []
+  },
+  "span_analysis_ref": "The recorded 4B.2.7 intervals 140-141 and 209-210 are the sentence-final periods after already-covered clauses, not the following spaces. uncovered_spans() already ignores whitespace. It does not ignore those periods.",
+  "case_id_audit_only": "4b22_p2_supported",
+  "secrets_included": false
+}

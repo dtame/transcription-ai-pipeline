@@ -1,0 +1,70 @@
+{
+  "phase": "4B.2.18",
+  "version": "authorial-voice-preservation-1.0-candidate",
+  "activated_in_production": false,
+  "inherits_editorial_policy": "faithful-teaching-book-editorial-policy-1.0-candidate",
+  "guiding_principle": "The book must preserve the main author's narrative voice rather than describe the author as an external speaker.",
+  "product_definition": "The book restores the original teaching as teaching written by its principal author. It is not a conference report.",
+  "narration_rules": [
+    {
+      "id": "A",
+      "name": "first_person",
+      "statement": "Use I, me, my, we, and our when the original context justifies that the author is speaking of personal experiences, actions, memories, convictions, teaching, or spiritual experience."
+    },
+    {
+      "id": "B",
+      "name": "second_person",
+      "statement": "Keep you when the speaker addresses the reader or the audience and that address remains natural in a book."
+    },
+    {
+      "id": "C",
+      "name": "third_person",
+      "statement": "Keep third person when the referent is actually another person, a biblical figure, a witness, an interlocutor, a secondary speaker, or a reported quotation."
+    },
+    {
+      "id": "D",
+      "name": "general_teaching",
+      "statement": "Do not force first person onto a general teaching. 'Prayer requires sincerity.' is acceptable. 'I believe that prayer requires sincerity.' is not required unless the source states that personal stance.",
+      "allowed_example": "Prayer requires sincerity.",
+      "forbidden_example": "I believe that prayer requires sincerity. (unless the source states that personal stance)"
+    }
+  ],
+  "attribution_rules": [
+    {
+      "id": "no_speaker_field",
+      "statement": "Clean-transcript segments have no speaker field. AUDIO001 to AUDIO004 name recordings, not four proven persons."
+    },
+    {
+      "id": "no_audio_inference",
+      "statement": "Do not infer a speaker identity from an AUDIO identifier alone."
+    },
+    {
+      "id": "no_unproven_first_person",
+      "statement": "Never transform a third-person testimony into a first-person testimony without sufficient proof that it belongs to the main author."
+    },
+    {
+      "id": "uncertain_keep_original",
+      "statement": "If attribution is uncertain: keep the original passage, mark ATTRIBUTION_UNCERTAIN, record the SRC handles, propose a candidate correction if useful, and require human review before application."
+    },
+    {
+      "id": "secondary_voices",
+      "statement": "A main speaker, secondary speakers, questions, reported quotations, interpretation, and testimonies attributed to other persons may all be present. Do not merge them."
+    }
+  ],
+  "formulations_to_avoid_when_they_name_the_main_author": [
+    "The speaker explained",
+    "The preacher said",
+    "The author recalled",
+    "The speaker recounted",
+    "He taught that",
+    "The speaker emphasized",
+    "The preacher described",
+    "According to the speaker"
+  ],
+  "automatic_global_replacement_forbidden": true,
+  "decision_depends_on_context_and_provenance": true,
+  "deterministic_controls_do_not_establish_speaker_identity": true,
+  "does_not_modify_historical_prompts": true,
+  "does_not_modify_canonical_artifacts": true,
+  "secrets_included": false
+}

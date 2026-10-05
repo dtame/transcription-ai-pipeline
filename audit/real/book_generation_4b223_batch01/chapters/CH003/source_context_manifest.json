@@ -1,0 +1,748 @@
+{
+  "phase": "4B.2.23",
+  "chapter_id": "CH003",
+  "working_title": "Hebrews 2: Death Already Destroyed",
+  "language": "en",
+  "expected_sources": {
+    "idea_ids": [
+      "IDEA032",
+      "IDEA033",
+      "IDEA035",
+      "IDEA030",
+      "IDEA031",
+      "IDEA034",
+      "IDEA025",
+      "IDEA026",
+      "IDEA027",
+      "IDEA028",
+      "IDEA029",
+      "IDEA038",
+      "IDEA098",
+      "IDEA099"
+    ],
+    "example_ids": [
+      "EX004",
+      "EX003",
+      "EX005"
+    ],
+    "reference_ids": [
+      "REF007",
+      "REF008",
+      "REF005",
+      "REF004"
+    ],
+    "uncertainty_ids": [
+      "UNC005",
+      "UNC004"
+    ],
+    "src_ids": [
+      "SRC000852",
+      "SRC000856",
+      "SRC000859",
+      "SRC000861",
+      "SRC000936",
+      "SRC000946",
+      "SRC000952",
+      "SRC001011",
+      "SRC000963",
+      "SRC000967",
+      "SRC000970",
+      "SRC000972",
+      "SRC000790",
+      "SRC000811",
+      "SRC000814",
+      "SRC000820",
+      "SRC000824",
+      "SRC000826",
+      "SRC000828",
+      "SRC000958",
+      "SRC001044",
+      "SRC001060",
+      "SRC001063",
+      "SRC000582",
+      "SRC000585",
+      "SRC000592",
+      "SRC000597",
+      "SRC000600",
+      "SRC000603",
+      "SRC000605",
+      "SRC000619",
+      "SRC000622",
+      "SRC000631",
+      "SRC000639",
+      "SRC000646",
+      "SRC000649",
+      "SRC000650",
+      "SRC000651",
+      "SRC000716",
+      "SRC000722",
+      "SRC000730",
+      "SRC000735",
+      "SRC001148",
+      "SRC001154",
+      "SRC001159",
+      "SRC001166",
+      "SRC002760",
+      "SRC002762",
+      "SRC002764",
+      "SRC002791",
+      "SRC002792",
+      "SRC002793",
+      "SRC002783",
+      "SRC002785",
+      "SRC002786",
+      "SRC002788",
+      "SRC002794",
+      "SRC002795",
+      "SRC002796",
+      "SRC000895",
+      "SRC000902",
+      "SRC000905",
+      "SRC000751",
+      "SRC000806",
+      "SRC001058",
+      "SRC000655",
+      "SRC000658",
+      "SRC000695",
+      "SRC000674",
+      "SRC000620",
+      "SRC000563",
+      "SRC000564",
+      "SRC000750",
+      "SRC000753",
+      "SRC000761",
+      "SRC000767"
+    ],
+    "section_ids": [
+      "SEC009",
+      "SEC010",
+      "SEC011",
+      "SEC012"
+    ]
+  },
+  "resolved_sources": {
+    "hydrated_src_ids": [
+      "SRC000563",
+      "SRC000564",
+      "SRC000582",
+      "SRC000585",
+      "SRC000592",
+      "SRC000597",
+      "SRC000600",
+      "SRC000603",
+      "SRC000605",
+      "SRC000619",
+      "SRC000620",
+      "SRC000622",
+      "SRC000631",
+      "SRC000639",
+      "SRC000646",
+      "SRC000649",
+      "SRC000650",
+      "SRC000651",
+      "SRC000655",
+      "SRC000658",
+      "SRC000674",
+      "SRC000695",
+      "SRC000716",
+      "SRC000722",
+      "SRC000730",
+      "SRC000735",
+      "SRC000750",
+      "SRC000751",
+      "SRC000753",
+      "SRC000761",
+      "SRC000767",
+      "SRC000790",
+      "SRC000806",
+      "SRC000811",
+      "SRC000814",
+      "SRC000820",
+      "SRC000824",
+      "SRC000826",
+      "SRC000828",
+      "SRC000852",
+      "SRC000856",
+      "SRC000859",
+      "SRC000861",
+      "SRC000895",
+      "SRC000902",
+      "SRC000905",
+      "SRC000936",
+      "SRC000946",
+      "SRC000952",
+      "SRC000958",
+      "SRC000963",
+      "SRC000967",
+      "SRC000970",
+      "SRC000972",
+      "SRC001011",
+      "SRC001044",
+      "SRC001058",
+      "SRC001060",
+      "SRC001063",
+      "SRC001148",
+      "SRC001154",
+      "SRC001159",
+      "SRC001166",
+      "SRC002760",
+      "SRC002762",
+      "SRC002764",
+      "SRC002783",
+      "SRC002785",
+      "SRC002786",
+      "SRC002788",
+      "SRC002791",
+      "SRC002792",
+      "SRC002793",
+      "SRC002794",
+      "SRC002795",
+      "SRC002796"
+    ],
+    "hydrated_count": 76,
+    "hydrated_details": [
+      {
+        "id": "SRC000563",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000564",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000582",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000585",
+        "chars": 54,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000592",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000597",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000600",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000603",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000605",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000619",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000620",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000622",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000631",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000639",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000646",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000649",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000650",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000651",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000655",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000658",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000674",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000695",
+        "chars": 17,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000716",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000722",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000730",
+        "chars": 10,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000735",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000750",
+        "chars": 11,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000751",
+        "chars": 8,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000753",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000761",
+        "chars": 41,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000767",
+        "chars": 40,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000790",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000806",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000811",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000814",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000820",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000824",
+        "chars": 43,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000826",
+        "chars": 48,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000828",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000852",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000856",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000859",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000861",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000895",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000902",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000905",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000936",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000946",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000952",
+        "chars": 12,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000958",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000963",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000967",
+        "chars": 17,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000970",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC000972",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001011",
+        "chars": 52,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001044",
+        "chars": 56,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001058",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001060",
+        "chars": 50,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001063",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001148",
+        "chars": 45,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001154",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001159",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001166",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002760",
+        "chars": 59,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002762",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002764",
+        "chars": 41,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002783",
+        "chars": 62,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002785",
+        "chars": 62,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002786",
+        "chars": 38,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002788",
+        "chars": 45,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002791",
+        "chars": 57,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002792",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002793",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002794",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002795",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC002796",
+        "chars": 32,
+        "kind": "SRC"
+      }
+    ]
+  },
+  "missing_sources": [],
+  "context_size": {
+    "chars": 17742,
+    "utf8_bytes": 17776,
+    "section_count": 4,
+    "idea_count": 14,
+    "example_count": 3,
+    "reference_count": 4,
+    "uncertainty_count": 2,
+    "src_ref_count": 76,
+    "hydrated_segment_count": 76,
+    "idea_summary_chars": 2239,
+    "hydrated_src_chars": 2237,
+    "sha256": "2830d9420311eaf7448654cb857127e4b6de7bfb87b368327b690204c077faed"
+  },
+  "potentially_truncated": [],
+  "coverage_risks": [
+    "Targeted hydration can omit neighboring spoken detail that the plan did not attach.",
+    "A resolved SRC is not proof that every idea in that SRC is restated."
+  ],
+  "whole_transcript_injected": false,
+  "whole_transcript_words": 38313,
+  "hydrated_src_words": 444,
+  "raw_transcript_used_as_silent_fallback": false,
+  "sources_dropped_to_reduce_cost": false,
+  "blocked_if_mandatory_source_missing": true,
+  "generation_blocked": false,
+  "planned_ideas": [
+    "IDEA032",
+    "IDEA033",
+    "IDEA035",
+    "IDEA030",
+    "IDEA031",
+    "IDEA034",
+    "IDEA025",
+    "IDEA026",
+    "IDEA027",
+    "IDEA028",
+    "IDEA029",
+    "IDEA038",
+    "IDEA098",
+    "IDEA099"
+  ],
+  "allowed_handles": [
+    "IDEA032",
+    "IDEA033",
+    "IDEA035",
+    "IDEA030",
+    "IDEA031",
+    "IDEA034",
+    "IDEA025",
+    "IDEA026",
+    "IDEA027",
+    "IDEA028",
+    "IDEA029",
+    "IDEA038",
+    "IDEA098",
+    "IDEA099",
+    "EX004",
+    "EX003",
+    "EX005",
+    "REF007",
+    "REF008",
+    "REF005",
+    "REF004",
+    "UNC005",
+    "UNC004",
+    "SRC000852",
+    "SRC000856",
+    "SRC000859",
+    "SRC000861",
+    "SRC000936",
+    "SRC000946",
+    "SRC000952",
+    "SRC001011",
+    "SRC000963",
+    "SRC000967",
+    "SRC000970",
+    "SRC000972",
+    "SRC000790",
+    "SRC000811",
+    "SRC000814",
+    "SRC000820",
+    "SRC000824",
+    "SRC000826",
+    "SRC000828",
+    "SRC000958",
+    "SRC001044",
+    "SRC001060",
+    "SRC001063",
+    "SRC000582",
+    "SRC000585",
+    "SRC000592",
+    "SRC000597",
+    "SRC000600",
+    "SRC000603",
+    "SRC000605",
+    "SRC000619",
+    "SRC000622",
+    "SRC000631",
+    "SRC000639",
+    "SRC000646",
+    "SRC000649",
+    "SRC000650",
+    "SRC000651",
+    "SRC000716",
+    "SRC000722",
+    "SRC000730",
+    "SRC000735",
+    "SRC001148",
+    "SRC001154",
+    "SRC001159",
+    "SRC001166",
+    "SRC002760",
+    "SRC002762",
+    "SRC002764",
+    "SRC002791",
+    "SRC002792",
+    "SRC002793",
+    "SRC002783",
+    "SRC002785",
+    "SRC002786",
+    "SRC002788",
+    "SRC002794",
+    "SRC002795",
+    "SRC002796",
+    "SRC000895",
+    "SRC000902",
+    "SRC000905",
+    "SRC000751",
+    "SRC000806",
+    "SRC001058",
+    "SRC000655",
+    "SRC000658",
+    "SRC000695",
+    "SRC000674",
+    "SRC000620",
+    "SRC000563",
+    "SRC000564",
+    "SRC000750",
+    "SRC000753",
+    "SRC000761",
+    "SRC000767"
+  ],
+  "blocked_handles": [],
+  "ready": true,
+  "secrets_included": false,
+  "expected_title": "Hebrews 2: Death Already Destroyed",
+  "expected_section_count": 4,
+  "expected_idea_count": 14,
+  "expected_example_count": 3,
+  "expected_reference_count": 4,
+  "expected_uncertainty_count": 2,
+  "expected_hydrated_src_count": 76,
+  "context_hash": "2830d9420311eaf7448654cb857127e4b6de7bfb87b368327b690204c077faed",
+  "other_chapters_excluded": true,
+  "ch012_excluded": true,
+  "ch018_excluded": true,
+  "external_sources_added": false,
+  "internet_lookup": false,
+  "bible_completed_from_memory": false,
+  "context_truncated": false
+}

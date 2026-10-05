@@ -1,0 +1,71 @@
+{
+  "canonical_hashes": "MATCH",
+  "expected_book_sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+  "match": true,
+  "post": {
+    "book_json": {
+      "bytes": 502104,
+      "exists": true,
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+      "sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550"
+    },
+    "book_json_match_expected": true,
+    "expected_book_sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+    "expected_interior_docx_sha256": "3a52ab4381a5e9c374782fb826342a4466f42f6fccde165acf9cba21b61fe0ef",
+    "expected_interior_pdf_sha256": "78cc119c2473d10bd599c5d396d8abdab002c62cd5c5f413d8c6b29e9a72d36e",
+    "expected_word_profile_sha256": "0124ece6b2639c84784d9f09a48514323ab56d2c85e3779226d1d4959ff46818",
+    "interior_docx": {
+      "bytes": 84553,
+      "exists": true,
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1_1/The_Life_You_Already_Inherited_print_review_v1_1.docx",
+      "sha256": "3a52ab4381a5e9c374782fb826342a4466f42f6fccde165acf9cba21b61fe0ef"
+    },
+    "interior_match_expected": true,
+    "interior_pdf": {
+      "bytes": 350891,
+      "exists": true,
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1_1/The_Life_You_Already_Inherited_print_review_v1_1.pdf",
+      "sha256": "78cc119c2473d10bd599c5d396d8abdab002c62cd5c5f413d8c6b29e9a72d36e"
+    },
+    "word_profile": {
+      "bytes": 6864,
+      "exists": true,
+      "path": "C:/TranscriptionAI/app/word_renderer/profiles/print_review_6x9_v1.json",
+      "sha256": "0124ece6b2639c84784d9f09a48514323ab56d2c85e3779226d1d4959ff46818"
+    },
+    "word_profile_match_expected": true
+  },
+  "pre": {
+    "book_json": {
+      "bytes": 502104,
+      "exists": true,
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/book.json",
+      "sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550"
+    },
+    "book_json_match_expected": true,
+    "expected_book_sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+    "expected_interior_docx_sha256": "3a52ab4381a5e9c374782fb826342a4466f42f6fccde165acf9cba21b61fe0ef",
+    "expected_interior_pdf_sha256": "78cc119c2473d10bd599c5d396d8abdab002c62cd5c5f413d8c6b29e9a72d36e",
+    "expected_word_profile_sha256": "0124ece6b2639c84784d9f09a48514323ab56d2c85e3779226d1d4959ff46818",
+    "interior_docx": {
+      "bytes": 84553,
+      "exists": true,
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1_1/The_Life_You_Already_Inherited_print_review_v1_1.docx",
+      "sha256": "3a52ab4381a5e9c374782fb826342a4466f42f6fccde165acf9cba21b61fe0ef"
+    },
+    "interior_match_expected": true,
+    "interior_pdf": {
+      "bytes": 350891,
+      "exists": true,
+      "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1_1/The_Life_You_Already_Inherited_print_review_v1_1.pdf",
+      "sha256": "78cc119c2473d10bd599c5d396d8abdab002c62cd5c5f413d8c6b29e9a72d36e"
+    },
+    "word_profile": {
+      "bytes": 6864,
+      "exists": true,
+      "path": "C:/TranscriptionAI/app/word_renderer/profiles/print_review_6x9_v1.json",
+      "sha256": "0124ece6b2639c84784d9f09a48514323ab56d2c85e3779226d1d4959ff46818"
+    },
+    "word_profile_match_expected": true
+  }
+}

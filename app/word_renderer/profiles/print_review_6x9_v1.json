@@ -1,0 +1,254 @@
+{
+  "profile_id": "print_review_6x9_v1",
+  "version": "1",
+  "purpose": "First print-review interior for a 6x9 paperback. Reusable across books.",
+  "book_agnostic": true,
+  "page": {
+    "width_inches": 6.0,
+    "height_inches": 9.0,
+    "width_cm": 15.24,
+    "height_cm": 22.86,
+    "orientation": "portrait",
+    "apply_on": "word_section"
+  },
+  "margins": {
+    "inside_inches": 0.85,
+    "outside_inches": 0.65,
+    "top_inches": 0.75,
+    "bottom_inches": 0.75,
+    "gutter_inches": 0.15,
+    "mirror": true,
+    "recto_verso": true,
+    "odd_pages": "recto",
+    "even_pages": "verso"
+  },
+  "gutter_convention": {
+    "model": "word_pgMar_gutter_is_additional",
+    "inside_margin_inches": 0.85,
+    "gutter_inches": 0.15,
+    "total_binding_edge_inches": 1.0,
+    "gutter_included_in_inside_margin_value": false,
+    "existing_engine_applies_gutter": false,
+    "double_compensation_risk": false,
+    "note": "Word adds w:gutter to the mirrored inside edge. left_margin stores the inside margin only. The existing publication engines do not set gutter, so this profile does not subtract gutter from the inside margin."
+  },
+  "typography": {
+    "font_name": "Georgia",
+    "font_source": "project_existing_classic_body_font",
+    "embed_font": false,
+    "body_color": "000000",
+    "hyphenation": "disabled",
+    "widow_orphan_control": true
+  },
+  "styles": {
+    "BookBody": {
+      "font_name": "Georgia",
+      "font_size_pt": 11,
+      "alignment": "justify",
+      "line_spacing": 1.15,
+      "space_before_pt": 0,
+      "space_after_pt": 4,
+      "first_line_indent_inches": 0.18,
+      "keep_with_next": false,
+      "widow_control": true,
+      "outline_level": null
+    },
+    "BookBodyFirst": {
+      "font_name": "Georgia",
+      "font_size_pt": 11,
+      "alignment": "justify",
+      "line_spacing": 1.15,
+      "space_before_pt": 0,
+      "space_after_pt": 4,
+      "first_line_indent_inches": 0.0,
+      "keep_with_next": false,
+      "widow_control": true,
+      "outline_level": null
+    },
+    "BookChapterTitle": {
+      "font_name": "Georgia",
+      "font_size_pt": 18,
+      "bold": true,
+      "alignment": "center",
+      "space_before_pt": 72,
+      "space_after_pt": 18,
+      "first_line_indent_inches": 0.0,
+      "keep_with_next": true,
+      "widow_control": true,
+      "outline_level": 0,
+      "based_on": "Heading 1"
+    },
+    "BookChapterNumber": {
+      "font_name": "Georgia",
+      "font_size_pt": 12,
+      "bold": false,
+      "alignment": "center",
+      "space_before_pt": 36,
+      "space_after_pt": 6,
+      "first_line_indent_inches": 0.0,
+      "keep_with_next": true,
+      "widow_control": true,
+      "outline_level": null
+    },
+    "BookSectionTitle": {
+      "font_name": "Georgia",
+      "font_size_pt": 13,
+      "bold": true,
+      "alignment": "left",
+      "space_before_pt": 14,
+      "space_after_pt": 6,
+      "first_line_indent_inches": 0.0,
+      "keep_with_next": true,
+      "widow_control": true,
+      "outline_level": 1,
+      "based_on": "Heading 2"
+    },
+    "BookHalfTitle": {
+      "font_name": "Georgia",
+      "font_size_pt": 16,
+      "bold": false,
+      "alignment": "center",
+      "space_before_pt": 180,
+      "space_after_pt": 0,
+      "keep_with_next": false,
+      "outline_level": null
+    },
+    "BookTitlePageTitle": {
+      "font_name": "Georgia",
+      "font_size_pt": 22,
+      "bold": true,
+      "alignment": "center",
+      "space_before_pt": 120,
+      "space_after_pt": 12,
+      "keep_with_next": false,
+      "outline_level": null
+    },
+    "BookTitlePageSubtitle": {
+      "font_name": "Georgia",
+      "font_size_pt": 12,
+      "italic": true,
+      "alignment": "center",
+      "space_before_pt": 6,
+      "space_after_pt": 18,
+      "keep_with_next": false,
+      "outline_level": null
+    },
+    "BookDraftNotice": {
+      "font_name": "Georgia",
+      "font_size_pt": 9,
+      "italic": true,
+      "alignment": "center",
+      "space_before_pt": 36,
+      "space_after_pt": 0,
+      "keep_with_next": false,
+      "outline_level": null
+    },
+    "BookTocTitle": {
+      "font_name": "Georgia",
+      "font_size_pt": 16,
+      "bold": true,
+      "alignment": "left",
+      "space_before_pt": 36,
+      "space_after_pt": 18,
+      "keep_with_next": true,
+      "outline_level": null
+    }
+  },
+  "chapter": {
+    "start": "next_page",
+    "fallback_start": "new_page",
+    "numbering": {
+      "source": "chapter.order",
+      "display": "separate_line",
+      "label_template": "{order}",
+      "include_in_title_text": false
+    },
+    "blank_pages": "none_for_parity"
+  },
+  "pagination": {
+    "front_matter": {
+      "format": "none",
+      "section_start": "keep_existing",
+      "show_on_title_page": false,
+      "show_on_half_title": false
+    },
+    "body": {
+      "format": "decimal",
+      "chapter_start": "next_page",
+      "restart_at": 1,
+      "position": "footer_center"
+    }
+  },
+  "headers": {
+    "even_page": {
+      "content": "book.title"
+    },
+    "odd_page": {
+      "content": "styleref",
+      "style_ref": "BookChapterTitle"
+    },
+    "first_page_of_chapter": {
+      "header": "hidden"
+    }
+  },
+  "footers": {
+    "body": {
+      "content": "page_field"
+    },
+    "front_matter": {
+      "content": "draft_notice",
+      "first_page": "empty"
+    }
+  },
+  "toc": {
+    "enabled": true,
+    "mechanism": "word_toc_field",
+    "default_levels": "1-1",
+    "include_sections_option": true,
+    "include_sections_default": false,
+    "estimated_page_numbers": false,
+    "requires_field_refresh": true
+  },
+  "front_matter": {
+    "half_title": {
+      "enabled": true,
+      "content": "book.title_only"
+    },
+    "title_page": {
+      "enabled": true,
+      "content": ["book.title", "book.subtitle_if_present"],
+      "invent_author": false,
+      "invent_subtitle": false,
+      "invent_publisher": false,
+      "invent_date": false,
+      "invent_isbn": false,
+      "invent_logo": false,
+      "invent_copyright": false
+    },
+    "draft_notice": {
+      "text": "Print Review Draft — Not for Publication",
+      "placement": ["title_page", "front_matter_footer"],
+      "not_in_chapter_body": true
+    },
+    "toc_page": {
+      "enabled": true,
+      "title": "Contents"
+    }
+  },
+  "cover": {
+    "required": false,
+    "front_cover_optional": true,
+    "back_cover_optional": true,
+    "spine_width_computed": false,
+    "trim": {
+      "width_inches": 6.0,
+      "height_inches": 9.0
+    }
+  },
+  "mapping": {
+    "source": "book.json",
+    "print_technical_ids": false,
+    "print_editorial_status": false,
+    "print_provenance": false
+  }
+}

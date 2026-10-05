@@ -1,0 +1,131 @@
+{
+  "phase": "4B.2.18",
+  "chapter_id": "CH012",
+  "minimum_necessary_change": true,
+  "global_rewrite": false,
+  "new_autobiographical_details_added": false,
+  "new_emotions_added": false,
+  "invented_memories": false,
+  "corrections": [
+    {
+      "paragraph_id": "P000001",
+      "section_id": "SEC047",
+      "classification": "ATTRIBUTION_UNCERTAIN",
+      "case": 3,
+      "status": "ATTRIBUTION_UNCERTAIN",
+      "applied": false,
+      "original": "Praying all night in tongues, by itself, is not proof of effective prayer. It can become mere bavardage — fatiguing talk without discernment — rather than prayer that accomplishes anything. One speaker was told plainly: \"You just exercised bavardage,\" after a night spent praying in tongues that left him and others simply exhausted.",
+      "proposed": "Praying all night in tongues, by itself, is not proof of effective prayer. It can become mere bavardage — fatiguing talk without discernment — rather than prayer that accomplishes anything. The words were spoken plainly: \"You just exercised bavardage,\" after a night spent praying in tongues that left us simply exhausted.",
+      "corrected": null,
+      "src_proof": [
+        "SRC004846 Tu viens juste d'exercer le bavardage.",
+        "SRC004850 Nous sommes tellement fatigués.",
+        "SRC004851 Nous prions toute la nuit en langue."
+      ],
+      "justification": "The source uses tu and nous. It is not proven whether the author received or delivered 'Tu viens juste d'exercer le bavardage'. 'I was told' would invent an attribution. The original text is kept."
+    },
+    {
+      "paragraph_id": "P000003",
+      "section_id": "SEC047",
+      "classification": "EXTERNAL_NARRATOR_CONFIRMED",
+      "case": 1,
+      "status": "APPLIED",
+      "applied": true,
+      "original": "Those who prayed this way were sincere, even very sincere. But sincerity was not the issue. The real problem was that they did not know — their manner of praying rested on ignorance rather than on correct knowledge of what the practice was for.",
+      "proposed": "We were sincere, even very sincere. But sincerity was not the issue. The real problem was that we did not know — our manner of praying rested on ignorance rather than on correct knowledge of what the practice was for.",
+      "corrected": "We were sincere, even very sincere. But sincerity was not the issue. The real problem was that we did not know — our manner of praying rested on ignorance rather than on correct knowledge of what the practice was for.",
+      "src_proof": [
+        "SRC004918 Nous étions sincères,",
+        "SRC004920 nous étions très sincères.",
+        "SRC004921 C'est parce que nous ne savions pas.",
+        "SRC004923 nous ne connaissons pas."
+      ],
+      "justification": "The teaching voice said we were sincere and did not know. Those/they/their converted that inclusive we into an external group. Restored we/our. No new autobiographical detail was added."
+    },
+    {
+      "paragraph_id": "P000004",
+      "section_id": "SEC048",
+      "classification": "EXTERNAL_NARRATOR_CONFIRMED",
+      "case": 1,
+      "status": "APPLIED",
+      "applied": true,
+      "original": "One of the primary purposes of praying in tongues, as taught here, is to cool or refresh oneself. This is grounded in Isaiah 28 and in 1 Corinthians 14. The speaker also referred to an earlier passage, Isaiah chapter 26, locating a related statement in verse 3, though the connection between chapter 26 and chapter 28 at this point in the teaching remained unclear in the delivery.",
+      "proposed": "One of the primary purposes of praying in tongues is to cool or refresh oneself. This is grounded in Isaiah 28 and in 1 Corinthians 14. An earlier passage, Isaiah chapter 26, locating a related statement in verse 3, though the connection between chapter 26 and chapter 28 at this point in the teaching remained unclear.",
+      "corrected": "One of the primary purposes of praying in tongues is to cool or refresh oneself. This is grounded in Isaiah 28 and in 1 Corinthians 14. An earlier passage, Isaiah chapter 26, locating a related statement in verse 3, though the connection between chapter 26 and chapter 28 at this point in the teaching remained unclear.",
+      "src_proof": [
+        "SRC004854 C'est de refroidir",
+        "SRC004856 Isaiah 28 est dans votre Bible.",
+        "SRC004879 dans 1 Corinthiens 14.",
+        "SRC006457 before chapter 28, chapter 26",
+        "SRC006459 he says in verse 3"
+      ],
+      "justification": "Removed the conference-report frames 'as taught here', 'The speaker also referred', and 'in the delivery'. Did not write 'I referred', because SRC006459 'he says' is Isaiah. UNC029 content is kept as unclear."
+    },
+    {
+      "paragraph_id": "P000008",
+      "section_id": "SEC049",
+      "classification": "EXTERNAL_NARRATOR_CONFIRMED",
+      "case": 1,
+      "status": "APPLIED",
+      "applied": true,
+      "original": "The speaker recounted a personal experience of this correction. He had prayed so intensely that he ended up on the ground, his voice broken from the effort. Someone saw the manner in which he had prayed.",
+      "proposed": "I had prayed so intensely that I ended up on the ground, my voice broken from the effort. Someone saw the manner in which I had prayed.",
+      "corrected": "I had prayed so intensely that I ended up on the ground, my voice broken from the effort. Someone saw the manner in which I had prayed.",
+      "src_proof": [
+        "SRC004891 Il a vu comment j'ai prié,",
+        "SRC004893 J'étais au sol,",
+        "SRC004895 Ma voix était cassée."
+      ],
+      "justification": "The cited SRC are first-person testimony. EX030 and the section title treat this as the author's experience. Removed 'The speaker recounted'. Restored I/my. Kept Someone as the witness ('Il a vu'). Did not add intensity or emotion beyond wording already present in the candidate."
+    },
+    {
+      "paragraph_id": "P000009",
+      "section_id": "SEC049",
+      "classification": "EXTERNAL_NARRATOR_CONFIRMED",
+      "case": 1,
+      "status": "APPLIED",
+      "applied": true,
+      "original": "In that state, God spoke to him directly, calling him \"my son\" and telling him he was tired. God further said that if He left him in that condition without correction, he would go on to preach a wrong doctrine.",
+      "proposed": "In that state, God spoke to me directly, calling me \"my son\" and telling me I was tired. God further said that if He left me in that condition without correction, I would go on to preach a wrong doctrine.",
+      "corrected": "In that state, God spoke to me directly, calling me \"my son\" and telling me I was tired. God further said that if He left me in that condition without correction, I would go on to preach a wrong doctrine.",
+      "src_proof": [
+        "SRC004898 il m'a dit mon fils,",
+        "SRC004899 tu es fatigué.",
+        "SRC004905 Parce que si je te laisse ainsi,",
+        "SRC004906 tu vas prêcher une mauvaise doctrine."
+      ],
+      "justification": "The recipient of God's speech is first person in the source ('il m'a dit'). God remains he/He. The author becomes me/I. No new memory or emotion was added."
+    }
+  ],
+  "applied_ids": [
+    "P000003",
+    "P000004",
+    "P000008",
+    "P000009"
+  ],
+  "human_review_ids": [
+    "P000001"
+  ],
+  "unchanged_paragraph_ids": [
+    "P000001",
+    "P000002",
+    "P000005",
+    "P000006",
+    "P000007",
+    "P000010",
+    "P000011",
+    "P000012",
+    "P000013",
+    "P000014"
+  ],
+  "changed_paragraph_ids": [
+    "P000003",
+    "P000004",
+    "P000008",
+    "P000009"
+  ],
+  "paragraph_ids_preserved": true,
+  "section_ids_preserved": true,
+  "unc029_preserved": true,
+  "secrets_included": false
+}

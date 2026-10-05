@@ -1,0 +1,62 @@
+{
+  "phase": "4B.2.23",
+  "batch_id": "BATCH-01",
+  "authorized_cap_usd": 0.66,
+  "accumulated_actual_usd": 0.075284,
+  "reserved_or_uncertain_usd": 0.0,
+  "remaining_budget_usd": 0.584716,
+  "unknown_treated_as_zero": false,
+  "unspent_is_not_new_authorization": true,
+  "chapters": {
+    "CH001": {
+      "chapter_id": "CH001",
+      "status": "RESPONSE_VALIDATED",
+      "theoretical_maximum_usd": 0.120924,
+      "actual_cost_usd": 0.035854,
+      "reserved_or_uncertain_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "thinking_tokens": 0,
+      "cost_status": "known",
+      "theoretical_maximum_raw": 0.120924
+    },
+    "CH002": {
+      "chapter_id": "CH002",
+      "status": "FAILED",
+      "theoretical_maximum_usd": 0.144332,
+      "actual_cost_usd": 0.03943,
+      "reserved_or_uncertain_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "thinking_tokens": 0,
+      "cost_status": "known",
+      "theoretical_maximum_raw": 0.144332
+    },
+    "CH003": {
+      "chapter_id": "CH003",
+      "status": "PREFLIGHT_VALIDATED",
+      "theoretical_maximum_usd": 0.140364,
+      "actual_cost_usd": null,
+      "reserved_or_uncertain_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "thinking_tokens": null,
+      "cost_status": "n/a",
+      "theoretical_maximum_raw": 0.140364
+    },
+    "CH004": {
+      "chapter_id": "CH004",
+      "status": "PREFLIGHT_VALIDATED",
+      "theoretical_maximum_usd": 0.17737,
+      "actual_cost_usd": null,
+      "reserved_or_uncertain_usd": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "thinking_tokens": null,
+      "cost_status": "n/a",
+      "theoretical_maximum_raw": 0.17737
+    }
+  },
+  "secrets_included": false,
+  "remaining_budget_decimal": "0.584716"
+}

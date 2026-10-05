@@ -1,0 +1,230 @@
+{
+  "phase": "4B.2.7.4",
+  "canonical_inputs": {
+    "source_map": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+  },
+  "h01": {
+    "handle": "h01",
+    "case_id_audit_only": "4b22_p2_supported",
+    "model": "gpt-5.6-terra",
+    "contract": "book-semantic-validator-1.1-candidate",
+    "transport": "book-semantic-validation-transport-1.1-candidate",
+    "request_sha256_expected": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+    "request_sha256_recorded": "9520a4f3e5ff36ec2957b74e82d492019ff630f764e1413853b19d9b96dec6af",
+    "request_sha256_match": true,
+    "human_label_audit_only": "SUPPORTED",
+    "historical_status": "PARTIAL",
+    "cost_usd": 0.018812,
+    "paragraph_chars": 232,
+    "raw_response_present": true,
+    "raw_response_reconstructed": false,
+    "files": {
+      "directory": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27",
+      "files": {
+        "book_semantic_gate_4b27_raw_structured_response.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_raw_structured_response.json",
+          "exists": true,
+          "sha256": "43e74198ebed8eddc619762b1a62ac3d311d4164d26b0a8b5891d23ca51627f0",
+          "bytes": 3134,
+          "required": true,
+          "canonical_sha256": "2d98342ba8b96b6d41314e0415d99558d89d5fb892a5096e93f4050d62ebb6c5"
+        },
+        "book_semantic_gate_4b27_request_identity.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_request_identity.json",
+          "exists": true,
+          "sha256": "f20ee5b17eae0097f308f80165b5922d4346e5e60f1048dd208a64538fdabdf5",
+          "bytes": 8267,
+          "required": true,
+          "canonical_sha256": "b872e93fb3ff339644a9c1f828a1a1b065d0dd17268cc83af743456d9811969b"
+        },
+        "book_semantic_gate_4b27_response_validation.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_response_validation.json",
+          "exists": true,
+          "sha256": "12bf7593f0bc4ce3bc0164c265a2301677b16af25e5b9df5e83b2144f5646686",
+          "bytes": 583,
+          "required": true,
+          "canonical_sha256": "49e84b22c9d5794a12033db30c92d0d61a372263600612e0bf7ed221e9e8e1e3"
+        },
+        "book_semantic_gate_4b27_semantic_review.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_semantic_review.json",
+          "exists": true,
+          "sha256": "583d781010ee8204e0908d5e839c698135e3298fca1cadda40c84e4e6c405a39",
+          "bytes": 3053,
+          "required": true,
+          "canonical_sha256": "3daf89113bdb88937ec3a72c5286445b9f731d7b51a3f7b7bd9bb4e537023d3b"
+        },
+        "book_semantic_gate_4b27_replay.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_replay.json",
+          "exists": true,
+          "sha256": "bd92020db19ca46a15b4155073a4772a7609b9187e98b322872867cdc1aabf0e",
+          "bytes": 744,
+          "required": true,
+          "canonical_sha256": "c031f0269b95f240006a4ef0d9cfb840c4b88520b3e599fa7fc22e8c791f403e"
+        },
+        "book_semantic_gate_4b27_cost.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_cost.json",
+          "exists": true,
+          "sha256": "ba0ec9a135978a2bcbb2549f89991594178855ccd8efef6e20069753187378f4",
+          "bytes": 4462,
+          "required": true,
+          "canonical_sha256": "021cd8e31ad9837ef915b3a4b7d60663f9e778880054916ba24ac105554be0df"
+        },
+        "book_semantic_gate_4b27_token_usage.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_token_usage.json",
+          "exists": true,
+          "sha256": "3b4e54159003b999ead379e0133014d04d78e7d6a638520149abca41fd3897f5",
+          "bytes": 1317,
+          "required": true,
+          "canonical_sha256": "b9c1340904641832b0ccf2ce21170cda715be1ac366b7b2d7693f569e751902f"
+        },
+        "book_semantic_gate_4b27_provider_evidence.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_provider_evidence.json",
+          "exists": true,
+          "sha256": "4ca1a8ae59e6925904ba1bfa194ef1805e8970b69b33358a2337701d9e57581e",
+          "bytes": 4345,
+          "required": true,
+          "canonical_sha256": "c50b4a11c9e586011e0fe00ccb6208662a0d51ac6e55f83af80035709e7b7e0a"
+        },
+        "book_semantic_gate_4b27_precall.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_precall.json",
+          "exists": true,
+          "sha256": "84b030b9363fb372d00624ea37897611a51c5ebb12eabe518154e9620ccd8e73",
+          "bytes": 22470,
+          "required": true,
+          "canonical_sha256": "3395685d806a04bd167d0e4fd67f42920bcfda8c67fffb065b47164d37e5b1ea"
+        },
+        "book_semantic_gate_4b27_raw_provider_text.txt": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b27/book_semantic_gate_4b27_raw_provider_text.txt",
+          "exists": true,
+          "sha256": "772190c16640e07a572a086fe24fe8917dc65edbfc540d324ab6dceb98bcfe95",
+          "bytes": 773,
+          "required": true
+        }
+      },
+      "missing": [],
+      "complete": true
+    }
+  },
+  "h02": {
+    "handle": "h02",
+    "case_id_audit_only": "4b22_p3_new_causal",
+    "model": "gpt-5.6-terra",
+    "contract": "book-semantic-validator-1.1.1-candidate",
+    "transport": "book-semantic-validation-transport-1.1-candidate",
+    "request_sha256_expected": "5ace261296d808437910f8f9efe247a80daebbb2237bc8af46bda56bf98d7897",
+    "request_sha256_recorded": "5ace261296d808437910f8f9efe247a80daebbb2237bc8af46bda56bf98d7897",
+    "request_sha256_match": true,
+    "human_label_audit_only": "QUESTIONABLE",
+    "historical_status": "PARTIAL",
+    "not_considered_pass": true,
+    "cost_usd": 0.066036,
+    "paragraph_chars": 466,
+    "raw_response_present": true,
+    "raw_response_reconstructed": false,
+    "files": {
+      "directory": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273",
+      "files": {
+        "p3_real_raw_structured_response.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_raw_structured_response.json",
+          "exists": true,
+          "sha256": "78ef2ba6abb23c78cc9f2f3798d6e8b0aeae1544af681bffa9260a740ba17301",
+          "bytes": 5925,
+          "required": true,
+          "canonical_sha256": "1f18166cb3fb2c8be4f3ad4a2d2a2a0e36eae89b88e8429cbe77f66afa003fcf"
+        },
+        "p3_real_request_identity.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_request_identity.json",
+          "exists": true,
+          "sha256": "316665c979a4f79cc76c8881fc35e766e12f46a869dec06b2b3b573c353e9c4c",
+          "bytes": 8766,
+          "required": true,
+          "canonical_sha256": "fdeaf8f9dbb49d8aea9e88250075157ff090954791e892715fb15baed99efb02"
+        },
+        "p3_real_response_validation.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_response_validation.json",
+          "exists": true,
+          "sha256": "4418bd6af20365f52feafdb92cf1762ac2cd176aa2261a4e5ad1a60a1767238b",
+          "bytes": 3559,
+          "required": true,
+          "canonical_sha256": "f908d859fad0a61fca237df4a070d71c83710af4d9431bac45529b3c7464bdfe"
+        },
+        "p3_real_semantic_review.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_semantic_review.json",
+          "exists": true,
+          "sha256": "78cb44d5276efda85f5ae40a053b7f85cafdd0ac64cb30693329699a300ea39e",
+          "bytes": 15100,
+          "required": true,
+          "canonical_sha256": "567a548f72ae42bdedcc0b0c19ed6d2e9484d1455c6cd470a62b56fb69fe774e"
+        },
+        "p3_real_replay.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_replay.json",
+          "exists": true,
+          "sha256": "e2da00dc0fc390f1ec9c168af79ec7ed45eff5981f9b0f3ec510119dc3207c7a",
+          "bytes": 1791,
+          "required": true,
+          "canonical_sha256": "e21148193c11b56906f5ce8c375b75c35f9c8feea658aa53af179be75930caa3"
+        },
+        "p3_real_cost.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_cost.json",
+          "exists": true,
+          "sha256": "d10dd80a88e9a69b716deac13635ef27bd6451cb1b32a1f6060c3d4deea8fda1",
+          "bytes": 4630,
+          "required": true,
+          "canonical_sha256": "b2be0d4e15b3a54e1b3f40e294ca288b2928864f267c9b8543448ce7ecbcfd6a"
+        },
+        "p3_real_token_usage.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_token_usage.json",
+          "exists": true,
+          "sha256": "a48940d82ef9eb1b5259a3ad71d9ffb21b19ed73eb29ca6aeaa1a12f49af3606",
+          "bytes": 1322,
+          "required": true,
+          "canonical_sha256": "6d4f6948fac99a635c6e86738ad1d83213513590c2e35d419df273ff1ad83b78"
+        },
+        "p3_real_provider_evidence.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_provider_evidence.json",
+          "exists": true,
+          "sha256": "6ddac2c2bafd558ce42b0e28d3056393c982280a0ee14bc6a16abfa4149d5ec6",
+          "bytes": 6485,
+          "required": true,
+          "canonical_sha256": "7f24bdd23e5121643252889b779a752da5ca39734d1d7b3a82086e32a7b36dc8"
+        },
+        "p3_real_precall.json": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_precall.json",
+          "exists": true,
+          "sha256": "c29238bb632482353c89b74e22bd579fcb045f5eb6a84e2ee3294517682e692e",
+          "bytes": 23409,
+          "required": true,
+          "canonical_sha256": "c8f385335ba2dae0762f57a9099daefb2669abf7831c2ae9b4d81234dff913f8"
+        },
+        "p3_real_raw_provider_text.txt": {
+          "path": "C:/TranscriptionAI/audit/real/book_semantic_gate_4b273/p3_real_raw_provider_text.txt",
+          "exists": true,
+          "sha256": "f36d41caefc4148bd1355470cf78d7605cbe2cd385599f987527cbcdba2dbc53",
+          "bytes": 1692,
+          "required": true
+        }
+      },
+      "missing": [],
+      "complete": true
+    }
+  },
+  "supporting_audits": {
+    "4b271": {
+      "directory": "C:/TranscriptionAI/audit/book_semantic_gate_4b271",
+      "exists": true
+    },
+    "4b272": {
+      "directory": "C:/TranscriptionAI/audit/book_semantic_gate_4b272",
+      "exists": true
+    }
+  },
+  "missing": [],
+  "MISSING_HISTORICAL_EVIDENCE": false,
+  "invented_missing_data": false,
+  "raw_responses_not_reconstructed_from_summaries": true,
+  "historical_labels_unmodified": true,
+  "historical_raw_responses_unmodified": true,
+  "secrets_included": false
+}

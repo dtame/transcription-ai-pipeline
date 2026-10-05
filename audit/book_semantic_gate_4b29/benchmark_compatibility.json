@@ -1,0 +1,149 @@
+{
+  "phase": "4B.2.9",
+  "scored_cases": 10,
+  "positives": [
+    "4b22_p2_supported",
+    "4b22_p4_supported",
+    "4b22_p5_supported",
+    "4b22_p6_supported",
+    "4b22_p7_supported",
+    "4b2_p2_supported"
+  ],
+  "negatives": [
+    "4b22_p3_new_causal",
+    "4b22_p8_reference_completion",
+    "4b2_p8_invented_funeral",
+    "4b2_p13_unsupported_connective"
+  ],
+  "funeral": "4b2_p8_invented_funeral",
+  "connective": "4b2_p13_unsupported_connective",
+  "p3": "4b22_p3_new_causal",
+  "p8": "4b22_p8_reference_completion",
+  "labels_unmodified": true,
+  "labels_absent_from_model_request": true,
+  "cases_representable": true,
+  "rows": [
+    {
+      "opaque_handle": "h01",
+      "case_id_local_only": "4b22_p2_supported",
+      "role_local_only": "positive",
+      "unit_count": 5,
+      "coverage_ok": true,
+      "label_absent_from_request": true,
+      "fakeai_scenario": "all_supported",
+      "fakeai_decision": "PASS",
+      "fakeai_not_terra": true
+    },
+    {
+      "opaque_handle": "h03",
+      "case_id_local_only": "4b22_p4_supported",
+      "role_local_only": "positive",
+      "unit_count": 4,
+      "coverage_ok": true,
+      "label_absent_from_request": true,
+      "fakeai_scenario": "all_supported",
+      "fakeai_decision": "PASS",
+      "fakeai_not_terra": true
+    },
+    {
+      "opaque_handle": "h04",
+      "case_id_local_only": "4b22_p5_supported",
+      "role_local_only": "positive",
+      "unit_count": 6,
+      "coverage_ok": true,
+      "label_absent_from_request": true,
+      "fakeai_scenario": "all_supported",
+      "fakeai_decision": "PASS",
+      "fakeai_not_terra": true
+    },
+    {
+      "opaque_handle": "h05",
+      "case_id_local_only": "4b22_p6_supported",
+      "role_local_only": "positive",
+      "unit_count": 8,
+      "coverage_ok": true,
+      "label_absent_from_request": true,
+      "fakeai_scenario": "all_supported",
+      "fakeai_decision": "PASS",
+      "fakeai_not_terra": true
+    },
+    {
+      "opaque_handle": "h06",
+      "case_id_local_only": "4b22_p7_supported",
+      "role_local_only": "positive",
+      "unit_count": 3,
+      "coverage_ok": true,
+      "label_absent_from_request": true,
+      "fakeai_scenario": "all_supported",
+      "fakeai_decision": "REVIEW",
+      "fakeai_not_terra": true
+    },
+    {
+      "opaque_handle": "h08",
+      "case_id_local_only": "4b2_p2_supported",
+      "role_local_only": "positive",
+      "unit_count": 3,
+      "coverage_ok": true,
+      "label_absent_from_request": true,
+      "fakeai_scenario": "all_supported",
+      "fakeai_decision": "PASS",
+      "fakeai_not_terra": true
+    },
+    {
+      "opaque_handle": "h02",
+      "case_id_local_only": "4b22_p3_new_causal",
+      "role_local_only": "negative",
+      "unit_count": 8,
+      "coverage_ok": true,
+      "label_absent_from_request": true,
+      "fakeai_scenario": "invented_causality",
+      "fakeai_decision": "BLOCK",
+      "fakeai_not_terra": true
+    },
+    {
+      "opaque_handle": "h07",
+      "case_id_local_only": "4b22_p8_reference_completion",
+      "role_local_only": "negative",
+      "unit_count": 2,
+      "coverage_ok": true,
+      "label_absent_from_request": true,
+      "fakeai_scenario": "unknown_evidence_handle",
+      "fakeai_decision": "BLOCK",
+      "fakeai_not_terra": true
+    },
+    {
+      "opaque_handle": "h09",
+      "case_id_local_only": "4b2_p8_invented_funeral",
+      "role_local_only": "negative",
+      "unit_count": 5,
+      "coverage_ok": true,
+      "label_absent_from_request": true,
+      "fakeai_scenario": "invented_implication",
+      "fakeai_decision": "BLOCK",
+      "fakeai_not_terra": true
+    },
+    {
+      "opaque_handle": "h10",
+      "case_id_local_only": "4b2_p13_unsupported_connective",
+      "role_local_only": "negative",
+      "unit_count": 3,
+      "coverage_ok": true,
+      "label_absent_from_request": true,
+      "fakeai_scenario": "abusive_non_substantive",
+      "fakeai_decision": "BLOCK",
+      "fakeai_not_terra": true
+    }
+  ],
+  "historical_ten_case_fakeai": {
+    "positives_accepted": 6,
+    "negatives_blocked": 4,
+    "funeral_blocked": true,
+    "connective_blocked": true,
+    "p3_blocked": true,
+    "p8_blocked": true,
+    "validator_1_1_2_status": "PASS",
+    "score_ok": true
+  },
+  "fakeai_is_orchestration_not_terra_quality": true,
+  "secrets_included": false
+}

@@ -1,0 +1,32 @@
+{
+  "phase": "4B.2.16",
+  "version": "source-coverage-control-4b216-candidate",
+  "activated_in_production": false,
+  "production_pipeline_hook": false,
+  "not_a_second_semantic_gate": true,
+  "not_a_terra_verdict": true,
+  "rule": "An idea, reasoning, example, reference, or reservation is covered only when its content is represented in the chapter prose. Listing its SourceMap or EditorialPlan identifier in metadata is not coverage.",
+  "kinds": [
+    "idea",
+    "reasoning",
+    "example",
+    "reference",
+    "reservation"
+  ],
+  "identifiers_reused": [
+    "IDEA",
+    "EX",
+    "REF",
+    "UNC",
+    "SRC",
+    "CH",
+    "SEC"
+  ],
+  "content_test": "Distinctive tokens longer than three characters from the source statement must appear in the prose at a ratio of at least 0.6. This ratio is a candidate offline heuristic, not a model judgment.",
+  "omission_of_an_important_element_fails_coverage": true,
+  "does_not_convert_unsupported_to_supported": true,
+  "does_not_replace_semantic_gate": true,
+  "applied_to_a_generated_chapter_in_this_phase": false,
+  "reason_not_applied": "No chapter was generated.",
+  "secrets_included": false
+}

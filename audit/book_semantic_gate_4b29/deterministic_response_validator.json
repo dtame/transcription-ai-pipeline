@@ -1,0 +1,23 @@
+{
+  "phase": "4B.2.9",
+  "controls": [
+    "JSON",
+    "schema",
+    "required fields",
+    "types",
+    "verdicts",
+    "reason codes",
+    "evidence handles",
+    "known unit ids",
+    "no duplicates",
+    "no missing units",
+    "no unknown units",
+    "verdict/code coherence",
+    "global verdict coherence",
+    "no extra fields"
+  ],
+  "does_not_complete_missing_units": true,
+  "does_not_repair_reason_codes": true,
+  "fakeai_invalid_json_blocks": true,
+  "secrets_included": false
+}

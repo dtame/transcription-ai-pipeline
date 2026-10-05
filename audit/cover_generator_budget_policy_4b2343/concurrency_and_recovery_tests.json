@@ -1,0 +1,42 @@
+{
+  "storage": "existing ReservationLedger file lock",
+  "second_reservation_system": false,
+  "cases": [
+    {
+      "name": "16_atomic_reservation",
+      "passed": true,
+      "detail": "one atomic reservation"
+    },
+    {
+      "name": "17_concurrent_processes",
+      "passed": true,
+      "detail": "two processes, one submission"
+    },
+    {
+      "name": "18_interrupt_before_submission",
+      "passed": true,
+      "detail": "a reserved grant is not submitted again"
+    },
+    {
+      "name": "19_interrupt_during_submission",
+      "passed": true,
+      "detail": "a started submission is not repeated"
+    },
+    {
+      "name": "20_timeout",
+      "passed": true,
+      "detail": "timeout becomes OUTCOME_UNKNOWN"
+    },
+    {
+      "name": "21_ambiguous_response",
+      "passed": true,
+      "detail": "ambiguous response kept for manual reconciliation"
+    },
+    {
+      "name": "22_no_automatic_retry",
+      "passed": true,
+      "detail": "no second paid attempt"
+    }
+  ],
+  "passed": true
+}

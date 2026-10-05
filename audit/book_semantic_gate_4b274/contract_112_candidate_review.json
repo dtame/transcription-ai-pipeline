@@ -1,0 +1,53 @@
+{
+  "phase": "4B.2.7.4",
+  "justified": true,
+  "why_created": "h01 showed lexical over-rejection of supported paraphrase. h02 showed correct causal isolation plus invented reason codes and separator coverage failures. 1.1.2 lists the closed catalog, makes reservation codes mandatory, and generalizes admissible separator coverage without overfitting either canary.",
+  "candidate_prompt_version": "book-semantic-validator-1.1.2-candidate",
+  "candidate_transport_version": null,
+  "transport_1_1_2_created": false,
+  "why_no_new_transport": "Existing 1.1-candidate fields already carry claim-level assessment, exact spans, evidence handles, reason codes, global verdict, short reservations, and compact JSON. Field meanings are unchanged.",
+  "historical_1_0_unmodified": true,
+  "candidate_1_1_unmodified": true,
+  "candidate_1_1_1_unmodified": true,
+  "promoted": false,
+  "prompt": {
+    "system_sha256": "752810ca4f7da365c4516219a2105c105fd6ee89011fbca0474bd5fa2d3872ab",
+    "instructions_sha256": "a408fbc8a883f597668aff701658623a1e6e6b76bf60179673300b8c0c891899",
+    "prompt_sha256": "88a89e792ffd6a6f3766c0218f7cb25f0d996ba373e13232179b390f77da3ba0",
+    "system_bytes": 6053,
+    "instructions_bytes": 2149
+  },
+  "frozen_1_1_prompt_sha256": "3e7150651caa14f8578a346cadefa4b657829363b79f255ef919fc72c6a35908",
+  "frozen_1_1_1_prompt_sha256": "4c280308ad70c850ff006c8f251e73696cee3b3afd55ca594df037a6756582ca",
+  "changes": [
+    "high stylistic freedom, low semantic freedom made operational",
+    "legitimate paraphrase vs supported inference vs new causality vs new implication",
+    "unsupported strengthening and reference completion restated without canary examples",
+    "closed reason-code catalog listed with definitions",
+    "OTHER is the only fallback; invented codes forbidden",
+    "QUESTIONABLE/UNSUPPORTED require a catalog reason code",
+    "coverage may omit admissible separators between covered claims",
+    "words, negations, connectives, conditions, and clauses remain mandatory",
+    "compact JSON fields unchanged"
+  ],
+  "not_in_prompt": {
+    "overfit_tokens_absent": true,
+    "human_labels_absent": true,
+    "benchmark_answers_absent": true,
+    "h01_absent": true,
+    "h02_absent": true
+  },
+  "schema_unchanged_from_1_1": true,
+  "reason_codes_catalog_unchanged": true,
+  "reason_codes_listed_in_prompt": true,
+  "proposition_coverage_preserved": true,
+  "compact_format_preserved": true,
+  "remaining_validation_limits": [
+    "A listed catalog does not prove Terra will emit only catalog codes.",
+    "Admissible separators do not prove future Terra coverage will be complete.",
+    "Offline FakeAI does not prove future Terra behavior.",
+    "Supported inference still requires human review on borderline origin/framing claims.",
+    "sc key names are instructed, not a new transport field."
+  ],
+  "secrets_included": false
+}

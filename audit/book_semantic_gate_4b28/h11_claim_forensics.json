@@ -1,0 +1,1280 @@
+{
+  "phase": "4B.2.8",
+  "handle": "h11",
+  "historical_status": "PARTIAL",
+  "not_converted_to_pass": true,
+  "human_label_audit_only": "UNSUPPORTED",
+  "human_label_unmodified": true,
+  "paragraph_exact_text": "But this is not a matter of mental technique. It is not mind over matter, not a trick of positive thinking applied to a frightening subject. Death as gain must become your reality — not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending, which means that every believer is guaranteed a fearless death.",
+  "terra_global_verdict": "FAIL",
+  "terra_paragraph_verdict": "UNSUPPORTED",
+  "universal_guarantee": "which means that every believer is guaranteed a fearless death",
+  "universal_guarantee_correctly_rejected": true,
+  "supported_prefix_correctly_accepted": [
+    {
+      "canary": "h11",
+      "index": 1,
+      "exact_text": "It is not mind over matter",
+      "offsets": {
+        "start": 46,
+        "end": 72,
+        "interval": "half_open",
+        "python_slice": "text[46:72]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "SRC006192"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "IDEA226",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Direct paraphrase of SRC006192.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "conclusion": "AGREE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h11",
+      "index": 3,
+      "exact_text": ". Death as gain must become your reali",
+      "offsets": {
+        "start": 139,
+        "end": 177,
+        "interval": "half_open",
+        "python_slice": "text[139:177]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "SRC006192",
+        "SRC006195"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Attested by IDEA226 and SRC006193.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "conclusion": "AGREE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h11",
+      "index": 5,
+      "exact_text": ", but the actual substance of how you face your own end",
+      "offsets": {
+        "start": 234,
+        "end": 289,
+        "interval": "half_open",
+        "python_slice": "text[234:289]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "SRC006192",
+        "SRC006195"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Lived-reality restatement, historically supported.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "AGREE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    }
+  ],
+  "historically_supported_rejected": [
+    {
+      "canary": "h11",
+      "index": 0,
+      "exact_text": "But this is not a matter of mental technique",
+      "offsets": {
+        "start": 0,
+        "end": 44,
+        "interval": "half_open",
+        "python_slice": "text[0:44]"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "reason_codes": [
+        "EVIDENCE_MISMATCH"
+      ],
+      "reason_code_status": {
+        "codes": [
+          "EVIDENCE_MISMATCH"
+        ],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [
+          "EVIDENCE_MISMATCH"
+        ],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "SRC006192"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "IDEA226",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "terra_note": "The source rejects mind over matter but does not establish the broader mental-technique framing.",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Historically accepted stylistic restatement of the mind-over-matter refusal. Terra used EVIDENCE_MISMATCH on a broader framing.",
+      "agreement": false,
+      "disagreement_type": "FALSE_REJECTION_SUPPORTED_PREFIX",
+      "acceptance_impact": "contributes_to_FAIL_independent_of_guarantee",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h11",
+      "index": 2,
+      "exact_text": "not a trick of positive thinking applied to a frightening subje",
+      "offsets": {
+        "start": 74,
+        "end": 137,
+        "interval": "half_open",
+        "python_slice": "text[74:137]"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "reason_codes": [
+        "NEW_FACT"
+      ],
+      "reason_code_status": {
+        "codes": [
+          "NEW_FACT"
+        ],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [
+          "NEW_FACT"
+        ],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "IDEA226",
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "terra_note": "The positive-thinking characterization is not supplied.",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Editorial expansion of 'not mind over matter' without a new relation. Terra used NEW_FACT. Span also ends two characters short of 'subject'.",
+      "agreement": false,
+      "disagreement_type": "FALSE_REJECTION_SUPPORTED_PREFIX",
+      "acceptance_impact": "contributes_to_FAIL_independent_of_guarantee",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h11",
+      "index": 4,
+      "exact_text": "— not an idea you agree with in a sermon and set asi",
+      "offsets": {
+        "start": 180,
+        "end": 232,
+        "interval": "half_open",
+        "python_slice": "text[180:232]"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "reason_codes": [
+        "INVENTED_EXAMPLE"
+      ],
+      "reason_code_status": {
+        "codes": [
+          "INVENTED_EXAMPLE"
+        ],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [
+          "INVENTED_EXAMPLE"
+        ],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "IDEA226"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "terra_note": "The sermon-setting illustration is not in the evidence.",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Paraphrase of IDEA226 lived reality vs intellectual idea. Terra used INVENTED_EXAMPLE for the sermon-setting illustration.",
+      "agreement": false,
+      "disagreement_type": "FALSE_REJECTION_SUPPORTED_PREFIX",
+      "acceptance_impact": "contributes_to_FAIL_independent_of_guarantee",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    }
+  ],
+  "new_conclusion_code": {
+    "produced": "NEW_CONCLUSION",
+    "in_closed_catalog": true,
+    "primary_pair": [
+      "NEW_IMPLICATION",
+      "UNCERTAINTY_STRENGTHENED"
+    ],
+    "acceptable_neighbor": true,
+    "evidence_level": "OBSERVED"
+  },
+  "structural_compliance": {
+    "json_parse": "PASS",
+    "reason_codes_in_catalog": true,
+    "span_validity": "PASS",
+    "coverage": "FAIL",
+    "contract_1_1_3": "FAIL",
+    "evidence_level": "OBSERVED"
+  },
+  "coverage": {
+    "coverage_status": "FAIL",
+    "classified_gaps": [
+      {
+        "start": 44,
+        "end": 45,
+        "text": ".",
+        "codepoints": [
+          46
+        ],
+        "isspace_flags": [
+          false
+        ],
+        "char_kinds": [
+          "sentence_terminator"
+        ],
+        "kind": "sentence_terminator",
+        "python_slice": "text[44:45]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 45,
+        "end": 46,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[45:46]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 72,
+        "end": 73,
+        "text": ",",
+        "codepoints": [
+          44
+        ],
+        "isspace_flags": [
+          false
+        ],
+        "char_kinds": [
+          "admissible_separator"
+        ],
+        "kind": "admissible_separator",
+        "python_slice": "text[72:73]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 73,
+        "end": 74,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[73:74]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 137,
+        "end": 139,
+        "text": "ct",
+        "codepoints": [
+          99,
+          116
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[137:139]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 177,
+        "end": 179,
+        "text": "ty",
+        "codepoints": [
+          116,
+          121
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[177:179]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 179,
+        "end": 180,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[179:180]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 232,
+        "end": 234,
+        "text": "de",
+        "codepoints": [
+          100,
+          101
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[232:234]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 289,
+        "end": 291,
+        "text": "in",
+        "codepoints": [
+          105,
+          110
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[289:291]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 353,
+        "end": 357,
+        "text": "ath.",
+        "codepoints": [
+          97,
+          116,
+          104,
+          46
+        ],
+        "isspace_flags": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant",
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[353:357]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      }
+    ],
+    "significant_gaps": [
+      {
+        "start": 137,
+        "end": 139,
+        "text": "ct",
+        "codepoints": [
+          99,
+          116
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[137:139]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 177,
+        "end": 179,
+        "text": "ty",
+        "codepoints": [
+          116,
+          121
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[177:179]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 232,
+        "end": 234,
+        "text": "de",
+        "codepoints": [
+          100,
+          101
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[232:234]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 289,
+        "end": 291,
+        "text": "in",
+        "codepoints": [
+          105,
+          110
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[289:291]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 353,
+        "end": 357,
+        "text": "ath.",
+        "codepoints": [
+          97,
+          116,
+          104,
+          46
+        ],
+        "isspace_flags": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant",
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[353:357]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      }
+    ],
+    "admissible_gaps": [
+      {
+        "start": 45,
+        "end": 46,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[45:46]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 72,
+        "end": 73,
+        "text": ",",
+        "codepoints": [
+          44
+        ],
+        "isspace_flags": [
+          false
+        ],
+        "char_kinds": [
+          "admissible_separator"
+        ],
+        "kind": "admissible_separator",
+        "python_slice": "text[72:73]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 73,
+        "end": 74,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[73:74]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 179,
+        "end": 180,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[179:180]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      }
+    ],
+    "gaps_containing_letters_or_digits": [
+      {
+        "start": 137,
+        "end": 139,
+        "text": "ct",
+        "codepoints": [
+          99,
+          116
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[137:139]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 177,
+        "end": 179,
+        "text": "ty",
+        "codepoints": [
+          116,
+          121
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[177:179]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 232,
+        "end": 234,
+        "text": "de",
+        "codepoints": [
+          100,
+          101
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[232:234]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 289,
+        "end": 291,
+        "text": "in",
+        "codepoints": [
+          105,
+          110
+        ],
+        "isspace_flags": [
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[289:291]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 353,
+        "end": 357,
+        "text": "ath.",
+        "codepoints": [
+          97,
+          116,
+          104,
+          46
+        ],
+        "isspace_flags": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "char_kinds": [
+          "significant",
+          "significant",
+          "significant",
+          "significant"
+        ],
+        "kind": "significant",
+        "python_slice": "text[353:357]",
+        "interval": "half_open",
+        "contains_letter_or_digit": true,
+        "contains_protected_connective": false
+      }
+    ],
+    "contains_substantive_characters": true,
+    "innocence_not_presumed": true,
+    "evidence_level": "DETERMINISTICALLY_VERIFIED"
+  },
+  "coverage_gap_snippets": [
+    {
+      "start": 44,
+      "end": 45,
+      "text": ".",
+      "codepoints": [
+        46
+      ],
+      "kind": "sentence_terminator",
+      "contains_letter_or_digit": false
+    },
+    {
+      "start": 45,
+      "end": 46,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "kind": "whitespace",
+      "contains_letter_or_digit": false
+    },
+    {
+      "start": 72,
+      "end": 73,
+      "text": ",",
+      "codepoints": [
+        44
+      ],
+      "kind": "admissible_separator",
+      "contains_letter_or_digit": false
+    },
+    {
+      "start": 73,
+      "end": 74,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "kind": "whitespace",
+      "contains_letter_or_digit": false
+    },
+    {
+      "start": 137,
+      "end": 139,
+      "text": "ct",
+      "codepoints": [
+        99,
+        116
+      ],
+      "kind": "significant",
+      "contains_letter_or_digit": true
+    },
+    {
+      "start": 177,
+      "end": 179,
+      "text": "ty",
+      "codepoints": [
+        116,
+        121
+      ],
+      "kind": "significant",
+      "contains_letter_or_digit": true
+    },
+    {
+      "start": 179,
+      "end": 180,
+      "text": " ",
+      "codepoints": [
+        32
+      ],
+      "kind": "whitespace",
+      "contains_letter_or_digit": false
+    },
+    {
+      "start": 232,
+      "end": 234,
+      "text": "de",
+      "codepoints": [
+        100,
+        101
+      ],
+      "kind": "significant",
+      "contains_letter_or_digit": true
+    },
+    {
+      "start": 289,
+      "end": 291,
+      "text": "in",
+      "codepoints": [
+        105,
+        110
+      ],
+      "kind": "significant",
+      "contains_letter_or_digit": true
+    },
+    {
+      "start": 353,
+      "end": 357,
+      "text": "ath.",
+      "codepoints": [
+        97,
+        116,
+        104,
+        46
+      ],
+      "kind": "significant",
+      "contains_letter_or_digit": true
+    }
+  ],
+  "coverage_gaps_classification": "SUBSTANTIVE_WORD_ENDINGS_NOT_SEPARATORS",
+  "coverage_innocence_not_presumed": true,
+  "recorded_gaps": [
+    [
+      137,
+      139
+    ],
+    [
+      177,
+      179
+    ],
+    [
+      232,
+      234
+    ],
+    [
+      289,
+      291
+    ],
+    [
+      353,
+      357
+    ]
+  ],
+  "claims": [
+    {
+      "canary": "h11",
+      "index": 0,
+      "exact_text": "But this is not a matter of mental technique",
+      "offsets": {
+        "start": 0,
+        "end": 44,
+        "interval": "half_open",
+        "python_slice": "text[0:44]"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "reason_codes": [
+        "EVIDENCE_MISMATCH"
+      ],
+      "reason_code_status": {
+        "codes": [
+          "EVIDENCE_MISMATCH"
+        ],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [
+          "EVIDENCE_MISMATCH"
+        ],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "SRC006192"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "IDEA226",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "terra_note": "The source rejects mind over matter but does not establish the broader mental-technique framing.",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Historically accepted stylistic restatement of the mind-over-matter refusal. Terra used EVIDENCE_MISMATCH on a broader framing.",
+      "agreement": false,
+      "disagreement_type": "FALSE_REJECTION_SUPPORTED_PREFIX",
+      "acceptance_impact": "contributes_to_FAIL_independent_of_guarantee",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h11",
+      "index": 1,
+      "exact_text": "It is not mind over matter",
+      "offsets": {
+        "start": 46,
+        "end": 72,
+        "interval": "half_open",
+        "python_slice": "text[46:72]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "SRC006192"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "IDEA226",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Direct paraphrase of SRC006192.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "conclusion": "AGREE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h11",
+      "index": 2,
+      "exact_text": "not a trick of positive thinking applied to a frightening subje",
+      "offsets": {
+        "start": 74,
+        "end": 137,
+        "interval": "half_open",
+        "python_slice": "text[74:137]"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "reason_codes": [
+        "NEW_FACT"
+      ],
+      "reason_code_status": {
+        "codes": [
+          "NEW_FACT"
+        ],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [
+          "NEW_FACT"
+        ],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "IDEA226",
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "terra_note": "The positive-thinking characterization is not supplied.",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Editorial expansion of 'not mind over matter' without a new relation. Terra used NEW_FACT. Span also ends two characters short of 'subject'.",
+      "agreement": false,
+      "disagreement_type": "FALSE_REJECTION_SUPPORTED_PREFIX",
+      "acceptance_impact": "contributes_to_FAIL_independent_of_guarantee",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h11",
+      "index": 3,
+      "exact_text": ". Death as gain must become your reali",
+      "offsets": {
+        "start": 139,
+        "end": 177,
+        "interval": "half_open",
+        "python_slice": "text[139:177]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "SRC006192",
+        "SRC006195"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Attested by IDEA226 and SRC006193.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "conclusion": "AGREE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h11",
+      "index": 4,
+      "exact_text": "— not an idea you agree with in a sermon and set asi",
+      "offsets": {
+        "start": 180,
+        "end": 232,
+        "interval": "half_open",
+        "python_slice": "text[180:232]"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "reason_codes": [
+        "INVENTED_EXAMPLE"
+      ],
+      "reason_code_status": {
+        "codes": [
+          "INVENTED_EXAMPLE"
+        ],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [
+          "INVENTED_EXAMPLE"
+        ],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "IDEA226"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "terra_note": "The sermon-setting illustration is not in the evidence.",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Paraphrase of IDEA226 lived reality vs intellectual idea. Terra used INVENTED_EXAMPLE for the sermon-setting illustration.",
+      "agreement": false,
+      "disagreement_type": "FALSE_REJECTION_SUPPORTED_PREFIX",
+      "acceptance_impact": "contributes_to_FAIL_independent_of_guarantee",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h11",
+      "index": 5,
+      "exact_text": ", but the actual substance of how you face your own end",
+      "offsets": {
+        "start": 234,
+        "end": 289,
+        "interval": "half_open",
+        "python_slice": "text[234:289]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "IDEA226",
+        "SRC006193"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "SRC006192",
+        "SRC006195"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Lived-reality restatement, historically supported.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "AGREE",
+      "family": "supported_prefix",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h11",
+      "index": 6,
+      "exact_text": "g, which means that every believer is guaranteed a fearless de",
+      "offsets": {
+        "start": 291,
+        "end": 353,
+        "interval": "half_open",
+        "python_slice": "text[291:353]"
+      },
+      "terra_verdict": "UNSUPPORTED",
+      "reason_codes": [
+        "NEW_CONCLUSION"
+      ],
+      "reason_code_status": {
+        "codes": [
+          "NEW_CONCLUSION"
+        ],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [
+          "NEW_CONCLUSION"
+        ],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "IDEA226",
+        "SRC006192",
+        "SRC006193",
+        "SRC006195"
+      ],
+      "terra_note": "A guaranteed fearless death for every believer is not established.",
+      "human_label_or_assessment": "UNSUPPORTED",
+      "analysis_of_evidence": "Universal fearless-death guarantee is not entailed. NEW_CONCLUSION is an acceptable catalog neighbor, not the primary pair NEW_IMPLICATION / UNCERTAINTY_STRENGTHENED. Span is two characters short of 'death.' and starts on the last letter of 'ending'.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "blocks_acceptance",
+      "offline_category": "UNSUPPORTED",
+      "conclusion": "TERRA_RESERVATION_SUPPORTED_BY_EVIDENCE",
+      "family": "universal_guarantee",
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    }
+  ],
+  "claim_count": 7,
+  "supported_prefix_agreements": 3,
+  "supported_prefix_disagreements": 3,
+  "src006195_authorized_unused": true,
+  "secrets_included": false
+}

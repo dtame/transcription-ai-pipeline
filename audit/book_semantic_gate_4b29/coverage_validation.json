@@ -1,0 +1,92 @@
+{
+  "phase": "4B.2.9",
+  "h01": {
+    "phase": "4B.2.9",
+    "ok": true,
+    "status": "PASS",
+    "offset_convention": "python3_str_unicode_code_points_half_open",
+    "offset_convention_notes": {
+      "python3_str": "Offsets are Python 3 str indices: Unicode code points, half-open [start, end). paragraph[start:end] == unit text.",
+      "utf8_bytes": "UTF-8 byte offsets are not used. 'é' is 1 Python index and 2 UTF-8 bytes; mixing them would shift every later unit.",
+      "utf16_code_units": "UTF-16 code-unit offsets are not used. Supplementary-plane characters such as '😀' are 1 Python index and 2 UTF-16 code units.",
+      "must_not_mix": true
+    },
+    "paragraph_id": "h01",
+    "char_count": 232,
+    "utf8_byte_count": 232,
+    "utf16_code_unit_count": 232,
+    "unit_count": 5,
+    "reconstructed_equals_paragraph": true,
+    "complete_chars": true,
+    "complete_words": true,
+    "uncovered_char_indexes": [],
+    "uncovered_words": [],
+    "unauthorized_overlaps": [],
+    "exact_slice_failures": [],
+    "order_failures": [],
+    "duplicate_ids": [],
+    "connector_coverage": {
+      "occurrences": [
+        {
+          "token": "REDACTED",
+          "start": 106,
+          "end": 112,
+          "fully_inside_one_unit": true,
+          "owners": [
+            "u02"
+          ]
+        },
+        {
+          "token": "REDACTED",
+          "start": 3,
+          "end": 6,
+          "fully_inside_one_unit": true,
+          "owners": [
+            "u00"
+          ]
+        },
+        {
+          "token": "REDACTED",
+          "start": 186,
+          "end": 189,
+          "fully_inside_one_unit": true,
+          "owners": [
+            "u03"
+          ]
+        },
+        {
+          "token": "REDACTED",
+          "start": 41,
+          "end": 43,
+          "fully_inside_one_unit": true,
+          "owners": [
+            "u01"
+          ]
+        },
+        {
+          "token": "REDACTED",
+          "start": 142,
+          "end": 144,
+          "fully_inside_one_unit": true,
+          "owners": [
+            "u03"
+          ]
+        }
+      ],
+      "present_count": 5,
+      "fully_covered_count": 5,
+      "split_across_units": []
+    },
+    "separators_retained": true,
+    "errors": [],
+    "does_not_repair": true,
+    "secrets_included": false
+  },
+  "historical": {
+    "h01": true,
+    "h02": true,
+    "h11": true
+  },
+  "offset_convention": "python3_str_unicode_code_points_half_open",
+  "secrets_included": false
+}

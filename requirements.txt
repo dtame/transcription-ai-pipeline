@@ -27,7 +27,11 @@ streamlit
 pandas
 
 # --- IA cloud (optionnel, uniquement si AI_PROVIDER = "openai") ---
-openai
+# SDK officiel exigé par app/ai/providers/openai_engine.py :
+#   from openai import OpenAI
+#   client.chat.completions.create(...)
+# Compatible 1.x et 2.x. Le .venv canonique du projet a 2.43.0.
+openai>=1.0.0,<3
 
 # --- IA cloud Anthropic ---
 # Aucun paquet requis : app/ai/providers/anthropic_engine.py parle

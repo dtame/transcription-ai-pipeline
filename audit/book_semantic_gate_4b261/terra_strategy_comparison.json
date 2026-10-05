@@ -1,0 +1,305 @@
+{
+  "phase": "4B.2.6.1",
+  "matrix": [
+    {
+      "strategy": "A",
+      "compatibility_with_existing_evidence": "Compatible as a follow-up experiment, but 4B.2.6 already exhausted 8192 tokens with zero visible JSON. A larger budget may repeat the same failure at higher cost.",
+      "technical_complexity": "LOW",
+      "truncation_risk": "HIGH_IF_REASONING_DOMINATES",
+      "resume_capability": "NONE — still one 10-case shot",
+      "estimated_cost": "If 12288-24576 tokens are fully used: see terra_cost_scenarios.json",
+      "proposition_level_control": "UNCHANGED",
+      "nineteen_chapter_fit": "POOR if every chapter repeats budget exhaustion",
+      "version_changes": "none",
+      "remaining_uncertainties": [
+        "reasoning_tokens UNKNOWN",
+        "whether extra budget becomes visible JSON"
+      ]
+    },
+    {
+      "strategy": "B",
+      "compatibility_with_existing_evidence": "Addresses confirmed output verbosity. Does not by itself prove that hidden reasoning will stop consuming the budget.",
+      "technical_complexity": "MEDIUM — new candidate versions, local decoder",
+      "truncation_risk": "MEDIUM — smaller visible JSON, unknown reasoning",
+      "resume_capability": "NONE if still one 10-case call",
+      "estimated_cost": 336,
+      "proposition_level_control": "PRESERVED",
+      "nineteen_chapter_fit": "BETTER visible-output density; reasoning still unknown",
+      "version_changes": "candidate 1.1 only; 1.0 frozen",
+      "remaining_uncertainties": [
+        "Terra may still reason silently before emitting compact JSON",
+        "json_object semantic production still unproven"
+      ]
+    },
+    {
+      "strategy": "C",
+      "compatibility_with_existing_evidence": "If hidden reasoning scales with prompt/output complexity, smaller batches are the only locally justified way to isolate whether Terra can emit JSON at all. Smaller batches do not automatically improve semantic quality.",
+      "technical_complexity": "MEDIUM — orchestration, accounting, resume",
+      "truncation_risk": "LOWER per call; more calls if each exhausts budget",
+      "resume_capability": "HIGH for 1-2 case batches",
+      "estimated_cost": "See strategy_c rows in terra_cost_scenarios.json",
+      "proposition_level_control": "PRESERVED if each batch still claim-covers its paragraphs",
+      "nineteen_chapter_fit": "NATURAL — production already wants per-chapter calls",
+      "version_changes": "orchestration only if historical 1.0 is kept; 1.1 if combined with B",
+      "remaining_uncertainties": [
+        "One small batch may still exhaust 8192 with empty content",
+        "More calls increase accounting and lock complexity"
+      ]
+    },
+    {
+      "strategy": "B+C",
+      "compatibility_with_existing_evidence": "Best match: reduce confirmed verbosity and isolate JSON emission.",
+      "technical_complexity": "MEDIUM",
+      "truncation_risk": "LOWEST among analyzed options",
+      "resume_capability": "HIGH",
+      "estimated_cost": [
+        {
+          "batch_size": 1,
+          "calls": 10,
+          "per_call_input_tokens_estimate": 1698,
+          "if_one_call_returns_min_json": {
+            "input_tokens": 1698,
+            "output_tokens": 80,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.003396,
+            "output_cost_usd": 0.00096,
+            "total_cost_usd": 0.004356,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+          },
+          "if_one_call_exhausts_8192": {
+            "input_tokens": 1698,
+            "output_tokens": 8192,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.003396,
+            "output_cost_usd": 0.098304,
+            "total_cost_usd": 0.1017,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+          },
+          "if_full_benchmark_min_json": {
+            "input_tokens": 16980,
+            "output_tokens": 800,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.03396,
+            "output_cost_usd": 0.0096,
+            "total_cost_usd": 0.04356,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+            "calls": 10
+          },
+          "if_full_benchmark_each_call_exhausts_8192": {
+            "input_tokens": 16980,
+            "output_tokens": 81920,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.03396,
+            "output_cost_usd": 0.98304,
+            "total_cost_usd": 1.017,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+            "calls": 10
+          }
+        },
+        {
+          "batch_size": 2,
+          "calls": 5,
+          "per_call_input_tokens_estimate": 3286,
+          "if_one_call_returns_min_json": {
+            "input_tokens": 3286,
+            "output_tokens": 160,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.006572,
+            "output_cost_usd": 0.00192,
+            "total_cost_usd": 0.008492,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+          },
+          "if_one_call_exhausts_8192": {
+            "input_tokens": 3286,
+            "output_tokens": 8192,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.006572,
+            "output_cost_usd": 0.098304,
+            "total_cost_usd": 0.104876,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+          },
+          "if_full_benchmark_min_json": {
+            "input_tokens": 16430,
+            "output_tokens": 800,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.03286,
+            "output_cost_usd": 0.0096,
+            "total_cost_usd": 0.04246,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+            "calls": 5
+          },
+          "if_full_benchmark_each_call_exhausts_8192": {
+            "input_tokens": 16430,
+            "output_tokens": 40960,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.03286,
+            "output_cost_usd": 0.49152,
+            "total_cost_usd": 0.52438,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+            "calls": 5
+          }
+        },
+        {
+          "batch_size": 5,
+          "calls": 2,
+          "per_call_input_tokens_estimate": 7616,
+          "if_one_call_returns_min_json": {
+            "input_tokens": 7616,
+            "output_tokens": 400,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.015232,
+            "output_cost_usd": 0.0048,
+            "total_cost_usd": 0.020032,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+          },
+          "if_one_call_exhausts_8192": {
+            "input_tokens": 7616,
+            "output_tokens": 8192,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.015232,
+            "output_cost_usd": 0.098304,
+            "total_cost_usd": 0.113536,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+          },
+          "if_full_benchmark_min_json": {
+            "input_tokens": 15232,
+            "output_tokens": 800,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.030464,
+            "output_cost_usd": 0.0096,
+            "total_cost_usd": 0.040064,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+            "calls": 2
+          },
+          "if_full_benchmark_each_call_exhausts_8192": {
+            "input_tokens": 15232,
+            "output_tokens": 16384,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.030464,
+            "output_cost_usd": 0.196608,
+            "total_cost_usd": 0.227072,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+            "calls": 2
+          }
+        },
+        {
+          "batch_size": 10,
+          "calls": 1,
+          "per_call_input_tokens_estimate": 3227,
+          "if_one_call_returns_min_json": {
+            "input_tokens": 3227,
+            "output_tokens": 800,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.006454,
+            "output_cost_usd": 0.0096,
+            "total_cost_usd": 0.016054,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+          },
+          "if_one_call_exhausts_8192": {
+            "input_tokens": 3227,
+            "output_tokens": 8192,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.006454,
+            "output_cost_usd": 0.098304,
+            "total_cost_usd": 0.104758,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used."
+          },
+          "if_full_benchmark_min_json": {
+            "input_tokens": 3227,
+            "output_tokens": 800,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.006454,
+            "output_cost_usd": 0.0096,
+            "total_cost_usd": 0.016054,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+            "calls": 1
+          },
+          "if_full_benchmark_each_call_exhausts_8192": {
+            "input_tokens": 3227,
+            "output_tokens": 8192,
+            "reasoning_tokens": "UNKNOWN",
+            "input_cost_usd": 0.006454,
+            "output_cost_usd": 0.098304,
+            "total_cost_usd": 0.104758,
+            "status": "base_estimate",
+            "unknown_or_incomplete": true,
+            "counted_as_zero": false,
+            "note": "Estimate uses configured Terra rates. Actual billed tokens may include hidden reasoning. Cost does not scale automatically with max_completion_tokens; it scales with tokens actually used.",
+            "calls": 1
+          }
+        }
+      ],
+      "proposition_level_control": "PRESERVED",
+      "nineteen_chapter_fit": "ALIGNED",
+      "version_changes": "1.1-candidate only; 1.0 frozen",
+      "remaining_uncertainties": [
+        "json_object semantic production",
+        "reasoning_tokens",
+        "Terra semantic quality still untested"
+      ]
+    }
+  ],
+  "recommendation": "B+C",
+  "rationale": "4B.2.6 confirmed budget exhaustion and zero visible JSON. Reasoning tokens are UNKNOWN, so A alone may buy more hidden tokens. The historical contract confirmedly duplicates claim text and requires free-form explanations across ten paragraphs. Compact 1.1-candidate reduces expected visible JSON without dropping fidelity fields. A one-case or two-case batch is the cheapest way to test whether Terra can emit JSON at all. Combined B+C changes two variables, but the first authorized canary should still be a single compact case so a repeat empty+length failure isolates json_object/reasoning rather than 10-case volume.",
+  "not_a_preference": true,
+  "derived_from_investigation": true,
+  "pricing": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "verified": true,
+    "effective_date": "2026-09-18",
+    "source": "OpenAI official pricing/model documentation",
+    "input_cost_per_1m_tokens": 2.0,
+    "output_cost_per_1m_tokens": 12.0,
+    "status": "base_estimate",
+    "unmodeled_regimes": "long_context_not_modeled",
+    "notes": "Base standard pricing. Long-context pricing rules may differ and are not modeled by Phase 2B.",
+    "counted_as_zero": false
+  },
+  "secrets_included": false
+}

@@ -1,0 +1,33 @@
+{
+  "values_are_not_interchangeable": [
+    "estimated_cost_usd",
+    "observed_cost_usd",
+    "verified_maximum_cost_usd"
+  ],
+  "estimated_cost_usd": null,
+  "observed_cost_usd": null,
+  "verified_maximum_cost_usd": null,
+  "documented_components": {
+    "image_output_usd": "0.041",
+    "image_output_is_total_request_cost": false,
+    "image_output_is_provider_ceiling": false,
+    "image_output_is_invoice": false,
+    "text_input_usd": null,
+    "text_input_status": "UNKNOWN",
+    "image_input_usd": "0",
+    "image_input_status": "NO_REFERENCE_IMAGES",
+    "estimated_cost_usd": null,
+    "observed_cost_usd": null,
+    "verified_maximum_cost_usd": null,
+    "unknown_components": [
+      "text_input_tokens"
+    ],
+    "currency": "USD",
+    "source": "published_image_guide_cell_plus_unknown_text_tokens"
+  },
+  "published_image_output_cell_is_verified_maximum": false,
+  "published_image_output_cell_is_invoice": false,
+  "missing_observed_cost": null,
+  "reconciliation_status_when_bill_is_unknown": "COST_RECONCILIATION_PENDING",
+  "local_budget_is_a_provider_cap": false
+}

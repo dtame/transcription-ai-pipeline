@@ -1,0 +1,533 @@
+{
+  "phase": "4B.2.14",
+  "project_name": "pastoral_retreat_v2_validation",
+  "language": "en",
+  "canonical_language": "en",
+  "chapters": 19,
+  "sections": 72,
+  "ideas_listed_on_chapters": 286,
+  "plan_stats": {
+    "chapter_count": 19,
+    "section_count": 72,
+    "assigned_idea_count": 286,
+    "deferred_idea_count": 0,
+    "excluded_idea_count": 0,
+    "reused_idea_count": 0,
+    "example_assigned_count": 49,
+    "reference_assigned_count": 56,
+    "uncertainty_assigned_count": 19,
+    "repetition_assigned_count": 0,
+    "title_candidate_count": 4
+  },
+  "source_map_stats": {
+    "topic_count": 67,
+    "idea_count": 286,
+    "example_count": 49,
+    "reference_count": 59,
+    "uncertainty_count": 35,
+    "repetition_count": 0,
+    "source_segment_count": 8298,
+    "referenced_source_segments": 1743,
+    "source_coverage_ratio": 0.2101
+  },
+  "references_available": 59,
+  "examples_available": 49,
+  "source_segments_available": 8298,
+  "paragraphs_generated": null,
+  "paragraphs_status": "UNKNOWN",
+  "paragraphs_counted_as_zero": false,
+  "semantic_units": null,
+  "semantic_units_status": "UNKNOWN",
+  "semantic_units_counted_as_zero": false,
+  "chapter_rows": [
+    {
+      "chapter_id": "CH001",
+      "title": "Unlearning What Was Handed Down",
+      "section_count": 4,
+      "section_ids": [
+        "SEC001",
+        "SEC002",
+        "SEC003",
+        "SEC004"
+      ],
+      "idea_count": 12,
+      "source_ref_count": 55,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 13298,
+        "utf8_bytes": 13318,
+        "idea_count": 12,
+        "src_ref_count": 55,
+        "hydrated_segment_count": 55,
+        "hydrated_src_chars": 1519,
+        "sha256": "0072a0259871b052b222045d4cb479b31ded4371f75221c70d8fdde440c4595e"
+      }
+    },
+    {
+      "chapter_id": "CH002",
+      "title": "Flesh and Bone: The Resurrection You Inherit",
+      "section_count": 4,
+      "section_ids": [
+        "SEC005",
+        "SEC006",
+        "SEC007",
+        "SEC008"
+      ],
+      "idea_count": 15,
+      "source_ref_count": 61,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 15019,
+        "utf8_bytes": 15044,
+        "idea_count": 15,
+        "src_ref_count": 61,
+        "hydrated_segment_count": 61,
+        "hydrated_src_chars": 1725,
+        "sha256": "c43eed396fafc8d72fa1f2d6e00ff211402c61aefdf8aae0777f2f5ed9f107dc"
+      }
+    },
+    {
+      "chapter_id": "CH003",
+      "title": "Hebrews 2: Death Already Destroyed",
+      "section_count": 4,
+      "section_ids": [
+        "SEC009",
+        "SEC010",
+        "SEC011",
+        "SEC012"
+      ],
+      "idea_count": 14,
+      "source_ref_count": 76,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 17742,
+        "utf8_bytes": 17776,
+        "idea_count": 14,
+        "src_ref_count": 76,
+        "hydrated_segment_count": 76,
+        "hydrated_src_chars": 2237,
+        "sha256": "2830d9420311eaf7448654cb857127e4b6de7bfb87b368327b690204c077faed"
+      }
+    },
+    {
+      "chapter_id": "CH004",
+      "title": "Priest, Prophet, King",
+      "section_count": 5,
+      "section_ids": [
+        "SEC013",
+        "SEC014",
+        "SEC015",
+        "SEC016",
+        "SEC017"
+      ],
+      "idea_count": 19,
+      "source_ref_count": 72,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 16437,
+        "utf8_bytes": 16458,
+        "idea_count": 19,
+        "src_ref_count": 72,
+        "hydrated_segment_count": 72,
+        "hydrated_src_chars": 1552,
+        "sha256": "14fe7bc402bc1fd79258da8f6885688d07a659d3932dddca132bed5a30871f58"
+      }
+    },
+    {
+      "chapter_id": "CH005",
+      "title": "Access, Not Achievement",
+      "section_count": 5,
+      "section_ids": [
+        "SEC018",
+        "SEC019",
+        "SEC020",
+        "SEC021",
+        "SEC022"
+      ],
+      "idea_count": 18,
+      "source_ref_count": 77,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 18907,
+        "utf8_bytes": 18929,
+        "idea_count": 18,
+        "src_ref_count": 77,
+        "hydrated_segment_count": 77,
+        "hydrated_src_chars": 2367,
+        "sha256": "3be07fb482ad731ae4e6954a64bdde0e1dd6bd3af7a0c4fd90b6cc63d563f416"
+      }
+    },
+    {
+      "chapter_id": "CH006",
+      "title": "That They May Be One",
+      "section_count": 8,
+      "section_ids": [
+        "SEC023",
+        "SEC024",
+        "SEC025",
+        "SEC026",
+        "SEC027",
+        "SEC028",
+        "SEC029",
+        "SEC030"
+      ],
+      "idea_count": 38,
+      "source_ref_count": 273,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 45177,
+        "utf8_bytes": 45203,
+        "idea_count": 38,
+        "src_ref_count": 273,
+        "hydrated_segment_count": 273,
+        "hydrated_src_chars": 7878,
+        "sha256": "bc5e012b89d58e2f9ceac5a0960e5a0519e43caacc34659fe97a71fdbcc32da8"
+      }
+    },
+    {
+      "chapter_id": "CH007",
+      "title": "Loved Exactly as Jesus Is Loved",
+      "section_count": 2,
+      "section_ids": [
+        "SEC031",
+        "SEC032"
+      ],
+      "idea_count": 10,
+      "source_ref_count": 72,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 16298,
+        "utf8_bytes": 16318,
+        "idea_count": 10,
+        "src_ref_count": 76,
+        "hydrated_segment_count": 76,
+        "hydrated_src_chars": 2107,
+        "sha256": "6d29673acc0b94bc774335bc468d63a0048e4b0581b45a41738f5782479b940d"
+      }
+    },
+    {
+      "chapter_id": "CH008",
+      "title": "Set Your Mind Above",
+      "section_count": 3,
+      "section_ids": [
+        "SEC033",
+        "SEC034",
+        "SEC035"
+      ],
+      "idea_count": 11,
+      "source_ref_count": 96,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 17587,
+        "utf8_bytes": 17611,
+        "idea_count": 11,
+        "src_ref_count": 96,
+        "hydrated_segment_count": 96,
+        "hydrated_src_chars": 2447,
+        "sha256": "5ecc070c1477ccee4ff86b1cf8e13052a7fe54904e891de91c9a2dce89fd1c49"
+      }
+    },
+    {
+      "chapter_id": "CH009",
+      "title": "Laws You Gave Yourself",
+      "section_count": 3,
+      "section_ids": [
+        "SEC036",
+        "SEC037",
+        "SEC038"
+      ],
+      "idea_count": 14,
+      "source_ref_count": 91,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 17635,
+        "utf8_bytes": 17655,
+        "idea_count": 14,
+        "src_ref_count": 91,
+        "hydrated_segment_count": 91,
+        "hydrated_src_chars": 2620,
+        "sha256": "2b4603e73fb5d33a4a72c432ead3af4721556ef0aea330eb4f272bfce7487687"
+      }
+    },
+    {
+      "chapter_id": "CH010",
+      "title": "Spirit, Soul and Body",
+      "section_count": 4,
+      "section_ids": [
+        "SEC039",
+        "SEC040",
+        "SEC041",
+        "SEC042"
+      ],
+      "idea_count": 16,
+      "source_ref_count": 103,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 21740,
+        "utf8_bytes": 21766,
+        "idea_count": 16,
+        "src_ref_count": 121,
+        "hydrated_segment_count": 121,
+        "hydrated_src_chars": 3255,
+        "sha256": "6f5dabc85c3ea0ade572c6a178885fa8305a7c72376d73d4d69729d964b737f2"
+      }
+    },
+    {
+      "chapter_id": "CH011",
+      "title": "Reasonings and Strongholds",
+      "section_count": 4,
+      "section_ids": [
+        "SEC043",
+        "SEC044",
+        "SEC045",
+        "SEC046"
+      ],
+      "idea_count": 12,
+      "source_ref_count": 75,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 16558,
+        "utf8_bytes": 16597,
+        "idea_count": 12,
+        "src_ref_count": 75,
+        "hydrated_segment_count": 75,
+        "hydrated_src_chars": 2220,
+        "sha256": "7ce4867aa16f9d16cde7a837fbaf802fe2e0917543baa99db7e291d3eecb4440"
+      }
+    },
+    {
+      "chapter_id": "CH012",
+      "title": "Prayer Corrected",
+      "section_count": 4,
+      "section_ids": [
+        "SEC047",
+        "SEC048",
+        "SEC049",
+        "SEC050"
+      ],
+      "idea_count": 11,
+      "source_ref_count": 55,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 13644,
+        "utf8_bytes": 13686,
+        "idea_count": 11,
+        "src_ref_count": 55,
+        "hydrated_segment_count": 55,
+        "hydrated_src_chars": 1414,
+        "sha256": "78dab9000bc5d0af5b88dbdc5aab6fa630f09549d476fe3afe32423b60be6899"
+      }
+    },
+    {
+      "chapter_id": "CH013",
+      "title": "The Renewed Mind and the Hidden Faculty",
+      "section_count": 4,
+      "section_ids": [
+        "SEC051",
+        "SEC052",
+        "SEC053",
+        "SEC054"
+      ],
+      "idea_count": 24,
+      "source_ref_count": 106,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 21918,
+        "utf8_bytes": 21986,
+        "idea_count": 24,
+        "src_ref_count": 106,
+        "hydrated_segment_count": 106,
+        "hydrated_src_chars": 2761,
+        "sha256": "1dec94ac68e304c1bc37d5df08e564982708abb8df9f2f289581d013e3b9c1b9"
+      }
+    },
+    {
+      "chapter_id": "CH014",
+      "title": "Operating What You Have",
+      "section_count": 4,
+      "section_ids": [
+        "SEC055",
+        "SEC056",
+        "SEC057",
+        "SEC058"
+      ],
+      "idea_count": 15,
+      "source_ref_count": 82,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 17941,
+        "utf8_bytes": 17966,
+        "idea_count": 15,
+        "src_ref_count": 82,
+        "hydrated_segment_count": 82,
+        "hydrated_src_chars": 2292,
+        "sha256": "f43f2707b16e1b5890e5b5931b11837aea648a735698e7cf092ecf403f2d4d90"
+      }
+    },
+    {
+      "chapter_id": "CH015",
+      "title": "Grace Barely Touched",
+      "section_count": 4,
+      "section_ids": [
+        "SEC059",
+        "SEC060",
+        "SEC061",
+        "SEC062"
+      ],
+      "idea_count": 16,
+      "source_ref_count": 79,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 18346,
+        "utf8_bytes": 18429,
+        "idea_count": 16,
+        "src_ref_count": 79,
+        "hydrated_segment_count": 79,
+        "hydrated_src_chars": 3376,
+        "sha256": "f5d446ee1a0ab34b7dfdb7fc445fbea5e9af9c306032d0fb97fde67aabe21b8b"
+      }
+    },
+    {
+      "chapter_id": "CH016",
+      "title": "Death as Gain",
+      "section_count": 1,
+      "section_ids": [
+        "SEC063"
+      ],
+      "idea_count": 6,
+      "source_ref_count": 35,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 8967,
+        "utf8_bytes": 8987,
+        "idea_count": 6,
+        "src_ref_count": 35,
+        "hydrated_segment_count": 35,
+        "hydrated_src_chars": 1177,
+        "sha256": "bc15f06b05b1160aed413720f52c104cbb63cf4c98f07ce3fb8e8d2d732a0e93"
+      }
+    },
+    {
+      "chapter_id": "CH017",
+      "title": "Nothing by Chance",
+      "section_count": 3,
+      "section_ids": [
+        "SEC064",
+        "SEC065",
+        "SEC066"
+      ],
+      "idea_count": 17,
+      "source_ref_count": 91,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 19161,
+        "utf8_bytes": 19188,
+        "idea_count": 17,
+        "src_ref_count": 92,
+        "hydrated_segment_count": 92,
+        "hydrated_src_chars": 2597,
+        "sha256": "73e28bb272fab6803d47a17ae2719ca8ee59586f141f8fe693fb9175d668bfef"
+      }
+    },
+    {
+      "chapter_id": "CH018",
+      "title": "Testimonies of Resurrection",
+      "section_count": 4,
+      "section_ids": [
+        "SEC067",
+        "SEC068",
+        "SEC069",
+        "SEC070"
+      ],
+      "idea_count": 11,
+      "source_ref_count": 79,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 16057,
+        "utf8_bytes": 16077,
+        "idea_count": 11,
+        "src_ref_count": 79,
+        "hydrated_segment_count": 79,
+        "hydrated_src_chars": 1933,
+        "sha256": "6a0d2ef569d711d01e0a82e93919a76e6940c6383ce25ad6be447c21b4e99937"
+      }
+    },
+    {
+      "chapter_id": "CH019",
+      "title": "Out of the Eater",
+      "section_count": 2,
+      "section_ids": [
+        "SEC071",
+        "SEC072"
+      ],
+      "idea_count": 7,
+      "source_ref_count": 43,
+      "paragraph_count": null,
+      "paragraph_count_status": "UNKNOWN",
+      "paragraph_count_counted_as_zero": false,
+      "evidence": {
+        "chars": 10976,
+        "utf8_bytes": 10996,
+        "idea_count": 7,
+        "src_ref_count": 45,
+        "hydrated_segment_count": 45,
+        "hydrated_src_chars": 1202,
+        "sha256": "fb154c968c4d6734c1dc847d5cd246c7bb276893dfced5a8a92a3cf8cbebf8e9"
+      }
+    }
+  ],
+  "evidence_bundle_chars": {
+    "min": 8967,
+    "max": 45177,
+    "mean": 18074.105263157893,
+    "status": "measured_from_plan_and_source_map_without_generation"
+  },
+  "transcript": {
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+    "sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958",
+    "segment_count": 8298,
+    "mutated": false
+  },
+  "source_map_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+  "editorial_plan_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+  "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+  "editorial_plan_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+  "does_not_invent_paragraph_counts": true,
+  "secrets_included": false
+}

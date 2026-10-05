@@ -1,0 +1,67 @@
+{
+  "phase": "4B.2.10",
+  "exactly_one_selected": true,
+  "selected_handle": "h01",
+  "selected_case_id_audit_only": "4b210_h01",
+  "selected_role_audit_only": "historical_positive_problematic",
+  "selected_origin": "REPRISE_OF_HISTORICAL_H01_SUPPORTED_PARAPHRASE",
+  "human_label_audit_only": "SUPPORTED",
+  "human_label_must_not_enter_provider_request": true,
+  "target_failure_family": "FALSE_REJECTION_OF_FAITHFUL_PARAPHRASE",
+  "avoids_canary_series": true,
+  "options": [
+    {
+      "handle": "h01",
+      "historical_case_id_audit_only": "4b22_p2_supported",
+      "kind": "historical_positive_problematic",
+      "human_label_audit_only": "SUPPORTED",
+      "historical_status": "PARTIAL",
+      "discriminates": "false_rejection_of_faithful_paraphrase",
+      "evidence_available": true,
+      "observed_input_tokens": 1654,
+      "observed_cost_usd": 0.018812,
+      "selected": true,
+      "why_selected": "h01 is the documented false rejection of a supported paraphrase. Semantic Gate 2.0 exists to keep segmentation local and to judge entailment rather than wording. One discriminating case is enough for a first 2.0 Terra decision."
+    },
+    {
+      "handle": "h02",
+      "historical_case_id_audit_only": "4b22_p3_new_causal",
+      "kind": "historical_negative_mixed",
+      "human_label_audit_only": "QUESTIONABLE",
+      "historical_status": "PARTIAL",
+      "discriminates": "invented_causality_plus_false_rejections",
+      "evidence_available": true,
+      "observed_input_tokens": null,
+      "observed_cost_usd": null,
+      "selected": false,
+      "why_deferred": "Useful later. Larger and mixed. Not the first 2.0 canary."
+    },
+    {
+      "handle": "h11",
+      "historical_case_id_audit_only": "4b276_p4_new_implication",
+      "kind": "historical_negative_mixed",
+      "human_label_audit_only": "UNSUPPORTED",
+      "historical_status": "PARTIAL",
+      "discriminates": "universal_guarantee_plus_false_rejections",
+      "evidence_available": true,
+      "observed_input_tokens": 2562,
+      "observed_cost_usd": 0.029556,
+      "selected": false,
+      "why_deferred": "Already used as a 1.1.3 real Terra discriminator. Deferred so this phase does not launch a new series of canaries."
+    },
+    {
+      "handle": null,
+      "kind": "new_controlled_case",
+      "selected": false,
+      "why_deferred": "A new synthetic case is unnecessary while a documented historical positive remains the 2.0 hypothesis to test."
+    }
+  ],
+  "rejected_new_series": true,
+  "label_matches_supported": true,
+  "historical_statuses_unchanged": {
+    "h01": "PARTIAL",
+    "h02": "PARTIAL",
+    "h11": "PARTIAL"
+  },
+  "secrets_included": false
+}

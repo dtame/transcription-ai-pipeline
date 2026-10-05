@@ -1,0 +1,66 @@
+{
+  "phase": "4B.2.8",
+  "provider_calls_this_phase": 0,
+  "not_a_provider_invoice": true,
+  "pricing_source": "configured project rates dated 2026-09-18",
+  "input_usd_per_1m": 2.0,
+  "output_usd_per_1m": 12.0,
+  "reasoning_included_in_completion_not_billed_twice": true,
+  "latency_not_invented": true,
+  "observed": {
+    "h01": {
+      "input_tokens": 1654,
+      "completion_tokens": 1292,
+      "reasoning_tokens": 985,
+      "cost_usd": 0.018812,
+      "claim_count": 7,
+      "contract": "book-semantic-validator-1.1-candidate",
+      "evidence_level": "OBSERVED"
+    },
+    "h02": {
+      "input_tokens": 1692,
+      "completion_tokens": 5221,
+      "reasoning_tokens": 4595,
+      "cost_usd": 0.066036,
+      "claim_count": 11,
+      "contract": "book-semantic-validator-1.1.1-candidate",
+      "evidence_level": "OBSERVED"
+    },
+    "h11": {
+      "input_tokens": 2562,
+      "completion_tokens": 2036,
+      "reasoning_tokens": 1647,
+      "cost_usd": 0.029556,
+      "claim_count": 7,
+      "contract": "book-semantic-validator-1.1.3-candidate",
+      "evidence_level": "OBSERVED"
+    }
+  },
+  "observations": [
+    "h01 and h02 input tokens are similar (1654 vs 1692).",
+    "h02 completion 5221 and reasoning 4595 greatly exceed h01 1292 / 985.",
+    "h11 input 2562 exceeds h01/h02; 1.1.3-candidate is longer than 1.1/1.1.1.",
+    "h11 reasoning 1647 is between h01 and h02. No single factor is claimed.",
+    "Claim count alone does not explain h02 cost (11 claims vs h11 7 claims but h02 costs more)."
+  ],
+  "architecture_a_cost": "Observed historical costs above. No new spend.",
+  "architecture_b_hypothetical": {
+    "evidence_level": "HYPOTHESIS",
+    "input_tokens": "May fall if coverage/offset instructions are removed, or rise slightly if unit id lists are added. Not measured.",
+    "output_tokens": "May fall if the model omits s/e/t copies and emits only id, k, ev, r, n.",
+    "reasoning_tokens": "Unknown. Must not assert that presegmentation reduces reasoning tokens. h02 shows reasoning can dominate regardless of input similarity.",
+    "must_not_claim_savings": true
+  },
+  "architecture_c_hypothetical": {
+    "evidence_level": "HYPOTHESIS",
+    "same_caveats_as_b": true,
+    "local_cpu": "Not measured; expected negligible versus Terra. NOT_TESTED."
+  },
+  "limitations": [
+    "No new telemetry.",
+    "No latency figures.",
+    "No consumption figures beyond saved token counts.",
+    "Estimates are explicitly hypothetical."
+  ],
+  "secrets_included": false
+}

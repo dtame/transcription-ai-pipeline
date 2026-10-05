@@ -1,0 +1,13 @@
+{
+  "phase": "4B.2.28",
+  "continuity_observation_count": 13,
+  "strengthened_claim_observation_count": 8,
+  "reference_example_historical_count": 6,
+  "reference_example_similar_count": 13,
+  "semantic_certification": "NOT PERFORMED",
+  "external_model_called": false,
+  "automatic_correction": false,
+  "accepted_chapters_unchanged": true,
+  "pending_chapters_not_approved": true,
+  "secrets_included": false
+}

@@ -1,0 +1,229 @@
+{
+  "phase": "4B.2.28",
+  "manuscript_decision": "",
+  "manuscript_decision_allowed": [
+    "APPROVE_FULL_MANUSCRIPT",
+    "APPROVE_ACCEPTED_CHAPTERS_ONLY",
+    "HOLD_FOR_CHAPTER_CORRECTIONS"
+  ],
+  "accepted_chapters_already_approved": [
+    "CH001",
+    "CH002",
+    "CH003",
+    "CH004",
+    "CH012",
+    "CH018"
+  ],
+  "pending_chapters": [
+    {
+      "chapter_id": "CH005",
+      "title": "Access, Not Achievement",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH006",
+      "title": "That They May Be One",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH007",
+      "title": "Loved Exactly as Jesus Is Loved",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH008",
+      "title": "Set Your Mind Above",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH009",
+      "title": "Laws You Gave Yourself",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH010",
+      "title": "Spirit, Soul and Body",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH011",
+      "title": "Reasonings and Strongholds",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH013",
+      "title": "The Renewed Mind and the Hidden Faculty",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH014",
+      "title": "Operating What You Have",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH015",
+      "title": "Grace Barely Touched",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH016",
+      "title": "Death as Gain",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH017",
+      "title": "Nothing by Chance",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    },
+    {
+      "chapter_id": "CH019",
+      "title": "Out of the Eater",
+      "status": "HUMAN_REVIEW_PENDING",
+      "decision": "",
+      "decision_allowed": [
+        "APPROVE_UNCHANGED",
+        "APPROVE_WITH_DOCUMENTED_OBSERVATIONS",
+        "REQUEST_CORRECTION",
+        "HOLD"
+      ],
+      "correction_note": "",
+      "reviewer": "",
+      "date": "",
+      "prefilled_approval": false
+    }
+  ],
+  "no_approval_attributed_by_this_phase": true,
+  "secrets_included": false
+}

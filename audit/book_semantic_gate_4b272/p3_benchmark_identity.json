@@ -1,0 +1,70 @@
+{
+  "phase": "4B.2.7.2",
+  "case_id": "4b22_p3_new_causal",
+  "benchmark_id": "4b22_p3_new_causal",
+  "opaque_handle": "h02",
+  "historical_paragraph_handle": "p3",
+  "role_audit_only": "negative",
+  "human_label_audit_only": {
+    "expected_class": "QUESTIONABLE",
+    "accepted_classes": [
+      "QUESTIONABLE",
+      "UNSUPPORTED"
+    ],
+    "expected_reason_codes": [
+      "NEW_CAUSAL_LINK",
+      "NEW_IMPLICATION"
+    ],
+    "present_in_provider_request": false,
+    "authority": "frozen human benchmark label",
+    "human_label_authority": true
+  },
+  "paragraph_text": "Yet we can see fear operating in believers, and this is not normal. Fear of death is an abuse — an abuse to your very person, a diminishment of what you were made and remade to be. It is worth naming where this abuse comes from. The devil has used it since the beginning; he has not changed his style. The same old strategy that first weaponized death against humanity is still being run today, unchanged, because it still works wherever it is not resisted by truth.",
+  "paragraph_chars": 466,
+  "unicode_codepoints": 466,
+  "utf8_bytes": 468,
+  "disputed_causal_clause": "because it still works wherever it is not resisted by truth",
+  "clause_position": {
+    "found": true,
+    "start": 406,
+    "end": 465,
+    "recovered": "because it still works wherever it is not resisted by truth",
+    "exact_match": true,
+    "interval": "half_open",
+    "python_slice": "text[406:465]",
+    "preceding": "ty is still being run today, unchanged, ",
+    "following": "."
+  },
+  "section": "SEC063",
+  "kind": "substantive",
+  "source_phase": "4B.2.2",
+  "candidate_sha256": "e218bea95aaa46f45de66d3532da28fc05807eb9a436bf2e22fe6e9daaa8147c",
+  "evidence_handles": [
+    "IDEA225",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157"
+  ],
+  "evidence_source": "frozen 4B.2.3 historical benchmark / 4B.2.6 gate slice",
+  "notes": [
+    "Core IDEA225 supported; causal clause unsupported."
+  ],
+  "benchmark": {
+    "file_sha256": "3888806c68eeff7dc363790d4e0ffcf063e099c3f295e684b80b3c9e8167af82",
+    "dataset_sha256": "c247aa88c46ee4e563a00b777dd24f9e49bc4475b60b55e1463f7f60be9e10a8",
+    "bytes": 13293,
+    "identity_match": true,
+    "expected_file_sha256": "3888806c68eeff7dc363790d4e0ffcf063e099c3f295e684b80b3c9e8167af82",
+    "expected_dataset_sha256": "c247aa88c46ee4e563a00b777dd24f9e49bc4475b60b55e1463f7f60be9e10a8",
+    "terra_called_in_artifact": false,
+    "original_candidates_modified": false,
+    "human_labels_are_ground_truth": true
+  },
+  "gate_text_matches_benchmark": true,
+  "benchmark_unmodified": true,
+  "problem": null,
+  "identified": true,
+  "secrets_included": false
+}

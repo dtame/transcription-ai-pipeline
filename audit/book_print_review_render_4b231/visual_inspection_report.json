@@ -1,0 +1,43 @@
+{
+  "phase": "4B.2.31",
+  "status": "NOT_PERFORMED",
+  "targets": {
+    "first_page": "NOT_PERFORMED",
+    "title_page": "NOT_PERFORMED",
+    "table_of_contents": "NOT_PERFORMED",
+    "first_chapter": "PAGE_NUMBER_FROM_WORD",
+    "middle_chapter": "PAGE_NUMBER_FROM_WORD",
+    "last_chapter": "PAGE_NUMBER_FROM_WORD",
+    "section_breaks": "NOT_PERFORMED",
+    "possible_blank_pages": "NOT_PERFORMED"
+  },
+  "inferred_blank_pages": [
+    8,
+    12,
+    16,
+    20,
+    26,
+    34,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64,
+    68,
+    70,
+    74,
+    78
+  ],
+  "notes": [
+    "No raster visual inspection of rendered pages was performed.",
+    "Do not treat this report as a successful visual sign-off.",
+    "Chapter start pages were read from Microsoft Word, not from a screenshot.",
+    "PDF text extraction found the canonical paragraphs; that is not a visual inspection."
+  ],
+  "human_required": true,
+  "verification": "not_verified",
+  "secrets_included": false
+}

@@ -1,0 +1,131 @@
+{
+  "phase": "4B.2.13",
+  "source": "FAKEAI_SIMULATED",
+  "role": "simulated_book_generator",
+  "not_sonnet": true,
+  "not_a_real_chapter": true,
+  "scenario_count": 12,
+  "scenarios": [
+    {
+      "scenario": "fully_supported",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "invented_causality",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "invented_implication",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "universal_guarantee",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "unsupported_reference",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "legitimate_paraphrase",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "questionable",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "invalid_json",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "missing_response",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "interruption",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "invalid_evidence_handle",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    },
+    {
+      "scenario": "missing_evidence",
+      "source": "FAKEAI_SIMULATED",
+      "not_sonnet": true,
+      "not_terra": true,
+      "fixture_kind": "SYNTHETIC_OFFLINE_FIXTURE",
+      "chapter_id": "SYN-CH001",
+      "paragraph_count": 2,
+      "synthetic_handles_only": true
+    }
+  ],
+  "secrets_included": false
+}

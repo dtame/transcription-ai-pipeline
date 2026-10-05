@@ -1,0 +1,20 @@
+{
+  "returncode": 0,
+  "summary": "301 passed in 8.38s",
+  "passed": 301,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b26.py",
+    "app/tests/test_book_semantic_gate_4b251.py",
+    "app/tests/test_book_semantic_gate_4b241.py",
+    "app/tests/test_book_semantic_gate_4b23.py",
+    "app/tests/test_book_semantic_gate_4b24.py",
+    "app/tests/test_book_semantic_gate_4b25.py",
+    "app/tests/test_ai_providers.py",
+    "app/tests/test_ai_production_models.py"
+  ],
+  "real_provider_calls": 0
+}

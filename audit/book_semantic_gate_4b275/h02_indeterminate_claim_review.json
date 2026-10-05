@@ -1,0 +1,98 @@
+{
+  "phase": "4B.2.7.5",
+  "handle": "h02",
+  "human_label_unmodified": true,
+  "human_label_historical": "QUESTIONABLE",
+  "historical_h02_not_pass": true,
+  "exact_text": "It is worth naming where this abuse comes from",
+  "expected_text": "It is worth naming where this abuse comes from",
+  "text_match": true,
+  "offsets": {
+    "start": 181,
+    "end": 227,
+    "interval": "half_open",
+    "python_slice": "text[181:227]"
+  },
+  "index": 4,
+  "paragraph_exact_text": "Yet we can see fear operating in believers, and this is not normal. Fear of death is an abuse — an abuse to your very person, a diminishment of what you were made and remade to be. It is worth naming where this abuse comes from. The devil has used it since the beginning; he has not changed his style. The same old strategy that first weaponized death against humanity is still being run today, unchanged, because it still works wherever it is not resisted by truth.",
+  "preceding_context": "use to your very person, a diminishment of what you were made and remade to be. ",
+  "following_context": ". The devil has used it since the beginning; he has not changed his style. The s",
+  "terra_verdict": "QUESTIONABLE",
+  "terra_reason_codes": [
+    "UNSUPPORTED_IMPLICATION"
+  ],
+  "terra_reason_in_catalog": false,
+  "cited_evidence": [
+    "SRC006152",
+    "SRC006155",
+    "SRC006156"
+  ],
+  "cited_evidence_texts": {
+    "SRC006152": "It is an abuse",
+    "SRC006155": "And the devil",
+    "SRC006156": "has used it since."
+  },
+  "uncited_authorized_evidence": {
+    "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+    "SRC006154": "It is an abuse to your person.",
+    "SRC006157": "He has not changed his style."
+  },
+  "authorized_handles": [
+    "IDEA225",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157"
+  ],
+  "analysis_4b274": {
+    "offline_category": "PLAUSIBLE_BUT_NOT_ENTAILED",
+    "disagreement_conclusion": "INDETERMINATE",
+    "rationale": "SRC006155+SRC006156 attribute use of the abuse to the devil. The generated sentence additionally frames an origin ('where this abuse comes from') and an editorial evaluation ('worth naming'). Origin is a close implication, not a strict entailment. Terra's reservation is conservative rather than clearly false."
+  },
+  "five_axis_review": {
+    "factual_assertion": {
+      "present": "PARTIAL_PRESUPPOSITION",
+      "finding": "The sentence does not name an origin. It presupposes that the abuse has an origin and that naming it is worthwhile. That presupposition is weaker than an explicit origin attribution."
+    },
+    "rhetorical_function": {
+      "role": "EDITORIAL_BRIDGE",
+      "finding": "The sentence introduces the following attested material about the devil and an old strategy. It functions as a discourse frame, not as the causal clause under dispute."
+    },
+    "origin_attribution": {
+      "assigns_a_named_origin": false,
+      "finding": "The clause does not say who or what the origin is. Combined with the next sentence, a reader may take it as origin-framing. 'Comes from' is not identical to 'has used it'."
+    },
+    "neighboring_propositions": {
+      "next_sentence_starts": "The devil has used it since the beginning",
+      "finding": "The following proposition is independently reviewed. This framing sentence points at that content without restating it."
+    },
+    "evidence_justification": {
+      "cited": [
+        "SRC006152",
+        "SRC006155",
+        "SRC006156"
+      ],
+      "uncited_authorized": {
+        "IDEA225": "Living is abused when death is feared; fear of death is the devil's old strategy.",
+        "SRC006154": "It is an abuse to your person.",
+        "SRC006157": "He has not changed his style."
+      },
+      "explicitly_supported": false,
+      "semantically_entailed": false,
+      "finding": "SRC006155+SRC006156 and IDEA225 support the devil as user of an old strategy. They do not attest an editorial evaluation that naming the origin is worthwhile, and they do not strictly entail an origin claim."
+    }
+  },
+  "forced_conclusions_rejected": {
+    "SUPPORTED": "The evaluation and origin frame are not strictly entailed.",
+    "UNSUPPORTED": "The sentence does not invent a specific origin or a new causal mechanism. Treating a discourse frame as a fabricated fact would over-read the text.",
+    "NON_SUBSTANTIVE": "The sentence carries an evaluation and an origin presupposition. An editorial transition is not automatically non-substantive.",
+    "QUESTIONABLE": "Terra's conservative reservation is compatible with production blocking, but the authorized evidence does not uniquely force that class over remaining uncertainty."
+  },
+  "human_review_conclusion": "INDETERMINATE",
+  "conclusion_is_not_a_provider_verdict": true,
+  "conclusion_forced": false,
+  "uncertainty_preserved": true,
+  "payload_unmodified": true,
+  "secrets_included": false
+}

@@ -1,0 +1,33 @@
+{
+  "phase": "4B.2.17",
+  "http_success": true,
+  "http_status": 200,
+  "finish_reason": "end_turn",
+  "input_tokens": 8586,
+  "output_tokens": 1898,
+  "thinking_tokens": 0,
+  "request_id": "req_011Cfcu4pio752aAXUKB9r6s",
+  "elapsed_ms": 18625,
+  "raw_sha256": "0af3a3071a374199ee69cede7e489fb8592ca5c6b9eab5e53af4ca946b707632",
+  "error": null,
+  "engine": {
+    "class_name": "CountingAnthropicEngine",
+    "provider": "anthropic",
+    "retry_max_attempts": 1,
+    "is_anthropic": true,
+    "is_openai": false,
+    "is_fake": false,
+    "generate_attempts": 1,
+    "post_attempts": 1,
+    "connect_timeout_seconds": 30.0,
+    "read_timeout_seconds": 1800.0
+  },
+  "usage": {
+    "input_tokens": 8586,
+    "output_tokens": 1898,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    }
+  },
+  "secrets_included": false
+}

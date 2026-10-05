@@ -1,0 +1,440 @@
+{
+  "phase": "4B.2.28",
+  "observation_count": 8,
+  "chapters": [
+    "CH005",
+    "CH006",
+    "CH008",
+    "CH009",
+    "CH010",
+    "CH013",
+    "CH014",
+    "CH017"
+  ],
+  "observations": [
+    {
+      "chapter_id": "CH005",
+      "section": "SEC022",
+      "paragraph": "P000021",
+      "exact_formulation": "Go read Isaiah 58. God said, when you fast, there is a profit in it. But that profit is what fasting does in you, not a shift it produces in him. There is never a divine condition attached to his blessing that fasting must first satisfy.",
+      "matched_spans": [
+        {
+          "section_id": "SEC022",
+          "section_title": "What Fasting Is Actually For",
+          "paragraph_id": "P000021",
+          "exact_formulation": "Go read Isaiah 58. God said, when you fast, there is a profit in it. But that profit is what fasting does in you, not a shift it produces in him. There is never a divine condition attached to his blessing that fasting must first satisfy.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC002228",
+            "SRC002235",
+            "SRC002236",
+            "SRC002240"
+          ]
+        },
+        {
+          "section_id": "SEC022",
+          "section_title": "What Fasting Is Actually For",
+          "paragraph_id": "P000024",
+          "exact_formulation": "By contrast, picture someone engaging a demon in prolonged conversation, as though it said, my name is Gombo, I came with a rachit, and drawing the exchange out at length. That kind of extended naming and conversing with demons is not the pattern Scripture gives us. Before you know it, you would be building an entire idol-worship system around a ritual that was never meant to be a method at all.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC002293",
+            "SRC002298",
+            "SRC002304"
+          ]
+        }
+      ],
+      "src_associated": [
+        "SRC002228",
+        "SRC002235",
+        "SRC002236",
+        "SRC002240"
+      ],
+      "reason": "Absolute wording may strengthen a source claim.",
+      "historical_review_present": true,
+      "confidence": "high_lexical_match",
+      "always_or_never_is_not_automatic_error": true,
+      "decision_required": "HUMAN_REVIEW — keep or revise the formulation. No automatic replacement.",
+      "automatic_rewrite_forbidden": true
+    },
+    {
+      "chapter_id": "CH006",
+      "section": "SEC027",
+      "paragraph": "P000024",
+      "exact_formulation": "Because we carry God, of course when we carry God it's easy for us to unite, because birds of the same faith have flocked together. You will never know tribe anymore. We will never know clan if we are all in the Holy Ghost. Neither male or female becomes real; Jew or Greek become real distinctions when believers live in conscious union and carry God's presence — those divisions dissolve.",
+      "matched_spans": [
+        {
+          "section_id": "SEC027",
+          "section_title": "Speech from Overflow",
+          "paragraph_id": "P000024",
+          "exact_formulation": "Because we carry God, of course when we carry God it's easy for us to unite, because birds of the same faith have flocked together. You will never know tribe anymore. We will never know clan if we are all in the Holy Ghost. Neither male or female becomes real; Jew or Greek become real distinctions when believers live in conscious union and carry God's presence — those divisions dissolve.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC003023",
+            "SRC003024",
+            "SRC003025",
+            "SRC003026",
+            "SRC003027",
+            "SRC003031",
+            "SRC003037",
+            "SRC003039",
+            "SRC003044",
+            "SRC003045"
+          ]
+        },
+        {
+          "section_id": "SEC027",
+          "section_title": "Speech from Overflow",
+          "paragraph_id": "P000024",
+          "exact_formulation": "Because we carry God, of course when we carry God it's easy for us to unite, because birds of the same faith have flocked together. You will never know tribe anymore. We will never know clan if we are all in the Holy Ghost. Neither male or female becomes real; Jew or Greek become real distinctions when believers live in conscious union and carry God's presence — those divisions dissolve.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC003023",
+            "SRC003024",
+            "SRC003025",
+            "SRC003026",
+            "SRC003027",
+            "SRC003031",
+            "SRC003037",
+            "SRC003039",
+            "SRC003044",
+            "SRC003045"
+          ]
+        },
+        {
+          "section_id": "SEC030",
+          "section_title": "Knowing Where People Are",
+          "paragraph_id": "P000038",
+          "exact_formulation": "But we must recognize others are not always at our own spiritual level. You can make decisions that may affect people adversely. You meet people who are not where you are. So don't think everybody is. We are saying some things at a certain level right now, and you're understanding it because you have come from somewhere. So be sensitive when you are dealing with people.",
+          "matched_token": "always",
+          "src_handles": [
+            "SRC002876",
+            "SRC002877",
+            "SRC002878",
+            "SRC002880",
+            "SRC002881",
+            "SRC002886",
+            "SRC002887"
+          ]
+        }
+      ],
+      "src_associated": [
+        "SRC003023",
+        "SRC003024",
+        "SRC003025",
+        "SRC003026",
+        "SRC003027",
+        "SRC003031",
+        "SRC003037",
+        "SRC003039",
+        "SRC003044",
+        "SRC003045"
+      ],
+      "reason": "Absolute wording may strengthen a source claim.",
+      "historical_review_present": true,
+      "confidence": "high_lexical_match",
+      "always_or_never_is_not_automatic_error": true,
+      "decision_required": "HUMAN_REVIEW — keep or revise the formulation. No automatic replacement.",
+      "automatic_rewrite_forbidden": true
+    },
+    {
+      "chapter_id": "CH008",
+      "section": "SEC033",
+      "paragraph": "P000004",
+      "exact_formulation": "I am giving you a duty here, not an abstraction. As I said earlier, I don't want us to do what we cannot practice. I have been giving you words — kingdom words. Now I am giving you how it is done. It doesn't fail. It has never failed. It is constant.",
+      "matched_spans": [
+        {
+          "section_id": "SEC033",
+          "section_title": "Fixing the Affections",
+          "paragraph_id": "P000004",
+          "exact_formulation": "I am giving you a duty here, not an abstraction. As I said earlier, I don't want us to do what we cannot practice. I have been giving you words — kingdom words. Now I am giving you how it is done. It doesn't fail. It has never failed. It is constant.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC003414",
+            "SRC003416",
+            "SRC003417",
+            "SRC003418",
+            "SRC003419",
+            "SRC003420",
+            "SRC003421",
+            "SRC003422",
+            "SRC003423"
+          ]
+        }
+      ],
+      "src_associated": [
+        "SRC003414",
+        "SRC003416",
+        "SRC003417",
+        "SRC003418",
+        "SRC003419",
+        "SRC003420",
+        "SRC003421",
+        "SRC003422",
+        "SRC003423"
+      ],
+      "reason": "Absolute wording may strengthen a source claim.",
+      "historical_review_present": true,
+      "confidence": "high_lexical_match",
+      "always_or_never_is_not_automatic_error": true,
+      "decision_required": "HUMAN_REVIEW — keep or revise the formulation. No automatic replacement.",
+      "automatic_rewrite_forbidden": true
+    },
+    {
+      "chapter_id": "CH009",
+      "section": "SEC036",
+      "paragraph": "P000001",
+      "exact_formulation": "Spiritual experience is not general; it is always individual, always personal. What God does in one life does not become a universal standard that everyone else must now match.",
+      "matched_spans": [
+        {
+          "section_id": "SEC036",
+          "section_title": "When Admiration Becomes Law",
+          "paragraph_id": "P000001",
+          "exact_formulation": "Spiritual experience is not general; it is always individual, always personal. What God does in one life does not become a universal standard that everyone else must now match.",
+          "matched_token": "always",
+          "src_handles": [
+            "SRC003736",
+            "SRC003737",
+            "SRC003738"
+          ]
+        },
+        {
+          "section_id": "SEC036",
+          "section_title": "When Admiration Becomes Law",
+          "paragraph_id": "P000001",
+          "exact_formulation": "Spiritual experience is not general; it is always individual, always personal. What God does in one life does not become a universal standard that everyone else must now match.",
+          "matched_token": "always",
+          "src_handles": [
+            "SRC003736",
+            "SRC003737",
+            "SRC003738"
+          ]
+        },
+        {
+          "section_id": "SEC036",
+          "section_title": "When Admiration Becomes Law",
+          "paragraph_id": "P000003",
+          "exact_formulation": "But show me one condition God gave. Where do you get the law that you have to be like Bishop Chris in order to be known by God? God never laid down such a demand; it is self-imposed.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC003814",
+            "SRC003821",
+            "SRC003822",
+            "SRC003823"
+          ]
+        },
+        {
+          "section_id": "SEC038",
+          "section_title": "The Real Cost of the Doctrine",
+          "paragraph_id": "P000016",
+          "exact_formulation": "Today, nobody forces you to come to church. You can identify with a congregation and then withdraw without needing to inform anyone. At most, your pastor might decide that your conduct is too much for the fellowship. This was not always so; church attendance and tithing were once enforced by civil and religious authority rather than left to voluntary participation.",
+          "matched_token": "always",
+          "src_handles": [
+            "SRC003996",
+            "SRC003999",
+            "SRC004003"
+          ]
+        }
+      ],
+      "src_associated": [
+        "SRC003736",
+        "SRC003737",
+        "SRC003738"
+      ],
+      "reason": "Absolute wording may strengthen a source claim.",
+      "historical_review_present": true,
+      "confidence": "high_lexical_match",
+      "always_or_never_is_not_automatic_error": true,
+      "decision_required": "HUMAN_REVIEW — keep or revise the formulation. No automatic replacement.",
+      "automatic_rewrite_forbidden": true
+    },
+    {
+      "chapter_id": "CH010",
+      "section": "SEC040",
+      "paragraph": "P000007",
+      "exact_formulation": "The body was never inherently bad. There was no time when the body itself was the problem. It was sin, not the body, that corrupted man.",
+      "matched_spans": [
+        {
+          "section_id": "SEC040",
+          "section_title": "In Dying You Shall Die",
+          "paragraph_id": "P000007",
+          "exact_formulation": "The body was never inherently bad. There was no time when the body itself was the problem. It was sin, not the body, that corrupted man.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC004177",
+            "SRC004178",
+            "SRC004180",
+            "SRC004183",
+            "SRC004184"
+          ]
+        }
+      ],
+      "src_associated": [
+        "SRC004177",
+        "SRC004178",
+        "SRC004180",
+        "SRC004183",
+        "SRC004184"
+      ],
+      "reason": "Absolute wording may strengthen a source claim.",
+      "historical_review_present": true,
+      "confidence": "high_lexical_match",
+      "always_or_never_is_not_automatic_error": true,
+      "decision_required": "HUMAN_REVIEW — keep or revise the formulation. No automatic replacement.",
+      "automatic_rewrite_forbidden": true
+    },
+    {
+      "chapter_id": "CH013",
+      "section": "SEC052",
+      "paragraph": "P000004",
+      "exact_formulation": "Imagination is a faculty that God himself has given you. Even people who have never been to school, who have had no formal education, still have imagination. The problem is not that you lack imagination — the problem is that you have failed to use it or direct it rightly.",
+      "matched_spans": [
+        {
+          "section_id": "SEC052",
+          "section_title": "The Power the Church Did Not Teach",
+          "paragraph_id": "P000004",
+          "exact_formulation": "Imagination is a faculty that God himself has given you. Even people who have never been to school, who have had no formal education, still have imagination. The problem is not that you lack imagination — the problem is that you have failed to use it or direct it rightly.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC004977",
+            "SRC004980",
+            "SRC004982",
+            "SRC004984"
+          ]
+        },
+        {
+          "section_id": "SEC053",
+          "section_title": "Bring Jesus Into the Thought",
+          "paragraph_id": "P000019",
+          "exact_formulation": "And so we finish praying, and sometimes we say 'amen' aloud, while our spirit was never truly present in that prayer at all. Repeating the word outwardly does not guarantee that the mind was inwardly engaged.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC005219",
+            "SRC005222",
+            "SRC005231",
+            "SRC005233"
+          ]
+        },
+        {
+          "section_id": "SEC054",
+          "section_title": "Training the Wandering Mind",
+          "paragraph_id": "P000021",
+          "exact_formulation": "Train yourself in this way before sleep, and you will never have bad dreams again in the same way. More than that, you can learn to bring a dream back when it carries meaning worth recovering.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC006566",
+            "SRC006568",
+            "SRC006571"
+          ]
+        }
+      ],
+      "src_associated": [
+        "SRC004977",
+        "SRC004980",
+        "SRC004982",
+        "SRC004984"
+      ],
+      "reason": "Absolute wording may strengthen a source claim.",
+      "historical_review_present": true,
+      "confidence": "high_lexical_match",
+      "always_or_never_is_not_automatic_error": true,
+      "decision_required": "HUMAN_REVIEW — keep or revise the formulation. No automatic replacement.",
+      "automatic_rewrite_forbidden": true
+    },
+    {
+      "chapter_id": "CH014",
+      "section": "SEC055",
+      "paragraph": "P000008",
+      "exact_formulation": "I never preach a doctrine I do not know. Do not be foolish and claim to know everything; God is too great for anyone to know everything about him. But whatever you do know, it must work for you.",
+      "matched_spans": [
+        {
+          "section_id": "SEC055",
+          "section_title": "Abnormal Faith, Short Prayers",
+          "paragraph_id": "P000008",
+          "exact_formulation": "I never preach a doctrine I do not know. Do not be foolish and claim to know everything; God is too great for anyone to know everything about him. But whatever you do know, it must work for you.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC005728",
+            "SRC005732",
+            "SRC005734",
+            "SRC005736",
+            "SRC005737"
+          ]
+        },
+        {
+          "section_id": "SEC058",
+          "section_title": "Without Struggle",
+          "paragraph_id": "P000020",
+          "exact_formulation": "If you stay in communion, you will never lack for a word of knowledge. Stay in communion with the spirit of wisdom, and you will never lack for a word of wisdom.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC006115",
+            "SRC006117",
+            "SRC006119",
+            "SRC006121"
+          ]
+        },
+        {
+          "section_id": "SEC058",
+          "section_title": "Without Struggle",
+          "paragraph_id": "P000020",
+          "exact_formulation": "If you stay in communion, you will never lack for a word of knowledge. Stay in communion with the spirit of wisdom, and you will never lack for a word of wisdom.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC006115",
+            "SRC006117",
+            "SRC006119",
+            "SRC006121"
+          ]
+        }
+      ],
+      "src_associated": [
+        "SRC005728",
+        "SRC005732",
+        "SRC005734",
+        "SRC005736",
+        "SRC005737"
+      ],
+      "reason": "Absolute wording may strengthen a source claim.",
+      "historical_review_present": true,
+      "confidence": "high_lexical_match",
+      "always_or_never_is_not_automatic_error": true,
+      "decision_required": "HUMAN_REVIEW — keep or revise the formulation. No automatic replacement.",
+      "automatic_rewrite_forbidden": true
+    },
+    {
+      "chapter_id": "CH017",
+      "section": "SEC065",
+      "paragraph": "P000022",
+      "exact_formulation": "So do not go and say God made me like that. God did not make you like that, my friend. You have made a choice, or a choice was made for you before you were born — but it was not God who made you poor. Do not blame God for the consequences of choices that were never his.",
+      "matched_spans": [
+        {
+          "section_id": "SEC065",
+          "section_title": "God Did Not Make Anyone Poor",
+          "paragraph_id": "P000022",
+          "exact_formulation": "So do not go and say God made me like that. God did not make you like that, my friend. You have made a choice, or a choice was made for you before you were born — but it was not God who made you poor. Do not blame God for the consequences of choices that were never his.",
+          "matched_token": "never",
+          "src_handles": [
+            "SRC007547",
+            "SRC007549",
+            "SRC007550"
+          ]
+        }
+      ],
+      "src_associated": [
+        "SRC007547",
+        "SRC007549",
+        "SRC007550"
+      ],
+      "reason": "Absolute wording may strengthen a source claim.",
+      "historical_review_present": true,
+      "confidence": "high_lexical_match",
+      "always_or_never_is_not_automatic_error": true,
+      "decision_required": "HUMAN_REVIEW — keep or revise the formulation. No automatic replacement.",
+      "automatic_rewrite_forbidden": true
+    }
+  ],
+  "semantic_certification": "NOT PERFORMED",
+  "automatic_correction": false,
+  "secrets_included": false
+}

@@ -1,0 +1,24 @@
+{
+  "phase": "4B.2.26",
+  "resume_skips_validated_ch005": true,
+  "uncertain_ch006_blocks_replay": true,
+  "accepted_chapters_ignored": true,
+  "out_of_scope_ignored": true,
+  "resume_is_not_new_authorization": true,
+  "real_reservations": 0,
+  "normalization_on_empty_fixture_does_not_invent_content": true,
+  "status": "PASS",
+  "first": {
+    "chapter_id": null,
+    "blocked": true,
+    "reason": "CH006_UNCERTAIN_NO_REPLAY",
+    "skipped": [
+      {
+        "chapter_id": "CH005",
+        "reason": "already_validated"
+      }
+    ]
+  },
+  "replay_error": "A consumed or uncertain call must never be replayed automatically.",
+  "secrets_included": false
+}

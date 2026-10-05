@@ -1,0 +1,31 @@
+{
+  "phase": "4B.2.13",
+  "executed": false,
+  "order": [
+    "1. Offline preflight (this phase).",
+    "2. Human review of architecture, contract, FakeAI results, and costs.",
+    "3. If later authorized: one real chapter experiment, not CH016 regeneration by default and never 19 chapters.",
+    "4. Analyze structure, evidence, Semantic Gate 2.0.2, PASS/REVIEW/BLOCK, and cost.",
+    "5. Human decision whether to generalize.",
+    "6. Progressive chapter generation with fail-closed gate and isolated acceptance.",
+    "7. Independent Book Validator (Phase 5).",
+    "8. Book assembly, still unpublished until sign-off."
+  ],
+  "stop_conditions": {
+    "substantial_inventions": "BLOCK the chapter. Do not auto-regenerate the book.",
+    "repeated_false_rejects": "Stop generalization. Diagnose contract vs generator vs model.",
+    "contract_failure": "Do not treat as semantic rejection. Do not convert PARTIAL to PASS.",
+    "excessive_cost": "Stop. Re-estimate before any further authorized call.",
+    "traceability_loss": "BLOCK. Do not accept the chapter.",
+    "resume_errors": "Stop. Preserve artifacts. Do not skip validation."
+  },
+  "not_executed": true,
+  "no_ch016_regeneration": true,
+  "no_19_chapter_run": true,
+  "no_phase_5": true,
+  "no_word_pdf": true,
+  "ready_for_one_real_chapter_experiment": false,
+  "ready_for_full_real_book_generation": false,
+  "next_action": "HUMAN REVIEW",
+  "secrets_included": false
+}

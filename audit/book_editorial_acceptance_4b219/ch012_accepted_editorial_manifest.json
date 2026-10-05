@@ -1,0 +1,52 @@
+{
+  "phase": "4B.2.19",
+  "manifest_version": "ch012-accepted-editorial-manifest-4b219-1.0",
+  "chapter_id": "CH012",
+  "immutable_by_hash": true,
+  "historical_files_moved": false,
+  "historical_files_overwritten": false,
+  "freeze_allowed": true,
+  "freeze_status": "FROZEN",
+  "accepted_artifacts": {
+    "version": "chapter_candidate_authorial_v2",
+    "markdown_path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.md",
+    "markdown_sha256": "79d0ab2254e1a972e0fb5ddcbb7901425255ce887ee817fc39b001838b889919",
+    "json_path": "C:/TranscriptionAI/audit/book_authorial_voice_4b218/chapter_candidate_authorial_v2.json",
+    "json_sha256": "8f135ac5f1df8b2e077e9cc767518d1a05e2fc22d80f5d66494cf5a8364e7fc5"
+  },
+  "historical_artifacts_preserved": {
+    "original_markdown_path": "C:/TranscriptionAI/audit/real/book_generation_4b217_ch012/chapter_candidate.md",
+    "original_markdown_sha256": "9cae24f35f7f41256b77849a8ca2396386a2dfa1de7f45a86da3def1331d4704",
+    "original_json_path": "C:/TranscriptionAI/audit/real/book_generation_4b217_ch012/chapter_candidate.json",
+    "original_json_sha256": "7a3eaa2da75a3d68c6bac3873d088a704d7a9cf68da303f8b6fc2c20b85b26e5",
+    "provider_lock_path": "C:/TranscriptionAI/audit/real/book_generation_4b217_ch012/ch012_real_call.lock",
+    "provider_lock_sha256": "4820e703a49360572962d0288b394a16861cbb8280b64323ddfe3310723c2efb"
+  },
+  "canonical_dependencies": {
+    "source_map_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/source_map.json",
+    "source_map_sha256": "df32f5943a21ed4013c5344d7579dbaaa46d35a77df342e1b2f6718794fc2855",
+    "editorial_plan_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/analysis/editorial_plan.json",
+    "editorial_plan_sha256": "01cfb86aed8d32a7228b7c10a8351e2ebc0832fbfe6051e35686b0fd84836440",
+    "clean_transcript_path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/transcripts/clean/transcript_data.json",
+    "clean_transcript_sha256": "1f33ac732eb82ec1d55f274a152747058c9138cd394dea9c956d28d7e2739958"
+  },
+  "applicable_editorial_policy": "faithful-teaching-book-editorial-policy-1.0-candidate",
+  "applicable_narrative_voice_contract": "authorial-voice-preservation-1.0-candidate",
+  "human_acceptance": {
+    "status": "accepted",
+    "scope": "editorial_acceptance",
+    "decision_source": "explicit_user_approval",
+    "recording_date": "2026-10-03",
+    "p000001": "accepted_unchanged",
+    "narrative_voice": "accepted",
+    "not_a_digital_signature": true,
+    "not_a_legal_or_cryptographic_user_approval": true
+  },
+  "future_controls_must_reference_this_manifest": true,
+  "future_projection_must_keep_mapping_table": "ch012-idea-content-mapping-4b219-1.0",
+  "semantic_certification": "not_performed",
+  "automated_source_coverage_certification": "not_performed",
+  "publication_authorization": "not_granted",
+  "accepted_chapter_must_not_be_altered": true,
+  "secrets_included": false
+}

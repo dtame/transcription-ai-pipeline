@@ -1,0 +1,23 @@
+{
+  "phase": "4B.2.21",
+  "authorization_scope": "BOOK_GENERATION_LATER_PHASE_CH018_FIRST_REMAINING_CHAPTER_ONE_SHOT_ONLY",
+  "chapter_id": "CH018",
+  "model": "anthropic/claude-sonnet-5",
+  "prompt_version": "book-generator-faithful-restatement-1.1-candidate",
+  "canonical_hashes_ok": true,
+  "ch012_unchanged": true,
+  "sources_available": true,
+  "chapter_isolated": true,
+  "faithful_prompt_isolated": true,
+  "historical_prompt_unmodified": true,
+  "production_cache_write": false,
+  "production_book_absent": true,
+  "single_call_limit_possible": true,
+  "lock_already_consumed": false,
+  "cost_blocked": false,
+  "blocked": false,
+  "block_reason": null,
+  "execute_real_requested": true,
+  "dry_run": false,
+  "secrets_included": false
+}

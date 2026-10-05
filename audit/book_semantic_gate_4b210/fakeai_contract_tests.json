@@ -1,0 +1,210 @@
+{
+  "phase": "4B.2.10",
+  "source": "FAKEAI_SIMULATED",
+  "not_terra": true,
+  "not_a_terra_validation": true,
+  "scenario_count": 15,
+  "scenarios": [
+    {
+      "scenario": "all_supported",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "PASS",
+      "expected": "PASS_OR_REVIEW",
+      "validation_ok": true,
+      "errors": [],
+      "match": true
+    },
+    {
+      "scenario": "legitimate_paraphrase",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "PASS",
+      "expected": "PASS_OR_REVIEW",
+      "validation_ok": true,
+      "errors": [],
+      "match": true
+    },
+    {
+      "scenario": "invented_causality",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": true,
+      "errors": [],
+      "match": true
+    },
+    {
+      "scenario": "invented_implication",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": true,
+      "errors": [],
+      "match": true
+    },
+    {
+      "scenario": "universal_guarantee",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": true,
+      "errors": [],
+      "match": true
+    },
+    {
+      "scenario": "missing_unit",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": false,
+      "errors": [
+        "missing_units:u04"
+      ],
+      "match": true
+    },
+    {
+      "scenario": "duplicate_unit",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": false,
+      "errors": [
+        "pr[0].u[5].id:duplicate:u00"
+      ],
+      "match": true
+    },
+    {
+      "scenario": "unknown_unit",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": false,
+      "errors": [
+        "pr[0].u[5].id:unknown_unit:u99"
+      ],
+      "match": true
+    },
+    {
+      "scenario": "unknown_reason_code",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": false,
+      "errors": [
+        "pr[0].u[0].r[0]:unknown_reason_code:MADE_UP_CODE",
+        "pr[0].u[0].r:reasons_required_for_UNSUPPORTED"
+      ],
+      "match": true
+    },
+    {
+      "scenario": "unknown_evidence_handle",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": false,
+      "errors": [
+        "pr[0].u[0].ev[0]:unknown_evidence_handle:SRC999999"
+      ],
+      "match": true
+    },
+    {
+      "scenario": "incoherent_global_verdict",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": false,
+      "errors": [
+        "v:incoherent:FAIL!=PASS",
+        "rr:required_for_FAIL"
+      ],
+      "match": true
+    },
+    {
+      "scenario": "invalid_json",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": false,
+      "errors": [
+        "invalid_json"
+      ],
+      "match": true
+    },
+    {
+      "scenario": "truncated_response",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": false,
+      "errors": [
+        "invalid_json"
+      ],
+      "match": true
+    },
+    {
+      "scenario": "questionable",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "REVIEW",
+      "expected": "REVIEW",
+      "validation_ok": true,
+      "errors": [],
+      "match": true
+    },
+    {
+      "scenario": "abusive_non_substantive",
+      "source": "FAKEAI_SIMULATED",
+      "not_terra": true,
+      "decision": "BLOCK",
+      "expected": "BLOCK",
+      "validation_ok": true,
+      "errors": [],
+      "match": true
+    }
+  ],
+  "extra_invalid": [
+    {
+      "scenario": "empty_response",
+      "source": "FAKEAI_SIMULATED",
+      "blocked": true,
+      "errors": [
+        "empty_response"
+      ],
+      "not_terra": true
+    },
+    {
+      "scenario": "truncated_object",
+      "source": "FAKEAI_SIMULATED",
+      "blocked": true,
+      "errors": [
+        "invalid_json"
+      ],
+      "not_terra": true
+    },
+    {
+      "scenario": "forbidden_offset_field",
+      "source": "FAKEAI_SIMULATED",
+      "blocked": true,
+      "errors": [
+        "pr[0]:unexpected_fields:s",
+        "missing_units:u00,u01,u02,u03,u04"
+      ],
+      "not_terra": true
+    }
+  ],
+  "passed": true,
+  "does_not_silently_repair": true,
+  "secrets_included": false
+}

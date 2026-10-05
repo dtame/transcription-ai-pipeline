@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "name": "20_invalid_result_url",
+      "passed": true,
+      "detail": "delivery_url_not_allowed"
+    },
+    {
+      "name": "21_unauthorized_redirect",
+      "passed": true,
+      "detail": "unauthorized_redirect"
+    },
+    {
+      "name": "22_corrupt_image",
+      "passed": true,
+      "detail": "corrupt_image"
+    },
+    {
+      "name": "23_file_too_large",
+      "passed": true,
+      "detail": "file_too_large"
+    },
+    {
+      "name": "24_missing_metadata",
+      "passed": true,
+      "detail": "metadata_missing"
+    },
+    {
+      "name": "25_sha256",
+      "passed": true,
+      "detail": "sha256 matches the stored file"
+    }
+  ]
+}

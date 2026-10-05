@@ -1,0 +1,13 @@
+{
+  "SDK_IMPORT": "PASS",
+  "CREDENTIAL_AVAILABLE": "YES",
+  "CLIENT_CONSTRUCTION": "PASS",
+  "PROVIDER_INITIALIZATION": "PASS",
+  "MODEL_RESOLUTION": "PASS",
+  "REQUEST_CONSTRUCTION": "PASS",
+  "NETWORK_CALLS": 0,
+  "ready": true,
+  "primary_reason": null,
+  "sdk_version": "2.43.0",
+  "secrets_included": false
+}

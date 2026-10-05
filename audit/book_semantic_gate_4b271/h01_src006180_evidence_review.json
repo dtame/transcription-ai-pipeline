@@ -1,0 +1,108 @@
+{
+  "phase": "4B.2.7.1",
+  "id": "SRC006180",
+  "exact_text": "But you can see fear",
+  "gate_request_text": "But you can see fear",
+  "present_in_request": true,
+  "cited_by_terra": false,
+  "terra_cited_handles": [
+    "IDEA224",
+    "SRC006149",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187"
+  ],
+  "relevance_to_IDEA224": {
+    "in_idea_source_refs": true,
+    "role": "Observes that fear is visible. IDEA224 says believers should not fear death. The SRC is contrast/setup, not the no-set-time wording."
+  },
+  "relevance_to_calculate": {
+    "supports": false,
+    "note": "No calculation wording."
+  },
+  "relevance_to_bargain_with": {
+    "supports": false,
+    "decisive": false,
+    "note": "No bargain/negotiate wording. Non-citation does not change the clause analysis."
+  },
+  "relations_with_other_src": {
+    "SRC006181": {
+      "text": "in the eyes of some people.",
+      "in_gate_request": false,
+      "note": "Immediate continuation in the transcript. Not supplied to Terra."
+    },
+    "SRC006182": {
+      "text": "It's not normal.",
+      "in_gate_request": true,
+      "note": "Follows the fear observation."
+    }
+  },
+  "absence_from_citations": {
+    "proves_non_reading": false,
+    "available": true,
+    "cited": false,
+    "necessary_for_disputed_clause": false,
+    "potentially_decisive_for_bargain": false,
+    "contract_requires_exhaustive_citation": false,
+    "contract_requires": "Evidence handles actually used as support. Unused supplied handles need not be listed."
+  },
+  "local_context": [
+    {
+      "id": "SRC006177",
+      "text": "It's normal.",
+      "start_seconds": 1095.84,
+      "end_seconds": 1096.7,
+      "is_target": false,
+      "in_gate_request": false
+    },
+    {
+      "id": "SRC006178",
+      "text": "Fellowship,",
+      "start_seconds": 1097.32,
+      "end_seconds": 1097.94,
+      "is_target": false,
+      "in_gate_request": false
+    },
+    {
+      "id": "SRC006179",
+      "text": "and all of that.",
+      "start_seconds": 1098.04,
+      "end_seconds": 1099.34,
+      "is_target": false,
+      "in_gate_request": false
+    },
+    {
+      "id": "SRC006180",
+      "text": "But you can see fear",
+      "start_seconds": 1101.0,
+      "end_seconds": 1102.2,
+      "is_target": true,
+      "in_gate_request": true
+    },
+    {
+      "id": "SRC006181",
+      "text": "in the eyes of some people.",
+      "start_seconds": 1102.2,
+      "end_seconds": 1106.24,
+      "is_target": false,
+      "in_gate_request": false
+    },
+    {
+      "id": "SRC006182",
+      "text": "It's not normal.",
+      "start_seconds": 1106.62,
+      "end_seconds": 1107.84,
+      "is_target": false,
+      "in_gate_request": true
+    },
+    {
+      "id": "SRC006183",
+      "text": "It should be our joy.",
+      "start_seconds": 1109.84,
+      "end_seconds": 1111.38,
+      "is_target": false,
+      "in_gate_request": true
+    }
+  ],
+  "secrets_included": false
+}

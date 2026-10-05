@@ -1,0 +1,460 @@
+{
+  "phase": "4B.2.8",
+  "provider_calls": 0,
+  "historical_terra_verdicts_not_reissued": true,
+  "old_responses_not_treated_as_new_architecture_answers": true,
+  "h01": {
+    "handle": "h01",
+    "paragraph_chars": 232,
+    "unit_count": 5,
+    "ambiguous_unit_count": 0,
+    "conservative_fallback": false,
+    "coverage": {
+      "char_count": 232,
+      "covered_chars": 232,
+      "uncovered_spans": [],
+      "word_count": 46,
+      "covered_word_count": 46,
+      "uncovered_words": [],
+      "connector_coverage": {
+        "occurrences": [
+          {
+            "token": "REDACTED",
+            "start": 106,
+            "end": 112,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u02"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 3,
+            "end": 6,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u00"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 186,
+            "end": 189,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u03"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 41,
+            "end": 43,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u01"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 142,
+            "end": 144,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u03"
+            ]
+          }
+        ],
+        "present_count": 5,
+        "fully_covered_count": 5,
+        "split_across_units": []
+      },
+      "complete_chars": true,
+      "complete_words": true
+    },
+    "units": [
+      {
+        "id": "u00",
+        "start_offset": 0,
+        "end_offset": 32,
+        "text": "Do not ever be afraid of death. ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      },
+      {
+        "id": "u01",
+        "start_offset": 32,
+        "end_offset": 106,
+        "text": "There is no fixed hour appointed that fear can calculate or bargain with, ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      },
+      {
+        "id": "u02",
+        "start_offset": 106,
+        "end_offset": 142,
+        "text": "and so fear itself is out of place. ",
+        "boundary_type": "RESULT_CONNECTIVE",
+        "ambiguous": false
+      },
+      {
+        "id": "u03",
+        "start_offset": 142,
+        "end_offset": 211,
+        "text": "If somebody has gone to heaven, that should not produce dread in us. ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      },
+      {
+        "id": "u04",
+        "start_offset": 211,
+        "end_offset": 232,
+        "text": "It should be our joy.",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      }
+    ],
+    "preserved_propositions": [
+      {
+        "label": "bargain_clause",
+        "start": 65,
+        "end": 104,
+        "preserved_in_one_unit": true,
+        "unit_id": "u01",
+        "unit_text": "There is no fixed hour appointed that fear can calculate or bargain with, ",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      }
+    ],
+    "offset_stability": true,
+    "deterministic_replay": true,
+    "paragraph_unchanged": true,
+    "not_a_terra_verdict": true,
+    "evidence_level": "DETERMINISTICALLY_VERIFIED"
+  },
+  "h02": {
+    "handle": "h02",
+    "paragraph_chars": 466,
+    "unit_count": 8,
+    "ambiguous_unit_count": 1,
+    "conservative_fallback": false,
+    "coverage": {
+      "char_count": 466,
+      "covered_chars": 466,
+      "uncovered_spans": [],
+      "word_count": 86,
+      "covered_word_count": 86,
+      "uncovered_words": [],
+      "connector_coverage": {
+        "occurrences": [
+          {
+            "token": "REDACTED",
+            "start": 406,
+            "end": 413,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u07"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 56,
+            "end": 59,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u00"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 279,
+            "end": 282,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u05"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 444,
+            "end": 447,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u07"
+            ]
+          }
+        ],
+        "present_count": 4,
+        "fully_covered_count": 4,
+        "split_across_units": []
+      },
+      "complete_chars": true,
+      "complete_words": true
+    },
+    "units": [
+      {
+        "id": "u00",
+        "start_offset": 0,
+        "end_offset": 68,
+        "text": "Yet we can see fear operating in believers, and this is not normal. ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      },
+      {
+        "id": "u01",
+        "start_offset": 68,
+        "end_offset": 94,
+        "text": "Fear of death is an abuse ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      },
+      {
+        "id": "u02",
+        "start_offset": 94,
+        "end_offset": 181,
+        "text": "— an abuse to your very person, a diminishment of what you were made and remade to be. ",
+        "boundary_type": "EM_DASH",
+        "ambiguous": false
+      },
+      {
+        "id": "u03",
+        "start_offset": 181,
+        "end_offset": 229,
+        "text": "It is worth naming where this abuse comes from. ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      },
+      {
+        "id": "u04",
+        "start_offset": 229,
+        "end_offset": 272,
+        "text": "The devil has used it since the beginning; ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      },
+      {
+        "id": "u05",
+        "start_offset": 272,
+        "end_offset": 302,
+        "text": "he has not changed his style. ",
+        "boundary_type": "SEMICOLON",
+        "ambiguous": false
+      },
+      {
+        "id": "u06",
+        "start_offset": 302,
+        "end_offset": 406,
+        "text": "The same old strategy that first weaponized death against humanity is still being run today, unchanged, ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": true
+      },
+      {
+        "id": "u07",
+        "start_offset": 406,
+        "end_offset": 466,
+        "text": "because it still works wherever it is not resisted by truth.",
+        "boundary_type": "CAUSAL_CONNECTIVE",
+        "ambiguous": false
+      }
+    ],
+    "preserved_propositions": [
+      {
+        "label": "because_clause",
+        "start": 406,
+        "end": 465,
+        "preserved_in_one_unit": true,
+        "unit_id": "u07",
+        "unit_text": "because it still works wherever it is not resisted by truth.",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      {
+        "label": "very_person",
+        "start": 96,
+        "end": 124,
+        "preserved_in_one_unit": true,
+        "unit_id": "u02",
+        "unit_text": "— an abuse to your very person, a diminishment of what you were made and remade to be. ",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      {
+        "label": "since_the_beginning",
+        "start": 229,
+        "end": 270,
+        "preserved_in_one_unit": true,
+        "unit_id": "u04",
+        "unit_text": "The devil has used it since the beginning; ",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      }
+    ],
+    "offset_stability": true,
+    "deterministic_replay": true,
+    "paragraph_unchanged": true,
+    "not_a_terra_verdict": true,
+    "evidence_level": "DETERMINISTICALLY_VERIFIED"
+  },
+  "h11": {
+    "handle": "h11",
+    "paragraph_chars": 357,
+    "unit_count": 5,
+    "ambiguous_unit_count": 1,
+    "conservative_fallback": false,
+    "coverage": {
+      "char_count": 357,
+      "covered_chars": 357,
+      "uncovered_spans": [],
+      "word_count": 66,
+      "covered_word_count": 66,
+      "uncovered_words": [],
+      "connector_coverage": {
+        "occurrences": [
+          {
+            "token": "REDACTED",
+            "start": 294,
+            "end": 305,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u04"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 12,
+            "end": 15,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u00"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 52,
+            "end": 55,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u01"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 74,
+            "end": 77,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u01"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 182,
+            "end": 185,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u03"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 0,
+            "end": 3,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u00"
+            ]
+          },
+          {
+            "token": "REDACTED",
+            "start": 236,
+            "end": 239,
+            "fully_inside_one_unit": true,
+            "owners": [
+              "u03"
+            ]
+          }
+        ],
+        "present_count": 7,
+        "fully_covered_count": 7,
+        "split_across_units": []
+      },
+      "complete_chars": true,
+      "complete_words": true
+    },
+    "units": [
+      {
+        "id": "u00",
+        "start_offset": 0,
+        "end_offset": 46,
+        "text": "But this is not a matter of mental technique. ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      },
+      {
+        "id": "u01",
+        "start_offset": 46,
+        "end_offset": 141,
+        "text": "It is not mind over matter, not a trick of positive thinking applied to a frightening subject. ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      },
+      {
+        "id": "u02",
+        "start_offset": 141,
+        "end_offset": 180,
+        "text": "Death as gain must become your reality ",
+        "boundary_type": "SENTENCE",
+        "ambiguous": false
+      },
+      {
+        "id": "u03",
+        "start_offset": 180,
+        "end_offset": 294,
+        "text": "— not an idea you agree with in a sermon and set aside, but the actual substance of how you face your own ending, ",
+        "boundary_type": "EM_DASH",
+        "ambiguous": true
+      },
+      {
+        "id": "u04",
+        "start_offset": 294,
+        "end_offset": 357,
+        "text": "which means that every believer is guaranteed a fearless death.",
+        "boundary_type": "IMPLICATIVE_CONNECTIVE",
+        "ambiguous": false
+      }
+    ],
+    "preserved_propositions": [
+      {
+        "label": "universal_guarantee",
+        "start": 294,
+        "end": 356,
+        "preserved_in_one_unit": true,
+        "unit_id": "u04",
+        "unit_text": "which means that every believer is guaranteed a fearless death.",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      {
+        "label": "mind_over_matter",
+        "start": 46,
+        "end": 72,
+        "preserved_in_one_unit": true,
+        "unit_id": "u01",
+        "unit_text": "It is not mind over matter, not a trick of positive thinking applied to a frightening subject. ",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      {
+        "label": "positive_thinking",
+        "start": 74,
+        "end": 139,
+        "preserved_in_one_unit": true,
+        "unit_id": "u01",
+        "unit_text": "It is not mind over matter, not a trick of positive thinking applied to a frightening subject. ",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      }
+    ],
+    "offset_stability": true,
+    "deterministic_replay": true,
+    "paragraph_unchanged": true,
+    "not_a_terra_verdict": true,
+    "evidence_level": "DETERMINISTICALLY_VERIFIED"
+  },
+  "all_complete_char_coverage": true,
+  "all_offset_stable": true,
+  "evidence_level": "DETERMINISTICALLY_VERIFIED",
+  "secrets_included": false
+}

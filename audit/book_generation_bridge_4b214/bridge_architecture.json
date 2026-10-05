@@ -1,0 +1,66 @@
+{
+  "phase": "4B.2.14",
+  "module": "app.book_generation_bridge_4b214",
+  "enabled_by_default": false,
+  "connected": false,
+  "real_providers_enabled": false,
+  "activated": false,
+  "proposed_flow": [
+    "Receive a real ChapterCandidate from Book Generator (this phase: FakeAI only).",
+    "Adapt to the 4B.2.13 envelope via adapter.adapt_chapter_candidate.",
+    "Fail closed if chapter/section/paragraph IDs, text, evidence, versions, or hashes are missing.",
+    "Enforce single_chapter_only when that mode is selected.",
+    "Consume a one-shot human authorization before any future real call.",
+    "Reserve budget fail-closed before any future provider call.",
+    "Prepare units (prepare_paragraph_units) and validate coverage.",
+    "Build one Semantic Gate 2.0.2 request per paragraph (candidate granularity A).",
+    "Obtain FakeSemanticTransport responses in this phase.",
+    "Validate with validate_response_202 and apply_acceptance_policy_202.",
+    "Aggregate chapter PASS/REVIEW/BLOCK.",
+    "Apply the human review protocol without mutating the original model response.",
+    "Store only in IsolatedChapterCache. Never production ChapterCache.",
+    "Expose the Phase 5 boundary payload. Do not execute Phase 5."
+  ],
+  "not_connected_to": [
+    "app.book_generation.pipeline.materialize_chapter",
+    "app.book_generation.pipeline.assemble_book",
+    "app.book_generation.cache.ChapterCache",
+    "app.book_generation.writer.write_book",
+    "SemanticGate20IntegrationCandidate.enabled"
+  ],
+  "reused_validated_components": {
+    "prepare_paragraph_units": "app.book_semantic_gate_4b29.preparation.prepare_paragraph_units",
+    "validate_prepared_coverage": "app.book_semantic_gate_4b29.coverage.validate_prepared_coverage",
+    "validate_response_202": "app.book_semantic_gate_4b212.validator.validate_response_202",
+    "apply_acceptance_policy_202": "app.book_semantic_gate_4b212.policy.apply_acceptance_policy_202",
+    "build_semantic_request": "app.book_generation_integration_4b213.request.build_semantic_request",
+    "orchestrate_chapter": "app.book_generation_integration_4b213.orchestrator.orchestrate_chapter",
+    "IsolatedChapterCache": "app.book_generation_integration_4b213.cache.IsolatedChapterCache",
+    "FakeGeneratorTransport": "app.book_generation_integration_4b213.fakeai.FakeGeneratorTransport",
+    "FakeSemanticTransport": "app.book_generation_integration_4b213.fakeai.FakeSemanticTransport"
+  },
+  "new_isolated_functions": {
+    "adapt_chapter_candidate": "app.book_generation_bridge_4b214.adapter.adapt_chapter_candidate",
+    "BudgetGuard": "app.book_generation_bridge_4b214.budget.BudgetGuard",
+    "run_bridge_chapter": "app.book_generation_bridge_4b214.orchestrator.run_bridge_chapter",
+    "SingleChapterMode": "app.book_generation_bridge_4b214.single_chapter.SingleChapterMode"
+  },
+  "semantic_gate_production_hook_enabled": false,
+  "candidate_granularity": "A_ONE_REQUEST_PER_PARAGRAPH",
+  "versions": {
+    "bridge_contract": "book-generator-semantic-gate-bridge-4b214-candidate",
+    "adapter": "book-generator-semantic-gate-adapter-4b214-candidate",
+    "budget_policy": "book-execution-budget-4b214-candidate",
+    "authorization": "REDACTED",
+    "review_protocol": "book-human-review-protocol-4b214-candidate",
+    "single_chapter_mode": "book-single-chapter-mode-4b214-candidate",
+    "semantic_contract": "book-semantic-validator-2.0.2-candidate",
+    "semantic_transport": "book-semantic-validation-transport-2.0-candidate",
+    "preparation": "book-semantic-preparation-4b28-conservative-via-4b29",
+    "validator": "app.book_semantic_gate_4b212.validator.validate_response_202",
+    "phase5_interface": "book-validator-phase5-interface-4b214-candidate"
+  },
+  "generator_and_validator_not_mixed": true,
+  "production_pipeline_modified": false,
+  "secrets_included": false
+}

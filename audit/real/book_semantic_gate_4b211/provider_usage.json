@@ -1,0 +1,45 @@
+{
+  "phase": "4B.2.11",
+  "raw_usage": {
+    "completion_tokens": 316,
+    "prompt_tokens": 1247,
+    "total_tokens": 1563,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 136,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 1244
+    }
+  },
+  "telemetry": {
+    "input_tokens": 1247,
+    "completion_tokens": 316,
+    "reasoning_tokens": 136,
+    "visible_output_tokens": "UNKNOWN",
+    "unknown_tokens": [
+      "visible_output_tokens"
+    ],
+    "reasoning_source": "completion_tokens_details.reasoning_tokens",
+    "completion_tokens_details_present": true,
+    "did_not_subtract_reasoning_from_completion": true,
+    "did_not_infer_from_max_completion_tokens": true,
+    "did_not_infer_cause_from_finish_reason": true,
+    "explicit_zero_is_zero": false,
+    "absent_is_unknown": false
+  },
+  "input_tokens": 1247,
+  "completion_tokens": 316,
+  "reasoning_tokens": 136,
+  "reasoning_source": "completion_tokens_details.reasoning_tokens",
+  "visible_output_tokens": "UNKNOWN",
+  "did_not_infer_visible_by_subtraction": true,
+  "did_not_convert_absent_to_zero": true,
+  "unknown_is_not_zero": true,
+  "reasoning_included_in_completion_unless_separately_priced": true,
+  "secrets_included": false
+}

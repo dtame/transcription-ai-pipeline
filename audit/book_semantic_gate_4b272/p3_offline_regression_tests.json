@@ -1,0 +1,513 @@
+{
+  "returncode": 0,
+  "summary": "92 passed in 5.97s",
+  "passed": 92,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b272.py",
+    "app/tests/test_book_semantic_gate_4b271.py",
+    "app/tests/test_book_semantic_gate_4b27.py",
+    "app/tests/test_book_semantic_gate_4b262.py",
+    "app/tests/test_book_semantic_gate_4b23.py"
+  ],
+  "real_provider_calls": 0,
+  "openai_http_requests": 0,
+  "anthropic_http_requests": 0,
+  "phase": "4B.2.7.2",
+  "ten_case_compact": {
+    "phase": "4B.2.7.2",
+    "positives_accepted": 6,
+    "negatives_blocked": 4,
+    "funeral_blocked": true,
+    "connective_blocked": true,
+    "p3_blocked": true,
+    "p8_blocked": true,
+    "protected": {
+      "4b2_p8_invented_funeral": true,
+      "4b2_p13_unsupported_connective": true,
+      "4b22_p3_new_causal": true,
+      "4b22_p8_reference_completion": true
+    },
+    "historical_catalog_passed": true,
+    "validation_status": "PASS",
+    "fakeai_not_terra_quality": true,
+    "labels_unmodified": true,
+    "does_not_prove_terra_verdicts": true
+  },
+  "p3_single_compact": {
+    "compact": {
+      "ch": "CH016",
+      "v": "REVIEW",
+      "pr": [
+        {
+          "h": "h02",
+          "v": "QUESTIONABLE",
+          "c": [
+            {
+              "i": 0,
+              "s": 0,
+              "e": 67,
+              "k": "SUPPORTED",
+              "ev": [
+                "IDEA225"
+              ],
+              "r": []
+            },
+            {
+              "i": 1,
+              "s": 68,
+              "e": 180,
+              "k": "SUPPORTED",
+              "ev": [
+                "IDEA225"
+              ],
+              "r": []
+            },
+            {
+              "i": 2,
+              "s": 181,
+              "e": 228,
+              "k": "SUPPORTED",
+              "ev": [
+                "IDEA225"
+              ],
+              "r": []
+            },
+            {
+              "i": 3,
+              "s": 229,
+              "e": 301,
+              "k": "SUPPORTED",
+              "ev": [
+                "IDEA225"
+              ],
+              "r": []
+            },
+            {
+              "i": 4,
+              "s": 302,
+              "e": 406,
+              "k": "SUPPORTED",
+              "ev": [
+                "IDEA225"
+              ],
+              "r": []
+            },
+            {
+              "i": 5,
+              "s": 406,
+              "e": 465,
+              "k": "QUESTIONABLE",
+              "ev": [],
+              "r": [
+                "NEW_CAUSAL_LINK"
+              ],
+              "n": "Because-clause is not in authorized evidence."
+            }
+          ],
+          "ev": [
+            "SRC006152",
+            "SRC006154"
+          ],
+          "r": [
+            "NEW_CAUSAL_LINK"
+          ]
+        }
+      ],
+      "sc": {
+        "supported": 5,
+        "questionable": 1,
+        "unsupported": 0,
+        "non_substantive": 0
+      },
+      "uh": [],
+      "rr": true
+    },
+    "validation": {
+      "status": "PASS",
+      "json_parse": "PASS",
+      "errors": [],
+      "span_errors": [],
+      "coverage_errors": [],
+      "claim_errors": [],
+      "missing_handles": [],
+      "returned_handles": [
+        "h02"
+      ],
+      "historical_validation": {
+        "json_parse": "PASS",
+        "case_coverage": "PASS",
+        "span_validation": "FAIL",
+        "acceptance_blocked": true
+      },
+      "proposition_level_control_preserved": true,
+      "acceptance_blocked_if_fail": true,
+      "offset_convention": {
+        "indexing": "python3_str_unicode_code_points",
+        "interval": "half_open",
+        "start_inclusive": true,
+        "end_exclusive": true,
+        "not_utf8_bytes": true,
+        "not_utf16_code_units": true,
+        "combining_characters_are_separate_code_points": true,
+        "empty_span_invalid": true,
+        "inconsistent_span_invalid": true,
+        "out_of_bounds_invalid": true,
+        "valid_offset_is_not_semantic_support": true,
+        "recovery": "paragraph_text[start:end]",
+        "documentation": "Offsets are Python 3 str indices. text[s:e] recovers the evaluated span. A well-formed span identifies the evaluated passage; it does not prove the passage is supported by canonical evidence."
+      },
+      "reason_code_warnings": [],
+      "separator_notes": [
+        {
+          "handle": "h02",
+          "allowed": [
+            {
+              "start": 67,
+              "end": 68,
+              "text": " ",
+              "codepoints": [
+                32
+              ],
+              "isspace_flags": [
+                true
+              ],
+              "kind": "whitespace",
+              "python_slice": "text[67:68]",
+              "interval": "half_open"
+            },
+            {
+              "start": 180,
+              "end": 181,
+              "text": " ",
+              "codepoints": [
+                32
+              ],
+              "isspace_flags": [
+                true
+              ],
+              "kind": "whitespace",
+              "python_slice": "text[180:181]",
+              "interval": "half_open"
+            },
+            {
+              "start": 228,
+              "end": 229,
+              "text": " ",
+              "codepoints": [
+                32
+              ],
+              "isspace_flags": [
+                true
+              ],
+              "kind": "whitespace",
+              "python_slice": "text[228:229]",
+              "interval": "half_open"
+            },
+            {
+              "start": 301,
+              "end": 302,
+              "text": " ",
+              "codepoints": [
+                32
+              ],
+              "isspace_flags": [
+                true
+              ],
+              "kind": "whitespace",
+              "python_slice": "text[301:302]",
+              "interval": "half_open"
+            },
+            {
+              "start": 465,
+              "end": 466,
+              "text": ".",
+              "codepoints": [
+                46
+              ],
+              "isspace_flags": [
+                false
+              ],
+              "kind": "sentence_terminator",
+              "python_slice": "text[465:466]",
+              "interval": "half_open"
+            }
+          ]
+        }
+      ],
+      "coverage_policy": "significant_characters_plus_allowed_separators",
+      "frozen_1_1_status_preserved_separately": "FAIL",
+      "candidate_version": "book-semantic-validator-1.1.1-candidate",
+      "does_not_mutate_historical_validator": true
+    },
+    "p3_blocked": true,
+    "causal_claim_flagged": true,
+    "global_verdict_blocks_acceptance": true,
+    "no_unnecessary_duplication": true,
+    "fakeai_not_terra_quality": true
+  },
+  "telemetry": {
+    "phase": "4B.2.6.2",
+    "cases": [
+      {
+        "name": "reasoning_tokens_present",
+        "telemetry": {
+          "input_tokens": 1200,
+          "completion_tokens": 400,
+          "reasoning_tokens": 320,
+          "visible_output_tokens": "UNKNOWN",
+          "unknown_tokens": [
+            "visible_output_tokens"
+          ],
+          "reasoning_source": "completion_tokens_details.reasoning_tokens",
+          "completion_tokens_details_present": true,
+          "did_not_subtract_reasoning_from_completion": true,
+          "did_not_infer_from_max_completion_tokens": true,
+          "did_not_infer_cause_from_finish_reason": true,
+          "explicit_zero_is_zero": false,
+          "absent_is_unknown": false
+        },
+        "extracted_thinking_or_reasoning": 320,
+        "persisted_usage": {
+          "prompt_tokens": 1200,
+          "completion_tokens": 400,
+          "total_tokens": 1600,
+          "completion_tokens_details": {
+            "reasoning_tokens": 320
+          }
+        }
+      },
+      {
+        "name": "reasoning_tokens_absent",
+        "telemetry": {
+          "input_tokens": 1200,
+          "completion_tokens": 400,
+          "reasoning_tokens": "UNKNOWN",
+          "visible_output_tokens": "UNKNOWN",
+          "unknown_tokens": [
+            "reasoning_tokens",
+            "visible_output_tokens"
+          ],
+          "reasoning_source": "absent",
+          "completion_tokens_details_present": false,
+          "did_not_subtract_reasoning_from_completion": true,
+          "did_not_infer_from_max_completion_tokens": true,
+          "did_not_infer_cause_from_finish_reason": true,
+          "explicit_zero_is_zero": false,
+          "absent_is_unknown": true
+        },
+        "extracted_thinking_or_reasoning": null,
+        "persisted_usage": {
+          "prompt_tokens": 1200,
+          "completion_tokens": 400,
+          "total_tokens": 1600
+        }
+      },
+      {
+        "name": "reasoning_tokens_explicit_zero",
+        "telemetry": {
+          "input_tokens": 10,
+          "completion_tokens": 8,
+          "reasoning_tokens": 0,
+          "visible_output_tokens": "UNKNOWN",
+          "unknown_tokens": [
+            "visible_output_tokens"
+          ],
+          "reasoning_source": "completion_tokens_details.reasoning_tokens",
+          "completion_tokens_details_present": true,
+          "did_not_subtract_reasoning_from_completion": true,
+          "did_not_infer_from_max_completion_tokens": true,
+          "did_not_infer_cause_from_finish_reason": true,
+          "explicit_zero_is_zero": true,
+          "absent_is_unknown": false
+        },
+        "extracted_thinking_or_reasoning": 0,
+        "persisted_usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 8,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      },
+      {
+        "name": "completion_tokens_details_absent",
+        "telemetry": {
+          "input_tokens": 10,
+          "completion_tokens": 8,
+          "reasoning_tokens": "UNKNOWN",
+          "visible_output_tokens": "UNKNOWN",
+          "unknown_tokens": [
+            "reasoning_tokens",
+            "visible_output_tokens"
+          ],
+          "reasoning_source": "absent",
+          "completion_tokens_details_present": false,
+          "did_not_subtract_reasoning_from_completion": true,
+          "did_not_infer_from_max_completion_tokens": true,
+          "did_not_infer_cause_from_finish_reason": true,
+          "explicit_zero_is_zero": false,
+          "absent_is_unknown": true
+        },
+        "extracted_thinking_or_reasoning": null,
+        "persisted_usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 8,
+          "total_tokens": 18
+        }
+      },
+      {
+        "name": "historical_thinking_tokens_still_read",
+        "telemetry": {
+          "input_tokens": 10,
+          "completion_tokens": 20,
+          "reasoning_tokens": 7,
+          "visible_output_tokens": "UNKNOWN",
+          "unknown_tokens": [
+            "visible_output_tokens"
+          ],
+          "reasoning_source": "output_tokens_details.thinking_tokens",
+          "completion_tokens_details_present": false,
+          "did_not_subtract_reasoning_from_completion": true,
+          "did_not_infer_from_max_completion_tokens": true,
+          "did_not_infer_cause_from_finish_reason": true,
+          "explicit_zero_is_zero": false,
+          "absent_is_unknown": false
+        },
+        "extracted_thinking_or_reasoning": 7,
+        "persisted_usage": {
+          "input_tokens": 10,
+          "output_tokens": 20,
+          "output_tokens_details": {
+            "thinking_tokens": 7
+          }
+        }
+      },
+      {
+        "name": "sdk_object_with_completion_details",
+        "telemetry": {
+          "input_tokens": 40,
+          "completion_tokens": 90,
+          "reasoning_tokens": 55,
+          "visible_output_tokens": "UNKNOWN",
+          "unknown_tokens": [
+            "visible_output_tokens"
+          ],
+          "reasoning_source": "completion_tokens_details.reasoning_tokens",
+          "completion_tokens_details_present": true,
+          "did_not_subtract_reasoning_from_completion": true,
+          "did_not_infer_from_max_completion_tokens": true,
+          "did_not_infer_cause_from_finish_reason": true,
+          "explicit_zero_is_zero": false,
+          "absent_is_unknown": false
+        },
+        "extracted_thinking_or_reasoning": 55,
+        "persisted_usage": {
+          "prompt_tokens": 40,
+          "completion_tokens": 90,
+          "total_tokens": 130,
+          "completion_tokens_details": {
+            "reasoning_tokens": 55
+          }
+        }
+      },
+      {
+        "name": "empty_content",
+        "content": "",
+        "parse": "AIStructuredOutputError",
+        "kind": "empty"
+      },
+      {
+        "name": "finish_reason_length",
+        "finish_reason": "length",
+        "does_not_classify_missing_cases": true,
+        "does_not_prove_reasoning_cause": true,
+        "validation": {
+          "json_parse": "FAIL",
+          "transport_decode": "PASS",
+          "transport_error": null,
+          "case_coverage": "FAIL",
+          "required_handles": [
+            "h01"
+          ],
+          "returned_handles": [],
+          "missing_cases": [
+            "h01"
+          ],
+          "unknown_cases": [],
+          "duplicate_results": [],
+          "span_validation": "PASS",
+          "span_errors": [],
+          "unknown_handles": [],
+          "unknown_handle_count": 0,
+          "acceptance": {
+            "verdict": "FAIL",
+            "cache_acceptance": false,
+            "review_required": true,
+            "errors": [
+              "transport inattendu : NoneType"
+            ],
+            "summary_counts": {
+              "supported": 0,
+              "questionable": 0,
+              "unsupported": 0,
+              "non_substantive": 0
+            }
+          },
+          "canonical": {
+            "errors": [
+              "transport inattendu : NoneType"
+            ],
+            "reason": "transport_decode_fail"
+          },
+          "decoded": null,
+          "paragraph_results": [],
+          "structural_pass": false,
+          "structural_ok_including_policy": false,
+          "errors": []
+        }
+      },
+      {
+        "name": "valid_json",
+        "parsed": {
+          "ch": "CH016",
+          "v": "PASS",
+          "pr": [],
+          "sc": {},
+          "uh": [],
+          "rr": false
+        }
+      },
+      {
+        "name": "truncated_json",
+        "parse": "AIStructuredOutputError",
+        "kind": "json_decode"
+      }
+    ],
+    "assertions": {
+      "present_is_320": true,
+      "absent_is_unknown": true,
+      "absent_is_not_zero": true,
+      "explicit_zero_is_zero": true,
+      "details_absent_unknown": true,
+      "historical_thinking_preserved": true,
+      "sdk_object_reasoning_persisted": true,
+      "visible_not_inferred_by_subtraction": true,
+      "empty_content_not_accepted": true,
+      "length_missing_h01": true,
+      "valid_json_parses": true,
+      "truncated_json_fails": true,
+      "did_not_infer_from_max_completion_tokens": true,
+      "did_not_infer_cause_from_finish_reason": true
+    },
+    "passed": true,
+    "failed": [],
+    "network_calls": 0,
+    "secrets_included": false
+  },
+  "benchmark_identity_match": true,
+  "fakeai_not_terra_quality": true
+}

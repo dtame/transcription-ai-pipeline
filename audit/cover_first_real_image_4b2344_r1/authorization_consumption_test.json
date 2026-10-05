@@ -1,0 +1,18 @@
+{
+  "authorization_status": "SUCCEEDED",
+  "ledger_unchanged": true,
+  "live_http_enabled": false,
+  "method": "offline_mock",
+  "mock_exchange_count": 0,
+  "old_authorization_reused": false,
+  "openai_contacted": false,
+  "performed": true,
+  "reasons": [
+    "estimated_cost_unknown",
+    "billing_ceiling_not_guaranteed",
+    "images_exhausted",
+    "authorization_already_consumed"
+  ],
+  "reusable": false,
+  "second_generate_refused": true
+}

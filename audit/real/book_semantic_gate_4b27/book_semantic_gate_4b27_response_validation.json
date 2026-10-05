@@ -1,0 +1,32 @@
+{
+  "json_parse": "PASS",
+  "parse_error": null,
+  "contract_status": "FAIL",
+  "errors": [
+    "h01: coverage_gap_[(140, 141), (209, 210)]"
+  ],
+  "span_errors": [],
+  "coverage_errors": [
+    "h01: coverage_gap_[(140, 141), (209, 210)]"
+  ],
+  "claim_errors": [],
+  "missing_handles": [],
+  "returned_handles": [
+    "h01"
+  ],
+  "repaired": false,
+  "phase_result": "PARTIAL",
+  "materially_incomplete": false,
+  "coverage_gap_kind": "sentence_separator_spaces",
+  "coverage_gaps": [
+    [
+      140,
+      141
+    ],
+    [
+      209,
+      210
+    ]
+  ],
+  "usable_json": true
+}

@@ -1,0 +1,659 @@
+{
+  "phase": "4B.2.8",
+  "handle": "h01",
+  "historical_status": "PARTIAL",
+  "not_converted_to_pass": true,
+  "human_label_audit_only": "SUPPORTED",
+  "human_label_unmodified": true,
+  "paragraph_exact_text": "Do not ever be afraid of death. There is no fixed hour appointed that fear can calculate or bargain with, and so fear itself is out of place. If somebody has gone to heaven, that should not produce dread in us. It should be our joy.",
+  "terra_global_verdict": "REVIEW",
+  "terra_paragraph_verdict": "QUESTIONABLE",
+  "disputed_clause": "that fear can calculate or bargain with",
+  "original_vs_generated": {
+    "source_core": "IDEA224 no set time; SRC006149 do not fear death",
+    "generated_clause": "that fear can calculate or bargain with",
+    "terra_interpretation_visible": "Calculation is implied, but bargaining is not supplied.",
+    "human_interpretation": "Stylistic co-predicate of the attested absence of an appointed hour.",
+    "no_hidden_terra_mechanism_attributed": true,
+    "evidence_level": "HUMAN_ASSESSED"
+  },
+  "claims": [
+    {
+      "canary": "h01",
+      "index": 0,
+      "exact_text": "Do not ever be afraid of death.",
+      "offsets": {
+        "start": 0,
+        "end": 31,
+        "interval": "half_open",
+        "python_slice": "text[0:31]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "SRC006149"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "IDEA224",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Direct restatement of SRC006149 'Don't ever be afraid of death.'",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "conclusion": "AGREE",
+      "family": null,
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h01",
+      "index": 1,
+      "exact_text": "There is no fixed hour appointed",
+      "offsets": {
+        "start": 32,
+        "end": 64,
+        "interval": "half_open",
+        "python_slice": "text[32:64]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "IDEA224"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Paraphrase of IDEA224 'no set time'.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "AGREE",
+      "family": null,
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h01",
+      "index": 2,
+      "exact_text": "that fear can calculate or bargain with,",
+      "offsets": {
+        "start": 65,
+        "end": 105,
+        "interval": "half_open",
+        "python_slice": "text[65:105]"
+      },
+      "terra_verdict": "QUESTIONABLE",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": true,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "IDEA224"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "terra_note": "Calculation is implied, but bargaining is not supplied.",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Human review treated 'calculate or bargain with' as stylistic restatement of IDEA224 'no set time'. Terra required the verb 'bargain' in the evidence. SRC006180 was authorized, unused, and does not supply bargaining. Visible Terra note: 'Calculation is implied, but bargaining is not supplied.' No hidden chain of thought is attributed. Reason codes were empty on QUESTIONABLE.",
+      "agreement": false,
+      "disagreement_type": "FALSE_REJECTION_PARAPHRASE",
+      "acceptance_impact": "paragraph_QUESTIONABLE_blocks_PASS",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+      "family": null,
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h01",
+      "index": 3,
+      "exact_text": "and so fear itself is out of place",
+      "offsets": {
+        "start": 106,
+        "end": 140,
+        "interval": "half_open",
+        "python_slice": "text[106:140]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "IDEA224",
+        "SRC006149",
+        "SRC006182"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "SRC006180",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "Fear out of place follows no-fear / no-set-time evidence.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "AGREE",
+      "family": null,
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h01",
+      "index": 4,
+      "exact_text": "If somebody has gone to heaven,",
+      "offsets": {
+        "start": 142,
+        "end": 173,
+        "interval": "half_open",
+        "python_slice": "text[142:173]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "SRC006187"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "IDEA224",
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "SRC006187 'So if somebody has gone to heaven,'.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "conclusion": "AGREE",
+      "family": null,
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h01",
+      "index": 5,
+      "exact_text": "that should not produce dread in us",
+      "offsets": {
+        "start": 174,
+        "end": 209,
+        "interval": "half_open",
+        "python_slice": "text[174:209]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "IDEA224"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006183",
+        "SRC006187"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "IDEA224: going to heaven should bring joy, not fear.",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "SEMANTICALLY_ENTAILED",
+      "conclusion": "AGREE",
+      "family": null,
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    },
+    {
+      "canary": "h01",
+      "index": 6,
+      "exact_text": "It should be our joy.",
+      "offsets": {
+        "start": 211,
+        "end": 232,
+        "interval": "half_open",
+        "python_slice": "text[211:232]"
+      },
+      "terra_verdict": "SUPPORTED",
+      "reason_codes": [],
+      "reason_code_status": {
+        "codes": [],
+        "unknown": [],
+        "missing_on_reservation": false,
+        "in_catalog": [],
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "evidence_handles": [
+        "SRC006183"
+      ],
+      "invalid_evidence_handles": [],
+      "authorized_uncited": [
+        "IDEA224",
+        "SRC006149",
+        "SRC006180",
+        "SRC006182",
+        "SRC006187"
+      ],
+      "terra_note": "",
+      "human_label_or_assessment": "SUPPORTED",
+      "analysis_of_evidence": "SRC006183 'It should be our joy.'",
+      "agreement": true,
+      "disagreement_type": null,
+      "acceptance_impact": "none",
+      "offline_category": "EXPLICITLY_SUPPORTED",
+      "conclusion": "AGREE",
+      "family": null,
+      "evidence_level_of_terra_fields": "OBSERVED",
+      "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+      "span_in_bounds": true
+    }
+  ],
+  "false_rejection": {
+    "canary": "h01",
+    "index": 2,
+    "exact_text": "that fear can calculate or bargain with,",
+    "offsets": {
+      "start": 65,
+      "end": 105,
+      "interval": "half_open",
+      "python_slice": "text[65:105]"
+    },
+    "terra_verdict": "QUESTIONABLE",
+    "reason_codes": [],
+    "reason_code_status": {
+      "codes": [],
+      "unknown": [],
+      "missing_on_reservation": true,
+      "in_catalog": [],
+      "evidence_level": "DETERMINISTICALLY_VERIFIED"
+    },
+    "evidence_handles": [
+      "IDEA224"
+    ],
+    "invalid_evidence_handles": [],
+    "authorized_uncited": [
+      "SRC006149",
+      "SRC006180",
+      "SRC006182",
+      "SRC006183",
+      "SRC006187"
+    ],
+    "terra_note": "Calculation is implied, but bargaining is not supplied.",
+    "human_label_or_assessment": "SUPPORTED",
+    "analysis_of_evidence": "Human review treated 'calculate or bargain with' as stylistic restatement of IDEA224 'no set time'. Terra required the verb 'bargain' in the evidence. SRC006180 was authorized, unused, and does not supply bargaining. Visible Terra note: 'Calculation is implied, but bargaining is not supplied.' No hidden chain of thought is attributed. Reason codes were empty on QUESTIONABLE.",
+    "agreement": false,
+    "disagreement_type": "FALSE_REJECTION_PARAPHRASE",
+    "acceptance_impact": "paragraph_QUESTIONABLE_blocks_PASS",
+    "offline_category": "SEMANTICALLY_ENTAILED",
+    "conclusion": "FALSE_REJECTION_SUPPORTED_BY_EVIDENCE",
+    "family": null,
+    "evidence_level_of_terra_fields": "OBSERVED",
+    "evidence_level_of_human_analysis": "HUMAN_ASSESSED",
+    "span_in_bounds": true
+  },
+  "coverage": {
+    "coverage_status": "PASS",
+    "classified_gaps": [
+      {
+        "start": 31,
+        "end": 32,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[31:32]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 64,
+        "end": 65,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[64:65]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 105,
+        "end": 106,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[105:106]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 140,
+        "end": 141,
+        "text": ".",
+        "codepoints": [
+          46
+        ],
+        "isspace_flags": [
+          false
+        ],
+        "char_kinds": [
+          "sentence_terminator"
+        ],
+        "kind": "sentence_terminator",
+        "python_slice": "text[140:141]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 141,
+        "end": 142,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[141:142]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 173,
+        "end": 174,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[173:174]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 209,
+        "end": 210,
+        "text": ".",
+        "codepoints": [
+          46
+        ],
+        "isspace_flags": [
+          false
+        ],
+        "char_kinds": [
+          "sentence_terminator"
+        ],
+        "kind": "sentence_terminator",
+        "python_slice": "text[209:210]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 210,
+        "end": 211,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[210:211]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      }
+    ],
+    "significant_gaps": [],
+    "admissible_gaps": [
+      {
+        "start": 31,
+        "end": 32,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[31:32]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 64,
+        "end": 65,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[64:65]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 105,
+        "end": 106,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[105:106]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 141,
+        "end": 142,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[141:142]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 173,
+        "end": 174,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[173:174]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      },
+      {
+        "start": 210,
+        "end": 211,
+        "text": " ",
+        "codepoints": [
+          32
+        ],
+        "isspace_flags": [
+          true
+        ],
+        "char_kinds": [
+          "whitespace"
+        ],
+        "kind": "whitespace",
+        "python_slice": "text[210:211]",
+        "interval": "half_open",
+        "contains_letter_or_digit": false,
+        "contains_protected_connective": false
+      }
+    ],
+    "gaps_containing_letters_or_digits": [],
+    "contains_substantive_characters": false,
+    "innocence_not_presumed": true,
+    "evidence_level": "DETERMINISTICALLY_VERIFIED"
+  },
+  "recorded_gaps": [
+    [
+      140,
+      141
+    ],
+    [
+      209,
+      210
+    ]
+  ],
+  "reason_codes_missing_on_questionable": true,
+  "src006180_authorized_not_cited": true,
+  "src006180_does_not_supply_bargain": true,
+  "claim_count": 7,
+  "secrets_included": false
+}

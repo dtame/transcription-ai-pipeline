@@ -1,0 +1,34 @@
+{
+  "phase": "4B.2.14",
+  "ok": true,
+  "real_plan_chapter_id": "CH001",
+  "real_section_ids": [
+    "SEC001",
+    "SEC002",
+    "SEC003",
+    "SEC004"
+  ],
+  "real_data_without_generated_paragraphs": {
+    "ok": false,
+    "errors": [
+      "SEC001:paragraphs:missing",
+      "SEC002:paragraphs:missing",
+      "SEC003:paragraphs:missing",
+      "SEC004:paragraphs:missing"
+    ],
+    "gaps": [
+      "Paragraph count is unknown before generation.",
+      "Production ChapterCandidate does not store semantic_contract_version, semantic_transport_version, preparation_algorithm_version, validator_implementation_version, integration_contract_version, adapter_version. The isolated bridge envelope supplies them and does not write them into production cache."
+    ],
+    "paragraphs_unknown_before_generation": true,
+    "does_not_invent_paragraphs": true
+  },
+  "synthetic_fixture_ok": true,
+  "missing_data_blocks": true,
+  "invalid_evidence_handle_blocks": true,
+  "real_dataclasses_synthetic_handles_ok": true,
+  "does_not_invent_src": true,
+  "does_not_use_synthetic_as_real_proof": true,
+  "canonical_objects_mutated": false,
+  "secrets_included": false
+}

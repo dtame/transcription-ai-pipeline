@@ -1,0 +1,47 @@
+{
+  "book_title": "The Life You Already Inherited",
+  "image_generated": false,
+  "negative_prompt_supported_by_flux2_pro": false,
+  "directions": [
+    {
+      "number": 1,
+      "name": "The door already open",
+      "themes": [
+        "The Life You Already Inherited",
+        "Resurrection life, union with God, and the practice of spiritual authority",
+        "Access, Not Achievement",
+        "The Power Is Already Inside",
+        "Operating What You Have"
+      ],
+      "prompt": "Editorial photograph for a book cover, vertical two-to-three ratio. A plain domestic doorway already standing open, warm dawn light already inside the room, a small oil lamp already burning on a walnut table. Upper third is an even plaster wall in exact color #E7D7C1 with no objects and no texture that resembles writing. Flame in #E0A15A, shadows in #3E4A3A. Photographed, calm, sharp, no people. no words, no letters, no numerals, no title, no subtitle, no author name, no logo, no barcode, no ISBN, no watermark, no signature, no cross, no crucifix, no stained glass, no halo, no angel, no church interior, no crowd, no celebrity face, no skeleton, no open tomb.",
+      "negative_prompt": "text, letters, numbers, title, subtitle, author name, logo, barcode, ISBN, watermark, signature, cross, stained glass, halo, angel, church, crowd, skeleton, tomb, lion",
+      "negative_prompt_transmitted": false
+    },
+    {
+      "number": 2,
+      "name": "Linen, bone, and a living olive",
+      "themes": [
+        "Flesh and Bone: The Resurrection You Inherit",
+        "Spirit, Soul and Body",
+        "Life Older, Better, Everlasting",
+        "Resurrection life, union with God, and the practice of spiritual authority"
+      ],
+      "prompt": "Editorial still-life photograph, vertical two-to-three ratio, for a book about inherited resurrection life and the whole person: spirit, soul, and body. Folded undyed linen, a smooth pale stone, and one living olive branch with green leaves. No tomb, no skeleton, no grave, no shroud ritual. Upper third is an even field of linen in exact color #F3EDE4. Leaf in #6B7F5A. Soft north light, sharp cloth texture, generous empty margin. no words, no letters, no numerals, no title, no subtitle, no author name, no logo, no barcode, no ISBN, no watermark, no signature, no cross, no crucifix, no stained glass, no halo, no angel, no church interior, no crowd, no celebrity face, no skeleton, no open tomb.",
+      "negative_prompt": "text, letters, numbers, title, subtitle, author name, logo, barcode, ISBN, watermark, signature, cross, stained glass, halo, angel, church, crowd, skeleton, tomb, lion",
+      "negative_prompt_transmitted": false
+    },
+    {
+      "number": 3,
+      "name": "Honey from heavy ground",
+      "themes": [
+        "Out of the Eater",
+        "Meant for Evil",
+        "Unlearning What Was Handed Down",
+        "Laws You Gave Yourself"
+      ],
+      "prompt": "Editorial still-life photograph, vertical two-to-three ratio. Dark cracked earth in #2A2724 fills the lower half. A broken piece of honeycomb rests on that ground, honey glowing in exact color #D4A017. The upper third is a smooth empty field in exact color #F6F1E7 with no objects. No lion, no animal, no angel, no wings, no people. Natural light, sharp, restrained, not glossy advertising. no words, no letters, no numerals, no title, no subtitle, no author name, no logo, no barcode, no ISBN, no watermark, no signature, no cross, no crucifix, no stained glass, no halo, no angel, no church interior, no crowd, no celebrity face, no skeleton, no open tomb.",
+      "negative_prompt": "text, letters, numbers, title, subtitle, author name, logo, barcode, ISBN, watermark, signature, cross, stained glass, halo, angel, church, crowd, skeleton, tomb, lion",
+      "negative_prompt_transmitted": false
+    }
+  ]
+}

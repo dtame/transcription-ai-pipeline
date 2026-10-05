@@ -1,0 +1,57 @@
+{
+  "python_executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "python_prefix": "C:\\TranscriptionAI\\.venv",
+  "python_base_prefix": "C:\\Program Files\\Python311",
+  "environment_type": ".venv",
+  "canonical_environment_type": ".venv",
+  "dependency_mechanism": "requirements.txt",
+  "openai_dependency_status": {
+    "declared_in_requirements": true,
+    "constraint": "openai>=1.0.0,<3",
+    "importable_in_current_interpreter": true,
+    "version": "2.43.0",
+    "from_openai_import_OpenAI": "PASS"
+  },
+  "anthropic_convention": {
+    "official_sdk_declared": false,
+    "official_sdk_required": false,
+    "transport": "requests",
+    "note": "Anthropic uses app/ai/providers/anthropic_engine.py + requests. The official anthropic package is intentionally not a dependency."
+  },
+  "environment": {
+    "canonical_environment": ".venv",
+    "canonical_executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "current_is_canonical_venv": true,
+    "venv_present": true,
+    "pipenv": false,
+    "poetry": false,
+    "setup_py": false,
+    "setup_cfg": false,
+    "requirements_txt": true,
+    "requirements_dev_txt": true,
+    "dependency_mechanism": "requirements.txt"
+  },
+  "interpreter": {
+    "executable": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+    "version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "version_info": [
+      3,
+      11,
+      9
+    ],
+    "prefix": "C:\\TranscriptionAI\\.venv",
+    "base_prefix": "C:\\Program Files\\Python311",
+    "in_virtualenv": true
+  },
+  "root_cause": {
+    "code": "C",
+    "summary": "Wrong Python environment: 4B.2.4 attempt 2 executed C:\\Program Files\\Python311\\python.exe (system) instead of the canonical project .venv, where openai was already installed.",
+    "declared": true,
+    "installed_in_canonical_venv": true,
+    "installed_in_failed_system_interpreter": false,
+    "failed_interpreter_was_system_python": true,
+    "secondary": "4B.2.4 consumed the one-shot lock before from openai import OpenAI succeeded."
+  },
+  "secrets_included": false
+}

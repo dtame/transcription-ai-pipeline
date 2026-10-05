@@ -1,0 +1,28 @@
+{
+  "phase": "4B.2.14",
+  "version": "book-human-review-protocol-4b214-candidate",
+  "review_keeps": [
+    "proposal",
+    "text",
+    "evidence",
+    "reason",
+    "identifiers",
+    "versions",
+    "hashes"
+  ],
+  "review_actions": [
+    "confirm_supported",
+    "request_correction",
+    "maintain_block"
+  ],
+  "block_cannot_become_pass_automatically": true,
+  "correction_requires_new_text_version": true,
+  "substantial_text_change_invalidates_previous_validation": true,
+  "no_automatic_production_cache_acceptance": true,
+  "original_model_response_not_silently_modified": true,
+  "human_decision_is_audited": true,
+  "secrets_included": false,
+  "review_confirm_does_not_rewrite_raw": true,
+  "block_cannot_become_pass": true,
+  "ok": true
+}

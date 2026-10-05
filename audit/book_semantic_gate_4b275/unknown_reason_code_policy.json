@@ -1,0 +1,71 @@
+{
+  "phase": "4B.2.7.5",
+  "catalog_policy": "CLOSED_CATALOG_STRICT_COMPLIANCE",
+  "unknown_codes_handling": "COMPLIANCE_FAIL_NO_SILENT_ACCEPTANCE",
+  "catalog": [
+    "NEW_FACT",
+    "NEW_CAUSAL_LINK",
+    "NEW_ARGUMENT",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM",
+    "NEW_IMPLICATION",
+    "INVENTED_EXAMPLE",
+    "INVENTED_ANECDOTE",
+    "INVENTED_HYPOTHETICAL",
+    "REFERENCE_COMPLETION",
+    "REFERENCE_EXPANSION",
+    "QUOTE_EXPANSION",
+    "UNCERTAINTY_STRENGTHENED",
+    "SOURCE_MEANING_DISTORTED",
+    "EVIDENCE_MISMATCH",
+    "OTHER"
+  ],
+  "rules": {
+    "preserve_raw_code": true,
+    "mark_non_compliant": true,
+    "block_acceptance": true,
+    "expose_in_audits": true,
+    "separate_diagnostic_correspondence_allowed": true
+  },
+  "never": {
+    "silently_rewrite_code": true,
+    "convert_reservation_to_acceptance": true,
+    "modify_raw_response": true,
+    "invent_canonical_correspondence_without_justification": true
+  },
+  "diagnostic_map_audit_only": {
+    "INVENTED_CAUSAL_LINK": {
+      "canonical_candidate": "NEW_CAUSAL_LINK",
+      "semantic_compatibility": "HIGH",
+      "applied_by_validator": false,
+      "grants_compliance": false
+    },
+    "NO_EVIDENCE": {
+      "canonical_candidate": "NEW_FACT",
+      "semantic_compatibility": "PARTIAL",
+      "applied_by_validator": false,
+      "grants_compliance": false
+    },
+    "UNJUSTIFIED_STRENGTHENING": {
+      "canonical_candidate": "UNCERTAINTY_STRENGTHENED",
+      "semantic_compatibility": "PARTIAL",
+      "applied_by_validator": false,
+      "grants_compliance": false
+    },
+    "UNSUPPORTED_IMPLICATION": {
+      "canonical_candidate": "NEW_IMPLICATION",
+      "semantic_compatibility": "HIGH",
+      "applied_by_validator": false,
+      "grants_compliance": false
+    },
+    "PARTIAL_REFERENCE_EXPANSION": {
+      "canonical_candidate": "REFERENCE_EXPANSION",
+      "semantic_compatibility": "HIGH",
+      "applied_by_validator": false,
+      "grants_compliance": false
+    }
+  },
+  "normalization_version": "reason-code-normalization-1.1.2-audit-only",
+  "normalization_applied_by_validator": false,
+  "secrets_included": false
+}

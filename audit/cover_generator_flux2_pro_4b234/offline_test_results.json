@@ -1,0 +1,189 @@
+{
+  "passed": 36,
+  "failed": 0,
+  "failed_names": [],
+  "live_provider_calls": 0,
+  "paid_cost_usd": 0,
+  "cases": [
+    {
+      "name": "01_missing_api_key",
+      "passed": true,
+      "detail": "api_key_missing"
+    },
+    {
+      "name": "02_fake_api_key",
+      "passed": true,
+      "detail": "fake key does not authorize a call"
+    },
+    {
+      "name": "03_dry_run",
+      "passed": true,
+      "detail": "dry_run"
+    },
+    {
+      "name": "04_authorization_absent",
+      "passed": true,
+      "detail": "explicit_authorization_missing"
+    },
+    {
+      "name": "05_authorization_disabled",
+      "passed": true,
+      "detail": "authorization_disabled"
+    },
+    {
+      "name": "06_provider_not_authorized",
+      "passed": true,
+      "detail": "provider_not_authorized"
+    },
+    {
+      "name": "07_model_not_authorized",
+      "passed": true,
+      "detail": "model_not_authorized"
+    },
+    {
+      "name": "08_zero_budget",
+      "passed": true,
+      "detail": "budget_zero"
+    },
+    {
+      "name": "09_insufficient_budget",
+      "passed": true,
+      "detail": "estimated_cost_exceeds_cap"
+    },
+    {
+      "name": "10_unknown_cost",
+      "passed": true,
+      "detail": "estimated_cost_unknown"
+    },
+    {
+      "name": "11_image_count_exceeded",
+      "passed": true,
+      "detail": "image_count_exceeds_authorization"
+    },
+    {
+      "name": "12_budget_exhausted",
+      "passed": true,
+      "detail": "budget_exhausted"
+    },
+    {
+      "name": "13_authorization_consumed",
+      "passed": true,
+      "detail": "authorization_already_consumed"
+    },
+    {
+      "name": "14_persistent_reservation",
+      "passed": true,
+      "detail": "reservation persisted"
+    },
+    {
+      "name": "15_concurrent_calls",
+      "passed": true,
+      "detail": "one reservation, one submission"
+    },
+    {
+      "name": "16_timeout",
+      "passed": true,
+      "detail": "timeout"
+    },
+    {
+      "name": "17_ambiguous_response",
+      "passed": true,
+      "detail": "ambiguous_submit_response"
+    },
+    {
+      "name": "18_generation_error",
+      "passed": true,
+      "detail": "generation error does not submit again"
+    },
+    {
+      "name": "19_no_automatic_paid_retry",
+      "passed": true,
+      "detail": "no automatic retry"
+    },
+    {
+      "name": "20_invalid_result_url",
+      "passed": true,
+      "detail": "delivery_url_not_allowed"
+    },
+    {
+      "name": "21_unauthorized_redirect",
+      "passed": true,
+      "detail": "unauthorized_redirect"
+    },
+    {
+      "name": "22_corrupt_image",
+      "passed": true,
+      "detail": "corrupt_image"
+    },
+    {
+      "name": "23_file_too_large",
+      "passed": true,
+      "detail": "file_too_large"
+    },
+    {
+      "name": "24_missing_metadata",
+      "passed": true,
+      "detail": "metadata_missing"
+    },
+    {
+      "name": "25_sha256",
+      "passed": true,
+      "detail": "sha256 matches the stored file"
+    },
+    {
+      "name": "26_no_real_generation",
+      "passed": true,
+      "detail": "not contacted"
+    },
+    {
+      "name": "27_no_paid_endpoint_calls",
+      "passed": true,
+      "detail": "urllib sealed"
+    },
+    {
+      "name": "28_no_cover_docx",
+      "passed": true,
+      "detail": "docx refused"
+    },
+    {
+      "name": "29_no_cover_pdf",
+      "passed": true,
+      "detail": "pdf refused"
+    },
+    {
+      "name": "30_canonical_unchanged",
+      "passed": true,
+      "detail": "book.json matches"
+    },
+    {
+      "name": "31_interior_unchanged",
+      "passed": true,
+      "detail": "interior matches"
+    },
+    {
+      "name": "32_foundation_lock",
+      "passed": true,
+      "detail": "foundation lock and import scan"
+    },
+    {
+      "name": "33_print_size_not_submitted",
+      "passed": true,
+      "detail": "print pixels are not submitted"
+    },
+    {
+      "name": "34_negative_prompt_not_transmitted",
+      "passed": true,
+      "detail": "negative prompt omitted from the body"
+    },
+    {
+      "name": "35_art_directions",
+      "passed": true,
+      "detail": "3 directions, no image"
+    },
+    {
+      "name": "36_back_cover_reflow",
+      "passed": true,
+      "detail": "back cover reflows and is not exported"
+    }
+  ]
+}

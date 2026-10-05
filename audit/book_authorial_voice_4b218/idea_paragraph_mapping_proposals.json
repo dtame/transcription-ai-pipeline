@@ -1,0 +1,321 @@
+{
+  "phase": "4B.2.18",
+  "chapter_id": "CH012",
+  "ideas_planned": [
+    "IDEA179",
+    "IDEA182",
+    "IDEA186",
+    "IDEA180",
+    "IDEA181",
+    "IDEA237",
+    "IDEA184",
+    "IDEA185",
+    "IDEA238",
+    "IDEA212",
+    "IDEA213"
+  ],
+  "confirmed": [],
+  "proposed": [
+    "IDEA179",
+    "IDEA182",
+    "IDEA186",
+    "IDEA180",
+    "IDEA181",
+    "IDEA237",
+    "IDEA184",
+    "IDEA185",
+    "IDEA238",
+    "IDEA212",
+    "IDEA213"
+  ],
+  "unresolved": [],
+  "mappings": [
+    {
+      "idea_id": "IDEA179",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000001",
+          "section_id": "SEC047",
+          "shared_src": [
+            "SRC004846",
+            "SRC004850",
+            "SRC004851"
+          ],
+          "idea_src": [
+            "SRC004846",
+            "SRC004850",
+            "SRC004851"
+          ],
+          "complete_overlap": true
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    },
+    {
+      "idea_id": "IDEA182",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000002",
+          "section_id": "SEC047",
+          "shared_src": [
+            "SRC004880",
+            "SRC004881",
+            "SRC004882"
+          ],
+          "idea_src": [
+            "SRC004880",
+            "SRC004881",
+            "SRC004882"
+          ],
+          "complete_overlap": true
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    },
+    {
+      "idea_id": "IDEA186",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000003",
+          "section_id": "SEC047",
+          "shared_src": [
+            "SRC004918",
+            "SRC004920",
+            "SRC004921",
+            "SRC004923"
+          ],
+          "idea_src": [
+            "SRC004918",
+            "SRC004920",
+            "SRC004921",
+            "SRC004923"
+          ],
+          "complete_overlap": true
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    },
+    {
+      "idea_id": "IDEA180",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000004",
+          "section_id": "SEC048",
+          "shared_src": [
+            "SRC004854",
+            "SRC004856",
+            "SRC004877",
+            "SRC004879"
+          ],
+          "idea_src": [
+            "SRC004854",
+            "SRC004856",
+            "SRC004877",
+            "SRC004879"
+          ],
+          "complete_overlap": true
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    },
+    {
+      "idea_id": "IDEA181",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000006",
+          "section_id": "SEC048",
+          "shared_src": [
+            "SRC004859",
+            "SRC004860"
+          ],
+          "idea_src": [
+            "SRC004859",
+            "SRC004860"
+          ],
+          "complete_overlap": true
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    },
+    {
+      "idea_id": "IDEA237",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000007",
+          "section_id": "SEC048",
+          "shared_src": [
+            "SRC006407",
+            "SRC006466",
+            "SRC006469",
+            "SRC006474",
+            "SRC006476"
+          ],
+          "idea_src": [
+            "SRC006407",
+            "SRC006466",
+            "SRC006469",
+            "SRC006474",
+            "SRC006476"
+          ],
+          "complete_overlap": true
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    },
+    {
+      "idea_id": "IDEA184",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000009",
+          "section_id": "SEC049",
+          "shared_src": [
+            "SRC004898",
+            "SRC004899",
+            "SRC004905",
+            "SRC004906"
+          ],
+          "idea_src": [
+            "SRC004898",
+            "SRC004899",
+            "SRC004905",
+            "SRC004906"
+          ],
+          "complete_overlap": true
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    },
+    {
+      "idea_id": "IDEA185",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000010",
+          "section_id": "SEC049",
+          "shared_src": [
+            "SRC004909",
+            "SRC004910",
+            "SRC004915",
+            "SRC004917"
+          ],
+          "idea_src": [
+            "SRC004909",
+            "SRC004910",
+            "SRC004915",
+            "SRC004917"
+          ],
+          "complete_overlap": true
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    },
+    {
+      "idea_id": "IDEA238",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000011",
+          "section_id": "SEC049",
+          "shared_src": [
+            "SRC006452",
+            "SRC006454",
+            "SRC006456"
+          ],
+          "idea_src": [
+            "SRC006452",
+            "SRC006454",
+            "SRC006456"
+          ],
+          "complete_overlap": true
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    },
+    {
+      "idea_id": "IDEA212",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000012",
+          "section_id": "SEC050",
+          "shared_src": [
+            "SRC005748",
+            "SRC005750",
+            "SRC005754"
+          ],
+          "idea_src": [
+            "SRC005748",
+            "SRC005750",
+            "SRC005754",
+            "SRC005763",
+            "SRC005766"
+          ],
+          "complete_overlap": false
+        },
+        {
+          "paragraph_id": "P000013",
+          "section_id": "SEC050",
+          "shared_src": [
+            "SRC005763",
+            "SRC005766"
+          ],
+          "idea_src": [
+            "SRC005748",
+            "SRC005750",
+            "SRC005754",
+            "SRC005763",
+            "SRC005766"
+          ],
+          "complete_overlap": false
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    },
+    {
+      "idea_id": "IDEA213",
+      "status": "PROPOSED",
+      "applied_to_chapter": false,
+      "paragraphs": [
+        {
+          "paragraph_id": "P000014",
+          "section_id": "SEC050",
+          "shared_src": [
+            "SRC005771",
+            "SRC005775",
+            "SRC005778",
+            "SRC005780"
+          ],
+          "idea_src": [
+            "SRC005771",
+            "SRC005775",
+            "SRC005778",
+            "SRC005780"
+          ],
+          "complete_overlap": true
+        }
+      ],
+      "justification": "Explicit SRC overlap between the SourceMap idea and the paragraph source_refs. Not injected into evidence_handles. Not a semantic certificate."
+    }
+  ],
+  "written_into_paragraph_evidence": false,
+  "provider_response_modified": false,
+  "not_a_coverage_certificate": true,
+  "secrets_included": false
+}

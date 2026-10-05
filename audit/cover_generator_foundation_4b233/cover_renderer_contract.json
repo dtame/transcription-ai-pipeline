@@ -1,0 +1,34 @@
+{
+  "component": "CoverRenderer",
+  "mode": "TWO_SEPARATE_PAGES",
+  "wraparound": false,
+  "spine": false,
+  "outputs": [
+    "front_cover.docx",
+    "front_cover.pdf",
+    "back_cover.docx",
+    "back_cover.pdf"
+  ],
+  "independent_of_interior": true,
+  "export_authorized": false,
+  "image_text": "added_by_composition_engine",
+  "back_background": "SOLID_COLOR",
+  "missing_biography": "reflow_without_reserved_empty_slot",
+  "forbidden_back_elements": [
+    "testimonial",
+    "award",
+    "barcode",
+    "isbn"
+  ],
+  "print_pixels_at_300dpi_trim": [
+    1800,
+    2700
+  ],
+  "print_pixels_at_300dpi_3mm_bleed_rounded": [
+    1871,
+    2771
+  ],
+  "pixel_values_are_calculated": true,
+  "declared_resolution_is_not_observed_quality": true,
+  "printer_universal_conformance": false
+}

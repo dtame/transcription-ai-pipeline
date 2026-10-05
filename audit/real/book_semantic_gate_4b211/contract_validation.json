@@ -1,0 +1,143 @@
+{
+  "phase": "4B.2.11",
+  "transport": "book-semantic-validation-transport-2.0-candidate",
+  "json_parse": "PASS",
+  "parse_error": null,
+  "ok": false,
+  "status": "FAIL",
+  "errors": [
+    "sc:unexpected_fields:NON_SUBSTANTIVE,QUESTIONABLE,SUPPORTED,UNSUPPORTED",
+    "sc.non_substantive:not_integer",
+    "sc.supported:not_integer",
+    "sc.questionable:not_integer",
+    "sc.unsupported:not_integer",
+    "pr[0].v:invalid"
+  ],
+  "parsed": {
+    "ch": "CH016",
+    "v": "PASS",
+    "pr": [
+      {
+        "h": "h01",
+        "v": "PASS",
+        "u": [
+          {
+            "id": "u00",
+            "k": "SUPPORTED",
+            "ev": [
+              "SRC006149"
+            ],
+            "r": []
+          },
+          {
+            "id": "u01",
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224"
+            ],
+            "r": []
+          },
+          {
+            "id": "u02",
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224",
+              "SRC006180",
+              "SRC006182"
+            ],
+            "r": []
+          },
+          {
+            "id": "u03",
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224",
+              "SRC006187"
+            ],
+            "r": []
+          },
+          {
+            "id": "u04",
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224",
+              "SRC006183"
+            ],
+            "r": []
+          }
+        ]
+      }
+    ],
+    "sc": {
+      "SUPPORTED": 5,
+      "QUESTIONABLE": 0,
+      "UNSUPPORTED": 0,
+      "NON_SUBSTANTIVE": 0
+    },
+    "uh": [],
+    "rr": false
+  },
+  "verdicts": [
+    {
+      "unit_id": "u00",
+      "k": "SUPPORTED",
+      "ev": [
+        "SRC006149"
+      ],
+      "r": [],
+      "n": ""
+    },
+    {
+      "unit_id": "u01",
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA224"
+      ],
+      "r": [],
+      "n": ""
+    },
+    {
+      "unit_id": "u02",
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA224",
+        "SRC006180",
+        "SRC006182"
+      ],
+      "r": [],
+      "n": ""
+    },
+    {
+      "unit_id": "u03",
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA224",
+        "SRC006187"
+      ],
+      "r": [],
+      "n": ""
+    },
+    {
+      "unit_id": "u04",
+      "k": "SUPPORTED",
+      "ev": [
+        "IDEA224",
+        "SRC006183"
+      ],
+      "r": [],
+      "n": ""
+    }
+  ],
+  "required_unit_ids": [
+    "u00",
+    "u01",
+    "u02",
+    "u03",
+    "u04"
+  ],
+  "does_not_complete_missing_units": true,
+  "does_not_repair_reason_codes": true,
+  "does_not_rewrite_model_response": true,
+  "repaired": false,
+  "secrets_included": false
+}

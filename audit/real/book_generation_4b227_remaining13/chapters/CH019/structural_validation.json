@@ -1,0 +1,102 @@
+{
+  "phase": "4B.2.23",
+  "chapter_id": "CH019",
+  "validator_version": "book-generation-validator-1.0.1",
+  "status": "PASS",
+  "json_valid": true,
+  "chapter_contract_valid": true,
+  "checks": {
+    "json_valid": true,
+    "chapter_contract_valid": true,
+    "chapter_id_correct": true,
+    "sections_expected": [
+      "SEC071",
+      "SEC072"
+    ],
+    "sections_generated": [
+      "SEC071",
+      "SEC072"
+    ],
+    "sections_match": true,
+    "sections_in_order": true,
+    "paragraph_ids": [
+      "P000001",
+      "P000002",
+      "P000003",
+      "P000004",
+      "P000005",
+      "P000006",
+      "P000007",
+      "P000008",
+      "P000009",
+      "P000010"
+    ],
+    "paragraph_ids_unique": true,
+    "empty_paragraphs": 0,
+    "paragraphs_present": true,
+    "ideas_expected": [
+      "IDEA280",
+      "IDEA281",
+      "IDEA282",
+      "IDEA283",
+      "IDEA284",
+      "IDEA285",
+      "IDEA286"
+    ],
+    "ideas_in_paragraph_evidence": [
+      "IDEA280",
+      "IDEA281",
+      "IDEA282",
+      "IDEA283",
+      "IDEA284",
+      "IDEA285",
+      "IDEA286"
+    ],
+    "ideas_in_paragraph_idea_refs": [
+      "IDEA280",
+      "IDEA281",
+      "IDEA282",
+      "IDEA283",
+      "IDEA284",
+      "IDEA285",
+      "IDEA286"
+    ],
+    "ideas_in_section_metadata": [
+      "IDEA280",
+      "IDEA281",
+      "IDEA282",
+      "IDEA283",
+      "IDEA284",
+      "IDEA285",
+      "IDEA286"
+    ],
+    "ideas_expected_count": 7,
+    "ideas_found_in_paras_e": 7,
+    "ideas_missing_from_paras_e": [],
+    "ideas_invented": [],
+    "ideas_metadata_only": [],
+    "unknown_identifiers": [],
+    "invalid_src": [],
+    "other_chapter_contamination": [],
+    "finish_reason": "end_turn",
+    "detectable_truncation": false,
+    "max_output_tokens": 5526,
+    "configured_limits_respected": true,
+    "paragraphs_generated": 10,
+    "semantic_fidelity_validated": false,
+    "handles_auto_filled": false,
+    "unused_paragraph_idea_set": [
+      "IDEA280",
+      "IDEA281",
+      "IDEA282",
+      "IDEA283",
+      "IDEA284",
+      "IDEA285",
+      "IDEA286"
+    ]
+  },
+  "errors": [],
+  "warnings": [],
+  "semantic_fidelity_validated": false,
+  "secrets_included": false
+}

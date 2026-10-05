@@ -1,0 +1,121 @@
+{
+  "json_parse": "PASS",
+  "parse_error": null,
+  "contract_status": "FAIL",
+  "errors": [
+    "h11: significant_coverage_gap_[(137, 139), (177, 179), (232, 234), (289, 291), (353, 357)]"
+  ],
+  "span_errors": [],
+  "coverage_errors": [
+    "h11: significant_coverage_gap_[(137, 139), (177, 179), (232, 234), (289, 291), (353, 357)]"
+  ],
+  "claim_errors": [],
+  "missing_handles": [],
+  "returned_handles": [
+    "h11"
+  ],
+  "reason_code_warnings": [],
+  "separator_notes": [
+    {
+      "handle": "h11",
+      "allowed": [
+        {
+          "start": 44,
+          "end": 45,
+          "text": ".",
+          "codepoints": [
+            46
+          ],
+          "isspace_flags": [
+            false
+          ],
+          "char_kinds": [
+            "sentence_terminator"
+          ],
+          "kind": "sentence_terminator",
+          "python_slice": "text[44:45]",
+          "interval": "half_open",
+          "contains_letter_or_digit": false,
+          "contains_protected_connective": false
+        },
+        {
+          "start": 45,
+          "end": 46,
+          "text": " ",
+          "codepoints": [
+            32
+          ],
+          "isspace_flags": [
+            true
+          ],
+          "char_kinds": [
+            "whitespace"
+          ],
+          "kind": "whitespace",
+          "python_slice": "text[45:46]",
+          "interval": "half_open",
+          "contains_letter_or_digit": false,
+          "contains_protected_connective": false
+        },
+        {
+          "start": 72,
+          "end": 73,
+          "text": ",",
+          "codepoints": [
+            44
+          ],
+          "isspace_flags": [
+            false
+          ],
+          "char_kinds": [
+            "admissible_separator"
+          ],
+          "kind": "admissible_separator",
+          "python_slice": "text[72:73]",
+          "interval": "half_open",
+          "contains_letter_or_digit": false,
+          "contains_protected_connective": false
+        },
+        {
+          "start": 73,
+          "end": 74,
+          "text": " ",
+          "codepoints": [
+            32
+          ],
+          "isspace_flags": [
+            true
+          ],
+          "char_kinds": [
+            "whitespace"
+          ],
+          "kind": "whitespace",
+          "python_slice": "text[73:74]",
+          "interval": "half_open",
+          "contains_letter_or_digit": false,
+          "contains_protected_connective": false
+        },
+        {
+          "start": 179,
+          "end": 180,
+          "text": " ",
+          "codepoints": [
+            32
+          ],
+          "isspace_flags": [
+            true
+          ],
+          "char_kinds": [
+            "whitespace"
+          ],
+          "kind": "whitespace",
+          "python_slice": "text[179:180]",
+          "interval": "half_open",
+          "contains_letter_or_digit": false,
+          "contains_protected_connective": false
+        }
+      ]
+    }
+  ],
+  "repaired": false
+}

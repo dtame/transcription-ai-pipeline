@@ -1,0 +1,252 @@
+{
+  "phase": "4B.2.8",
+  "scoring_scale_not_used": true,
+  "no_numeric_scores": true,
+  "no_architecture_declared_terra_validated": true,
+  "proposed_target": "C_HYBRID_TWO_LEVEL_WITH_CONSERVATIVE_PRESEGMENTATION",
+  "proposed_target_is_not_proven_superior": true,
+  "why_c_is_proposed": "Observed failures split into (1) structural duties the model performed unreliably and (2) semantic judgments that were sometimes correct and sometimes false rejections. C assigns (1) to local code, including conservative presegmentation from B, and leaves (2) to the model. This is an evidential partition, not a Terra result.",
+  "matrix": {
+    "implementation_complexity": {
+      "A": {
+        "observation": "Already implemented as 1.1.3-candidate plus local validators.",
+        "hypothesis": "Further prompt patches remain cheap to write.",
+        "limitation": "Prompt patches have not removed false rejections.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "Offline prototype exists in this phase.",
+        "hypothesis": "Wiring units into a request is straightforward after authorization.",
+        "limitation": "Linguistic edge cases remain.",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "C": {
+        "observation": "Combines B plus existing local validators.",
+        "hypothesis": "Largest local change; smallest change to model structural duties.",
+        "limitation": "Not integrated with production.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    },
+    "prompt_complexity": {
+      "A": {
+        "observation": "1.1.3 still instructs segmentation, coverage, and catalog.",
+        "hypothesis": "Further instructions may still grow the prompt.",
+        "limitation": "h11 input 2562 tokens > h01 1654 despite one paragraph.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "Coverage/offset instructions can be removed.",
+        "hypothesis": "Shorter prompt may follow.",
+        "limitation": "Not measured on Terra.",
+        "evidence_level": "HYPOTHESIS"
+      },
+      "C": {
+        "observation": "Model prompt can be fidelity-only.",
+        "hypothesis": "Deterministic layer absorbs schema text locally.",
+        "limitation": "Not measured on Terra.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    },
+    "model_structural_load": {
+      "A": {
+        "observation": "Model emits s/e and must cover the paragraph.",
+        "hypothesis": "Load contributes to coverage failures.",
+        "limitation": "Causal link from load to false rejection is unproven.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "Prototype owns offsets and coverage.",
+        "hypothesis": "Model load falls.",
+        "limitation": "Not tested remotely.",
+        "evidence_level": "HYPOTHESIS"
+      },
+      "C": {
+        "observation": "Same as B for structure, plus local blocking.",
+        "hypothesis": "Model load is semantic only.",
+        "limitation": "Not tested remotely.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    },
+    "deterministic_reliability": {
+      "A": {
+        "observation": "Local validators catch unknown codes and coverage after the fact.",
+        "hypothesis": "They cannot prevent the model from emitting bad spans.",
+        "limitation": "Historical JSON stays invalid under 1.1.3 for h02/h11.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "Offline replay covers all characters of h01/h02/h11.",
+        "hypothesis": "New calls would inherit that coverage.",
+        "limitation": "Segmentation bugs would become systematic.",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "C": {
+        "observation": "Level 1 can reuse B coverage and existing catalog checks.",
+        "hypothesis": "Reliability of structure becomes local.",
+        "limitation": "Semantic reliability remains untested.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    },
+    "false_rejection_risk": {
+      "A": {
+        "observation": "Observed on h01, h02 (2), h11 (3).",
+        "hypothesis": "May persist under any architecture.",
+        "limitation": "No architecture tested to reduce it.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "Units preserve disputed clauses offline.",
+        "hypothesis": "Isolation might help the model focus.",
+        "limitation": "May also fragment supportive context.",
+        "evidence_level": "HYPOTHESIS"
+      },
+      "C": {
+        "observation": "Does not automatically fix false rejections.",
+        "hypothesis": "Removing structural noise might help calibration.",
+        "limitation": "Requires a later authorized canary.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    },
+    "false_acceptance_risk": {
+      "A": {
+        "observation": "No false acceptance on the three canaries.",
+        "hypothesis": "A less loaded model might become more lenient.",
+        "limitation": "Absence of false acceptance is not proof of safety.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "Not tested.",
+        "hypothesis": "Detached negation could hide a denial.",
+        "limitation": "Conservative prototype refuses unsafe splits.",
+        "evidence_level": "NOT_TESTED"
+      },
+      "C": {
+        "observation": "Blocking rules stay in local code.",
+        "hypothesis": "Risk remains in level 2 judgments.",
+        "limitation": "Not tested.",
+        "evidence_level": "NOT_TESTED"
+      }
+    },
+    "coverage": {
+      "A": {
+        "observation": "h01 periods; h02 separators historically; h11 word endings.",
+        "hypothesis": "Model will keep making offset errors.",
+        "limitation": "Policy patches cannot restore omitted letters in saved JSON.",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "B": {
+        "observation": "Offline full-character coverage on the three paragraphs.",
+        "hypothesis": "Would hold on new calls if the prototype is used.",
+        "limitation": "Only three paragraphs replayed.",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "C": {
+        "observation": "Coverage becomes a level-1 invariant.",
+        "hypothesis": "h11-class gaps would not reach semantic review as contract FAIL.",
+        "limitation": "Not tested remotely.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    },
+    "traceability": {
+      "A": {
+        "observation": "Claims have indices and offsets; notes are visible.",
+        "hypothesis": "Empty reason codes on h01 reduce traceability.",
+        "limitation": "Offsets can be wrong and still look precise.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "Stable unit ids and exact slices.",
+        "hypothesis": "Traceability of structure improves.",
+        "limitation": "Semantic rationale still depends on model notes.",
+        "evidence_level": "DETERMINISTICALLY_VERIFIED"
+      },
+      "C": {
+        "observation": "Can join local units to model verdicts by id.",
+        "hypothesis": "Best of both if implemented.",
+        "limitation": "Not implemented in production.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    },
+    "estimated_cost": {
+      "A": {
+        "observation": "h01 0.018812; h02 0.066036; h11 0.029556 USD calculated.",
+        "hypothesis": "Status quo cost continues.",
+        "limitation": "Not an invoice.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "No new provider spend in this phase.",
+        "hypothesis": "Output tokens may fall if s/e/t are omitted; reasoning unknown.",
+        "limitation": "Must not claim reasoning will fall.",
+        "evidence_level": "HYPOTHESIS"
+      },
+      "C": {
+        "observation": "No new provider spend.",
+        "hypothesis": "Similar to B; local CPU is negligible vs Terra.",
+        "limitation": "Not measured.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    },
+    "maintainability": {
+      "A": {
+        "observation": "Contract versions 1.1 → 1.1.3 accumulated instructions.",
+        "hypothesis": "Further patches will keep growing the prompt.",
+        "limitation": "Overfit risk on canary wording.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "Segmentation is local Python with tests.",
+        "hypothesis": "Easier to extend than prompt prose.",
+        "limitation": "Linguistic rules can rot.",
+        "evidence_level": "HYPOTHESIS"
+      },
+      "C": {
+        "observation": "Clearer ownership boundary.",
+        "hypothesis": "Two components to maintain.",
+        "limitation": "Not in production.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    },
+    "pipeline_compatibility": {
+      "A": {
+        "observation": "Fits current gate call.",
+        "hypothesis": "No pipeline change.",
+        "limitation": "Still not production-promoted.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "Requires a new request shape.",
+        "hypothesis": "Can sit beside A until a canary.",
+        "limitation": "Must not auto-connect.",
+        "evidence_level": "HYPOTHESIS"
+      },
+      "C": {
+        "observation": "Requires contract 2.0 and local orchestration.",
+        "hypothesis": "Compatible if the gate remains a canary stage.",
+        "limitation": "Migration stop points required.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    },
+    "migration_risks": {
+      "A": {
+        "observation": "Staying on A preserves known PARTIAL canaries.",
+        "hypothesis": "Repeating Terra calls without architectural change repeats cost.",
+        "limitation": "Calibration-only path is unproven.",
+        "evidence_level": "OBSERVED"
+      },
+      "B": {
+        "observation": "Prototype is isolated.",
+        "hypothesis": "Connecting it too early could change Terra behavior opaquely.",
+        "limitation": "No remote test.",
+        "evidence_level": "HYPOTHESIS"
+      },
+      "C": {
+        "observation": "Largest design change.",
+        "hypothesis": "Needs human review, offline tests, then one authorized canary.",
+        "limitation": "Stop points in migration_plan.json.",
+        "evidence_level": "HYPOTHESIS"
+      }
+    }
+  },
+  "secrets_included": false
+}

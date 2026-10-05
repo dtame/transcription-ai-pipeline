@@ -1,0 +1,22 @@
+{
+  "phase": "4B.2.31",
+  "engine": "app.word_renderer.document.build_print_document",
+  "profile_id": "print_review_6x9_v1",
+  "book_title": "The Life You Already Inherited",
+  "book_version": "print-review-v1",
+  "book_status": "DRAFT_FOR_PRINT_REVIEW",
+  "book_sha256": "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550",
+  "chapter_count": 19,
+  "section_count": 72,
+  "paragraph_count": 335,
+  "unfinalized_docx": {
+    "path": "C:/TranscriptionAI/audit/book_print_review_render_4b231/The_Life_You_Already_Inherited_print_review_v1_before_finalization.docx",
+    "sha256": "f1e7fe4ccf2efd6bce5bda0943e6cfaa72f988eeb0aca25b36baee010ac9f2a6",
+    "bytes": 79576,
+    "exists": true
+  },
+  "invented_front_matter": false,
+  "provider_calls": 0,
+  "verification": "automatic",
+  "secrets_included": false
+}

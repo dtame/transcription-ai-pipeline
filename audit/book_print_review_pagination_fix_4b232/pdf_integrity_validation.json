@@ -1,0 +1,126 @@
+{
+  "phase": "4B.2.32",
+  "status": "PASS",
+  "export": {
+    "phase": "4B.2.32",
+    "status": "PASS",
+    "exists": true,
+    "bytes": 350891,
+    "readable": true,
+    "path": "C:/TranscriptionAI/sortie/pastoral_retreat_v2_validation/publication/print_review_v1_1/The_Life_You_Already_Inherited_print_review_v1_1.pdf",
+    "verification": "automatic",
+    "secrets_included": false
+  },
+  "geometry": {
+    "phase": "4B.2.32",
+    "status": "PASS",
+    "page_count": 67,
+    "expected_width_pt": 432.0,
+    "expected_height_pt": 648.0,
+    "page_size": "6 × 9 inches",
+    "page_sizes": [
+      {
+        "x0": 0.0,
+        "y0": 0.0,
+        "x1": 432.0,
+        "y1": 648.0,
+        "width_pt": 432.0,
+        "height_pt": 648.0
+      },
+      {
+        "x0": 0.0,
+        "y0": 0.0,
+        "x1": 432.0,
+        "y1": 648.0,
+        "width_pt": 432.0,
+        "height_pt": 648.0
+      },
+      {
+        "x0": 0.0,
+        "y0": 0.0,
+        "x1": 432.0,
+        "y1": 648.0,
+        "width_pt": 432.0,
+        "height_pt": 648.0
+      },
+      {
+        "x0": 0.0,
+        "y0": 0.0,
+        "x1": 432.0,
+        "y1": 648.0,
+        "width_pt": 432.0,
+        "height_pt": 648.0
+      },
+      {
+        "x0": 0.0,
+        "y0": 0.0,
+        "x1": 432.0,
+        "y1": 648.0,
+        "width_pt": 432.0,
+        "height_pt": 648.0
+      },
+      {
+        "x0": 0.0,
+        "y0": 0.0,
+        "x1": 432.0,
+        "y1": 648.0,
+        "width_pt": 432.0,
+        "height_pt": 648.0
+      },
+      {
+        "x0": 0.0,
+        "y0": 0.0,
+        "x1": 432.0,
+        "y1": 648.0,
+        "width_pt": 432.0,
+        "height_pt": 648.0
+      },
+      {
+        "x0": 0.0,
+        "y0": 0.0,
+        "x1": 432.0,
+        "y1": 648.0,
+        "width_pt": 432.0,
+        "height_pt": 648.0
+      }
+    ],
+    "all_6x9": true,
+    "all_portrait": true,
+    "error": "",
+    "verification": "automatic",
+    "secrets_included": false
+  },
+  "content": {
+    "phase": "4B.2.32",
+    "status": "PASS",
+    "extracted_characters": 91986,
+    "folded_characters": 71357,
+    "paragraphs_found": 335,
+    "paragraphs_expected": 335,
+    "chapters_found": 19,
+    "sections_found": 72,
+    "missing_paragraphs": [],
+    "missing_paragraph_count": 0,
+    "missing_chapters": [],
+    "missing_sections": [],
+    "draft_notice_present": true,
+    "extractor": "stdlib_pdf_stream",
+    "match_rule": "folded_alphanumerics_or_head_tail",
+    "verification": "automatic",
+    "secrets_included": false
+  },
+  "page_count": 67,
+  "page_format": "6 × 9 inches",
+  "original_page_count": 80,
+  "checks": {
+    "exists": true,
+    "readable": true,
+    "geometry_6x9": true,
+    "content": true,
+    "page_count_positive": true,
+    "page_count_not_forced_80": true
+  },
+  "finalization_page_count": 67,
+  "verification": "automatic",
+  "secrets_included": false
+}

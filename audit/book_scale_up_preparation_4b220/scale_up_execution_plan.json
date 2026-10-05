@@ -1,0 +1,129 @@
+{
+  "phase": "4B.2.20",
+  "this_phase_executes": false,
+  "levels": {
+    "1_first_real_chapter": {
+      "chapter_id": "CH018",
+      "authorized": false,
+      "executable_in_this_phase": false,
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "prompt_version": "book-generator-faithful-restatement-1.1-candidate",
+      "post_generation_checks": [
+        "JSON valid",
+        "transport contract respected",
+        "all expected sections present in plan order",
+        "valid identifiers",
+        "SRC provenance",
+        "IDEA provenance in paras[].e when justified",
+        "no invented evidence fields",
+        "metadata consistency",
+        "no truncation",
+        "budget respected",
+        "output stored in an isolated audit space"
+      ],
+      "blocking_failure": "STOP. No automatic additional call.",
+      "calculable_maximum_usd": 0.113538,
+      "central_estimate_is_not_the_cap": true
+    },
+    "2_small_batches": {
+      "authorized": false,
+      "executable_in_this_phase": false,
+      "requires_first_chapter_acceptance": true,
+      "batches": [
+        {
+          "batch_id": "LOT-A",
+          "chapter_ids": [
+            "CH011",
+            "CH008"
+          ],
+          "authorized": false,
+          "executable_in_this_phase": false,
+          "interruptible": true,
+          "resume_without_rerunning_completed": true,
+          "note": "Similar mid-size chapters with EX and REF after CH018 acceptance."
+        },
+        {
+          "batch_id": "LOT-B",
+          "chapter_ids": [
+            "CH007",
+            "CH019"
+          ],
+          "authorized": false,
+          "executable_in_this_phase": false,
+          "interruptible": true,
+          "resume_without_rerunning_completed": true,
+          "note": "Smaller remaining chapters. Still one authorization per chapter."
+        },
+        {
+          "batch_id": "LOT-C",
+          "chapter_ids": [
+            "CH001",
+            "CH002",
+            "CH003"
+          ],
+          "authorized": false,
+          "executable_in_this_phase": false,
+          "interruptible": true,
+          "resume_without_rerunning_completed": true,
+          "note": "Opening theological sequence. Do not collapse into one call."
+        },
+        {
+          "batch_id": "LOT-D",
+          "chapter_ids": [
+            "CH009",
+            "CH010",
+            "CH014"
+          ],
+          "authorized": false,
+          "executable_in_this_phase": false,
+          "interruptible": true,
+          "resume_without_rerunning_completed": true,
+          "note": "Mid-book practice and anthropology chapters."
+        },
+        {
+          "batch_id": "LOT-E",
+          "chapter_ids": [
+            "CH004",
+            "CH005",
+            "CH015",
+            "CH017"
+          ],
+          "authorized": false,
+          "executable_in_this_phase": false,
+          "interruptible": true,
+          "resume_without_rerunning_completed": true,
+          "note": "Larger remaining mid-complexity chapters."
+        },
+        {
+          "batch_id": "LOT-F",
+          "chapter_ids": [
+            "CH013",
+            "CH016",
+            "CH006"
+          ],
+          "authorized": false,
+          "executable_in_this_phase": false,
+          "interruptible": true,
+          "resume_without_rerunning_completed": true,
+          "note": "Hardest remaining chapters last. CH006 is 38 ideas / 8 sections."
+        }
+      ]
+    },
+    "3_book_assembly": {
+      "authorized": false,
+      "executable_in_this_phase": false,
+      "book_json_created": false,
+      "docx_created": false,
+      "pdf_created": false,
+      "required_chapter_count": 19,
+      "must_include": [
+        "CH012 by reference to the 4B.2.19 accepted editorial manifest",
+        "the 18 remaining chapters only after generation and human acceptance"
+      ],
+      "must_not_duplicate_ch012_content": true
+    }
+  },
+  "publication": "not_granted",
+  "secrets_included": false
+}

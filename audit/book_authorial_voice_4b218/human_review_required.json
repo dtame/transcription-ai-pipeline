@@ -1,0 +1,33 @@
+{
+  "phase": "4B.2.18",
+  "chapter_id": "CH012",
+  "items": [
+    {
+      "id": "P000001",
+      "status": "ATTRIBUTION_UNCERTAIN",
+      "classification": "ATTRIBUTION_UNCERTAIN",
+      "original": "Praying all night in tongues, by itself, is not proof of effective prayer. It can become mere bavardage — fatiguing talk without discernment — rather than prayer that accomplishes anything. One speaker was told plainly: \"You just exercised bavardage,\" after a night spent praying in tongues that left him and others simply exhausted.",
+      "proposed": "Praying all night in tongues, by itself, is not proof of effective prayer. It can become mere bavardage — fatiguing talk without discernment — rather than prayer that accomplishes anything. The words were spoken plainly: \"You just exercised bavardage,\" after a night spent praying in tongues that left us simply exhausted.",
+      "applied": false,
+      "src_proof": [
+        "SRC004846 Tu viens juste d'exercer le bavardage.",
+        "SRC004850 Nous sommes tellement fatigués.",
+        "SRC004851 Nous prions toute la nuit en langue."
+      ],
+      "justification": "The source uses tu and nous. It is not proven whether the author received or delivered 'Tu viens juste d'exercer le bavardage'. 'I was told' would invent an attribution. The original text is kept.",
+      "decision_required": true
+    },
+    {
+      "id": "IDEA_PARAGRAPH_MAPPINGS",
+      "status": "REQUIRES_HUMAN_REVIEW",
+      "classification": "TRACEABILITY",
+      "applied": false,
+      "decision_required": true,
+      "justification": "SRC-overlap IDEA mappings are proposed only. They are not written into paragraph evidence fields and do not rewrite the provider response."
+    }
+  ],
+  "publication_authorized": false,
+  "terra_validation_authorized": false,
+  "full_book_generation_authorized": false,
+  "secrets_included": false
+}

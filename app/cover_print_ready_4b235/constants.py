@@ -1,0 +1,123 @@
+"""Phase 4B.2.35. Print the approved cover. No new image generation."""
+
+from __future__ import annotations
+
+from app.cover_generator_foundation_4b233.constants import (
+    BOOK_TITLE,
+    EXPECTED_BOOK_SHA256,
+    EXPECTED_INTERIOR_DOCX_SHA256,
+    EXPECTED_INTERIOR_PDF_SHA256,
+    INTERIOR_PDF_PAGES,
+    INTERIOR_VERSION,
+    PROJECT_NAME,
+)
+
+PHASE = "4B.2.35"
+PHASE_NAME = "PRINT_READY_COVER"
+AUDIT_DIRNAME = "cover_print_ready_4b235"
+REPORT_NAME = "PHASE_4B235_PRINT_READY_COVER_REPORT.md"
+AUTHORIZATION_SCOPE = "COVER_PRINT_READY_4B235_FRONT_AND_BACK"
+CODE_VERSION = "app.cover_print_ready_4b235"
+
+COVER_VERSION = "print-review-v1"
+COVER_MODE = "TWO_SEPARATE_PAGES"
+ART_DIRECTION = "The Door Already Open — Spiritual Interpretation"
+HUMAN_IMAGE_STATUS = "APPROVED"
+
+IMAGE_NAME = "front_the_door_already_open_spiritual_gpt_image_2_r1.png"
+EXPECTED_IMAGE_SHA256 = "8d392f09532e104dd8d8820cb3a1ff5706a445ebe77b3993422442bd02370dc6"
+EXPECTED_IMAGE_WIDTH = 1024
+EXPECTED_IMAGE_HEIGHT = 1536
+
+FRONT_DOCX_NAME = "The_Life_You_Already_Inherited_front_cover_print_review_v1.docx"
+FRONT_PDF_NAME = "The_Life_You_Already_Inherited_front_cover_print_review_v1.pdf"
+BACK_DOCX_NAME = "The_Life_You_Already_Inherited_back_cover_print_review_v1.docx"
+BACK_PDF_NAME = "The_Life_You_Already_Inherited_back_cover_print_review_v1.pdf"
+PREPARED_IMAGE_NAME = "front_the_door_already_open_spiritual_print_300dpi.png"
+BACK_FIELD_NAME = "back_cover_field_print_300dpi.png"
+CONTACT_SHEET_NAME = "cover_print_review_contact_sheet.png"
+FRONT_PREVIEW_NAME = "front_cover_print_review_preview.png"
+BACK_PREVIEW_NAME = "back_cover_print_review_preview.png"
+COVER_RECORD_NAME = "cover_record.json"
+VALIDATION_NAME = "cover_validation.json"
+
+OUTPUT_REL = f"sortie/{PROJECT_NAME}/publication/covers/print_review_v1"
+
+AUTHORIZED_OPENAI_CALLS = 0
+AUTHORIZED_BFL_CALLS = 0
+AUTHORIZED_ANTHROPIC_CALLS = 0
+AUTHORIZED_TERRA_CALLS = 0
+AI_GENERATION_AUTHORIZED = False
+NETWORK_CALLS_AUTHORIZED = False
+
+DESCRIPTION_STATUS_PROPOSED = "PROPOSED_NOT_EDITORIALLY_APPROVED"
+DESCRIPTION_STATUS_APPROVED = "APPROVED"
+DESCRIPTION_STATUS_MISSING = "MISSING"
+AUTHOR_STATUS_MISSING = "MISSING_OPTIONAL"
+BIOGRAPHY_STATUS_MISSING = "MISSING_OPTIONAL"
+ISBN_STATUS_MISSING = "MISSING_OPTIONAL"
+
+OFF_WHITE = (246, 243, 236)
+DRAFT_INK = (196, 188, 174)
+
+assert PROJECT_NAME == "pastoral_retreat_v2_validation"
+assert BOOK_TITLE == "The Life You Already Inherited"
+assert INTERIOR_VERSION == "print-review-v1.1"
+assert INTERIOR_PDF_PAGES == 67
+assert EXPECTED_BOOK_SHA256 == (
+    "adde6e2344f4b94da0f7df183341885574e89abc90781c426459e850cc2b6550"
+)
+assert AI_GENERATION_AUTHORIZED is False
+assert AUTHORIZED_OPENAI_CALLS == 0
+assert AUTHORIZED_BFL_CALLS == 0
+assert COVER_MODE == "TWO_SEPARATE_PAGES"
+
+__all__ = [
+    "AI_GENERATION_AUTHORIZED",
+    "ART_DIRECTION",
+    "AUDIT_DIRNAME",
+    "AUTHORIZATION_SCOPE",
+    "AUTHORIZED_ANTHROPIC_CALLS",
+    "AUTHORIZED_BFL_CALLS",
+    "AUTHORIZED_OPENAI_CALLS",
+    "AUTHORIZED_TERRA_CALLS",
+    "AUTHOR_STATUS_MISSING",
+    "BACK_DOCX_NAME",
+    "BACK_FIELD_NAME",
+    "BACK_PDF_NAME",
+    "BACK_PREVIEW_NAME",
+    "BIOGRAPHY_STATUS_MISSING",
+    "BOOK_TITLE",
+    "CODE_VERSION",
+    "CONTACT_SHEET_NAME",
+    "COVER_MODE",
+    "COVER_RECORD_NAME",
+    "COVER_VERSION",
+    "DESCRIPTION_STATUS_APPROVED",
+    "DESCRIPTION_STATUS_MISSING",
+    "DESCRIPTION_STATUS_PROPOSED",
+    "DRAFT_INK",
+    "EXPECTED_BOOK_SHA256",
+    "EXPECTED_IMAGE_HEIGHT",
+    "EXPECTED_IMAGE_SHA256",
+    "EXPECTED_IMAGE_WIDTH",
+    "EXPECTED_INTERIOR_DOCX_SHA256",
+    "EXPECTED_INTERIOR_PDF_SHA256",
+    "FRONT_DOCX_NAME",
+    "FRONT_PDF_NAME",
+    "FRONT_PREVIEW_NAME",
+    "HUMAN_IMAGE_STATUS",
+    "IMAGE_NAME",
+    "INTERIOR_PDF_PAGES",
+    "INTERIOR_VERSION",
+    "ISBN_STATUS_MISSING",
+    "NETWORK_CALLS_AUTHORIZED",
+    "OFF_WHITE",
+    "OUTPUT_REL",
+    "PHASE",
+    "PHASE_NAME",
+    "PREPARED_IMAGE_NAME",
+    "PROJECT_NAME",
+    "REPORT_NAME",
+    "VALIDATION_NAME",
+]

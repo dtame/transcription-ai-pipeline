@@ -1,0 +1,83 @@
+{
+  "phase": "4B.2.10",
+  "reviewed_version": "book-semantic-validator-2.0-candidate",
+  "reviewed_sha256": "2ff43da1e33115e289467933c22b1528adea2da849e661ef58b7cbf341f66b3e",
+  "reviewed_unmodified": true,
+  "candidate_activated": true,
+  "transport": "book-semantic-validation-transport-2.0-candidate",
+  "instructions_comprehensible": true,
+  "responsibilities_separated": true,
+  "terminology_coherent": true,
+  "unit_identifiers_stable": true,
+  "full_paragraph_available": true,
+  "targeted_evidence_available": true,
+  "verdicts_defined": {
+    "SUPPORTED": "paraphrase_may_be_supported_entailment_not_lexical",
+    "QUESTIONABLE": "named_as_blocking_not_defined_as_verdict",
+    "UNSUPPORTED": "implication_causality_guarantee_implied",
+    "NON_SUBSTANTIVE": "rhetorical_not_automatic"
+  },
+  "reason_codes_closed": [
+    "NEW_FACT",
+    "NEW_CAUSAL_LINK",
+    "NEW_ARGUMENT",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM",
+    "NEW_IMPLICATION",
+    "INVENTED_EXAMPLE",
+    "INVENTED_ANECDOTE",
+    "INVENTED_HYPOTHETICAL",
+    "REFERENCE_COMPLETION",
+    "REFERENCE_EXPANSION",
+    "QUOTE_EXPANSION",
+    "UNCERTAINTY_STRENGTHENED",
+    "SOURCE_MEANING_DISTORTED",
+    "EVIDENCE_MISMATCH",
+    "OTHER"
+  ],
+  "json_format_explicit": true,
+  "offsets_not_generated_by_model": true,
+  "segmentation_not_rebuilt_by_model": false,
+  "human_labels_absent": true,
+  "no_contradictory_rules": true,
+  "ambiguities": [
+    {
+      "id": "questionable_not_named_in_system",
+      "severity": "medium",
+      "note": "2.0 system does not define QUESTIONABLE. Instructions only say QUESTIONABLE blocks production acceptance."
+    },
+    {
+      "id": "same_words_not_explicit",
+      "severity": "medium",
+      "note": "2.0 says judge semantic entailment, not lexical equality, but does not say 'do not require the same words'."
+    },
+    {
+      "id": "complete_meaning_absent",
+      "severity": "medium",
+      "note": "2.0 does not instruct evaluation of complete meaning."
+    },
+    {
+      "id": "evidence_context_absent",
+      "severity": "low",
+      "note": "2.0 does not say to consider evidence in supplied context."
+    },
+    {
+      "id": "uncertainty_to_certainty_absent",
+      "severity": "medium",
+      "note": "2.0 does not forbid turning uncertainty into certainty. Historical h11 involved an unsupported universal guarantee."
+    },
+    {
+      "id": "plausible_causality_acceptance",
+      "severity": "medium",
+      "note": "2.0 flags undemonstrated implication and new causality, but does not say not to accept causality merely because it seems plausible."
+    }
+  ],
+  "ambiguity_count": 6,
+  "hardening_required": true,
+  "hardening_version_if_applied": "book-semantic-validator-2.0.1-candidate",
+  "historical_false_rejections_not_declared_corrected": true,
+  "historical_h01_used_as_observation_only": true,
+  "historical_h02_used_as_observation_only": true,
+  "historical_h11_used_as_observation_only": true,
+  "secrets_included": false
+}

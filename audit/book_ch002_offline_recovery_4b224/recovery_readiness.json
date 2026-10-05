@@ -1,0 +1,12 @@
+{
+  "phase": "4B.2.24",
+  "chapter_id": "CH002",
+  "recovery_status": "RECOVERED_STRUCTURALLY_VALID — HUMAN_REVIEW_PENDING",
+  "human_review_pending": true,
+  "user_accepted": false,
+  "ready_for_human_review": true,
+  "ready_for_publication": false,
+  "call_lock_consumed": true,
+  "lock_state": "FAILED",
+  "secrets_included": false
+}

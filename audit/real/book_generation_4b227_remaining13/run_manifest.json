@@ -1,0 +1,26 @@
+{
+  "phase": "4B.2.27",
+  "authorization_scope": "BOOK_GENERATION_REMAINING_13_CHAPTERS_ONE_SHOT",
+  "chapters": [
+    "CH005",
+    "CH006",
+    "CH007",
+    "CH008",
+    "CH009",
+    "CH010",
+    "CH011",
+    "CH013",
+    "CH014",
+    "CH015",
+    "CH016",
+    "CH017",
+    "CH019"
+  ],
+  "model": "anthropic/claude-sonnet-5",
+  "prompt": "book-generator-faithful-restatement-1.1-candidate",
+  "max_calls": 13,
+  "max_calls_per_chapter": 1,
+  "retries": 0,
+  "fallbacks": 0,
+  "publication": false
+}

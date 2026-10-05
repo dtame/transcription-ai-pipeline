@@ -1,0 +1,101 @@
+{
+  "live_provider_calls": 0,
+  "paid_cost_usd": 0,
+  "cases": [
+    {
+      "name": "01_missing_api_key",
+      "passed": true,
+      "detail": "api_key_missing"
+    },
+    {
+      "name": "02_fake_api_key",
+      "passed": true,
+      "detail": "fake key does not authorize a call"
+    },
+    {
+      "name": "03_dry_run",
+      "passed": true,
+      "detail": "dry_run"
+    },
+    {
+      "name": "04_authorization_absent",
+      "passed": true,
+      "detail": "explicit_authorization_missing"
+    },
+    {
+      "name": "05_authorization_disabled",
+      "passed": true,
+      "detail": "authorization_disabled"
+    },
+    {
+      "name": "06_provider_not_authorized",
+      "passed": true,
+      "detail": "provider_not_authorized"
+    },
+    {
+      "name": "07_model_not_authorized",
+      "passed": true,
+      "detail": "model_not_authorized"
+    },
+    {
+      "name": "08_zero_budget",
+      "passed": true,
+      "detail": "budget_zero"
+    },
+    {
+      "name": "09_insufficient_budget",
+      "passed": true,
+      "detail": "estimated_cost_exceeds_cap"
+    },
+    {
+      "name": "10_unknown_cost",
+      "passed": true,
+      "detail": "estimated_cost_unknown"
+    },
+    {
+      "name": "11_image_count_exceeded",
+      "passed": true,
+      "detail": "image_count_exceeds_authorization"
+    },
+    {
+      "name": "12_budget_exhausted",
+      "passed": true,
+      "detail": "budget_exhausted"
+    },
+    {
+      "name": "13_authorization_consumed",
+      "passed": true,
+      "detail": "authorization_already_consumed"
+    },
+    {
+      "name": "14_persistent_reservation",
+      "passed": true,
+      "detail": "reservation persisted"
+    },
+    {
+      "name": "15_concurrent_calls",
+      "passed": true,
+      "detail": "one reservation, one submission"
+    },
+    {
+      "name": "16_timeout",
+      "passed": true,
+      "detail": "timeout"
+    },
+    {
+      "name": "17_ambiguous_response",
+      "passed": true,
+      "detail": "ambiguous_submit_response"
+    },
+    {
+      "name": "18_generation_error",
+      "passed": true,
+      "detail": "generation error does not submit again"
+    },
+    {
+      "name": "19_no_automatic_paid_retry",
+      "passed": true,
+      "detail": "no automatic retry"
+    }
+  ]
+}

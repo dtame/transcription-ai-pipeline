@@ -1,0 +1,42 @@
+{
+  "phase": "4B.2.11",
+  "book_json": "NOT PUBLISHED",
+  "production_book_absent": true,
+  "written": [
+    "contract",
+    "cost",
+    "coverage",
+    "evidence",
+    "hashes_after",
+    "hashes_before",
+    "invocation",
+    "leak",
+    "policy",
+    "preflight",
+    "raw_response",
+    "readiness",
+    "replay",
+    "report",
+    "request",
+    "request_sha",
+    "semantic",
+    "serialization",
+    "tests",
+    "usage"
+  ],
+  "result": "PARTIAL",
+  "remote_invocations": 1,
+  "historical_dirs_untouched": true,
+  "historical_dirs": {
+    "4b210": "C:\\TranscriptionAI\\audit\\book_semantic_gate_4b210",
+    "4b29": "C:\\TranscriptionAI\\audit\\book_semantic_gate_4b29",
+    "4b27": "C:\\TranscriptionAI\\audit\\real\\book_semantic_gate_4b27",
+    "4b273": "C:\\TranscriptionAI\\audit\\real\\book_semantic_gate_4b273",
+    "4b277": "C:\\TranscriptionAI\\audit\\real\\book_semantic_gate_4b277",
+    "4b26": "C:\\TranscriptionAI\\audit\\real\\book_semantic_gate_4b26"
+  },
+  "candidate_promoted": false,
+  "human_label_modified": false,
+  "production_pipeline_modified": false,
+  "semantic_gate_20_activated": false
+}

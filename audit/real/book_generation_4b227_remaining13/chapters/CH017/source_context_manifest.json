@@ -1,0 +1,885 @@
+{
+  "phase": "4B.2.27",
+  "chapter_id": "CH017",
+  "working_title": "Nothing by Chance",
+  "language": "en",
+  "expected_sources": {
+    "idea_ids": [
+      "IDEA040",
+      "IDEA253",
+      "IDEA254",
+      "IDEA255",
+      "IDEA267",
+      "IDEA268",
+      "IDEA256",
+      "IDEA257",
+      "IDEA258",
+      "IDEA259",
+      "IDEA260",
+      "IDEA261",
+      "IDEA262",
+      "IDEA263",
+      "IDEA264",
+      "IDEA265",
+      "IDEA266"
+    ],
+    "example_ids": [
+      "EX043",
+      "EX045",
+      "EX044"
+    ],
+    "reference_ids": [
+      "REF057",
+      "REF053",
+      "REF054",
+      "REF055",
+      "REF052",
+      "REF056"
+    ],
+    "uncertainty_ids": [
+      "UNC033"
+    ],
+    "src_ids": [
+      "SRC001216",
+      "SRC001220",
+      "SRC001223",
+      "SRC007225",
+      "SRC007227",
+      "SRC007234",
+      "SRC007254",
+      "SRC007255",
+      "SRC007244",
+      "SRC007246",
+      "SRC007248",
+      "SRC007250",
+      "SRC007261",
+      "SRC007264",
+      "SRC007268",
+      "SRC007271",
+      "SRC007277",
+      "SRC007278",
+      "SRC007621",
+      "SRC007625",
+      "SRC007626",
+      "SRC007634",
+      "SRC007636",
+      "SRC007654",
+      "SRC007655",
+      "SRC007657",
+      "SRC007658",
+      "SRC007659",
+      "SRC007308",
+      "SRC007310",
+      "SRC007312",
+      "SRC007314",
+      "SRC007316",
+      "SRC007318",
+      "SRC007319",
+      "SRC007320",
+      "SRC007331",
+      "SRC007337",
+      "SRC007339",
+      "SRC007343",
+      "SRC007349",
+      "SRC007365",
+      "SRC007367",
+      "SRC007390",
+      "SRC007392",
+      "SRC007396",
+      "SRC007540",
+      "SRC007542",
+      "SRC007546",
+      "SRC007485",
+      "SRC007486",
+      "SRC007495",
+      "SRC007496",
+      "SRC007500",
+      "SRC007501",
+      "SRC007503",
+      "SRC007526",
+      "SRC007527",
+      "SRC007529",
+      "SRC007532",
+      "SRC007533",
+      "SRC007547",
+      "SRC007549",
+      "SRC007550",
+      "SRC007553",
+      "SRC007557",
+      "SRC007559",
+      "SRC007562",
+      "SRC007274",
+      "SRC007276",
+      "SRC007567",
+      "SRC007573",
+      "SRC007589",
+      "SRC007590",
+      "SRC007606",
+      "SRC007609",
+      "SRC007614",
+      "SRC007507",
+      "SRC007513",
+      "SRC007515",
+      "SRC007518",
+      "SRC007519",
+      "SRC007521",
+      "SRC007328",
+      "SRC007341",
+      "SRC007342",
+      "SRC007398",
+      "SRC007411",
+      "SRC007412",
+      "SRC007292",
+      "SRC007294",
+      "SRC007560"
+    ],
+    "section_ids": [
+      "SEC064",
+      "SEC065",
+      "SEC066"
+    ]
+  },
+  "resolved_sources": {
+    "hydrated_src_ids": [
+      "SRC001216",
+      "SRC001220",
+      "SRC001223",
+      "SRC007225",
+      "SRC007227",
+      "SRC007234",
+      "SRC007244",
+      "SRC007246",
+      "SRC007248",
+      "SRC007250",
+      "SRC007254",
+      "SRC007255",
+      "SRC007261",
+      "SRC007264",
+      "SRC007268",
+      "SRC007271",
+      "SRC007274",
+      "SRC007276",
+      "SRC007277",
+      "SRC007278",
+      "SRC007292",
+      "SRC007294",
+      "SRC007308",
+      "SRC007310",
+      "SRC007312",
+      "SRC007314",
+      "SRC007316",
+      "SRC007318",
+      "SRC007319",
+      "SRC007320",
+      "SRC007328",
+      "SRC007331",
+      "SRC007337",
+      "SRC007339",
+      "SRC007341",
+      "SRC007342",
+      "SRC007343",
+      "SRC007349",
+      "SRC007365",
+      "SRC007367",
+      "SRC007390",
+      "SRC007392",
+      "SRC007396",
+      "SRC007398",
+      "SRC007411",
+      "SRC007412",
+      "SRC007485",
+      "SRC007486",
+      "SRC007495",
+      "SRC007496",
+      "SRC007500",
+      "SRC007501",
+      "SRC007503",
+      "SRC007507",
+      "SRC007513",
+      "SRC007515",
+      "SRC007518",
+      "SRC007519",
+      "SRC007521",
+      "SRC007526",
+      "SRC007527",
+      "SRC007529",
+      "SRC007532",
+      "SRC007533",
+      "SRC007540",
+      "SRC007542",
+      "SRC007546",
+      "SRC007547",
+      "SRC007549",
+      "SRC007550",
+      "SRC007553",
+      "SRC007557",
+      "SRC007559",
+      "SRC007560",
+      "SRC007562",
+      "SRC007567",
+      "SRC007573",
+      "SRC007589",
+      "SRC007590",
+      "SRC007606",
+      "SRC007609",
+      "SRC007614",
+      "SRC007621",
+      "SRC007625",
+      "SRC007626",
+      "SRC007634",
+      "SRC007636",
+      "SRC007654",
+      "SRC007655",
+      "SRC007657",
+      "SRC007658",
+      "SRC007659"
+    ],
+    "hydrated_count": 92,
+    "hydrated_details": [
+      {
+        "id": "SRC001216",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001220",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC001223",
+        "chars": 38,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007225",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007227",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007234",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007244",
+        "chars": 12,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007246",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007248",
+        "chars": 35,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007250",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007254",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007255",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007261",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007264",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007268",
+        "chars": 36,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007271",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007274",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007276",
+        "chars": 3,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007277",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007278",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007292",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007294",
+        "chars": 15,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007308",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007310",
+        "chars": 40,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007312",
+        "chars": 25,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007314",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007316",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007318",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007319",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007320",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007328",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007331",
+        "chars": 56,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007337",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007339",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007341",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007342",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007343",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007349",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007365",
+        "chars": 43,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007367",
+        "chars": 44,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007390",
+        "chars": 56,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007392",
+        "chars": 42,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007396",
+        "chars": 84,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007398",
+        "chars": 46,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007411",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007412",
+        "chars": 49,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007485",
+        "chars": 23,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007486",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007495",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007496",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007500",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007501",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007503",
+        "chars": 37,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007507",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007513",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007515",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007518",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007519",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007521",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007526",
+        "chars": 41,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007527",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007529",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007532",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007533",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007540",
+        "chars": 7,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007542",
+        "chars": 42,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007546",
+        "chars": 17,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007547",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007549",
+        "chars": 38,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007550",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007553",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007557",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007559",
+        "chars": 17,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007560",
+        "chars": 22,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007562",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007567",
+        "chars": 39,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007573",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007589",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007590",
+        "chars": 48,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007606",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007609",
+        "chars": 28,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007614",
+        "chars": 45,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007621",
+        "chars": 12,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007625",
+        "chars": 33,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007626",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007634",
+        "chars": 44,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007636",
+        "chars": 40,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007654",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007655",
+        "chars": 62,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007657",
+        "chars": 31,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007658",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007659",
+        "chars": 20,
+        "kind": "SRC"
+      }
+    ]
+  },
+  "missing_sources": [],
+  "context_size": {
+    "chars": 19161,
+    "utf8_bytes": 19188,
+    "section_count": 3,
+    "idea_count": 17,
+    "example_count": 3,
+    "reference_count": 6,
+    "uncertainty_count": 1,
+    "src_ref_count": 92,
+    "hydrated_segment_count": 92,
+    "idea_summary_chars": 2018,
+    "hydrated_src_chars": 2597,
+    "sha256": "73e28bb272fab6803d47a17ae2719ca8ee59586f141f8fe693fb9175d668bfef"
+  },
+  "potentially_truncated": [],
+  "coverage_risks": [
+    "Targeted hydration can omit neighboring spoken detail that the plan did not attach.",
+    "A resolved SRC is not proof that every idea in that SRC is restated."
+  ],
+  "whole_transcript_injected": false,
+  "whole_transcript_words": 38313,
+  "hydrated_src_words": 520,
+  "raw_transcript_used_as_silent_fallback": false,
+  "sources_dropped_to_reduce_cost": false,
+  "blocked_if_mandatory_source_missing": true,
+  "generation_blocked": false,
+  "planned_ideas": [
+    "IDEA040",
+    "IDEA253",
+    "IDEA254",
+    "IDEA255",
+    "IDEA267",
+    "IDEA268",
+    "IDEA256",
+    "IDEA257",
+    "IDEA258",
+    "IDEA259",
+    "IDEA260",
+    "IDEA261",
+    "IDEA262",
+    "IDEA263",
+    "IDEA264",
+    "IDEA265",
+    "IDEA266"
+  ],
+  "allowed_handles": [
+    "IDEA040",
+    "IDEA253",
+    "IDEA254",
+    "IDEA255",
+    "IDEA267",
+    "IDEA268",
+    "IDEA256",
+    "IDEA257",
+    "IDEA258",
+    "IDEA259",
+    "IDEA260",
+    "IDEA261",
+    "IDEA262",
+    "IDEA263",
+    "IDEA264",
+    "IDEA265",
+    "IDEA266",
+    "EX043",
+    "EX045",
+    "EX044",
+    "REF057",
+    "REF053",
+    "REF054",
+    "REF055",
+    "REF052",
+    "REF056",
+    "UNC033",
+    "SRC001216",
+    "SRC001220",
+    "SRC001223",
+    "SRC007225",
+    "SRC007227",
+    "SRC007234",
+    "SRC007254",
+    "SRC007255",
+    "SRC007244",
+    "SRC007246",
+    "SRC007248",
+    "SRC007250",
+    "SRC007261",
+    "SRC007264",
+    "SRC007268",
+    "SRC007271",
+    "SRC007277",
+    "SRC007278",
+    "SRC007621",
+    "SRC007625",
+    "SRC007626",
+    "SRC007634",
+    "SRC007636",
+    "SRC007654",
+    "SRC007655",
+    "SRC007657",
+    "SRC007658",
+    "SRC007659",
+    "SRC007308",
+    "SRC007310",
+    "SRC007312",
+    "SRC007314",
+    "SRC007316",
+    "SRC007318",
+    "SRC007319",
+    "SRC007320",
+    "SRC007331",
+    "SRC007337",
+    "SRC007339",
+    "SRC007343",
+    "SRC007349",
+    "SRC007365",
+    "SRC007367",
+    "SRC007390",
+    "SRC007392",
+    "SRC007396",
+    "SRC007540",
+    "SRC007542",
+    "SRC007546",
+    "SRC007485",
+    "SRC007486",
+    "SRC007495",
+    "SRC007496",
+    "SRC007500",
+    "SRC007501",
+    "SRC007503",
+    "SRC007526",
+    "SRC007527",
+    "SRC007529",
+    "SRC007532",
+    "SRC007533",
+    "SRC007547",
+    "SRC007549",
+    "SRC007550",
+    "SRC007553",
+    "SRC007557",
+    "SRC007559",
+    "SRC007562",
+    "SRC007274",
+    "SRC007276",
+    "SRC007567",
+    "SRC007573",
+    "SRC007589",
+    "SRC007590",
+    "SRC007606",
+    "SRC007609",
+    "SRC007614",
+    "SRC007507",
+    "SRC007513",
+    "SRC007515",
+    "SRC007518",
+    "SRC007519",
+    "SRC007521",
+    "SRC007328",
+    "SRC007341",
+    "SRC007342",
+    "SRC007398",
+    "SRC007411",
+    "SRC007412",
+    "SRC007292",
+    "SRC007294",
+    "SRC007560"
+  ],
+  "blocked_handles": [],
+  "ready": true,
+  "secrets_included": false,
+  "expected_title": "Nothing by Chance",
+  "expected_section_count": 3,
+  "expected_idea_count": 17,
+  "expected_example_count": 3,
+  "expected_reference_count": 6,
+  "expected_uncertainty_count": 1,
+  "expected_hydrated_src_count": 92,
+  "context_hash": "73e28bb272fab6803d47a17ae2719ca8ee59586f141f8fe693fb9175d668bfef",
+  "other_chapters_excluded": true,
+  "accepted_chapters_excluded": true,
+  "external_sources_added": false,
+  "internet_lookup": false,
+  "bible_completed_from_memory": false,
+  "context_truncated": false
+}

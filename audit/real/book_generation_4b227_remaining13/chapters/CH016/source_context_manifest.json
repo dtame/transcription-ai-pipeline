@@ -1,0 +1,378 @@
+{
+  "phase": "4B.2.27",
+  "chapter_id": "CH016",
+  "working_title": "Death as Gain",
+  "language": "en",
+  "expected_sources": {
+    "idea_ids": [
+      "IDEA224",
+      "IDEA225",
+      "IDEA226",
+      "IDEA250",
+      "IDEA251",
+      "IDEA252"
+    ],
+    "example_ids": [],
+    "reference_ids": [
+      "REF050",
+      "REF051",
+      "REF056"
+    ],
+    "uncertainty_ids": [],
+    "src_ids": [
+      "SRC006149",
+      "SRC006180",
+      "SRC006182",
+      "SRC006183",
+      "SRC006187",
+      "SRC006152",
+      "SRC006154",
+      "SRC006155",
+      "SRC006156",
+      "SRC006157",
+      "SRC006192",
+      "SRC006193",
+      "SRC006195",
+      "SRC007115",
+      "SRC007116",
+      "SRC007117",
+      "SRC007118",
+      "SRC007151",
+      "SRC007152",
+      "SRC007155",
+      "SRC007156",
+      "SRC007158",
+      "SRC007161",
+      "SRC007162",
+      "SRC007193",
+      "SRC007197",
+      "SRC007199",
+      "SRC007201",
+      "SRC007204",
+      "SRC006788",
+      "SRC007129",
+      "SRC007132",
+      "SRC007149",
+      "SRC007559",
+      "SRC007560"
+    ],
+    "section_ids": [
+      "SEC063"
+    ]
+  },
+  "resolved_sources": {
+    "hydrated_src_ids": [
+      "SRC006149",
+      "SRC006152",
+      "SRC006154",
+      "SRC006155",
+      "SRC006156",
+      "SRC006157",
+      "SRC006180",
+      "SRC006182",
+      "SRC006183",
+      "SRC006187",
+      "SRC006192",
+      "SRC006193",
+      "SRC006195",
+      "SRC006788",
+      "SRC007115",
+      "SRC007116",
+      "SRC007117",
+      "SRC007118",
+      "SRC007129",
+      "SRC007132",
+      "SRC007149",
+      "SRC007151",
+      "SRC007152",
+      "SRC007155",
+      "SRC007156",
+      "SRC007158",
+      "SRC007161",
+      "SRC007162",
+      "SRC007193",
+      "SRC007197",
+      "SRC007199",
+      "SRC007201",
+      "SRC007204",
+      "SRC007559",
+      "SRC007560"
+    ],
+    "hydrated_count": 35,
+    "hydrated_details": [
+      {
+        "id": "SRC006149",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006152",
+        "chars": 14,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006154",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006155",
+        "chars": 13,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006156",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006157",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006180",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006182",
+        "chars": 16,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006183",
+        "chars": 21,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006187",
+        "chars": 34,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006192",
+        "chars": 26,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006193",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006195",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC006788",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007115",
+        "chars": 104,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007116",
+        "chars": 104,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007117",
+        "chars": 105,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007118",
+        "chars": 135,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007129",
+        "chars": 59,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007132",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007149",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007151",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007152",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007155",
+        "chars": 29,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007156",
+        "chars": 32,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007158",
+        "chars": 27,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007161",
+        "chars": 30,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007162",
+        "chars": 20,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007193",
+        "chars": 24,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007197",
+        "chars": 11,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007199",
+        "chars": 11,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007201",
+        "chars": 19,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007204",
+        "chars": 18,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007559",
+        "chars": 17,
+        "kind": "SRC"
+      },
+      {
+        "id": "SRC007560",
+        "chars": 22,
+        "kind": "SRC"
+      }
+    ]
+  },
+  "missing_sources": [],
+  "context_size": {
+    "chars": 8967,
+    "utf8_bytes": 8987,
+    "section_count": 1,
+    "idea_count": 6,
+    "example_count": 0,
+    "reference_count": 3,
+    "uncertainty_count": 0,
+    "src_ref_count": 35,
+    "hydrated_segment_count": 35,
+    "idea_summary_chars": 520,
+    "hydrated_src_chars": 1177,
+    "sha256": "bc15f06b05b1160aed413720f52c104cbb63cf4c98f07ce3fb8e8d2d732a0e93"
+  },
+  "potentially_truncated": [],
+  "coverage_risks": [
+    "Targeted hydration can omit neighboring spoken detail that the plan did not attach.",
+    "A resolved SRC is not proof that every idea in that SRC is restated."
+  ],
+  "whole_transcript_injected": false,
+  "whole_transcript_words": 38313,
+  "hydrated_src_words": 236,
+  "raw_transcript_used_as_silent_fallback": false,
+  "sources_dropped_to_reduce_cost": false,
+  "blocked_if_mandatory_source_missing": true,
+  "generation_blocked": false,
+  "planned_ideas": [
+    "IDEA224",
+    "IDEA225",
+    "IDEA226",
+    "IDEA250",
+    "IDEA251",
+    "IDEA252"
+  ],
+  "allowed_handles": [
+    "IDEA224",
+    "IDEA225",
+    "IDEA226",
+    "IDEA250",
+    "IDEA251",
+    "IDEA252",
+    "REF050",
+    "REF051",
+    "REF056",
+    "SRC006149",
+    "SRC006180",
+    "SRC006182",
+    "SRC006183",
+    "SRC006187",
+    "SRC006152",
+    "SRC006154",
+    "SRC006155",
+    "SRC006156",
+    "SRC006157",
+    "SRC006192",
+    "SRC006193",
+    "SRC006195",
+    "SRC007115",
+    "SRC007116",
+    "SRC007117",
+    "SRC007118",
+    "SRC007151",
+    "SRC007152",
+    "SRC007155",
+    "SRC007156",
+    "SRC007158",
+    "SRC007161",
+    "SRC007162",
+    "SRC007193",
+    "SRC007197",
+    "SRC007199",
+    "SRC007201",
+    "SRC007204",
+    "SRC006788",
+    "SRC007129",
+    "SRC007132",
+    "SRC007149",
+    "SRC007559",
+    "SRC007560"
+  ],
+  "blocked_handles": [],
+  "ready": true,
+  "secrets_included": false,
+  "expected_title": "Death as Gain",
+  "expected_section_count": 1,
+  "expected_idea_count": 6,
+  "expected_example_count": 0,
+  "expected_reference_count": 3,
+  "expected_uncertainty_count": 0,
+  "expected_hydrated_src_count": 35,
+  "context_hash": "bc15f06b05b1160aed413720f52c104cbb63cf4c98f07ce3fb8e8d2d732a0e93",
+  "other_chapters_excluded": true,
+  "accepted_chapters_excluded": true,
+  "external_sources_added": false,
+  "internet_lookup": false,
+  "bible_completed_from_memory": false,
+  "context_truncated": false
+}

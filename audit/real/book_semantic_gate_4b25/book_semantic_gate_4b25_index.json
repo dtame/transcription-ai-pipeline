@@ -1,0 +1,25 @@
+{
+  "phase": "4B.2.5",
+  "book_json": "NOT PUBLISHED",
+  "production_book_absent": true,
+  "written": [
+    "accounting",
+    "cases",
+    "cost",
+    "human",
+    "precall",
+    "provider",
+    "raw_response",
+    "readiness",
+    "report",
+    "request",
+    "runtime",
+    "score",
+    "tests",
+    "validation"
+  ],
+  "result": "FAIL",
+  "remote_invocations": 1,
+  "historical_4b24_dir_untouched": true,
+  "historical_4b24_dir": "C:\\TranscriptionAI\\audit\\real\\book_semantic_gate_4b24"
+}

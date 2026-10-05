@@ -1,0 +1,25 @@
+{
+  "previous_state": {
+    "declared_in_requirements": true,
+    "constraint": "openai",
+    "installed_in_canonical_venv": true,
+    "installed_in_system_python_used_by_4b24_attempt_2": false,
+    "failed_interpreter": "C:\\Program Files\\Python311\\python.exe"
+  },
+  "selected_dependency_strategy": {
+    "environment": ".venv",
+    "manifest": "requirements.txt",
+    "do_not_install_into_system_python": true
+  },
+  "installed_sdk_version": "2.43.0",
+  "manifest_changes": {
+    "requirements_txt": "openai>=1.0.0,<3",
+    "previous": "openai",
+    "updated": true
+  },
+  "import_result": {
+    "import openai": "PASS",
+    "from openai import OpenAI": "PASS"
+  },
+  "secrets_included": false
+}

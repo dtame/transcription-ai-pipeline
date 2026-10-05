@@ -1,0 +1,42 @@
+{
+  "interface": "CoverImageProvider",
+  "methods": [
+    "check_availability",
+    "get_capabilities",
+    "estimate_cost",
+    "generate"
+  ],
+  "request_fields": [
+    "provider_id",
+    "model_name",
+    "model_version",
+    "prompt",
+    "negative_prompt",
+    "width_px",
+    "height_px",
+    "aspect_ratio",
+    "seed",
+    "image_count",
+    "output_paths",
+    "metadata",
+    "embed_text",
+    "estimated_cost_usd"
+  ],
+  "result_fields": [
+    "provider_id",
+    "model_name",
+    "model_version",
+    "output_paths",
+    "metadata",
+    "license",
+    "estimated_cost_usd",
+    "actual_cost_usd",
+    "error",
+    "history"
+  ],
+  "text_baked_into_image": false,
+  "production_fake_provider": false,
+  "mocks_allowed_in": "tests_only",
+  "generation_authorized": false,
+  "history": []
+}

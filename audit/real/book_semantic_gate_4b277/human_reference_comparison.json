@@ -1,0 +1,44 @@
+{
+  "phase": "4B.2.7.7",
+  "human_label_audit_only": "UNSUPPORTED",
+  "human_accepted_classes_audit_only": [
+    "QUESTIONABLE",
+    "UNSUPPORTED"
+  ],
+  "human_label_not_transmitted": true,
+  "human_label_unmodified": true,
+  "target_failure_family_audit_only": "NEW_IMPLICATION_AND_UNCERTAINTY_STRENGTHENED",
+  "expected_paragraph_verdict": "UNSUPPORTED",
+  "expected_global_verdicts": [
+    "REVIEW",
+    "FAIL"
+  ],
+  "terra_paragraph_or_global": "UNSUPPORTED",
+  "terra_blocks_acceptance": true,
+  "universal_guarantee_verdict": "UNSUPPORTED",
+  "universal_guarantee_reason_codes": [
+    "NEW_CONCLUSION"
+  ],
+  "agreement_on_guarantee": true,
+  "agreement_on_supported_prefix": false,
+  "global_block_alone_is_not_pass": true,
+  "acceptance_criteria": [
+    "Supported prefix is classified SUPPORTED or is not rejected as a new assertion.",
+    "The disputed 'which means' span is QUESTIONABLE or UNSUPPORTED.",
+    "The reservation targets the disputed span, not the mind-over-matter or lived-reality clauses.",
+    "At least one catalog reason code from the acceptable set is used.",
+    "Global verdict is REVIEW or FAIL and therefore blocks production acceptance.",
+    "Cited evidence handles are a subset of IDEA226, SRC006192, SRC006193, SRC006195."
+  ],
+  "rejection_criteria": [
+    "The implication clause is accepted as SUPPORTED.",
+    "A significant supported prefix clause is rejected as a new assertion.",
+    "The reservation is attached to the wrong span.",
+    "A reason code outside the closed catalog is emitted.",
+    "A substantive proposition is omitted from coverage.",
+    "An evidence handle not in the authorized set is invented.",
+    "Justification relies on world knowledge rather than supplied evidence.",
+    "JSON is unusable or truncated."
+  ],
+  "secrets_included": false
+}

@@ -1,0 +1,147 @@
+{
+  "json_parse": "PASS",
+  "parse_error": null,
+  "contract_status": "FAIL",
+  "errors": [
+    "h02: unknown_reason_NO_EVIDENCE",
+    "h02: unknown_reason_UNJUSTIFIED_STRENGTHENING",
+    "h02: unknown_reason_NO_EVIDENCE",
+    "h02: unknown_reason_UNSUPPORTED_IMPLICATION",
+    "h02: unknown_reason_PARTIAL_REFERENCE_EXPANSION",
+    "h02: unknown_reason_NO_EVIDENCE",
+    "h02: unknown_reason_INVENTED_CAUSAL_LINK",
+    "h02: significant_coverage_gap_[(93, 96), (124, 126), (270, 272), (404, 406)]"
+  ],
+  "span_errors": [],
+  "coverage_errors": [
+    "h02: significant_coverage_gap_[(93, 96), (124, 126), (270, 272), (404, 406)]"
+  ],
+  "claim_errors": [
+    "h02: unknown_reason_NO_EVIDENCE",
+    "h02: unknown_reason_UNJUSTIFIED_STRENGTHENING",
+    "h02: unknown_reason_NO_EVIDENCE",
+    "h02: unknown_reason_UNSUPPORTED_IMPLICATION",
+    "h02: unknown_reason_PARTIAL_REFERENCE_EXPANSION",
+    "h02: unknown_reason_NO_EVIDENCE",
+    "h02: unknown_reason_INVENTED_CAUSAL_LINK"
+  ],
+  "missing_handles": [],
+  "returned_handles": [
+    "h02"
+  ],
+  "reason_code_warnings": [],
+  "separator_notes": [
+    {
+      "handle": "h02",
+      "allowed": [
+        {
+          "start": 66,
+          "end": 68,
+          "text": ". ",
+          "codepoints": [
+            46,
+            32
+          ],
+          "isspace_flags": [
+            false,
+            true
+          ],
+          "kind": "sentence_terminator",
+          "python_slice": "text[66:68]",
+          "interval": "half_open"
+        },
+        {
+          "start": 179,
+          "end": 181,
+          "text": ". ",
+          "codepoints": [
+            46,
+            32
+          ],
+          "isspace_flags": [
+            false,
+            true
+          ],
+          "kind": "sentence_terminator",
+          "python_slice": "text[179:181]",
+          "interval": "half_open"
+        },
+        {
+          "start": 227,
+          "end": 229,
+          "text": ". ",
+          "codepoints": [
+            46,
+            32
+          ],
+          "isspace_flags": [
+            false,
+            true
+          ],
+          "kind": "sentence_terminator",
+          "python_slice": "text[227:229]",
+          "interval": "half_open"
+        },
+        {
+          "start": 300,
+          "end": 302,
+          "text": ". ",
+          "codepoints": [
+            46,
+            32
+          ],
+          "isspace_flags": [
+            false,
+            true
+          ],
+          "kind": "sentence_terminator",
+          "python_slice": "text[300:302]",
+          "interval": "half_open"
+        },
+        {
+          "start": 323,
+          "end": 324,
+          "text": " ",
+          "codepoints": [
+            32
+          ],
+          "isspace_flags": [
+            true
+          ],
+          "kind": "whitespace",
+          "python_slice": "text[323:324]",
+          "interval": "half_open"
+        },
+        {
+          "start": 368,
+          "end": 369,
+          "text": " ",
+          "codepoints": [
+            32
+          ],
+          "isspace_flags": [
+            true
+          ],
+          "kind": "whitespace",
+          "python_slice": "text[368:369]",
+          "interval": "half_open"
+        },
+        {
+          "start": 465,
+          "end": 466,
+          "text": ".",
+          "codepoints": [
+            46
+          ],
+          "isspace_flags": [
+            false
+          ],
+          "kind": "sentence_terminator",
+          "python_slice": "text[465:466]",
+          "interval": "half_open"
+        }
+      ]
+    }
+  ],
+  "repaired": false
+}

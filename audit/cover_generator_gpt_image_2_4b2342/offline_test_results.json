@@ -1,0 +1,179 @@
+{
+  "passed": 34,
+  "failed": 0,
+  "failed_names": [],
+  "live_provider_calls": 0,
+  "paid_cost_usd": 0,
+  "cases": [
+    {
+      "name": "01_openai_selected",
+      "passed": true,
+      "detail": "openai gpt-image-2"
+    },
+    {
+      "name": "02_bfl_retained",
+      "passed": true,
+      "detail": "flux-2-pro retained"
+    },
+    {
+      "name": "03_model_id",
+      "passed": true,
+      "detail": "alias selected; snapshot recorded and not sent"
+    },
+    {
+      "name": "04_key_absent",
+      "passed": true,
+      "detail": "api_key_missing"
+    },
+    {
+      "name": "05_key_fictive",
+      "passed": true,
+      "detail": "fixture key not recorded"
+    },
+    {
+      "name": "06_authorization_absent",
+      "passed": true,
+      "detail": "explicit_authorization_missing"
+    },
+    {
+      "name": "07_authorization_disabled",
+      "passed": true,
+      "detail": "authorization_disabled"
+    },
+    {
+      "name": "08_dry_run",
+      "passed": true,
+      "detail": "dry_run"
+    },
+    {
+      "name": "09_budget_zero",
+      "passed": true,
+      "detail": "budget_zero"
+    },
+    {
+      "name": "10_cost_unknown",
+      "passed": true,
+      "detail": "published 0.041 is not a ceiling"
+    },
+    {
+      "name": "11_estimate_above_cap",
+      "passed": true,
+      "detail": "estimated_cost_exceeds_cap"
+    },
+    {
+      "name": "12_persistent_reservation",
+      "passed": true,
+      "detail": "reservation persisted"
+    },
+    {
+      "name": "13_concurrency",
+      "passed": true,
+      "detail": "one reservation, one submission"
+    },
+    {
+      "name": "14_image_count",
+      "passed": true,
+      "detail": "image_count_exceeds_authorization"
+    },
+    {
+      "name": "15_invalid_quality",
+      "passed": true,
+      "detail": "xhigh and auto refused"
+    },
+    {
+      "name": "16_invalid_resolution",
+      "passed": true,
+      "detail": "1000x1500 refused"
+    },
+    {
+      "name": "17_invalid_format",
+      "passed": true,
+      "detail": "gif refused"
+    },
+    {
+      "name": "18_simulated_request",
+      "passed": true,
+      "detail": "one mocked POST"
+    },
+    {
+      "name": "19_simulated_valid_response",
+      "passed": true,
+      "detail": "png stored after validation"
+    },
+    {
+      "name": "20_simulated_invalid_response",
+      "passed": true,
+      "detail": "b64_json_missing"
+    },
+    {
+      "name": "21_corrupt_image",
+      "passed": true,
+      "detail": "corrupt_image"
+    },
+    {
+      "name": "22_timeout",
+      "passed": true,
+      "detail": "timeout"
+    },
+    {
+      "name": "23_http_error",
+      "passed": true,
+      "detail": "http_429"
+    },
+    {
+      "name": "24_no_automatic_retry",
+      "passed": true,
+      "detail": "no second paid call"
+    },
+    {
+      "name": "25_no_key_leak",
+      "passed": true,
+      "detail": "fixture key stayed in the mock header only"
+    },
+    {
+      "name": "26_no_real_call",
+      "passed": true,
+      "detail": "live http sealed"
+    },
+    {
+      "name": "27_no_image_file",
+      "passed": true,
+      "detail": "planned image absent"
+    },
+    {
+      "name": "28_no_cover_docx_pdf",
+      "passed": true,
+      "detail": "docx pdf and back cover refused"
+    },
+    {
+      "name": "29_canonical_unchanged",
+      "passed": true,
+      "detail": "book.json matches"
+    },
+    {
+      "name": "30_interior_unchanged",
+      "passed": true,
+      "detail": "interior matches"
+    },
+    {
+      "name": "31_prior_authorization_not_reused",
+      "passed": true,
+      "detail": "phase 4B.2.34.1 authorization refused"
+    },
+    {
+      "name": "32_resolution_choice",
+      "passed": true,
+      "detail": "1024x1536 selected"
+    },
+    {
+      "name": "33_art_prompt",
+      "passed": true,
+      "detail": "approved prompt kept"
+    },
+    {
+      "name": "34_previous_tests_no_regression",
+      "passed": true,
+      "detail": "24 previous cases passed"
+    }
+  ]
+}

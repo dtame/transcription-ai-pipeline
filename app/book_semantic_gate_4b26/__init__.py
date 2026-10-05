@@ -1,0 +1,22 @@
+"""Phase 4B.2.6 — one real Terra semantic-gate canary, corrected API contract."""
+
+from app.book_semantic_gate_4b26.constants import (
+    AUTHORIZED_REMOTE_TERRA_INVOCATIONS,
+    AUTHORIZED_SONNET_CALLS,
+    HISTORICAL_4B251_STATUS,
+    HISTORICAL_4B25_STATUS,
+    PHASE,
+)
+
+assert AUTHORIZED_REMOTE_TERRA_INVOCATIONS == 1
+assert AUTHORIZED_SONNET_CALLS == 0
+assert HISTORICAL_4B25_STATUS == "FAIL"
+assert HISTORICAL_4B251_STATUS == "PASS"
+
+__all__ = [
+    "PHASE",
+    "AUTHORIZED_REMOTE_TERRA_INVOCATIONS",
+    "AUTHORIZED_SONNET_CALLS",
+    "HISTORICAL_4B25_STATUS",
+    "HISTORICAL_4B251_STATUS",
+]

@@ -1,0 +1,44 @@
+{
+  "phase": "4B.2.30",
+  "status": "PASS",
+  "geometry": {
+    "page_width_inches": 6.0,
+    "page_height_inches": 9.0,
+    "orientation": "portrait",
+    "word_orientation": "PORTRAIT (0)",
+    "left_margin_inches": 0.85,
+    "right_margin_inches": 0.65,
+    "top_margin_inches": 0.75,
+    "bottom_margin_inches": 0.75,
+    "gutter_emu": 137160,
+    "expected_gutter_emu": 137160,
+    "gutter_matches_profile": true,
+    "gutter_not_added_to_left_margin": true,
+    "inside_is_left_margin": true,
+    "outside_is_right_margin": true,
+    "mirror_convention": "left_margin=inside, right_margin=outside, gutter additional, w:mirrorMargins swaps the pair on even pages",
+    "page_width_matches": true,
+    "page_height_matches": true,
+    "portrait": true,
+    "portrait_enum": true
+  },
+  "gutter_convention": {
+    "model": "word_pgMar_gutter_is_additional",
+    "inside_margin_inches": 0.85,
+    "gutter_inches": 0.15,
+    "total_binding_edge_inches": 1.0,
+    "gutter_included_in_inside_margin_value": false,
+    "existing_engine_applies_gutter": false,
+    "double_compensation_risk": false,
+    "note": "Word adds w:gutter to the mirrored inside edge. left_margin stores the inside margin only. The existing publication engines do not set gutter, so this profile does not subtract gutter from the inside margin."
+  },
+  "checks": {
+    "page_width": true,
+    "page_height": true,
+    "portrait": true,
+    "mirror_margins": true,
+    "gutter_matches": true,
+    "gutter_not_duplicated": true
+  },
+  "secrets_included": false
+}

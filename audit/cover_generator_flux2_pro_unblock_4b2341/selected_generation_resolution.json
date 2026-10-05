@@ -1,0 +1,30 @@
+{
+  "model_id": "flux-2-pro",
+  "width": 1632,
+  "height": 2448,
+  "pixels": 3995136,
+  "width_times_height": "1632 × 2448 = 3995136",
+  "width_over_height": "0.666667",
+  "aspect_ratio": "2:3",
+  "exact_two_to_three": true,
+  "multiple_of": 16,
+  "pixel_cap": 4000000,
+  "within_cap": true,
+  "orientation": "portrait",
+  "output_format": "png",
+  "rejected_prior_size": {
+    "width": 1664,
+    "height": 2496,
+    "pixels": 4153344,
+    "problems": [
+      "above_4_000_000_pixel_cap"
+    ]
+  },
+  "documented_square_example": {
+    "width": 2048,
+    "height": 2048,
+    "pixels": 4194304,
+    "above_strict_cap": true,
+    "requested": false
+  }
+}

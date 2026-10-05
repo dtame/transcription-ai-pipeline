@@ -1,0 +1,26 @@
+{
+  "phase": "4B.2.15",
+  "required_unit_ids": [
+    "u00",
+    "u01",
+    "u02",
+    "u03",
+    "u04"
+  ],
+  "returned_unit_ids": [
+    "u00",
+    "u01",
+    "u02",
+    "u03",
+    "u04"
+  ],
+  "missing_units": [],
+  "duplicate_units": [],
+  "unknown_units": [],
+  "unknown_reason_codes": [],
+  "all_units_present": true,
+  "identifiers_correct": true,
+  "ok": true,
+  "status": "PASS",
+  "secrets_included": false
+}

@@ -1,0 +1,110 @@
+{
+  "parsed": {
+    "ch": "CH016",
+    "v": "REVIEW",
+    "pr": [
+      {
+        "h": "h01",
+        "v": "QUESTIONABLE",
+        "c": [
+          {
+            "i": 0,
+            "s": 0,
+            "e": 31,
+            "k": "SUPPORTED",
+            "ev": [
+              "SRC006149"
+            ],
+            "r": []
+          },
+          {
+            "i": 1,
+            "s": 32,
+            "e": 64,
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224"
+            ],
+            "r": []
+          },
+          {
+            "i": 2,
+            "s": 65,
+            "e": 105,
+            "k": "QUESTIONABLE",
+            "ev": [
+              "IDEA224"
+            ],
+            "r": [],
+            "n": "Calculation is implied, but bargaining is not supplied."
+          },
+          {
+            "i": 3,
+            "s": 106,
+            "e": 140,
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224",
+              "SRC006149",
+              "SRC006182"
+            ],
+            "r": []
+          },
+          {
+            "i": 4,
+            "s": 142,
+            "e": 173,
+            "k": "SUPPORTED",
+            "ev": [
+              "SRC006187"
+            ],
+            "r": []
+          },
+          {
+            "i": 5,
+            "s": 174,
+            "e": 209,
+            "k": "SUPPORTED",
+            "ev": [
+              "IDEA224"
+            ],
+            "r": []
+          },
+          {
+            "i": 6,
+            "s": 211,
+            "e": 232,
+            "k": "SUPPORTED",
+            "ev": [
+              "SRC006183"
+            ],
+            "r": []
+          }
+        ],
+        "ev": [
+          "IDEA224",
+          "SRC006149",
+          "SRC006182",
+          "SRC006183",
+          "SRC006187"
+        ],
+        "r": []
+      }
+    ],
+    "sc": {
+      "SUPPORTED": 6,
+      "QUESTIONABLE": 1,
+      "UNSUPPORTED": 0,
+      "NON_SUBSTANTIVE": 0
+    },
+    "uh": [],
+    "rr": true
+  },
+  "text": "{\"ch\":\"CH016\",\"v\":\"REVIEW\",\"pr\":[{\"h\":\"h01\",\"v\":\"QUESTIONABLE\",\"c\":[{\"i\":0,\"s\":0,\"e\":31,\"k\":\"SUPPORTED\",\"ev\":[\"SRC006149\"],\"r\":[]},{\"i\":1,\"s\":32,\"e\":64,\"k\":\"SUPPORTED\",\"ev\":[\"IDEA224\"],\"r\":[]},{\"i\":2,\"s\":65,\"e\":105,\"k\":\"QUESTIONABLE\",\"ev\":[\"IDEA224\"],\"r\":[],\"n\":\"Calculation is implied, but bargaining is not supplied.\"},{\"i\":3,\"s\":106,\"e\":140,\"k\":\"SUPPORTED\",\"ev\":[\"IDEA224\",\"SRC006149\",\"SRC006182\"],\"r\":[]},{\"i\":4,\"s\":142,\"e\":173,\"k\":\"SUPPORTED\",\"ev\":[\"SRC006187\"],\"r\":[]},{\"i\":5,\"s\":174,\"e\":209,\"k\":\"SUPPORTED\",\"ev\":[\"IDEA224\"],\"r\":[]},{\"i\":6,\"s\":211,\"e\":232,\"k\":\"SUPPORTED\",\"ev\":[\"SRC006183\"],\"r\":[]}],\"ev\":[\"IDEA224\",\"SRC006149\",\"SRC006182\",\"SRC006183\",\"SRC006187\"],\"r\":[]}],\"sc\":{\"SUPPORTED\":6,\"QUESTIONABLE\":1,\"UNSUPPORTED\":0,\"NON_SUBSTANTIVE\":0},\"uh\":[],\"rr\":true}",
+  "sha256": "eb79192a91ec2f00c980c4ced449cdfc8e848471c59664b94ceffffadbe3deec",
+  "repaired": false,
+  "truncated": false,
+  "manually_edited": false,
+  "immutable": true,
+  "refusal": null
+}

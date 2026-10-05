@@ -1,0 +1,53 @@
+{
+  "phase": "4B.2.13",
+  "ok": true,
+  "chains": [
+    {
+      "chapter_id": "SYN-CH001",
+      "section_id": "SYN-CH001-SEC001",
+      "paragraph_id": "SYN-CH001-P000001",
+      "unit_id": "u00",
+      "unit_text": "The next movement of the book now turns to this subject.",
+      "evidence_handles": [],
+      "source_refs": [],
+      "source_map_or_src": [],
+      "synthetic": true,
+      "presented_as_real_src": false
+    },
+    {
+      "chapter_id": "SYN-CH001",
+      "section_id": "SYN-CH001-SEC001",
+      "paragraph_id": "SYN-CH001-P000002",
+      "unit_id": "u00",
+      "unit_text": "The teaching already given is that fear does not calculate or bargain with the person who belongs to the truth.",
+      "evidence_handles": [
+        "SYN-IDEA001",
+        "SYN-SRC001"
+      ],
+      "source_refs": [
+        "SYN-SRC001"
+      ],
+      "source_map_or_src": [
+        "SYN-SRC001"
+      ],
+      "synthetic": true,
+      "presented_as_real_src": false
+    }
+  ],
+  "synthetic_handles_only": true,
+  "does_not_fabricate_real_src": true,
+  "historical_canary_handles": {
+    "kind": "HISTORICAL_CANARY_HANDLES_NOT_THIS_PHASE_GENERATION",
+    "h01_evidence_handles": [
+      "IDEA224",
+      "SRC006149",
+      "SRC006180",
+      "SRC006182",
+      "SRC006183",
+      "SRC006187"
+    ],
+    "not_used_as_generated_chapter_in_4b213": true,
+    "not_presented_as_new_src": true
+  },
+  "secrets_included": false
+}

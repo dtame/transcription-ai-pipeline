@@ -1,0 +1,30 @@
+{
+  "phase": "4B.2.12",
+  "replay": "A_historical_contract_201",
+  "contract": "book-semantic-validator-2.0.1-candidate",
+  "provider_calls": 0,
+  "raw_text_sha256": "ef45c2d4262c5bb86a6ff891fb2a03b79189342c25c8cd9e5c261742992f7fe5",
+  "expected_raw_text_sha256": "ef45c2d4262c5bb86a6ff891fb2a03b79189342c25c8cd9e5c261742992f7fe5",
+  "raw_unmodified": true,
+  "json_parse": "PASS",
+  "contract_validation": "FAIL",
+  "acceptance_policy": "BLOCK",
+  "expected_contract_validation": "FAIL",
+  "expected_acceptance_policy": "BLOCK",
+  "matches_historical_fail": true,
+  "errors": [
+    "sc:unexpected_fields:NON_SUBSTANTIVE,QUESTIONABLE,SUPPORTED,UNSUPPORTED",
+    "sc.non_substantive:not_integer",
+    "sc.unsupported:not_integer",
+    "sc.questionable:not_integer",
+    "sc.supported:not_integer",
+    "pr[0].v:invalid"
+  ],
+  "identical_second_pass": true,
+  "pass": true,
+  "historical_4b211_status_unchanged": "PARTIAL",
+  "does_not_rewrite_historical_response": true,
+  "does_not_convert_pass_to_supported": true,
+  "does_not_convert_sc_keys": true,
+  "secrets_included": false
+}

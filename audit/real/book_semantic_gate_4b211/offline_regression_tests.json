@@ -1,0 +1,20 @@
+{
+  "returncode": 0,
+  "summary": "207 passed in 51.51s",
+  "passed": 207,
+  "failed": 0,
+  "stderr_tail": "",
+  "new_failures": 0,
+  "network_blocked": true,
+  "suites": [
+    "app/tests/test_book_semantic_gate_4b211.py",
+    "app/tests/test_book_semantic_gate_4b210.py",
+    "app/tests/test_book_semantic_gate_4b29.py",
+    "app/tests/test_book_semantic_gate_4b23.py",
+    "app/tests/test_ai_providers.py",
+    "app/tests/test_ai_thinking_contract.py"
+  ],
+  "real_provider_calls": 0,
+  "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe",
+  "phase": "4B.2.11"
+}

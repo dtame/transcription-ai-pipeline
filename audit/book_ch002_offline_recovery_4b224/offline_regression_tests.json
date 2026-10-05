@@ -1,0 +1,170 @@
+{
+  "phase": "4B.2.24",
+  "focused_tests": {
+    "returncode": 0,
+    "summary": "8 passed, 1 deselected in 0.91s",
+    "passed": 8,
+    "failed": 0,
+    "stderr_tail": "",
+    "suites": [
+      "app/tests/test_book_ch002_offline_recovery_4b224.py"
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "phase": "4B.2.24",
+    "canonical_python": "C:\\TranscriptionAI\\.venv\\Scripts\\python.exe"
+  },
+  "offline_scenarios": {
+    "phase": "4B.2.24",
+    "passed": 23,
+    "failed": 0,
+    "failed_ids": [],
+    "cases": [
+      {
+        "id": "01_raw_preserved",
+        "title": "Raw provider response preserved",
+        "passed": true,
+        "detail": "sha256=dff61499135341af3fee507c98d4ad9c01eb5c8d7c7bb76a9294cc7908b01780"
+      },
+      {
+        "id": "02_only_target_removed",
+        "title": "Only the targeted empty paragraph was removed",
+        "passed": true,
+        "detail": "after_ids=['P000001', 'P000002', 'P000003', 'P000004', 'P000005', 'P000006', 'P000007', 'P000009', 'P000010', 'P000011', 'P000012', 'P000013', 'P000014', 'P000015', 'P000016', 'P000017']"
+      },
+      {
+        "id": "03_refuse_nonempty",
+        "title": "Refuse deletion of a non-empty paragraph",
+        "passed": true,
+        "detail": "P000001 refused"
+      },
+      {
+        "id": "04_refuse_idea",
+        "title": "Refuse deletion of a paragraph carrying an IDEA",
+        "passed": true,
+        "detail": "P000001"
+      },
+      {
+        "id": "05_refuse_src",
+        "title": "Refuse deletion of a paragraph carrying a SRC",
+        "passed": true,
+        "detail": "P000001"
+      },
+      {
+        "id": "08_refuse_unc",
+        "title": "Refuse deletion of a paragraph carrying an UNC",
+        "passed": true,
+        "detail": "P000004"
+      },
+      {
+        "id": "06_refuse_ex",
+        "title": "Refuse deletion of a paragraph carrying an EX",
+        "passed": true,
+        "detail": "synthetic EX"
+      },
+      {
+        "id": "07_refuse_ref",
+        "title": "Refuse deletion of a paragraph carrying a REF",
+        "passed": true,
+        "detail": "synthetic REF"
+      },
+      {
+        "id": "09_other_paragraphs_preserved",
+        "title": "Other paragraphs preserved",
+        "passed": true,
+        "detail": "non-target paragraph objects unchanged"
+      },
+      {
+        "id": "10_ids_preserved",
+        "title": "Remaining paragraph identifiers preserved",
+        "passed": true,
+        "detail": "no renumbering"
+      },
+      {
+        "id": "11_sections_preserved",
+        "title": "Sections preserved",
+        "passed": true,
+        "detail": "SEC005-SEC008"
+      },
+      {
+        "id": "12_ideas_preserved",
+        "title": "Fifteen IDEA handles preserved",
+        "passed": true,
+        "detail": "['IDEA009', 'IDEA010', 'IDEA011', 'IDEA012', 'IDEA013', 'IDEA014', 'IDEA015', 'IDEA016', 'IDEA017', 'IDEA018', 'IDEA019', 'IDEA021', 'IDEA036', 'IDEA037', 'IDEA039']"
+      },
+      {
+        "id": "13_json_valid",
+        "title": "Recovered JSON validates",
+        "passed": true,
+        "detail": "PASS"
+      },
+      {
+        "id": "14_json_md_consistent",
+        "title": "JSON/Markdown consistency",
+        "passed": true,
+        "detail": "recovered markdown contains every non-empty paragraph"
+      },
+      {
+        "id": "15_canonical_unchanged",
+        "title": "Canonical sources unchanged",
+        "passed": true,
+        "detail": "source/plan/transcript hashes match"
+      },
+      {
+        "id": "16_ch012_unchanged",
+        "title": "CH012 unchanged",
+        "passed": true,
+        "detail": "accepted and original CH012 hashes"
+      },
+      {
+        "id": "17_ch018_unchanged",
+        "title": "CH018 unchanged",
+        "passed": true,
+        "detail": "accepted CH018 hashes"
+      },
+      {
+        "id": "18_locks_not_reset",
+        "title": "Locks not reset",
+        "passed": true,
+        "detail": "CH002 consumed=True"
+      },
+      {
+        "id": "19_no_provider_call",
+        "title": "No provider call",
+        "passed": true,
+        "detail": "authorized spend 0"
+      },
+      {
+        "id": "20_no_publication",
+        "title": "No publication",
+        "passed": true,
+        "detail": "book.json absent"
+      },
+      {
+        "id": "21_proposal_strips_only_empty",
+        "title": "Isolated proposal strips only the empty unprovenanced paragraph",
+        "passed": true,
+        "detail": "['P000008']"
+      },
+      {
+        "id": "22_raw_contains_empty_p8",
+        "title": "Raw parsed JSON already contains empty p8",
+        "passed": true,
+        "detail": "model-emitted empty connective"
+      },
+      {
+        "id": "23_focused_pytest",
+        "title": "Focused pytest suite",
+        "passed": true,
+        "detail": "8 passed, 1 deselected in 0.91s"
+      }
+    ],
+    "real_provider_calls": 0,
+    "openai_http_requests": 0,
+    "anthropic_http_requests": 0,
+    "fakeai_used_to_mask_validator": false,
+    "secrets_included": false
+  },
+  "secrets_included": false
+}

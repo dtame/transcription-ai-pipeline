@@ -1,0 +1,46 @@
+{
+  "activated": false,
+  "authorized": false,
+  "persistent_authorization_written": false,
+  "provider": "Black Forest Labs",
+  "model_id": "flux-2-pro",
+  "endpoint": "https://api.bfl.ai/v1/flux-2-pro",
+  "resolution": {
+    "width": 1632,
+    "height": 2448
+  },
+  "output_format": "png",
+  "disable_pup": true,
+  "prompt": "Editorial photograph for a book cover, vertical two-to-three ratio. A plain domestic doorway already standing open, warm dawn light already inside the room, a small oil lamp already burning on a walnut table. Upper third is an even plaster wall in exact color #E7D7C1 with no objects and no texture that resembles writing. Flame in #E0A15A, shadows in #3E4A3A. Photographed, calm, sharp, no people. no words, no letters, no numerals, no title, no subtitle, no author name, no logo, no barcode, no ISBN, no watermark, no signature, no cross, no crucifix, no stained glass, no halo, no angel, no church interior, no crowd, no celebrity face, no skeleton, no open tomb.",
+  "negative_prompt_transmitted": false,
+  "image_count": 1,
+  "max_cost_usd": null,
+  "max_cost_verified": false,
+  "destination": "audit/cover_generator_flux2_pro_unblock_4b2341/planned_first_image/door_already_open.png",
+  "destination_created": false,
+  "checks_after_download": [
+    "HTTPS delivery host matching delivery.<region>.bfl.ai",
+    "PNG signature and decoded size 1632×2448",
+    "SHA-256 stored beside the file",
+    "Observed cost recorded when the response includes one",
+    "Stop if the observed cost exceeds the budget named in a later explicit authorization",
+    "Human inspection for text, church imagery, and title-field contrast"
+  ],
+  "visual_acceptance": [
+    "An ordinary interior door already open",
+    "Light already in the room",
+    "Calm domestic atmosphere",
+    "Upper third kept as a quiet field for later title type",
+    "No words, letters, logo, or author name in the image"
+  ],
+  "stop_conditions": [
+    "Maximum cost still unknown",
+    "No explicit user authorization for the paid call",
+    "API key missing",
+    "Dry-run still on",
+    "Resolution rejected by the local validator",
+    "Provider status other than Ready",
+    "Delivery URL host not allowed"
+  ],
+  "will_not_run_in_this_phase": true
+}

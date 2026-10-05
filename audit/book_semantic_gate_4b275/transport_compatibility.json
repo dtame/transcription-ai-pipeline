@@ -1,0 +1,89 @@
+{
+  "phase": "4B.2.7.5",
+  "reuse_transport": "book-semantic-validation-transport-1.1-candidate",
+  "new_transport_created": false,
+  "transport_1_1_3": null,
+  "field_meanings_unchanged": true,
+  "required_top_fields": [
+    "ch",
+    "v",
+    "pr",
+    "sc",
+    "uh",
+    "rr"
+  ],
+  "required_paragraph_fields": [
+    "h",
+    "v",
+    "c",
+    "ev",
+    "r"
+  ],
+  "required_claim_fields": [
+    "i",
+    "s",
+    "e",
+    "k",
+    "ev",
+    "r"
+  ],
+  "optional_fields": [
+    "n"
+  ],
+  "chapter_verdicts": [
+    "PASS",
+    "REVIEW",
+    "FAIL"
+  ],
+  "claim_verdicts": [
+    "SUPPORTED",
+    "QUESTIONABLE",
+    "UNSUPPORTED",
+    "NON_SUBSTANTIVE"
+  ],
+  "indeterminate_not_a_provider_verdict": true,
+  "reason_codes": [
+    "NEW_FACT",
+    "NEW_CAUSAL_LINK",
+    "NEW_ARGUMENT",
+    "NEW_CONCLUSION",
+    "NEW_DOCTRINAL_CLAIM",
+    "NEW_IMPLICATION",
+    "INVENTED_EXAMPLE",
+    "INVENTED_ANECDOTE",
+    "INVENTED_HYPOTHETICAL",
+    "REFERENCE_COMPLETION",
+    "REFERENCE_EXPANSION",
+    "QUOTE_EXPANSION",
+    "UNCERTAINTY_STRENGTHENED",
+    "SOURCE_MEANING_DISTORTED",
+    "EVIDENCE_MISMATCH",
+    "OTHER"
+  ],
+  "spans": {
+    "start": "pr[].c[].s inclusive",
+    "end": "pr[].c[].e exclusive",
+    "indexing": "python3_str_unicode_code_points"
+  },
+  "evidence_handles": [
+    "pr[].c[].ev",
+    "pr[].ev"
+  ],
+  "short_reservations": "pr[].c[].n when QUESTIONABLE or UNSUPPORTED",
+  "preserved": [
+    "claim-level assessment",
+    "exact spans",
+    "evidence handles",
+    "reason codes",
+    "global verdict",
+    "short reservations",
+    "compact JSON"
+  ],
+  "schema_1_1_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+  "schema_1_0_sha256": "9e84248aa5d6fc454b79041085d915ecaa3a13f74f1ce245900b2f1665673689",
+  "expected_schema_1_1_sha256": "91922f85b033a533fba4e112ce7568d6c84dbd106e114a2612d0606a3cc1619a",
+  "matches_frozen_1_1_schema": true,
+  "reason_enum_unchanged": true,
+  "silent_field_redefinition": false,
+  "secrets_included": false
+}
